@@ -1,46 +1,4 @@
-<!DOCTYPE html>
-<html lang="en"><head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.7.1 -->
-<title>Contaible | Contaible ®</title>
-<meta name="generator" content="Jekyll v4.2.0" />
-<meta property="og:title" content="Contaible" />
-<meta property="og:locale" content="en_US" />
-<link rel="canonical" href="http://0.0.0.0:4000/contaible/" />
-<meta property="og:url" content="http://0.0.0.0:4000/contaible/" />
-<meta property="og:site_name" content="Contaible ®" />
-<meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="Contaible" />
-<script type="application/ld+json">
-{"@type":"WebPage","headline":"Contaible","url":"http://0.0.0.0:4000/contaible/","@context":"https://schema.org"}</script>
-<!-- End Jekyll SEO tag -->
-<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://0.0.0.0:4000/feed.xml" title="Contaible ®" /></head>
-<body><header class="site-header" role="banner">
-
-  <div class="wrapper"><a class="site-title" rel="author" href="/">Contaible ®</a><nav class="site-nav">
-        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
-        <label for="nav-trigger">
-          <span class="menu-icon">
-            <svg viewBox="0 0 18 15" width="18px" height="15px">
-              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
-            </svg>
-          </span>
-        </label>
-
-        <div class="trigger"><a class="page-link" href="/">Acerca</a><a class="page-link" href="/contaible/">Contaible</a><a class="page-link" href="/nota/">Nota</a></div>
-      </nav></div>
-</header>
-<main class="page-content" aria-label="Content">
-      <div class="wrapper">
-        <article class="post">
-
-  <header class="post-header">
-    <h1 class="post-title">Contaible</h1>
-  </header>
-
-  <div class="post-content">
-    <h4 id="contaible">Cont<sup style="color:white; background-color: cornflowerblue">ai</sup>ble<sup></sup></h4>
+I"�;<h4 id="contaible">Cont<sup style="color:white; background-color: cornflowerblue">ai</sup>ble<sup></sup></h4>
 
 <h1 id="qué-es-contaible">Qué es Cont<sup>ai</sup>ble</h1>
 
@@ -229,7 +187,7 @@
 
 <p>Usaremos una frase para englobar el funcionamiento de Cont<sup>ai</sup>ble en un esfuerzo por explicar algo muy novedosos y anormal pues no es un sistema que muchas persona sepan como funciona, aún los más inteligentes e informados podrían sentirse inclinados a decir que ellos si saben lo que es la inteligencia artificial, pero Cont<sup>ai</sup>ble sí es inteligencia artificial y se manda solo. Digamos que:</p>
 
-<p><strong>Cont<sup>ai</sup>ble se las arregla para para dar el tratamiento contable necesario a cada hecho financiero</strong></p>
+<p>** Cont<sup>ai</sup>ble se las arregla para para dar el tratamiento contable necesario a cada hecho financiero **</p>
 
 <p>El kernel <em>costo-ventas</em> considera un hecho financiero relacionado con la enajenación onerosa de un bien, que en la tributaria es un hecho-gravado-iva por lo que se incurre en la obligación de un pago al Fisco por 319 pesos, que en la jerga financiera es un egreso relacionado con otro hecho financiero llamado venta, lo que lo hace distino de un gasto, que su tratamiento en materia de impuesto de primera categoría es deducible de impuestos anuales a la renta. De acuerdo a su naturaleza de enajenación con contraprestación por 1997, se debe anotar 1678 en una cuenta de equivalentes-de-efectivo (bancos, caja) pero que se compensa parcialmente con una anotación en la cuenta costos-de.ventas. Con estas anotaciones Cont<sup>ai</sup>ble puede incluirlo correctamente estos hechos económicos son los hechos económicos de estado de resultado y estado clasificado.</p>
 
@@ -237,15 +195,15 @@
  ( iva    319)
  ( total 1997)</p>
 
-<p>El kernel venta-sii refleja el hecho-gravado-iva pero en sentido inverso, su empresa entrega un bien a cambio de una contraprestación en equivalentes de efectivo. Las anotaciones ahora son en venta-con-factura-exenta que se deben equilibrar con caja. En este caso no se incurre en el hecho-gravado-iva, pero eso depende de la aprobación de nuevas leyes en los que sí lo sea. Por eso se deja la alternativa de anotar el IVA en uno de los campos del facts (en realidad se llaman slot y puede que ya tengan otro nombre en otros lados). El hecho económico <em>venta</em> recibe el tratamiento de ingresos por lo que la cuenta de Ventas con Factura Exenta es una cuenta de resultados.</p>
+<p>El kernal venta-sii refleja el hecho-gravado-iva pero en sentido inverso, su empresa entrega un bien a cambio de una contraprestación en equivalentes de efectivo. Las anotaciones ahora son en venta-con-factura-exenta que se deben equilibrar con caja. En este caso no se incurre en el hecho-gravado-iva, pero eso depende de la aprobación de nuevas leyes en los que sí lo sea. Por eso se deja la alternativo de anotar el IVA. El hecho financiero venta recibe el tratamiento de ingresos por lo que la cuenta de Ventas con Factura Exenta es una cuenta de resultados. Las cuentas y sus atributos se establecen a priori en un archivo llamado cuentas.txt. Cont<sup>ai</sup>ble contempla el procesamiento de subcuentas a partir de la forma en que se definan en este archivo aunque algunas reglas pueden crear subcuentas durante la generación de la contabilidad.</p>
 
 <p>El kernel venta-sii
  (neto 35000)
  (iva 0)</p>
 
-<p>Los kernels ajuste-de-iva y ajustes-mensuales disparan procesamientos por lotes de los hechos económicos indivisibles que ya hemos vistos y otros que son parte de Cont<sup>ai</sup>ble. Esto se hace con el fin de determinar el monto de las obligaciones impositivas mensuales que los empresarios conocen como la declaración mensual de IVA a través de los formularios f-29 y dentro de ellos el tratamiento del remanente del IVA-Crédito.</p>
+<p>Los kernels ajuste-de-iva y ajustes-mensuales disparan procesamientos por lotes de los hechos económicos indivisibles con el fin de determinar el monto de las obligaciones impositivas mensuales como la confección de los formularios f-29 y dentro de ellos el tratamiento del remanente del IVA-Crédito.</p>
 
-<p>Cont<sup>ai</sup>ble genera archivos con extensión CSV para que se puedan ingresar los hechos económicos en el sistema de contabilidad completa del servicio de impuestos internos. El servicios de contabilidad completa es una forma elegante de hacernos perder el tiempo. Usando Cont<sup>ai</sup>ble Ud. tiene todo listo sin que su información haya abandonado su computador.</p>
+<p>Cont<sup>ai</sup>ble genera archivos con extensión CSV para que se puedan ingresar los hechos económicos en el sistema de contabilidad completa del servicio de impuestos internos.</p>
 
 <p>Los kernels denominados primitivas incluyen los bloques para que se pueda moldear un nuevo hecho contable para el que no existe a un kernel contable más elaborado como los de compra y venta. Con primitivas se pueden crear los asientos iniciales.</p>
 
@@ -277,43 +235,7 @@
 
 <p>La alternativa más popular es no llevar la contabilidad y solo tener un contador para que realice las declaraciones de IVA mensuales.</p>
 
-<p>En todos los puntos mencionados Ud. no aprenderá contabilidad y se arriesgará a mandar a su pyme a la quiebra por mal manejo financiero y tribuario. En todos los casos Cont<sup>ai</sup>ble le servirá para probar sus conocimientos de una forma muy intensa. No le será fácil dominar la contabilidad, pero una vez que la domine la puede implementar en Cont<sup>ai</sup>ble y será algo que Ud. tendrá en forma privada e inmune a problemas de comunicación, de obsolescencia tecnológica, de gastos en mejores equipamientos.</p>
-
-<p>En pocas palabras, si tiene una PYME debiese aprender contabilidad y si usa Cont<sup>ai</sup>ble tendrá el playground para probar sus conocimientos y luego elaborar su propio sistema de inteligencia de negocios.</p>
-
-<p>Por supuesto, puede hacer su negocio en forma estereotipada como siempre lo ha hecho y desconocer los novedades tributarias que funcionan como promociones para emprendedores pero que en la letra chica seguramente se traducen en un mensaje codificado para su contador, el que podría ayudarlo o no.</p>
+<p>En todos los puntos mencionados Ud. no aprenderá contabilidad y deberá aprender por sí mismo. En todos los casos Cont<sup>ai</sup>ble le servirá para probar sus conocimientos de una forma muy intensa. No le será fácil dominar la contabilidad, pero una vez que la domine la puede implementar en Cont<sup>ai</sup>ble y será algo que Ud. tendrá en forma privada e inmune a problemas de comunicación, de obsolescencia tecnológica, de gastos en mejores equipamientos.</p>
 
 <p>Ing. Alexander Espinosa MEng.</p>
-
-  </div>
-
-</article>
-
-      </div>
-    </main><footer class="site-footer h-card">
-  <data class="u-url" href="/"></data>
-
-  <div class="wrapper">
-
-    <h2 class="footer-heading">Contaible ®</h2>
-
-    <div class="footer-col-wrapper">
-      <div class="footer-col footer-col-1">
-        <ul class="contact-list">
-          <li class="p-name">Contaible ®</li><li><a class="u-email" href="mailto:ventas@alectrico.cl">ventas@alectrico.cl</a></li></ul>
-      </div>
-
-      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://github.com/alectrico-pro"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg> <span class="username">alectrico-pro</span></a></li></ul>
-</div>
-
-      <div class="footer-col footer-col-3">
-        <p></p>
-      </div>
-    </div>
-
-  </div>
-
-</footer>
-</body>
-
-</html>
+:ET
