@@ -4010,29 +4010,6 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'>  </p>
 <br> 
-- [x] tipo de asiento: activacion-intangible
-- [ ] rcv
-- [ ] libro-diario
-- [ ] ccm
-- [x] revisado
-![](../revisado.png)
-<table id='Partida-203'>
-<thead> <th style='background-color: lavender' colspan='6'>Partida 203</th></thead>
-<tbody>
-<tr><td>120000000</td> <td colspan='7'>licencia-contaible#intangibles</td> </tr>
-<tr style='background-color: lightyellow'>  <td> </td> <td> 120000000</td> <td> 0</td> <td colspan='2'> a[intangibles] </td> </tr>
-<tr style='background-color: lightyellow'>  <td> </td> <td> 0</td> <td> 120000000</td> <td colspan='2'> a[banco-estado] </td> </tr>
-<tr> <td> </td> <td style='background-color: blanchedalmond'> 120000000 </td> <td style='background-color: blanchedalmond'> 120000000</td> </tr>
-<tr><td colspan='4'> alectrico® SpA</td> </tr> 
-<tr><td colspan='4'> ( 31 de diciembre	2021	 ) </td> </tr>
-<tr><td colspan='8'> Partida 203: Por Compra de una Licencia de Contaible® </td></tr>
-<tr><td colspan = '8'> compra-de-licencia-software</td> </tr>
-</tbody>
-</table>
-<p style='page-break-before: always;'>&nbsp;</p>
-<br> 
-<p style='color: white; background-color: red'>  </p>
-<br> 
 - [x] tipo de asiento: ajuste-mensual
 - [ ] rcv
 - [ ] libro-diario

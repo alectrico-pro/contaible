@@ -2984,32 +2984,31 @@
 ; ( glosa activacion-plataforma-alectrico))
 
 
-;desequilibra resultados
-(partida
- (numero 203)
- (dia 31) (mes diciembre) (ano 2021)
- (descripcion "Por Compra de una Licencia de Contaible®")
- (actividad compra-de-licencia-software))
+;(partida
+; (numero 203)
+; (dia 31) (mes diciembre) (ano 2021)
+; (descripcion "Por Compra de una Licencia de Contaible®")
+; (actividad compra-de-licencia-software))
 
-(cargo
- ( electronico false)
- ( tipo-de-documento ajuste)
- ( empresa alectrico-2021)
- ( cuenta licencia-contaible)
- ( monto  120000000)
- ( partida 203)
- ( dia 31)  ( mes diciembre)  ( ano 2021)
- ( glosa compra-de-licencia-software))
+;(cargo
+; ( electronico false)
+; ( tipo-de-documento ajuste)
+; ( empresa alectrico-2021)
+; ( cuenta licencia-contaible)
+; ( monto  120000000)
+; ( partida 203)
+; ( dia 31)  ( mes diciembre)  ( ano 2021)
+; ( glosa compra-de-licencia-software))
 
-(abono
- ( electronico false)
- ( tipo-de-documento ajuste)
- ( empresa alectrico-2021)
- ( cuenta banco-estado)
- ( monto  120000000)
- ( partida 203)
- ( dia 31)  ( mes diciembre)  ( ano 2021)
- ( glosa compra-de-licencia-software))
+;(abono
+; ( electronico false)
+; ( tipo-de-documento ajuste)
+; ( empresa alectrico-2021)
+; ( cuenta banco-estado)
+; ( monto  120000000)
+; ( partida 203)
+; ( dia 31)  ( mes diciembre)  ( ano 2021)
+; ( glosa compra-de-licencia-software))
 
 
 
