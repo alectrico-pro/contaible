@@ -1,0 +1,9 @@
+(afc
+  (duracion indefinida)
+  (comision 0.024)
+)
+
+(afc
+  (duracion definida)
+  (comision 0.03 )
+)

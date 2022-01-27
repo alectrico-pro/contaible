@@ -1,0 +1,17 @@
+;imprimir-detalles: (true, false) imprime detalles de las partidas
+;origen-de-subucuentas: (real, nominativo) considerar algunas subcuentas como real, así que
+;luego aparecerán en los subtotales
+;inspect-f29-code: (algún código f29) muestra las partidas que se usaron para
+;obtener ese código
+;liquidar: Qué cuentas se liquidan (las subcuentas o las cuentas paternas)
+
+( selecciones
+ (regimen propyme)
+ (empresa-seleccionada alectrico-2021)
+ (imprimir-detalles true)
+ (liquidar subcuentas) 
+ (origen-de-subcuentas real)
+ (inspect-f29-code ingresos-brutos) )
+
+;( selecciones (empresa-seleccionada cci2021) (imprimir-detalles true))
+

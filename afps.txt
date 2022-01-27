@@ -1,0 +1,6 @@
+(afp
+  (nombre habitat)
+  (comision 0.0127)
+  (sis 0.0221)
+  (afc 0.03)
+)

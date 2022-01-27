@@ -1,0 +1,12 @@
+
+( trabajador
+ (nombre alexander)
+ (duracion definida)
+ (diaria 50000) 
+ (mes-inicio julio)
+ (ano-inicio 2021)
+ (afp habitat)
+ (salud fonasa)
+ (rut 14579554-0)
+ (social "Alexander Espinosa")
+ (domicilio "Pasaje Emilio Sanfuentes Vergara 526. Pudahuel"))
