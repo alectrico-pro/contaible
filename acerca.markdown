@@ -7,7 +7,7 @@ permalink: //
 # alectrico® spa
 
 # Contabilidad de alectrico 2021.
-[libro diario](./alectrico-2021/libro-diario.html)|[estado de resultados](./alectrico-2021/tributario/index.html)|[estado clasificado](./alectrico-2021/final.html)|[liquidacion](./alectrico-2021/liquidacion.html)|[inventario](./alectrico-2021/inventario.html)|[libro mayor](./alectrico-2021/libro-mayor.html)|[financiero](./alectrico-2021/financiero.html)|[f29](./alectrico-2021/f29.html)|[iva](./alectrico-2021/iva.html)|[subcuentas](./alectrico-2021/subcuentas.html)|[resultado SII](./alectrico-2021/resultado-sii.html)|[pedidos](./alectrico-2021/pedidos.html)|[comprobacion](./alectrico-2021/comprobacion.html)
+[libro diario](./alectrico-2021/libro-diario.html)|[estado de resultados](./alectrico-2021/tributario.html)|[estado clasificado](./alectrico-2021/final.html)|[liquidacion](./alectrico-2021/liquidacion.html)|[inventario](./alectrico-2021/inventario.html)|[libro mayor](./alectrico-2021/libro-mayor.html)|[financiero](./alectrico-2021/financiero.html)|[f29](./alectrico-2021/f29.html)|[iva](./alectrico-2021/iva.html)|[subcuentas](./alectrico-2021/subcuentas.html)|[resultado SII](./alectrico-2021/resultado-sii.html)|[pedidos](./alectrico-2021/pedidos.html)|[comprobacion](./alectrico-2021/comprobacion.html)
 
 
 # revisión códigos f29
