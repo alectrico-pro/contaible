@@ -194,10 +194,10 @@ Estos son ejemplos de kernels contables existentes en Cont<sup>ai</sup>ble:
 
 Usaremos una frase para englobar el funcionamiento de Cont<sup>ai</sup>ble en un esfuerzo por explicar algo muy novedosos y anormal pues no es un sistema que muchas persona sepan como funciona, aún los más inteligentes e informados podrían sentirse inclinados a decir que ellos si saben lo que es la inteligencia artificial, pero Cont<sup>ai</sup>ble sí es inteligencia artificial y se manda solo. Digamos que:
 
-**Cont<sup>ai</sup>ble se las arregla para para dar el tratamiento contable necesario a cada hecho financiero**
+**Cont<sup>ai</sup>ble se las arregla para para dar el tratamiento contable necesario a cada hecho económico**
 
 
-El kernel *costo-ventas* considera un hecho financiero relacionado con la enajenación onerosa de un bien, que en la tributaria es un hecho-gravado-iva por lo que se incurre en la obligación de un pago al Fisco por 319 pesos, que en la jerga financiera es un egreso relacionado con otro hecho financiero llamado venta, lo que lo hace distino de un gasto, que su tratamiento en materia de impuesto de primera categoría es deducible de impuestos anuales a la renta. De acuerdo a su naturaleza de enajenación con contraprestación por 1997, se debe anotar 1678 en una cuenta de equivalentes-de-efectivo (bancos, caja) pero que se compensa parcialmente con una anotación en la cuenta costos-de.ventas. Con estas anotaciones Cont<sup>ai</sup>ble puede incluirlo correctamente estos hechos económicos son los hechos económicos de estado de resultado y estado clasificado.
+El kernel *costo-ventas* considera un hecho financiero relacionado con la enajenación onerosa de un bien, que en la tributaria es un hecho-gravado-iva por lo que se incurre en la obligación de un pago al Fisco por 319 pesos, que en la jerga financiera es un egreso relacionado con otro hecho económico llamado venta, lo que lo hace distino de un gasto, que su tratamiento en materia de impuesto de primera categoría es deducible de impuestos anuales a la renta. De acuerdo a su naturaleza de enajenación con contraprestación por 1997, se debe anotar 1678 en una cuenta de equivalentes-de-efectivo (bancos, caja) pero que se compensa parcialmente con una anotación en la cuenta costos-de.ventas. Con estas anotaciones Cont<sup>ai</sup>ble puede incluirlo correctamente estos hechos económicos son los hechos económicos de estado de resultado y estado clasificado.
 
  ( neto  1678)
  ( iva    319)
@@ -245,6 +245,9 @@ En todos los puntos mencionados Ud. no aprenderá contabilidad y se arriesgará 
 En pocas palabras, si tiene una PYME debiese aprender contabilidad y si usa Cont<sup>ai</sup>ble tendrá el playground para probar sus conocimientos y luego elaborar su propio sistema de inteligencia de negocios.
 
 Por supuesto, puede hacer su negocio en forma estereotipada como siempre lo ha hecho y desconocer los novedades tributarias que funcionan como promociones para emprendedores pero que en la letra chica seguramente se traducen en un mensaje codificado para su contador, el que podría ayudarlo o no.
+
+
+Como Cont<sup>ai</sup>ble es un Expert System le queda a mano justificar sus decisiones. Así que Ud. podría confirmar si las reglas realmente superan una prueba con un experto independiente que le audite la contaibilidad. Esto puede ser algo sorprendente viniendo de algo inanimado como un software, pero Cont<sup>ai</sup>ble actúa como la voz autorizada en tema financiero de su empresa y no le fallará, pues si se preocupa de ingresar bien las reglas, los errores serán de los expertos que Ud. use para obtenerlas, no del sotware ni del código. Nunca habrá un error de programación en Contaible, fuera de que las tablas no le gusten o falte o sobre algo en los informes Ud. puede confiar en el mejor software de la NASA para hacer funcionar la máquina de inferencia de Cont<sup>ai</sup>ble. En este sentido Cont<sup>ai</sup>ble es un software Word Class, pues está construido sobre un software World Clas, un clásico sin agregarle fallas. 
 
 
 
