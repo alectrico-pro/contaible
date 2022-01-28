@@ -58,7 +58,7 @@ COPY --from=build ./doc/*.markdown      ./
 #Estos son manuales
 #En alectrico-2021 se guardan los archivos que se son referidos 
 #dese las paginas del servidor que pone en funcionamiento jekyll
-COPY ./alectrico-2021/ ./alectrico-2021/
+COPY ./alectrico-2021/ ./
 COPY ./_config.yml     ./
 
 
