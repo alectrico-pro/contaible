@@ -12,7 +12,7 @@ permalink: /alectrico/
 
 [iva](/alectrico-2021/iva.html)|[subcuentas](/alectrico-2021/subcuentas.html)|[resultado SII](/alectrico-2021/resultado-sii.html)
 
-[pedidos](/alectrico-2021/pedidos.html)|[comprobacion](/alectrico-2021/comprobacion.html)
+[pedidos](/alectrico-2021/pedidos.html)|[comprobacion](/alectrico-2021/comprobacion.html)|[amortizaciones](/alectrico-2021/valor-activos.html)
 
 
 # revisión códigos f29
