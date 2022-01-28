@@ -47,6 +47,7 @@ COPY ./nota.markdown      ./
 #estos resultan de contabilidad.py
 COPY --from=build ./doc/alectrico-2021/ ./alectrico-2021/
 
+#EStos markdown son generaos pr contabilidad.py
 #Este copy a veces falla y hace abortar el proceso
 #Ocurre cuando no hay *.markdown que copiar
 COPY --from=build ./doc/*.markdown      ./
