@@ -3,7 +3,6 @@ layout: page
 title: Nota EEFF
 permalink: /nota/
 ---
-
 # Notas a los Estados Financieros de alectrico® spa
 
 [estado de resultados](/alectrico-2021/tributario.html)
