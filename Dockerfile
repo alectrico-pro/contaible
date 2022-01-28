@@ -41,7 +41,7 @@ FROM jekyll/jekyll
 #Estos son manuales
 #OPY ./*.markdown         ./
 COPY ./contaible.markdown ./
-COPY ./acerca.markdown    ./
+COPY ./empresa.markdown    ./
 COPY ./nota.markdown      ./
 
 #estos resultan de contabilidad.py

@@ -1,10 +1,10 @@
 ---
 layout: page
 title: alectrico®
-permalink: //
+permalink: /alectrico/
 ---
 
-## Contabilidad de alectrico® generada en Cont<sup>ai</sup>ble
+## Contabilidad generada en Cont<sup>ai</sup>ble
 
 [libro diario](./alectrico-2021/libro-diario.html)|[estado de resultados](./alectrico-2021/tributario.html)|[estado clasificado](./alectrico-2021/final.html)|[liquidacion](./alectrico-2021/liquidacion.html)|[inventario](./alectrico-2021/inventario.html)
 
