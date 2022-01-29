@@ -25,24 +25,23 @@
 
 (defrule inicio-modulo-partida
 
-  ( declare (salience 8000))
+  ( declare (salience 10000))
  =>
   ( printout t "------------------- PARTIDA --------------------" crlf)
-  ( load-facts "selecciones.txt")
+;  ( load-facts "selecciones.txt")
 
  ; ( matches encabezado-f29)
   ;( halt )
 )
 
 ;Esto genera un index para queda ser visto en abductor.necios.cl
-(defrule inicio-kindle-l
-   ( declare (salience 10000))
-   ( empresa (nombre ?empresa))
+(defrule inicio-kindle-l-
+   ( declare (salience 9000))
   =>
 
    ( printout t "------------------- inicio-kindle-l ------------" crlf)
 
-   ( bind ?archivo (str-cat "./templates/index.html"))
+   ( bind ?archivo (str-cat "/templates/index.html"))
 
    ( open ?archivo l "w")
    ( printout l "{% extends \"clips.html\" %}" crlf)

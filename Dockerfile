@@ -2,6 +2,7 @@
 FROM cupercupu/clipspy AS build
 
 #oputput from contabilidad.py
+RUN mkdir /templates
 RUN mkdir /doc
 RUN mkdir /doc/alectrico-2021
 RUN mkdir /doc/_posts
