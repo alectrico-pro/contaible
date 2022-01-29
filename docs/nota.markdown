@@ -27,15 +27,15 @@ permalink: /nota/
 ### Plataforma alectrico
   - [x] Incluye
 
-    Backend en www.alectrico.cl
-    Landing pages en alectrico.cl, aletrica.cl
-    Ingreso Automotizado de ordenes directo en backend o desde repair.alectrico.cl
-    Posicionamiento SEO debido a buen markup en todas las páginas
-    Cuenta en Google Ads
-    Cuenta en Googl Analytics
-    Inscripcíón en Google Business
-    Computer Aided Design en designer.alectrico.cl
-     Sistema de colaboración automatizado
+    - Backend en www.alectrico.cl
+    - Landing pages en alectrico.cl, aletrica.cl
+    - Ingreso Automotizado de ordenes directo en backend o desde repair.alectrico.cl
+    - Posicionamiento SEO debido a buen markup en todas las páginas
+    - Cuenta en Google Ads
+    - Cuenta en Googl Analytics
+    - Inscripcíón en Google Business
+    - Computer Aided Design en designer.alectrico.cl
+    - Sistema automatizado de Colaboración
 
   - [x] Efecto en los resultados de 2020 y 2021
 
