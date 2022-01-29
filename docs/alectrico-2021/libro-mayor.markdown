@@ -6,7 +6,27 @@ layout: page
 <thead><th colspan='9'> licencias-compradas</th></thead>
 <thead><th> voucher </th><th> partida </th><th> debe </th> <th> | </th> <th> haber </th><th> mes </th> <th>recibida</th> <th>activo-fijo</th> <th> tipo documento</th></thead>
 <tbody>
-<tr> <td> </td> <td align='right'>203</td> <td align='right'>120000000</td> <td> | </td> <td align='right'> 0</td> <td>diciembre</td><td>false</td><td> false</td><td> ajuste</td> </tr>
+<tr> <td> </td> <td align='right'>203</td> <td align='right'>900000</td> <td> | </td> <td align='right'> 0</td> <td>diciembre</td><td>false</td><td> false</td><td> ajuste</td> </tr>
+<tr> <td></td> <td></td> <td align='right' >900000</td> <td>|</td> <td align='right'>0</td></tr>
+<tr> <td></td> <td>$</td> <td align='right'>900000</td></tr>
+</tbody>
+</table>
+<table>
+<thead><th colspan='6'> aumentos-de-capital-aportes</th><th colspan='3'></th></thead>
+<thead><th colspan='9'> aumentos-de-capital-aportes</th></thead>
+<thead><th> voucher </th><th> partida </th><th> debe </th> <th> | </th> <th> haber </th><th> mes </th> <th>recibida</th> <th>activo-fijo</th> <th> tipo documento</th></thead>
+<tbody>
+<tr> <td> </td> <td align='right'>202</td> <td align='right'>0</td> <td> | </td> <td align='right'> 120000000</td> <td>diciembre</td><td>false</td><td> false</td><td> ajuste</td> </tr>
+<tr> <td> </td><td></td> <td align='right'>0</td> <td>|</td> <td align='right'>120000000</td> </tr>
+<tr> <td> </td><td> </td> <td></td> <td>|</td> <td align='right'>120000000</td> <td>$</td> </tr>
+</tbody>
+</table>
+<table>
+<thead><th colspan='6'> plataforma-alectrico</th><th colspan='3'>plataforma-alectrico</th></thead>
+<thead><th colspan='9'> plataforma-alectrico</th></thead>
+<thead><th> voucher </th><th> partida </th><th> debe </th> <th> | </th> <th> haber </th><th> mes </th> <th>recibida</th> <th>activo-fijo</th> <th> tipo documento</th></thead>
+<tbody>
+<tr> <td> </td> <td align='right'>202</td> <td align='right'>120000000</td> <td> | </td> <td align='right'> 0</td> <td>diciembre</td><td>false</td><td> false</td><td> ajuste</td> </tr>
 <tr> <td></td> <td></td> <td align='right' >120000000</td> <td>|</td> <td align='right'>0</td></tr>
 <tr> <td></td> <td>$</td> <td align='right'>120000000</td></tr>
 </tbody>
@@ -206,7 +226,7 @@ layout: page
 <thead><th colspan='9'> Pérdida en el transcurso del ejercicio, de los valores de activos</th></thead>
 <thead><th> voucher </th><th> partida </th><th> debe </th> <th> | </th> <th> haber </th><th> mes </th> <th>recibida</th> <th>activo-fijo</th> <th> tipo documento</th></thead>
 <tbody>
-<tr> <td> </td> <td align='right'>204</td> <td align='right'>1002417</td> <td> | </td> <td align='right'> 0</td> <td>diciembre</td><td>false</td><td> false</td><td> amortizacion</td> </tr>
+<tr> <td> </td> <td align='right'>205</td> <td align='right'>2417</td> <td> | </td> <td align='right'> 0</td> <td>diciembre</td><td>false</td><td> false</td><td> amortizacion</td> </tr>
 <tr> <td> </td> <td align='right'>186</td> <td align='right'>2417</td> <td> | </td> <td align='right'> 0</td> <td>noviembre</td><td>false</td><td> false</td><td> amortizacion</td> </tr>
 <tr> <td> </td> <td align='right'>167</td> <td align='right'>2417</td> <td> | </td> <td align='right'> 0</td> <td>octubre</td><td>false</td><td> false</td><td> amortizacion</td> </tr>
 <tr> <td> </td> <td align='right'>155</td> <td align='right'>2417</td> <td> | </td> <td align='right'> 0</td> <td>septiembre</td><td>false</td><td> false</td><td> amortizacion</td> </tr>
@@ -218,8 +238,8 @@ layout: page
 <tr> <td> </td> <td align='right'>261</td> <td align='right'>2417</td> <td> | </td> <td align='right'> 0</td> <td>marzo</td><td>false</td><td> false</td><td> amortizacion</td> </tr>
 <tr> <td> </td> <td align='right'>142</td> <td align='right'>2417</td> <td> | </td> <td align='right'> 0</td> <td>febrero</td><td>false</td><td> false</td><td> amortizacion</td> </tr>
 <tr> <td>186</td> <td align='right'>131</td> <td align='right'>2417</td> <td> | </td> <td align='right'> 0</td> <td>enero</td><td>false</td><td> false</td><td> amortizacion</td> </tr>
-<tr> <td></td> <td></td> <td align='right' >1029004</td> <td>|</td> <td align='right'>0</td></tr>
-<tr> <td></td> <td>$</td> <td align='right'>1029004</td></tr>
+<tr> <td></td> <td></td> <td align='right' >29004</td> <td>|</td> <td align='right'>0</td></tr>
+<tr> <td></td> <td>$</td> <td align='right'>29004</td></tr>
 </tbody>
 </table>
 <table>
@@ -227,7 +247,7 @@ layout: page
 <thead><th colspan='9'> </th></thead>
 <thead><th> voucher </th><th> partida </th><th> debe </th> <th> | </th> <th> haber </th><th> mes </th> <th>recibida</th> <th>activo-fijo</th> <th> tipo documento</th></thead>
 <tbody>
-<tr> <td> </td> <td align='right'>204</td> <td align='right'>1002417</td> <td> | </td> <td align='right'> 0</td> <td>diciembre</td><td>false</td><td> false</td><td> amortizacion</td> </tr>
+<tr> <td> </td> <td align='right'>205</td> <td align='right'>2417</td> <td> | </td> <td align='right'> 0</td> <td>diciembre</td><td>false</td><td> false</td><td> amortizacion</td> </tr>
 <tr> <td> </td> <td align='right'>186</td> <td align='right'>2417</td> <td> | </td> <td align='right'> 0</td> <td>noviembre</td><td>false</td><td> false</td><td> amortizacion</td> </tr>
 <tr> <td> </td> <td align='right'>167</td> <td align='right'>2417</td> <td> | </td> <td align='right'> 0</td> <td>octubre</td><td>false</td><td> false</td><td> amortizacion</td> </tr>
 <tr> <td> </td> <td align='right'>155</td> <td align='right'>2417</td> <td> | </td> <td align='right'> 0</td> <td>septiembre</td><td>false</td><td> false</td><td> amortizacion</td> </tr>
@@ -239,8 +259,8 @@ layout: page
 <tr> <td> </td> <td align='right'>261</td> <td align='right'>2417</td> <td> | </td> <td align='right'> 0</td> <td>marzo</td><td>false</td><td> false</td><td> amortizacion</td> </tr>
 <tr> <td> </td> <td align='right'>142</td> <td align='right'>2417</td> <td> | </td> <td align='right'> 0</td> <td>febrero</td><td>false</td><td> false</td><td> amortizacion</td> </tr>
 <tr> <td>186</td> <td align='right'>131</td> <td align='right'>2417</td> <td> | </td> <td align='right'> 0</td> <td>enero</td><td>false</td><td> false</td><td> amortizacion</td> </tr>
-<tr> <td></td> <td></td> <td align='right' >1029004</td> <td>|</td> <td align='right'>0</td></tr>
-<tr> <td></td> <td>$</td> <td align='right'>1029004</td></tr>
+<tr> <td></td> <td></td> <td align='right' >29004</td> <td>|</td> <td align='right'>0</td></tr>
+<tr> <td></td> <td>$</td> <td align='right'>29004</td></tr>
 </tbody>
 </table>
 <table>
@@ -248,7 +268,7 @@ layout: page
 <thead><th colspan='9'> Pérdida en el transcurso del ejercicio, de los valores de activos</th></thead>
 <thead><th> voucher </th><th> partida </th><th> debe </th> <th> | </th> <th> haber </th><th> mes </th> <th>recibida</th> <th>activo-fijo</th> <th> tipo documento</th></thead>
 <tbody>
-<tr> <td> </td> <td align='right'>204</td> <td align='right'>9804</td> <td> | </td> <td align='right'> 0</td> <td>diciembre</td><td>false</td><td> false</td><td> depreciacion</td> </tr>
+<tr> <td> </td> <td align='right'>205</td> <td align='right'>9804</td> <td> | </td> <td align='right'> 0</td> <td>diciembre</td><td>false</td><td> false</td><td> depreciacion</td> </tr>
 <tr> <td> </td> <td align='right'>186</td> <td align='right'>9804</td> <td> | </td> <td align='right'> 0</td> <td>noviembre</td><td>false</td><td> false</td><td> depreciacion</td> </tr>
 <tr> <td> </td> <td align='right'>167</td> <td align='right'>9804</td> <td> | </td> <td align='right'> 0</td> <td>octubre</td><td>false</td><td> false</td><td> depreciacion</td> </tr>
 <tr> <td> </td> <td align='right'>155</td> <td align='right'>9804</td> <td> | </td> <td align='right'> 0</td> <td>septiembre</td><td>false</td><td> false</td><td> depreciacion</td> </tr>
@@ -269,7 +289,7 @@ layout: page
 <thead><th colspan='9'> depreciacion-acumulada-herramientas-y-enseres</th></thead>
 <thead><th> voucher </th><th> partida </th><th> debe </th> <th> | </th> <th> haber </th><th> mes </th> <th>recibida</th> <th>activo-fijo</th> <th> tipo documento</th></thead>
 <tbody>
-<tr> <td> </td> <td align='right'>204</td> <td align='right'>0</td> <td> | </td> <td align='right'> 9804</td> <td>diciembre</td><td>false</td><td> false</td><td> depreciacion-de-herramienta</td> </tr>
+<tr> <td> </td> <td align='right'>205</td> <td align='right'>0</td> <td> | </td> <td align='right'> 9804</td> <td>diciembre</td><td>false</td><td> false</td><td> depreciacion-de-herramienta</td> </tr>
 <tr> <td> </td> <td align='right'>186</td> <td align='right'>0</td> <td> | </td> <td align='right'> 9804</td> <td>noviembre</td><td>false</td><td> false</td><td> depreciacion-de-herramienta</td> </tr>
 <tr> <td> </td> <td align='right'>167</td> <td align='right'>0</td> <td> | </td> <td align='right'> 9804</td> <td>octubre</td><td>false</td><td> false</td><td> depreciacion-de-herramienta</td> </tr>
 <tr> <td> </td> <td align='right'>155</td> <td align='right'>0</td> <td> | </td> <td align='right'> 9804</td> <td>septiembre</td><td>false</td><td> false</td><td> depreciacion-de-herramienta</td> </tr>
@@ -290,7 +310,7 @@ layout: page
 <thead><th colspan='9'> activos-intangibles-como-patentes-o-marcas</th></thead>
 <thead><th> voucher </th><th> partida </th><th> debe </th> <th> | </th> <th> haber </th><th> mes </th> <th>recibida</th> <th>activo-fijo</th> <th> tipo documento</th></thead>
 <tbody>
-<tr> <td> </td> <td align='right'>204</td> <td align='right'>0</td> <td> | </td> <td align='right'> 1002417</td> <td>diciembre</td><td>false</td><td> false</td><td> amortizacion-de-intangible</td> </tr>
+<tr> <td> </td> <td align='right'>205</td> <td align='right'>0</td> <td> | </td> <td align='right'> 2417</td> <td>diciembre</td><td>false</td><td> false</td><td> amortizacion-de-intangible</td> </tr>
 <tr> <td> </td> <td align='right'>186</td> <td align='right'>0</td> <td> | </td> <td align='right'> 2417</td> <td>noviembre</td><td>false</td><td> false</td><td> amortizacion-de-intangible</td> </tr>
 <tr> <td> </td> <td align='right'>167</td> <td align='right'>0</td> <td> | </td> <td align='right'> 2417</td> <td>octubre</td><td>false</td><td> false</td><td> amortizacion-de-intangible</td> </tr>
 <tr> <td> </td> <td align='right'>155</td> <td align='right'>0</td> <td> | </td> <td align='right'> 2417</td> <td>septiembre</td><td>false</td><td> false</td><td> amortizacion-de-intangible</td> </tr>
@@ -303,8 +323,8 @@ layout: page
 <tr> <td> </td> <td align='right'>142</td> <td align='right'>0</td> <td> | </td> <td align='right'> 2417</td> <td>febrero</td><td>false</td><td> false</td><td> amortizacion-de-intangible</td> </tr>
 <tr> <td>132</td> <td align='right'>1</td> <td align='right'>0</td> <td> | </td> <td align='right'> 2416</td> <td>enero</td><td>false</td><td> false</td><td> escritura-empresa</td> </tr>
 <tr> <td>186</td> <td align='right'>131</td> <td align='right'>0</td> <td> | </td> <td align='right'> 2417</td> <td>enero</td><td>false</td><td> false</td><td> amortizacion-de-intangible</td> </tr>
-<tr> <td> </td><td></td> <td align='right'>0</td> <td>|</td> <td align='right'>1031420</td> </tr>
-<tr> <td> </td><td> </td> <td></td> <td>|</td> <td align='right'>1031420</td> <td>$</td> </tr>
+<tr> <td> </td><td></td> <td align='right'>0</td> <td>|</td> <td align='right'>31420</td> </tr>
+<tr> <td> </td><td> </td> <td></td> <td>|</td> <td align='right'>31420</td> <td>$</td> </tr>
 </tbody>
 </table>
 <table>
@@ -803,11 +823,12 @@ pagos.</th></thead>
 <thead><th colspan='9'> activos-intangibles-como-patentes-o-marcas</th></thead>
 <thead><th> voucher </th><th> partida </th><th> debe </th> <th> | </th> <th> haber </th><th> mes </th> <th>recibida</th> <th>activo-fijo</th> <th> tipo documento</th></thead>
 <tbody>
-<tr> <td> </td> <td align='right'>203</td> <td align='right'>120000000</td> <td> | </td> <td align='right'> 0</td> <td>diciembre</td><td>false</td><td> false</td><td> ajuste</td> </tr>
+<tr> <td> </td> <td align='right'>202</td> <td align='right'>120000000</td> <td> | </td> <td align='right'> 0</td> <td>diciembre</td><td>false</td><td> false</td><td> ajuste</td> </tr>
+<tr> <td> </td> <td align='right'>203</td> <td align='right'>900000</td> <td> | </td> <td align='right'> 0</td> <td>diciembre</td><td>false</td><td> false</td><td> ajuste</td> </tr>
 <tr> <td> </td> <td align='right'>138</td> <td align='right'>0</td> <td> | </td> <td align='right'> 52631</td> <td>septiembre</td><td>false</td><td> false</td><td> comprobante-de-pago-de-transferencia-total</td> </tr>
 <tr> <td>132</td> <td align='right'>1</td> <td align='right'>290000</td> <td> | </td> <td align='right'> 0</td> <td>enero</td><td>false</td><td> false</td><td> escritura-empresa</td> </tr>
-<tr> <td></td> <td></td> <td align='right' >120290000</td> <td>|</td> <td align='right'>52631</td></tr>
-<tr> <td></td> <td>$</td> <td align='right'>120237369</td></tr>
+<tr> <td></td> <td></td> <td align='right' >121190000</td> <td>|</td> <td align='right'>52631</td></tr>
+<tr> <td></td> <td>$</td> <td align='right'>121137369</td></tr>
 </tbody>
 </table>
 <table>
@@ -953,6 +974,7 @@ pagos.</th></thead>
 <tr> <td> </td> <td align='right'>199</td> <td align='right'>0</td> <td> | </td> <td align='right'> 8242</td> <td>diciembre</td><td>true</td><td> false</td><td> 33</td> </tr>
 <tr> <td> </td> <td align='right'>200</td> <td align='right'>0</td> <td> | </td> <td align='right'> 8242</td> <td>diciembre</td><td>true</td><td> false</td><td> 33</td> </tr>
 <tr> <td> </td> <td align='right'>201</td> <td align='right'>8242</td> <td> | </td> <td align='right'> 0</td> <td>diciembre</td><td>true</td><td> false</td><td> 61</td> </tr>
+<tr> <td> </td> <td align='right'>204</td> <td align='right'>0</td> <td> | </td> <td align='right'> 900000</td> <td>diciembre</td><td>false</td><td> false</td><td> deposito-banco</td> </tr>
 <tr> <td> </td> <td align='right'>183</td> <td align='right'>0</td> <td> | </td> <td align='right'> 4990</td> <td>noviembre</td><td>true</td><td> false</td><td> 33</td> </tr>
 <tr> <td> </td> <td align='right'>184</td> <td align='right'>0</td> <td> | </td> <td align='right'> 12880</td> <td>noviembre</td><td>true</td><td> false</td><td> 33</td> </tr>
 <tr> <td> </td> <td align='right'>160</td> <td align='right'>0</td> <td> | </td> <td align='right'> 8242</td> <td>octubre</td><td>true</td><td> false</td><td> 33</td> </tr>
@@ -976,8 +998,8 @@ pagos.</th></thead>
 <tr> <td> </td> <td align='right'>22</td> <td align='right'>0</td> <td> | </td> <td align='right'> 8242</td> <td>marzo</td><td>true</td><td> false</td><td> 33</td> </tr>
 <tr> <td> </td> <td align='right'>17</td> <td align='right'>0</td> <td> | </td> <td align='right'> 3722</td> <td>febrero</td><td>true</td><td> false</td><td> 33</td> </tr>
 <tr> <td>132</td> <td align='right'>1</td> <td align='right'>1050209</td> <td> | </td> <td align='right'> 0</td> <td>enero</td><td>false</td><td> false</td><td> escritura-empresa</td> </tr>
-<tr> <td></td> <td></td> <td align='right' >1116083</td> <td>|</td> <td align='right'>205170</td></tr>
-<tr> <td></td> <td>$</td> <td align='right'>910913</td></tr>
+<tr> <td></td> <td></td> <td align='right' >1116083</td> <td>|</td> <td align='right'>1105170</td></tr>
+<tr> <td></td> <td>$</td> <td align='right'>10913</td></tr>
 </tbody>
 </table>
 <table>
@@ -990,7 +1012,8 @@ pagos.</th></thead>
 <tr> <td> </td> <td align='right'>195</td> <td align='right'>6666</td> <td> | </td> <td align='right'> 0</td> <td>diciembre</td><td>false</td><td> false</td><td> 34</td> </tr>
 <tr> <td> </td> <td align='right'>196</td> <td align='right'>110833</td> <td> | </td> <td align='right'> 0</td> <td>diciembre</td><td>false</td><td> false</td><td> 33</td> </tr>
 <tr> <td> </td> <td align='right'>197</td> <td align='right'>110833</td> <td> | </td> <td align='right'> 0</td> <td>diciembre</td><td>false</td><td> false</td><td> 33</td> </tr>
-<tr> <td> </td> <td align='right'>203</td> <td align='right'>0</td> <td> | </td> <td align='right'> 120000000</td> <td>diciembre</td><td>false</td><td> false</td><td> ajuste</td> </tr>
+<tr> <td> </td> <td align='right'>203</td> <td align='right'>0</td> <td> | </td> <td align='right'> 900000</td> <td>diciembre</td><td>false</td><td> false</td><td> ajuste</td> </tr>
+<tr> <td> </td> <td align='right'>204</td> <td align='right'>900000</td> <td> | </td> <td align='right'> 0</td> <td>diciembre</td><td>false</td><td> false</td><td> deposito-banco</td> </tr>
 <tr> <td> </td> <td align='right'>206</td> <td align='right'>0</td> <td> | </td> <td align='right'> 287</td> <td>diciembre</td><td>false</td><td> false</td><td> pago-de-ppm</td> </tr>
 <tr> <td> </td> <td align='right'>169</td> <td align='right'>6666</td> <td> | </td> <td align='right'> 0</td> <td>noviembre</td><td>false</td><td> false</td><td> 34</td> </tr>
 <tr> <td> </td> <td align='right'>170</td> <td align='right'>0</td> <td> | </td> <td align='right'> 8242</td> <td>noviembre</td><td>true</td><td> false</td><td> 33</td> </tr>
@@ -1093,8 +1116,8 @@ pagos.</th></thead>
 <tr> <td> </td> <td align='right'>13</td> <td align='right'>0</td> <td> | </td> <td align='right'> 179990</td> <td>enero</td><td>true</td><td> true</td><td> 33</td> </tr>
 <tr> <td> </td> <td align='right'>14</td> <td align='right'>0</td> <td> | </td> <td align='right'> 8470</td> <td>enero</td><td>false</td><td> false</td><td> 33</td> </tr>
 <tr> <td>188</td> <td align='right'>14333</td> <td align='right'>0</td> <td> | </td> <td align='right'> 96</td> <td>enero</td><td>false</td><td> false</td><td> pago-de-ppm</td> </tr>
-<tr> <td> </td><td></td> <td align='right'>3692808</td> <td>|</td> <td align='right'>123331438</td> </tr>
-<tr> <td> </td><td> </td> <td></td> <td>|</td> <td align='right'>119638630</td> <td>$</td> </tr>
+<tr> <td></td> <td></td> <td align='right' >4592808</td> <td>|</td> <td align='right'>4231438</td></tr>
+<tr> <td></td> <td>$</td> <td align='right'>361370</td></tr>
 </tbody>
 </table>
 <table>

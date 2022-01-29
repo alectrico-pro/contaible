@@ -139,14 +139,15 @@
 
  ( ajustes-mensuales ( partida ?numero1) (mes ?mes) (ano ?ano))
  ( ajustes-mensuales ( partida ?numero2) (mes ?mes) (ano ?ano))
+ ( test (neq ?numero1 ?numero2 ))
 =>
   (printout t crlf crlf "°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°" crlf)
   (printout t "Warning: Hay dos comandos de ajustes-mensuales para el mismo mes" crlf)
   (printout t "°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°" crlf)
   (printout t "--- PARTIDA 1 ------" crlf )
-  (printout t ?numero1 tab  ?mes tab ?ano1 crlf )
+  (printout t ?numero1 tab  ?mes tab ?ano crlf )
   (printout t "--- PARTIDA 2 ------" crlf )
-  (printout t ?numero2 tab  ?mes tab ?ano2 crlf )
+  (printout t ?numero2 tab  ?mes tab ?ano crlf )
   (printout t "°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°" crlf)
   (printout t "Vaya al archivo de facts y modifique una de las dos." crlf)
   ( halt )

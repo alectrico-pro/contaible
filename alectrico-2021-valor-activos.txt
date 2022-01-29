@@ -78,22 +78,23 @@
   ( amortizacion-mensual 2417     )  ;aproximar por exceso para que la última cuota sea menor
 )
 
-;( registro-de-amortizacion
-;  ( metodo-tributario    amortizacion-instantanea-de-intangible)
-;  ( metodo               amortizacion-lineal-en-diez-anos)
-;  ( nombre-del-activo    plataforma-alectrico)
-;  ( cuenta-del-activo    plataforma-alectrico)
-;  ( cuenta-acumuladora   amortizacion-acumulada-intangibles)
-;  ( cuenta-del-pasivo    amortizacion-intangibles)
-;  ( mes-de-adquisicion   diciembre)
-;  ( ano-de-adquisicion   2021     )
-;  ( mes-final            diciembre)
-;  ( ano-final            2022     )
-;  ( valor-de-adquisicion 120000000)
-;  ( meses-de-vida-util   120      )
-;  ( amortizacion-mensual 1000000  )  ;aproximar por exceso para que la última cuota sea menor
-;)
+( registro-de-amortizacion
+  ( metodo-tributario    amortizacion-instantanea-de-intangible)
+  ( metodo               amortizacion-lineal-en-diez-anos)
+  ( nombre-del-activo    plataforma-alectrico)
+  ( cuenta-del-activo    plataforma-alectrico)
+  ( cuenta-acumuladora   amortizacion-acumulada-intangibles)
+  ( cuenta-del-pasivo    amortizacion-intangibles)
+  ( mes-de-adquisicion   enero    )
+  ( ano-de-adquisicion   2022     )
+  ( mes-final            diciembre)
+  ( ano-final            2022     )
+  ( valor-de-adquisicion 120000000)
+  ( meses-de-vida-util   120      )
+  ( amortizacion-mensual 1000000  )  ;aproximar por exceso para que la última cuota sea menor
+)
 
+;compra por 1000000 de una licencia contaible
 ( registro-de-amortizacion
   ( metodo-tributario    amortizacion-instantanea-de-intangible)
   ( metodo               amortizacion-lineal-en-diez-anos)
@@ -101,13 +102,13 @@
   ( cuenta-del-activo    licencia-contaible)
   ( cuenta-acumuladora   amortizacion-acumulada-intangibles)
   ( cuenta-del-pasivo    amortizacion-intangibles)
-  ( mes-de-adquisicion   diciembre)
-  ( ano-de-adquisicion   2021     )
+  ( mes-de-adquisicion   enero)
+  ( ano-de-adquisicion   2022     )
   ( mes-final            diciembre)
   ( ano-final            2022     )
-  ( valor-de-adquisicion 120000000)
-  ( meses-de-vida-util   120      )
-  ( amortizacion-mensual 1000000  )  ;aproximar por exceso para que la última cuota sea menor
+  ( valor-de-adquisicion 900000)
+  ( meses-de-vida-util   10      )
+  ( amortizacion-mensual 90000  )  ;aproximar por exceso para que la última cuota sea menor
 ) 
 
 

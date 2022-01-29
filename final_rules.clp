@@ -123,6 +123,8 @@
 
    (subtotales (cuenta marca-alectrico)         (deber    ?marca-alectrico) )
 
+   (subtotales (cuenta plataforma-alectrico)    (deber    ?plataforma-alectrico) )
+
    (subtotales (cuenta clientes)                (deber    ?clientes) )
    (subtotales (cuenta colaboradores)           (deber    ?colaboradores) )
 
@@ -265,8 +267,10 @@
    ( printout k "<tr><td> Herramientas </td> <td>" ?herramientas "</td> <td colspan='2'> </td> </tr>" crlf)
 
    ( printout k "<tr><td> Mobiliario y Equipamiento </td><td> 0 </td> <td colspan='2'> </td> </tr>" crlf)
-   ( printout k "<tr><td> alectrico ® </td> <td>" ?marca-alectrico "</td> <td colspan='2'> </td> </tr>" crlf)
-   ( printout k "<tr><td> Software   </td> <td>" ?software "</td> <td colspan='2'> </td> </tr>" crlf)
+   ( printout k "<tr><td> marca alectrico ® </td> <td>" ?marca-alectrico "</td> <td colspan='2'> </td> </tr>" crlf)
+   ( printout k "<tr><td> plataforma alectrico ® </td> <td>" ?plataforma-alectrico "</td> <td colspan='2'> </td> </tr>" crlf)
+
+;  ( printout k "<tr><td> Software   </td> <td>" ?software "</td> <td colspan='2'> </td> </tr>" crlf)
 
    ( printout k "<tr><td> Licencia Contaible®  </td> <td>" ?licencia-contaible "</td> <td colspan='2'> </td> </tr>" crlf)
 
@@ -355,7 +359,9 @@
    ( printout t y.Equipo....  tab ?mobiliario tab tab    "|" PASIVO tab tab tab ?pasivos crlf)
 ;   ( printout t Intangibles.  tab ?intangibles tab tab "|" ======================================= crlf)
 
-   ( printout t alectrico ®.  tab ?marca-alectrico tab tab "|" ======================================= crlf)
+   ( printout t marca alectrico ®.  tab ?marca-alectrico tab tab "|" ======================================= crlf)
+
+   ( printout t plataforma alectrico ®.  tab ?plataforma-alectrico tab tab "|" ======================================= crlf)
 
    ( printout t alectrico ®.  tab ?software tab tab "|" ======================================= crlf)
 

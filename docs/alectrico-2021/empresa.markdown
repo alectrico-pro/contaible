@@ -4016,13 +4016,36 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 - [ ] ccm
 - [x] revisado
 ![](../revisado.png)
+<table id='Partida-202'>
+<thead> <th style='background-color: lavender' colspan='6'>Partida 202</th></thead>
+<tbody>
+<tr><td>120000000</td> <td colspan='7'>plataforma-alectrico#intangibles</td> </tr>
+<tr style='background-color: lightyellow'>  <td> </td> <td> 120000000</td> <td> 0</td> <td colspan='2'> a[intangibles] </td> </tr>
+ <tr style='color: white; background-color: cornflowerblue' > <td> </td> <td> 0 </td> <td>  120000000 </td> <td> </td> <td> k[aumentos-de-capital-aportes]</td> </tr>
+<tr> <td> </td> <td style='background-color: blanchedalmond'> 120000000 </td> <td style='background-color: blanchedalmond'> 120000000</td> </tr>
+<tr><td colspan='4'> alectrico® SpA</td> </tr> 
+<tr><td colspan='4'> ( 31 de diciembre	2021	 ) </td> </tr>
+<tr><td colspan='8'> Partida 202: Por Donación desde accionista Alexander Espinosa de la plataforma alectrico. </td></tr>
+<tr><td colspan = '8'> aporte-plataforma-alectrico®</td> </tr>
+</tbody>
+</table>
+<p style='page-break-before: always;'>&nbsp;</p>
+<br> 
+<p style='color: white; background-color: red'>  </p>
+<br> 
+- [x] tipo de asiento: activacion-intangible
+- [ ] rcv
+- [ ] libro-diario
+- [ ] ccm
+- [x] revisado
+![](../revisado.png)
 <table id='Partida-203'>
 <thead> <th style='background-color: lavender' colspan='6'>Partida 203</th></thead>
 <tbody>
-<tr><td>120000000</td> <td colspan='7'>licencia-contaible#intangibles</td> </tr>
-<tr style='background-color: lightyellow'>  <td> </td> <td> 120000000</td> <td> 0</td> <td colspan='2'> a[intangibles] </td> </tr>
-<tr style='background-color: lightyellow'>  <td> </td> <td> 0</td> <td> 120000000</td> <td colspan='2'> a[banco-estado] </td> </tr>
-<tr> <td> </td> <td style='background-color: blanchedalmond'> 120000000 </td> <td style='background-color: blanchedalmond'> 120000000</td> </tr>
+<tr><td>900000</td> <td colspan='7'>licencia-contaible#intangibles</td> </tr>
+<tr style='background-color: lightyellow'>  <td> </td> <td> 900000</td> <td> 0</td> <td colspan='2'> a[intangibles] </td> </tr>
+<tr style='background-color: lightyellow'>  <td> </td> <td> 0</td> <td> 900000</td> <td colspan='2'> a[banco-estado] </td> </tr>
+<tr> <td> </td> <td style='background-color: blanchedalmond'> 900000 </td> <td style='background-color: blanchedalmond'> 900000</td> </tr>
 <tr><td colspan='4'> alectrico® SpA</td> </tr> 
 <tr><td colspan='4'> ( 31 de diciembre	2021	 ) </td> </tr>
 <tr><td colspan='8'> Partida 203: Por Compra de una Licencia de Contaible® </td></tr>
@@ -4042,15 +4065,36 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <table id='Partida-204'>
 <thead> <th style='background-color: lavender' colspan='6'>Partida 204</th></thead>
 <tbody>
-<tr> <td>1002417 </td> <td colspan='7'> amortizacion-intangibles#amortizacion </td></tr>
-<tr style='background-color: lightyellow'>  <td> </td> <td> 0</td> <td> 1002417</td> <td colspan='2'> a[amortizacion-acumulada-intangibles] </td> </tr>
-<tr style='background-color: lightyellow'>  <td> </td> <td> 0</td> <td> 9804</td> <td colspan='2'> a[depreciacion-acumulada-herramientas] </td> </tr>
-<tr style='color: white; background-color: black'>  <td> </td> <td>9804 </td> <td> 0</td> <td> </td> <td> r[depreciacion] </td> </tr>
-<tr style='color: white; background-color: black'>  <td> </td> <td>1002417 </td> <td> 0</td> <td> </td> <td> r[amortizacion] </td> </tr>
-<tr> <td> </td> <td style='background-color: blanchedalmond'> 1012221 </td> <td style='background-color: blanchedalmond'> 1012221</td> </tr>
+<tr style='background-color: lightyellow'>  <td> </td> <td> 900000</td> <td> 0</td> <td colspan='2'> a[banco-estado] </td> </tr>
+<tr style='background-color: lightyellow'>  <td> </td> <td> 0</td> <td> 900000</td> <td colspan='2'> a[caja] </td> </tr>
+<tr> <td> </td> <td style='background-color: blanchedalmond'> 900000 </td> <td style='background-color: blanchedalmond'> 900000</td> </tr>
 <tr><td colspan='4'> alectrico® SpA</td> </tr> 
 <tr><td colspan='4'> ( 31 de diciembre	2021	 ) </td> </tr>
-<tr><td colspan='8'> Partida 204: Por amortizacion en diciembre de licencia-contaible-Por amortizacion en diciembre de marca-alectrico-Por depreciacion en diciembre de celular-Por depreciacion en diciembre de taladro </td></tr>
+<tr><td colspan='8'> Partida 204: nil </td></tr>
+<tr><td colspan = '8'> depositar-en-cuenta-corriente</td> </tr>
+</tbody>
+</table>
+<p style='page-break-before: always;'>&nbsp;</p>
+<br> 
+<p style='color: white; background-color: red'>  </p>
+<br> 
+- [ ] rcv
+- [ ] libro-diario
+- [ ] ccm
+- [x] revisado
+![](../revisado.png)
+<table id='Partida-205'>
+<thead> <th style='background-color: lavender' colspan='6'>Partida 205</th></thead>
+<tbody>
+<tr> <td>2417 </td> <td colspan='7'> amortizacion-intangibles#amortizacion </td></tr>
+<tr style='background-color: lightyellow'>  <td> </td> <td> 0</td> <td> 2417</td> <td colspan='2'> a[amortizacion-acumulada-intangibles] </td> </tr>
+<tr style='background-color: lightyellow'>  <td> </td> <td> 0</td> <td> 9804</td> <td colspan='2'> a[depreciacion-acumulada-herramientas] </td> </tr>
+<tr style='color: white; background-color: black'>  <td> </td> <td>9804 </td> <td> 0</td> <td> </td> <td> r[depreciacion] </td> </tr>
+<tr style='color: white; background-color: black'>  <td> </td> <td>2417 </td> <td> 0</td> <td> </td> <td> r[amortizacion] </td> </tr>
+<tr> <td> </td> <td style='background-color: blanchedalmond'> 12221 </td> <td style='background-color: blanchedalmond'> 12221</td> </tr>
+<tr><td colspan='4'> alectrico® SpA</td> </tr> 
+<tr><td colspan='4'> ( 31 de diciembre	2021	 ) </td> </tr>
+<tr><td colspan='8'> Partida 205: Por amortizacion en diciembre de marca-alectrico-Por depreciacion en diciembre de celular-Por depreciacion en diciembre de taladro </td></tr>
 <tr><td colspan = '8'> amortizacion</td> </tr>
 </tbody>
 </table>

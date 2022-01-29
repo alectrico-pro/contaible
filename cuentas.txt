@@ -314,15 +314,6 @@
    (origen real))
 
 
-(cuenta (nombre contabilidad-ai)
-   (nombre-sii contabilidad-ai)
-   (descripcion contabilidad-ai)
-   (tipo deudor)
-   (grupo activo)
-   (activo-fijo true)
-   (padre intangibles)
-   (origen real))
-
 (cuenta (nombre licencia-contaible)
    (descripcion licencias-compradas)
    (tipo deudor)

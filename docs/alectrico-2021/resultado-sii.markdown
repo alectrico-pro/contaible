@@ -13,16 +13,16 @@ Se han practicado liquidaciones, por lo que NO se muestran cuentas nominales
 <thead> <th></th><th> </th> <th align='center' colspan= '2'>SUMAS</th><th> Padre </th> </thead>
 <thead> <th></th><th></th>  <th>DEBER</th> <th>ACREEDOR</th> </thead>
 <tbody>
-<thead> <th></th><th colspan='4'> T O T A L    A C T I V O  </th> <th> 1157269</th> </thead>
-<thead> <th></th><th colspan='4'> A C T I V O    F I J O</th> <th> 119340383</th> </thead>
-<thead> <th></th><th colspan='4'> A C T I V O    C I R C U L A N T E</th> <th> -118183114</th> </thead>
+<thead> <th></th><th colspan='4'> T O T A L    A C T I V O  </th> <th> 122157269</th> </thead>
+<thead> <th></th><th colspan='4'> A C T I V O    F I J O</th> <th> 121240383</th> </thead>
+<thead> <th></th><th colspan='4'> A C T I V O    C I R C U L A N T E</th> <th> 916886</th> </thead>
 <thead> <th></th><th>cuentas-por-cobrar</th><th> 20000</th> </thead>
 <thead> <th></th><th>retencion-de-iva-articulo-11</th><th> 0</th> </thead>
 <thead> <th></th><th>iva-credito</th><th> 15823</th> </thead>
 <thead> <th></th><th>ppm</th><th> 2728</th> </thead>
-<thead> <th></th><th>banco-estado</th><th> 0</th> </thead>
-<thead> <th></th><th>caja</th><th> 910913</th> </thead>
-<thead> <th></th><th>intangibles</th><th> 120237369</th> </thead>
+<thead> <th></th><th>banco-estado</th><th> 361370</th> </thead>
+<thead> <th></th><th>caja</th><th> 10913</th> </thead>
+<thead> <th></th><th>intangibles</th><th> 121137369</th> </thead>
 <thead> <th></th><th>materiales</th><th> 123645</th> </thead>
 <thead> <th></th><th>insumos</th><th> 383907</th> </thead>
 <thead> <th></th><th>herramientas</th><th> 218470</th> </thead>
@@ -213,7 +213,7 @@ Se han practicado liquidaciones, por lo que NO se muestran cuentas nominales
 <tr style='background-color: lavender'>
 <td> 184</td><td><small> bazaya </small> </td> <td align='right'> 10824</td> <td align='right'>0</td> <td> gastos-administrativos</td>
 </tr>
-<thead> <th></th><th colspan='4'> I N T A N G I B L E S </th> <th>120237369</th> </thead>
+<thead> <th></th><th colspan='4'> I N T A N G I B L E S </th> <th>121137369</th> </thead>
 <tr style='background-color: lightyellow'>
 <td></td><td><small> marca-alectrico </small> </td> <td align='right'> 237369</td> <td align='right'>0</td> <td> intangibles</td>
 </tr>
@@ -224,10 +224,16 @@ Se han practicado liquidaciones, por lo que NO se muestran cuentas nominales
 <td> 138</td><td><small> marca-alectrico </small> </td> <td align='right'> 0</td> <td align='right'>52631</td> <td> intangibles</td>
 </tr>
 <tr style='background-color: lightyellow'>
-<td></td><td><small> licencia-contaible </small> </td> <td align='right'> 120000000</td> <td align='right'>0</td> <td> intangibles</td>
+<td></td><td><small> plataforma-alectrico </small> </td> <td align='right'> 120000000</td> <td align='right'>0</td> <td> intangibles</td>
 </tr>
 <tr style='background-color: lavender'>
-<td> 203</td><td><small> licencia-contaible </small> </td> <td align='right'> 120000000</td> <td align='right'>0</td> <td> intangibles</td>
+<td> 202</td><td><small> plataforma-alectrico </small> </td> <td align='right'> 120000000</td> <td align='right'>0</td> <td> intangibles</td>
+</tr>
+<tr style='background-color: lightyellow'>
+<td></td><td><small> licencia-contaible </small> </td> <td align='right'> 900000</td> <td align='right'>0</td> <td> intangibles</td>
+</tr>
+<tr style='background-color: lavender'>
+<td> 203</td><td><small> licencia-contaible </small> </td> <td align='right'> 900000</td> <td align='right'>0</td> <td> intangibles</td>
 </tr>
 <thead> <th></th><th colspan='4'> C O R R E C C I O N    M O N E T A R I A</th><th> 3626</th> </thead>
 <tr  style='background-color: lightyellow'>

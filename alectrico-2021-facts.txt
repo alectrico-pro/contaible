@@ -2956,32 +2956,32 @@
 )
 
 
-;(partida
-; (numero 202)
-; (dia 31) (mes diciembre) (ano 2021)
-; (descripcion "Por Activación de Gastos de Desarrollo. Software: Plataforma alectrico ®")
-; (actividad aporte-plataforma-alectrico®))
+(partida
+ (numero 202)
+ (dia 31) (mes diciembre) (ano 2021)
+ (descripcion "Por Donación desde accionista Alexander Espinosa de la plataforma alectrico.")
+ (actividad aporte-plataforma-alectrico®))
 
 
-;(cargo
-; ( electronico false)
-; ( tipo-de-documento ajuste)
-; ( empresa alectrico-2021)
-; ( cuenta software)
-; ( monto  120000000)
-; ( partida 202)
-; ( dia 31)  ( mes diciembre)  ( ano 2021)
-; ( glosa activacion-plataforma-alectrico))
+(cargo
+ ( electronico false)
+ ( tipo-de-documento ajuste)
+ ( empresa alectrico-2021)
+ ( cuenta plataforma-alectrico)
+ ( monto  120000000)
+ ( partida 202)
+ ( dia 31)  ( mes diciembre)  ( ano 2021)
+ ( glosa activacion-plataforma-alectrico))
 
-;(abono
-; ( electronico false)
-; ( tipo-de-documento ajuste)
-; ( empresa alectrico-2021)
-; ( cuenta aumentos-de-capital-aportes)
-; ( monto  120000000)
-; ( partida 202)
-; ( dia 31)  ( mes diciembre)  ( ano 2021)
-; ( glosa activacion-plataforma-alectrico))
+(abono
+ ( electronico false)
+ ( tipo-de-documento ajuste)
+ ( empresa alectrico-2021)
+ ( cuenta aumentos-de-capital-aportes)
+ ( monto  120000000)
+ ( partida 202)
+ ( dia 31)  ( mes diciembre)  ( ano 2021)
+ ( glosa activacion-plataforma-alectrico))
 
 
 (partida
@@ -2995,7 +2995,7 @@
  ( tipo-de-documento ajuste)
  ( empresa alectrico-2021)
  ( cuenta licencia-contaible)
- ( monto  120000000)
+ ( monto  900000)
  ( partida 203)
  ( dia 31)  ( mes diciembre)  ( ano 2021)
  ( glosa compra-de-licencia-software))
@@ -3005,7 +3005,7 @@
  ( tipo-de-documento ajuste)
  ( empresa alectrico-2021)
  ( cuenta banco-estado)
- ( monto  120000000)
+ ( monto  900000)
  ( partida 203)
  ( dia 31)  ( mes diciembre)  ( ano 2021)
  ( glosa compra-de-licencia-software))
@@ -3013,8 +3013,11 @@
 
 
 
+(deposito (partida 204) (banco banco-estado) (monto 900000 ) (dia 31) (mes diciembre) (ano 2021) )
 
-( ajustes-mensuales (mes diciembre) (ano 2021) (partida 204))
+
+
+( ajustes-mensuales (mes diciembre) (ano 2021) (partida 205))
 ( ajuste-de-iva     (mes diciembre) (ano 2021) (partida 206))
 
 ;=========================== 2 0 2 2  ===========================================

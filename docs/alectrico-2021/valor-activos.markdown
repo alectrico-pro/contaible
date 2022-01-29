@@ -2,10 +2,7 @@
 layout: page
 --- 
 <table><tbody>
-<tr><td> licencia-contaible</td> <td>enero</td><td> Amortizando por: </td> <td>1000000</td></tr>
-</tbody></table>
-<table><tbody>
-<tr><td> licencia-contaible</td> <td>diciembre</td><td> Amortizando por: </td> <td>1000000</td></tr>
+<tr><td> licencia-contaible</td> <td>enero</td><td> Amortizando por: </td> <td>90000</td></tr>
 </tbody></table>
 <table> <tbody>
 <tr><th>licencia-contaible</th></tr>
@@ -15,7 +12,22 @@ layout: page
 <tr><td>  Activo: </td><td> licencia-contaible</td></tr>
 <tr><td>  Pasivo: </td><td>  amortizacion-intangibles</td></tr>
 <tr><td> Acumuladora:</td><td>  amortizacion-acumulada-intangibles</td></tr>
-<tr><td> Fue adquirido en: </td> <td> diciembre de 2021 por $120000000</td></tr>
+<tr><td> Fue adquirido en: </td> <td> enero de 2022 por $900000</td></tr>
+<tr><td> Perderá todo su valor en: </td><td> 10 meses </td></tr> 
+<tr><td> Mensualmente hay que depreciarlo en: </td><td> $90000</td></tr>
+</tbody></table> 
+<table><tbody>
+<tr><td> plataforma-alectrico</td> <td>enero</td><td> Amortizando por: </td> <td>1000000</td></tr>
+</tbody></table>
+<table> <tbody>
+<tr><th>plataforma-alectrico</th></tr>
+<tr><td>amortizacion-lineal-en-diez-anos de: </td><td> plataforma-alectrico </td> </tr> 
+<tr><td> Metodo tributario es: </td><td> amortizacion-instantanea-de-intangible</td></tr>
+<tr><td> Cuentas son:  </td></tr>
+<tr><td>  Activo: </td><td> plataforma-alectrico</td></tr>
+<tr><td>  Pasivo: </td><td>  amortizacion-intangibles</td></tr>
+<tr><td> Acumuladora:</td><td>  amortizacion-acumulada-intangibles</td></tr>
+<tr><td> Fue adquirido en: </td> <td> enero de 2022 por $120000000</td></tr>
 <tr><td> Perderá todo su valor en: </td><td> 120 meses </td></tr> 
 <tr><td> Mensualmente hay que depreciarlo en: </td><td> $1000000</td></tr>
 </tbody></table> 
