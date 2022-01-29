@@ -1145,7 +1145,15 @@
  ( finalidad "Conseguir clicks y llamados de clientes."))
 
 
-( distribucion-de-utilidad (dia 17) (mes julio) (ano 2021) (monto 85294) (partida 070) (cuenta-de-destino capital-social))
+( distribucion-de-utilidad
+ (dia 17)
+ (mes julio)
+ (ano 2021)
+ (monto 85294)
+ (partida 070)
+ (cuenta-de-destino capital-social)
+ (archivo "../alectrico-2021/escrito.pdf") 
+)
 
 
 

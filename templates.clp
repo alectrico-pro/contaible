@@ -312,6 +312,7 @@
   (slot mes)
   (slot ano)
   (slot monto)
+  (slot archivo)
   (slot cuenta-de-destino)
 )
 

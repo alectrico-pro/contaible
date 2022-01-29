@@ -63,6 +63,7 @@ COPY --from=build ./doc/*.markdown      ./
 COPY ./alectrico-2021/ ./
 COPY ./_config.yml     ./
 COPY ./nota/           ./nota/
+COPY ./nota/           ./alectrico-2021/
 
 WORKDIR ./
 VOLUME /doc
