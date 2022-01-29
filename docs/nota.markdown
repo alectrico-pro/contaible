@@ -10,9 +10,9 @@ permalink: /nota/
 ## Hechos Esenciales
  - [x] 16 de julio de 2021. Transformación de alectrico E.I.R.L. a alectrico spa. 
    La transformación fue decidida y efectuada por intermedio de su único accionista y administrador.
-   La tranformación se publicó en el registro público de empresas: https://www.registrodeempresasysociedades.cl
-   No se redujo a estracto en escritura pública ni se publicó en el diario oficial.
-   El total del capital se mantiene pero se hace referencia a la marca alectrico. 
+   La tranformación se publicó en el registro público de empresas: https://www.registrodeempresasysociedades.cl.
+   No se redujo a extracto en escritura pública ni se publicó en el Diario Oficial.
+   El total del capital se mantiene pero ahora se hace referencia a la marca alectrico. 
    Hay una pequeña diferencia de 59 pesos entre el monto señalado y el capital en los estados financieros.
   
    [escritura de transformacion](./escrito.pdf)
