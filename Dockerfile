@@ -34,6 +34,7 @@ COPY contabilidad.py              ./
 
 WORKDIR .
 
+
 RUN ./contabilidad.py
 
 FROM jekyll/jekyll 
