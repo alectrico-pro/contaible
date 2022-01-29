@@ -62,7 +62,7 @@ COPY --from=build ./doc/*.markdown      ./
 #dese las paginas del servidor que pone en funcionamiento jekyll
 COPY ./alectrico-2021/ ./
 COPY ./_config.yml     ./
-
+COPY ./nota/           ./nota/
 
 WORKDIR ./
 VOLUME /doc

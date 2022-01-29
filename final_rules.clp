@@ -188,7 +188,9 @@
 
    (subtotales (cuenta licencia-contaible) (deber ?licencia-contaible))
 
-   (subtotales (cuenta aumentos-de-capital-aportes) (deber ?aportes))
+   (subtotales (cuenta aumentos-de-capital-aportes) (acreedor ?aportes))
+
+   (subtotales (cuenta utilidades-acumuladas) (acreedor ?utilidades-acumuladas))
 
 
   =>
@@ -281,9 +283,16 @@
    ( printout k "<thead> <td> </td> <td> </td> <th> TOTAL PASIVO </th> <th> " ?pasivos "</th></thead>"  crlf)
 
    ( printout k "<thead> <td> </td> <td> </td> <th> PATRIMONIO </th> <th>" ?patrimonio "</th> </thead>")
-   ( printout k "<tr> <td colspan='2'></td> <td> Capital Social </td><td> " ?capital-social "</td> </tr>" crlf)
+   ( printout k "<tr> <td colspan='2'></td> <td> Capital Social </td><td align='right'> " ?capital-social "</td> </tr>" crlf)
+
    ( printout k "<tr> <td colspan='2'></td> <td> Reserva Legal </td> <td align='right' >" (- ?reserva-legal-acreedor ?reserva-legal-deber) "</td> </tr>" crlf) 
-   ( printout k "<tr> <td colspan='2'></td> <td> Utilidad del Ejercicio </td><td>" (- ?utilidad-acreedor ?utilidad-deber) "</td> </tr>" crlf)
+
+   ( printout k "<tr> <td colspan='2'></td> <td> Utilidades Acumuladas </td> <td align='right' >" ?utilidades-acumuladas "</td> </tr>" crlf)
+
+   ( printout k "<tr> <td colspan='2'></td> <td> Aportes </td> <td align='right' >" ?aportes "</td> </tr>" crlf)
+
+
+   ( printout k "<tr> <td colspan='2'></td> <td> Utilidad del Ejercicio </td><td align='right'>" (- ?utilidad-acreedor ?utilidad-deber) "</td> </tr>" crlf)
 
    ( printout k "<thead><th>TOTAL ACTIVOS</th><th>" ?activos "</th><th>TOTAL PASIVO + PATRIMONIO</th><th>" (+ ?pasivos ?patrimonio) "</th></thead>" crlf)
    ( printout k "<tr><td colspan='8'> " ?razon  " </td> </tr>" crlf)
@@ -377,6 +386,9 @@
    ( printout t tab tab tab tab "|" PATRIMONIO tab tab ?patrimonio crlf)
    ( printout t tab tab tab tab "|" "Capital Social". ?capital-social crlf)
    ( printout t tab tab tab tab "|" "Reserva Legal".. (- ?reserva-legal-acreedor ?reserva-legal-deber) crlf)
+   ( printout t tab tab tab tab "|" "Utilidades ACC".. ?utilidades-acumuladas crlf)
+   ( printout t tab tab tab tab "|" "Aportes".. ?aportes crlf)
+
    ( printout t tab tab tab tab "|" "Utilidad del "  crlf)
    ( printout t tab tab tab tab "|" "Ejercicio...... " (- ?utilidad-acreedor ?utilidad-deber) crlf)
    ( printout t "------------------------------------------------------------------------" crlf)
