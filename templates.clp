@@ -308,6 +308,10 @@
 
 (deftemplate distribucion-de-utilidad
   (slot partida )
+  (slot dia)
+  (slot mes)
+  (slot ano)
+  (slot monto)
   (slot cuenta-de-destino)
 )
 

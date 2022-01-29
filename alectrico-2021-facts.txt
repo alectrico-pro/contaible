@@ -100,7 +100,7 @@
  ( empresa alectrico-2021)
  ( partida 001)
  ( dia 1) (mes enero) (ano 2021)
- ( cuenta utilidad)
+ ( cuenta utilidades-acumuladas)
  ( monto 85294); antiguamente 85235 
  ( glosa asiento-inicial))
 
@@ -150,7 +150,7 @@
 
 ;( pea ( partida 002111))  ;Solo cuando haya perdidas
 
-( distribucion-de-utilidad (partida 002111) (cuenta-de-destino capital-social))
+;( distribucion-de-utilidad (dia 1) (mes enero) (ano 2021) (monto 85294) (partida 002111) (cuenta-de-destino capital-social))
 
 ;el inventario es un registro de cada unidad y su costo
 ;pero la cuenta de inventario final es otra cosas
@@ -1143,6 +1143,11 @@
  ( glosa "Por Gasto Promocional: Pago Mensual Julio Google Ads.")
  ( archivo "../google-ads-pago-julio.png")
  ( finalidad "Conseguir clicks y llamados de clientes."))
+
+
+( distribucion-de-utilidad (dia 17) (mes julio) (ano 2021) (monto 85294) (partida 070) (cuenta-de-destino capital-social))
+
+
 
 
 

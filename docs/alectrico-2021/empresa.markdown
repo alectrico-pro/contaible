@@ -38,37 +38,13 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <tr style='background-color: lightyellow'>  <td> </td> <td> 44044</td> <td> 0</td> <td colspan='2'> a[insumos] </td> </tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td> 691827</td> <td> 0</td> <td colspan='2'> a[banco-estado] </td> </tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td> 1050209</td> <td> 0</td> <td colspan='2'> a[caja] </td> </tr>
- <tr style='color: white; background-color: cornflowerblue' > <td> </td> <td> 0 </td> <td>  85294 </td> <td> </td> <td> k[utilidad]</td> </tr>
+ <tr style='color: white; background-color: cornflowerblue' > <td> </td> <td> 0 </td> <td>  85294 </td> <td> </td> <td> k[utilidades-acumuladas]</td> </tr>
  <tr style='color: white; background-color: cornflowerblue' > <td> </td> <td> 0 </td> <td>  2000000 </td> <td> </td> <td> k[capital-social]</td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 2087710 </td> <td style='background-color: blanchedalmond'> 2087710</td> </tr>
 <tr><td colspan='4'> alectrico® SpA</td> </tr> 
 <tr><td colspan='4'> ( 1 de enero	2021	 ) </td> </tr>
 <tr><td colspan='8'> Partida 1: Por Inicio de Operaciones en 2021 </td></tr>
 <tr><td colspan = '8'> ajuste</td> </tr>
-</tbody>
-</table>
-<p style='page-break-before: always;'>&nbsp;</p>
-<br> 
-<p style='color: white; background-color: red'>  </p>
-<br> 
-- [x] antiguo número de partida: 2111
-- [x] voucher en ccm: 183
-- [x] tipo de asiento: traspaso-de-utilidad-en-enero
-- [ ] rcv
-- [ ] libro-diario
-- [x] ccm
-- [x] revisado
-![](../revisado.png)
-<table id='Partida-2111'>
-<thead> <th style='background-color: lavender' colspan='6'>Partida 2111</th></thead>
-<tbody>
- <tr style='color: white; background-color: cornflowerblue' > <td> </td> <td> 85294 </td> <td>  0 </td> <td> </td> <td> k[utilidad]</td> </tr>
- <tr style='color: white; background-color: cornflowerblue' > <td> </td> <td> 0 </td> <td>  85294 </td> <td> </td> <td> k[capital-social]</td> </tr>
-<tr> <td> </td> <td style='background-color: blanchedalmond'> 85294 </td> <td style='background-color: blanchedalmond'> 85294</td> </tr>
-<tr><td colspan='4'> alectrico® SpA</td> </tr> 
-<tr><td colspan='4'> ( 1 de enero	2021	 ) </td> </tr>
-<tr><td colspan='8'> Partida 2111: Por traspaso de utilidad a Capital Social 85294 </td></tr>
-<tr><td colspan = '8'> distribucion-utilidad</td> </tr>
 </tbody>
 </table>
 <p style='page-break-before: always;'>&nbsp;</p>
@@ -1834,6 +1810,28 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <tr> <td colspan='7'>efectuado a google </td> </tr>
 <tr><td colspan = '8'> gastar-promocional-afecto-iva-retenido</td> </tr>
 <tr style='background-color: aliceblue'> <td colspan = '8'> <img src='../google-ads-pago-julio.png'></td> </tr>
+</tbody>
+</table>
+<p style='page-break-before: always;'>&nbsp;</p>
+<br> 
+<p style='color: white; background-color: red'>  </p>
+<br> 
+- [x] tipo de asiento: 33
+- [ ] rcv
+- [ ] libro-diario
+- [ ] ccm
+- [x] revisado
+![](../revisado.png)
+<table id='Partida-70'>
+<thead> <th style='background-color: lavender' colspan='6'>Partida 70</th></thead>
+<tbody>
+ <tr style='color: white; background-color: cornflowerblue' > <td> </td> <td> 85294 </td> <td>  0 </td> <td> </td> <td> k[utilidades-acumuladas]</td> </tr>
+ <tr style='color: white; background-color: cornflowerblue' > <td> </td> <td> 0 </td> <td>  85294 </td> <td> </td> <td> k[capital-social]</td> </tr>
+<tr> <td> </td> <td style='background-color: blanchedalmond'> 85294 </td> <td style='background-color: blanchedalmond'> 85294</td> </tr>
+<tr><td colspan='4'> alectrico® SpA</td> </tr> 
+<tr><td colspan='4'> ( 17 de julio	2021	 ) </td> </tr>
+<tr><td colspan='8'> Partida 70: Por traspaso de utilidad a Capital Social 85294 </td></tr>
+<tr><td colspan = '8'> distribucion-utilidad</td> </tr>
 </tbody>
 </table>
 <p style='page-break-before: always;'>&nbsp;</p>
@@ -4297,10 +4295,10 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
  <tr> <td> </td> <td> 511 </td> <td>  5313 </td> <td> CRED.IVA POR DCTOS. ELECTRONICOS  </td> </tr>
  <tr> <td> </td> <td> 077 </td> <td>  41130 </td> <td> REMANENTE DE CREDITO FISC.  </td> </tr>
  <tr> <td> </td> <td> 504 </td> <td>  34063 </td> <td> REMANENTE CREDITO FISCAL MES ANTERIOR.  </td> </tr>
- <tr> <td> </td> <td> 527 </td> <td>  1 </td> <td> CANT.NOTAS DE CREDITO RECIBIDAS </td> </tr>
  <tr> <td> </td> <td> 062 </td> <td>  0 </td> <td> PPM NETO DETERMINADO </td> </tr>
  <tr> <td> </td> <td> 115 </td> <td>  0.13 </td> <td> TASA PPM 1ra Categoria </td> </tr>
  <tr> <td> </td> <td> 563 </td> <td>  225 </td> <td> BASE IMPONIBLE </td> </tr>
+ <tr> <td> </td> <td> 527 </td> <td>  1 </td> <td> CANT.NOTAS DE CREDITO RECIBIDAS </td> </tr>
  <tr> <td> </td> <td> 519 </td> <td>  3 </td> <td> CANT.DE DCTOS.FACT.RECIB.DEL GIRO </td> </tr>
  <tr> <td> </td> <td> 520 </td> <td>  5356 </td> <td> CREDITOS REC. REINT/FACT. DEL GIRO  </td> </tr>
  <tr> <td> </td> <td> 39 </td> <td>  -1500 </td> <td> IVA RETENIDO A TERCEROS POR CAMBIO DE SUJETO  </td> </tr>

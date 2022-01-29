@@ -896,19 +896,19 @@ pagos.</th></thead>
 </tbody>
 </table>
 <table>
-<thead><th colspan='6'> utilidad</th><th colspan='3'></th></thead>
-<thead><th colspan='9'> utilidad</th></thead>
+<thead><th colspan='6'> utilidades-acumuladas</th><th colspan='3'></th></thead>
+<thead><th colspan='9'> utilidades-acumuladas</th></thead>
 <thead><th> voucher </th><th> partida </th><th> debe </th> <th> | </th> <th> haber </th><th> mes </th> <th>recibida</th> <th>activo-fijo</th> <th> tipo documento</th></thead>
 <tbody>
+<tr> <td> </td> <td align='right'>70</td> <td align='right'>85294</td> <td> | </td> <td align='right'> 0</td> <td>julio</td><td>false</td><td> false</td><td> traspaso</td> </tr>
 <tr> <td>132</td> <td align='right'>1</td> <td align='right'>0</td> <td> | </td> <td align='right'> 85294</td> <td>enero</td><td>false</td><td> false</td><td> escritura-empresa</td> </tr>
-<tr> <td>183</td> <td align='right'>2111</td> <td align='right'>85294</td> <td> | </td> <td align='right'> 0</td> <td>enero</td><td>false</td><td> false</td><td> traspaso</td> </tr>
 <table>
 <thead><th colspan='6'> capital-social</th><th colspan='3'>Capital pagado</th></thead>
 <thead><th colspan='9'> aportes-del-propietario</th></thead>
 <thead><th> voucher </th><th> partida </th><th> debe </th> <th> | </th> <th> haber </th><th> mes </th> <th>recibida</th> <th>activo-fijo</th> <th> tipo documento</th></thead>
 <tbody>
+<tr> <td> </td> <td align='right'>70</td> <td align='right'>0</td> <td> | </td> <td align='right'> 85294</td> <td>julio</td><td>false</td><td> false</td><td> traspaso</td> </tr>
 <tr> <td>132</td> <td align='right'>1</td> <td align='right'>0</td> <td> | </td> <td align='right'> 2000000</td> <td>enero</td><td>false</td><td> false</td><td> escritura-empresa</td> </tr>
-<tr> <td>183</td> <td align='right'>2111</td> <td align='right'>0</td> <td> | </td> <td align='right'> 85294</td> <td>enero</td><td>false</td><td> false</td><td> traspaso</td> </tr>
 <tr> <td> </td><td></td> <td align='right'>0</td> <td>|</td> <td align='right'>2085294</td> </tr>
 <tr> <td> </td><td> </td> <td></td> <td>|</td> <td align='right'>2085294</td> <td>$</td> </tr>
 </tbody>
