@@ -39,20 +39,21 @@ permalink: /nota/
 
   - [x] Efecto en los resultados de 2020 y 2021
 
-    Evitación de gastos de administración y ventas
-    1000000 x (12+7) = 200.000.000-
-    Badwill positivo, por calcular
-    Investigación de mercado, comportamiento de clientes, fidelidad de clientes
-     (anotar caso de Gonzalo)
-    Detección de fallas de atención de colaboradores
-     (evitación de badwill})
+    - Evitación de gastos de administración y ventas
+    - 1000000 x (12+7) = 200.000.000-
+    - Investigación de mercado
+    - Comportamiento de clientes
+    - Fidelidad de clientes
+       - (anotar caso de Gonzalo)
+    - Detección de fallas de atención de colaboradores
+       - (evitación de badwill})
  
  
 ### Licencia Contaible
 
    - [x] Incluye
-      Expert Sytem Contable completo que cumple como objetivo de diseño, la facilitación de la generación de contabilidad de alectrico 
-      Expert System Contable completo que ayuda en la toma de decisiones de alectrico.
+     - Expert Sytem Contable completo que cumple como objetivo de diseño, la facilitación de la generación de contabilidad de alectrico 
+     - Expert System Contable completo que ayuda en la toma de decisiones de alectrico.
 
 
 [estado de resultados](/alectrico-2021/tributario.html)
