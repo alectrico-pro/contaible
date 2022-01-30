@@ -177,7 +177,10 @@
 (revision (revisado true) (partida 067) (tipo 33) (rcv n-a) )
 (revision (revisado true) (partida 068) (tipo 33) (rcv n-a) )
 (revision (revisado true) (partida 069) (tipo 33) (rcv n-a) )
-(revision (revisado true) (partida 070) (tipo 33) (rcv n-a) )
+
+(revision (revisado true) (partida 070) (tipo 33) (rcv n-a)
+(a-corregir "No se permite en el registroempresas.cl ingresar un capital en otra forma que no sea efectivo" ))
+
 (revision (revisado true) (partida 071) (tipo 33) (rcv n-a) )
 (revision (revisado true) (partida 072) (tipo 33) (rcv n-a) )
 (revision (revisado true) (partida 073) (tipo 33) (rcv n-a) )

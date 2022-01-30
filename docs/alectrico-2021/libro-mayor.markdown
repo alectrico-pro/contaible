@@ -896,8 +896,8 @@ pagos.</th></thead>
 </tbody>
 </table>
 <table>
-<thead><th colspan='6'> utilidades-acumuladas</th><th colspan='3'></th></thead>
-<thead><th colspan='9'> utilidades-acumuladas</th></thead>
+<thead><th colspan='6'> utilidad-del-ejercicio-anterior</th><th colspan='3'></th></thead>
+<thead><th colspan='9'> utilidad-del-ejercicio-anterior</th></thead>
 <thead><th> voucher </th><th> partida </th><th> debe </th> <th> | </th> <th> haber </th><th> mes </th> <th>recibida</th> <th>activo-fijo</th> <th> tipo documento</th></thead>
 <tbody>
 <tr> <td> </td> <td align='right'>70</td> <td align='right'>85294</td> <td> | </td> <td align='right'> 0</td> <td>julio</td><td>false</td><td> false</td><td> traspaso</td> </tr>

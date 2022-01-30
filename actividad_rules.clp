@@ -196,7 +196,7 @@
     ?d <-   ( distribucion-de-utilidad (dia ?dia) (mes ?mes) (ano ?ano) (monto ?monto) (partida ?numero ) (cuenta-de-destino ?cuenta-de-destino) (archivo ?archivo))
    ( empresa (nombre ?empresa ))
 ;   ( cuenta  (nombre utilidad ) (haber ?utilidad) ) ;esto interfiere con las liquidaciones
-   ( cuenta  (nombre utilidades-acumuladas)  (haber ?utilidad))
+   ( cuenta  (nombre utilidad-del-ejercicio-anterior)  (haber ?utilidad))
    ( cuenta  (nombre ?cuenta-de-destino) (haber ?haber))
   ; ( test (> ?utilidad 0))
  ;  ( test (= ?haber 0))
@@ -205,7 +205,7 @@
    ( retract ?d )
    ( assert (partida (archivo ?archivo) (numero ?numero) (mes ?mes) (dia ?dia) (ano ?ano) (descripcion (str-cat "Por traspaso de utilidad a Capital Social "  ?monto)) (actividad distribucion-utilidad)))
    ( assert (abono (electronico false) (tipo-de-documento traspaso) (cuenta ?cuenta-de-destino) (partida ?numero) (empresa ?empresa) (monto ?monto) (dia ?dia) (mes ?mes) (ano ?ano) (glosa (str-cat distribucion-utilidad- ?monto)) ))
-   ( assert (cargo (electronico false) (tipo-de-documento traspaso) (cuenta utilidades-acumuladas) (partida ?numero) (empresa ?empresa) (monto ?monto) (dia ?dia) (mes ?mes) (ano ?ano) (glosa (str-cat distribucion-utilidad- ?monto))))
+   ( assert (cargo (electronico false) (tipo-de-documento traspaso) (cuenta utilidad-del-ejercicio-anterior) (partida ?numero) (empresa ?empresa) (monto ?monto) (dia ?dia) (mes ?mes) (ano ?ano) (glosa (str-cat distribucion-utilidad- ?monto))))
    ( assert (ccm (folio na) (partida ?numero) (tipo-documento traspaso) (monto-total ?monto)))
    ( printout t "Distribución Utilidad del Ejercicio Anterior "  ?monto crlf )
 )

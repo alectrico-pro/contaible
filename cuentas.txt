@@ -593,6 +593,17 @@
   (naturaleza mixta)
   (origen real))
 
+(cuenta (nombre utilidad-del-ejercicio-anterior)
+  (codigo 141003)
+  (descripcion utilidad-del-ejercicio-anterior)
+  (tipo acreedora)
+  (circulante false)
+  (grupo patrimonio)
+  (naturaleza mixta)
+  (origen real))
+
+
+
 (cuenta (nombre perdidas-ejercicios-anteriores)
   (codigo 141004)
   (descripcion perdidas-ejercicios-anteriores)

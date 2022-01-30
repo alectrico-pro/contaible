@@ -38,7 +38,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <tr style='background-color: lightyellow'>  <td> </td> <td> 44044</td> <td> 0</td> <td colspan='2'> a[insumos] </td> </tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td> 691827</td> <td> 0</td> <td colspan='2'> a[banco-estado] </td> </tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td> 1050209</td> <td> 0</td> <td colspan='2'> a[caja] </td> </tr>
- <tr style='color: white; background-color: cornflowerblue' > <td> </td> <td> 0 </td> <td>  85294 </td> <td> </td> <td> k[utilidades-acumuladas]</td> </tr>
+ <tr style='color: white; background-color: cornflowerblue' > <td> </td> <td> 0 </td> <td>  85294 </td> <td> </td> <td> k[utilidad-del-ejercicio-anterior]</td> </tr>
  <tr style='color: white; background-color: cornflowerblue' > <td> </td> <td> 0 </td> <td>  2000000 </td> <td> </td> <td> k[capital-social]</td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 2087710 </td> <td style='background-color: blanchedalmond'> 2087710</td> </tr>
 <tr><td colspan='4'> alectrico® SpA</td> </tr> 
@@ -1814,9 +1814,10 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 </table>
 <p style='page-break-before: always;'>&nbsp;</p>
 <br> 
-<p style='color: white; background-color: red'>  </p>
+<p style='color: white; background-color: red'> No se permite en el registroempresas.cl ingresar un capital en otra forma que no sea efectivo</p>
 <br> 
 - [x] tipo de asiento: 33
+- [x] a corregir: No se permite en el registroempresas.cl ingresar un capital en otra forma que no sea efectivo
 - [ ] rcv
 - [ ] libro-diario
 - [ ] ccm
@@ -1825,7 +1826,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <table id='Partida-70'>
 <thead> <th style='background-color: lavender' colspan='6'>Partida 70</th></thead>
 <tbody>
- <tr style='color: white; background-color: cornflowerblue' > <td> </td> <td> 85294 </td> <td>  0 </td> <td> </td> <td> k[utilidades-acumuladas]</td> </tr>
+ <tr style='color: white; background-color: cornflowerblue' > <td> </td> <td> 85294 </td> <td>  0 </td> <td> </td> <td> k[utilidad-del-ejercicio-anterior]</td> </tr>
  <tr style='color: white; background-color: cornflowerblue' > <td> </td> <td> 0 </td> <td>  85294 </td> <td> </td> <td> k[capital-social]</td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 85294 </td> <td style='background-color: blanchedalmond'> 85294</td> </tr>
 <tr><td colspan='4'> alectrico® SpA</td> </tr> 

@@ -74,7 +74,7 @@ NO se han practicado liquidaciones, por lo que SÍ se muestran cuentas nominales
 <td><small>ingresos-brutos</small></td> <td align='right'>1393913</td> <td align='right'>2599350</td> <td> | </td> <td align='right'> 0</td> <td align='right'>1205437</td>
 </tr>
 <tr style=' background: #fff; border: 1px solid red;'>
-<td><small>utilidades-acumuladas</small></td> <td align='right'>85294</td> <td align='right'>85294</td> <td> | </td> <td align='right'> 0</td> <td align='right'>0</td> </tr>
+<td><small>utilidad-del-ejercicio-anterior</small></td> <td align='right'>85294</td> <td align='right'>85294</td> <td> | </td> <td align='right'> 0</td> <td align='right'>0</td> </tr>
 <tr>
 <td>Capital pagado<small>capital-social</small></td> <td align='right'>0</td> <td align='right'>2085294</td> <td> | </td> <td align='right'> 0</td> <td align='right'>2085294</td>
 </tr>

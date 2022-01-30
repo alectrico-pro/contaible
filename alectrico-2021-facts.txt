@@ -100,7 +100,7 @@
  ( empresa alectrico-2021)
  ( partida 001)
  ( dia 1) (mes enero) (ano 2021)
- ( cuenta utilidades-acumuladas)
+ ( cuenta utilidad-del-ejercicio-anterior)
  ( monto 85294); antiguamente 85235 
  ( glosa asiento-inicial))
 
@@ -3170,7 +3170,7 @@
  ( electronico false)
  ( tipo-de-documento escritura-empresa)
  ( empresa alectrico-2021)
- ( cuenta utilidades-acumuladas)
+ ( cuenta utilidad-del-ejercicio-anterior)
  ( monto 42937)
  ( partida 2001)
  ( dia 1) ( mes enero) ( ano 2022)
