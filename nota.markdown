@@ -8,6 +8,13 @@ permalink: /nota/
 
 # IMPORTANTE: La contabilidad de alectrico sigue los principios NIIF.
 
+**tal  como  los  ingresos  deben  reconocerse  percibidos  o  devengados,  los  gastos  deben reconocerse pagados o adeudados.**
+**El ingreso  por  venta  se  debe  reconocer  contablemente  cuando  el  vendedor transfiere la propiedad, los riesgos y ventajas significativas, gestión y el control al comprador. Este momento no necesariamente coincide conel momento en que se emite la respectiva factura.**
+
+Al  cierre  anual  se  debe  aplicar  a  las  existencias  las  Normas  Tributarias  de corrección  monetaria  que  establece  el  artículo  41  de  la  LIR,  distinguiendo  entre existencias nacionales o importadas. 
+
+3.5.3 Controles recomendados1.-Llevar un control separado del costeo de existencias a valores tributarios en el caso de inmobiliarias que puede ser en planillas Excel, donde se registre el costo directo  de  construcción  de  los  inmuebles  y  se  aplique  la  corrección  monetaria tributaria.  Se  lleve  el  control  para  deducir  los  gastos  indirectos  activados  e intereses   activados   (los   cuales   pueden   ser   montos   considerables).   Estas deducciones deben ser controladas para ser agregadas a la RLI al momento de la venta de los inmuebles.2.-Verificar  la  correcta  aplicación  de  la  corrección monetaria  alas  existencias nacionales e importadas conforme al artículo 41 de la LIR. 3.-Verificarque   los   ingresos   tributarios   se   reconozcan   de   acuerdo   al devengamiento   tributario   de   los   ingresos,   y   que   los   costos   de   ventas   se reconozcan en el ejercicio en que se reconoce el ingreso.4.-Llevar  un  costeo  tributario  de  existencias  por  sistema  computacional  que incluya el costo directo, aplicación de corrección monetaria tributaria y permita una demostración   efectiva   ante   una   eventual   fiscalización.   Evaluando   costos beneficios de establecer estos controles.  5.-Evaluar  factibilidad  que  de  las  existencias  al  cierre  del  ejercicio  se  puedan deducir  a  nivel  de  RLI  los  gastos  indirectos  activados  que  forman  parte  del inventario en la medida que se pueda demostrar fehacientemente la determinación de su monto.
+376.-Verificar  que  el  método  de  costeo  sea  de  los  aceptados  tributariamente,  sino poder aplicarun costeo tributario para efectuar ajustes nivel de RLI. 
 
 ## Marco Conceptual
  “Marco Conceptual para la Preparación de los Estados Financieros” 
@@ -111,24 +118,159 @@ Es fácil y generalizado que la formación se justifique aduciendo que es una in
 ¿Pero, realmente, para justificar la inversión en formación es necesario demostrar su rentabilidad, como se hace para una máquina, para una instalación o para gran parte de los servicios? 
 Las acciones formativas se deben ejecutar porque previamente se han detectado unas necesidades, y se ha considerado que éstas pueden ser satisfechas mediante la formación, para lo cual se diseña una acción a la que se marcan unos objetivos y se dota de un presupuesto. En principio, el éxito o fracaso de la acción estará en si se han conseguido los objetivos, pero también en el cumplimiento de su presupuesto.
 
+Los  activos  intangibles  de  vida  indefinida  en  IFRS  Pyme  se  amortizan  y encasode quela vida útil no se pueda estimar confiablemente se presume que es de 10 años.
+
+Los costos de sitios Web, se capitalizan solo aquellos que dicen relación con el desarrollo de infraestructura inicial y diseño gráfico para la creación de una página Web
+
+Ahora bien, en relación con el usufructo, este Servicio ha señalado con anterioridad que al precio pagado por citado derecho debe dársele el tratamiento tributario de un activo intangible y no la de un gasto diferido, por ende, quedará sujeto a las normas cobre corrección monetaria que establece el N° 6, del artículo 41 de la LIR. Se ha señalado además, que respecto de la amortización de este derecho, la LIR no contempla ninguna norma en virtud de la cual pueda ser traspasado a resultado por la vía de su amortización o depreciación, de manera que tributariamente dicho activo no es susceptible de ser amortizado. 
+ Las sumas pagadas por la adquisición del derecho real de usufructo sobre un bien raíz por un plazo determinado, atendido que constituyen un valor intangible que forma parte del activo de la empresa y no un gasto diferido de la misma, sólo podrán cargarse al resultado tributario, mediante su deducción como costo en el momento en que tal derecho se enajene, o bien, mediante su castigo cuando se acredite que el mismo ha perdido todo su valor económico para la empresa que realizó la inversión, lo que podrá ocurrir al término del plazo de 15 o 20 años según corresponda, cuando el derecho de usufructo se consolide con la nuda propiedad.
+
 # Resumen de Intangibles
 
-                  |compra de | desarrollo | licencia  | usufructo| usufructo |
-AI                |marca     | plataforma | contaible | inmueble | ccm       |
-                  |alectrico | alectrico  | contaible |          |           |
-licenciado        | [ ]      |  [ ]       | [X]       | [ ]      | [ ]       | 
-desarrollado      | [ ]      |  [x]       | [ ]       | [ ]      | [ ]       |
-comprado          | [x]      |  [ ]       | [x]       | [ ]      | [ ]       |
-externo           | [x]      |  [ ]       | [ ]       | [ ]      | [ ]       |
-interno           | [ ]      |  [x]       | [ ]       | [ ]      | [ ]       |
-amortiza          | [x]      |  [ ]       | [x]       | [ ]      | [ ]       |
-evalua deterioro  | [ ]      |  [x]       | [ ]       | [x]      | [x]       |
-separable         | [X]      |  [x]       | [x]       | [ ]      | [ ]       |
-identificable     | [x]      |  [?]       | [x]       | [ ]      | [ ]       |
-gastomedible      | [x]      |  [x]       | [ ]       | [ ]      | [ ]       |
-cargo diferido    | [ ]      |  [x]       | [ ]       | [ ]      | [ ]       |
-gasto diferido    | [ ]      |  [ ]       | [ ]       | [ ]      | [ ]       |
-activo intangible | [x]      |  [ ]       | [x]       | [ ]      | [ ]       |
+|                   |compra de | desarrollo | licencia  | usufructo| usufructo | costo |
+| AI                |marca     | plataforma | contaible | inmueble | ccm       | sitio |
+|                   |alectrico | alectrico  | contaible |          |           | web   |
+| ---               | ---      | ---        | ---       | ---      | ---       | ---   |
+| licenciado        | [ ]      |  [ ]       | [X]       | [ ]      | [ ]       | [x]   |
+| desarrollado      | [ ]      |  [x]       | [ ]       | [ ]      | [ ]       | [x]   |
+| comprado          | [x]      |  [ ]       | [x]       | [ ]      | [ ]       | [ ]   |
+| externo           | [x]      |  [ ]       | [ ]       | [ ]      | [ ]       | [ ]   |
+| interno           | [ ]      |  [x]       | [ ]       | [ ]      | [ ]       | [x]   |
+| tiempo 10 años    | [x]      |  [x]       | [ ]       | [x]      | [x]       | [ ]   |
+| amortiza          | [x]      |  [ ]       | [x]       | [ ]      | [ ]       | [ ]   |
+| evalua deterioro  | [ ]      |  [x]       | [ ]       | [x]      | [x]       | [ ]   |
+| separable         | [X]      |  [x]       | [x]       | [ ]      | [ ]       | [ ]   |
+| identificable     | [x]      |  [?]       | [x]       | [ ]      | [ ]       | [ ]   |
+| gastomedible      | [x]      |  [x]       | [x]       | [x]      | [ ]       | [ ]   |
+| cargo diferido    | [ ]      |  [x]       | [ ]       | [ ]      | [ ]       | [ ]   |
+| gasto diferido    | [ ]      |  [ ]       | [ ]       | [ ]      | [ ]       | [ ]   |
+| activo intangible | [x]      |  [ ]       | [x]       | [x]      | [ ]       | [ ]   |
+| gto sist. control | [ ]      |  [x]       | [x]       | [ ]      | [ ]       | [ ]   |
+| ejercicio         | 2020     | 2022       | 2021      | 2020     | 2020      | [ ]   |
+| amortiza. instant | [x]      |  [?]       | [x]       | [ ]      | [ ]       | [ ]   |
+
+
+### Mis conclusiones
+ A) Sobre la plataforma alectrico ® [www.alectrico.cl](https://www.alectrico.cl)
+
+ 1. La plataforma alectrico ® fue desarrollada por su gerente en forma no remunerada, desde antes de la existencia forma de la empresa alectrico ®. Se puede estimar que su valor de activación corresponda a un valor mínimo equivalente a la remuneración de un programador FrontEnd junior, durante cinco años. Esto es un gasto de  1 millones por 70 meses. Lo cual entrega un valor de 70 millones de pesos.
+
+ 2. El valor de uso de la plataforma (correspondería a su evaluación como activo) equivale al rol de un coordinador, de un vendedor, un secretario, un admnistrador y a un diseñador y dibujante eléctrico, prorrateado en un número dado de atenciones potenciales. Digamos de salario mínimo mensual suponiendo que al menos hay que contratar a un empleado. Lo que involucra un valor de partida de 120 millones en 10 años, suponiendo que el software sea eterno.
+
+ 3. La plataforma automatiza los ingresos de colaboradores y de clientes con lo que es un sistema de control no atendido disponible todo el tiempo y en todo el país 
+   [pago de colaboradores](https://shop.alectrico.cl) opción recarga
+   [pago de clientes] (https://pago.alectrico.cl/)
+   [respaldo de pago de clientes](https://pago.alectrica.cl)
+   [pago_con_link_de_pago](https://repair_alectrico.alectrico.cl/pagar?amount=60000&product_id=27%2C)
+   [pago_con_QR]
+   [pago con onepay]
+   [pago con webpay]
+
+ 4. La plataforma toma órdenes de clietes y las distribuye inmediatamete a los colaboradores, los que confirman la atención luego de hablar con los clientes.
+ 
+ 5. La plataforma asegura la protección jurídica haciendo firmar a los colaboradores un mandato que respalda el cobro que se les hace.
+ 6. La plaaforma asegura a los clientes una atención de calidad al cobrar a lo colaboradores y a los clientes por adelantado.
+
+
+ 7. La plataforma entrega un mandato firmado digitalemente por el Instalador Eléctrico para que sirva de respaldo al colaborador, a la vez que limita las responsabilidads atención por atención y solo a la entrega de datos no personales de los clients. Solo se entrega el teléfono el síntoma y el problema. El cliente decide si entregar la dirección o no.
+
+ 8. La plataforma permite que los colaboradores elaboren presupuestos y auditorias de normativa eléctrica, provee de diagramas eléctricos a los colaboradores conteniendo la solución que potencialmente satisfacería la necesidad del cliente.
+
+ 9. La plataforma es un sistema que se extiende desde la parta más técnica, hacia la parte comercial de cobranzas a colaboradores y clientes. 
+
+ 10. La plataforma alectrico ® fue usada como evidencia de uso intensivo para defender exitosamente la marca alectrico ® en juicio de apelación en Tribunal de la Propiedad Industrial DPDI.
+  [ver apelación a la resolucion de rechazo](637432758318702525.pdf) 
+  [ver evidencias de la existencia de la plataforma vinculadas a la marca alectrico](evidencias_uso_intensivo.pdf)
+ 
+ 11. La plataforma fue puesta en funcionamiento desde 2020, en modo prueba con tres colaboradores. Solo sobrevivió uno, pero luego se consideró no apto hasta que se pudiese elaborar un mejor sistema de protección jurídica de la empresa alectrico.
+
+ 12. Se implementó un sistema con firma electrónica donde se hace firmar un mandato para atender clientes y se desliga la responsabilidad del actuar de los colaboradoes
+
+ 13. La plataforam fue ampliada con microsistemas como [alectrico repair](https://repair.alectrico.cl) de esta forma se atendió la sugerencia de uno de los colaboradores de comprometer el pago previo de los clientes. Para lo cual fue necesario desarrollar sistemas más sofisticados integrados a la plataforma.
+
+ 14. La plataforma cuenta con duplicaos para permancer operativa en caso de falla [alectrica](https://www.alectrica.cl)
+
+ 15. La plataforma ofrece un sistema integrado de presupuesto sin costura, donde el cliente puede especificar su instalación eléctrica y luego el colaborador puede ofrecer una solución.
+ 
+ 16. La plataforma actua como un sistema SEO con la colaboración de diferentes landing pages servidas desde diferentes proveedores pero que convergen a un pago y luego a alguno de los sistemas de colaboración.
+
+   [landing_page alectrica](https://alectrica.cl/)
+   [landing_page alectrico](https://alectroc.cl/)
+
+ 17. El sistema emplea [tico](https://tico.alectrico.cl/), un sitio para recibir reclamos de colaboradors y de quien lo desee. Con esto se asignan las correccions necesarias y además sirve de documentación del desarrollo.
+
+ 18. Alectrico está incorporando nuevas tecnologías y ahora pretende ofrecer un portal para clientes desde https://registro.alectrico.cl
+
+ 19. La plataforma tiene previsto la entrega de expert system de diseño electrico y de confección de listados de materiales.
+
+
+ 20. La plataforma acepta el envío de notificaciones push a los colaboradores y a los clientes
+
+
+
+Necesitaré declaraciones juradas a Gonzalo, a Esteban y Phiexpress.
+
+#### Controles generales recomendados
+
+1 Al  determinar  la  RLI  del  IDPC  ejercer entre otros los  siguientes controles:
+   a Revisar las cuentas de pasivos diferidos en el balance, 
+         y las cuentas de activos diferidos, 
+    para  saber  que  conceptos  son  los  activados  
+    y  cuál  es  el  criterio  de amortización a resultados.
+    Para definir el tratamiento tributario adecuado
+
+2 Revisar  las  cuentas  de  ingresos  percibidos  por  adelantado  de  clientes  o anticipos  de  clientes,  para  saber  que  conceptos  están  involucrados  y  definir  el tratamiento tributario si se trata de ingresos percibidos por servicios los cuales aun cuando  no  estén  devengados  deberían  tributar  sobre  base  percibida.  En  el caso anticiposde  clientes  por  ventas,  reconocer  la  utilidad  estimada  en  venta  de acuerdo a norma especial contemplada en el artículo 30 de la LIR
+
+[](https://www.sii.cl/pagina/jurisprudencia/adminis/2001/renta/ja688.htm)
+1.- Por presentación indicada en el antecedente, señala que el artículo 15 de la Ley de la Renta establece que para determinar los impuestos contenidos en dicha ley, los ingresos se imputarán al ejercicio en que hayan sido devengados o percibidos, de acuerdo con las normas pertinentes de la misma ley y del Código Tributario, salvo que las operaciones generadoras de la renta abarquen más de un período, como en los contratos de larga ejecución, ventas extraordinarias de pago diferido y remuneraciones anticipadas o postergadas por servicios prestados durante un largo espacio de tiempo.
+
+
+Costos directos
+1.2.Que no hayan sido rebajados en virtud del artículo 30.Este  requisito  supone  que  el  desembolso  efectuado  no  se  encuentre  formando  parte  integrante  del costo  directo  de  los  bienes  y servicios  requeridos  para  la  obtención  de  la  renta.Como  se  puede apreciar, no procede efectuar una doble rebaja de la renta líquida vía costo delartículo30 y vía gasto delartículo 31
+
+
+[](https://www.google.com/search?client=firefox-b-d&q=utilidad++estimada++en++venta++de+acuerdo+a+norma+especial+contemplada+en+el+artículo+30+de+la+LIR)
+## Gastos Necesarios
+
+a)Gastos  relacionados  con  proyectos  empresariales  que  interese  desarrollar en que  existeuna razonable vinculación entre el desembolso y la finalidad o propósito previsto por el contribuyente al momento de efectuar dicho desembolso, pero que si,en definitiva, ese propósito o finalidadse frustra,ello no tornaen innecesario el gasto.Por ejemplo:
+
+   -Gastos para mantener o fidelizar clientes.
+   -Gastos para profundizar la participación en el mercado
+   -Gastos para explorar la posibilidad de realizar nuevos proyectos o actividades económicas.
+
+b)Gastos  que,  si  bien  no  tienen  una  vinculación  directa  con la  obtención  de  rentas  ni  con  el desarrollo de nuevos proyectos, igualmente dicen relación con la mantención de la actividad o negocio, como por ejemplo:
+
+   -Gastos relacionados conllevar la contabilidad.
+   -Gastos relacionados al cumplimiento legal y tributario.
+
+   -Asesorías de imagen, de marketing de la empresa, y ciertos gastos de tipo general y usual en  toda  institución,  como  gastos  en  medidas  de  seguridad,  diseño  y  mantención  de estructuras  y  jardines,  arreglo  de  fachadas,  cuotas  o  entradas  por  participación  en seminarios y eventos empresariales, y cuotas por participar en asociaciones gremiales.
+
+
+3. En el caso de ingresos y gastos verificar que se encuentran incluidos todos los que  correspondan  al  ejercicio  anual  respectivo.  Que  se  incluyan los  ingresos devengados  por  servicios  al  cierre  del  ejercicio  anual  pero  que  se  encuentran facturados  al  año  siguiente.Además,que  se  provisionen  o  contabilicen  como gastos  aquellas facturas  de  diciembre  que  se  reciben en  enero o febrero del año siguiente.   Es   decir,los   gastos   e   ingresos   deben   corresponderal   ejercicio respectivo  y  deben  efectuarse  las  contabilizaciones  correspondientes  sobre  base devengada.
+
+
+4.Aquellos  gastos  o  ingresos  que  han  sido contabilizados  en  base  a  provisiones aproximadas  pero  que  no  se  encuentran  debidamente  documentados  o  probada 
+31su    exactitud,    deben    ser    ajustados    a    nivel    de    determinación    de    RLI. Reconociéndose  el  ingreso  o  gasto  en  el  ejercicio  siguiente  cuando  el  monto  se encuentre   determinado   de   manera   exacta   y   se   encuentre   debidamente documentado.
+
+
+31su    exactitud,    deben    ser    ajustados    a    nivel    de    determinación    de    RLI. Reconociéndose  el  ingreso  o  gasto  en  el  ejercicio  siguiente  cuando  el  monto  se encuentre   determinado   de   manera   exacta   y   se   encuentre   debidamente documentado.  5.Deberían  revisarse  respectoal  rubro  propiedad,  planta  y  equipos  (activo  fijo), que exista un auxiliar tributario con vidas útiles tributarias de acuerdo a las fijadas por  el  SII,  sean  normales  o  aceleradas,  además  de  la  correcta  aplicación  de corrección monetaria tributaria.
+
+
+En  el  caso  de  ingresos  por  ventas  verificar  que  los  costos  de  ventas  estén debidamente determinados y registrados.
+
+
+En  el  caso  de contratos  de  construcción  por  suma  alzada  el  ingreso  brutode acuerdo  al  artículo  29  de  la LIR  debereconocerse  cuando  se  formulan  los denominados Estados  de Pagos  quedan  cuenta  del  grado  de  avance  de  las obras.Los  costos  incurridos  con  anterioridad  a  la  formulación  de  un  estado  de pago  deben  ser  activados  generalmente  en  la  cuenta  obras  en  ejecución  y  se conocen engasto cuando se formula el estado de pago (se reconoce el ingreso)
+
+(pero eso no quiere decir que haya que pagar el IVA al tiro)
+
+
+333.4.1 Controles recomendados1.-Revisar facturas de ventas de enero y febrero del año siguiente al cierre anual ysolicitar  estados  de  pagos  para  comprobar  que  los  ingresos  se  reconozcan tributariamente  de  acuerdo  a  la  fecha  de  los  estados  de  pago,  los  cuales  no necesariamente son concordante con la fecha de emisión de la factura asociad
+
+
+
+Al  cierre  de  los  estados  financieros  las  existencias  se  deben  valorizar  al  menor valor  entre  la  comparación  del  valor  de  libros  ocontable  con  el  valor  neto realizable (precio estimado de venta menos: los costos estimados para terminar su producción y los costos para la venta). Determinándose la constitución eventual deprovisiones  de  pérdida  en  caso  que  el  valor  de  libros  o  contable  sea  superior  al valor neto realizable.
+
+
 
 ### Marcas
 
