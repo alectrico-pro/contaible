@@ -148,7 +148,8 @@ Ahora bien, en relación con el usufructo, este Servicio ha señalado con anteri
 | gto sist. control | [ ]      |  [x]       | [x]       | [ ]      | [ ]       | [ ]   |
 | ejercicio         | 2020     | 2022       | 2021      | 2020     | 2020      | [ ]   |
 | amortiza. instant | [x]      |  [?]       | [x]       | [ ]      | [ ]       | [ ]   |
-
+| gasto previo      | $300.000 | 120 M$     | 60 M$     | 6 M$     | 6 M$      | 10M$  |
+| valor de uso      | 10M$     | 120 M$     | 240 M$    | 60 M$    | 1 M$      | 1 M$  |
 
 ### Mis conclusiones
  A) Sobre la plataforma alectrico ® [www.alectrico.cl](https://www.alectrico.cl)
@@ -203,6 +204,14 @@ Ahora bien, en relación con el usufructo, este Servicio ha señalado con anteri
 
  19. La plataforma tiene previsto la entrega de expert system de diseño electrico y de confección de listados de materiales.
 
+
+ 20. La plataforma acepta el envío de notificaciones push a los colaboradores y a los clientes
+
+
+ 21. Pedirle a Guido y a Gonzalo tres cotizaciones
+
+
+Necesitaré declaraciones juradas a Gonzalo, a Esteban y Phiexpress.
 
 #### Controles generales recomendados
 
