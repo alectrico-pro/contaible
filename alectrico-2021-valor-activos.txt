@@ -62,6 +62,8 @@
   (depreciacion-mensual 5602         ) ; aproximar por exceso para que la última cuota sea menor
 )
 
+;marca alectrico se amortiza en diez años
+;evaluada por su costo
 ( registro-de-amortizacion
   ( metodo-tributario    amortizacion-instantanea-de-intangible)
   ( metodo               amortizacion-lineal-en-diez-anos)
@@ -78,6 +80,8 @@
   ( amortizacion-mensual 2417     )  ;aproximar por exceso para que la última cuota sea menor
 )
 
+;plataforma alectrico no se amortiza, a menos que se venda una licencia
+;requiere evaluacioń de deterioro
 ( registro-de-amortizacion
   ( metodo-tributario    amortizacion-instantanea-de-intangible)
   ( metodo               amortizacion-lineal-en-diez-anos)
@@ -95,6 +99,9 @@
 )
 
 ;compra por 1000000 de una licencia contaible
+;se amoriza en diez años
+;se compra para elaborar un portal para servicios contables
+;
 ( registro-de-amortizacion
   ( metodo-tributario    amortizacion-instantanea-de-intangible)
   ( metodo               amortizacion-lineal-en-diez-anos)
@@ -110,6 +117,9 @@
   ( meses-de-vida-util   10      )
   ( amortizacion-mensual 90000  )  ;aproximar por exceso para que la última cuota sea menor
 ) 
+
+
+;la plataforma alectrico es un gasto diferido que no es amortizable y no es un activo intangible, pues no puede estar separado
 
 
 

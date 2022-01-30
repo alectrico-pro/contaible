@@ -43,8 +43,10 @@ FROM jekyll/jekyll
 #Estos son manuales
 #OPY ./*.markdown         ./
 COPY ./contaible.markdown ./
-COPY ./empresa.markdown    ./
+COPY ./empresa.markdown   ./
 COPY ./nota.markdown      ./
+COPY ./o.markdown         ./
+
 
 #estos resultan de contabilidad.py
 COPY --from=build ./doc/alectrico-2021/ ./alectrico-2021/

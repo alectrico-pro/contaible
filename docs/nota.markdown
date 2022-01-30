@@ -3,31 +3,65 @@ layout: page
 title: Nota EEFF
 permalink: /nota/
 ---
-# Notas a los Estados Financieros de alectrico® spa
+# Notas a los Estados Financieros de alectrico® spa al 31 de diciembre de 2021
   (son provisorias, las definitivas estarán desde marzo 2022)
 
-# IMPORTANTE: La contabilidad de alectrico sigue los principios NIIF.
+1. Criterios Contables
+2. Activos Intangibles
+3. Hechos Relevantes
+4. Efectivos y Depósitos en Bancos
+5. Instrumentos para negociación
+6. Cuentas por Cobrar
+7. Cuentas por Cobrar y por pagar a Empresas
 
-**tal  como  los  ingresos  deben  reconocerse  percibidos  o  devengados,  los  gastos  deben reconocerse pagados o adeudados.**
-**El ingreso  por  venta  se  debe  reconocer  contablemente  cuando  el  vendedor transfiere la propiedad, los riesgos y ventajas significativas, gestión y el control al comprador. Este momento no necesariamente coincide conel momento en que se emite la respectiva factura.**
 
-Al  cierre  anual  se  debe  aplicar  a  las  existencias  las  Normas  Tributarias  de corrección  monetaria  que  establece  el  artículo  41  de  la  LIR,  distinguiendo  entre existencias nacionales o importadas. 
+## Criterios Contables
 
-3.5.3 Controles recomendados1.-Llevar un control separado del costeo de existencias a valores tributarios en el caso de inmobiliarias que puede ser en planillas Excel, donde se registre el costo directo  de  construcción  de  los  inmuebles  y  se  aplique  la  corrección  monetaria tributaria.  Se  lleve  el  control  para  deducir  los  gastos  indirectos  activados  e intereses   activados   (los   cuales   pueden   ser   montos   considerables).   Estas deducciones deben ser controladas para ser agregadas a la RLI al momento de la venta de los inmuebles.2.-Verificar  la  correcta  aplicación  de  la  corrección monetaria  alas  existencias nacionales e importadas conforme al artículo 41 de la LIR. 3.-Verificarque   los   ingresos   tributarios   se   reconozcan   de   acuerdo   al devengamiento   tributario   de   los   ingresos,   y   que   los   costos   de   ventas   se reconozcan en el ejercicio en que se reconoce el ingreso.4.-Llevar  un  costeo  tributario  de  existencias  por  sistema  computacional  que incluya el costo directo, aplicación de corrección monetaria tributaria y permita una demostración   efectiva   ante   una   eventual   fiscalización.   Evaluando   costos beneficios de establecer estos controles.  5.-Evaluar  factibilidad  que  de  las  existencias  al  cierre  del  ejercicio  se  puedan deducir  a  nivel  de  RLI  los  gastos  indirectos  activados  que  forman  parte  del inventario en la medida que se pueda demostrar fehacientemente la determinación de su monto.
-376.-Verificar  que  el  método  de  costeo  sea  de  los  aceptados  tributariamente,  sino poder aplicarun costeo tributario para efectuar ajustes nivel de RLI. 
+ **La contabilidad de alectrico sigue los principios NIIF** y se atiene a lo establecido según al régimen PROPYME establecido por el Sevicio de Impuestos Internos.
 
-## Marco Conceptual
- “Marco Conceptual para la Preparación de los Estados Financieros” 
+  Adhesión a la NIIF por parte de alectrico®
+
+   alectrico® entiende que existe un Marco Conceptual NIIf para la confección de los Estados Financieros según el cual las partidas allí representadas, por sí solas, no pueden ser totalmente conceptualizadas, ni los momentos de reconocimiento de hechos económicos establecidos en el tiempo. 
+
+  Algunas reglas NIIF se pueden abreviar como sigue:
+
+  1 **tal  como  los  ingresos  deben  reconocerse  percibidos  o  devengados,  los  gastos  deben reconocerse pagados o adeudados.**
+
+  2.**El ingreso  por  venta  se  debe  reconocer  contablemente  cuando  el  vendedor transfiere la propiedad, los riesgos y ventajas significativas, gestión y el control al comprador. Este momento no necesariamente coincide conel momento en que se emite la respectiva factura.**
+
+  Con respecto a las existencias a fin del ejercicio alectrico® ha decidido no efectuar sobre sus valores la corrección monetaria de saldo indicada en el artículo 41 de la LIR amparándose en la pertenencia al régimen PROPYME.
+
+  alectrico® lleva un control por separado de las existencias usando un módulo de Contaible®. Se usa el sistema FIFO para evaluar los costos de reemplazo de tales existencias. Sin embargo, las elementos inventariados no son mercancías sino lotes de materiales diversos para los que se desea un control más preciso.
+
+ En alectrico las compras de materiales son calificadas como costos de ventas, insumos o materiales. Los costos de ventas no invidualizan el material, solo se limitan a una anotación por el valor de compra. Los insumos se asignan por su valor de compra a sus proveedores a fin de poder contribuir a la evaluación de proveedores. Algunos materiales pueden permanecer un tiempo mayor por lo que se ha dispuesto un control más preciso en la forma de una table FIFO. Esos materiales no son mercancías propiamente tal, pues alectrico® se limita a efectuar reparaciones en las que esos materiales funcionan como elementos de reemplazo de partes y piezas, pero por simplicidad se han considerado existencias y se aplicará el mismo tratamiento contable que se predica para su liquidación a fin del ejercicio. Sin considerar la corrección monetaria de los costos de reemplazo.
+
+ Otras compras de alectrico se califican como gastos promocionales, de ventas y admnistrativos. Tambíen hay compras que se califican como costos directos de ventas, debido a que se pueden asociar directamente a las ventas, en particular las comisiones de Transbank funcionan de esa forma
+
+ Los pagos mensuales a Entel se califican como gastos administrativos debido a que el monto es invariable con respecto a las ventas.
+
+ Las compras de insumos generan subcuentas en Contaible indicando el nombre del proveedor y el postfijo _insumo_.
+ 
+ La pertenencia de alectrico spa al régimen propyme le permite deducir de la Base Imponible todos los gastos.
+ Por lo mismo, las existencias e insumos a fin del ejericio se pueden liquidar, generando en 2021 pérdida tributaria mayor a lo esperado. Lo que significa tambíen que hay espacio para agregar algunos ingresos.
+
+ [gastos deducibles de Base Imponible](/regimenes.pdf)
+
+### Marco Conceptual para la Preparación de los Estados Financieros 
+
  Este proporciona  las  bases  para  el  desarrollo  de  nuevas  Normas  IFRS  o  modificación de  las  normas  existentes.  Proporciona  definiciones  de  los  conceptos  contables básicos  o  elementos  de  los  estados  financieros,  entre  otros:  Activos,  Pasivos, Patrimonio, Gastos e Ingresos.Es el Marco Conceptual que señala que un objetivo básico al preparar los estados financieros  es correlacionar  gastoscon  ingresos.  Es  así  como los  gastos  se reconocen en el estado de resultado sobre la base desu asociación directa entre los  costos  incurridos  y  la  obtención  de  partidas  específicas  de  ingresos.  Este proceso  implica  el  reconocimiento  simultáneo  o  combinado  de  unos  y  otros,  si surgen directa y conjuntamente de las mismas transacciones u otros sucesos; por ejemplo,los  diversos  componentes  del  gasto  que  constituyen  el  costo  de  las mercaderías vendidas se reconocen al mismo tiempo que el ingreso derivado de la venta de los bienes
- - [x] Principio de Correlación de Ingresos con Gastos
-## Cumplimiento
 
- - [x] Las partiada en alectrico se reconoce los costos de ventas en la misma partida en la uqe se renoce el ingreso derivado de la venta de bienes, cuando corresponda.
- - [ ] Qué pasa con el inventario? Se debe liquidar al final? O reconocerlo como costo de mercancía en la misma partida de compra?
- - [x] Las partias de activo fijo reconocen el ingreso como activo fijo en el momento de la compra.
- - [x] En el restado de resultado los costos de ventas debiesen estar asociados a las ventas
- - [x] Los gastos de un proyecto eléctrico deben estar respaldados por los ingresos de ese proyecto. Sirve anotar los pedidos a fin ade juntar los ingresos y gastos de ese proyecto?
-## Hechos Esenciales
+ - [x] Principio de Correlación de Ingresos con Gastos
+
+### Cumplimiento
+
+ - [x] Las partids en alectrico® se reconoce los costos de ventas en la mismo ejercicio en el que se renoce el ingreso derivado de la venta de bienes, cuando corresponda.
+ - [ ] El inventario se liquida en el mismo ejercicio en que son comprados sus elementos, reconociéndolo como costo deducible de Renta.
+ - [x] Las partidas de activo fijo reconocen el ingreso como activo fijo en el momento de la compra.
+ - [x] En el estado de resultado los costos de ventas se muestran estar asociados a las ventas.
+ - [x] Contaible asocia los gastos de un proyecto eléctrico con sus ingresos y los muestra agrupados por número de pedido
+
+## Hechos Relevantes
+
  - [x] 16 de julio de 2021. Transformación de alectrico E.I.R.L. a alectrico spa.
   
    La transformación fue decidida y efectuada por intermedio de su único accionista y administrador.
@@ -47,30 +81,24 @@ Investigación:
 
 [EL PRINCIPIO DE CORRELACIÓN DE GASTOS CON INGRESOS Y CRITERIOS DE DIFERIMIENTO DE GASTOS Y SU INCIDENCIA EN LA DETERMINACION DEL IMPUESTO DE PRIMERA CATEGORÍA](https://repositorio.uchile.cl/bitstream/handle/2250/167797/Marambio%20Vinagre%20Orlando.pdf?sequence=1&isAllowed=y)
 
-El principio general de correlación de gastos con ingresos desde el punto de vista tributario se deduce de la aplicación de los artículos 29, 30 y 31 de la LIR y jurisprudencia relacionada, que establecen la deducción de los costos o gastos de la obtención de rentas que estos generan o puedan generar.
 
-Relacionado con lo anterior nos encontramos con una serie de desembolsos que la LIR permite  diferir, específicamente en la aplicación de los N°s9, 10 y 11 del artículo 31 de la LIR, clasificándolos como: gastos de organización y puesta en marcha, gastos de promoción y colocación de productos nuevos y gastos de investigación científica y tecnológica. Respecto de los cuales también existe bastante jurisprudencia relacionada.
+Cuando se espera que los beneficios económicos surjan a lo largo de varios periodos contables y la asociación con lo ingresos pueda  determinarse únicamente de forma genérica o indirecta, los gastos se reconocen en el estado de resultados utilizando procedimientos  sistemáticos y racionales de distribución. 
 
-En el mundo financiero y tributario es pertinente entender que existen diferencias en los criterios de reconocimiento de los costos, gastos e ingresos lo cual origina diferencias temporales en dichas partidas. Los orígenes de estas diferencias se encuentran fundamentados por la adopción de políticas financieras, que más que ir de la mano con la normativa tributaria, tienen como objetivo principal el proporcionar información cuantitativa, oportuna y ordenada  sobre  las  operaciones  económicas  de  una  entidad.  En  cambio,  el  área tributaria, aunque se basa en resultados contables, obedece a procedimientos de determinación cuantitativa de impuestos con  fines recaudatorios que se encuentran normados, prescindiendo en la mayoría de los casos de las normas financieras, por tanto, ambas valoraciones, contable y tributaria, difieren ya que persiguen objetivos distintos. 
+Esto es a menudo  necesario  para  el reconocimiento de los gastos relacionados con el uso de activos tales como los que componen las propiedades, planta  y equipos, la plusvalía, las patentes y las marcas; denominándose en estos casos el gasto  correspondiente como depreciacióno amortización. Los procedimientos de distribución están diseñados a fin de que se reconozca el gasto en los períodos contables en que se consumen o expiran los beneficios económicos relacionados con estas partidas.
 
-A partir del año comercial 2013, Chile adoptó las Normas Internacionales de Información Financieras (IFRS) como principios contables obligatorios para todas las empresas, ello fue ratificado por el Colegio de Contadores de Chile A.G.que derogó los Boletines Técnicos N° 1 al 78.  Por lo que las contabilidades de las empresas deben ser llevadas de acuerdo a principios contables contenidos en las mencionadas normas incluyendo el denominado “Marco  Conceptual”, que establece entre otros unprincipio básico en que se sustenta la contabilidad cual es el Principio de Correlación de Ingresos con Gastos. Que señala que los  gastos deben ser reconocidos en el ejercicio en que se reconocen los ingresos asociados. Por lo que si una empresa ha incurrido en gastos y estos en el mismo ejercicio no tienen un ingreso asociado [entonces] deben ser activados para efectuar su deducción en resultado contable como gasto en el ejercicio en  que se reconozca el ingreso contable.  
+Ingresos: Corresponden a incrementos en los beneficios económicos producidos durante un período contable, en forma de entradas o aumentos de valor de los activos o disminuciones de los pasivos, quedan como resultado incrementos en el patrimonio neto y que no están relacionados con aportaciones de los propietarios a ese patrimonio. 
+[Consultar](https://www.ionos.es/startupguide/gestion/aportaciones-de-socios-a-fondos-propios/)
 
-...
-
-Por lo que a modo de resumen podemos decir que en nuestro país la contabilidad debería ser llevada bajo normas IFRS, que son Normas Contables vigentes actualmente en Chile. No obstante, el Servicio de Impuestos Internos no exige que la contabilidad sea llevada  bajo normas IFRS, bastando que las empresas cumplan con las normas del Código Tributario contenidas en sus artículos 16 al 20 y que la determinación de la Base Imponible del IDPC se efectúe de acuerdo a la LIR en el Párrafo 3° “De la Base Imponible”, artículos 29 al 33. Cabe recordar lo establecido en el artículo 21 del Código Tributario en cuanto a que corresponde al contribuyente probar con los documentos, libros de contabilidad u otros medios que la ley establezca encuanto sean necesarios u obligatorios para  él, la verdad de sus declaraciones o la naturaleza de los antecedentes y monto de las operaciones que deban servir para el cálculo del impuesto. Por lo que se hace cada vez más necesario incorporar mayores controles por parte de las empresas para conciliar sus resultados financieros y tributarios, justificando fehacientemente las denominadas diferencias temporales en cuanto a concepto y monto, debiendo explicar ante la autoridad tributaria los distintos criterios adoptados en la contabilidad para registrar las operaciones de ..
-
----
-Cuando  se  espera  que  los  beneficios  económicos  surjan  a  lo  largo  de  varios periodos contables   yla   asociación   con   los   ingresos   pueda   determinarse únicamente  de  forma  genérica  o  indirecta,  los  gastos  se  reconocen  en  el  estado de  resultados  utilizando  procedimientos  sistemáticos  y  racionales  de  distribución. 
-
----
-Esto  es  a  menudo  necesario  para  el  reconocimiento  de  los  gastos  relacionados con  el  uso  de  activos  tales  como  los  que  componen  las  propiedades,  planta  y equipos, la plusvalía,las patentes y las marcas; denominándose en estos casos el gasto  correspondiente  como  depreciacióno amortización. Los  procedimientos  de distribución  están  diseñados  a  fin  de  que  se  reconozca  el  gasto  en  los  períodoscontables en que se consumen o expiran los beneficios económicos relacionados con estas partidas.
-
-....
-Ingresos:Corresponden a incrementos en los beneficios económicos producidos durante  un  período  contable,  en  forma  de  entradas  o  aumentos  de  valor  de  los activos o disminuciones de los pasivos, quedan como resultado incrementos en el patrimonio neto y que no están relacionados con aportaciones de los propietarios a ese patrimonio. 
 
 Gastos: Corresponden a disminuciones en los beneficios económicos, producidos a lo largo del período contable, en la forma de salidas o disminuciones del valor de los  activos,  o  bien  del  nacimiento  o  aumento  de  los  pasivos,  que  dan  como resultado disminuciones en el patrimonio neto y que no están relacionados con las distribuciones realizadas a los propietarios de este patrimonio.
   - No es un gasto la disminución en los beneficios económicos debido a la pandemia, pues no se dió como disminución de los activos. Sin embargo, el activo marca disminuyó debido a que su atracción de venas mengüo por efecto de las medidas restrictivas del gobierno
   - No es un aumento del gasto la diminución de la disponibilidad de la mano de obra por la pandemia.
+
+ [gastos propyme](./regimenes.pdf) Todos los gastos son deducibles de Base Imponible, incluso existecias e insumos de fin del ejercicio.
+ No se permite corregir monetariamente la base imponible, pero en términos contables eso no significa que no se deba hacer. El procso es directo, hay un porcentaje en sii que al multiplicar en el mes de percepcíon de los montos ofrece el monto actualizado. En particular las depreciaciones los activos fijos se deben corregir antes de deprecialos. 
+ Supongo que tambén habrá pérdida tributaria si corrijo el capital por medio de una revalorización.
+
+ Tambíen se puede deducir la propiedad intelectual
 
 ....
 Principio  de  Negocio  en  Marcha:  Este  principio  contable  establece  que  los estados  financieros  se  preparan  normalmente  bajo  el  supuesto  que  una  entidad está  en  funcionamiento  y  continuará  su  actividad  dentro  del  futuro  previsible.  Supone que la entidad no tiene la intención ni la necesidad de liquidar o disminuir de forma importante su nivel de operaciones. Si tal intención o necesidad existiera, los  estados  financieros  deberían  tener  que  prepararse  sobre  una  base  diferente, en  cuyo  caso  dicha  base  debería  revelarse  (ejemplo:  Entidad  XX  en  Proceso  de Liquidación).
