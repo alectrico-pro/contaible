@@ -191,8 +191,10 @@
    (subtotales (cuenta aumentos-de-capital-aportes) (acreedor ?aportes))
 
    (subtotales (cuenta utilidades-acumuladas) (acreedor ?utilidades-acumuladas))
+   
+   (subtotales (cuenta autorizacion-uso-de-inmueble) (acreedor ?autorizacion-uso-de-inmueble))
 
-
+   (subtotales (cuenta plataforma-ccm) (acreedor ?plataforma-ccm))
   =>
    ( bind ?inventario-inicial (- ?inventario-inicial-deber ?inventario-inicial-acreedor))
    ( bind ?inventario         (- ?inventario-deber          ?inventario-acreedor))
@@ -269,13 +271,16 @@
    ( printout k "<tr><td> Herramientas </td> <td>" ?herramientas "</td> <td colspan='2'> </td> </tr>" crlf)
 
    ( printout k "<tr><td> Mobiliario y Equipamiento </td><td> 0 </td> <td colspan='2'> </td> </tr>" crlf)
-   ( printout k "<tr><td> marca alectrico ® </td> <td>" ?marca-alectrico "</td> <td colspan='2'> </td> </tr>" crlf)
-   ( printout k "<tr><td> plataforma alectrico ® </td> <td>" ?plataforma-alectrico "</td> <td colspan='2'> </td> </tr>" crlf)
+   ( printout k "<tr><td> Marca alectrico ® </td> <td>" ?marca-alectrico "</td> <td colspan='2'> </td> </tr>" crlf)
+   ( printout k "<tr><td> Plataforma alectrico ® </td> <td>" ?plataforma-alectrico "</td> <td colspan='2'> </td> </tr>" crlf)
+   ( printout k "<tr><td> Plataforma CCM SII® </td> <td>" ?plataforma-ccm"</td> <td colspan='2'> </td> </tr>" crlf)
+
 
 ;  ( printout k "<tr><td> Software   </td> <td>" ?software "</td> <td colspan='2'> </td> </tr>" crlf)
 
-   ( printout k "<tr><td> Licencia Contaible®  </td> <td>" ?licencia-contaible "</td> <td colspan='2'> </td> </tr>" crlf)
+   ( printout k "<tr><td> Licencia Contaible ®  </td> <td>" ?licencia-contaible "</td> <td colspan='2'> </td> </tr>" crlf)
 
+   ( printout k "<tr><td> Autorización Uso de Inmueble </td> <td>" ?autorizacion-uso-de-inmueble "</td> <td colspan='2'> </td> </tr>" crlf)
 
 
    ( printout k "<tr><td> Amortización Acumulada Intangibles </td> <td align='right' style='font-weight:bold; color: white; background-color: crimson'>(" ?amortizacion-acumulada-intangibles ")</td> <td colspan='2'> </td> </tr>" crlf)
@@ -370,17 +375,21 @@
 
    ( printout t marca alectrico ®.  tab ?marca-alectrico tab tab "|" ======================================= crlf)
 
-   ( printout t plataforma alectrico ®.  tab ?plataforma-alectrico tab tab "|" ======================================= crlf)
+   ( printout t plataforma alectrico ®.  tab ?plataforma-alectrico tab tab "|"  crlf)
 
-   ( printout t alectrico ®.  tab ?software tab tab "|" ======================================= crlf)
+   ( printout t alectrico ®.  tab ?software tab tab "|"  crlf)
 
-   ( printout t alectrico ®.  tab ?licencia-contaible tab tab "|" ======================================= crlf)
+   ( printout t alectrico ®.  tab ?licencia-contaible tab tab "|" crlf)
+   ( printout t alectrico ®.  tab ?plataforma-ccm tab tab "|" crlf)
 
 
 
-   ( printout t Amortizacion  tab tab ?amortizacion-acumulada-intangibles tab "|" ======================================= crlf)
+   ( printout t Aut Inmueble tab ?autorizacion-uso-de-inmueble tab tab "|" crlf)
 
-  ( printout t Dep. Acc. Herr.  tab tab ?depreciacion tab "|" ======================================= crlf)
+
+   ( printout t Amortizacion  tab tab ?amortizacion-acumulada-intangibles tab "|" crlf)
+
+   ( printout t Dep. Acc. Herr.  tab tab ?depreciacion tab "|" crlf)
 
    ( printout t tab  tab tab tab "|" tab tab PATRIMONIO crlf)
    ( printout t tab tab tab tab "|" PATRIMONIO tab tab ?patrimonio crlf)

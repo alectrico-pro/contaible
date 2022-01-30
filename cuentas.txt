@@ -322,6 +322,24 @@
    (padre intangibles)
    (origen real))
 
+(cuenta (nombre autorizacion-uso-de-inmueble)
+   (descripcion autorizacion-uso-de-inmueble)
+   (tipo deudor)
+   (grupo activo)
+   (activo-fijo true)
+   (padre intangibles)
+   (origen real))
+
+
+(cuenta (nombre plataforma-ccm)
+   (descripcion plataforma-ccm)
+   (tipo deudor)
+   (grupo activo)
+   (activo-fijo true)
+   (padre intangibles)
+   (origen real))
+
+
 
 
 (cuenta (nombre intangibles)

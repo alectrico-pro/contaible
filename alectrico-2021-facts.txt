@@ -1152,7 +1152,6 @@
  (monto 85294)
  (partida 070)
  (cuenta-de-destino capital-social)
- (archivo "../alectrico-2021/escrito.pdf") 
 )
 
 

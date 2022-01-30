@@ -1832,7 +1832,6 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <tr><td colspan='4'> ( 17 de julio	2021	 ) </td> </tr>
 <tr><td colspan='8'> Partida 70: Por traspaso de utilidad a Capital Social 85294 </td></tr>
 <tr><td colspan = '8'> distribucion-utilidad</td> </tr>
-<tr style='background-color: aliceblue'> <td colspan = '8'> <img src='../alectrico-2021/escrito.pdf'></td> </tr>
 </tbody>
 </table>
 <p style='page-break-before: always;'>&nbsp;</p>
