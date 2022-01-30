@@ -104,10 +104,16 @@ Gastos Diferidos: Son aquellos desembolsos efectuados por las empresas y que,aun
 
 ---
 
-n  relación  de  otros  desembolsos  incurridos  que  aun cuando  puedan  tener  un eventual  beneficio  futuro,  éste  es  de  difícil  determinación,  tales  como  gastos  de propaganda  y  publicidad,  desarrollo  de  sistemas  computacionales,  gastos  de reorganizaciones  y  restructuraciones,  gastos  e  inversiones  en  investigación y desarrollo,  etc.,  su  tratamiento  contable  deberá  ajustarse  a  las  normas  que  al respecto   contengan   las   Normas   IFRS   emitidas   por   International   AccountingStandardsBoard (IASB).
+En  relación  de  otros  desembolsos  incurridos  que  aun cuando  puedan  tener  un eventual  beneficio  futuro,  éste  es  de  difícil  determinación,  tales  como  gastos  de propaganda  y  publicidad,  desarrollo  de  sistemas  computacionales,  gastos  de reorganizaciones  y  restructuraciones,  gastos  e  inversiones  en  investigación y desarrollo,  etc.,  su  tratamiento  contable  deberá  ajustarse  a  las  normas  que  al respecto   contengan   las   Normas   IFRS   emitidas   por   International   AccountingStandardsBoard (IASB).
 
 
-Las  Normas  IFRS,  específicamente  la  NIC  38  trata  de  los  activos  intangibles,  ya que  no  existe  una  norma  específica  que  trate  los  activos  diferidos  o  cargos diferidos, y esta norma establece entre otros aspectos los siguientes: 1.-Un activo intangible, ya sea adquirido o desarrollado internamente se reconoce contablemente si:1.1.-Es  probable  que  dicho  activo  genere  beneficios  económicos  futuros  para  la entidad.1.2.-El costo del activo puede medirse en forma fiable.
+Las  Normas  IFRS,  específicamente  la  NIC  38  trata  de  los  activos  intangibles,  ya que  no  existe  una  norma  específica  que  trate  los  activos  diferidos  o  cargos diferidos, y esta norma establece entre otros aspectos los siguientes: 
+
+1.-Un activo intangible, ya sea adquirido o desarrollado internamente se reconoce contablemente si:
+
+1.1.-Es  probable  que  dicho  activo  genere  beneficios  económicos  futuros  para  la entidad.
+
+1.2.-El costo del activo puede medirse en forma fiable.
 
 Los gastos de desarrollo se capitalizan solo cuando se ha podido establecer la viabilidad técnica y comercial del producto o servicio en cuestión.
 
@@ -161,7 +167,7 @@ Ahora bien, en relación con el usufructo, este Servicio ha señalado con anteri
  3. La plataforma automatiza los ingresos de colaboradores y de clientes con lo que es un sistema de control no atendido disponible todo el tiempo y en todo el país 
    [pago de colaboradores](https://shop.alectrico.cl) opción recarga
    [pago de clientes] (https://pago.alectrico.cl/)
-   [respaldo de pago de clientes](https://pago.alectrica.cl)
+   [respaldo de pago de clientes](https://repair.alectrica.cl)
    [pago_con_link_de_pago](https://repair_alectrico.alectrico.cl/pagar?amount=60000&product_id=27%2C)
    [pago_con_QR]
    [pago con onepay]
@@ -196,7 +202,7 @@ Ahora bien, en relación con el usufructo, este Servicio ha señalado con anteri
  16. La plataforma actua como un sistema SEO con la colaboración de diferentes landing pages servidas desde diferentes proveedores pero que convergen a un pago y luego a alguno de los sistemas de colaboración.
 
    [landing_page alectrica](https://alectrica.cl/)
-   [landing_page alectrico](https://alectroc.cl/)
+   [landing_page alectrico](https://alectrico.cl/)
 
  17. El sistema emplea [tico](https://tico.alectrico.cl/), un sitio para recibir reclamos de colaboradors y de quien lo desee. Con esto se asignan las correccions necesarias y además sirve de documentación del desarrollo.
 
