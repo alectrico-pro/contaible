@@ -1,3 +1,9 @@
+(deftemplate hecho
+    (slot gravado (default false))
+    (slot id)
+    (slot partida)
+)
+ 
 (deftemplate nonce
     (slot ticket))
 

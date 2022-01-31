@@ -29,9 +29,10 @@
    (balance (ano ?ano))
    (cargo (cuenta iva-credito) (ano ?ano) (realizado true) (partida ?numero))
    (partida (numero ?numero) (actividad ?actividad) (descripcion ?descripcion) )
+   (test (neq ?actividad ajuste) )
   =>
-   (printout t "k<-hv Hecho gravado detectado IVA" tab ?numero crlf)
-   (printout t ?actividad crlf ?descripcion crlf crlf)
+   (printout t "k<-hv Hecho gravado detectado IVA" tab ?numero tab ?actividad crlf)
+   (assert (hecho (gravado true) (id iva) (partida ?numero)))
 )
 
 
@@ -41,10 +42,24 @@
 ;gravados con iva
 (defrule detectando-hecho-gravado-n
    (balance (ano ?ano))
-   (cargo (cuenta retencion-de-iva-articulo-11) (ano ?ano) (partida ?partida))
+   (abono (cuenta retencion-de-iva-articulo-11) (ano ?ano) (partida ?numero))
+   (partida (numero ?numero) (actividad ?actividad) (descripcion ?descripcion))
   =>
-   (printout t "Hecho gravado n detectado"  tab ?partida  crlf(
+   (printout t "k<-n  Hecho gravado detectado  n "  tab ?numero tab ?actividad crlf)
+   (assert (hecho (gravado true) (id n) (partida ?numero)))
 )
+
+
+(defrule warning-doble-hecho
+  (hecho (partida ?numero) (id ?id1))
+  (hecho (partida ?numero) (id ?id2))
+  (test (neq ?id1 ?id2))
+ =>
+  (printout t "Warning =============================================" crlf)
+  (printout t " La partida " ?numero " participa en dos hechos gravados " crlf)
+  (printout t ?id1 tab ?id2 crlf)
+) 
+
 
 ;los cargos y abonos no realizados son normales
 ;para las partidas que están fuera de la fecha 
