@@ -133,7 +133,7 @@
    ;probando por tramos para ver donde se pierden los totales
    ( focus PEDIDO PRIMITIVA ACTIVIDAD PRIMITIVA MENSUAL PRIMITIVA IVA PAGAR VALOR_ACTIVOS PRIMITIVA ECUACION PARTIDA T TOTAL RESULTADO-SII COMPROBACION FINANCIERO RECUADRO AJUSTE INVENTARIO LIQUIDACION INVENTARIO_FINAL AJUSTE TA TRIBUTARIO AJUSTEC TOTALC FINAL SUBCUENTA CCM RCV REMUNERACIONES )
 
-
+   (save "constructs.out")
   ;adelantando resultado-kindle para evitar que el proceso de liquidacion desarme los subtotales
 ;  ( focus PRIMITIVA ACTIVIDAD PRIMITIVA MENSUAL PRIMITIVA IVA PAGAR VALOR_ACTIVOS PRIMITIVA ECUACION PARTIDA T TOTAL COMPROBACION FINANCIERO RECUADRO AJUSTE INVENTARIO LIQUIDACION INVENTARIO_FINAL RESULTADO-KINDLE TA TOTALA COMPROBACIONB AJUSTEB TOTALB TRIBUTARIO RESULTADO AJUSTEC TOTALC FINAL AJUSTE SUBCUENTA CCM RCV REMUNERACIONES )
 
@@ -157,6 +157,7 @@
   ; (printout t "Considerar incentivo al ahorro, también hay una resoución para deducir gastos del impuesto por compras de activos" clrf)
   ; (printout t "Visitar https://elrincontributario.blogspot.com" crlf)
   ; (printout t "Determinar el costo de ventas según sii, esto es por el precio más antiguo, o un sistema mixto de contablidad completa, el costo es el costo de la cuenta de mercadería" crlf)
+
 )
 
 

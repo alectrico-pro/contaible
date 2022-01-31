@@ -188,6 +188,17 @@ Las sumas pagadas por la adquisición del derecho real de usufructo sobre un bie
 | gasto previo      | $300.000 | 120 M$     | 60 M$     | 6 M$     | 6 M$      | 10M$  | [ ]        |
 | valor de uso      | 10M$     | 120 M$     | 240 M$    | 60 M$    | 1 M$      | 1 M$  | 120M$      |
 
+
+## DE transbank
+i)
+Reconocimiento y medición de programas computacionales y licencias
+Los costos de desarrollo se capitalizan sólo si pueden estimarse con fiabilidad, el producto o
+proceso es viable técnica y comercialmente, se obtienen posibles beneficios económicos a
+futuro y la Sociedad pretende y posee suficientes recursos para completar el desarrollo y para
+usar o vender el activo. De no ser así, se reconocen en resultados cuando se incurren.
+Después del reconocimiento inicial, los costos de desarrollo se miden al costo menos la
+amortización acumulada y las pérdidas acumuladas por deterioro.
+
 ### Mis conclusiones
  A) Sobre la plataforma alectrico ® [www.alectrico.cl](https://www.alectrico.cl)
 
@@ -479,4 +490,29 @@ En el caso de los activos en construcción que se encuentran financiados, una ve
 
 
 
+La exigencia de constar en los estatutos.
+La sociedad por acciones plantea una nueva forma de aumento del capital,
+distinta al régimen general, evitando el tedioso proceso mencionado para la sociedad
+anónima. El artículo 434, inciso 2o del Código de Comercio, da la posibilidad a la
+administración de la sociedad de aumentar el capital para “financiar la gestión ordinaria
+de la sociedad o para fines específicos.”
+Esta nueva disposición viene a ser una
 
+
+Código de Comercio
+Artículo 434.
+
+El capital de la sociedad deberá ser fijado de manera precisa en el estatuto y estará dividido en un número determinado de acciones nominativas. El estatuto podrá establecer que las acciones de la sociedad sean emitidas sin imprimir láminas físicas de dichos títulos.
+
+Los aumentos de capital serán acordados por los accionistas, sin perjuicio que el estatuto podrá facultar a la administración en forma general o limitada, temporal o permanente, para aumentar el capital con el objeto de financiar la gestión ordinaria de la sociedad o para fines específicos.
+
+El capital social y sus posteriores aumentos deberán quedar totalmente suscritos y pagados en el plazo que indiquen los estatutos. Si nada señalaren al respecto, el plazo será de cinco años, contados desde la fecha de constitución de la sociedad o del aumento respectivo, según corresponda. Si no se pagare oportunamente al vencimiento del plazo correspondiente, el capital social quedará reducido al monto efectivamente suscrito y pagado. Salvo disposición en contrario en los estatutos, las acciones cuyo valor no se encuentre totalmente pagado, no gozarán de derecho alguno.
+
+
+
+Para la sociedad, la aportación de los socios no genera un ingreso en la cuenta de resultados si se limita a su participación en el capital social y, como tal, tampoco genera renta a integrar en la base imponible del impuesto sobre sociedades. La devolución de la aportación, si se produjera, se tratará como una prima de emisión sujeta al IRPF del perceptor. 
+
+Las aportaciones de socios a fondos propios son voluntarias, pueden destinarse a compensar pérdidas, a incrementar el patrimonio social o a financiar proyectos puntuales, tienen el carácter de definitivas una vez efectuadas, no son reintegrables, no dan derecho a compensación, tienen menos requisitos formales que el aumento del capital y, si la aportación no supera la cuota de participación en el capital social, está exenta del impuesto sobre sociedades.
+
+
+Conclusiones, rectificar el capital para que quede como al comienzo.

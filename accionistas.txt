@@ -8,19 +8,3 @@
  (social "Alexander Espinosa")
  (domicilio "Pasaje Emilio Sanfuentes Vergara 526. Pudahuel"))
 
-
-( accionista
- (nombre comu)
- (mes julio)
- (ano 2021)
- (rut 55555555-5)
- (social "Comu Hpermagared SpA")
- (domicilio "Avenida Siempre Viva  742, Providencia"))
-
-( accionista 
- (nombre cangrejo) 
- (mes julio) 
- (ano 2021)
- (rut 55555555-5)
- (social "Don Cangrejo")
- (domicilio "Fondo de Bikini 44"))

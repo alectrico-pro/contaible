@@ -41,7 +41,7 @@ RUN ./contabilidad.py
 FROM jekyll/jekyll 
 
 #Estos son manuales
-#OPY ./*.markdown         ./
+COPY ./*.markdown         ./
 COPY ./contaible.markdown ./
 COPY ./empresa.markdown   ./
 COPY ./nota.markdown      ./

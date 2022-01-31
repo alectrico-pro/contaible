@@ -1718,30 +1718,6 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 - [ ] ccm
 - [x] revisado
 ![](../revisado.png)
-<table id='Partida-66'>
-<thead> <th style='background-color: lavender' colspan='6'>Partida 66</th></thead>
-<tbody>
-<tr> <td>400000 </td> <td colspan='7'> cangrejo#acciones </td></tr>
-<tr> <td>400000 </td> <td colspan='7'> alexander#acciones </td></tr>
-<tr style='color: white; background-color: black'>  <td> </td> <td>400000 </td> <td> 400000</td> <td> </td> <td> r[acciones] </td> </tr>
-<tr> <td> </td> <td style='background-color: blanchedalmond'> 400000 </td> <td style='background-color: blanchedalmond'> 400000</td> </tr>
-<tr><td colspan='4'> alectrico® SpA</td> </tr> 
-<tr><td colspan='4'> ( 17 de julio	2021	 ) </td> </tr>
-<tr><td colspan='8'> Partida 66: ca -> cangrejo Compra 2 acciones a alexander por un valor nominal de 200000 </td></tr>
-<tr> <td colspan='7'>efectuado a alexander </td> </tr>
-<tr><td colspan = '8'> comprar-acciones</td> </tr>
-</tbody>
-</table>
-<p style='page-break-before: always;'>&nbsp;</p>
-<br> 
-<p style='color: white; background-color: red'>  </p>
-<br> 
-- [x] tipo de asiento: 33
-- [ ] rcv
-- [ ] libro-diario
-- [ ] ccm
-- [x] revisado
-![](../revisado.png)
 <table id='Partida-67'>
 <thead> <th style='background-color: lavender' colspan='6'>Partida 67</th></thead>
 <tbody>

@@ -1079,14 +1079,14 @@
 
 
  
-(compra-de-acciones
-  (partida 066)
-  (comprador cangrejo)
-  (cedente alexander)
-  (numero-de-acciones 2)
-  (valor-nominal 200000)
-  (dia 17) (mes julio) (ano 2021)
-)
+;(compra-de-acciones
+;  (partida 066)
+;  (comprador cangrejo)
+;  (cedente alexander)
+;  (numero-de-acciones 2)
+;  (valor-nominal 200000)
+;  (dia 17) (mes julio) (ano 2021)
+;)
 
 
 
