@@ -65,7 +65,7 @@ NO se han practicado liquidaciones, por lo que SÍ se muestran cuentas nominales
 <td>Herramientas<small>herramientas</small></td> <td align='right'>218470</td> <td align='right'>0</td> <td> | </td> <td align='right'> 218470</td> <td align='right'>0</td>
 </tr>
 <tr style=' background: #fff; border: 1px solid red;'>
-<td>Insumos<small>insumos</small></td> <td align='right'>427951</td> <td align='right'>44044</td> <td> | </td> <td align='right'> 383907</td> <td align='right'>0</td> </tr>
+<td>Insumos<small>insumos</small></td> <td align='right'>504726</td> <td align='right'>120819</td> <td> | </td> <td align='right'> 383907</td> <td align='right'>0</td> </tr>
 <tr>
 <td>Intangibles<small>intangibles</small> </td> <td align='right'>121190000</td> <td align='right'>52631</td> <td> | </td> <td align='right'> 121137369</td> <td align='right'>0</td> 
 <td colspan='2' style=' background: #faa; border: 1px solid red;'>Subcuenta </td>
@@ -100,6 +100,6 @@ NO se han practicado liquidaciones, por lo que SÍ se muestran cuentas nominales
 </tr>
 </tbody>
 <tfoot>
-<tr> <td></td> <td align='right'> <div>256646339</div></td> <td align='right'> <div>136925481</div></td><td> | </td> <td align='right'> <div>246026854</div></td> <td align='right'> <div>126305996</div></td> </tr>
+<tr> <td></td> <td align='right'> <div>256890803</div></td> <td align='right'> <div>137169945</div></td><td> | </td> <td align='right'> <div>246070898</div></td> <td align='right'> <div>126350040</div></td> </tr>
 </tfoot>
 </table>

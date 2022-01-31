@@ -406,6 +406,8 @@
   (printout t "|" tab tab "|     " ?utilidad-antes-de-idpc tab "Resultado Antes de Impuesto" crlf)
   (printout k "<tr style='font-weight:bold; background-color: azure'><td> <td></td></td><td> </td><td></td><td align='right'>" ?utilidad-antes-de-idpc "</td><td> Resultado Antes de Impuesto</td></tr>" crlf)
 
+  (bind ?utilidad 0)
+
 
   ( if (> ?margen-fuera-de-explotacion ?utilidad-del-ejercicio ) then
     (printout t "|" tab tab "| (-) " ?idpc tab "Impuesto Determinado, factor es " ?tasa-idpc " en " ?ano crlf)
@@ -413,7 +415,6 @@
     (bind ?utilidad ?utilidad-antes-de-idpc )
   )
 
-  (bind ?utilidad 0)
 
   ( if (< ?margen-fuera-de-explotacion ?utilidad-del-ejercicio ) then
     (printout t "|" tab tab "| (-) " ?idpc tab "Impuesto Determinado, factor es " ?tasa-idpc " en " ?ano crlf)
