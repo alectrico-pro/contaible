@@ -1,3 +1,6 @@
+(deftemplate nonce
+    (slot ticket))
+
 (deftemplate ajustes-mensuales
     (slot mes )
     (slot ano)

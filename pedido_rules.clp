@@ -7,6 +7,8 @@
    ( declare (salience 10000))
    ( empresa (nombre ?empresa))
   =>
+   (if (neq nil k) then ( close k))
+
    ( bind ?archivo (str-cat "./doc/" ?empresa "/pedidos.markdown"))
    ( open ?archivo k "w")
    ( printout k "--- " crlf)

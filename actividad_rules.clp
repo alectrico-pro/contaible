@@ -1,3 +1,4 @@
+#encoding: UTF-8
 (defmodule ACTIVIDAD
   ( import MAIN deftemplate ?ALL )
 )
@@ -100,8 +101,15 @@
 ;1 120 2 3 301 4 5 6 7 8 9 10 11 12 13 14 15 151 152 153 16 17 171 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 ) ;no llega a las liquidaciones
 ;  ( watch facts ticket)
   ( while (> (length$ ?numeros) 0)  do
-     ( bind ?numero (nth 1 ?numeros))
+     ( bind ?numero (nth$ 1 ?numeros))
      ( assert (ticket (numero ?numero)))
+     ( assert (nonce (ticket ?numero))) ;algunas reglas de actividad se disparan
+                                        ;dos veces en clips 6.4
+              ;hacer retract en nonce esas actividades
+              ;detectada solo una:
+              ;dar-cuenta-de-nota-de-credito-de-factura-reclamada
+              ;la cual se puede disparar por:
+              ;nota-de-credito-de-factura-reclamada
      ( bind ?numeros (rest$ ?numeros))
   )
 )
@@ -2241,6 +2249,7 @@
    ( balance (dia ?top) (mes ?mes_top) (ano ?ano_top))
    ( actual  (mes ?mes))
    ( ticket ( numero ?numero))
+   ?nonce <- ( nonce (ticket ?numero) )
    ( empresa (nombre ?nombre))
    ( nota-de-credito-de-factura-reclamada
      (cuenta-de-pago ?cuenta-de-pago)
@@ -2255,6 +2264,9 @@
    ( test (and (not (eq nil ?iva)) (> ?iva 0)))
    ( test (>= (to_serial_date ?top ?mes_top ?ano_top) (to_serial_date ?dia ?mes ?ano)))
  =>
+;  ( if (eq ?folio-factura 43342312) then (halt;)
+;  ( printout t partida tab ?numero crlf ?dia tab ?mes crlf tab total tab ?total crlf neto tab ?neto crlf iva tab ?iva crlf)
+  ( retract ?nonce)
   ( assert (partida (proveedor subcuenta) (numero ?numero) (dia ?dia) (mes ?mes) (ano ?ano) (descripcion (str-cat  "Devolución a subcuenta " ?proveedor " por " ?glosa " mes " ?mes)) (actividad dar-cuenta-de-nota-de-credito-de-factura-reclamada-de-proveedor) (archivo (str-cat "../nota-de-credito-" ?proveedor "-" ?folio-nota ".png" ))))
   ( assert (cargo (tipo-de-documento 61) (recibida true) (electronico true) (partida ?numero) (dia ?dia) (mes ?mes ) (ano ?ano) (empresa ?nombre) (cuenta ?cuenta-de-pago) (monto ?total) (glosa (str-cat nota-credito ?proveedor) )))
   ( assert (abono (tipo-de-documento 61) (recibida true) (electronico true) (partida ?numero) (dia ?dia) (mes ?mes ) (ano ?ano) (empresa ?nombre) (cuenta ?proveedor) (monto ?neto) (glosa ?glosa)))

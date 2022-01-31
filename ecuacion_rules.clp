@@ -51,7 +51,7 @@
    ( bind   ?total (+ ?activo-circulante ?saldo ))
    ( modify ?f2 (activo-circulante ?total))
    ( modify ?f1 (balanceado true))
-  ; ( printout t "--+acirculante= " ?total tab ?saldo " de " ?nombre crlf)
+   ( printout t "--+acirculante= " ?total tab ?saldo " de " ?nombre crlf)
 )
 
 
@@ -78,7 +78,7 @@
    ( bind ?total (+ ?activo-fijo ?saldo ))
    ( modify ?f2 (activo-fijo ?total))
    ( modify ?f1 (balanceado true))
-  ; ( printout t "--+a f i j o  = " ?total tab ?saldo " de " ?nombre crlf)
+   ( printout t "--+a f i j o  = " ?total tab ?saldo " de " ?nombre crlf)
 )
 
 (defrule sumando-pasivos-circulantes-a-ecuacion
@@ -104,7 +104,7 @@
    ( bind ?total (+ ?pasivo-circulante ?saldo ))
    ( modify ?f2 (pasivo-circulante ?total))
    ( modify ?f1 (balanceado true))
-;   ( printout t "--+pcirculante= " ?total tab ?saldo " de " ?nombre crlf)
+   ( printout t "--+pcirculante= " ?total tab ?saldo " de " ?nombre crlf)
 )
 
 (defrule sumando-pasivos-fijos-a-ecuacion
@@ -131,7 +131,7 @@
    ( bind ?total (+ ?pasivo-fijo ?saldo ))
    ( modify ?f2 (pasivo-fijo ?total))
    ( modify ?f1 (verificada true))
-;  ( printout t "--+p f i j o  = " ?total tab ?saldo " de " ?nombre crlf)
+  ( printout t "--+p f i j o  = " ?total tab ?saldo " de " ?nombre crlf)
 )
 
 
@@ -157,7 +157,7 @@
    ( bind ?total (+ ?activos ?saldo ))
    ( modify ?f2 (empresa ?empresa) (activos ?total))
    ( modify ?f1 (verificada true))
-;  ( printout t "--+a c t i v o= " ?total tab ?saldo " de " ?nombre crlf)
+  ( printout t "--+a c t i v o= " ?total tab ?saldo " de " ?nombre crlf)
 )
 
 
@@ -184,7 +184,7 @@
    ( bind ?total (+ ?pasivos ?saldo ))
    ( modify ?f2 (empresa ?empresa) (pasivos ?total) )
    ( modify ?f1 (verificada true))
- ;  ( printout t "--+p a s i v o= " ?total tab ?saldo " de " ?nombre crlf)
+   ( printout t "--+p a s i v o= " ?total tab ?saldo " de " ?nombre crlf)
 )
 
 
@@ -210,7 +210,7 @@
    ( bind ?total (+ ?patrimonio ?saldo ))
    ( modify ?f2 (patrimonio ?total ))
    ( modify ?f1 (verificada true))
-  ; ( printout t "--+patrimonio = " ?total tab ?saldo " de " ?nombre crlf)
+   ( printout t "--+patrimonio = " ?total tab ?saldo " de " ?nombre crlf)
 )
 
 (defrule sumando-resultados-a-ecuacion
@@ -232,7 +232,7 @@
    ( bind ?total (+ ?resultados ?saldo ))
    ( modify ?f2 (resultados ?total ))
    ( modify ?f1 (verificada true))
-  ; ( printout t "--+resultados= " ?total tab ?saldo " de " ?nombre crlf)
+   ( printout t "--+resultados= " ?total tab ?saldo " de " ?nombre crlf)
 )
 
 
@@ -255,7 +255,7 @@
          (descripcion ?descripcion))
   (test (> ?ano_top ?ano))
  =>
-; ( printout t ?tipo tab activos tab tab (round ?debe) tab "|" tab (round ?haber) tab "->s" tab (round ?saldo) tab tab ?nombre crlf )
+ ( printout t ?tipo tab activos tab tab (round ?debe) tab "|" tab (round ?haber) tab "->s" tab (round ?saldo) tab tab ?nombre crlf )
 )
 
 (defrule pasivos
@@ -277,7 +277,7 @@
         (descripcion ?descripcion))
   (test (> ?ano_top ?ano))
  =>
-;  ( printout t ?tipo -pasivos tab (round ?debe) tab "|" tab  (round ?haber) tab"->s" tab (round ?saldo) tab tab ?nombre tab crlf )
+  ( printout t ?tipo -pasivos tab (round ?debe) tab "|" tab  (round ?haber) tab"->s" tab (round ?saldo) tab tab ?nombre tab crlf )
 )
 
 (defrule patrimonio
@@ -299,7 +299,7 @@
          (descripcion ?descripcion))
   ( test (> ?ano_top ?ano))
  =>
-;  ( printout t ?tipo -patrimonio tab (round ?debe) tab "|" tab ?haber tab "->s" tab ?saldo tab tab ?nombre tab crlf )
+  ( printout t ?tipo -patrimonio tab (round ?debe) tab "|" tab ?haber tab "->s" tab ?saldo tab tab ?nombre tab crlf )
 )
 
 (defrule liquidadora
@@ -320,7 +320,7 @@
          (descripcion ?descripcion))
   (test (> ?ano_top ?ano))
  =>
-;  ( printout t ?tipo -liquidadora tab (round ?debe) tab "|" tab (round ?haber) tab (round ?saldo) tab "->s" tab ?nombre tab crlf )
+  ( printout t ?tipo -liquidadora tab (round ?debe) tab "|" tab (round ?haber) tab (round ?saldo) tab "->s" tab ?nombre tab crlf )
 )
 
 
@@ -357,7 +357,7 @@
   (declare (salience -101))
   (ecuacion (empresa ?empresa) (partida ?numero) (dia ?dia) (mes ?mes) (ano ?ano))
 =>
-;  (printout t "ecuación de la partida " tab ?numero tab ?dia " de " ?mes tab ?ano crlf)
+  (printout t "ecuación de la partida " tab ?numero tab ?dia " de " ?mes tab ?ano crlf)
 ) 
 
 

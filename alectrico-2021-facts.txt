@@ -1668,7 +1668,6 @@
  ( glosa "Anulación de factura 43342312")
 )
 
-
  
 (venta-sii
  (folio 13)
