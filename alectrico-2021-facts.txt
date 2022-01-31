@@ -3237,6 +3237,7 @@
 ;partida de liquidación de saldo deudor ----------------
 (partida (numero 1001 ) (dia 31) (mes enero) (ano 2021)
  (empresa alectrico-2021) 
+ (actividad liquidacion-financiera-de-deudoras)
  (descripcion "v/Por liquidación de Cuentas de Resultado Deudoras"))
 
 ;ventas
@@ -3277,6 +3278,7 @@
 (partida (numero 1002)
  (dia 31) (mes enero) (ano 2021)
  (empresa alectrico-2021)
+ (actividad liquidacion-financiero-de-acreedoras)
  (descripcion "v/Por liquidación de Cuentas de Resultado Acreedoras"))
 
 (liquidacion (cuenta compras) (partida 1002) (ano 2021)  (liquidadora perdidas-y-ganancias) (tipo-de-saldo acreedor))
@@ -3316,6 +3318,7 @@
 ;(partida (numero 1003) (dia 31) (mes diciembre) (ano 2021)
 ;(empresa alectrico-2021)
 ; (descripcion "v/Por liquidación de Inventario Inicial y Creación de Inventario Final"))
+; (actividad liquidacion-de-inventario-final)
 ;(partida-inventario-final (partida 1003))
 
 
@@ -3323,6 +3326,7 @@
 
 (partida (numero 1150 ) (dia 31) (mes diciembre) (ano 2021)
  (empresa alectrico-2021)
+ (actividad liquidacion-tributaria-de-deducciones)
  (descripcion "v/Por Determinación de la Base Imponible: Deducciones"))
 ;(tributacion (cuenta compras) (partida 1150) (ano 2021) (liquidadora base-imponible) (efecto deduccion))
 ;(tributacion (cuenta gastos-sobre-compras) (partida 1150) (ano 2021) (liquidadora base-imponible) (efecto deduccion))
@@ -3361,7 +3365,8 @@
 
 (partida (numero 1151 ) (dia 31) (mes diciembre) (ano 2021)
  (empresa alectrico-2020)
- (descripcion "v/Por Determinación de la Base Imponible: Aportes" ))
+ (descripcion "v/Por Determinación de la Base Imponible: Aportes" )
+ (actividad liquidacion-tributaria-de-aportes))
 (tributacion (cuenta ventas) (partida 1151) (ano 2021) (liquidadora base-imponible) (efecto aporte))
 
 ;(tributacion (cuenta inventario) (partida 1151) (ano 2021) (liquidadora base-imponible) (efecto aporte))
@@ -3381,6 +3386,7 @@
 ;partida para determinar la utilidad tributaria del ejercicio -------------------------
 (partida (numero 1152) (dia 31) (mes diciembre) (ano 2021)
  (empresa alectrico-2021)
+ (actividad determinacion-de-la-utilidad-tributaria)
  (descripcion "v/Para determinar la utilidad tributaria del ejercicio"))
 (liquidacion (cuenta idpc)
   (partida 1152) (ano 2021)
@@ -3400,6 +3406,7 @@
 ;partida para determinar el valor del período ----------------------------------------
 (partida (numero 1004) (dia 31) (mes enero) (ano 2021)
  (empresa alectrico-2021)
+ (actividad determinacion-del-valor-del-periodo)
  (descripcion "v/Para determinar el valor del resultado del período"))
 (liquidacion (cuenta idpc)
   (partida 1004) (ano 2021)
@@ -3415,6 +3422,7 @@
 ;partida para determinar el valor del período usando la base imponible --------------
 ;(partida (numero 1004) (dia 31) (mes enero) (ano 2021)
 ; (empresa alectrico-2021)
+; (actividad determinacion-del-valor-del-periodo-usando-base-imponible)
 ; (descripcion "v/Para determinar el valor del resultado del período"))
 ;(liquidacion (cuenta idpc)
 ;  (partida 1004) (ano 2021)
@@ -3432,6 +3440,7 @@
 ;provision de idpc ----------------------------------------------------------
 ;(partida (numero 1005) (dia 31) (mes enero) (ano 2021)
 ; (empresa alectrico-2021)
+; (actividad provision-de-idpc)
 : (descripcion "v/Provision de idpc de 2021"))
 ;(provision (cuenta idpc)
 ;  (partida 1005) (ano 2021)
