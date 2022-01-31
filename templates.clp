@@ -1,7 +1,16 @@
+(deftemplate reglas
+   (multislot lista (type STRING))
+)
+
+(deftemplate actividad
+    (slot nombre)
+)
+
 (deftemplate hecho
     (slot gravado (default false))
     (slot id)
     (slot partida)
+    (slot regla)
 )
  
 (deftemplate nonce

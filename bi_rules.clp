@@ -7,8 +7,18 @@
 )
 
 (defrule inicio-modulo-bi
+  ( declare (salience 10000))
   =>
-  (printout t "========================= BI: Business Intelligence ============" crlf)
+  ( printout t "========================= BI: Business Intelligence ============" crlf)
+  ( load-facts "actividades.txt")
+  ( bind ?reglas ( get-defrule-list ACTIVIDAD))
+  ( assert (reglas (lista ?reglas)))
+;  ( printout t ?reglas )
+;  ( while (> (length$ ?reglas) 0)  do
+;   ( bind ?regla (nth$ 1 ?reglas))
+;   ( printout t ?regla crlf)
+;   ( bind ?reglas (rest$ ?reglas))
+;  )
 )
 
 (defrule borrando-hechos-irrelevantes
@@ -25,14 +35,56 @@
   (retract ?hecho-irrelevante)
 )
 
+
+
+
+(defrule actividades-registradas
+ (no)
+  (actividad (nombre ?nombre))
+  =>
+  (printout t actividad tab ?nombre "|" crlf)
+)
+
+(defrule kk
+  (no)
+   (hecho (regla ?n))
+  =>
+  (printout t ?n crlf)
+)
+
+(defrule hechos-que-no-tienen-regla-registrada
+   ( hecho (id ?id) (regla ?regla ))
+   ( reglas (lista $?lista ))
+   ( test (not (member$ ?regla $?lista)))
+  =>
+   ( printout t "El hecho " ?id " No tiene registrada su regla " ?regla crlf)
+)
+
+
+
+(defrule hechos-que-tienen-regla-registrada
+   ( hecho (id ?id) (regla ?regla ))
+   ( reglas (lista $?lista ))
+   ( test (member$ ?regla $?lista))
+  =>
+   ( printout t "El hecho " ?id " tiene registrada su regla " ?regla crlf)
+)
+
+(defrule mostrando-hechos
+  (no)
+   (hecho (id ?id) (gravado true) (partida ?numero) (regla ?regla))
+  =>
+   (printout t ?id tab partida tab ?numero tab ?regla "|" crlf)
+)
+
 (defrule detectando-hecho-gravado-iva
    (balance (ano ?ano))
    (cargo (cuenta iva-credito) (ano ?ano) (realizado true) (partida ?numero))
    (partida (numero ?numero) (actividad ?actividad) (descripcion ?descripcion) )
    (test (neq ?actividad ajuste) )
   =>
-   (printout t "k<-hv Hecho gravado detectado IVA" tab ?numero tab ?actividad crlf)
-   (assert (hecho (gravado true) (id iva) (partida ?numero)))
+;   (printout t "k<-hv Hecho gravado detectado IVA" tab ?numero tab ?actividad crlf)
+   (assert (hecho (gravado true) (id iva) (partida ?numero) (regla ?actividad)))
 )
 
 
@@ -45,8 +97,8 @@
    (abono (cuenta retencion-de-iva-articulo-11) (ano ?ano) (partida ?numero))
    (partida (numero ?numero) (actividad ?actividad) (descripcion ?descripcion))
   =>
-   (printout t "k<-n  Hecho gravado detectado  n "  tab ?numero tab ?actividad crlf)
-   (assert (hecho (gravado true) (id n) (partida ?numero)))
+;  (printout t "k<-n  Hecho gravado detectado  n "  tab ?numero tab ?actividad crlf)
+   (assert (hecho (gravado true) (id n) (partida ?numero) (regla ?actividad)))
 )
 
 
@@ -55,9 +107,9 @@
   (hecho (partida ?numero) (id ?id2))
   (test (neq ?id1 ?id2))
  =>
-  (printout t "Warning =============================================" crlf)
-  (printout t " La partida " ?numero " participa en dos hechos gravados " crlf)
-  (printout t ?id1 tab ?id2 crlf)
+; (printout t "Warning =============================================" crlf)
+; (printout t " La partida " ?numero " participa en dos hechos gravados " crlf)
+ ;(printout t ?id1 tab ?id2 crlf)
 ) 
 
 

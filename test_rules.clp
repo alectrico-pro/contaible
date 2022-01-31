@@ -27,6 +27,8 @@
   ( load-facts "selecciones.txt")
 )
 
+
+
 (defrule MAIN::inicio-modulo-main
   (declare (salience 10000))
   (selecciones (empresa-seleccionada ?empresa))

@@ -33,7 +33,11 @@
 (defrule guardar-partidas
   (declare (salience 10000))
   (selecciones ( origen-de-subcuentas ?origen))
-
+  ;estas actividades están en activiaades.txt
+  ;mas adelante hay que hacer algo al respecto
+  ;pero, de momento, hay que agregarlas dos veces
+  ;aquí y allá
+  ;son los hechos economicos
   (or (gasto-administrativo             (partida ?numero))
       (gasto-proveedor                  (partida ?numero))
       (gasto-promocional                (partida ?numero))
