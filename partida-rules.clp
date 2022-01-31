@@ -38,10 +38,10 @@
 (defrule inicio-kindle-l-
    ( declare (salience 9000))
   =>
-
+   ( if (neq nil l) then (close l))
    ( printout t "------------------- inicio-kindle-l ------------" crlf)
 
-   ( bind ?archivo (str-cat "/templates/index.html"))
+   ( bind ?archivo (str-cat "./templates/index.html"))
 
    ( open ?archivo l "w")
    ( printout l "{% extends \"clips.html\" %}" crlf)
@@ -64,6 +64,10 @@
    ( empresa (nombre ?empresa))
 
   =>  
+
+   ( if (neq nil k) then (close k))
+   ( if (neq nil h) then (close h))
+
 
    ( bind ?archivo (str-cat "./doc/" ?empresa "/empresa.markdown"))
 

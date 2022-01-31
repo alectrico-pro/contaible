@@ -74,6 +74,8 @@
   =>
    ( printout t "En inicio-kindle-k-tributario-rules" )
    ( bind ?archivo (str-cat "./doc/" ?empresa "/tributario.markdown"))
+;   ( bind ?archivo (str-cat "./" ?empresa "/tributario.markdown"))
+
    ( open ?archivo k "w")
 
    ( printout k "--- " crlf)
@@ -411,7 +413,7 @@
     (bind ?utilidad ?utilidad-antes-de-idpc )
   )
 
-
+  (bind ?utilidad 0)
 
   ( if (< ?margen-fuera-de-explotacion ?utilidad-del-ejercicio ) then
     (printout t "|" tab tab "| (-) " ?idpc tab "Impuesto Determinado, factor es " ?tasa-idpc " en " ?ano crlf)

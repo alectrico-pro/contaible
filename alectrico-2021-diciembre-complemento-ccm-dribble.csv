@@ -1,0 +1,17 @@
+Tipo Doc;Folio;Rut Contraparte;Tasa Impuesto;Razón Social Contraparte;Tipo Impuesto[1=IVA:2=LEY 18211];Fecha Emisión;Anulado[A];Monto Exento;Monto Neto;Monto IVA (Recuperable);Cod IVA no Rec;Monto IVA no Rec;IVA Uso Común;Cod Otro Imp (Con Crédito);Tasa Otro Imp (Con Crédito);Monto Otro Imp (Con Crédito);Monto Total;Monto Otro Imp Sin Crédito;Monto Activo Fijo;Monto IVA Activo Fijo;IVA No Retenido;Tabacos - Puros;Tabacos - Cigarrillos;Tabacos - Elaborados;Impuesto a Vehiculos Automóviles;Codigo sucursal SII;Numero Interno;Emisor/Receptor
+33;37825276;96689310-9;19;TRANSBANK S.A.;1;28-07-2021;;0;4231;804;;;;;;;5035;;;;;;;;;;;;
+33;69612;9229947-3;19;EUGENIO NELSON ESPINOZA VERA;1;20-07-2021;;0;1764;335;;;;;;;2099;;;;;;;;;;;;
+33;2737126;60910000-1;19;Universidad de Chile;1;28-07-2021;;0;8361;1589;;;;;;;9950;;;;;;;;;;;;
+33;12;77201295-0;19;TRANSFORMACIÓN E INNOVACIÓN EN EDUC. Y TEC. SPA;1;28-07-2021;;0;93179;17704;;;;;;;110883;;;;;;;;;;;;
+61;11;77201295-0;19;TRANSFORMACIÓN E INNOVACIÓN EN EDUC. Y TEC. SPA;1;27-07-2021;;0;558823;106176;;;;;;;664999;;;;;;;;;;;;
+45;2958132;55555555-5;19;Cloudflare, Inc.;1;22-07-2021;;;3775;717;;;;15;19;717;3775;;;;;;;;;;;;
+45;4029357733;55555555-5;19;Google Play;1;24-07-2021;;;21300;4047;;;;15;19;4047;21300;;;;;;;;;;;;
+33;11;77201295-0;19;TRANSFORMACIÓN E INNOVACIÓN EN EDUC. Y TEC. SPA;1;21-07-2021;;0;558823;106176;;;;;;;664999;;;;;;;;;;;;
+34;1;77201295-0;19;TRANSFORMACIÓN E INNOVACIÓN EN EDUC. Y TEC. SPA;1;21-07-2021;;35000;0;0;;;;;;;35000;;;;;;;;;;;;
+33;2132286;80478200-1;19;ILOP S.A.;1;21-07-2021;;0;3185;605;;;;;;;3790;;;;;;;;;;;;
+33;67;77189001-6;19;PAPERS SCRAP SPA;1;21-07-2021;;0;1008;192;;;;;;;1200;;;;;;;;;;;;
+33;1609303;78968610-6;19;Lider Domicilio Ventas y Dist. LTDA;1;21-07-2021;;0;67218;12772;;;;;;;79990;;;;;;;;;;;;
+45;2275133852;55555555-5;19;Google;1;17-07-2021;;;50000;9500;;;;15;19;9500;50000;;;;;;;;;;;;
+33;112259;77094278-0;19;IE TECNOLOGIA SPA;1;16-07-2021;;0;1672;318;;;;;;;1990;;;;;;;;;;;;
+33;25625;76631913-0;19;Macprint Spa.;1;01-07-2021;;0;26857;5103;;;;;;;31960;;;;;;;;;;;;
+45;6248846001;55555555-5;19;Google;1;13-07-2021;;;1177;223;;;;15;19;223;1177;;;;;;;;;;;;
