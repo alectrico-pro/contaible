@@ -1,7 +1,7 @@
-#Este modulo debiese generarl html para kindle y sitos web
-#Este modulo no funciona bien, agrega algunas cuentas
-como inventario que no están en las partida originales
-
+;#Este modulo debiese generarl html para kindle y sitos web
+;#Este modulo no funciona bien, agrega algunas cuentas
+;como inventario que no están en las partida originales
+;Esto ya se incroporó a partidas
 ( defmodule KINDLE ( import MAIN ?ALL ))
 
 (deffunction mes_to_numero_v ( ?mes )

@@ -1,3 +1,6 @@
+;Bussiness Intelligence 
+;Este modulo verifica e informa de errores contables
+;
 (defmodule MAIN
  (export ?ALL)
 )
@@ -22,12 +25,25 @@
   (+ (* 10000 ?ano) (* 100 ( mes_to_numero ?mes)) ?dia)
 )
 
-(defrule MAIN::seleccion-de-empresa
+(defrule seleccion-de-empresa
  =>
   ( load-facts "selecciones.txt")
 )
 
-(defrule MAIN::inicio-modulo-main
+;razonando a la inversa
+;encuentro en las tablas 
+;las hechos
+;gravados con iva
+(defrule hecho-gravado-iva
+   ;todos los ingresos brutos se asumen siendo el giro en impuestos internos
+   ;solo es importante para alectrico cuando sea un ingreso
+   ;
+   (cuenta (nombre ingresos-brutos) (partida ?numero))   
+  =>
+   (printout ?numero crlf)
+)
+
+(defrule inicio-modulo-main
   (declare (salience 10000))
   (selecciones (empresa-seleccionada ?empresa))
 =>
@@ -132,9 +148,9 @@
 
    ;probando por tramos para ver donde se pierden los totales
 ;   ( PEDIDO da un error en clips 6.4)
-   ( focus PEDIDO PRIMITIVA ACTIVIDAD PRIMITIVA MENSUAL PRIMITIVA IVA PAGAR VALOR_ACTIVOS PRIMITIVA ECUACION PARTIDA T TOTAL RESULTADO-SII COMPROBACION FINANCIERO RECUADRO AJUSTE INVENTARIO LIQUIDACION INVENTARIO_FINAL AJUSTE TA TRIBUTARIO AJUSTEC TOTALC FINAL SUBCUENTA CCM RCV REMUNERACIONES )
+;   ( focus PEDIDO PRIMITIVA ACTIVIDAD PRIMITIVA MENSUAL PRIMITIVA IVA PAGAR VALOR_ACTIVOS PRIMITIVA ECUACION PARTIDA T TOTAL RESULTADO-SII COMPROBACION FINANCIERO RECUADRO AJUSTE INVENTARIO LIQUIDACION INVENTARIO_FINAL AJUSTE TA TRIBUTARIO AJUSTEC TOTALC FINAL SUBCUENTA CCM RCV REMUNERACIONES )
 
-   ;probando en clips shell 6.4
+   (focus PRIMITIVA ACTIVIDAD)
 
   ;adelantando resultado-kindle para evitar que el proceso de liquidacion desarme los subtotales
 ;  ( focus PRIMITIVA ACTIVIDAD PRIMITIVA MENSUAL PRIMITIVA IVA PAGAR VALOR_ACTIVOS PRIMITIVA ECUACION PARTIDA T TOTAL COMPROBACION FINANCIERO RECUADRO AJUSTE INVENTARIO LIQUIDACION INVENTARIO_FINAL RESULTADO-KINDLE TA TOTALA COMPROBACIONB AJUSTEB TOTALB TRIBUTARIO RESULTADO AJUSTEC TOTALC FINAL AJUSTE SUBCUENTA CCM RCV REMUNERACIONES )

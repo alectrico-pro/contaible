@@ -17,13 +17,13 @@ Se han practicado liquidaciones, por lo que NO se muestran cuentas nominales
 <thead> <th></th><th colspan='4'> A C T I V O    F I J O</th> <th> 121240383</th> </thead>
 <thead> <th></th><th colspan='4'> A C T I V O    C I R C U L A N T E</th> <th> 916886</th> </thead>
 <thead> <th></th><th>cuentas-por-cobrar</th><th> 20000</th> </thead>
-<thead> <th></th><th>banco-estado</th><th> 361370</th> </thead>
-<thead> <th></th><th>ppm</th><th> 2728</th> </thead>
-<thead> <th></th><th>iva-credito</th><th> 15823</th> </thead>
 <thead> <th></th><th>retencion-de-iva-articulo-11</th><th> 0</th> </thead>
+<thead> <th></th><th>iva-credito</th><th> 15823</th> </thead>
+<thead> <th></th><th>ppm</th><th> 2728</th> </thead>
+<thead> <th></th><th>banco-estado</th><th> 361370</th> </thead>
 <thead> <th></th><th>caja</th><th> 10913</th> </thead>
 <thead> <th></th><th>intangibles</th><th> 121137369</th> </thead>
-<thead> <th></th><th>materiales</th><th> 0</th> </thead>
+<thead> <th></th><th>materiales</th><th> 123645</th> </thead>
 <thead> <th></th><th>insumos</th><th> 383907</th> </thead>
 <thead> <th></th><th>herramientas</th><th> 218470</th> </thead>
 <thead> <th></th><th>amortizacion-acumulada-intangibles</th><th> 0</th> </thead>
@@ -139,18 +139,6 @@ Se han practicado liquidaciones, por lo que NO se muestran cuentas nominales
 <td> 199</td><td><small> entel </small> </td> <td align='right'> 6926</td> <td align='right'>0</td> <td> gastos-administrativos</td>
 </tr>
 <tr  style='background-color: lightyellow'>
-<td></td><td><small> u-chile </small> </td> <td align='right'> 25083</td> <td align='right'>0</td> <td> gastos-administrativos</td>
-</tr>
-<tr style='background-color: lavender'>
-<td> 84</td><td><small> u-chile </small> </td> <td align='right'> 8361</td> <td align='right'>0</td> <td> gastos-administrativos</td>
-</tr>
-<tr style='background-color: lavender'>
-<td> 145</td><td><small> u-chile </small> </td> <td align='right'> 8361</td> <td align='right'>0</td> <td> gastos-administrativos</td>
-</tr>
-<tr style='background-color: lavender'>
-<td> 130</td><td><small> u-chile </small> </td> <td align='right'> 8361</td> <td align='right'>0</td> <td> gastos-administrativos</td>
-</tr>
-<tr  style='background-color: lightyellow'>
 <td></td><td><small> cloudflare </small> </td> <td align='right'> 10852</td> <td align='right'>0</td> <td> gastos-administrativos</td>
 </tr>
 <tr style='background-color: lavender'>
@@ -188,6 +176,18 @@ Se han practicado liquidaciones, por lo que NO se muestran cuentas nominales
 </tr>
 <tr style='background-color: lavender'>
 <td> 42</td><td><small> tgr </small> </td> <td align='right'> 1701</td> <td align='right'>0</td> <td> gastos-administrativos</td>
+</tr>
+<tr  style='background-color: lightyellow'>
+<td></td><td><small> u-chile </small> </td> <td align='right'> 25083</td> <td align='right'>0</td> <td> gastos-administrativos</td>
+</tr>
+<tr style='background-color: lavender'>
+<td> 84</td><td><small> u-chile </small> </td> <td align='right'> 8361</td> <td align='right'>0</td> <td> gastos-administrativos</td>
+</tr>
+<tr style='background-color: lavender'>
+<td> 145</td><td><small> u-chile </small> </td> <td align='right'> 8361</td> <td align='right'>0</td> <td> gastos-administrativos</td>
+</tr>
+<tr style='background-color: lavender'>
+<td> 130</td><td><small> u-chile </small> </td> <td align='right'> 8361</td> <td align='right'>0</td> <td> gastos-administrativos</td>
 </tr>
 <tr  style='background-color: lightyellow'>
 <td></td><td><small> trust </small> </td> <td align='right'> 19990</td> <td align='right'>0</td> <td> gastos-administrativos</td>
@@ -308,14 +308,11 @@ Se han practicado liquidaciones, por lo que NO se muestran cuentas nominales
 </tr>
 <thead> <th></th><th colspan='4'> I N S U M O S</th> <th>383907</th></thead>
 <tr  style='background-color: lightyellow'>
-<td></td><td><small> materiales </small> </td> <td align='right'> 0</td> <td align='right'>44044</td> <td> insumos</td>
+<td></td><td><small> materiales </small> </td> <td align='right'> 123645</td> <td align='right'>0</td> <td> insumos</td>
 </tr>
-<thead> <th></th><th>materiales</th><th> 0</th> </thead>
+<thead> <th></th><th>materiales</th><th> 123645</th> </thead>
 <tr style='background-color: lavender'>
-<td> 2112</td><td><small> materiales </small> </td> <td align='right'> 0</td> <td align='right'>134958</td> <td> insumos</td>
-</tr>
-<tr style='background-color: lavender'>
-<td> 2112</td><td><small> materiales </small> </td> <td align='right'> 0</td> <td align='right'>76775</td> <td> insumos</td>
+<td> 2112</td><td><small> materiales </small> </td> <td align='right'> 0</td> <td align='right'>44044</td> <td> insumos</td>
 </tr>
 <tr style='background-color: lavender'>
 <td> 1</td><td><small> materiales </small> </td> <td align='right'> 44044</td> <td align='right'>0</td> <td> insumos</td>
@@ -351,13 +348,10 @@ Se han practicado liquidaciones, por lo que NO se muestran cuentas nominales
 <td> 188</td><td><small> sodimac-insumos </small> </td> <td align='right'> 8395</td> <td align='right'>0</td> <td> insumos</td>
 </tr>
 <tr  style='background-color: lightyellow'>
-<td></td><td><small> inventario-inicial </small> </td> <td align='right'> 211733</td> <td align='right'>0</td> <td> insumos</td>
+<td></td><td><small> inventario-inicial </small> </td> <td align='right'> 44044</td> <td align='right'>0</td> <td> insumos</td>
 </tr>
 <tr style='background-color: lavender'>
-<td> 2112</td><td><small> inventario-inicial </small> </td> <td align='right'> 134958</td> <td align='right'>0</td> <td> insumos</td>
-</tr>
-<tr style='background-color: lavender'>
-<td> 2112</td><td><small> inventario-inicial </small> </td> <td align='right'> 76775</td> <td align='right'>0</td> <td> insumos</td>
+<td> 2112</td><td><small> inventario-inicial </small> </td> <td align='right'> 44044</td> <td align='right'>0</td> <td> insumos</td>
 </tr>
 <tr  style='background-color: lightyellow'>
 <td></td><td><small> easy-insumos </small> </td> <td align='right'> 2134</td> <td align='right'>0</td> <td> insumos</td>
@@ -377,7 +371,7 @@ Se han practicado liquidaciones, por lo que NO se muestran cuentas nominales
 <tr style='background-color: lavender'>
 <td> 120</td><td><small> electrocom-insumos </small> </td> <td align='right'> 25220</td> <td align='right'>0</td> <td> insumos</td>
 </tr>
-<thead> <th></th><th colspan='4'> M A T E R I A L E S </th> <th> 0</th> </thead>
+<thead> <th></th><th colspan='4'> M A T E R I A L E S </th> <th> 123645</th> </thead>
 <tr  style='background-color: lightyellow'>
 <td></td><td><small> easy-materiales </small> </td> <td align='right'> 46605</td> <td align='right'>0</td> <td> materiales</td>
 </tr>

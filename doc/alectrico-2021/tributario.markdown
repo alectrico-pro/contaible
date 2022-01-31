@@ -26,8 +26,8 @@ layout: page
 <tr><td> (-) </td><td align='right'>0</td><td></td><td></td><td></td><td> Devoluciones Sobre Compras </td></tr>
 <tr><td> (-) </td><td align='right'>0</td><td></td><td></td><td></td><td> Descuentos Sobre Compras </td></tr>
 <tr><td>(=)</td><td align='right'>0</td><td></td><td></td><td></td><td>Compras Netas</td></tr> 
-<tr><td> (+) </td><td align='right'>211733</td><td></td><td></td><td></td><td colspan='2'>Inventario Inicial</td></tr> 
-<tr><td> (=) </td><td align='right'> 211733</td><td></td><td> </td><td></td><td> Mercadería Disponible para la Venta </td></tr>
+<tr><td> (+) </td><td align='right'>44044</td><td></td><td></td><td></td><td colspan='2'>Inventario Inicial</td></tr> 
+<tr><td> (=) </td><td align='right'> 44044</td><td></td><td> </td><td></td><td> Mercadería Disponible para la Venta </td></tr>
 <tr><td>     </td> <td align='right'> 0 </td><td> </td><td></td><td></td><td colspan='2'>Costo de Mercancías Vendidas</td></tr>
 <tr><td> (-) </td> <td align='right'>142076</td><td> </td><td></td><td></td><td colspan='2'>Inventario Final </td></tr>
 <tr><td> (=) </td> <td align='right'>142076</td><td> </td><td></td><td></td><td colspan='2'>Costo de Mercancías </td></tr>
@@ -53,7 +53,7 @@ layout: page
 <tr style='font-weight:bold; background-color: azure'><td> <td></td></td><td> </td><td></td><td align='right'>34590</td><td> Resultado Fuera de Explotacion </td></tr>
 <tr style='font-weight:bold; background-color: azure'><td> <td></td></td><td> </td><td></td><td align='right'>34590</td><td> Resultado Antes de Impuesto</td></tr>
 <tr style='background-color: lightgreen' ><td></td><td></td><td></td><td> (X) </td><td align='right'> 3459</td><td> Impuesto No Aplica porque hay pérdida tributaria </td></tr>
-<tr style='font-weight:bold;background-color: azure'><td> <td></td></td><td> </td><td></td><td align='right'>0</td><td> Utilidad Calculada</td></tr>
+<tr style='font-weight:bold;background-color: azure'><td> <td></td></td><td> </td><td></td><td align='right'>34590</td><td> Utilidad Calculada</td></tr>
 <tr style='font-weight:bold;background-color: azure'><td> <td></td></td><td> </td><td></td><td align='right'>34590</td><td> Utilidad del Ejercicio (módulo liquidación)</td></tr>
 <tr><td> (-) </td><td align='right'>218470</td><td></td><td></td><td></td><td> Depreciación Instantánea Activo Fijo Propyme </td></tr>
 <tr><td> (-) </td><td align='right'>0</td><td></td><td></td><td></td><td> Amortización Instantánea Intangibles </td></tr>
