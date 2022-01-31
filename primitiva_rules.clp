@@ -130,7 +130,7 @@
    ( bind ?c (+ ?qty ?qty-cargo))
    ( modify ?cuenta (recibida ?recibida) (activo-fijo ?activo-fijo) (qty ?c) (tipo-de-documento ?tipo-de-documento) (electronico ?electronico) (partida ?numero) (empresa ?empresa) (dia ?dia) (mes ?mes) (ano ?ano) (debe ( round (+ ?debe ?monto)) ))
    ( modify ?cargo (realizado true))
-   ( printout t "c-->" tab ?monto tab "|" tab 0 tab ?nombre tab ?dia " de " ?mes tab ?glosa crlf)
+;   ( printout t "c-->" tab ?monto tab "|" tab 0 tab ?nombre tab ?dia " de " ?mes tab ?glosa crlf)
 )
 
 
@@ -144,7 +144,7 @@
    ( test (>= (to_serial_date ?top ?mes_top ?ano_top) (to_serial_date ?dia ?mes ?ano)))
   =>
    ( assert (cuenta (tipo-de-documento ?tipo-de-documento) (partida ?numero) (descripcion ?descripcion) (dia ?dia) (mes ?mes) (ano ?ano) (nombre ?nombre) (grupo ?grupo) (empresa ?empresa) (padre ?padre) (circulante ?circulante) (naturaleza ?naturaleza) (tipo ?tipo) (origen ?origen)))
-  ( printout t "n-->" tab ?nombre tab ?dia " de " ?mes tab ?glosa crlf)
+;  ( printout t "n-->" tab ?nombre tab ?dia " de " ?mes tab ?glosa crlf)
 )
 
 (defrule abonar-cuenta-existente
@@ -159,7 +159,7 @@
   =>
    ( modify ?cuenta (recibida ?recibida) (activo-fijo ?activo-fijo) (tipo-de-documento ?tipo-de-documento) (qty ?qty) (electronico ?electronico) (partida ?numero) (empresa ?empresa) (dia ?dia) (mes ?mes) (ano ?ano) (haber ( round (+ ?haber ?monto) ) ))
    ( modify ?abono (realizado true))
-  ( printout t "a<--" tab 0 tab "|" tab ?monto  tab ?nombre tab ?dia " de " ?mes tab ?glosa crlf)
+; ( printout t "a<--" tab 0 tab "|" tab ?monto  tab ?nombre tab ?dia " de " ?mes tab ?glosa crlf)
 )
 
 (defrule abonar-cuenta-nueva
@@ -174,7 +174,7 @@
   =>
    ( assert (cuenta (recibida ?recibida) (activo-fijo ?activo-fijo) (tipo-de-documento ?tipo-de-documento) (partida ?numero) (empresa ?empresa) (nombre ?nombre) (grupo ?grupo) (tipo ?tipo) (padre ?padre) (circulante ?circulante) (naturaleza ?naturaleza) (descripcion ?descripcion) (origen ?origen ) (mes ?mes) (dia ?dia) (ano ?ano) ))
   ;( printout t "abono partida " ?numero " cuenta " ?nombre tab ?mes crlf)
-  ( printout t "n<--"  tab ?nombre tab ?dia " de " ?mes tab ?glosa crlf)
+; ( printout t "n<--"  tab ?nombre tab ?dia " de " ?mes tab ?glosa crlf)
 )
 
 
@@ -191,7 +191,7 @@
   =>
    ( bind ?s (- (round ?debe) (round ?haber)))
    ( modify ?f1 (saldo ?s))
-   ( printout t "t-->" tab ?s tab "|" tab ?nombre crlf)
+;  ( printout t "t-->" tab ?s tab "|" tab ?nombre crlf)
 )
 
 
@@ -207,7 +207,7 @@
   =>
    ( bind ?s (- (round ?haber) (round ?debe)))
    ( modify ?f1 (saldo ?s))
-   ( printout t "t<--" tab ?s  tab "|" tab ?nombre crlf)
+ ; ( printout t "t<--" tab ?s  tab "|" tab ?nombre crlf)
 )
 
 (defrule creando-padre-de-un-hijo-deudor
@@ -249,7 +249,7 @@
 
   =>
    ( assert (cuenta (activo-fijo ?activo-fijo) (tipo-de-documento ?tipo-de-documento) (electronico ?electronico) (empresa ?empresa) (descripcion ?descripcion) (dia ?dia) (mes ?mes) (ano ?ano) (nombre ?nombre) (partida ?numero) (grupo ?grupo) (tipo ?tipo) (circulante ?circulante) (naturaleza ?naturaleza ) (origen ?origen)))
-   ( printout t "p--> Creado padre " ?nombre " grupo " ?grupo " tipo " ?tipo " para un hijo " ?nombre1 " tipo " deudor crlf)
+  ;( printout t "p--> Creado padre " ?nombre " grupo " ?grupo " tipo " ?tipo " para un hijo " ?nombre1 " tipo " deudor crlf)
 )
 
 (defrule sumando-hijo-deudor-a-su-padre
@@ -303,7 +303,7 @@
       (verificada false)
       (mayoreado false))
    ( modify ?hijo (mayoreado true))
-   ( printout t "h--> Desde " ?nombre1 " debe " ?debe  " haber " ?haber "  a su padre "  ?nombre ".  >---" crlf )
+  ; ( printout t "h--> Desde " ?nombre1 " debe " ?debe  " haber " ?haber "  a su padre "  ?nombre ".  >---" crlf )
 )
 
 
@@ -344,7 +344,7 @@
 
    ( modify ?padre (activo-fijo ?activo-fijo) (tipo-de-documento ?tipo-de-documento) (partida ?numero ) (dia ?dia) (mes ?mes) (ano ?ano) (debe ?debe) (saldo 0) (haber ?haber) (empresa ?empresa) (verificada false) (mayoreado false))
    ( modify ?hijo (mayoreado true))
-   ( printout t "h--> Desde " ?nombre1 " debe " ?debe  " haber " ?haber "  a su padre "  ?nombre ".  >---" crlf )
+;   ( printout t "h--> Desde " ?nombre1 " debe " ?debe  " haber " ?haber "  a su padre "  ?nombre ".  >---" crlf )
 )  
 
 (defrule creando-padre-de-un-hijo-acreedora
@@ -439,7 +439,7 @@
    ( assert ( cuenta (activo-fijo ?activo-fijo) (tipo-de-documento ?tipo-de-documento) ( nombre ?nombre-abuelo) (electronico ?electronico) (partida ?numero) (mes ?mes) (ano ?ano) (debe ?debe) (haber ?haber) (empresa ?empresa) ))
   ; ( modify ?abuelo (dia ?dia) (mes ?mes) (ano ?ano) (saldo 0) (debe ?debe) (haber ?haber) (empresa ?empresa) (verificada false) (mayoreado false))
    ( modify ?padre (mayoreado true)  )
-   ( printout t "h<-- Desde " ?nombre1 " haber " ?haber " debe " ?debe " a su abuelo acreedor "  ?nombre-abuelo ">---" partida-abuelo crlf )
+;   ( printout t "h<-- Desde " ?nombre1 " haber " ?haber " debe " ?debe " a su abuelo acreedor "  ?nombre-abuelo ">---" partida-abuelo crlf )
  ;  ( halt )
 )
 
@@ -480,7 +480,7 @@
    ( bind   ?haber (+ ?haber-hijo ?haber-padre))
    ( modify ?padre (activo-fijo ?activo-fijo) (tipo-de-documento ?tipo-de-documento) (electronico ?electronico) (dia ?dia) (mes ?mes) (ano ?ano) (saldo 0) (debe ?debe) (haber ?haber) (empresa ?empresa) (verificada false) (mayoreado false) (partida ?numero))
    ( modify ?hijo (mayoreado true)  )
-   ( printout t "h<-- Desde " ?nombre1 " haber " ?haber " debe " ?debe " a su padre acreedor "  ?nombre ">---" crlf )
+;  ( printout t "h<-- Desde " ?nombre1 " haber " ?haber " debe " ?debe " a su padre acreedor "  ?nombre ">---" crlf )
    
 )
 
@@ -520,7 +520,7 @@
    ( bind   ?haber (+ ?haber-hijo ?haber-padre))
    ( modify ?padre (activo-fijo ?activo-fijo) (tipo-de-documento ?tipo-de-documento) (dia ?dia) (mes ?mes ) (saldo 0) (debe ?debe) (haber ?haber) (empresa ?empresa) (verificada false) (mayoreado false) (electronico ?electronico))
    ( modify ?hijo (mayoreado true)  )
-   ( printout t "h<-- Desde " ?nombre1 " haber " ?haber " debe " ?debe " a su padre acreedor "  ?nombre ">---" crlf )
+ ; ( printout t "h<-- Desde " ?nombre1 " haber " ?haber " debe " ?debe " a su padre acreedor "  ?nombre ">---" crlf )
 )
 
 

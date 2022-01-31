@@ -6,6 +6,11 @@
  (export ?ALL)
 )
 
+(defrule inicio-modulo-bi
+  =>
+  (printout t "========================= BI: Business Intelligence ============" crlf)
+)
+
 (defrule borrando-hechos-irrelevantes
  (no)
   (or
@@ -20,69 +25,84 @@
   (retract ?hecho-irrelevante)
 )
 
+(defrule detectando-hecho-gravado-iva
+   (balance (ano ?ano))
+   (cargo (cuenta iva-credito) (ano ?ano) (realizado true) (partida ?numero))
+   (partida (numero ?numero) (actividad ?actividad) (descripcion ?descripcion) )
+  =>
+   (printout t "k<-hv Hecho gravado detectado IVA" tab ?numero crlf)
+   (printout t ?actividad crlf ?descripcion crlf crlf)
+)
+
+
 ;razonando a la inversa
 ;encuentro en las tablas 
 ;las hechos
 ;gravados con iva
 (defrule detectando-hecho-gravado-n
-   (abono (cuenta retencion-de-iva-articulo-11) (partida ?partida))
+   (balance (ano ?ano))
+   (cargo (cuenta retencion-de-iva-articulo-11) (ano ?ano) (partida ?partida))
   =>
    (printout t "Hecho gravado n detectado"  tab ?partida  crlf(
 )
 
-
+;los cargos y abonos no realizados son normales
+;para las partidas que están fuera de la fecha 
+;requerida para el balance en el facts
+;balance
 (defrule cargo-no-realizado
-  (no)
-   (partida (numero ?partida) (actividad ?actividad))
-   (abono (realizado false) (partida ?partida))
+   (partida (numero ?numero) (actividad ?actividad))
+   (abono (realizado false) (partida ?numero) (ano ?ano))
+   (balance (ano ?ano))
   =>
-   (printout t "x<-c Cargo no realizado: " tab ?partida tab ?actividad crlf)
+   (printout t "x<-c Cargo no realizado: " tab ?numero tab ?actividad crlf)
 )
 
 
 (defrule abono-no-realizado
- (no)
-   (partida (numero ?partida) (actividad ?actividad))
-   (abono (realizado false) )
+   (partida (numero ?numero) (actividad ?actividad))
+   (abono (realizado false) (?numero) (ano ?ano) )
+   (balance (ano ?ano))
   =>
-   (printout t "x->a Abono no realizado: " tab ?partida tab ?actividad crlf)
+   (printout t "x->a Abono no realizado: " tab ?numero tab ?actividad crlf)
 )
 
 
 (defrule cargo-realizado
+  (no)
    (abono (realizado true) (partida ?numero))
-   (partida (numero ?numero) (actividad ?actividad))
+   (partida (numero ?numero) (actividad ?actividad) (ano ?ano))
+   (balance (ano ?ano))
   =>
    (printout t "k<-c Cargo realizado: " tab ?numero  tab ?actividad crlf)
 )
 
 
 (defrule abono-realizado
-   (abono (realizado true) (partida ?numero) )
+  (no)
+   (abono (realizado true) (partida ?numero) (ano ?ano))
    (partida (numero ?numero) (actividad ?actividad))
+   (balance (ano ?ano))
   =>
    (printout t "k->a Abono realizado: " tab ?numero tab ?actividad crlf)
 )
 
 
 (defrule mala-formacion-de-cuenta
-   (cuenta (nombre ?nombre) (debe ?debe) (haber ?haber) (partida ?partida))
+   (cuenta (nombre ?nombre) (ano ?ano) (debe ?debe) (haber ?haber) (partida ?partida))
+   (balance (ano ?ano))
    (test (and (or (neq 0 ?debe) (neq 0 ?haber)) (eq nil ?partida)))
+   
   =>
   (printout t "X-cta Cuenta Mal Formada: " tab ?nombre tab ?debe tab ?haber tab ?partida crlf  )
-)
-
-(defrule detectando-hecho-gravado-iva
-   (abono (cuenta iva-credito) (realizado true) (partida ?partida))
-  =>
-   (printout t "k<-hv Hecho gravado detectado IVA" tab ?partida crlf)
 )
 
 
 (defrule detectando-plan-de-cuentas
   (no)
-   (cuenta (nombre ?nombre) (padre ?padre))
-   (exists (cuenta (nombre ?padre) (partida ?numero)))
+   (balance (ano ?ano))
+   (cuenta (ano ?ano) (nombre ?nombre) (padre ?padre))
+   (exists (cuenta (ano ?ano) (nombre ?padre) (partida ?numero)))
   =>
    (printout t "k<-cta Cuenta Aceptada: " tab ?nombre " es hija de " tab ?padre " para el sistema " crlf)
 )
@@ -96,8 +116,9 @@
 ;el módulo MAIN es importante porque exporta a todos los otros
 (defrule borrando-cuentas-sin-uso
   (no)
-  ?c <- (cuenta (nombre ?nombre) (partida nil))
-  (not (exists (cuenta (nombre ?nombre) (partida ?partida&:(neq nil ?partida)))))
+  (balance (ano ?ano))
+  ?c <- (cuenta (nombre ?nombre) (ano ?ano) (partida nil))
+  (not (exists (cuenta (ano ?ano) (nombre ?nombre) (partida ?partida&:(neq nil ?partida)))))
  =>
   ( retract ?c)
   ( printout t "x<-cta Cuenta Eliminada: " tab ?nombre  crlf)
