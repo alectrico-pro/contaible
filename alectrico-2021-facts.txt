@@ -7,7 +7,7 @@
  (razon "alectrico® SpA"))
 
 
-(balance (dia 31) (mes diciembre) (ano 2021))
+(balance (dia 31) (mes enero) (ano 2022))
 
 
 ;dia 01/01/2021---------- asiento inicial  ----------------
@@ -2099,10 +2099,23 @@
 ;-------------- septiembre ---------------------------------------------
 
 
+(salario
+ (partida 127)
+ (departamento electrico)
+ (nombre alexander)
+ (servicio electricista)
+ (efectivo 350000)
+ (dia 5)
+ (mes septiembre)
+ (ano 2021)
+ (glosa salario-electricista))
+
+
+
 (venta-sii
  (folio 4)
  (rut 77201295-0)
- (partida 127)
+ (partida 128)
  (dia 2) (mes septiembre) (ano 2021)
  (unidades 1)
  (costo_unitario 400000)
@@ -2117,7 +2130,7 @@
 
  ;multa=interes afp 635 + interes salud 330 + interes afc 114
 (pago-de-salarios
- (partida 128)
+ (partida 129)
  (trabajador alexander)
  (afp 40440)
  (afc 9000)
@@ -2136,7 +2149,7 @@
 (venta-sii
  (folio 17)
  (rut 77201295-0)
- (partida 129)
+ (partida 130)
  (dia 6) (mes septiembre) (ano 2021)
  (unidades 15)
  (costo_unitario 4202)
@@ -2152,7 +2165,7 @@
  (tipo-de-documento 33)
  (folio 2761647)
  (rut 60910000-1 )
- (partida 130)
+ (partida 131)
  (dia 06) (mes septiembre) (ano 2021)
  (credito 0)
  (total 9950)
@@ -2173,7 +2186,7 @@
  ( folio 113557696)
  ( unidades 1)
  ( costo_unitario 25971)
- ( partida 131)
+ ( partida 132)
  ( dia 03) (mes septiembre) (ano 2021)
  ( material THHN-25m-Rojo-2-pares-guantes-visor-pantalla)
  ( proveedor sodimac)
@@ -2192,7 +2205,7 @@
 ; ( tipo-de-documento 33)
 ; ( folio 113557696)
 ; ( rut 96792430-K)
-; ( partida 132)
+; ( partida 133)
 ; ( dia 03) (mes septiembre) (ano 2021)
 ; ( monto 13009)
 ; ( neto  13009)
@@ -3195,10 +3208,50 @@
  ( dia 1) ( mes enero) ( ano 2022)
  ( glosa asiento-inicial))
 
-( ajustes-mensuales (mes enero) (ano 2022) (partida 2002))
-( ajuste-de-iva     (mes enero) (ano 2022) (partida 2003))
+;------------------------------------ enero compras -------------------------------------
+( gasto-administrativo
+ ( tipo-de-documento 45)
+ ( folio 60078791)
+ ( rut 55555555-5)
+ ( partida 2006)
+ ( dia 11) (mes enero) (ano 2021)
+ ( credito 0)
+ ( neto        14024)
+ ( iva          2665)
+ ( iva-retenido 2665)
+ ( total       14024)
+ ( material pago-mensual-heroku)
+ ( proveedor heroku)
+ ( glosa "Por Gasto Administrativo: Pago Mensual de Arriendo de Almacenamiento en la nube.")
+ ( archivo "../heroku-mensualidad-enero-2022.png")
+ ( finalidad "Departamento de Administración"))
 
 
+( ajustes-mensuales (mes enero) (ano 2022) (partida 2007))
+( ajuste-de-iva     (mes enero) (ano 2022) (partida 2008))
+
+;--------------------------------- febrero -----------------------------------
+
+ ;multa=interes afp 5336 + interes salud 2795 + interes afc 1003 + multas fonasa 23416
+(pago-de-salarios
+ (partida 2009)
+ (trabajador alexander)
+ (afp   47180)
+ (afc   10500)
+ (salud  24500)
+ (multa  32550)
+ (folio-prevision 20022021092580)
+ (folio-salud 2017220100278294)
+ (remuneracion 267820)
+ (dia 1)
+ (mes febrero)
+ (ano 2022))
+
+
+( ajustes-mensuales (mes febrero) (ano 2022) (partida 2013))
+( ajuste-de-iva     (mes febrero) (ano 2022) (partida 2014))
+
+;---------------------------------- marzo ------------------------
 
 ( f29 (partida 1040) (mes enero) (ano 2021))
 ( f29 (partida 1041) (mes febrero) (ano 2021))

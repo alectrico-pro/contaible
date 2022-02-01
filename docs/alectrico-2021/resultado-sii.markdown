@@ -3,7 +3,7 @@ layout: page
 --- 
 
 
-Solo se consideran las transacciones hasta el día 31	diciembre.
+Solo se consideran las transacciones hasta el día 31	enero.
 Cifras en pesos.
 Se han practicado liquidaciones, por lo que NO se muestran cuentas nominales
 <table rules='groups'>
@@ -13,20 +13,20 @@ Se han practicado liquidaciones, por lo que NO se muestran cuentas nominales
 <thead> <th></th><th> </th> <th align='center' colspan= '2'>SUMAS</th><th> Padre </th> </thead>
 <thead> <th></th><th></th>  <th>DEBER</th> <th>ACREEDOR</th> </thead>
 <tbody>
-<thead> <th></th><th colspan='4'> T O T A L    A C T I V O  </th> <th> 122157269</th> </thead>
-<thead> <th></th><th colspan='4'> A C T I V O    F I J O</th> <th> 121240383</th> </thead>
-<thead> <th></th><th colspan='4'> A C T I V O    C I R C U L A N T E</th> <th> 916886</th> </thead>
-<thead> <th></th><th>cuentas-por-cobrar</th><th> 20000</th> </thead>
+<thead> <th></th><th colspan='4'> T O T A L    A C T I V O  </th> <th> 123284676</th> </thead>
+<thead> <th></th><th colspan='4'> A C T I V O    F I J O</th> <th> 120478545</th> </thead>
+<thead> <th></th><th colspan='4'> A C T I V O    C I R C U L A N T E</th> <th> 2806131</th> </thead>
 <thead> <th></th><th>retencion-de-iva-articulo-11</th><th> 0</th> </thead>
-<thead> <th></th><th>iva-credito</th><th> 15823</th> </thead>
-<thead> <th></th><th>ppm</th><th> 2728</th> </thead>
-<thead> <th></th><th>banco-estado</th><th> 361370</th> </thead>
-<thead> <th></th><th>caja</th><th> 10913</th> </thead>
-<thead> <th></th><th>intangibles</th><th> 121137369</th> </thead>
-<thead> <th></th><th>materiales</th><th> 0</th> </thead>
-<thead> <th></th><th>insumos</th><th> 383907</th> </thead>
-<thead> <th></th><th>herramientas</th><th> 218470</th> </thead>
 <thead> <th></th><th>amortizacion-acumulada-intangibles</th><th> 0</th> </thead>
+<thead> <th></th><th>iva-credito</th><th> 92141</th> </thead>
+<thead> <th></th><th>ppm</th><th> 3696</th> </thead>
+<thead> <th></th><th>banco-estado</th><th> 742922</th> </thead>
+<thead> <th></th><th>caja</th><th> 926777</th> </thead>
+<thead> <th></th><th>insumos</th><th> 878450</th> </thead>
+<thead> <th></th><th>herramientas</th><th> 436940</th> </thead>
+<thead> <th></th><th>cuentas-por-cobrar</th><th> 40000</th> </thead>
+<thead> <th></th><th>intangibles</th><th> 121374738</th> </thead>
+<thead> <th></th><th>materiales</th><th> 123645</th> </thead>
 <thead> <th></th><th>depreciacion-acumulada-herramientas</th><th> 0</th> </thead>
 <thead> <th></th><th colspan='4'> G A S T O S    P R O M O C I O N A L E S </th> <th> 206576</th> </thead>
 <tr  style='background-color: lightyellow'>
@@ -94,16 +94,19 @@ Se han practicado liquidaciones, por lo que NO se muestran cuentas nominales
 </tr>
 <thead> <th></th><th colspan='4'> G A S T O S     A D M I N I S T R A T I V O S </th> <th> 240223</th></thead>
 <tr  style='background-color: lightyellow'>
+<td></td><td><small> u-chile </small> </td> <td align='right'> 25083</td> <td align='right'>0</td> <td> gastos-administrativos</td>
+</tr>
+<tr style='background-color: lavender'>
+<td> 145</td><td><small> u-chile </small> </td> <td align='right'> 8361</td> <td align='right'>0</td> <td> gastos-administrativos</td>
+</tr>
+<tr style='background-color: lavender'>
+<td> 131</td><td><small> u-chile </small> </td> <td align='right'> 8361</td> <td align='right'>0</td> <td> gastos-administrativos</td>
+</tr>
+<tr style='background-color: lavender'>
+<td> 84</td><td><small> u-chile </small> </td> <td align='right'> 8361</td> <td align='right'>0</td> <td> gastos-administrativos</td>
+</tr>
+<tr  style='background-color: lightyellow'>
 <td></td><td><small> entel </small> </td> <td align='right'> 65462</td> <td align='right'>0</td> <td> gastos-administrativos</td>
-</tr>
-<tr style='background-color: lavender'>
-<td> 17</td><td><small> entel </small> </td> <td align='right'> 3128</td> <td align='right'>0</td> <td> gastos-administrativos</td>
-</tr>
-<tr style='background-color: lavender'>
-<td> 22</td><td><small> entel </small> </td> <td align='right'> 6926</td> <td align='right'>0</td> <td> gastos-administrativos</td>
-</tr>
-<tr style='background-color: lavender'>
-<td> 28</td><td><small> entel </small> </td> <td align='right'> 6926</td> <td align='right'>0</td> <td> gastos-administrativos</td>
 </tr>
 <tr style='background-color: lavender'>
 <td> 31</td><td><small> entel </small> </td> <td align='right'> 6926</td> <td align='right'>0</td> <td> gastos-administrativos</td>
@@ -124,9 +127,6 @@ Se han practicado liquidaciones, por lo que NO se muestran cuentas nominales
 <td> 139</td><td><small> entel </small> </td> <td align='right'> 6926</td> <td align='right'>0</td> <td> gastos-administrativos</td>
 </tr>
 <tr style='background-color: lavender'>
-<td> 160</td><td><small> entel </small> </td> <td align='right'> 6926</td> <td align='right'>0</td> <td> gastos-administrativos</td>
-</tr>
-<tr style='background-color: lavender'>
 <td> 170</td><td><small> entel </small> </td> <td align='right'> 6926</td> <td align='right'>0</td> <td> gastos-administrativos</td>
 </tr>
 <tr style='background-color: lavender'>
@@ -137,6 +137,18 @@ Se han practicado liquidaciones, por lo que NO se muestran cuentas nominales
 </tr>
 <tr style='background-color: lavender'>
 <td> 199</td><td><small> entel </small> </td> <td align='right'> 6926</td> <td align='right'>0</td> <td> gastos-administrativos</td>
+</tr>
+<tr style='background-color: lavender'>
+<td> 17</td><td><small> entel </small> </td> <td align='right'> 3128</td> <td align='right'>0</td> <td> gastos-administrativos</td>
+</tr>
+<tr style='background-color: lavender'>
+<td> 22</td><td><small> entel </small> </td> <td align='right'> 6926</td> <td align='right'>0</td> <td> gastos-administrativos</td>
+</tr>
+<tr style='background-color: lavender'>
+<td> 28</td><td><small> entel </small> </td> <td align='right'> 6926</td> <td align='right'>0</td> <td> gastos-administrativos</td>
+</tr>
+<tr style='background-color: lavender'>
+<td> 160</td><td><small> entel </small> </td> <td align='right'> 6926</td> <td align='right'>0</td> <td> gastos-administrativos</td>
 </tr>
 <tr  style='background-color: lightyellow'>
 <td></td><td><small> cloudflare </small> </td> <td align='right'> 10852</td> <td align='right'>0</td> <td> gastos-administrativos</td>
@@ -178,18 +190,6 @@ Se han practicado liquidaciones, por lo que NO se muestran cuentas nominales
 <td> 42</td><td><small> tgr </small> </td> <td align='right'> 1701</td> <td align='right'>0</td> <td> gastos-administrativos</td>
 </tr>
 <tr  style='background-color: lightyellow'>
-<td></td><td><small> u-chile </small> </td> <td align='right'> 25083</td> <td align='right'>0</td> <td> gastos-administrativos</td>
-</tr>
-<tr style='background-color: lavender'>
-<td> 84</td><td><small> u-chile </small> </td> <td align='right'> 8361</td> <td align='right'>0</td> <td> gastos-administrativos</td>
-</tr>
-<tr style='background-color: lavender'>
-<td> 145</td><td><small> u-chile </small> </td> <td align='right'> 8361</td> <td align='right'>0</td> <td> gastos-administrativos</td>
-</tr>
-<tr style='background-color: lavender'>
-<td> 130</td><td><small> u-chile </small> </td> <td align='right'> 8361</td> <td align='right'>0</td> <td> gastos-administrativos</td>
-</tr>
-<tr  style='background-color: lightyellow'>
 <td></td><td><small> trust </small> </td> <td align='right'> 19990</td> <td align='right'>0</td> <td> gastos-administrativos</td>
 </tr>
 <tr style='background-color: lavender'>
@@ -213,15 +213,18 @@ Se han practicado liquidaciones, por lo que NO se muestran cuentas nominales
 <tr style='background-color: lavender'>
 <td> 184</td><td><small> bazaya </small> </td> <td align='right'> 10824</td> <td align='right'>0</td> <td> gastos-administrativos</td>
 </tr>
-<thead> <th></th><th colspan='4'> I N T A N G I B L E S </th> <th>121137369</th> </thead>
+<thead> <th></th><th colspan='4'> I N T A N G I B L E S </th> <th>121374738</th> </thead>
 <tr style='background-color: lightyellow'>
-<td></td><td><small> marca-alectrico </small> </td> <td align='right'> 237369</td> <td align='right'>0</td> <td> intangibles</td>
-</tr>
-<tr style='background-color: lavender'>
-<td> 1</td><td><small> marca-alectrico </small> </td> <td align='right'> 290000</td> <td align='right'>0</td> <td> intangibles</td>
+<td></td><td><small> marca-alectrico </small> </td> <td align='right'> 474738</td> <td align='right'>0</td> <td> intangibles</td>
 </tr>
 <tr style='background-color: lavender'>
 <td> 138</td><td><small> marca-alectrico </small> </td> <td align='right'> 0</td> <td align='right'>52631</td> <td> intangibles</td>
+</tr>
+<tr style='background-color: lavender'>
+<td> 2001</td><td><small> marca-alectrico </small> </td> <td align='right'> 237369</td> <td align='right'>0</td> <td> intangibles</td>
+</tr>
+<tr style='background-color: lavender'>
+<td> 1</td><td><small> marca-alectrico </small> </td> <td align='right'> 290000</td> <td align='right'>0</td> <td> intangibles</td>
 </tr>
 <tr style='background-color: lightyellow'>
 <td></td><td><small> plataforma-alectrico </small> </td> <td align='right'> 120000000</td> <td align='right'>0</td> <td> intangibles</td>
@@ -235,36 +238,9 @@ Se han practicado liquidaciones, por lo que NO se muestran cuentas nominales
 <tr style='background-color: lavender'>
 <td> 203</td><td><small> licencia-contaible </small> </td> <td align='right'> 900000</td> <td align='right'>0</td> <td> intangibles</td>
 </tr>
-<thead> <th></th><th colspan='4'> C O R R E C C I O N    M O N E T A R I A</th><th> 3626</th> </thead>
+<thead> <th></th><th colspan='4'> C O R R E C C I O N    M O N E T A R I A</th><th> 780</th> </thead>
 <tr  style='background-color: lightyellow'>
-<td></td><td><small> ganancia-por-correccion-monetaria </small> </td> <td align='right'> 0</td> <td align='right'>3626</td> <td> correccion-monetaria</td>
-</tr>
-<tr style='background-color: lavender'>
-<td> 14333</td><td><small> ganancia-por-correccion-monetaria </small> </td> <td align='right'> 0</td> <td align='right'>33</td> <td> correccion-monetaria</td>
-</tr>
-<tr style='background-color: lavender'>
-<td> 14444</td><td><small> ganancia-por-correccion-monetaria </small> </td> <td align='right'> 0</td> <td align='right'>298</td> <td> correccion-monetaria</td>
-</tr>
-<tr style='background-color: lavender'>
-<td> 262</td><td><small> ganancia-por-correccion-monetaria </small> </td> <td align='right'> 0</td> <td align='right'>334</td> <td> correccion-monetaria</td>
-</tr>
-<tr style='background-color: lavender'>
-<td> 303</td><td><small> ganancia-por-correccion-monetaria </small> </td> <td align='right'> 0</td> <td align='right'>240</td> <td> correccion-monetaria</td>
-</tr>
-<tr style='background-color: lavender'>
-<td> 372</td><td><small> ganancia-por-correccion-monetaria </small> </td> <td align='right'> 0</td> <td align='right'>254</td> <td> correccion-monetaria</td>
-</tr>
-<tr style='background-color: lavender'>
-<td> 62</td><td><small> ganancia-por-correccion-monetaria </small> </td> <td align='right'> 0</td> <td align='right'>279</td> <td> correccion-monetaria</td>
-</tr>
-<tr style='background-color: lavender'>
-<td> 89</td><td><small> ganancia-por-correccion-monetaria </small> </td> <td align='right'> 0</td> <td align='right'>220</td> <td> correccion-monetaria</td>
-</tr>
-<tr style='background-color: lavender'>
-<td> 126</td><td><small> ganancia-por-correccion-monetaria </small> </td> <td align='right'> 0</td> <td align='right'>487</td> <td> correccion-monetaria</td>
-</tr>
-<tr style='background-color: lavender'>
-<td> 154</td><td><small> ganancia-por-correccion-monetaria </small> </td> <td align='right'> 0</td> <td align='right'>701</td> <td> correccion-monetaria</td>
+<td></td><td><small> ganancia-por-correccion-monetaria </small> </td> <td align='right'> 0</td> <td align='right'>780</td> <td> correccion-monetaria</td>
 </tr>
 <tr style='background-color: lavender'>
 <td> 168</td><td><small> ganancia-por-correccion-monetaria </small> </td> <td align='right'> 0</td> <td align='right'>780</td> <td> correccion-monetaria</td>
@@ -272,6 +248,15 @@ Se han practicado liquidaciones, por lo que NO se muestran cuentas nominales
 <thead> <th></th><th colspan='4'> C O S T O S   D E    V E N T A S </th> <th> 11008</th></thead>
 <tr  style='background-color: lightyellow'>
 <td></td><td><small> transbank </small> </td> <td align='right'> 10958</td> <td align='right'>0</td> <td> costos-de-ventas</td>
+</tr>
+<tr style='background-color: lavender'>
+<td> 33</td><td><small> transbank </small> </td> <td align='right'> 1273</td> <td align='right'>0</td> <td> costos-de-ventas</td>
+</tr>
+<tr style='background-color: lavender'>
+<td> 108</td><td><small> transbank </small> </td> <td align='right'> 0</td> <td align='right'>231</td> <td> costos-de-ventas</td>
+</tr>
+<tr style='background-color: lavender'>
+<td> 153</td><td><small> transbank </small> </td> <td align='right'> 525</td> <td align='right'>0</td> <td> costos-de-ventas</td>
 </tr>
 <tr style='background-color: lavender'>
 <td> 9</td><td><small> transbank </small> </td> <td align='right'> 1678</td> <td align='right'>0</td> <td> costos-de-ventas</td>
@@ -289,16 +274,7 @@ Se han practicado liquidaciones, por lo que NO se muestran cuentas nominales
 <td> 27</td><td><small> transbank </small> </td> <td align='right'> 627</td> <td align='right'>0</td> <td> costos-de-ventas</td>
 </tr>
 <tr style='background-color: lavender'>
-<td> 33</td><td><small> transbank </small> </td> <td align='right'> 1273</td> <td align='right'>0</td> <td> costos-de-ventas</td>
-</tr>
-<tr style='background-color: lavender'>
 <td> 86</td><td><small> transbank </small> </td> <td align='right'> 4231</td> <td align='right'>0</td> <td> costos-de-ventas</td>
-</tr>
-<tr style='background-color: lavender'>
-<td> 108</td><td><small> transbank </small> </td> <td align='right'> 0</td> <td align='right'>231</td> <td> costos-de-ventas</td>
-</tr>
-<tr style='background-color: lavender'>
-<td> 153</td><td><small> transbank </small> </td> <td align='right'> 525</td> <td align='right'>0</td> <td> costos-de-ventas</td>
 </tr>
 <tr  style='background-color: lightyellow'>
 <td></td><td><small> khipu </small> </td> <td align='right'> 50</td> <td align='right'>0</td> <td> costos-de-ventas</td>
@@ -306,22 +282,19 @@ Se han practicado liquidaciones, por lo que NO se muestran cuentas nominales
 <tr style='background-color: lavender'>
 <td> 8</td><td><small> khipu </small> </td> <td align='right'> 50</td> <td align='right'>0</td> <td> costos-de-ventas</td>
 </tr>
-<thead> <th></th><th colspan='4'> I N S U M O S</th> <th>383907</th></thead>
+<thead> <th></th><th colspan='4'> I N S U M O S</th> <th>878450</th></thead>
 <tr  style='background-color: lightyellow'>
-<td></td><td><small> materiales </small> </td> <td align='right'> 0</td> <td align='right'>44044</td> <td> insumos</td>
+<td></td><td><small> materiales </small> </td> <td align='right'> 123645</td> <td align='right'>0</td> <td> insumos</td>
 </tr>
-<thead> <th></th><th>materiales</th><th> 0</th> </thead>
+<thead> <th></th><th>materiales</th><th> 123645</th> </thead>
 <tr style='background-color: lavender'>
-<td> 2112</td><td><small> materiales </small> </td> <td align='right'> 0</td> <td align='right'>134958</td> <td> insumos</td>
-</tr>
-<tr style='background-color: lavender'>
-<td> 2112</td><td><small> materiales </small> </td> <td align='right'> 0</td> <td align='right'>76775</td> <td> insumos</td>
+<td> 2112</td><td><small> materiales </small> </td> <td align='right'> 0</td> <td align='right'>44044</td> <td> insumos</td>
 </tr>
 <tr style='background-color: lavender'>
 <td> 1</td><td><small> materiales </small> </td> <td align='right'> 44044</td> <td align='right'>0</td> <td> insumos</td>
 </tr>
 <tr  style='background-color: lightyellow'>
-<td></td><td><small> sodimac-insumos </small> </td> <td align='right'> 154498</td> <td align='right'>0</td> <td> insumos</td>
+<td></td><td><small> sodimac-insumos </small> </td> <td align='right'> 141489</td> <td align='right'>0</td> <td> insumos</td>
 </tr>
 <tr style='background-color: lavender'>
 <td> 102</td><td><small> sodimac-insumos </small> </td> <td align='right'> 13706</td> <td align='right'>0</td> <td> insumos</td>
@@ -342,22 +315,16 @@ Se han practicado liquidaciones, por lo que NO se muestran cuentas nominales
 <td> 146</td><td><small> sodimac-insumos </small> </td> <td align='right'> 48404</td> <td align='right'>0</td> <td> insumos</td>
 </tr>
 <tr style='background-color: lavender'>
-<td> 131</td><td><small> sodimac-insumos </small> </td> <td align='right'> 13009</td> <td align='right'>0</td> <td> insumos</td>
+<td> 188</td><td><small> sodimac-insumos </small> </td> <td align='right'> 8395</td> <td align='right'>0</td> <td> insumos</td>
 </tr>
 <tr style='background-color: lavender'>
 <td> 166</td><td><small> sodimac-insumos </small> </td> <td align='right'> 4950</td> <td align='right'>0</td> <td> insumos</td>
 </tr>
-<tr style='background-color: lavender'>
-<td> 188</td><td><small> sodimac-insumos </small> </td> <td align='right'> 8395</td> <td align='right'>0</td> <td> insumos</td>
-</tr>
 <tr  style='background-color: lightyellow'>
-<td></td><td><small> inventario-inicial </small> </td> <td align='right'> 211733</td> <td align='right'>0</td> <td> insumos</td>
+<td></td><td><small> inventario-inicial </small> </td> <td align='right'> 44044</td> <td align='right'>0</td> <td> insumos</td>
 </tr>
 <tr style='background-color: lavender'>
-<td> 2112</td><td><small> inventario-inicial </small> </td> <td align='right'> 134958</td> <td align='right'>0</td> <td> insumos</td>
-</tr>
-<tr style='background-color: lavender'>
-<td> 2112</td><td><small> inventario-inicial </small> </td> <td align='right'> 76775</td> <td align='right'>0</td> <td> insumos</td>
+<td> 2112</td><td><small> inventario-inicial </small> </td> <td align='right'> 44044</td> <td align='right'>0</td> <td> insumos</td>
 </tr>
 <tr  style='background-color: lightyellow'>
 <td></td><td><small> easy-insumos </small> </td> <td align='right'> 2134</td> <td align='right'>0</td> <td> insumos</td>
@@ -377,7 +344,7 @@ Se han practicado liquidaciones, por lo que NO se muestran cuentas nominales
 <tr style='background-color: lavender'>
 <td> 120</td><td><small> electrocom-insumos </small> </td> <td align='right'> 25220</td> <td align='right'>0</td> <td> insumos</td>
 </tr>
-<thead> <th></th><th colspan='4'> M A T E R I A L E S </th> <th> 0</th> </thead>
+<thead> <th></th><th colspan='4'> M A T E R I A L E S </th> <th> 123645</th> </thead>
 <tr  style='background-color: lightyellow'>
 <td></td><td><small> easy-materiales </small> </td> <td align='right'> 46605</td> <td align='right'>0</td> <td> materiales</td>
 </tr>
@@ -413,6 +380,9 @@ Se han practicado liquidaciones, por lo que NO se muestran cuentas nominales
 <td></td><td><small> ventas-con-eboleta-afecta </small> </td> <td align='right'> 0</td> <td align='right'>10494</td> <td> ventas</td>
 </tr>
 <tr style='background-color: lavender'>
+<td> 148</td> <td><small> ventas-con-eboleta-afecta </small> </td> <td align='right'> 10592</td> <td align='right'>0</td> <td> ventas</td>
+</tr>
+<tr style='background-color: lavender'>
 <td> 7</td> <td><small> ventas-con-eboleta-afecta </small> </td> <td align='right'> 29412</td> <td align='right'>0</td> <td> ventas</td>
 </tr>
 <tr style='background-color: lavender'>
@@ -428,13 +398,13 @@ Se han practicado liquidaciones, por lo que NO se muestran cuentas nominales
 <td> 141</td> <td><small> ventas-con-eboleta-afecta </small> </td> <td align='right'> 29412</td> <td align='right'>0</td> <td> ventas</td>
 </tr>
 <tr style='background-color: lavender'>
-<td> 148</td> <td><small> ventas-con-eboleta-afecta </small> </td> <td align='right'> 10592</td> <td align='right'>0</td> <td> ventas</td>
-</tr>
-<tr style='background-color: lavender'>
 <td> 161</td> <td><small> ventas-con-eboleta-afecta </small> </td> <td align='right'> 0</td> <td align='right'>21002</td> <td> ventas</td>
 </tr>
 <tr  style='background-color: lightyellow'>
 <td></td><td><small> ventas-con-voucher-afecto </small> </td> <td align='right'> 0</td> <td align='right'>144504</td> <td> ventas</td>
+</tr>
+<tr style='background-color: lavender'>
+<td> 123</td> <td><small> ventas-con-voucher-afecto </small> </td> <td align='right'> 33613</td> <td align='right'>0</td> <td> ventas</td>
 </tr>
 <tr style='background-color: lavender'>
 <td> 4</td> <td><small> ventas-con-voucher-afecto </small> </td> <td align='right'> 0</td> <td align='right'>123497</td> <td> ventas</td>
@@ -451,11 +421,11 @@ Se han practicado liquidaciones, por lo que NO se muestran cuentas nominales
 <tr style='background-color: lavender'>
 <td> 77</td> <td><small> ventas-con-voucher-afecto </small> </td> <td align='right'> 0</td> <td align='right'>151960</td> <td> ventas</td>
 </tr>
-<tr style='background-color: lavender'>
-<td> 123</td> <td><small> ventas-con-voucher-afecto </small> </td> <td align='right'> 33613</td> <td align='right'>0</td> <td> ventas</td>
-</tr>
 <tr  style='background-color: lightyellow'>
 <td></td><td><small> ventas-con-eboleta-exenta </small> </td> <td align='right'> 450050</td> <td align='right'>0</td> <td> ventas</td>
+</tr>
+<tr style='background-color: lavender'>
+<td> 116</td> <td><small> ventas-con-eboleta-exenta </small> </td> <td align='right'> 40000</td> <td align='right'>0</td> <td> ventas</td>
 </tr>
 <tr style='background-color: lavender'>
 <td> 6</td> <td><small> ventas-con-eboleta-exenta </small> </td> <td align='right'> 45050</td> <td align='right'>0</td> <td> ventas</td>
@@ -470,28 +440,13 @@ Se han practicado liquidaciones, por lo que NO se muestran cuentas nominales
 <td> 81</td> <td><small> ventas-con-eboleta-exenta </small> </td> <td align='right'> 0</td> <td align='right'>35000</td> <td> ventas</td>
 </tr>
 <tr style='background-color: lavender'>
-<td> 116</td> <td><small> ventas-con-eboleta-exenta </small> </td> <td align='right'> 40000</td> <td align='right'>0</td> <td> ventas</td>
-</tr>
-<tr style='background-color: lavender'>
 <td> 156</td> <td><small> ventas-con-eboleta-exenta </small> </td> <td align='right'> 400000</td> <td align='right'>0</td> <td> ventas</td>
 </tr>
 <tr  style='background-color: lightyellow'>
 <td></td><td><small> ventas-con-factura-afecta </small> </td> <td align='right'> 0</td> <td align='right'>951867</td> <td> ventas</td>
 </tr>
 <tr style='background-color: lavender'>
-<td> 301</td> <td><small> ventas-con-factura-afecta </small> </td> <td align='right'> 0</td> <td align='right'>102</td> <td> ventas</td>
-</tr>
-<tr style='background-color: lavender'>
 <td> 37</td> <td><small> ventas-con-factura-afecta </small> </td> <td align='right'> 0</td> <td align='right'>225</td> <td> ventas</td>
-</tr>
-<tr style='background-color: lavender'>
-<td> 83</td> <td><small> ventas-con-factura-afecta </small> </td> <td align='right'> 0</td> <td align='right'>93179</td> <td> ventas</td>
-</tr>
-<tr style='background-color: lavender'>
-<td> 82</td> <td><small> ventas-con-factura-afecta </small> </td> <td align='right'> 558823</td> <td align='right'>0</td> <td> ventas</td>
-</tr>
-<tr style='background-color: lavender'>
-<td> 76</td> <td><small> ventas-con-factura-afecta </small> </td> <td align='right'> 0</td> <td align='right'>558823</td> <td> ventas</td>
 </tr>
 <tr style='background-color: lavender'>
 <td> 122</td> <td><small> ventas-con-factura-afecta </small> </td> <td align='right'> 0</td> <td align='right'>62000</td> <td> ventas</td>
@@ -515,10 +470,7 @@ Se han practicado liquidaciones, por lo que NO se muestran cuentas nominales
 <td> 151</td> <td><small> ventas-con-factura-afecta </small> </td> <td align='right'> 0</td> <td align='right'>126050</td> <td> ventas</td>
 </tr>
 <tr style='background-color: lavender'>
-<td> 129</td> <td><small> ventas-con-factura-afecta </small> </td> <td align='right'> 0</td> <td align='right'>63030</td> <td> ventas</td>
-</tr>
-<tr style='background-color: lavender'>
-<td> 164</td> <td><small> ventas-con-factura-afecta </small> </td> <td align='right'> 0</td> <td align='right'>93137</td> <td> ventas</td>
+<td> 130</td> <td><small> ventas-con-factura-afecta </small> </td> <td align='right'> 0</td> <td align='right'>63030</td> <td> ventas</td>
 </tr>
 <tr style='background-color: lavender'>
 <td> 197</td> <td><small> ventas-con-factura-afecta </small> </td> <td align='right'> 0</td> <td align='right'>93137</td> <td> ventas</td>
@@ -526,11 +478,23 @@ Se han practicado liquidaciones, por lo que NO se muestran cuentas nominales
 <tr style='background-color: lavender'>
 <td> 196</td> <td><small> ventas-con-factura-afecta </small> </td> <td align='right'> 0</td> <td align='right'>93137</td> <td> ventas</td>
 </tr>
-<tr  style='background-color: lightyellow'>
-<td></td><td><small> ventas-con-factura-exenta </small> </td> <td align='right'> 0</td> <td align='right'>544996</td> <td> ventas</td>
+<tr style='background-color: lavender'>
+<td> 301</td> <td><small> ventas-con-factura-afecta </small> </td> <td align='right'> 0</td> <td align='right'>102</td> <td> ventas</td>
 </tr>
 <tr style='background-color: lavender'>
-<td> 75</td> <td><small> ventas-con-factura-exenta </small> </td> <td align='right'> 0</td> <td align='right'>35000</td> <td> ventas</td>
+<td> 83</td> <td><small> ventas-con-factura-afecta </small> </td> <td align='right'> 0</td> <td align='right'>93179</td> <td> ventas</td>
+</tr>
+<tr style='background-color: lavender'>
+<td> 82</td> <td><small> ventas-con-factura-afecta </small> </td> <td align='right'> 558823</td> <td align='right'>0</td> <td> ventas</td>
+</tr>
+<tr style='background-color: lavender'>
+<td> 76</td> <td><small> ventas-con-factura-afecta </small> </td> <td align='right'> 0</td> <td align='right'>558823</td> <td> ventas</td>
+</tr>
+<tr style='background-color: lavender'>
+<td> 164</td> <td><small> ventas-con-factura-afecta </small> </td> <td align='right'> 0</td> <td align='right'>93137</td> <td> ventas</td>
+</tr>
+<tr  style='background-color: lightyellow'>
+<td></td><td><small> ventas-con-factura-exenta </small> </td> <td align='right'> 0</td> <td align='right'>544996</td> <td> ventas</td>
 </tr>
 <tr style='background-color: lavender'>
 <td> 117</td> <td><small> ventas-con-factura-exenta </small> </td> <td align='right'> 0</td> <td align='right'>40000</td> <td> ventas</td>
@@ -542,10 +506,7 @@ Se han practicado liquidaciones, por lo que NO se muestran cuentas nominales
 <td> 133</td> <td><small> ventas-con-factura-exenta </small> </td> <td align='right'> 0</td> <td align='right'>6666</td> <td> ventas</td>
 </tr>
 <tr style='background-color: lavender'>
-<td> 127</td> <td><small> ventas-con-factura-exenta </small> </td> <td align='right'> 0</td> <td align='right'>400000</td> <td> ventas</td>
-</tr>
-<tr style='background-color: lavender'>
-<td> 158</td> <td><small> ventas-con-factura-exenta </small> </td> <td align='right'> 0</td> <td align='right'>6666</td> <td> ventas</td>
+<td> 128</td> <td><small> ventas-con-factura-exenta </small> </td> <td align='right'> 0</td> <td align='right'>400000</td> <td> ventas</td>
 </tr>
 <tr style='background-color: lavender'>
 <td> 169</td> <td><small> ventas-con-factura-exenta </small> </td> <td align='right'> 0</td> <td align='right'>6666</td> <td> ventas</td>
@@ -558,4 +519,10 @@ Se han practicado liquidaciones, por lo que NO se muestran cuentas nominales
 </tr>
 <tr style='background-color: lavender'>
 <td> 189</td> <td><small> ventas-con-factura-exenta </small> </td> <td align='right'> 0</td> <td align='right'>6666</td> <td> ventas</td>
+</tr>
+<tr style='background-color: lavender'>
+<td> 75</td> <td><small> ventas-con-factura-exenta </small> </td> <td align='right'> 0</td> <td align='right'>35000</td> <td> ventas</td>
+</tr>
+<tr style='background-color: lavender'>
+<td> 158</td> <td><small> ventas-con-factura-exenta </small> </td> <td align='right'> 0</td> <td align='right'>6666</td> <td> ventas</td>
 </tr>
