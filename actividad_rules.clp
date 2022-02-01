@@ -29,8 +29,8 @@
   (+ (* 10000 ?ano) (* 100 ( mes_to_numero ?mes)) ?dia)
 )
 
-
 (defrule guardar-partidas
+  (no)
   (declare (salience 10000))
   (selecciones ( origen-de-subcuentas ?origen))
   ;estas actividades están en activiaades.txt
@@ -90,6 +90,41 @@
   ( assert ( subcuenta (origen ?origen))) ;si real para ver las subcuentas, el balance se descuadrará
 ; ( printout t " partida ingresada " ?numero crlf)
 )
+
+
+
+;para cada partida que generen las reglas,
+;econtar el hecho que asociado a estas
+;y anotarlas con esos hechos
+(defrule anotando-partidas
+  (actividad (nombre ?nombre))
+  ?partida <-  (partida (numero ?numero))
+  =>
+  (printout t seleccionando tab ?nombre crlf)
+  (do-for-all-facts ((?f ?nombre)) (eq ?f:partida ?numero) 
+    (printout t ?f:partida tab ?nombre crlf)
+    (modify ?partida (hecho ?nombre))
+  )    
+)
+
+
+(defrule hechos-economicos-admitidos-como-actividad
+  (actividad (nombre ?nombre))
+ =>
+  (do-for-all-facts ((?f ?nombre)) TRUE
+;    (printout t ?f:partida crlf)
+    (assert (ccm (partida ?f:partida)))
+  )
+)
+
+
+(defrule inicio-actividad
+  (declare (salience 10000))
+  (selecciones ( origen-de-subcuentas ?origen))
+  =>
+   ( assert ( subcuenta (origen ?origen)))
+)
+
 
 (defrule inicio-de-los-dias
   (declare (salience 10000))

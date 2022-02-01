@@ -6,19 +6,42 @@
  (export ?ALL)
 )
 
+
+(defrule iterando-abonos
+  (no)
+ =>
+  (printout t "abonos" crlf)
+  (do-for-all-facts ((?f abono)) TRUE  
+    (printout t ?f:partida crlf)
+  ) 
+)
+
+
+
+(defrule iterando-venta-sii
+  (no)
+ =>
+  (printout t "venta-sii" crlf)
+  (do-for-all-facts ((?f venta-sii)) TRUE 
+    (printout t ?f:partida crlf)
+  )  
+)
+
+
+
 (defrule inicio-modulo-bi
   ( declare (salience 10000))
   =>
   ( printout t "========================= BI: Business Intelligence ============" crlf)
-  ( load-facts "actividades.txt")
   ( bind ?reglas ( get-defrule-list ACTIVIDAD))
   ( assert (reglas (lista ?reglas)))
 ;  ( printout t ?reglas )
 ;  ( while (> (length$ ?reglas) 0)  do
-;   ( bind ?regla (nth$ 1 ?reglas))
-;   ( printout t ?regla crlf)
-;   ( bind ?reglas (rest$ ?reglas))
-;  )
+ ;  ( bind ?regla (nth$ 1 ?reglas))
+;  ( printout t ?regla crlf)
+;   ( printout t (defrule (sym-cat ACTIVIDAD:: ?regla ) ) crlf)
+  ; ( bind ?reglas (rest$ ?reglas))
+ ; )
 )
 
 (defrule borrando-hechos-irrelevantes
@@ -45,30 +68,35 @@
   (printout t actividad tab ?nombre "|" crlf)
 )
 
-(defrule kk
-  (no)
-   (hecho (regla ?n))
-  =>
-  (printout t ?n crlf)
-)
+
+
 
 (defrule hechos-que-no-tienen-regla-registrada
-   ( hecho (id ?id) (regla ?regla ))
+   ( hecho (id ?id) (regla ?regla ) (partida ?numero))
    ( reglas (lista $?lista ))
    ( test (not (member$ ?regla $?lista)))
   =>
-   ( printout t "El hecho " ?id " No tiene registrada su regla " ?regla crlf)
+   ( printout t ?numero "El hecho " ?id " No tiene registrada su regla " ?regla crlf)
 )
 
 
-
 (defrule hechos-que-tienen-regla-registrada
-   ( hecho (id ?id) (regla ?regla ))
+   ( hecho (id ?id) (regla ?regla ) (partida ?numero))
    ( reglas (lista $?lista ))
    ( test (member$ ?regla $?lista))
   =>
    ( printout t "El hecho " ?id " tiene registrada su regla " ?regla crlf)
+   ( asser
+  ; ( printout t "Matches de esa regla son " (get-matches ?regla) crlf)
 )
+
+
+(defrule partidas-sin-anotacion-de-hecho
+  (partida (numero ?numero) (hecho nil))
+ =>
+  (printout t "Partida sin anotación de hecho: " ?numero crlf)
+)
+
 
 (defrule mostrando-hechos
   (no)
@@ -76,6 +104,8 @@
   =>
    (printout t ?id tab partida tab ?numero tab ?regla "|" crlf)
 )
+
+
 
 (defrule detectando-hecho-gravado-iva
    (balance (ano ?ano))
@@ -126,6 +156,7 @@
 )
 
 
+
 (defrule abono-no-realizado
    (partida (numero ?numero) (actividad ?actividad))
    (abono (realizado false) (?numero) (ano ?ano) )
@@ -133,6 +164,7 @@
   =>
    (printout t "x->a Abono no realizado: " tab ?numero tab ?actividad crlf)
 )
+
 
 
 (defrule cargo-realizado

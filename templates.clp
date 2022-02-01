@@ -7,6 +7,7 @@
 )
 
 (deftemplate hecho
+    (slot nombre)
     (slot gravado (default false))
     (slot id)
     (slot partida)
@@ -869,6 +870,7 @@
 )
 
 (deftemplate MAIN::partida
+   (slot hecho)
    (slot archivo)
    (slot proveedor)
    (slot old)

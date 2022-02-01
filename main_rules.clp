@@ -109,6 +109,8 @@
    ( printout t archivo-cuentas tab ?archivo crlf)
    ( load-facts ?archivo)
 
+   ( load-facts "actividades.txt")
+
    ( assert (actual (mes enero     )))
    ( assert (actual (mes febrero   )))
    ( assert (actual (mes marzo     )))
