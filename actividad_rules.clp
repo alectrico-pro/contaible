@@ -509,8 +509,8 @@
    ( assert (partida (proveedor ?departamento) (numero ?numero) (dia ?dia) (mes ?mes) (ano ?ano) (descripcion (str-cat "Declaración de Remuneraciones de " ?nombre " días trabajados: " ?dias-trabajados " Tramo Exento: " ?tramo-exento " Sueldo Bruto de: " ?sueldo " Tasa de Impuesto Único: " ?tasa-unico " Monto de Impuesto Único: " ?monto-unico)) (actividad declarar-remuneraciones)))
 
 
-   ( printout t previsio-afp: tab (round (* ?sueldo 0.10)) crlf)
-   ( printout t comision-afp: tab (round (* ?sueldo ?comision)) crlf)
+   ( printout t previsio-afp: tab tab (round (* ?sueldo 0.10)) crlf)
+   ( printout t comision-afp: tab tab (round (* ?sueldo ?comision)) crlf)
    ( printout t .....oblig.":" tab (round (* ?sueldo (+ 0.10 ?comision))) crlf)
    ( printout t comision-afc: tab (round (* ?sueldo ?afc)) crlf)
    ( printout t cotizac.sis.: tab (round (* ?sueldo ?sis)) crlf)
@@ -529,6 +529,19 @@
    ( bind ?entidades (+ ?afp ?salud ))
 
    ( printout t "===================================" crlf)
+   ( printout t "EN FORMATO DE PLANILLAS PREVIRED: " crlf)
+   ( printout t " PLANILLA AFP " crlf)
+   ( printout t " Cotización. Obligatoria " tab ?(round (* ?sueldo (+ 0.10 ?comision))) crlf)
+   ( printout t " Seguro Invalidez y Sobrevivencia (SIS) " tab ?sis crlf)
+   ( printout t " SubTotal a Pagar Fondo de Pensiones (AFP) " tab ?(round (* ?sueldo (+ 0.10 ?comision ?sis ))) crlf)
+   ( printout t " Comisión AFP " ?comision crlf)
+   ( printout t " ---- " crlf)
+   ( printout t " Resumen Cotizaciones Fondo de Cesantía (AFC" crlf)
+   ( printout t "  Cotizacion afiliado " crlf)
+   ( printout t "  Cotizacion Empleador " crlf(
+   ( printout t "Total a Pagar al Fondo de Cesantía" tab ?afc crlf)
+   ( printout t " PLANILLA SALUD " crlf)
+   ( printout t " Cotización Legal " ?salud crlf)
    ( printout t (if (eq ?declarada true ) then DECLARADA else NO-DECLARADA ) tab )
    ( printout t (if (eq ?pagada true ) then PAGADA else NO-PAGADA ) tab )
    ( printout t (if (eq ?impuesta true ) then IMPUESTA else NO-IMPUESTA ) crlf)

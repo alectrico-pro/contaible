@@ -5,6 +5,6 @@
   ( jornada ordinaria)
   ( dedicacion completa)
   ( diaria 50000)
-  ( duracion definida)
+  ( duracion indefinida)
   ( tipo-de-duracion a-plazo-fijo)
 )

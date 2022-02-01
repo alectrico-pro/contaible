@@ -28,8 +28,9 @@
 ( tasas (utm 54.171 ) (ppm 0.00125) (idpc 0.10) (ano 2021)  (honorarios 0.1150) (mes diciembre))
 ( tasas (utm 54.442 ) (ppm 0.00125) (idpc 0.10) (ano 2022)  (honorarios 0.1150) (mes enero))
 ( tasas (utm 54.878 ) (ppm 0.00125) (idpc 0.10) (ano 2022)  (honorarios 0.1225) (mes febrero))
-;reemplazar el de abajo
+;..........  hacia abajo son suposiciones para pruebas ----------
 ( tasas (utm 54.878 ) (ppm 0.00125) (idpc 0.10) (ano 2022)  (honorarios 0.1225) (mes marzo))
+( tasas (utm 54.878 ) (ppm 0.00125) (idpc 0.10) (ano 2022)  (honorarios 0.1225) (mes abril))
 
 
 

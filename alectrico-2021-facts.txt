@@ -7,7 +7,7 @@
  (razon "alectrico® SpA"))
 
 
-(balance (dia 31) (mes enero) (ano 2022))
+(balance (dia 31) (mes febrero) (ano 2022))
 
 
 ;dia 01/01/2021---------- asiento inicial  ----------------
@@ -2127,7 +2127,7 @@
  (archivo "../factura-propia-exenta-4.png")
  (finalidad ""))
 
-
+;pagando los salarios del mes anterior
  ;multa=interes afp 635 + interes salud 330 + interes afc 114
 (pago-de-salarios
  (partida 129)
@@ -3231,15 +3231,15 @@
 ( ajuste-de-iva     (mes enero) (ano 2022) (partida 2008))
 
 ;--------------------------------- febrero -----------------------------------
-
- ;multa=interes afp 5336 + interes salud 2795 + interes afc 1003 + multas fonasa 23416
+;5336-4445
+ ;multa=interes afp 5336-4445 + interes salud 2795 + interes afc 1003 + multas fonasa 23416
 (pago-de-salarios
  (partida 2009)
  (trabajador alexander)
  (afp   47180)
  (afc   10500)
  (salud  24500)
- (multa  32550)
+ (multa  28105)
  (folio-prevision 20022021092580)
  (folio-salud 2017220100278294)
  (remuneracion 267820)

@@ -6,7 +6,7 @@ layout: page
 <p> Insumo de Pedido 1724 encontrado en partida </p> 166
 <p> Insumo de Pedido 1724 encontrado en partida </p> 149
 <p> Insumo de Pedido 1724 encontrado en partida </p> 146
-<p> Insumo de Pedido 1724 encontrado en partida </p> 131
+<p> Insumo de Pedido 1724 encontrado en partida </p> 132
 <p> Compra de Pedido 1724 encontrado en partida </p> 121
 <p> Materiales de Pedido 1724 encontrado en partida </p> 21
 <p> Compra de Pedido 1724 encontrado en partida </p> 16

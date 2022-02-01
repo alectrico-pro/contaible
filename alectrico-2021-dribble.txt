@@ -12,9 +12,6 @@ archivo-accionistas	accionistas.txt
 archivo-cuentas	cuentas.txt
 ----------------- PRIMITIVA ------------------
 ----------------- ACTIVIDAD ------------------
-Partida 65 Rechazada
-Gasto Administrativo 104 Rechazado
-Se abrió el pedido 1724
 seleccionando	gasto-administrativo
 seleccionando	gasto-administrativo
 seleccionando	gasto-administrativo
@@ -619,8 +616,8 @@ Traspaso de 44044 de: materiales a: inventario-inicial
       pagado a sodimac
 -->cafc comprando activo-fijo al contado taladro-inalambrico por un valor total de 179990
        pagado a sodimac
--->cc comprando al contado THHN-25m-Rojo-2-pares-guantes-visor-pantalla por un valor total de 15481
-      pagado a sodimac
+-->ga gasto-administrativo- Dominio-Internet por un valor total de 9950
+       pagado a u-chile
 -->cc comprando al contado interruptores-guantes por un valor total de 8470
       pagado a easy
 -->nct Nota de Crédito Emitida ventas-con-eboleta-afecta por 35000
@@ -701,27 +698,6 @@ Distribución Utilidad del Ejercicio Anterior 85294
 -->cd costo directo de ventas, por comision-mensual por un valor total de 5035
        pagado a transbank
 -->nct Nota de Crédito Emitida ventas-con-voucher-afecto por 180835
-
-===================================
----- julio	alexander -----
-d.trabajados:	5
-sem.-corrida:	1
-sueldobruto:	300000
-previsio-afp:	30000
-comision-afp:	3810
-.....oblig.:	33810
-comision-afc:	9000
-cotizac.sis.:	6630
-cotiza.salud:	21000
--------------------------
-AFP:	49440
-SALUD:	21000
-TOTAL:	70440
-LIQUI:	229560
-===================================
-DECLARADA	PAGADA	IMPUESTA
-
--->salario -- Declarando Salarios electrico por un valor de $300000
 -->vsii Venta SII No Afecta 2 de visita-a-huelen por un valor de $0
 -->cc comprando al contado barras-conectores-tester-puestas-a-tierra por un valor total de 15030
       pagado a sodimac
@@ -751,32 +727,9 @@ DECLARADA	PAGADA	IMPUESTA
       pagado a electrocom
 -->vsii Venta SII 16 de tablero por un valor de $73780
 -->nct Nota de Crédito Emitida ventas-con-voucher-afecto por 39999
-
-===================================
----- agosto	alexander -----
-d.trabajados:	5
-sem.-corrida:	1
-sueldobruto:	300000
-previsio-afp:	30000
-comision-afp:	3810
-.....oblig.:	33810
-comision-afc:	9000
-cotizac.sis.:	6630
-cotiza.salud:	21000
--------------------------
-AFP:	49440
-SALUD:	21000
-TOTAL:	70440
-LIQUI:	229560
-===================================
-NO-DECLARADA	NO-PAGADA	NO-IMPUESTA
-
--->salario -- Declarando Salarios electrico por un valor de $300000
 -->vsii Venta SII No Afecta 4 de diseño-electrico-los-capitanes-fase-2 por un valor de $0
 -->pago-de-salario -- Pagando salarios de alexander por 300000
 -->vsii Venta SII 17 de ensacado-de-15-sacos-de-escombros por un valor de $75006
--->ga gasto-administrativo- Dominio-Internet por un valor total de 9950
-       pagado a u-chile
 -->vsii Venta SII No Afecta 5 de visita-huelen-pago-2-6-la-boleta-dice-pago-1-de-6 por un valor de $0
 -->ga gasto-administrativo- servicio-telefonia-agosto por un valor total de 8242
        pagado a entel
@@ -821,93 +774,7 @@ NO-DECLARADA	NO-PAGADA	NO-IMPUESTA
 -->ga gasto-administrativo- servicio-telefonia por un valor total de 8242
        pagado a entel
 Depositando en banco-estado por un valor de $900000
-seleccionando	pedido
-seleccionando	traspaso
-seleccionando	pago-de-salarios
-seleccionando	cobro-de-cuentas-por-cobrar
-seleccionando	nota-de-credito-de-factura-reclamada
-seleccionando	anulacion-de-vouchers
-seleccionando	compra-de-materiales
-seleccionando	compra-de-acciones
-seleccionando	constitucion-de-spa
-seleccionando	distribucion-de-utilidad
-seleccionando	f29
-seleccionando	gasto-investigacion-y-desarrollo
-seleccionando	pago-de-retenciones-de-honorarios
-seleccionando	pago-de-iva
-seleccionando	ajuste-de-iva-contra-debito
-seleccionando	ajuste-de-iva-contra-credito
-seleccionando	rendicion-de-vouchers-sii
-seleccionando	rendicion-de-eboletas-sii
-seleccionando	nota-de-debito-manual
-seleccionando	nota-de-debito-sii
-seleccionando	nota-de-credito-de-subcuenta-existente
-seleccionando	nota-de-credito
-seleccionando	nota-de-credito-sii
-seleccionando	venta-sii
-seleccionando	venta-anticipada
-seleccionando	pago
-seleccionando	despago
-seleccionando	gasto-sobre-compras
-seleccionando	depreciacion
-seleccionando	amortizacion
-seleccionando	gasto-afecto
-seleccionando	gasto-ventas
-seleccionando	devolucion
-seleccionando	salario
-seleccionando	honorario
-seleccionando	deposito
-seleccionando	costo-ventas
-seleccionando	compra
-seleccionando	venta
-seleccionando	gasto-promocional
-seleccionando	gasto-proveedor
-65	gasto-proveedor
-seleccionando	pedido
-seleccionando	traspaso
-seleccionando	pago-de-salarios
-seleccionando	cobro-de-cuentas-por-cobrar
-seleccionando	nota-de-credito-de-factura-reclamada
-seleccionando	anulacion-de-vouchers
-seleccionando	compra-de-materiales
-seleccionando	compra-de-acciones
-seleccionando	constitucion-de-spa
-seleccionando	distribucion-de-utilidad
-seleccionando	f29
-seleccionando	gasto-investigacion-y-desarrollo
-seleccionando	pago-de-retenciones-de-honorarios
-seleccionando	pago-de-iva
-seleccionando	ajuste-de-iva-contra-debito
-seleccionando	ajuste-de-iva-contra-credito
-seleccionando	rendicion-de-vouchers-sii
-seleccionando	rendicion-de-eboletas-sii
-seleccionando	nota-de-debito-manual
-seleccionando	nota-de-debito-sii
-seleccionando	nota-de-credito-de-subcuenta-existente
-seleccionando	nota-de-credito
-seleccionando	nota-de-credito-sii
-seleccionando	venta-sii
-seleccionando	venta-anticipada
-seleccionando	pago
-seleccionando	despago
-seleccionando	gasto-sobre-compras
-seleccionando	depreciacion
-seleccionando	amortizacion
-seleccionando	gasto-afecto
-seleccionando	gasto-ventas
-seleccionando	devolucion
-seleccionando	salario
-seleccionando	honorario
-seleccionando	deposito
-seleccionando	costo-ventas
-seleccionando	compra
-seleccionando	venta
-seleccionando	gasto-promocional
-seleccionando	gasto-proveedor
-seleccionando	gasto-administrativo
-104	gasto-administrativo
-seleccionando	pedido
-120,1	pedido
+-->pago-de-salario -- Pagando salarios de alexander por 350000
 seleccionando	pedido
 seleccionando	traspaso
 2112	traspaso
@@ -3356,41 +3223,6 @@ seleccionando	nota-de-credito-de-subcuenta-existente
 seleccionando	nota-de-credito
 seleccionando	nota-de-credito-sii
 seleccionando	venta-sii
-seleccionando	venta-anticipada
-seleccionando	pago
-seleccionando	despago
-seleccionando	gasto-sobre-compras
-seleccionando	depreciacion
-seleccionando	amortizacion
-seleccionando	gasto-afecto
-seleccionando	gasto-ventas
-seleccionando	devolucion
-seleccionando	salario
-88	salario
-seleccionando	pedido
-seleccionando	traspaso
-seleccionando	pago-de-salarios
-seleccionando	cobro-de-cuentas-por-cobrar
-seleccionando	nota-de-credito-de-factura-reclamada
-seleccionando	anulacion-de-vouchers
-seleccionando	compra-de-materiales
-seleccionando	compra-de-acciones
-seleccionando	constitucion-de-spa
-seleccionando	distribucion-de-utilidad
-seleccionando	f29
-seleccionando	gasto-investigacion-y-desarrollo
-seleccionando	pago-de-retenciones-de-honorarios
-seleccionando	pago-de-iva
-seleccionando	ajuste-de-iva-contra-debito
-seleccionando	ajuste-de-iva-contra-credito
-seleccionando	rendicion-de-vouchers-sii
-seleccionando	rendicion-de-eboletas-sii
-seleccionando	nota-de-debito-manual
-seleccionando	nota-de-debito-sii
-seleccionando	nota-de-credito-de-subcuenta-existente
-seleccionando	nota-de-credito
-seleccionando	nota-de-credito-sii
-seleccionando	venta-sii
 93	venta-sii
 seleccionando	pedido
 seleccionando	traspaso
@@ -4013,17 +3845,11 @@ seleccionando	nota-de-credito-de-subcuenta-existente
 seleccionando	nota-de-credito
 seleccionando	nota-de-credito-sii
 seleccionando	venta-sii
-seleccionando	venta-anticipada
-seleccionando	pago
-seleccionando	despago
-seleccionando	gasto-sobre-compras
-seleccionando	depreciacion
-seleccionando	amortizacion
-seleccionando	gasto-afecto
-seleccionando	gasto-ventas
-seleccionando	devolucion
-seleccionando	salario
-124	salario
+128	venta-sii
+seleccionando	pedido
+seleccionando	traspaso
+seleccionando	pago-de-salarios
+129	pago-de-salarios
 seleccionando	pedido
 seleccionando	traspaso
 seleccionando	pago-de-salarios
@@ -4048,78 +3874,7 @@ seleccionando	nota-de-credito-de-subcuenta-existente
 seleccionando	nota-de-credito
 seleccionando	nota-de-credito-sii
 seleccionando	venta-sii
-127	venta-sii
-seleccionando	pedido
-seleccionando	traspaso
-seleccionando	pago-de-salarios
-128	pago-de-salarios
-seleccionando	pedido
-seleccionando	traspaso
-seleccionando	pago-de-salarios
-seleccionando	cobro-de-cuentas-por-cobrar
-seleccionando	nota-de-credito-de-factura-reclamada
-seleccionando	anulacion-de-vouchers
-seleccionando	compra-de-materiales
-seleccionando	compra-de-acciones
-seleccionando	constitucion-de-spa
-seleccionando	distribucion-de-utilidad
-seleccionando	f29
-seleccionando	gasto-investigacion-y-desarrollo
-seleccionando	pago-de-retenciones-de-honorarios
-seleccionando	pago-de-iva
-seleccionando	ajuste-de-iva-contra-debito
-seleccionando	ajuste-de-iva-contra-credito
-seleccionando	rendicion-de-vouchers-sii
-seleccionando	rendicion-de-eboletas-sii
-seleccionando	nota-de-debito-manual
-seleccionando	nota-de-debito-sii
-seleccionando	nota-de-credito-de-subcuenta-existente
-seleccionando	nota-de-credito
-seleccionando	nota-de-credito-sii
-seleccionando	venta-sii
-129	venta-sii
-seleccionando	pedido
-seleccionando	traspaso
-seleccionando	pago-de-salarios
-seleccionando	cobro-de-cuentas-por-cobrar
-seleccionando	nota-de-credito-de-factura-reclamada
-seleccionando	anulacion-de-vouchers
-seleccionando	compra-de-materiales
-seleccionando	compra-de-acciones
-seleccionando	constitucion-de-spa
-seleccionando	distribucion-de-utilidad
-seleccionando	f29
-seleccionando	gasto-investigacion-y-desarrollo
-seleccionando	pago-de-retenciones-de-honorarios
-seleccionando	pago-de-iva
-seleccionando	ajuste-de-iva-contra-debito
-seleccionando	ajuste-de-iva-contra-credito
-seleccionando	rendicion-de-vouchers-sii
-seleccionando	rendicion-de-eboletas-sii
-seleccionando	nota-de-debito-manual
-seleccionando	nota-de-debito-sii
-seleccionando	nota-de-credito-de-subcuenta-existente
-seleccionando	nota-de-credito
-seleccionando	nota-de-credito-sii
-seleccionando	venta-sii
-seleccionando	venta-anticipada
-seleccionando	pago
-seleccionando	despago
-seleccionando	gasto-sobre-compras
-seleccionando	depreciacion
-seleccionando	amortizacion
-seleccionando	gasto-afecto
-seleccionando	gasto-ventas
-seleccionando	devolucion
-seleccionando	salario
-seleccionando	honorario
-seleccionando	deposito
-seleccionando	costo-ventas
-seleccionando	compra
-seleccionando	venta
-seleccionando	gasto-promocional
-seleccionando	gasto-proveedor
-seleccionando	gasto-administrativo
+130	venta-sii
 seleccionando	pedido
 seleccionando	traspaso
 seleccionando	pago-de-salarios
@@ -5066,132 +4821,7 @@ seleccionando	gasto-administrativo
 seleccionando	pedido
 seleccionando	traspaso
 seleccionando	pago-de-salarios
-seleccionando	cobro-de-cuentas-por-cobrar
-seleccionando	nota-de-credito-de-factura-reclamada
-seleccionando	anulacion-de-vouchers
-seleccionando	compra-de-materiales
-seleccionando	compra-de-acciones
-seleccionando	constitucion-de-spa
-seleccionando	distribucion-de-utilidad
-seleccionando	f29
-seleccionando	gasto-investigacion-y-desarrollo
-seleccionando	pago-de-retenciones-de-honorarios
-seleccionando	pago-de-iva
-seleccionando	ajuste-de-iva-contra-debito
-seleccionando	ajuste-de-iva-contra-credito
-seleccionando	rendicion-de-vouchers-sii
-seleccionando	rendicion-de-eboletas-sii
-seleccionando	nota-de-debito-manual
-seleccionando	nota-de-debito-sii
-seleccionando	nota-de-credito-de-subcuenta-existente
-seleccionando	nota-de-credito
-seleccionando	nota-de-credito-sii
-seleccionando	venta-sii
-seleccionando	venta-anticipada
-seleccionando	pago
-seleccionando	despago
-seleccionando	gasto-sobre-compras
-seleccionando	depreciacion
-seleccionando	amortizacion
-seleccionando	gasto-afecto
-seleccionando	gasto-ventas
-seleccionando	devolucion
-seleccionando	salario
-seleccionando	honorario
-seleccionando	deposito
-seleccionando	costo-ventas
-seleccionando	compra
-seleccionando	venta
-seleccionando	gasto-promocional
-seleccionando	gasto-proveedor
-65	gasto-proveedor
-seleccionando	gasto-administrativo
-seleccionando	pedido
-seleccionando	traspaso
-seleccionando	pago-de-salarios
-seleccionando	cobro-de-cuentas-por-cobrar
-seleccionando	nota-de-credito-de-factura-reclamada
-seleccionando	anulacion-de-vouchers
-seleccionando	compra-de-materiales
-seleccionando	compra-de-acciones
-seleccionando	constitucion-de-spa
-seleccionando	distribucion-de-utilidad
-seleccionando	f29
-seleccionando	gasto-investigacion-y-desarrollo
-seleccionando	pago-de-retenciones-de-honorarios
-seleccionando	pago-de-iva
-seleccionando	ajuste-de-iva-contra-debito
-seleccionando	ajuste-de-iva-contra-credito
-seleccionando	rendicion-de-vouchers-sii
-seleccionando	rendicion-de-eboletas-sii
-seleccionando	nota-de-debito-manual
-seleccionando	nota-de-debito-sii
-seleccionando	nota-de-credito-de-subcuenta-existente
-seleccionando	nota-de-credito
-seleccionando	nota-de-credito-sii
-seleccionando	venta-sii
-seleccionando	venta-anticipada
-seleccionando	pago
-seleccionando	despago
-seleccionando	gasto-sobre-compras
-seleccionando	depreciacion
-seleccionando	amortizacion
-seleccionando	gasto-afecto
-seleccionando	gasto-ventas
-seleccionando	devolucion
-seleccionando	salario
-seleccionando	honorario
-seleccionando	deposito
-seleccionando	costo-ventas
-seleccionando	compra
-seleccionando	venta
-seleccionando	gasto-promocional
-seleccionando	gasto-proveedor
-seleccionando	gasto-administrativo
-104	gasto-administrativo
-seleccionando	pedido
-120,1	pedido
-seleccionando	traspaso
-seleccionando	pago-de-salarios
-seleccionando	cobro-de-cuentas-por-cobrar
-seleccionando	nota-de-credito-de-factura-reclamada
-seleccionando	anulacion-de-vouchers
-seleccionando	compra-de-materiales
-seleccionando	compra-de-acciones
-seleccionando	constitucion-de-spa
-seleccionando	distribucion-de-utilidad
-seleccionando	f29
-seleccionando	gasto-investigacion-y-desarrollo
-seleccionando	pago-de-retenciones-de-honorarios
-seleccionando	pago-de-iva
-seleccionando	ajuste-de-iva-contra-debito
-seleccionando	ajuste-de-iva-contra-credito
-seleccionando	rendicion-de-vouchers-sii
-seleccionando	rendicion-de-eboletas-sii
-seleccionando	nota-de-debito-manual
-seleccionando	nota-de-debito-sii
-seleccionando	nota-de-credito-de-subcuenta-existente
-seleccionando	nota-de-credito
-seleccionando	nota-de-credito-sii
-seleccionando	venta-sii
-seleccionando	venta-anticipada
-seleccionando	pago
-seleccionando	despago
-seleccionando	gasto-sobre-compras
-seleccionando	depreciacion
-seleccionando	amortizacion
-seleccionando	gasto-afecto
-seleccionando	gasto-ventas
-seleccionando	devolucion
-seleccionando	salario
-seleccionando	honorario
-seleccionando	deposito
-seleccionando	costo-ventas
-seleccionando	compra
-seleccionando	venta
-seleccionando	gasto-promocional
-seleccionando	gasto-proveedor
-seleccionando	gasto-administrativo
+2009	pago-de-salarios
 seleccionando	pedido
 seleccionando	traspaso
 2112	traspaso
@@ -6217,49 +5847,6 @@ seleccionando	nota-de-credito-de-subcuenta-existente
 seleccionando	nota-de-credito
 seleccionando	nota-de-credito-sii
 seleccionando	venta-sii
-seleccionando	venta-anticipada
-seleccionando	pago
-seleccionando	despago
-seleccionando	gasto-sobre-compras
-seleccionando	depreciacion
-seleccionando	amortizacion
-seleccionando	gasto-afecto
-seleccionando	gasto-ventas
-seleccionando	devolucion
-seleccionando	salario
-88	salario
-seleccionando	honorario
-seleccionando	deposito
-seleccionando	costo-ventas
-seleccionando	compra
-seleccionando	venta
-seleccionando	gasto-promocional
-seleccionando	gasto-proveedor
-seleccionando	gasto-administrativo
-seleccionando	pedido
-seleccionando	traspaso
-seleccionando	pago-de-salarios
-seleccionando	cobro-de-cuentas-por-cobrar
-seleccionando	nota-de-credito-de-factura-reclamada
-seleccionando	anulacion-de-vouchers
-seleccionando	compra-de-materiales
-seleccionando	compra-de-acciones
-seleccionando	constitucion-de-spa
-seleccionando	distribucion-de-utilidad
-seleccionando	f29
-seleccionando	gasto-investigacion-y-desarrollo
-seleccionando	pago-de-retenciones-de-honorarios
-seleccionando	pago-de-iva
-seleccionando	ajuste-de-iva-contra-debito
-seleccionando	ajuste-de-iva-contra-credito
-seleccionando	rendicion-de-vouchers-sii
-seleccionando	rendicion-de-eboletas-sii
-seleccionando	nota-de-debito-manual
-seleccionando	nota-de-debito-sii
-seleccionando	nota-de-credito-de-subcuenta-existente
-seleccionando	nota-de-credito
-seleccionando	nota-de-credito-sii
-seleccionando	venta-sii
 93	venta-sii
 seleccionando	venta-anticipada
 seleccionando	pago
@@ -6733,50 +6320,7 @@ seleccionando	nota-de-credito-de-subcuenta-existente
 seleccionando	nota-de-credito
 seleccionando	nota-de-credito-sii
 seleccionando	venta-sii
-seleccionando	venta-anticipada
-seleccionando	pago
-seleccionando	despago
-seleccionando	gasto-sobre-compras
-seleccionando	depreciacion
-seleccionando	amortizacion
-seleccionando	gasto-afecto
-seleccionando	gasto-ventas
-seleccionando	devolucion
-seleccionando	salario
-124	salario
-seleccionando	honorario
-seleccionando	deposito
-seleccionando	costo-ventas
-seleccionando	compra
-seleccionando	venta
-seleccionando	gasto-promocional
-seleccionando	gasto-proveedor
-seleccionando	gasto-administrativo
-seleccionando	pedido
-seleccionando	traspaso
-seleccionando	pago-de-salarios
-seleccionando	cobro-de-cuentas-por-cobrar
-seleccionando	nota-de-credito-de-factura-reclamada
-seleccionando	anulacion-de-vouchers
-seleccionando	compra-de-materiales
-seleccionando	compra-de-acciones
-seleccionando	constitucion-de-spa
-seleccionando	distribucion-de-utilidad
-seleccionando	f29
-seleccionando	gasto-investigacion-y-desarrollo
-seleccionando	pago-de-retenciones-de-honorarios
-seleccionando	pago-de-iva
-seleccionando	ajuste-de-iva-contra-debito
-seleccionando	ajuste-de-iva-contra-credito
-seleccionando	rendicion-de-vouchers-sii
-seleccionando	rendicion-de-eboletas-sii
-seleccionando	nota-de-debito-manual
-seleccionando	nota-de-debito-sii
-seleccionando	nota-de-credito-de-subcuenta-existente
-seleccionando	nota-de-credito
-seleccionando	nota-de-credito-sii
-seleccionando	venta-sii
-127	venta-sii
+128	venta-sii
 seleccionando	venta-anticipada
 seleccionando	pago
 seleccionando	despago
@@ -6798,7 +6342,7 @@ seleccionando	gasto-administrativo
 seleccionando	pedido
 seleccionando	traspaso
 seleccionando	pago-de-salarios
-128	pago-de-salarios
+129	pago-de-salarios
 seleccionando	cobro-de-cuentas-por-cobrar
 seleccionando	nota-de-credito-de-factura-reclamada
 seleccionando	anulacion-de-vouchers
@@ -6862,7 +6406,7 @@ seleccionando	nota-de-credito-de-subcuenta-existente
 seleccionando	nota-de-credito
 seleccionando	nota-de-credito-sii
 seleccionando	venta-sii
-129	venta-sii
+130	venta-sii
 seleccionando	venta-anticipada
 seleccionando	pago
 seleccionando	despago
@@ -7486,6 +7030,49 @@ seleccionando	gasto-administrativo
 seleccionando	pedido
 seleccionando	traspaso
 seleccionando	pago-de-salarios
+2009	pago-de-salarios
+seleccionando	cobro-de-cuentas-por-cobrar
+seleccionando	nota-de-credito-de-factura-reclamada
+seleccionando	anulacion-de-vouchers
+seleccionando	compra-de-materiales
+seleccionando	compra-de-acciones
+seleccionando	constitucion-de-spa
+seleccionando	distribucion-de-utilidad
+seleccionando	f29
+seleccionando	gasto-investigacion-y-desarrollo
+seleccionando	pago-de-retenciones-de-honorarios
+seleccionando	pago-de-iva
+seleccionando	ajuste-de-iva-contra-debito
+seleccionando	ajuste-de-iva-contra-credito
+seleccionando	rendicion-de-vouchers-sii
+seleccionando	rendicion-de-eboletas-sii
+seleccionando	nota-de-debito-manual
+seleccionando	nota-de-debito-sii
+seleccionando	nota-de-credito-de-subcuenta-existente
+seleccionando	nota-de-credito
+seleccionando	nota-de-credito-sii
+seleccionando	venta-sii
+seleccionando	venta-anticipada
+seleccionando	pago
+seleccionando	despago
+seleccionando	gasto-sobre-compras
+seleccionando	depreciacion
+seleccionando	amortizacion
+seleccionando	gasto-afecto
+seleccionando	gasto-ventas
+seleccionando	devolucion
+seleccionando	salario
+seleccionando	honorario
+seleccionando	deposito
+seleccionando	costo-ventas
+seleccionando	compra
+seleccionando	venta
+seleccionando	gasto-promocional
+seleccionando	gasto-proveedor
+seleccionando	gasto-administrativo
+seleccionando	pedido
+seleccionando	traspaso
+seleccionando	pago-de-salarios
 seleccionando	cobro-de-cuentas-por-cobrar
 seleccionando	nota-de-credito-de-factura-reclamada
 201	nota-de-credito-de-factura-reclamada
@@ -7578,6 +7165,8 @@ Partida sin anotación de hecho: 168
 Partida sin anotación de hecho: 202
 Partida sin anotación de hecho: 203
 Partida sin anotación de hecho: 2001
+x<-c Cargo no realizado: 	2001	ajuste
+x<-c Cargo no realizado: 	2001	ajuste
 Partida sin anotación de hecho: 1001
 Partida sin anotación de hecho: 1002
 Partida sin anotación de hecho: 1150
@@ -7615,4 +7204,42 @@ Partida sin anotación de hecho: 45
 Partida sin anotación de hecho: 46
 Partida sin anotación de hecho: 47
 Partida sin anotación de hecho: 48
-Partida sin
+Partida sin anotación de hecho: 50
+Partida sin anotación de hecho: 63
+Partida sin anotación de hecho: 64
+Partida sin anotación de hecho: 67
+Partida sin anotación de hecho: 68
+Partida sin anotación de hecho: 69
+Partida sin anotación de hecho: 70
+Partida sin anotación de hecho: 71
+Partida sin anotación de hecho: 73
+Partida sin anotación de hecho: 74
+Partida sin anotación de hecho: 78
+Partida sin anotación de hecho: 79
+Partida sin anotación de hecho: 84
+Partida sin anotación de hecho: 85
+Partida sin anotación de hecho: 86
+Partida sin anotación de hecho: 95
+Partida sin anotación de hecho: 96
+Partida sin anotación de hecho: 97
+Partida sin anotación de hecho: 101
+Partida sin anotación de hecho: 102
+Partida sin anotación de hecho: 105
+Partida sin anotación de hecho: 107
+Partida sin anotación de hecho: 120
+Partida sin anotación de hecho: 121
+Partida sin anotación de hecho: 139
+Partida sin anotación de hecho: 145
+Partida sin anotación de hecho: 146
+Partida sin anotación de hecho: 149
+Partida sin anotación de hecho: 153
+Partida sin anotación de hecho: 160
+Partida sin anotación de hecho: 166
+Partida sin anotación de hecho: 183
+Partida sin anotación de hecho: 184
+Partida sin anotación de hecho: 188
+Partida sin anotación de hecho: 198
+Partida sin anotación de hecho: 199
+Partida sin anotación de hecho: 200
+Partida sin anotación de hecho: 204
+CLIPS> (exit)
