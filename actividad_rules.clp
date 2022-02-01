@@ -533,7 +533,7 @@
    ( printout t " PLANILLA AFP " crlf)
    ( printout t " Cotización. Obligatoria " tab ?(round (* ?sueldo (+ 0.10 ?comision))) crlf)
    ( printout t " Seguro Invalidez y Sobrevivencia (SIS) " tab ?sis crlf)
-   ( printout t " SubTotal a Pagar Fondo de Pensiones (AFP) " tab ?(round (* ?sueldo (+ 0.10 ?comision ?sis ))) crlf)
+   ( printout t " SubTotal a Pagar Fondo de Pensiones (AFP) " tab (round (* ?sueldo (+ 0.10 ?comision ?sis ))) crlf)
    ( printout t " Comisión AFP " ?comision crlf)
    ( printout t " ---- " crlf)
    ( printout t " Resumen Cotizaciones Fondo de Cesantía (AFC" crlf)
@@ -565,6 +565,89 @@
    ( printout t "-->salario -- Declarando Salarios " ?departamento " por un valor de $" ?efectivo crlf) 
 )
 
+
+(defrule pagar-solo-imposiciones
+   ( revision
+    (partida ?numero)
+    (rechazado false)
+   )
+
+   ( balance (dia ?top) (mes ?mes_top) (ano ?ano_top))
+   ( actual  (mes ?mes))
+   ( ticket  ( numero ?numero) )
+   ( empresa (nombre ?empresa ))
+
+   ( pago-de-salarios (partida ?numero) (dia ?dia) (mes ?mes) (ano ?ano)
+     (remuneraciones false)
+     (imposiciones true)
+     (trabajador ?trabajador)
+     (remuneracion ?remuneracion)
+     (folio-prevision ?folio)
+     (salud ?salud)
+     (afp   ?afp)
+     (afc   ?afc)
+     (unico ?impuesto-unico)
+   )
+   ( test (>= (to_serial_date ?top ?mes_top ?ano_top) (to_serial_date ?dia ?mes ?ano)))
+  =>
+   ( bind ?prevision (+ ?salud ?afc ?afp))
+
+   ( assert (partida (proveedor ?trabajador) (numero ?numero) (dia ?dia) (mes ?mes) (ano ?ano) (descripcion pagando-imposiciones) (actividad pagar-solo-imposiciones) ))
+
+   ( assert (cargo (tipo-de-documento previred) (cuenta entidades-previsionales-por-pagar) (partida ?numero) (dia ?dia) (mes ?mes) (ano ?ano) (empresa ?empresa) (monto ?prevision) ))
+
+   ( assert (abono (tipo-de-documento traspaso) (cuenta banco-estado) (partida ?numero) (dia ?dia) (mes ?mes) (ano ?ano) (empresa ?empresa) (monto ?prevision) (glosa (str-cat "Pago-de-" ?trabajador "-por-" ?prevision))))
+   ( assert (ccm (folio na) (partida ?numero) (tipo-documento traspaso) (monto-total ?prevision)))
+  ( printout t "-->pago-de-imposiciones -- Pagando imposiciones de " ?trabajador " por "  ?prevision crlf)
+)
+
+
+
+
+
+(defrule pagar-solo-remuneraciones
+   ( revision
+    (partida ?numero)
+    (rechazado false)
+   )
+
+   ( balance (dia ?top) (mes ?mes_top) (ano ?ano_top))
+   ( actual  (mes ?mes))
+   ( ticket  ( numero ?numero) )
+   ( empresa (nombre ?empresa ))
+
+   ( pago-de-salarios (partida ?numero) (dia ?dia) (mes ?mes) (ano ?ano)
+     (remuneraciones true)
+     (imposiciones false)
+     (trabajador ?trabajador)
+     (remuneracion ?remuneracion)
+     (folio-prevision ?folio)
+     (salud ?salud)
+     (afp   ?afp)
+     (afc   ?afc)
+     (unico ?impuesto-unico)
+   )
+  ; ( test (> ?haber_previsionales ?debe_previsionales))
+   ( test (>= (to_serial_date ?top ?mes_top ?ano_top) (to_serial_date ?dia ?mes ?ano)))
+
+  =>
+   ( bind ?prevision (+ ?salud ?afc ?afp))
+   ( bind ?total ( + ?remuneracion ?impuesto-unico))
+   ( assert (partida (proveedor ?trabajador) (numero ?numero) (dia ?dia) (mes ?mes) (ano ?ano) (descripcion pagando-remuneraciones) (actividad pagar-solo-remuneraciones) ))
+
+
+   ( assert (cargo (tipo-de-documento traspaso) (cuenta remuneraciones-por-pagar ) (partida ?numero) (dia ?dia) (mes ?mes) (ano ?ano) (empresa ?empresa) (monto ?remuneracion) (glosa (str-cat "Pago-a-" ?trabajador "-por-" ?remuneracion))))
+
+   ( assert (cargo (tipo-de-documento traspaso) (cuenta impuesto-unico-por-pagar) (partida ?numero) (dia ?dia) (mes ?mes) (ano ?ano) (empresa ?empresa) (monto ?impuesto-unico) (glosa (str-cat "Pago-a-" ?trabajador "-por-" ?impuesto-unico))))
+
+   ( assert (abono (tipo-de-documento traspaso) (cuenta banco-estado) (partida ?numero) (dia ?dia) (mes ?mes) (ano ?ano) (empresa ?empresa) (monto ?total) (glosa (str-cat "Pago-a-" ?trabajador "-por-" ?total))))
+
+   ( assert (ccm (folio na) (partida ?numero) (tipo-documento traspaso) (monto-total ?total)))
+  ( printout t "-->pago-de-remuneraciones -- Pagando solo remuneraciones de " ?trabajador " por "  ?total crlf)
+)
+
+
+
 (defrule pagar-salarios
    ( revision 
     (partida ?numero)
@@ -577,6 +660,8 @@
    ( empresa (nombre ?empresa ))
 
    ( pago-de-salarios (partida ?numero) (dia ?dia) (mes ?mes) (ano ?ano)
+     (remuneraciones true)
+     (imposiciones true)
      (trabajador ?trabajador)
      (remuneracion ?remuneracion)
      (folio-prevision ?folio)
@@ -591,7 +676,7 @@
 
   =>
    ( bind ?prevision (+ ?salud ?afc ?afp))
-   ( bind ?total ( + ?prevision ?remuneracion))
+   ( bind ?total ( + ?prevision ?remuneracion ?impuesto-unico))
    ( assert (partida (proveedor ?trabajador) (numero ?numero) (dia ?dia) (mes ?mes) (ano ?ano) (descripcion pagando-salarios) (actividad pagar-salarios) (archivo (str-cat "../previred-prevision-" ?folio ".png" ))))
 
    ( assert (cargo (tipo-de-documento previred) (cuenta entidades-previsionales-por-pagar) (partida ?numero) (dia ?dia) (mes ?mes) (ano ?ano) (empresa ?empresa) (monto ?prevision) ))

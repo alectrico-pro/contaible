@@ -133,6 +133,8 @@
 )
 
 (deftemplate pago-de-salarios
+  (slot remuneraciones (default false))
+  (slot imposiciones (default false))
   (slot partida)
   (slot salud)
   (slot afp)

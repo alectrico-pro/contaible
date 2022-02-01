@@ -121,5 +121,24 @@
 
 ;la plataforma alectrico es un gasto diferido que no es amortizable y no es un activo intangible, pues no puede estar separado
 
+;
+( registro-de-amortizacion
+  ( metodo-tributario    amortizacion-instantanea-de-intangible)
+  ( metodo               amortizacion-lineal-en-diez-anos)
+  ( nombre-del-activo    derecho-de-goce-de-inmueble-comercial)
+  ( cuenta-del-activo    oficina)
+  ( cuenta-acumuladora   amortizacion-acumulada-intangibles)
+  ( cuenta-del-pasivo    amortizacion-intangibles)
+  ( mes-de-adquisicion   enero)
+  ( ano-de-adquisicion   2022     )
+  ( mes-final            diciembre)
+  ( ano-final            2022     )
+  ( valor-de-adquisicion 900000)
+  ( meses-de-vida-util   10      )
+  ( amortizacion-mensual 90000  )  ;aproximar por exceso para que la última cuota sea menor
+)
+
+
+
 
 

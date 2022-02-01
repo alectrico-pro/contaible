@@ -2,6 +2,24 @@
 layout: page
 --- 
 <table><tbody>
+<tr><td> derecho-de-goce-de-inmueble-comercial</td> <td>febrero</td><td> Amortizando por: </td> <td>90000</td></tr>
+</tbody></table>
+<table><tbody>
+<tr><td> derecho-de-goce-de-inmueble-comercial</td> <td>enero</td><td> Amortizando por: </td> <td>90000</td></tr>
+</tbody></table>
+<table> <tbody>
+<tr><th>derecho-de-goce-de-inmueble-comercial</th></tr>
+<tr><td>amortizacion-lineal-en-diez-anos de: </td><td> derecho-de-goce-de-inmueble-comercial </td> </tr> 
+<tr><td> Metodo tributario es: </td><td> amortizacion-instantanea-de-intangible</td></tr>
+<tr><td> Cuentas son:  </td></tr>
+<tr><td>  Activo: </td><td> oficina</td></tr>
+<tr><td>  Pasivo: </td><td>  amortizacion-intangibles</td></tr>
+<tr><td> Acumuladora:</td><td>  amortizacion-acumulada-intangibles</td></tr>
+<tr><td> Fue adquirido en: </td> <td> enero de 2022 por $900000</td></tr>
+<tr><td> Perderá todo su valor en: </td><td> 10 meses </td></tr> 
+<tr><td> Mensualmente hay que depreciarlo en: </td><td> $90000</td></tr>
+</tbody></table> 
+<table><tbody>
 <tr><td> licencia-contaible</td> <td>febrero</td><td> Amortizando por: </td> <td>90000</td></tr>
 </tbody></table>
 <table><tbody>

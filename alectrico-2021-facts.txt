@@ -7,7 +7,7 @@
  (razon "alectrico® SpA"))
 
 
-(balance (dia 31) (mes febrero) (ano 2022))
+(balance (dia 31) (mes diciembre) (ano 2021))
 
 
 ;dia 01/01/2021---------- asiento inicial  ----------------
@@ -1920,6 +1920,8 @@
 
  ;multa=interes afp 437 + interes salud 227 + interes afc 78
 (pago-de-salarios
+ (remuneraciones true)
+ (imposiciones true)
  (partida 119)
  (trabajador alexander)
  (afp 40440)
@@ -2130,6 +2132,8 @@
 ;pagando los salarios del mes anterior
  ;multa=interes afp 635 + interes salud 330 + interes afc 114
 (pago-de-salarios
+ (remuneraciones true)
+ (imposiciones true)
  (partida 129)
  (trabajador alexander)
  (afp 40440)
@@ -2493,13 +2497,33 @@
 
 ;------------------------ octubre -----------------------------------
 
+
+(pago-de-salarios
+ (remuneraciones true)
+ (imposiciones false)
+ (partida 156)
+ (trabajador alexander)
+ (afp   47180)
+ (afc   10500)
+ (salud  24500)
+ (multa  28105)
+ (folio-prevision 20022021092580)
+ (folio-salud 2017220100278294)
+ (remuneracion 267820)
+ (dia 5)
+ (mes octubre)
+ (ano 2021))
+
+
+
+
 ( nota-de-credito-de-subcuenta-existente
  ( dia 2)
  ( emitida true)
  ( folio-nota 21)
  ( mes octubre)
  ( ano 2021)
- ( partida 156)
+ ( partida 157)
  ( subcuenta ventas-con-eboleta-exenta)
  ( glosa "Por anulación de proyecto 1724.")
  ( total 400000)
@@ -3234,6 +3258,8 @@
 ;5336-4445
  ;multa=interes afp 5336-4445 + interes salud 2795 + interes afc 1003 + multas fonasa 23416
 (pago-de-salarios
+ (remuneraciones false)
+ (imposiciones true)
  (partida 2009)
  (trabajador alexander)
  (afp   47180)
