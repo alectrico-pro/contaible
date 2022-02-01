@@ -46,7 +46,7 @@ NO se han practicado liquidaciones, por lo que SÍ se muestran cuentas nominales
 <td>Depreciación Acumulada<small>depreciacion-acumulada-herramientas</small></td> <td align='right'>0</td> <td align='right'>177876</td> <td> | </td> <td align='right'> 0</td> <td align='right'>177876</td>
 </tr>
 <tr style=' background: #fff; border: 1px solid red;'>
-<td>Remuneraciones por Pagar<small>salarios-por-pagar</small></td> <td align='right'>600000</td> <td align='right'>900000</td> <td> | </td> <td align='right'> 0</td> <td align='right'>300000</td> </tr>
+<td>Remuneraciones por Pagar<small>salarios-por-pagar</small></td> <td align='right'>600000</td> <td align='right'>950000</td> <td> | </td> <td align='right'> 0</td> <td align='right'>350000</td> </tr>
 <tr style=' background: #fff; border: 1px solid red;'>
 <td><small>gastos-promocionales</small></td> <td align='right'>206576</td> <td align='right'>0</td> <td> | </td> <td align='right'> 206576</td> <td align='right'>0</td> </tr>
 <tr style=' background: #fff; border: 1px solid red;'>
@@ -55,7 +55,7 @@ NO se han practicado liquidaciones, por lo que SÍ se muestran cuentas nominales
 <td><small>ventas</small></td> <td align='right'>1393913</td> <td align='right'>2595724</td> <td> | </td> <td align='right'> 0</td> <td align='right'>1201811</td>
 </tr>
 <tr style=' background: #fff; border: 1px solid red;'>
-<td><small>salarios</small></td> <td align='right'>900000</td> <td align='right'>0</td> <td> | </td> <td align='right'> 900000</td> <td align='right'>0</td> </tr>
+<td><small>salarios</small></td> <td align='right'>950000</td> <td align='right'>0</td> <td> | </td> <td align='right'> 950000</td> <td align='right'>0</td> </tr>
 <tr>
 <td>Intangibles<small>intangibles</small> </td> <td align='right'>121427369</td> <td align='right'>52631</td> <td> | </td> <td align='right'> 121374738</td> <td align='right'>0</td> 
 <td colspan='2' style=' background: #faa; border: 1px solid red;'>Subcuenta </td>
@@ -100,6 +100,6 @@ NO se han practicado liquidaciones, por lo que SÍ se muestran cuentas nominales
 </tr>
 </tbody>
 <tfoot>
-<tr> <td></td> <td align='right'> <div>261503315</div></td> <td align='right'> <div>140459988</div></td><td> | </td> <td align='right'> <div>251090936</div></td> <td align='right'> <div>130047609</div></td> </tr>
+<tr> <td></td> <td align='right'> <div>261553315</div></td> <td align='right'> <div>140509988</div></td><td> | </td> <td align='right'> <div>251140936</div></td> <td align='right'> <div>130097609</div></td> </tr>
 </tfoot>
 </table>

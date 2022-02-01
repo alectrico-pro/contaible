@@ -2746,15 +2746,15 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <thead> <th style='background-color: lavender' colspan='6'>Partida 127</th></thead>
 <tbody>
 <tr> <td> 0 </td> <td> </td> <td colspan='7'> impuesto-unico-por-pagar#salarios-por-pagar </td> </tr> 
-<tr> <td> 229560 </td> <td> </td> <td colspan='7'> remuneraciones-por-pagar#salarios-por-pagar </td> </tr> 
-<tr> <td> 70440 </td> <td> </td> <td colspan='7'> entidades-previsionales-por-pagar#salarios-por-pagar </td> </tr> 
-<tr style='background-color: azure'>  <td> </td> <td> 0 </td> <td> 229560 </td> <td> </td><td> p[salarios-por-pagar] </td> </tr>
-<tr style='background-color: azure'>  <td> </td> <td> 0 </td> <td> 70440 </td> <td> </td><td> p[salarios-por-pagar] </td> </tr>
-<tr style='color: white; background-color: black'>  <td> </td> <td>300000 </td> <td> 0</td> <td> </td> <td> r[salarios] </td> </tr>
-<tr> <td> </td> <td style='background-color: blanchedalmond'> 300000 </td> <td style='background-color: blanchedalmond'> 300000</td> </tr>
+<tr> <td> 267820 </td> <td> </td> <td colspan='7'> remuneraciones-por-pagar#salarios-por-pagar </td> </tr> 
+<tr> <td> 82180 </td> <td> </td> <td colspan='7'> entidades-previsionales-por-pagar#salarios-por-pagar </td> </tr> 
+<tr style='background-color: azure'>  <td> </td> <td> 0 </td> <td> 267820 </td> <td> </td><td> p[salarios-por-pagar] </td> </tr>
+<tr style='background-color: azure'>  <td> </td> <td> 0 </td> <td> 82180 </td> <td> </td><td> p[salarios-por-pagar] </td> </tr>
+<tr style='color: white; background-color: black'>  <td> </td> <td>350000 </td> <td> 0</td> <td> </td> <td> r[salarios] </td> </tr>
+<tr> <td> </td> <td style='background-color: blanchedalmond'> 350000 </td> <td style='background-color: blanchedalmond'> 350000</td> </tr>
 <tr><td colspan='4'> alectrico® SpA</td> </tr> 
 <tr><td colspan='4'> ( 5 de septiembre	2021	 ) </td> </tr>
-<tr><td colspan='8'> Partida 127: Declaración de Remuneraciones de alexander días trabajados: 5 Tramo Exento: 734967.0 Sueldo Bruto de: 300000 Tasa de Impuesto Único: 0.04 Monto de Impuesto Único: 0 </td></tr>
+<tr><td colspan='8'> Partida 127: Declaración de Remuneraciones de alexander días trabajados: 6 Tramo Exento: 734967.0 Sueldo Bruto de: 350000 Tasa de Impuesto Único: 0.04 Monto de Impuesto Único: 0 </td></tr>
 <tr> <td colspan='7'>efectuado a electrico </td> </tr>
 <tr><td colspan = '8'> declarar-remuneraciones</td> </tr>
 </tbody>

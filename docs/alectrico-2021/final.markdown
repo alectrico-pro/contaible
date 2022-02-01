@@ -10,7 +10,7 @@ Cifras en pesos.
 <table>
 <thead> <th colspan='6'> PARTIDA GENERAL FINAL 2022 </th> </thead> 
 <thead> <th>  ACTIVO CIRCULANTE </th> <th> 2806131</th>
-<th > PASIVO CIRCULANTE </th> <th>441628</th> </thead>
+<th > PASIVO CIRCULANTE </th> <th>491628</th> </thead>
 <tbody>
 <tr> <td> Caja </td> <td>926777</td> <td> Proveedores. </td> <td> 0</td> </tr>
 <tr> <td> Banco Estado </td> <td>742922</td></tr>
@@ -18,7 +18,7 @@ Cifras en pesos.
 <tr> <td> Cuentas por Cobrar </td> <td>40000</td></tr>
 <tr> <td> Retenciones </td> <td align='right' style='font-weight:bold; color: white; background-color: crimson'>(  1500)</td> </tr> 
 <tr> <td> Colaboradores </td> <td> 0</td> 
-<td> SalariosXPagar </td> <td align='right'> 300000</td></tr> 
+<td> SalariosXPagar </td> <td align='right'> 350000</td></tr> 
 <tr> <td> IVA Crédito </td><td>92141</td> 
 <td> Ingresos Adelantados </td> </tr>
 <tr> <td> PPM </td> <td>3696</td></tr> 
@@ -42,12 +42,12 @@ Cifras en pesos.
 <tr><td> Autorización Uso de Inmueble </td> <td>0</td> <td colspan='2'> </td> </tr>
 <tr><td> Amortización Acumulada Intangibles </td> <td align='right' style='font-weight:bold; color: white; background-color: crimson'>(1155257)</td> <td colspan='2'> </td> </tr>
 <tr><td> Depreciación Acumulada Herramientas </td> <td align='right' style='font-weight:bold; color: white; background-color: crimson'>(177876)</td><td colspan='2'> </td> </tr>
-<thead> <td> </td> <td> </td> <th> TOTAL PASIVO </th> <th> 441628</th></thead>
-<thead> <td> </td> <td> </td> <th> PATRIMONIO </th> <th>122843048</th> </thead><tr> <td colspan='2'></td> <td> Capital Social </td><td align='right'> 4170588</td> </tr>
+<thead> <td> </td> <td> </td> <th> TOTAL PASIVO </th> <th> 491628</th></thead>
+<thead> <td> </td> <td> </td> <th> PATRIMONIO </th> <th>122793048</th> </thead><tr> <td colspan='2'></td> <td> Capital Social </td><td align='right'> 4170588</td> </tr>
 <tr> <td colspan='2'></td> <td> Reserva Legal </td> <td align='right' >0</td> </tr>
 <tr> <td colspan='2'></td> <td> Utilidades Acumuladas </td> <td align='right' >0</td> </tr>
 <tr> <td colspan='2'></td> <td> Aportes </td> <td align='right' >120000000</td> </tr>
-<tr> <td colspan='2'></td> <td> Utilidad del Ejercicio </td><td align='right'>-1370477</td> </tr>
+<tr> <td colspan='2'></td> <td> Utilidad del Ejercicio </td><td align='right'>-1420477</td> </tr>
 <thead><th>TOTAL ACTIVOS</th><th>123284676</th><th>TOTAL PASIVO + PATRIMONIO</th><th>123284676</th></thead>
 <tr><td colspan='8'> alectrico® SpA </td> </tr>
 <tr><td colspan='8'> Partida General Final 2022 alectrico® SpA</td></tr>

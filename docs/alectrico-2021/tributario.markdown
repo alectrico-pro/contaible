@@ -33,31 +33,31 @@ layout: page
 <tr><td> (=) </td> <td align='right'>142076</td><td> </td><td></td><td></td><td colspan='2'>Costo de Mercancías </td></tr>
 <tr><td></td><td></td><td></td><td></td><td align='right'>1190803</td><td colspan='4'>  UTILIDAD BRUTA (Ventas Netas - Costo de Ventas) </td></tr>
 <tr style='font-weight:bold; background-color: azure'><td></td><td></td><td></td><td></td><td align='right'>1190803</td><td colspan='4'>  Margen de Explotacion </td></tr>
-<tr><td></td><td></td><td></td><td>(-)</td><td align='right'>2646096</td><td colspan='4'> Gastos de Deducibles de Impuesto (Gastos Admon + Gastos Vtas + I+D + Promocion + Amortiza.Int A.31-LIR) </td></tr>
+<tr><td></td><td></td><td></td><td>(-)</td><td align='right'>2696096</td><td colspan='4'> Gastos de Deducibles de Impuesto (Gastos Admon + Gastos Vtas + I+D + Promocion + Amortiza.Int A.31-LIR) </td></tr>
 <tr><td> (-) </td><td align='right'>240223</td><td></td><td></td><td></td><td> Gastos del Dpto Administración </td></tr>
 <tr><td> (-) </td><td align='right'>0</td><td></td><td></td><td></td><td> Gastos del Dpto Ventas </td></tr>
 <tr><td>(-)</td><td align='right' >0</td><td></td><td></td><td></td><td> Gastos en I+D </td></tr>
 <tr><td>(-)</td><td align='right'>206576</td><td></td><td></td><td></td><td> Gastos en Promoción </td></tr>
-<tr><td>(-)</td><td align='right'>900000</td><td></td><td></td><td></td><td> Salarios </td></tr>
+<tr><td>(-)</td><td align='right'>950000</td><td></td><td></td><td></td><td> Salarios </td></tr>
 <tr><td>(-) </td><td align='right'>0</td><td></td><td></td><td></td><td> Pérdida Por Corrección Monetaria </td></tr>
 <tr><td>(-) </td><td align='right'>1121421</td><td></td><td></td><td></td><td> Amortización </td></tr>
 <tr><td>(-) </td><td align='right'>177876</td><td></td><td></td><td></td><td> Depreciación </td></tr>
 <tr><td></td><td></td><td></td><td> (-) </td><td align='right'>0</td><td> Pérdida Ejercicio Anterior PEA A.33-LIR </td></tr>
-<tr><td> </td><td></td><td></td><td></td><td align='right'> -1455293</td><td> UTILIDAD DE OPERACIÓN </td></tr>
+<tr><td> </td><td></td><td></td><td></td><td align='right'> -1505293</td><td> UTILIDAD DE OPERACIÓN </td></tr>
 <tr><td></td><td></td><td></td><td> (-) </td><td align='right'>0</td><td> Otros Gastos </td></tr>
-<tr><td></td><td> </td><td> </td><td></td><td align='right'>-1455293</td><td> Utilidad Antes de Reserva </td></tr>
+<tr><td></td><td> </td><td> </td><td></td><td align='right'>-1505293</td><td> Utilidad Antes de Reserva </td></tr>
 <tr><td></td><td></td><td></td><td> (-) </td><td align='right'>0</td><td> Reserva Legal </td></tr>
-<tr style='font-weight:bold; background-color: azure'><td> <td></td></td><td> </td><td></td><td align='right'>-1455293</td><td> Resultado de Explotacion </td></tr>
+<tr style='font-weight:bold; background-color: azure'><td> <td></td></td><td> </td><td></td><td align='right'>-1505293</td><td> Resultado de Explotacion </td></tr>
 <tr><td></td><td></td><td></td><td> (+) </td><td align='right'>780</td><td> Ganancia Por Corrección Monetaria </td></tr>
 <tr><td></td><td></td><td></td><td> (-) </td><td align='right'>0</td><td> Impuestos No Recuperables </td></tr>
-<tr style='font-weight:bold; background-color: azure'><td> <td></td></td><td> </td><td></td><td align='right'>-1454513</td><td> Resultado Fuera de Explotacion </td></tr>
-<tr style='font-weight:bold; background-color: azure'><td> <td></td></td><td> </td><td></td><td align='right'>-1454513</td><td> Resultado Antes de Impuesto</td></tr>
+<tr style='font-weight:bold; background-color: azure'><td> <td></td></td><td> </td><td></td><td align='right'>-1504513</td><td> Resultado Fuera de Explotacion </td></tr>
+<tr style='font-weight:bold; background-color: azure'><td> <td></td></td><td> </td><td></td><td align='right'>-1504513</td><td> Resultado Antes de Impuesto</td></tr>
 <tr style='background-color: lightgreen' ><td></td><td></td><td></td><td> (X) </td><td align='right'> 0</td><td> Impuesto No Aplica porque hay pérdida tributaria </td></tr>
-<tr style='font-weight:bold;background-color: azure'><td> <td></td></td><td> </td><td></td><td align='right'>-1454513</td><td> Utilidad Calculada</td></tr>
-<tr style='font-weight:bold;background-color: azure'><td> <td></td></td><td> </td><td></td><td align='right'>-1370477</td><td> Utilidad del Ejercicio (módulo liquidación)</td></tr>
+<tr style='font-weight:bold;background-color: azure'><td> <td></td></td><td> </td><td></td><td align='right'>-1504513</td><td> Utilidad Calculada</td></tr>
+<tr style='font-weight:bold;background-color: azure'><td> <td></td></td><td> </td><td></td><td align='right'>-1420477</td><td> Utilidad del Ejercicio (módulo liquidación)</td></tr>
 <tr><td> (-) </td><td align='right'>436940</td><td></td><td></td><td></td><td> Depreciación Instantánea Activo Fijo Propyme </td></tr>
 <tr><td> (-) </td><td align='right'>0</td><td></td><td></td><td></td><td> Amortización Instantánea Intangibles </td></tr>
 <tr><td> (?) </td><td align='right'>120000000</td><td></td><td></td><td></td><td> Aportes </td></tr>
-<tr><td> <td></td></td><td> </td><td> (=) </td><td align='right'>-1891453</td><td> Utilidad Tributaria </td></tr>
-<tr><td></td><td></td><td></td><td> (=) </td><td align='right' style='font-weight:bold; color: white; background-color: crimson'>-1588947</td><td> BASE IMPONIBLE (módulo liquidaciones) <small>propyme</small></td></tr>
+<tr><td> <td></td></td><td> </td><td> (=) </td><td align='right'>-1941453</td><td> Utilidad Tributaria </td></tr>
+<tr><td></td><td></td><td></td><td> (=) </td><td align='right' style='font-weight:bold; color: white; background-color: crimson'>-1638947</td><td> BASE IMPONIBLE (módulo liquidaciones) <small>propyme</small></td></tr>
 </tbody></table>
