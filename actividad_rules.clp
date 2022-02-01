@@ -383,7 +383,7 @@
    ( assert (abono (tipo-de-documento pago-de-honorarios) (cuenta retenciones-por-pagar) (partida ?numero) (dia ?dia) (mes ?mes) (ano ?ano) (empresa ?empresa) (monto ?impuesto) (glosa (str-cat pago-a- ?profesional -por- ?servicio))))
 
    ( assert (ccm (folio na) (partida ?numero) (tipo-documento honorario) (monto-total ?bruto)))
-   ( printout t "--> salario-- Pagando a " ?profesional " por un valor bruo de $" ?bruto crlf )     
+   ( printout t "--> salario-- Pagando a " ?profesional " por un valor bruto de $" ?bruto crlf )     
 )
 
 
@@ -447,6 +447,11 @@
   =>
    ( assert (dia ?dia))
    ( bind ?sueldo (* ?diaria (+ ?dias-trabajados ?semana-corrida)))
+   ( if (neq ?sueldo ?efectivo)
+     then
+   (printout t "El efectivo en el pago de salarios en partida " ?numero " debe ser igual al sueldo: " ?sueldo  crlf)
+   (halt )
+   )
    ( printout t crlf)
    ( printout t "===================================" crlf)
    ( printout t "---- " ?mes tab ?nombre " -----" crlf )

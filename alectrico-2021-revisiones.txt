@@ -263,7 +263,7 @@
 (revision (revisado true) (partida 126) (tipo amortizacion) (rcv n-a))
 
 
-(revision (revisado false) (partida 127) (tipo 33) (rcv n-a))
+(revision (revisado true) (partida 127) (tipo 33) (rcv n-a))
 
 (revision (revisado true) (partida 128) (tipo 33) (rcv n-a))
 
@@ -426,6 +426,12 @@
 (revision (revisado true) (partida 2003)  )
 
 (revision (revisado true) (partida 2004)  )
+(revision (revisado true) (partida 2007)  )
+
+(revision (revisado true) (partida 2008)  )
+
+
+
 (revision (revisado true) (partida 2014)  )
 
 

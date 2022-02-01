@@ -46,16 +46,16 @@ NO se han practicado liquidaciones, por lo que SÍ se muestran cuentas nominales
 <td>Depreciación Acumulada<small>depreciacion-acumulada-herramientas</small></td> <td align='right'>0</td> <td align='right'>177876</td> <td> | </td> <td align='right'> 0</td> <td align='right'>177876</td>
 </tr>
 <tr style=' background: #fff; border: 1px solid red;'>
-<td>Remuneraciones por Pagar<small>salarios-por-pagar</small></td> <td align='right'>600000</td> <td align='right'>600000</td> <td> | </td> <td align='right'> 0</td> <td align='right'>0</td> </tr>
+<td>Remuneraciones por Pagar<small>salarios-por-pagar</small></td> <td align='right'>600000</td> <td align='right'>900000</td> <td> | </td> <td align='right'> 0</td> <td align='right'>300000</td> </tr>
 <tr style=' background: #fff; border: 1px solid red;'>
 <td><small>gastos-promocionales</small></td> <td align='right'>206576</td> <td align='right'>0</td> <td> | </td> <td align='right'> 206576</td> <td align='right'>0</td> </tr>
 <tr style=' background: #fff; border: 1px solid red;'>
-<td><small>gastos-administrativos</small></td> <td align='right'>301200</td> <td align='right'>46953</td> <td> | </td> <td align='right'> 254247</td> <td align='right'>0</td> </tr>
+<td><small>gastos-administrativos</small></td> <td align='right'>287176</td> <td align='right'>46953</td> <td> | </td> <td align='right'> 240223</td> <td align='right'>0</td> </tr>
 <tr>
 <td><small>ventas</small></td> <td align='right'>1393913</td> <td align='right'>2595724</td> <td> | </td> <td align='right'> 0</td> <td align='right'>1201811</td>
 </tr>
 <tr style=' background: #fff; border: 1px solid red;'>
-<td><small>salarios</small></td> <td align='right'>600000</td> <td align='right'>0</td> <td> | </td> <td align='right'> 600000</td> <td align='right'>0</td> </tr>
+<td><small>salarios</small></td> <td align='right'>900000</td> <td align='right'>0</td> <td> | </td> <td align='right'> 900000</td> <td align='right'>0</td> </tr>
 <tr>
 <td>Intangibles<small>intangibles</small> </td> <td align='right'>121427369</td> <td align='right'>52631</td> <td> | </td> <td align='right'> 121374738</td> <td align='right'>0</td> 
 <td colspan='2' style=' background: #faa; border: 1px solid red;'>Subcuenta </td>
@@ -72,24 +72,24 @@ NO se han practicado liquidaciones, por lo que SÍ se muestran cuentas nominales
 <td>Herramientas<small>herramientas</small></td> <td align='right'>436940</td> <td align='right'>0</td> <td> | </td> <td align='right'> 436940</td> <td align='right'>0</td>
 </tr>
 <tr style=' background: #fff; border: 1px solid red;'>
-<td>Insumos<small>insumos</small></td> <td align='right'>935503</td> <td align='right'>44044</td> <td> | </td> <td align='right'> 891459</td> <td align='right'>0</td> </tr>
+<td>Insumos<small>insumos</small></td> <td align='right'>922494</td> <td align='right'>44044</td> <td> | </td> <td align='right'> 878450</td> <td align='right'>0</td> </tr>
 <tr>
-<td>Caja<small>caja</small></td> <td align='right'>2031947</td> <td align='right'>1119194</td> <td> | </td> <td align='right'> 912753</td> <td align='right'>0</td>
+<td>Caja<small>caja</small></td> <td align='right'>2031947</td> <td align='right'>1105170</td> <td> | </td> <td align='right'> 926777</td> <td align='right'>0</td>
 </tr>
 <tr>
-<td>Banco Estado<small>banco-estado</small></td> <td align='right'>4957119</td> <td align='right'>4229678</td> <td> | </td> <td align='right'> 727441</td> <td align='right'>0</td>
+<td>Banco Estado<small>banco-estado</small></td> <td align='right'>4957119</td> <td align='right'>4214197</td> <td> | </td> <td align='right'> 742922</td> <td align='right'>0</td>
 </tr>
 <tr>
 <td>PPM (Pago Provisional Mensual)<small>ppm</small></td> <td align='right'>3696</td> <td align='right'>0</td> <td> | </td> <td align='right'> 3696</td> <td align='right'>0</td>
 </tr>
 <tr>
-<td>IVA Créditos<small>iva-credito</small></td> <td align='right'>221176</td> <td align='right'>123898</td> <td> | </td> <td align='right'> 97278</td> <td align='right'>0</td>
+<td>IVA Créditos<small>iva-credito</small></td> <td align='right'>216039</td> <td align='right'>123898</td> <td> | </td> <td align='right'> 92141</td> <td align='right'>0</td>
 </tr>
 <tr>
 <td>Amortización Acumulada<small>amortizacion-acumulada-intangibles</small></td> <td align='right'>0</td> <td align='right'>1155257</td> <td> | </td> <td align='right'> 0</td> <td align='right'>1155257</td>
 </tr>
 <tr style=' background: #fff; border: 1px solid red;'>
-<td><small>retencion-de-iva-articulo-11</small></td> <td align='right'>23608</td> <td align='right'>27773</td> <td> | </td> <td align='right'> 0</td> <td align='right'>4165</td> </tr>
+<td><small>retencion-de-iva-articulo-11</small></td> <td align='right'>23608</td> <td align='right'>25108</td> <td> | </td> <td align='right'> 0</td> <td align='right'>1500</td> </tr>
 <tr>
 <td>Capital pagado<small>capital-social</small></td> <td align='right'>0</td> <td align='right'>4170588</td> <td> | </td> <td align='right'> 0</td> <td align='right'>4170588</td>
 </tr>
@@ -100,6 +100,6 @@ NO se han practicado liquidaciones, por lo que SÍ se muestran cuentas nominales
 </tr>
 </tbody>
 <tfoot>
-<tr> <td></td> <td align='right'> <div>261262518</div></td> <td align='right'> <div>140192158</div></td><td> | </td> <td align='right'> <div>250820634</div></td> <td align='right'> <div>129750274</div></td> </tr>
+<tr> <td></td> <td align='right'> <div>261503315</div></td> <td align='right'> <div>140459988</div></td><td> | </td> <td align='right'> <div>251090936</div></td> <td align='right'> <div>130047609</div></td> </tr>
 </tfoot>
 </table>
