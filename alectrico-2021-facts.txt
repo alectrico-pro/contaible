@@ -7,7 +7,7 @@
  (razon "alectrico® SpA"))
 
 
-(balance (dia 31) (mes diciembre) (ano 2021))
+(balance (dia 31) (mes enero) (ano 2022))
 
 
 ;dia 01/01/2021---------- asiento inicial  ----------------
@@ -3197,6 +3197,24 @@
 
 ( ajustes-mensuales (mes enero) (ano 2022) (partida 2002))
 ( ajuste-de-iva     (mes enero) (ano 2022) (partida 2003))
+
+;------------------------------------ enero compras -------------------------------------
+( gasto-administrativo
+ ( tipo-de-documento 45)
+ ( folio 60078791)
+ ( rut 55555555-5)
+ ( partida 2014)
+ ( dia 11) (mes enero) (ano 2021)
+ ( credito 0)
+ ( neto        14024)
+ ( iva          2665)
+ ( iva-retenido 2665)
+ ( total       14024)
+ ( material pago-mensual-heroku)
+ ( proveedor heroku)
+ ( glosa "Por Gasto Administrativo: Pago Mensual de Arriendo de Almacenamiento en la nube.")
+ ( archivo "../heroku-mensualidad-enero-2022.png")
+ ( finalidad "Departamento de Administración"))
 
 
 

@@ -5,6 +5,13 @@
  (social "Google")
  (padre gastos-admnistrativos))
 
+( proveedor
+ (nombre heroku)
+ (rut 55555555-5)
+ (social "Heroku Inc.")
+ (padre gastos-admnistrativos))
+
+
 ( proveedor 
  (nombre google-one) 
  (rut 55555555-5)

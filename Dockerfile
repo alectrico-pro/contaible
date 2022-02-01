@@ -30,9 +30,9 @@ COPY accionistas.txt              ./
 COPY afc.txt                      ./
 COPY afps.txt                     ./
 COPY tramos-de-impuesto-unico.txt ./
+COPY actividades.txt              ./
 COPY 404.html                     ./
 COPY contabilidad.py              ./
-
 WORKDIR .
 
 
