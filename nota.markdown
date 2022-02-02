@@ -17,7 +17,6 @@ permalink: /nota/
 
 ## Criterios Contables
 
- **La contabilidad de alectrico sigue los principios NIIF** y se atiene a lo establecido según al régimen PROPYME establecido por el Sevicio de Impuestos Internos.
 
   Adhesión a la NIIF por parte de alectrico®
 
@@ -124,6 +123,17 @@ Patrimonio  neto: Es  la  parte  residual  de  los activos  de  la  entidad  una
 Ingresos: Corresponden a incrementos en los beneficios económicos producidos durante  un  período  contable,  en  forma  de  entradas  o  aumentos  de  valor  de  los activos o disminuciones de los pasivos, quedan como resultado incrementos en el patrimonio neto y que no están relacionados con aportaciones de los propietarios a ese patrimonio. 
 
 Gastos: Corresponden a disminuciones en los beneficios económicos, producidos a lo largo del período contable, en la forma de salidas o disminuciones del valor de los  activos,  o  bien  del  nacimiento  o  aumento  de  los  pasivos,  que  dan  como resultado disminuciones en el patrimonio neto y que no están relacionados con las distribuciones realizadas a los propietarios de este patrimonio.
+
+ Pasivo: obligaciones para cuya extinción haya que desprenderse de bienes que vayan a generar beneficios. Es decir, que para extinguirlos haya que desprenderse de activos. SEgún esto, una deuda que tenga pensado cancelar con la plaza de garage no sería un pasivo.
+
+Ingresos: aumentos del patrimonio, bien por aumento de valor de activos bien por disminución de pasivos. Ok, pues según esto, la plusvalía generada por la venta del garage no sería un ingreso, porque el garage nunca ha sido un activo. ¿O se convertiría en activo en el momento de la venta, en que queda demostrado que ha generado beneficios?
+
+
+Imaginemos que una sociedad decide comprar un trozo de la estrella de la punta de la Osa Polar. Como es algo absolutamente inútil, y que nada va a aportar, veo lógico que se contabilice contra una cuenta de reservas, y no en el activo. Es algo así como si la contabilidad dijera: "Señores socios, la sociedad ha comprado una M, y en lo único que va a influir es en que la sociedad tiene menos reservas y menos fondos propios, porque valer no vale nada lo que han comprado".
+
+
+Y si el día de mañana resulta que los trozos de estrella se ponen por las nubes, pues entonces lo pasaríamos al inmovilizado como un activo más.
+
 
 Principio  de  Negocio  en  Marcha:  Este  principio  contable  establece  que  los estados  financieros  se  preparan  normalmente  bajo  el  supuesto  que  una  entidad está  en  funcionamiento  y  continuará  su  actividad  dentro  del  futuro  previsible.  Supone que la entidad no tiene la intención ni la necesidad de liquidar o disminuir de forma importante su nivel de operaciones. Si tal intención o necesidad existiera, los  estados  financieros  deberían  tener  que  prepararse  sobre  una  base  diferente, en  cuyo  caso  dicha  base  debería  revelarse  (ejemplo:  Entidad  XX  en  Proceso  de Liquidación).  
 
