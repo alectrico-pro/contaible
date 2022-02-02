@@ -2215,6 +2215,33 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 - [ ] ccm
 - [x] revisado
 ![](../revisado.png)
+<table id='Partida-88'>
+<thead> <th style='background-color: lavender' colspan='6'>Partida 88</th></thead>
+<tbody>
+<tr> <td> 0 </td> <td> </td> <td colspan='7'> impuesto-unico-por-pagar#salarios-por-pagar </td> </tr> 
+<tr> <td> 229560 </td> <td> </td> <td colspan='7'> remuneraciones-por-pagar#salarios-por-pagar </td> </tr> 
+<tr> <td> 70440 </td> <td> </td> <td colspan='7'> entidades-previsionales-por-pagar#salarios-por-pagar </td> </tr> 
+<tr style='background-color: azure'>  <td> </td> <td> 0 </td> <td> 70440 </td> <td> </td><td> p[salarios-por-pagar] </td> </tr>
+<tr style='background-color: azure'>  <td> </td> <td> 0 </td> <td> 229560 </td> <td> </td><td> p[salarios-por-pagar] </td> </tr>
+<tr style='color: white; background-color: black'>  <td> </td> <td>300000 </td> <td> 0</td> <td> </td> <td> r[salarios] </td> </tr>
+<tr> <td> </td> <td style='background-color: blanchedalmond'> 300000 </td> <td style='background-color: blanchedalmond'> 300000</td> </tr>
+<tr><td colspan='4'> alectrico® SpA</td> </tr> 
+<tr><td colspan='4'> ( 20 de julio	2021	 ) </td> </tr>
+<tr><td colspan='8'> Partida 88: Declaración de Remuneraciones de alexander días trabajados: 5 Tramo Exento: 731308.5 Sueldo Bruto de: 300000 Tasa de Impuesto Único: 0.04 Monto de Impuesto Único: 0 </td></tr>
+<tr> <td colspan='7'>efectuado a electrico </td> </tr>
+<tr><td colspan = '8'> declarar-remuneraciones</td> </tr>
+</tbody>
+</table>
+<p style='page-break-before: always;'>&nbsp;</p>
+<br> 
+<p style='color: white; background-color: red'>  </p>
+<br> 
+- [x] tipo de asiento: 33
+- [ ] rcv
+- [ ] libro-diario
+- [ ] ccm
+- [x] revisado
+![](../revisado.png)
 <table id='Partida-89'>
 <thead> <th style='background-color: lavender' colspan='6'>Partida 89</th></thead>
 <tbody>
@@ -2880,6 +2907,33 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'>  </p>
 <br> 
+- [x] tipo de asiento: ajuste-iva
+- [ ] rcv
+- [ ] libro-diario
+- [ ] ccm
+- [x] revisado
+![](../revisado.png)
+<table id='Partida-124'>
+<thead> <th style='background-color: lavender' colspan='6'>Partida 124</th></thead>
+<tbody>
+<tr> <td> 0 </td> <td> </td> <td colspan='7'> impuesto-unico-por-pagar#salarios-por-pagar </td> </tr> 
+<tr> <td> 229560 </td> <td> </td> <td colspan='7'> remuneraciones-por-pagar#salarios-por-pagar </td> </tr> 
+<tr> <td> 70440 </td> <td> </td> <td colspan='7'> entidades-previsionales-por-pagar#salarios-por-pagar </td> </tr> 
+<tr style='background-color: azure'>  <td> </td> <td> 0 </td> <td> 70440 </td> <td> </td><td> p[salarios-por-pagar] </td> </tr>
+<tr style='background-color: azure'>  <td> </td> <td> 0 </td> <td> 229560 </td> <td> </td><td> p[salarios-por-pagar] </td> </tr>
+<tr style='color: white; background-color: black'>  <td> </td> <td>300000 </td> <td> 0</td> <td> </td> <td> r[salarios] </td> </tr>
+<tr> <td> </td> <td style='background-color: blanchedalmond'> 300000 </td> <td style='background-color: blanchedalmond'> 300000</td> </tr>
+<tr><td colspan='4'> alectrico® SpA</td> </tr> 
+<tr><td colspan='4'> ( 20 de agosto	2021	 ) </td> </tr>
+<tr><td colspan='8'> Partida 124: Declaración de Remuneraciones de alexander días trabajados: 5 Tramo Exento: 731308.5 Sueldo Bruto de: 300000 Tasa de Impuesto Único: 0.04 Monto de Impuesto Único: 0 </td></tr>
+<tr> <td colspan='7'>efectuado a electrico </td> </tr>
+<tr><td colspan = '8'> declarar-remuneraciones</td> </tr>
+</tbody>
+</table>
+<p style='page-break-before: always;'>&nbsp;</p>
+<br> 
+<p style='color: white; background-color: red'>  </p>
+<br> 
 - [x] tipo de asiento: ajuste-remanente
 - [ ] rcv
 - [ ] libro-diario
@@ -2926,6 +2980,33 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <tr><td colspan='4'> ( 31 de agosto	2021	 ) </td> </tr>
 <tr><td colspan='8'> Partida 126: Por ajuste del Debito Fiscal Contra el Credito Fiscal, mes de agosto-Por pago del ppm, con factor de  0.00125 mes agosto </td></tr>
 <tr><td colspan = '8'> ajustar-iva-contra-credito</td> </tr>
+</tbody>
+</table>
+<p style='page-break-before: always;'>&nbsp;</p>
+<br> 
+<p style='color: white; background-color: red'>  </p>
+<br> 
+- [x] tipo de asiento: 33
+- [ ] rcv
+- [ ] libro-diario
+- [ ] ccm
+- [x] revisado
+![](../revisado.png)
+<table id='Partida-127'>
+<thead> <th style='background-color: lavender' colspan='6'>Partida 127</th></thead>
+<tbody>
+<tr> <td> 0 </td> <td> </td> <td colspan='7'> impuesto-unico-por-pagar#salarios-por-pagar </td> </tr> 
+<tr> <td> 267820 </td> <td> </td> <td colspan='7'> remuneraciones-por-pagar#salarios-por-pagar </td> </tr> 
+<tr> <td> 82180 </td> <td> </td> <td colspan='7'> entidades-previsionales-por-pagar#salarios-por-pagar </td> </tr> 
+<tr style='background-color: azure'>  <td> </td> <td> 0 </td> <td> 82180 </td> <td> </td><td> p[salarios-por-pagar] </td> </tr>
+<tr style='background-color: azure'>  <td> </td> <td> 0 </td> <td> 267820 </td> <td> </td><td> p[salarios-por-pagar] </td> </tr>
+<tr style='color: white; background-color: black'>  <td> </td> <td>350000 </td> <td> 0</td> <td> </td> <td> r[salarios] </td> </tr>
+<tr> <td> </td> <td style='background-color: blanchedalmond'> 350000 </td> <td style='background-color: blanchedalmond'> 350000</td> </tr>
+<tr><td colspan='4'> alectrico® SpA</td> </tr> 
+<tr><td colspan='4'> ( 5 de septiembre	2021	 ) </td> </tr>
+<tr><td colspan='8'> Partida 127: Declaración de Remuneraciones de alexander días trabajados: 6 Tramo Exento: 731308.5 Sueldo Bruto de: 350000 Tasa de Impuesto Único: 0.04 Monto de Impuesto Único: 0 </td></tr>
+<tr> <td colspan='7'>efectuado a electrico </td> </tr>
+<tr><td colspan = '8'> declarar-remuneraciones</td> </tr>
 </tbody>
 </table>
 <p style='page-break-before: always;'>&nbsp;</p>

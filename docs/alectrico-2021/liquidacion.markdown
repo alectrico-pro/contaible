@@ -13,6 +13,12 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <table style='background-color: lightyellow' ><tbody>
 <tr style='color: white; background-color: black'><td colspan='9'> Partida 1001</td></tr>
 <tr><th>DEBE</th><th> HABER </th> <th colspan='6'> Cuenta </th></tr>
+<tr><td></td> <td>350000</td><td> </td><td colspan='5'>salarios#resultado</td></tr>
+<tr><td> 350000</td><td></td><td colspan='6'>  r(perdidas-y-ganancias) </td></tr>
+<tr><td></td> <td>300000</td><td> </td><td colspan='5'>salarios#resultado</td></tr>
+<tr><td> 300000</td><td></td><td colspan='6'>  r(perdidas-y-ganancias) </td></tr>
+<tr><td></td> <td>300000</td><td> </td><td colspan='5'>salarios#resultado</td></tr>
+<tr><td> 300000</td><td></td><td colspan='6'>  r(perdidas-y-ganancias) </td></tr>
 <tr><td></td> <td>9804</td><td> </td><td colspan='5'>depreciacion#resultado</td></tr>
 <tr><td> 9804</td><td></td><td colspan='6'>  r(perdidas-y-ganancias) </td></tr>
 <tr><td></td> <td>9804</td><td> </td><td colspan='5'>depreciacion#resultado</td></tr>
@@ -181,13 +187,13 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <tr> <td> 29412</td><td></td><td colspan='4'>  r(perdidas-y-ganancias) </td></tr>
 <tr> <td></td><td>29412</td><td> </td><td colspan='2'> ventas-con-eboleta-afecta</td></tr>
 <tr> <td> 29412</td><td></td><td colspan='4'>  r(perdidas-y-ganancias) </td></tr>
-<tr style='color: white; background-color: black'> <td> 2012122</td><td> 2012122</td><td colspan='3'>( 31 de enero	2021	 ) </td></tr>
+<tr style='color: white; background-color: black'> <td> 2962122</td><td> 2962122</td><td colspan='3'>( 31 de enero	2021	 ) </td></tr>
 <tr><td colspan='9'>alectrico® SpA</td></tr>
 <tr><td colspan='9'>v/Por liquidación de Cuentas de Resultado Deudoras</td></tr>
 <table><tbody> 
 <tr  style='background-color: blanchedalmond'><td></td><td> perdidas-y-ganancias</td><td>saldo-deudor</td></tr>
-<tr> <td> 1004</td> <td>2012122</td> <td>0</td></tr>
-<tr style='background-color: blanchedalmond'><td>2012122</td></tr>
+<tr> <td> 1004</td> <td>2962122</td> <td>0</td></tr>
+<tr style='background-color: blanchedalmond'><td>2962122</td></tr>
 <table style='background-color: lightyellow' ><tbody>
 <tr style='color: white; background-color: black'><td colspan='9'> Partida 1002</td></tr>
 <tr><th>DEBE</th><th> HABER </th> <th colspan='6'> Cuenta </th></tr>
@@ -293,11 +299,9 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <tr><td colspan='9'>alectrico® SpA</td></tr>
 <tr><td colspan='9'>v/Por liquidación de Cuentas de Resultado Acreedoras</td></tr>
 <table><tbody> 
-<table>
-<tr style='background-color: blanchedalmond'><td> </td><td>perdidas-y-ganancias</td><td>saldo-acreedor</td></tr>
-<tr> <td> 1004</td> <td>2012122</td><td> 2646712</td></tr>
-<tr style='background-color: blanchedalmond'><td>634590</td></tr>
-</table>
+<tr  style='background-color: blanchedalmond'><td></td><td> perdidas-y-ganancias</td><td>saldo-deudor</td></tr>
+<tr> <td> 1004</td> <td>2962122</td> <td>2646712</td></tr>
+<tr style='background-color: blanchedalmond'><td>315410</td></tr>
 <table style='background-color: lightyellow' ><tbody>
 <tr style='color: white; background-color: black'><td colspan='9'> Partida 1150</td></tr>
 <tr><th>DEBE</th><th> HABER </th> <th colspan='6'> Cuenta </th></tr>
@@ -323,6 +327,12 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <tr><td></td><td>45050</td><td> </td><td>ventas</td></tr>
 <tr><td>29412</td><td> </td><td colspan='2'> r(base-imponible) partida 7 </td></tr>
 <tr><td></td><td>29412</td><td> </td><td>ventas</td></tr>
+<tr><td>300000</td><td> </td><td colspan='2'> r(base-imponible) partida 88 </td></tr>
+<tr><td></td><td>300000</td><td> </td><td>salarios</td></tr>
+<tr><td>300000</td><td> </td><td colspan='2'> r(base-imponible) partida 124 </td></tr>
+<tr><td></td><td>300000</td><td> </td><td>salarios</td></tr>
+<tr><td>350000</td><td> </td><td colspan='2'> r(base-imponible) partida 127 </td></tr>
+<tr><td></td><td>350000</td><td> </td><td>salarios</td></tr>
 <tr><td>2417</td><td> </td><td colspan='2'> r(base-imponible) partida 131 </td></tr>
 <tr><td></td><td>2417</td><td> </td><td>amortizacion</td></tr>
 <tr><td>2417</td><td> </td><td colspan='2'> r(base-imponible) partida 142 </td></tr>
@@ -473,13 +483,13 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <tr><td></td><td>6926</td><td> </td><td>gastos-administrativos</td></tr>
 <tr><td>6926</td><td> </td><td colspan='2'> r(base-imponible) partida 199 </td></tr>
 <tr><td></td><td>6926</td><td> </td><td>gastos-administrativos</td></tr>
-<tr style='color: white; background-color: black'> <td> 2230592</td><td> 2230592</td><td colspan='3'>( 31 de diciembre	2021	 ) </td></tr>
+<tr style='color: white; background-color: black'> <td> 3180592</td><td> 3180592</td><td colspan='3'>( 31 de diciembre	2021	 ) </td></tr>
 <tr><td colspan='9'>alectrico® SpA</td></tr>
 <tr><td colspan='9'>v/Por Determinación de la Base Imponible: Deducciones</td></tr>
 <table><tbody> 
 <tr  style='background-color: blanchedalmond'><td></td><td> base-imponible</td><td>saldo-deudor</td></tr>
-<tr> <td> 1150</td> <td>2230592</td> <td>0</td></tr>
-<tr style='background-color: blanchedalmond'><td>2230592</td></tr>
+<tr> <td> 1150</td> <td>3180592</td> <td>0</td></tr>
+<tr style='background-color: blanchedalmond'><td>3180592</td></tr>
 <table style='background-color: lightyellow' ><tbody>
 <tr style='color: white; background-color: black'><td colspan='9'> Partida 1151</td></tr>
 <tr><th>DEBE</th><th> HABER </th> <th colspan='6'> Cuenta </th></tr>
@@ -583,43 +593,33 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <tr><td colspan='9'>alectrico® SpA</td></tr>
 <tr><td colspan='9'>v/Por Determinación de la Base Imponible: Aportes</td></tr>
 <table><tbody> 
-<table>
-<tr style='background-color: blanchedalmond'><td> </td><td>base-imponible</td><td>saldo-acreedor</td></tr>
-<tr> <td> 1150</td> <td>2230592</td><td> 2646712</td></tr>
-<tr style='background-color: blanchedalmond'><td>416120</td></tr>
-</table>
+<tr  style='background-color: blanchedalmond'><td></td><td> base-imponible</td><td>saldo-deudor</td></tr>
+<tr> <td> 1150</td> <td>3180592</td> <td>2646712</td></tr>
+<tr style='background-color: blanchedalmond'><td>533880</td></tr>
 <table style='background-color: lightyellow' ><tbody>
 <tr style='color: white; background-color: black'><td colspan='9'> Partida 1152</td></tr>
 <tr><th>DEBE</th><th> HABER </th> <th colspan='6'> Cuenta </th></tr>
-<tr> <td colspan='7'> x-- Liquidando cuenta de resultados idpc en base-imponible</td></tr>
-<tr> <td colspan='7'> La cuenta de liquidacion tiene un debe de 	2230592 y un haber de 	2646712</td></tr>
-<tr style='background-color: lightgreen'><td>41612</td> <td></td> <td colspan='2' >idpc</td></tr>
-<tr style='background-color: lightgreen'><td></td><td>41612</td> <td> </td><td colspan='2'> r(base-imponible) </td></tr> 
-<tr><td colspan='6'>x-- Liquidando cuenta de resultados ( cuando hay ganancia) en utilidad-tributaria en base-imponible</td></tr>
-<tr style='background-color: azure'><td colspan='6'>La cuenta de liquidacion tiene un debe de 	2230592 y un haber de 	2646712</td></tr>
-<tr style='background-color: azure'><td> 374508</td><td></td><td colspan='2'>utilidad-tributaria</td></tr>
-<tr style='background-color: azure'><td> </td><td>374508</td><td></td><td> r(base-imponible) </td></tr>
-<tr style='color: white; background-color: black'> <td> 416120</td><td> 416120</td><td colspan='3'>( 31 de diciembre	2021	 ) </td></tr>
+<tr><td colspan='6'>x-- Liquidando cuenta de resultados ( cuando hay perdida tributaria en utilidad-tributaria en base-imponible</td></tr>
+<tr style='background-color: azure'><td colspan='6'>La cuenta de liquidacion tiene un debe de 	3180592 y un haber de 	2646712</td></tr>
+<tr style='background-color: azure'><td> -533880</td><td></td><td colspan='2'>utilidad-tributaria</td></tr>
+<tr style='background-color: azure'><td> </td><td>-533880</td><td></td><td> r(base-imponible) </td></tr>
+<tr style='color: white; background-color: black'> <td> -533880</td><td> -533880</td><td colspan='3'>( 31 de diciembre	2021	 ) </td></tr>
 <tr><td colspan='9'>alectrico® SpA</td></tr>
 <tr><td colspan='9'>v/Para determinar la utilidad tributaria del ejercicio</td></tr>
 <table><tbody> 
-<table>
-<tr style='background-color: blanchedalmond'><td> </td><td>base-imponible</td><td>saldo-acreedor</td></tr>
-<tr> <td> 1150</td> <td>2230592</td><td> 2646712</td></tr>
-<tr style='background-color: blanchedalmond'><td>416120</td></tr>
-</table>
+<tr  style='background-color: blanchedalmond'><td></td><td> base-imponible</td><td>saldo-deudor</td></tr>
+<tr> <td> 1150</td> <td>3180592</td> <td>2646712</td></tr>
+<tr style='background-color: blanchedalmond'><td>533880</td></tr>
 <table style='background-color: lightyellow' ><tbody>
 <tr style='color: white; background-color: black'><td colspan='9'> Partida 1004</td></tr>
 <tr><th>DEBE</th><th> HABER </th> <th colspan='6'> Cuenta </th></tr>
-<tr> <td colspan='8'>x-- Liquidando cuenta de resultados (cuando hay ganancia) en: utilidad en perdidas-y-ganancias</td></tr>
-<tr style='font-weight:bold; color: white; background-color: crimson'> <td>634590</td><td></td><td>utilidad</td><tr>
-<tr><td></td><td>634590</td><td> </td><td colspan='2'> r(perdidas-y-ganancias) </td></tr>
-<tr style='color: white; background-color: black'> <td> 634590</td><td> 634590</td><td colspan='3'>( 31 de enero	2021	 ) </td></tr>
+<tr> <td colspan='8'>x-- Liquidando cuenta de resultados (cuando hay pérdidas tributarias) en: utilidad en perdidas-y-ganancias</td></tr>
+<tr style='font-weight:bold; color: white; background-color: crimson'> <td>-315410</td><td></td><td>utilidad</td><tr>
+<tr><td></td><td>-315410</td><td> </td><td colspan='2'> r(perdidas-y-ganancias) </td></tr>
+<tr style='color: white; background-color: black'> <td> -315410</td><td> -315410</td><td colspan='3'>( 31 de enero	2021	 ) </td></tr>
 <tr><td colspan='9'>alectrico® SpA</td></tr>
 <tr><td colspan='9'>v/Para determinar el valor del resultado del período</td></tr>
 <table><tbody> 
-<table>
-<tr style='background-color: blanchedalmond'><td> </td><td>perdidas-y-ganancias</td><td>saldo-acreedor</td></tr>
-<tr> <td> 1004</td> <td>2012122</td><td> 2646712</td></tr>
-<tr style='background-color: blanchedalmond'><td>634590</td></tr>
-</table>
+<tr  style='background-color: blanchedalmond'><td></td><td> perdidas-y-ganancias</td><td>saldo-deudor</td></tr>
+<tr> <td> 1004</td> <td>2962122</td> <td>2646712</td></tr>
+<tr style='background-color: blanchedalmond'><td>315410</td></tr>
