@@ -30,8 +30,8 @@
 )
 
 (defrule guardar-partidas
-  (no)
   (declare (salience 10000))
+  (no)
   (selecciones ( origen-de-subcuentas ?origen))
   ;estas actividades están en activiaades.txt
   ;mas adelante hay que hacer algo al respecto
@@ -97,18 +97,32 @@
 ;econtar el hecho que asociado a estas
 ;y anotarlas con esos hechos
 (defrule anotando-partidas
+  (no)
   (actividad (nombre ?nombre))
   ?partida <-  (partida (numero ?numero) (hecho nil))
   =>
   (printout t seleccionando tab ?nombre crlf)
   (do-for-all-facts ((?f ?nombre)) (eq ?f:partida ?numero) 
-    (printout t ?f:partida tab ?nombre crlf)
+    (printout t "Partida " ?f:partida  " responde al hecho " tab ?nombre crlf)
     (modify ?partida (hecho ?nombre))
+
   )    
+)
+
+(defrule anotando-partidas-compra
+  ?partida <-  (partida (numero 10) (hecho nil))
+  =>
+   (printout t "================================================================" crlf)
+   (halt)
+   (do-for-all-facts ((?f compra)) (eq ?f:partida 10) 
+    (printout t "Partida " ?f:partida  " responde al hecho compra" crlf)
+    (halt)
+   )
 )
 
 
 (defrule hechos-economicos-admitidos-como-actividad
+(no)
   (actividad (nombre ?nombre))
  =>
   (do-for-all-facts ((?f ?nombre)) TRUE
@@ -541,7 +555,7 @@
    ( printout t "  Cotizacion Empleador " crlf)
    ( printout t "Total a Pagar al Fondo de Cesantía" tab (* ?afc 100) "%" tab  (* ?sueldo ?afc) crlf)
    ( printout t " PLANILLA SALUD " crlf)
-   ( printout t " Cotización Legal " (* ?salud 100) "%" tab (* ?sueldo ?salud) crlf)
+   ( printout t " Cotización Legal " tab ?salud crlf)
    ( printout t (if (eq ?declarada true ) then DECLARADA else NO-DECLARADA ) tab )
    ( printout t (if (eq ?pagada true ) then PAGADA else NO-PAGADA ) tab )
    ( printout t (if (eq ?impuesta true ) then IMPUESTA else NO-IMPUESTA ) crlf)
