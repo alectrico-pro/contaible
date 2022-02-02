@@ -396,10 +396,13 @@
 (revision (revisado true) (partida 203) (tipo activacion-intangible)
 )
 
-(revision (revisado true) (partida 204) (tipo ajuste-mensual))
+(revision (revisado true) (partida 204) (tipo activacion-intangible))
 
-(revision (revisado true) (partida 205)  )
+(revision (revisado true) (partida 205) (tipo ajuste-mensual) )
 (revision (revisado true) (partida 206) (tipo ajuste-mensual))
+
+(revision (revisado true) (partida 207))
+
 
 (revision (revisado true) (partida 01152)  )
 

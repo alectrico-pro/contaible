@@ -34,6 +34,7 @@
   ;( halt )
 )
 
+
 ;Esto genera un index para queda ser visto en abductor.necios.cl
 (defrule inicio-kindle-l-
    ( declare (salience 9000))

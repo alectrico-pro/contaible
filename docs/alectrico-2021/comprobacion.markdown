@@ -31,8 +31,6 @@ NO se han practicado liquidaciones, por lo que SÍ se muestran cuentas nominales
 <thead> <th></th>  <th align='center'>DEBE</th> <th align='center'>HABER</th> <th>|</th> <th align='center'>DEBER</th> <th align='center'>ACREEDOR</th> <th>A Corregir </th> </thead>
 <tbody>
 <tr style=' background: #fff; border: 1px solid red;'>
-<td><small>aumentos-de-capital-aportes</small></td> <td align='right'>0</td> <td align='right'>120000000</td> <td> | </td> <td align='right'> 0</td> <td align='right'>120000000</td> </tr>
-<tr style=' background: #fff; border: 1px solid red;'>
 <td><small>cuentas-por-cobrar</small></td> <td align='right'>20000</td> <td align='right'>0</td> <td> | </td> <td align='right'> 20000</td> <td align='right'>0</td> </tr>
 <tr style=' background: #fff; border: 1px solid red;'>
 <td><small>amortizacion</small></td> <td align='right'>29004</td> <td align='right'>0</td> <td> | </td> <td align='right'> 29004</td> <td align='right'>0</td> </tr>
@@ -67,7 +65,7 @@ NO se han practicado liquidaciones, por lo que SÍ se muestran cuentas nominales
 <tr style=' background: #fff; border: 1px solid red;'>
 <td>Insumos<small>insumos</small></td> <td align='right'>414942</td> <td align='right'>44044</td> <td> | </td> <td align='right'> 370898</td> <td align='right'>0</td> </tr>
 <tr>
-<td>Intangibles<small>intangibles</small> </td> <td align='right'>121190000</td> <td align='right'>52631</td> <td> | </td> <td align='right'> 121137369</td> <td align='right'>0</td> 
+<td>Intangibles<small>intangibles</small> </td> <td align='right'>240290000</td> <td align='right'>952631</td> <td> | </td> <td align='right'> 239337369</td> <td align='right'>0</td> 
 <td colspan='2' style=' background: #faa; border: 1px solid red;'>Subcuenta </td>
 </tr>
 <tr>
@@ -85,7 +83,7 @@ NO se han practicado liquidaciones, por lo que SÍ se muestran cuentas nominales
 <td>Caja<small>caja</small></td> <td align='right'>1116083</td> <td align='right'>1105170</td> <td> | </td> <td align='right'> 10913</td> <td align='right'>0</td>
 </tr>
 <tr>
-<td>Banco Estado<small>banco-estado</small></td> <td align='right'>4592808</td> <td align='right'>4215957</td> <td> | </td> <td align='right'> 376851</td> <td align='right'>0</td>
+<td>Banco Estado<small>banco-estado</small></td> <td align='right'>5492808</td> <td align='right'>3315957</td> <td> | </td> <td align='right'> 2176851</td> <td align='right'>0</td>
 </tr>
 <tr>
 <td>PPM (Pago Provisional Mensual)<small>ppm</small></td> <td align='right'>2728</td> <td align='right'>0</td> <td> | </td> <td align='right'> 2728</td> <td align='right'>0</td>
@@ -95,11 +93,13 @@ NO se han practicado liquidaciones, por lo que SÍ se muestran cuentas nominales
 </tr>
 <tr style=' background: #fff; border: 1px solid red;'>
 <td><small>retencion-de-iva-articulo-11</small></td> <td align='right'>23608</td> <td align='right'>25108</td> <td> | </td> <td align='right'> 0</td> <td align='right'>1500</td> </tr>
+<tr style=' background: #fff; border: 1px solid red;'>
+<td><small>aumentos-de-capital-aportes</small></td> <td align='right'>0</td> <td align='right'>240000000</td> <td> | </td> <td align='right'> 0</td> <td align='right'>240000000</td> </tr>
 <tr>
 <td><small>costos-de-ventas</small></td> <td align='right'>11417</td> <td align='right'>409</td> <td> | </td> <td align='right'> 11008</td> <td align='right'>0</td>
 </tr>
 </tbody>
 <tfoot>
-<tr> <td></td> <td align='right'> <div>256970408</div></td> <td align='right'> <div>137262559</div></td><td> | </td> <td align='right'> <div>246366404</div></td> <td align='right'> <div>126658555</div></td> </tr>
+<tr> <td></td> <td align='right'> <div>496070408</div></td> <td align='right'> <div>258162559</div></td><td> | </td> <td align='right'> <div>485466404</div></td> <td align='right'> <div>247558555</div></td> </tr>
 </tfoot>
 </table>

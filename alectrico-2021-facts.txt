@@ -3032,41 +3032,70 @@
  ( glosa activacion-plataforma-alectrico))
 
 
+
 (partida
  (numero 203)
  (dia 31) (mes diciembre) (ano 2021)
- (descripcion "Por Compra de una Licencia de Contaible®")
- (actividad compra-de-licencia-software))
+ (descripcion "Por Donación desde accionista Alexander Espinosa de la plataforma alectrico.")
+ (actividad aporte-plataforma-alectrico®))
+
 
 (cargo
  ( electronico false)
  ( tipo-de-documento ajuste)
  ( empresa alectrico-2021)
- ( cuenta licencia-contaible)
- ( monto  900000)
+ ( cuenta plataforma-alectrico)
+ ( monto  120000000)
  ( partida 203)
  ( dia 31)  ( mes diciembre)  ( ano 2021)
- ( glosa compra-de-licencia-software))
+ ( glosa activacion-plataforma-alectrico))
 
 (abono
  ( electronico false)
  ( tipo-de-documento ajuste)
  ( empresa alectrico-2021)
- ( cuenta banco-estado)
- ( monto  900000)
+ ( cuenta aumentos-de-capital-aportes)
+ ( monto  120000000)
  ( partida 203)
  ( dia 31)  ( mes diciembre)  ( ano 2021)
- ( glosa compra-de-licencia-software))
+ ( glosa activacion-plataforma-alectrico))
+
+;---------------------
+(partida
+ (numero 204)
+ (dia 31) (mes diciembre) (ano 2021)
+ (descripcion "Por Derecho de Uso de Inmueble®")
+ (actividad autorizacion-uso-de-inmueble))
+
+(abono
+ ( electronico false)
+ ( tipo-de-documento activacion-de-intangible)
+ ( empresa alectrico-2021)
+ ( cuenta autorizacion-uso-de-inmueble)
+ ( monto  900000)
+ ( partida 204)
+ ( dia 31)  ( mes diciembre)  ( ano 2021)
+ ( glosa autorizacion-uso-de-inmueble))
+
+(cargo
+ ( electronico false)
+ ( tipo-de-documento activacion-de-intangible)
+ ( empresa alectrico-2021)
+ ( cuenta banco-estado)
+ ( monto  900000)
+ ( partida 204)
+ ( dia 31)  ( mes diciembre)  ( ano 2021)
+ ( glosa autorizacion-uso-de-inmueble))
+
+;-----------------------------------------------
+
+
+(deposito (partida 205) (banco banco-estado) (monto 900000 ) (dia 31) (mes diciembre) (ano 2021) )
 
 
 
-
-(deposito (partida 204) (banco banco-estado) (monto 900000 ) (dia 31) (mes diciembre) (ano 2021) )
-
-
-
-( ajustes-mensuales (mes diciembre) (ano 2021) (partida 205))
-( ajuste-de-iva     (mes diciembre) (ano 2021) (partida 206))
+( ajustes-mensuales (mes diciembre) (ano 2021) (partida 206))
+( ajuste-de-iva     (mes diciembre) (ano 2021) (partida 207))
 
 ;=========================== 2 0 2 2  ===========================================
 ;================================================================================

@@ -5,6 +5,9 @@ title: O
 permalink: /o/
 ---
 
+http://www.forea.org/topic/3842-donaci%C3%B3n-usufructo-a-socio/
+Y ojo con eso de ir tocando las reservas alegremente, sin Junta de por medio ni nada, que eso sí que es importante y de suma gravedad: luego viene un socio a proponer un reparto de dividendos y se encuentra la caja vacía; vamos, soy yo el socio y meto al contable una querella por estafa. Lo de aplicar la disposición esa, pues sí, será obligatorio… pero también lo es ahora el inventariar el material de oficina y activar el stock que quede a 31/12… y no lo hace ni Dios, y no pasa nada. No sé, me parece que aquí hay algo que se nos escapa.
+
 iii) Revalorizaciones: El Capital Propio Inicial del ejercicio se reajusta de acuerdo con el porcentaje de variación experimentado por el IPC en el periodo comprendido entre el último día del segundo mes anterior al de iniciación del ejercicio y el último día del mes anterior al del balance
 
 # Notas a los Estados Financieros de alectrico® spa
@@ -12,6 +15,7 @@ iii) Revalorizaciones: El Capital Propio Inicial del ejercicio se reajusta de ac
 
 # IMPORTANTE: La contabilidad de alectrico sigue los principios NIIF.
 
+**en la contabilización de las operaciones se atenderá a su realidad económica y no sólo a su forma jurídica**
 **tal  como  los  ingresos  deben  reconocerse  percibidos  o  devengados,  los  gastos  deben reconocerse pagados o adeudados.**
 **El ingreso  por  venta  se  debe  reconocer  contablemente  cuando  el  vendedor transfiere la propiedad, los riesgos y ventajas significativas, gestión y el control al comprador. Este momento no necesariamente coincide conel momento en que se emite la respectiva factura.**
 

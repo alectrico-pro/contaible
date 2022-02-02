@@ -25,6 +25,12 @@ permalink: /nota/
 
   Algunas reglas NIIF se pueden abreviar como sigue:
 
+**Norma 5ª del Marco Conceptual "CRITERIOS DE REGISTRO Y RECONOCIMIENTO"1. Los activos deben reconocerse en el balance cuando sea probable la obtención a partir de los mismos de beneficios o rendimientos. Por lo tanto por definición esa norma tampoco nos permite ni siquiera contabilizar como activos esos inmuebles, por lo tanto mucho menos amortizarlos.**
+
+**Norma de valoración 22 Cambios de criterios contables, errores, y estimaciones contables: La subsanación de errores relativos a ejercicios anteriores serán de aplicación las mismas reglas que las del párrafo anterior. Párrafo el cual dice que se aplicará de manera retroactiva y su efecto se calculará desde el ejercicio más antiguo para el que se disponga información. El ingreso o gasto correspondiente a ejercicios anteriores motivará el correspondiente ajuste por el efecto acumulado, el cual se reflejará en una partida de reservas.**
+
+**Para ello, para permitirlo ahora la definición del PCIPIO DE NO COMPENSACIÓN dice que salvo que alguna norma establezca lo contrario de forma expresa no podrán compensarse las partidas del activo y del pasivo.**
+
   1 **tal  como  los  ingresos  deben  reconocerse  percibidos  o  devengados,  los  gastos  deben reconocerse pagados o adeudados.**
 
   2.**El ingreso  por  venta  se  debe  reconocer  contablemente  cuando  el  vendedor transfiere la propiedad, los riesgos y ventajas significativas, gestión y el control al comprador. Este momento no necesariamente coincide conel momento en que se emite la respectiva factura.**

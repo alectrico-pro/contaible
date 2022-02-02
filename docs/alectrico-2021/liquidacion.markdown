@@ -355,7 +355,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <tr><td></td><td>2417</td><td> </td><td>amortizacion</td></tr>
 <tr><td>2417</td><td> </td><td colspan='2'> r(base-imponible) partida 186 </td></tr>
 <tr><td></td><td>2417</td><td> </td><td>amortizacion</td></tr>
-<tr><td>2417</td><td> </td><td colspan='2'> r(base-imponible) partida 205 </td></tr>
+<tr><td>2417</td><td> </td><td colspan='2'> r(base-imponible) partida 206 </td></tr>
 <tr><td></td><td>2417</td><td> </td><td>amortizacion</td></tr>
 <tr><td>4202</td><td> </td><td colspan='2'> r(base-imponible) partida 131 </td></tr>
 <tr><td></td><td>4202</td><td> </td><td>depreciacion</td></tr>
@@ -379,7 +379,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <tr><td></td><td>9804</td><td> </td><td>depreciacion</td></tr>
 <tr><td>9804</td><td> </td><td colspan='2'> r(base-imponible) partida 186 </td></tr>
 <tr><td></td><td>9804</td><td> </td><td>depreciacion</td></tr>
-<tr><td>9804</td><td> </td><td colspan='2'> r(base-imponible) partida 205 </td></tr>
+<tr><td>9804</td><td> </td><td colspan='2'> r(base-imponible) partida 206 </td></tr>
 <tr><td></td><td>9804</td><td> </td><td>depreciacion</td></tr>
 <tr><td>67218</td><td> </td><td colspan='2'> r(base-imponible) partida 71 </td></tr>
 <tr><td></td><td>67218</td><td> </td><td>depreciacion-instantanea-de-activos-fijos-propyme</td></tr>
