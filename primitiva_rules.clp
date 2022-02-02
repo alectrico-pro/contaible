@@ -120,9 +120,17 @@
 ;------------------------ primitivas ---------------------------
 (defrule cargar-cuenta-existente
    ( declare (salience 9800))
+
    ( balance (dia ?top) (mes ?mes_top) (ano ?ano_top ))
    ( empresa (nombre ?empresa))
    ( partida (dia ?dia) (mes ?mes) (ano ?ano) (numero ?numero))
+
+   ( revision
+    (partida ?numero)
+    (rechazado false)
+   )
+
+
    ?cargo <- (cargo (recibida ?recibida) (activo-fijo ?activo-fijo) (qty ?qty-cargo) (tipo-de-documento ?tipo-de-documento) (electronico ?electronico) (partida ?numero) (realizado false) (empresa ?empresa) (dia ?dia) (mes ?mes) (ano ?ano) (cuenta ?nombre) (monto ?monto) (glosa ?glosa) )
    ?cuenta <- (cuenta (partida ?numero) (qty ?qty) (nombre ?nombre) (debe ?debe) (haber ?haber)  )
    ( test (>= (to_serial_date ?top ?mes_top ?ano_top) (to_serial_date ?dia ?mes ?ano)))
@@ -152,6 +160,12 @@
    ( empresa (nombre ?empresa))
    ( balance (dia ?top) (mes ?mes_top) (ano ?ano_top))
    ( partida (dia ?dia) (mes ?mes) (ano ?ano) (numero ?numero))
+   ( revision
+    (partida ?numero)
+    (rechazado false)
+   )
+
+
    ?abono  <- (abono (recibida ?recibida) (activo-fijo ?activo-fijo) (tipo-de-documento ?tipo-de-documento) (qty ?qty) (electronico ?electronico) (partida ?numero) (realizado false) (empresa ?empresa) (dia ?dia) (cuenta ?nombre) (monto ?monto) (glosa ?glosa) (mes ?mes) (ano ?ano))
    ?cuenta <- (cuenta (partida ?numero) (nombre ?nombre) (debe ?debe) (haber ?haber) (tipo ?tipo) (circulante ?circulante))
    ( test (>= (to_serial_date ?top ?mes_top ?ano_top) (to_serial_date ?dia ?mes ?ano)))
@@ -167,6 +181,12 @@
    ( balance (dia ?top) (mes ?mes_top) (ano ?ano_top))
    ( empresa (nombre ?empresa))
    ( partida (dia ?dia) (mes ?mes) (ano ?ano) (numero ?numero))
+   ( revision
+    (partida ?numero)
+    (rechazado false)
+   )
+
+
    ?abono <-  (abono (recibida ?recibida) (activo-fijo ?activo-fijo) (tipo-de-documento ?tipo-de-documento) (partida ?numero) (realizado false) (empresa ?empresa) (dia ?dia) (ano ?ano) (cuenta ?nombre) (monto ?monto) (glosa ?glosa) (mes ?mes))
    ?cuenta <- (cuenta (nombre ?nombre) (mes nil) (partida nil) (dia nil) (circulante ?circulante) (naturaleza ?naturaleza) (padre ?padre) (tipo ?tipo) (grupo ?grupo) (descripcion ?descripcion) (origen ?origen))
    ( test (>= (to_serial_date ?top ?mes_top ?ano_top) (to_serial_date ?dia ?mes ?ano)))

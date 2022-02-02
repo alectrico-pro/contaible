@@ -370,9 +370,9 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <tbody>
 <tr> <td>8361 </td> <td colspan='7'> u-chile#gastos-administrativos </td></tr>
 <tr> <td>2417 </td> <td colspan='7'> amortizacion-intangibles#amortizacion </td></tr>
-<tr style='background-color: lightyellow'>  <td> </td> <td> 0</td> <td> 9950</td> <td colspan='2'> a[caja] </td> </tr>
-<tr style='background-color: lightyellow'>  <td> </td> <td> 0</td> <td> 2417</td> <td colspan='2'> a[amortizacion-acumulada-intangibles] </td> </tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td> 1589</td> <td> 0</td> <td colspan='2'> a[iva-credito] </td> </tr>
+<tr style='background-color: lightyellow'>  <td> </td> <td> 0</td> <td> 2417</td> <td colspan='2'> a[amortizacion-acumulada-intangibles] </td> </tr>
+<tr style='background-color: lightyellow'>  <td> </td> <td> 0</td> <td> 9950</td> <td colspan='2'> a[caja] </td> </tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td> 0</td> <td> 4202</td> <td colspan='2'> a[depreciacion-acumulada-herramientas] </td> </tr>
 <tr style='color: white; background-color: black'>  <td> </td> <td>8361 </td> <td> 0</td> <td> </td> <td> r[gastos-administrativos] </td> </tr>
 <tr style='color: white; background-color: black'>  <td> </td> <td>4202 </td> <td> 0</td> <td> </td> <td> r[depreciacion] </td> </tr>
@@ -428,11 +428,14 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <table id='Partida-14333'>
 <thead> <th style='background-color: lavender' colspan='6'>Partida 14333</th></thead>
 <tbody>
-<tr style='background-color: lightyellow'>  <td> </td> <td> 0</td> <td> 23464</td> <td colspan='2'> a[iva-credito] </td> </tr>
+<tr> <td>33 </td> <td colspan='7'> ganancia-por-correccion-monetaria#correccion-monetaria </td></tr>
+<tr> <td>33 </td> <td colspan='7'> correccion-monetaria#ingresos-brutos </td></tr>
+<tr style='background-color: lightyellow'>  <td> </td> <td> 33</td> <td> 23464</td> <td colspan='2'> a[iva-credito] </td> </tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td> 96</td> <td> 0</td> <td colspan='2'> a[ppm] </td> </tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td> 0</td> <td> 96</td> <td colspan='2'> a[banco-estado] </td> </tr>
 <tr style='background-color: azure'>  <td> </td> <td> 23464 </td> <td> 0 </td> <td> </td><td> p[iva-debito] </td> </tr>
-<tr> <td> </td> <td style='background-color: blanchedalmond'> 23560 </td> <td style='background-color: blanchedalmond'> 23560</td> </tr>
+<tr style='background-color: gold'>  <td> </td> <td>0 </td> <td> 33</td> <td> </td> <td> r[ingresos-brutos] </td> </tr>
+<tr> <td> </td> <td style='background-color: blanchedalmond'> 23593 </td> <td style='background-color: blanchedalmond'> 23593</td> </tr>
 <tr><td colspan='4'> alectrico® SpA</td> </tr> 
 <tr><td colspan='4'> ( 31 de enero	2021	 ) </td> </tr>
 <tr><td colspan='8'> Partida 14333: Por ajuste del Debito Fiscal Contra el Credito Fiscal, mes de enero-Por pago del ppm, con factor de  0.0013 mes enero </td></tr>
@@ -452,8 +455,8 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <table id='Partida-141'>
 <thead> <th style='background-color: lavender' colspan='6'>Partida 141</th></thead>
 <tbody>
-<tr> <td>29412 </td> <td colspan='7'> ventas-con-eboleta-afecta#ventas </td></tr>
 <tr> <td>29412 </td> <td colspan='7'> ventas#ingresos-brutos </td></tr>
+<tr> <td>29412 </td> <td colspan='7'> ventas-con-eboleta-afecta#ventas </td></tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td> 0</td> <td> 35000</td> <td colspan='2'> a[banco-estado] </td> </tr>
 <tr style='background-color: azure'>  <td> </td> <td> 5588 </td> <td> 0 </td> <td> </td><td> p[iva-debito] </td> </tr>
 <tr style='color: white; background-color: black'>  <td> </td> <td>29412 </td> <td> 0</td> <td> </td> <td> r[ingresos-brutos] </td> </tr>
@@ -489,6 +492,33 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <tr><td colspan='4'> ( 31 de febrero	2021	 ) </td> </tr>
 <tr><td colspan='8'> Partida 142: Por amortizacion en febrero de marca-alectrico-Por depreciacion en febrero de taladro </td></tr>
 <tr><td colspan = '8'> amortizacion</td> </tr>
+</tbody>
+</table>
+<p style='page-break-before: always;'>&nbsp;</p>
+<br> 
+<p style='color: white; background-color: red'>  </p>
+<br> 
+- [x] tipo de asiento: ajuste-de-iva
+- [ ] rcv
+- [ ] libro-diario
+- [ ] ccm
+- [x] revisado
+![](../revisado.png)
+<table id='Partida-14444'>
+<thead> <th style='background-color: lavender' colspan='6'>Partida 14444</th></thead>
+<tbody>
+<tr> <td>298 </td> <td colspan='7'> ganancia-por-correccion-monetaria#correccion-monetaria </td></tr>
+<tr> <td>298 </td> <td colspan='7'> correccion-monetaria#ingresos-brutos </td></tr>
+<tr style='background-color: lightyellow'>  <td> </td> <td> 298</td> <td> 16</td> <td colspan='2'> a[iva-credito] </td> </tr>
+<tr style='background-color: lightyellow'>  <td> </td> <td> 6</td> <td> 0</td> <td colspan='2'> a[ppm] </td> </tr>
+<tr style='background-color: lightyellow'>  <td> </td> <td> 0</td> <td> 6</td> <td colspan='2'> a[banco-estado] </td> </tr>
+<tr style='background-color: azure'>  <td> </td> <td> 16 </td> <td> 0 </td> <td> </td><td> p[iva-debito] </td> </tr>
+<tr style='background-color: gold'>  <td> </td> <td>0 </td> <td> 298</td> <td> </td> <td> r[ingresos-brutos] </td> </tr>
+<tr> <td> </td> <td style='background-color: blanchedalmond'> 320 </td> <td style='background-color: blanchedalmond'> 320</td> </tr>
+<tr><td colspan='4'> alectrico® SpA</td> </tr> 
+<tr><td colspan='4'> ( 31 de febrero	2021	 ) </td> </tr>
+<tr><td colspan='8'> Partida 14444: Por ajuste del Debito Fiscal Contra el Credito Fiscal, mes de febrero-Por pago del ppm, con factor de  0.0013 mes febrero </td></tr>
+<tr><td colspan = '8'> ajustar-iva-contra-credito</td> </tr>
 </tbody>
 </table>
 <p style='page-break-before: always;'>&nbsp;</p>
@@ -531,9 +561,9 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <thead> <th style='background-color: lavender' colspan='6'>Partida 16</th></thead>
 <tbody>
 <tr><td>6607</td> <td colspan='7'>dartel-materiales#materiales</td> </tr>
-<tr style='background-color: lightyellow'>  <td> </td> <td> 0</td> <td> 7862</td> <td colspan='2'> a[banco-estado] </td> </tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td> 1255</td> <td> 0</td> <td colspan='2'> a[iva-credito] </td> </tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td> 6607</td> <td> 0</td> <td colspan='2'> a[materiales] </td> </tr>
+<tr style='background-color: lightyellow'>  <td> </td> <td> 0</td> <td> 7862</td> <td colspan='2'> a[banco-estado] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 7862 </td> <td style='background-color: blanchedalmond'> 7862</td> </tr>
 <tr><td colspan='4'> alectrico® SpA</td> </tr> 
 <tr><td colspan='4'> ( 4 de febrero	2021	 ) </td> </tr>
@@ -557,8 +587,8 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <thead> <th style='background-color: lavender' colspan='6'>Partida 17</th></thead>
 <tbody>
 <tr> <td>3128 </td> <td colspan='7'> entel#gastos-administrativos </td></tr>
-<tr style='background-color: lightyellow'>  <td> </td> <td> 0</td> <td> 3722</td> <td colspan='2'> a[caja] </td> </tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td> 594</td> <td> 0</td> <td colspan='2'> a[iva-credito] </td> </tr>
+<tr style='background-color: lightyellow'>  <td> </td> <td> 0</td> <td> 3722</td> <td colspan='2'> a[caja] </td> </tr>
 <tr style='color: white; background-color: black'>  <td> </td> <td>3128 </td> <td> 0</td> <td> </td> <td> r[gastos-administrativos] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 3722 </td> <td style='background-color: blanchedalmond'> 3722</td> </tr>
 <tr><td colspan='4'> alectrico® SpA</td> </tr> 
@@ -583,8 +613,8 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <thead> <th style='background-color: lavender' colspan='6'>Partida 18</th></thead>
 <tbody>
 <tr> <td>20992 </td> <td colspan='7'> embros#gastos-promocionales </td></tr>
-<tr style='background-color: lightyellow'>  <td> </td> <td> 0</td> <td> 24980</td> <td colspan='2'> a[banco-estado] </td> </tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td> 3988</td> <td> 0</td> <td colspan='2'> a[iva-credito] </td> </tr>
+<tr style='background-color: lightyellow'>  <td> </td> <td> 0</td> <td> 24980</td> <td colspan='2'> a[banco-estado] </td> </tr>
 <tr style='color: white; background-color: black'>  <td> </td> <td>20992 </td> <td> 0</td> <td> </td> <td> r[gastos-promocionales] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 24980 </td> <td style='background-color: blanchedalmond'> 24980</td> </tr>
 <tr><td colspan='4'> alectrico® SpA</td> </tr> 
@@ -610,8 +640,8 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <thead> <th style='background-color: lavender' colspan='6'>Partida 19</th></thead>
 <tbody>
 <tr> <td>178 </td> <td colspan='7'> transbank#costos-de-ventas </td></tr>
-<tr style='background-color: lightyellow'>  <td> </td> <td> 212</td> <td> 0</td> <td colspan='2'> a[banco-estado] </td> </tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td> 0</td> <td> 34</td> <td colspan='2'> a[iva-credito] </td> </tr>
+<tr style='background-color: lightyellow'>  <td> </td> <td> 212</td> <td> 0</td> <td colspan='2'> a[banco-estado] </td> </tr>
 <tr style='background-color: gold'>  <td> </td> <td>0 </td> <td> 178</td> <td> </td> <td> r[costos-de-ventas] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 212 </td> <td style='background-color: blanchedalmond'> 212</td> </tr>
 <tr><td colspan='4'> alectrico® SpA</td> </tr> 
@@ -635,8 +665,8 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <table id='Partida-191'>
 <thead> <th style='background-color: lavender' colspan='6'>Partida 191</th></thead>
 <tbody>
-<tr> <td>4505 </td> <td colspan='7'> ventas-con-eboleta-exenta#ventas </td></tr>
 <tr> <td>4505 </td> <td colspan='7'> ventas#ingresos-brutos </td></tr>
+<tr> <td>4505 </td> <td colspan='7'> ventas-con-eboleta-exenta#ventas </td></tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td> 4505</td> <td> 0</td> <td colspan='2'> a[banco-estado] </td> </tr>
 <tr style='background-color: gold'>  <td> </td> <td>0 </td> <td> 4505</td> <td> </td> <td> r[ingresos-brutos] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 4505 </td> <td style='background-color: blanchedalmond'> 4505</td> </tr>
@@ -660,8 +690,8 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <table id='Partida-1911'>
 <thead> <th style='background-color: lavender' colspan='6'>Partida 1911</th></thead>
 <tbody>
-<tr> <td>84 </td> <td colspan='7'> ventas-con-eboleta-afecta#ventas </td></tr>
 <tr> <td>84 </td> <td colspan='7'> ventas#ingresos-brutos </td></tr>
+<tr> <td>84 </td> <td colspan='7'> ventas-con-eboleta-afecta#ventas </td></tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td> 100</td> <td> 0</td> <td colspan='2'> a[banco-estado] </td> </tr>
 <tr style='background-color: azure'>  <td> </td> <td> 0 </td> <td> 16 </td> <td> </td><td> p[iva-debito] </td> </tr>
 <tr style='background-color: gold'>  <td> </td> <td>0 </td> <td> 84</td> <td> </td> <td> r[ingresos-brutos] </td> </tr>
@@ -685,8 +715,8 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <table id='Partida-192'>
 <thead> <th style='background-color: lavender' colspan='6'>Partida 192</th></thead>
 <tbody>
-<tr> <td>29412 </td> <td colspan='7'> ventas-con-eboleta-afecta#ventas </td></tr>
 <tr> <td>29412 </td> <td colspan='7'> ventas#ingresos-brutos </td></tr>
+<tr> <td>29412 </td> <td colspan='7'> ventas-con-eboleta-afecta#ventas </td></tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td> 35000</td> <td> 0</td> <td colspan='2'> a[banco-estado] </td> </tr>
 <tr style='background-color: azure'>  <td> </td> <td> 0 </td> <td> 5588 </td> <td> </td><td> p[iva-debito] </td> </tr>
 <tr style='background-color: gold'>  <td> </td> <td>0 </td> <td> 29412</td> <td> </td> <td> r[ingresos-brutos] </td> </tr>
@@ -739,9 +769,9 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <tbody>
 <tr><td>0</td> <td colspan='7'>sodimac-materiales#materiales</td> </tr>
 <tr><td>25613</td> <td colspan='7'>sodimac-materiales#materiales</td> </tr>
-<tr style='background-color: lightyellow'>  <td> </td> <td> 0</td> <td> 30479</td> <td colspan='2'> a[banco-estado] </td> </tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td> 4866</td> <td> 0</td> <td colspan='2'> a[iva-credito] </td> </tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td> 25613</td> <td> 0</td> <td colspan='2'> a[materiales] </td> </tr>
+<tr style='background-color: lightyellow'>  <td> </td> <td> 0</td> <td> 30479</td> <td colspan='2'> a[banco-estado] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 30479 </td> <td style='background-color: blanchedalmond'> 30479</td> </tr>
 <tr><td colspan='4'> alectrico® SpA</td> </tr> 
 <tr><td colspan='4'> ( 12 de marzo	2021	 ) </td> </tr>
@@ -765,8 +795,8 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <thead> <th style='background-color: lavender' colspan='6'>Partida 22</th></thead>
 <tbody>
 <tr> <td>6926 </td> <td colspan='7'> entel#gastos-administrativos </td></tr>
-<tr style='background-color: lightyellow'>  <td> </td> <td> 0</td> <td> 8242</td> <td colspan='2'> a[caja] </td> </tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td> 1316</td> <td> 0</td> <td colspan='2'> a[iva-credito] </td> </tr>
+<tr style='background-color: lightyellow'>  <td> </td> <td> 0</td> <td> 8242</td> <td colspan='2'> a[caja] </td> </tr>
 <tr style='color: white; background-color: black'>  <td> </td> <td>6926 </td> <td> 0</td> <td> </td> <td> r[gastos-administrativos] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 8242 </td> <td style='background-color: blanchedalmond'> 8242</td> </tr>
 <tr><td colspan='4'> alectrico® SpA</td> </tr> 
@@ -790,8 +820,8 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <table id='Partida-26'>
 <thead> <th style='background-color: lavender' colspan='6'>Partida 26</th></thead>
 <tbody>
-<tr> <td>29412 </td> <td colspan='7'> ventas-con-voucher-afecto#ventas </td></tr>
 <tr> <td>29412 </td> <td colspan='7'> ventas#ingresos-brutos </td></tr>
+<tr> <td>29412 </td> <td colspan='7'> ventas-con-voucher-afecto#ventas </td></tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td> 35000</td> <td> 0</td> <td colspan='2'> a[banco-estado] </td> </tr>
 <tr style='background-color: azure'>  <td> </td> <td> 0 </td> <td> 5588 </td> <td> </td><td> p[iva-debito] </td> </tr>
 <tr style='background-color: gold'>  <td> </td> <td>0 </td> <td> 29412</td> <td> </td> <td> r[ingresos-brutos] </td> </tr>
@@ -825,6 +855,33 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <tr><td colspan='4'> ( 31 de marzo	2021	 ) </td> </tr>
 <tr><td colspan='8'> Partida 261: Por amortizacion en marzo de marca-alectrico-Por depreciacion en marzo de taladro </td></tr>
 <tr><td colspan = '8'> amortizacion</td> </tr>
+</tbody>
+</table>
+<p style='page-break-before: always;'>&nbsp;</p>
+<br> 
+<p style='color: white; background-color: red'>  </p>
+<br> 
+- [x] tipo de asiento: ajuste-iva
+- [ ] rcv
+- [ ] libro-diario
+- [ ] ccm
+- [x] revisado
+![](../revisado.png)
+<table id='Partida-262'>
+<thead> <th style='background-color: lavender' colspan='6'>Partida 262</th></thead>
+<tbody>
+<tr> <td>334 </td> <td colspan='7'> ganancia-por-correccion-monetaria#correccion-monetaria </td></tr>
+<tr> <td>334 </td> <td colspan='7'> correccion-monetaria#ingresos-brutos </td></tr>
+<tr style='background-color: lightyellow'>  <td> </td> <td> 334</td> <td> 5588</td> <td colspan='2'> a[iva-credito] </td> </tr>
+<tr style='background-color: lightyellow'>  <td> </td> <td> 38</td> <td> 0</td> <td colspan='2'> a[ppm] </td> </tr>
+<tr style='background-color: lightyellow'>  <td> </td> <td> 0</td> <td> 38</td> <td colspan='2'> a[banco-estado] </td> </tr>
+<tr style='background-color: azure'>  <td> </td> <td> 5588 </td> <td> 0 </td> <td> </td><td> p[iva-debito] </td> </tr>
+<tr style='background-color: gold'>  <td> </td> <td>0 </td> <td> 334</td> <td> </td> <td> r[ingresos-brutos] </td> </tr>
+<tr> <td> </td> <td style='background-color: blanchedalmond'> 5960 </td> <td style='background-color: blanchedalmond'> 5960</td> </tr>
+<tr><td colspan='4'> alectrico® SpA</td> </tr> 
+<tr><td colspan='4'> ( 31 de marzo	2021	 ) </td> </tr>
+<tr><td colspan='8'> Partida 262: Por ajuste del Debito Fiscal Contra el Credito Fiscal, mes de marzo-Por pago del ppm, con factor de  0.0013 mes marzo </td></tr>
+<tr><td colspan = '8'> ajustar-iva-contra-credito</td> </tr>
 </tbody>
 </table>
 <p style='page-break-before: always;'>&nbsp;</p>
@@ -867,8 +924,8 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <thead> <th style='background-color: lavender' colspan='6'>Partida 28</th></thead>
 <tbody>
 <tr> <td>6926 </td> <td colspan='7'> entel#gastos-administrativos </td></tr>
-<tr style='background-color: lightyellow'>  <td> </td> <td> 0</td> <td> 8242</td> <td colspan='2'> a[caja] </td> </tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td> 1316</td> <td> 0</td> <td colspan='2'> a[iva-credito] </td> </tr>
+<tr style='background-color: lightyellow'>  <td> </td> <td> 0</td> <td> 8242</td> <td colspan='2'> a[caja] </td> </tr>
 <tr style='color: white; background-color: black'>  <td> </td> <td>6926 </td> <td> 0</td> <td> </td> <td> r[gastos-administrativos] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 8242 </td> <td style='background-color: blanchedalmond'> 8242</td> </tr>
 <tr><td colspan='4'> alectrico® SpA</td> </tr> 
@@ -893,9 +950,9 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <thead> <th style='background-color: lavender' colspan='6'>Partida 281</th></thead>
 <tbody>
 <tr><td>2134</td> <td colspan='7'>easy-insumos#insumos</td> </tr>
-<tr style='background-color: lightyellow'>  <td> </td> <td> 0</td> <td> 2540</td> <td colspan='2'> a[banco-estado] </td> </tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td> 406</td> <td> 0</td> <td colspan='2'> a[iva-credito] </td> </tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td> 2134</td> <td> 0</td> <td colspan='2'> a[insumos] </td> </tr>
+<tr style='background-color: lightyellow'>  <td> </td> <td> 0</td> <td> 2540</td> <td colspan='2'> a[banco-estado] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 2540 </td> <td style='background-color: blanchedalmond'> 2540</td> </tr>
 <tr><td colspan='4'> alectrico® SpA</td> </tr> 
 <tr><td colspan='4'> ( 26 de abril	2021	 ) </td> </tr>
@@ -918,8 +975,8 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <table id='Partida-30'>
 <thead> <th style='background-color: lavender' colspan='6'>Partida 30</th></thead>
 <tbody>
-<tr> <td>25210 </td> <td colspan='7'> ventas-con-voucher-afecto#ventas </td></tr>
 <tr> <td>25210 </td> <td colspan='7'> ventas#ingresos-brutos </td></tr>
+<tr> <td>25210 </td> <td colspan='7'> ventas-con-voucher-afecto#ventas </td></tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td> 30000</td> <td> 0</td> <td colspan='2'> a[banco-estado] </td> </tr>
 <tr style='background-color: azure'>  <td> </td> <td> 0 </td> <td> 4790 </td> <td> </td><td> p[iva-debito] </td> </tr>
 <tr style='background-color: gold'>  <td> </td> <td>0 </td> <td> 25210</td> <td> </td> <td> r[ingresos-brutos] </td> </tr>
@@ -943,10 +1000,10 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <table id='Partida-301'>
 <thead> <th style='background-color: lavender' colspan='6'>Partida 301</th></thead>
 <tbody>
-<tr> <td>102 </td> <td colspan='7'> ventas-con-factura-afecta#ventas </td></tr>
 <tr> <td>102 </td> <td colspan='7'> ventas#ingresos-brutos </td></tr>
-<tr style='background-color: lightyellow'>  <td> </td> <td> 121</td> <td> 0</td> <td colspan='2'> a[banco-estado] </td> </tr>
+<tr> <td>102 </td> <td colspan='7'> ventas-con-factura-afecta#ventas </td></tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td> 0</td> <td> 19</td> <td colspan='2'> a[iva-credito] </td> </tr>
+<tr style='background-color: lightyellow'>  <td> </td> <td> 121</td> <td> 0</td> <td colspan='2'> a[banco-estado] </td> </tr>
 <tr style='background-color: gold'>  <td> </td> <td>0 </td> <td> 102</td> <td> </td> <td> r[ingresos-brutos] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 121 </td> <td style='background-color: blanchedalmond'> 121</td> </tr>
 <tr><td colspan='4'> alectrico® SpA</td> </tr> 
@@ -986,6 +1043,33 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'>  </p>
 <br> 
+- [x] tipo de asiento: ajuste-iva
+- [ ] rcv
+- [ ] libro-diario
+- [ ] ccm
+- [x] revisado
+![](../revisado.png)
+<table id='Partida-303'>
+<thead> <th style='background-color: lavender' colspan='6'>Partida 303</th></thead>
+<tbody>
+<tr> <td>240 </td> <td colspan='7'> ganancia-por-correccion-monetaria#correccion-monetaria </td></tr>
+<tr> <td>240 </td> <td colspan='7'> correccion-monetaria#ingresos-brutos </td></tr>
+<tr style='background-color: lightyellow'>  <td> </td> <td> 240</td> <td> 4790</td> <td colspan='2'> a[iva-credito] </td> </tr>
+<tr style='background-color: lightyellow'>  <td> </td> <td> 32</td> <td> 0</td> <td colspan='2'> a[ppm] </td> </tr>
+<tr style='background-color: lightyellow'>  <td> </td> <td> 0</td> <td> 32</td> <td colspan='2'> a[banco-estado] </td> </tr>
+<tr style='background-color: azure'>  <td> </td> <td> 4790 </td> <td> 0 </td> <td> </td><td> p[iva-debito] </td> </tr>
+<tr style='background-color: gold'>  <td> </td> <td>0 </td> <td> 240</td> <td> </td> <td> r[ingresos-brutos] </td> </tr>
+<tr> <td> </td> <td style='background-color: blanchedalmond'> 5062 </td> <td style='background-color: blanchedalmond'> 5062</td> </tr>
+<tr><td colspan='4'> alectrico® SpA</td> </tr> 
+<tr><td colspan='4'> ( 31 de abril	2021	 ) </td> </tr>
+<tr><td colspan='8'> Partida 303: Por ajuste del Debito Fiscal Contra el Credito Fiscal, mes de abril-Por pago del ppm, con factor de  0.00125 mes abril </td></tr>
+<tr><td colspan = '8'> ajustar-iva-contra-credito</td> </tr>
+</tbody>
+</table>
+<p style='page-break-before: always;'>&nbsp;</p>
+<br> 
+<p style='color: white; background-color: red'>  </p>
+<br> 
 - [x] tipo de asiento: 33
 - [ ] rcv
 - [ ] libro-diario
@@ -996,8 +1080,8 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <thead> <th style='background-color: lavender' colspan='6'>Partida 31</th></thead>
 <tbody>
 <tr> <td>6926 </td> <td colspan='7'> entel#gastos-administrativos </td></tr>
-<tr style='background-color: lightyellow'>  <td> </td> <td> 0</td> <td> 8242</td> <td colspan='2'> a[caja] </td> </tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td> 1316</td> <td> 0</td> <td colspan='2'> a[iva-credito] </td> </tr>
+<tr style='background-color: lightyellow'>  <td> </td> <td> 0</td> <td> 8242</td> <td colspan='2'> a[caja] </td> </tr>
 <tr style='color: white; background-color: black'>  <td> </td> <td>6926 </td> <td> 0</td> <td> </td> <td> r[gastos-administrativos] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 8242 </td> <td style='background-color: blanchedalmond'> 8242</td> </tr>
 <tr><td colspan='4'> alectrico® SpA</td> </tr> 
@@ -1022,8 +1106,8 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <thead> <th style='background-color: lavender' colspan='6'>Partida 32</th></thead>
 <tbody>
 <tr> <td>19990 </td> <td colspan='7'> trust#gastos-administrativos </td></tr>
-<tr style='background-color: lightyellow'>  <td> </td> <td> 0</td> <td> 23788</td> <td colspan='2'> a[caja] </td> </tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td> 3798</td> <td> 0</td> <td colspan='2'> a[iva-credito] </td> </tr>
+<tr style='background-color: lightyellow'>  <td> </td> <td> 0</td> <td> 23788</td> <td colspan='2'> a[caja] </td> </tr>
 <tr style='color: white; background-color: black'>  <td> </td> <td>19990 </td> <td> 0</td> <td> </td> <td> r[gastos-administrativos] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 23788 </td> <td style='background-color: blanchedalmond'> 23788</td> </tr>
 <tr><td colspan='4'> alectrico® SpA</td> </tr> 
@@ -1075,9 +1159,9 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <thead> <th style='background-color: lavender' colspan='6'>Partida 34</th></thead>
 <tbody>
 <tr> <td>3775 </td> <td colspan='7'> cloudflare#gastos-administrativos </td></tr>
-<tr style='background-color: lightyellow'>  <td> </td> <td> 0</td> <td> 3775</td> <td colspan='2'> a[caja] </td> </tr>
-<tr style='background-color: lightyellow'>  <td> </td> <td> 717</td> <td> 0</td> <td colspan='2'> a[iva-credito] </td> </tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td> 0</td> <td> 717</td> <td colspan='2'> a[retencion-de-iva-articulo-11] </td> </tr>
+<tr style='background-color: lightyellow'>  <td> </td> <td> 717</td> <td> 0</td> <td colspan='2'> a[iva-credito] </td> </tr>
+<tr style='background-color: lightyellow'>  <td> </td> <td> 0</td> <td> 3775</td> <td colspan='2'> a[caja] </td> </tr>
 <tr style='color: white; background-color: black'>  <td> </td> <td>3775 </td> <td> 0</td> <td> </td> <td> r[gastos-administrativos] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 4492 </td> <td style='background-color: blanchedalmond'> 4492</td> </tr>
 <tr><td colspan='4'> alectrico® SpA</td> </tr> 
@@ -1103,9 +1187,9 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <thead> <th style='background-color: lavender' colspan='6'>Partida 35</th></thead>
 <tbody>
 <tr> <td>2941 </td> <td colspan='7'> test-animation-video-maker#gastos-promocionales </td></tr>
-<tr style='background-color: lightyellow'>  <td> </td> <td> 0</td> <td> 2941</td> <td colspan='2'> a[banco-estado] </td> </tr>
-<tr style='background-color: lightyellow'>  <td> </td> <td> 559</td> <td> 0</td> <td colspan='2'> a[iva-credito] </td> </tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td> 0</td> <td> 559</td> <td colspan='2'> a[retencion-de-iva-articulo-11] </td> </tr>
+<tr style='background-color: lightyellow'>  <td> </td> <td> 559</td> <td> 0</td> <td colspan='2'> a[iva-credito] </td> </tr>
+<tr style='background-color: lightyellow'>  <td> </td> <td> 0</td> <td> 2941</td> <td colspan='2'> a[banco-estado] </td> </tr>
 <tr style='color: white; background-color: black'>  <td> </td> <td>2941 </td> <td> 0</td> <td> </td> <td> r[gastos-promocionales] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 3500 </td> <td style='background-color: blanchedalmond'> 3500</td> </tr>
 <tr><td colspan='4'> alectrico® SpA</td> </tr> 
@@ -1131,9 +1215,9 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <thead> <th style='background-color: lavender' colspan='6'>Partida 36</th></thead>
 <tbody>
 <tr> <td>1176 </td> <td colspan='7'> google-one#gastos-administrativos </td></tr>
-<tr style='background-color: lightyellow'>  <td> </td> <td> 0</td> <td> 1176</td> <td colspan='2'> a[caja] </td> </tr>
-<tr style='background-color: lightyellow'>  <td> </td> <td> 224</td> <td> 0</td> <td colspan='2'> a[iva-credito] </td> </tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td> 0</td> <td> 224</td> <td colspan='2'> a[retencion-de-iva-articulo-11] </td> </tr>
+<tr style='background-color: lightyellow'>  <td> </td> <td> 224</td> <td> 0</td> <td colspan='2'> a[iva-credito] </td> </tr>
+<tr style='background-color: lightyellow'>  <td> </td> <td> 0</td> <td> 1176</td> <td colspan='2'> a[caja] </td> </tr>
 <tr style='color: white; background-color: black'>  <td> </td> <td>1176 </td> <td> 0</td> <td> </td> <td> r[gastos-administrativos] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 1400 </td> <td style='background-color: blanchedalmond'> 1400</td> </tr>
 <tr><td colspan='4'> alectrico® SpA</td> </tr> 
@@ -1157,10 +1241,10 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <table id='Partida-37'>
 <thead> <th style='background-color: lavender' colspan='6'>Partida 37</th></thead>
 <tbody>
-<tr> <td>225 </td> <td colspan='7'> ventas-con-factura-afecta#ventas </td></tr>
 <tr> <td>225 </td> <td colspan='7'> ventas#ingresos-brutos </td></tr>
-<tr style='background-color: lightyellow'>  <td> </td> <td> 268</td> <td> 0</td> <td colspan='2'> a[banco-estado] </td> </tr>
+<tr> <td>225 </td> <td colspan='7'> ventas-con-factura-afecta#ventas </td></tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td> 0</td> <td> 43</td> <td colspan='2'> a[iva-credito] </td> </tr>
+<tr style='background-color: lightyellow'>  <td> </td> <td> 268</td> <td> 0</td> <td colspan='2'> a[banco-estado] </td> </tr>
 <tr style='background-color: gold'>  <td> </td> <td>0 </td> <td> 225</td> <td> </td> <td> r[ingresos-brutos] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 268 </td> <td style='background-color: blanchedalmond'> 268</td> </tr>
 <tr><td colspan='4'> alectrico® SpA</td> </tr> 
@@ -1200,6 +1284,30 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'>  </p>
 <br> 
+- [x] tipo de asiento: ajuste-iva
+- [ ] rcv
+- [ ] libro-diario
+- [ ] ccm
+- [x] revisado
+![](../revisado.png)
+<table id='Partida-372'>
+<thead> <th style='background-color: lavender' colspan='6'>Partida 372</th></thead>
+<tbody>
+<tr> <td>254 </td> <td colspan='7'> ganancia-por-correccion-monetaria#correccion-monetaria </td></tr>
+<tr> <td>254 </td> <td colspan='7'> correccion-monetaria#ingresos-brutos </td></tr>
+<tr style='background-color: lightyellow'>  <td> </td> <td> 254</td> <td> 0</td> <td colspan='2'> a[iva-credito] </td> </tr>
+<tr style='background-color: gold'>  <td> </td> <td>0 </td> <td> 254</td> <td> </td> <td> r[ingresos-brutos] </td> </tr>
+<tr> <td> </td> <td style='background-color: blanchedalmond'> 254 </td> <td style='background-color: blanchedalmond'> 254</td> </tr>
+<tr><td colspan='4'> alectrico® SpA</td> </tr> 
+<tr><td colspan='4'> ( 31 de mayo	2021	 ) </td> </tr>
+<tr><td colspan='8'> Partida 372: Por ajuste del Debito Fiscal Contra el Credito Fiscal, mes de mayo-Por pago del ppm, con factor de  0.0013 mes mayo </td></tr>
+<tr><td colspan = '8'> ajustar-iva-contra-credito</td> </tr>
+</tbody>
+</table>
+<p style='page-break-before: always;'>&nbsp;</p>
+<br> 
+<p style='color: white; background-color: red'>  </p>
+<br> 
 - [x] tipo de asiento: 33
 - [ ] rcv
 - [ ] libro-diario
@@ -1210,8 +1318,8 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <thead> <th style='background-color: lavender' colspan='6'>Partida 39</th></thead>
 <tbody>
 <tr> <td>15000 </td> <td colspan='7'> maria-jose#gastos-promocionales </td></tr>
-<tr style='background-color: lightyellow'>  <td> </td> <td> 0</td> <td> 17850</td> <td colspan='2'> a[banco-estado] </td> </tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td> 2850</td> <td> 0</td> <td colspan='2'> a[iva-credito] </td> </tr>
+<tr style='background-color: lightyellow'>  <td> </td> <td> 0</td> <td> 17850</td> <td colspan='2'> a[banco-estado] </td> </tr>
 <tr style='color: white; background-color: black'>  <td> </td> <td>15000 </td> <td> 0</td> <td> </td> <td> r[gastos-promocionales] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 17850 </td> <td style='background-color: blanchedalmond'> 17850</td> </tr>
 <tr><td colspan='4'> alectrico® SpA</td> </tr> 
@@ -1236,9 +1344,9 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <thead> <th style='background-color: lavender' colspan='6'>Partida 41</th></thead>
 <tbody>
 <tr> <td>1177 </td> <td colspan='7'> google-one#gastos-administrativos </td></tr>
-<tr style='background-color: lightyellow'>  <td> </td> <td> 0</td> <td> 1177</td> <td colspan='2'> a[caja] </td> </tr>
-<tr style='background-color: lightyellow'>  <td> </td> <td> 223</td> <td> 0</td> <td colspan='2'> a[iva-credito] </td> </tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td> 0</td> <td> 223</td> <td colspan='2'> a[retencion-de-iva-articulo-11] </td> </tr>
+<tr style='background-color: lightyellow'>  <td> </td> <td> 223</td> <td> 0</td> <td colspan='2'> a[iva-credito] </td> </tr>
+<tr style='background-color: lightyellow'>  <td> </td> <td> 0</td> <td> 1177</td> <td colspan='2'> a[caja] </td> </tr>
 <tr style='color: white; background-color: black'>  <td> </td> <td>1177 </td> <td> 0</td> <td> </td> <td> r[gastos-administrativos] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 1400 </td> <td style='background-color: blanchedalmond'> 1400</td> </tr>
 <tr><td colspan='4'> alectrico® SpA</td> </tr> 
@@ -1361,9 +1469,9 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <thead> <th style='background-color: lavender' colspan='6'>Partida 47</th></thead>
 <tbody>
 <tr> <td>2941 </td> <td colspan='7'> test-animation-video-maker#gastos-promocionales </td></tr>
-<tr style='background-color: lightyellow'>  <td> </td> <td> 0</td> <td> 2941</td> <td colspan='2'> a[banco-estado] </td> </tr>
-<tr style='background-color: lightyellow'>  <td> </td> <td> 559</td> <td> 0</td> <td colspan='2'> a[iva-credito] </td> </tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td> 0</td> <td> 559</td> <td colspan='2'> a[retencion-de-iva-articulo-11] </td> </tr>
+<tr style='background-color: lightyellow'>  <td> </td> <td> 559</td> <td> 0</td> <td colspan='2'> a[iva-credito] </td> </tr>
+<tr style='background-color: lightyellow'>  <td> </td> <td> 0</td> <td> 2941</td> <td colspan='2'> a[banco-estado] </td> </tr>
 <tr style='color: white; background-color: black'>  <td> </td> <td>2941 </td> <td> 0</td> <td> </td> <td> r[gastos-promocionales] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 3500 </td> <td style='background-color: blanchedalmond'> 3500</td> </tr>
 <tr><td colspan='4'> alectrico® SpA</td> </tr> 
@@ -1388,9 +1496,9 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <thead> <th style='background-color: lavender' colspan='6'>Partida 48</th></thead>
 <tbody>
 <tr> <td>3302 </td> <td colspan='7'> cloudflare#gastos-administrativos </td></tr>
-<tr style='background-color: lightyellow'>  <td> </td> <td> 0</td> <td> 3302</td> <td colspan='2'> a[caja] </td> </tr>
-<tr style='background-color: lightyellow'>  <td> </td> <td> 627</td> <td> 0</td> <td colspan='2'> a[iva-credito] </td> </tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td> 0</td> <td> 627</td> <td colspan='2'> a[retencion-de-iva-articulo-11] </td> </tr>
+<tr style='background-color: lightyellow'>  <td> </td> <td> 627</td> <td> 0</td> <td colspan='2'> a[iva-credito] </td> </tr>
+<tr style='background-color: lightyellow'>  <td> </td> <td> 0</td> <td> 3302</td> <td colspan='2'> a[caja] </td> </tr>
 <tr style='color: white; background-color: black'>  <td> </td> <td>3302 </td> <td> 0</td> <td> </td> <td> r[gastos-administrativos] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 3929 </td> <td style='background-color: blanchedalmond'> 3929</td> </tr>
 <tr><td colspan='4'> alectrico® SpA</td> </tr> 
@@ -1415,8 +1523,8 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <thead> <th style='background-color: lavender' colspan='6'>Partida 49</th></thead>
 <tbody>
 <tr> <td>6926 </td> <td colspan='7'> entel#gastos-administrativos </td></tr>
-<tr style='background-color: lightyellow'>  <td> </td> <td> 0</td> <td> 8242</td> <td colspan='2'> a[banco-estado] </td> </tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td> 1316</td> <td> 0</td> <td colspan='2'> a[iva-credito] </td> </tr>
+<tr style='background-color: lightyellow'>  <td> </td> <td> 0</td> <td> 8242</td> <td colspan='2'> a[banco-estado] </td> </tr>
 <tr style='color: white; background-color: black'>  <td> </td> <td>6926 </td> <td> 0</td> <td> </td> <td> r[gastos-administrativos] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 8242 </td> <td style='background-color: blanchedalmond'> 8242</td> </tr>
 <tr><td colspan='4'> alectrico® SpA</td> </tr> 
@@ -1441,8 +1549,8 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <thead> <th style='background-color: lavender' colspan='6'>Partida 50</th></thead>
 <tbody>
 <tr> <td>20000 </td> <td colspan='7'> macprint#gastos-promocionales </td></tr>
-<tr style='background-color: lightyellow'>  <td> </td> <td> 0</td> <td> 23800</td> <td colspan='2'> a[banco-estado] </td> </tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td> 3800</td> <td> 0</td> <td colspan='2'> a[iva-credito] </td> </tr>
+<tr style='background-color: lightyellow'>  <td> </td> <td> 0</td> <td> 23800</td> <td colspan='2'> a[banco-estado] </td> </tr>
 <tr style='color: white; background-color: black'>  <td> </td> <td>20000 </td> <td> 0</td> <td> </td> <td> r[gastos-promocionales] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 23800 </td> <td style='background-color: blanchedalmond'> 23800</td> </tr>
 <tr><td colspan='4'> alectrico® SpA</td> </tr> 
@@ -1467,8 +1575,8 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <table id='Partida-51'>
 <thead> <th style='background-color: lavender' colspan='6'>Partida 51</th></thead>
 <tbody>
-<tr style='background-color: lightyellow'>  <td> </td> <td> 0</td> <td> 1409</td> <td colspan='2'> a[iva-credito] </td> </tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td> 1409</td> <td> 0</td> <td colspan='2'> a[retencion-de-iva-articulo-11] </td> </tr>
+<tr style='background-color: lightyellow'>  <td> </td> <td> 0</td> <td> 1409</td> <td colspan='2'> a[iva-credito] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 1409 </td> <td style='background-color: blanchedalmond'> 1409</td> </tr>
 <tr><td colspan='4'> alectrico® SpA</td> </tr> 
 <tr><td colspan='4'> ( 30 de junio	2021	 ) </td> </tr>
@@ -1511,13 +1619,37 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 - [ ] ccm
 - [x] revisado
 ![](../revisado.png)
+<table id='Partida-62'>
+<thead> <th style='background-color: lavender' colspan='6'>Partida 62</th></thead>
+<tbody>
+<tr> <td>279 </td> <td colspan='7'> ganancia-por-correccion-monetaria#correccion-monetaria </td></tr>
+<tr> <td>279 </td> <td colspan='7'> correccion-monetaria#ingresos-brutos </td></tr>
+<tr style='background-color: lightyellow'>  <td> </td> <td> 279</td> <td> 0</td> <td colspan='2'> a[iva-credito] </td> </tr>
+<tr style='background-color: gold'>  <td> </td> <td>0 </td> <td> 279</td> <td> </td> <td> r[ingresos-brutos] </td> </tr>
+<tr> <td> </td> <td style='background-color: blanchedalmond'> 279 </td> <td style='background-color: blanchedalmond'> 279</td> </tr>
+<tr><td colspan='4'> alectrico® SpA</td> </tr> 
+<tr><td colspan='4'> ( 31 de junio	2021	 ) </td> </tr>
+<tr><td colspan='8'> Partida 62: Por ajuste del Debito Fiscal Contra el Credito Fiscal, mes de junio </td></tr>
+<tr><td colspan = '8'> ajustar-iva-contra-credito</td> </tr>
+</tbody>
+</table>
+<p style='page-break-before: always;'>&nbsp;</p>
+<br> 
+<p style='color: white; background-color: red'>  </p>
+<br> 
+- [x] tipo de asiento: 33
+- [ ] rcv
+- [ ] libro-diario
+- [ ] ccm
+- [x] revisado
+![](../revisado.png)
 <table id='Partida-63'>
 <thead> <th style='background-color: lavender' colspan='6'>Partida 63</th></thead>
 <tbody>
 <tr> <td>1177 </td> <td colspan='7'> google-one#gastos-administrativos </td></tr>
-<tr style='background-color: lightyellow'>  <td> </td> <td> 0</td> <td> 1177</td> <td colspan='2'> a[caja] </td> </tr>
-<tr style='background-color: lightyellow'>  <td> </td> <td> 223</td> <td> 0</td> <td colspan='2'> a[iva-credito] </td> </tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td> 0</td> <td> 223</td> <td colspan='2'> a[retencion-de-iva-articulo-11] </td> </tr>
+<tr style='background-color: lightyellow'>  <td> </td> <td> 223</td> <td> 0</td> <td colspan='2'> a[iva-credito] </td> </tr>
+<tr style='background-color: lightyellow'>  <td> </td> <td> 0</td> <td> 1177</td> <td colspan='2'> a[caja] </td> </tr>
 <tr style='color: white; background-color: black'>  <td> </td> <td>1177 </td> <td> 0</td> <td> </td> <td> r[gastos-administrativos] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 1400 </td> <td style='background-color: blanchedalmond'> 1400</td> </tr>
 <tr><td colspan='4'> alectrico® SpA</td> </tr> 
@@ -1542,8 +1674,8 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <thead> <th style='background-color: lavender' colspan='6'>Partida 64</th></thead>
 <tbody>
 <tr> <td>26857 </td> <td colspan='7'> macprint#gastos-promocionales </td></tr>
-<tr style='background-color: lightyellow'>  <td> </td> <td> 0</td> <td> 31960</td> <td colspan='2'> a[banco-estado] </td> </tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td> 5103</td> <td> 0</td> <td colspan='2'> a[iva-credito] </td> </tr>
+<tr style='background-color: lightyellow'>  <td> </td> <td> 0</td> <td> 31960</td> <td colspan='2'> a[banco-estado] </td> </tr>
 <tr style='color: white; background-color: black'>  <td> </td> <td>26857 </td> <td> 0</td> <td> </td> <td> r[gastos-promocionales] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 31960 </td> <td style='background-color: blanchedalmond'> 31960</td> </tr>
 <tr><td colspan='4'> alectrico® SpA</td> </tr> 
@@ -1552,6 +1684,28 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <tr> <td colspan='7'>efectuado a macprint </td> </tr>
 <tr><td colspan = '8'> gastar-en-promocion</td> </tr>
 <tr style='background-color: aliceblue'> <td colspan = '8'> <img src='../factura-afecta-macprint-25625.png'></td> </tr>
+</tbody>
+</table>
+<p style='page-break-before: always;'>&nbsp;</p>
+<br> 
+<p style='color: white; background-color: red'> La reclamé (fue un error) en el LIBRO DE COMPRA-VENTA</p>
+<br> 
+- [x] partida rechazada en SII 
+- [x] tipo de asiento: 33
+- [x] a corregir: La reclamé (fue un error) en el LIBRO DE COMPRA-VENTA
+- [ ] rcv
+- [ ] libro-diario
+- [ ] ccm
+- [x] revisado
+![](../revisado.png)
+<table id='Partida-65'>
+<thead> <th style='background-color: lavender' colspan='6'>Partida 65</th></thead>
+<tbody>
+<tr> <td> </td> <td style='background-color: blanchedalmond'> 0 </td> <td style='background-color: blanchedalmond'> 0</td> </tr>
+<tr><td colspan='4'> alectrico® SpA</td> </tr> 
+<tr><td colspan='4'> ( 21 de julio	2021	 ) </td> </tr>
+<tr><td colspan='8'> Partida 65: Partida rechazada </td></tr>
+<tr><td colspan = '8'> rechazo</td> </tr>
 </tbody>
 </table>
 <p style='page-break-before: always;'>&nbsp;</p>
@@ -1568,8 +1722,8 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <thead> <th style='background-color: lavender' colspan='6'>Partida 67</th></thead>
 <tbody>
 <tr> <td>1672 </td> <td colspan='7'> ie#gastos-administrativos </td></tr>
-<tr style='background-color: lightyellow'>  <td> </td> <td> 0</td> <td> 1990</td> <td colspan='2'> a[caja] </td> </tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td> 318</td> <td> 0</td> <td colspan='2'> a[iva-credito] </td> </tr>
+<tr style='background-color: lightyellow'>  <td> </td> <td> 0</td> <td> 1990</td> <td colspan='2'> a[caja] </td> </tr>
 <tr style='color: white; background-color: black'>  <td> </td> <td>1672 </td> <td> 0</td> <td> </td> <td> r[gastos-administrativos] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 1990 </td> <td style='background-color: blanchedalmond'> 1990</td> </tr>
 <tr><td colspan='4'> alectrico® SpA</td> </tr> 
@@ -1594,9 +1748,9 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <thead> <th style='background-color: lavender' colspan='6'>Partida 68</th></thead>
 <tbody>
 <tr> <td>40588 </td> <td colspan='7'> boosted#gastos-promocionales </td></tr>
-<tr style='background-color: lightyellow'>  <td> </td> <td> 0</td> <td> 40588</td> <td colspan='2'> a[banco-estado] </td> </tr>
-<tr style='background-color: lightyellow'>  <td> </td> <td> 7712</td> <td> 0</td> <td colspan='2'> a[iva-credito] </td> </tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td> 0</td> <td> 7712</td> <td colspan='2'> a[retencion-de-iva-articulo-11] </td> </tr>
+<tr style='background-color: lightyellow'>  <td> </td> <td> 7712</td> <td> 0</td> <td colspan='2'> a[iva-credito] </td> </tr>
+<tr style='background-color: lightyellow'>  <td> </td> <td> 0</td> <td> 40588</td> <td colspan='2'> a[banco-estado] </td> </tr>
 <tr style='color: white; background-color: black'>  <td> </td> <td>40588 </td> <td> 0</td> <td> </td> <td> r[gastos-promocionales] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 48300 </td> <td style='background-color: blanchedalmond'> 48300</td> </tr>
 <tr><td colspan='4'> alectrico® SpA</td> </tr> 
@@ -1621,9 +1775,9 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <thead> <th style='background-color: lavender' colspan='6'>Partida 69</th></thead>
 <tbody>
 <tr> <td>50000 </td> <td colspan='7'> google#gastos-promocionales </td></tr>
-<tr style='background-color: lightyellow'>  <td> </td> <td> 0</td> <td> 50000</td> <td colspan='2'> a[banco-estado] </td> </tr>
-<tr style='background-color: lightyellow'>  <td> </td> <td> 9500</td> <td> 0</td> <td colspan='2'> a[iva-credito] </td> </tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td> 0</td> <td> 9500</td> <td colspan='2'> a[retencion-de-iva-articulo-11] </td> </tr>
+<tr style='background-color: lightyellow'>  <td> </td> <td> 9500</td> <td> 0</td> <td colspan='2'> a[iva-credito] </td> </tr>
+<tr style='background-color: lightyellow'>  <td> </td> <td> 0</td> <td> 50000</td> <td colspan='2'> a[banco-estado] </td> </tr>
 <tr style='color: white; background-color: black'>  <td> </td> <td>50000 </td> <td> 0</td> <td> </td> <td> r[gastos-promocionales] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 59500 </td> <td style='background-color: blanchedalmond'> 59500</td> </tr>
 <tr><td colspan='4'> alectrico® SpA</td> </tr> 
@@ -1648,8 +1802,8 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <table id='Partida-70'>
 <thead> <th style='background-color: lavender' colspan='6'>Partida 70</th></thead>
 <tbody>
- <tr style='color: white; background-color: cornflowerblue' > <td> </td> <td> 0 </td> <td>  85294 </td> <td> </td> <td> k[capital-social]</td> </tr>
  <tr style='color: white; background-color: cornflowerblue' > <td> </td> <td> 85294 </td> <td>  0 </td> <td> </td> <td> k[utilidad-del-ejercicio-anterior]</td> </tr>
+ <tr style='color: white; background-color: cornflowerblue' > <td> </td> <td> 0 </td> <td>  85294 </td> <td> </td> <td> k[capital-social]</td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 85294 </td> <td style='background-color: blanchedalmond'> 85294</td> </tr>
 <tr><td colspan='4'> alectrico® SpA</td> </tr> 
 <tr><td colspan='4'> ( 17 de julio	2021	 ) </td> </tr>
@@ -1671,8 +1825,8 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <thead> <th style='background-color: lavender' colspan='6'>Partida 71</th></thead>
 <tbody>
 <tr style='background-color: lightyellow'>  <td> </td> <td> 67218</td> <td> 0</td> <td colspan='2'> a[herramientas] </td> </tr>
-<tr style='background-color: lightyellow'>  <td> </td> <td> 0</td> <td> 79990</td> <td colspan='2'> a[banco-estado] </td> </tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td> 12772</td> <td> 0</td> <td colspan='2'> a[iva-credito] </td> </tr>
+<tr style='background-color: lightyellow'>  <td> </td> <td> 0</td> <td> 79990</td> <td colspan='2'> a[banco-estado] </td> </tr>
 <tr>  <td>extra-contable </td> <td> 67218</td> <td>0</td> <td> </td> <td> t[depreciacion-instantanea-de-activos-fijos-propyme] </td></tr> 
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 79990 </td> <td style='background-color: blanchedalmond'> 79990</td> </tr>
 <tr><td colspan='4'> alectrico® SpA</td> </tr> 
@@ -1697,8 +1851,8 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <thead> <th style='background-color: lavender' colspan='6'>Partida 73</th></thead>
 <tbody>
 <tr> <td>1008 </td> <td colspan='7'> scrap#gastos-promocionales </td></tr>
-<tr style='background-color: lightyellow'>  <td> </td> <td> 0</td> <td> 1200</td> <td colspan='2'> a[banco-estado] </td> </tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td> 192</td> <td> 0</td> <td colspan='2'> a[iva-credito] </td> </tr>
+<tr style='background-color: lightyellow'>  <td> </td> <td> 0</td> <td> 1200</td> <td colspan='2'> a[banco-estado] </td> </tr>
 <tr style='color: white; background-color: black'>  <td> </td> <td>1008 </td> <td> 0</td> <td> </td> <td> r[gastos-promocionales] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 1200 </td> <td style='background-color: blanchedalmond'> 1200</td> </tr>
 <tr><td colspan='4'> alectrico® SpA</td> </tr> 
@@ -1723,8 +1877,8 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <thead> <th style='background-color: lavender' colspan='6'>Partida 74</th></thead>
 <tbody>
 <tr> <td>3185 </td> <td colspan='7'> ilop#gastos-promocionales </td></tr>
-<tr style='background-color: lightyellow'>  <td> </td> <td> 0</td> <td> 3790</td> <td colspan='2'> a[banco-estado] </td> </tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td> 605</td> <td> 0</td> <td colspan='2'> a[iva-credito] </td> </tr>
+<tr style='background-color: lightyellow'>  <td> </td> <td> 0</td> <td> 3790</td> <td colspan='2'> a[banco-estado] </td> </tr>
 <tr style='color: white; background-color: black'>  <td> </td> <td>3185 </td> <td> 0</td> <td> </td> <td> r[gastos-promocionales] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 3790 </td> <td style='background-color: blanchedalmond'> 3790</td> </tr>
 <tr><td colspan='4'> alectrico® SpA</td> </tr> 
@@ -1748,8 +1902,8 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <table id='Partida-75'>
 <thead> <th style='background-color: lavender' colspan='6'>Partida 75</th></thead>
 <tbody>
-<tr> <td>35000 </td> <td colspan='7'> ventas-con-factura-exenta#ventas </td></tr>
 <tr> <td>35000 </td> <td colspan='7'> ventas#ingresos-brutos </td></tr>
+<tr> <td>35000 </td> <td colspan='7'> ventas-con-factura-exenta#ventas </td></tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td> 35000</td> <td> 0</td> <td colspan='2'> a[banco-estado] </td> </tr>
 <tr style='background-color: gold'>  <td> </td> <td>0 </td> <td> 35000</td> <td> </td> <td> r[ingresos-brutos] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 35000 </td> <td style='background-color: blanchedalmond'> 35000</td> </tr>
@@ -1774,8 +1928,8 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <table id='Partida-76'>
 <thead> <th style='background-color: lavender' colspan='6'>Partida 76</th></thead>
 <tbody>
-<tr> <td>558823 </td> <td colspan='7'> ventas-con-factura-afecta#ventas </td></tr>
 <tr> <td>558823 </td> <td colspan='7'> ventas#ingresos-brutos </td></tr>
+<tr> <td>558823 </td> <td colspan='7'> ventas-con-factura-afecta#ventas </td></tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td> 664999</td> <td> 0</td> <td colspan='2'> a[banco-estado] </td> </tr>
 <tr style='background-color: azure'>  <td> </td> <td> 0 </td> <td> 106176 </td> <td> </td><td> p[iva-debito] </td> </tr>
 <tr style='background-color: gold'>  <td> </td> <td>0 </td> <td> 558823</td> <td> </td> <td> r[ingresos-brutos] </td> </tr>
@@ -1801,8 +1955,8 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <table id='Partida-77'>
 <thead> <th style='background-color: lavender' colspan='6'>Partida 77</th></thead>
 <tbody>
-<tr> <td>151960 </td> <td colspan='7'> ventas-con-voucher-afecto#ventas </td></tr>
 <tr> <td>151960 </td> <td colspan='7'> ventas#ingresos-brutos </td></tr>
+<tr> <td>151960 </td> <td colspan='7'> ventas-con-voucher-afecto#ventas </td></tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td> 180833</td> <td> 0</td> <td colspan='2'> a[banco-estado] </td> </tr>
 <tr style='background-color: azure'>  <td> </td> <td> 0 </td> <td> 28873 </td> <td> </td><td> p[iva-debito] </td> </tr>
 <tr style='background-color: gold'>  <td> </td> <td>0 </td> <td> 151960</td> <td> </td> <td> r[ingresos-brutos] </td> </tr>
@@ -1827,9 +1981,9 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <thead> <th style='background-color: lavender' colspan='6'>Partida 78</th></thead>
 <tbody>
 <tr> <td>21300 </td> <td colspan='7'> test-animation-video-maker#gastos-promocionales </td></tr>
-<tr style='background-color: lightyellow'>  <td> </td> <td> 0</td> <td> 21300</td> <td colspan='2'> a[banco-estado] </td> </tr>
-<tr style='background-color: lightyellow'>  <td> </td> <td> 4047</td> <td> 0</td> <td colspan='2'> a[iva-credito] </td> </tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td> 0</td> <td> 4047</td> <td colspan='2'> a[retencion-de-iva-articulo-11] </td> </tr>
+<tr style='background-color: lightyellow'>  <td> </td> <td> 4047</td> <td> 0</td> <td colspan='2'> a[iva-credito] </td> </tr>
+<tr style='background-color: lightyellow'>  <td> </td> <td> 0</td> <td> 21300</td> <td colspan='2'> a[banco-estado] </td> </tr>
 <tr style='color: white; background-color: black'>  <td> </td> <td>21300 </td> <td> 0</td> <td> </td> <td> r[gastos-promocionales] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 25347 </td> <td style='background-color: blanchedalmond'> 25347</td> </tr>
 <tr><td colspan='4'> alectrico® SpA</td> </tr> 
@@ -1854,9 +2008,9 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <thead> <th style='background-color: lavender' colspan='6'>Partida 79</th></thead>
 <tbody>
 <tr> <td>3775 </td> <td colspan='7'> cloudflare#gastos-administrativos </td></tr>
-<tr style='background-color: lightyellow'>  <td> </td> <td> 0</td> <td> 3775</td> <td colspan='2'> a[caja] </td> </tr>
-<tr style='background-color: lightyellow'>  <td> </td> <td> 717</td> <td> 0</td> <td colspan='2'> a[iva-credito] </td> </tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td> 0</td> <td> 717</td> <td colspan='2'> a[retencion-de-iva-articulo-11] </td> </tr>
+<tr style='background-color: lightyellow'>  <td> </td> <td> 717</td> <td> 0</td> <td colspan='2'> a[iva-credito] </td> </tr>
+<tr style='background-color: lightyellow'>  <td> </td> <td> 0</td> <td> 3775</td> <td colspan='2'> a[caja] </td> </tr>
 <tr style='color: white; background-color: black'>  <td> </td> <td>3775 </td> <td> 0</td> <td> </td> <td> r[gastos-administrativos] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 4492 </td> <td style='background-color: blanchedalmond'> 4492</td> </tr>
 <tr><td colspan='4'> alectrico® SpA</td> </tr> 
@@ -1880,8 +2034,8 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <table id='Partida-81'>
 <thead> <th style='background-color: lavender' colspan='6'>Partida 81</th></thead>
 <tbody>
-<tr> <td>35000 </td> <td colspan='7'> ventas-con-eboleta-exenta#ventas </td></tr>
 <tr> <td>35000 </td> <td colspan='7'> ventas#ingresos-brutos </td></tr>
+<tr> <td>35000 </td> <td colspan='7'> ventas-con-eboleta-exenta#ventas </td></tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td> 35000</td> <td> 0</td> <td colspan='2'> a[banco-estado] </td> </tr>
 <tr style='background-color: gold'>  <td> </td> <td>0 </td> <td> 35000</td> <td> </td> <td> r[ingresos-brutos] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 35000 </td> <td style='background-color: blanchedalmond'> 35000</td> </tr>
@@ -1904,8 +2058,8 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <table id='Partida-82'>
 <thead> <th style='background-color: lavender' colspan='6'>Partida 82</th></thead>
 <tbody>
-<tr> <td>558823 </td> <td colspan='7'> ventas-con-factura-afecta#ventas </td></tr>
 <tr> <td>558823 </td> <td colspan='7'> ventas#ingresos-brutos </td></tr>
+<tr> <td>558823 </td> <td colspan='7'> ventas-con-factura-afecta#ventas </td></tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td> 0</td> <td> 664999</td> <td colspan='2'> a[banco-estado] </td> </tr>
 <tr style='background-color: azure'>  <td> </td> <td> 106176 </td> <td> 0 </td> <td> </td><td> p[iva-debito] </td> </tr>
 <tr style='color: white; background-color: black'>  <td> </td> <td>558823 </td> <td> 0</td> <td> </td> <td> r[ingresos-brutos] </td> </tr>
@@ -1931,8 +2085,8 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <table id='Partida-83'>
 <thead> <th style='background-color: lavender' colspan='6'>Partida 83</th></thead>
 <tbody>
-<tr> <td>93179 </td> <td colspan='7'> ventas-con-factura-afecta#ventas </td></tr>
 <tr> <td>93179 </td> <td colspan='7'> ventas#ingresos-brutos </td></tr>
+<tr> <td>93179 </td> <td colspan='7'> ventas-con-factura-afecta#ventas </td></tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td> 110883</td> <td> 0</td> <td colspan='2'> a[banco-estado] </td> </tr>
 <tr style='background-color: azure'>  <td> </td> <td> 0 </td> <td> 17704 </td> <td> </td><td> p[iva-debito] </td> </tr>
 <tr style='background-color: gold'>  <td> </td> <td>0 </td> <td> 93179</td> <td> </td> <td> r[ingresos-brutos] </td> </tr>
@@ -1959,8 +2113,8 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <thead> <th style='background-color: lavender' colspan='6'>Partida 84</th></thead>
 <tbody>
 <tr> <td>8361 </td> <td colspan='7'> u-chile#gastos-administrativos </td></tr>
-<tr style='background-color: lightyellow'>  <td> </td> <td> 0</td> <td> 9950</td> <td colspan='2'> a[caja] </td> </tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td> 1589</td> <td> 0</td> <td colspan='2'> a[iva-credito] </td> </tr>
+<tr style='background-color: lightyellow'>  <td> </td> <td> 0</td> <td> 9950</td> <td colspan='2'> a[caja] </td> </tr>
 <tr style='color: white; background-color: black'>  <td> </td> <td>8361 </td> <td> 0</td> <td> </td> <td> r[gastos-administrativos] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 9950 </td> <td style='background-color: blanchedalmond'> 9950</td> </tr>
 <tr><td colspan='4'> alectrico® SpA</td> </tr> 
@@ -1985,8 +2139,8 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <thead> <th style='background-color: lavender' colspan='6'>Partida 85</th></thead>
 <tbody>
 <tr> <td>1764 </td> <td colspan='7'> eugenio#gastos-promocionales </td></tr>
-<tr style='background-color: lightyellow'>  <td> </td> <td> 0</td> <td> 2099</td> <td colspan='2'> a[banco-estado] </td> </tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td> 335</td> <td> 0</td> <td colspan='2'> a[iva-credito] </td> </tr>
+<tr style='background-color: lightyellow'>  <td> </td> <td> 0</td> <td> 2099</td> <td colspan='2'> a[banco-estado] </td> </tr>
 <tr style='color: white; background-color: black'>  <td> </td> <td>1764 </td> <td> 0</td> <td> </td> <td> r[gastos-promocionales] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 2099 </td> <td style='background-color: blanchedalmond'> 2099</td> </tr>
 <tr><td colspan='4'> alectrico® SpA</td> </tr> 
@@ -2037,8 +2191,8 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <table id='Partida-87'>
 <thead> <th style='background-color: lavender' colspan='6'>Partida 87</th></thead>
 <tbody>
-<tr> <td>151962 </td> <td colspan='7'> ventas-con-voucher-afecto#ventas </td></tr>
 <tr> <td>151962 </td> <td colspan='7'> ventas#ingresos-brutos </td></tr>
+<tr> <td>151962 </td> <td colspan='7'> ventas-con-voucher-afecto#ventas </td></tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td> 0</td> <td> 180835</td> <td colspan='2'> a[banco-estado] </td> </tr>
 <tr style='background-color: azure'>  <td> </td> <td> 28873 </td> <td> 0 </td> <td> </td><td> p[iva-debito] </td> </tr>
 <tr style='color: white; background-color: black'>  <td> </td> <td>151962 </td> <td> 0</td> <td> </td> <td> r[ingresos-brutos] </td> </tr>
@@ -2061,21 +2215,21 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 - [ ] ccm
 - [x] revisado
 ![](../revisado.png)
-<table id='Partida-88'>
-<thead> <th style='background-color: lavender' colspan='6'>Partida 88</th></thead>
+<table id='Partida-89'>
+<thead> <th style='background-color: lavender' colspan='6'>Partida 89</th></thead>
 <tbody>
-<tr> <td> 0 </td> <td> </td> <td colspan='7'> impuesto-unico-por-pagar#salarios-por-pagar </td> </tr> 
-<tr> <td> 229560 </td> <td> </td> <td colspan='7'> remuneraciones-por-pagar#salarios-por-pagar </td> </tr> 
-<tr> <td> 70440 </td> <td> </td> <td colspan='7'> entidades-previsionales-por-pagar#salarios-por-pagar </td> </tr> 
-<tr style='background-color: azure'>  <td> </td> <td> 0 </td> <td> 229560 </td> <td> </td><td> p[salarios-por-pagar] </td> </tr>
-<tr style='background-color: azure'>  <td> </td> <td> 0 </td> <td> 70440 </td> <td> </td><td> p[salarios-por-pagar] </td> </tr>
-<tr style='color: white; background-color: black'>  <td> </td> <td>300000 </td> <td> 0</td> <td> </td> <td> r[salarios] </td> </tr>
-<tr> <td> </td> <td style='background-color: blanchedalmond'> 300000 </td> <td style='background-color: blanchedalmond'> 300000</td> </tr>
+<tr> <td>220 </td> <td colspan='7'> ganancia-por-correccion-monetaria#correccion-monetaria </td></tr>
+<tr> <td>220 </td> <td colspan='7'> correccion-monetaria#ingresos-brutos </td></tr>
+<tr style='background-color: lightyellow'>  <td> </td> <td> 220</td> <td> 17704</td> <td colspan='2'> a[iva-credito] </td> </tr>
+<tr style='background-color: lightyellow'>  <td> </td> <td> 204</td> <td> 0</td> <td colspan='2'> a[ppm] </td> </tr>
+<tr style='background-color: lightyellow'>  <td> </td> <td> 0</td> <td> 204</td> <td colspan='2'> a[banco-estado] </td> </tr>
+<tr style='background-color: azure'>  <td> </td> <td> 17704 </td> <td> 0 </td> <td> </td><td> p[iva-debito] </td> </tr>
+<tr style='background-color: gold'>  <td> </td> <td>0 </td> <td> 220</td> <td> </td> <td> r[ingresos-brutos] </td> </tr>
+<tr> <td> </td> <td style='background-color: blanchedalmond'> 18128 </td> <td style='background-color: blanchedalmond'> 18128</td> </tr>
 <tr><td colspan='4'> alectrico® SpA</td> </tr> 
-<tr><td colspan='4'> ( 20 de julio	2021	 ) </td> </tr>
-<tr><td colspan='8'> Partida 88: Declaración de Remuneraciones de alexander días trabajados: 5 Tramo Exento: 734967.0 Sueldo Bruto de: 300000 Tasa de Impuesto Único: 0.04 Monto de Impuesto Único: 0 </td></tr>
-<tr> <td colspan='7'>efectuado a electrico </td> </tr>
-<tr><td colspan = '8'> declarar-remuneraciones</td> </tr>
+<tr><td colspan='4'> ( 31 de julio	2021	 ) </td> </tr>
+<tr><td colspan='8'> Partida 89: Por ajuste del Debito Fiscal Contra el Credito Fiscal, mes de julio-Por pago del ppm, con factor de  0.00125 mes julio </td></tr>
+<tr><td colspan = '8'> ajustar-iva-contra-credito</td> </tr>
 </tbody>
 </table>
 <p style='page-break-before: always;'>&nbsp;</p>
@@ -2092,8 +2246,8 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <table id='Partida-90'>
 <thead> <th style='background-color: lavender' colspan='6'>Partida 90</th></thead>
 <tbody>
-<tr style='background-color: lightyellow'>  <td> </td> <td> 0</td> <td> 22199</td> <td colspan='2'> a[iva-credito] </td> </tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td> 22199</td> <td> 0</td> <td colspan='2'> a[retencion-de-iva-articulo-11] </td> </tr>
+<tr style='background-color: lightyellow'>  <td> </td> <td> 0</td> <td> 22199</td> <td colspan='2'> a[iva-credito] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 22199 </td> <td style='background-color: blanchedalmond'> 22199</td> </tr>
 <tr><td colspan='4'> alectrico® SpA</td> </tr> 
 <tr><td colspan='4'> ( 30 de julio	2021	 ) </td> </tr>
@@ -2139,8 +2293,8 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <table id='Partida-93'>
 <thead> <th style='background-color: lavender' colspan='6'>Partida 93</th></thead>
 <tbody>
-<tr> <td>6666 </td> <td colspan='7'> ventas-con-factura-exenta#ventas </td></tr>
 <tr> <td>6666 </td> <td colspan='7'> ventas#ingresos-brutos </td></tr>
+<tr> <td>6666 </td> <td colspan='7'> ventas-con-factura-exenta#ventas </td></tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td> 6666</td> <td> 0</td> <td colspan='2'> a[banco-estado] </td> </tr>
 <tr style='background-color: gold'>  <td> </td> <td>0 </td> <td> 6666</td> <td> </td> <td> r[ingresos-brutos] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 6666 </td> <td style='background-color: blanchedalmond'> 6666</td> </tr>
@@ -2166,9 +2320,9 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <thead> <th style='background-color: lavender' colspan='6'>Partida 95</th></thead>
 <tbody>
 <tr><td>12630</td> <td colspan='7'>sodimac-insumos#insumos</td> </tr>
-<tr style='background-color: lightyellow'>  <td> </td> <td> 0</td> <td> 15030</td> <td colspan='2'> a[banco-estado] </td> </tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td> 2400</td> <td> 0</td> <td colspan='2'> a[iva-credito] </td> </tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td> 12630</td> <td> 0</td> <td colspan='2'> a[insumos] </td> </tr>
+<tr style='background-color: lightyellow'>  <td> </td> <td> 0</td> <td> 15030</td> <td colspan='2'> a[banco-estado] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 15030 </td> <td style='background-color: blanchedalmond'> 15030</td> </tr>
 <tr><td colspan='4'> alectrico® SpA</td> </tr> 
 <tr><td colspan='4'> ( 6 de agosto	2021	 ) </td> </tr>
@@ -2192,9 +2346,9 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <thead> <th style='background-color: lavender' colspan='6'>Partida 96</th></thead>
 <tbody>
 <tr><td>34134</td> <td colspan='7'>sodimac-insumos#insumos</td> </tr>
-<tr style='background-color: lightyellow'>  <td> </td> <td> 0</td> <td> 40619</td> <td colspan='2'> a[banco-estado] </td> </tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td> 6485</td> <td> 0</td> <td colspan='2'> a[iva-credito] </td> </tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td> 34134</td> <td> 0</td> <td colspan='2'> a[insumos] </td> </tr>
+<tr style='background-color: lightyellow'>  <td> </td> <td> 0</td> <td> 40619</td> <td colspan='2'> a[banco-estado] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 40619 </td> <td style='background-color: blanchedalmond'> 40619</td> </tr>
 <tr><td colspan='4'> alectrico® SpA</td> </tr> 
 <tr><td colspan='4'> ( 6 de agosto	2021	 ) </td> </tr>
@@ -2218,9 +2372,9 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <thead> <th style='background-color: lavender' colspan='6'>Partida 97</th></thead>
 <tbody>
 <tr><td>158011</td> <td colspan='7'>dartel-insumos#insumos</td> </tr>
-<tr style='background-color: lightyellow'>  <td> </td> <td> 0</td> <td> 188033</td> <td colspan='2'> a[banco-estado] </td> </tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td> 30022</td> <td> 0</td> <td colspan='2'> a[iva-credito] </td> </tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td> 158011</td> <td> 0</td> <td colspan='2'> a[insumos] </td> </tr>
+<tr style='background-color: lightyellow'>  <td> </td> <td> 0</td> <td> 188033</td> <td colspan='2'> a[banco-estado] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 188033 </td> <td style='background-color: blanchedalmond'> 188033</td> </tr>
 <tr><td colspan='4'> alectrico® SpA</td> </tr> 
 <tr><td colspan='4'> ( 6 de agosto	2021	 ) </td> </tr>
@@ -2245,8 +2399,8 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <thead> <th style='background-color: lavender' colspan='6'>Partida 98</th></thead>
 <tbody>
 <tr> <td>40027 </td> <td colspan='7'> entel#gastos-administrativos </td></tr>
-<tr style='background-color: lightyellow'>  <td> </td> <td> 47632</td> <td> 0</td> <td colspan='2'> a[caja] </td> </tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td> 0</td> <td> 7605</td> <td colspan='2'> a[iva-credito] </td> </tr>
+<tr style='background-color: lightyellow'>  <td> </td> <td> 47632</td> <td> 0</td> <td colspan='2'> a[caja] </td> </tr>
 <tr style='background-color: gold'>  <td> </td> <td>0 </td> <td> 40027</td> <td> </td> <td> r[gastos-administrativos] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 47632 </td> <td style='background-color: blanchedalmond'> 47632</td> </tr>
 <tr><td colspan='4'> alectrico® SpA</td> </tr> 
@@ -2270,8 +2424,8 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <table id='Partida-99'>
 <thead> <th style='background-color: lavender' colspan='6'>Partida 99</th></thead>
 <tbody>
-<tr> <td>141596 </td> <td colspan='7'> ventas-con-factura-afecta#ventas </td></tr>
 <tr> <td>141596 </td> <td colspan='7'> ventas#ingresos-brutos </td></tr>
+<tr> <td>141596 </td> <td colspan='7'> ventas-con-factura-afecta#ventas </td></tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td> 168499</td> <td> 0</td> <td colspan='2'> a[banco-estado] </td> </tr>
 <tr style='background-color: azure'>  <td> </td> <td> 0 </td> <td> 26903 </td> <td> </td><td> p[iva-debito] </td> </tr>
 <tr style='background-color: gold'>  <td> </td> <td>0 </td> <td> 141596</td> <td> </td> <td> r[ingresos-brutos] </td> </tr>
@@ -2298,9 +2452,9 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <thead> <th style='background-color: lavender' colspan='6'>Partida 101</th></thead>
 <tbody>
 <tr><td>13127</td> <td colspan='7'>sodimac-insumos#insumos</td> </tr>
-<tr style='background-color: lightyellow'>  <td> </td> <td> 0</td> <td> 15621</td> <td colspan='2'> a[banco-estado] </td> </tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td> 2494</td> <td> 0</td> <td colspan='2'> a[iva-credito] </td> </tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td> 13127</td> <td> 0</td> <td colspan='2'> a[insumos] </td> </tr>
+<tr style='background-color: lightyellow'>  <td> </td> <td> 0</td> <td> 15621</td> <td colspan='2'> a[banco-estado] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 15621 </td> <td style='background-color: blanchedalmond'> 15621</td> </tr>
 <tr><td colspan='4'> alectrico® SpA</td> </tr> 
 <tr><td colspan='4'> ( 9 de agosto	2021	 ) </td> </tr>
@@ -2324,9 +2478,9 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <thead> <th style='background-color: lavender' colspan='6'>Partida 102</th></thead>
 <tbody>
 <tr><td>13706</td> <td colspan='7'>sodimac-insumos#insumos</td> </tr>
-<tr style='background-color: lightyellow'>  <td> </td> <td> 0</td> <td> 16310</td> <td colspan='2'> a[banco-estado] </td> </tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td> 2604</td> <td> 0</td> <td colspan='2'> a[iva-credito] </td> </tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td> 13706</td> <td> 0</td> <td colspan='2'> a[insumos] </td> </tr>
+<tr style='background-color: lightyellow'>  <td> </td> <td> 0</td> <td> 16310</td> <td colspan='2'> a[banco-estado] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 16310 </td> <td style='background-color: blanchedalmond'> 16310</td> </tr>
 <tr><td colspan='4'> alectrico® SpA</td> </tr> 
 <tr><td colspan='4'> ( 12 de agosto	2021	 ) </td> </tr>
@@ -2334,6 +2488,28 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <tr> <td colspan='7'>efectuado a sodimac </td> </tr>
 <tr><td colspan = '8'> comprar-insumos-al-contado</td> </tr>
 <tr style='background-color: aliceblue'> <td colspan = '8'> <img src='../factura-afecta-sodimac-111195012.png'></td> </tr>
+</tbody>
+</table>
+<p style='page-break-before: always;'>&nbsp;</p>
+<br> 
+<p style='color: white; background-color: red'> No lo incluí a tiempo</p>
+<br> 
+- [x] partida rechazada en SII 
+- [x] tipo de asiento: 45
+- [x] a corregir: No lo incluí a tiempo
+- [ ] rcv
+- [ ] libro-diario
+- [ ] ccm
+- [x] revisado
+![](../revisado.png)
+<table id='Partida-104'>
+<thead> <th style='background-color: lavender' colspan='6'>Partida 104</th></thead>
+<tbody>
+<tr> <td> </td> <td style='background-color: blanchedalmond'> 0 </td> <td style='background-color: blanchedalmond'> 0</td> </tr>
+<tr><td colspan='4'> alectrico® SpA</td> </tr> 
+<tr><td colspan='4'> ( 13 de agosto	2021	 ) </td> </tr>
+<tr><td colspan='8'> Partida 104: Gasto Administrativo Rechazado </td></tr>
+<tr><td colspan = '8'> rechazo</td> </tr>
 </tbody>
 </table>
 <p style='page-break-before: always;'>&nbsp;</p>
@@ -2350,8 +2526,8 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <thead> <th style='background-color: lavender' colspan='6'>Partida 105</th></thead>
 <tbody>
 <tr> <td>40027 </td> <td colspan='7'> entel#gastos-administrativos </td></tr>
-<tr style='background-color: lightyellow'>  <td> </td> <td> 0</td> <td> 47632</td> <td colspan='2'> a[caja] </td> </tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td> 7605</td> <td> 0</td> <td colspan='2'> a[iva-credito] </td> </tr>
+<tr style='background-color: lightyellow'>  <td> </td> <td> 0</td> <td> 47632</td> <td colspan='2'> a[caja] </td> </tr>
 <tr style='color: white; background-color: black'>  <td> </td> <td>40027 </td> <td> 0</td> <td> </td> <td> r[gastos-administrativos] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 47632 </td> <td style='background-color: blanchedalmond'> 47632</td> </tr>
 <tr><td colspan='4'> alectrico® SpA</td> </tr> 
@@ -2376,8 +2552,8 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <thead> <th style='background-color: lavender' colspan='6'>Partida 107</th></thead>
 <tbody>
 <tr> <td>6926 </td> <td colspan='7'> entel#gastos-administrativos </td></tr>
-<tr style='background-color: lightyellow'>  <td> </td> <td> 0</td> <td> 8242</td> <td colspan='2'> a[caja] </td> </tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td> 1316</td> <td> 0</td> <td colspan='2'> a[iva-credito] </td> </tr>
+<tr style='background-color: lightyellow'>  <td> </td> <td> 0</td> <td> 8242</td> <td colspan='2'> a[caja] </td> </tr>
 <tr style='color: white; background-color: black'>  <td> </td> <td>6926 </td> <td> 0</td> <td> </td> <td> r[gastos-administrativos] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 8242 </td> <td style='background-color: blanchedalmond'> 8242</td> </tr>
 <tr><td colspan='4'> alectrico® SpA</td> </tr> 
@@ -2403,8 +2579,8 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <thead> <th style='background-color: lavender' colspan='6'>Partida 108</th></thead>
 <tbody>
 <tr> <td>231 </td> <td colspan='7'> transbank#costos-de-ventas </td></tr>
-<tr style='background-color: lightyellow'>  <td> </td> <td> 275</td> <td> 0</td> <td colspan='2'> a[banco-estado] </td> </tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td> 0</td> <td> 44</td> <td colspan='2'> a[iva-credito] </td> </tr>
+<tr style='background-color: lightyellow'>  <td> </td> <td> 275</td> <td> 0</td> <td colspan='2'> a[banco-estado] </td> </tr>
 <tr style='background-color: gold'>  <td> </td> <td>0 </td> <td> 231</td> <td> </td> <td> r[costos-de-ventas] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 275 </td> <td style='background-color: blanchedalmond'> 275</td> </tr>
 <tr><td colspan='4'> alectrico® SpA</td> </tr> 
@@ -2428,8 +2604,8 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <table id='Partida-113'>
 <thead> <th style='background-color: lavender' colspan='6'>Partida 113</th></thead>
 <tbody>
-<tr> <td>90544 </td> <td colspan='7'> ventas-con-factura-afecta#ventas </td></tr>
 <tr> <td>90544 </td> <td colspan='7'> ventas#ingresos-brutos </td></tr>
+<tr> <td>90544 </td> <td colspan='7'> ventas-con-factura-afecta#ventas </td></tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td> 107747</td> <td> 0</td> <td colspan='2'> a[banco-estado] </td> </tr>
 <tr style='background-color: azure'>  <td> </td> <td> 0 </td> <td> 17203 </td> <td> </td><td> p[iva-debito] </td> </tr>
 <tr style='background-color: gold'>  <td> </td> <td>0 </td> <td> 90544</td> <td> </td> <td> r[ingresos-brutos] </td> </tr>
@@ -2455,8 +2631,8 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <table id='Partida-114'>
 <thead> <th style='background-color: lavender' colspan='6'>Partida 114</th></thead>
 <tbody>
-<tr> <td>90544 </td> <td colspan='7'> ventas-con-factura-afecta#ventas </td></tr>
 <tr> <td>90544 </td> <td colspan='7'> ventas#ingresos-brutos </td></tr>
+<tr> <td>90544 </td> <td colspan='7'> ventas-con-factura-afecta#ventas </td></tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td> 0</td> <td> 107747</td> <td colspan='2'> a[banco-estado] </td> </tr>
 <tr style='background-color: azure'>  <td> </td> <td> 17203 </td> <td> 0 </td> <td> </td><td> p[iva-debito] </td> </tr>
 <tr style='color: white; background-color: black'>  <td> </td> <td>90544 </td> <td> 0</td> <td> </td> <td> r[ingresos-brutos] </td> </tr>
@@ -2482,8 +2658,8 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <table id='Partida-115'>
 <thead> <th style='background-color: lavender' colspan='6'>Partida 115</th></thead>
 <tbody>
-<tr> <td>93137 </td> <td colspan='7'> ventas-con-factura-afecta#ventas </td></tr>
 <tr> <td>93137 </td> <td colspan='7'> ventas#ingresos-brutos </td></tr>
+<tr> <td>93137 </td> <td colspan='7'> ventas-con-factura-afecta#ventas </td></tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td> 110833</td> <td> 0</td> <td colspan='2'> a[banco-estado] </td> </tr>
 <tr style='background-color: azure'>  <td> </td> <td> 0 </td> <td> 17696 </td> <td> </td><td> p[iva-debito] </td> </tr>
 <tr style='background-color: gold'>  <td> </td> <td>0 </td> <td> 93137</td> <td> </td> <td> r[ingresos-brutos] </td> </tr>
@@ -2509,8 +2685,8 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <table id='Partida-116'>
 <thead> <th style='background-color: lavender' colspan='6'>Partida 116</th></thead>
 <tbody>
-<tr> <td>40000 </td> <td colspan='7'> ventas-con-eboleta-exenta#ventas </td></tr>
 <tr> <td>40000 </td> <td colspan='7'> ventas#ingresos-brutos </td></tr>
+<tr> <td>40000 </td> <td colspan='7'> ventas-con-eboleta-exenta#ventas </td></tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td> 0</td> <td> 40000</td> <td colspan='2'> a[banco-estado] </td> </tr>
 <tr style='color: white; background-color: black'>  <td> </td> <td>40000 </td> <td> 0</td> <td> </td> <td> r[ingresos-brutos] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 40000 </td> <td style='background-color: blanchedalmond'> 40000</td> </tr>
@@ -2535,8 +2711,8 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <table id='Partida-117'>
 <thead> <th style='background-color: lavender' colspan='6'>Partida 117</th></thead>
 <tbody>
-<tr> <td>40000 </td> <td colspan='7'> ventas-con-factura-exenta#ventas </td></tr>
 <tr> <td>40000 </td> <td colspan='7'> ventas#ingresos-brutos </td></tr>
+<tr> <td>40000 </td> <td colspan='7'> ventas-con-factura-exenta#ventas </td></tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td> 40000</td> <td> 0</td> <td colspan='2'> a[banco-estado] </td> </tr>
 <tr style='background-color: gold'>  <td> </td> <td>0 </td> <td> 40000</td> <td> </td> <td> r[ingresos-brutos] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 40000 </td> <td style='background-color: blanchedalmond'> 40000</td> </tr>
@@ -2589,9 +2765,9 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <thead> <th style='background-color: lavender' colspan='6'>Partida 120</th></thead>
 <tbody>
 <tr><td>25220</td> <td colspan='7'>electrocom-insumos#insumos</td> </tr>
-<tr style='background-color: lightyellow'>  <td> </td> <td> 0</td> <td> 30012</td> <td colspan='2'> a[banco-estado] </td> </tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td> 4792</td> <td> 0</td> <td colspan='2'> a[iva-credito] </td> </tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td> 25220</td> <td> 0</td> <td colspan='2'> a[insumos] </td> </tr>
+<tr style='background-color: lightyellow'>  <td> </td> <td> 0</td> <td> 30012</td> <td colspan='2'> a[banco-estado] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 30012 </td> <td style='background-color: blanchedalmond'> 30012</td> </tr>
 <tr><td colspan='4'> alectrico® SpA</td> </tr> 
 <tr><td colspan='4'> ( 27 de agosto	2021	 ) </td> </tr>
@@ -2611,13 +2787,33 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 - [x] ccm
 - [x] revisado
 ![](../revisado.png)
+<table id='Partida-120,1'>
+<thead> <th style='background-color: lavender' colspan='6'>Partida 120,1</th></thead>
+<tbody>
+<tr> <td> </td> <td style='background-color: blanchedalmond'> 0 </td> <td style='background-color: blanchedalmond'> 0</td> </tr>
+<tr><td colspan='4'> alectrico® SpA</td> </tr> 
+<tr><td colspan='4'> ( 27 de agosto	2021	 ) </td> </tr>
+<tr><td colspan='8'> Partida 120,1: Pedido 1724Abierto </td></tr>
+<tr><td colspan = '8'> apertura-de-pedido</td> </tr>
+</tbody>
+</table>
+<p style='page-break-before: always;'>&nbsp;</p>
+<br> 
+<p style='color: white; background-color: red'>  </p>
+<br> 
+- [x] tipo de asiento: 33
+- [ ] rcv
+- [ ] libro-diario
+- [x] ccm
+- [x] revisado
+![](../revisado.png)
 <table id='Partida-121'>
 <thead> <th style='background-color: lavender' colspan='6'>Partida 121</th></thead>
 <tbody>
 <tr><td>25971</td> <td colspan='7'>electrocom-materiales#materiales</td> </tr>
-<tr style='background-color: lightyellow'>  <td> </td> <td> 0</td> <td> 30905</td> <td colspan='2'> a[banco-estado] </td> </tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td> 4934</td> <td> 0</td> <td colspan='2'> a[iva-credito] </td> </tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td> 25971</td> <td> 0</td> <td colspan='2'> a[materiales] </td> </tr>
+<tr style='background-color: lightyellow'>  <td> </td> <td> 0</td> <td> 30905</td> <td colspan='2'> a[banco-estado] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 30905 </td> <td style='background-color: blanchedalmond'> 30905</td> </tr>
 <tr><td colspan='4'> alectrico® SpA</td> </tr> 
 <tr><td colspan='4'> ( 27 de agosto	2021	 ) </td> </tr>
@@ -2639,8 +2835,8 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <table id='Partida-122'>
 <thead> <th style='background-color: lavender' colspan='6'>Partida 122</th></thead>
 <tbody>
-<tr> <td>62000 </td> <td colspan='7'> ventas-con-factura-afecta#ventas </td></tr>
 <tr> <td>62000 </td> <td colspan='7'> ventas#ingresos-brutos </td></tr>
+<tr> <td>62000 </td> <td colspan='7'> ventas-con-factura-afecta#ventas </td></tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td> 73780</td> <td> 0</td> <td colspan='2'> a[banco-estado] </td> </tr>
 <tr style='background-color: azure'>  <td> </td> <td> 0 </td> <td> 11780 </td> <td> </td><td> p[iva-debito] </td> </tr>
 <tr style='background-color: gold'>  <td> </td> <td>0 </td> <td> 62000</td> <td> </td> <td> r[ingresos-brutos] </td> </tr>
@@ -2666,8 +2862,8 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <table id='Partida-123'>
 <thead> <th style='background-color: lavender' colspan='6'>Partida 123</th></thead>
 <tbody>
-<tr> <td>33613 </td> <td colspan='7'> ventas-con-voucher-afecto#ventas </td></tr>
 <tr> <td>33613 </td> <td colspan='7'> ventas#ingresos-brutos </td></tr>
+<tr> <td>33613 </td> <td colspan='7'> ventas-con-voucher-afecto#ventas </td></tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td> 0</td> <td> 39999</td> <td colspan='2'> a[banco-estado] </td> </tr>
 <tr style='background-color: azure'>  <td> </td> <td> 6386 </td> <td> 0 </td> <td> </td><td> p[iva-debito] </td> </tr>
 <tr style='color: white; background-color: black'>  <td> </td> <td>33613 </td> <td> 0</td> <td> </td> <td> r[ingresos-brutos] </td> </tr>
@@ -2678,33 +2874,6 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <tr> <td colspan='7'>efectuado a subcuenta </td> </tr>
 <tr><td colspan = '8'> dar-nota-de-credito-emitida-subcuenta-existente</td> </tr>
 <tr style='background-color: aliceblue'> <td colspan = '8'> <img src='../nota-de-credito-propia-19.png'></td> </tr>
-</tbody>
-</table>
-<p style='page-break-before: always;'>&nbsp;</p>
-<br> 
-<p style='color: white; background-color: red'>  </p>
-<br> 
-- [x] tipo de asiento: ajuste-iva
-- [ ] rcv
-- [ ] libro-diario
-- [ ] ccm
-- [x] revisado
-![](../revisado.png)
-<table id='Partida-124'>
-<thead> <th style='background-color: lavender' colspan='6'>Partida 124</th></thead>
-<tbody>
-<tr> <td> 0 </td> <td> </td> <td colspan='7'> impuesto-unico-por-pagar#salarios-por-pagar </td> </tr> 
-<tr> <td> 229560 </td> <td> </td> <td colspan='7'> remuneraciones-por-pagar#salarios-por-pagar </td> </tr> 
-<tr> <td> 70440 </td> <td> </td> <td colspan='7'> entidades-previsionales-por-pagar#salarios-por-pagar </td> </tr> 
-<tr style='background-color: azure'>  <td> </td> <td> 0 </td> <td> 229560 </td> <td> </td><td> p[salarios-por-pagar] </td> </tr>
-<tr style='background-color: azure'>  <td> </td> <td> 0 </td> <td> 70440 </td> <td> </td><td> p[salarios-por-pagar] </td> </tr>
-<tr style='color: white; background-color: black'>  <td> </td> <td>300000 </td> <td> 0</td> <td> </td> <td> r[salarios] </td> </tr>
-<tr> <td> </td> <td style='background-color: blanchedalmond'> 300000 </td> <td style='background-color: blanchedalmond'> 300000</td> </tr>
-<tr><td colspan='4'> alectrico® SpA</td> </tr> 
-<tr><td colspan='4'> ( 20 de agosto	2021	 ) </td> </tr>
-<tr><td colspan='8'> Partida 124: Declaración de Remuneraciones de alexander días trabajados: 5 Tramo Exento: 734967.0 Sueldo Bruto de: 300000 Tasa de Impuesto Único: 0.04 Monto de Impuesto Único: 0 </td></tr>
-<tr> <td colspan='7'>efectuado a electrico </td> </tr>
-<tr><td colspan = '8'> declarar-remuneraciones</td> </tr>
 </tbody>
 </table>
 <p style='page-break-before: always;'>&nbsp;</p>
@@ -2736,27 +2905,27 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'>  </p>
 <br> 
-- [x] tipo de asiento: 33
+- [x] tipo de asiento: amortizacion
 - [ ] rcv
 - [ ] libro-diario
 - [ ] ccm
 - [x] revisado
 ![](../revisado.png)
-<table id='Partida-127'>
-<thead> <th style='background-color: lavender' colspan='6'>Partida 127</th></thead>
+<table id='Partida-126'>
+<thead> <th style='background-color: lavender' colspan='6'>Partida 126</th></thead>
 <tbody>
-<tr> <td> 0 </td> <td> </td> <td colspan='7'> impuesto-unico-por-pagar#salarios-por-pagar </td> </tr> 
-<tr> <td> 267820 </td> <td> </td> <td colspan='7'> remuneraciones-por-pagar#salarios-por-pagar </td> </tr> 
-<tr> <td> 82180 </td> <td> </td> <td colspan='7'> entidades-previsionales-por-pagar#salarios-por-pagar </td> </tr> 
-<tr style='background-color: azure'>  <td> </td> <td> 0 </td> <td> 267820 </td> <td> </td><td> p[salarios-por-pagar] </td> </tr>
-<tr style='background-color: azure'>  <td> </td> <td> 0 </td> <td> 82180 </td> <td> </td><td> p[salarios-por-pagar] </td> </tr>
-<tr style='color: white; background-color: black'>  <td> </td> <td>350000 </td> <td> 0</td> <td> </td> <td> r[salarios] </td> </tr>
-<tr> <td> </td> <td style='background-color: blanchedalmond'> 350000 </td> <td style='background-color: blanchedalmond'> 350000</td> </tr>
+<tr> <td>487 </td> <td colspan='7'> ganancia-por-correccion-monetaria#correccion-monetaria </td></tr>
+<tr> <td>487 </td> <td colspan='7'> correccion-monetaria#ingresos-brutos </td></tr>
+<tr style='background-color: lightyellow'>  <td> </td> <td> 487</td> <td> 49993</td> <td colspan='2'> a[iva-credito] </td> </tr>
+<tr style='background-color: lightyellow'>  <td> </td> <td> 337</td> <td> 0</td> <td colspan='2'> a[ppm] </td> </tr>
+<tr style='background-color: lightyellow'>  <td> </td> <td> 0</td> <td> 337</td> <td colspan='2'> a[banco-estado] </td> </tr>
+<tr style='background-color: azure'>  <td> </td> <td> 49993 </td> <td> 0 </td> <td> </td><td> p[iva-debito] </td> </tr>
+<tr style='background-color: gold'>  <td> </td> <td>0 </td> <td> 487</td> <td> </td> <td> r[ingresos-brutos] </td> </tr>
+<tr> <td> </td> <td style='background-color: blanchedalmond'> 50817 </td> <td style='background-color: blanchedalmond'> 50817</td> </tr>
 <tr><td colspan='4'> alectrico® SpA</td> </tr> 
-<tr><td colspan='4'> ( 5 de septiembre	2021	 ) </td> </tr>
-<tr><td colspan='8'> Partida 127: Declaración de Remuneraciones de alexander días trabajados: 6 Tramo Exento: 734967.0 Sueldo Bruto de: 350000 Tasa de Impuesto Único: 0.04 Monto de Impuesto Único: 0 </td></tr>
-<tr> <td colspan='7'>efectuado a electrico </td> </tr>
-<tr><td colspan = '8'> declarar-remuneraciones</td> </tr>
+<tr><td colspan='4'> ( 31 de agosto	2021	 ) </td> </tr>
+<tr><td colspan='8'> Partida 126: Por ajuste del Debito Fiscal Contra el Credito Fiscal, mes de agosto-Por pago del ppm, con factor de  0.00125 mes agosto </td></tr>
+<tr><td colspan = '8'> ajustar-iva-contra-credito</td> </tr>
 </tbody>
 </table>
 <p style='page-break-before: always;'>&nbsp;</p>
@@ -2772,8 +2941,8 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <table id='Partida-128'>
 <thead> <th style='background-color: lavender' colspan='6'>Partida 128</th></thead>
 <tbody>
-<tr> <td>400000 </td> <td colspan='7'> ventas-con-factura-exenta#ventas </td></tr>
 <tr> <td>400000 </td> <td colspan='7'> ventas#ingresos-brutos </td></tr>
+<tr> <td>400000 </td> <td colspan='7'> ventas-con-factura-exenta#ventas </td></tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td> 400000</td> <td> 0</td> <td colspan='2'> a[banco-estado] </td> </tr>
 <tr style='background-color: gold'>  <td> </td> <td>0 </td> <td> 400000</td> <td> </td> <td> r[ingresos-brutos] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 400000 </td> <td style='background-color: blanchedalmond'> 400000</td> </tr>
@@ -2825,8 +2994,8 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <table id='Partida-130'>
 <thead> <th style='background-color: lavender' colspan='6'>Partida 130</th></thead>
 <tbody>
-<tr> <td>63030 </td> <td colspan='7'> ventas-con-factura-afecta#ventas </td></tr>
 <tr> <td>63030 </td> <td colspan='7'> ventas#ingresos-brutos </td></tr>
+<tr> <td>63030 </td> <td colspan='7'> ventas-con-factura-afecta#ventas </td></tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td> 75006</td> <td> 0</td> <td colspan='2'> a[banco-estado] </td> </tr>
 <tr style='background-color: azure'>  <td> </td> <td> 0 </td> <td> 11976 </td> <td> </td><td> p[iva-debito] </td> </tr>
 <tr style='background-color: gold'>  <td> </td> <td>0 </td> <td> 63030</td> <td> </td> <td> r[ingresos-brutos] </td> </tr>
@@ -2851,8 +3020,8 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <table id='Partida-133'>
 <thead > <th colspan='6'>Partida 133</th></thead>
 <tbody>
-<tr> <td>6666 </td> <td colspan='7'> ventas-con-factura-exenta#ventas </td></tr>
 <tr> <td>6666 </td> <td colspan='7'> ventas#ingresos-brutos </td></tr>
+<tr> <td>6666 </td> <td colspan='7'> ventas-con-factura-exenta#ventas </td></tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td> 6666</td> <td> 0</td> <td colspan='2'> a[banco-estado] </td> </tr>
 <tr style='background-color: gold'>  <td> </td> <td>0 </td> <td> 6666</td> <td> </td> <td> r[ingresos-brutos] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 6666 </td> <td style='background-color: blanchedalmond'> 6666</td> </tr>
@@ -2877,8 +3046,8 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <thead > <th colspan='6'>Partida 138</th></thead>
 <tbody>
 <tr><td>52631</td> <td colspan='7'>marca-alectrico#intangibles</td> </tr>
-<tr style='background-color: lightyellow'>  <td> </td> <td> 52631</td> <td> 0</td> <td colspan='2'> a[banco-estado] </td> </tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td> 0</td> <td> 52631</td> <td colspan='2'> a[intangibles] </td> </tr>
+<tr style='background-color: lightyellow'>  <td> </td> <td> 52631</td> <td> 0</td> <td colspan='2'> a[banco-estado] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 52631 </td> <td style='background-color: blanchedalmond'> 52631</td> </tr>
 <tr><td colspan='4'> alectrico® SpA</td> </tr> 
 <tr><td colspan='4'> ( 12 de septiembre	2021	 ) </td> </tr>
@@ -2900,8 +3069,8 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <thead > <th colspan='6'>Partida 139</th></thead>
 <tbody>
 <tr> <td>6926 </td> <td colspan='7'> entel#gastos-administrativos </td></tr>
-<tr style='background-color: lightyellow'>  <td> </td> <td> 0</td> <td> 8242</td> <td colspan='2'> a[caja] </td> </tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td> 1316</td> <td> 0</td> <td colspan='2'> a[iva-credito] </td> </tr>
+<tr style='background-color: lightyellow'>  <td> </td> <td> 0</td> <td> 8242</td> <td colspan='2'> a[caja] </td> </tr>
 <tr style='color: white; background-color: black'>  <td> </td> <td>6926 </td> <td> 0</td> <td> </td> <td> r[gastos-administrativos] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 8242 </td> <td style='background-color: blanchedalmond'> 8242</td> </tr>
 <tr><td colspan='4'> alectrico® SpA</td> </tr> 
@@ -2925,8 +3094,8 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <thead > <th colspan='6'>Partida 145</th></thead>
 <tbody>
 <tr> <td>8361 </td> <td colspan='7'> u-chile#gastos-administrativos </td></tr>
-<tr style='background-color: lightyellow'>  <td> </td> <td> 0</td> <td> 9950</td> <td colspan='2'> a[caja] </td> </tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td> 1589</td> <td> 0</td> <td colspan='2'> a[iva-credito] </td> </tr>
+<tr style='background-color: lightyellow'>  <td> </td> <td> 0</td> <td> 9950</td> <td colspan='2'> a[caja] </td> </tr>
 <tr style='color: white; background-color: black'>  <td> </td> <td>8361 </td> <td> 0</td> <td> </td> <td> r[gastos-administrativos] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 9950 </td> <td style='background-color: blanchedalmond'> 9950</td> </tr>
 <tr><td colspan='4'> alectrico® SpA</td> </tr> 
@@ -2950,9 +3119,9 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <thead > <th colspan='6'>Partida 146</th></thead>
 <tbody>
 <tr><td>48404</td> <td colspan='7'>sodimac-insumos#insumos</td> </tr>
-<tr style='background-color: lightyellow'>  <td> </td> <td> 0</td> <td> 57601</td> <td colspan='2'> a[banco-estado] </td> </tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td> 9197</td> <td> 0</td> <td colspan='2'> a[iva-credito] </td> </tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td> 48404</td> <td> 0</td> <td colspan='2'> a[insumos] </td> </tr>
+<tr style='background-color: lightyellow'>  <td> </td> <td> 0</td> <td> 57601</td> <td colspan='2'> a[banco-estado] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 57601 </td> <td style='background-color: blanchedalmond'> 57601</td> </tr>
 <tr><td colspan='4'> alectrico® SpA</td> </tr> 
 <tr><td colspan='4'> ( 8 de septiembre	2021	 ) </td> </tr>
@@ -2974,8 +3143,8 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <table id='Partida-148'>
 <thead > <th colspan='6'>Partida 148</th></thead>
 <tbody>
-<tr> <td>10592 </td> <td colspan='7'> ventas-con-eboleta-afecta#ventas </td></tr>
 <tr> <td>10592 </td> <td colspan='7'> ventas#ingresos-brutos </td></tr>
+<tr> <td>10592 </td> <td colspan='7'> ventas-con-eboleta-afecta#ventas </td></tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td> 0</td> <td> 12605</td> <td colspan='2'> a[banco-estado] </td> </tr>
 <tr style='background-color: azure'>  <td> </td> <td> 2013 </td> <td> 0 </td> <td> </td><td> p[iva-debito] </td> </tr>
 <tr style='color: white; background-color: black'>  <td> </td> <td>10592 </td> <td> 0</td> <td> </td> <td> r[ingresos-brutos] </td> </tr>
@@ -3001,9 +3170,9 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <thead > <th colspan='6'>Partida 149</th></thead>
 <tbody>
 <tr><td>6143</td> <td colspan='7'>sodimac-insumos#insumos</td> </tr>
-<tr style='background-color: lightyellow'>  <td> </td> <td> 0</td> <td> 7310</td> <td colspan='2'> a[banco-estado] </td> </tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td> 1167</td> <td> 0</td> <td colspan='2'> a[iva-credito] </td> </tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td> 6143</td> <td> 0</td> <td colspan='2'> a[insumos] </td> </tr>
+<tr style='background-color: lightyellow'>  <td> </td> <td> 0</td> <td> 7310</td> <td colspan='2'> a[banco-estado] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 7310 </td> <td style='background-color: blanchedalmond'> 7310</td> </tr>
 <tr><td colspan='4'> alectrico® SpA</td> </tr> 
 <tr><td colspan='4'> ( 24 de septiembre	2021	 ) </td> </tr>
@@ -3025,8 +3194,8 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <table id='Partida-151'>
 <thead > <th colspan='6'>Partida 151</th></thead>
 <tbody>
-<tr> <td>126050 </td> <td colspan='7'> ventas-con-factura-afecta#ventas </td></tr>
 <tr> <td>126050 </td> <td colspan='7'> ventas#ingresos-brutos </td></tr>
+<tr> <td>126050 </td> <td colspan='7'> ventas-con-factura-afecta#ventas </td></tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td> 150000</td> <td> 0</td> <td colspan='2'> a[banco-estado] </td> </tr>
 <tr style='background-color: azure'>  <td> </td> <td> 0 </td> <td> 23950 </td> <td> </td><td> p[iva-debito] </td> </tr>
 <tr style='background-color: gold'>  <td> </td> <td>0 </td> <td> 126050</td> <td> </td> <td> r[ingresos-brutos] </td> </tr>
@@ -3051,8 +3220,8 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <table id='Partida-152'>
 <thead > <th colspan='6'>Partida 152</th></thead>
 <tbody>
-<tr> <td>93137 </td> <td colspan='7'> ventas-con-factura-afecta#ventas </td></tr>
 <tr> <td>93137 </td> <td colspan='7'> ventas#ingresos-brutos </td></tr>
+<tr> <td>93137 </td> <td colspan='7'> ventas-con-factura-afecta#ventas </td></tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td> 110833</td> <td> 0</td> <td colspan='2'> a[banco-estado] </td> </tr>
 <tr style='background-color: azure'>  <td> </td> <td> 0 </td> <td> 17696 </td> <td> </td><td> p[iva-debito] </td> </tr>
 <tr style='background-color: gold'>  <td> </td> <td>0 </td> <td> 93137</td> <td> </td> <td> r[ingresos-brutos] </td> </tr>
@@ -3099,6 +3268,33 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 - [ ] rcv
 - [ ] libro-diario
 - [ ] ccm
+- [x] revisado
+![](../revisado.png)
+<table id='Partida-154'>
+<thead> <th style='background-color: lavender' colspan='6'>Partida 154</th></thead>
+<tbody>
+<tr> <td>701 </td> <td colspan='7'> ganancia-por-correccion-monetaria#correccion-monetaria </td></tr>
+<tr> <td>701 </td> <td colspan='7'> correccion-monetaria#ingresos-brutos </td></tr>
+<tr style='background-color: lightyellow'>  <td> </td> <td> 701</td> <td> 51609</td> <td colspan='2'> a[iva-credito] </td> </tr>
+<tr style='background-color: lightyellow'>  <td> </td> <td> 848</td> <td> 0</td> <td colspan='2'> a[ppm] </td> </tr>
+<tr style='background-color: lightyellow'>  <td> </td> <td> 0</td> <td> 848</td> <td colspan='2'> a[banco-estado] </td> </tr>
+<tr style='background-color: azure'>  <td> </td> <td> 51609 </td> <td> 0 </td> <td> </td><td> p[iva-debito] </td> </tr>
+<tr style='background-color: gold'>  <td> </td> <td>0 </td> <td> 701</td> <td> </td> <td> r[ingresos-brutos] </td> </tr>
+<tr> <td> </td> <td style='background-color: blanchedalmond'> 53158 </td> <td style='background-color: blanchedalmond'> 53158</td> </tr>
+<tr><td colspan='4'> alectrico® SpA</td> </tr> 
+<tr><td colspan='4'> ( 31 de septiembre	2021	 ) </td> </tr>
+<tr><td colspan='8'> Partida 154: Por ajuste del Debito Fiscal Contra el Credito Fiscal, mes de septiembre-Por pago del ppm, con factor de  0.00125 mes septiembre </td></tr>
+<tr><td colspan = '8'> ajustar-iva-contra-credito</td> </tr>
+</tbody>
+</table>
+<p style='page-break-before: always;'>&nbsp;</p>
+<br> 
+<p style='color: white; background-color: red'>  </p>
+<br> 
+- [x] tipo de asiento: 33
+- [ ] rcv
+- [ ] libro-diario
+- [ ] ccm
 - [ ] revisado
 <table id='Partida-155'>
 <thead > <th colspan='6'>Partida 155</th></thead>
@@ -3117,26 +3313,24 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 </table>
 <p style='page-break-before: always;'>&nbsp;</p>
 <br> 
-<p style='color: white; background-color: red'> Esto genera imponible negativo</p>
+<p style='color: white; background-color: red'>  </p>
 <br> 
 - [x] tipo de asiento: 33
-- [x] a corregir: Esto genera imponible negativo
 - [ ] rcv
 - [ ] libro-diario
 - [ ] ccm
-- [x] revisado
-![](../revisado.png)
-<table id='Partida-156'>
-<thead> <th style='background-color: lavender' colspan='6'>Partida 156</th></thead>
+- [ ] revisado
+<table id='Partida-157'>
+<thead > <th colspan='6'>Partida 157</th></thead>
 <tbody>
-<tr> <td>400000 </td> <td colspan='7'> ventas-con-eboleta-exenta#ventas </td></tr>
 <tr> <td>400000 </td> <td colspan='7'> ventas#ingresos-brutos </td></tr>
+<tr> <td>400000 </td> <td colspan='7'> ventas-con-eboleta-exenta#ventas </td></tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td> 0</td> <td> 400000</td> <td colspan='2'> a[banco-estado] </td> </tr>
 <tr style='color: white; background-color: black'>  <td> </td> <td>400000 </td> <td> 0</td> <td> </td> <td> r[ingresos-brutos] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 400000 </td> <td style='background-color: blanchedalmond'> 400000</td> </tr>
 <tr><td colspan='4'> alectrico® SpA</td> </tr> 
 <tr><td colspan='4'> ( 2 de octubre	2021	 ) </td> </tr>
-<tr><td colspan='8'> Partida 156: Devolución a subcuenta ventas-con-eboleta-exenta por Por anulación de proyecto 1724. mes octubre </td></tr>
+<tr><td colspan='8'> Partida 157: Devolución a subcuenta ventas-con-eboleta-exenta por Por anulación de proyecto 1724. mes octubre </td></tr>
 <tr> <td colspan='7'>efectuado a subcuenta </td> </tr>
 <tr><td colspan = '8'> dar-nota-de-credito-emitida-subcuenta-existente</td> </tr>
 <tr style='background-color: aliceblue'> <td colspan = '8'> <img src='../nota-de-credito-propia-21.png'></td> </tr>
@@ -3154,8 +3348,8 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <table id='Partida-158'>
 <thead > <th colspan='6'>Partida 158</th></thead>
 <tbody>
-<tr> <td>6666 </td> <td colspan='7'> ventas-con-factura-exenta#ventas </td></tr>
 <tr> <td>6666 </td> <td colspan='7'> ventas#ingresos-brutos </td></tr>
+<tr> <td>6666 </td> <td colspan='7'> ventas-con-factura-exenta#ventas </td></tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td> 6666</td> <td> 0</td> <td colspan='2'> a[banco-estado] </td> </tr>
 <tr style='background-color: gold'>  <td> </td> <td>0 </td> <td> 6666</td> <td> </td> <td> r[ingresos-brutos] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 6666 </td> <td style='background-color: blanchedalmond'> 6666</td> </tr>
@@ -3180,8 +3374,8 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <thead > <th colspan='6'>Partida 160</th></thead>
 <tbody>
 <tr> <td>6926 </td> <td colspan='7'> entel#gastos-administrativos </td></tr>
-<tr style='background-color: lightyellow'>  <td> </td> <td> 0</td> <td> 8242</td> <td colspan='2'> a[caja] </td> </tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td> 1316</td> <td> 0</td> <td colspan='2'> a[iva-credito] </td> </tr>
+<tr style='background-color: lightyellow'>  <td> </td> <td> 0</td> <td> 8242</td> <td colspan='2'> a[caja] </td> </tr>
 <tr style='color: white; background-color: black'>  <td> </td> <td>6926 </td> <td> 0</td> <td> </td> <td> r[gastos-administrativos] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 8242 </td> <td style='background-color: blanchedalmond'> 8242</td> </tr>
 <tr><td colspan='4'> alectrico® SpA</td> </tr> 
@@ -3204,8 +3398,8 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <table id='Partida-161'>
 <thead > <th colspan='6'>Partida 161</th></thead>
 <tbody>
-<tr> <td>21002 </td> <td colspan='7'> ventas-con-eboleta-afecta#ventas </td></tr>
 <tr> <td>21002 </td> <td colspan='7'> ventas#ingresos-brutos </td></tr>
+<tr> <td>21002 </td> <td colspan='7'> ventas-con-eboleta-afecta#ventas </td></tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td> 25000</td> <td> 0</td> <td colspan='2'> a[banco-estado] </td> </tr>
 <tr style='background-color: azure'>  <td> </td> <td> 0 </td> <td> 3998 </td> <td> </td><td> p[iva-debito] </td> </tr>
 <tr style='background-color: gold'>  <td> </td> <td>0 </td> <td> 21002</td> <td> </td> <td> r[ingresos-brutos] </td> </tr>
@@ -3229,8 +3423,8 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <table id='Partida-164'>
 <thead> <th style='background-color: lavender' colspan='6'>Partida 164</th></thead>
 <tbody>
-<tr> <td>93137 </td> <td colspan='7'> ventas-con-factura-afecta#ventas </td></tr>
 <tr> <td>93137 </td> <td colspan='7'> ventas#ingresos-brutos </td></tr>
+<tr> <td>93137 </td> <td colspan='7'> ventas-con-factura-afecta#ventas </td></tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td> 110833</td> <td> 0</td> <td colspan='2'> a[banco-estado] </td> </tr>
 <tr style='background-color: azure'>  <td> </td> <td> 0 </td> <td> 17696 </td> <td> </td><td> p[iva-debito] </td> </tr>
 <tr style='background-color: gold'>  <td> </td> <td>0 </td> <td> 93137</td> <td> </td> <td> r[ingresos-brutos] </td> </tr>
@@ -3256,9 +3450,9 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <thead > <th colspan='6'>Partida 166</th></thead>
 <tbody>
 <tr><td>4950</td> <td colspan='7'>sodimac-insumos#insumos</td> </tr>
-<tr style='background-color: lightyellow'>  <td> </td> <td> 0</td> <td> 5891</td> <td colspan='2'> a[banco-estado] </td> </tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td> 941</td> <td> 0</td> <td colspan='2'> a[iva-credito] </td> </tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td> 4950</td> <td> 0</td> <td colspan='2'> a[insumos] </td> </tr>
+<tr style='background-color: lightyellow'>  <td> </td> <td> 0</td> <td> 5891</td> <td colspan='2'> a[banco-estado] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 5891 </td> <td style='background-color: blanchedalmond'> 5891</td> </tr>
 <tr><td colspan='4'> alectrico® SpA</td> </tr> 
 <tr><td colspan='4'> ( 26 de octubre	2021	 ) </td> </tr>
@@ -3307,9 +3501,9 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <tbody>
 <tr> <td>780 </td> <td colspan='7'> ganancia-por-correccion-monetaria#correccion-monetaria </td></tr>
 <tr> <td>780 </td> <td colspan='7'> correccion-monetaria#ingresos-brutos </td></tr>
-<tr style='background-color: lightyellow'>  <td> </td> <td> 0</td> <td> 151</td> <td colspan='2'> a[banco-estado] </td> </tr>
-<tr style='background-color: lightyellow'>  <td> </td> <td> 151</td> <td> 0</td> <td colspan='2'> a[ppm] </td> </tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td> 780</td> <td> 21694</td> <td colspan='2'> a[iva-credito] </td> </tr>
+<tr style='background-color: lightyellow'>  <td> </td> <td> 151</td> <td> 0</td> <td colspan='2'> a[ppm] </td> </tr>
+<tr style='background-color: lightyellow'>  <td> </td> <td> 0</td> <td> 151</td> <td colspan='2'> a[banco-estado] </td> </tr>
 <tr style='background-color: azure'>  <td> </td> <td> 21694 </td> <td> 0 </td> <td> </td><td> p[iva-debito] </td> </tr>
 <tr style='background-color: gold'>  <td> </td> <td>0 </td> <td> 780</td> <td> </td> <td> r[ingresos-brutos] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 22625 </td> <td style='background-color: blanchedalmond'> 22625</td> </tr>
@@ -3332,8 +3526,8 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <table id='Partida-169'>
 <thead> <th style='background-color: lavender' colspan='6'>Partida 169</th></thead>
 <tbody>
-<tr> <td>6666 </td> <td colspan='7'> ventas-con-factura-exenta#ventas </td></tr>
 <tr> <td>6666 </td> <td colspan='7'> ventas#ingresos-brutos </td></tr>
+<tr> <td>6666 </td> <td colspan='7'> ventas-con-factura-exenta#ventas </td></tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td> 6666</td> <td> 0</td> <td colspan='2'> a[banco-estado] </td> </tr>
 <tr style='background-color: gold'>  <td> </td> <td>0 </td> <td> 6666</td> <td> </td> <td> r[ingresos-brutos] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 6666 </td> <td style='background-color: blanchedalmond'> 6666</td> </tr>
@@ -3359,8 +3553,8 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <thead> <th style='background-color: lavender' colspan='6'>Partida 170</th></thead>
 <tbody>
 <tr> <td>6926 </td> <td colspan='7'> entel#gastos-administrativos </td></tr>
-<tr style='background-color: lightyellow'>  <td> </td> <td> 0</td> <td> 8242</td> <td colspan='2'> a[banco-estado] </td> </tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td> 1316</td> <td> 0</td> <td colspan='2'> a[iva-credito] </td> </tr>
+<tr style='background-color: lightyellow'>  <td> </td> <td> 0</td> <td> 8242</td> <td colspan='2'> a[banco-estado] </td> </tr>
 <tr style='color: white; background-color: black'>  <td> </td> <td>6926 </td> <td> 0</td> <td> </td> <td> r[gastos-administrativos] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 8242 </td> <td style='background-color: blanchedalmond'> 8242</td> </tr>
 <tr><td colspan='4'> alectrico® SpA</td> </tr> 
@@ -3385,8 +3579,8 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <thead> <th style='background-color: lavender' colspan='6'>Partida 183</th></thead>
 <tbody>
 <tr> <td>4193 </td> <td colspan='7'> smart#gastos-administrativos </td></tr>
-<tr style='background-color: lightyellow'>  <td> </td> <td> 0</td> <td> 4990</td> <td colspan='2'> a[caja] </td> </tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td> 797</td> <td> 0</td> <td colspan='2'> a[iva-credito] </td> </tr>
+<tr style='background-color: lightyellow'>  <td> </td> <td> 0</td> <td> 4990</td> <td colspan='2'> a[caja] </td> </tr>
 <tr style='color: white; background-color: black'>  <td> </td> <td>4193 </td> <td> 0</td> <td> </td> <td> r[gastos-administrativos] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 4990 </td> <td style='background-color: blanchedalmond'> 4990</td> </tr>
 <tr><td colspan='4'> alectrico® SpA</td> </tr> 
@@ -3411,8 +3605,8 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <thead> <th style='background-color: lavender' colspan='6'>Partida 184</th></thead>
 <tbody>
 <tr> <td>10824 </td> <td colspan='7'> bazaya#gastos-administrativos </td></tr>
-<tr style='background-color: lightyellow'>  <td> </td> <td> 0</td> <td> 12880</td> <td colspan='2'> a[caja] </td> </tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td> 2056</td> <td> 0</td> <td colspan='2'> a[iva-credito] </td> </tr>
+<tr style='background-color: lightyellow'>  <td> </td> <td> 0</td> <td> 12880</td> <td colspan='2'> a[caja] </td> </tr>
 <tr style='color: white; background-color: black'>  <td> </td> <td>10824 </td> <td> 0</td> <td> </td> <td> r[gastos-administrativos] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 12880 </td> <td style='background-color: blanchedalmond'> 12880</td> </tr>
 <tr><td colspan='4'> alectrico® SpA</td> </tr> 
@@ -3452,6 +3646,28 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'>  </p>
 <br> 
+- [x] tipo de asiento: venta-afecta
+- [ ] rcv
+- [ ] libro-diario
+- [ ] ccm
+- [x] revisado
+![](../revisado.png)
+<table id='Partida-187'>
+<thead> <th style='background-color: lavender' colspan='6'>Partida 187</th></thead>
+<tbody>
+<tr style='background-color: lightyellow'>  <td> </td> <td> 8</td> <td> 0</td> <td colspan='2'> a[ppm] </td> </tr>
+<tr style='background-color: lightyellow'>  <td> </td> <td> 0</td> <td> 8</td> <td colspan='2'> a[banco-estado] </td> </tr>
+<tr> <td> </td> <td style='background-color: blanchedalmond'> 8 </td> <td style='background-color: blanchedalmond'> 8</td> </tr>
+<tr><td colspan='4'> alectrico® SpA</td> </tr> 
+<tr><td colspan='4'> ( 31 de noviembre	2021	 ) </td> </tr>
+<tr><td colspan='8'> Partida 187: Por ajuste del Debito Fiscal Contra el Credito Fiscal, mes de noviembre-Por pago del ppm, con factor de  0.00125 mes noviembre </td></tr>
+<tr><td colspan = '8'> ajustar-iva-contra-credito</td> </tr>
+</tbody>
+</table>
+<p style='page-break-before: always;'>&nbsp;</p>
+<br> 
+<p style='color: white; background-color: red'>  </p>
+<br> 
 - [x] tipo de asiento: 34
 - [ ] rcv
 - [ ] libro-diario
@@ -3462,9 +3678,9 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <thead> <th style='background-color: lavender' colspan='6'>Partida 188</th></thead>
 <tbody>
 <tr><td>8395</td> <td colspan='7'>sodimac-insumos#insumos</td> </tr>
-<tr style='background-color: lightyellow'>  <td> </td> <td> 0</td> <td> 9990</td> <td colspan='2'> a[banco-estado] </td> </tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td> 1595</td> <td> 0</td> <td colspan='2'> a[iva-credito] </td> </tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td> 8395</td> <td> 0</td> <td colspan='2'> a[insumos] </td> </tr>
+<tr style='background-color: lightyellow'>  <td> </td> <td> 0</td> <td> 9990</td> <td colspan='2'> a[banco-estado] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 9990 </td> <td style='background-color: blanchedalmond'> 9990</td> </tr>
 <tr><td colspan='4'> alectrico® SpA</td> </tr> 
 <tr><td colspan='4'> ( 1 de diciembre	2021	 ) </td> </tr>
@@ -3487,8 +3703,8 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <table id='Partida-189'>
 <thead> <th style='background-color: lavender' colspan='6'>Partida 189</th></thead>
 <tbody>
-<tr> <td>6666 </td> <td colspan='7'> ventas-con-factura-exenta#ventas </td></tr>
 <tr> <td>6666 </td> <td colspan='7'> ventas#ingresos-brutos </td></tr>
+<tr> <td>6666 </td> <td colspan='7'> ventas-con-factura-exenta#ventas </td></tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td> 6666</td> <td> 0</td> <td colspan='2'> a[banco-estado] </td> </tr>
 <tr style='background-color: gold'>  <td> </td> <td>0 </td> <td> 6666</td> <td> </td> <td> r[ingresos-brutos] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 6666 </td> <td style='background-color: blanchedalmond'> 6666</td> </tr>
@@ -3513,8 +3729,8 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <table id='Partida-195'>
 <thead> <th style='background-color: lavender' colspan='6'>Partida 195</th></thead>
 <tbody>
-<tr> <td>6666 </td> <td colspan='7'> ventas-con-factura-exenta#ventas </td></tr>
 <tr> <td>6666 </td> <td colspan='7'> ventas#ingresos-brutos </td></tr>
+<tr> <td>6666 </td> <td colspan='7'> ventas-con-factura-exenta#ventas </td></tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td> 6666</td> <td> 0</td> <td colspan='2'> a[banco-estado] </td> </tr>
 <tr style='background-color: gold'>  <td> </td> <td>0 </td> <td> 6666</td> <td> </td> <td> r[ingresos-brutos] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 6666 </td> <td style='background-color: blanchedalmond'> 6666</td> </tr>
@@ -3539,8 +3755,8 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <table id='Partida-196'>
 <thead> <th style='background-color: lavender' colspan='6'>Partida 196</th></thead>
 <tbody>
-<tr> <td>93137 </td> <td colspan='7'> ventas-con-factura-afecta#ventas </td></tr>
 <tr> <td>93137 </td> <td colspan='7'> ventas#ingresos-brutos </td></tr>
+<tr> <td>93137 </td> <td colspan='7'> ventas-con-factura-afecta#ventas </td></tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td> 110833</td> <td> 0</td> <td colspan='2'> a[banco-estado] </td> </tr>
 <tr style='background-color: azure'>  <td> </td> <td> 0 </td> <td> 17696 </td> <td> </td><td> p[iva-debito] </td> </tr>
 <tr style='background-color: gold'>  <td> </td> <td>0 </td> <td> 93137</td> <td> </td> <td> r[ingresos-brutos] </td> </tr>
@@ -3566,8 +3782,8 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <table id='Partida-197'>
 <thead> <th style='background-color: lavender' colspan='6'>Partida 197</th></thead>
 <tbody>
-<tr> <td>93137 </td> <td colspan='7'> ventas-con-factura-afecta#ventas </td></tr>
 <tr> <td>93137 </td> <td colspan='7'> ventas#ingresos-brutos </td></tr>
+<tr> <td>93137 </td> <td colspan='7'> ventas-con-factura-afecta#ventas </td></tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td> 110833</td> <td> 0</td> <td colspan='2'> a[banco-estado] </td> </tr>
 <tr style='background-color: azure'>  <td> </td> <td> 0 </td> <td> 17696 </td> <td> </td><td> p[iva-debito] </td> </tr>
 <tr style='background-color: gold'>  <td> </td> <td>0 </td> <td> 93137</td> <td> </td> <td> r[ingresos-brutos] </td> </tr>
@@ -3593,10 +3809,10 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <table id='Partida-198'>
 <thead> <th style='background-color: lavender' colspan='6'>Partida 198</th></thead>
 <tbody>
-<tr> <td>30000 </td> <td colspan='7'> ventas-con-factura-exenta#ventas </td></tr>
 <tr> <td>30000 </td> <td colspan='7'> ventas#ingresos-brutos </td></tr>
-<tr style='background-color: lightyellow'>  <td> </td> <td> 10000</td> <td> 0</td> <td colspan='2'> a[caja] </td> </tr>
+<tr> <td>30000 </td> <td colspan='7'> ventas-con-factura-exenta#ventas </td></tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td> 20000</td> <td> 0</td> <td colspan='2'> a[cuentas-por-cobrar] </td> </tr>
+<tr style='background-color: lightyellow'>  <td> </td> <td> 10000</td> <td> 0</td> <td colspan='2'> a[caja] </td> </tr>
 <tr style='background-color: gold'>  <td> </td> <td>0 </td> <td> 30000</td> <td> </td> <td> r[ingresos-brutos] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 30000 </td> <td style='background-color: blanchedalmond'> 30000</td> </tr>
 <tr><td colspan='4'> alectrico® SpA</td> </tr> 
@@ -3620,8 +3836,8 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <thead> <th style='background-color: lavender' colspan='6'>Partida 199</th></thead>
 <tbody>
 <tr> <td>6926 </td> <td colspan='7'> entel#gastos-administrativos </td></tr>
-<tr style='background-color: lightyellow'>  <td> </td> <td> 0</td> <td> 8242</td> <td colspan='2'> a[caja] </td> </tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td> 1316</td> <td> 0</td> <td colspan='2'> a[iva-credito] </td> </tr>
+<tr style='background-color: lightyellow'>  <td> </td> <td> 0</td> <td> 8242</td> <td colspan='2'> a[caja] </td> </tr>
 <tr style='color: white; background-color: black'>  <td> </td> <td>6926 </td> <td> 0</td> <td> </td> <td> r[gastos-administrativos] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 8242 </td> <td style='background-color: blanchedalmond'> 8242</td> </tr>
 <tr><td colspan='4'> alectrico® SpA</td> </tr> 
@@ -3646,8 +3862,8 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <thead> <th style='background-color: lavender' colspan='6'>Partida 200</th></thead>
 <tbody>
 <tr> <td>6926 </td> <td colspan='7'> entel#gastos-administrativos </td></tr>
-<tr style='background-color: lightyellow'>  <td> </td> <td> 0</td> <td> 8242</td> <td colspan='2'> a[caja] </td> </tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td> 1316</td> <td> 0</td> <td colspan='2'> a[iva-credito] </td> </tr>
+<tr style='background-color: lightyellow'>  <td> </td> <td> 0</td> <td> 8242</td> <td colspan='2'> a[caja] </td> </tr>
 <tr style='color: white; background-color: black'>  <td> </td> <td>6926 </td> <td> 0</td> <td> </td> <td> r[gastos-administrativos] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 8242 </td> <td style='background-color: blanchedalmond'> 8242</td> </tr>
 <tr><td colspan='4'> alectrico® SpA</td> </tr> 
@@ -3672,8 +3888,8 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <thead> <th style='background-color: lavender' colspan='6'>Partida 201</th></thead>
 <tbody>
 <tr> <td>6926 </td> <td colspan='7'> entel#gastos-administrativos </td></tr>
-<tr style='background-color: lightyellow'>  <td> </td> <td> 8242</td> <td> 0</td> <td colspan='2'> a[caja] </td> </tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td> 0</td> <td> 1316</td> <td colspan='2'> a[iva-credito] </td> </tr>
+<tr style='background-color: lightyellow'>  <td> </td> <td> 8242</td> <td> 0</td> <td colspan='2'> a[caja] </td> </tr>
 <tr style='background-color: gold'>  <td> </td> <td>0 </td> <td> 6926</td> <td> </td> <td> r[gastos-administrativos] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 8242 </td> <td style='background-color: blanchedalmond'> 8242</td> </tr>
 <tr><td colspan='4'> alectrico® SpA</td> </tr> 
@@ -3686,9 +3902,11 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 </table>
 <p style='page-break-before: always;'>&nbsp;</p>
 <br> 
-<p style='color: white; background-color: red'>  </p>
+<p style='color: white; background-color: red'> Temporlamente rechazado</p>
 <br> 
+- [x] partida rechazada en SII 
 - [x] tipo de asiento: activacion-intangible
+- [x] a corregir: Temporlamente rechazado
 - [ ] rcv
 - [ ] libro-diario
 - [ ] ccm
@@ -3697,10 +3915,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <table id='Partida-202'>
 <thead> <th style='background-color: lavender' colspan='6'>Partida 202</th></thead>
 <tbody>
-<tr><td>120000000</td> <td colspan='7'>plataforma-alectrico#intangibles</td> </tr>
-<tr style='background-color: lightyellow'>  <td> </td> <td> 120000000</td> <td> 0</td> <td colspan='2'> a[intangibles] </td> </tr>
- <tr style='color: white; background-color: cornflowerblue' > <td> </td> <td> 0 </td> <td>  120000000 </td> <td> </td> <td> k[aumentos-de-capital-aportes]</td> </tr>
-<tr> <td> </td> <td style='background-color: blanchedalmond'> 120000000 </td> <td style='background-color: blanchedalmond'> 120000000</td> </tr>
+<tr> <td> </td> <td style='background-color: blanchedalmond'> 0 </td> <td style='background-color: blanchedalmond'> 0</td> </tr>
 <tr><td colspan='4'> alectrico® SpA</td> </tr> 
 <tr><td colspan='4'> ( 31 de diciembre	2021	 ) </td> </tr>
 <tr><td colspan='8'> Partida 202: Por Donación desde accionista Alexander Espinosa de la plataforma alectrico. </td></tr>
@@ -3709,9 +3924,11 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 </table>
 <p style='page-break-before: always;'>&nbsp;</p>
 <br> 
-<p style='color: white; background-color: red'>  </p>
+<p style='color: white; background-color: red'> Temporalmente rechazado</p>
 <br> 
+- [x] partida rechazada en SII 
 - [x] tipo de asiento: activacion-intangible
+- [x] a corregir: Temporalmente rechazado
 - [ ] rcv
 - [ ] libro-diario
 - [ ] ccm
@@ -3720,10 +3937,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <table id='Partida-203'>
 <thead> <th style='background-color: lavender' colspan='6'>Partida 203</th></thead>
 <tbody>
-<tr><td>900000</td> <td colspan='7'>licencia-contaible#intangibles</td> </tr>
-<tr style='background-color: lightyellow'>  <td> </td> <td> 0</td> <td> 900000</td> <td colspan='2'> a[banco-estado] </td> </tr>
-<tr style='background-color: lightyellow'>  <td> </td> <td> 900000</td> <td> 0</td> <td colspan='2'> a[intangibles] </td> </tr>
-<tr> <td> </td> <td style='background-color: blanchedalmond'> 900000 </td> <td style='background-color: blanchedalmond'> 900000</td> </tr>
+<tr> <td> </td> <td style='background-color: blanchedalmond'> 0 </td> <td style='background-color: blanchedalmond'> 0</td> </tr>
 <tr><td colspan='4'> alectrico® SpA</td> </tr> 
 <tr><td colspan='4'> ( 31 de diciembre	2021	 ) </td> </tr>
 <tr><td colspan='8'> Partida 203: Por Compra de una Licencia de Contaible® </td></tr>
@@ -3780,77 +3994,24 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'>  </p>
 <br> 
+- [x] tipo de asiento: ajuste-mensual
 - [ ] rcv
 - [ ] libro-diario
 - [ ] ccm
 - [x] revisado
 ![](../revisado.png)
-<table id='Partida-2001'>
-<thead> <th style='background-color: lavender' colspan='6'>Partida 2001</th></thead>
+<table id='Partida-206'>
+<thead> <th style='background-color: lavender' colspan='6'>Partida 206</th></thead>
 <tbody>
-<tr><td>237369</td> <td colspan='7'>marca-alectrico#intangibles</td> </tr>
-<tr style='background-color: lightyellow'>  <td> </td> <td> 20000</td> <td> 0</td> <td colspan='2'> a[cuentas-por-cobrar] </td> </tr>
-<tr style='background-color: lightyellow'>  <td> </td> <td> 0</td> <td> 31420</td> <td colspan='2'> a[amortizacion-acumulada-intangibles] </td> </tr>
-<tr style='background-color: lightyellow'>  <td> </td> <td> 237369</td> <td> 0</td> <td colspan='2'> a[intangibles] </td> </tr>
-<tr style='background-color: lightyellow'>  <td> </td> <td> 0</td> <td> 84036</td> <td colspan='2'> a[depreciacion-acumulada-herramientas] </td> </tr>
-<tr style='background-color: lightyellow'>  <td> </td> <td> 218470</td> <td> 0</td> <td colspan='2'> a[herramientas] </td> </tr>
-<tr style='background-color: lightyellow'>  <td> </td> <td> 0</td> <td> 22607</td> <td colspan='2'> a[iva-credito] </td> </tr>
-<tr style='background-color: lightyellow'>  <td> </td> <td> 2728</td> <td> 0</td> <td colspan='2'> a[ppm] </td> </tr>
-<tr style='background-color: lightyellow'>  <td> </td> <td> 507552</td> <td> 0</td> <td colspan='2'> a[insumos] </td> </tr>
-<tr style='background-color: lightyellow'>  <td> </td> <td> 364311</td> <td> 0</td> <td colspan='2'> a[banco-estado] </td> </tr>
-<tr style='background-color: lightyellow'>  <td> </td> <td> 915864</td> <td> 0</td> <td colspan='2'> a[caja] </td> </tr>
- <tr style='color: white; background-color: cornflowerblue' > <td> </td> <td> 0 </td> <td>  42937 </td> <td> </td> <td> k[utilidad-del-ejercicio-anterior]</td> </tr>
- <tr style='color: white; background-color: cornflowerblue' > <td> </td> <td> 0 </td> <td>  2085294 </td> <td> </td> <td> k[capital-social]</td> </tr>
-<tr> <td> </td> <td style='background-color: blanchedalmond'> 2266294 </td> <td style='background-color: blanchedalmond'> 2266294</td> </tr>
+<tr style='background-color: lightyellow'>  <td> </td> <td> 4552</td> <td> 0</td> <td colspan='2'> a[iva-credito] </td> </tr>
+<tr style='background-color: lightyellow'>  <td> </td> <td> 287</td> <td> 0</td> <td colspan='2'> a[ppm] </td> </tr>
+<tr style='background-color: lightyellow'>  <td> </td> <td> 0</td> <td> 287</td> <td colspan='2'> a[banco-estado] </td> </tr>
+<tr style='background-color: azure'>  <td> </td> <td> 0 </td> <td> 4552 </td> <td> </td><td> p[iva-debito] </td> </tr>
+<tr> <td> </td> <td style='background-color: blanchedalmond'> 4839 </td> <td style='background-color: blanchedalmond'> 4839</td> </tr>
 <tr><td colspan='4'> alectrico® SpA</td> </tr> 
-<tr><td colspan='4'> ( 1 de enero	2022	 ) </td> </tr>
-<tr><td colspan='8'> Partida 2001: Por Inicio de Operaciones en 2022 </td></tr>
-<tr><td colspan = '8'> ajuste</td> </tr>
-</tbody>
-</table>
-<p style='page-break-before: always;'>&nbsp;</p>
-<br> 
-<p style='color: white; background-color: red'>  </p>
-<br> 
-- [ ] rcv
-- [ ] libro-diario
-- [ ] ccm
-- [x] revisado
-![](../revisado.png)
-<table id='Partida-2007'>
-<thead> <th style='background-color: lavender' colspan='6'>Partida 2007</th></thead>
-<tbody>
-<tr> <td>1092417 </td> <td colspan='7'> amortizacion-intangibles#amortizacion </td></tr>
-<tr style='background-color: lightyellow'>  <td> </td> <td> 0</td> <td> 1092417</td> <td colspan='2'> a[amortizacion-acumulada-intangibles] </td> </tr>
-<tr style='background-color: lightyellow'>  <td> </td> <td> 0</td> <td> 9804</td> <td colspan='2'> a[depreciacion-acumulada-herramientas] </td> </tr>
-<tr style='color: white; background-color: black'>  <td> </td> <td>9804 </td> <td> 0</td> <td> </td> <td> r[depreciacion] </td> </tr>
-<tr style='color: white; background-color: black'>  <td> </td> <td>1092417 </td> <td> 0</td> <td> </td> <td> r[amortizacion] </td> </tr>
-<tr> <td> </td> <td style='background-color: blanchedalmond'> 1102221 </td> <td style='background-color: blanchedalmond'> 1102221</td> </tr>
-<tr><td colspan='4'> alectrico® SpA</td> </tr> 
-<tr><td colspan='4'> ( 31 de enero	2022	 ) </td> </tr>
-<tr><td colspan='8'> Partida 2007: Por amortizacion en enero de licencia-contaible-Por amortizacion en enero de plataforma-alectrico-Por amortizacion en enero de marca-alectrico-Por depreciacion en enero de celular-Por depreciacion en enero de taladro </td></tr>
-<tr><td colspan = '8'> amortizacion</td> </tr>
-</tbody>
-</table>
-<p style='page-break-before: always;'>&nbsp;</p>
-<br> 
-<p style='color: white; background-color: red'>  </p>
-<br> 
-- [ ] rcv
-- [ ] libro-diario
-- [ ] ccm
-- [x] revisado
-![](../revisado.png)
-<table id='Partida-2008'>
-<thead> <th style='background-color: lavender' colspan='6'>Partida 2008</th></thead>
-<tbody>
-<tr style='background-color: lightyellow'>  <td> </td> <td> 0</td> <td> 23464</td> <td colspan='2'> a[iva-credito] </td> </tr>
-<tr style='background-color: azure'>  <td> </td> <td> 23464 </td> <td> 0 </td> <td> </td><td> p[iva-debito] </td> </tr>
-<tr> <td> </td> <td style='background-color: blanchedalmond'> 23464 </td> <td style='background-color: blanchedalmond'> 23464</td> </tr>
-<tr><td colspan='4'> alectrico® SpA</td> </tr> 
-<tr><td colspan='4'> ( 31 de enero	2022	 ) </td> </tr>
-<tr><td colspan='8'> Partida 2008: Por ajuste del Debito Fiscal Contra el Credito Fiscal, mes de enero </td></tr>
-<tr><td colspan = '8'> ajustar-iva-contra-credito</td> </tr>
+<tr><td colspan='4'> ( 31 de diciembre	2021	 ) </td> </tr>
+<tr><td colspan='8'> Partida 206: Por ajuste del Credito Fiscal Contra el Debito Fiscal, mes de diciembre-Por pago del ppm, con factor de  0.00125 mes diciembre </td></tr>
+<tr><td colspan = '8'> ajustar-iva-contra-debito</td> </tr>
 </tbody>
 </table>
 <p style='page-break-before: always;'>&nbsp;</p>
@@ -3870,6 +4031,11 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <tbody>
  <tr> <td> </td> <td> 111 </td> <td>  5588 </td> <td> DEBITOS BOLETAS EMITIDAS  </td> </tr>
  <tr> <td> </td> <td> 538 </td> <td>  23464 </td> <td> TOTAL DEBITOS  </td> </tr>
+ <tr> <td> </td> <td> 511 </td> <td>  41503 </td> <td> CRED.IVA POR DCTOS. ELECTRONICOS  </td> </tr>
+ <tr> <td> </td> <td> 077 </td> <td>  28981 </td> <td> REMANENTE DE CREDITO FISC.  </td> </tr>
+ <tr> <td> </td> <td> 504 </td> <td>  10942 </td> <td> REMANENTE CREDITO FISCAL MES ANTERIOR.  </td> </tr>
+ <tr> <td> </td> <td> 077 </td> <td>  0 </td> <td> REMANENTE DE CREDITO FISC.  </td> </tr>
+ <tr> <td> </td> <td> 504 </td> <td>  0 </td> <td> REMANENTE CREDITO FISCAL MES ANTERIOR.  </td> </tr>
  <tr> <td> </td> <td> 524 </td> <td>  1 </td> <td> TOTAL FACTURA ACTIVO FIJO </td> </tr>
  <tr> <td> </td> <td> 525 </td> <td>  28738 </td> <td> CRÉD. RECUP. Y REINT. FACT. ACTIVO FIJO </td> </tr>
  <tr> <td> </td> <td> 110 </td> <td>  1 </td> <td> CANT.DE DCTOS.BOLETAS </td> </tr>
@@ -3883,10 +4049,9 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
  <tr> <td> </td> <td> 062 </td> <td>  96 </td> <td> PPM NETO DETERMINADO </td> </tr>
  <tr> <td> </td> <td> 115 </td> <td>  0.13 </td> <td> TASA PPM 1ra Categoria </td> </tr>
  <tr> <td> </td> <td> 563 </td> <td>  73942 </td> <td> BASE IMPONIBLE </td> </tr>
- <tr> <td> </td> <td> 511 </td> <td>  41503 </td> <td> CRED.IVA POR DCTOS. ELECTRONICOS  </td> </tr>
 </tbody></table><table>
 <tbody>
-<tr> <td> </td> <td> -29052 </td> <td> 0</td> </tr>
+<tr> <td> </td> <td> 12451 </td> <td> 0</td> </tr>
 <tr><td colspan='4'> alectrico® SpA</td> </tr> 
 <tr><td colspan='4'> ( 31 de enero	2021	 ) </td> </tr>
 <tr><td colspan='8'> Partida 1040: Formulario F29 enero </td></tr>
@@ -3910,6 +4075,9 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
  <thead> <th> </th> <th> Código </th> <th>  Valor </th> <th> Descripción </th> </thead>
 <tbody>
  <tr> <td> </td> <td> 111 </td> <td>  16 </td> <td> DEBITOS BOLETAS EMITIDAS  </td> </tr>
+ <tr> <td> </td> <td> 511 </td> <td>  6344 </td> <td> CRED.IVA POR DCTOS. ELECTRONICOS  </td> </tr>
+ <tr> <td> </td> <td> 077 </td> <td>  35872 </td> <td> REMANENTE DE CREDITO FISC.  </td> </tr>
+ <tr> <td> </td> <td> 504 </td> <td>  29246 </td> <td> REMANENTE CREDITO FISCAL MES ANTERIOR.  </td> </tr>
  <tr> <td> </td> <td> 513 </td> <td>  5588 </td> <td> DEBITO DE NOTAS DEBITO EMITIDAS DEL GIRO </td> </tr>
  <tr> <td> </td> <td> 586 </td> <td>  1 </td> <td> Qty Ventas/Servicios Exentos </td> </tr>
  <tr> <td> </td> <td> 142 </td> <td>  4505 </td> <td> Neto Ventas/Servicios Exentos </td> </tr>
@@ -3922,10 +4090,9 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
  <tr> <td> </td> <td> 062 </td> <td>  6 </td> <td> PPM NETO DETERMINADO </td> </tr>
  <tr> <td> </td> <td> 115 </td> <td>  0.13 </td> <td> TASA PPM 1ra Categoria </td> </tr>
  <tr> <td> </td> <td> 563 </td> <td>  4589 </td> <td> BASE IMPONIBLE </td> </tr>
- <tr> <td> </td> <td> 511 </td> <td>  6344 </td> <td> CRED.IVA POR DCTOS. ELECTRONICOS  </td> </tr>
 </tbody></table><table>
 <tbody>
-<tr> <td> </td> <td> -16 </td> <td> 0</td> </tr>
+<tr> <td> </td> <td> 6328 </td> <td> 0</td> </tr>
 <tr><td colspan='4'> alectrico® SpA</td> </tr> 
 <tr><td colspan='4'> ( 31 de febrero	2021	 ) </td> </tr>
 <tr><td colspan='8'> Partida 1041: Formulario F29 febrero </td></tr>
@@ -3948,6 +4115,9 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
  <thead> <th> </th> <th> Código </th> <th>  Valor </th> <th> Descripción </th> </thead>
 <tbody>
  <tr> <td> </td> <td> 538 </td> <td>  5588 </td> <td> TOTAL DEBITOS  </td> </tr>
+ <tr> <td> </td> <td> 511 </td> <td>  6217 </td> <td> CRED.IVA POR DCTOS. ELECTRONICOS  </td> </tr>
+ <tr> <td> </td> <td> 077 </td> <td>  36871 </td> <td> REMANENTE DE CREDITO FISC.  </td> </tr>
+ <tr> <td> </td> <td> 504 </td> <td>  35908 </td> <td> REMANENTE CREDITO FISCAL MES ANTERIOR.  </td> </tr>
  <tr> <td> </td> <td> 758 </td> <td>  1 </td> <td> CANT. RECIBO DE PAGO MEDIOS ELECTRÓNICOS </td> </tr>
  <tr> <td> </td> <td> 759 </td> <td>  5588 </td> <td> DÉB. RECIBO DE PAGO MEDIOS ELECTRÓNICOS </td> </tr>
  <tr> <td> </td> <td> 062 </td> <td>  38 </td> <td> PPM NETO DETERMINADO </td> </tr>
@@ -3955,10 +4125,9 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
  <tr> <td> </td> <td> 563 </td> <td>  29412 </td> <td> BASE IMPONIBLE </td> </tr>
  <tr> <td> </td> <td> 520 </td> <td>  1351 </td> <td> CREDITOS REC. REINT/FACT. DEL GIRO  </td> </tr>
  <tr> <td> </td> <td> 519 </td> <td>  2 </td> <td> CANT.DE DCTOS.FACT.RECIB.DEL GIRO </td> </tr>
- <tr> <td> </td> <td> 511 </td> <td>  6217 </td> <td> CRED.IVA POR DCTOS. ELECTRONICOS  </td> </tr>
 </tbody></table><table>
 <tbody>
-<tr> <td> </td> <td> -5588 </td> <td> 0</td> </tr>
+<tr> <td> </td> <td> 629 </td> <td> 0</td> </tr>
 <tr><td colspan='4'> alectrico® SpA</td> </tr> 
 <tr><td colspan='4'> ( 31 de marzo	2021	 ) </td> </tr>
 <tr><td colspan='8'> Partida 1042: Formulario F29 marzo </td></tr>
@@ -3981,6 +4150,9 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
  <thead> <th> </th> <th> Código </th> <th>  Valor </th> <th> Descripción </th> </thead>
 <tbody>
  <tr> <td> </td> <td> 538 </td> <td>  4790 </td> <td> TOTAL DEBITOS  </td> </tr>
+ <tr> <td> </td> <td> 511 </td> <td>  1822 </td> <td> CRED.IVA POR DCTOS. ELECTRONICOS  </td> </tr>
+ <tr> <td> </td> <td> 077 </td> <td>  34049 </td> <td> REMANENTE DE CREDITO FISC.  </td> </tr>
+ <tr> <td> </td> <td> 504 </td> <td>  36777 </td> <td> REMANENTE CREDITO FISCAL MES ANTERIOR.  </td> </tr>
  <tr> <td> </td> <td> 758 </td> <td>  1 </td> <td> CANT. RECIBO DE PAGO MEDIOS ELECTRÓNICOS </td> </tr>
  <tr> <td> </td> <td> 759 </td> <td>  4790 </td> <td> DÉB. RECIBO DE PAGO MEDIOS ELECTRÓNICOS </td> </tr>
  <tr> <td> </td> <td> 527 </td> <td>  1 </td> <td> CANT.NOTAS DE CREDITO RECIBIDAS </td> </tr>
@@ -3990,10 +4162,9 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
  <tr> <td> </td> <td> 115 </td> <td>  0.125 </td> <td> TASA PPM 1ra Categoria </td> </tr>
  <tr> <td> </td> <td> 563 </td> <td>  25312 </td> <td> BASE IMPONIBLE </td> </tr>
  <tr> <td> </td> <td> 528 </td> <td>  -1416 </td> <td> CREDITO RECUP.Y REINT/NOTAS DE CRED. </td> </tr>
- <tr> <td> </td> <td> 511 </td> <td>  1822 </td> <td> CRED.IVA POR DCTOS. ELECTRONICOS  </td> </tr>
 </tbody></table><table>
 <tbody>
-<tr> <td> </td> <td> -4790 </td> <td> 0</td> </tr>
+<tr> <td> </td> <td> -2968 </td> <td> 0</td> </tr>
 <tr><td colspan='4'> alectrico® SpA</td> </tr> 
 <tr><td colspan='4'> ( 31 de abril	2021	 ) </td> </tr>
 <tr><td colspan='8'> Partida 1043: Formulario F29 abril </td></tr>
@@ -4015,6 +4186,9 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <thead><th colspan='6'>Partida 1044</th></thead>
  <thead> <th> </th> <th> Código </th> <th>  Valor </th> <th> Descripción </th> </thead>
 <tbody>
+ <tr> <td> </td> <td> 511 </td> <td>  5313 </td> <td> CRED.IVA POR DCTOS. ELECTRONICOS  </td> </tr>
+ <tr> <td> </td> <td> 077 </td> <td>  41130 </td> <td> REMANENTE DE CREDITO FISC.  </td> </tr>
+ <tr> <td> </td> <td> 504 </td> <td>  34063 </td> <td> REMANENTE CREDITO FISCAL MES ANTERIOR.  </td> </tr>
  <tr> <td> </td> <td> 527 </td> <td>  1 </td> <td> CANT.NOTAS DE CREDITO RECIBIDAS </td> </tr>
  <tr> <td> </td> <td> 062 </td> <td>  0 </td> <td> PPM NETO DETERMINADO </td> </tr>
  <tr> <td> </td> <td> 115 </td> <td>  0.13 </td> <td> TASA PPM 1ra Categoria </td> </tr>
@@ -4022,11 +4196,10 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
  <tr> <td> </td> <td> 519 </td> <td>  3 </td> <td> CANT.DE DCTOS.FACT.RECIB.DEL GIRO </td> </tr>
  <tr> <td> </td> <td> 520 </td> <td>  5356 </td> <td> CREDITOS REC. REINT/FACT. DEL GIRO  </td> </tr>
  <tr> <td> </td> <td> 39 </td> <td>  -1500 </td> <td> IVA RETENIDO A TERCEROS POR CAMBIO DE SUJETO  </td> </tr>
- <tr> <td> </td> <td> 511 </td> <td>  5313 </td> <td> CRED.IVA POR DCTOS. ELECTRONICOS  </td> </tr>
  <tr> <td> </td> <td> 528 </td> <td>  -6813 </td> <td> CREDITO RECUP.Y REINT/NOTAS DE CRED. </td> </tr>
 </tbody></table><table>
 <tbody>
-<tr> <td> </td> <td> 0 </td> <td> 0</td> </tr>
+<tr> <td> </td> <td> 5313 </td> <td> 0</td> </tr>
 <tr><td colspan='4'> alectrico® SpA</td> </tr> 
 <tr><td colspan='4'> ( 31 de mayo	2021	 ) </td> </tr>
 <tr><td colspan='8'> Partida 1044: Formulario F29 mayo </td></tr>
@@ -4048,13 +4221,15 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <thead><th colspan='6'>Partida 1045</th></thead>
  <thead> <th> </th> <th> Código </th> <th>  Valor </th> <th> Descripción </th> </thead>
 <tbody>
+ <tr> <td> </td> <td> 511 </td> <td>  7966 </td> <td> CRED.IVA POR DCTOS. ELECTRONICOS  </td> </tr>
+ <tr> <td> </td> <td> 077 </td> <td>  49400 </td> <td> REMANENTE DE CREDITO FISC.  </td> </tr>
+ <tr> <td> </td> <td> 504 </td> <td>  41155 </td> <td> REMANENTE CREDITO FISCAL MES ANTERIOR.  </td> </tr>
  <tr> <td> </td> <td> 519 </td> <td>  3 </td> <td> CANT.DE DCTOS.FACT.RECIB.DEL GIRO </td> </tr>
  <tr> <td> </td> <td> 520 </td> <td>  7966 </td> <td> CREDITOS REC. REINT/FACT. DEL GIRO  </td> </tr>
- <tr> <td> </td> <td> 511 </td> <td>  7966 </td> <td> CRED.IVA POR DCTOS. ELECTRONICOS  </td> </tr>
  <tr> <td> </td> <td> 39 </td> <td>  0 </td> <td> IVA RETENIDO A TERCEROS POR CAMBIO DE SUJETO  </td> </tr>
 </tbody></table><table>
 <tbody>
-<tr> <td> </td> <td> 0 </td> <td> 0</td> </tr>
+<tr> <td> </td> <td> 7966 </td> <td> 0</td> </tr>
 <tr><td colspan='4'> alectrico® SpA</td> </tr> 
 <tr><td colspan='4'> ( 31 de junio	2021	 ) </td> </tr>
 <tr><td colspan='8'> Partida 1045: Formulario F29 junio </td></tr>
@@ -4078,6 +4253,9 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <tbody>
  <tr> <td> </td> <td> 111 </td> <td>  6650 </td> <td> DEBITOS BOLETAS EMITIDAS  </td> </tr>
  <tr> <td> </td> <td> 538 </td> <td>  28873 </td> <td> TOTAL DEBITOS  </td> </tr>
+ <tr> <td> </td> <td> 511 </td> <td>  21718 </td> <td> CRED.IVA POR DCTOS. ELECTRONICOS  </td> </tr>
+ <tr> <td> </td> <td> 077 </td> <td>  53575 </td> <td> REMANENTE DE CREDITO FISC.  </td> </tr>
+ <tr> <td> </td> <td> 504 </td> <td>  49341 </td> <td> REMANENTE CREDITO FISCAL MES ANTERIOR.  </td> </tr>
  <tr> <td> </td> <td> 524 </td> <td>  1 </td> <td> TOTAL FACTURA ACTIVO FIJO </td> </tr>
  <tr> <td> </td> <td> 525 </td> <td>  12772 </td> <td> CRÉD. RECUP. Y REINT. FACT. ACTIVO FIJO </td> </tr>
  <tr> <td> </td> <td> 509 </td> <td>  1 </td> <td> QtyNOTAS CREDITO EMITIDAS/Ref FACTURA | NOTA-CREDITO-RECIBIDA-RETENCION-PARCIAL-CAMBIO-SUEJETO </td> </tr>
@@ -4096,10 +4274,9 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
  <tr> <td> </td> <td> 062 </td> <td>  204 </td> <td> PPM NETO DETERMINADO </td> </tr>
  <tr> <td> </td> <td> 115 </td> <td>  0.125 </td> <td> TASA PPM 1ra Categoria </td> </tr>
  <tr> <td> </td> <td> 563 </td> <td>  163177 </td> <td> BASE IMPONIBLE </td> </tr>
- <tr> <td> </td> <td> 511 </td> <td>  21718 </td> <td> CRED.IVA POR DCTOS. ELECTRONICOS  </td> </tr>
 </tbody></table><table>
 <tbody>
-<tr> <td> </td> <td> -35523 </td> <td> 0</td> </tr>
+<tr> <td> </td> <td> -13805 </td> <td> 0</td> </tr>
 <tr><td colspan='4'> alectrico® SpA</td> </tr> 
 <tr><td colspan='4'> ( 31 de julio	2021	 ) </td> </tr>
 <tr><td colspan='8'> Partida 1046: Formulario F29 julio </td></tr>
@@ -4121,6 +4298,9 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <thead><th colspan='6'>Partida 1047</th></thead>
  <thead> <th> </th> <th> Código </th> <th>  Valor </th> <th> Descripción </th> </thead>
 <tbody>
+ <tr> <td> </td> <td> 511 </td> <td>  55003 </td> <td> CRED.IVA POR DCTOS. ELECTRONICOS  </td> </tr>
+ <tr> <td> </td> <td> 077 </td> <td>  59339 </td> <td> REMANENTE DE CREDITO FISC.  </td> </tr>
+ <tr> <td> </td> <td> 504 </td> <td>  53842 </td> <td> REMANENTE CREDITO FISCAL MES ANTERIOR.  </td> </tr>
  <tr> <td> </td> <td> 758 </td> <td>  0 </td> <td> CANT. RECIBO DE PAGO MEDIOS ELECTRÓNICOS </td> </tr>
  <tr> <td> </td> <td> 759 </td> <td>  0 </td> <td> DÉB. RECIBO DE PAGO MEDIOS ELECTRÓNICOS </td> </tr>
  <tr> <td> </td> <td> 509 </td> <td>  1 </td> <td> QtyNOTAS CREDITO EMITIDAS/Ref FACTURA | NOTA-CREDITO-RECIBIDA-RETENCION-PARCIAL-CAMBIO-SUEJETO </td> </tr>
@@ -4136,10 +4316,9 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
  <tr> <td> </td> <td> 062 </td> <td>  337 </td> <td> PPM NETO DETERMINADO </td> </tr>
  <tr> <td> </td> <td> 115 </td> <td>  0.125 </td> <td> TASA PPM 1ra Categoria </td> </tr>
  <tr> <td> </td> <td> 563 </td> <td>  269786 </td> <td> BASE IMPONIBLE </td> </tr>
- <tr> <td> </td> <td> 511 </td> <td>  55003 </td> <td> CRED.IVA POR DCTOS. ELECTRONICOS  </td> </tr>
 </tbody></table><table>
 <tbody>
-<tr> <td> </td> <td> 0 </td> <td> 0</td> </tr>
+<tr> <td> </td> <td> 55003 </td> <td> 0</td> </tr>
 <tr><td colspan='4'> alectrico® SpA</td> </tr> 
 <tr><td colspan='4'> ( 31 de agosto	2021	 ) </td> </tr>
 <tr><td colspan='8'> Partida 1047: Formulario F29 agosto </td></tr>
@@ -4161,6 +4340,9 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <thead><th colspan='6'>Partida 1048</th></thead>
  <thead> <th> </th> <th> Código </th> <th>  Valor </th> <th> Descripción </th> </thead>
 <tbody>
+ <tr> <td> </td> <td> 511 </td> <td>  14958 </td> <td> CRED.IVA POR DCTOS. ELECTRONICOS  </td> </tr>
+ <tr> <td> </td> <td> 077 </td> <td>  23603 </td> <td> REMANENTE DE CREDITO FISC.  </td> </tr>
+ <tr> <td> </td> <td> 504 </td> <td>  59553 </td> <td> REMANENTE CREDITO FISCAL MES ANTERIOR.  </td> </tr>
  <tr> <td> </td> <td> 527 </td> <td>  1 </td> <td> CANT.NOTAS DE CREDITO RECIBIDAS </td> </tr>
  <tr> <td> </td> <td> 586 </td> <td>  2 </td> <td> Qty Ventas/Servicios Exentos </td> </tr>
  <tr> <td> </td> <td> 142 </td> <td>  406666 </td> <td> Neto Ventas/Servicios Exentos </td> </tr>
@@ -4168,13 +4350,12 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
  <tr> <td> </td> <td> 502 </td> <td>  53621 </td> <td> DÉB. FACTURAS EMITIDAS </td> </tr>
  <tr> <td> </td> <td> 519 </td> <td>  4 </td> <td> CANT.DE DCTOS.FACT.RECIB.DEL GIRO </td> </tr>
  <tr> <td> </td> <td> 520 </td> <td>  4594 </td> <td> CREDITOS REC. REINT/FACT. DEL GIRO  </td> </tr>
- <tr> <td> </td> <td> 511 </td> <td>  14958 </td> <td> CRED.IVA POR DCTOS. ELECTRONICOS  </td> </tr>
  <tr> <td> </td> <td> 062 </td> <td>  848 </td> <td> PPM NETO DETERMINADO </td> </tr>
  <tr> <td> </td> <td> 115 </td> <td>  0.125 </td> <td> TASA PPM 1ra Categoria </td> </tr>
  <tr> <td> </td> <td> 563 </td> <td>  678291 </td> <td> BASE IMPONIBLE </td> </tr>
 </tbody></table><table>
 <tbody>
-<tr> <td> </td> <td> 0 </td> <td> 0</td> </tr>
+<tr> <td> </td> <td> 14958 </td> <td> 0</td> </tr>
 <tr><td colspan='4'> alectrico® SpA</td> </tr> 
 <tr><td colspan='4'> ( 31 de septiembre	2021	 ) </td> </tr>
 <tr><td colspan='8'> Partida 1048: Formulario F29 septiembre </td></tr>
@@ -4197,13 +4378,13 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
  <thead> <th> </th> <th> Código </th> <th>  Valor </th> <th> Descripción </th> </thead>
 <tbody>
  <tr> <td> </td> <td> 111 </td> <td>  3990 </td> <td> DEBITOS BOLETAS EMITIDAS  </td> </tr>
+ <tr> <td> </td> <td> 511 </td> <td>  2257 </td> <td> CRED.IVA POR DCTOS. ELECTRONICOS  </td> </tr>
  <tr> <td> </td> <td> 519 </td> <td>  1 </td> <td> CANT.DE DCTOS.FACT.RECIB.DEL GIRO </td> </tr>
  <tr> <td> </td> <td> 520 </td> <td>  1316 </td> <td> CREDITOS REC. REINT/FACT. DEL GIRO  </td> </tr>
  <tr> <td> </td> <td> 110 </td> <td>  1 </td> <td> CANT.DE DCTOS.BOLETAS </td> </tr>
  <tr> <td> </td> <td> 503 </td> <td>  1 </td> <td> CANT. FACTURAS EMITIDAS </td> </tr>
  <tr> <td> </td> <td> 502 </td> <td>  17696 </td> <td> DÉB. FACTURAS EMITIDAS </td> </tr>
  <tr> <td> </td> <td> 527 </td> <td>  1 </td> <td> CANT.NOTAS DE CREDITO RECIBIDAS </td> </tr>
- <tr> <td> </td> <td> 511 </td> <td>  2257 </td> <td> CRED.IVA POR DCTOS. ELECTRONICOS  </td> </tr>
  <tr> <td> </td> <td> 586 </td> <td>  2 </td> <td> Qty Ventas/Servicios Exentos </td> </tr>
  <tr> <td> </td> <td> 142 </td> <td>  -393334 </td> <td> Neto Ventas/Servicios Exentos </td> </tr>
  <tr> <td> </td> <td> 062 </td> <td>  -348 </td> <td> PPM NETO DETERMINADO </td> </tr>
@@ -4211,7 +4392,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
  <tr> <td> </td> <td> 563 </td> <td>  -278415 </td> <td> BASE IMPONIBLE </td> </tr>
 </tbody></table><table>
 <tbody>
-<tr> <td> </td> <td> -3990 </td> <td> 0</td> </tr>
+<tr> <td> </td> <td> -1733 </td> <td> 0</td> </tr>
 <tr><td colspan='4'> alectrico® SpA</td> </tr> 
 <tr><td colspan='4'> ( 31 de octubre	2021	 ) </td> </tr>
 <tr><td colspan='8'> Partida 1049: Formulario F29 octubre </td></tr>
@@ -4233,6 +4414,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <thead><th colspan='6'>Partida 1050</th></thead>
  <thead> <th> </th> <th> Código </th> <th>  Valor </th> <th> Descripción </th> </thead>
 <tbody>
+ <tr> <td> </td> <td> 511 </td> <td>  4169 </td> <td> CRED.IVA POR DCTOS. ELECTRONICOS  </td> </tr>
  <tr> <td> </td> <td> 586 </td> <td>  1 </td> <td> Qty Ventas/Servicios Exentos </td> </tr>
  <tr> <td> </td> <td> 142 </td> <td>  6666 </td> <td> Neto Ventas/Servicios Exentos </td> </tr>
  <tr> <td> </td> <td> 062 </td> <td>  8 </td> <td> PPM NETO DETERMINADO </td> </tr>
@@ -4240,10 +4422,9 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
  <tr> <td> </td> <td> 563 </td> <td>  6666 </td> <td> BASE IMPONIBLE </td> </tr>
  <tr> <td> </td> <td> 519 </td> <td>  3 </td> <td> CANT.DE DCTOS.FACT.RECIB.DEL GIRO </td> </tr>
  <tr> <td> </td> <td> 520 </td> <td>  4169 </td> <td> CREDITOS REC. REINT/FACT. DEL GIRO  </td> </tr>
- <tr> <td> </td> <td> 511 </td> <td>  4169 </td> <td> CRED.IVA POR DCTOS. ELECTRONICOS  </td> </tr>
 </tbody></table><table>
 <tbody>
-<tr> <td> </td> <td> 0 </td> <td> 0</td> </tr>
+<tr> <td> </td> <td> 4169 </td> <td> 0</td> </tr>
 <tr><td colspan='4'> alectrico® SpA</td> </tr> 
 <tr><td colspan='4'> ( 31 de noviembre	2021	 ) </td> </tr>
 <tr><td colspan='8'> Partida 1050: Formulario F29 noviembre </td></tr>
@@ -4265,6 +4446,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <thead><th colspan='6'>Partida 1051</th></thead>
  <thead> <th> </th> <th> Código </th> <th>  Valor </th> <th> Descripción </th> </thead>
 <tbody>
+ <tr> <td> </td> <td> 511 </td> <td>  2911 </td> <td> CRED.IVA POR DCTOS. ELECTRONICOS  </td> </tr>
  <tr> <td> </td> <td> 527 </td> <td>  0 </td> <td> CANT.NOTAS DE CREDITO RECIBIDAS </td> </tr>
  <tr> <td> </td> <td> 519 </td> <td>  2 </td> <td> CANT.DE DCTOS.FACT.RECIB.DEL GIRO </td> </tr>
  <tr> <td> </td> <td> 520 </td> <td>  2632 </td> <td> CREDITOS REC. REINT/FACT. DEL GIRO  </td> </tr>
@@ -4273,43 +4455,15 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
  <tr> <td> </td> <td> 528 </td> <td>  -1316 </td> <td> CREDITO RECUP.Y REINT/NOTAS DE CRED. </td> </tr>
  <tr> <td> </td> <td> 586 </td> <td>  3 </td> <td> Qty Ventas/Servicios Exentos </td> </tr>
  <tr> <td> </td> <td> 142 </td> <td>  43332 </td> <td> Neto Ventas/Servicios Exentos </td> </tr>
- <tr> <td> </td> <td> 511 </td> <td>  2911 </td> <td> CRED.IVA POR DCTOS. ELECTRONICOS  </td> </tr>
  <tr> <td> </td> <td> 062 </td> <td>  287 </td> <td> PPM NETO DETERMINADO </td> </tr>
  <tr> <td> </td> <td> 115 </td> <td>  0.125 </td> <td> TASA PPM 1ra Categoria </td> </tr>
  <tr> <td> </td> <td> 563 </td> <td>  229606 </td> <td> BASE IMPONIBLE </td> </tr>
 </tbody></table><table>
 <tbody>
-<tr> <td> </td> <td> 0 </td> <td> 0</td> </tr>
+<tr> <td> </td> <td> 2911 </td> <td> 0</td> </tr>
 <tr><td colspan='4'> alectrico® SpA</td> </tr> 
 <tr><td colspan='4'> ( 31 de diciembre	2021	 ) </td> </tr>
 <tr><td colspan='8'> Partida 1051: Formulario F29 diciembre </td></tr>
-<tr><td colspan = '8'> codigos-f29</td> </tr>
-</tbody>
-</table>
-<p style='page-break-before: always;'>&nbsp;</p>
-<br> 
-<br> 
-<p style='color: white; background-color: red'>  </p>
-- [x] tipo de asiento: f-29
-- [ ] rcv
-- [ ] libro-diario
-- [ ] ccm
-- [x] revisado
-![](../revisado.png)
-<p style='page-break-after: always;'>&nbsp;</p>
-<table style='background-color:cornsilk'>
-<thead><th colspan='6'>Partida 1052</th></thead>
- <thead> <th> </th> <th> Código </th> <th>  Valor </th> <th> Descripción </th> </thead>
-<tbody>
- <tr> <td> </td> <td> 077 </td> <td>  6374 </td> <td> REMANENTE DE CREDITO FISC.  </td> </tr>
- <tr> <td> </td> <td> 504 </td> <td>  10942 </td> <td> REMANENTE CREDITO FISCAL MES ANTERIOR.  </td> </tr>
- <tr> <td> </td> <td> 525 </td> <td>  0 </td> <td> CRÉD. RECUP. Y REINT. FACT. ACTIVO FIJO </td> </tr>
-</tbody></table><table>
-<tbody>
-<tr> <td> </td> <td> 0 </td> <td> 0</td> </tr>
-<tr><td colspan='4'> alectrico® SpA</td> </tr> 
-<tr><td colspan='4'> ( 31 de enero	2022	 ) </td> </tr>
-<tr><td colspan='8'> Partida 1052: Formulario F29 enero </td></tr>
 <tr><td colspan = '8'> codigos-f29</td> </tr>
 </tbody>
 </table>

@@ -158,11 +158,16 @@
 (defrule generar-partida-de-depreciacion-ultima-cuota
   
   (empresa (nombre ?empresa ))
-  
+ 
   (ajustes-mensuales
     (mes ?mes )
     (ano ?ano )
     (partida ?numero))
+
+  (balance (mes ?mes_top) (ano ?ano_top))
+
+  (test (>= (to_serial_date 31 ?mes_top ?ano_top) (to_serial_date 31 ?mes ?ano)))
+
 
   (registro-de-depreciacion
     (metodo-tributario ?tributario)
@@ -206,6 +211,10 @@
     (mes ?mes )
     (ano ?ano )
     (partida ?numero))
+
+  (balance (mes ?mes_top) (ano ?ano_top))
+
+  (test (>= (to_serial_date 31 ?mes_top ?ano_top) (to_serial_date 31 ?mes ?ano)))
 
   (registro-de-depreciacion
     (metodo-tributario ?tributario)
@@ -254,6 +263,11 @@
     ( ano ?ano )
     (partida ?numero))
   
+  (balance (mes ?mes_top) (ano ?ano_top))
+
+  (test (>= (to_serial_date 31 ?mes_top ?ano_top) (to_serial_date 31 ?mes ?ano)))
+
+
   ( registro-de-amortizacion
     ( metodo-tributario ?tributario)
     ( metodo ?metodo)
@@ -297,6 +311,11 @@
     ( mes ?mes )
     ( ano ?ano )
     (partida ?numero))
+
+  (balance (mes ?mes_top) (ano ?ano_top))
+
+  (test (>= (to_serial_date 31 ?mes_top ?ano_top) (to_serial_date 31 ?mes ?ano)))
+
 
   ( registro-de-amortizacion
     ( metodo-tributario ?tributario)

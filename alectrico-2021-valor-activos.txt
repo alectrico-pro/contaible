@@ -24,7 +24,7 @@
 ;En todo caso, cuando se aplique el régimen de depreciación indicado en este artículo, para los efectos de lo dispuesto en la letra A) del artículo 14 de la Ley sobre Impuesto a la Renta, sólo se considerará la depreciación normal que corresponde al total de los años de vida útil del bien. La diferencia que resulte en el ejercicio respectivo entre la depreciación que regula este artículo y la depreciación normal sólo podrá deducirse como gasto para los efectos del impuesto de primera categoría, debiendo anotarse dicha diferencia en el registro DDAN que contempla el artículo 14 de la Ley sobre Impuesto a la Renta.”
 
 
-;Usaré la deprecación en 3 años, porque debo usar la depreciación normal, con lo que el activo seguirá existiendo contablemente por varios períodos, pero para efectos de tribuación, se habrá extinguido convertido en gasto desde el momento de la compra y representado por un valor de 1$ desde ahí en adelante. Debe estar en el registro DDAN, la diferencia entre la depreciación normal y la instantánea.
+;Usaré la deprecación en 3 años, porque debo usar la depreciación normal, con lo que el activo seguirá existiendo contablemente por varios períodos, pero para efectos de tribuación, se habrá extinguido convertido en gasto desde el momento de la compra y representado por un valor de 1$ desde ahí en adelante. Debe estar en el registro DDAN, la diferencia entre la depreciación normal y la instantánea. Pero propyme no lo usa, pues se deprecia instantáneamente.
 ;cuota mensual es de 179990/(3*12) = 4999
 
 
@@ -82,21 +82,22 @@
 
 ;plataforma alectrico no se amortiza, a menos que se venda una licencia
 ;requiere evaluacioń de deterioro
-( registro-de-amortizacion
-  ( metodo-tributario    amortizacion-instantanea-de-intangible)
-  ( metodo               amortizacion-lineal-en-diez-anos)
-  ( nombre-del-activo    plataforma-alectrico)
-  ( cuenta-del-activo    plataforma-alectrico)
-  ( cuenta-acumuladora   amortizacion-acumulada-intangibles)
-  ( cuenta-del-pasivo    amortizacion-intangibles)
-  ( mes-de-adquisicion   enero    )
-  ( ano-de-adquisicion   2022     )
-  ( mes-final            diciembre)
-  ( ano-final            2022     )
-  ( valor-de-adquisicion 120000000)
-  ( meses-de-vida-util   120      )
-  ( amortizacion-mensual 1000000  )  ;aproximar por exceso para que la última cuota sea menor
-)
+;
+;( registro-de-amortizacion
+;  ( metodo-tributario    amortizacion-instantanea-de-intangible)
+;  ( metodo               amortizacion-lineal-en-diez-anos)
+;  ( nombre-del-activo    plataforma-alectrico)
+;  ( cuenta-del-activo    plataforma-alectrico)
+;  ( cuenta-acumuladora   amortizacion-acumulada-intangibles)
+;  ( cuenta-del-pasivo    amortizacion-intangibles)
+;  ( mes-de-adquisicion   enero    )
+;  ( ano-de-adquisicion   2022     )
+;  ( mes-final            diciembre)
+;  ( ano-final            2022     )
+;  ( valor-de-adquisicion 120000000)
+;  ( meses-de-vida-util   120      )
+;  ( amortizacion-mensual 1000000  )  ;aproximar por exceso para que la última cuota sea menor
+;)
 
 ;compra por 1000000 de una licencia contaible
 ;se amoriza en diez años
@@ -122,21 +123,21 @@
 ;la plataforma alectrico es un gasto diferido que no es amortizable y no es un activo intangible, pues no puede estar separado
 
 ;
-( registro-de-amortizacion
-  ( metodo-tributario    amortizacion-instantanea-de-intangible)
-  ( metodo               amortizacion-lineal-en-diez-anos)
-  ( nombre-del-activo    derecho-de-goce-de-inmueble-comercial)
-  ( cuenta-del-activo    oficina)
-  ( cuenta-acumuladora   amortizacion-acumulada-intangibles)
-  ( cuenta-del-pasivo    amortizacion-intangibles)
-  ( mes-de-adquisicion   enero)
-  ( ano-de-adquisicion   2022     )
-  ( mes-final            diciembre)
-  ( ano-final            2022     )
-  ( valor-de-adquisicion 900000)
-  ( meses-de-vida-util   10      )
-  ( amortizacion-mensual 90000  )  ;aproximar por exceso para que la última cuota sea menor
-)
+;( registro-de-amortizacion
+;  ( metodo-tributario    amortizacion-instantanea-de-intangible)
+;  ( metodo               amortizacion-lineal-en-diez-anos)
+;  ( nombre-del-activo    derecho-de-goce-de-inmueble-comercial)
+;  ( cuenta-del-activo    oficina)
+;  ( cuenta-acumuladora   amortizacion-acumulada-intangibles)
+;  ( cuenta-del-pasivo    amortizacion-intangibles)
+;  ( mes-de-adquisicion   enero)
+;  ( ano-de-adquisicion   2022     )
+;  ( mes-final            diciembre)
+;  ( ano-final            2022     )
+;  ( valor-de-adquisicion 900000)
+;  ( meses-de-vida-util   10      )
+;  ( amortizacion-mensual 90000  )  ;aproximar por exceso para que la última cuota sea menor
+;)
 
 
 

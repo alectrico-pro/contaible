@@ -98,7 +98,7 @@
 ;y anotarlas con esos hechos
 (defrule anotando-partidas
   (actividad (nombre ?nombre))
-  ?partida <-  (partida (numero ?numero))
+  ?partida <-  (partida (numero ?numero) (hecho nil))
   =>
   (printout t seleccionando tab ?nombre crlf)
   (do-for-all-facts ((?f ?nombre)) (eq ?f:partida ?numero) 

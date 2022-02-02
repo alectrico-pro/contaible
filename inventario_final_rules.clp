@@ -75,6 +75,7 @@
 
 ;------------------------ primitivas ---------------------------
 (defrule cargar-cuenta-existente
+   (no) ;me carga los cargos que en otras partes no se hicieron, por ejemplo cuando los rechazo
    ( declare (salience 9800))
    ( balance (dia ?top) (mes ?mes_top) (ano ?ano_top))
    ( empresa (nombre ?empresa))
@@ -94,6 +95,8 @@
 
 (defrule cargar-cuenta-nueva
    ( declare (salience 980))
+ (no) ;me carga los cargos que en otras partes no se hicieron, por ejemplo cuando los rechazo
+
    ( empresa (nombre ?empresa))
    ( balance (dia ?top) (mes ?mes_top) (ano ?ano_top))
    ( partida (dia ?dia) (mes ?mes) (ano ?ano) (numero ?numero))
@@ -111,6 +114,8 @@
 
 (defrule abonar-cuenta-existente
    ( declare (salience 9800))
+ (no) ;me abona aún cuando correspondan a partidas rechazadas, de acuerdo a indiaciones 
+
    ( empresa (nombre ?empresa))
    ( balance (dia ?top) (mes ?mes_top) (ano ?ano_top))
 
@@ -132,6 +137,9 @@
 
 (defrule abonar-cuenta-nueva
    ( declare (salience 980))
+
+   (no) ;me abona los cargos que en otras partes no se hicieron, por ejemplo cuando los rechazo
+
    ( balance (dia ?top) (mes ?mes_top) (ano ?ano_top))
 
    ( empresa (nombre ?empresa))
