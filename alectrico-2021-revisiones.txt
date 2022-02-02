@@ -391,15 +391,9 @@
 (revision (revisado true) (partida 201) (tipo nota-de-credito))
 
 (revision (revisado true) (partida 202) (tipo activacion-intangible)
-  (a-corregir "Temporlamente rechazado")
-  (rechazado true)
-  (no-incluir true)
 )
 
 (revision (revisado true) (partida 203) (tipo activacion-intangible)
- (a-corregir "Temporalmente rechazado")
- (rechazado true)
- (no-incluir true)
 )
 
 (revision (revisado true) (partida 204) (tipo ajuste-mensual))

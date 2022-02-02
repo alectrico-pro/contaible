@@ -57,7 +57,7 @@ layout: page
 <tr style='font-weight:bold;background-color: azure'><td> <td></td></td><td> </td><td></td><td align='right'>634590</td><td> Utilidad del Ejercicio (módulo liquidación)</td></tr>
 <tr><td> (-) </td><td align='right'>218470</td><td></td><td></td><td></td><td> Depreciación Instantánea Activo Fijo Propyme </td></tr>
 <tr><td> (-) </td><td align='right'>0</td><td></td><td></td><td></td><td> Amortización Instantánea Intangibles </td></tr>
-<tr><td> (?) </td><td align='right'>0</td><td></td><td></td><td></td><td> Aportes </td></tr>
+<tr><td> (?) </td><td align='right'>120000000</td><td></td><td></td><td></td><td> Aportes </td></tr>
 <tr><td> <td></td></td><td> </td><td> (=) </td><td align='right'>416120</td><td> Utilidad Tributaria </td></tr>
 <tr><td></td><td></td><td></td><td> (=) </td><td align='right' style='font-weight:bold; color: white; background-color: crimson'>374508</td><td> BASE IMPONIBLE (módulo liquidaciones) <small>propyme</small></td></tr>
 <tr><td></td><td></td><td></td><td> (-) </td><td align='right' style=' background-color: gold'>187254.0</td><td>    Rebaja Art.14 Letra E <small>propyme</small></td></tr>
