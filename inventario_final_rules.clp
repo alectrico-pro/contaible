@@ -75,8 +75,9 @@
 
 ;------------------------ primitivas ---------------------------
 (defrule cargar-cuenta-existente
-   (no) ;me carga los cargos que en otras partes no se hicieron, por ejemplo cuando los rechazo
+   ;me carga los cargos que en otras partes no se hicieron, por ejemplo cuando los rechazo
    ( declare (salience 9800))
+   (no)
    ( balance (dia ?top) (mes ?mes_top) (ano ?ano_top))
    ( empresa (nombre ?empresa))
    ( partida (dia ?dia) (mes ?mes) (ano ?ano) (numero ?numero))

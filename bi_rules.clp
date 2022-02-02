@@ -72,6 +72,7 @@
 
 
 (defrule hechos-que-no-tienen-regla-registrada
+  (no)
    ( hecho (id ?id) (regla ?regla ) (partida ?numero))
    ( reglas (lista $?lista ))
    ( test (not (member$ ?regla $?lista)))
@@ -86,15 +87,14 @@
    ( test (member$ ?regla $?lista))
   =>
    ( printout t "El hecho " ?id " tiene registrada su regla " ?regla crlf)
-   ( asser
   ; ( printout t "Matches de esa regla son " (get-matches ?regla) crlf)
 )
 
 
 (defrule partidas-sin-anotacion-de-hecho
-  (partida (numero ?numero) (hecho nil))
+  (partida (numero ?numero) (hecho nil) (actividad ?actividad) (descripcion ?descripcion))
  =>
-  (printout t "Partida sin anotación de hecho: " ?numero crlf)
+  (printout t "Partida sin anotación de hecho: " ?numero tab ?actividad tab ?descripcion crlf)
 )
 
 
@@ -159,7 +159,7 @@
 
 (defrule abono-no-realizado
    (partida (numero ?numero) (actividad ?actividad))
-   (abono (realizado false) (?numero) (ano ?ano) )
+   (abono (realizado false) (numero ?numero) (ano ?ano) )
    (balance (ano ?ano))
   =>
    (printout t "x->a Abono no realizado: " tab ?numero tab ?actividad crlf)
