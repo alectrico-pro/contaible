@@ -17,13 +17,18 @@ permalink: /nota/
 
 ## Criterios Contables
 
- **La contabilidad de alectrico sigue los principios NIIF** y se atiene a lo establecido según al régimen PROPYME establecido por el Sevicio de Impuestos Internos.
 
   Adhesión a la NIIF por parte de alectrico®
 
    alectrico® entiende que existe un Marco Conceptual NIIf para la confección de los Estados Financieros según el cual las partidas allí representadas, por sí solas, no pueden ser totalmente conceptualizadas, ni los momentos de reconocimiento de hechos económicos establecidos en el tiempo. 
 
   Algunas reglas NIIF se pueden abreviar como sigue:
+
+**Norma 5ª del Marco Conceptual "CRITERIOS DE REGISTRO Y RECONOCIMIENTO"1. Los activos deben reconocerse en el balance cuando sea probable la obtención a partir de los mismos de beneficios o rendimientos. Por lo tanto por definición esa norma tampoco nos permite ni siquiera contabilizar como activos esos inmuebles, por lo tanto mucho menos amortizarlos.**
+
+**Norma de valoración 22 Cambios de criterios contables, errores, y estimaciones contables: La subsanación de errores relativos a ejercicios anteriores serán de aplicación las mismas reglas que las del párrafo anterior. Párrafo el cual dice que se aplicará de manera retroactiva y su efecto se calculará desde el ejercicio más antiguo para el que se disponga información. El ingreso o gasto correspondiente a ejercicios anteriores motivará el correspondiente ajuste por el efecto acumulado, el cual se reflejará en una partida de reservas.**
+
+**Para ello, para permitirlo ahora la definición del PCIPIO DE NO COMPENSACIÓN dice que salvo que alguna norma establezca lo contrario de forma expresa no podrán compensarse las partidas del activo y del pasivo.**
 
   1 **tal  como  los  ingresos  deben  reconocerse  percibidos  o  devengados,  los  gastos  deben reconocerse pagados o adeudados.**
 
@@ -119,6 +124,18 @@ Ingresos: Corresponden a incrementos en los beneficios económicos producidos du
 
 Gastos: Corresponden a disminuciones en los beneficios económicos, producidos a lo largo del período contable, en la forma de salidas o disminuciones del valor de los  activos,  o  bien  del  nacimiento  o  aumento  de  los  pasivos,  que  dan  como resultado disminuciones en el patrimonio neto y que no están relacionados con las distribuciones realizadas a los propietarios de este patrimonio.
 
+ Pasivo: obligaciones para cuya extinción haya que desprenderse de bienes que vayan a generar beneficios. Es decir, que para extinguirlos haya que desprenderse de activos. SEgún esto, una deuda que tenga pensado cancelar con la plaza de garage no sería un pasivo.
+
+Ingresos: aumentos del patrimonio, bien por aumento de valor de activos bien por disminución de pasivos. Ok, pues según esto, la plusvalía generada por la venta del garage no sería un ingreso, porque el garage nunca ha sido un activo. ¿O se convertiría en activo en el momento de la venta, en que queda demostrado que ha generado beneficios?
+
+
+Imaginemos que una sociedad decide comprar un trozo de la estrella de la punta de la Osa Polar. Como es algo absolutamente inútil, y que nada va a aportar, veo lógico que se contabilice contra una cuenta de reservas, y no en el activo. Es algo así como si la contabilidad dijera: "Señores socios, la sociedad ha comprado una M, y en lo único que va a influir es en que la sociedad tiene menos reservas y menos fondos propios, porque valer no vale nada lo que han comprado".
+
+
+Y si el día de mañana resulta que los trozos de estrella se ponen por las nubes, pues entonces lo pasaríamos al inmovilizado como un activo más.
+
+Por lo tanto, insisto, si no preveo obtener un lucro con ese inmueble porque a las pruebas me remito precisamente doné el usufructo (el RENDIMIENTO) a mi hijo
+
 Principio  de  Negocio  en  Marcha:  Este  principio  contable  establece  que  los estados  financieros  se  preparan  normalmente  bajo  el  supuesto  que  una  entidad está  en  funcionamiento  y  continuará  su  actividad  dentro  del  futuro  previsible.  Supone que la entidad no tiene la intención ni la necesidad de liquidar o disminuir de forma importante su nivel de operaciones. Si tal intención o necesidad existiera, los  estados  financieros  deberían  tener  que  prepararse  sobre  una  base  diferente, en  cuyo  caso  dicha  base  debería  revelarse  (ejemplo:  Entidad  XX  en  Proceso  de Liquidación).  
 
 Principio  de  Devengo: Este  principio  contable  establece  que  los  efectos  de  las transacciones  y  otros  sucesos  y  circunstancias  sobre  los  recursos  económicos  y derechos de los acreedoresde la entidad deben reconocerse en el período en que esos  efectos  tienen  lugar  sobre  la  base  de  contabilidad de  acumulación o devengo, sin importar si los cobros y pagos resultantes se producen en un período diferente.      Esto   es   importante   porque   la   información   sobre   los   recursos económicos y los derechos de los acreedores de la entidad y sus cambios durante el período proporciona una mejor base para evaluar el rendimiento pasado y futuro de la entidad que la información únicamente sobre cobros pagos del período
@@ -165,7 +182,7 @@ Las sumas pagadas por la adquisición del derecho real de usufructo sobre un bie
 # Resumen de Intangibles
 
 |                   |compra de | desarrollo | licencia  | usufructo| usufructo | costo | licencia   |
-| AI                |marca     | plataforma | contaible | inmueble | ccm       | sitio | alectrico ©|
+| AI                |marca     | plataforma | contaible | oficina  | ccm       | sitio | alectrico ©|
 |                   |alectrico | alectrico  | contaible |          |           | web   |            |
 | ---               | ---      | ---        | ---       | ---      | ---       | ---   | ---        | 
 | licenciado        | [ ]      |  [ ]       | [X]       | [ ]      | [ ]       | [x]   | [x]        |
@@ -200,7 +217,17 @@ Después del reconocimiento inicial, los costos de desarrollo se miden al costo 
 amortización acumulada y las pérdidas acumuladas por deterioro.
 
 ### Mis conclusiones
- A) Sobre la plataforma alectrico ® [www.alectrico.cl](https://www.alectrico.cl)
+ A) La oficina es una activo intangible que rinde usufructo. El usufructo está protegida por la autorización de uso emitido por particular. El activo es el derecho a usufructo. Es medible a través del usufructo por diez años que se espera de este activo.
+    a) Pero no tengo derecho a usufricto pues  solo una autorización para domicilio tributario postal.
+    a) Será un activo intangible pues no se tiene la propiedad nuda del inmueble. Supongo que el usufructo no se pueda usar para venerlo por lo que el beneficio no es el ingreso en contraprestacioń sino por rendimiento. Y el rendimiento es el usufructo.
+    b) Requerirá gastos de mantención pues 
+
+      1. Según el Código Civil, el usufructo es un derecho real que le transfiere a alguien la facultad de gozar de una cosa con el compromiso de conservar su forma y substancia, y de restituirla a su dueño, si la cosa no es fungible.
+
+Ahora, el usufructo realizado sobre bienes inmuebles a través de un contrato tiene que ser otorgado por instrumento público inscrito. Esto quiere decir que, para que el usufructo sea válido hay que inscribirlo en el registro de interdicción y gravámenes del Conservador de Bienes Raíces correspondiente.
+
+
+ B) Sobre la plataforma alectrico ® [www.alectrico.cl](https://www.alectrico.cl)
 
  1. La plataforma alectrico ® fue desarrollada por su gerente en forma no remunerada, desde antes de la existencia forma de la empresa alectrico ®. Se puede estimar que su valor de activación corresponda a un valor mínimo equivalente a la remuneración de un programador FrontEnd junior, durante cinco años. Esto es un gasto de  1 millones por 70 meses. Lo cual entrega un valor de 70 millones de pesos.
 

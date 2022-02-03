@@ -16,7 +16,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <tr><td>pérdida</td><td>206576</td><td></td><td>gastos-promocionales</td></tr>
 <tr><td>pérdida</td><td>84036</td><td></td><td>depreciacion</td></tr>
 <tr><td>pérdida</td><td>29004</td><td></td><td>amortizacion</td></tr>
-<tr><td> ganancias </td><td> </td><td>240000000</td><td>aumentos-de-capital-aportes</td></tr>
 <tr><td> ganancias </td><td> </td><td>2085294</td><td>capital-social</td></tr>
 <tr><td> ganancias </td><td> </td><td>1205437</td><td>ingresos-brutos</td></tr>
+<tr><td> ganancias </td><td> </td><td>120000000</td><td>aumentos-de-capital-aportes</td></tr>
 <table><tbody>

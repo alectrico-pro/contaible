@@ -1,3 +1,22 @@
+(deftemplate ajuste-anual-de-resultado-financiero
+  (slot ano)
+  (slot partida)
+)
+
+(deftemplate ajuste-anual-de-resultado-tributario
+  (slot ano)
+  (slot partida)
+)
+
+
+
+(deftemplate ajuste-anual
+   (slot ano)
+   (slot partida)
+   (slot liquidacion)
+   (slot saldo)
+)
+
 (deftemplate reglas
    (multislot lista (type STRING))
 )
@@ -238,6 +257,8 @@
   (slot salud)
   (slot mes-inicio)
   (slot ano-inicio)
+  (slot mes-fin)
+  (slot ano-fin)
   (slot empresa)
   (slot nombre)
   (slot rut)

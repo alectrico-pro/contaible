@@ -394,7 +394,10 @@
 )
 
 (revision (revisado true) (partida 203) (tipo activacion-intangible)
+  (a-corregir "Temporalmene rechazado" )
+  (rechazado true)
 )
+
 
 (revision (revisado true) (partida 204) (tipo activacion-intangible))
 
@@ -403,6 +406,19 @@
 
 (revision (revisado true) (partida 207))
 
+(revision (revisado true) (partida 208))
+
+(revision (revisado true) (partida 209))
+
+(revision (revisado true) (partida 210))
+
+(revision (revisado true) (partida 211))
+
+(revision (revisado true) (partida 212))
+
+(revision (revisado true) (partida 213))
+
+(revision (revisado true) (partida 214))
 
 (revision (revisado true) (partida 01152)  )
 

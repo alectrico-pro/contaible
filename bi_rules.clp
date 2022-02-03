@@ -1,3 +1,6 @@
+;https://www.rbasesoria-madrid.com/que-ocurre-si-el-patrimonio-neto-se-reduce-por-debajo-del-capital-social
+;El problema surge cuando la sociedad acumula pérdidas y el patrimonio neto disminuye por debajo de la cifra de capital social. En este sentido la LSC en su art. 363.1.e) establece que la sociedad de capital deberá disolverse cuando  “Por pérdidas que dejen reducido el patrimonio neto a una cantidad inferior a la mitad del capital social, a no ser que éste se aumente o se reduzca en la medida suficiente, y siempre que no sea procedente solicitar la declaración de concurso“.
+
 ;Bussiness Intelligence 
 ;Este modulo verifica e informa de errores contables
 ;
@@ -159,7 +162,7 @@
 
 (defrule abono-no-realizado
    (partida (numero ?numero) (actividad ?actividad))
-   (abono (realizado false) (numero ?numero) (ano ?ano) )
+   (abono (realizado false) (partida ?numero) (ano ?ano) )
    (balance (ano ?ano))
   =>
    (printout t "x->a Abono no realizado: " tab ?numero tab ?actividad crlf)

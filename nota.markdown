@@ -134,6 +134,7 @@ Imaginemos que una sociedad decide comprar un trozo de la estrella de la punta d
 
 Y si el día de mañana resulta que los trozos de estrella se ponen por las nubes, pues entonces lo pasaríamos al inmovilizado como un activo más.
 
+Por lo tanto, insisto, si no preveo obtener un lucro con ese inmueble porque a las pruebas me remito precisamente doné el usufructo (el RENDIMIENTO) a mi hijo
 
 Principio  de  Negocio  en  Marcha:  Este  principio  contable  establece  que  los estados  financieros  se  preparan  normalmente  bajo  el  supuesto  que  una  entidad está  en  funcionamiento  y  continuará  su  actividad  dentro  del  futuro  previsible.  Supone que la entidad no tiene la intención ni la necesidad de liquidar o disminuir de forma importante su nivel de operaciones. Si tal intención o necesidad existiera, los  estados  financieros  deberían  tener  que  prepararse  sobre  una  base  diferente, en  cuyo  caso  dicha  base  debería  revelarse  (ejemplo:  Entidad  XX  en  Proceso  de Liquidación).  
 
@@ -181,7 +182,7 @@ Las sumas pagadas por la adquisición del derecho real de usufructo sobre un bie
 # Resumen de Intangibles
 
 |                   |compra de | desarrollo | licencia  | usufructo| usufructo | costo | licencia   |
-| AI                |marca     | plataforma | contaible | inmueble | ccm       | sitio | alectrico ©|
+| AI                |marca     | plataforma | contaible | oficina  | ccm       | sitio | alectrico ©|
 |                   |alectrico | alectrico  | contaible |          |           | web   |            |
 | ---               | ---      | ---        | ---       | ---      | ---       | ---   | ---        | 
 | licenciado        | [ ]      |  [ ]       | [X]       | [ ]      | [ ]       | [x]   | [x]        |
@@ -216,7 +217,17 @@ Después del reconocimiento inicial, los costos de desarrollo se miden al costo 
 amortización acumulada y las pérdidas acumuladas por deterioro.
 
 ### Mis conclusiones
- A) Sobre la plataforma alectrico ® [www.alectrico.cl](https://www.alectrico.cl)
+ A) La oficina es una activo intangible que rinde usufructo. El usufructo está protegida por la autorización de uso emitido por particular. El activo es el derecho a usufructo. Es medible a través del usufructo por diez años que se espera de este activo.
+    a) Pero no tengo derecho a usufricto pues  solo una autorización para domicilio tributario postal.
+    a) Será un activo intangible pues no se tiene la propiedad nuda del inmueble. Supongo que el usufructo no se pueda usar para venerlo por lo que el beneficio no es el ingreso en contraprestacioń sino por rendimiento. Y el rendimiento es el usufructo.
+    b) Requerirá gastos de mantención pues 
+
+      1. Según el Código Civil, el usufructo es un derecho real que le transfiere a alguien la facultad de gozar de una cosa con el compromiso de conservar su forma y substancia, y de restituirla a su dueño, si la cosa no es fungible.
+
+Ahora, el usufructo realizado sobre bienes inmuebles a través de un contrato tiene que ser otorgado por instrumento público inscrito. Esto quiere decir que, para que el usufructo sea válido hay que inscribirlo en el registro de interdicción y gravámenes del Conservador de Bienes Raíces correspondiente.
+
+
+ B) Sobre la plataforma alectrico ® [www.alectrico.cl](https://www.alectrico.cl)
 
  1. La plataforma alectrico ® fue desarrollada por su gerente en forma no remunerada, desde antes de la existencia forma de la empresa alectrico ®. Se puede estimar que su valor de activación corresponda a un valor mínimo equivalente a la remuneración de un programador FrontEnd junior, durante cinco años. Esto es un gasto de  1 millones por 70 meses. Lo cual entrega un valor de 70 millones de pesos.
 

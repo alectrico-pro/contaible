@@ -3032,7 +3032,7 @@
  ( glosa activacion-plataforma-alectrico))
 
 
-
+;----------------------------------------------------
 (partida
  (numero 203)
  (dia 31) (mes diciembre) (ano 2021)
@@ -3060,42 +3060,40 @@
  ( dia 31)  ( mes diciembre)  ( ano 2021)
  ( glosa activacion-plataforma-alectrico))
 
-;---------------------
-(partida
- (numero 204)
- (dia 31) (mes diciembre) (ano 2021)
- (descripcion "Por Derecho de Uso de Inmueble®")
- (actividad autorizacion-uso-de-inmueble))
 
-(abono
- ( electronico false)
- ( tipo-de-documento activacion-de-intangible)
- ( empresa alectrico-2021)
- ( cuenta autorizacion-uso-de-inmueble)
- ( monto  900000)
- ( partida 204)
- ( dia 31)  ( mes diciembre)  ( ano 2021)
- ( glosa autorizacion-uso-de-inmueble))
-
-(cargo
- ( electronico false)
- ( tipo-de-documento activacion-de-intangible)
- ( empresa alectrico-2021)
- ( cuenta banco-estado)
- ( monto  900000)
- ( partida 204)
- ( dia 31)  ( mes diciembre)  ( ano 2021)
- ( glosa autorizacion-uso-de-inmueble))
 
 ;-----------------------------------------------
 
 
-(deposito (partida 205) (banco banco-estado) (monto 900000 ) (dia 31) (mes diciembre) (ano 2021) )
+(deposito (partida 206) (banco banco-estado) (monto 900000 ) (dia 31) (mes diciembre) (ano 2021) )
 
 
 
-( ajustes-mensuales (mes diciembre) (ano 2021) (partida 206))
-( ajuste-de-iva     (mes diciembre) (ano 2021) (partida 207))
+( ajustes-mensuales (mes diciembre) (ano 2021) (partida 207))
+( ajuste-de-iva     (mes diciembre) (ano 2021) (partida 208))
+
+( ajuste-anual (ano 2021) (partida 209)
+ (liquidacion financiera) (saldo deudor)     )
+
+( ajuste-anual (ano 2021) (partida 210)
+ (liquidacion financiera) (saldo acreedor)    )
+
+( ajuste-anual (ano 2021) (partida 211)
+ (liquidacion tributaria) (saldo aporte)     )
+
+( ajuste-anual (ano 2021) (partida 212)
+ (liquidacion tributaria) (saldo deduccion) )
+
+( ajuste-anual-de-resultado-financiero
+  (ano 2021)
+  (partida 213)
+)
+
+(ajuste-anual-de-resultado-tributario
+  (ano 2021)
+  (partida 214 )
+)
+
 
 ;=========================== 2 0 2 2  ===========================================
 ;================================================================================
@@ -3339,7 +3337,7 @@
 ;)
  ;8 meses a 555 desde mayo 2021
 
-
+#==================================================================
 
 ;------------------------ liquidaciones ------------
 

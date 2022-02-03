@@ -80,7 +80,27 @@ Gastos: Corresponden a disminuciones en los beneficios económicos, producidos a
   - No es un gasto la disminución en los beneficios económicos debido a la pandemia, pues no se dió como disminución de los activos. Sin embargo, el activo marca disminuyó debido a que su atracción de venas mengüo por efecto de las medidas restrictivas del gobierno
   - No es un aumento del gasto la diminución de la disponibilidad de la mano de obra por la pandemia.
 
-....
+¿Y qué pasará cuando decida tal vez, en el año n+9 venderlo? Nada, según la norma de valoración 22ª cambios de criterios contables retroactividad y a RESERVAS, y entonces ya lo reclasificaremos como activos no corrientes mantenidos para la venta y lucirán en la cuenta 580.
+http://www.forea.org/topic/3842-donaci%C3%B3n-usufructo-a-socio/
+
+    "Activo: bienes, derechos... de los que se espera la empresa obtenga beneficios o rendimientos"
+
+    Está claro, no pretendo obtener un rendimiento en la empresa de una parcela en Atapuerca, o de un piso cuyos rendimientos (usufructo doné a mi hijo), por lo tanto incumple la condición para ser activo.
+
+Pero yo creo que esa es una interpretación tuya muy personal.
+
+Además, le añades un criterio subjetivo, o de intencionalidad que no tiene la definición.
+
+No se trata de que los socios "pretendan" o "tengan intención" de obtener rentas de ese piso. Si la intencionalidad de los socios influyese en la cuentas anuales, éstas perderían toda su objetividad.
+
+El criterio lo que dice es: " de los que se espera que la empresa obtenga beneficios o rendimientos EN UN FUTURO".
+
+¿Quién duda que la propiedad de un piso tarde o temprano generará una renta? Yo creo que nadie, independientemente de la intención de los socios actuales, y por tanto es un activo.
+...
+
+En cuanto al tema que nos ocupa, no me debí explicar bien en mi anterior post, pues no opino como Santutxu en el sentido de la contabilidad de este inmueble. Desde mi punto de vista la realidad económica que aqui subyace es que este inmueble si es susceptible de ser activado pues cumple la definición. La idea de los "beneficios económicos futuros" hay que entenderla como un concepto más amplio, pues es una mala traducción del ingles, y en realidad habría que interpretarla como ventajas económicas; y creo que estamos de acuerdo en que la nuda propiedad es una ventaja frente a la no propiedad.
+
+.
 Principio  de  Negocio  en  Marcha:  Este  principio  contable  establece  que  los estados  financieros  se  preparan  normalmente  bajo  el  supuesto  que  una  entidad está  en  funcionamiento  y  continuará  su  actividad  dentro  del  futuro  previsible.  Supone que la entidad no tiene la intención ni la necesidad de liquidar o disminuir de forma importante su nivel de operaciones. Si tal intención o necesidad existiera, los  estados  financieros  deberían  tener  que  prepararse  sobre  una  base  diferente, en  cuyo  caso  dicha  base  debería  revelarse  (ejemplo:  Entidad  XX  en  Proceso  de Liquidación).
 
 ----

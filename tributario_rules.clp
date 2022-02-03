@@ -146,12 +146,12 @@
 
   ( subtotales (cuenta aumentos-de-capital-aportes) (haber ?aportes))
 
-
   ( cuenta (nombre impuestos-no-recuperables) (haber ?impuestos-no-recuperables))
 
   ( tasas (idpc ?tasa-idpc) (mes ?mes) (ano ?ano))  
 
   ( selecciones (regimen ?regimen))
+
  =>
 
   (bind ?inventario-final 
@@ -213,7 +213,7 @@
 
   (bind ?utilidad-antes-de-idpc  ?margen-fuera-de-explotacion )
 
-  (bind ?utilidad-tributaria (- ?margen-fuera-de-explotacion   (+ ?herramientas   ?amortizacion-acumulada-instantanea))) 
+  (bind ?utilidad-tributaria (+ ?aportes (- ?margen-fuera-de-explotacion   (+ ?herramientas   ?amortizacion-acumulada-instantanea))) )
 
   (printout k "<table><tbody>" crlf )
   (printout k "<tr><th colspan='3'>" ?empresa "</th></tr>" crlf )
@@ -435,8 +435,8 @@
   (printout k "<tr><td> (-) </td><td align='right'>" ?herramientas "</td><td></td><td></td><td></td><td> Depreciación Instantánea Activo Fijo Propyme </td></tr>" crlf)
   ( printout k "<tr><td> (-) </td><td align='right'>" ?amortizacion-acumulada-instantanea "</td><td></td><td></td><td></td><td> Amortización Instantánea Intangibles </td></tr>" crlf)
 
-  ( printout t "|" ?aportes tab tab tab tab "Aportes" crlf)
-  ( printout k "<tr><td> (?) </td><td align='right'>" ?aportes "</td><td></td><td></td><td></td><td> Aportes </td></tr>" crlf)
+  ( printout t "|" ?aportes tab tab tab tab "(+) Aportes Cap." crlf)
+  ( printout k "<tr><td> (+) </td><td align='right'>" ?aportes "</td><td></td><td></td><td></td><td> Aportes al Capital </td></tr>" crlf)
 
   (printout t "|" tab tab "| (=) " ?utilidad-tributaria tab "Utilidad Tributaria" crlf)
   (printout k "<tr><td> <td></td></td><td> </td><td> (=) </td><td align='right'>" ?utilidad-tributaria "</td><td> Utilidad Tributaria </td></tr>" crlf)

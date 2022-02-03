@@ -55,6 +55,106 @@
 )
 
 
+
+(defrule ajustar-ano-financieras
+   (declare (salience 1))
+   (balance (ano ?ano))
+   (empresa (nombre ?empresa))
+   (ticket (numero ?numero))
+   (ajuste-anual (ano ?ano) (partida ?numero)
+     (liquidacion financiera) (saldo ?saldo) )
+
+   (or
+     (cuenta (nombre ?nombre&:(neq ?nombre ingresos-brutos)) (padre false) (grupo resultado))
+     (cuenta (nombre ?nombre) (padre ingresos-brutos) (grupo resultado))
+   )
+  =>
+  ; (printout t "Liquidación Financiera de cuentas deudoras" ?ano crlf)
+   ( assert (partida (numero ?numero) (empresa ?empresa) (dia 31) (mes enero) (ano ?ano) (descripcion (str-cat "Ajuste Anual Año: Liquidacion Financiera " ?ano )) (actividad liquidacion-financiera-de-deudoras) ))
+  ( assert (liquidacion (cuenta ?nombre) (partida ?numero) (ano ?ano) (liquidadora perdidas-y-ganancias) (tipo-de-saldo ?saldo)))
+)
+
+
+(defrule ajustar-ano-tributarias
+   (balance (ano ?ano))
+   (empresa (nombre ?empresa))
+   (ticket (numero ?numero))
+   (ajuste-anual (ano ?ano) (partida ?numero)
+     (liquidacion tributaria) (saldo ?saldo) )
+
+   (or
+     (cuenta (nombre ?nombre&:(neq ?nombre ingresos-brutos)) (padre false) (grupo resultado))
+     (cuenta (nombre ?nombre) (padre ingresos-brutos) (grupo resultado))
+   )
+  =>
+  ; (printout t "Liquidación Financiera de cuentas deudoras" ?ano crlf)
+   ( assert (partida (numero ?numero) (empresa ?empresa) (dia 31) (mes enero) (ano ?ano) (descripcion (str-cat "Ajuste Anual Año: Liquidación Tributaria " ?ano )) (actividad liquidacion-financiera-de-deudoras) ))
+  ( assert (tributacion (cuenta ?nombre) (partida ?numero) (ano ?ano) (liquidadora base-imponible) (tipo-de-saldo ?saldo)))
+)
+
+
+
+(defrule determinar-resultado-financiero
+  (declare (salience -1))
+  (balance (ano ?ano))
+  (empresa (nombre ?empresa)) 
+  (ticket (numero ?numero))
+  (ajuste-anual-de-resultado-financiero
+    (ano ?ano)
+    (partida ?numero))
+
+ =>
+  ( assert (partida (numero ?numero) (dia 31) (mes diciembre) (ano ?ano) 
+    (empresa ?empresa)
+    (actividad determinacion-del-resultado-financiero)
+    (descripcion "v/Para determinar el valor del resultado del período")))
+
+  ( assert (liquidacion (cuenta idpc) 
+    (partida ?numero) (ano ?ano)
+    (liquidadora perdidas-y-ganancias)))
+
+  ( assert (liquidacion
+    (cuenta reserva-legal)
+    (partida ?numero) (ano ?ano)
+    (liquidadora perdidas-y-ganancias)))
+
+  ( assert (liquidacion (cuenta utilidad)
+    (partida ?numero) (ano ?ano)
+    (liquidadora perdidas-y-ganancias)))
+)
+
+
+(defrule determinar-de-resultado-tributario
+  (declare (salience -2))
+  (balance (ano ?ano))
+  (empresa (nombre ?empresa))
+  (ticket (numero ?numero))
+  (ajuste-anual-de-resultado-tributario
+    (ano ?ano)
+    (partida ?numero))
+
+ =>
+  ( assert (partida (numero ?numero) (dia 31) (mes diciembre) (ano ?ano)
+    (empresa ?empresa)
+    (actividad determinacion-del-resultado-tributario)
+    (descripcion "v/Para determinar el valor del resultado del tributario período")))
+
+  ( assert (liquidacion (cuenta idpc)
+    (partida ?numero) (ano ?ano)
+    (liquidadora base-imponible)))
+
+  ( assert (liquidacion
+    (cuenta reserva-legal)
+    (partida ?numero) (ano ?ano)
+    (liquidadora base-imponible)))
+
+  ( assert (liquidacion (cuenta utilidad)
+    (partida ?numero) (ano ?ano)
+    (liquidadora base-imponible)))
+)
+
+
+
 (defrule inicio-de-modulo-liquidacion
  (declare ( salience 10000))
 =>
