@@ -2498,21 +2498,16 @@
 ;------------------------ octubre -----------------------------------
 
 
-;(pago-de-salarios
-; (remuneraciones true)
-; (imposiciones false)
-; (partida 156)
-; (trabajador alexander)
-; (afp   47180)
-; (afc   10500)
-; (salud  24500)
-; (multa  28105)
-; (folio-prevision 20022021092580)
-; (folio-salud 2017220100278294)
-; (remuneracion 267820)
-; (dia 5)
-; (mes octubre)
-; (ano 2021))
+(salario
+ (partida 156)
+ (departamento electrico)
+ (nombre alexander)
+ (servicio programador)
+ (efectivo 400000)
+ (dia 5)
+ (mes octubre)
+ (ano 2021)
+ (glosa salario-programador))
 
 
 
@@ -2759,6 +2754,39 @@
 
 ;------------------------------- noviembre -----------------------------
 
+(salario
+ (partida 169)
+ (departamento electrico)
+ (nombre alexander)
+ (servicio programador)
+ (efectivo 400000)
+ (dia 5)
+ (mes noviembre)
+ (ano 2021)
+ (glosa salario-programador))
+
+
+(pago-de-salarios
+ (remuneraciones true)
+ (imposiciones false)
+ (partida 170)
+ (trabajador alexander)
+ (afp 52480)
+ (afc 12000)
+ (salud 28000)
+ (multa 0)
+ (folio-prevision 0)
+ (folio-salud 0)
+ (remuneracion 307520)
+ (dia 5)
+ (mes noviembre)
+ (ano 2021))
+
+
+
+
+
+
 ;( costo-ventas
 ; ( tipo-de-documento 33)
 ; ( folio 39533607)
@@ -2778,7 +2806,7 @@
 (venta-sii
  (folio 7)
  (rut 77201295-0)
- (partida 169)
+ (partida 171)
  (dia 8) (mes noviembre) (ano 2021)
  (unidades 1)
  (costo_unitario 6666)
@@ -2799,7 +2827,7 @@
  ( tipo-de-documento 33)
  ( folio  44036470)
  ( rut 96806980-2 )
- ( partida 170)
+ ( partida 172)
  ( dia 11) (mes noviembre) (ano 2021)
  ( credito 0)
  ( neto  6926)
@@ -2815,7 +2843,7 @@
  ( tipo-de-documento 33)
  ( folio 1648)
  ( rut 76999251-0)
- ( partida 183)
+ ( partida 173)
  ( dia 08) (mes noviembre) (ano 2021)
  ( credito 0)
  ( neto  4193)
@@ -2854,6 +2882,36 @@
 
 
 
+(salario
+ (partida 188)
+ (departamento electrico)
+ (nombre alexander)
+ (servicio programador)
+ (efectivo 400000)
+ (dia 5)
+ (mes diciembre)
+ (ano 2021)
+ (glosa salario-programador))
+
+
+(pago-de-salarios
+ (remuneraciones true)
+ (imposiciones false)
+ (partida 189)
+ (trabajador alexander)
+ (afp 52480)
+ (afc 12000)
+ (salud 28000)
+ (multa 0)
+ (folio-prevision 0)
+ (folio-salud 0)
+ (remuneracion 307520)
+ (dia 5)
+ (mes diciembre)
+ (ano 2021))
+
+
+
 (insumos
  (pedido 1724)
  (rut 96792460-K)
@@ -2861,7 +2919,7 @@
  (folio 115116314)
  (unidades 1)
  (costo_unitario 8395)
- (partida 188)
+ (partida 190)
  (dia 1) (mes diciembre)  (ano 2021)
  (material epp)
  (proveedor sodimac )
@@ -2877,7 +2935,7 @@
 (venta-sii
  (folio 8)
  (rut 77201295-0)
- (partida 189)
+ (partida 195)
  (tipo-de-documento 34)
  (dia 9) (mes diciembre) (ano 2021)
  (unidades 1)
@@ -2893,7 +2951,7 @@
 (venta-sii
  (folio 9)
  (rut 77201295-0)
- (partida 195)
+ (partida 196)
  (tipo-de-documento 34)
  (dia 28) (mes diciembre) (ano 2021)
  (unidades 1)
@@ -2910,7 +2968,7 @@
 (venta-sii
  (folio 21)
  (rut 77201295-0)
- (partida 196)
+ (partida 197)
  (tipo-de-documento 33)
  (dia 9) (mes diciembre) (ano 2021)
  (unidades 1)
@@ -2926,7 +2984,7 @@
 (venta-sii
  (folio 22)
  (rut 77201295-0)
- (partida 197)
+ (partida 198)
  (tipo-de-documento 33)
  (dia 26) (mes diciembre) (ano 2021)
  (unidades 1)
@@ -2942,7 +3000,7 @@
 (venta
  (folio 10)
  (rut 77201295-0)
- (partida 198)
+ (partida 199)
  (tipo-de-documento 34)
  (dia 31) (mes diciembre) (ano 2021)
  (unidades 1)
@@ -2964,7 +3022,7 @@
  ( tipo-de-documento 33)
  ( folio 44204963)
  ( rut 96806980-2 )
- ( partida 199)
+ ( partida 200)
  ( dia 10) (mes diciembre) (ano 2021)
  ( credito 0)
  ( neto  6926)
@@ -2979,7 +3037,7 @@
  ( tipo-de-documento 33)
  ( folio 44123442 )
  ( rut 96806980-2 )
- ( partida 200)
+ ( partida 201)
  ( dia 13) (mes diciembre) (ano 2021)
  ( credito 0)
  ( neto  6926)
@@ -2999,44 +3057,17 @@
  ( dia 7 )
  ( mes diciembre)
  ( ano 2021)
- ( partida 201)
+ ( partida 202)
  ( glosa "Anulación de factura 4036470")
 )
 
-
-(partida
- (numero 202)
- (dia 31) (mes diciembre) (ano 2021)
- (descripcion "Por Donación desde accionista Alexander Espinosa de la plataforma alectrico.")
- (actividad aporte-plataforma-alectrico®))
-
-
-(cargo
- ( electronico false)
- ( tipo-de-documento ajuste)
- ( empresa alectrico-2021)
- ( cuenta plataforma-alectrico)
- ( monto  120000000)
- ( partida 202)
- ( dia 31)  ( mes diciembre)  ( ano 2021)
- ( glosa activacion-plataforma-alectrico))
-
-(abono
- ( electronico false)
- ( tipo-de-documento ajuste)
- ( empresa alectrico-2021)
- ( cuenta aumentos-de-capital-aportes)
- ( monto  120000000)
- ( partida 202)
- ( dia 31)  ( mes diciembre)  ( ano 2021)
- ( glosa activacion-plataforma-alectrico))
 
 
 ;----------------------------------------------------
 (partida
  (numero 203)
  (dia 31) (mes diciembre) (ano 2021)
- (descripcion "Por Donación desde accionista Alexander Espinosa de la plataforma alectrico.")
+ (descripcion "Por Reconocimiento de los Gastos realizados para construir la Plataforma alectrico®.")
  (actividad aporte-plataforma-alectrico®))
 
 
@@ -3045,7 +3076,7 @@
  ( tipo-de-documento ajuste)
  ( empresa alectrico-2021)
  ( cuenta plataforma-alectrico)
- ( monto  120000000)
+ ( monto  1550000)
  ( partida 203)
  ( dia 31)  ( mes diciembre)  ( ano 2021)
  ( glosa activacion-plataforma-alectrico))
@@ -3054,45 +3085,46 @@
  ( electronico false)
  ( tipo-de-documento ajuste)
  ( empresa alectrico-2021)
- ( cuenta aumentos-de-capital-aportes)
- ( monto  120000000)
+ ( cuenta salarios)
+ ( monto  1550000)
  ( partida 203)
  ( dia 31)  ( mes diciembre)  ( ano 2021)
  ( glosa activacion-plataforma-alectrico))
 
 
 
+
 ;-----------------------------------------------
 
 
-(deposito (partida 206) (banco banco-estado) (monto 900000 ) (dia 31) (mes diciembre) (ano 2021) )
+(deposito (partida 204) (banco banco-estado) (monto 900000 ) (dia 31) (mes diciembre) (ano 2021) )
 
 
 
 ( ajustes-mensuales (mes diciembre) (ano 2021) (partida 207))
 ( ajuste-de-iva     (mes diciembre) (ano 2021) (partida 208))
 
-( ajuste-anual (ano 2021) (partida 209)
- (liquidacion financiera) (saldo deudor)     )
+;( ajuste-anual (ano 2021) (partida 209)
+; (liquidacion financiera) (saldo deudor)     )
 
-( ajuste-anual (ano 2021) (partida 210)
- (liquidacion financiera) (saldo acreedor)    )
+;( ajuste-anual (ano 2021) (partida 210)
+; (liquidacion financiera) (saldo acreedor)    )
 
-( ajuste-anual (ano 2021) (partida 211)
- (liquidacion tributaria) (saldo aporte)     )
+;( ajuste-anual (ano 2021) (partida 211)
+; (liquidacion tributaria) (saldo aporte)     )
 
-( ajuste-anual (ano 2021) (partida 212)
- (liquidacion tributaria) (saldo deduccion) )
+;( ajuste-anual (ano 2021) (partida 212)
+; (liquidacion tributaria) (saldo deduccion) )
 
-( ajuste-anual-de-resultado-financiero
-  (ano 2021)
-  (partida 213)
-)
+;( ajuste-anual-de-resultado-financiero
+;  (ano 2021)
+;  (partida 213)
+;)
 
-(ajuste-anual-de-resultado-tributario
-  (ano 2021)
-  (partida 214 )
-)
+;(ajuste-anual-de-resultado-tributario
+;  (ano 2021)
+;  (partida 214 )
+;)
 
 
 ;=========================== 2 0 2 2  ===========================================
@@ -3259,6 +3291,11 @@
  ( dia 1) ( mes enero) ( ano 2022)
  ( glosa asiento-inicial))
 
+
+
+
+
+
 ;------------------------------------ enero compras -------------------------------------
 ( gasto-administrativo
  ( tipo-de-documento 45)
@@ -3301,6 +3338,15 @@
  (mes febrero)
  (ano 2022))
 
+;Corresponde a la amortización del pago de Parecer técnico THHN
+(cobro-de-cuentas-por-cobrar
+  (partida 2010)
+  (monto 10000)
+  (dia 03)
+  (mes febrero)
+  (ano 2022))
+
+
 
 ( ajustes-mensuales (mes febrero) (ano 2022) (partida 2013))
 ( ajuste-de-iva     (mes febrero) (ano 2022) (partida 2014))
@@ -3337,7 +3383,6 @@
 ;)
  ;8 meses a 555 desde mayo 2021
 
-#==================================================================
 
 ;------------------------ liquidaciones ------------
 

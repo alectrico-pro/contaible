@@ -217,21 +217,12 @@ Después del reconocimiento inicial, los costos de desarrollo se miden al costo 
 amortización acumulada y las pérdidas acumuladas por deterioro.
 
 ### Mis conclusiones
- A) La oficina es una activo intangible que rinde usufructo. El usufructo está protegida por la autorización de uso emitido por particular. El activo es el derecho a usufructo. Es medible a través del usufructo por diez años que se espera de este activo.
-    a) Pero no tengo derecho a usufricto pues  solo una autorización para domicilio tributario postal.
-    a) Será un activo intangible pues no se tiene la propiedad nuda del inmueble. Supongo que el usufructo no se pueda usar para venerlo por lo que el beneficio no es el ingreso en contraprestacioń sino por rendimiento. Y el rendimiento es el usufructo.
-    b) Requerirá gastos de mantención pues 
-
-      1. Según el Código Civil, el usufructo es un derecho real que le transfiere a alguien la facultad de gozar de una cosa con el compromiso de conservar su forma y substancia, y de restituirla a su dueño, si la cosa no es fungible.
-
-Ahora, el usufructo realizado sobre bienes inmuebles a través de un contrato tiene que ser otorgado por instrumento público inscrito. Esto quiere decir que, para que el usufructo sea válido hay que inscribirlo en el registro de interdicción y gravámenes del Conservador de Bienes Raíces correspondiente.
-
 
  B) Sobre la plataforma alectrico ® [www.alectrico.cl](https://www.alectrico.cl)
 
  1. La plataforma alectrico ® fue desarrollada por su gerente en forma no remunerada, desde antes de la existencia forma de la empresa alectrico ®. Se puede estimar que su valor de activación corresponda a un valor mínimo equivalente a la remuneración de un programador FrontEnd junior, durante cinco años. Esto es un gasto de  1 millones por 70 meses. Lo cual entrega un valor de 70 millones de pesos.
 
- 2. El valor de uso de la plataforma (correspondería a su evaluación como activo) equivale al rol de un coordinador, de un vendedor, un secretario, un admnistrador y a un diseñador y dibujante eléctrico, prorrateado en un número dado de atenciones potenciales. Digamos de salario mínimo mensual suponiendo que al menos hay que contratar a un empleado. Lo que involucra un valor de partida de 120 millones en 10 años, suponiendo que el software sea eterno.
+ 2. El valor de activación de la plataforma será al costo medible (mucho menor que el real) de los gastos en que se incurrió para tenerla funcionando. Esos costos se consideraron sea el salario pagado al gerente en su rol de electricista y programador, en los meses de agosto-a-diciembre de 2021. La plaforma se probó anteriormente pero formalmente se reconoce operativa el 31 de diciembre de 2021. Esa es la fecha para la que se reonocen los gasos previos como activo intangible plataforma. El activo intangible plataforme se consideran gastos diferidos, pues la plataforma no se prevee estar estandarizada para la venta.
 
  3. La plataforma automatiza los ingresos de colaboradores y de clientes con lo que es un sistema de control no atendido disponible todo el tiempo y en todo el país 
    [pago de colaboradores](https://shop.alectrico.cl) opción recarga

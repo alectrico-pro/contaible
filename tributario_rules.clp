@@ -117,7 +117,10 @@
     (debe  ?gastos-administrativos-debe)
     (haber ?gastos-administrativos-haber))
 
-  ( subtotales (cuenta salarios ) (deber ?salarios))
+  ( subtotales (cuenta salarios ) (deber ?salarios-deber))
+  ( subtotales (cuenta salarios ) (acreedor ?salarios-acreedor))
+
+
   ( subtotales (cuenta gastos-ventas) (deber ?gastos-ventas))
   ( subtotales (cuenta gastos-en-investigacion-y-desarrollo) (debe ?gastos-en-investigacion-y-desarrollo))
   ( subtotales (cuenta gastos-promocionales) (deber ?gastos-en-promocion))
@@ -154,6 +157,7 @@
 
  =>
 
+  (bind ?salarios (- ?salarios-deber ?salarios-acreedor))
   (bind ?inventario-final 
     (- ?inventario-final-deber
        ?inventario-final-acreedor))

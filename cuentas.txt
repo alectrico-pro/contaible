@@ -848,7 +848,7 @@ pagos.")
   (circulante true)
   (padre false)
   (origen real)
-  (naturaleza deudor))
+  (naturaleza mixta))
 
 
 (cuenta (nombre gastos-sobre-compras)

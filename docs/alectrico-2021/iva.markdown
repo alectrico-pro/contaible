@@ -124,18 +124,18 @@ layout: page
 <tr> <td colspan='6' style = 'font-style: small; background-color: azure'>noviembre</td></tr>
 <tr> <td colspan='2' style='background-color: lightyellow'> IVA CREDITO </td> <td colspan='2' style='background-color: beige'> IVA DEBITO </td> </tr> 
 <tr> <td> DEBE </td> <td> HABER </td> <td> DEBE </td><td> HABER </td> </tr> 
-<tr> <td>27431</td> <td> 0</td> <td> 0</td><td> 0</td> </tr>
-<tr> <td>27431</td> <td></td><td></td><td>0</td> </tr>
-<tr> <td style='font-weight: bold; font-size: large; background-color: azure'>27431</td> <td></td> <td> </td><td> </td> </tr>
+<tr> <td>25318</td> <td> 0</td> <td> 0</td><td> 0</td> </tr>
+<tr> <td>25318</td> <td></td><td></td><td>0</td> </tr>
+<tr> <td style='font-weight: bold; font-size: large; background-color: azure'>25318</td> <td></td> <td> </td><td> </td> </tr>
 </tbody> </table>
 <tr> <td> Determinando mes de ajuste de remanente de IVA </td><td> enero</td> <td>2022</td> </tr>
 <table> <tbody>
 <tr> <td colspan='6' style = 'font-style: small; background-color: azure'>diciembre</td></tr>
 <tr> <td colspan='2' style='background-color: lightyellow'> IVA CREDITO </td> <td colspan='2' style='background-color: beige'> IVA DEBITO </td> </tr> 
 <tr> <td> DEBE </td> <td> HABER </td> <td> DEBE </td><td> HABER </td> </tr> 
-<tr> <td>32156</td> <td> 1316</td> <td> 0</td><td> 35392</td> </tr>
-<tr> <td>30840</td> <td></td><td></td><td>35392</td> </tr>
-<tr> <td></td> <td></td> <td> </td><td style='font-size: large; font-weight: bold; color: white; background-color: crimson'>4552</td> </tr>
+<tr> <td>28383</td> <td> 1316</td> <td> 0</td><td> 35392</td> </tr>
+<tr> <td>27067</td> <td></td><td></td><td>35392</td> </tr>
+<tr> <td></td> <td></td> <td> </td><td style='font-size: large; font-weight: bold; color: white; background-color: crimson'>8325</td> </tr>
 </tbody> </table>
 <tr> <td> Determinando mes de ajuste de remanente de IVA </td><td> febrero</td> <td>2022</td> </tr>
 <table> <tbody> 

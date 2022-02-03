@@ -3,6 +3,7 @@
 )
 
 
+
 (deffunction mes_to_numero ( ?mes )
   ( switch ?mes
     ( case enero      then 1)
@@ -228,14 +229,14 @@
    ( printout t " Cotización. Obligatoria.................  " tab (round (* ?sueldo (+ 0.10 ?comision))) crlf)
    ( printout t " Seguro Invalidez y Sobrevivencia (SIS)    (+) " tab (round (* ?sueldo ?sis)) crlf)
    ( printout t " SubTotal a Pagar Fondo de Pensiones (AFP) (+) " tab (round (* ?sueldo (+ 0.10 ?comision ?sis ))) crlf)
-   ( printout t " Comisión AFP                              (+) " tab (round (* ?comision 100)) "%" tab (round (* ?sueldo ?comision)) crlf)
+   ( printout t " Comisión AFP                              (+) " tab (* ?comision 100) "%" tab (round (* ?sueldo ?comision)) crlf)
    ( printout t "                                             -------" crlf )
    ( printout t "                                           (=) " tab (round (* ?sueldo (+ 0.10 ?comision ?sis ))) crlf )
    ( printout t " ---- " crlf)
    ( printout t " Resumen Cotizaciones Fondo de Cesantía (AFC)" crlf)
    ( printout t "  Cotizacion afiliado " crlf)
    ( printout t "  Cotizacion Empleador " crlf)
-   ( printout t "Total a Pagar al Fondo de Cesantía         (+) " tab (round (* ?afc 100)) "%" tab (round (* ?sueldo ?afc)) crlf)
+   ( printout t "Total a Pagar al Fondo de Cesantía         (+) " tab (* ?afc 100) "%" tab (round (* ?sueldo ?afc)) crlf)
    ( printout t "             T O T A L   A  F  P           (=) " tab (round (* ?sueldo (+ 0.10 ?afc ?sis ?comision))) crlf)
    ( printout t crlf)
    ( printout t " PLANILLA SALUD    " crlf)
