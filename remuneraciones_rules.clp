@@ -32,7 +32,9 @@
 ;   (balance (ano ?ano))
   =>
    (set-strategy breadth)
-   (printout t "-------------------- REMUNERACIONES ------------------" crlf)   
+   (printout t "----AUDITORIA DE REMUNERACIONES ------------------" crlf)   
+   (printout t "Se procesarán todas las remuneraciones anotadas,  " crlf)
+   (printout t "en las partidas contables y que estén bien en remuneraciones.txt" crlf)
 )
 
 (defrule fin-de-modulo-mensual
@@ -90,12 +92,37 @@
    )
 )
 
-(defrule calculo-de-descuentos-legales
-   ( salario (nombre ?nombre))
+(defrule warning-trabajador-sin-contrato
+   ( remuneracion (trabajador ?nombre))
+   ( not ( contrato (trabajador ?nombre) ))
+  =>
+   ( printout t "Se ha previsto una remuneración para " ?nombre " pero no está anotado el contrato " crlf)
+   ( printout t "Edite el archivo contratos.txt y agregue un contrato para este trabajador" crlf)
+   ( halt)
+)
 
+
+(defrule warning-contrato-con-duracion-errada
+   ( trabajador (nombre ?nombre) (duracion ?duracion))
+   ( not (exists 
+     ( contrato     (trabajador ?nombre)
+     (duracion ?duracion-contrato&:(neq ?duracion-contrato ?duracion)))
+   ))
+  =>
+   ( printout t "Se encontró un error de duración para " ?nombre ", en unos de sus contratos (al menos) " crlf)
+   ( printout t "Edite el archivo contratos.txt y haga coincidir la duración con la del trabajador" crlf)
+   ( halt)
+)
+
+
+
+(defrule calculo-de-descuentos-legales
+   (exists ( salario (nombre ?nombre)))
+   (exists ( contrato (trabajador ?nombre)))
    ( remuneracion
      ( trabajador ?nombre)
      ( mes ?mes)
+     ( ano ?ano)
      ( monto ?imponible)
      ( dias-trabajados ?dias-trabajados)
      ( semana-corrida ?semana-corrida)
@@ -128,7 +155,11 @@
      (duracion ?duracion)
      (comision ?afc)
    )
-   
+
+  ( and
+    ( test (<= (to_serial_date 31 ?mes-inicio ?ano-inicio) (to_serial_date 31 ?mes ?ano)))
+    ( test (>= (to_serial_date 31 ?mes-fin ?ano-fin) (to_serial_date 31 ?mes ?ano)))
+  )
   =>
    ( bind ?sueldo (* ?diaria (+ ?dias-trabajados ?semana-corrida)))
    ( printout t crlf)

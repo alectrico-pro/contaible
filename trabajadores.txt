@@ -19,6 +19,8 @@
  (diaria 50000)
  (mes-inicio septiembre)
  (ano-inicio 2021)
+ (mes-fin diciembre)
+ (ano-fin 2021)
  (afp habitat)
  (salud fonasa)
  (rut 14579554-0)

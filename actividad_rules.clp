@@ -1,4 +1,3 @@
-#encoding: UTF-8
 (defmodule ACTIVIDAD
   ( import MAIN deftemplate ?ALL )
 )

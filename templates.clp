@@ -132,6 +132,7 @@
   (slot bruto)
   (slot monto)
   (slot mes)
+  (slot ano)
   (slot dias-trabajados)
   (slot semana-corrida)
   (slot pagada)
