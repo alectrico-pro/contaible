@@ -451,9 +451,12 @@
 
    ?salario <- (salario (nombre ?nombre) (partida ?numero) (dia ?dia) (departamento ?departamento) (servicio ?servicio) (efectivo ?efectivo ) (mes ?mes) (ano ?ano) (glosa ?glosa))
 
+   ( exists (contrato (trabajador ?nombre)))
+
    ( remuneracion
      ( trabajador ?nombre)
      ( mes ?mes)
+     ( ano ?ano)
      ( monto ?imponible)
      ( dias-trabajados ?dias-trabajados)
      ( semana-corrida ?semana-corrida)
@@ -465,12 +468,16 @@
      ( diaria ?diaria)
      ( mes-inicio ?mes-inicio)
      ( ano-inicio ?ano-inicio)
+     ( mes-fin ?mes-fin)
+     ( ano-fin ?ano-fin)
      ( nombre ?nombre)
      ( afp ?afp)
      ( salud ?salud)
      ( duracion ?duracion)  )
 
    ( afp
+      (mes ?mes)
+      (ano ?ano)
       (nombre ?afp )
       (comision ?comision)
       (sis ?sis)  )
@@ -481,7 +488,8 @@
 
    ( afc
      (duracion ?duracion)
-     (comision ?afc) )
+     (aporte-empleador  ?aporte-empleador)
+     (aporte-trabajador ?aporte-trabajador))
 
    ( tasas (utm ?utm)
      (mes ?mes_top)
@@ -494,7 +502,14 @@
    ( test (> ?efectivo 0))
    ( test (>= (to_serial_date ?top ?mes_top ?ano_top) (to_serial_date ?dia ?mes ?ano)))
 
+   ( and
+    ( test (<= (to_serial_date 31 ?mes-inicio ?ano-inicio) (to_serial_date 31 ?mes ?ano)))
+    ( test (>= (to_serial_date 31 ?mes-fin ?ano-fin)       (to_serial_date 31 ?mes ?ano)))
+   )
+
+
   =>
+   ( bind ?afc (+ ?aporte-empleador ?aporte-trabajador))
    ( assert (dia ?dia))
    ( bind ?sueldo (* ?diaria (+ ?dias-trabajados ?semana-corrida)))
    ( if (neq ?sueldo ?efectivo)
@@ -503,7 +518,7 @@
    (halt )
    )
    ( printout t crlf)
-   ( printout t "===================================" crlf)
+   ( printout t "======= " ?mes " ============================" crlf)
    ( printout t "---- " ?mes tab ?nombre " -----" crlf )
    ( printout t d.trabajados: tab ?dias-trabajados crlf)
    ( printout t sem.-corrida: tab ?semana-corrida crlf)
@@ -543,7 +558,7 @@
 
    ( bind ?entidades (+ ?afp ?salud ))
 
-   ( printout t "===================================" crlf)
+   ( printout t "========" ?mes "===========================" crlf)
    ( printout t "EN FORMATO DE PLANILLAS PREVIRED: " crlf)
    ( printout t " PLANILLA AFP " crlf)
    ( printout t " Cotización. Obligatoria " tab (round (* ?sueldo (+ 0.10 ?comision))) crlf)

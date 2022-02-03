@@ -117,6 +117,8 @@
 )
 
 (deftemplate afc
+  (slot aporte-empleador)
+  (slot aporte-trabajador)
   (slot duracion)
   (slot comision)
 )
@@ -141,6 +143,8 @@
 )
 
 (deftemplate afp
+ (slot mes)
+ (slot ano)
  (slot nombre)
  (slot comision)
  (slot sis)

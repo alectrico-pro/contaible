@@ -56,20 +56,25 @@
   (printout t "Elaborar exportar csv para llenar mensualmente el libro de remuneraciones electronicos" crlf)
 )
 
+
 (defrule csv-previred
   =>
    (printout t "Elaborar exportador csv para declarar y pagar mensualmente las imposiciones en previred" crlf)
 )
 
-(defrule actulizar-ccm-y-contabilidad
+
+(defrule actualizar-ccm-y-contabilidad
   => 
    (printout t "Elaborar csv para declarar las remuneraciones en el ccm" crlf)
 )
+
 
 (defrule generar-asientos-para-llevar-libro-de-remuneraciones
   =>
   (printout t "Elaborar asientos contables en alectrico" crlf)
 )
+
+
 
 (defrule plantilla
    ( declare (salience 1))
@@ -103,6 +108,7 @@
 
 
 (defrule warning-contrato-con-duracion-errada
+
    ( trabajador (nombre ?nombre) (duracion ?duracion))
    ( not (exists 
      ( contrato     (trabajador ?nombre)
@@ -111,6 +117,37 @@
   =>
    ( printout t "Se encontró un error de duración para " ?nombre ", en unos de sus contratos (al menos) " crlf)
    ( printout t "Edite el archivo contratos.txt y haga coincidir la duración con la del trabajador" crlf)
+   ( halt)
+)
+
+
+
+(defrule warning-afp-no-existe-para-mes-de-remuneracion
+
+   ( remuneracion
+     ( trabajador ?nombre)
+     ( mes ?mes)
+     ( ano ?ano)
+   )
+
+   ( trabajador
+     ( nombre ?nombre)
+     ( afp ?afp)
+   )
+
+   (not
+     ( exists
+       ( afp
+         (mes ?mes)
+         (ano ?ano)
+         (nombre ?afp )
+       )
+     )
+   )
+
+  =>
+   ( printout t "No existe el registro de " ?mes tab ?ano " para la afp " ?afp crlf)
+   ( printout t "Edite el archivo afps.txt y agregue un registro para " ?mes crlf)
    ( halt)
 )
 
@@ -143,6 +180,8 @@
      ( duracion ?duracion)
    )
    ( afp
+      (mes ?mes)
+      (ano ?ano)
       (nombre ?afp )
       (comision ?comision)
       (sis ?sis)
@@ -153,7 +192,8 @@
    )
    ( afc
      (duracion ?duracion)
-     (comision ?afc)
+     (aporte-empleador ?afc-empleador)
+     (aporte-trabajador ?afc-trabajador)
    )
 
   ( and
@@ -161,6 +201,7 @@
     ( test (>= (to_serial_date 31 ?mes-fin ?ano-fin) (to_serial_date 31 ?mes ?ano)))
   )
   =>
+   ( bind ?afc (+ ?afc-empleador ?afc-trabajador))
    ( bind ?sueldo (* ?diaria (+ ?dias-trabajados ?semana-corrida)))
    ( printout t crlf)
    ( printout t "==========" ?mes "=================" crlf)
@@ -180,23 +221,31 @@
    ( printout t SALUD: tab (round (* ?sueldo ?cotizacion)) crlf)
    ( printout t TOTAL: tab (round (* ?sueldo (+ 0.10 ?comision ?sis ?cotizacion ?afc))) crlf)
    ( printout t LIQUI: tab (round (- ?sueldo (* ?sueldo (+ 0.10 ?comision ?sis ?cotizacion ?afc)))) crlf)
-
+   ( printout t crlf)
    ( printout t "===================================" crlf)
    ( printout t "EN FORMATO DE PLANILLAS PREVIRED: " crlf)
    ( printout t " PLANILLA AFP " crlf)
-   ( printout t " Cotización. Obligatoria................. " tab (round (* ?sueldo (+ 0.10 ?comision))) crlf)
-   ( printout t " Seguro Invalidez y Sobrevivencia (SIS)   " tab (round (* ?sueldo ?sis)) crlf)
-   ( printout t " SubTotal a Pagar Fondo de Pensiones (AFP) " tab (round (* ?sueldo (+ 0.10 ?comision ?sis ))) crlf)
-   ( printout t " Comisión AFP " tab (* ?comision 100) "%" tab (* ?sueldo ?comision) crlf)
+   ( printout t " Cotización. Obligatoria.................  " tab (round (* ?sueldo (+ 0.10 ?comision))) crlf)
+   ( printout t " Seguro Invalidez y Sobrevivencia (SIS)    (+) " tab (round (* ?sueldo ?sis)) crlf)
+   ( printout t " SubTotal a Pagar Fondo de Pensiones (AFP) (+) " tab (round (* ?sueldo (+ 0.10 ?comision ?sis ))) crlf)
+   ( printout t " Comisión AFP                              (+) " tab (round (* ?comision 100)) "%" tab (round (* ?sueldo ?comision)) crlf)
+   ( printout t "                                             -------" crlf )
+   ( printout t "                                           (=) " tab (round (* ?sueldo (+ 0.10 ?comision ?sis ))) crlf )
    ( printout t " ---- " crlf)
    ( printout t " Resumen Cotizaciones Fondo de Cesantía (AFC)" crlf)
    ( printout t "  Cotizacion afiliado " crlf)
    ( printout t "  Cotizacion Empleador " crlf)
-   ( printout t "Total a Pagar al Fondo de Cesantía" tab (* ?afc 100) "%" tab (* ?sueldo ?afc) crlf)
+   ( printout t "Total a Pagar al Fondo de Cesantía         (+) " tab (round (* ?afc 100)) "%" tab (round (* ?sueldo ?afc)) crlf)
+   ( printout t "             T O T A L   A  F  P           (=) " tab (round (* ?sueldo (+ 0.10 ?afc ?sis ?comision))) crlf)
+   ( printout t crlf)
    ( printout t " PLANILLA SALUD    " crlf)
-   ( printout t " Cotización Legal              "  tab ?salud crlf)
-
+   ( printout t ?salud tab comision tab ?cotizacion crlf)
+   ( printout t "                                           (+) " tab (round (* ?cotizacion ?sueldo)) crlf)
+   ( printout t "             GRAND TOTAL                   (=) " tab (round (* ?sueldo (+ 0.10 ?cotizacion ?afc ?sis ?comision))) crlf)
    ( printout t "===================================" crlf)
+
+   ( printout t "-------REMUNERACION LIQUIDA--------------" tab (round (* ?sueldo (- 1 (+ 0.10 ?cotizacion ?afc ?sis ?comision)))) crlf)
+
    ( printout t (if (eq ?declarada true ) then DECLARADA else NO-DECLARADA ) tab )
    ( printout t (if (eq ?pagada true ) then PAGADA else NO-PAGADA ) tab )
    ( printout t (if (eq ?impuesta true ) then IMPUESTA else NO-IMPUESTA ) crlf)

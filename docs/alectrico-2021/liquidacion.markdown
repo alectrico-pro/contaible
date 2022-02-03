@@ -326,3 +326,32 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <tr  style='background-color: blanchedalmond'><td></td><td> perdidas-y-ganancias</td><td>saldo-deudor</td></tr>
 <tr> <td> 212</td> <td>2962122</td> <td>0</td></tr>
 <tr style='background-color: blanchedalmond'><td>2962122</td></tr>
+<table style='background-color: lightyellow' ><tbody>
+<tr style='color: white; background-color: black'><td colspan='9'> Partida 213</td></tr>
+<tr><th>DEBE</th><th> HABER </th> <th colspan='6'> Cuenta </th></tr>
+<tr> <td colspan='8'>x-- Liquidando cuenta de resultados (cuando hay pérdidas tributarias) en: utilidad en perdidas-y-ganancias</td></tr>
+<tr style='font-weight:bold; color: white; background-color: crimson'> <td>-2962122</td><td></td><td>utilidad</td><tr>
+<tr><td></td><td>-2962122</td><td> </td><td colspan='2'> r(perdidas-y-ganancias) </td></tr>
+<tr> <td colspan='7'> x-- Liquidando cuenta de resultados idpc en perdidas-y-ganancias</td></tr>
+<tr> <td colspan='7'> La cuenta de liquidacion tiene un debe de 	0 y un haber de 	2646712</td></tr>
+<tr style='background-color: lightgreen'><td>264671</td> <td></td> <td colspan='2' >idpc</td></tr>
+<tr style='background-color: lightgreen'><td></td><td>264671</td> <td> </td><td colspan='2'> r(perdidas-y-ganancias) </td></tr> 
+<tr style='color: white; background-color: black'> <td> -2697451</td><td> -2697451</td><td colspan='3'>( 31 de diciembre	2021	 ) </td></tr>
+<tr><td colspan='9'>alectrico® SpA</td></tr>
+<tr><td colspan='9'>v/Para determinar el valor del resultado del período</td></tr>
+<table><tbody> 
+<table>
+<tr style='background-color: blanchedalmond'><td> </td><td>perdidas-y-ganancias</td><td>saldo-acreedor</td></tr>
+<tr> <td> 210</td> <td>0</td><td> 2646712</td></tr>
+<tr style='background-color: blanchedalmond'><td>2646712</td></tr>
+</table>
+<tr  style='background-color: blanchedalmond'><td></td><td> perdidas-y-ganancias</td><td>saldo-deudor</td></tr>
+<tr> <td> 212</td> <td>2962122</td> <td>0</td></tr>
+<tr style='background-color: blanchedalmond'><td>2962122</td></tr>
+<table style='background-color: lightyellow' ><tbody>
+<tr style='color: white; background-color: black'><td colspan='9'> Partida 214</td></tr>
+<tr><th>DEBE</th><th> HABER </th> <th colspan='6'> Cuenta </th></tr>
+<tr style='color: white; background-color: black'> <td> 0</td><td> 0</td><td colspan='3'>( 31 de diciembre	2021	 ) </td></tr>
+<tr><td colspan='9'>alectrico® SpA</td></tr>
+<tr><td colspan='9'>v/Para determinar el valor del resultado del tributario período</td></tr>
+<table><tbody> 
