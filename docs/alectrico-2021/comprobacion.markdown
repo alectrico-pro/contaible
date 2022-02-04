@@ -49,13 +49,13 @@ NO se han practicado liquidaciones, por lo que SÍ se muestran cuentas nominales
 <tr style=' background: #fff; border: 1px solid red;'>
 <td><small>correccion-monetaria</small></td> <td align='right'>0</td> <td align='right'>3626</td> <td> | </td> <td align='right'> 0</td> <td align='right'>3626</td> </tr>
 <tr style=' background: #fff; border: 1px solid red;'>
-<td>Remuneraciones por Pagar<small>salarios-por-pagar</small></td> <td align='right'>907520</td> <td align='right'>1750000</td> <td> | </td> <td align='right'> 0</td> <td align='right'>842480</td> </tr>
+<td>Remuneraciones por Pagar<small>salarios-por-pagar</small></td> <td align='right'>1215040</td> <td align='right'>2150000</td> <td> | </td> <td align='right'> 0</td> <td align='right'>934960</td> </tr>
 <tr style=' background: #fff; border: 1px solid red;'>
 <td><small>gastos-promocionales</small></td> <td align='right'>206576</td> <td align='right'>0</td> <td> | </td> <td align='right'> 206576</td> <td align='right'>0</td> </tr>
 <tr style=' background: #fff; border: 1px solid red;'>
-<td><small>gastos-administrativos</small></td> <td align='right'>287176</td> <td align='right'>46953</td> <td> | </td> <td align='right'> 240223</td> <td align='right'>0</td> </tr>
+<td><small>gastos-administrativos</small></td> <td align='right'>292128</td> <td align='right'>46953</td> <td> | </td> <td align='right'> 245175</td> <td align='right'>0</td> </tr>
 <tr>
-<td><small>ventas</small></td> <td align='right'>1393913</td> <td align='right'>2595724</td> <td> | </td> <td align='right'> 0</td> <td align='right'>1201811</td>
+<td><small>ventas</small></td> <td align='right'>1393913</td> <td align='right'>2568056</td> <td> | </td> <td align='right'> 0</td> <td align='right'>1174143</td>
 </tr>
 <tr>
 <td>Herramientas<small>herramientas</small></td> <td align='right'>218470</td> <td align='right'>0</td> <td> | </td> <td align='right'> 218470</td> <td align='right'>0</td>
@@ -67,37 +67,37 @@ NO se han practicado liquidaciones, por lo que SÍ se muestran cuentas nominales
 <td colspan='2' style=' background: #faa; border: 1px solid red;'>Subcuenta </td>
 </tr>
 <tr>
-<td><small>ingresos-brutos</small></td> <td align='right'>1393913</td> <td align='right'>2599350</td> <td> | </td> <td align='right'> 0</td> <td align='right'>1205437</td>
+<td><small>ingresos-brutos</small></td> <td align='right'>1393913</td> <td align='right'>2571682</td> <td> | </td> <td align='right'> 0</td> <td align='right'>1177769</td>
 </tr>
 <tr style=' background: #fff; border: 1px solid red;'>
-<td><small>salarios</small></td> <td align='right'>1750000</td> <td align='right'>1750000</td> <td> | </td> <td align='right'> 0</td> <td align='right'>0</td> </tr>
+<td><small>salarios</small></td> <td align='right'>2150000</td> <td align='right'>1750000</td> <td> | </td> <td align='right'> 400000</td> <td align='right'>0</td> </tr>
 <tr style=' background: #fff; border: 1px solid red;'>
 <td><small>utilidad-del-ejercicio-anterior</small></td> <td align='right'>85294</td> <td align='right'>85294</td> <td> | </td> <td align='right'> 0</td> <td align='right'>0</td> </tr>
 <tr>
 <td>Capital pagado<small>capital-social</small></td> <td align='right'>0</td> <td align='right'>2085294</td> <td> | </td> <td align='right'> 0</td> <td align='right'>2085294</td>
 </tr>
 <tr>
-<td>IVA Débitos<small>iva-debito</small></td> <td align='right'>346685</td> <td align='right'>386629</td> <td> | </td> <td align='right'> 0</td> <td align='right'>39944</td>
+<td>IVA Débitos<small>iva-debito</small></td> <td align='right'>346685</td> <td align='right'>382631</td> <td> | </td> <td align='right'> 0</td> <td align='right'>35946</td>
 </tr>
 <tr>
-<td>Caja<small>caja</small></td> <td align='right'>1116083</td> <td align='right'>1105170</td> <td> | </td> <td align='right'> 10913</td> <td align='right'>0</td>
+<td>Caja<small>caja</small></td> <td align='right'>1116083</td> <td align='right'>1110122</td> <td> | </td> <td align='right'> 5961</td> <td align='right'>0</td>
 </tr>
 <tr>
-<td>Banco Estado<small>banco-estado</small></td> <td align='right'>4592808</td> <td align='right'>3623477</td> <td> | </td> <td align='right'> 969331</td> <td align='right'>0</td>
+<td>Banco Estado<small>banco-estado</small></td> <td align='right'>4561142</td> <td align='right'>3930997</td> <td> | </td> <td align='right'> 630145</td> <td align='right'>0</td>
 </tr>
 <tr>
 <td>PPM (Pago Provisional Mensual)<small>ppm</small></td> <td align='right'>2728</td> <td align='right'>0</td> <td> | </td> <td align='right'> 2728</td> <td align='right'>0</td>
 </tr>
 <tr>
-<td>IVA Créditos<small>iva-credito</small></td> <td align='right'>223437</td> <td align='right'>207527</td> <td> | </td> <td align='right'> 15910</td> <td align='right'>0</td>
+<td>IVA Créditos<small>iva-credito</small></td> <td align='right'>224377</td> <td align='right'>207527</td> <td> | </td> <td align='right'> 16850</td> <td align='right'>0</td>
 </tr>
 <tr style=' background: #fff; border: 1px solid red;'>
-<td><small>retencion-de-iva-articulo-11</small></td> <td align='right'>23608</td> <td align='right'>25108</td> <td> | </td> <td align='right'> 0</td> <td align='right'>1500</td> </tr>
+<td><small>retencion-de-iva-articulo-11</small></td> <td align='right'>23608</td> <td align='right'>26048</td> <td> | </td> <td align='right'> 0</td> <td align='right'>2440</td> </tr>
 <tr>
 <td><small>costos-de-ventas</small></td> <td align='right'>11417</td> <td align='right'>409</td> <td> | </td> <td align='right'> 11008</td> <td align='right'>0</td>
 </tr>
 </tbody>
 <tfoot>
-<tr> <td></td> <td align='right'> <div>19777928</div></td> <td align='right'> <div>19220079</div></td><td> | </td> <td align='right'> <div>7708884</div></td> <td align='right'> <div>7151035</div></td> </tr>
+<tr> <td></td> <td align='right'> <div>20464626</div></td> <td align='right'> <div>19846489</div></td><td> | </td> <td align='right'> <div>7786098</div></td> <td align='right'> <div>7167961</div></td> </tr>
 </tfoot>
 </table>

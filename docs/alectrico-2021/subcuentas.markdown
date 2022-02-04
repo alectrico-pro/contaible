@@ -12,7 +12,7 @@ layout: page
 pagos.</th></thead>
 <thead><th> voucher </th><th> partida </th><th> debe </th> <th> | </th> <th> haber </th><th> mes </th> <th>recibida</th> <th>activo-fijo</th> <th> tipo documento</th></thead>
 <tbody>
-<tr> <td> </td><td></td> <td align='right'>766640</td> <td>|</td> <td align='right'>1341980</td> </tr>
+<tr> <td> </td><td></td> <td align='right'>1074160</td> <td>|</td> <td align='right'>1649500</td> </tr>
 <tr> <td> </td><td> </td> <td></td> <td>|</td> <td align='right'>575340</td> <td>$</td> </tr>
 </tbody>
 </table>
@@ -21,8 +21,8 @@ pagos.</th></thead>
 <thead><th colspan='9'> En esta cuenta se incluye descuentos como Cotización: Previsional Obligatoria, de Ahorro, APV , Salud Obligatoria, Salud Voluntaria, Seguro Cesantía.</th></thead>
 <thead><th> voucher </th><th> partida </th><th> debe </th> <th> | </th> <th> haber </th><th> mes </th> <th>recibida</th> <th>activo-fijo</th> <th> tipo documento</th></thead>
 <tbody>
-<tr> <td> </td><td></td> <td align='right'>140880</td> <td>|</td> <td align='right'>408020</td> </tr>
-<tr> <td> </td><td> </td> <td></td> <td>|</td> <td align='right'>267140</td> <td>$</td> </tr>
+<tr> <td> </td><td></td> <td align='right'>140880</td> <td>|</td> <td align='right'>500500</td> </tr>
+<tr> <td> </td><td> </td> <td></td> <td>|</td> <td align='right'>359620</td> <td>$</td> </tr>
 </tbody>
 </table>
 <table>

@@ -1924,7 +1924,7 @@
  (finalidad ""))
 
 
-;remuneraciones de agosto
+;pago de remuneraciones de julio
  ;multa=interes afp 437 + interes salud 227 + interes afc 78
 (pago-de-salarios
  (referencia 88)
@@ -2518,6 +2518,19 @@
  (mes octubre)
  (ano 2021))
 
+;reconocimiento de salario de octubre
+(salario
+ (partida 157)
+ (departamento portales-web)
+ (nombre alexander)
+ (servicio desarrollo)
+ (efectivo 400000)
+ (dia 5)
+ (mes octubre)
+ (ano 2021)
+ (glosa salario-programador))
+
+
 
 
 
@@ -2527,7 +2540,7 @@
  ( folio-nota 21)
  ( mes octubre)
  ( ano 2021)
- ( partida 157)
+ ( partida 158)
  ( subcuenta ventas-con-eboleta-exenta)
  ( glosa "Por anulación de proyecto 1724.")
  ( total 400000)
@@ -2539,7 +2552,7 @@
 (venta-sii
  (folio 6)
  (rut 77201295-0)
- (partida 158)
+ (partida 159)
  (tipo-de-documento 34)
  (dia 5) (mes octubre) (ano 2021)
  (unidades 1)
@@ -2558,7 +2571,7 @@
  ( tipo-de-documento 45)
  ( folio 466338)
  ( rut 55555555-5)
- ( partida 159)
+ ( partida 160)
  ( dia 13) (mes octubre) (ano 2021)
  ( credito 0)
  ( neto  1177)
@@ -2578,7 +2591,7 @@
  ( tipo-de-documento 33)
  ( folio 43893417)
  ( rut 96806980-2 )
- ( partida 160)
+ ( partida 161)
  ( dia 24) (mes octubre) (ano 2021)
  ( credito 0)
  ( neto  6926)
@@ -2591,7 +2604,7 @@
 
 
 ( rendicion-de-eboletas-sii
- ( partida 161)
+ ( partida 162)
  ( unidades 1)
  ( neto  21002)
  ( iva    3998)
@@ -2605,7 +2618,7 @@
  ( tipo-de-documento 45)
  ( folio 3198930)
  ( rut 55555555-5)
- ( partida 162)
+ ( partida 163)
  ( dia 13) (mes octubre) (ano 2021)
  ( credito 0)
  ( neto  3775)
@@ -2763,6 +2776,19 @@
 
 ;------------------------------- noviembre -----------------------------
 
+;pago de remuneraciones de octubre
+(pago-de-salarios
+ (remuneraciones true)
+ (imposiciones false)
+ (partida 169)
+ (trabajador alexander)
+ (remuneracion 307520)
+ (dia 5)
+ (mes noviembre)
+ (ano 2021))
+
+
+
 ;( costo-ventas
 ; ( tipo-de-documento 33)
 ; ( folio 39533607)
@@ -2782,7 +2808,7 @@
 (venta-sii
  (folio 7)
  (rut 77201295-0)
- (partida 169)
+ (partida 170)
  (dia 8) (mes noviembre) (ano 2021)
  (unidades 1)
  (costo_unitario 6666)
@@ -2803,7 +2829,7 @@
  ( tipo-de-documento 33)
  ( folio  44036470)
  ( rut 96806980-2 )
- ( partida 170)
+ ( partida 171)
  ( dia 11) (mes noviembre) (ano 2021)
  ( credito 0)
  ( neto  6926)
@@ -2817,7 +2843,7 @@
 
 ;reconocimiento de salarios de noviembre
 (salario
- (partida 171)
+ (partida 172)
  (departamento electrico)
  (nombre alexander)
  (servicio electricista)

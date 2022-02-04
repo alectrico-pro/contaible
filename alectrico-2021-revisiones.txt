@@ -316,7 +316,7 @@
 
 (revision (revisado true) (partida 156) (tipo 33) (rcv n-a))
 
-(revision (revisado false) (partida 157) (tipo 33) (rcv n-a))
+(revision (revisado true) (partida 157) (tipo 33) (rcv n-a))
 
 (revision (revisado false) (partida 158) (tipo 33) (rcv n-a))
 
