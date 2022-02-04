@@ -3399,6 +3399,31 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 - [ ] rcv
 - [ ] libro-diario
 - [ ] ccm
+- [x] revisado
+![](../revisado.png)
+<table id='Partida-156'>
+<thead> <th style='background-color: lavender' colspan='6'>Partida 156</th></thead>
+<tbody>
+<tr> <td> 0 </td> <td> </td> <td colspan='7'> impuesto-unico-por-pagar#salarios-por-pagar </td> </tr> 
+<tr> <td> 267820 </td> <td> </td> <td colspan='7'> remuneraciones-por-pagar#salarios-por-pagar </td> </tr> 
+<tr style='background-color: lightyellow'>  <td> </td> <td> 0</td> <td> 267820</td> <td colspan='2'> a[banco-estado] </td> </tr>
+<tr style='background-color: azure'>  <td> </td> <td> 267820 </td> <td> 0 </td> <td> </td><td> p[salarios-por-pagar] </td> </tr>
+<tr> <td> </td> <td style='background-color: blanchedalmond'> 267820 </td> <td style='background-color: blanchedalmond'> 267820</td> </tr>
+<tr><td colspan='4'> alectrico® SpA</td> </tr> 
+<tr><td colspan='4'> ( 5 de octubre	2021	 ) </td> </tr>
+<tr><td colspan='8'> Partida 156: pagando-remuneraciones </td></tr>
+<tr> <td colspan='7'>efectuado a alexander </td> </tr>
+<tr><td colspan = '8'> pagar-solo-remuneraciones</td> </tr>
+</tbody>
+</table>
+<p style='page-break-before: always;'>&nbsp;</p>
+<br> 
+<p style='color: white; background-color: red'>  </p>
+<br> 
+- [x] tipo de asiento: 33
+- [ ] rcv
+- [ ] libro-diario
+- [ ] ccm
 - [ ] revisado
 <table id='Partida-157'>
 <thead > <th colspan='6'>Partida 157</th></thead>

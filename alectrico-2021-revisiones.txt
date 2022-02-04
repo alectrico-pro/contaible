@@ -312,11 +312,9 @@
 
 (revision (revisado true) (partida 154) (tipo 33) (rcv n-a))
 
-(revision (revisado false) (partida 155) (tipo 33) (rcv n-a) )
+(revision (revisado false) (partida 155) (tipo 33) (rcv n-a))
 
-(revision (revisado true) (partida 156) (tipo 33) (rcv n-a)
- (a-corregir "Esto genera imponible negativo" )
-)
+(revision (revisado true) (partida 156) (tipo 33) (rcv n-a))
 
 (revision (revisado false) (partida 157) (tipo 33) (rcv n-a))
 

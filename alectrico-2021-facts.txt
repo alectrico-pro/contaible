@@ -2508,22 +2508,16 @@
 
 ;------------------------ octubre -----------------------------------
 
-
-;(pago-de-salarios
-; (remuneraciones true)
-; (imposiciones false)
-; (partida 156)
-; (trabajador alexander)
-; (afp   47180)
-; (afc   10500)
-; (salud  24500)
-; (multa  28105)
-; (folio-prevision 20022021092580)
-; (folio-salud 2017220100278294)
-; (remuneracion 267820)
-; (dia 5)
-; (mes octubre)
-; (ano 2021))
+;remuneraciones de agosto
+(pago-de-salarios
+ (remuneraciones true)
+ (imposiciones false)
+ (partida 156)
+ (trabajador alexander)
+ (remuneracion 267820)
+ (dia 5)
+ (mes octubre)
+ (ano 2021))
 
 
 
