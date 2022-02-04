@@ -453,13 +453,13 @@
    then
     (printout k "<tr><td></td><td></td><td></td><td> (=) </td><td align='right' style='background-color: lightgreen'>" ?utilidad-del-ejercicio "</td><td> BASE IMPONIBLE (módulo liquidaciones) <small> " ?regimen "</small></td></tr>" crlf)
   else
-    (printout k "<tr><td></td><td></td><td></td><td> (=) </td><td align='right' style='font-weight:bold; color: white; background-color: crimson'>" ?utilidad-del-ejercicio "</td><td> BASE IMPONIBLE (módulo liquidaciones) <small>" ?regimen "</small></td></tr>" crlf)
+    (printout k "<tr><td></td><td></td><td></td><td> (=) </td><td align='right' style='font-weight:bold; background-color: azure'>" ?utilidad-del-ejercicio "</td><td> BASE IMPONIBLE (módulo liquidaciones) <small>" ?regimen "</small></td></tr>" crlf)
   )
  
  (if (and (eq ?regimen propyme) (> ?utilidad-del-ejercicio 0))
    then 
-    (printout k "<tr><td></td><td></td><td></td><td> (-) </td><td align='right' style=' background-color: gold'>" (* ?utilidad-del-ejercicio 0.5) "</td><td>    Rebaja Art.14 Letra E <small>" ?regimen "</small></td></tr>" crlf)
-    (printout k "<tr><td></td><td></td><td></td><td> (=) </td><td align='right' style='font-weight:bold; color: white; background-color: crimson'>" (* ?utilidad-del-ejercicio 0.5) "</td><td> RENTA LIQUIDA IMPONIBLE</td></tr>" crlf)
+    (printout k "<tr><td></td><td></td><td></td><td> (-) </td><td align='right' style=' background-color: gold'>" (round (* ?utilidad-del-ejercicio 0.5)) "</td><td>    Rebaja Art.14 Letra E <small>" ?regimen "</small></td></tr>" crlf)
+    (printout k "<tr><td></td><td></td><td></td><td> (=) </td><td align='right' style='font-weight:bold; background-color: lightgreen'>" (round (* ?utilidad-del-ejercicio 0.5))"</td><td> RENTA LIQUIDA IMPONIBLE</td></tr>" crlf)
   ; (printout k "<tr><td></td><td></td><td></td><td> (=) </td><td align='right' style='font-weight:bold; color: white; background-color: crimson'>" (* ?utilidad-del-ejercicio 0.5 ?tasa-idpc)"</td><td> IDPC A PAGAR <small> " ?tasa-idpc " en marzo </small></td></tr>" crlf)
  )  
 

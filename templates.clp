@@ -157,6 +157,7 @@
 )
 
 (deftemplate pago-de-salarios
+  (slot referencia)
   (slot remuneraciones (default false))
   (slot imposiciones (default false))
   (slot partida)

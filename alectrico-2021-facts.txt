@@ -1239,6 +1239,8 @@
  (archivo "../factura-propia-exenta-1.png")
  (finalidad ""))
 
+
+
 (venta-sii
  (folio 11)
  (rut 77201295-0)
@@ -1437,6 +1439,7 @@
  (archivo "../factura-afecta-u-chile-2737126.png")
  (finalidad "Desarrollo del Servicio alectrico Repair"))
 
+
 ( gasto-promocional
  ( tipo-de-documento 33)
  ( folio 69612 )
@@ -1452,6 +1455,7 @@
  ( glosa "Por Gasto Promocinal: Masking-Tape")
  ( archivo "../factura-afecta-eugenio-69612.png")
  ( finalidad "Departamento de Administración"))
+
 
 ( costo-ventas
  ( tipo-de-documento 33)
@@ -1469,6 +1473,7 @@
  ( archivo "../factura-afecta-transbank-37825276.png")
  ( finalidad "División Eléctrica"))
 
+
 ( nota-de-credito-de-subcuenta-existente
  ( dia 31)
  ( emitida true)
@@ -1483,7 +1488,7 @@
  ( neto  151962)
  ( archivo "../nota-de-credito-propia-16.png"))
 
-
+;reconocimiento de salarios de julio
 ;(impuesto 4488)
 (salario
  (partida 088)
@@ -1918,8 +1923,11 @@
  (archivo "../factura-propia-exenta-3.png")
  (finalidad ""))
 
+
+;remuneraciones de agosto
  ;multa=interes afp 437 + interes salud 227 + interes afc 78
 (pago-de-salarios
+ (referencia 88)
  (remuneraciones true)
  (imposiciones true)
  (partida 119)
@@ -2058,7 +2066,7 @@
  ( archivo "../nota-de-credito-propia-19.png")
 )
 
-
+;reconocimiento de salario de agosto
 (salario
  (partida 124)
  (departamento electrico)
@@ -2100,7 +2108,7 @@
 
 ;-------------- septiembre ---------------------------------------------
 
-
+;reconocimiento de salario de septiembre
 (salario
  (partida 127)
  (departamento electrico)
@@ -2111,6 +2119,8 @@
  (mes septiembre)
  (ano 2021)
  (glosa salario-electricista))
+
+
 
 
 
@@ -2129,9 +2139,10 @@
  (archivo "../factura-propia-exenta-4.png")
  (finalidad ""))
 
-;pagando los salarios del mes anterior
+;pagando los salarios del mes anterior: agosto
  ;multa=interes afp 635 + interes salud 330 + interes afc 114
 (pago-de-salarios
+ (referencia 124)
  (remuneraciones true)
  (imposiciones true)
  (partida 129)
@@ -2498,16 +2509,21 @@
 ;------------------------ octubre -----------------------------------
 
 
-(salario
- (partida 156)
- (departamento electrico)
- (nombre alexander)
- (servicio programador)
- (efectivo 400000)
- (dia 5)
- (mes octubre)
- (ano 2021)
- (glosa salario-programador))
+;(pago-de-salarios
+; (remuneraciones true)
+; (imposiciones false)
+; (partida 156)
+; (trabajador alexander)
+; (afp   47180)
+; (afc   10500)
+; (salud  24500)
+; (multa  28105)
+; (folio-prevision 20022021092580)
+; (folio-salud 2017220100278294)
+; (remuneracion 267820)
+; (dia 5)
+; (mes octubre)
+; (ano 2021))
 
 
 
@@ -2754,39 +2770,6 @@
 
 ;------------------------------- noviembre -----------------------------
 
-(salario
- (partida 169)
- (departamento electrico)
- (nombre alexander)
- (servicio programador)
- (efectivo 400000)
- (dia 5)
- (mes noviembre)
- (ano 2021)
- (glosa salario-programador))
-
-
-(pago-de-salarios
- (remuneraciones true)
- (imposiciones false)
- (partida 170)
- (trabajador alexander)
- (afp 52480)
- (afc 12000)
- (salud 28000)
- (multa 0)
- (folio-prevision 0)
- (folio-salud 0)
- (remuneracion 307520)
- (dia 5)
- (mes noviembre)
- (ano 2021))
-
-
-
-
-
-
 ;( costo-ventas
 ; ( tipo-de-documento 33)
 ; ( folio 39533607)
@@ -2806,7 +2789,7 @@
 (venta-sii
  (folio 7)
  (rut 77201295-0)
- (partida 171)
+ (partida 169)
  (dia 8) (mes noviembre) (ano 2021)
  (unidades 1)
  (costo_unitario 6666)
@@ -2827,7 +2810,7 @@
  ( tipo-de-documento 33)
  ( folio  44036470)
  ( rut 96806980-2 )
- ( partida 172)
+ ( partida 170)
  ( dia 11) (mes noviembre) (ano 2021)
  ( credito 0)
  ( neto  6926)
@@ -2839,11 +2822,25 @@
  (finalidad "No subordinada a ningún departamento"))
 
 
+;reconocimiento de salarios de noviembre
+(salario
+ (partida 171)
+ (departamento electrico)
+ (nombre alexander)
+ (servicio electricista)
+ (efectivo 400000 )
+ (dia 20)
+ (mes noviembre)
+ (ano 2021)
+ (glosa salario-electricista))
+
+
+
 ( gasto-administrativo
  ( tipo-de-documento 33)
  ( folio 1648)
  ( rut 76999251-0)
- ( partida 173)
+ ( partida 183)
  ( dia 08) (mes noviembre) (ano 2021)
  ( credito 0)
  ( neto  4193)
@@ -2882,36 +2879,6 @@
 
 
 
-(salario
- (partida 188)
- (departamento electrico)
- (nombre alexander)
- (servicio programador)
- (efectivo 400000)
- (dia 5)
- (mes diciembre)
- (ano 2021)
- (glosa salario-programador))
-
-
-(pago-de-salarios
- (remuneraciones true)
- (imposiciones false)
- (partida 189)
- (trabajador alexander)
- (afp 52480)
- (afc 12000)
- (salud 28000)
- (multa 0)
- (folio-prevision 0)
- (folio-salud 0)
- (remuneracion 307520)
- (dia 5)
- (mes diciembre)
- (ano 2021))
-
-
-
 (insumos
  (pedido 1724)
  (rut 96792460-K)
@@ -2919,7 +2886,7 @@
  (folio 115116314)
  (unidades 1)
  (costo_unitario 8395)
- (partida 190)
+ (partida 188)
  (dia 1) (mes diciembre)  (ano 2021)
  (material epp)
  (proveedor sodimac )
@@ -2935,7 +2902,7 @@
 (venta-sii
  (folio 8)
  (rut 77201295-0)
- (partida 195)
+ (partida 189)
  (tipo-de-documento 34)
  (dia 9) (mes diciembre) (ano 2021)
  (unidades 1)
@@ -2951,7 +2918,7 @@
 (venta-sii
  (folio 9)
  (rut 77201295-0)
- (partida 196)
+ (partida 195)
  (tipo-de-documento 34)
  (dia 28) (mes diciembre) (ano 2021)
  (unidades 1)
@@ -2968,7 +2935,7 @@
 (venta-sii
  (folio 21)
  (rut 77201295-0)
- (partida 197)
+ (partida 196)
  (tipo-de-documento 33)
  (dia 9) (mes diciembre) (ano 2021)
  (unidades 1)
@@ -2984,7 +2951,7 @@
 (venta-sii
  (folio 22)
  (rut 77201295-0)
- (partida 198)
+ (partida 197)
  (tipo-de-documento 33)
  (dia 26) (mes diciembre) (ano 2021)
  (unidades 1)
@@ -3000,7 +2967,7 @@
 (venta
  (folio 10)
  (rut 77201295-0)
- (partida 199)
+ (partida 198)
  (tipo-de-documento 34)
  (dia 31) (mes diciembre) (ano 2021)
  (unidades 1)
@@ -3022,7 +2989,7 @@
  ( tipo-de-documento 33)
  ( folio 44204963)
  ( rut 96806980-2 )
- ( partida 200)
+ ( partida 199)
  ( dia 10) (mes diciembre) (ano 2021)
  ( credito 0)
  ( neto  6926)
@@ -3037,7 +3004,7 @@
  ( tipo-de-documento 33)
  ( folio 44123442 )
  ( rut 96806980-2 )
- ( partida 201)
+ ( partida 200)
  ( dia 13) (mes diciembre) (ano 2021)
  ( credito 0)
  ( neto  6926)
@@ -3057,17 +3024,16 @@
  ( dia 7 )
  ( mes diciembre)
  ( ano 2021)
- ( partida 202)
+ ( partida 201)
  ( glosa "Anulación de factura 4036470")
 )
-
 
 
 ;----------------------------------------------------
 (partida
  (numero 203)
  (dia 31) (mes diciembre) (ano 2021)
- (descripcion "Por Reconocimiento de los Gastos realizados para construir la Plataforma alectrico®.")
+ (descripcion "Por Activación de Gatos Diferidos por la Construccioń de la plataforma alectrico.")
  (actividad aporte-plataforma-alectrico®))
 
 
@@ -3076,7 +3042,7 @@
  ( tipo-de-documento ajuste)
  ( empresa alectrico-2021)
  ( cuenta plataforma-alectrico)
- ( monto  1550000)
+ ( monto 1750000 )
  ( partida 203)
  ( dia 31)  ( mes diciembre)  ( ano 2021)
  ( glosa activacion-plataforma-alectrico))
@@ -3086,18 +3052,29 @@
  ( tipo-de-documento ajuste)
  ( empresa alectrico-2021)
  ( cuenta salarios)
- ( monto  1550000)
+ ( monto  1750000)
  ( partida 203)
  ( dia 31)  ( mes diciembre)  ( ano 2021)
  ( glosa activacion-plataforma-alectrico))
 
 
+;reconocimiento de salarios de noviembre
+(salario
+ (partida 204)
+ (departamento electrico)
+ (nombre alexander)
+ (servicio electricista)
+ (efectivo 400000 )
+ (dia 20)
+ (mes diciembre)
+ (ano 2021)
+ (glosa salario-electricista))
 
 
 ;-----------------------------------------------
 
 
-(deposito (partida 204) (banco banco-estado) (monto 900000 ) (dia 31) (mes diciembre) (ano 2021) )
+(deposito (partida 206) (banco banco-estado) (monto 900000 ) (dia 31) (mes diciembre) (ano 2021) )
 
 
 
@@ -3120,7 +3097,7 @@
 ;  (ano 2021)
 ;  (partida 213)
 ;)
-
+;
 ;(ajuste-anual-de-resultado-tributario
 ;  (ano 2021)
 ;  (partida 214 )
@@ -3291,11 +3268,6 @@
  ( dia 1) ( mes enero) ( ano 2022)
  ( glosa asiento-inicial))
 
-
-
-
-
-
 ;------------------------------------ enero compras -------------------------------------
 ( gasto-administrativo
  ( tipo-de-documento 45)
@@ -3337,15 +3309,6 @@
  (dia 1)
  (mes febrero)
  (ano 2022))
-
-;Corresponde a la amortización del pago de Parecer técnico THHN
-(cobro-de-cuentas-por-cobrar
-  (partida 2010)
-  (monto 10000)
-  (dia 03)
-  (mes febrero)
-  (ano 2022))
-
 
 
 ( ajustes-mensuales (mes febrero) (ano 2022) (partida 2013))

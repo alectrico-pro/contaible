@@ -63,6 +63,31 @@
 )
 
 
+(remuneracion
+  (servicio alectricista)
+  (trabajador alexander)
+  (mes diciembre)
+  (ano 2021)
+  (dias-trabajados 7)
+  (semana-corrida 1)
+  (pagada false)
+  (declarada false)
+  (impuesta false)
+)
+
+
+(remuneracion
+  (servicio alectricista)
+  (trabajador alexander)
+  (mes enero)
+  (ano 2022)
+  (dias-trabajados 8)
+  (semana-corrida 1)
+  (pagada false)
+  (declarada true)
+  (impuesta false)
+)
+
 
 
 
