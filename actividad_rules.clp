@@ -581,10 +581,11 @@
 
 
 
-  ( assert (abono (tipo-de-documento declaracion-remuneraciones) (cuenta entidades-previsionales-por-pagar) (partida ?numero) (dia ?dia) (mes ?mes) (ano ?ano) (empresa ?empresa) (monto ?entidades) (glosa (str-cat (str-cat (str-cat pago-a- ?departamento) -por-) ?servicio))))
+  ( assert (abono (tipo-de-documento declaracion*remuneraciones) (cuenta entidades-previsionales-por-pagar) (partida ?numero) (dia ?dia) (mes ?mes) (ano ?ano) (empresa ?empresa) (monto ?entidades) (glosa (str-cat (str-cat (str-cat pago-a- ?departamento) -por-) ?servicio))))
 
 
-   ( assert (abono (tipo-de-documento impuesto-unico-por-pagar) (cuenta remuneraciones-por-pagar) (partida ?numero) (dia ?dia) (mes ?mes) (ano ?ano) (empresa ?empresa) (monto ?liquido) (glosa (str-cat (str-cat (str-cat pago-a- ?departamento) -por-) ?servicio))))
+  ;atencion: si coloco tipo-de-documento en declaracion-remuneraciones, el abono no se propaga a salarios-por-pagar
+  ( assert (abono (tipo-de-documento declaracion°remuneraciones) (cuenta remuneraciones-por-pagar) (partida ?numero) (dia ?dia) (mes ?mes) (ano ?ano) (empresa ?empresa) (monto ?liquido) (glosa (str-cat (str-cat (str-cat pago-a- ?departamento) -por-) ?servicio))))
 
 
   ( assert (cargo (tipo-de-documento declaracion-remuneraciones) (cuenta salarios) (partida ?numero) (dia ?dia) (mes ?mes) (ano ?ano) (empresa ?empresa) (monto ?sueldo) (glosa (str-cat (str-cat (str-cat pago-a- ?departamento) -por-) ?servicio))))
