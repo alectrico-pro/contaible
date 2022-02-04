@@ -3405,10 +3405,10 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <thead> <th style='background-color: lavender' colspan='6'>Partida 156</th></thead>
 <tbody>
 <tr> <td> 0 </td> <td> </td> <td colspan='7'> impuesto-unico-por-pagar#salarios-por-pagar </td> </tr> 
-<tr> <td> 267820 </td> <td> </td> <td colspan='7'> remuneraciones-por-pagar#salarios-por-pagar </td> </tr> 
-<tr style='background-color: lightyellow'>  <td> </td> <td> 0</td> <td> 267820</td> <td colspan='2'> a[banco-estado] </td> </tr>
-<tr style='background-color: azure'>  <td> </td> <td> 267820 </td> <td> 0 </td> <td> </td><td> p[salarios-por-pagar] </td> </tr>
-<tr> <td> </td> <td style='background-color: blanchedalmond'> 267820 </td> <td style='background-color: blanchedalmond'> 267820</td> </tr>
+<tr> <td> 307520 </td> <td> </td> <td colspan='7'> remuneraciones-por-pagar#salarios-por-pagar </td> </tr> 
+<tr style='background-color: lightyellow'>  <td> </td> <td> 0</td> <td> 307520</td> <td colspan='2'> a[banco-estado] </td> </tr>
+<tr style='background-color: azure'>  <td> </td> <td> 307520 </td> <td> 0 </td> <td> </td><td> p[salarios-por-pagar] </td> </tr>
+<tr> <td> </td> <td style='background-color: blanchedalmond'> 307520 </td> <td style='background-color: blanchedalmond'> 307520</td> </tr>
 <tr><td colspan='4'> alectrico® SpA</td> </tr> 
 <tr><td colspan='4'> ( 5 de octubre	2021	 ) </td> </tr>
 <tr><td colspan='8'> Partida 156: pagando-remuneraciones </td></tr>

@@ -2122,8 +2122,6 @@
 
 
 
-
-
 (venta-sii
  (folio 4)
  (rut 77201295-0)
@@ -2508,13 +2506,14 @@
 
 ;------------------------ octubre -----------------------------------
 
-;remuneraciones de agosto
+
+;pago de remuneraciones de septiembre
 (pago-de-salarios
  (remuneraciones true)
  (imposiciones false)
  (partida 156)
  (trabajador alexander)
- (remuneracion 267820)
+ (remuneracion 307520)
  (dia 5)
  (mes octubre)
  (ano 2021))
@@ -2891,6 +2890,7 @@
  (iva   1595)
  (glosa "Por pack 3M de máscaras N95")
  (finalidad "Elementos de Protección Personal"))
+
 
 
 (venta-sii

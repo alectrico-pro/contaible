@@ -12,8 +12,8 @@ layout: page
 pagos.</th></thead>
 <thead><th> voucher </th><th> partida </th><th> debe </th> <th> | </th> <th> haber </th><th> mes </th> <th>recibida</th> <th>activo-fijo</th> <th> tipo documento</th></thead>
 <tbody>
-<tr> <td> </td><td></td> <td align='right'>726940</td> <td>|</td> <td align='right'>1341980</td> </tr>
-<tr> <td> </td><td> </td> <td></td> <td>|</td> <td align='right'>615040</td> <td>$</td> </tr>
+<tr> <td> </td><td></td> <td align='right'>766640</td> <td>|</td> <td align='right'>1341980</td> </tr>
+<tr> <td> </td><td> </td> <td></td> <td>|</td> <td align='right'>575340</td> <td>$</td> </tr>
 </tbody>
 </table>
 <table>

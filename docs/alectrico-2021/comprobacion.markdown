@@ -49,7 +49,7 @@ NO se han practicado liquidaciones, por lo que SÍ se muestran cuentas nominales
 <tr style=' background: #fff; border: 1px solid red;'>
 <td><small>correccion-monetaria</small></td> <td align='right'>0</td> <td align='right'>3626</td> <td> | </td> <td align='right'> 0</td> <td align='right'>3626</td> </tr>
 <tr style=' background: #fff; border: 1px solid red;'>
-<td>Remuneraciones por Pagar<small>salarios-por-pagar</small></td> <td align='right'>867820</td> <td align='right'>1750000</td> <td> | </td> <td align='right'> 0</td> <td align='right'>882180</td> </tr>
+<td>Remuneraciones por Pagar<small>salarios-por-pagar</small></td> <td align='right'>907520</td> <td align='right'>1750000</td> <td> | </td> <td align='right'> 0</td> <td align='right'>842480</td> </tr>
 <tr style=' background: #fff; border: 1px solid red;'>
 <td><small>gastos-promocionales</small></td> <td align='right'>206576</td> <td align='right'>0</td> <td> | </td> <td align='right'> 206576</td> <td align='right'>0</td> </tr>
 <tr style=' background: #fff; border: 1px solid red;'>
@@ -83,7 +83,7 @@ NO se han practicado liquidaciones, por lo que SÍ se muestran cuentas nominales
 <td>Caja<small>caja</small></td> <td align='right'>1116083</td> <td align='right'>1105170</td> <td> | </td> <td align='right'> 10913</td> <td align='right'>0</td>
 </tr>
 <tr>
-<td>Banco Estado<small>banco-estado</small></td> <td align='right'>4592808</td> <td align='right'>3583777</td> <td> | </td> <td align='right'> 1009031</td> <td align='right'>0</td>
+<td>Banco Estado<small>banco-estado</small></td> <td align='right'>4592808</td> <td align='right'>3623477</td> <td> | </td> <td align='right'> 969331</td> <td align='right'>0</td>
 </tr>
 <tr>
 <td>PPM (Pago Provisional Mensual)<small>ppm</small></td> <td align='right'>2728</td> <td align='right'>0</td> <td> | </td> <td align='right'> 2728</td> <td align='right'>0</td>
@@ -98,6 +98,6 @@ NO se han practicado liquidaciones, por lo que SÍ se muestran cuentas nominales
 </tr>
 </tbody>
 <tfoot>
-<tr> <td></td> <td align='right'> <div>19738228</div></td> <td align='right'> <div>19180379</div></td><td> | </td> <td align='right'> <div>7748584</div></td> <td align='right'> <div>7190735</div></td> </tr>
+<tr> <td></td> <td align='right'> <div>19777928</div></td> <td align='right'> <div>19220079</div></td><td> | </td> <td align='right'> <div>7708884</div></td> <td align='right'> <div>7151035</div></td> </tr>
 </tfoot>
 </table>

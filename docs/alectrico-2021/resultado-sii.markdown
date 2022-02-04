@@ -13,14 +13,14 @@ Se han practicado liquidaciones, por lo que NO se muestran cuentas nominales
 <thead> <th></th><th> </th> <th align='center' colspan= '2'>SUMAS</th><th> Padre </th> </thead>
 <thead> <th></th><th></th>  <th>DEBER</th> <th>ACREEDOR</th> </thead>
 <tbody>
-<thead> <th></th><th colspan='4'> T O T A L    A C T I V O  </th> <th> 3642008</th> </thead>
+<thead> <th></th><th colspan='4'> T O T A L    A C T I V O  </th> <th> 3602308</th> </thead>
 <thead> <th></th><th colspan='4'> A C T I V O    F I J O</th> <th> 2090383</th> </thead>
-<thead> <th></th><th colspan='4'> A C T I V O    C I R C U L A N T E</th> <th> 1551625</th> </thead>
+<thead> <th></th><th colspan='4'> A C T I V O    C I R C U L A N T E</th> <th> 1511925</th> </thead>
 <thead> <th></th><th>cuentas-por-cobrar</th><th> 20000</th> </thead>
 <thead> <th></th><th>retencion-de-iva-articulo-11</th><th> 0</th> </thead>
 <thead> <th></th><th>iva-credito</th><th> 15910</th> </thead>
 <thead> <th></th><th>ppm</th><th> 2728</th> </thead>
-<thead> <th></th><th>banco-estado</th><th> 1009031</th> </thead>
+<thead> <th></th><th>banco-estado</th><th> 969331</th> </thead>
 <thead> <th></th><th>caja</th><th> 10913</th> </thead>
 <thead> <th></th><th>intangibles</th><th> 1987369</th> </thead>
 <thead> <th></th><th>materiales</th><th> 123645</th> </thead>
