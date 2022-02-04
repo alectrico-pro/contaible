@@ -667,13 +667,13 @@
    ( assert (partida (proveedor ?trabajador) (numero ?numero) (dia ?dia) (mes ?mes) (ano ?ano) (descripcion pagando-remuneraciones) (actividad pagar-solo-remuneraciones) ))
 
 
-   ( assert (cargo (tipo-de-documento traspaso) (cuenta remuneraciones-por-pagar ) (partida ?numero) (dia ?dia) (mes ?mes) (ano ?ano) (empresa ?empresa) (monto ?remuneracion) (glosa (str-cat "Pago-a-" ?trabajador "-por-" ?remuneracion))))
+   ( assert (cargo (tipo-de-documento previred°remuneraciones) (cuenta remuneraciones-por-pagar ) (partida ?numero) (dia ?dia) (mes ?mes) (ano ?ano) (empresa ?empresa) (monto ?remuneracion) (glosa (str-cat "Pago-a-" ?trabajador "-por-" ?remuneracion))))
 
-   ( assert (cargo (tipo-de-documento traspaso) (cuenta impuesto-unico-por-pagar) (partida ?numero) (dia ?dia) (mes ?mes) (ano ?ano) (empresa ?empresa) (monto ?impuesto-unico) (glosa (str-cat "Pago-a-" ?trabajador "-por-" ?impuesto-unico))))
+   ( assert (cargo (tipo-de-documento previred°impuesto-unico) (cuenta impuesto-unico-por-pagar) (partida ?numero) (dia ?dia) (mes ?mes) (ano ?ano) (empresa ?empresa) (monto ?impuesto-unico) (glosa (str-cat "Pago-a-" ?trabajador "-por-" ?impuesto-unico))))
 
-   ( assert (abono (tipo-de-documento traspaso) (cuenta banco-estado) (partida ?numero) (dia ?dia) (mes ?mes) (ano ?ano) (empresa ?empresa) (monto ?total) (glosa (str-cat "Pago-a-" ?trabajador "-por-" ?total))))
+   ( assert (abono (tipo-de-documento (str-cat previred° ?trabajador)) (cuenta banco-estado) (partida ?numero) (dia ?dia) (mes ?mes) (ano ?ano) (empresa ?empresa) (monto ?total) (glosa (str-cat "Pago-a-" ?trabajador "-por-" ?total))))
 
-   ( assert (ccm (folio na) (partida ?numero) (tipo-documento traspaso) (monto-total ?total)))
+   ( assert (ccm (folio na) (partida ?numero) (tipo-documento previred) (monto-total ?total)))
   ( printout t "-->pago-de-remuneraciones -- Pagando solo remuneraciones de " ?trabajador " por "  ?total crlf)
 )
 

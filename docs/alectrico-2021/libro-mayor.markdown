@@ -355,7 +355,7 @@ pagos.</th></thead>
 <tr> <td> </td> <td align='right'>204</td> <td align='right'>0</td> <td> | </td> <td align='right'> 307520</td> <td>diciembre</td><td>false</td><td> false</td><td> declaracion°remuneraciones</td> </tr>
 <tr> <td> </td> <td align='right'>171</td> <td align='right'>0</td> <td> | </td> <td align='right'> 92480</td> <td>noviembre</td><td>false</td><td> false</td><td> declaracion*remuneraciones</td> </tr>
 <tr> <td> </td> <td align='right'>171</td> <td align='right'>0</td> <td> | </td> <td align='right'> 307520</td> <td>noviembre</td><td>false</td><td> false</td><td> declaracion°remuneraciones</td> </tr>
-<tr> <td> </td> <td align='right'>156</td> <td align='right'>267820</td> <td> | </td> <td align='right'> 0</td> <td>octubre</td><td>false</td><td> false</td><td> traspaso</td> </tr>
+<tr> <td> </td> <td align='right'>156</td> <td align='right'>267820</td> <td> | </td> <td align='right'> 0</td> <td>octubre</td><td>false</td><td> false</td><td> previred°remuneraciones</td> </tr>
 <tr> <td> </td> <td align='right'>129</td> <td align='right'>0</td> <td> | </td> <td align='right'> 0</td> <td>septiembre</td><td>false</td><td> false</td><td> previred</td> </tr>
 <tr> <td> </td> <td align='right'>127</td> <td align='right'>0</td> <td> | </td> <td align='right'> 82180</td> <td>septiembre</td><td>false</td><td> false</td><td> declaracion*remuneraciones</td> </tr>
 <tr> <td> </td> <td align='right'>127</td> <td align='right'>0</td> <td> | </td> <td align='right'> 267820</td> <td>septiembre</td><td>false</td><td> false</td><td> declaracion°remuneraciones</td> </tr>
@@ -1005,7 +1005,7 @@ pagos.</th></thead>
 <tr> <td> </td> <td align='right'>169</td> <td align='right'>6666</td> <td> | </td> <td align='right'> 0</td> <td>noviembre</td><td>false</td><td> false</td><td> 34</td> </tr>
 <tr> <td> </td> <td align='right'>170</td> <td align='right'>0</td> <td> | </td> <td align='right'> 8242</td> <td>noviembre</td><td>true</td><td> false</td><td> 33</td> </tr>
 <tr> <td> </td> <td align='right'>187</td> <td align='right'>0</td> <td> | </td> <td align='right'> 8</td> <td>noviembre</td><td>false</td><td> false</td><td> pago-de-ppm</td> </tr>
-<tr> <td> </td> <td align='right'>156</td> <td align='right'>0</td> <td> | </td> <td align='right'> 267820</td> <td>octubre</td><td>false</td><td> false</td><td> traspaso</td> </tr>
+<tr> <td> </td> <td align='right'>156</td> <td align='right'>0</td> <td> | </td> <td align='right'> 267820</td> <td>octubre</td><td>false</td><td> false</td><td> previred°alexander</td> </tr>
 <tr> <td> </td> <td align='right'>157</td> <td align='right'>0</td> <td> | </td> <td align='right'> 400000</td> <td>octubre</td><td>false</td><td> false</td><td> 61</td> </tr>
 <tr> <td> </td> <td align='right'>158</td> <td align='right'>6666</td> <td> | </td> <td align='right'> 0</td> <td>octubre</td><td>false</td><td> false</td><td> 34</td> </tr>
 <tr> <td> </td> <td align='right'>161</td> <td align='right'>25000</td> <td> | </td> <td align='right'> 0</td> <td>octubre</td><td>false</td><td> false</td><td> 39</td> </tr>
