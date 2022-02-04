@@ -500,9 +500,9 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <tr><td></td><td>4193</td><td> </td><td>gastos-administrativos</td></tr>
 <tr><td>6926</td><td> </td><td colspan='2'> r(base-imponible) partida 171 </td></tr>
 <tr><td></td><td>6926</td><td> </td><td>gastos-administrativos</td></tr>
-<tr><td>6926</td><td> </td><td colspan='2'> r(base-imponible) partida 200 </td></tr>
+<tr><td>6926</td><td> </td><td colspan='2'> r(base-imponible) partida 201 </td></tr>
 <tr><td></td><td>6926</td><td> </td><td>gastos-administrativos</td></tr>
-<tr><td>6926</td><td> </td><td colspan='2'> r(base-imponible) partida 199 </td></tr>
+<tr><td>6926</td><td> </td><td colspan='2'> r(base-imponible) partida 200 </td></tr>
 <tr><td></td><td>6926</td><td> </td><td>gastos-administrativos</td></tr>
 <tr style='color: white; background-color: black'> <td> 4385544</td><td> 4385544</td><td colspan='3'>( 31 de diciembre	2021	 ) </td></tr>
 <tr><td colspan='9'>alectrico® SpA</td></tr>
@@ -542,17 +542,17 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <tr><td></td><td>780</td><td> </td><td>base-imponible</td></tr>
 <tr><td>40027</td><td> </td><td colspan='2'> r(gastos-administrativos) partida 98 </td></tr>
 <tr><td></td><td>40027</td><td> </td><td>base-imponible</td></tr>
-<tr><td>6926</td><td> </td><td colspan='2'> r(gastos-administrativos) partida 201 </td></tr>
+<tr><td>6926</td><td> </td><td colspan='2'> r(gastos-administrativos) partida 202 </td></tr>
 <tr><td></td><td>6926</td><td> </td><td>base-imponible</td></tr>
-<tr><td>6666</td><td> </td><td colspan='2'> r(ventas) partida 189 </td></tr>
-<tr><td></td><td>6666</td><td> </td><td>base-imponible</td></tr>
 <tr><td>6666</td><td> </td><td colspan='2'> r(ventas) partida 195 </td></tr>
 <tr><td></td><td>6666</td><td> </td><td>base-imponible</td></tr>
-<tr><td>93137</td><td> </td><td colspan='2'> r(ventas) partida 196 </td></tr>
-<tr><td></td><td>93137</td><td> </td><td>base-imponible</td></tr>
+<tr><td>6666</td><td> </td><td colspan='2'> r(ventas) partida 196 </td></tr>
+<tr><td></td><td>6666</td><td> </td><td>base-imponible</td></tr>
 <tr><td>93137</td><td> </td><td colspan='2'> r(ventas) partida 197 </td></tr>
 <tr><td></td><td>93137</td><td> </td><td>base-imponible</td></tr>
-<tr><td>30000</td><td> </td><td colspan='2'> r(ventas) partida 198 </td></tr>
+<tr><td>93137</td><td> </td><td colspan='2'> r(ventas) partida 198 </td></tr>
+<tr><td></td><td>93137</td><td> </td><td>base-imponible</td></tr>
+<tr><td>30000</td><td> </td><td colspan='2'> r(ventas) partida 199 </td></tr>
 <tr><td></td><td>30000</td><td> </td><td>base-imponible</td></tr>
 <tr><td>6666</td><td> </td><td colspan='2'> r(ventas) partida 170 </td></tr>
 <tr><td></td><td>6666</td><td> </td><td>base-imponible</td></tr>

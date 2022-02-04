@@ -2,7 +2,7 @@
 layout: page
 --- 
 <p>Pedido 1724 encontrado </p>
-<p> Insumo de Pedido 1724 encontrado en partida </p> 188
+<p> Insumo de Pedido 1724 encontrado en partida </p> 189
 <p> Insumo de Pedido 1724 encontrado en partida </p> 166
 <p> Insumo de Pedido 1724 encontrado en partida </p> 149
 <p> Insumo de Pedido 1724 encontrado en partida </p> 146

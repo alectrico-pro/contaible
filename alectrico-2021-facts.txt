@@ -1,4 +1,5 @@
 ;IMPORTANTE: El vocher 267 en CCM de SII que pertenece al período de febrero, fue emitido el 3 de marzo y fue reversado desde el período de marzo. Los totales pueden resultar descuadrados en febrero por esa razón
+
 ;Hay algo parecido para junio. Se debe ir hasta julio para que se corrija
 ;La solucioń es fijarse bien cando se mande a hacer el asiento centralizado, hay que asegurarse de que la fecha del asiento esté en el período.
 ;En el libro de remuneraciones los datos hacen referencia a un contrato mensual.Eso es lo que me parece. Entonces los contratos diarios, digamos de 5 días generan impuesto único, pues esos 5 dias co el monto contradado, digamos de 300.000 butos. Equivaldŕian a un contrado mensual de más de 1.800.0000.
@@ -2897,6 +2898,18 @@
 ;heroku 
 
 
+;pago de remuneraciones de noviembre
+(pago-de-salarios
+ (remuneraciones true)
+ (imposiciones false)
+ (partida 188)
+ (trabajador alexander)
+ (remuneracion 307520)
+ (dia 8)
+ (mes diciembre)
+ (ano 2021))
+
+
 
 (insumos
  (pedido 1724)
@@ -2905,7 +2918,7 @@
  (folio 115116314)
  (unidades 1)
  (costo_unitario 8395)
- (partida 188)
+ (partida 189)
  (dia 1) (mes diciembre)  (ano 2021)
  (material epp)
  (proveedor sodimac )
@@ -2922,7 +2935,7 @@
 (venta-sii
  (folio 8)
  (rut 77201295-0)
- (partida 189)
+ (partida 195)
  (tipo-de-documento 34)
  (dia 9) (mes diciembre) (ano 2021)
  (unidades 1)
@@ -2938,7 +2951,7 @@
 (venta-sii
  (folio 9)
  (rut 77201295-0)
- (partida 195)
+ (partida 196)
  (tipo-de-documento 34)
  (dia 28) (mes diciembre) (ano 2021)
  (unidades 1)
@@ -2955,7 +2968,7 @@
 (venta-sii
  (folio 21)
  (rut 77201295-0)
- (partida 196)
+ (partida 197)
  (tipo-de-documento 33)
  (dia 9) (mes diciembre) (ano 2021)
  (unidades 1)
@@ -2971,7 +2984,7 @@
 (venta-sii
  (folio 22)
  (rut 77201295-0)
- (partida 197)
+ (partida 198)
  (tipo-de-documento 33)
  (dia 26) (mes diciembre) (ano 2021)
  (unidades 1)
@@ -2987,7 +3000,7 @@
 (venta
  (folio 10)
  (rut 77201295-0)
- (partida 198)
+ (partida 199)
  (tipo-de-documento 34)
  (dia 31) (mes diciembre) (ano 2021)
  (unidades 1)
@@ -3009,7 +3022,7 @@
  ( tipo-de-documento 33)
  ( folio 44204963)
  ( rut 96806980-2 )
- ( partida 199)
+ ( partida 200)
  ( dia 10) (mes diciembre) (ano 2021)
  ( credito 0)
  ( neto  6926)
@@ -3024,7 +3037,7 @@
  ( tipo-de-documento 33)
  ( folio 44123442 )
  ( rut 96806980-2 )
- ( partida 200)
+ ( partida 201)
  ( dia 13) (mes diciembre) (ano 2021)
  ( credito 0)
  ( neto  6926)
@@ -3044,7 +3057,7 @@
  ( dia 7 )
  ( mes diciembre)
  ( ano 2021)
- ( partida 201)
+ ( partida 202)
  ( glosa "Anulación de factura 4036470")
 )
 
