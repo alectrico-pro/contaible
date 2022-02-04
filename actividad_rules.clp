@@ -708,18 +708,19 @@
   =>
    ( bind ?prevision (+ ?salud ?afc ?afp))
    ( bind ?total ( + ?prevision ?remuneracion ?impuesto-unico))
+
    ( assert (partida (proveedor ?trabajador) (numero ?numero) (dia ?dia) (mes ?mes) (ano ?ano) (descripcion pagando-salarios) (actividad pagar-salarios) (archivo (str-cat "../previred-prevision-" ?folio ".png" ))))
 
-   ( assert (cargo (tipo-de-documento previred) (cuenta entidades-previsionales-por-pagar) (partida ?numero) (dia ?dia) (mes ?mes) (ano ?ano) (empresa ?empresa) (monto ?prevision) ))
+   ( assert (cargo (tipo-de-documento previred°salarios) (cuenta entidades-previsionales-por-pagar) (partida ?numero) (dia ?dia) (mes ?mes) (ano ?ano) (empresa ?empresa) (monto ?prevision) ))
 
-   ( assert (cargo (tipo-de-documento previred) (cuenta remuneraciones-por-pagar ) (partida ?numero) (dia ?dia) (mes ?mes) (ano ?ano) (empresa ?empresa) (monto ?remuneracion) (glosa (str-cat "Pago-a-" ?trabajador "-por-" ?remuneracion))))
+   ( assert (cargo (tipo-de-documento previred°salarios) (cuenta remuneraciones-por-pagar ) (partida ?numero) (dia ?dia) (mes ?mes) (ano ?ano) (empresa ?empresa) (monto ?remuneracion) (glosa (str-cat "Pago-a-" ?trabajador "-por-" ?remuneracion))))
 
-   ( assert (cargo (tipo-de-documento previred) (cuenta impuesto-unico-por-pagar) (partida ?numero) (dia ?dia) (mes ?mes) (ano ?ano) (empresa ?empresa) (monto ?impuesto-unico) (glosa (str-cat "Pago-a-" ?trabajador "-por-" ?impuesto-unico))))
+   ( assert (cargo (tipo-de-documento previred°salarios) (cuenta impuesto-unico-por-pagar) (partida ?numero) (dia ?dia) (mes ?mes) (ano ?ano) (empresa ?empresa) (monto ?impuesto-unico) (glosa (str-cat "Pago-a-" ?trabajador "-por-" ?impuesto-unico))))
 
 
-   ( assert (abono (tipo-de-documento planilla-previred) (cuenta banco-estado) (partida ?numero) (dia ?dia) (mes ?mes) (ano ?ano) (empresa ?empresa) (monto ?total) (glosa (str-cat "Pago-a-" ?trabajador "-por-" ?total))))
+   ( assert (abono (tipo-de-documento previred°salarios) (cuenta banco-estado) (partida ?numero) (dia ?dia) (mes ?mes) (ano ?ano) (empresa ?empresa) (monto ?total) (glosa (str-cat "Pago-a-" ?trabajador "-por-" ?total))))
 
-   ( assert (ccm (folio na) (partida ?numero) (tipo-documento planilla-previred) (monto-total ?total)))
+   ( assert (ccm (folio na) (partida ?numero) (tipo-documento previred°salarios) (monto-total ?total)))
   ( printout t "-->pago-de-salario -- Pagando salarios de " ?trabajador " por "  ?total crlf)
 )
 

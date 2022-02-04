@@ -356,12 +356,12 @@ pagos.</th></thead>
 <tr> <td> </td> <td align='right'>171</td> <td align='right'>0</td> <td> | </td> <td align='right'> 92480</td> <td>noviembre</td><td>false</td><td> false</td><td> declaracion*remuneraciones</td> </tr>
 <tr> <td> </td> <td align='right'>171</td> <td align='right'>0</td> <td> | </td> <td align='right'> 307520</td> <td>noviembre</td><td>false</td><td> false</td><td> declaracion°remuneraciones</td> </tr>
 <tr> <td> </td> <td align='right'>156</td> <td align='right'>267820</td> <td> | </td> <td align='right'> 0</td> <td>octubre</td><td>false</td><td> false</td><td> previred°remuneraciones</td> </tr>
-<tr> <td> </td> <td align='right'>129</td> <td align='right'>0</td> <td> | </td> <td align='right'> 0</td> <td>septiembre</td><td>false</td><td> false</td><td> previred</td> </tr>
+<tr> <td> </td> <td align='right'>129</td> <td align='right'>0</td> <td> | </td> <td align='right'> 0</td> <td>septiembre</td><td>false</td><td> false</td><td> previred°salarios</td> </tr>
 <tr> <td> </td> <td align='right'>127</td> <td align='right'>0</td> <td> | </td> <td align='right'> 82180</td> <td>septiembre</td><td>false</td><td> false</td><td> declaracion*remuneraciones</td> </tr>
 <tr> <td> </td> <td align='right'>127</td> <td align='right'>0</td> <td> | </td> <td align='right'> 267820</td> <td>septiembre</td><td>false</td><td> false</td><td> declaracion°remuneraciones</td> </tr>
-<tr> <td> </td> <td align='right'>129</td> <td align='right'>300000</td> <td> | </td> <td align='right'> 0</td> <td>septiembre</td><td>false</td><td> false</td><td> previred</td> </tr>
-<tr> <td> </td> <td align='right'>119</td> <td align='right'>0</td> <td> | </td> <td align='right'> 0</td> <td>agosto</td><td>false</td><td> false</td><td> previred</td> </tr>
-<tr> <td> </td> <td align='right'>119</td> <td align='right'>300000</td> <td> | </td> <td align='right'> 0</td> <td>agosto</td><td>false</td><td> false</td><td> previred</td> </tr>
+<tr> <td> </td> <td align='right'>129</td> <td align='right'>300000</td> <td> | </td> <td align='right'> 0</td> <td>septiembre</td><td>false</td><td> false</td><td> previred°salarios</td> </tr>
+<tr> <td> </td> <td align='right'>119</td> <td align='right'>0</td> <td> | </td> <td align='right'> 0</td> <td>agosto</td><td>false</td><td> false</td><td> previred°salarios</td> </tr>
+<tr> <td> </td> <td align='right'>119</td> <td align='right'>300000</td> <td> | </td> <td align='right'> 0</td> <td>agosto</td><td>false</td><td> false</td><td> previred°salarios</td> </tr>
 <tr> <td> </td> <td align='right'>124</td> <td align='right'>0</td> <td> | </td> <td align='right'> 70440</td> <td>agosto</td><td>false</td><td> false</td><td> declaracion*remuneraciones</td> </tr>
 <tr> <td> </td> <td align='right'>124</td> <td align='right'>0</td> <td> | </td> <td align='right'> 229560</td> <td>agosto</td><td>false</td><td> false</td><td> declaracion°remuneraciones</td> </tr>
 <tr> <td> </td> <td align='right'>88</td> <td align='right'>0</td> <td> | </td> <td align='right'> 70440</td> <td>julio</td><td>false</td><td> false</td><td> declaracion*remuneraciones</td> </tr>
@@ -1013,7 +1013,7 @@ pagos.</th></thead>
 <tr> <td> </td> <td align='right'>166</td> <td align='right'>0</td> <td> | </td> <td align='right'> 5891</td> <td>octubre</td><td>false</td><td> false</td><td> 33</td> </tr>
 <tr> <td> </td> <td align='right'>168</td> <td align='right'>0</td> <td> | </td> <td align='right'> 151</td> <td>octubre</td><td>false</td><td> false</td><td> ajuste-mensual-manual</td> </tr>
 <tr> <td> </td> <td align='right'>128</td> <td align='right'>400000</td> <td> | </td> <td align='right'> 0</td> <td>septiembre</td><td>false</td><td> false</td><td> 34</td> </tr>
-<tr> <td> </td> <td align='right'>129</td> <td align='right'>0</td> <td> | </td> <td align='right'> 300000</td> <td>septiembre</td><td>false</td><td> false</td><td> planilla-previred</td> </tr>
+<tr> <td> </td> <td align='right'>129</td> <td align='right'>0</td> <td> | </td> <td align='right'> 300000</td> <td>septiembre</td><td>false</td><td> false</td><td> previred°salarios</td> </tr>
 <tr> <td> </td> <td align='right'>130</td> <td align='right'>75006</td> <td> | </td> <td align='right'> 0</td> <td>septiembre</td><td>false</td><td> false</td><td> 33</td> </tr>
 <tr> <td> </td> <td align='right'>133</td> <td align='right'>6666</td> <td> | </td> <td align='right'> 0</td> <td>septiembre</td><td>false</td><td> false</td><td> 34</td> </tr>
 <tr> <td> </td> <td align='right'>138</td> <td align='right'>52631</td> <td> | </td> <td align='right'> 0</td> <td>septiembre</td><td>false</td><td> false</td><td> comprobante-de-pago-de-transferencia-total</td> </tr>
@@ -1037,7 +1037,7 @@ pagos.</th></thead>
 <tr> <td> </td> <td align='right'>115</td> <td align='right'>110833</td> <td> | </td> <td align='right'> 0</td> <td>agosto</td><td>false</td><td> false</td><td> 33</td> </tr>
 <tr> <td> </td> <td align='right'>116</td> <td align='right'>0</td> <td> | </td> <td align='right'> 40000</td> <td>agosto</td><td>false</td><td> false</td><td> 61</td> </tr>
 <tr> <td> </td> <td align='right'>117</td> <td align='right'>40000</td> <td> | </td> <td align='right'> 0</td> <td>agosto</td><td>false</td><td> false</td><td> 34</td> </tr>
-<tr> <td> </td> <td align='right'>119</td> <td align='right'>0</td> <td> | </td> <td align='right'> 300000</td> <td>agosto</td><td>false</td><td> false</td><td> planilla-previred</td> </tr>
+<tr> <td> </td> <td align='right'>119</td> <td align='right'>0</td> <td> | </td> <td align='right'> 300000</td> <td>agosto</td><td>false</td><td> false</td><td> previred°salarios</td> </tr>
 <tr> <td> </td> <td align='right'>120</td> <td align='right'>0</td> <td> | </td> <td align='right'> 30012</td> <td>agosto</td><td>false</td><td> false</td><td> 33</td> </tr>
 <tr> <td> </td> <td align='right'>121</td> <td align='right'>0</td> <td> | </td> <td align='right'> 30905</td> <td>agosto</td><td>false</td><td> false</td><td> 33</td> </tr>
 <tr> <td> </td> <td align='right'>122</td> <td align='right'>73780</td> <td> | </td> <td align='right'> 0</td> <td>agosto</td><td>false</td><td> false</td><td> 33</td> </tr>
