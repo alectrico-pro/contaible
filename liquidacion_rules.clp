@@ -29,6 +29,7 @@
   ( close k )
 )
 
+
 ;esto genera un markdown para que jekyll lo publique en el blog necios
 (defrule inicio-kindle-k-liquidacion-rules
    ( declare (salience 10000))
@@ -101,6 +102,7 @@
 
 
 (defrule determinar-resultado-financiero
+  ( declare (salience -1))
   (balance (ano ?ano))
   (empresa (nombre ?empresa)) 
   (ticket (numero ?numero))
@@ -130,7 +132,7 @@
 
 
 (defrule determinar-resultado-tributario
- ; (declare (salience -2))
+  (declare (salience -2))
   (balance (ano ?ano))
   (empresa (nombre ?empresa))
   (ticket (numero ?numero))
@@ -177,20 +179,6 @@
   ( assert (cabeza ?numero))
 )
 
-
-(defrule tributacion
-  ( cabeza 1155)
-  ( no )
- =>
-  ( printout t crlf crlf crlf)
-  ( printout t "==================================================================" crlf)
-  ( printout t FECHA tab Parcial tab Debe tab Haber tab Descripcion crlf)
-  ( printout t "==================================================================" crlf)
-  ( printout t "Partida 1155 " crlf)
-  ( printout t ".................................................................." crlf)
-  ( assert (fila 1155))
-)
-
 ;============================== Tabla de la Partida ================================
 (defrule encabezado
   ( cabeza ?numero )
@@ -215,18 +203,14 @@
 
 
 (defrule footer
-  (no)
   ?fila <- ( fila ?numero )
 ;  ( balance ( dia ?top ) (mes ?mes) (ano ?ano))
   ( empresa (nombre ?empresa) (razon ?razon))
   ( partida (numero ?numero) (debe ?debe) (haber ?haber) (dia ?dia) (mes ?mes) (ano ?ano) (descripcion ?descripcion))
-  ( or
-    (not (exists (tributacion (partida ?numero) (tributada true))))
-    (not (exists (liquidacion (partida ?numero) (liquidada true)))))
   
  ; ( test (>= ?top ?dia))
  =>
-  ;:( retract ?fila )
+  ( retract ?fila )
   ( printout t "------------------------------------------------------------------" crlf)
   ( printout t tab tab ?debe tab ?haber tab "( " ?dia " de " ?mes tab ?ano tab " )" crlf)
   ( printout t "==================================================================" crlf)

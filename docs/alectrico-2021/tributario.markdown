@@ -53,20 +53,20 @@ layout: page
 <tr><td></td><td></td><td></td><td> (-) </td><td align='right'>0</td><td> Impuestos No Recuperables </td></tr>
 <tr style='font-weight:bold; background-color: azure'><td> <td></td></td><td> </td><td></td><td align='right'>601970</td><td> Resultado Fuera de Explotacion </td></tr>
 <tr style='font-weight:bold; background-color: azure'><td> <td></td></td><td> </td><td></td><td align='right'>601970</td><td> Resultado Antes de Impuesto</td></tr>
-<tr style='color: white, font-weight:bold; background-color: crimson'><td></td><td></td><td></td><td> (-) </td><td align='right'> 38350</td><td> Impuesto Determinado, factor es: 0.1 en 2021 </td></tr>
-<tr style='font-weight:bold;background-color: azure'><td> <td></td></td><td> </td><td></td><td align='right'>563620</td><td> Utilidad Calculada</td></tr>
+<tr style='color: white, font-weight:bold; background-color: crimson'><td></td><td></td><td></td><td> (-) </td><td align='right'> 60197</td><td> Impuesto Determinado, factor es: 0.1 en 2021 </td></tr>
+<tr style='font-weight:bold;background-color: azure'><td> <td></td></td><td> </td><td></td><td align='right'>541773</td><td> Utilidad Calculada</td></tr>
 </tbody></table>
 <table> 
 <tr><th> <td colspan=6> DETERMINACIÓN DE LA BASE IMPONIBLE </td></th></tr>
 <tr><th> <td colspan=6> Determina los impuestos del regimen propyme</td></th></tr>
 <tbody>
-<tr style='font-weight:bold;background-color: azure'><td> <td></td></td><td> </td><td></td><td align='right'>601970</td><td> Utilidad del Ejercicio (módulo liquidación)</td></tr>
+<tr style='font-weight:bold;background-color: azure'><td> <td></td></td><td> </td><td></td><td align='right'>-4167074</td><td> Utilidad del Ejercicio (módulo liquidación)</td></tr>
 <tr><td> (-) </td><td align='right'>218470</td><td></td><td></td><td></td><td> Depreciación Instantánea Activo Fijo Propyme </td></tr>
 <tr><td> (-) </td><td align='right'>0</td><td></td><td></td><td></td><td> Amortización Instantánea Intangibles </td></tr>
 <tr><td> (+) </td><td align='right'>0</td><td></td><td></td><td></td><td> Aportes al Capital </td></tr>
 <tr><td> <td></td></td><td> </td><td> (=) </td><td align='right' style = 'font-weight:bold; background-color: azure'>383500</td><td> RENTA LÍQUIDA IMPONIBLE </td></tr>
-<tr><td> <td></td></td><td> </td><td> (-) </td><td align='right'>38350</td><td> Impuesto Determinado: 10% </td></tr>
-<tr><td></td><td></td><td></td><td> (=) </td><td align='right' style='font-weight:bold; background-color: lightgreen'>345150</td><td> RESULTADO DESPUES DE IMPUESTOS (módulo liquidaciones) <small>propyme</small></td></tr>
+<tr><td> <td></td></td><td> </td><td> (-) </td><td align='right'>60197</td><td> Impuesto Determinado: 10% </td></tr>
+<tr><td></td><td></td><td></td><td> (=) </td><td align='right' style='font-weight:bold; background-color: lightgreen'>541773</td><td> RESULTADO DESPUES DE IMPUESTOS (módulo liquidaciones) <small>propyme</small></td></tr>
 <tr> <th> INCENTIVO AL AHORRO SOLICITADO EN selecciones.txt </th></tr> 
 <tr><td></td><td></td><td></td><td> (-) </td><td align='right' style = 'font-weight:bold; background-color: azure'  >383500</td><td> RENTA LIQUIDA IMPONIBLE</td></tr>
 <tr><td></td><td></td><td></td><td> (-) </td><td align='right' style=' background-color: gold'>191750</td><td>    Rebaja Art.14 Letra E <small>propyme</small></td></tr>

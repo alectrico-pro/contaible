@@ -3114,6 +3114,7 @@
 ( ajustes-mensuales (mes diciembre) (ano 2021) (partida 207))
 ( ajuste-de-iva     (mes diciembre) (ano 2021) (partida 208))
 
+
 ( ajuste-anual (ano 2021) (partida 209)
  (liquidacion financiera) (saldo deudor)     )
 
@@ -3121,10 +3122,11 @@
  (liquidacion financiera) (saldo acreedor)    )
 
 ( ajuste-anual (ano 2021) (partida 211)
- (liquidacion tributaria) (saldo aporte)     )
+ (liquidacion tributaria) (saldo deduccion) )
 
 ( ajuste-anual (ano 2021) (partida 212)
- (liquidacion tributaria) (saldo deduccion) )
+ (liquidacion tributaria) (saldo aporte)     )
+
 
 ( ajuste-anual-de-resultado-financiero
   (ano 2021)
@@ -3133,7 +3135,7 @@
 
 (ajuste-anual-de-resultado-tributario
   (ano 2021)
-  (partida 214 )
+  (partida 214)
 )
 
 
