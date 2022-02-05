@@ -418,23 +418,22 @@
   (printout t "|" tab tab "|     " ?utilidad-antes-de-idpc tab "Resultado Antes de Impuesto" crlf)
   (printout k "<tr style='font-weight:bold; background-color: azure'><td> <td></td></td><td> </td><td></td><td align='right'>" ?utilidad-antes-de-idpc "</td><td> Resultado Antes de Impuesto</td></tr>" crlf)
 
-  (bind ?utilidad 0)
-
+  ( bind ?utilidad-despues 0)
 
   ( if (< ?resultado 0 ) then
     (printout t "|" tab tab "| (-) " ?idpc tab "Impuesto Determinado: " (round (* ?tasa-idpc 100) ) " en " ?ano crlf)
     (printout k "<tr style='background-color: lightgreen' ><td></td><td></td><td></td><td> (X) </td><td align='right'> " ?idpc "</td><td> Impuesto No Aplica porque hay pérdida tributaria </td></tr>" crlf)
-    (bind ?utilidad ?utilidad-antes-de-idpc )
+    (bind ?utilidad-despues ?utilidad-antes-de-idpc )
   )
 
 
   ( if (> ?resultado 0 ) then
     (printout t "|" tab tab "| (-) " ?idpc tab "Impuesto Determinado, factor es " ?tasa-idpc " en " ?ano crlf)
     (printout k "<tr style='color: white, font-weight:bold; background-color: crimson'><td></td><td></td><td></td><td> (-) </td><td align='right'> " ?idpc "</td><td> Impuesto Determinado, factor es: " ?tasa-idpc " en " ?ano " </td></tr>" crlf)
-    (bind ?utilidad (- ?utilidad-antes-de-idpc ?idpc))
+    (bind ?utilidad-despues (- ?utilidad-antes-de-idpc ?idpc))
   )
 
-  (printout t "|" tab tab "|     " ?utilidad tab "Utilidad Después de Impuestos" crlf)
+  (printout t "|" tab tab "|     " ?utilidad-despues tab "Utilidad Después de Impuestos" crlf)
   (printout k "<tr style='font-weight:bold;background-color: azure'><td> <td></td></td><td> </td><td></td><td align='right'>" ?utilidad "</td><td> Utilidad Calculada</td></tr>" crlf)
 
   (printout t "---------------------------------------------------------------------------" crlf)
@@ -460,7 +459,7 @@
   ( printout k "<tr><td> (+) </td><td align='right'>" ?aportes "</td><td></td><td></td><td></td><td> Aportes al Capital </td></tr>" crlf)
 
   (printout t "|" tab tab "| (=) " ?resultado tab "RLI Calculada" crlf)
-  (printout k "<tr><td> <td></td></td><td> </td><td> (=) </td><td align='right' style = 'font-weight:bold; background-color: azure'>" ?resultado "</td><td> RENTA LÍQUIDA IMPONIBLE </td></tr>" crlf)
+  (printout k "<tr><td> <td></td></td><td> </td><td> (=) </td><td align='right' style = 'font-weight:bold; background-color: azure'>" ?resultado "</td><td> RLI Calculada </td></tr>" crlf)
 
  
 
@@ -478,7 +477,7 @@
  (if (and (eq ?incentivo-al-ahorro true) (eq ?regimen propyme) (> ?utilidad-tributaria 0))
    then 
     (printout t "  INCENTIVO AL AHORRO SOLICITADO EN selecciones.txt " crlf)
-    (printout t tab tab ?resultado tab " Renta Líquida Imponible " crlf)
+    (printout t tab tab ?resultado tab " RLI Calculada " crlf)
     (printout t tab tab (round (* ?resultado 0.5)) tab tab "Rebaja Art.14 Letra E " ?regimen  crlf)
     (printout t tab tab (round (* ?resultado ?tasa-idpc)) tab "IDPC A PAGAR" tab (round (* ?tasa-idpc 100)) "%" crlf)
     (printout k "<tr> <th> INCENTIVO AL AHORRO SOLICITADO EN selecciones.txt </th></tr> " crlf)

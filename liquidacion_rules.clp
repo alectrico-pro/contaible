@@ -457,8 +457,6 @@
 (defrule liquidar-cuentas-tributarias-deducciones
   (declare (salience 80))
 
-    (no)
-
     (fila ?numero )
 
     (empresa (nombre ?empresa ))
@@ -486,7 +484,7 @@
       (grupo     ?grupo)
       (tributada false))
 
-    (test (> ?haber ?debe))
+    (test (> ?debe ?haber))
 
  =>
 
