@@ -3123,14 +3123,14 @@
 ;( ajuste-anual (ano 2021) (partida 211)
 ; (liquidacion tributaria) (saldo aporte)     )
 
-;( ajuste-anual (ano 2021) (partida 212)
-; (liquidacion tributaria) (saldo deduccion) )
+( ajuste-anual (ano 2021) (partida 212)
+ (liquidacion tributaria) (saldo deduccion) )
 
 ;( ajuste-anual-de-resultado-financiero
 ;  (ano 2021)
 ;  (partida 213)
 ;)
-;
+
 ;(ajuste-anual-de-resultado-tributario
 ;  (ano 2021)
 ;  (partida 214 )
@@ -3379,7 +3379,7 @@
 ;)
  ;8 meses a 555 desde mayo 2021
 
-
+#==================== NO
 ;------------------------ liquidaciones ------------
 
 ;partida de liquidación de saldo deudor ----------------

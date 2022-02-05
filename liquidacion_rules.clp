@@ -24,7 +24,7 @@
 
 
 (defrule fin-liquidacion
-  ( declare (salience -100) )
+  ( declare (salience -10000) )
  =>
   ( close k )
 )
@@ -61,35 +61,41 @@
    (balance (ano ?ano))
    (empresa (nombre ?empresa))
    (ticket (numero ?numero))
+
    (ajuste-anual (ano ?ano) (partida ?numero)
      (liquidacion financiera) (saldo ?saldo) )
 
    (or
      (cuenta (nombre ?nombre&:(neq ?nombre ingresos-brutos)) (padre false) (grupo resultado))
-     (cuenta (nombre ?nombre) (padre ingresos-brutos) (grupo resultado))
-   )
+     (cuenta (nombre ?nombre) (padre ingresos-brutos) (grupo resultado))  )
+
   =>
+
   ; (printout t "Liquidación Financiera de cuentas deudoras" ?ano crlf)
    ( assert (partida (numero ?numero) (empresa ?empresa) (dia 31) (mes enero) (ano ?ano) (descripcion (str-cat "Ajuste Anual Año: Liquidacion Financiera " ?ano )) (actividad liquidacion-financiera-de-deudoras) ))
-  ( assert (liquidacion (cuenta ?nombre) (partida ?numero) (ano ?ano) (liquidadora perdidas-y-ganancias) (tipo-de-saldo ?saldo)))
+   ( assert (liquidacion (cuenta ?nombre) (partida ?numero) (ano ?ano) (liquidadora perdidas-y-ganancias) (tipo-de-saldo ?saldo)))
+
 )
 
 
 (defrule ajustar-ano-tributarias
+   (declare (salience 10000))
    (balance (ano ?ano))
    (empresa (nombre ?empresa))
    (ticket (numero ?numero))
+
    (ajuste-anual (ano ?ano) (partida ?numero)
      (liquidacion tributaria) (saldo ?saldo) )
 
    (or
      (cuenta (nombre ?nombre&:(neq ?nombre ingresos-brutos)) (padre false) (grupo resultado))
-     (cuenta (nombre ?nombre) (padre ingresos-brutos) (grupo resultado))
-   )
+     (cuenta (nombre ?nombre) (padre ingresos-brutos) (grupo resultado)))
+
   =>
-  ; (printout t "Liquidación Financiera de cuentas deudoras" ?ano crlf)
-   ( assert (partida (numero ?numero) (empresa ?empresa) (dia 31) (mes enero) (ano ?ano) (descripcion (str-cat "Ajuste Anual Año: Liquidación Tributaria " ?ano )) (actividad liquidacion-financiera-de-deudoras) ))
-  ( assert (tributacion (cuenta ?nombre) (partida ?numero) (ano ?ano) (liquidadora base-imponible) (tipo-de-saldo ?saldo)))
+
+;   ( printout t "Liquidación Tributaria " ?ano tab ?nombre tab ?saldo crlf)
+   ( assert (partida (numero ?numero) (empresa ?empresa) (dia 31) (mes diciembre) (ano ?ano) (descripcion (str-cat "Ajuste Anual Año: Liquidación Tributaria " ?ano )) (actividad liquidacion-tributaria-de-deudoras) ))
+   ( assert (tributacion (cuenta ?nombre) (partida ?numero) (ano ?ano) (liquidadora base-imponible) (efecto ?saldo)))
 )
 
 
@@ -124,8 +130,8 @@
 )
 
 
-(defrule determinar-de-resultado-tributario
-  (declare (salience -2))
+(defrule determinar-resultado-tributario
+ ; (declare (salience -2))
   (balance (ano ?ano))
   (empresa (nombre ?empresa))
   (ticket (numero ?numero))
@@ -161,19 +167,11 @@
  ( printout t  "---------------------- LIQUIDACION --------------------" crlf)
 )
 
-(defrule liquidacion-mostrar-tributacion
-  ( declare (salience 8000))
-  ?partida<-(partida (numero ?numero) )
-  ( tributacion (partida ?numero) ) 
- => 
-  ( assert (cabeza ?numero))
-)
-
-
 (defrule liquidacion-mostrar-partida
   ( declare (salience 8000))
   ?partida<-(partida (numero ?numero) )
   (or ( liquidacion (partida ?numero))
+      ( tributacion (partida ?numero))
       ( provision   (partida ?numero))
   )
  =>
@@ -212,17 +210,22 @@
   ( printout k "<tr style='color: white; background-color: black'><td colspan='9'> Partida " ?numero  "</td></tr>" crlf)
   ( printout k "<tr><th>DEBE</th><th> HABER </th> <th colspan='6'> Cuenta </th></tr>" crlf)
 
-
   ( assert (fila ?numero))
 )
 
 
 
 (defrule footer
+  (declare (salience -9000))
   ?fila <- ( fila ?numero )
 ;  ( balance ( dia ?top ) (mes ?mes) (ano ?ano))
   ( empresa (nombre ?empresa) (razon ?razon))
   ( partida (numero ?numero) (debe ?debe) (haber ?haber) (dia ?dia) (mes ?mes) (ano ?ano) (descripcion ?descripcion))
+  ( or
+    (not (exists (tributacion (partida ?numero) (tributada true))))
+    (not (exists (liquidacion (partida ?numero) (liquidada true))))
+  )
+  
  ; ( test (>= ?top ?dia))
  =>
   ;:( retract ?fila )
@@ -530,7 +533,7 @@
    ?liquidador  <- (cuenta (nombre ?liquidora) (debe ?debe2) (haber ?haber2) (tipo liquidadora) )
    (cuenta (nombre base-imponible) (partida nil))
  =>
-;  ( printout t "nombre " tab ?nombre tab ?liquidora tab ?haber2 crlf)
+ ; ( printout t "nombre " tab ?nombre tab ?liquidora tab ?haber2 crlf)
   ( bind ?saldo ?debe)
   ( modify ?acreedora  (tributada true))
    ( modify ?liquidador
@@ -913,7 +916,7 @@
    ( exists (tributacion (partida ?partida-cuenta) ))
    ( cuenta (nombre base-imponible) (partida nil) (grupo ?grupo-i) (padre ?padre-i) (circulante ?circulante-i) (naturaleza ?naturaleza-i) (tipo ?tipo-i) (origen ?origen-i) (de-resultado ?de-resultado-i))
   =>
-   ( printout t "creando cuenta base-imponible "  ?partida-cuenta crlf)
+  ; ( printout t "creando cuenta base-imponible "  ?partida-cuenta crlf)
    ( assert (cuenta (partida ?partida-cuenta) (descripcion base-imponible) (dia ?dia) (mes ?mes) (ano ?ano) (nombre base-imponible) (grupo ?grupo-i) (empresa ?empresa) (padre ?padre-i) (circulante ?circulante-i) (naturaleza ?naturaleza-i)(tipo ?tipo-i) (origen ?origen-i) (de-resultado ?de-resultado-i) (tributada true)))
 )
 
