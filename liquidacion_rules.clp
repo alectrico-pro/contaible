@@ -57,47 +57,73 @@
 
 
 
-(defrule ajustar-ano-financieras
+(defrule ajustar-ano-financieras-deudoras
    (declare (salience 1))
    (balance (ano ?ano))
    (empresa (nombre ?empresa))
    (ticket (numero ?numero))
-
-   (ajuste-anual (ano ?ano) (partida ?numero)
-     (liquidacion financiera) (saldo ?saldo) )
+   (ajuste-anual (ano ?ano) (liquidacion financiera) (partida ?numero) (efecto deudor) )
 
    (or
      (cuenta (nombre ?nombre&:(neq ?nombre ingresos-brutos)) (padre false) (grupo resultado))
      (cuenta (nombre ?nombre) (padre ingresos-brutos) (grupo resultado))  )
-
   =>
-
-  ; (printout t "Liquidación Financiera de cuentas deudoras" ?ano crlf)
-   ( assert (partida (numero ?numero) (empresa ?empresa) (dia 31) (mes enero) (ano ?ano) (descripcion (str-cat "Ajuste Anual Año: Liquidacion Financiera " ?ano )) (actividad liquidacion-financiera-de-deudoras) ))
-   ( assert (liquidacion (cuenta ?nombre) (partida ?numero) (ano ?ano) (liquidadora perdidas-y-ganancias) (tipo-de-saldo ?saldo)))
-
+   ( assert (partida (numero ?numero) (empresa ?empresa) (dia 31) (mes diciembre) (ano ?ano) (descripcion (str-cat "Ajuste Anual Año: Liquidacion Financiera deudor" tab ?ano )) (actividad liquidacion-financiera) ))
+   ( assert (liquidacion (cuenta ?nombre) (partida ?numero) (ano ?ano) (liquidadora perdidas-y-ganancias) (efecto deudor)))
 )
 
 
-(defrule ajustar-ano-tributarias
-   (declare (salience 10000))
+(defrule ajustar-ano-financieras-acreedoras
+   (declare (salience 1))
    (balance (ano ?ano))
    (empresa (nombre ?empresa))
    (ticket (numero ?numero))
-
-   (ajuste-anual (ano ?ano) (partida ?numero)
-     (liquidacion tributaria) (saldo ?saldo) )
+   (ajuste-anual (ano ?ano) (liquidacion financiera) (partida ?numero) (efecto acreedor) )
 
    (or
      (cuenta (nombre ?nombre&:(neq ?nombre ingresos-brutos)) (padre false) (grupo resultado))
-     (cuenta (nombre ?nombre) (padre ingresos-brutos) (grupo resultado)))
-
+     (cuenta (nombre ?nombre) (padre ingresos-brutos) (grupo resultado))  )
   =>
-
-;   ( printout t "Liquidación Tributaria " ?ano tab ?nombre tab ?saldo crlf)
-   ( assert (partida (numero ?numero) (empresa ?empresa) (dia 31) (mes diciembre) (ano ?ano) (descripcion (str-cat "Ajuste Anual Año: Liquidación Tributaria " ?ano )) (actividad liquidacion-tributaria-de-deudoras) ))
-   ( assert (tributacion (cuenta ?nombre) (partida ?numero) (ano ?ano) (liquidadora base-imponible) (efecto ?saldo)))
+   ( assert (partida (numero ?numero) (empresa ?empresa) (dia 31) (mes diciembre) (ano ?ano) (descripcion (str-cat "Ajuste Anual Año: Liquidacion Financiera acreedor " tab ?ano )) (actividad liquidacion-financiera) ))
+   ( assert (liquidacion (cuenta ?nombre) (partida ?numero) (ano ?ano) (liquidadora perdidas-y-ganancias) (efecto acreedor)))
 )
+
+
+
+
+(defrule ajustar-ano-tributarias-deducciones
+   (declare (salience 1))
+   (balance (ano ?ano))
+   (empresa (nombre ?empresa))
+   (ticket (numero ?numero))
+   (ajuste-anual (ano ?ano) (liquidacion tributaria) (partida ?numero) (efecto deduccion) )
+
+   (or
+     (cuenta (nombre ?nombre&:(neq ?nombre ingresos-brutos)) (padre false) (grupo resultado))
+     (cuenta (nombre ?nombre) (padre ingresos-brutos) (grupo resultado))  )
+  =>
+   ( assert (partida (numero ?numero) (empresa ?empresa) (dia 31) (mes diciembre) (ano ?ano) (descripcion (str-cat "Ajuste Anual Año: Liquidacion Tributaria deducciones "  ?ano )) (actividad liquidacion-financiera) ))
+   ( assert (tributacion (cuenta ?nombre) (partida ?numero) (ano ?ano) (liquidadora base-imponible) (efecto deduccion)))
+)
+
+
+
+(defrule ajustar-ano-tributarias-aportes
+   (declare (salience 1))
+   (balance (ano ?ano))
+   (empresa (nombre ?empresa))
+   (ticket (numero ?numero))
+   (ajuste-anual (ano ?ano) (liquidacion tributaria) (partida ?numero) (efecto aporte) )
+
+   (or
+     (cuenta (nombre ?nombre&:(neq ?nombre ingresos-brutos)) (padre false) (grupo resultado))
+     (cuenta (nombre ?nombre) (padre ingresos-brutos) (grupo resultado))  )
+  =>
+   ( assert (partida (numero ?numero) (empresa ?empresa) (dia 31) (mes diciembre) (ano ?ano) (descripcion (str-cat "Ajuste Anual Año: Liquidacion Tributaria aportes " tab ?ano )) (actividad liquidacion-financiera) ))
+   ( assert (tributacion (cuenta ?nombre) (partida ?numero) (ano ?ano) (liquidadora base-imponible) (efecto aporte)))
+)
+
+
 
 
 
@@ -120,8 +146,7 @@
     (partida ?numero) (ano ?ano)
     (liquidadora perdidas-y-ganancias)))
 
-  ( assert (liquidacion
-    (cuenta reserva-legal)
+  ( assert (liquidacion (cuenta reserva-legal)
     (partida ?numero) (ano ?ano)
     (liquidadora perdidas-y-ganancias)))
 
@@ -150,8 +175,7 @@
     (partida ?numero) (ano ?ano)
     (liquidadora base-imponible)))
 
-  ( assert (liquidacion
-    (cuenta reserva-legal)
+  ( assert (liquidacion (cuenta reserva-legal)
     (partida ?numero) (ano ?ano)
     (liquidadora base-imponible)))
 
@@ -207,7 +231,7 @@
 ;  ( balance ( dia ?top ) (mes ?mes) (ano ?ano))
   ( empresa (nombre ?empresa) (razon ?razon))
   ( partida (numero ?numero) (debe ?debe) (haber ?haber) (dia ?dia) (mes ?mes) (ano ?ano) (descripcion ?descripcion))
-  
+  ( test (or (> ?debe 0) (> ?haber 0))) 
  ; ( test (>= ?top ?dia))
  =>
   ( retract ?fila )
@@ -258,7 +282,7 @@
    ( printout t tab tab ?nombre  tab saldo-deudor crlf)
    ( printout t "----------------------------------------------------" crlf)
    ( printout t ?partida tab (round ?debe) tab "|" tab (round ?haber) crlf)
-   ( printout t tab tab tab (round ?saldo) crlf)
+   ( printout t tab (round ?saldo) crlf)
    ( printout t crlf)
 
    ( printout k "<tr  style='background-color: blanchedalmond'><td></td><td> " ?nombre "</td><td>" saldo-deudor "</td></tr>" crlf)
@@ -293,12 +317,13 @@
 
 (defrule liquidar-deudora-con-saldo-acreedor-version-original
    (declare (salience 80))
+(no)
    (fila ?numero)
    (empresa (nombre ?empresa))
    ?partida     <- (partida (numero ?numero) (debe ?debep) (haber ?haberp)) 
    ?f1          <- (liquidacion (partida ?numero) (cuenta ?nombre) (ano ?ano) (liquidadora ?liquidora) (tipo-de-saldo acreedor))
    ?deudora     <- (cuenta (nombre ?nombre)  (debe ?debe)  (haber ?haber)  (tipo deudor) (liquidada false) )
-   ?liquidadora <- (cuenta (nombre ?liquidora) (debe ?debe2) (haber ?haber2) (tipo liquidadora) (saldo ?saldo2) (grupo ?grupo))
+   ?liquidadora <- (cuenta (debe ?debe2) (haber ?haber2) (tipo liquidadora) (saldo ?saldo2) (grupo ?grupo))
    (test (< ?debe ?haber))
   =>
    (printout t ?debe tab ?haber crlf) 
@@ -317,7 +342,9 @@
      ( empresa ?empresa )
      ( haber (+ ?haber2 ?saldo ))
      ( saldo (- ?saldo2  ?saldo)) )
-  ( modify ?partida (debe (+ ?debep ?saldo)) (haber (+ ?haberp ?saldo)))
+
+;  ( modify ?partida (debe (+ ?debep ?saldo)) (haber (+ ?haberp ?saldo)))
+
  ; ( printout t "x--- Liquidando deudora con saldo acreedor " ?nombre " a través de " ?liquidora " partida " ?numero crlf)
 ; (halt)
   ;( printout t tab tab ?nombre tab saldo-acreedor crlf)
@@ -332,105 +359,338 @@
    ( printout k "<tr><td></td><td>" (round ?haber) "</td><td> </td><td>" ?nombre "</td><td>" ?grupo "</td></tr>" crlf)
    ( printout k "<tr><td>" (round ?saldo) "</td><td> </td><td> r(" ?liquidora ") </td></tr>" crlf)
 
-
 )
 
-(defrule liquidar-deudora-con-saldo-deudor
+
+;tomar las ordenes de liquidacion dadas por (liquidacion ... o (tribuacion
+;localiza las cuentas que hay que liquidar, se buscan por su nombre
+;se modifica la partida de liquidacion para anotar los saldos corrientes
+;se asserta una cuenta de liquidadora, la que se especifica para cada orden
+;en ?liquidadora
+
+(defrule liquidar-cuentas-financieras-deudoras
   (declare (salience 80))
-  (fila ?numero )
 
-  (empresa (nombre ?empresa ))
+    (fila ?numero )
 
-  ?partida     <- (partida (numero ?numero ) (dia ?dia) (mes ?mes) (debe ?debep) (haber ?haberp))
-  ?f1          <- (liquidacion (partida ?numero) (cuenta ?nombre) (ano ?ano) (liquidadora ?liquidora) (tipo-de-saldo deudor))
-  ?deudora     <- (cuenta (nombre ?nombre)  (debe ?debe)  (haber ?haber) (tipo deudor) (grupo ?grupo) (liquidada false) )
-  ?l <- (cuenta (nombre ?liquidora) (tipo liquidadora) (saldo ?saldol) (debe ?debel) (grupo ?grupol))
-  (test (> ?debe ?haber))
+    (empresa (nombre ?empresa ))
 
-=>
-   ( bind ?saldo (- ?debe ?haber))
+    ?partida <- (partida
+      (numero ?numero )
+      (dia    ?dia)
+      (mes    ?mes)
+      (ano    ?ano)
+      (debe   ?debep)
+      (haber  ?haberp))
 
-   ( modify ?deudora
+    (liquidacion
+       (partida ?numero)
+       (cuenta ?nombre) (ano ?ano)
+       (liquidadora ?liquidora)
+       (efecto deudor) )
+
+    ?cuenta <- (cuenta
+      (partida   ?partida-cuenta)
+      (nombre    ?nombre)
+      (debe      ?debe)
+      (haber     ?haber)
+      (grupo     ?grupo)
+      (liquidada false))
+
+   (test (> ?debe ?haber))
+
+ =>
+
+
+   ( modify ?cuenta
      ( liquidada true )
-  ;   ( haber (+ ?haber ?saldo))
+     ( haber     ?debe)
+     ( debe      ?haber))
+
+   ( assert
+     (cuenta (nombre ?liquidora)
+        ( partida ?partida-cuenta)
+        ( tipo    liquidadora)
+        ( debe    ?debe)
+        ( haber   ?haber)))
+
+
+   ( if (> ?debe ?haber)
+     then
+       ( bind ?saldo (- ?debe ?haber))
+       ( modify ?partida (debe (+ ?debep ?saldo)) (haber (+ ?haberp ?saldo)))
+       ( printout t tab tab "   |--" tab (round ?saldo) tab ?nombre tab ?grupo crlf)
+       ( printout t tab (round ?saldo) tab " <-| " tab tab tab tab "r<" ?liquidora ">" crlf)
+       ( printout t crlf )
+       ( printout k "<tr><td></td> <td>"  (round ?saldo) "</td><td> </td><td colspan='5'>" ?nombre "#" ?grupo "</td></tr>" crlf)
+       ( printout k "<tr><td> " (round ?saldo) "</td><td></td><td colspan='6'>  r(" ?liquidora ") </td></tr>" crlf)
+     else
+       ( bind ?saldo (- ?haber ?debe ))
+       ( modify ?partida (debe (+ ?debep ?saldo)) (haber (+ ?haberp ?saldo)))
+       ( printout t tab (round ?saldo) tab "--|" tab tab ?nombre crlf)
+       ( printout t tab tab "  |->" tab (round ?saldo)  tab tab "r<" ?liquidora ">" crlf)
+       ( printout t crlf )
+       ( printout k "<tr><td>" (round ?saldo) "</td><td></td><td colspan='2'>" ?nombre "</td></tr>" crlf)
+       ( printout k "<tr><td></td><td>"  (round ?saldo) "</td><td></td><td> r(" ?liquidora ") </td></tr>"  crlf)
    )
 
-   ( modify ?l
-     ( ano ?ano)
-     ( empresa ?empresa )
-
-     ( debe (+ ?debel ?saldo))
-     ( saldo (+ ?saldol ?saldo))
-   )
-
-   ( modify ?partida (debe (+ ?debep ?saldo)) (haber (+ ?haberp ?saldo)))
-   ( printout t tab tab "   |--" tab (round ?saldo) tab ?nombre tab ?grupo crlf)
-   ( printout t tab (round ?saldo) tab " <-| " tab tab tab tab "r<" ?liquidora ">" crlf)
-   ( printout t crlf )
-  ; ( printout t "x--- Liquidando deudora con saldo deudor " ?nombre " a través de " ?nombrel " partida " ?numero crlf)
-  ; ( printout t "Encontrado" ?nombre crlf)
-
-   ( printout k "<tr><td></td> <td>"  (round ?saldo) "</td><td> </td><td colspan='5'>" ?nombre "#" ?grupo "</td></tr>" crlf)
-   ( printout k "<tr><td> " (round ?saldo) "</td><td></td><td colspan='6'>  r(" ?liquidora ") </td></tr>" crlf)
 
 )
+
+
+(defrule liquidar-cuentas-financieras-acreedoras
+  (declare (salience 80))
+
+    (fila ?numero )
+
+    (empresa (nombre ?empresa ))
+
+    ?partida <- (partida
+      (numero ?numero )
+      (dia    ?dia)
+      (mes    ?mes)
+      (ano    ?ano)
+      (debe   ?debep)
+      (haber  ?haberp))
+
+    (liquidacion
+       (partida ?numero)
+       (cuenta ?nombre) (ano ?ano)
+       (liquidadora ?liquidora)
+       (efecto acreedor) )
+
+    ?cuenta <- (cuenta
+      (partida   ?partida-cuenta)
+      (nombre    ?nombre)
+      (debe      ?debe)
+      (haber     ?haber)
+      (grupo     ?grupo)
+      (liquidada false)) 
+
+    (test (> ?haber ?debe))
+
+  =>
+
+   ( modify ?cuenta
+     ( liquidada true )
+     ( haber     ?debe)
+     ( debe      ?haber))   
+
+   ( assert
+     (cuenta (nombre ?liquidora) 
+        ( partida ?partida-cuenta)
+        ( tipo    liquidadora)
+        ( debe    ?debe) 
+        ( haber   ?haber)))
+
+
+   ( if (> ?debe ?haber)
+     then
+       ( bind ?saldo (- ?debe ?haber))
+       ( modify ?partida (debe (+ ?debep ?saldo)) (haber (+ ?haberp ?saldo)))
+       ( printout t tab tab "   |--" tab (round ?saldo) tab ?nombre tab ?grupo crlf)
+       ( printout t tab (round ?saldo) tab " <-| " tab tab tab tab "r<" ?liquidora ">" crlf)
+       ( printout t crlf )
+       ( printout k "<tr><td></td> <td>"  (round ?saldo) "</td><td> </td><td colspan='5'>" ?nombre "#" ?grupo "</td></tr>" crlf)
+       ( printout k "<tr><td> " (round ?saldo) "</td><td></td><td colspan='6'>  r(" ?liquidora ") </td></tr>" crlf)
+     else 
+       ( bind ?saldo (- ?haber ?debe ))
+       ( modify ?partida (debe (+ ?debep ?saldo)) (haber (+ ?haberp ?saldo)))
+       ( printout t tab (round ?saldo) tab "--|" tab tab ?nombre crlf)
+       ( printout t tab tab "  |->" tab (round ?saldo)  tab tab "r<" ?liquidora ">" crlf)
+       ( printout t crlf )
+       ( printout k "<tr><td>" (round ?saldo) "</td><td></td><td colspan='2'>" ?nombre "</td></tr>" crlf)
+       ( printout k "<tr><td></td><td>"  (round ?saldo) "</td><td></td><td> r(" ?liquidora ") </td></tr>"  crlf)
+   )
+)
+
+
+(defrule liquidar-cuentas-tributarias-deducciones
+  (declare (salience 80))
+
+    (fila ?numero )
+
+    (empresa (nombre ?empresa ))
+
+    ?partida <- (partida
+      (numero ?numero )
+      (dia    ?dia)
+      (mes    ?mes)
+      (ano    ?ano)
+      (debe   ?debep)
+      (haber  ?haberp))
+
+    (tributacion
+       (partida ?numero)
+       (cuenta ?nombre) (ano ?ano)
+       (liquidadora ?liquidora)
+       (efecto deduccion) )
+
+
+    ?cuenta <- (cuenta
+      (partida   ?partida-cuenta)
+      (nombre    ?nombre)
+      (debe      ?debe)
+      (haber     ?haber)
+      (grupo     ?grupo)
+      (tributada false))
+
+    (test (> ?haber ?debe))
+
+
+ =>
+
+   ( modify ?cuenta
+       ( tributada true )
+       ( haber     ?debe)
+       ( debe      ?haber))
+
+
+   ( if (> ?debe ?haber)
+     then
+       ( bind ?saldo (- ?debe ?haber))
+       ( modify ?partida (debe (+ ?debep ?saldo)) (haber (+ ?haberp ?saldo)))
+       ( printout t tab tab "   |--" tab (round ?saldo) tab ?nombre tab ?grupo crlf)
+       ( printout t tab (round ?saldo) tab " <-| " tab tab tab tab "r<" ?liquidora ">" crlf)
+       ( printout t crlf )
+       ( printout k "<tr><td></td> <td>"  (round ?saldo) "</td><td> </td><td colspan='5'>" ?nombre "#" ?grupo "</td></tr>" crlf)
+       ( printout k "<tr><td> " (round ?saldo) "</td><td></td><td colspan='6'>  r(" ?liquidora ") </td></tr>" crlf)
+     else
+       ( bind ?saldo (- ?haber ?debe ))
+       ( modify ?partida (debe (+ ?debep ?saldo)) (haber (+ ?haberp ?saldo)))
+       ( printout t tab (round ?saldo) tab "--|" tab tab ?nombre crlf)
+       ( printout t tab tab "  |->" tab (round ?saldo)  tab tab "r<" ?liquidora ">" crlf)
+       ( printout t crlf )
+       ( printout k "<tr><td>" (round ?saldo) "</td><td></td><td colspan='2'>" ?nombre "</td></tr>" crlf)
+       ( printout k "<tr><td></td><td>"  (round ?saldo) "</td><td></td><td> r(" ?liquidora ") </td></tr>"  crlf)
+   )
+)
+
+
+
+
+(defrule liquidar-cuentas-tributarias-aportes
+  (declare (salience 80))
+
+    (fila ?numero )
+
+    (empresa (nombre ?empresa ))
+
+    ?partida <- (partida
+      (numero ?numero )
+      (dia    ?dia)
+      (mes    ?mes)
+      (ano    ?ano)
+      (debe   ?debep)
+      (haber  ?haberp))
+
+    (tributacion
+       (partida ?numero)
+       (cuenta ?nombre) (ano ?ano)
+       (liquidadora ?liquidora)
+       (efecto aporte) )
+
+
+    ?cuenta <- (cuenta
+      (partida   ?partida-cuenta)
+      (nombre    ?nombre)
+      (debe      ?debe)
+      (haber     ?haber)
+      (grupo     ?grupo)
+      (tributada false)) 
+
+    (test (> ?debe ?haber))
+
+ =>
+
+   ( modify ?cuenta
+       ( tributada true )
+       ( haber     ?debe)
+       ( debe      ?haber))
+
+
+   ( if (> ?debe ?haber)
+     then
+       ( bind ?saldo (- ?debe ?haber))
+       ( modify ?partida (debe (+ ?debep ?saldo)) (haber (+ ?haberp ?saldo)))
+       ( printout t tab tab "   |--" tab (round ?saldo) tab ?nombre tab ?grupo crlf)
+       ( printout t tab (round ?saldo) tab " <-| " tab tab tab tab "r<" ?liquidora ">" crlf)
+       ( printout t crlf )
+       ( printout k "<tr><td></td> <td>"  (round ?saldo) "</td><td> </td><td colspan='5'>" ?nombre "#" ?grupo "</td></tr>" crlf)
+       ( printout k "<tr><td> " (round ?saldo) "</td><td></td><td colspan='6'>  r(" ?liquidora ") </td></tr>" crlf)
+     else
+       ( bind ?saldo (- ?haber ?debe ))
+       ( modify ?partida (debe (+ ?debep ?saldo)) (haber (+ ?haberp ?saldo)))
+       ( printout t tab (round ?saldo) tab "--|" tab tab ?nombre crlf)
+       ( printout t tab tab "  |->" tab (round ?saldo)  tab tab "r<" ?liquidora ">" crlf)
+       ( printout t crlf )
+       ( printout k "<tr><td>" (round ?saldo) "</td><td></td><td colspan='2'>" ?nombre "</td></tr>" crlf)
+       ( printout k "<tr><td></td><td>"  (round ?saldo) "</td><td></td><td> r(" ?liquidora ") </td></tr>"  crlf)
+   )
+)
+
+
+
+
+
 
 (defrule liquidar-acreedora-con-saldo-deudor
    (declare (salience 80))
-   (fila ?numero)
+  (no)
+   ?f <- (fila ?numero)
    (empresa (nombre ?empresa))
    ?partida     <- (partida (numero ?numero ) (dia ?dia) (mes ?mes) (debe ?debep) (haber ?haberp))
    ?f1          <- (liquidacion (partida ?numero) (cuenta ?nombre) (ano ?ano) (liquidadora ?liquidora) (tipo-de-saldo deudor))
-   ?deudora     <- (cuenta (nombre ?nombre)  (debe ?debe)  (haber ?haber)  (tipo acreedora) (liquidada false) )
-   ?liquidador  <- (cuenta (nombre ?liquidora) (debe ?debe2) (haber ?haber2) (tipo liquidadora) (saldo ?saldo2) )
+   ?deudora     <- (cuenta (partida ?partida-deudora) (nombre ?nombre)  (debe ?debe)  (haber ?haber)  (tipo acreedora) (liquidada false) )
+  ;?liquidador  <- (cuenta (partida nil) (nombre ?liquidora) (debe ?debe2) (haber ?haber2) (tipo liquidadora) (saldo ?saldo2) )
    (test (> ?debe ?haber))
   => 
    ( bind ?saldo (- ?debe ?haber))
-
-;   ( modify ?deudora
-;     ( liquidada true )
-;     ( haber (+ ?haber ?saldo))
-;   )
-
-   ;Realmente no se hace la liquidación, para que se pueda volver a usar en otra liquidación
+;  ( modify ?deudora
+;    ( liquidada true )
+;    ( haber (+ ?haber ?saldo))
+;  )
    ( modify ?deudora
      ( liquidada true )
+     ( haber ?debe)
    )
+   ( assert (cuenta (nombre ?liquidora)
+     ( partida ?partida-deudora)
+     ( tipo liquidadora)
+     ( debe ?haber)
+     ( haber ?debe) )
+   )
+;   ( modify ?liquidador
+;     ( ano ?ano)
+;     ( empresa ?empresa )
+;
+;     ( debe (+ ?debe2 ?saldo))
+;     ( saldo (+ ?saldo2 ?saldo))
+;   ) 
 
-
-
-   ( modify ?liquidador
-     ( ano ?ano)
-     ( empresa ?empresa )
-
-     ( debe (+ ?debe2 ?saldo))
-     ( saldo (+ ?saldo2 ?saldo))
-   ) 
    ( modify ?partida (debe (+ ?debep ?saldo)) (haber (+ ?haberp ?saldo)))
-
  ;  ( printout t "x-- Liquidando acreedora con saldo deudor " ?nombre " en " ?liquidora crlf)
  ;  ( printout t tab tab ?nombre tab saldo-deudor crlf)
  ;  ( printout t "-----------------------------------------------------" crlf)
    ( printout t tab tab "    |--" tab (round ?saldo) tab tab ?nombre crlf)
    ( printout t tab (round ?saldo) tab "  <-|" tab tab "r<" ?liquidora ">" crlf)
-
  ;  ( printout t tab (round ?saldo) tab "|" crlf)
    ( printout t crlf)
-
    ( printout k "<tr> <td></td><td>" (round ?saldo) "</td><td> </td><td colspan='2'> " ?nombre "</td></tr>" crlf)
    ( printout k "<tr> <td> " (round ?saldo) "</td><td></td><td colspan='4'>  r(" ?liquidora ") </td></tr>" crlf)
-
-
 )
+
+
 
 (defrule liquidar-cuentas-de-resultado-acreedor
    (declare (salience 80))
-   (fila ?numero)
+  (no)
+   ?f <- (fila ?numero)
    (empresa (nombre ?empresa ))
    ?partida     <- (partida (numero ?numero) (debe ?debep) (haber ?haberp))
    ?f1          <- (liquidacion (partida ?numero) (cuenta ?nombre) (ano ?ano) (liquidadora ?liquidora) (tipo-de-saldo acreedor))
    ?deudora     <- (cuenta (nombre ?nombre)  (debe ?debe)  (haber ?haber)  (tipo acreedora) (liquidada false) (grupo ?grupo) )
-   ?liquidador  <- (cuenta (nombre ?liquidora) (debe ?debe2) (haber ?haber2) (tipo liquidadora) (saldo ?saldo2) )
+   ?liquidador  <- (cuenta (partida nil) (nombre ?liquidora) (debe ?debe2) (haber ?haber2) (tipo liquidadora) (saldo ?saldo2) )
    (test (> ?haber ?debe))
   => 
    ( bind ?saldo (- ?haber ?debe))
@@ -460,7 +720,7 @@
 ;   ( printout t tab (round ?debe) tab "|" tab (round ?haber) crlf)
  ;  ( printout t tab tab tab tab "|" tab (round ?saldo) crlf)
   ; ( printout t crlf)
-   ( modify ?partida (debe (+ ?debep ?saldo)) (haber (+ ?haberp ?saldo)))
+;   ( modify ?partida (debe (+ ?debep ?saldo)) (haber (+ ?haberp ?saldo)))
 
    ( printout t tab (round ?saldo) tab "--|" tab tab ?nombre crlf)
    ( printout t tab tab "  |->" tab (round ?saldo)  tab tab "r<" ?liquidora ">" crlf)
@@ -476,7 +736,7 @@
 ;--------------------------------------- determinación de utilidad tributaria y la financiera-
 (defrule determinacion-de-la-base-imponible-efecto-aporte
    (declare (salience 180))
-   (fila ?numero)
+   ?f <-  (fila ?numero)
    (empresa (nombre ?empresa))
    ?partida     <- (partida (dia ?dia) (mes ?mes) (numero ?numero) (debe ?debep) (haber ?haberp))
    ?f1          <- (tributacion (partida ?numero) (cuenta ?nombre) (ano ?ano) (liquidadora ?liquidora) (efecto aporte))
@@ -507,7 +767,7 @@
 
 (defrule determinacion-de-la-base-imponible-efecto-deduccion
    (declare (salience 181))
-   (fila ?numero)
+   ?f <- (fila ?numero)
    (empresa (nombre ?empresa))
    ?partida     <- (partida (dia ?dia) (mes ?mes) (numero ?numero) (debe ?debep) (haber ?haberp))
    ?f1          <- (tributacion (partida ?numero) (cuenta ?nombre) (ano ?ano) (liquidadora ?liquidora) (efecto deduccion))

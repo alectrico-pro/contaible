@@ -14,7 +14,7 @@
    (slot ano)
    (slot partida)
    (slot liquidacion)
-   (slot saldo)
+   (slot efecto)
 )
 
 (deftemplate reglas
@@ -1547,7 +1547,7 @@
    (slot patrimonio (default 0)))
 
 (deftemplate MAIN::liquidacion
-   (slot tipo-de-saldo)
+   (slot efecto)
    (slot partida)
    (slot dia )
    (slot mes )
