@@ -434,7 +434,7 @@
   )
 
   (printout t "|" tab tab "|     " ?utilidad-despues tab "Utilidad Después de Impuestos" crlf)
-  (printout k "<tr style='font-weight:bold;background-color: azure'><td> <td></td></td><td> </td><td></td><td align='right'>" ?utilidad "</td><td> Utilidad Calculada</td></tr>" crlf)
+  (printout k "<tr style='font-weight:bold;background-color: azure'><td> <td></td></td><td> </td><td></td><td align='right'>" ?utilidad-despues "</td><td> Utilidad Después de Impuestos <small> Calculada </small></td></tr>" crlf)
 
   (printout t "---------------------------------------------------------------------------" crlf)
   (printout k "</tbody></table>" crlf)

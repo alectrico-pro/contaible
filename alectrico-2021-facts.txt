@@ -3119,8 +3119,16 @@
    (liquidacion tributaria)
    (efecto aporte))
 
+( ajuste-anual
+   (ano 2021) (partida 213)
+   (liquidacion tributaria)
+   (efecto deduccion))
+
+
 ( ajuste-anual-de-resultado-tributario
    (ano 2021) (partida 214))
+
+
 
 
 #

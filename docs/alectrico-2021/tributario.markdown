@@ -54,7 +54,7 @@ layout: page
 <tr style='font-weight:bold; background-color: azure'><td> <td></td></td><td> </td><td></td><td align='right'>65595</td><td> Resultado Fuera de Explotacion </td></tr>
 <tr style='font-weight:bold; background-color: azure'><td> <td></td></td><td> </td><td></td><td align='right'>65595</td><td> Resultado Antes de Impuesto</td></tr>
 <tr style='background-color: lightgreen' ><td></td><td></td><td></td><td> (X) </td><td align='right'> 0</td><td> Impuesto No Aplica porque hay pérdida tributaria </td></tr>
-<tr style='font-weight:bold;background-color: azure'><td> <td></td></td><td> </td><td></td><td align='right'>65595</td><td> Utilidad Calculada</td></tr>
+<tr style='font-weight:bold;background-color: azure'><td> <td></td></td><td> </td><td></td><td align='right'>0</td><td> Utilidad Calculada</td></tr>
 </tbody></table>
 <table> 
 <tr><th> <td colspan=6> DETERMINACIÓN DE LA BASE IMPONIBLE </td></th></tr>
@@ -64,7 +64,7 @@ layout: page
 <tr><td> (-) </td><td align='right'>151252</td><td></td><td></td><td></td><td> Depreciación Instantánea Activo Fijo Propyme </td></tr>
 <tr><td> (-) </td><td align='right'>0</td><td></td><td></td><td></td><td> Amortización Instantánea Intangibles </td></tr>
 <tr><td> (+) </td><td align='right'>0</td><td></td><td></td><td></td><td> Aportes al Capital </td></tr>
-<tr><td> <td></td></td><td> </td><td> (=) </td><td align='right' style = 'font-weight:bold; background-color: azure'>-85657</td><td> RENTA LÍQUIDA IMPONIBLE </td></tr>
+<tr><td> <td></td></td><td> </td><td> (=) </td><td align='right' style = 'font-weight:bold; background-color: azure'>-85657</td><td> RLI Calculada </td></tr>
 <tr><td> <td></td></td><td> </td><td> (-) </td><td align='right'>0</td><td> Impuesto Determinado: 10% </td></tr>
 <tr><td></td><td></td><td></td><td> (=) </td><td align='right' style='font-weight:bold; background-color: lightgreen'>123497</td><td> RESULTADO DESPUES DE IMPUESTOS (módulo liquidaciones) <small>propyme</small></td></tr>
 <tr> <th> INCENTIVO AL AHORRO SOLICITADO EN selecciones.txt </th></tr> 
