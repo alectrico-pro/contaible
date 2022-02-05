@@ -101,7 +101,6 @@
 
 
 (defrule determinar-resultado-financiero
-  (declare (salience -1))
   (balance (ano ?ano))
   (empresa (nombre ?empresa)) 
   (ticket (numero ?numero))
@@ -154,7 +153,7 @@
     (partida ?numero) (ano ?ano)
     (liquidadora base-imponible)))
 
-  ( assert (liquidacion (cuenta utilidad)
+  ( assert (liquidacion (cuenta utilidad-tributaria)
     (partida ?numero) (ano ?ano)
     (liquidadora base-imponible)))
 )
@@ -216,15 +215,14 @@
 
 
 (defrule footer
-  (declare (salience -9000))
+  (no)
   ?fila <- ( fila ?numero )
 ;  ( balance ( dia ?top ) (mes ?mes) (ano ?ano))
   ( empresa (nombre ?empresa) (razon ?razon))
   ( partida (numero ?numero) (debe ?debe) (haber ?haber) (dia ?dia) (mes ?mes) (ano ?ano) (descripcion ?descripcion))
   ( or
     (not (exists (tributacion (partida ?numero) (tributada true))))
-    (not (exists (liquidacion (partida ?numero) (liquidada true))))
-  )
+    (not (exists (liquidacion (partida ?numero) (liquidada true)))))
   
  ; ( test (>= ?top ?dia))
  =>
