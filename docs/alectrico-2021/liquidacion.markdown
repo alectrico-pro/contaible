@@ -11,614 +11,66 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <li><span style='color: white; background-color: black'>[    ]</span> pérdida </li>
 <li><span style='background-color: blanchedalmond'>[    ]</span> subtotales de la transacción </li>
 <table style='background-color: lightyellow' ><tbody>
-<tr style='color: white; background-color: black'><td colspan='9'> Partida 210</td></tr>
-<tr><th>DEBE</th><th> HABER </th> <th colspan='6'> Cuenta </th></tr>
-<tr><td>0</td><td>2150000</td></tr>
-<tr><td></td><td>2150000</td><td> </td><td>salarios</td><td>liquidadora</td></tr>
-<tr><td>2150000</td><td> </td><td> r(perdidas-y-ganancias) </td></tr>
-<tr><td>6666</td><td></td><td colspan='2'>ventas</td></tr>
-<tr><td></td><td>6666</td><td></td><td> r(perdidas-y-ganancias) </td></tr>
-<tr><td>6666</td><td></td><td colspan='2'>ventas</td></tr>
-<tr><td></td><td>6666</td><td></td><td> r(perdidas-y-ganancias) </td></tr>
-<tr><td>93137</td><td></td><td colspan='2'>ventas</td></tr>
-<tr><td></td><td>93137</td><td></td><td> r(perdidas-y-ganancias) </td></tr>
-<tr><td>93137</td><td></td><td colspan='2'>ventas</td></tr>
-<tr><td></td><td>93137</td><td></td><td> r(perdidas-y-ganancias) </td></tr>
-<tr><td>30000</td><td></td><td colspan='2'>ventas</td></tr>
-<tr><td></td><td>30000</td><td></td><td> r(perdidas-y-ganancias) </td></tr>
-<tr><td>6666</td><td></td><td colspan='2'>ventas</td></tr>
-<tr><td></td><td>6666</td><td></td><td> r(perdidas-y-ganancias) </td></tr>
-<tr><td>93137</td><td></td><td colspan='2'>ventas</td></tr>
-<tr><td></td><td>93137</td><td></td><td> r(perdidas-y-ganancias) </td></tr>
-<tr><td>400000</td><td></td><td colspan='2'>ventas</td></tr>
-<tr><td></td><td>400000</td><td></td><td> r(perdidas-y-ganancias) </td></tr>
-<tr><td>63030</td><td></td><td colspan='2'>ventas</td></tr>
-<tr><td></td><td>63030</td><td></td><td> r(perdidas-y-ganancias) </td></tr>
-<tr><td>6666</td><td></td><td colspan='2'>ventas</td></tr>
-<tr><td></td><td>6666</td><td></td><td> r(perdidas-y-ganancias) </td></tr>
-<tr><td>126050</td><td></td><td colspan='2'>ventas</td></tr>
-<tr><td></td><td>126050</td><td></td><td> r(perdidas-y-ganancias) </td></tr>
-<tr><td>93137</td><td></td><td colspan='2'>ventas</td></tr>
-<tr><td></td><td>93137</td><td></td><td> r(perdidas-y-ganancias) </td></tr>
-<tr><td>6666</td><td></td><td colspan='2'>ventas</td></tr>
-<tr><td></td><td>6666</td><td></td><td> r(perdidas-y-ganancias) </td></tr>
-<tr><td>141596</td><td></td><td colspan='2'>ventas</td></tr>
-<tr><td></td><td>141596</td><td></td><td> r(perdidas-y-ganancias) </td></tr>
-<tr><td>90544</td><td></td><td colspan='2'>ventas</td></tr>
-<tr><td></td><td>90544</td><td></td><td> r(perdidas-y-ganancias) </td></tr>
-<tr><td>93137</td><td></td><td colspan='2'>ventas</td></tr>
-<tr><td></td><td>93137</td><td></td><td> r(perdidas-y-ganancias) </td></tr>
-<tr><td>40000</td><td></td><td colspan='2'>ventas</td></tr>
-<tr><td></td><td>40000</td><td></td><td> r(perdidas-y-ganancias) </td></tr>
-<tr><td>62000</td><td></td><td colspan='2'>ventas</td></tr>
-<tr><td></td><td>62000</td><td></td><td> r(perdidas-y-ganancias) </td></tr>
-<tr><td>35000</td><td></td><td colspan='2'>ventas</td></tr>
-<tr><td></td><td>35000</td><td></td><td> r(perdidas-y-ganancias) </td></tr>
-<tr><td>558823</td><td></td><td colspan='2'>ventas</td></tr>
-<tr><td></td><td>558823</td><td></td><td> r(perdidas-y-ganancias) </td></tr>
-<tr><td>151960</td><td></td><td colspan='2'>ventas</td></tr>
-<tr><td></td><td>151960</td><td></td><td> r(perdidas-y-ganancias) </td></tr>
-<tr><td>35000</td><td></td><td colspan='2'>ventas</td></tr>
-<tr><td></td><td>35000</td><td></td><td> r(perdidas-y-ganancias) </td></tr>
-<tr><td>93179</td><td></td><td colspan='2'>ventas</td></tr>
-<tr><td></td><td>93179</td><td></td><td> r(perdidas-y-ganancias) </td></tr>
-<tr><td>225</td><td></td><td colspan='2'>ventas</td></tr>
-<tr><td></td><td>225</td><td></td><td> r(perdidas-y-ganancias) </td></tr>
-<tr><td>25210</td><td></td><td colspan='2'>ventas</td></tr>
-<tr><td></td><td>25210</td><td></td><td> r(perdidas-y-ganancias) </td></tr>
-<tr><td>102</td><td></td><td colspan='2'>ventas</td></tr>
-<tr><td></td><td>102</td><td></td><td> r(perdidas-y-ganancias) </td></tr>
-<tr><td>29412</td><td></td><td colspan='2'>ventas</td></tr>
-<tr><td></td><td>29412</td><td></td><td> r(perdidas-y-ganancias) </td></tr>
-<tr><td>4505</td><td></td><td colspan='2'>ventas</td></tr>
-<tr><td></td><td>4505</td><td></td><td> r(perdidas-y-ganancias) </td></tr>
-<tr><td>84</td><td></td><td colspan='2'>ventas</td></tr>
-<tr><td></td><td>84</td><td></td><td> r(perdidas-y-ganancias) </td></tr>
-<tr><td>29412</td><td></td><td colspan='2'>ventas</td></tr>
-<tr><td></td><td>29412</td><td></td><td> r(perdidas-y-ganancias) </td></tr>
-<tr><td>29412</td><td></td><td colspan='2'>ventas</td></tr>
-<tr><td></td><td>29412</td><td></td><td> r(perdidas-y-ganancias) </td></tr>
-<tr><td>123497</td><td></td><td colspan='2'>ventas</td></tr>
-<tr><td></td><td>123497</td><td></td><td> r(perdidas-y-ganancias) </td></tr>
-<tr><td>231</td><td></td><td colspan='2'>costos-de-ventas</td></tr>
-<tr><td></td><td>231</td><td></td><td> r(perdidas-y-ganancias) </td></tr>
-<tr><td>178</td><td></td><td colspan='2'>costos-de-ventas</td></tr>
-<tr><td></td><td>178</td><td></td><td> r(perdidas-y-ganancias) </td></tr>
-<tr><td>0</td><td>6926</td></tr>
-<tr><td></td><td>6926</td><td> </td><td>gastos-administrativos</td><td>liquidadora</td></tr>
-<tr><td>6926</td><td> </td><td> r(perdidas-y-ganancias) </td></tr>
-<tr><td>0</td><td>40027</td></tr>
-<tr><td></td><td>40027</td><td> </td><td>gastos-administrativos</td><td>liquidadora</td></tr>
-<tr><td>40027</td><td> </td><td> r(perdidas-y-ganancias) </td></tr>
-<tr><td>780</td><td></td><td colspan='2'>correccion-monetaria</td></tr>
-<tr><td></td><td>780</td><td></td><td> r(perdidas-y-ganancias) </td></tr>
-<tr><td>701</td><td></td><td colspan='2'>correccion-monetaria</td></tr>
-<tr><td></td><td>701</td><td></td><td> r(perdidas-y-ganancias) </td></tr>
-<tr><td>487</td><td></td><td colspan='2'>correccion-monetaria</td></tr>
-<tr><td></td><td>487</td><td></td><td> r(perdidas-y-ganancias) </td></tr>
-<tr><td>220</td><td></td><td colspan='2'>correccion-monetaria</td></tr>
-<tr><td></td><td>220</td><td></td><td> r(perdidas-y-ganancias) </td></tr>
-<tr><td>279</td><td></td><td colspan='2'>correccion-monetaria</td></tr>
-<tr><td></td><td>279</td><td></td><td> r(perdidas-y-ganancias) </td></tr>
-<tr><td>254</td><td></td><td colspan='2'>correccion-monetaria</td></tr>
-<tr><td></td><td>254</td><td></td><td> r(perdidas-y-ganancias) </td></tr>
-<tr><td>240</td><td></td><td colspan='2'>correccion-monetaria</td></tr>
-<tr><td></td><td>240</td><td></td><td> r(perdidas-y-ganancias) </td></tr>
-<tr><td>334</td><td></td><td colspan='2'>correccion-monetaria</td></tr>
-<tr><td></td><td>334</td><td></td><td> r(perdidas-y-ganancias) </td></tr>
-<tr><td>298</td><td></td><td colspan='2'>correccion-monetaria</td></tr>
-<tr><td></td><td>298</td><td></td><td> r(perdidas-y-ganancias) </td></tr>
-<tr><td>33</td><td></td><td colspan='2'>correccion-monetaria</td></tr>
-<tr><td></td><td>33</td><td></td><td> r(perdidas-y-ganancias) </td></tr>
-<table>
-<tr style='background-color: blanchedalmond'><td> </td><td>perdidas-y-ganancias</td><td>saldo-acreedor</td></tr>
-<tr> <td> 210</td> <td>0</td><td> 4769044</td></tr>
-<tr style='background-color: blanchedalmond'><td>4769044</td></tr>
-</table>
-<table style='background-color: lightyellow' ><tbody>
-<tr style='color: white; background-color: black'><td colspan='9'> Partida 209</td></tr>
-<tr><th>DEBE</th><th> HABER </th> <th colspan='6'> Cuenta </th></tr>
-<tr><td></td> <td>400000</td><td> </td><td colspan='5'>salarios#resultado</td></tr>
-<tr><td> 400000</td><td></td><td colspan='6'>  r(perdidas-y-ganancias) </td></tr>
-<tr><td></td> <td>400000</td><td> </td><td colspan='5'>salarios#resultado</td></tr>
-<tr><td> 400000</td><td></td><td colspan='6'>  r(perdidas-y-ganancias) </td></tr>
-<tr><td></td> <td>400000</td><td> </td><td colspan='5'>salarios#resultado</td></tr>
-<tr><td> 400000</td><td></td><td colspan='6'>  r(perdidas-y-ganancias) </td></tr>
-<tr><td></td> <td>350000</td><td> </td><td colspan='5'>salarios#resultado</td></tr>
-<tr><td> 350000</td><td></td><td colspan='6'>  r(perdidas-y-ganancias) </td></tr>
-<tr><td></td> <td>300000</td><td> </td><td colspan='5'>salarios#resultado</td></tr>
-<tr><td> 300000</td><td></td><td colspan='6'>  r(perdidas-y-ganancias) </td></tr>
-<tr><td></td> <td>300000</td><td> </td><td colspan='5'>salarios#resultado</td></tr>
-<tr><td> 300000</td><td></td><td colspan='6'>  r(perdidas-y-ganancias) </td></tr>
-<tr> <td></td><td>400000</td><td> </td><td colspan='2'> ventas</td></tr>
-<tr> <td> 400000</td><td></td><td colspan='4'>  r(perdidas-y-ganancias) </td></tr>
-<tr> <td></td><td>10592</td><td> </td><td colspan='2'> ventas</td></tr>
-<tr> <td> 10592</td><td></td><td colspan='4'>  r(perdidas-y-ganancias) </td></tr>
-<tr> <td></td><td>90544</td><td> </td><td colspan='2'> ventas</td></tr>
-<tr> <td> 90544</td><td></td><td colspan='4'>  r(perdidas-y-ganancias) </td></tr>
-<tr> <td></td><td>40000</td><td> </td><td colspan='2'> ventas</td></tr>
-<tr> <td> 40000</td><td></td><td colspan='4'>  r(perdidas-y-ganancias) </td></tr>
-<tr> <td></td><td>33613</td><td> </td><td colspan='2'> ventas</td></tr>
-<tr> <td> 33613</td><td></td><td colspan='4'>  r(perdidas-y-ganancias) </td></tr>
-<tr> <td></td><td>558823</td><td> </td><td colspan='2'> ventas</td></tr>
-<tr> <td> 558823</td><td></td><td colspan='4'>  r(perdidas-y-ganancias) </td></tr>
-<tr> <td></td><td>151962</td><td> </td><td colspan='2'> ventas</td></tr>
-<tr> <td> 151962</td><td></td><td colspan='4'>  r(perdidas-y-ganancias) </td></tr>
-<tr> <td></td><td>29412</td><td> </td><td colspan='2'> ventas</td></tr>
-<tr> <td> 29412</td><td></td><td colspan='4'>  r(perdidas-y-ganancias) </td></tr>
-<tr> <td></td><td>4505</td><td> </td><td colspan='2'> ventas</td></tr>
-<tr> <td> 4505</td><td></td><td colspan='4'>  r(perdidas-y-ganancias) </td></tr>
-<tr> <td></td><td>45050</td><td> </td><td colspan='2'> ventas</td></tr>
-<tr> <td> 45050</td><td></td><td colspan='4'>  r(perdidas-y-ganancias) </td></tr>
-<tr> <td></td><td>29412</td><td> </td><td colspan='2'> ventas</td></tr>
-<tr> <td> 29412</td><td></td><td colspan='4'>  r(perdidas-y-ganancias) </td></tr>
-<tr> <td></td><td>525</td><td> </td><td colspan='2'> costos-de-ventas</td></tr>
-<tr> <td> 525</td><td></td><td colspan='4'>  r(perdidas-y-ganancias) </td></tr>
-<tr> <td></td><td>4231</td><td> </td><td colspan='2'> costos-de-ventas</td></tr>
-<tr> <td> 4231</td><td></td><td colspan='4'>  r(perdidas-y-ganancias) </td></tr>
-<tr> <td></td><td>1273</td><td> </td><td colspan='2'> costos-de-ventas</td></tr>
-<tr> <td> 1273</td><td></td><td colspan='4'>  r(perdidas-y-ganancias) </td></tr>
-<tr> <td></td><td>627</td><td> </td><td colspan='2'> costos-de-ventas</td></tr>
-<tr> <td> 627</td><td></td><td colspan='4'>  r(perdidas-y-ganancias) </td></tr>
-<tr> <td></td><td>185</td><td> </td><td colspan='2'> costos-de-ventas</td></tr>
-<tr> <td> 185</td><td></td><td colspan='4'>  r(perdidas-y-ganancias) </td></tr>
-<tr> <td></td><td>2848</td><td> </td><td colspan='2'> costos-de-ventas</td></tr>
-<tr> <td> 2848</td><td></td><td colspan='4'>  r(perdidas-y-ganancias) </td></tr>
-<tr> <td></td><td>50</td><td> </td><td colspan='2'> costos-de-ventas</td></tr>
-<tr> <td> 50</td><td></td><td colspan='4'>  r(perdidas-y-ganancias) </td></tr>
-<tr> <td></td><td>1678</td><td> </td><td colspan='2'> costos-de-ventas</td></tr>
-<tr> <td> 1678</td><td></td><td colspan='4'>  r(perdidas-y-ganancias) </td></tr>
-<tr><td></td> <td>6926</td><td> </td><td colspan='5'>gastos-administrativos#resultado</td></tr>
-<tr><td> 6926</td><td></td><td colspan='6'>  r(perdidas-y-ganancias) </td></tr>
-<tr><td></td> <td>6926</td><td> </td><td colspan='5'>gastos-administrativos#resultado</td></tr>
-<tr><td> 6926</td><td></td><td colspan='6'>  r(perdidas-y-ganancias) </td></tr>
-<tr><td></td> <td>6926</td><td> </td><td colspan='5'>gastos-administrativos#resultado</td></tr>
-<tr><td> 6926</td><td></td><td colspan='6'>  r(perdidas-y-ganancias) </td></tr>
-<tr><td></td> <td>4193</td><td> </td><td colspan='5'>gastos-administrativos#resultado</td></tr>
-<tr><td> 4193</td><td></td><td colspan='6'>  r(perdidas-y-ganancias) </td></tr>
-<tr><td></td> <td>10824</td><td> </td><td colspan='5'>gastos-administrativos#resultado</td></tr>
-<tr><td> 10824</td><td></td><td colspan='6'>  r(perdidas-y-ganancias) </td></tr>
-<tr><td></td> <td>1177</td><td> </td><td colspan='5'>gastos-administrativos#resultado</td></tr>
-<tr><td> 1177</td><td></td><td colspan='6'>  r(perdidas-y-ganancias) </td></tr>
-<tr><td></td> <td>6926</td><td> </td><td colspan='5'>gastos-administrativos#resultado</td></tr>
-<tr><td> 6926</td><td></td><td colspan='6'>  r(perdidas-y-ganancias) </td></tr>
-<tr><td></td> <td>3775</td><td> </td><td colspan='5'>gastos-administrativos#resultado</td></tr>
-<tr><td> 3775</td><td></td><td colspan='6'>  r(perdidas-y-ganancias) </td></tr>
-<tr><td></td> <td>8361</td><td> </td><td colspan='5'>gastos-administrativos#resultado</td></tr>
-<tr><td> 8361</td><td></td><td colspan='6'>  r(perdidas-y-ganancias) </td></tr>
-<tr><td></td> <td>6926</td><td> </td><td colspan='5'>gastos-administrativos#resultado</td></tr>
-<tr><td> 6926</td><td></td><td colspan='6'>  r(perdidas-y-ganancias) </td></tr>
-<tr><td></td> <td>8361</td><td> </td><td colspan='5'>gastos-administrativos#resultado</td></tr>
-<tr><td> 8361</td><td></td><td colspan='6'>  r(perdidas-y-ganancias) </td></tr>
-<tr><td></td> <td>40027</td><td> </td><td colspan='5'>gastos-administrativos#resultado</td></tr>
-<tr><td> 40027</td><td></td><td colspan='6'>  r(perdidas-y-ganancias) </td></tr>
-<tr><td></td> <td>6926</td><td> </td><td colspan='5'>gastos-administrativos#resultado</td></tr>
-<tr><td> 6926</td><td></td><td colspan='6'>  r(perdidas-y-ganancias) </td></tr>
-<tr><td></td> <td>1177</td><td> </td><td colspan='5'>gastos-administrativos#resultado</td></tr>
-<tr><td> 1177</td><td></td><td colspan='6'>  r(perdidas-y-ganancias) </td></tr>
-<tr><td></td> <td>1672</td><td> </td><td colspan='5'>gastos-administrativos#resultado</td></tr>
-<tr><td> 1672</td><td></td><td colspan='6'>  r(perdidas-y-ganancias) </td></tr>
-<tr><td></td> <td>3775</td><td> </td><td colspan='5'>gastos-administrativos#resultado</td></tr>
-<tr><td> 3775</td><td></td><td colspan='6'>  r(perdidas-y-ganancias) </td></tr>
-<tr><td></td> <td>8361</td><td> </td><td colspan='5'>gastos-administrativos#resultado</td></tr>
-<tr><td> 8361</td><td></td><td colspan='6'>  r(perdidas-y-ganancias) </td></tr>
-<tr><td></td> <td>1177</td><td> </td><td colspan='5'>gastos-administrativos#resultado</td></tr>
-<tr><td> 1177</td><td></td><td colspan='6'>  r(perdidas-y-ganancias) </td></tr>
-<tr><td></td> <td>1701</td><td> </td><td colspan='5'>gastos-administrativos#resultado</td></tr>
-<tr><td> 1701</td><td></td><td colspan='6'>  r(perdidas-y-ganancias) </td></tr>
-<tr><td></td> <td>31203</td><td> </td><td colspan='5'>gastos-administrativos#resultado</td></tr>
-<tr><td> 31203</td><td></td><td colspan='6'>  r(perdidas-y-ganancias) </td></tr>
-<tr><td></td> <td>3307</td><td> </td><td colspan='5'>gastos-administrativos#resultado</td></tr>
-<tr><td> 3307</td><td></td><td colspan='6'>  r(perdidas-y-ganancias) </td></tr>
-<tr><td></td> <td>62406</td><td> </td><td colspan='5'>gastos-administrativos#resultado</td></tr>
-<tr><td> 62406</td><td></td><td colspan='6'>  r(perdidas-y-ganancias) </td></tr>
-<tr><td></td> <td>3302</td><td> </td><td colspan='5'>gastos-administrativos#resultado</td></tr>
-<tr><td> 3302</td><td></td><td colspan='6'>  r(perdidas-y-ganancias) </td></tr>
-<tr><td></td> <td>6926</td><td> </td><td colspan='5'>gastos-administrativos#resultado</td></tr>
-<tr><td> 6926</td><td></td><td colspan='6'>  r(perdidas-y-ganancias) </td></tr>
-<tr><td></td> <td>6926</td><td> </td><td colspan='5'>gastos-administrativos#resultado</td></tr>
-<tr><td> 6926</td><td></td><td colspan='6'>  r(perdidas-y-ganancias) </td></tr>
-<tr><td></td> <td>19990</td><td> </td><td colspan='5'>gastos-administrativos#resultado</td></tr>
-<tr><td> 19990</td><td></td><td colspan='6'>  r(perdidas-y-ganancias) </td></tr>
-<tr><td></td> <td>3775</td><td> </td><td colspan='5'>gastos-administrativos#resultado</td></tr>
-<tr><td> 3775</td><td></td><td colspan='6'>  r(perdidas-y-ganancias) </td></tr>
-<tr><td></td> <td>1176</td><td> </td><td colspan='5'>gastos-administrativos#resultado</td></tr>
-<tr><td> 1176</td><td></td><td colspan='6'>  r(perdidas-y-ganancias) </td></tr>
-<tr><td></td> <td>6926</td><td> </td><td colspan='5'>gastos-administrativos#resultado</td></tr>
-<tr><td> 6926</td><td></td><td colspan='6'>  r(perdidas-y-ganancias) </td></tr>
-<tr><td></td> <td>6926</td><td> </td><td colspan='5'>gastos-administrativos#resultado</td></tr>
-<tr><td> 6926</td><td></td><td colspan='6'>  r(perdidas-y-ganancias) </td></tr>
-<tr><td></td> <td>3128</td><td> </td><td colspan='5'>gastos-administrativos#resultado</td></tr>
-<tr><td> 3128</td><td></td><td colspan='6'>  r(perdidas-y-ganancias) </td></tr>
-<tr><td></td> <td>26857</td><td> </td><td colspan='5'>gastos-promocionales#resultado</td></tr>
-<tr><td> 26857</td><td></td><td colspan='6'>  r(perdidas-y-ganancias) </td></tr>
-<tr><td></td> <td>40588</td><td> </td><td colspan='5'>gastos-promocionales#resultado</td></tr>
-<tr><td> 40588</td><td></td><td colspan='6'>  r(perdidas-y-ganancias) </td></tr>
-<tr><td></td> <td>50000</td><td> </td><td colspan='5'>gastos-promocionales#resultado</td></tr>
-<tr><td> 50000</td><td></td><td colspan='6'>  r(perdidas-y-ganancias) </td></tr>
-<tr><td></td> <td>1008</td><td> </td><td colspan='5'>gastos-promocionales#resultado</td></tr>
-<tr><td> 1008</td><td></td><td colspan='6'>  r(perdidas-y-ganancias) </td></tr>
-<tr><td></td> <td>3185</td><td> </td><td colspan='5'>gastos-promocionales#resultado</td></tr>
-<tr><td> 3185</td><td></td><td colspan='6'>  r(perdidas-y-ganancias) </td></tr>
-<tr><td></td> <td>21300</td><td> </td><td colspan='5'>gastos-promocionales#resultado</td></tr>
-<tr><td> 21300</td><td></td><td colspan='6'>  r(perdidas-y-ganancias) </td></tr>
-<tr><td></td> <td>1764</td><td> </td><td colspan='5'>gastos-promocionales#resultado</td></tr>
-<tr><td> 1764</td><td></td><td colspan='6'>  r(perdidas-y-ganancias) </td></tr>
-<tr><td></td> <td>15000</td><td> </td><td colspan='5'>gastos-promocionales#resultado</td></tr>
-<tr><td> 15000</td><td></td><td colspan='6'>  r(perdidas-y-ganancias) </td></tr>
-<tr><td></td> <td>2941</td><td> </td><td colspan='5'>gastos-promocionales#resultado</td></tr>
-<tr><td> 2941</td><td></td><td colspan='6'>  r(perdidas-y-ganancias) </td></tr>
-<tr><td></td> <td>20000</td><td> </td><td colspan='5'>gastos-promocionales#resultado</td></tr>
-<tr><td> 20000</td><td></td><td colspan='6'>  r(perdidas-y-ganancias) </td></tr>
-<tr><td></td> <td>2941</td><td> </td><td colspan='5'>gastos-promocionales#resultado</td></tr>
-<tr><td> 2941</td><td></td><td colspan='6'>  r(perdidas-y-ganancias) </td></tr>
-<tr><td></td> <td>20992</td><td> </td><td colspan='5'>gastos-promocionales#resultado</td></tr>
-<tr><td> 20992</td><td></td><td colspan='6'>  r(perdidas-y-ganancias) </td></tr>
-<tr><td></td> <td>9804</td><td> </td><td colspan='5'>depreciacion#resultado</td></tr>
-<tr><td> 9804</td><td></td><td colspan='6'>  r(perdidas-y-ganancias) </td></tr>
-<tr><td></td> <td>9804</td><td> </td><td colspan='5'>depreciacion#resultado</td></tr>
-<tr><td> 9804</td><td></td><td colspan='6'>  r(perdidas-y-ganancias) </td></tr>
-<tr><td></td> <td>9804</td><td> </td><td colspan='5'>depreciacion#resultado</td></tr>
-<tr><td> 9804</td><td></td><td colspan='6'>  r(perdidas-y-ganancias) </td></tr>
-<tr><td></td> <td>9804</td><td> </td><td colspan='5'>depreciacion#resultado</td></tr>
-<tr><td> 9804</td><td></td><td colspan='6'>  r(perdidas-y-ganancias) </td></tr>
-<tr><td></td> <td>9804</td><td> </td><td colspan='5'>depreciacion#resultado</td></tr>
-<tr><td> 9804</td><td></td><td colspan='6'>  r(perdidas-y-ganancias) </td></tr>
-<tr><td></td> <td>9804</td><td> </td><td colspan='5'>depreciacion#resultado</td></tr>
-<tr><td> 9804</td><td></td><td colspan='6'>  r(perdidas-y-ganancias) </td></tr>
-<tr><td></td> <td>4202</td><td> </td><td colspan='5'>depreciacion#resultado</td></tr>
-<tr><td> 4202</td><td></td><td colspan='6'>  r(perdidas-y-ganancias) </td></tr>
-<tr><td></td> <td>4202</td><td> </td><td colspan='5'>depreciacion#resultado</td></tr>
-<tr><td> 4202</td><td></td><td colspan='6'>  r(perdidas-y-ganancias) </td></tr>
-<tr><td></td> <td>4202</td><td> </td><td colspan='5'>depreciacion#resultado</td></tr>
-<tr><td> 4202</td><td></td><td colspan='6'>  r(perdidas-y-ganancias) </td></tr>
-<tr><td></td> <td>4202</td><td> </td><td colspan='5'>depreciacion#resultado</td></tr>
-<tr><td> 4202</td><td></td><td colspan='6'>  r(perdidas-y-ganancias) </td></tr>
-<tr><td></td> <td>4202</td><td> </td><td colspan='5'>depreciacion#resultado</td></tr>
-<tr><td> 4202</td><td></td><td colspan='6'>  r(perdidas-y-ganancias) </td></tr>
-<tr><td></td> <td>4202</td><td> </td><td colspan='5'>depreciacion#resultado</td></tr>
-<tr><td> 4202</td><td></td><td colspan='6'>  r(perdidas-y-ganancias) </td></tr>
-<tr><td></td> <td>2417</td><td> </td><td colspan='5'>amortizacion#resultado</td></tr>
-<tr><td> 2417</td><td></td><td colspan='6'>  r(perdidas-y-ganancias) </td></tr>
-<tr><td></td> <td>2417</td><td> </td><td colspan='5'>amortizacion#resultado</td></tr>
-<tr><td> 2417</td><td></td><td colspan='6'>  r(perdidas-y-ganancias) </td></tr>
-<tr><td></td> <td>2417</td><td> </td><td colspan='5'>amortizacion#resultado</td></tr>
-<tr><td> 2417</td><td></td><td colspan='6'>  r(perdidas-y-ganancias) </td></tr>
-<tr><td></td> <td>2417</td><td> </td><td colspan='5'>amortizacion#resultado</td></tr>
-<tr><td> 2417</td><td></td><td colspan='6'>  r(perdidas-y-ganancias) </td></tr>
-<tr><td></td> <td>2417</td><td> </td><td colspan='5'>amortizacion#resultado</td></tr>
-<tr><td> 2417</td><td></td><td colspan='6'>  r(perdidas-y-ganancias) </td></tr>
-<tr><td></td> <td>2417</td><td> </td><td colspan='5'>amortizacion#resultado</td></tr>
-<tr><td> 2417</td><td></td><td colspan='6'>  r(perdidas-y-ganancias) </td></tr>
-<tr><td></td> <td>2417</td><td> </td><td colspan='5'>amortizacion#resultado</td></tr>
-<tr><td> 2417</td><td></td><td colspan='6'>  r(perdidas-y-ganancias) </td></tr>
-<tr><td></td> <td>2417</td><td> </td><td colspan='5'>amortizacion#resultado</td></tr>
-<tr><td> 2417</td><td></td><td colspan='6'>  r(perdidas-y-ganancias) </td></tr>
-<tr><td></td> <td>2417</td><td> </td><td colspan='5'>amortizacion#resultado</td></tr>
-<tr><td> 2417</td><td></td><td colspan='6'>  r(perdidas-y-ganancias) </td></tr>
-<tr><td></td> <td>2417</td><td> </td><td colspan='5'>amortizacion#resultado</td></tr>
-<tr><td> 2417</td><td></td><td colspan='6'>  r(perdidas-y-ganancias) </td></tr>
-<tr><td></td> <td>2417</td><td> </td><td colspan='5'>amortizacion#resultado</td></tr>
-<tr><td> 2417</td><td></td><td colspan='6'>  r(perdidas-y-ganancias) </td></tr>
-<tr><td></td> <td>2417</td><td> </td><td colspan='5'>amortizacion#resultado</td></tr>
-<tr><td> 2417</td><td></td><td colspan='6'>  r(perdidas-y-ganancias) </td></tr>
-<tr  style='background-color: blanchedalmond'><td></td><td> perdidas-y-ganancias</td><td>saldo-deudor</td></tr>
-<tr> <td> 210</td> <td>4167074</td> <td>0</td></tr>
-<tr style='background-color: blanchedalmond'><td>4167074</td></tr>
-<table style='background-color: lightyellow' ><tbody>
 <tr style='color: white; background-color: black'><td colspan='9'> Partida 212</td></tr>
 <tr><th>DEBE</th><th> HABER </th> <th colspan='6'> Cuenta </th></tr>
-<tr><td>300000</td><td> </td><td colspan='2'> r(base-imponible) partida 88 </td></tr>
-<tr><td></td><td>300000</td><td> </td><td>salarios</td></tr>
-<tr><td>300000</td><td> </td><td colspan='2'> r(base-imponible) partida 124 </td></tr>
-<tr><td></td><td>300000</td><td> </td><td>salarios</td></tr>
-<tr><td>350000</td><td> </td><td colspan='2'> r(base-imponible) partida 127 </td></tr>
-<tr><td></td><td>350000</td><td> </td><td>salarios</td></tr>
-<tr><td>400000</td><td> </td><td colspan='2'> r(base-imponible) partida 157 </td></tr>
-<tr><td></td><td>400000</td><td> </td><td>salarios</td></tr>
-<tr><td>400000</td><td> </td><td colspan='2'> r(base-imponible) partida 172 </td></tr>
-<tr><td></td><td>400000</td><td> </td><td>salarios</td></tr>
-<tr><td>400000</td><td> </td><td colspan='2'> r(base-imponible) partida 204 </td></tr>
-<tr><td></td><td>400000</td><td> </td><td>salarios</td></tr>
-<tr><td>29412</td><td> </td><td colspan='2'> r(base-imponible) partida 7 </td></tr>
-<tr><td></td><td>29412</td><td> </td><td>ventas</td></tr>
-<tr><td>45050</td><td> </td><td colspan='2'> r(base-imponible) partida 6 </td></tr>
-<tr><td></td><td>45050</td><td> </td><td>ventas</td></tr>
-<tr><td>4505</td><td> </td><td colspan='2'> r(base-imponible) partida 5 </td></tr>
-<tr><td></td><td>4505</td><td> </td><td>ventas</td></tr>
-<tr><td>29412</td><td> </td><td colspan='2'> r(base-imponible) partida 141 </td></tr>
-<tr><td></td><td>29412</td><td> </td><td>ventas</td></tr>
-<tr><td>151962</td><td> </td><td colspan='2'> r(base-imponible) partida 87 </td></tr>
-<tr><td></td><td>151962</td><td> </td><td>ventas</td></tr>
-<tr><td>558823</td><td> </td><td colspan='2'> r(base-imponible) partida 82 </td></tr>
-<tr><td></td><td>558823</td><td> </td><td>ventas</td></tr>
-<tr><td>33613</td><td> </td><td colspan='2'> r(base-imponible) partida 123 </td></tr>
-<tr><td></td><td>33613</td><td> </td><td>ventas</td></tr>
-<tr><td>40000</td><td> </td><td colspan='2'> r(base-imponible) partida 116 </td></tr>
-<tr><td></td><td>40000</td><td> </td><td>ventas</td></tr>
-<tr><td>90544</td><td> </td><td colspan='2'> r(base-imponible) partida 114 </td></tr>
-<tr><td></td><td>90544</td><td> </td><td>ventas</td></tr>
-<tr><td>10592</td><td> </td><td colspan='2'> r(base-imponible) partida 148 </td></tr>
-<tr><td></td><td>10592</td><td> </td><td>ventas</td></tr>
-<tr><td>400000</td><td> </td><td colspan='2'> r(base-imponible) partida 158 </td></tr>
-<tr><td></td><td>400000</td><td> </td><td>ventas</td></tr>
-<tr><td>1678</td><td> </td><td colspan='2'> r(base-imponible) partida 9 </td></tr>
-<tr><td></td><td>1678</td><td> </td><td>costos-de-ventas</td></tr>
-<tr><td>50</td><td> </td><td colspan='2'> r(base-imponible) partida 8 </td></tr>
-<tr><td></td><td>50</td><td> </td><td>costos-de-ventas</td></tr>
-<tr><td>2848</td><td> </td><td colspan='2'> r(base-imponible) partida 15 </td></tr>
-<tr><td></td><td>2848</td><td> </td><td>costos-de-ventas</td></tr>
-<tr><td>185</td><td> </td><td colspan='2'> r(base-imponible) partida 20 </td></tr>
-<tr><td></td><td>185</td><td> </td><td>costos-de-ventas</td></tr>
-<tr><td>627</td><td> </td><td colspan='2'> r(base-imponible) partida 27 </td></tr>
-<tr><td></td><td>627</td><td> </td><td>costos-de-ventas</td></tr>
-<tr><td>1273</td><td> </td><td colspan='2'> r(base-imponible) partida 33 </td></tr>
-<tr><td></td><td>1273</td><td> </td><td>costos-de-ventas</td></tr>
-<tr><td>4231</td><td> </td><td colspan='2'> r(base-imponible) partida 86 </td></tr>
-<tr><td></td><td>4231</td><td> </td><td>costos-de-ventas</td></tr>
-<tr><td>525</td><td> </td><td colspan='2'> r(base-imponible) partida 153 </td></tr>
-<tr><td></td><td>525</td><td> </td><td>costos-de-ventas</td></tr>
-<tr><td>3128</td><td> </td><td colspan='2'> r(base-imponible) partida 17 </td></tr>
-<tr><td></td><td>3128</td><td> </td><td>gastos-administrativos</td></tr>
-<tr><td>6926</td><td> </td><td colspan='2'> r(base-imponible) partida 22 </td></tr>
-<tr><td></td><td>6926</td><td> </td><td>gastos-administrativos</td></tr>
-<tr><td>6926</td><td> </td><td colspan='2'> r(base-imponible) partida 28 </td></tr>
-<tr><td></td><td>6926</td><td> </td><td>gastos-administrativos</td></tr>
-<tr><td>1176</td><td> </td><td colspan='2'> r(base-imponible) partida 36 </td></tr>
-<tr><td></td><td>1176</td><td> </td><td>gastos-administrativos</td></tr>
-<tr><td>3775</td><td> </td><td colspan='2'> r(base-imponible) partida 34 </td></tr>
-<tr><td></td><td>3775</td><td> </td><td>gastos-administrativos</td></tr>
-<tr><td>19990</td><td> </td><td colspan='2'> r(base-imponible) partida 32 </td></tr>
-<tr><td></td><td>19990</td><td> </td><td>gastos-administrativos</td></tr>
-<tr><td>6926</td><td> </td><td colspan='2'> r(base-imponible) partida 31 </td></tr>
-<tr><td></td><td>6926</td><td> </td><td>gastos-administrativos</td></tr>
-<tr><td>6926</td><td> </td><td colspan='2'> r(base-imponible) partida 49 </td></tr>
-<tr><td></td><td>6926</td><td> </td><td>gastos-administrativos</td></tr>
-<tr><td>3302</td><td> </td><td colspan='2'> r(base-imponible) partida 48 </td></tr>
-<tr><td></td><td>3302</td><td> </td><td>gastos-administrativos</td></tr>
-<tr><td>62406</td><td> </td><td colspan='2'> r(base-imponible) partida 46 </td></tr>
-<tr><td></td><td>62406</td><td> </td><td>gastos-administrativos</td></tr>
-<tr><td>3307</td><td> </td><td colspan='2'> r(base-imponible) partida 45 </td></tr>
-<tr><td></td><td>3307</td><td> </td><td>gastos-administrativos</td></tr>
-<tr><td>31203</td><td> </td><td colspan='2'> r(base-imponible) partida 43 </td></tr>
-<tr><td></td><td>31203</td><td> </td><td>gastos-administrativos</td></tr>
-<tr><td>1701</td><td> </td><td colspan='2'> r(base-imponible) partida 42 </td></tr>
-<tr><td></td><td>1701</td><td> </td><td>gastos-administrativos</td></tr>
-<tr><td>1177</td><td> </td><td colspan='2'> r(base-imponible) partida 41 </td></tr>
-<tr><td></td><td>1177</td><td> </td><td>gastos-administrativos</td></tr>
-<tr><td>8361</td><td> </td><td colspan='2'> r(base-imponible) partida 84 </td></tr>
-<tr><td></td><td>8361</td><td> </td><td>gastos-administrativos</td></tr>
-<tr><td>3775</td><td> </td><td colspan='2'> r(base-imponible) partida 79 </td></tr>
-<tr><td></td><td>3775</td><td> </td><td>gastos-administrativos</td></tr>
-<tr><td>1672</td><td> </td><td colspan='2'> r(base-imponible) partida 67 </td></tr>
-<tr><td></td><td>1672</td><td> </td><td>gastos-administrativos</td></tr>
-<tr><td>1177</td><td> </td><td colspan='2'> r(base-imponible) partida 63 </td></tr>
-<tr><td></td><td>1177</td><td> </td><td>gastos-administrativos</td></tr>
-<tr><td>6926</td><td> </td><td colspan='2'> r(base-imponible) partida 107 </td></tr>
-<tr><td></td><td>6926</td><td> </td><td>gastos-administrativos</td></tr>
-<tr><td>40027</td><td> </td><td colspan='2'> r(base-imponible) partida 105 </td></tr>
-<tr><td></td><td>40027</td><td> </td><td>gastos-administrativos</td></tr>
-<tr><td>8361</td><td> </td><td colspan='2'> r(base-imponible) partida 145 </td></tr>
-<tr><td></td><td>8361</td><td> </td><td>gastos-administrativos</td></tr>
-<tr><td>6926</td><td> </td><td colspan='2'> r(base-imponible) partida 139 </td></tr>
-<tr><td></td><td>6926</td><td> </td><td>gastos-administrativos</td></tr>
-<tr><td>8361</td><td> </td><td colspan='2'> r(base-imponible) partida 131 </td></tr>
-<tr><td></td><td>8361</td><td> </td><td>gastos-administrativos</td></tr>
-<tr><td>3775</td><td> </td><td colspan='2'> r(base-imponible) partida 163 </td></tr>
-<tr><td></td><td>3775</td><td> </td><td>gastos-administrativos</td></tr>
-<tr><td>6926</td><td> </td><td colspan='2'> r(base-imponible) partida 161 </td></tr>
-<tr><td></td><td>6926</td><td> </td><td>gastos-administrativos</td></tr>
-<tr><td>1177</td><td> </td><td colspan='2'> r(base-imponible) partida 160 </td></tr>
-<tr><td></td><td>1177</td><td> </td><td>gastos-administrativos</td></tr>
-<tr><td>10824</td><td> </td><td colspan='2'> r(base-imponible) partida 184 </td></tr>
-<tr><td></td><td>10824</td><td> </td><td>gastos-administrativos</td></tr>
-<tr><td>4193</td><td> </td><td colspan='2'> r(base-imponible) partida 183 </td></tr>
-<tr><td></td><td>4193</td><td> </td><td>gastos-administrativos</td></tr>
-<tr><td>6926</td><td> </td><td colspan='2'> r(base-imponible) partida 171 </td></tr>
-<tr><td></td><td>6926</td><td> </td><td>gastos-administrativos</td></tr>
-<tr><td>6926</td><td> </td><td colspan='2'> r(base-imponible) partida 201 </td></tr>
-<tr><td></td><td>6926</td><td> </td><td>gastos-administrativos</td></tr>
-<tr><td>6926</td><td> </td><td colspan='2'> r(base-imponible) partida 200 </td></tr>
-<tr><td></td><td>6926</td><td> </td><td>gastos-administrativos</td></tr>
-<tr><td>20992</td><td> </td><td colspan='2'> r(base-imponible) partida 18 </td></tr>
-<tr><td></td><td>20992</td><td> </td><td>gastos-promocionales</td></tr>
-<tr><td>2941</td><td> </td><td colspan='2'> r(base-imponible) partida 35 </td></tr>
-<tr><td></td><td>2941</td><td> </td><td>gastos-promocionales</td></tr>
-<tr><td>20000</td><td> </td><td colspan='2'> r(base-imponible) partida 50 </td></tr>
-<tr><td></td><td>20000</td><td> </td><td>gastos-promocionales</td></tr>
-<tr><td>2941</td><td> </td><td colspan='2'> r(base-imponible) partida 47 </td></tr>
-<tr><td></td><td>2941</td><td> </td><td>gastos-promocionales</td></tr>
-<tr><td>15000</td><td> </td><td colspan='2'> r(base-imponible) partida 39 </td></tr>
-<tr><td></td><td>15000</td><td> </td><td>gastos-promocionales</td></tr>
-<tr><td>1764</td><td> </td><td colspan='2'> r(base-imponible) partida 85 </td></tr>
-<tr><td></td><td>1764</td><td> </td><td>gastos-promocionales</td></tr>
-<tr><td>21300</td><td> </td><td colspan='2'> r(base-imponible) partida 78 </td></tr>
-<tr><td></td><td>21300</td><td> </td><td>gastos-promocionales</td></tr>
-<tr><td>3185</td><td> </td><td colspan='2'> r(base-imponible) partida 74 </td></tr>
-<tr><td></td><td>3185</td><td> </td><td>gastos-promocionales</td></tr>
-<tr><td>1008</td><td> </td><td colspan='2'> r(base-imponible) partida 73 </td></tr>
-<tr><td></td><td>1008</td><td> </td><td>gastos-promocionales</td></tr>
-<tr><td>50000</td><td> </td><td colspan='2'> r(base-imponible) partida 69 </td></tr>
-<tr><td></td><td>50000</td><td> </td><td>gastos-promocionales</td></tr>
-<tr><td>40588</td><td> </td><td colspan='2'> r(base-imponible) partida 68 </td></tr>
-<tr><td></td><td>40588</td><td> </td><td>gastos-promocionales</td></tr>
-<tr><td>26857</td><td> </td><td colspan='2'> r(base-imponible) partida 64 </td></tr>
-<tr><td></td><td>26857</td><td> </td><td>gastos-promocionales</td></tr>
-<tr><td>4202</td><td> </td><td colspan='2'> r(base-imponible) partida 131 </td></tr>
-<tr><td></td><td>4202</td><td> </td><td>depreciacion</td></tr>
-<tr><td>4202</td><td> </td><td colspan='2'> r(base-imponible) partida 142 </td></tr>
-<tr><td></td><td>4202</td><td> </td><td>depreciacion</td></tr>
-<tr><td>4202</td><td> </td><td colspan='2'> r(base-imponible) partida 261 </td></tr>
-<tr><td></td><td>4202</td><td> </td><td>depreciacion</td></tr>
-<tr><td>4202</td><td> </td><td colspan='2'> r(base-imponible) partida 302 </td></tr>
-<tr><td></td><td>4202</td><td> </td><td>depreciacion</td></tr>
-<tr><td>4202</td><td> </td><td colspan='2'> r(base-imponible) partida 371 </td></tr>
-<tr><td></td><td>4202</td><td> </td><td>depreciacion</td></tr>
-<tr><td>4202</td><td> </td><td colspan='2'> r(base-imponible) partida 52 </td></tr>
-<tr><td></td><td>4202</td><td> </td><td>depreciacion</td></tr>
-<tr><td>9804</td><td> </td><td colspan='2'> r(base-imponible) partida 91 </td></tr>
-<tr><td></td><td>9804</td><td> </td><td>depreciacion</td></tr>
-<tr><td>9804</td><td> </td><td colspan='2'> r(base-imponible) partida 125 </td></tr>
-<tr><td></td><td>9804</td><td> </td><td>depreciacion</td></tr>
-<tr><td>9804</td><td> </td><td colspan='2'> r(base-imponible) partida 155 </td></tr>
-<tr><td></td><td>9804</td><td> </td><td>depreciacion</td></tr>
-<tr><td>9804</td><td> </td><td colspan='2'> r(base-imponible) partida 167 </td></tr>
-<tr><td></td><td>9804</td><td> </td><td>depreciacion</td></tr>
-<tr><td>9804</td><td> </td><td colspan='2'> r(base-imponible) partida 186 </td></tr>
-<tr><td></td><td>9804</td><td> </td><td>depreciacion</td></tr>
-<tr><td>9804</td><td> </td><td colspan='2'> r(base-imponible) partida 207 </td></tr>
-<tr><td></td><td>9804</td><td> </td><td>depreciacion</td></tr>
-<tr><td>2417</td><td> </td><td colspan='2'> r(base-imponible) partida 131 </td></tr>
-<tr><td></td><td>2417</td><td> </td><td>amortizacion</td></tr>
-<tr><td>2417</td><td> </td><td colspan='2'> r(base-imponible) partida 142 </td></tr>
-<tr><td></td><td>2417</td><td> </td><td>amortizacion</td></tr>
-<tr><td>2417</td><td> </td><td colspan='2'> r(base-imponible) partida 261 </td></tr>
-<tr><td></td><td>2417</td><td> </td><td>amortizacion</td></tr>
-<tr><td>2417</td><td> </td><td colspan='2'> r(base-imponible) partida 302 </td></tr>
-<tr><td></td><td>2417</td><td> </td><td>amortizacion</td></tr>
-<tr><td>2417</td><td> </td><td colspan='2'> r(base-imponible) partida 371 </td></tr>
-<tr><td></td><td>2417</td><td> </td><td>amortizacion</td></tr>
-<tr><td>2417</td><td> </td><td colspan='2'> r(base-imponible) partida 52 </td></tr>
-<tr><td></td><td>2417</td><td> </td><td>amortizacion</td></tr>
-<tr><td>2417</td><td> </td><td colspan='2'> r(base-imponible) partida 91 </td></tr>
-<tr><td></td><td>2417</td><td> </td><td>amortizacion</td></tr>
-<tr><td>2417</td><td> </td><td colspan='2'> r(base-imponible) partida 125 </td></tr>
-<tr><td></td><td>2417</td><td> </td><td>amortizacion</td></tr>
-<tr><td>2417</td><td> </td><td colspan='2'> r(base-imponible) partida 155 </td></tr>
-<tr><td></td><td>2417</td><td> </td><td>amortizacion</td></tr>
-<tr><td>2417</td><td> </td><td colspan='2'> r(base-imponible) partida 167 </td></tr>
-<tr><td></td><td>2417</td><td> </td><td>amortizacion</td></tr>
-<tr><td>2417</td><td> </td><td colspan='2'> r(base-imponible) partida 186 </td></tr>
-<tr><td></td><td>2417</td><td> </td><td>amortizacion</td></tr>
-<tr><td>2417</td><td> </td><td colspan='2'> r(base-imponible) partida 207 </td></tr>
-<tr><td></td><td>2417</td><td> </td><td>amortizacion</td></tr>
-<tr  style='background-color: blanchedalmond'><td></td><td> base-imponible</td><td>saldo-deudor</td></tr>
-<tr> <td> 212</td> <td>4167074</td> <td>0</td></tr>
-<tr style='background-color: blanchedalmond'><td>4167074</td></tr>
-<table style='background-color: lightyellow' ><tbody>
-<tr style='color: white; background-color: black'><td colspan='9'> Partida 211</td></tr>
-<tr><th>DEBE</th><th> HABER </th> <th colspan='6'> Cuenta </th></tr>
-<tr><td>2150000</td><td> </td><td colspan='2'> r(salarios) partida 203 </td></tr>
-<tr><td></td><td>2150000</td><td> </td><td>base-imponible</td></tr>
-<tr><td>123497</td><td> </td><td colspan='2'> r(ventas) partida 4 </td></tr>
-<tr><td></td><td>123497</td><td> </td><td>base-imponible</td></tr>
-<tr><td>29412</td><td> </td><td colspan='2'> r(ventas) partida 3 </td></tr>
-<tr><td></td><td>29412</td><td> </td><td>base-imponible</td></tr>
-<tr><td>29412</td><td> </td><td colspan='2'> r(ventas) partida 192 </td></tr>
-<tr><td></td><td>29412</td><td> </td><td>base-imponible</td></tr>
-<tr><td>84</td><td> </td><td colspan='2'> r(ventas) partida 1911 </td></tr>
-<tr><td></td><td>84</td><td> </td><td>base-imponible</td></tr>
-<tr><td>4505</td><td> </td><td colspan='2'> r(ventas) partida 191 </td></tr>
-<tr><td></td><td>4505</td><td> </td><td>base-imponible</td></tr>
-<tr><td>29412</td><td> </td><td colspan='2'> r(ventas) partida 26 </td></tr>
-<tr><td></td><td>29412</td><td> </td><td>base-imponible</td></tr>
-<tr><td>102</td><td> </td><td colspan='2'> r(ventas) partida 301 </td></tr>
-<tr><td></td><td>102</td><td> </td><td>base-imponible</td></tr>
-<tr><td>25210</td><td> </td><td colspan='2'> r(ventas) partida 30 </td></tr>
-<tr><td></td><td>25210</td><td> </td><td>base-imponible</td></tr>
-<tr><td>225</td><td> </td><td colspan='2'> r(ventas) partida 37 </td></tr>
-<tr><td></td><td>225</td><td> </td><td>base-imponible</td></tr>
-<tr><td>93179</td><td> </td><td colspan='2'> r(ventas) partida 83 </td></tr>
-<tr><td></td><td>93179</td><td> </td><td>base-imponible</td></tr>
-<tr><td>35000</td><td> </td><td colspan='2'> r(ventas) partida 81 </td></tr>
-<tr><td></td><td>35000</td><td> </td><td>base-imponible</td></tr>
-<tr><td>151960</td><td> </td><td colspan='2'> r(ventas) partida 77 </td></tr>
-<tr><td></td><td>151960</td><td> </td><td>base-imponible</td></tr>
-<tr><td>558823</td><td> </td><td colspan='2'> r(ventas) partida 76 </td></tr>
-<tr><td></td><td>558823</td><td> </td><td>base-imponible</td></tr>
-<tr><td>35000</td><td> </td><td colspan='2'> r(ventas) partida 75 </td></tr>
-<tr><td></td><td>35000</td><td> </td><td>base-imponible</td></tr>
-<tr><td>62000</td><td> </td><td colspan='2'> r(ventas) partida 122 </td></tr>
-<tr><td></td><td>62000</td><td> </td><td>base-imponible</td></tr>
-<tr><td>40000</td><td> </td><td colspan='2'> r(ventas) partida 117 </td></tr>
-<tr><td></td><td>40000</td><td> </td><td>base-imponible</td></tr>
-<tr><td>93137</td><td> </td><td colspan='2'> r(ventas) partida 115 </td></tr>
-<tr><td></td><td>93137</td><td> </td><td>base-imponible</td></tr>
-<tr><td>90544</td><td> </td><td colspan='2'> r(ventas) partida 113 </td></tr>
-<tr><td></td><td>90544</td><td> </td><td>base-imponible</td></tr>
-<tr><td>141596</td><td> </td><td colspan='2'> r(ventas) partida 99 </td></tr>
-<tr><td></td><td>141596</td><td> </td><td>base-imponible</td></tr>
-<tr><td>6666</td><td> </td><td colspan='2'> r(ventas) partida 93 </td></tr>
-<tr><td></td><td>6666</td><td> </td><td>base-imponible</td></tr>
-<tr><td>93137</td><td> </td><td colspan='2'> r(ventas) partida 152 </td></tr>
-<tr><td></td><td>93137</td><td> </td><td>base-imponible</td></tr>
-<tr><td>126050</td><td> </td><td colspan='2'> r(ventas) partida 151 </td></tr>
-<tr><td></td><td>126050</td><td> </td><td>base-imponible</td></tr>
-<tr><td>6666</td><td> </td><td colspan='2'> r(ventas) partida 133 </td></tr>
-<tr><td></td><td>6666</td><td> </td><td>base-imponible</td></tr>
-<tr><td>63030</td><td> </td><td colspan='2'> r(ventas) partida 130 </td></tr>
-<tr><td></td><td>63030</td><td> </td><td>base-imponible</td></tr>
-<tr><td>400000</td><td> </td><td colspan='2'> r(ventas) partida 128 </td></tr>
-<tr><td></td><td>400000</td><td> </td><td>base-imponible</td></tr>
-<tr><td>93137</td><td> </td><td colspan='2'> r(ventas) partida 164 </td></tr>
-<tr><td></td><td>93137</td><td> </td><td>base-imponible</td></tr>
-<tr><td>6666</td><td> </td><td colspan='2'> r(ventas) partida 170 </td></tr>
-<tr><td></td><td>6666</td><td> </td><td>base-imponible</td></tr>
-<tr><td>30000</td><td> </td><td colspan='2'> r(ventas) partida 199 </td></tr>
-<tr><td></td><td>30000</td><td> </td><td>base-imponible</td></tr>
-<tr><td>93137</td><td> </td><td colspan='2'> r(ventas) partida 198 </td></tr>
-<tr><td></td><td>93137</td><td> </td><td>base-imponible</td></tr>
-<tr><td>93137</td><td> </td><td colspan='2'> r(ventas) partida 197 </td></tr>
-<tr><td></td><td>93137</td><td> </td><td>base-imponible</td></tr>
-<tr><td>6666</td><td> </td><td colspan='2'> r(ventas) partida 196 </td></tr>
-<tr><td></td><td>6666</td><td> </td><td>base-imponible</td></tr>
-<tr><td>6666</td><td> </td><td colspan='2'> r(ventas) partida 195 </td></tr>
-<tr><td></td><td>6666</td><td> </td><td>base-imponible</td></tr>
-<tr><td>178</td><td> </td><td colspan='2'> r(costos-de-ventas) partida 19 </td></tr>
-<tr><td></td><td>178</td><td> </td><td>base-imponible</td></tr>
-<tr><td>231</td><td> </td><td colspan='2'> r(costos-de-ventas) partida 108 </td></tr>
-<tr><td></td><td>231</td><td> </td><td>base-imponible</td></tr>
-<tr><td>40027</td><td> </td><td colspan='2'> r(gastos-administrativos) partida 98 </td></tr>
-<tr><td></td><td>40027</td><td> </td><td>base-imponible</td></tr>
-<tr><td>6926</td><td> </td><td colspan='2'> r(gastos-administrativos) partida 202 </td></tr>
-<tr><td></td><td>6926</td><td> </td><td>base-imponible</td></tr>
-<tr><td>33</td><td> </td><td colspan='2'> r(correccion-monetaria) partida 14333 </td></tr>
-<tr><td></td><td>33</td><td> </td><td>base-imponible</td></tr>
-<tr><td>298</td><td> </td><td colspan='2'> r(correccion-monetaria) partida 14444 </td></tr>
-<tr><td></td><td>298</td><td> </td><td>base-imponible</td></tr>
-<tr><td>334</td><td> </td><td colspan='2'> r(correccion-monetaria) partida 262 </td></tr>
-<tr><td></td><td>334</td><td> </td><td>base-imponible</td></tr>
-<tr><td>240</td><td> </td><td colspan='2'> r(correccion-monetaria) partida 303 </td></tr>
-<tr><td></td><td>240</td><td> </td><td>base-imponible</td></tr>
-<tr><td>254</td><td> </td><td colspan='2'> r(correccion-monetaria) partida 372 </td></tr>
-<tr><td></td><td>254</td><td> </td><td>base-imponible</td></tr>
-<tr><td>279</td><td> </td><td colspan='2'> r(correccion-monetaria) partida 62 </td></tr>
-<tr><td></td><td>279</td><td> </td><td>base-imponible</td></tr>
-<tr><td>220</td><td> </td><td colspan='2'> r(correccion-monetaria) partida 89 </td></tr>
-<tr><td></td><td>220</td><td> </td><td>base-imponible</td></tr>
-<tr><td>487</td><td> </td><td colspan='2'> r(correccion-monetaria) partida 126 </td></tr>
-<tr><td></td><td>487</td><td> </td><td>base-imponible</td></tr>
-<tr><td>701</td><td> </td><td colspan='2'> r(correccion-monetaria) partida 154 </td></tr>
-<tr><td></td><td>701</td><td> </td><td>base-imponible</td></tr>
-<tr><td>780</td><td> </td><td colspan='2'> r(correccion-monetaria) partida 168 </td></tr>
-<tr><td></td><td>780</td><td> </td><td>base-imponible</td></tr>
+<tr><td></td> <td>4505</td><td> </td><td colspan='5'>ventas</td></tr>
+<tr><td> 4505</td><td></td><td colspan='6'>  r(base-imponible) a </td></tr>
+<tr><td></td> <td>45050</td><td> </td><td colspan='5'>ventas</td></tr>
+<tr><td> 45050</td><td></td><td colspan='6'>  r(base-imponible) a </td></tr>
+<tr><td></td> <td>29412</td><td> </td><td colspan='5'>ventas</td></tr>
+<tr><td> 29412</td><td></td><td colspan='6'>  r(base-imponible) a </td></tr>
+<tr><td></td> <td>50</td><td> </td><td colspan='5'>costos-de-ventas</td></tr>
+<tr><td> 50</td><td></td><td colspan='6'>  r(base-imponible) a </td></tr>
+<tr><td></td> <td>1678</td><td> </td><td colspan='5'>costos-de-ventas</td></tr>
+<tr><td> 1678</td><td></td><td colspan='6'>  r(base-imponible) a </td></tr>
+<tr><td></td> <td>4202</td><td> </td><td colspan='5'>depreciacion</td></tr>
+<tr><td> 4202</td><td></td><td colspan='6'>  r(base-imponible) a </td></tr>
+<tr><td></td> <td>2417</td><td> </td><td colspan='5'>amortizacion</td></tr>
+<tr><td> 2417</td><td></td><td colspan='6'>  r(base-imponible) a </td></tr>
 <table>
-<tr style='background-color: blanchedalmond'><td> </td><td>base-imponible</td><td>saldo-acreedor</td></tr>
-<tr> <td> 212</td> <td>4167074</td><td> 4769044</td></tr>
-<tr style='background-color: blanchedalmond'><td>601970</td></tr>
+<tr style='background-color: blanchedalmond'><td> </td><td>base-imponible</td></tr>
+<tr> <td> 131</td> <td>0</td><td> 2417</td></tr>
+<tr style='background-color: blanchedalmond'><td>2417</td></tr>
+</table>
+<table>
+<tr style='background-color: blanchedalmond'><td> </td><td>base-imponible</td></tr>
+<tr> <td> 131</td> <td>0</td><td> 4202</td></tr>
+<tr style='background-color: blanchedalmond'><td>4202</td></tr>
+</table>
+<table>
+<tr style='background-color: blanchedalmond'><td> </td><td>base-imponible</td></tr>
+<tr> <td> 9</td> <td>0</td><td> 1678</td></tr>
+<tr style='background-color: blanchedalmond'><td>1678</td></tr>
+</table>
+<table>
+<tr style='background-color: blanchedalmond'><td> </td><td>base-imponible</td></tr>
+<tr> <td> 8</td> <td>0</td><td> 50</td></tr>
+<tr style='background-color: blanchedalmond'><td>50</td></tr>
+</table>
+<table>
+<tr style='background-color: blanchedalmond'><td> </td><td>base-imponible</td></tr>
+<tr> <td> 7</td> <td>0</td><td> 29412</td></tr>
+<tr style='background-color: blanchedalmond'><td>29412</td></tr>
+</table>
+<table>
+<tr style='background-color: blanchedalmond'><td> </td><td>base-imponible</td></tr>
+<tr> <td> 6</td> <td>0</td><td> 45050</td></tr>
+<tr style='background-color: blanchedalmond'><td>45050</td></tr>
+</table>
+<table>
+<tr style='background-color: blanchedalmond'><td> </td><td>base-imponible</td></tr>
+<tr> <td> 5</td> <td>0</td><td> 4505</td></tr>
+<tr style='background-color: blanchedalmond'><td>4505</td></tr>
 </table>
 <table style='background-color: lightyellow' ><tbody>
 <tr style='color: white; background-color: black'><td colspan='9'> Partida 214</td></tr>
 <tr><th>DEBE</th><th> HABER </th> <th colspan='6'> Cuenta </th></tr>
-<tr> <td colspan='7'> x-- Liquidando cuenta de resultados idpc en base-imponible</td></tr>
-<tr> <td colspan='7'> La cuenta de liquidacion tiene un debe de 	4167074 y un haber de 	4769044</td></tr>
-<tr style='background-color: lightgreen'><td>60197</td> <td></td> <td colspan='2' >idpc</td></tr>
-<tr style='background-color: lightgreen'><td></td><td>60197</td> <td> </td><td colspan='2'> r(base-imponible) </td></tr> 
 <tr><td colspan='6'>x-- Liquidando cuenta de resultados ( cuando hay ganancia) en utilidad-tributaria en base-imponible</td></tr>
-<tr style='background-color: azure'><td colspan='6'>La cuenta de liquidacion tiene un debe de 	4167074 y un haber de 	4769044</td></tr>
-<tr style='background-color: azure'><td> 541773</td><td></td><td colspan='2'>utilidad-tributaria</td></tr>
-<tr style='background-color: azure'><td> </td><td>541773</td><td></td><td> r(base-imponible) </td></tr>
+<tr style='background-color: azure'><td colspan='6'>La cuenta de liquidacion tiene un debe de 	0 y un haber de 	2417</td></tr>
+<tr style='background-color: azure'><td> 2417</td><td></td><td colspan='2'>utilidad-tributaria</td></tr>
+<tr style='background-color: azure'><td> </td><td>2417</td><td></td><td> r(base-imponible) </td></tr>
 <table>
-<tr style='background-color: blanchedalmond'><td> </td><td>base-imponible</td><td>saldo-acreedor</td></tr>
-<tr> <td> 212</td> <td>4167074</td><td> 4769044</td></tr>
-<tr style='background-color: blanchedalmond'><td>601970</td></tr>
+<tr style='background-color: blanchedalmond'><td> </td><td>base-imponible</td></tr>
+<tr> <td> 131</td> <td>0</td><td> 2417</td></tr>
+<tr style='background-color: blanchedalmond'><td>2417</td></tr>
 </table>
-<table style='background-color: lightyellow' ><tbody>
-<tr style='color: white; background-color: black'><td colspan='9'> Partida 213</td></tr>
-<tr><th>DEBE</th><th> HABER </th> <th colspan='6'> Cuenta </th></tr>
-<tr> <td colspan='8'>x-- Liquidando cuenta de resultados (cuando hay pérdidas tributarias) en: utilidad en perdidas-y-ganancias</td></tr>
-<tr style='font-weight:bold; color: white; background-color: crimson'> <td>-4167074</td><td></td><td>utilidad</td><tr>
-<tr><td></td><td>-4167074</td><td> </td><td colspan='2'> r(perdidas-y-ganancias) </td></tr>
-<tr  style='background-color: blanchedalmond'><td></td><td> perdidas-y-ganancias</td><td>saldo-deudor</td></tr>
-<tr> <td> 210</td> <td>4167074</td> <td>0</td></tr>
-<tr style='background-color: blanchedalmond'><td>4167074</td></tr>

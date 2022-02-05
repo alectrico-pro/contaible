@@ -8,7 +8,7 @@
  (razon "alectrico® SpA"))
 
 
-(balance (dia 31) (mes diciembre) (ano 2021))
+(balance (dia 31) (mes enero) (ano 2021))
 
 
 ;dia 01/01/2021---------- asiento inicial  ----------------
@@ -3114,7 +3114,16 @@
 ( ajustes-mensuales (mes diciembre) (ano 2021) (partida 207))
 ( ajuste-de-iva     (mes diciembre) (ano 2021) (partida 208))
 
+( ajuste-anual
+   (ano 2021) (partida 212)
+   (liquidacion tributaria)
+   (efecto aporte))
 
+( ajuste-anual-de-resultado-tributario
+   (ano 2021) (partida 214))
+
+
+#
 ( ajuste-anual
    (ano 2021) (partida 209)
    (liquidacion financiera)
@@ -3129,7 +3138,7 @@
    (ano 2021) (partida 211))
 
 
-;--------------------------------------------------
+##------------------------------------------------
 ( ajuste-anual                
    (ano 2021) (partida 212)
    (liquidacion tributaria)
