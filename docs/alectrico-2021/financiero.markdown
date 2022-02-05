@@ -11,7 +11,6 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <li><span style='color: white; background-color: black'>[    ]</span> pérdida </li>
 <table><tbody>
 <tr><td>pérdida</td><td>11008</td><td></td><td>costos-de-ventas</td></tr>
-<tr><td>pérdida</td><td>400000</td><td></td><td>salarios</td></tr>
 <tr><td>pérdida</td><td>245175</td><td></td><td>gastos-administrativos</td></tr>
 <tr><td>pérdida</td><td>206576</td><td></td><td>gastos-promocionales</td></tr>
 <tr><td>pérdida</td><td>84036</td><td></td><td>depreciacion</td></tr>

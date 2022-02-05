@@ -63,14 +63,14 @@ NO se han practicado liquidaciones, por lo que SÍ se muestran cuentas nominales
 <tr style=' background: #fff; border: 1px solid red;'>
 <td>Insumos<small>insumos</small></td> <td align='right'>414942</td> <td align='right'>44044</td> <td> | </td> <td align='right'> 370898</td> <td align='right'>0</td> </tr>
 <tr>
-<td>Intangibles<small>intangibles</small> </td> <td align='right'>2040000</td> <td align='right'>52631</td> <td> | </td> <td align='right'> 1987369</td> <td align='right'>0</td> 
+<td>Intangibles<small>intangibles</small> </td> <td align='right'>2440000</td> <td align='right'>52631</td> <td> | </td> <td align='right'> 2387369</td> <td align='right'>0</td> 
 <td colspan='2' style=' background: #faa; border: 1px solid red;'>Subcuenta </td>
 </tr>
 <tr>
 <td><small>ingresos-brutos</small></td> <td align='right'>1393913</td> <td align='right'>2571682</td> <td> | </td> <td align='right'> 0</td> <td align='right'>1177769</td>
 </tr>
 <tr style=' background: #fff; border: 1px solid red;'>
-<td><small>salarios</small></td> <td align='right'>2150000</td> <td align='right'>1750000</td> <td> | </td> <td align='right'> 400000</td> <td align='right'>0</td> </tr>
+<td><small>salarios</small></td> <td align='right'>2150000</td> <td align='right'>2150000</td> <td> | </td> <td align='right'> 0</td> <td align='right'>0</td> </tr>
 <tr style=' background: #fff; border: 1px solid red;'>
 <td><small>utilidad-del-ejercicio-anterior</small></td> <td align='right'>85294</td> <td align='right'>85294</td> <td> | </td> <td align='right'> 0</td> <td align='right'>0</td> </tr>
 <tr>
@@ -98,6 +98,6 @@ NO se han practicado liquidaciones, por lo que SÍ se muestran cuentas nominales
 </tr>
 </tbody>
 <tfoot>
-<tr> <td></td> <td align='right'> <div>20772146</div></td> <td align='right'> <div>20154009</div></td><td> | </td> <td align='right'> <div>7478578</div></td> <td align='right'> <div>6860441</div></td> </tr>
+<tr> <td></td> <td align='right'> <div>21572146</div></td> <td align='right'> <div>20554009</div></td><td> | </td> <td align='right'> <div>7878578</div></td> <td align='right'> <div>6860441</div></td> </tr>
 </tfoot>
 </table>

@@ -7,6 +7,7 @@
 
 ( selecciones
  (regimen propyme)
+ (incentivo-al-ahorro true)
  (empresa-seleccionada alectrico-2021)
  (imprimir-detalles true)
  (liquidar subcuentas) 

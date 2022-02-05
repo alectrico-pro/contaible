@@ -8,7 +8,7 @@ permalink: /nota/
 
 1. Criterios Contables
 2. Activos Intangibles
-3. Hechos Relevantes
+3. Hechos Esenciales
 4. Efectivos y Depósitos en Bancos
 5. Instrumentos para negociación
 6. Cuentas por Cobrar
@@ -73,7 +73,7 @@ permalink: /nota/
  - [x] En el estado de resultado los costos de ventas se muestran estar asociados a las ventas.
  - [x] Contaible asocia los gastos de un proyecto eléctrico con sus ingresos y los muestra agrupados por número de pedido
 
-## Hechos Relevantes
+## Hechos Esenciales
 
  - [x] 16 de julio de 2021. Transformación de alectrico E.I.R.L. a alectrico spa.
   
@@ -86,6 +86,12 @@ permalink: /nota/
  - [ ] Rectificación con fecha 29 de enero para dejar CAPITAL corregido de diferencia de 59 pesos y en efectivo por el 100%
   
    [escritura de transformacion](./escrito.pdf)
+
+ - [ ] Debido a la pandemia, no fue posible concluir el proyecto 1724. En consecuencia.
+    1. Se devolvieron montos pagados
+    2. El contrato de electricista se convirtió en indefinido y el trabajador se dedicó a las pruebas de la plataforma alectrico y a atender clientes desde la plataforma.
+    3. En diciembre se capitalizaron los gastos en la plataforma alectrico quedando como Gastos Diferidos en el Activo.
+
 
 ##  Activos Intangibles
 

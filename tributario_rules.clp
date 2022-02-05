@@ -72,7 +72,7 @@
    ( declare (salience 10000))
    ( empresa (nombre ?empresa))
   =>
-   ( printout t "En inicio-kindle-k-tributario-rules" )
+   ( printout t "En inicio-tributario-rules" )
    ( bind ?archivo (str-cat "./doc/" ?empresa "/tributario.markdown"))
 ;   ( bind ?archivo (str-cat "./" ?empresa "/tributario.markdown"))
 
@@ -148,12 +148,14 @@
   ( subtotales (cuenta ganancia-por-correccion-monetaria) (haber ?ganancia-por-correccion-monetaria))
 
   ( subtotales (cuenta aumentos-de-capital-aportes) (haber ?aportes))
+  
+  ( subtotales (cuenta insumos) (deber ?insumos))
 
   ( cuenta (nombre impuestos-no-recuperables) (haber ?impuestos-no-recuperables))
 
   ( tasas (idpc ?tasa-idpc) (mes ?mes) (ano ?ano))  
 
-  ( selecciones (regimen ?regimen))
+  ( selecciones (regimen ?regimen) (incentivo-al-ahorro ?incentivo-al-ahorro))
 
  =>
 
@@ -318,6 +320,11 @@
 
 
 
+
+  (printout t "| (-) " ?insumos tab "|" tab tab "Insumos " crlf)
+  (printout k "<tr><td> (=) </td> <td align='right'>" ?insumos "</td><td> </td><td></td><td></td><td colspan='2'>Insumos </td></tr>" crlf)
+
+
   (printout t crlf)
 
   
@@ -402,7 +409,7 @@
   (printout k "<tr><td></td><td></td><td></td><td> (-) </td><td align='right'>"  ?impuestos-no-recuperables "</td><td> Impuestos No Recuperables </td></tr>" crlf)
 
 
-  (printout t "|" tab tab "| (=)   " ?margen-fuera-de-explotacion tab "Resultado Fuera de Explotación " crlf)
+  (printout t "|" tab tab "| (=) " ?margen-fuera-de-explotacion tab "Resultado Fuera de Explotación " crlf)
   (printout k "<tr style='font-weight:bold; background-color: azure'><td> <td></td></td><td> </td><td></td><td align='right'>" ?margen-fuera-de-explotacion "</td><td> Resultado Fuera de Explotacion </td></tr>" crlf)
 
 
@@ -413,28 +420,41 @@
   (bind ?utilidad 0)
 
 
-  ( if (> ?margen-fuera-de-explotacion ?utilidad-del-ejercicio ) then
-    (printout t "|" tab tab "| (-) " ?idpc tab "Impuesto Determinado, factor es " ?tasa-idpc " en " ?ano crlf)
+  ( if (< ?utilidad-tributaria 0 ) then
+    (printout t "|" tab tab "| (-) " ?idpc tab "Impuesto Determinado: " (round (* ?tasa-idpc 100) ) " en " ?ano crlf)
     (printout k "<tr style='background-color: lightgreen' ><td></td><td></td><td></td><td> (X) </td><td align='right'> " ?idpc "</td><td> Impuesto No Aplica porque hay pérdida tributaria </td></tr>" crlf)
     (bind ?utilidad ?utilidad-antes-de-idpc )
   )
 
 
-  ( if (< ?margen-fuera-de-explotacion ?utilidad-del-ejercicio ) then
+  ( if (> ?utilidad-tributaria 0 ) then
     (printout t "|" tab tab "| (-) " ?idpc tab "Impuesto Determinado, factor es " ?tasa-idpc " en " ?ano crlf)
-    (printout k "<tr style='font-weight:bold; background-color: azure'><td></td><td></td><td></td><td> (-) </td><td align='right'> " ?idpc "</td><td> Impuesto Determinado, factor es: " ?tasa-idpc " en " ?ano " </td></tr>" crlf)
-    (bind ?utilidad (+ ?utilidad-antes-de-idpc ?idpc))
+    (printout k "<tr style='color: white, font-weight:bold; background-color: crimson'><td></td><td></td><td></td><td> (-) </td><td align='right'> " ?idpc "</td><td> Impuesto Determinado, factor es: " ?tasa-idpc " en " ?ano " </td></tr>" crlf)
+    (bind ?utilidad (- ?utilidad-antes-de-idpc ?idpc))
   )
 
 
-  (printout t "|" tab tab "|     " ?utilidad tab "Utilidad Calculada" crlf)
+  (printout t "|" tab tab "|     " ?utilidad tab "Utilidad Después de Impuestos" crlf)
   (printout k "<tr style='font-weight:bold;background-color: azure'><td> <td></td></td><td> </td><td></td><td align='right'>" ?utilidad "</td><td> Utilidad Calculada</td></tr>" crlf)
 
-  (printout t "|" tab tab "|     " (- ?utilidad-acreedor ?utilidad-deber) tab "Utilidad del ejercico (módulo liquidación)" crlf)
+
+  (printout t "---------------------------------------------------------------------------" crlf)
+  (printout k "</tbody></table>" crlf)
+
+
+
+
+  (printout k "<table> " crlf)
+  (printout t "----------- DETERMINACIÓN DE LA BASE IMPONIBLE -----------------------------" crlf)
+  (printout t " Determina los impuestos del régimen " ?regimen  crlf)
+  (printout k "<tr><th> <td colspan=6> DETERMINACIÓN DE LA BASE IMPONIBLE </td></th></tr>" crlf)
+  (printout k "<tr><th> <td colspan=6> Determina los impuestos del regimen " ?regimen "</td></th></tr>" crlf)
+  (printout k "<tbody>" crlf)
+  (printout t "|" tab tab "|     " (- ?utilidad-acreedor ?utilidad-deber) tab "Resultado del ejercico (módulo liquidación)" crlf)
   (printout k "<tr style='font-weight:bold;background-color: azure'><td> <td></td></td><td> </td><td></td><td align='right'>" (- ?utilidad-acreedor ?utilidad-deber) "</td><td> Utilidad del Ejercicio (módulo liquidación)</td></tr>" crlf)
 
   (printout t "|" ?herramientas tab tab tab tab "Depreciación Instantanea Propyme" crlf)
-  (printout t "|" ?amortizacion-acumulada-instantanea tab tab tab tab "Amortizacion Instantanea Intangibles (no-contable) " crlf)
+  (printout t "|" ?amortizacion-acumulada-instantanea tab tab tab tab "Amortizacion Instántanea Intangibles (no-contable) " crlf)
 
   (printout k "<tr><td> (-) </td><td align='right'>" ?herramientas "</td><td></td><td></td><td></td><td> Depreciación Instantánea Activo Fijo Propyme </td></tr>" crlf)
   ( printout k "<tr><td> (-) </td><td align='right'>" ?amortizacion-acumulada-instantanea "</td><td></td><td></td><td></td><td> Amortización Instantánea Intangibles </td></tr>" crlf)
@@ -442,25 +462,37 @@
   ( printout t "|" ?aportes tab tab tab tab "(+) Aportes Cap." crlf)
   ( printout k "<tr><td> (+) </td><td align='right'>" ?aportes "</td><td></td><td></td><td></td><td> Aportes al Capital </td></tr>" crlf)
 
-  (printout t "|" tab tab "| (=) " ?utilidad-tributaria tab "Utilidad Tributaria" crlf)
-  (printout k "<tr><td> <td></td></td><td> </td><td> (=) </td><td align='right'>" ?utilidad-tributaria "</td><td> Utilidad Tributaria </td></tr>" crlf)
+  (printout t "|" tab tab "| (=) " ?utilidad-tributaria tab "Renta Líquida Imponible" crlf)
+  (printout k "<tr><td> <td></td></td><td> </td><td> (=) </td><td align='right' style = 'font-weight:bold; background-color: azure'>" ?utilidad-tributaria "</td><td> RENTA LÍQUIDA IMPONIBLE </td></tr>" crlf)
 
-  
-  (printout t "|" tab tab "| (=) " ?utilidad-del-ejercicio tab "BASE IMPONIBLE (U.Antes.idpc - idpc) (módulo liquidaciones)" crlf) 
+ 
 
+  (printout t "|" tab tab "| (-) " ?idpc tab "Impuesto Determinado" crlf)
+  (printout k "<tr><td> <td></td></td><td> </td><td> (-) </td><td align='right'>" ?idpc "</td><td> Impuesto Determinado: " (round (* ?tasa-idpc 100) ) "% </td></tr>" crlf)
+ 
+  (printout t "|" tab tab "| (=) " ?utilidad-del-ejercicio tab "RESULTADO TRIBUTARIO (módulo liquidaciones)" crlf) 
 
   (if (eq ?utilidad-del-ejercicio ?utilidad-tributaria)
    then
-    (printout k "<tr><td></td><td></td><td></td><td> (=) </td><td align='right' style='background-color: lightgreen'>" ?utilidad-del-ejercicio "</td><td> BASE IMPONIBLE (módulo liquidaciones) <small> " ?regimen "</small></td></tr>" crlf)
+    (printout k "<tr><td></td><td></td><td></td><td> (=) </td><td align='right' style='background-color: lightgreen'>" ?utilidad-del-ejercicio "</td><td> RESULTADO DESPUES DE IMPUESTOS (módulo liquidaciones) <small> " ?regimen "</small></td></tr>" crlf)
   else
-    (printout k "<tr><td></td><td></td><td></td><td> (=) </td><td align='right' style='font-weight:bold; background-color: azure'>" ?utilidad-del-ejercicio "</td><td> BASE IMPONIBLE (módulo liquidaciones) <small>" ?regimen "</small></td></tr>" crlf)
+    (printout k "<tr><td></td><td></td><td></td><td> (=) </td><td align='right' style='font-weight:bold; background-color: lightgreen'>" ?utilidad-del-ejercicio "</td><td> RESULTADO DESPUES DE IMPUESTOS (módulo liquidaciones) <small>" ?regimen "</small></td></tr>" crlf)
   )
  
- (if (and (eq ?regimen propyme) (> ?utilidad-del-ejercicio 0))
+ (if (and (eq ?incentivo-al-ahorro true) (eq ?regimen propyme) (> ?utilidad-del-ejercicio 0))
    then 
-    (printout k "<tr><td></td><td></td><td></td><td> (-) </td><td align='right' style=' background-color: gold'>" (round (* ?utilidad-del-ejercicio 0.5)) "</td><td>    Rebaja Art.14 Letra E <small>" ?regimen "</small></td></tr>" crlf)
-    (printout k "<tr><td></td><td></td><td></td><td> (=) </td><td align='right' style='font-weight:bold; background-color: lightgreen'>" (round (* ?utilidad-del-ejercicio 0.5))"</td><td> RENTA LIQUIDA IMPONIBLE</td></tr>" crlf)
-  ; (printout k "<tr><td></td><td></td><td></td><td> (=) </td><td align='right' style='font-weight:bold; color: white; background-color: crimson'>" (* ?utilidad-del-ejercicio 0.5 ?tasa-idpc)"</td><td> IDPC A PAGAR <small> " ?tasa-idpc " en marzo </small></td></tr>" crlf)
+    (printout t "  INCENTIVO AL AHORRO SOLICITADO EN selecciones.txt " crlf)
+    (printout t tab tab ?utilidad-tributaria tab " Renta Líquida Imponible " crlf)
+
+    (printout t tab tab (round (* ?utilidad-tributaria 0.5)) tab tab "Rebaja Art.14 Letra E " ?regimen  crlf)
+    (printout t tab tab (round (* ?utilidad-tributaria 0.5 ?tasa-idpc)) tab "IDPC A PAGAR" tab (round (* ?tasa-idpc 100)) "%" crlf)
+
+    (printout k "<tr> <th> INCENTIVO AL AHORRO SOLICITADO EN selecciones.txt </th></tr> " crlf)
+    (printout k "<tr><td></td><td></td><td></td><td> (-) </td><td align='right' style = 'font-weight:bold; background-color: azure'  >" ?utilidad-tributaria "</td><td> RENTA LIQUIDA IMPONIBLE</td></tr>" crlf)
+    (printout k "<tr><td></td><td></td><td></td><td> (-) </td><td align='right' style=' background-color: gold'>" (round (* ?utilidad-tributaria 0.5)) "</td><td>    Rebaja Art.14 Letra E <small>" ?regimen "</small></td></tr>" crlf)
+    (printout k "<tr><td></td><td></td><td></td><td> (=) </td><td align='right' style='font-weight:bold; background-color: lightgreen'>" (round (* ?utilidad-tributaria 0.5))"</td><td> RESULTADO DESPUES DE IMPUESTO <img src='../revisado.png'></td> </tr>" crlf)
+
+    (printout k "<tr><td></td><td></td><td></td><td> (=) </td><td align='right' style='font-weight:bold; color: white; background-color: crimson'>" (round (* ?utilidad-tributaria 0.5 ?tasa-idpc)) "</td><td> IDPC A PAGAR <small> " (round (* ?tasa-idpc 100) )  "% en abril </small></td></tr>" crlf)
  )  
 
 ; (printout t "|" tab tab "|     ------" crlf)
