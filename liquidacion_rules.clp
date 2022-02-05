@@ -527,6 +527,7 @@
 
 
 
+
 (defrule liquidar-cuentas-tributarias-aportes
 
     (declare (salience 280))
