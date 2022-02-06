@@ -60,7 +60,7 @@ layout: page
 <tr><th> <td colspan=6> DETERMINACIÓN DE LA BASE IMPONIBLE </td></th></tr>
 <tr><th> <td colspan=6> Determina los impuestos del regimen propyme</td></th></tr>
 <tbody>
-<tr style='font-weight:bold;background-color: azure'><td> <td></td></td><td> </td><td></td><td align='right'>59036</td><td> Utilidad del Ejercicio Después de Impuesto (módulo liquidación)</td></tr>
+<tr style='font-weight:bold;background-color: azure'><td> <td></td></td><td> </td><td></td><td align='right'>65595</td><td> Utilidad del Ejercicio Después de Impuesto (módulo liquidación)</td></tr>
 <tr><td> (-) </td><td align='right'>151252</td><td></td><td></td><td></td><td> Depreciación Instantánea Activo Fijo Propyme </td></tr>
 <tr><td> (-) </td><td align='right'>0</td><td></td><td></td><td></td><td> Amortización Instantánea Intangibles </td></tr>
 <tr><td> (+) </td><td align='right'>0</td><td></td><td></td><td></td><td> Aportes al Capital </td></tr>

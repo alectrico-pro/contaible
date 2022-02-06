@@ -168,7 +168,6 @@
     (partida ?numero) (ano ?ano)
     (liquidadora perdidas-y-ganancias)))
 
-  ( assert (fila ?numero))
 )
 
 
@@ -688,7 +687,6 @@
    ( printout t tab tab ?saldo tab "--|" tab tab tab ?nombre crlf)
    ( printout t tab tab tab "  |->" tab ?saldo tab tab "r<" ?liquidora ">" crlf)
    ( printout t crlf )
-   ( printout t "obtencion-base-imponible" crlf)
 
    ( printout k "<tr><td colspan='6'>t-- Tributando cuenta " ?nombre " en " ?liquidora "</td></tr>" crlf)
    ( printout k "<tr><td colspan='6'>t--La cuenta de base imponible tiene un debe de " tab ?debe2 " y un haber de " tab ?haber2 "</td><tr>" crlf)
@@ -696,8 +694,6 @@
    ( printout k "<tr style='background-color: azure'><td colspan='6'>La cuenta de liquidacion tiene un debe de " tab ?debe2 " y un haber de " tab ?haber2 "</td></tr>" crlf)
    ( printout k "<tr style='background-color: azure'><td> " ?saldo "</td><td></td><td colspan='2'>"  ?nombre "</td></tr>" crlf)
    ( printout k "<tr style='background-color: azure'><td> </td><td>" ?saldo "</td><td></td><td> r(" ?liquidora ") </td></tr>" crlf)
-   ( printout k" Detenido en la regla obtencion-base-imponible " crlf)
-   ( halt )
 )
 
 
@@ -705,7 +701,7 @@
    (declare (salience 81))
    (fila ?numero)
   
-;   (ajuste-anual-de-resultado-financiero (partida ?numero))
+   (ajuste-anual-de-resultado-financiero (partida ?numero))
 
 
    (empresa (nombre ?empresa))
@@ -808,8 +804,8 @@
      ( saldo ?saldo )
    )
    ( modify ?partida (debe (+ ?debep ?saldo)) ( haber (+ ?haberp ?saldo)))
-  ( printout t "x-- Liquidando cuenta de resultados, cuando hay ganancia en " ?nombre " hacia " ?liquidora crlf)
-  ( printout t "La cuenta de " ?partida-de-liquidacion tab ?liquidora tab ?debe2 " y un haber de " tab ?haber2 crlf)
+ ; ( printout t "x-- Liquidando cuenta de resultados, cuando hay ganancia en " ?nombre " hacia " ?liquidora crlf)
+ ; ( printout t "La cuenta de " ?partida-de-liquidacion tab ?liquidora tab ?debe2 " y un haber de " tab ?haber2 crlf)
    ( printout t tab tab ?saldo tab "--|" tab tab tab ?nombre crlf)
    ( printout t tab tab tab "  |->" tab ?saldo tab tab "r<" ?liquidora ">" crlf)
    ( printout t crlf )
@@ -819,7 +815,7 @@
    ( printout k "<tr style='background-color: azure'><td colspan='6'>La cuenta de liquidacion tiene un debe de " tab ?debe2 " y un haber de " tab ?haber2 "</td></tr>" crlf)
    ( printout k "<tr style='background-color: azure'><td> " ?saldo "</td><td></td><td colspan='2'>"  ?nombre "</td></tr>" crlf)
    ( printout k "<tr style='background-color: azure'><td> </td><td>" ?saldo "</td><td></td><td> r(" ?liquidora ") </td></tr>" crlf)
-   ( printout t  "obtencion-utilidad-tributaria-positiva" crlf)
+ ; ( printout t  "obtencion-utilidad-tributaria-positiva" crlf)
 )
 
 
@@ -830,7 +826,7 @@
    ( declare (salience 81))
    ( fila ?numero)
   
-;   (ajuste-anual-de-resultado-financiero (partida ?numero))
+   (ajuste-anual-de-resultado-financiero (partida ?numero))
 
    ( empresa (nombre ?empresa))
 
@@ -848,8 +844,8 @@
    ( test (> ?haber2 ?debe2))
    ( test (eq ?nombre utilidad ))
   =>
-   ( bind ?saldo (round (- (- (- ?haber2 ?debe2) ?reserva-legal  ) ?idpc )))
-;   ( bind ?saldo (round (- (- ?haber2 ?debe2) ?reserva-legal  ) ))
+;   ( bind ?saldo (round (- (- (- ?haber2 ?debe2) ?reserva-legal  ) ?idpc )))
+   ( bind ?saldo (round (- (- ?haber2 ?debe2) ?reserva-legal  ) ))
 
    ( modify ?acreedora  (liquidada true))
 
@@ -888,7 +884,7 @@
    ( printout k "<tr style='font-weight:bold; color: white; background-color: crimson'> <td>" ?saldo "</td><td></td><td>" ?nombre "</td><tr>" crlf)
    ( printout k "<tr><td></td><td>" ?saldo "</td><td> </td><td colspan='2'> r(" ?liquidora ") </td></tr>" crlf)
  ;  ( printout k "</tbody> </table>" crlf)
-   ( printout t  "obtencion-utilidad-positiva" crlf)
+   ( printout t  "obtencion-utilidad-positiva partida " ?numero crlf)
 
 )
 
@@ -901,7 +897,7 @@
    ( declare (salience 81))
    ( fila ?numero)
   
-  ; (ajuste-anual-de-resultado-financiero (partida ?numero))
+   (ajuste-anual-de-resultado-financiero (partida ?numero))
 
 
    ( empresa (nombre ?empresa))
@@ -937,8 +933,8 @@
      ( saldo ?saldo )
    )
    ( modify ?partida (debe (+ ?debep ?saldo)) ( haber (+ ?haberp ?saldo)))
-   ( printout t "x-- Liquidando cuenta de resultados " ?nombre " en " ?liquidora crlf)
-   ( printout t "La cuenta de liquidacion tiene un debe de " tab ?debe2 " y un haber de " tab ?haber2 crlf)
+;   ( printout t "x-- Liquidando cuenta de resultados " ?nombre " en " ?liquidora crlf)
+;   ( printout t "La cuenta de liquidacion tiene un debe de " tab ?debe2 " y un haber de " tab ?haber2 crlf)
    ( printout t tab tab ?saldo tab "--|" tab tab tab ?nombre crlf)
    ( printout t tab tab tab "  |->" tab ?saldo tab tab "r<" ?liquidora ">" crlf)
    ( printout t crlf )
@@ -947,7 +943,7 @@
    ( printout k "<tr> <td colspan='7'> La cuenta de liquidacion tiene un debe de " tab ?debe2 " y un haber de " tab ?haber2 "</td></tr>" crlf)
    ( printout k "<tr style='background-color: lightgreen'><td>" ?saldo "</td> <td></td> <td colspan='2' >"    ?nombre     "</td></tr>" crlf)
    ( printout k "<tr style='background-color: lightgreen'><td></td><td>" ?saldo "</td> <td> </td><td colspan='2'> r(" ?liquidora ") </td></tr> "  crlf)
-   
+   ( printout t liquidar-cuenta-de-resultados tab partida tab ?numero crlf) 
 )
 
 

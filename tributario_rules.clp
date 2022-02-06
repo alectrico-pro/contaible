@@ -446,7 +446,7 @@
   (printout k "<tr><th> <td colspan=6> DETERMINACIÓN DE LA BASE IMPONIBLE </td></th></tr>" crlf)
   (printout k "<tr><th> <td colspan=6> Determina los impuestos del regimen " ?regimen "</td></th></tr>" crlf)
   (printout k "<tbody>" crlf)
-  (printout t "|" tab tab "|     " ?utilidad tab "Utilidad Financiera Desp. Imp. (módulo liquidación)" crlf)
+  (printout t "|" tab tab "|     " ?utilidad tab "Utilidad del Ejercicio . (módulo liquidación)" crlf)
   (printout k "<tr style='font-weight:bold;background-color: azure'><td> <td></td></td><td> </td><td></td><td align='right'>" ?utilidad "</td><td> Utilidad del Ejercicio Después de Impuesto (módulo liquidación)</td></tr>" crlf)
 
   (printout t "| (-) " tab ?herramientas tab tab tab tab "Depreciación Instantanea Propyme" crlf)
