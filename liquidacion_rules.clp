@@ -326,7 +326,7 @@
 )
 
 
-(defrule liquidar-cuentas-financieras-perdedoras
+(defrule liquidar-cuentas-financieras-ganadoras
   (declare (salience 80))
     (fila ?numero )
     (empresa (nombre ?empresa ))
@@ -343,7 +343,7 @@
        (partida ?numero)
        (cuenta ?nombre) (ano ?ano)
        (liquidadora ?liquidora)
-       (efecto perdedor) )
+       (efecto ganador) )
 
     ?cuenta <- (cuenta
       (partida   ?partida-cuenta)
@@ -356,7 +356,7 @@
    ?liquidadora <- (cuenta
       (nombre ?liquidora)
       (partida nil)
-      (debe ?debe-liquidadora))
+      (haber ?haber-liquidadora))
 
    (test (> ?debe ?haber))
 
@@ -368,7 +368,7 @@
      ( debe      ?haber))
 
    ( modify ?liquidadora
-       ( debe (+ ?debe-liquidadora ?debe)))
+       ( haber (+ ?debe ?haber-liquidadora)))
 
    ( bind ?saldo (- ?debe ?haber))
    ( modify ?partida (debe (+ ?debep ?saldo)) (haber (+ ?haberp ?saldo)))
@@ -380,7 +380,7 @@
 )
 
 
-(defrule liquidar-cuentas-financieras-ganadoras
+(defrule liquidar-cuentas-financieras-perdedoras
 
     (declare (salience 80))
 
@@ -400,7 +400,7 @@
        (partida ?numero)
        (cuenta ?nombre) (ano ?ano)
        (liquidadora ?liquidora)
-       (efecto ganador))
+       (efecto perdedor))
 
     ?cuenta <- (cuenta
       (partida   ?partida-cuenta)
@@ -414,7 +414,7 @@
     ?liquidadora <- (cuenta
       ( nombre ?liquidora)
       ( partida nil)
-      ( haber ?haber-liquidadora))
+      ( debe ?debe-liquidadora))
 
     (test (> ?haber ?debe))
 
@@ -426,7 +426,7 @@
      ( debe      ?haber))   
 
    ( modify ?liquidadora
-       ( haber (+ ?haber ?haber-liquidadora)))
+       ( debe (+ ?haber ?debe-liquidadora)))
 
    ( bind ?saldo (- ?haber ?debe ))
    ( modify ?partida (debe (+ ?debep ?saldo)) (haber (+ ?haberp ?saldo)))
