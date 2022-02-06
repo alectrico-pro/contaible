@@ -1,30 +1,6 @@
 --- 
 layout: page
 --- 
-<table><tbody>
-<tr><td> derecho-de-goce-de-inmueble-comercial</td> <td>febrero</td><td> Amortizando por: </td> <td>90000</td></tr>
-</tbody></table>
-<table><tbody>
-<tr><td> derecho-de-goce-de-inmueble-comercial</td> <td>enero</td><td> Amortizando por: </td> <td>90000</td></tr>
-</tbody></table>
-<table> <tbody>
-<tr><th>derecho-de-goce-de-inmueble-comercial</th></tr>
-<tr><td>amortizacion-lineal-en-diez-anos de: </td><td> derecho-de-goce-de-inmueble-comercial </td> </tr> 
-<tr><td> Metodo tributario es: </td><td> amortizacion-instantanea-de-intangible</td></tr>
-<tr><td> Cuentas son:  </td></tr>
-<tr><td>  Activo: </td><td> oficina</td></tr>
-<tr><td>  Pasivo: </td><td>  amortizacion-intangibles</td></tr>
-<tr><td> Acumuladora:</td><td>  amortizacion-acumulada-intangibles</td></tr>
-<tr><td> Fue adquirido en: </td> <td> enero de 2022 por $900000</td></tr>
-<tr><td> Perderá todo su valor en: </td><td> 10 meses </td></tr> 
-<tr><td> Mensualmente hay que depreciarlo en: </td><td> $90000</td></tr>
-</tbody></table> 
-<table><tbody>
-<tr><td> licencia-contaible</td> <td>febrero</td><td> Amortizando por: </td> <td>90000</td></tr>
-</tbody></table>
-<table><tbody>
-<tr><td> licencia-contaible</td> <td>enero</td><td> Amortizando por: </td> <td>90000</td></tr>
-</tbody></table>
 <table> <tbody>
 <tr><th>licencia-contaible</th></tr>
 <tr><td>amortizacion-lineal-en-diez-anos de: </td><td> licencia-contaible </td> </tr> 
@@ -37,63 +13,6 @@ layout: page
 <tr><td> Perderá todo su valor en: </td><td> 10 meses </td></tr> 
 <tr><td> Mensualmente hay que depreciarlo en: </td><td> $90000</td></tr>
 </tbody></table> 
-<table><tbody>
-<tr><td> plataforma-alectrico</td> <td>febrero</td><td> Amortizando por: </td> <td>1000000</td></tr>
-</tbody></table>
-<table><tbody>
-<tr><td> plataforma-alectrico</td> <td>enero</td><td> Amortizando por: </td> <td>1000000</td></tr>
-</tbody></table>
-<table> <tbody>
-<tr><th>plataforma-alectrico</th></tr>
-<tr><td>amortizacion-lineal-en-diez-anos de: </td><td> plataforma-alectrico </td> </tr> 
-<tr><td> Metodo tributario es: </td><td> amortizacion-instantanea-de-intangible</td></tr>
-<tr><td> Cuentas son:  </td></tr>
-<tr><td>  Activo: </td><td> plataforma-alectrico</td></tr>
-<tr><td>  Pasivo: </td><td>  amortizacion-intangibles</td></tr>
-<tr><td> Acumuladora:</td><td>  amortizacion-acumulada-intangibles</td></tr>
-<tr><td> Fue adquirido en: </td> <td> enero de 2022 por $120000000</td></tr>
-<tr><td> Perderá todo su valor en: </td><td> 120 meses </td></tr> 
-<tr><td> Mensualmente hay que depreciarlo en: </td><td> $1000000</td></tr>
-</tbody></table> 
-<table><tbody>
-<tr><td> marca-alectrico</td> <td>febrero</td><td> Amortizando por: </td> <td>2417</td></tr>
-</tbody></table>
-<table><tbody>
-<tr><td> marca-alectrico</td> <td>enero</td><td> Amortizando por: </td> <td>2417</td></tr>
-</tbody></table>
-<table><tbody>
-<tr><td> marca-alectrico</td> <td>diciembre</td><td> Amortizando por: </td> <td>2417</td></tr>
-</tbody></table>
-<table><tbody>
-<tr><td> marca-alectrico</td> <td>noviembre</td><td> Amortizando por: </td> <td>2417</td></tr>
-</tbody></table>
-<table><tbody>
-<tr><td> marca-alectrico</td> <td>octubre</td><td> Amortizando por: </td> <td>2417</td></tr>
-</tbody></table>
-<table><tbody>
-<tr><td> marca-alectrico</td> <td>septiembre</td><td> Amortizando por: </td> <td>2417</td></tr>
-</tbody></table>
-<table><tbody>
-<tr><td> marca-alectrico</td> <td>agosto</td><td> Amortizando por: </td> <td>2417</td></tr>
-</tbody></table>
-<table><tbody>
-<tr><td> marca-alectrico</td> <td>julio</td><td> Amortizando por: </td> <td>2417</td></tr>
-</tbody></table>
-<table><tbody>
-<tr><td> marca-alectrico</td> <td>junio</td><td> Amortizando por: </td> <td>2417</td></tr>
-</tbody></table>
-<table><tbody>
-<tr><td> marca-alectrico</td> <td>mayo</td><td> Amortizando por: </td> <td>2417</td></tr>
-</tbody></table>
-<table><tbody>
-<tr><td> marca-alectrico</td> <td>abril</td><td> Amortizando por: </td> <td>2417</td></tr>
-</tbody></table>
-<table><tbody>
-<tr><td> marca-alectrico</td> <td>marzo</td><td> Amortizando por: </td> <td>2417</td></tr>
-</tbody></table>
-<table><tbody>
-<tr><td> marca-alectrico</td> <td>febrero</td><td> Amortizando por: </td> <td>2417</td></tr>
-</tbody></table>
 <table><tbody>
 <tr><td> marca-alectrico</td> <td>enero</td><td> Amortizando por: </td> <td>2417</td></tr>
 </tbody></table>
@@ -109,30 +28,6 @@ layout: page
 <tr><td> Perderá todo su valor en: </td><td> 120 meses </td></tr> 
 <tr><td> Mensualmente hay que depreciarlo en: </td><td> $2417</td></tr>
 </tbody></table> 
-<table><tbody>
-<tr><td> celular</td> <td>febrero</td><td> Depreciando por: </td> <td>5602</td></tr>
-</tbody></table>
-<table><tbody>
-<tr><td> celular</td> <td>enero</td><td> Depreciando por: </td> <td>5602</td></tr>
-</tbody></table>
-<table><tbody>
-<tr><td> celular</td> <td>diciembre</td><td> Depreciando por: </td> <td>5602</td></tr>
-</tbody></table>
-<table><tbody>
-<tr><td> celular</td> <td>noviembre</td><td> Depreciando por: </td> <td>5602</td></tr>
-</tbody></table>
-<table><tbody>
-<tr><td> celular</td> <td>octubre</td><td> Depreciando por: </td> <td>5602</td></tr>
-</tbody></table>
-<table><tbody>
-<tr><td> celular</td> <td>septiembre</td><td> Depreciando por: </td> <td>5602</td></tr>
-</tbody></table>
-<table><tbody>
-<tr><td> celular</td> <td>agosto</td><td> Depreciando por: </td> <td>5602</td></tr>
-</tbody></table>
-<table><tbody>
-<tr><td> celular</td> <td>julio</td><td> Depreciando por: </td> <td>5602</td></tr>
-</tbody></table>
 <table> <tbody>
 <tr><th>celular</th></tr>
 <tr><td>depreciacion-lineal-en-un-año de: </td><td> celular </td> </tr> 
@@ -145,45 +40,6 @@ layout: page
 <tr><td> Perderá todo su valor en: </td><td> 12 meses </td></tr> 
 <tr><td> Mensualmente hay que depreciarlo en: </td><td> $5602</td></tr>
 </tbody></table> 
-<table><tbody>
-<tr><td> taladro</td> <td>febrero</td><td> Depreciando por: </td> <td>4202</td></tr>
-</tbody></table>
-<table><tbody>
-<tr><td> taladro</td> <td>enero</td><td> Depreciando por: </td> <td>4202</td></tr>
-</tbody></table>
-<table><tbody>
-<tr><td> taladro</td> <td>diciembre</td><td> Depreciando por: </td> <td>4202</td></tr>
-</tbody></table>
-<table><tbody>
-<tr><td> taladro</td> <td>noviembre</td><td> Depreciando por: </td> <td>4202</td></tr>
-</tbody></table>
-<table><tbody>
-<tr><td> taladro</td> <td>octubre</td><td> Depreciando por: </td> <td>4202</td></tr>
-</tbody></table>
-<table><tbody>
-<tr><td> taladro</td> <td>septiembre</td><td> Depreciando por: </td> <td>4202</td></tr>
-</tbody></table>
-<table><tbody>
-<tr><td> taladro</td> <td>agosto</td><td> Depreciando por: </td> <td>4202</td></tr>
-</tbody></table>
-<table><tbody>
-<tr><td> taladro</td> <td>julio</td><td> Depreciando por: </td> <td>4202</td></tr>
-</tbody></table>
-<table><tbody>
-<tr><td> taladro</td> <td>junio</td><td> Depreciando por: </td> <td>4202</td></tr>
-</tbody></table>
-<table><tbody>
-<tr><td> taladro</td> <td>mayo</td><td> Depreciando por: </td> <td>4202</td></tr>
-</tbody></table>
-<table><tbody>
-<tr><td> taladro</td> <td>abril</td><td> Depreciando por: </td> <td>4202</td></tr>
-</tbody></table>
-<table><tbody>
-<tr><td> taladro</td> <td>marzo</td><td> Depreciando por: </td> <td>4202</td></tr>
-</tbody></table>
-<table><tbody>
-<tr><td> taladro</td> <td>febrero</td><td> Depreciando por: </td> <td>4202</td></tr>
-</tbody></table>
 <table><tbody>
 <tr><td> taladro</td> <td>enero</td><td> Depreciando por: </td> <td>4202</td></tr>
 </tbody></table>

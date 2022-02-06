@@ -31,570 +31,744 @@ Traspaso de 44044 de: materiales a: inventario-inicial
       pagado a sodimac
 -->cafc comprando activo-fijo al contado taladro-inalambrico por un valor total de 179990
        pagado a sodimac
--->ga gasto-administrativo- Dominio-Internet por un valor total de 9950
-       pagado a u-chile
 -->cc comprando al contado interruptores-guantes por un valor total de 8470
       pagado a easy
--->nct Nota de Crédito Emitida ventas-con-eboleta-afecta por 35000
--->cd costo directo de ventas, por comision-mensual por un valor total de 3389
-       pagado a transbank
--->cc comprando al contado caja-enchufe-506L por un valor total de 7862
-      pagado a dartel
--->ga gasto-administrativo- servicio-telefonia por un valor total de 3722
-       pagado a entel
--->gp gasto-promocinal- parche-corporativo por un valor total de 24980
-       pagado a embros
--->nct Nota de Crédito Recibida transbank por 212
--->rv Rendición Mensual de e-Boletas Electrónicas Afectas Emitidas en SII $100
--->cd costo directo de ventas, por comision-mensual por un valor total de 220
-       pagado a transbank
--->cc comprando al contado mascara-6200-filtro por un valor total de 30479
-      pagado a sodimac
--->ga gasto-administrativo- servicio-telefonia-enero por un valor total de 8242
-       pagado a entel
--->rv Rendición Mensual de Vouchers Afectos Válidos como Boleta Electrónica SII $35000
--->cd costo directo de ventas, por comision-mensual por un valor total de 746
-       pagado a transbank
--->ga gasto-administrativo- servicio-telefonia por un valor total de 8242
-       pagado a entel
--->cc comprando al contado materiales-electricos por un valor total de 2540
-      pagado a easy
--->rv Rendición Mensual de Vouchers Afectos Válidos como Boleta Electrónica SII $30000
--->nct Nota de Crédito Recibida ventas-con-factura-afecta por 121
--->ga gasto-administrativo- servicio-telefonia por un valor total de 8242
-       pagado a entel
--->ga gasto-administrativo- certificado-digital-sii por un valor total de 23788
-       pagado a trust
--->cd costo directo de ventas, por comision-mensual por un valor total de 1515
-       pagado a transbank
--->ga gasto-administrativo- pago-mensual-workers por un valor total de 3775
--->ga gasto-promocional- pago-mensual-video-maker por un valor total de 2941
--->ga gasto-administrativo- pago-mensual-google-one por un valor total de 1176
--->nct Nota de Crédito Recibida ventas-con-factura-afecta por 268
--->gp gasto-promocinal- volantes por un valor total de 17850
-       pagado a maria-jose
--->ga gasto-administrativo- pago-mensual-google-one por un valor total de 1177
--->ga gasto-proveedor-no-afecto- multas por un valor total de 1701
--->ga gasto-proveedor-no-afecto- multas por un valor total de 31203
--->ga gasto-proveedor-no-afecto- multas por un valor total de 3307
--->ga gasto-proveedor-no-afecto- multas por un valor total de 62406
--->ga gasto-promocional- pago-mensual-vide-maker por un valor total de 2941
--->ga gasto-administrativo- pago-mensual-workers por un valor total de 3302
--->ga gasto-proveedor-afecto- servicio-telefonia por un valor total de 8242
-       pagado a entel
--->gp gasto-promocinal- pendon-corporativo por un valor total de 23800
-       pagado a macprint
--->ga gasto-administrativo- pago-mensual-google-one por un valor total de 1177
--->gp gasto-promocinal- tarjetas-de-visita por un valor total de 31960
-       pagado a macprint
--->ga gasto-administrativo- Certificado-Digital por un valor total de 1990
-       pagado a ie
--->ga gasto-promocional- pago-anual-boosted por un valor total de 40588
--->ga gasto-promocional- pago-adelantado-julio-publicidad-de-auncios por un valor total de 50000
 Distribución Utilidad del Ejercicio Anterior 85294
--->cafc comprando activo-fijo al contado celular por un valor total de 79990
-       pagado a lider
--->gp gasto-promocinal- etiquetas por un valor total de 1200
-       pagado a scrap
--->gp gasto-promocinal- etiquetas por un valor total de 3790
-       pagado a ilop
--->vsii Venta SII No Afecta 1 de revision-electrica por un valor de $0
--->vsii Venta SII 11 de recableado por un valor de $664999
--->rv Rendición Mensual de Vouchers Afectos Válidos como Boleta Electrónica SII $180833
--->ga gasto-promocional- pago-anual-video-maker por un valor total de 21300
--->ga gasto-administrativo- pago-mensual-workers por un valor total de 3775
--->rv Rendición Mensual de e-Boletas Electrónicas Exentas en SII $35000
--->nc Nota de Crédito SII15 de la Factura SII 11 de recableado por un valor de $664999
--->vsii Venta SII 12 de recableado por un valor de $110883
--->ga gasto-administrativo- Dominio-Internet por un valor total de 9950
-       pagado a u-chile
--->gp gasto-promocinal- marcador-masking-tape por un valor total de 2099
-       pagado a eugenio
--->cd costo directo de ventas, por comision-mensual por un valor total de 5035
-       pagado a transbank
--->nct Nota de Crédito Emitida ventas-con-voucher-afecto por 180835
-
-===================================
----- julio	alexander -----
-d.trabajados:	5
-sem.-corrida:	1
-sueldobruto:	300000
-previsio-afp:		30000
-comision-afp:		3810
-.....oblig.:	33810
-comision-afc:	9000
-cotizac.sis.:	6630
-cotiza.salud:	21000
--------------------------
-AFP:	49440
-SALUD:	21000
-TOTAL:	70440
-LIQUI:	229560
-===================================
-EN FORMATO DE PLANILLAS PREVIRED: 
- PLANILLA AFP 
- Cotización. Obligatoria 	33810
- Seguro Invalidez y Sobrevivencia (SIS) 	0.0221
- SubTotal a Pagar Fondo de Pensiones (AFP) 	40440
- Comisión AFP 1.27%	3810.0
- ---- 
- Resumen Cotizaciones Fondo de Cesantía (AFC
-  Cotizacion afiliado 
-  Cotizacion Empleador 
-Total a Pagar al Fondo de Cesantía	3.0%	9000.0
- PLANILLA SALUD 
- Cotización Legal 	21000
-DECLARADA	PAGADA	IMPUESTA
-
--->salario -- Declarando Salarios electrico por un valor de $300000
-
-===================================
----- julio	alexander -----
-d.trabajados:	5
-sem.-corrida:	1
-sueldobruto:	300000
-previsio-afp:		30000
-comision-afp:		3810
-.....oblig.:	33810
-comision-afc:	7200
-cotizac.sis.:	6630
-cotiza.salud:	21000
--------------------------
-AFP:	47640
-SALUD:	21000
-TOTAL:	68640
-LIQUI:	231360
-===================================
-EN FORMATO DE PLANILLAS PREVIRED: 
- PLANILLA AFP 
- Cotización. Obligatoria 	33810
- Seguro Invalidez y Sobrevivencia (SIS) 	0.0221
- SubTotal a Pagar Fondo de Pensiones (AFP) 	40440
- Comisión AFP 1.27%	3810.0
- ---- 
- Resumen Cotizaciones Fondo de Cesantía (AFC
-  Cotizacion afiliado 
-  Cotizacion Empleador 
-Total a Pagar al Fondo de Cesantía	2.4%	7200.0
- PLANILLA SALUD 
- Cotización Legal 	21000
-DECLARADA	PAGADA	IMPUESTA
-
--->salario -- Declarando Salarios electrico por un valor de $300000
--->vsii Venta SII No Afecta 2 de visita-a-huelen por un valor de $0
--->cc comprando al contado barras-conectores-tester-puestas-a-tierra por un valor total de 15030
-      pagado a sodimac
--->cc comprando al contado 2xthhn#17-R100 por un valor total de 40619
-      pagado a sodimac
--->cc comprando al contado artefactos por un valor total de 188033
-      pagado a dartel
--->vsii Venta SII 13 de materiales-para-recableado por un valor de $168499
--->cc comprando al contado sikalist-canalizacion-corrugada por un valor total de 15621
-      pagado a sodimac
--->cc comprando al contado 503L-salidas-caja-otros por un valor total de 16310
-      pagado a sodimac
--->ga gasto-administrativo- servicio-telefonia por un valor total de 47632
-       pagado a entel
--->ga gasto-administrativo- servicio-telefonia por un valor total de 8242
-       pagado a entel
--->nct Nota de Crédito Recibida transbank por 275
--->vsii Venta SII 14 de revision-electrica por un valor de $107747
--->nc Nota de Crédito SII17 de la Factura SII 14 de revision-electrica por un valor de $107747
--->vsii Venta SII 15 de revision-electrica por un valor de $110833
--->nct Nota de Crédito Emitida ventas-con-eboleta-exenta por 40000
--->vsii Venta SII No Afecta 3 de diseño-electrico-los-capitanes-fase-2 por un valor de $0
--->pago-de-salario -- Pagando salarios de alexander por 300000
--->cc comprando al contado conduit-curvable-20MM por un valor total de 30012
-      pagado a electrocom
--->cc comprando al contado tablero-saime-6071-DM por un valor total de 30905
-      pagado a electrocom
--->vsii Venta SII 16 de tablero por un valor de $73780
--->nct Nota de Crédito Emitida ventas-con-voucher-afecto por 39999
-
-===================================
----- agosto	alexander -----
-d.trabajados:	5
-sem.-corrida:	1
-sueldobruto:	300000
-previsio-afp:		30000
-comision-afp:		3810
-.....oblig.:	33810
-comision-afc:	9000
-cotizac.sis.:	6630
-cotiza.salud:	21000
--------------------------
-AFP:	49440
-SALUD:	21000
-TOTAL:	70440
-LIQUI:	229560
-===================================
-EN FORMATO DE PLANILLAS PREVIRED: 
- PLANILLA AFP 
- Cotización. Obligatoria 	33810
- Seguro Invalidez y Sobrevivencia (SIS) 	0.0221
- SubTotal a Pagar Fondo de Pensiones (AFP) 	40440
- Comisión AFP 1.27%	3810.0
- ---- 
- Resumen Cotizaciones Fondo de Cesantía (AFC
-  Cotizacion afiliado 
-  Cotizacion Empleador 
-Total a Pagar al Fondo de Cesantía	3.0%	9000.0
- PLANILLA SALUD 
- Cotización Legal 	21000
-DECLARADA	PAGADA	IMPUESTA
-
--->salario -- Declarando Salarios electrico por un valor de $300000
-
-===================================
----- agosto	alexander -----
-d.trabajados:	5
-sem.-corrida:	1
-sueldobruto:	300000
-previsio-afp:		30000
-comision-afp:		3810
-.....oblig.:	33810
-comision-afc:	7200
-cotizac.sis.:	6630
-cotiza.salud:	21000
--------------------------
-AFP:	47640
-SALUD:	21000
-TOTAL:	68640
-LIQUI:	231360
-===================================
-EN FORMATO DE PLANILLAS PREVIRED: 
- PLANILLA AFP 
- Cotización. Obligatoria 	33810
- Seguro Invalidez y Sobrevivencia (SIS) 	0.0221
- SubTotal a Pagar Fondo de Pensiones (AFP) 	40440
- Comisión AFP 1.27%	3810.0
- ---- 
- Resumen Cotizaciones Fondo de Cesantía (AFC
-  Cotizacion afiliado 
-  Cotizacion Empleador 
-Total a Pagar al Fondo de Cesantía	2.4%	7200.0
- PLANILLA SALUD 
- Cotización Legal 	21000
-DECLARADA	PAGADA	IMPUESTA
-
--->salario -- Declarando Salarios electrico por un valor de $300000
-
-===================================
----- septiembre	alexander -----
-d.trabajados:	6
-sem.-corrida:	1
-sueldobruto:	350000
-previsio-afp:		35000
-comision-afp:		4445
-.....oblig.:	39445
-comision-afc:	10500
-cotizac.sis.:	7735
-cotiza.salud:	24500
--------------------------
-AFP:	57680
-SALUD:	24500
-TOTAL:	82180
-LIQUI:	267820
-===================================
-EN FORMATO DE PLANILLAS PREVIRED: 
- PLANILLA AFP 
- Cotización. Obligatoria 	39445
- Seguro Invalidez y Sobrevivencia (SIS) 	0.0221
- SubTotal a Pagar Fondo de Pensiones (AFP) 	47180
- Comisión AFP 1.27%	4445.0
- ---- 
- Resumen Cotizaciones Fondo de Cesantía (AFC
-  Cotizacion afiliado 
-  Cotizacion Empleador 
-Total a Pagar al Fondo de Cesantía	3.0%	10500.0
- PLANILLA SALUD 
- Cotización Legal 	24500
-DECLARADA	PAGADA	IMPUESTA
-
--->salario -- Declarando Salarios electrico por un valor de $350000
-
-===================================
----- septiembre	alexander -----
-d.trabajados:	6
-sem.-corrida:	1
-sueldobruto:	350000
-previsio-afp:		35000
-comision-afp:		4445
-.....oblig.:	39445
-comision-afc:	8400
-cotizac.sis.:	7735
-cotiza.salud:	24500
--------------------------
-AFP:	55580
-SALUD:	24500
-TOTAL:	80080
-LIQUI:	269920
-===================================
-EN FORMATO DE PLANILLAS PREVIRED: 
- PLANILLA AFP 
- Cotización. Obligatoria 	39445
- Seguro Invalidez y Sobrevivencia (SIS) 	0.0221
- SubTotal a Pagar Fondo de Pensiones (AFP) 	47180
- Comisión AFP 1.27%	4445.0
- ---- 
- Resumen Cotizaciones Fondo de Cesantía (AFC
-  Cotizacion afiliado 
-  Cotizacion Empleador 
-Total a Pagar al Fondo de Cesantía	2.4%	8400.0
- PLANILLA SALUD 
- Cotización Legal 	24500
-DECLARADA	PAGADA	IMPUESTA
-
--->salario -- Declarando Salarios electrico por un valor de $350000
--->vsii Venta SII No Afecta 4 de diseño-electrico-los-capitanes-fase-2 por un valor de $0
--->pago-de-salario -- Pagando salarios de alexander por 300000
--->vsii Venta SII 17 de ensacado-de-15-sacos-de-escombros por un valor de $75006
--->vsii Venta SII No Afecta 5 de visita-huelen-pago-2-6-la-boleta-dice-pago-1-de-6 por un valor de $0
--->ga gasto-administrativo- servicio-telefonia-agosto por un valor total de 8242
-       pagado a entel
--->ga gasto-administrativo- Dominio-Internet por un valor total de 9950
-       pagado a u-chile
--->cc comprando al contado Extintor-NYA-1.5-25m-huincha-broca22x200 por un valor total de 57601
-      pagado a sodimac
--->nct Nota de Crédito Emitida ventas-con-eboleta-afecta por 12605
--->cc comprando al contado THHN-25m-Rojo-1-pares-protectores-auditivos por un valor total de 7310
-      pagado a sodimac
--->vsii Venta SII 18 de instalacion-de-alimentador por un valor de $150000
--->vsii Venta SII 19 de los-capitanes-pago-3-de-6 por un valor de $110833
--->cd costo directo de ventas, por comision-mensual por un valor total de 625
-       pagado a transbank
--->nct Nota de Crédito Emitida ventas-con-eboleta-exenta por 400000
--->vsii Venta SII No Afecta 6 de visita-huelen-pago-4-6 por un valor de $0
--->ga gasto-administrativo- servicio-telefonia por un valor total de 8242
-       pagado a entel
--->rv Rendición Mensual de e-Boletas Electrónicas Afectas Emitidas en SII $25000
--->vsii Venta SII 19 de los-capitanes-pago-4-de-6 por un valor de $110833
--->cc comprando al contado materiales-electricos por un valor total de 5891
-      pagado a sodimac
--->vsii Venta SII No Afecta 7 de visita-huelen-pago-5-6 por un valor de $0
--->ga gasto-proveedor-afecto- servicio-telefonia por un valor total de 8242
-       pagado a entel
--->ga gasto-administrativo- mouse por un valor total de 4990
-       pagado a smart
--->ga gasto-administrativo- mouse por un valor total de 12880
-       pagado a bazaya
--->cc comprando al contado epp por un valor total de 9990
-      pagado a sodimac
--->vsii Venta SII No Afecta 8 de visita-huelen-pago-5-6 por un valor de $0
--->vsii Venta SII No Afecta 9 de visita-huelen-pago-6-6 por un valor de $0
--->vsii Venta SII 21 de los-capitanes-pago-5-de-6 por un valor de $110833
--->vsii Venta SII 22 de los-capitanes-pago-6-de-6 por un valor de $110833
-****************************************************************************************
-
-****** -->vexento Vendiendo exento al crédito y efectivo parecer-tecnico-thhn por un valor de $20000 de un valor total de 30000
-****************************************************************************************
--->ga gasto-administrativo- servicio-telefonia por un valor total de 8242
-       pagado a entel
--->ga gasto-administrativo- servicio-telefonia por un valor total de 8242
-       pagado a entel
-Depositando en banco-estado por un valor de $900000
 ================================================================
--->nct Nota de Crédito de Factura Reclamada 44036470 a subcuenta entel
--->nct Nota de Crédito de Factura Reclamada 43342312 a subcuenta entel
-========================= BI: Business Intelligence ============
-Partida sin anotación de hecho: 1	ajuste	Por Inicio de Operaciones en 2021
-Partida sin anotación de hecho: 51	ajuste	Ajuste de retencion de iva contra iva-credito
-Partida sin anotación de hecho: 90	ajuste	Ajuste de retencion de iva contra iva-credito
-Partida sin anotación de hecho: 138	ajuste	Por adquisión del control legal de la marca alectrico
-Partida sin anotación de hecho: 168	ajuste	Partida 168: Por ajuste del Debito Fiscal Contra el Credito Fiscal, mes de octubre-Por pago del ppm, con factor de 0.00125 mes octubre
-Partida sin anotación de hecho: 202	aporte-plataforma-alectrico®	Por Donación desde accionista Alexander Espinosa de la plataforma alectrico.
-Partida sin anotación de hecho: 203	aporte-plataforma-alectrico®	Por Donación desde accionista Alexander Espinosa de la plataforma alectrico.
-x->a Abono no realizado: 	203	aporte-plataforma-alectrico®
-x<-c Cargo no realizado: 	203	aporte-plataforma-alectrico®
-Partida sin anotación de hecho: 2001	ajuste	Por Inicio de Operaciones en 2022
-Partida sin anotación de hecho: 65	rechazo	Partida rechazada
-Partida sin anotación de hecho: 104	rechazo	Gasto Administrativo Rechazado
-Partida sin anotación de hecho: 120,1	apertura-de-pedido	Pedido 1724Abierto
-Partida sin anotación de hecho: 2112	traspaso	Por traspaso de 44044 de: materiales a: inventario-inicial
-Partida sin anotación de hecho: 3	rendir-boletas-sii	Por rendición de e-boletas afectas de enero de 2021
-Partida sin anotación de hecho: 4	rendir-vouchers-afectos-sii	Por rendición de vouchers de enero de 2021
-Partida sin anotación de hecho: 5	dar-nota-de-credito-emitida-subcuenta-existente	Devolución a subcuenta ventas-con-eboleta-exenta por Por la anulacion del monto total de boletas exentas del mes de enero debido a que se refieren a transacciones ya cubiertas por vouchers. mes enero
-Partida sin anotación de hecho: 6	dar-nota-de-credito-emitida-subcuenta-existente	Devolución a subcuenta ventas-con-eboleta-exenta por Por la anulacion del monto total de boletas exentas del mes de enero debido a que se refieren a transacciones ya cubiertas por vouchers. mes enero
-Partida sin anotación de hecho: 7	dar-nota-de-credito-emitida-subcuenta-existente	Devolución a subcuenta ventas-con-eboleta-afecta por Por la anulacion del monto total de la boleta afecta con folio 7 del 13 de enero. Se refiere a una transaccion ya cubiertas por un voucher. mes enero
-Partida sin anotación de hecho: 8	costar-directo-ventas	Por Costo Directo de Ventas: Comisión diciembre por pagos en pasarela KHIPU
-Partida sin anotación de hecho: 9	costar-directo-ventas	Por Costo Directo de Ventas: Comisión Pasarela diciembre Transbank
-Partida sin anotación de hecho: 10	comprar-inventario	Por compra de 1 meson de cocina a easy
-Partida sin anotación de hecho: 12	comprar-inventario	Por compra de materiales eléctricos a Sodimac
-Partida sin anotación de hecho: 13	comprar-activos-fijos-al-contado	Por compra de taladro inalámbrico DeWalt a Sodimac
-Partida sin anotación de hecho: 131	gastar-en-administracion-afecto	Adquisión de Dominio Internet: necios.cl.
-Partida sin anotación de hecho: 14	comprar-inventario	Por compra 2 interruptores y 1 guantes a Easy
-Partida sin anotación de hecho: 141	dar-nota-de-credito-emitida-subcuenta-existente	Devolución a subcuenta ventas-con-eboleta-afecta por Por la anulacion del monto total de la boleta afecta con folio 7 del 13 de enero. Se refiere a una transaccion ya cubierta por un voucher. mes febrero
-Partida sin anotación de hecho: 15	costar-directo-ventas	Por Costo Directo de Ventas: Comisión Pasarela enero Transbank
-Partida sin anotación de hecho: 16	comprar-inventario	Por compra a Dartel Santiago de 3 cajas de enchufes 506L
-Partida sin anotación de hecho: 17	gastar-en-administracion-afecto	Por Gasto Administrativo: Servicio de Datos y Telefonía: pago inicial.
-Partida sin anotación de hecho: 18	gastar-en-promocion	Por Gasto Administrativo: Matriz de Bordado y Parche QR Bordado Corporativo alectrico ®.
-Partida sin anotación de hecho: 19	dar-nota-de-credito-recibida-subcuenta-existente	Devolución a subcuenta transbank por Ajuste Mensual de Comisión mes febrero
-Partida sin anotación de hecho: 191	dar-nota-de-debito-sii	Nota de Débito SII: 1 que anula a Nota de Crédito SII 12
-Partida sin anotación de hecho: 1911	rendir-boletas-sii	Por rendición de e-boletas afectas de febrero de 2021
-Partida sin anotación de hecho: 192	dar-nota-de-debito-manual	Nota de Débito Manual: 2 que anula a Nota de Crédito SII 11
-Partida sin anotación de hecho: 20	costar-directo-ventas	Por Costo Directo de Ventas: Comisión Pasarela enero Transbank
-Partida sin anotación de hecho: 21	comprar-materiales-al-contado	Por compra de 1 máscara cubrerrostro y bolsa filtros P100
-Partida sin anotación de hecho: 22	gastar-en-administracion-afecto	Por Gasto Administrativo: Servicio de Datos y Telefonía: consumo enero.
-Partida sin anotación de hecho: 26	rendir-vouchers-afectos-sii	Por rendición de vouchers de marzo de 2021
-Partida sin anotación de hecho: 27	costar-directo-ventas	Por Costo Directo de Ventas: Comisión Pasarela marzo Transbank.
-Partida sin anotación de hecho: 28	gastar-en-administracion-afecto	Por Gasto Administrativo: Servicio de Datos y Telefonía: consumo marzo.
-Partida sin anotación de hecho: 281	comprar-insumos-al-contado	Por compra de 10 enchufes eléctricos $4404.4 promedio a DARTEL-Temuco
-Partida sin anotación de hecho: 30	rendir-vouchers-afectos-sii	Por rendición de vouchers de abril de 2021
-Partida sin anotación de hecho: 301	dar-nota-de-credito-recibida-subcuenta-existente	Devolución a subcuenta ventas-con-factura-afecta por Ajuste Mensual de Comisión Transbank mes abril
-Partida sin anotación de hecho: 31	gastar-en-administracion-afecto	Por Gasto Administrativo: Servicio de Datos y Telefonía: consumo marzo.
-Partida sin anotación de hecho: 32	gastar-en-administracion-afecto	Por Gasto Administrativo: Certificado Digital por 3 años.
-Partida sin anotación de hecho: 33	costar-directo-ventas	Por Costo Directo de Ventas: Comisión Pasarela abril Transbank.
-Partida sin anotación de hecho: 34	gastar-administrativo-afecto-iva-retenido	Por Gasto Administrativo: Pago Mensual de Workers Serverless.
-Partida sin anotación de hecho: 35	gastar-promocional-afecto-iva-retenido	Por Gasto Promocional: Pago Mensual de 1TM Video Maker.
-Partida sin anotación de hecho: 36	gastar-administrativo-afecto-iva-retenido	Por Gasto Administrativo: Pago Mensual de Arriendo de Correo y Almacenamiento en la nube.
-Partida sin anotación de hecho: 37	dar-nota-de-credito-recibida-subcuenta-existente	Devolución a subcuenta ventas-con-factura-afecta por Ajuste Mensual de Comisión Transbank mes mayo
-Partida sin anotación de hecho: 39	gastar-en-promocion	Por Gasto Promocional: Compra de Flyers para Visitas a Terreno.
-Partida sin anotación de hecho: 41	gastar-administrativo-afecto-iva-retenido	Por Gasto Administrativo: Pago Mensual de Arriendo de Correo y Almacenamiento en la nube.
-Partida sin anotación de hecho: 42	gastar-proveedor-no-afecto	Por Gasto Administrativo: Multas por Rectificatoria mayo 2020.
-Partida sin anotación de hecho: 43	gastar-proveedor-no-afecto	Por Gasto Administrativo: RF21 Giro 6379917 por Declaración de Renta AT 2021 Fuera de Plazo.
-Partida sin anotación de hecho: 45	gastar-proveedor-no-afecto	Por Gasto Administrativo: RF21 Giro por Pago de IVA (3.307) retrasado de Rectificatoria 05/2020.
-Partida sin anotación de hecho: 46	gastar-proveedor-no-afecto	Por Gasto Administrativo: Multa por Rectificatoria de febrero de 2021.
-Partida sin anotación de hecho: 47	gastar-promocional-afecto-iva-retenido	Por Gasto Promocional: Pago Mensual de 1TM Video Maker.
-Partida sin anotación de hecho: 48	gastar-administrativo-afecto-iva-retenido	Por Gasto Administrativo: Pago Mensual de Workers Serverless.
-Partida sin anotación de hecho: 49	gastar-proveedor-afecto	Por Gasto Administrativo: Servicio de Datos y Telefonía: pago junio.
-Partida sin anotación de hecho: 50	gastar-en-promocion	Por Gasto Promocional: Pendón Promocional Norma 4.
-Partida sin anotación de hecho: 63	gastar-administrativo-afecto-iva-retenido	Por Gasto Administrativo: Pago Mensual de Arriendo de Correo y Almacenamiento en la nube.
-Partida sin anotación de hecho: 64	gastar-en-promocion	Por Gasto Promocional: 400 tarjetas de Visita.
-Partida sin anotación de hecho: 67	gastar-en-administracion-afecto	Gasto Adm: Certificado Digital
-Partida sin anotación de hecho: 68	gastar-promocional-afecto-iva-retenido	Por Gasto Promocional: Pago Anual Boosted.
-Partida sin anotación de hecho: 69	gastar-promocional-afecto-iva-retenido	Por Gasto Promocional: Pago Mensual Julio Google Ads.
-Partida sin anotación de hecho: 70	distribucion-utilidad	Por traspaso de utilidad a Capital Social 85294
-Partida sin anotación de hecho: 71	comprar-activos-fijos-al-contado	Por compra de celular samsung
-Partida sin anotación de hecho: 73	gastar-en-promocion	Por Compra de Etiquetas
-Partida sin anotación de hecho: 74	gastar-en-promocion	Por Gasto Administrativo: Etiquetas
-Partida sin anotación de hecho: 75	vender-en-registro-de-compra-venta-sii	Por venta en registro de compra-ventas del SII folio: 1 de revision-electrica a gonzalo
-Partida sin anotación de hecho: 76	vender-en-registro-de-compra-venta-sii	Por venta en registro de compra-ventas del SII folio: 11 de recableado a gonzalo
-Partida sin anotación de hecho: 77	rendir-vouchers-afectos-sii	Por rendición de vouchers de julio de 2021
-Partida sin anotación de hecho: 78	gastar-promocional-afecto-iva-retenido	Por Gasto Promocional: Pago Anual de 1TM Video Maker.
-Partida sin anotación de hecho: 79	gastar-administrativo-afecto-iva-retenido	Por Gasto Administrativo: Pago Mensual de Workers Serverless.
-Partida sin anotación de hecho: 81	rendir-eboletas-sii	Por rendición de e-boletas exentas de julio de 2021
-Partida sin anotación de hecho: 82	dar-nota-de-credito-sii	Nota de Crédito SII: 15 que anula Factura SII 11 de recableado a gonzalo
-Partida sin anotación de hecho: 83	vender-en-registro-de-compra-venta-sii	Por venta en registro de compra-ventas del SII folio: 12 de recableado a gonzalo
-Partida sin anotación de hecho: 84	gastar-en-administracion-afecto	Adquisión de Dominio Internet: aelectrico.cl.
-Partida sin anotación de hecho: 85	gastar-en-promocion	Por Gasto Promocinal: Masking-Tape
-Partida sin anotación de hecho: 86	costar-directo-ventas	Por Costo Directo de Ventas: Comisión Pasarela julio Transbank
-Partida sin anotación de hecho: 87	dar-nota-de-credito-emitida-subcuenta-existente	Devolución a subcuenta ventas-con-voucher-afecto por Anula Vouchers para Ser Reemplazados por Otros Docs. mes julio
-Partida sin anotación de hecho: 88	declarar-remuneraciones	Declaración de Remuneraciones de alexander días trabajados: 5 Tramo Exento: 731308.5 Sueldo Bruto de: 300000 Tasa de Impuesto Único: 0.04 Monto de Impuesto Único: 0
-Partida sin anotación de hecho: 93	vender-en-registro-de-compra-venta-sii	Por venta en registro de compra-ventas del SII folio: 2 de visita-a-huelen a gonzalo
-Partida sin anotación de hecho: 95	comprar-insumos-al-contado	Por Materiales para Puesta a Tierra de Protección
-Partida sin anotación de hecho: 96	comprar-insumos-al-contado	Por Materiales para Recableado
-Partida sin anotación de hecho: 97	comprar-insumos-al-contado	Por compra a Dartel Santiago de artefactos para los capitanes
-Partida sin anotación de hecho: 99	vender-en-registro-de-compra-venta-sii	Por venta en registro de compra-ventas del SII folio: 13 de materiales-para-recableado a gonzalo
-Partida sin anotación de hecho: 101	comprar-insumos-al-contado	Por compra de materiales eléctricos a Sodimac
-Partida sin anotación de hecho: 102	comprar-insumos-al-contado	Por compra de materiales para ampliación
-Partida sin anotación de hecho: 105	gastar-en-administracion-afecto	Por Gasto Administrativo: Servicio de Datos y Telefonía: pago vuelto a cobrar, de julio.
-Partida sin anotación de hecho: 107	gastar-en-administracion-afecto	Por Gasto Administrativo: Servicio de Datos y Telefonía: agosto.
-Partida sin anotación de hecho: 108	dar-nota-de-credito-recibida-subcuenta-existente	Devolución a subcuenta transbank por Ajuste Mensual de Comisión mes agosto
-Partida sin anotación de hecho: 113	vender-en-registro-de-compra-venta-sii	Por venta en registro de compra-ventas del SII folio: 14 de revision-electrica a gonzalo
-Partida sin anotación de hecho: 114	dar-nota-de-credito-sii	Nota de Crédito SII: 17 que anula Factura SII 14 de revision-electrica a gonzalo
-Partida sin anotación de hecho: 115	vender-en-registro-de-compra-venta-sii	Por venta en registro de compra-ventas del SII folio: 15 de revision-electrica a gonzalo
-Partida sin anotación de hecho: 116	dar-nota-de-credito-emitida-subcuenta-existente	Devolución a subcuenta ventas-con-eboleta-exenta por Por la anulacion de la boleta 17 emitida por error, pues corresponde factura exenta. mes agosto
-Partida sin anotación de hecho: 117	vender-en-registro-de-compra-venta-sii	Por venta en registro de compra-ventas del SII folio: 3 de diseño-electrico-los-capitanes-fase-2 a gonzalo
-Partida sin anotación de hecho: 119	pagar-salarios	pagando-salarios
-Partida sin anotación de hecho: 120	comprar-insumos-al-contado	Por compra de materiales para ampliación
-Partida sin anotación de hecho: 121	comprar-inventario	Por Costo Directo de Ventas: Materiales para Ampliación
-Partida sin anotación de hecho: 122	vender-en-registro-de-compra-venta-sii	Por venta en registro de compra-ventas del SII folio: 16 de tablero a gonzalo
-Partida sin anotación de hecho: 123	dar-nota-de-credito-emitida-subcuenta-existente	Devolución a subcuenta ventas-con-voucher-afecto por Por la anulacion del voucher pues cliente necesita factura afecta. mes agosto
-Partida sin anotación de hecho: 124	declarar-remuneraciones	Declaración de Remuneraciones de alexander días trabajados: 5 Tramo Exento: 731308.5 Sueldo Bruto de: 300000 Tasa de Impuesto Único: 0.04 Monto de Impuesto Único: 0
-Partida sin anotación de hecho: 127	declarar-remuneraciones	Declaración de Remuneraciones de alexander días trabajados: 6 Tramo Exento: 731308.5 Sueldo Bruto de: 350000 Tasa de Impuesto Único: 0.04 Monto de Impuesto Único: 0
-Partida sin anotación de hecho: 128	vender-en-registro-de-compra-venta-sii	Por venta en registro de compra-ventas del SII folio: 4 de diseño-electrico-los-capitanes-fase-2 a gonzalo
-Partida sin anotación de hecho: 129	pagar-salarios	pagando-salarios
-Partida sin anotación de hecho: 130	vender-en-registro-de-compra-venta-sii	Por venta en registro de compra-ventas del SII folio: 17 de ensacado-de-15-sacos-de-escombros a gonzalo
-Partida sin anotación de hecho: 133	vender-en-registro-de-compra-venta-sii	Por venta en registro de compra-ventas del SII folio: 5 de visita-huelen-pago-2-6-la-boleta-dice-pago-1-de-6 a gonzalo
-Partida sin anotación de hecho: 139	gastar-en-administracion-afecto	Por Gasto Administrativo: Servicio de Datos y Telefonía: consumo agosto.
-Partida sin anotación de hecho: 145	gastar-en-administracion-afecto	Renovación de Dominio Internet: alectrica.cl.
-Partida sin anotación de hecho: 146	comprar-insumos-al-contado	Por compra de materiales para ampliación
-Partida sin anotación de hecho: 148	dar-nota-de-credito-emitida-subcuenta-existente	Devolución a subcuenta ventas-con-eboleta-afecta por Por la anulacion del monto total de la boleta afecta con folio 11 del 24 de enero. Por error en el monto. mes septiembre
-Partida sin anotación de hecho: 149	comprar-insumos-al-contado	Por compra de materiales para ampliación
-Partida sin anotación de hecho: 151	vender-en-registro-de-compra-venta-sii	Por venta en registro de compra-ventas del SII folio: 18 de instalacion-de-alimentador a gonzalo
-Partida sin anotación de hecho: 152	vender-en-registro-de-compra-venta-sii	Por venta en registro de compra-ventas del SII folio: 19 de los-capitanes-pago-3-de-6 a gonzalo
-Partida sin anotación de hecho: 153	costar-directo-ventas	Por Costo Directo de Ventas: Comisión Pasarela septiembre Transbank
-Partida sin anotación de hecho: 157	dar-nota-de-credito-emitida-subcuenta-existente	Devolución a subcuenta ventas-con-eboleta-exenta por Por anulación de proyecto 1724. mes octubre
-Partida sin anotación de hecho: 158	vender-en-registro-de-compra-venta-sii	Por venta en registro de compra-ventas del SII folio: 6 de visita-huelen-pago-4-6 a gonzalo
-Partida sin anotación de hecho: 160	gastar-en-administracion-afecto	Por Gasto Administrativo: Servicio de Datos y Telefonía de septiembre.
-Partida sin anotación de hecho: 161	rendir-boletas-sii	Por rendición de e-boletas afectas de octubre de 2021
-Partida sin anotación de hecho: 164	vender-en-registro-de-compra-venta-sii	Por venta en registro de compra-ventas del SII folio: 19 de los-capitanes-pago-4-de-6 a gonzalo
-Partida sin anotación de hecho: 166	comprar-insumos-al-contado	Por compra de materiales eléctricos a Sodimac
-Partida sin anotación de hecho: 169	vender-en-registro-de-compra-venta-sii	Por venta en registro de compra-ventas del SII folio: 7 de visita-huelen-pago-5-6 a gonzalo
-Partida sin anotación de hecho: 170	gastar-proveedor-afecto	Por Gasto Administrativo: Servicio de Datos y Telefonía: pago julio.
-Partida sin anotación de hecho: 183	gastar-en-administracion-afecto	Por Gasto Administrativo: Mouse.
-Partida sin anotación de hecho: 184	gastar-en-administracion-afecto	Por Gasto Administrativo: WebCam.
-Partida sin anotación de hecho: 188	comprar-insumos-al-contado	Por pack 3M de máscaras N95
-Partida sin anotación de hecho: 189	vender-en-registro-de-compra-venta-sii	Por venta en registro de compra-ventas del SII folio: 8 de visita-huelen-pago-5-6 a gonzalo
-Partida sin anotación de hecho: 195	vender-en-registro-de-compra-venta-sii	Por venta en registro de compra-ventas del SII folio: 9 de visita-huelen-pago-6-6 a gonzalo
-Partida sin anotación de hecho: 196	vender-en-registro-de-compra-venta-sii	Por venta en registro de compra-ventas del SII folio: 21 de los-capitanes-pago-5-de-6 a gonzalo
-Partida sin anotación de hecho: 197	vender-en-registro-de-compra-venta-sii	Por venta en registro de compra-ventas del SII folio: 22 de los-capitanes-pago-6-de-6 a gonzalo
-Partida sin anotación de hecho: 198	vender-al-credito-y-efectivo-exento	Por venta a gonzalo
-Partida sin anotación de hecho: 199	gastar-en-administracion-afecto	Por Gasto Administrativo: Servicio de Datos y Telefonía de octubre.
-Partida sin anotación de hecho: 200	gastar-en-administracion-afecto	Por Gasto Administrativo: Servicio de Datos y Telefonía de octubre.
-Partida sin anotación de hecho: 206	depositar-en-cuenta-corriente	nil
-Partida sin anotación de hecho: 201	dar-cuenta-de-nota-de-credito-de-factura-reclamada-de-proveedor	Devolución a subcuenta entel por Por Gasto Administrativo: Servicio de Datos y Telefonía: pago julio. mes diciembre
-Partida sin anotación de hecho: 98	dar-cuenta-de-nota-de-credito-de-factura-reclamada-de-proveedor	Devolución a subcuenta entel por Por Gasto Administrativo: Servicio de Datos y Telefonía: pago julio. mes agosto
-El hecho iva tiene registrada su regla costar-directo-ventas
-El hecho iva tiene registrada su regla costar-directo-ventas
-El hecho iva tiene registrada su regla comprar-inventario
-El hecho iva tiene registrada su regla comprar-inventario
-El hecho iva tiene registrada su regla comprar-activos-fijos-al-contado
-El hecho iva tiene registrada su regla comprar-inventario
-El hecho iva tiene registrada su regla costar-directo-ventas
-El hecho iva tiene registrada su regla comprar-inventario
-El hecho iva tiene registrada su regla gastar-en-promocion
-El hecho iva tiene registrada su regla costar-directo-ventas
-El hecho iva tiene registrada su regla comprar-materiales-al-contado
-El hecho iva tiene registrada su regla costar-directo-ventas
-El hecho iva tiene registrada su regla comprar-insumos-al-contado
-El hecho iva tiene registrada su regla costar-directo-ventas
-El hecho iva tiene registrada su regla gastar-administrativo-afecto-iva-retenido
-El hecho n tiene registrada su regla gastar-administrativo-afecto-iva-retenido
-El hecho iva tiene registrada su regla gastar-promocional-afecto-iva-retenido
-El hecho n tiene registrada su regla gastar-promocional-afecto-iva-retenido
-El hecho iva tiene registrada su regla gastar-administrativo-afecto-iva-retenido
-El hecho n tiene registrada su regla gastar-administrativo-afecto-iva-retenido
-El hecho iva tiene registrada su regla gastar-en-promocion
-El hecho iva tiene registrada su regla gastar-administrativo-afecto-iva-retenido
-El hecho n tiene registrada su regla gastar-administrativo-afecto-iva-retenido
-El hecho iva tiene registrada su regla gastar-promocional-afecto-iva-retenido
-El hecho n tiene registrada su regla gastar-promocional-afecto-iva-retenido
-El hecho iva tiene registrada su regla gastar-administrativo-afecto-iva-retenido
-El hecho n tiene registrada su regla gastar-administrativo-afecto-iva-retenido
-El hecho iva tiene registrada su regla gastar-proveedor-afecto
-El hecho iva tiene registrada su regla gastar-en-promocion
-El hecho iva tiene registrada su regla gastar-administrativo-afecto-iva-retenido
-El hecho n tiene registrada su regla gastar-administrativo-afecto-iva-retenido
-El hecho iva tiene registrada su regla gastar-en-promocion
-El hecho iva tiene registrada su regla gastar-promocional-afecto-iva-retenido
-El hecho n tiene registrada su regla gastar-promocional-afecto-iva-retenido
-El hecho iva tiene registrada su regla gastar-promocional-afecto-iva-retenido
-El hecho n tiene registrada su regla gastar-promocional-afecto-iva-retenido
-El hecho iva tiene registrada su regla comprar-activos-fijos-al-contado
-El hecho iva tiene registrada su regla gastar-en-promocion
-El hecho iva tiene registrada su regla gastar-en-promocion
-El hecho iva tiene registrada su regla gastar-promocional-afecto-iva-retenido
-El hecho n tiene registrada su regla gastar-promocional-afecto-iva-retenido
-El hecho iva tiene registrada su regla gastar-administrativo-afecto-iva-retenido
-El hecho n tiene registrada su regla gastar-administrativo-afecto-iva-retenido
-El hecho iva tiene registrada su regla gastar-en-promocion
-El hecho iva tiene registrada su regla costar-directo-ventas
-El hecho iva tiene registrada su regla comprar-insumos-al-contado
-El hecho iva tiene registrada su regla comprar-insumos-al-contado
-El hecho iva tiene registrada su regla comprar-insumos-al-contado
-El hecho iva tiene registrada su regla comprar-insumos-al-contado
-El hecho iva tiene registrada su regla comprar-insumos-al-contado
-El hecho iva tiene registrada su regla comprar-insumos-al-contado
-El hecho iva tiene registrada su regla comprar-inventario
-El hecho iva tiene registrada su regla comprar-insumos-al-contado
-El hecho iva tiene registrada su regla comprar-insumos-al-contado
-El hecho iva tiene registrada su regla costar-directo-ventas
-El hecho iva tiene registrada su regla comprar-insumos-al-contado
-El hecho iva tiene registrada su regla gastar-proveedor-afecto
-El hecho iva tiene registrada su regla comprar-insumos-al-contado
-CLIPS> git add .
-git
-CLIPS> git commit --all
-git
+--módulo----------------------- VALOR-ACTIVOS ---------------------
+
+Ajuste de la última cuota
+--------------------------------------------------------
+licencia-contaible
+Valor de compra: $900000
+Tiempo de Vida Util: 10 meses 
+Devaluación Mensual que se usa: $90000
+cálculo de devaluacion mensual: $90000.0
+Se debe restar: 0 de la última devaluación.
+La última devaluacion mensual debe ser por $90000
+--------------------------------------------------------
+
+=========================================
+licencia-contaible
+=========================================
+amortizacion-lineal-en-diez-anos de: licencia-contaible
+Metodo tributario es: amortizacion-instantanea-de-intangible
+Cuentas son: 
+Activo: licencia-contaible
+Pasivo: amortizacion-intangibles
+Acumuladora: amortizacion-acumulada-intangibles
+Fue adquirido en: enero de 2022 por $ 900000
+Perderá todo su valor en: 10 meses 
+Mensualmente hay que amortizarlo en: $ 90000
+=========================================
+
+Ajuste de la última cuota
+--------------------------------------------------------
+marca-alectrico
+Valor de compra: $290000
+Tiempo de Vida Util: 120 meses 
+Devaluación Mensual que se usa: $2417
+cálculo de devaluacion mensual: $2416.66666666667
+Se debe restar: -40 de la última devaluación.
+La última devaluacion mensual debe ser por $2377
+--------------------------------------------------------
+-->am.auto-intangible 	2417	enero
+
+=========================================
+marca-alectrico
+=========================================
+amortizacion-lineal-en-diez-anos de: marca-alectrico
+Metodo tributario es: amortizacion-instantanea-de-intangible
+Cuentas son: 
+Activo: marca-alectrico
+Pasivo: amortizacion-intangibles
+Acumuladora: amortizacion-acumulada-intangibles
+Fue adquirido en: diciembre de 2020 por $ 290000
+Perderá todo su valor en: 120 meses 
+Mensualmente hay que amortizarlo en: $ 2417
+=========================================
+
+Ajuste de la última cuota
+--------------------------------------------------------
+celular
+Valor de compra: $67218
+Tiempo de Vida Util: 12 meses 
+Devaluación Mensual que se usa: $5602
+cálculo de devaluacion mensual: $5601.5
+Se debe restar: -6 de la última devaluación.
+La última devaluacion mensual debe ser por $5596
+--------------------------------------------------------
+
+=========================================
+celular
+=========================================
+depreciacion-lineal-en-un-año de: celular
+Metodo tributario es: depreciacion-instantanea-de-activo-fijo-con-1peso-DDAN
+Cuentas son: 
+Activo: herramientas
+Pasivo: depreciacion
+Acumuladora: depreciacion-acumulada-herramientas
+Fue adquirido en: julio de 2021 por $67218
+Perderá todo su valor en: 12 meses 
+Mensualmente hay que depreciarlo en: $5602
+=========================================
+
+Ajuste de la última cuota
+--------------------------------------------------------
+taladro
+Valor de compra: $151252
+Tiempo de Vida Util: 36 meses 
+Devaluación Mensual que se usa: $4202
+cálculo de devaluacion mensual: $4201.44444444444
+Se debe restar: -20 de la última devaluación.
+La última devaluacion mensual debe ser por $4182
+--------------------------------------------------------
+-->depreciacion-auto.-activo-fijo 	4202	enero
+
+=========================================
+taladro
+=========================================
+depreciacion-lineal-en-tres-años de: taladro
+Metodo tributario es: depreciacion-instantanea-de-activo-fijo-con-1peso-DDAN
+Cuentas son: 
+Activo: herramientas
+Pasivo: depreciacion
+Acumuladora: depreciacion-acumulada-herramientas
+Fue adquirido en: enero de 2021 por $151252
+Perderá todo su valor en: 36 meses 
+Mensualmente hay que depreciarlo en: $4202
+=========================================
+--módulo----fin ------------ VALOR-ACTIVOS ----------------------
+
+
+°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°
+Warning: Hay partidas con el mismo número
+°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°
+--- PARTIDA 1 ------
+Por amortizacion en enero de marca-alectrico	numero 131
+--- PARTIDA 2 ------
+Por depreciacion en enero de taladro	numero 131
+°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°
+Ambas partidas serán fusionadas en una sola, con una descripción compuesta por mezcla de las descripciones originales. 
+--módulo----------------------- T ----------------------
+
+
+
+inventario-inicial
+---------------------------- recibida activo-fijo tipo-de-documento
+2112	44044	|	0	enero	false	false	traspaso
+----------------------------
+	44044	|	0
+	--------------------
+$	44044
+
+
+
+ingresos-brutos
+---------------------------- recibida activo-fijo tipo-de-documento
+3	0	|	29412	enero	false	false	39
+4	0	|	123497	enero	false	false	48
+5	4505	|	0	enero	false	false	61
+6	45050	|	0	enero	false	false	61
+7	29412	|	0	enero	false	false	61
+----------------------------
+	78967	|	152909
+	---------------------
+		|	73942	$
+
+
+
+ventas-con-voucher-afecto
+---------------------------- recibida activo-fijo tipo-de-documento
+4	0	|	123497	enero	false	false	48
+----------------------------
+	0	|	123497
+	---------------------
+		|	123497	$
+
+
+
+ventas
+---------------------------- recibida activo-fijo tipo-de-documento
+3	0	|	29412	enero	false	false	39
+4	0	|	123497	enero	false	false	48
+5	4505	|	0	enero	false	false	61
+6	45050	|	0	enero	false	false	61
+7	29412	|	0	enero	false	false	61
+----------------------------
+	78967	|	152909
+	---------------------
+		|	73942	$
+
+
+
+khipu
+---------------------------- recibida activo-fijo tipo-de-documento
+8	50	|	0	enero	true	false	33
+----------------------------
+	50	|	0
+	--------------------
+$	50
+
+
+
+costos-de-ventas
+---------------------------- recibida activo-fijo tipo-de-documento
+9	1678	|	0	enero	false	false	33
+8	50	|	0	enero	false	false	33
+----------------------------
+	1728	|	0
+	--------------------
+$	1728
+
+
+
+transbank
+---------------------------- recibida activo-fijo tipo-de-documento
+9	1678	|	0	enero	true	false	33
+----------------------------
+	1678	|	0
+	--------------------
+$	1678
+
+
+
+sodimac-materiales
+---------------------------- recibida activo-fijo tipo-de-documento
+12	18849	|	0	enero	false	false	33
+----------------------------
+	18849	|	0
+	--------------------
+$	18849
+
+
+
+amortizacion
+---------------------------- recibida activo-fijo tipo-de-documento
+131	2417	|	0	enero	false	false	amortizacion
+----------------------------
+	2417	|	0
+	--------------------
+$	2417
+
+
+
+amortizacion-intangibles
+---------------------------- recibida activo-fijo tipo-de-documento
+131	2417	|	0	enero	false	false	amortizacion
+----------------------------
+	2417	|	0
+	--------------------
+$	2417
+
+
+
+depreciacion-acumulada-herramientas
+---------------------------- recibida activo-fijo tipo-de-documento
+131	0	|	4202	enero	false	false	depreciacion-de-herramienta
+----------------------------
+	0	|	4202
+	---------------------
+		|	4202	$
+
+
+
+depreciacion
+---------------------------- recibida activo-fijo tipo-de-documento
+131	4202	|	0	enero	false	false	depreciacion
+----------------------------
+	4202	|	0
+	--------------------
+$	4202
+
+
+
+herramientas
+---------------------------- recibida activo-fijo tipo-de-documento
+13	151252	|	0	enero	true	true	33
+----------------------------
+	151252	|	0
+	--------------------
+$	151252
+
+
+
+ventas-con-eboleta-exenta
+---------------------------- recibida activo-fijo tipo-de-documento
+6	45050	|	0	enero	false	false	61
+5	4505	|	0	enero	false	false	61
+----------------------------
+	49555	|	0
+	--------------------
+$	49555
+
+
+
+ventas-con-eboleta-afecta
+---------------------------- recibida activo-fijo tipo-de-documento
+7	29412	|	0	enero	false	false	61
+3	0	|	29412	enero	false	false	39
+
+
+
+iva-debito
+---------------------------- recibida activo-fijo tipo-de-documento
+6	0	|	0	enero	false	false	61
+5	0	|	0	enero	false	false	61
+3	0	|	5588	enero	false	false	39
+4	0	|	23464	enero	false	false	48
+7	5588	|	0	enero	false	false	61
+----------------------------
+	5588	|	29052
+	---------------------
+		|	23464	$
+
+
+
+easy-materiales
+---------------------------- recibida activo-fijo tipo-de-documento
+14	7118	|	0	enero	false	false	33
+10	39487	|	0	enero	false	false	33
+----------------------------
+	46605	|	0
+	--------------------
+$	46605
+
+
+
+insumos
+---------------------------- recibida activo-fijo tipo-de-documento
+1	44044	|	0	enero	false	false	escritura-empresa
+2112	44044	|	44044	enero	false	false	traspaso
+----------------------------
+	88088	|	44044
+	--------------------
+$	44044
+
+
+
+materiales
+---------------------------- recibida activo-fijo tipo-de-documento
+1	44044	|	0	enero	false	false	escritura-empresa
+14	7118	|	0	enero	false	false	33
+12	18849	|	0	enero	false	false	33
+10	39487	|	0	enero	false	false	33
+2112	0	|	44044	enero	false	false	traspaso
+----------------------------
+	109498	|	44044
+	--------------------
+$	65454
+
+
+
+intangibles
+---------------------------- recibida activo-fijo tipo-de-documento
+1	290000	|	0	enero	false	false	escritura-empresa
+----------------------------
+	290000	|	0
+	--------------------
+$	290000
+
+
+
+marca-alectrico
+---------------------------- recibida activo-fijo tipo-de-documento
+1	290000	|	0	enero	false	false	escritura-empresa
+----------------------------
+	290000	|	0
+	--------------------
+$	290000
+
+
+
+utilidad-del-ejercicio-anterior
+---------------------------- recibida activo-fijo tipo-de-documento
+1	0	|	85294	enero	false	false	escritura-empresa
+----------------------------
+	0	|	85294
+	---------------------
+		|	85294	$
+
+
+
+capital-social
+---------------------------- recibida activo-fijo tipo-de-documento
+1	0	|	2000000	enero	false	false	escritura-empresa
+----------------------------
+	0	|	2000000
+	---------------------
+		|	2000000	$
+
+
+
+amortizacion-acumulada-intangibles
+---------------------------- recibida activo-fijo tipo-de-documento
+1	0	|	2416	enero	false	false	escritura-empresa
+131	0	|	2417	enero	false	false	amortizacion-de-intangible
+----------------------------
+	0	|	4833
+	---------------------
+		|	4833	$
+
+
+
+iva-credito
+---------------------------- recibida activo-fijo tipo-de-documento
+1	10909	|	0	enero	false	false	escritura-empresa
+8	10	|	0	enero	true	false	33
+9	319	|	0	enero	true	false	33
+10	7503	|	0	enero	false	false	33
+12	3581	|	0	enero	false	false	33
+13	28738	|	0	enero	true	true	33
+14	1352	|	0	enero	false	false	33
+----------------------------
+	52412	|	0
+	--------------------
+$	52412
+
+
+
+ppm
+---------------------------- recibida activo-fijo tipo-de-documento
+1	721	|	0	enero	false	false	escritura-empresa
+----------------------------
+	721	|	0
+	--------------------
+$	721
+
+
+
+banco-estado
+---------------------------- recibida activo-fijo tipo-de-documento
+1	691827	|	0	enero	false	false	escritura-empresa
+3	35000	|	0	enero	false	false	39
+4	146961	|	0	enero	false	false	48
+5	0	|	4505	enero	false	false	61
+6	0	|	45050	enero	false	false	61
+7	0	|	35000	enero	false	false	61
+8	0	|	60	enero	true	false	33
+9	0	|	1997	enero	true	false	33
+10	0	|	46990	enero	false	false	33
+12	0	|	22430	enero	false	false	33
+13	0	|	179990	enero	true	true	33
+14	0	|	8470	enero	false	false	33
+----------------------------
+	873788	|	344492
+	--------------------
+$	529296
+
+
+
+caja
+---------------------------- recibida activo-fijo tipo-de-documento
+1	1050209	|	0	enero	false	false	escritura-empresa
+----------------------------
+	1050209	|	0
+	--------------------
+$	1050209
+--módulo----resumen------------ T ----------------------
+----------------------- AJUSTE ----------------------
+----fin------------------- AJUSTE ----------------------
+---------------------- LIQUIDACION --------------------
+
+
+
+==================================================================
+FECHA	Parcial	Debe	Haber	Descripcion
+==================================================================
+Partida 212
+..................................................................
+		   |-- 	29412	ventas
+		   |----> 29412		r<base-imponible>
+
+		   |-- 	123497	ventas
+		   |----> 123497		r<base-imponible>
+
+------------------------------------------------------------------
+		152909	152909	( 31 de enero	2021	 )
+==================================================================
+alectrico® SpA
+Ajuste Anual Año: Liquidacion Tributaria aportes 2021
+
+
+
+-----------------------------------------------------
+		base-imponible	saldo-acreedor
+-----------------------------------------------------
+nil	0	|	152909
+		|	152909
+
+
+
+
+==================================================================
+FECHA	Parcial	Debe	Haber	Descripcion
+==================================================================
+Partida 213
+..................................................................
+	4202	    --|		depreciacion
+	4202	 <----|	r<base-imponible>
+
+	2417	    --|		amortizacion
+	2417	 <----|	r<base-imponible>
+
+	1678	    --|		costos-de-ventas
+	1678	 <----|	r<base-imponible>
+
+	50	    --|		costos-de-ventas
+	50	 <----|	r<base-imponible>
+
+	4505	    --|		ventas
+	4505	 <----|	r<base-imponible>
+
+	45050	    --|		ventas
+	45050	 <----|	r<base-imponible>
+
+	29412	    --|		ventas
+	29412	 <----|	r<base-imponible>
+
+------------------------------------------------------------------
+		87314	87314	( 31 de diciembre	2021	 )
+==================================================================
+alectrico® SpA
+Ajuste Anual Año: Liquidacion Tributaria deducciones correccion-monetariatab2021
+
+
+
+-----------------------------------------------------
+		base-imponible	saldo-acreedor
+-----------------------------------------------------
+nil	87314	|	152909
+		|	65595
+
+
+
+
+==================================================================
+FECHA	Parcial	Debe	Haber	Descripcion
+==================================================================
+Partida 214
+..................................................................
+x-- Liquidando cuenta de resultados, cuando hay ganancia en utilidad-tributaria hacia base-imponible
+La cuenta de nil	base-imponible	87314 y un haber de 	152909
+		65595	--|			utilidad-tributaria
+			  |->	65595		r<base-imponible>
+
+obtencion-utilidad-tributaria-positiva
+------------------------------------------------------------------
+		65595	65595	( 31 de diciembre	2021	 )
+==================================================================
+alectrico® SpA
+v/Para determinar el valor del resultado del tributario período
+
+
+
+-----------------------------------------------------
+		base-imponible	saldo-acreedor
+-----------------------------------------------------
+nil	87314	|	152909
+		|	65595
+
+--módulo----------------------- TA ----------------------
+----------------------------
+	78967	|	152909
+	---------------------
+		|	73942	$
+----------------------------
+	1728	|	0
+	--------------------
+$	1728
+----------------------------
+	2417	|	0
+	--------------------
+$	2417
+----------------------------
+	4202	|	0
+	--------------------
+$	4202
+----------------------------
+	44044	|	0
+	--------------------
+$	44044
+----------------------------
+	78967	|	152909
+	---------------------
+		|	73942	$
+----------------------------
+	0	|	123497
+	---------------------
+		|	123497	$
+----------------------------
+	50	|	0
+	--------------------
+$	50
+----------------------------
+	1678	|	0
+	--------------------
+$	1678
+----------------------------
+	18849	|	0
+	--------------------
+$	18849
+----------------------------
+	2417	|	0
+	--------------------
+$	2417
+----------------------------
+	49555	|	0
+	--------------------
+$	49555
+----------------------------
+	46605	|	0
+	--------------------
+$	46605
+----------------------------
+	109498	|	44044
+	--------------------
+$	65454
+----------------------------
+	290000	|	0
+	--------------------
+$	290000
+----------------------------
+	1050209	|	0
+	--------------------
+$	1050209
+----------------------------
+	88088	|	44044
+	--------------------
+$	44044
+----------------------------
+	52412	|	0
+	--------------------
+$	52412
+----------------------------
+	721	|	0
+	--------------------
+$	721
+----------------------------
+	873788	|	344492
+	--------------------
+$	529296
+----------------------------
+	0	|	4202
+	---------------------
+		|	4202	$
+----------------------------
+	151252	|	0
+	--------------------
+$	151252
+----------------------------
+	290000	|	0
+	--------------------
+$	290000
+----------------------------
+	0	|	4833
+	---------------------
+		|	4833	$
+----------------------------
+	5588	|	29052
+	---------------------
+		|	23464	$
+----------------------------
+	0	|	85294
+	---------------------
+		|	85294	$
+----------------------------
+	0	|	2000000
+	---------------------
+		|	2000000	$
+
+
+
+utilidad
+------- creando subtotales para inventario --------------------- 
+
+
+
+utilidad-tributaria
+------- creando subtotales para utilidad-tributaria --------------------- 
+214	0	|	65595	tributario	false	real
+----------------------------
+	0	|	65595
+	---------------------
+		|	65595	$
+
+
+
+utilidad
+------- creando subtotales para utilidad --------------------- 
+
+
+
+idpc
+------- creando subtotales para idpc --------------------- 
+--fin----------------------- TA ----------------------
+--modulo-----------CALCULO DE BASE TRIBUTARIA-----------------
+En inicio-tributario-rulesSolo se consideran las transacciones hasta el día 31 febrero. Cifras en pesos.
+alectrico-2021
+================================================================================
+CALCULO DE LA BASE IMPONIBLE PROPYME
+================================================================================
+|		|     73942	Ingresos Brutos Percibidos A.29-LIR
+|		|     73942	Ventas
+|		| (-) -  		Rebajas sobre ventas
+|		| (-) 0		Devoluciones sobre ventas
+|		| (-) -  		Descuentos sobre ventas
+|		| (=) 73942	Ventas Netas
+
+|		| (-) 1728	Costos de Ventas A.30-LIR
+
+|0				Compras
+| (+) 0				Gastos sobre Compras
+|0				Compras Totales
+| (-) - 				Rebajas sobre Compras
+| (-) - 				Devoluciones sobre Compras
+| (-) - 				Descuentos sobre Compras
+|0				Compras Netas
+
+| (+) 44044	|		Inventario Inicial
+| (=) 44044	|		Mercadería Disponible para la Venta 
+|     0  |		Costos de Mercancías Vendidas
+| (-) 0	|		Inventario Final 
+| (=) 0	|		Costos de Mercancías 
+| (-) 44044	|		Insumos 
+
+|		|     72214	UTILIDAD BRUTA (Ventas Netas - Costo de Ventas)
+|		| (-) 6619	Gastos Operacionales (Gastos Admon + Gastos Vtas + I+D + Promocion + Amortiza + Depreciacion)
+|0				Gastos del Dpto Administración
+|0				Gastos del Dpto Ventas
+|0				Gastos en I+D
+|0				Gastos en Promocion
+|0				Salarios
+|0				Pérdida por Corrección Monetaria
+|2417				 (-) Amortizacion Contable Intangibles
+|4202				 (-) Depreciacion
+|		| (-) 0		Pérdida Ejercicio Anterior PEA A.33-LIR)
+|		|     65595	UTILIDAD DE OPERACION (U.Bruta - G.Ded. - PEA)
+|		| (-) 	Otros Gastos
+|		|     65595	UTILIDAD ANTES DE RESERVA (U.Op-Reserva Lega)
+|		| (-) 	0	 Reserva Legal
+|		| (=) 65595	Resultado de Explotación 
+|		| (+) 0	Ganancia Por Corrección Monetaria
+|		| (-) 0	Impuestos No Recuperables
+|		| (=) 65595	Resultado Fuera de Explotación 
+|		|     65595	Resultado Antes de Impuesto
+|		| (-) 0	Impuesto Determinado: 10 en 2021
+|		|     65595	Utilidad Después de Impuestos
+---------------------------------------------------------------------------
+----------- DETERMINACIÓN DE LA BASE IMPONIBLE -----------------------------
+ Determina los impuestos del régimen propyme
+|		|     0	Utilidad Financiera (módulo liquidación)
+| (-) 	151252				Depreciación Instantanea Propyme
+| (-) 	0				Amortizacion Instántanea Intangibles (no-contable) 
+|0				(+) Aportes Cap.
+|		| (=) -85657	RLI Calculada
+|		| (-) 0	Impuesto Determinado
+|		| (=) 65595	Utilidad Tributaria desp.Imptos (m. liquidaciones)
+  INCENTIVO AL AHORRO SOLICITADO EN selecciones.txt 
+		-85657	 RLI Calculada 
+		-42829		Rebaja Art.14 Letra E propyme
+		-8566	IDPC A PAGAR	10%
+================================================================================
 CLIPS> (exit)

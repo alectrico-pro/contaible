@@ -106,7 +106,6 @@
      (cuenta (nombre ?nombre&:(neq ?nombre ingresos-brutos)) (padre false) (grupo resultado))
      (cuenta (nombre ?nombre) (padre ingresos-brutos) (grupo resultado))  )
   =>
-
    ( assert
      (partida (numero ?numero) (empresa ?empresa) (dia 31) (mes diciembre) (ano ?ano)
      (descripcion (str-cat "Ajuste Anual Año: Liquidacion Tributaria deducciones " ?nombre tab  ?ano ))
@@ -491,10 +490,12 @@
       (grupo     ?grupo)
       (tributada false))
 
+    ?liquidadora <- (cuenta (nombre ?liquidora) (partida nil) (debe ?debe-liquidadora))
+ 
     (test (> ?debe ?haber))
 
  =>
-
+   ( bind ?saldo (- ?debe ?haber))
    
    ( modify ?cuenta
        ( tributada true )
@@ -502,24 +503,26 @@
        ( debe      ?haber))
 
 
-   ( assert
-     (cuenta (nombre ?liquidora)
-        ( partida ?partida-cuenta)
-        ( tipo    liquidadora)
-        ( debe    ?debe)
-        ( haber   ?haber)))
+   ( modify ?liquidadora
+       ( debe (+ ?debe-liquidadora ?debe)))
+
+; este método era interesante pero, algunas partidas tienen más de un abono
+; con lo que se generan facts difíciles de diferenciar entre sí
+;  ( assert
+;    (cuenta (nombre ?liquidora)
+;       ( partida ?partida-cuenta)
+;       ( tipo    liquidadora)
+;       ( debe    ?debe)
+;       ( haber   ?haber)))
 
 
-   ( if (> ?debe ?haber)
-     then
-       ( bind ?saldo (- ?debe ?haber))
-       ( modify ?partida (debe (+ ?debep ?saldo)) (haber (+ ?haberp ?saldo)))
-       ( printout t tab (round ?saldo) tab "    --|" tab tab ?nombre crlf)
-       ( printout t tab (round ?saldo) tab " <----|" tab "r<" ?liquidora ">" crlf)
-       ( printout t crlf )
-       ( printout k "<tr><td></td><td>" (round ?saldo) "</td><td></td><td>" ?nombre "</td></tr>" crlf)
-       ( printout k "<tr><td></td><td>" (round ?saldo) "</td><td></td><td> r(" ?liquidora ")  </td></tr>"  crlf)
-   )
+  ( modify ?partida (debe (+ ?debep ?saldo)) (haber (+ ?haberp ?saldo)))
+  ( printout t tab (round ?saldo) tab "    --|" tab tab ?nombre crlf)
+  ( printout t tab (round ?saldo) tab " <----|" tab "r<" ?liquidora ">" crlf)
+  ( printout t crlf )
+  ( printout k "<tr><td></td><td>" (round ?saldo) "</td><td></td><td>" ?nombre "</td></tr>" crlf)
+  ( printout k "<tr><td></td><td>" (round ?saldo) "</td><td></td><td> r(" ?liquidora ")  </td></tr>"  crlf)
+   
 )
 
 
@@ -557,24 +560,35 @@
       (grupo     ?grupo)
       (tributada false)) 
 
+
+    ?liquidadora <- (cuenta
+      ( nombre ?liquidora)
+      ( partida nil)
+      ( haber ?haber-liquidadora))
+
     ;en las cuentas de resultado, el haber significa ganancia o aporte
     (test (> ?haber ?debe))
 
  =>
+
+   ( bind ?saldo (- ?haber ?debe))
+
 
    ( modify ?cuenta
        ( tributada true  )
        ( haber     ?debe)
        ( debe      ?haber))
 
-   ( assert
-     (cuenta (nombre ?liquidora)
-        ( partida ?partida-cuenta)
-        ( tipo    liquidadora)
-        ( debe    ?debe)
-        ( haber   ?haber)))
+   ( modify ?liquidadora
+       ( haber (+ ?haber ?haber-liquidadora)))
 
-   ( bind ?saldo (- ?haber ?debe))
+;   ( assert
+;     (cuenta (nombre ?liquidora)
+;        ( partida ?partida-cuenta)
+;        ( tipo    liquidadora)
+;        ( debe    ?debe)
+;        ( haber   ?haber)))
+
 
    ( modify ?partida (debe (+ ?debep ?saldo)) (haber (+ ?haberp ?saldo)))
    ( printout t tab tab "   |-- " tab (round ?saldo) tab ?nombre crlf)
@@ -641,6 +655,7 @@
    ?acreedora   <- (cuenta (partida ?numero2&:(neq nil ?numero2)) (parte ?parte) (nombre ?nombre)  (debe ?debe&:(> ?debe 0))  (haber ?haber)  (tipo ?tipo) (liquidada ?liquidada) (tributada false) (grupo ?grupo) (circulante ?circulante))
    ?liquidador  <- (cuenta (nombre ?liquidora) (debe ?debe2) (haber ?haber2) (tipo liquidadora) )
    (cuenta (nombre base-imponible) (partida nil))
+
  =>
  ; ( printout t "nombre " tab ?nombre tab ?liquidora tab ?haber2 crlf)
   ( bind ?saldo ?debe)
@@ -840,7 +855,7 @@
 
 (defrule obtencion-utilidad-tributaria-positiva-v-dos
    ( declare (salience 81)) 
-
+(no)
    ( fila ?numero)
    (ajuste-anual-de-resultado-tributario (partida ?numero))
    ( empresa (nombre ?empresa))
@@ -850,14 +865,16 @@
    ?f1          <- (liquidacion (partida ?numero) (cuenta ?nombre) (ano ?ano) (liquidadora ?liquidora))
    ?acreedora   <- (cuenta (de-resultado true) (partida nil) (parte ?parte) (nombre ?nombre)  (debe ?debe)  (haber ?haber)  (tipo acreedora) (liquidada false) (grupo ?grupo) (circulante ?circulante))
    ?liquidador  <- (cuenta (partida ?partida-de-liquidacion) (nombre ?liquidora) (debe ?debe2) (haber ?haber2) (tipo liquidadora) )
-   (not (cuenta (partida ?partida-de-liquidacion) (nombre ?nombre) (liquidada true) ))
+
+
+   ( not (cuenta (partida ?numero) (nombre ?nombre) (liquidada true) ))
    ( test (> ?debe2 ?haber2))
    ( test (eq ?nombre utilidad-tributaria))
 
  =>
-   ( refresh obtencion-utilidad-tributaria-positiva-v-dos )
    ( bind ?saldo (round (* 1 (- ?haber2 ?debe2))))
 ;   ( modify ?acreedora  (liquidada true))
+   ;se genera una cuenta con partida non nil para que se le puedan sacar subtotales
    ( assert ( cuenta
                 ( dia ?dia)
                 ( mes ?mes)
@@ -869,7 +886,7 @@
                 ( nombre ?nombre)
                 ( grupo ?grupo)
                 ( tipo acreedora)
-                ( partida ?partida-de-liquidacion)
+                ( partida ?numero)
                 ( liquidada true)
                 ( origen real )
                 ( haber (+ ?haber ?saldo))))
@@ -920,7 +937,7 @@
    ?acreedora   <- (cuenta (de-resultado true) (partida nil) (parte ?parte) (nombre ?nombre)  (debe ?debe)  (haber ?haber)  (tipo acreedora) (liquidada false) (grupo ?grupo) (circulante ?circulante))
 
    ?liquidador  <- (cuenta (partida ?partida-de-liquidacion) (nombre ?liquidora) (debe ?debe2) (haber ?haber2) (tipo liquidadora) )
-   (not (cuenta (partida ?partida-de-liquidacion) (nombre ?nombre) (liquidada true) ))
+   (not (cuenta (partida ?numero) (nombre ?nombre) (liquidada true) ))
 
 ;   ( test (and (= ?debe 0) (= ?haber 0)))
    ( test (> ?haber2 ?debe2))
@@ -939,7 +956,7 @@
                 ( nombre ?nombre)
                 ( grupo ?grupo)
                 ( tipo acreedora)
-                ( partida ?partida-de-liquidacion)
+                ( partida ?numero)
                 ( liquidada true)
                 ( origen real )
                 ( haber (+ ?haber ?saldo))))
