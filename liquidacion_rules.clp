@@ -106,8 +106,15 @@
      (cuenta (nombre ?nombre&:(neq ?nombre ingresos-brutos)) (padre false) (grupo resultado))
      (cuenta (nombre ?nombre) (padre ingresos-brutos) (grupo resultado))  )
   =>
-   ( assert (partida (numero ?numero) (empresa ?empresa) (dia 31) (mes diciembre) (ano ?ano) (descripcion (str-cat "Ajuste Anual Año: Liquidacion Tributaria deducciones "  ?ano )) (actividad liquidacion-tributaria) ))
-   ( assert (tributacion (cuenta ?nombre) (partida ?numero) (ano ?ano) (liquidadora base-imponible) (efecto deduccion)))
+
+   ( assert
+     (partida (numero ?numero) (empresa ?empresa) (dia 31) (mes diciembre) (ano ?ano)
+     (descripcion (str-cat "Ajuste Anual Año: Liquidacion Tributaria deducciones " ?nombre tab  ?ano ))
+     (actividad liquidacion-tributaria) ))
+
+   ( assert
+     (tributacion (cuenta ?nombre) (partida ?numero) (ano ?ano)
+     (liquidadora base-imponible) (efecto deduccion)))
 )
 
 
@@ -848,7 +855,7 @@
    ( test (eq ?nombre utilidad-tributaria))
 
  =>
-
+   ( refresh obtencion-utilidad-tributaria-positiva-v-dos )
    ( bind ?saldo (round (* 1 (- ?haber2 ?debe2))))
 ;   ( modify ?acreedora  (liquidada true))
    ( assert ( cuenta
