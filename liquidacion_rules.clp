@@ -353,6 +353,8 @@
       (grupo     ?grupo)
       (liquidada false))
 
+   ?liquidadora <- (cuenta (nombre ?liquidora) (partida nil) (debe ?debe-liquidadora))
+
    (test (> ?debe ?haber))
 
  =>
@@ -362,32 +364,16 @@
      ( haber     ?debe)
      ( debe      ?haber))
 
-   ( assert
-     (cuenta (nombre ?liquidora)
-        ( partida ?partida-cuenta)
-        ( tipo    liquidadora)
-        ( debe    ?debe)
-        ( haber   ?haber)))
+   ( modify ?liquidadora
+       ( debe (+ ?debe-liquidadora ?debe)))
 
-
-   ( if (> ?debe ?haber)
-     then
-       ( bind ?saldo (- ?debe ?haber))
-       ( modify ?partida (debe (+ ?debep ?saldo)) (haber (+ ?haberp ?saldo)))
-       ( printout t tab tab "   |--" tab (round ?saldo) tab ?nombre crlf)
-       ( printout t tab (round ?saldo) tab " <-| " tab tab tab tab "r<" ?liquidora ">" crlf)
-       ( printout t crlf )
-       ( printout k "<tr><td></td> <td>"  (round ?saldo) "</td><td> </td><td colspan='5'>" ?nombre "--- </td></tr>" crlf)
-       ( printout k "<tr><td> " (round ?saldo) "</td><td></td><td colspan='6'>  r(" ?liquidora ") </td></tr>" crlf)
-     else
-     ;  ( bind ?saldo (- ?haber ?debe ))
-     ;  ( modify ?partida (debe (+ ?debep ?saldo)) (haber (+ ?haberp ?saldo)))
-     ;  ( printout t tab (round ?saldo) tab "--|" tab tab ?nombre crlf)
-     ;  ( printout t tab tab "  |->" tab (round ?saldo)  tab tab "r<" ?liquidora ">" crlf)
-     ;  ( printout t crlf )
-     ;  ( printout k "<tr><td>" (round ?saldo) "</td><td></td><td colspan='2'>" ?nombre "</td></tr>" crlf)
-     ;  ( printout k "<tr><td></td><td>"  (round ?saldo) "</td><td></td><td> r(" ?liquidora ") </td></tr>"  crlf)
-   )
+   ( bind ?saldo (- ?debe ?haber))
+   ( modify ?partida (debe (+ ?debep ?saldo)) (haber (+ ?haberp ?saldo)))
+   ( printout t tab tab "   |--" tab (round ?saldo) tab ?nombre crlf)
+   ( printout t tab (round ?saldo) tab " <-| " tab tab tab tab "r<" ?liquidora ">" crlf)
+   ( printout t crlf )
+   ( printout k "<tr><td></td> <td>"  (round ?saldo) "</td><td> </td><td colspan='5'>" ?nombre "--- </td></tr>" crlf)
+   ( printout k "<tr><td> " (round ?saldo) "</td><td></td><td colspan='6'>  r(" ?liquidora ") </td></tr>" crlf)
 )
 
 
@@ -421,6 +407,12 @@
       (grupo     ?grupo)
       (liquidada false)) 
 
+
+    ?liquidadora <- (cuenta
+      ( nombre ?liquidora)
+      ( partida nil)
+      ( haber ?haber-liquidadora))
+
     (test (> ?haber ?debe))
 
   =>
@@ -430,36 +422,20 @@
      ( haber     ?debe)
      ( debe      ?haber))   
 
-   ( assert
-     (cuenta (nombre ?liquidora) 
-        ( partida ?partida-cuenta)
-        ( tipo    liquidadora)
-        ( debe    ?debe) 
-        ( haber   ?haber)))
+   ( modify ?liquidadora
+       ( haber (+ ?haber ?haber-liquidadora)))
 
-
-   ( if (> ?debe ?haber)
-     then
-       ( bind ?saldo (- ?debe ?haber))
-       ( modify ?partida (debe (+ ?debep ?saldo)) (haber (+ ?haberp ?saldo)))
-       ( printout t tab tab "   |--" tab (round ?saldo) tab ?nombre tab ?grupo crlf)
-       ( printout t tab (round ?saldo) tab " <-| " tab tab tab tab "r<" ?liquidora ">" crlf)
-       ( printout t crlf )
-       ( printout k "<tr><td></td> <td>"  (round ?saldo) "</td><td> </td><td colspan='5'>" ?nombre "#" ?grupo "</td></tr>" crlf)
-       ( printout k "<tr><td> " (round ?saldo) "</td><td></td><td colspan='6'>  r(" ?liquidora ") </td></tr>" crlf)
-     else 
-       ( bind ?saldo (- ?haber ?debe ))
-       ( modify ?partida (debe (+ ?debep ?saldo)) (haber (+ ?haberp ?saldo)))
-       ( printout t tab (round ?saldo) tab "--|" tab tab ?nombre crlf)
-       ( printout t tab tab "  |->" tab (round ?saldo)  tab tab "r<" ?liquidora ">" crlf)
-       ( printout t crlf )
-       ( printout k "<tr><td>" (round ?saldo) "</td><td></td><td colspan='2'>" ?nombre "</td></tr>" crlf)
-       ( printout k "<tr><td></td><td>"  (round ?saldo) "</td><td></td><td> r(" ?liquidora ") </td></tr>"  crlf)
-   )
+   ( bind ?saldo (- ?haber ?debe ))
+   ( modify ?partida (debe (+ ?debep ?saldo)) (haber (+ ?haberp ?saldo)))
+   ( printout t tab (round ?saldo) tab "--|" tab tab ?nombre crlf)
+   ( printout t tab tab "  |->" tab (round ?saldo)  tab tab "r<" ?liquidora ">" crlf)
+   ( printout t crlf )
+   ( printout k "<tr><td>" (round ?saldo) "</td><td></td><td colspan='2'>" ?nombre "</td></tr>" crlf)
+   ( printout k "<tr><td></td><td>"  (round ?saldo) "</td><td></td><td> r(" ?liquidora ") </td></tr>"  crlf)
 )
 
 
-(defrule liquidar-cuentas-tributarias-deducciones-o-deudor
+(defrule liquidar-cuentas-tributarias-deducciones
   (declare (salience 80))
 
     (fila ?numero )
@@ -474,19 +450,12 @@
       (debe   ?debep)
       (haber  ?haberp))
 
-   (or
-     (tributacion
+    (tributacion
        (partida ?numero)
        (cuenta ?nombre) (ano ?ano)
        (liquidadora ?liquidora)
        (efecto  deduccion)) 
 
-     (liquidacion
-       (partida ?numero)
-       (cuenta ?nombre) (ano ?ano)
-       (liquidadora ?liquidora)
-       (efecto  deudor)) 
-    )
 
     ?cuenta <- (cuenta
       (partida   ?partida-cuenta)
@@ -527,7 +496,7 @@
 
 
 
-(defrule liquidar-cuentas-tributarias-aportes-o-acreencias
+(defrule liquidar-cuentas-tributarias-aportes
 
     (declare (salience 280))
 
@@ -544,18 +513,11 @@
       (haber  ?haberp))
 
 
-    (or
-      (tributacion
+    (tributacion
         (partida     ?numero)
         (cuenta      ?nombre) (ano ?ano)
         (liquidadora ?liquidora)
         (efecto      aporte))
-
-      (liquidacion
-        (partida     ?numero)
-        (cuenta      ?nombre) (ano ?ano)
-        (liquidadora ?liquidora)
-        (efecto      acreedor)))
 
     ?cuenta <- (cuenta
       (partida   ?partida-cuenta)
