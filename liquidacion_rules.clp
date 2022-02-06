@@ -358,7 +358,7 @@
       (partida nil)
       (debe ?debe-liquidadora))
 
-   (test (> ?deb ?haber))
+   (test (> ?debe ?haber))
 
  =>
 
@@ -703,7 +703,6 @@
 
 (defrule obtencion-utilidad-negativa
    (declare (salience 81))
-  (no)
    (fila ?numero)
   
 ;   (ajuste-anual-de-resultado-financiero (partida ?numero))
