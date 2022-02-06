@@ -66,7 +66,7 @@ layout: page
 <tr><td> (+) </td><td align='right'>0</td><td></td><td></td><td></td><td> Aportes al Capital </td></tr>
 <tr><td> <td></td></td><td> </td><td> (=) </td><td align='right' style = 'font-weight:bold; background-color: azure'>-85657</td><td> RLI Calculada </td></tr>
 <tr><td> <td></td></td><td> </td><td> (-) </td><td align='right'>0</td><td> Impuesto Determinado: 10% </td></tr>
-<tr><td></td><td></td><td></td><td> (=) </td><td align='right' style='font-weight:bold; background-color: lightgreen'>69797</td><td> RESULTADO DESPUES DE IMPUESTOS (módulo liquidaciones) <small>propyme</small></td></tr>
+<tr><td></td><td></td><td></td><td> (=) </td><td align='right' style='font-weight:bold; background-color: lightgreen'>65595</td><td> RESULTADO DESPUES DE IMPUESTOS (módulo liquidaciones) <small>propyme</small></td></tr>
 <tr> <th> INCENTIVO AL AHORRO SOLICITADO EN selecciones.txt </th></tr> 
 <tr><td></td><td></td><td></td><td> (-) </td><td align='right' style = 'font-weight:bold; background-color: azure'  >-85657</td><td> RENTA LIQUIDA IMPONIBLE</td></tr>
 <tr><td></td><td></td><td></td><td> (-) </td><td align='right' style=' background-color: gold'>-42829</td><td>    Rebaja Art.14 Letra E <small>propyme</small></td></tr>
