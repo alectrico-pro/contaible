@@ -42,6 +42,7 @@
     (slot partida))
 
 (deftemplate registro-de-depreciacion
+  (slot liquidado (default false))
   (slot metodo-tributario)
   (slot metodo )
   (slot nombre-del-activo)

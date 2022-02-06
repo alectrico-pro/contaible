@@ -437,6 +437,57 @@
 )
 
 
+
+(defrule liquidar-activos-fijos-propyme
+
+    (declare (salience 80))
+    (selecciones (regimen propyme))
+    (fila ?numero )
+    (empresa (nombre ?empresa ))
+
+    ?partida <- (partida
+      (numero ?numero )
+      (dia    ?dia)
+      (mes    ?mes)
+      (ano    ?ano)
+      (debe   ?debep)
+      (haber  ?haberp))
+
+    ;este registro debe estar en 
+    ;alectrico-2021-valor-activos.txt
+    ?af <- ( registro-de-depreciacion
+       ( nombre-del-activo    ?nombre )
+       ( valor-de-adquisicion ?valor) 
+       ( mes-de-adquisicion   ?mes-de-adquisicion)
+       ( ano-de-adquisicion   ?ano-de-adquisicion)
+       ( liquidado            false) )
+
+    ?liquidadora <- (cuenta
+      (nombre   base-imponible)
+      (partida  nil)
+      (debe     ?debe-liquidadora))
+
+    ( balance (dia ?top)       (mes ?mes_top)     (ano ?ano_top))
+    ( test (>= (to_serial_date ?top   ?mes_top          ?ano_top)
+               (to_serial_date 1  ?mes-de-adquisicion  ?ano-de-adquisicion)))
+
+ =>
+
+  ( modify ?af (liquidado true))
+
+  ( modify ?liquidadora
+       ( debe (+ ?debe-liquidadora ?valor)))
+
+
+  ( modify ?partida (debe (+ ?debep ?valor)) (haber (+ ?haberp ?valor)))
+  ( printout t tab (round ?valor) tab "    --|" tab tab ?nombre crlf)
+  ( printout t tab (round ?valor) tab " <----|" tab "r<" base-imponible ">" crlf)
+  ( printout t crlf )
+  ( printout k "<tr><td></td><td>" (round ?valor) "</td><td></td><td>" ?nombre "</td></tr>" crlf)
+  ( printout k "<tr><td></td><td>" (round ?valor) "</td><td></td><td> r( base-imponible )  </td></tr>"  crlf)
+
+)
+
 (defrule liquidar-cuentas-tributarias-deducciones
   (declare (salience 80))
 
