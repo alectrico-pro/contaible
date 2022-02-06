@@ -57,36 +57,36 @@
 
 
 
-(defrule ajustar-ano-financieras-deudoras
+(defrule ajustar-ano-financieras-perdedoras
    (declare (salience 2))
    (balance (ano ?ano) (mes ?mes))
    (empresa (nombre ?empresa))
    (ticket (numero ?numero))
-   (ajuste-anual (ano ?ano) (liquidacion financiera) (partida ?numero) (efecto deudor) )
+   (ajuste-anual (ano ?ano) (liquidacion financiera) (partida ?numero) (efecto perdedor) )
 
    (or
      (cuenta (nombre ?nombre&:(neq ?nombre ingresos-brutos)) (padre false) (grupo resultado))
      (cuenta (nombre ?nombre) (padre ingresos-brutos) (grupo resultado)) )
 
   =>
-   ( assert (partida (numero ?numero) (empresa ?empresa) (dia 31) (mes ?mes) (ano ?ano) (descripcion (str-cat "Ajuste Anual Año: Liquidacion Financiera Deudoras " ?ano )) (actividad liquidacion-financiera) ))
-   ( assert (liquidacion (cuenta ?nombre) (partida ?numero) (dia 31) (mes ?mes) (ano ?ano) (liquidadora perdidas-y-ganancias) (efecto deudor)))
+   ( assert (partida (numero ?numero) (empresa ?empresa) (dia 31) (mes ?mes) (ano ?ano) (descripcion (str-cat "Ajuste Anual Año: Liquidacion Financiera Perdedor " ?ano )) (actividad liquidacion-financiera) ))
+   ( assert (liquidacion (cuenta ?nombre) (partida ?numero) (dia 31) (mes ?mes) (ano ?ano) (liquidadora perdidas-y-ganancias) (efecto perdedor)))
 )
 
 
-(defrule ajustar-ano-financieras-acreedoras
+(defrule ajustar-ano-financieras-ganadoras
    (declare (salience 1))
    (balance (ano ?ano) (mes ?mes))
    (empresa (nombre ?empresa))
    (ticket (numero ?numero))
-   (ajuste-anual (ano ?ano) (liquidacion financiera) (partida ?numero) (efecto acreedor) )
+   (ajuste-anual (ano ?ano) (liquidacion financiera) (partida ?numero) (efecto ganador) )
 
    (or
      (cuenta (nombre ?nombre&:(neq ?nombre ingresos-brutos)) (padre false) (grupo resultado))
      (cuenta (nombre ?nombre) (padre ingresos-brutos) (grupo resultado))  )
   =>
-   ( assert (partida (numero ?numero) (empresa ?empresa) (dia 31) (mes ?mes) (ano ?ano) (descripcion (str-cat "Ajuste Anual Año: Liquidacion Financiera Acreedoras " ?ano )) (actividad liquidacion-financiera) ))
-   ( assert (liquidacion (cuenta ?nombre) (partida ?numero) (ano ?ano) (liquidadora perdidas-y-ganancias) (efecto acreedor)))
+   ( assert (partida (numero ?numero) (empresa ?empresa) (dia 31) (mes ?mes) (ano ?ano) (descripcion (str-cat "Ajuste Anual Año: Liquidacion Financiera Ganancias " ?ano )) (actividad liquidacion-financiera) ))
+   ( assert (liquidacion (cuenta ?nombre) (partida ?numero) (ano ?ano) (liquidadora perdidas-y-ganancias) (efecto ganador)))
 )
 
 
@@ -142,7 +142,7 @@
 
 (defrule determinar-resultado-financiero
   ( declare (salience -1))
-  (balance (ano ?ano))
+  (balance (ano ?ano) (mes ?mes))
   (empresa (nombre ?empresa)) 
   (ticket (numero ?numero))
 
@@ -151,10 +151,10 @@
     (partida ?numero))
 
  =>
-  ( assert (partida (numero ?numero) (dia 31) (mes diciembre) (ano ?ano) 
+  ( assert (partida (numero ?numero) (dia 31) (mes ?mes) (ano ?ano) 
     (empresa ?empresa)
     (actividad determinacion-del-resultado-financiero)
-    (descripcion "v/Para determinar el valor del resultado del período")))
+    (descripcion "v/Para determinar el valor del Resultado Financiero período.")))
 
   ( assert (liquidacion (cuenta idpc) 
     (partida ?numero) (ano ?ano)
@@ -167,8 +167,8 @@
   ( assert (liquidacion (cuenta utilidad)
     (partida ?numero) (ano ?ano)
     (liquidadora perdidas-y-ganancias)))
-  ( printout t "Parado" crlf)
-  ( halt )
+
+  ( assert (fila ?numero))
 )
 
 
@@ -326,7 +326,7 @@
 )
 
 
-(defrule liquidar-cuentas-financieras-deudoras
+(defrule liquidar-cuentas-financieras-perdedoras
   (declare (salience 80))
     (fila ?numero )
     (empresa (nombre ?empresa ))
@@ -343,7 +343,7 @@
        (partida ?numero)
        (cuenta ?nombre) (ano ?ano)
        (liquidadora ?liquidora)
-       (efecto deudor) )
+       (efecto perdedor) )
 
     ?cuenta <- (cuenta
       (partida   ?partida-cuenta)
@@ -353,9 +353,12 @@
       (grupo     ?grupo)
       (liquidada false))
 
-   ?liquidadora <- (cuenta (nombre ?liquidora) (partida nil) (debe ?debe-liquidadora))
+   ?liquidadora <- (cuenta
+      (nombre ?liquidora)
+      (partida nil)
+      (debe ?debe-liquidadora))
 
-   (test (> ?debe ?haber))
+   (test (> ?deb ?haber))
 
  =>
 
@@ -377,7 +380,7 @@
 )
 
 
-(defrule liquidar-cuentas-financieras-acreedoras
+(defrule liquidar-cuentas-financieras-ganadoras
 
     (declare (salience 80))
 
@@ -397,7 +400,7 @@
        (partida ?numero)
        (cuenta ?nombre) (ano ?ano)
        (liquidadora ?liquidora)
-       (efecto acreedor))
+       (efecto ganador))
 
     ?cuenta <- (cuenta
       (partida   ?partida-cuenta)
@@ -828,7 +831,7 @@
    ( declare (salience 81))
    ( fila ?numero)
   
-   (ajuste-anual-de-resultado-financiero (partida ?numero))
+;   (ajuste-anual-de-resultado-financiero (partida ?numero))
 
    ( empresa (nombre ?empresa))
 
@@ -957,7 +960,7 @@
    ( partida (numero ?partida ) (dia ?dia) (mes ?mes) (ano ?ano) (empresa ?empresa) (descripcion ?descripcion))
    ( cuenta (nombre perdidas-y-ganancias) (partida nil) (grupo ?grupo-i) (padre ?padre-i) (circulante ?circulante-i) (naturaleza ?naturaleza-i) (tipo ?tipo-i) (origen ?origen-i) (de-resultado ?de-resultado-i))
   =>
-  ; ( printout t "creando cuenta perdidas-y-ganancias - partida " tab ?partida crlf)
+ ;  ( printout t "creando cuenta perdidas-y-ganancias - partida " tab ?partida crlf)
    ( assert (cuenta (partida ?partida) (descripcion liquidando-inventario) (dia ?dia) (mes ?mes) (ano ?ano) (nombre perdidas-y-ganancias) (grupo ?grupo-i) (empresa ?empresa) (padre ?padre-i) (circulante ?circulante-i) (naturaleza ?naturaleza-i)(tipo ?tipo-i) (origen ?origen-i) (de-resultado ?de-resultado-i) (liquidada true)))
 )
 

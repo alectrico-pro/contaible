@@ -3114,60 +3114,36 @@
 ( ajustes-mensuales (mes diciembre) (ano 2021) (partida 207))
 ( ajuste-de-iva     (mes diciembre) (ano 2021) (partida 208))
 
+
+;tributario
 ( ajuste-anual
-   (ano 2021) (partida 212)
+   (ano 2021) (partida 209)
    (liquidacion tributaria)
    (efecto aporte))
 
 ( ajuste-anual
-   (ano 2021) (partida 213)
+   (ano 2021) (partida 210)
    (liquidacion tributaria)
    (efecto deduccion))
 
 
 ( ajuste-anual-de-resultado-tributario
-   (ano 2021) (partida 214))
-
-( ajuste-anual
-   (ano 2021) (partida 209)
-   (liquidacion financiera)
-   (efecto deudor))
-
-( ajuste-anual
-   (ano 2021) (partida 210)
-   (liquidacion financiera)
-   (efecto acreedor))
-
-
-
-
-#####
-( ajuste-anual
-   (ano 2021) (partida 209)
-   (liquidacion financiera)
-   (efecto deudor))
-
-( ajuste-anual 
-   (ano 2021) (partida 210) 
-   (liquidacion financiera)
-   (efecto acreedor))
-
-( ajuste-anual-de-resultado-financiero 
    (ano 2021) (partida 211))
 
 
-##------------------------------------------------
-( ajuste-anual                
+;financiero
+( ajuste-anual
    (ano 2021) (partida 212)
-   (liquidacion tributaria)
-   (efecto aporte))
+   (liquidacion financiera)
+   (efecto perdedor))
 
-( ajuste-anual             
+( ajuste-anual
    (ano 2021) (partida 213)
-   (liquidacion tributaria)
-   (efecto deduccion))
+   (liquidacion financiera)
+   (efecto ganador))
 
-( ajuste-anual-de-resultado-tributario 
+
+( ajuste-anual-de-resultado-financiero
    (ano 2021) (partida 214))
 
 
