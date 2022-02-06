@@ -106,7 +106,7 @@
   =>
    ( assert
      (partida (numero ?numero) (empresa ?empresa) (dia 31) (mes ?mes) (ano ?ano)
-     (descripcion (str-cat "Ajuste Anual Año: Liquidacion Tributaria Deducciones " ?nombre tab  ?ano ))
+     (descripcion (str-cat "Ajuste Anual Año: Liquidacion Tributaria Deducciones " ?ano ))
      (actividad liquidacion-tributaria) ))
 
    ( assert
@@ -131,7 +131,7 @@
 
   =>
 
-   ( assert (partida (numero ?numero) (empresa ?empresa) (dia 31) (mes ?mes) (ano ?ano) (descripcion (str-cat "Ajuste Anual Año: Liquidacion Tributaria aportes " ?ano )) (actividad liquidacion-financiera) ))
+   ( assert (partida (numero ?numero) (empresa ?empresa) (dia 31) (mes ?mes) (ano ?ano) (descripcion (str-cat "Ajuste Anual Año: Liquidacion Tributaria Aportes " ?ano )) (actividad liquidacion-financiera) ))
    ( assert (tributacion (cuenta ?nombre) (partida ?numero) (ano ?ano) (liquidadora base-imponible) (efecto aporte)))
 
 )
@@ -185,7 +185,7 @@
   ( assert (partida (numero ?numero) (dia 31) (mes diciembre) (ano ?ano)
     (empresa ?empresa)
     (actividad determinacion-del-resultado-tributario)
-    (descripcion "v/Para determinar el valor del resultado del tributario período")))
+    (descripcion "v/Para determinar el valor del resultado Tributario del Periodo")))
 
   ( assert (liquidacion (cuenta idpc)
     (partida ?numero) (ano ?ano)
@@ -328,7 +328,6 @@
 
 (defrule liquidar-cuentas-financieras-deudoras
   (declare (salience 80))
-(no)
     (fila ?numero )
     (empresa (nombre ?empresa ))
 
@@ -396,7 +395,6 @@
 
     (declare (salience 80))
 
-    (no)
     (fila ?numero )
 
     (empresa (nombre ?empresa ))

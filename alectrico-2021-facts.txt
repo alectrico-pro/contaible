@@ -3128,6 +3128,16 @@
 ( ajuste-anual-de-resultado-tributario
    (ano 2021) (partida 214))
 
+( ajuste-anual
+   (ano 2021) (partida 209)
+   (liquidacion financiera)
+   (efecto deudor))
+
+( ajuste-anual
+   (ano 2021) (partida 210)
+   (liquidacion financiera)
+   (efecto acreedor))
+
 
 
 
