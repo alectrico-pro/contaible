@@ -80,6 +80,63 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <tr style='background-color: azure'><td colspan='6'>La cuenta de liquidacion tiene un debe de 	2417 y un haber de 	0</td></tr>
 <tr style='background-color: azure'><td> -2417</td><td></td><td colspan='2'>utilidad-tributaria</td></tr>
 <tr style='background-color: azure'><td> </td><td>-2417</td><td></td><td> r(base-imponible) </td></tr>
+<tr><td colspan='6'>x-- Liquidando cuenta de resultados ( cuando hay perdida tributaria en utilidad-tributaria en base-imponible</td></tr>
+<tr style='background-color: azure'><td colspan='6'>La cuenta de liquidacion tiene un debe de 	1678 y un haber de 	0</td></tr>
+<tr style='background-color: azure'><td> -1678</td><td></td><td colspan='2'>utilidad-tributaria</td></tr>
+<tr style='background-color: azure'><td> </td><td>-1678</td><td></td><td> r(base-imponible) </td></tr>
+<tr><td colspan='6'>x-- Liquidando cuenta de resultados ( cuando hay perdida tributaria en utilidad-tributaria en base-imponible</td></tr>
+<tr style='background-color: azure'><td colspan='6'>La cuenta de liquidacion tiene un debe de 	50 y un haber de 	0</td></tr>
+<tr style='background-color: azure'><td> -50</td><td></td><td colspan='2'>utilidad-tributaria</td></tr>
+<tr style='background-color: azure'><td> </td><td>-50</td><td></td><td> r(base-imponible) </td></tr>
+<tr><td colspan='6'>x-- Liquidando cuenta de resultados ( cuando hay perdida tributaria en utilidad-tributaria en base-imponible</td></tr>
+<tr style='background-color: azure'><td colspan='6'>La cuenta de liquidacion tiene un debe de 	29412 y un haber de 	0</td></tr>
+<tr style='background-color: azure'><td> -29412</td><td></td><td colspan='2'>utilidad-tributaria</td></tr>
+<tr style='background-color: azure'><td> </td><td>-29412</td><td></td><td> r(base-imponible) </td></tr>
+<tr><td colspan='6'>x-- Liquidando cuenta de resultados ( cuando hay perdida tributaria en utilidad-tributaria en base-imponible</td></tr>
+<tr style='background-color: azure'><td colspan='6'>La cuenta de liquidacion tiene un debe de 	45050 y un haber de 	0</td></tr>
+<tr style='background-color: azure'><td> -45050</td><td></td><td colspan='2'>utilidad-tributaria</td></tr>
+<tr style='background-color: azure'><td> </td><td>-45050</td><td></td><td> r(base-imponible) </td></tr>
+<tr><td colspan='6'>x-- Liquidando cuenta de resultados ( cuando hay perdida tributaria en utilidad-tributaria en base-imponible</td></tr>
+<tr style='background-color: azure'><td colspan='6'>La cuenta de liquidacion tiene un debe de 	4505 y un haber de 	0</td></tr>
+<tr style='background-color: azure'><td> -4505</td><td></td><td colspan='2'>utilidad-tributaria</td></tr>
+<tr style='background-color: azure'><td> </td><td>-4505</td><td></td><td> r(base-imponible) </td></tr>
+<tr><td colspan='6'>x-- Liquidando cuenta de resultados ( cuando hay ganancia) en utilidad-tributaria en base-imponible</td></tr>
+<tr style='background-color: azure'><td colspan='6'>La cuenta de liquidacion tiene un debe de 	0 y un haber de 	123497</td></tr>
+<tr style='background-color: azure'><td> 123497</td><td></td><td colspan='2'>utilidad-tributaria</td></tr>
+<tr style='background-color: azure'><td> </td><td>123497</td><td></td><td> r(base-imponible) </td></tr>
+<tr><td colspan='6'>x-- Liquidando cuenta de resultados ( cuando hay ganancia) en utilidad-tributaria en base-imponible</td></tr>
+<tr style='background-color: azure'><td colspan='6'>La cuenta de liquidacion tiene un debe de 	0 y un haber de 	29412</td></tr>
+<tr style='background-color: azure'><td> 29412</td><td></td><td colspan='2'>utilidad-tributaria</td></tr>
+<tr style='background-color: azure'><td> </td><td>29412</td><td></td><td> r(base-imponible) </td></tr>
+<tr style='color: white; background-color: black'> <td> 69797</td><td> 69797</td><td colspan='3'>( 31 de diciembre	2021	 ) </td></tr>
+<tr><td colspan='9'>alectrico® SpA</td></tr>
+<tr><td colspan='9'>v/Para determinar el valor del resultado del tributario período</td></tr>
+<table><tbody> 
+<table>
+<tr style='background-color: blanchedalmond'><td> </td><td>base-imponible</td></tr>
+<tr> <td> 3</td> <td>0</td><td> 29412</td></tr>
+<tr style='background-color: blanchedalmond'><td>29412</td></tr>
+</table>
+<table>
+<tr style='background-color: blanchedalmond'><td> </td><td>base-imponible</td></tr>
+<tr> <td> 4</td> <td>0</td><td> 123497</td></tr>
+<tr style='background-color: blanchedalmond'><td>123497</td></tr>
+</table>
+<tr  style='background-color: blanchedalmond'><td></td><td> base-imponible</td></tr>
+<tr> <td> 5</td> <td>4505</td> <td>0</td></tr>
+<tr style='background-color: blanchedalmond'><td>4505</td></tr>
+<tr  style='background-color: blanchedalmond'><td></td><td> base-imponible</td></tr>
+<tr> <td> 6</td> <td>45050</td> <td>0</td></tr>
+<tr style='background-color: blanchedalmond'><td>45050</td></tr>
+<tr  style='background-color: blanchedalmond'><td></td><td> base-imponible</td></tr>
+<tr> <td> 7</td> <td>29412</td> <td>0</td></tr>
+<tr style='background-color: blanchedalmond'><td>29412</td></tr>
+<tr  style='background-color: blanchedalmond'><td></td><td> base-imponible</td></tr>
+<tr> <td> 8</td> <td>50</td> <td>0</td></tr>
+<tr style='background-color: blanchedalmond'><td>50</td></tr>
+<tr  style='background-color: blanchedalmond'><td></td><td> base-imponible</td></tr>
+<tr> <td> 9</td> <td>1678</td> <td>0</td></tr>
+<tr style='background-color: blanchedalmond'><td>1678</td></tr>
 <tr  style='background-color: blanchedalmond'><td></td><td> base-imponible</td></tr>
 <tr> <td> 131</td> <td>2417</td> <td>0</td></tr>
 <tr style='background-color: blanchedalmond'><td>2417</td></tr>

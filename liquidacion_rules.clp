@@ -843,7 +843,7 @@
    ?f1          <- (liquidacion (partida ?numero) (cuenta ?nombre) (ano ?ano) (liquidadora ?liquidora))
    ?acreedora   <- (cuenta (de-resultado true) (partida nil) (parte ?parte) (nombre ?nombre)  (debe ?debe)  (haber ?haber)  (tipo acreedora) (liquidada false) (grupo ?grupo) (circulante ?circulante))
    ?liquidador  <- (cuenta (partida ?partida-de-liquidacion) (nombre ?liquidora) (debe ?debe2) (haber ?haber2) (tipo liquidadora) )
-   (not (cuenta (partida ?partida-de-liquidacion) (nombre ?nombre) ))
+   (not (cuenta (partida ?partida-de-liquidacion) (nombre ?nombre) (liquidada true) ))
    ( test (> ?debe2 ?haber2))
    ( test (eq ?nombre utilidad-tributaria))
 
@@ -851,7 +851,6 @@
 
    ( bind ?saldo (round (* 1 (- ?haber2 ?debe2))))
 ;   ( modify ?acreedora  (liquidada true))
-
    ( assert ( cuenta
                 ( dia ?dia)
                 ( mes ?mes)
@@ -874,7 +873,7 @@
    )
    ( modify ?partida (debe (+ ?debep ?saldo)) ( haber (+ ?haberp ?saldo)))
  ( printout t "x-- Liquidando cuenta de resultados, cuando no hay utilidad" ?nombre " en " ?liquidora crlf)
- ( printout t "La cuenta de liquidacion tiene un debe de " tab ?debe2 " y un haber de " tab ?haber2 crlf)
+ ( printout t "La cuenta " ?liquidora " ptda " ?partida-de-liquidacion " tiene un debe de " tab ?debe2 " y un haber de " tab ?haber2 crlf)
    ( printout t tab tab ?saldo tab "--|" tab tab tab ?nombre crlf)
    ( printout t tab tab tab "  |->" tab ?saldo tab tab "r<" ?liquidora ">" crlf)
    ( printout t crlf )
@@ -914,7 +913,7 @@
    ?acreedora   <- (cuenta (de-resultado true) (partida nil) (parte ?parte) (nombre ?nombre)  (debe ?debe)  (haber ?haber)  (tipo acreedora) (liquidada false) (grupo ?grupo) (circulante ?circulante))
 
    ?liquidador  <- (cuenta (partida ?partida-de-liquidacion) (nombre ?liquidora) (debe ?debe2) (haber ?haber2) (tipo liquidadora) )
-   (not (cuenta (partida ?partida-de-liquidacion) (nombre ?nombre) ))
+   (not (cuenta (partida ?partida-de-liquidacion) (nombre ?nombre) (liquidada true) ))
 
 ;   ( test (and (= ?debe 0) (= ?haber 0)))
    ( test (> ?haber2 ?debe2))
