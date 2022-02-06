@@ -102,7 +102,7 @@
   ( empresa (nombre ?empresa))
 
   ( subtotales (cuenta ingresos-brutos) (acreedor ?ingresos-brutos))
-  ( subtotales (cuenta ventas) (acreedor ?ventas))
+  ( subtotales (cuenta ventas) (deber ?ventas-deber) (acreedor ?ventas-acreedor))
   ( subtotales (cuenta devolucion-sobre-ventas) (debe ?devolucion-sobre-ventas))
   ( subtotales (cuenta compras) (debe ?compras))
   ( subtotales (cuenta gastos-sobre-compras) (debe ?gastos-sobre-compras))
@@ -128,9 +128,11 @@
   ( subtotales (cuenta idpc) (haber ?idpc))
   ( subtotales (cuenta reserva-legal) (haber ?reserva-legal))
 
-  ( cuenta (nombre utilidad-tributaria) (partida ?p&:(neq nil ?p))
-                                (haber ?utilidad-tributaria-haber)
-                                (debe  ?utilidad-tributaria-debe))
+; ( cuenta (nombre utilidad-tributaria) (partida ?p&:(neq nil ?p))
+;                               (haber ?utilidad-tributaria-haber)
+;                               (debe  ?utilidad-tributaria-debe))
+
+  ( subtotales (cuenta utilidad-tributaria) (deber ?utilidad-tributaria-deber) (acreedor ?utilidad-tributaria-acreedor))
 
   ( subtotales (cuenta utilidad) (acreedor ?utilidad-acreedor) (deber ?utilidad-deber) )
 
@@ -158,6 +160,7 @@
   ( selecciones (regimen ?regimen) (incentivo-al-ahorro ?incentivo-al-ahorro))
 
  =>
+  (bind ?ventas   (- ?ventas-acreedor ?ventas-deber))
   (bind ?utilidad (- ?utilidad-acreedor ?utilidad-deber))
   (bind ?salarios (- ?salarios-deber ?salarios-acreedor))
 
@@ -170,8 +173,8 @@
        ?gastos-administrativos-haber))
     
   (bind ?utilidad-tributaria
-   (- ?utilidad-tributaria-haber
-      ?utilidad-tributaria-debe))
+   (- ?utilidad-tributaria-acreedor
+      ?utilidad-tributaria-deber))
 
   (bind ?ventas-netas           (- ?ventas ?devolucion-sobre-ventas))
 

@@ -110,7 +110,6 @@
 
 ( defrule calculando-subtotal-de-cuentas-liquidadas
   ( empresa (nombre ?empresa))
-  (no)
   ( partida (numero ?numero) (dia ?dia) (mes ?mes) (ano ?ano))
   ( balance (dia ?top) (mes ?mes_top) (ano ?ano_top ))
   ( test (>= (to_serial_date ?top ?mes_top ?ano_top) (to_serial_date ?dia ?mes ?ano)))
@@ -146,8 +145,8 @@
 
 
 ( defrule encabezado
-  (no)
   ?s <- (subtotales (cuenta ?nombre) (totalizado false))
+(no)
   ?cuenta <- ( cuenta
      ( grupo patrimonio)
      ( partida nil)
@@ -212,7 +211,7 @@
 ( defrule encabezados-utilidad-tributaria
   (not (exists (subtotales (cuenta utilidad-tributaria) (totalizado true))))
   ?s <- (subtotales (cuenta utilidad-tributaria))
-  (not (exists ( hacer ?nombre)))
+  (not (exists ( hacer utilidad-tributaria)))
 
  =>
   ( printout t crlf crlf crlf )

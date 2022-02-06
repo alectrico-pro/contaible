@@ -590,6 +590,7 @@
    (empresa (nombre ?empresa))
    (ajuste-anual-de-resultado-tributario (partida ?numero))
 
+
    ?partida     <- (partida (dia ?dia) (mes ?mes) (numero ?numero) (debe ?debep) (haber ?haberp))
    ?f1          <- (tributacion (partida ?numero) (cuenta ?nombre) (ano ?ano) (liquidadora ?liquidora) (efecto deduccion))
    ?acreedora   <- (cuenta (partida ?numero2&:(neq nil ?numero2)) (parte ?parte) (nombre ?nombre)  (debe ?debe)  (haber ?haber&:(> ?haber 0))  (tipo ?tipo) (liquidada ?liquidada) (tributada false) (grupo ?grupo) (circulante ?circulante))
@@ -641,8 +642,8 @@
      ( debe (+ ?debe2 ?saldo) )
    )
    ( modify ?partida (debe (+ ?debep ?saldo)) ( haber (+ ?haberp ?saldo)))
- ; ( printout t "t-- Tributando cuenta " ?nombre " en " ?liquidora crlf)
- ; ( printout t "La cuenta de base imponible tiene un debe de " tab ?debe2 " y un haber de " tab ?haber2 crlf)
+  ( printout t "t-- Tributando cuenta " ?nombre " en " ?liquidora crlf)
+  ( printout t "La cuenta de base imponible tiene un debe de " tab ?debe2 " y un haber de " tab ?haber2 crlf)
    ( printout t tab tab ?saldo tab "--|" tab tab "r<" ?liquidora "> partida " crlf)
    ( printout t tab tab tab "  |->" tab ?saldo tab tab ?nombre crlf)
    ( printout t crlf )
@@ -696,8 +697,8 @@
      ( saldo ?saldo )
    )
    ( modify ?partida (debe (+ ?debep ?saldo)) ( haber (+ ?haberp ?saldo)))
-  ( printout t "t-- Tributando cuenta " ?nombre " en " ?liquidora crlf)
-;  ( printout t "La cuenta de base imponible tiene un debe de " tab ?debe2 " y un haber de " tab ?haber2 crlf)
+ ( printout t "t-- Tributando cuenta " ?nombre " en " ?liquidora crlf)
+ ( printout t "La cuenta de base imponible tiene un debe de " tab ?debe2 " y un haber de " tab ?haber2 crlf)
    ( printout t tab tab ?saldo tab "--|" tab tab tab ?nombre crlf)
    ( printout t tab tab tab "  |->" tab ?saldo tab tab "r<" ?liquidora ">" crlf)
    ( printout t crlf )
@@ -715,9 +716,10 @@
 
 (defrule obtencion-utilidad-tributaria-negativa
    (declare (salience 81))
+(no)
    (fila ?numero)
 
-   (ajuste-anual-de-resultado-tributario (partida ?numero))
+;   (ajuste-anual-de-resultado-tributario (partida ?numero))
 
 
    (empresa (nombre ?empresa))
@@ -753,8 +755,8 @@
      ( saldo ?saldo )
    )
    ( modify ?partida (debe (+ ?debep ?saldo)) ( haber (+ ?haberp ?saldo)))
-  ;  ( printout t "x-- Liquidando cuenta de resultados, cuando no hay utilidad" ?nombre " en " ?liquidora crlf)
-   ;( printout t "La cuenta de liquidacion tiene un debe de " tab ?debe2 " y un haber de " tab ?haber2 crlf)
+ ( printout t "x-- Liquidando cuenta de resultados, cuando no hay utilidad" ?nombre " en " ?liquidora crlf)
+ ( printout t "La cuenta de liquidacion tiene un debe de " tab ?debe2 " y un haber de " tab ?haber2 crlf)
    ( printout t tab tab ?saldo tab "--|" tab tab tab ?nombre crlf)
    ( printout t tab tab tab "  |->" tab ?saldo tab tab "r<" ?liquidora ">" crlf)
    ( printout t crlf )
@@ -771,9 +773,10 @@
 
 (defrule obtencion-utilidad-negativa
    (declare (salience 81))
+  (no)
    (fila ?numero)
   
-   (ajuste-anual-de-resultado-financiero (partida ?numero))
+;   (ajuste-anual-de-resultado-financiero (partida ?numero))
 
 
    (empresa (nombre ?empresa))
@@ -829,9 +832,11 @@
 
 (defrule obtencion-utilidad-tributaria-positiva
    ( declare (salience 81)) 
+
    ( fila ?numero)
 
-   (ajuste-anual-de-resultado-tributario (partida ?numero))
+
+;   (exists  (ajuste-anual-de-resultado-tributario (partida ?p&:(neq ?p nil))))
 
    ( empresa (nombre ?empresa))
    
@@ -842,15 +847,20 @@
 
    ?f1          <- (liquidacion (partida ?numero) (cuenta ?nombre) (ano ?ano) (liquidadora ?liquidora))
 
-   ?acreedora   <- (cuenta (de-resultado true) (partida nil) (parte ?parte) (nombre ?nombre)  (debe ?debe)  (haber ?haber)  (tipo acreedora) (liquidada false) (grupo ?grupo) (circulante ?circulante))
-   ?liquidador  <- (cuenta (nombre ?liquidora) (debe ?debe2) (haber ?haber2) (tipo liquidadora) )
 
-   ( test (and (= ?debe 0) (= ?haber 0)))
+   ;esta es la cuenta de referenica, los cambios no se realizan aqui, sino que se agregan cuentas del 
+   ;mismo tipo, con assert en RHS.
+   ?acreedora   <- (cuenta (de-resultado true) (partida nil) (parte ?parte) (nombre ?nombre)  (debe ?debe)  (haber ?haber)  (tipo acreedora) (liquidada false) (grupo ?grupo) (circulante ?circulante))
+
+   ?liquidador  <- (cuenta (partida ?partida-de-liquidacion) (nombre ?liquidora) (debe ?debe2) (haber ?haber2) (tipo liquidadora) )
+   (not (cuenta (partida ?partida-de-liquidacion) (nombre ?nombre) ))
+
+;   ( test (and (= ?debe 0) (= ?haber 0)))
    ( test (> ?haber2 ?debe2))
    ( test (eq ?nombre utilidad-tributaria))
   =>
    ( bind ?saldo (round (- (- (- ?haber2 ?debe2) ?reserva-legal  ) ?idpc )))
-   ( modify ?acreedora  (liquidada true))
+;   ( modify ?acreedora  (liquidada true))
    ( assert ( cuenta
                 ( dia ?dia)
                 ( mes ?mes)
@@ -862,7 +872,7 @@
                 ( nombre ?nombre)
                 ( grupo ?grupo)
                 ( tipo acreedora)
-                ( partida ?numero)
+                ( partida ?partida-de-liquidacion)
                 ( liquidada true)
                 ( origen real )
                 ( haber (+ ?haber ?saldo))))
@@ -872,8 +882,8 @@
      ( saldo ?saldo )
    )
    ( modify ?partida (debe (+ ?debep ?saldo)) ( haber (+ ?haberp ?saldo)))
-;:   ( printout t "x-- Liquidando cuenta de resultados, cuando hay ganancia" ?nombre " en " ?liquidora crlf)
- ;:  ( printout t "La cuenta de liquidacion tiene un debe de " tab ?debe2 " y un haber de " tab ?haber2 crlf)
+  ( printout t "x-- Liquidando cuenta de resultados, cuando hay ganancia en " ?nombre " hacia " ?liquidora crlf)
+  ( printout t "La cuenta de " ?partida-de-liquidacion tab ?liquidora tab ?debe2 " y un haber de " tab ?haber2 crlf)
    ( printout t tab tab ?saldo tab "--|" tab tab tab ?nombre crlf)
    ( printout t tab tab tab "  |->" tab ?saldo tab tab "r<" ?liquidora ">" crlf)
    ( printout t crlf )
