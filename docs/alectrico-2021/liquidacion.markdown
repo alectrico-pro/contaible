@@ -50,7 +50,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <tr><td></td><td>2417</td><td></td><td> r(base-imponible)  </td></tr>
 <tr style='color: white; background-color: black'> <td> 87314</td><td> 87314</td><td colspan='3'>( 31 de diciembre	2021	 ) </td></tr>
 <tr><td colspan='9'>alectrico® SpA</td></tr>
-<tr><td colspan='9'>Ajuste Anual Año: Liquidacion Tributaria deducciones 2021</td></tr>
+<tr><td colspan='9'>Ajuste Anual Año: Liquidacion Tributaria deducciones correccion-monetariatab2021</td></tr>
 <table><tbody> 
 <tr  style='background-color: blanchedalmond'><td></td><td> base-imponible</td></tr>
 <tr> <td> 131</td> <td>2417</td> <td>0</td></tr>
