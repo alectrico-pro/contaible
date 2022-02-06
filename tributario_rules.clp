@@ -421,22 +421,19 @@
   (printout t "|" tab tab "|     " ?utilidad-antes-de-idpc tab "Resultado Antes de Impuesto" crlf)
   (printout k "<tr style='font-weight:bold; background-color: azure'><td> <td></td></td><td> </td><td></td><td align='right'>" ?utilidad-antes-de-idpc "</td><td> Resultado Antes de Impuesto</td></tr>" crlf)
 
-  ( bind ?utilidad-despues 0)
 
-  ( if (< ?resultado 0 ) then
+  ( if (< ?utilidad-antes-de-idpc 0 )
+   then
     (printout t "|" tab tab "| (-) " ?idpc tab "Impuesto Determinado: " (round (* ?tasa-idpc 100) ) " en " ?ano crlf)
-    (printout k "<tr style='background-color: lightgreen' ><td></td><td></td><td></td><td> (X) </td><td align='right'> " ?idpc "</td><td> Impuesto No Aplica porque hay pérdida tributaria </td></tr>" crlf)
+    (printout k "<tr style='color: white;background-color: lightgreen' ><td></td><td></td><td></td><td> (X) </td><td align='right'> " ?idpc "</td><td> Impuesto No Aplica porque hay pérdida tributaria </td></tr>" crlf)
     (bind ?utilidad-despues ?utilidad-antes-de-idpc )
-  )
-
-
-  ( if (> ?resultado 0 ) then
+   else
     (printout t "|" tab tab "| (-) " ?idpc tab "Impuesto Determinado, factor es " ?tasa-idpc " en " ?ano crlf)
-    (printout k "<tr style='color: white, font-weight:bold; background-color: crimson'><td></td><td></td><td></td><td> (-) </td><td align='right'> " ?idpc "</td><td> Impuesto Determinado, factor es: " ?tasa-idpc " en " ?ano " </td></tr>" crlf)
+    (printout k "<tr style='color: white; font-weight:bold; background-color: crimson'><td></td><td></td><td></td><td> (-) </td><td align='right'> " ?idpc "</td><td> Impuesto Determinado, factor es: " ?tasa-idpc " en " ?ano " </td></tr>" crlf)
     (bind ?utilidad-despues (- ?utilidad-antes-de-idpc ?idpc))
   )
 
-  (printout t "|" tab tab "|     " ?utilidad-despues tab "Utilidad Después de Impuestos" crlf)
+  (printout t "|" tab tab "|     " ?utilidad-despues tab "Utilidad Calc. Desp.Imp." crlf)
   (printout k "<tr style='font-weight:bold;background-color: azure'><td> <td></td></td><td> </td><td></td><td align='right'>" ?utilidad-despues "</td><td> Utilidad Después de Impuestos <small> Calculada </small></td></tr>" crlf)
 
   (printout t "---------------------------------------------------------------------------" crlf)
@@ -449,34 +446,41 @@
   (printout k "<tr><th> <td colspan=6> DETERMINACIÓN DE LA BASE IMPONIBLE </td></th></tr>" crlf)
   (printout k "<tr><th> <td colspan=6> Determina los impuestos del regimen " ?regimen "</td></th></tr>" crlf)
   (printout k "<tbody>" crlf)
-  (printout t "|" tab tab "|     " ?utilidad tab "Utilidad Financiera (módulo liquidación)" crlf)
-  (printout k "<tr style='font-weight:bold;background-color: azure'><td> <td></td></td><td> </td><td></td><td align='right'>" ?utilidad "</td><td> Utilidad del Ejercicio (módulo liquidación)</td></tr>" crlf)
+  (printout t "|" tab tab "|     " ?utilidad tab "Utilidad Financiera Desp. Imp. (módulo liquidación)" crlf)
+  (printout k "<tr style='font-weight:bold;background-color: azure'><td> <td></td></td><td> </td><td></td><td align='right'>" ?utilidad "</td><td> Utilidad del Ejercicio Después de Impuesto (módulo liquidación)</td></tr>" crlf)
 
   (printout t "| (-) " tab ?herramientas tab tab tab tab "Depreciación Instantanea Propyme" crlf)
   (printout t "| (-) " tab ?amortizacion-acumulada-instantanea tab tab tab tab "Amortizacion Instántanea Intangibles (no-contable) " crlf)
 
-  (printout k "<tr><td> (-) </td><td align='right'>" ?herramientas "</td><td></td><td></td><td></td><td> Depreciación Instantánea Activo Fijo Propyme </td></tr>" crlf)
+  ( printout k "<tr><td> (-) </td><td align='right'>" ?herramientas "</td><td></td><td></td><td></td><td> Depreciación Instantánea Activo Fijo Propyme </td></tr>" crlf)
   ( printout k "<tr><td> (-) </td><td align='right'>" ?amortizacion-acumulada-instantanea "</td><td></td><td></td><td></td><td> Amortización Instantánea Intangibles </td></tr>" crlf)
 
   ( printout t "|" ?aportes tab tab tab tab "(+) Aportes Cap." crlf)
   ( printout k "<tr><td> (+) </td><td align='right'>" ?aportes "</td><td></td><td></td><td></td><td> Aportes al Capital </td></tr>" crlf)
 
-  (printout t "|" tab tab "| (=) " ?resultado tab "RLI Calculada" crlf)
-  (printout k "<tr><td> <td></td></td><td> </td><td> (=) </td><td align='right' style = 'font-weight:bold; background-color: azure'>" ?resultado "</td><td> RLI Calculada </td></tr>" crlf)
+  (printout t "|" tab tab "| (=) " ?resultado tab "RLI Calculada (1)" crlf)
+  (printout k "<tr><td> <td></td></td><td> </td><td> (1) (=) </td><td align='right' style = 'font-weight:bold; background-color: azure'>" ?resultado "</td><td> RLI Calculada </td></tr>" crlf)
 
  
 
-  (printout t "|" tab tab "| (-) " ?idpc tab "Impuesto Determinado" crlf)
-  (printout k "<tr><td> <td></td></td><td> </td><td> (-) </td><td align='right'>" ?idpc "</td><td> Impuesto Determinado: " (round (* ?tasa-idpc 100) ) "% </td></tr>" crlf)
+;  (printout t "|" tab tab "| (-) " ?idpc tab "Impuesto Determinado" crlf)
+;  (printout k "<tr><td> <td></td></td><td> </td><td> (-) </td><td align='right'>" ?idpc "</td><td> Impuesto Determinado: " (round (* ?tasa-idpc 100) ) "% </td></tr>" crlf)
  
-  (printout t "|" tab tab "| (=) " ?utilidad-tributaria tab "Utilidad Tributaria desp.Imptos (m. liquidaciones)" crlf) 
+  (printout t "|" tab tab "| (=) " ?utilidad-tributaria tab "RLI desp.Imptos (2) (m. liquidaciones)" crlf) 
+
+  (printout t "(1) debe ser igual que (2) " crlf)
 
   (if (eq ?utilidad-tributaria ?resultado)
    then
-    (printout k "<tr><td></td><td></td><td></td><td> (=) </td><td align='right' style='background-color: lightgreen'>" ?utilidad-tributaria "</td><td> RESULTADO DESPUES DE IMPUESTOS (módulo liquidaciones) <small> " ?regimen "</small></td></tr>" crlf)
+    (printout k "<tr><td></td><td></td><td></td><td> (2) </td><td align='right' style='background-color: lightgreen'>" ?utilidad-tributaria "</td><td> RLI desp. Imptos ( m. liquidaciones) <small> " ?regimen "</small></td></tr>" crlf)
+   
    else
-    (printout k "<tr><td></td><td></td><td></td><td> (=) </td><td align='right' style='font-weight:bold; background-color: lightgreen'>" ?utilidad-tributaria "</td><td> RESULTADO DESPUES DE IMPUESTOS (módulo liquidaciones) <small>" ?regimen "</small></td></tr>" crlf))
+    (printout k "<tr><td></td><td></td><td></td><td> (2) </td><td align='right' style='font-weight:bold; background-color: lightgreen'>" ?utilidad-tributaria "</td><td>  RLI deps. Imptos (m. liquidaciones) <small>" ?regimen "</small></td></tr>" crlf)
+    (printout k "<tr></tr><tr><td colspan=6 rowspan=1 style='color: white; font-weight:bold; background-color: crimson'> (1) y (2) deben ser iguales: Lasliquidaciones pueden que esté con problemas. Revise que las cuentas de resultados estén bien configuradas en cuentas.txt. Deben tener grupo=resultado  </td></tr>" crlf)
+)
+
  
+
  (if (and (eq ?incentivo-al-ahorro true) (eq ?regimen propyme) (> ?utilidad-tributaria 0))
    then 
     (printout t "  INCENTIVO AL AHORRO SOLICITADO EN selecciones.txt " crlf)
