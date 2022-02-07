@@ -60,10 +60,8 @@ NO se han practicado liquidaciones, por lo que SÍ se muestran cuentas nominales
 <tr>
 <td>Herramientas<small>herramientas</small></td> <td align='right'>218470</td> <td align='right'>0</td> <td> | </td> <td align='right'> 218470</td> <td align='right'>0</td>
 </tr>
-<tr style=' background: #fff; border: 1px solid red;'>
-<td>Insumos<small>insumos</small></td> <td align='right'>414942</td> <td align='right'>44044</td> <td> | </td> <td align='right'> 370898</td> <td align='right'>0</td> </tr>
 <tr>
-<td>Intangibles<small>intangibles</small> </td> <td align='right'>2440000</td> <td align='right'>52631</td> <td> | </td> <td align='right'> 2387369</td> <td align='right'>0</td> 
+<td>Intangibles<small>intangibles</small> </td> <td align='right'>2790000</td> <td align='right'>52631</td> <td> | </td> <td align='right'> 2737369</td> <td align='right'>0</td> 
 <td colspan='2' style=' background: #faa; border: 1px solid red;'>Subcuenta </td>
 </tr>
 <tr>
@@ -79,6 +77,8 @@ NO se han practicado liquidaciones, por lo que SÍ se muestran cuentas nominales
 <tr>
 <td>IVA Débitos<small>iva-debito</small></td> <td align='right'>346685</td> <td align='right'>382631</td> <td> | </td> <td align='right'> 0</td> <td align='right'>35946</td>
 </tr>
+<tr style=' background: #fff; border: 1px solid red;'>
+<td>Insumos<small>insumos</small></td> <td align='right'>414942</td> <td align='right'>394044</td> <td> | </td> <td align='right'> 20898</td> <td align='right'>0</td> </tr>
 <tr>
 <td>Caja<small>caja</small></td> <td align='right'>1107841</td> <td align='right'>1101880</td> <td> | </td> <td align='right'> 5961</td> <td align='right'>0</td>
 </tr>
@@ -98,6 +98,6 @@ NO se han practicado liquidaciones, por lo que SÍ se muestran cuentas nominales
 </tr>
 </tbody>
 <tfoot>
-<tr> <td></td> <td align='right'> <div>21548736</div></td> <td align='right'> <div>20530599</div></td><td> | </td> <td align='right'> <div>7878578</div></td> <td align='right'> <div>6860441</div></td> </tr>
+<tr> <td></td> <td align='right'> <div>22248736</div></td> <td align='right'> <div>20880599</div></td><td> | </td> <td align='right'> <div>8228578</div></td> <td align='right'> <div>6860441</div></td> </tr>
 </tfoot>
 </table>
