@@ -13,6 +13,8 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <table style='background-color: lightyellow' ><tbody>
 <tr style='color: white; background-color: black'><td colspan='9'> Partida 209</td></tr>
 <tr><th>DEBE</th><th> HABER </th> <th colspan='6'> Cuenta </th></tr>
+<tr><td>29412</td><td></td><td colspan='2'>ventas</td></tr>
+<tr><td></td><td>29412</td><td></td><td> r(base-imponible) </td></tr>
 <tr><td>4505</td><td></td><td colspan='2'>ventas</td></tr>
 <tr><td></td><td>4505</td><td></td><td> r(base-imponible) </td></tr>
 <tr><td>84</td><td></td><td colspan='2'>ventas</td></tr>
@@ -25,19 +27,21 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <tr><td></td><td>123497</td><td></td><td> r(base-imponible) </td></tr>
 <tr><td>178</td><td></td><td colspan='2'>costos-de-ventas</td></tr>
 <tr><td></td><td>178</td><td></td><td> r(base-imponible) </td></tr>
+<tr><td>334</td><td></td><td colspan='2'>correccion-monetaria</td></tr>
+<tr><td></td><td>334</td><td></td><td> r(base-imponible) </td></tr>
 <tr><td>298</td><td></td><td colspan='2'>correccion-monetaria</td></tr>
 <tr><td></td><td>298</td><td></td><td> r(base-imponible) </td></tr>
 <tr><td>33</td><td></td><td colspan='2'>correccion-monetaria</td></tr>
 <tr><td></td><td>33</td><td></td><td> r(base-imponible) </td></tr>
-<tr style='color: white; background-color: black'> <td> 187419</td><td> 187419</td><td colspan='3'>( 31 de febrero	2021	 ) </td></tr>
+<tr style='color: white; background-color: black'> <td> 217165</td><td> 217165</td><td colspan='3'>( 31 de marzo	2021	 ) </td></tr>
 <tr><td colspan='9'>alectrico® SpA</td></tr>
 <tr><td colspan='9'>Ajuste Anual Año: Liquidacion Tributaria Aportes 2021</td></tr>
 <table><tbody> 
 <table>
 <tr style='background-color: blanchedalmond'><td> </td><td colspan='2'>base-imponible</td></tr>
 <tr><td></td><td> DEBE </td> <td> HABER </td></tr>
-<tr><td></td><td>0</td><td> 187419</td></tr>
-<tr><td></td><td></td><td  style='background-color: blanchedalmond'>187419</td></tr>
+<tr><td></td><td>0</td><td> 217165</td></tr>
+<tr><td></td><td></td><td  style='background-color: blanchedalmond'>217165</td></tr>
 </table>
 <table style='background-color: lightyellow' ><tbody>
 <tr style='color: white; background-color: black'><td colspan='9'> Partida 210</td></tr>
@@ -50,35 +54,43 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <tr><td>45050</td><td></td><td colspan='2'> r(base-imponible)  </td></tr>
 <tr><td></td><td>29412</td><td></td><td>ventas</td></tr>
 <tr><td>29412</td><td></td><td colspan='2'> r(base-imponible)  </td></tr>
+<tr><td></td><td>185</td><td></td><td>costos-de-ventas</td></tr>
+<tr><td>185</td><td></td><td colspan='2'> r(base-imponible)  </td></tr>
 <tr><td></td><td>2848</td><td></td><td>costos-de-ventas</td></tr>
 <tr><td>2848</td><td></td><td colspan='2'> r(base-imponible)  </td></tr>
 <tr><td></td><td>50</td><td></td><td>costos-de-ventas</td></tr>
 <tr><td>50</td><td></td><td colspan='2'> r(base-imponible)  </td></tr>
 <tr><td></td><td>1678</td><td></td><td>costos-de-ventas</td></tr>
 <tr><td>1678</td><td></td><td colspan='2'> r(base-imponible)  </td></tr>
-<tr><td></td><td>4202</td><td></td><td>depreciacion</td></tr>
-<tr><td>4202</td><td></td><td colspan='2'> r(base-imponible)  </td></tr>
-<tr><td></td><td>4202</td><td></td><td>depreciacion</td></tr>
-<tr><td>4202</td><td></td><td colspan='2'> r(base-imponible)  </td></tr>
-<tr><td></td><td>2417</td><td></td><td>amortizacion</td></tr>
-<tr><td>2417</td><td></td><td colspan='2'> r(base-imponible)  </td></tr>
-<tr><td></td><td>2417</td><td></td><td>amortizacion</td></tr>
-<tr><td>2417</td><td></td><td colspan='2'> r(base-imponible)  </td></tr>
+<tr><td></td><td>6926</td><td></td><td>gastos-administrativos</td></tr>
+<tr><td>6926</td><td></td><td colspan='2'> r(base-imponible)  </td></tr>
 <tr><td></td><td>3128</td><td></td><td>gastos-administrativos</td></tr>
 <tr><td>3128</td><td></td><td colspan='2'> r(base-imponible)  </td></tr>
+<tr><td></td><td>4202</td><td></td><td>depreciacion</td></tr>
+<tr><td>4202</td><td></td><td colspan='2'> r(base-imponible)  </td></tr>
+<tr><td></td><td>4202</td><td></td><td>depreciacion</td></tr>
+<tr><td>4202</td><td></td><td colspan='2'> r(base-imponible)  </td></tr>
+<tr><td></td><td>4202</td><td></td><td>depreciacion</td></tr>
+<tr><td>4202</td><td></td><td colspan='2'> r(base-imponible)  </td></tr>
+<tr><td></td><td>2417</td><td></td><td>amortizacion</td></tr>
+<tr><td>2417</td><td></td><td colspan='2'> r(base-imponible)  </td></tr>
+<tr><td></td><td>2417</td><td></td><td>amortizacion</td></tr>
+<tr><td>2417</td><td></td><td colspan='2'> r(base-imponible)  </td></tr>
+<tr><td></td><td>2417</td><td></td><td>amortizacion</td></tr>
+<tr><td>2417</td><td></td><td colspan='2'> r(base-imponible)  </td></tr>
 <tr><td></td><td>20992</td><td></td><td>gastos-promocionales</td></tr>
 <tr><td>20992</td><td></td><td colspan='2'> r(base-imponible)  </td></tr>
 <tr><td></td><td>151252</td><td></td><td>taladro</td></tr>
 <tr><td>151252</td><td></td><td colspan='2'> r( base-imponible )  </td></tr>
-<tr style='color: white; background-color: black'> <td> 301565</td><td> 301565</td><td colspan='3'>( 31 de febrero	2021	 ) </td></tr>
+<tr style='color: white; background-color: black'> <td> 315295</td><td> 315295</td><td colspan='3'>( 31 de marzo	2021	 ) </td></tr>
 <tr><td colspan='9'>alectrico® SpA</td></tr>
 <tr><td colspan='9'>Ajuste Anual Año: Liquidacion Tributaria Deducciones 2021</td></tr>
 <table><tbody> 
 <table>
 <tr style='background-color: blanchedalmond'><td></td><td colspan = '2'> base-imponible</td></tr>
 <tr><td></td><td> DEBE </td> <td> HABER </td></tr>
-<tr><td></td><td>301565</td> <td>187419</td></tr>
-<tr><td></td><td style='background-color: blanchedalmond'>114146</td></tr>
+<tr><td></td><td>315295</td> <td>217165</td></tr>
+<tr><td></td><td style='background-color: blanchedalmond'>98130</td></tr>
 </table>
 <table style='background-color: lightyellow' ><tbody>
 <tr style='color: white; background-color: black'><td colspan='9'> Partida 213</td></tr>
@@ -93,21 +105,25 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <tr><td></td><td>84</td><td></td><td> r(perdidas-y-ganancias) </td></tr>
 <tr><td>4505</td><td></td><td colspan='2'>ventas</td></tr>
 <tr><td></td><td>4505</td><td></td><td> r(perdidas-y-ganancias) </td></tr>
+<tr><td>29412</td><td></td><td colspan='2'>ventas</td></tr>
+<tr><td></td><td>29412</td><td></td><td> r(perdidas-y-ganancias) </td></tr>
 <tr><td>178</td><td></td><td colspan='2'>costos-de-ventas</td></tr>
 <tr><td></td><td>178</td><td></td><td> r(perdidas-y-ganancias) </td></tr>
 <tr><td>33</td><td></td><td colspan='2'>correccion-monetaria</td></tr>
 <tr><td></td><td>33</td><td></td><td> r(perdidas-y-ganancias) </td></tr>
 <tr><td>298</td><td></td><td colspan='2'>correccion-monetaria</td></tr>
 <tr><td></td><td>298</td><td></td><td> r(perdidas-y-ganancias) </td></tr>
-<tr style='color: white; background-color: black'> <td> 187419</td><td> 187419</td><td colspan='3'>( 31 de febrero	2021	 ) </td></tr>
+<tr><td>334</td><td></td><td colspan='2'>correccion-monetaria</td></tr>
+<tr><td></td><td>334</td><td></td><td> r(perdidas-y-ganancias) </td></tr>
+<tr style='color: white; background-color: black'> <td> 217165</td><td> 217165</td><td colspan='3'>( 31 de marzo	2021	 ) </td></tr>
 <tr><td colspan='9'>alectrico® SpA</td></tr>
 <tr><td colspan='9'>Ajuste Anual Año: Liquidacion Financiera Ganancias 2021</td></tr>
 <table><tbody> 
 <table>
 <tr style='background-color: blanchedalmond'><td> </td><td colspan='2'>perdidas-y-ganancias</td></tr>
 <tr><td></td><td> DEBE </td> <td> HABER </td></tr>
-<tr><td></td><td>0</td><td> 187419</td></tr>
-<tr><td></td><td></td><td  style='background-color: blanchedalmond'>187419</td></tr>
+<tr><td></td><td>0</td><td> 217165</td></tr>
+<tr><td></td><td></td><td  style='background-color: blanchedalmond'>217165</td></tr>
 </table>
 <table style='background-color: lightyellow' ><tbody>
 <tr style='color: white; background-color: black'><td colspan='9'> Partida 212</td></tr>
@@ -126,45 +142,53 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <tr><td>50</td><td></td><td colspan='2'> r(perdidas-y-ganancias) </td></tr>
 <tr><td></td><td>2848</td><td> </td><td>costos-de-ventas</td></tr>
 <tr><td>2848</td><td></td><td colspan='2'> r(perdidas-y-ganancias) </td></tr>
-<tr><td></td><td>4202</td><td> </td><td>depreciacion</td></tr>
-<tr><td>4202</td><td></td><td colspan='2'> r(perdidas-y-ganancias) </td></tr>
-<tr><td></td><td>4202</td><td> </td><td>depreciacion</td></tr>
-<tr><td>4202</td><td></td><td colspan='2'> r(perdidas-y-ganancias) </td></tr>
-<tr><td></td><td>2417</td><td> </td><td>amortizacion</td></tr>
-<tr><td>2417</td><td></td><td colspan='2'> r(perdidas-y-ganancias) </td></tr>
-<tr><td></td><td>2417</td><td> </td><td>amortizacion</td></tr>
-<tr><td>2417</td><td></td><td colspan='2'> r(perdidas-y-ganancias) </td></tr>
+<tr><td></td><td>185</td><td> </td><td>costos-de-ventas</td></tr>
+<tr><td>185</td><td></td><td colspan='2'> r(perdidas-y-ganancias) </td></tr>
 <tr><td></td><td>3128</td><td> </td><td>gastos-administrativos</td></tr>
 <tr><td>3128</td><td></td><td colspan='2'> r(perdidas-y-ganancias) </td></tr>
+<tr><td></td><td>6926</td><td> </td><td>gastos-administrativos</td></tr>
+<tr><td>6926</td><td></td><td colspan='2'> r(perdidas-y-ganancias) </td></tr>
+<tr><td></td><td>4202</td><td> </td><td>depreciacion</td></tr>
+<tr><td>4202</td><td></td><td colspan='2'> r(perdidas-y-ganancias) </td></tr>
+<tr><td></td><td>4202</td><td> </td><td>depreciacion</td></tr>
+<tr><td>4202</td><td></td><td colspan='2'> r(perdidas-y-ganancias) </td></tr>
+<tr><td></td><td>4202</td><td> </td><td>depreciacion</td></tr>
+<tr><td>4202</td><td></td><td colspan='2'> r(perdidas-y-ganancias) </td></tr>
+<tr><td></td><td>2417</td><td> </td><td>amortizacion</td></tr>
+<tr><td>2417</td><td></td><td colspan='2'> r(perdidas-y-ganancias) </td></tr>
+<tr><td></td><td>2417</td><td> </td><td>amortizacion</td></tr>
+<tr><td>2417</td><td></td><td colspan='2'> r(perdidas-y-ganancias) </td></tr>
+<tr><td></td><td>2417</td><td> </td><td>amortizacion</td></tr>
+<tr><td>2417</td><td></td><td colspan='2'> r(perdidas-y-ganancias) </td></tr>
 <tr><td></td><td>20992</td><td> </td><td>gastos-promocionales</td></tr>
 <tr><td>20992</td><td></td><td colspan='2'> r(perdidas-y-ganancias) </td></tr>
-<tr style='color: white; background-color: black'> <td> 150313</td><td> 150313</td><td colspan='3'>( 31 de febrero	2021	 ) </td></tr>
+<tr style='color: white; background-color: black'> <td> 164043</td><td> 164043</td><td colspan='3'>( 31 de marzo	2021	 ) </td></tr>
 <tr><td colspan='9'>alectrico® SpA</td></tr>
 <tr><td colspan='9'>Ajuste Anual Año: Liquidacion Financiera Perdedor 2021</td></tr>
 <table><tbody> 
 <table>
 <tr style='background-color: blanchedalmond'><td> </td><td colspan='2'>perdidas-y-ganancias</td></tr>
 <tr><td></td><td> DEBE </td> <td> HABER </td></tr>
-<tr><td></td><td>150313</td><td> 187419</td></tr>
-<tr><td></td><td></td><td  style='background-color: blanchedalmond'>37106</td></tr>
+<tr><td></td><td>164043</td><td> 217165</td></tr>
+<tr><td></td><td></td><td  style='background-color: blanchedalmond'>53122</td></tr>
 </table>
 <table style='background-color: lightyellow' ><tbody>
 <tr style='color: white; background-color: black'><td colspan='9'> Partida 214</td></tr>
 <tr><th>DEBE</th><th> HABER </th> <th colspan='6'> Cuenta </th></tr>
 <tr> <td colspan='7'> x-- Liquidando cuenta de resultados idpc en perdidas-y-ganancias</td></tr>
-<tr> <td colspan='7'> La cuenta de liquidacion tiene un debe de 	150313 y un haber de 	187419</td></tr>
-<tr style='background-color: lightgreen'><td>3711</td> <td></td> <td colspan='2' >idpc</td></tr>
-<tr style='background-color: lightgreen'><td></td><td>3711</td> <td> </td><td colspan='2'> r(perdidas-y-ganancias) </td></tr> 
+<tr> <td colspan='7'> La cuenta de liquidacion tiene un debe de 	164043 y un haber de 	217165</td></tr>
+<tr style='background-color: lightgreen'><td>5312</td> <td></td> <td colspan='2' >idpc</td></tr>
+<tr style='background-color: lightgreen'><td></td><td>5312</td> <td> </td><td colspan='2'> r(perdidas-y-ganancias) </td></tr> 
 <tr> <td colspan='8'>x-- Liquidando cuenta de resultados (cuando hay ganancia) en: utilidad en perdidas-y-ganancias</td></tr>
-<tr style='font-weight:bold; background-color: gold'> <td> 37106</td><td></td><td>utilidad</td><tr>
-<tr><td></td><td>37106</td><td> </td><td colspan='2'> r(perdidas-y-ganancias) </td></tr>
-<tr style='color: white; background-color: black'> <td> 40817</td><td> 40817</td><td colspan='3'>( 31 de febrero	2021	 ) </td></tr>
+<tr style='font-weight:bold; background-color: gold'> <td> 53122</td><td></td><td>utilidad</td><tr>
+<tr><td></td><td>53122</td><td> </td><td colspan='2'> r(perdidas-y-ganancias) </td></tr>
+<tr style='color: white; background-color: black'> <td> 58434</td><td> 58434</td><td colspan='3'>( 31 de marzo	2021	 ) </td></tr>
 <tr><td colspan='9'>alectrico® SpA</td></tr>
 <tr><td colspan='9'>v/Para determinar el valor del Resultado Financiero período.</td></tr>
 <table><tbody> 
 <table>
 <tr style='background-color: blanchedalmond'><td> </td><td colspan='2'>perdidas-y-ganancias</td></tr>
 <tr><td></td><td> DEBE </td> <td> HABER </td></tr>
-<tr><td></td><td>150313</td><td> 187419</td></tr>
-<tr><td></td><td></td><td  style='background-color: blanchedalmond'>37106</td></tr>
+<tr><td></td><td>164043</td><td> 217165</td></tr>
+<tr><td></td><td></td><td  style='background-color: blanchedalmond'>53122</td></tr>
 </table>
