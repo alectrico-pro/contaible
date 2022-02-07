@@ -53,6 +53,7 @@
    ( printout k "<li><span style='background-color: gold'>[    ]</span> ganancia </li>" crlf)
    ( printout k "<li><span style='color: white; background-color: black'>[    ]</span> pérdida </li>" crlf)
    ( printout k "<li><span style='background-color: blanchedalmond'>[    ]</span> subtotales de la transacción </li>" crlf)
+
 )
 
 
@@ -112,6 +113,12 @@
    ( assert
      (tributacion (cuenta ?nombre) (partida ?numero) (ano ?ano)
      (liquidadora base-imponible) (efecto deduccion)))
+  
+   ( assert
+     (tributacion (cuenta no-importa) (partida ?numero) (ano ?ano)
+     (liquidadora base-imponible) (efecto deduccion-propyme)))
+
+
 )
 
 
@@ -453,10 +460,18 @@
       (debe   ?debep)
       (haber  ?haberp))
 
+
+    ?t <- (tributacion
+       (partida ?numero)
+       (cuenta no-importa) (ano ?ano)
+       (liquidadora ?liquidora)
+       (efecto deduccion-propyme))
+
+
     ;este registro debe estar en 
     ;alectrico-2021-valor-activos.txt
     ?af <- ( registro-de-depreciacion
-       ( nombre-del-activo    ?nombre )
+       ( nombre-del-activo    ?nombre-activo )
        ( valor-de-adquisicion ?valor) 
        ( mes-de-adquisicion   ?mes-de-adquisicion)
        ( ano-de-adquisicion   ?ano-de-adquisicion)
@@ -480,10 +495,10 @@
 
 
   ( modify ?partida (debe (+ ?debep ?valor)) (haber (+ ?haberp ?valor)))
-  ( printout t tab (round ?valor) tab "    --|" tab tab ?nombre crlf)
+  ( printout t tab (round ?valor) tab "    --|" tab tab ?nombre-activo crlf)
   ( printout t tab (round ?valor) tab " <----|" tab "r<" base-imponible ">" crlf)
   ( printout t crlf )
-  ( printout k "<tr><td></td><td>" (round ?valor) "</td><td></td><td>" ?nombre "</td></tr>" crlf)
+  ( printout k "<tr><td></td><td>" (round ?valor) "</td><td></td><td>" ?nombre-activo "</td></tr>" crlf)
   ( printout k "<tr><td></td><td>" (round ?valor) "</td><td></td><td> r( base-imponible )  </td></tr>"  crlf)
 
 )

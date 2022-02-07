@@ -102,7 +102,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <tr style='background-color: lightgreen'><td>6559</td> <td></td> <td colspan='2' >idpc</td></tr>
 <tr style='background-color: lightgreen'><td></td><td>6559</td> <td> </td><td colspan='2'> r(perdidas-y-ganancias) </td></tr> 
 <tr> <td colspan='8'>x-- Liquidando cuenta de resultados (cuando hay ganancia) en: utilidad en perdidas-y-ganancias</td></tr>
-<tr style='font-weight:bold; color: white; background-color: crimson'> <td>65595</td><td></td><td>utilidad</td><tr>
+<tr style='font-weight:bold; background-color: gold'> <td> <img src='../revisado.png'>65595</td><td></td><td>utilidad</td><tr>
 <tr><td></td><td>65595</td><td> </td><td colspan='2'> r(perdidas-y-ganancias) </td></tr>
 <tr style='color: white; background-color: black'> <td> 72154</td><td> 72154</td><td colspan='3'>( 31 de enero	2021	 ) </td></tr>
 <tr><td colspan='9'>alectrico® SpA</td></tr>
