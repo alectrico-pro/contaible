@@ -417,7 +417,7 @@
   (printout k "<tr style='font-weight:bold; background-color: azure'><td> <td></td></td><td> </td><td></td><td align='right'>" ?utilidad-antes-de-idpc "</td><td> Resultado Antes de Impuesto</td></tr>" crlf)
 
 
-  ( if (< ?utilidad-antes-de-idpc 0 )
+  ( if (< ?base-imponible 0 )
    then
     (printout t "|" tab tab "| (-) " ?idpc tab "Impuesto Determinado: " (round (* ?tasa-idpc 100) ) " en " ?ano crlf)
     (printout k "<tr style='color: white;background-color: lightgreen' ><td></td><td></td><td></td><td> (X) </td><td align='right'> " ?idpc "</td><td> Impuesto No Aplica porque hay pérdida tributaria </td></tr>" crlf)
@@ -453,9 +453,16 @@
   ( printout t "|" ?aportes tab tab tab tab "(+) Aportes Cap." crlf)
   ( printout k "<tr><td> (+) </td><td align='right'>" ?aportes "</td><td></td><td></td><td></td><td> Aportes al Capital </td></tr>" crlf)
 
-  (printout t "|" tab tab "| (=) " ?resultado tab "RLI Calculada (1)" crlf)
-  (printout k "<tr><td> <td></td></td><td> </td><td> (1) (=) </td><td align='right' style = 'font-weight:bold; background-color: azure'>" ?resultado "</td><td> RLI Calculada </td></tr>" crlf)
 
+  (if (eq ?base-imponible ?resultado)
+   then
+    (printout t "|" tab tab "| (=) " ?resultado tab "RLI Calculada" crlf)
+    (printout k "<tr><td> <td></td></td><td> </td><td> (1) (=) </td><td align='right' style = 'font-weight:bold; background-color: lightgreen'>" ?resultado "</td><td> RLI Calculada </td></tr>" crlf)
+   else
+    (printout t "|" tab tab "| (=) " ?resultado tab "RLI Calculada (1)" crlf)
+    (printout k "<tr><td> <td></td></td><td> </td><td> (1) (=) </td><td align='right' style = 'font-weight:bold; background-color: azure'>" ?resultado "</td><td> RLI Calculada </td></tr>" crlf)
+
+  )
  
 
 ;  (printout t "|" tab tab "| (-) " ?idpc tab "Impuesto Determinado" crlf)
@@ -467,7 +474,7 @@
 
   (if (eq ?base-imponible ?resultado)
    then
-    (printout k "<tr><td></td><td></td><td></td><td> (2) </td><td align='right' style='background-color: lightgreen'>" ?base-imponible "</td><td> RLI desp. Imptos ( m. liquidaciones) <small> " ?regimen "</small></td></tr>" crlf)
+    (printout k "<tr><td></td><td></td><td></td><td> </td><td align='right' style='background-color: lightgreen'> <img src='../revisado.png'> " ?base-imponible "</td><td> RLI desp. Imptos ( m. liquidaciones) <small> " ?regimen "</small></td></tr>" crlf)
    
    else
     (printout k "<tr><td></td><td></td><td></td><td> (2) </td><td align='right' style='font-weight:bold; background-color: lightgreen'>" ?base-imponible "</td><td>  RLI deps. Imptos (m. liquidaciones) <small>" ?regimen "</small></td></tr>" crlf)

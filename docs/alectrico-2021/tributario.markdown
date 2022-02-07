@@ -53,8 +53,8 @@ layout: page
 <tr><td></td><td></td><td></td><td> (-) </td><td align='right'>0</td><td> Impuestos No Recuperables </td></tr>
 <tr style='font-weight:bold; background-color: azure'><td> <td></td></td><td> </td><td></td><td align='right'>65595</td><td> Resultado Fuera de Explotacion </td></tr>
 <tr style='font-weight:bold; background-color: azure'><td> <td></td></td><td> </td><td></td><td align='right'>65595</td><td> Resultado Antes de Impuesto</td></tr>
-<tr style='color: white; font-weight:bold; background-color: crimson'><td></td><td></td><td></td><td> (-) </td><td align='right'> 6559</td><td> Impuesto Determinado, factor es: 0.1 en 2021 </td></tr>
-<tr style='font-weight:bold;background-color: azure'><td> <td></td></td><td> </td><td></td><td align='right'>59036</td><td> Utilidad Después de Impuestos <small> Calculada </small></td></tr>
+<tr style='color: white;background-color: lightgreen' ><td></td><td></td><td></td><td> (X) </td><td align='right'> 6559</td><td> Impuesto No Aplica porque hay pérdida tributaria </td></tr>
+<tr style='font-weight:bold;background-color: azure'><td> <td></td></td><td> </td><td></td><td align='right'>65595</td><td> Utilidad Después de Impuestos <small> Calculada </small></td></tr>
 </tbody></table>
 <table> 
 <tr><th> <td colspan=6> DETERMINACIÓN DE LA BASE IMPONIBLE </td></th></tr>
@@ -64,6 +64,6 @@ layout: page
 <tr><td> (-) </td><td align='right'>151252</td><td></td><td></td><td></td><td> Depreciación Instantánea Activo Fijo Propyme </td></tr>
 <tr><td> (-) </td><td align='right'>0</td><td></td><td></td><td></td><td> Amortización Instantánea Intangibles </td></tr>
 <tr><td> (+) </td><td align='right'>0</td><td></td><td></td><td></td><td> Aportes al Capital </td></tr>
-<tr><td> <td></td></td><td> </td><td> (1) (=) </td><td align='right' style = 'font-weight:bold; background-color: azure'>-85657</td><td> RLI Calculada </td></tr>
-<tr><td></td><td></td><td></td><td> (2) </td><td align='right' style='background-color: lightgreen'>-85657</td><td> RLI desp. Imptos ( m. liquidaciones) <small> propyme</small></td></tr>
+<tr><td> <td></td></td><td> </td><td> (1) (=) </td><td align='right' style = 'font-weight:bold; background-color: lightgreen'>-85657</td><td> RLI Calculada </td></tr>
+<tr><td></td><td></td><td></td><td> </td><td align='right' style='background-color: lightgreen'> <img src='../revisado.png'> -85657</td><td> RLI desp. Imptos ( m. liquidaciones) <small> propyme</small></td></tr>
 </tbody></table>
