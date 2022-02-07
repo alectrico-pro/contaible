@@ -176,6 +176,20 @@
   ( assert ( hacer idpc))
 ) 
 
+
+( defrule encabezados-base-imponible
+  (exists ( cuenta (nombre base-imponible) ))
+  (not (exists ( hacer base-imponible)))
+ =>
+  ( printout t crlf crlf crlf )
+  ( printout t base-imponible crlf )
+  ( printout t "------- creando subtotales para " base-imponible " --------------------- " crlf)
+  ( assert ( subtotales (cuenta base-imponible)))
+  ( assert ( hacer base-imponible))
+)
+
+
+
 ( defrule encabezados-utilidad
   ?s <- ( subtotales (cuenta utilidad))
   (not (exists (subtotales (cuenta utilidad) (totalizado true))))
@@ -223,7 +237,7 @@
 )
 
 ( defrule t-filas
-;  ( cuenta (partida nil) (nombre ?nombre) (grupo ?grupo&:(or liquidadora tributario patrimonio pasivo)))
+; ( cuenta (partida ?partida) (nombre ?nombre) (grupo ?grupo&:(or liquidadora tributario patrimonio pasivo)))
   ( empresa (nombre ?empresa))
 
   ( partida (numero ?numero) (dia ?dia) (mes ?mes) (ano ?ano))
@@ -251,7 +265,7 @@
     ( debe ?total_debe)
     ( haber ?total_haber) )
 
-  ( test (and (neq nil ?partida) (> ?partida 0)))
+  ;( test (and (neq nil ?partida) (> ?partida 0)))
 
  =>
   ( printout t ?partida tab ?debe tab "|" tab ?haber tab ?grupo tab ?circulante tab ?origen crlf )
@@ -263,7 +277,7 @@
 
 
 ( defrule t-diferencia-deudora
-   ( cuenta (nombre ?nombre) (grupo ?grupo&:(or tributario patrimonio pasivo)))
+   ( cuenta (nombre ?nombre) (grupo ?grupo&:(or liquidadora tributario patrimonio pasivo)))
 
    ?subtotales <- ( subtotales
      ( cuenta ?nombre)
@@ -284,7 +298,7 @@
 
 
 ( defrule t-diferencia-acreedora
-   ( cuenta (nombre ?nombre) (grupo ?grupo&:(or patrimonio pasivo)))
+   ( cuenta (nombre ?nombre) (grupo ?grupo&:(or liquidadora tributario patrimonio pasivo)))
    ?subtotales <- ( subtotales
      ( cuenta ?nombre)
      ( haber ?haber )
@@ -304,7 +318,7 @@
 
 
 ( defrule t-footer-deudor
-  ( cuenta (nombre ?nombre) (grupo ?grupo&:(or tributario patrimonio pasivo)))
+  ( cuenta (nombre ?nombre) (grupo ?grupo&:(or liquidadora tributario patrimonio pasivo)))
   ?subtotales <- ( subtotales 
     ( cuenta ?nombre)
     ( haber ?haber )
@@ -326,7 +340,7 @@
 
 
 ( defrule t-footer-acreedor
-  ( cuenta (nombre ?nombre) (grupo ?grupo&:(or tributario patrimonio pasivo)))
+  ( cuenta (nombre ?nombre) (grupo ?grupo&:(or liquidadora tributario patrimonio pasivo)))
   ?subtotales <- ( subtotales
     ( cuenta ?nombre)
     ( haber ?haber )

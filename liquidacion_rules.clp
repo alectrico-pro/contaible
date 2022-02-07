@@ -779,6 +779,7 @@
    ( test (< ?haber2 ?debe2))
    ( test (eq ?nombre utilidad ))
   =>
+   
    ( bind ?saldo (round (* 1 (- ?haber2 ?debe2))))
    ( modify ?acreedora  (liquidada true))
 
@@ -814,9 +815,8 @@
 
    ( printout k "<tr style='font-weight:bold; color: white; background-color: crimson'> <td>" ?saldo "</td><td></td><td>" ?nombre "</td><tr>" crlf)
    ( printout k "<tr><td></td><td>" ?saldo "</td><td> </td><td colspan='2'> r(" ?liquidora ") </td></tr>" crlf)
-
-
 )
+
 
 (defrule obtencion-utilidad-tributaria-positiva
    ( declare (salience 81)) 
@@ -860,7 +860,7 @@
                 ( nombre ?nombre)
                 ( grupo ?grupo)
                 ( tipo acreedora)
-                ( partida ?numero)
+                ( partida ?partida-de-liquidacion)
                 ( liquidada true)
                 ( origen real )
                 ( haber (+ ?haber ?saldo))))
@@ -869,6 +869,7 @@
      ( empresa ?empresa )
      ( saldo ?saldo )
    )
+
    ( modify ?partida (debe (+ ?debep ?saldo)) ( haber (+ ?haberp ?saldo)))
  ; ( printout t "x-- Liquidando cuenta de resultados, cuando hay ganancia en " ?nombre " hacia " ?liquidora crlf)
  ; ( printout t "La cuenta de " ?partida-de-liquidacion tab ?liquidora tab ?debe2 " y un haber de " tab ?haber2 crlf)

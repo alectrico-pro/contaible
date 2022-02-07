@@ -51,16 +51,6 @@
  ; ( halt )
 )
 
-(defrule inicio-en-falso
-  ( declare (salience 10000))
-  ( not (exists  ( cuenta (nombre utilidad-tributaria) (partida ?p&:(neq nil ?p)))))
- =>
-  ( printout t "--modulo-----------CALCULO DE BASE TRIBUTARIA-----------------" crlf )
-  ( printout t "La utilidad tributaria no ha sido determinada. " crlf)
-;  ( halt )
-)
-
-
 (defrule fin
  ( declare (salience -10000))
  =>
@@ -72,7 +62,7 @@
    ( declare (salience 10000))
    ( empresa (nombre ?empresa))
   =>
-   ( printout t "En inicio-tributario-rules" )
+ ;  ( printout t "En inicio-tributario-rules" )
    ( bind ?archivo (str-cat "./doc/" ?empresa "/tributario.markdown"))
 ;   ( bind ?archivo (str-cat "./" ?empresa "/tributario.markdown"))
 
@@ -134,6 +124,9 @@
 
   ( subtotales (cuenta utilidad-tributaria) (deber ?utilidad-tributaria-deber) (acreedor ?utilidad-tributaria-acreedor))
 
+
+  ( subtotales (cuenta base-imponible) (deber ?base-imponible-deber) (acreedor ?base-imponible-acreedor))
+
   ( subtotales (cuenta utilidad) (acreedor ?utilidad-acreedor) (deber ?utilidad-deber) )
 
   ( subtotales (cuenta provision-impuesto-a-la-renta ) (acreedor ?provision-impuesto-a-la-renta))
@@ -175,6 +168,11 @@
   (bind ?utilidad-tributaria
    (- ?utilidad-tributaria-acreedor
       ?utilidad-tributaria-deber))
+
+  (bind ?base-imponible
+   (- ?base-imponible-acreedor
+      ?base-imponible-deber))
+
 
   (bind ?ventas-netas           (- ?ventas ?devolucion-sobre-ventas))
 
@@ -466,16 +464,16 @@
 ;  (printout t "|" tab tab "| (-) " ?idpc tab "Impuesto Determinado" crlf)
 ;  (printout k "<tr><td> <td></td></td><td> </td><td> (-) </td><td align='right'>" ?idpc "</td><td> Impuesto Determinado: " (round (* ?tasa-idpc 100) ) "% </td></tr>" crlf)
  
-  (printout t "|" tab tab "| (=) " ?utilidad-tributaria tab "RLI desp.Imptos (2) (m. liquidaciones)" crlf) 
+  (printout t "|" tab tab "| (=) " ?base-imponible tab "RLI desp.Imptos (2) (m. liquidaciones)" crlf) 
 
   (printout t "(1) debe ser igual que (2) " crlf)
 
   (if (eq ?utilidad-tributaria ?resultado)
    then
-    (printout k "<tr><td></td><td></td><td></td><td> (2) </td><td align='right' style='background-color: lightgreen'>" ?utilidad-tributaria "</td><td> RLI desp. Imptos ( m. liquidaciones) <small> " ?regimen "</small></td></tr>" crlf)
+    (printout k "<tr><td></td><td></td><td></td><td> (2) </td><td align='right' style='background-color: lightgreen'>" ?base-imponible "</td><td> RLI desp. Imptos ( m. liquidaciones) <small> " ?regimen "</small></td></tr>" crlf)
    
    else
-    (printout k "<tr><td></td><td></td><td></td><td> (2) </td><td align='right' style='font-weight:bold; background-color: lightgreen'>" ?utilidad-tributaria "</td><td>  RLI deps. Imptos (m. liquidaciones) <small>" ?regimen "</small></td></tr>" crlf)
+    (printout k "<tr><td></td><td></td><td></td><td> (2) </td><td align='right' style='font-weight:bold; background-color: lightgreen'>" ?base-imponible "</td><td>  RLI deps. Imptos (m. liquidaciones) <small>" ?regimen "</small></td></tr>" crlf)
     (printout k "<tr></tr><tr><td colspan=6 rowspan=1 style='color: white; font-weight:bold; background-color: crimson'> (1) y (2) deben ser iguales: Lasliquidaciones pueden que esté con problemas. Revise que las cuentas de resultados estén bien configuradas en cuentas.txt. Deben tener grupo=resultado  </td></tr>" crlf)
 )
 
@@ -484,7 +482,7 @@
  (if (and (eq ?incentivo-al-ahorro true) (eq ?regimen propyme) (> ?utilidad-tributaria 0))
    then 
     (printout t "  INCENTIVO AL AHORRO SOLICITADO EN selecciones.txt " crlf)
-    (printout t tab tab ?resultado tab " RLI Calculada " crlf)
+    (printout t tab tab ?base-imponible tab " RLI Calculada " crlf)
     (printout t tab tab (round (* ?resultado 0.5)) tab tab "Rebaja Art.14 Letra E " ?regimen  crlf)
     (printout t tab tab (round (* ?resultado ?tasa-idpc)) tab "IDPC A PAGAR" tab (round (* ?tasa-idpc 100)) "%" crlf)
     (printout k "<tr> <th> INCENTIVO AL AHORRO SOLICITADO EN selecciones.txt </th></tr> " crlf)
