@@ -8,7 +8,7 @@
  (razon "alectrico® SpA"))
 
 
-(balance (dia 31) (mes diciembre) (ano 2021))
+(balance (dia 31) (mes enero) (ano 2021))
 
 
 ;dia 01/01/2021---------- asiento inicial  ----------------
@@ -3149,7 +3149,6 @@
    (ano 2021) (partida 214))
 
 
-################################
 ;=========================== 2 0 2 2  ===========================================
 ;================================================================================
 
@@ -3392,7 +3391,7 @@
 ;)
  ;8 meses a 555 desde mayo 2021
 
-#==================== NO
+#==================== NO incluir, ya está automático en liquidaciones_rules.clp
 ;------------------------ liquidaciones ------------
 
 ;partida de liquidación de saldo deudor ----------------
