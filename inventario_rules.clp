@@ -90,7 +90,7 @@
 ;   ( assert ( cuenta (origen ?origen) (dia ?dia) (mes ?mes) (ano ?ano) (empresa ?empresa ) (partida ?numero) (nombre inventario ) (grupo ?grupo) (circulante ?circulante) (debe ?total) (haber 0) (balanceado ?balanceado) ))
    
    (printout t ?material tab ?dia tab ?unidades tab ?costo_unitario tab ?total tab tab tab tab inventario-inicial crlf)
-   (printout k "<tr> <td><a href= '/" ?empresa "/#Partida-" ?numero "'>" ?numero "</a></td><td>" ?material "</td> <td>" ?dia "</td> <td>" ?mes "</td> <td>" ?unidades "</td> <td>" ?costo_unitario "</td> <td>" ?total "</td> <td colspan='3'></td> <td>asiento-inicial</td><td>" (if (neq nil ?referencia) then "<a href= '/alectrico-2021/#Partida-" ?referencia "'> </a>" else "" ) "</td></tr>" crlf)
+   (printout k "<tr> <td><a href= '/" ?empresa "/libro-diario#Partida-" ?numero "'>" ?numero "</a></td><td>" ?material "</td> <td>" ?dia "</td> <td>" ?mes "</td> <td>" ?unidades "</td> <td>" ?costo_unitario "</td> <td>" ?total "</td> <td colspan='3'></td> <td>asiento-inicial</td><td>" (if (neq nil ?referencia) then "<a href= '/alectrico-2021/#Partida-" ?referencia "'> </a>" else "" ) "</td></tr>" crlf)
    ;( retract ?inventario )
   ;(printout t "Ignorada partida de inventario por " ?total " operacion es " asiento-inicial crlf)
 )
@@ -106,7 +106,7 @@
   => 
    ( assert ( cuenta (origen ?origen) (dia ?dia) (mes ?mes ) (ano ?ano) (empresa ?empresa) (partida ?numero) (nombre inventario ) (grupo ?grupo) (circulante ?circulante) (debe ?total) (haber 0) (balanceado ?balanceado) (tipo ?tipo)))
    (printout t ?material tab ?dia tab ?unidades tab ?costo_unitario tab ?total tab tab tab tab devolucion crlf)
-   (printout k "<tr>< <td><a href= '/" ?empresa "/#Partida-" ?numero "'>" ?numero "</a></td>td>" ?material "</td> <td>" ?dia "</td> <td>" ?mes " </td> <td>" ?unidades "</td> <td>" ?costo_unitario "</td> <td>" ?total "</td>< td colspan='3'></td> <td>devolucion</td><td>" (if (neq nil ?referencia) then "<a href= '/alectrico-2021/#Partida-" ?referencia "'> </a>" else "" ) "</td> </tr>" crlf)
+   (printout k "<tr>< <td><a href= '/" ?empresa "/libro-diario#Partida-" ?numero "'>" ?numero "</a></td>td>" ?material "</td> <td>" ?dia "</td> <td>" ?mes " </td> <td>" ?unidades "</td> <td>" ?costo_unitario "</td> <td>" ?total "</td>< td colspan='3'></td> <td>devolucion</td><td>" (if (neq nil ?referencia) then "<a href= '/alectrico-2021/#Partida-" ?referencia "'> </a>" else "" ) "</td> </tr>" crlf)
 
    ;(retract ?inventario)
  ; (printout t "Creada partida de inventario por " ?total " operacion es " devolucion crlf)
@@ -123,7 +123,7 @@
   => 
    ( assert ( cuenta (origen ?origen) (empresa ?empresa) (partida ?numero) (dia ?dia) (mes ?mes) (ano ?ano) (nombre inventario ) (grupo ?grupo) (circulante ?circulante) (debe ?total) (haber 0) (balanceado ?balanceado) (tipo ?tipo)))
    ( printout t ?material tab ?dia tab ?unidades tab ?costo_unitario tab ?total tab tab tab tab gasto-sobre-compra crlf)
-   (printout k "<tr>  <td><a href= '/" ?empresa "/#Partida-" ?numero "'>" ?numero "</a></td><td>" ?material "</td> <td>" ?dia "</td> <td>" ?unidades "</td> <td>" ?costo_unitario "</td> <td>" ?total "</td> <td colspan='3'></td> <td>gasto-sobre-compra</td>td>" (if (neq nil ?referencia) then "<a href= '/alectrico-2021/#Partida-" ?referencia "'> </a>" else "" ) "</td> </tr>" crlf)
+   (printout k "<tr>  <td><a href= '/" ?empresa "/libro-diario#Partida-" ?numero "'>" ?numero "</a></td><td>" ?material "</td> <td>" ?dia "</td> <td>" ?unidades "</td> <td>" ?costo_unitario "</td> <td>" ?total "</td> <td colspan='3'></td> <td>gasto-sobre-compra</td>td>" (if (neq nil ?referencia) then "<a href= '/alectrico-2021/#Partida-" ?referencia "'> </a>" else "" ) "</td> </tr>" crlf)
 
    ;( retract ?inventario )
  ;(printout t "Creada partida de inventario por " ?total " operacion es " gasto-sobre-compra  crlf)
@@ -142,7 +142,7 @@
    ( assert ( cuenta (origen ?origen) (partida ?numero) (empresa ?empresa) (dia ?dia) (mes ?mes) (ano ?ano) (nombre inventario ) (grupo ?grupo) (circulante ?circulante) (debe ?total) (haber 0) (balanceado ?balanceado) (tipo ?tipo)))
 
    (printout t ?material tab ?dia tab ?unidades tab ?costo_unitario tab ?total tab tab tab tab compra crlf)
-   (printout k "<tr>   <td><a href= '/" ?empresa "/#Partida-" ?numero "'>" ?numero "</a></td><td>" ?material "</td> <td>" ?dia "</td> <td>" ?mes "</td> <td>" ?unidades "</td> <td>" ?costo_unitario "</td> <td>" ?total "</td> <td colspan='3'></td> <td>compra</td><td>" (if (neq nil ?referencia) then "<a href= '/alectrico-2021/#Partida-" ?referencia "'> </a>" else "" ) "</td> </tr>" crlf)
+   (printout k "<tr>   <td><a href= '/" ?empresa "/libro-diario#Partida-" ?numero "'>" ?numero "</a></td><td>" ?material "</td> <td>" ?dia "</td> <td>" ?mes "</td> <td>" ?unidades "</td> <td>" ?costo_unitario "</td> <td>" ?total "</td> <td colspan='3'></td> <td>compra</td><td>" (if (neq nil ?referencia) then "<a href= '/alectrico-2021/#Partida-" ?referencia "'> </a>" else "" ) "</td> </tr>" crlf)
 
    ;( retract ?inventario )
 ;:  (printout t "Creada partida de inventario por " ?total " operacion es " compra  crlf)
@@ -160,7 +160,7 @@
    ( assert ( cuenta (origen ?origen) (partida ?numero) (empresa ?empresa) (dia ?dia) (mes ?mes) (ano ?ano) (nombre inventario ) (grupo ?grupo) (circulante ?circulante) (debe 0) (haber ?total) (balanceado ?balanceado) (tipo ?tipo) ))
 
    (printout t ?material tab ?dia tab tab tab tab ?unidades tab ?costo_unitario tab ?total tab venta crlf)
-   (printout k "<tr>  <td><a href= '/" ?empresa "/#Partida-" ?numero "'>" ?numero "</a></td><td>" ?material "</td> <td>" ?dia "</td> <td></td> <td> </td> <td></td> <td></td> <td>" ?unidades "</td> <td>" ?costo_unitario "</td> <td>" ?total "</td><td>venta</td><td>" (if (neq nil ?referencia) then (str-cat "<a href= '/alectrico-2021/#Partida-" ?referencia "'>" ?referencia "</a>") else "" ) "</td>  </tr>" crlf)
+   (printout k "<tr>  <td><a href= '/" ?empresa "/libro-diario#Partida-" ?numero "'>" ?numero "</a></td><td>" ?material "</td> <td>" ?dia "</td> <td></td> <td> </td> <td></td> <td></td> <td>" ?unidades "</td> <td>" ?costo_unitario "</td> <td>" ?total "</td><td>venta</td><td>" (if (neq nil ?referencia) then (str-cat "<a href= '/alectrico-2021/#Partida-" ?referencia "'>" ?referencia "</a>") else "" ) "</td>  </tr>" crlf)
 
    ;(retract ?inventario)
  ;(printout t "Creada partida de inventario por " ?total " operacion es " venta crlf)
@@ -176,6 +176,6 @@
  => 
   ( modify ?comando (realizado true))
   ( printout t ?dia " de " ?mes " - " partida  " #" ?partida ": " ?operacion " de " ?unidades " " ?material " a " ?costo_unitario " c/u por un valor total de " ?total crlf)
-  ( printout k "<tr>   <td><a href= '/" ?empresa "/#Partida-" ?numero "'>" ?numero "</a></td><td>" ?dia " de " ?mes " - " partida  " #" ?partida ": " ?operacion " de " ?unidades " " ?material " a " ?costo_unitario " c/u por un valor total de " ?total "</td> <td>" (if (neq nil ?referencia) then "<a href= '/alectrico-2021/#Partida-" ?referencia "'> </a>" else "" ) "</td> </tr>" crlf)
+  ( printout k "<tr>   <td><a href= '/" ?empresa "/libro-diario#Partida-" ?numero "'>" ?numero "</a></td><td>" ?dia " de " ?mes " - " partida  " #" ?partida ": " ?operacion " de " ?unidades " " ?material " a " ?costo_unitario " c/u por un valor total de " ?total "</td> <td>" (if (neq nil ?referencia) then "<a href= '/alectrico-2021/#Partida-" ?referencia "'> </a>" else "" ) "</td> </tr>" crlf)
 )
 
