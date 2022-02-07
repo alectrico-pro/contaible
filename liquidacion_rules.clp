@@ -505,7 +505,7 @@
   ( printout t tab tab "    |-- " tab (round ?valor) tab ?nombre-activo crlf)
   ( printout t tab (round ?valor) tab " <--|" tab "r<" base-imponible ">" crlf)
   ( printout t crlf )
-  ( printout k "<tr><td></td><td>" (round ?valor) "</td><td></td><td>" ?nombre-activo "</td></tr>" crlf)
+  ( printout k "<tr><td></td><td >" (round ?valor) "</td><td></td><td style='color: white; background-color: cornflowerblue'>" ?nombre-activo "</td></tr>" crlf)
   ( printout k "<tr><td>" (round ?valor) "</td><td></td><td colspan='2'> r( base-imponible )  </td></tr>"  crlf)
 
 )
