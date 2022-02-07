@@ -2227,7 +2227,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 300000 </td> <td style='background-color: blanchedalmond'> 300000</td> </tr>
 <tr><td colspan='4'> alectrico® SpA</td> </tr> 
 <tr><td colspan='4'> ( 20 de julio	2021	 ) </td> </tr>
-<tr><td colspan='8'> Partida 88: Declaración de Remuneraciones de alexander días trabajados: 5 Tramo Exento: 721926.0 Sueldo Bruto de: 300000 Tasa de Impuesto Único: 0.04 Monto de Impuesto Único: 0 </td></tr>
+<tr><td colspan='8'> Partida 88: Declaración de Remuneraciones de alexander días trabajados: 5 Tramo Exento: 731308.5 Sueldo Bruto de: 300000 Tasa de Impuesto Único: 0.04 Monto de Impuesto Único: 0 </td></tr>
 <tr> <td colspan='7'>efectuado a electrico </td> </tr>
 <tr><td colspan = '8'> declarar-remuneraciones</td> </tr>
 </tbody>
@@ -2925,7 +2925,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 300000 </td> <td style='background-color: blanchedalmond'> 300000</td> </tr>
 <tr><td colspan='4'> alectrico® SpA</td> </tr> 
 <tr><td colspan='4'> ( 20 de agosto	2021	 ) </td> </tr>
-<tr><td colspan='8'> Partida 124: Declaración de Remuneraciones de alexander días trabajados: 5 Tramo Exento: 721926.0 Sueldo Bruto de: 300000 Tasa de Impuesto Único: 0.04 Monto de Impuesto Único: 0 </td></tr>
+<tr><td colspan='8'> Partida 124: Declaración de Remuneraciones de alexander días trabajados: 5 Tramo Exento: 731308.5 Sueldo Bruto de: 300000 Tasa de Impuesto Único: 0.04 Monto de Impuesto Único: 0 </td></tr>
 <tr> <td colspan='7'>efectuado a electrico </td> </tr>
 <tr><td colspan = '8'> declarar-remuneraciones</td> </tr>
 </tbody>
@@ -3003,7 +3003,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 350000 </td> <td style='background-color: blanchedalmond'> 350000</td> </tr>
 <tr><td colspan='4'> alectrico® SpA</td> </tr> 
 <tr><td colspan='4'> ( 5 de septiembre	2021	 ) </td> </tr>
-<tr><td colspan='8'> Partida 127: Declaración de Remuneraciones de alexander días trabajados: 6 Tramo Exento: 721926.0 Sueldo Bruto de: 350000 Tasa de Impuesto Único: 0.04 Monto de Impuesto Único: 0 </td></tr>
+<tr><td colspan='8'> Partida 127: Declaración de Remuneraciones de alexander días trabajados: 6 Tramo Exento: 731308.5 Sueldo Bruto de: 350000 Tasa de Impuesto Único: 0.04 Monto de Impuesto Único: 0 </td></tr>
 <tr> <td colspan='7'>efectuado a electrico </td> </tr>
 <tr><td colspan = '8'> declarar-remuneraciones</td> </tr>
 </tbody>
@@ -3438,7 +3438,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 400000 </td> <td style='background-color: blanchedalmond'> 400000</td> </tr>
 <tr><td colspan='4'> alectrico® SpA</td> </tr> 
 <tr><td colspan='4'> ( 5 de octubre	2021	 ) </td> </tr>
-<tr><td colspan='8'> Partida 157: Declaración de Remuneraciones de alexander días trabajados: 7 Tramo Exento: 721926.0 Sueldo Bruto de: 400000 Tasa de Impuesto Único: 0.04 Monto de Impuesto Único: 0 </td></tr>
+<tr><td colspan='8'> Partida 157: Declaración de Remuneraciones de alexander días trabajados: 7 Tramo Exento: 731308.5 Sueldo Bruto de: 400000 Tasa de Impuesto Único: 0.04 Monto de Impuesto Único: 0 </td></tr>
 <tr> <td colspan='7'>efectuado a portales-web </td> </tr>
 <tr><td colspan = '8'> declarar-remuneraciones</td> </tr>
 </tbody>
@@ -3745,7 +3745,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 400000 </td> <td style='background-color: blanchedalmond'> 400000</td> </tr>
 <tr><td colspan='4'> alectrico® SpA</td> </tr> 
 <tr><td colspan='4'> ( 20 de noviembre	2021	 ) </td> </tr>
-<tr><td colspan='8'> Partida 172: Declaración de Remuneraciones de alexander días trabajados: 7 Tramo Exento: 721926.0 Sueldo Bruto de: 400000 Tasa de Impuesto Único: 0.04 Monto de Impuesto Único: 0 </td></tr>
+<tr><td colspan='8'> Partida 172: Declaración de Remuneraciones de alexander días trabajados: 7 Tramo Exento: 731308.5 Sueldo Bruto de: 400000 Tasa de Impuesto Único: 0.04 Monto de Impuesto Único: 0 </td></tr>
 <tr> <td colspan='7'>efectuado a electrico </td> </tr>
 <tr><td colspan = '8'> declarar-remuneraciones</td> </tr>
 </tbody>
@@ -3847,6 +3847,325 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 </table>
 <p style='page-break-before: always;'>&nbsp;</p>
 <br> 
+<p style='color: white; background-color: red'>  </p>
+<br> 
+- [ ] rcv
+- [ ] libro-diario
+- [ ] ccm
+- [x] revisado
+![](../revisado.png)
+<table id='Partida-188'>
+<thead> <th style='background-color: lavender' colspan='6'>Partida 188</th></thead>
+<tbody>
+<tr> <td> 0 </td> <td> </td> <td colspan='7'> impuesto-unico-por-pagar#salarios-por-pagar </td> </tr> 
+<tr> <td> 307520 </td> <td> </td> <td colspan='7'> remuneraciones-por-pagar#salarios-por-pagar </td> </tr> 
+<tr style='background-color: lightyellow'>  <td> </td> <td> 0</td> <td> 307520</td> <td colspan='2'> a[banco-estado] </td> </tr>
+<tr style='background-color: azure'>  <td> </td> <td> 307520 </td> <td> 0 </td> <td> </td><td> p[salarios-por-pagar] </td> </tr>
+<tr> <td> </td> <td style='background-color: blanchedalmond'> 307520 </td> <td style='background-color: blanchedalmond'> 307520</td> </tr>
+<tr><td colspan='4'> alectrico® SpA</td> </tr> 
+<tr><td colspan='4'> ( 8 de diciembre	2021	 ) </td> </tr>
+<tr><td colspan='8'> Partida 188: pagando-remuneraciones </td></tr>
+<tr> <td colspan='7'>efectuado a alexander </td> </tr>
+<tr><td colspan = '8'> pagar-solo-remuneraciones</td> </tr>
+</tbody>
+</table>
+<p style='page-break-before: always;'>&nbsp;</p>
+<br> 
+<p style='color: white; background-color: red'>  </p>
+<br> 
+- [ ] rcv
+- [ ] libro-diario
+- [ ] ccm
+- [x] revisado
+![](../revisado.png)
+<table id='Partida-189'>
+<thead> <th style='background-color: lavender' colspan='6'>Partida 189</th></thead>
+<tbody>
+<tr><td>8395</td> <td colspan='7'>sodimac-insumos#insumos</td> </tr>
+<tr style='background-color: lightyellow'>  <td> </td> <td> 1595</td> <td> 0</td> <td colspan='2'> a[iva-credito] </td> </tr>
+<tr style='background-color: lightyellow'>  <td> </td> <td> 8395</td> <td> 0</td> <td colspan='2'> a[insumos] </td> </tr>
+<tr style='background-color: lightyellow'>  <td> </td> <td> 0</td> <td> 9990</td> <td colspan='2'> a[banco-estado] </td> </tr>
+<tr> <td> </td> <td style='background-color: blanchedalmond'> 9990 </td> <td style='background-color: blanchedalmond'> 9990</td> </tr>
+<tr><td colspan='4'> alectrico® SpA</td> </tr> 
+<tr><td colspan='4'> ( 1 de diciembre	2021	 ) </td> </tr>
+<tr><td colspan='8'> Partida 189: Por pack 3M de máscaras N95 </td></tr>
+<tr> <td colspan='7'>efectuado a sodimac </td> </tr>
+<tr><td colspan = '8'> comprar-insumos-al-contado</td> </tr>
+<tr style='background-color: aliceblue'> <td colspan = '8'> <img src='../factura-afecta-sodimac-115116314.png'></td> </tr>
+</tbody>
+</table>
+<p style='page-break-before: always;'>&nbsp;</p>
+<br> 
+<p style='color: white; background-color: red'>  </p>
+<br> 
+- [ ] rcv
+- [ ] libro-diario
+- [ ] ccm
+- [x] revisado
+![](../revisado.png)
+<table id='Partida-195'>
+<thead> <th style='background-color: lavender' colspan='6'>Partida 195</th></thead>
+<tbody>
+<tr> <td>6666 </td> <td colspan='7'> ventas#ingresos-brutos </td></tr>
+<tr> <td>6666 </td> <td colspan='7'> ventas-con-factura-exenta#ventas </td></tr>
+<tr style='background-color: lightyellow'>  <td> </td> <td> 6666</td> <td> 0</td> <td colspan='2'> a[banco-estado] </td> </tr>
+<tr style='background-color: gold'>  <td> </td> <td>0 </td> <td> 6666</td> <td> </td> <td> r[ingresos-brutos] </td> </tr>
+<tr> <td> </td> <td style='background-color: blanchedalmond'> 6666 </td> <td style='background-color: blanchedalmond'> 6666</td> </tr>
+<tr><td colspan='4'> alectrico® SpA</td> </tr> 
+<tr><td colspan='4'> ( 9 de diciembre	2021	 ) </td> </tr>
+<tr><td colspan='8'> Partida 195: Por venta en registro de compra-ventas del SII folio: 8 de visita-huelen-pago-5-6 a gonzalo </td></tr>
+<tr> <td colspan='7'>efectuado a gonzalo </td> </tr>
+<tr><td colspan = '8'> vender-en-registro-de-compra-venta-sii</td> </tr>
+<tr style='background-color: aliceblue'> <td colspan = '8'> <img src='../factura-propia-exenta-8.png'></td> </tr>
+</tbody>
+</table>
+<p style='page-break-before: always;'>&nbsp;</p>
+<br> 
+<p style='color: white; background-color: red'>  </p>
+<br> 
+- [ ] rcv
+- [ ] libro-diario
+- [ ] ccm
+- [x] revisado
+![](../revisado.png)
+<table id='Partida-196'>
+<thead> <th style='background-color: lavender' colspan='6'>Partida 196</th></thead>
+<tbody>
+<tr> <td>6666 </td> <td colspan='7'> ventas#ingresos-brutos </td></tr>
+<tr> <td>6666 </td> <td colspan='7'> ventas-con-factura-exenta#ventas </td></tr>
+<tr style='background-color: lightyellow'>  <td> </td> <td> 6666</td> <td> 0</td> <td colspan='2'> a[banco-estado] </td> </tr>
+<tr style='background-color: gold'>  <td> </td> <td>0 </td> <td> 6666</td> <td> </td> <td> r[ingresos-brutos] </td> </tr>
+<tr> <td> </td> <td style='background-color: blanchedalmond'> 6666 </td> <td style='background-color: blanchedalmond'> 6666</td> </tr>
+<tr><td colspan='4'> alectrico® SpA</td> </tr> 
+<tr><td colspan='4'> ( 28 de diciembre	2021	 ) </td> </tr>
+<tr><td colspan='8'> Partida 196: Por venta en registro de compra-ventas del SII folio: 9 de visita-huelen-pago-6-6 a gonzalo </td></tr>
+<tr> <td colspan='7'>efectuado a gonzalo </td> </tr>
+<tr><td colspan = '8'> vender-en-registro-de-compra-venta-sii</td> </tr>
+<tr style='background-color: aliceblue'> <td colspan = '8'> <img src='../factura-propia-exenta-9.png'></td> </tr>
+</tbody>
+</table>
+<p style='page-break-before: always;'>&nbsp;</p>
+<br> 
+<p style='color: white; background-color: red'>  </p>
+<br> 
+- [ ] rcv
+- [ ] libro-diario
+- [ ] ccm
+- [x] revisado
+![](../revisado.png)
+<table id='Partida-197'>
+<thead> <th style='background-color: lavender' colspan='6'>Partida 197</th></thead>
+<tbody>
+<tr> <td>93137 </td> <td colspan='7'> ventas#ingresos-brutos </td></tr>
+<tr> <td>93137 </td> <td colspan='7'> ventas-con-factura-afecta#ventas </td></tr>
+<tr style='background-color: lightyellow'>  <td> </td> <td> 110833</td> <td> 0</td> <td colspan='2'> a[banco-estado] </td> </tr>
+<tr style='background-color: azure'>  <td> </td> <td> 0 </td> <td> 17696 </td> <td> </td><td> p[iva-debito] </td> </tr>
+<tr style='background-color: gold'>  <td> </td> <td>0 </td> <td> 93137</td> <td> </td> <td> r[ingresos-brutos] </td> </tr>
+<tr> <td> </td> <td style='background-color: blanchedalmond'> 110833 </td> <td style='background-color: blanchedalmond'> 110833</td> </tr>
+<tr><td colspan='4'> alectrico® SpA</td> </tr> 
+<tr><td colspan='4'> ( 9 de diciembre	2021	 ) </td> </tr>
+<tr><td colspan='8'> Partida 197: Por venta en registro de compra-ventas del SII folio: 21 de los-capitanes-pago-5-de-6 a gonzalo </td></tr>
+<tr> <td colspan='7'>efectuado a gonzalo </td> </tr>
+<tr><td colspan = '8'> vender-en-registro-de-compra-venta-sii</td> </tr>
+<tr style='background-color: aliceblue'> <td colspan = '8'> <img src='../factura-propia-afecta-21.png'></td> </tr>
+</tbody>
+</table>
+<p style='page-break-before: always;'>&nbsp;</p>
+<br> 
+<p style='color: white; background-color: red'>  </p>
+<br> 
+- [ ] rcv
+- [ ] libro-diario
+- [ ] ccm
+- [x] revisado
+![](../revisado.png)
+<table id='Partida-198'>
+<thead> <th style='background-color: lavender' colspan='6'>Partida 198</th></thead>
+<tbody>
+<tr> <td>93137 </td> <td colspan='7'> ventas#ingresos-brutos </td></tr>
+<tr> <td>93137 </td> <td colspan='7'> ventas-con-factura-afecta#ventas </td></tr>
+<tr style='background-color: lightyellow'>  <td> </td> <td> 110833</td> <td> 0</td> <td colspan='2'> a[banco-estado] </td> </tr>
+<tr style='background-color: azure'>  <td> </td> <td> 0 </td> <td> 17696 </td> <td> </td><td> p[iva-debito] </td> </tr>
+<tr style='background-color: gold'>  <td> </td> <td>0 </td> <td> 93137</td> <td> </td> <td> r[ingresos-brutos] </td> </tr>
+<tr> <td> </td> <td style='background-color: blanchedalmond'> 110833 </td> <td style='background-color: blanchedalmond'> 110833</td> </tr>
+<tr><td colspan='4'> alectrico® SpA</td> </tr> 
+<tr><td colspan='4'> ( 26 de diciembre	2021	 ) </td> </tr>
+<tr><td colspan='8'> Partida 198: Por venta en registro de compra-ventas del SII folio: 22 de los-capitanes-pago-6-de-6 a gonzalo </td></tr>
+<tr> <td colspan='7'>efectuado a gonzalo </td> </tr>
+<tr><td colspan = '8'> vender-en-registro-de-compra-venta-sii</td> </tr>
+<tr style='background-color: aliceblue'> <td colspan = '8'> <img src='../factura-propia-afecta-22.png'></td> </tr>
+</tbody>
+</table>
+<p style='page-break-before: always;'>&nbsp;</p>
+<br> 
+<p style='color: white; background-color: red'>  </p>
+<br> 
+- [ ] rcv
+- [ ] libro-diario
+- [ ] ccm
+- [x] revisado
+![](../revisado.png)
+<table id='Partida-199'>
+<thead> <th style='background-color: lavender' colspan='6'>Partida 199</th></thead>
+<tbody>
+<tr> <td>30000 </td> <td colspan='7'> ventas#ingresos-brutos </td></tr>
+<tr> <td>30000 </td> <td colspan='7'> ventas-con-factura-exenta#ventas </td></tr>
+<tr style='background-color: lightyellow'>  <td> </td> <td> 20000</td> <td> 0</td> <td colspan='2'> a[cuentas-por-cobrar] </td> </tr>
+<tr style='background-color: lightyellow'>  <td> </td> <td> 10000</td> <td> 0</td> <td colspan='2'> a[caja] </td> </tr>
+<tr style='background-color: gold'>  <td> </td> <td>0 </td> <td> 30000</td> <td> </td> <td> r[ingresos-brutos] </td> </tr>
+<tr> <td> </td> <td style='background-color: blanchedalmond'> 30000 </td> <td style='background-color: blanchedalmond'> 30000</td> </tr>
+<tr><td colspan='4'> alectrico® SpA</td> </tr> 
+<tr><td colspan='4'> ( 31 de diciembre	2021	 ) </td> </tr>
+<tr><td colspan='8'> Partida 199: Por venta a gonzalo </td></tr>
+<tr><td colspan = '8'> vender-al-credito-y-efectivo-exento</td> </tr>
+<tr style='background-color: aliceblue'> <td colspan = '8'> <img src='../factura-propia-exenta-10.png'></td> </tr>
+</tbody>
+</table>
+<p style='page-break-before: always;'>&nbsp;</p>
+<br> 
+<p style='color: white; background-color: red'>  </p>
+<br> 
+- [x] tipo de asiento: 33
+- [x] folio: 44123442
+- [ ] rcv
+- [ ] libro-diario
+- [ ] ccm
+- [x] revisado
+![](../revisado.png)
+<table id='Partida-201'>
+<thead> <th style='background-color: lavender' colspan='6'>Partida 201</th></thead>
+<tbody>
+<tr> <td>6926 </td> <td colspan='7'> entel#gastos-administrativos </td></tr>
+<tr style='background-color: lightyellow'>  <td> </td> <td> 1316</td> <td> 0</td> <td colspan='2'> a[iva-credito] </td> </tr>
+<tr style='background-color: lightyellow'>  <td> </td> <td> 0</td> <td> 8242</td> <td colspan='2'> a[caja] </td> </tr>
+<tr style='color: white; background-color: black'>  <td> </td> <td>6926 </td> <td> 0</td> <td> </td> <td> r[gastos-administrativos] </td> </tr>
+<tr> <td> </td> <td style='background-color: blanchedalmond'> 8242 </td> <td style='background-color: blanchedalmond'> 8242</td> </tr>
+<tr><td colspan='4'> alectrico® SpA</td> </tr> 
+<tr><td colspan='4'> ( 13 de diciembre	2021	 ) </td> </tr>
+<tr><td colspan='8'> Partida 201: Por Gasto Administrativo: Servicio de Datos y Telefonía de octubre. </td></tr>
+<tr> <td colspan='7'>efectuado a entel </td> </tr>
+<tr><td colspan = '8'> gastar-en-administracion-afecto</td> </tr>
+<tr style='background-color: aliceblue'> <td colspan = '8'> <img src='../factura-afecta-entel-44123442.png'></td> </tr>
+</tbody>
+</table>
+<p style='page-break-before: always;'>&nbsp;</p>
+<br> 
+<p style='color: white; background-color: red'>  </p>
+<br> 
+- [ ] rcv
+- [ ] libro-diario
+- [ ] ccm
+- [x] revisado
+![](../revisado.png)
+<table id='Partida-203'>
+<thead> <th style='background-color: lavender' colspan='6'>Partida 203</th></thead>
+<tbody>
+<tr><td>2150000</td> <td colspan='7'>plataforma-alectrico#intangibles</td> </tr>
+<tr style='background-color: lightyellow'>  <td> </td> <td> 2150000</td> <td> 0</td> <td colspan='2'> a[intangibles] </td> </tr>
+<tr style='background-color: gold'>  <td> </td> <td>0 </td> <td> 2150000</td> <td> </td> <td> r[salarios] </td> </tr>
+<tr> <td> </td> <td style='background-color: blanchedalmond'> 2150000 </td> <td style='background-color: blanchedalmond'> 2150000</td> </tr>
+<tr><td colspan='4'> alectrico® SpA</td> </tr> 
+<tr><td colspan='4'> ( 31 de diciembre	2021	 ) </td> </tr>
+<tr><td colspan='8'> Partida 203: Por Activación de Gastos Diferidos por la Construcción de la plataforma alectrico. </td></tr>
+<tr><td colspan = '8'> aporte-plataforma-alectrico®</td> </tr>
+</tbody>
+</table>
+<p style='page-break-before: always;'>&nbsp;</p>
+<br> 
+<p style='color: white; background-color: red'>  </p>
+<br> 
+- [ ] rcv
+- [ ] libro-diario
+- [ ] ccm
+- [x] revisado
+![](../revisado.png)
+<table id='Partida-204'>
+<thead> <th style='background-color: lavender' colspan='6'>Partida 204</th></thead>
+<tbody>
+<tr> <td> 0 </td> <td> </td> <td colspan='7'> impuesto-unico-por-pagar#salarios-por-pagar </td> </tr> 
+<tr> <td> 307520 </td> <td> </td> <td colspan='7'> remuneraciones-por-pagar#salarios-por-pagar </td> </tr> 
+<tr> <td> 92480 </td> <td> </td> <td colspan='7'> entidades-previsionales-por-pagar#salarios-por-pagar </td> </tr> 
+<tr style='background-color: azure'>  <td> </td> <td> 0 </td> <td> 92480 </td> <td> </td><td> p[salarios-por-pagar] </td> </tr>
+<tr style='background-color: azure'>  <td> </td> <td> 0 </td> <td> 307520 </td> <td> </td><td> p[salarios-por-pagar] </td> </tr>
+<tr style='color: white; background-color: black'>  <td> </td> <td>400000 </td> <td> 0</td> <td> </td> <td> r[salarios] </td> </tr>
+<tr> <td> </td> <td style='background-color: blanchedalmond'> 400000 </td> <td style='background-color: blanchedalmond'> 400000</td> </tr>
+<tr><td colspan='4'> alectrico® SpA</td> </tr> 
+<tr><td colspan='4'> ( 20 de diciembre	2021	 ) </td> </tr>
+<tr><td colspan='8'> Partida 204: Declaración de Remuneraciones de alexander días trabajados: 7 Tramo Exento: 731308.5 Sueldo Bruto de: 400000 Tasa de Impuesto Único: 0.04 Monto de Impuesto Único: 0 </td></tr>
+<tr> <td colspan='7'>efectuado a electrico </td> </tr>
+<tr><td colspan = '8'> declarar-remuneraciones</td> </tr>
+</tbody>
+</table>
+<p style='page-break-before: always;'>&nbsp;</p>
+<br> 
+<p style='color: white; background-color: red'>  </p>
+<br> 
+- [ ] rcv
+- [ ] libro-diario
+- [ ] ccm
+- [x] revisado
+![](../revisado.png)
+<table id='Partida-206'>
+<thead> <th style='background-color: lavender' colspan='6'>Partida 206</th></thead>
+<tbody>
+<tr style='background-color: lightyellow'>  <td> </td> <td> 900000</td> <td> 0</td> <td colspan='2'> a[banco-estado] </td> </tr>
+<tr style='background-color: lightyellow'>  <td> </td> <td> 0</td> <td> 900000</td> <td colspan='2'> a[caja] </td> </tr>
+<tr> <td> </td> <td style='background-color: blanchedalmond'> 900000 </td> <td style='background-color: blanchedalmond'> 900000</td> </tr>
+<tr><td colspan='4'> alectrico® SpA</td> </tr> 
+<tr><td colspan='4'> ( 31 de diciembre	2021	 ) </td> </tr>
+<tr><td colspan='8'> Partida 206: nil </td></tr>
+<tr><td colspan = '8'> depositar-en-cuenta-corriente</td> </tr>
+</tbody>
+</table>
+<p style='page-break-before: always;'>&nbsp;</p>
+<br> 
+<p style='color: white; background-color: red'>  </p>
+<br> 
+- [ ] rcv
+- [ ] libro-diario
+- [ ] ccm
+- [x] revisado
+![](../revisado.png)
+<table id='Partida-207'>
+<thead> <th style='background-color: lavender' colspan='6'>Partida 207</th></thead>
+<tbody>
+<tr> <td>2417 </td> <td colspan='7'> amortizacion-intangibles#amortizacion </td></tr>
+<tr style='background-color: lightyellow'>  <td> </td> <td> 0</td> <td> 2417</td> <td colspan='2'> a[amortizacion-acumulada-intangibles] </td> </tr>
+<tr style='background-color: lightyellow'>  <td> </td> <td> 0</td> <td> 9804</td> <td colspan='2'> a[depreciacion-acumulada-herramientas] </td> </tr>
+<tr style='color: white; background-color: black'>  <td> </td> <td>9804 </td> <td> 0</td> <td> </td> <td> r[depreciacion] </td> </tr>
+<tr style='color: white; background-color: black'>  <td> </td> <td>2417 </td> <td> 0</td> <td> </td> <td> r[amortizacion] </td> </tr>
+<tr> <td> </td> <td style='background-color: blanchedalmond'> 12221 </td> <td style='background-color: blanchedalmond'> 12221</td> </tr>
+<tr><td colspan='4'> alectrico® SpA</td> </tr> 
+<tr><td colspan='4'> ( 31 de diciembre	2021	 ) </td> </tr>
+<tr><td colspan='8'> Partida 207: Por amortizacion en diciembre de marca-alectrico-Por depreciacion en diciembre de celular-Por depreciacion en diciembre de taladro </td></tr>
+<tr><td colspan = '8'> amortizacion</td> </tr>
+</tbody>
+</table>
+<p style='page-break-before: always;'>&nbsp;</p>
+<br> 
+<p style='color: white; background-color: red'>  </p>
+<br> 
+- [ ] rcv
+- [ ] libro-diario
+- [ ] ccm
+- [x] revisado
+![](../revisado.png)
+<table id='Partida-208'>
+<thead> <th style='background-color: lavender' colspan='6'>Partida 208</th></thead>
+<tbody>
+<tr style='background-color: lightyellow'>  <td> </td> <td> 4552</td> <td> 0</td> <td colspan='2'> a[iva-credito] </td> </tr>
+<tr style='background-color: lightyellow'>  <td> </td> <td> 287</td> <td> 0</td> <td colspan='2'> a[ppm] </td> </tr>
+<tr style='background-color: lightyellow'>  <td> </td> <td> 0</td> <td> 287</td> <td colspan='2'> a[banco-estado] </td> </tr>
+<tr style='background-color: azure'>  <td> </td> <td> 0 </td> <td> 4552 </td> <td> </td><td> p[iva-debito] </td> </tr>
+<tr> <td> </td> <td style='background-color: blanchedalmond'> 4839 </td> <td style='background-color: blanchedalmond'> 4839</td> </tr>
+<tr><td colspan='4'> alectrico® SpA</td> </tr> 
+<tr><td colspan='4'> ( 31 de diciembre	2021	 ) </td> </tr>
+<tr><td colspan='8'> Partida 208: Por ajuste del Credito Fiscal Contra el Debito Fiscal, mes de diciembre-Por pago del ppm, con factor de  0.00125 mes diciembre </td></tr>
+<tr><td colspan = '8'> ajustar-iva-contra-debito</td> </tr>
+</tbody>
+</table>
+<p style='page-break-before: always;'>&nbsp;</p>
+<br> 
 <br> 
 <p style='color: white; background-color: red'>  </p>
 - [x] tipo de asiento: f29
@@ -3865,6 +4184,8 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
  <tr> <td> </td> <td> 511 </td> <td>  41503 </td> <td> CRED.IVA POR DCTOS. ELECTRONICOS  </td> </tr>
  <tr> <td> </td> <td> 077 </td> <td>  28981 </td> <td> REMANENTE DE CREDITO FISC.  </td> </tr>
  <tr> <td> </td> <td> 504 </td> <td>  10942 </td> <td> REMANENTE CREDITO FISCAL MES ANTERIOR.  </td> </tr>
+ <tr> <td> </td> <td> 077 </td> <td>  0 </td> <td> REMANENTE DE CREDITO FISC.  </td> </tr>
+ <tr> <td> </td> <td> 504 </td> <td>  0 </td> <td> REMANENTE CREDITO FISCAL MES ANTERIOR.  </td> </tr>
  <tr> <td> </td> <td> 524 </td> <td>  1 </td> <td> TOTAL FACTURA ACTIVO FIJO </td> </tr>
  <tr> <td> </td> <td> 525 </td> <td>  28738 </td> <td> CRÉD. RECUP. Y REINT. FACT. ACTIVO FIJO </td> </tr>
  <tr> <td> </td> <td> 110 </td> <td>  1 </td> <td> CANT.DE DCTOS.BOLETAS </td> </tr>
@@ -4256,6 +4577,40 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <tr><td colspan='4'> alectrico® SpA</td> </tr> 
 <tr><td colspan='4'> ( 31 de noviembre	2021	 ) </td> </tr>
 <tr><td colspan='8'> Partida 1050: Formulario F29 noviembre </td></tr>
+<tr><td colspan = '8'> codigos-f29</td> </tr>
+</tbody>
+</table>
+<p style='page-break-before: always;'>&nbsp;</p>
+<br> 
+<br> 
+<p style='color: white; background-color: red'>  </p>
+- [x] tipo de asiento: f-29
+- [ ] rcv
+- [ ] libro-diario
+- [ ] ccm
+- [x] revisado
+![](../revisado.png)
+<p style='page-break-after: always;'>&nbsp;</p>
+<table style='background-color:cornsilk'>
+<thead><th colspan='6'>Partida 1051</th></thead>
+ <thead> <th> </th> <th> Código </th> <th>  Valor </th> <th> Descripción </th> </thead>
+<tbody>
+ <tr> <td> </td> <td> 511 </td> <td>  2911 </td> <td> CRED.IVA POR DCTOS. ELECTRONICOS  </td> </tr>
+ <tr> <td> </td> <td> 519 </td> <td>  1 </td> <td> CANT.DE DCTOS.FACT.RECIB.DEL GIRO </td> </tr>
+ <tr> <td> </td> <td> 520 </td> <td>  1316 </td> <td> CREDITOS REC. REINT/FACT. DEL GIRO  </td> </tr>
+ <tr> <td> </td> <td> 503 </td> <td>  2 </td> <td> CANT. FACTURAS EMITIDAS </td> </tr>
+ <tr> <td> </td> <td> 502 </td> <td>  35392 </td> <td> DÉB. FACTURAS EMITIDAS </td> </tr>
+ <tr> <td> </td> <td> 586 </td> <td>  3 </td> <td> Qty Ventas/Servicios Exentos </td> </tr>
+ <tr> <td> </td> <td> 142 </td> <td>  43332 </td> <td> Neto Ventas/Servicios Exentos </td> </tr>
+ <tr> <td> </td> <td> 062 </td> <td>  287 </td> <td> PPM NETO DETERMINADO </td> </tr>
+ <tr> <td> </td> <td> 115 </td> <td>  0.125 </td> <td> TASA PPM 1ra Categoria </td> </tr>
+ <tr> <td> </td> <td> 563 </td> <td>  229606 </td> <td> BASE IMPONIBLE </td> </tr>
+</tbody></table><table>
+<tbody>
+<tr> <td> </td> <td> 2911 </td> <td> 0</td> </tr>
+<tr><td colspan='4'> alectrico® SpA</td> </tr> 
+<tr><td colspan='4'> ( 31 de diciembre	2021	 ) </td> </tr>
+<tr><td colspan='8'> Partida 1051: Formulario F29 diciembre </td></tr>
 <tr><td colspan = '8'> codigos-f29</td> </tr>
 </tbody>
 </table>
