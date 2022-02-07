@@ -190,16 +190,14 @@
        then
         (bind ?utilidad-bruta (- (- ?ventas-netas ?costos-de-ventas) ?costos-de-mercancias))
        else
-        (bind ?utilidad-bruta (- ?ventas-netas ?costos-de-ventas))
-      )
+        (bind ?utilidad-bruta (- ?ventas-netas ?costos-de-ventas))  )
 
      else
      (if (eq diciembre ?mes)
        then
         (bind ?utilidad-bruta (- ?ventas-netas ?costos-de-ventas))
        else
-        (bind ?utilidad-bruta (- ?ventas-netas ?costos-de-ventas))
-      ) )
+        (bind ?utilidad-bruta (- ?ventas-netas ?costos-de-ventas)) ) )
 
   (bind ?gastos-de-operacion 
         (+ ?gastos-administrativos
@@ -208,8 +206,7 @@
            ?gastos-en-promocion
            ?amortizacion-intangibles
            ?depreciacion
-           ?salarios
-        ) ) 
+           ?salarios ) ) 
 
   (bind ?utilidad-de-operacion  (- ?utilidad-bruta ?gastos-de-operacion ?pea))
   (bind ?utilidad-antes-de-reserva ?utilidad-de-operacion)
@@ -468,7 +465,7 @@
 
   (printout t "(1) debe ser igual que (2) " crlf)
 
-  (if (eq ?utilidad-tributaria ?resultado)
+  (if (eq ?base-imponible ?resultado)
    then
     (printout k "<tr><td></td><td></td><td></td><td> (2) </td><td align='right' style='background-color: lightgreen'>" ?base-imponible "</td><td> RLI desp. Imptos ( m. liquidaciones) <small> " ?regimen "</small></td></tr>" crlf)
    
