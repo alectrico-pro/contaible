@@ -441,8 +441,8 @@
   (printout k "<tr><th> <td colspan=6> DETERMINACIÓN DE LA BASE IMPONIBLE </td></th></tr>" crlf)
   (printout k "<tr><th> <td colspan=6> Determina los impuestos del regimen " ?regimen "</td></th></tr>" crlf)
   (printout k "<tbody>" crlf)
-  (printout t "|" tab tab "|     " ?utilidad tab "Utilidad del Ejercicio . (módulo liquidación)" crlf)
-  (printout k "<tr style='font-weight:bold;background-color: azure'><td> <td></td></td><td> </td><td></td><td align='right'>" ?utilidad "</td><td> Utilidad del Ejercicio Después de Impuesto (módulo liquidación)</td></tr>" crlf)
+  (printout t "|" tab tab "|     " ?utilidad tab "Utilidad (módulo liquidación)" crlf)
+  (printout k "<tr style='font-weight:bold;background-color: azure'><td> <td></td></td><td> </td><td></td><td align='right'>" ?utilidad "</td><td> Utilidad del Ejercicio Ant.Impuesto (m. liquidación)</td></tr>" crlf)
 
   (printout t "| (-) " tab ?herramientas tab tab tab tab "Depreciación Instantanea Propyme" crlf)
   (printout t "| (-) " tab ?amortizacion-acumulada-instantanea tab tab tab tab "Amortizacion Instántanea Intangibles (no-contable) " crlf)
@@ -478,7 +478,39 @@
    
    else
     (printout k "<tr><td></td><td></td><td></td><td> (2) </td><td align='right' style='font-weight:bold; background-color: lightgreen'>" ?base-imponible "</td><td>  RLI deps. Imptos (m. liquidaciones) <small>" ?regimen "</small></td></tr>" crlf)
-    (printout k "<tr></tr><tr><td colspan=6 rowspan=1 style='color: white; font-weight:bold; background-color: crimson'> (1) y (2) deben ser iguales: Lasliquidaciones pueden que esté con problemas. Revise que las cuentas de resultados estén bien configuradas en cuentas.txt. Deben tener grupo=resultado  </td></tr>" crlf)
+    (printout k "<tr></tr><tr><td colspan=6 rowspan=1 style='color: white; font-weight:bold; background-color: crimson'> (1) y (2) deben ser iguales: Lasliquidaciones pueden que esté con problemas. Revise que las cuentas de resultados estén bien configuradas en cuentas.txt. Deben tener grupo=resultado. Revise que estas líneas estén en el alectrico-2021-facts.txt 
+;tributario
+( ajuste-anual
+   (ano 2021) (partida 209)
+   (liquidacion tributaria)
+   (efecto aporte))
+
+( ajuste-anual
+   (ano 2021) (partida 210)
+   (liquidacion tributaria)
+   (efecto deduccion))
+
+
+( ajuste-anual-de-resultado-tributario
+   (ano 2021) (partida 211))
+
+
+;financiero
+
+( ajuste-anual
+   (ano 2021) (partida 213)
+   (liquidacion financiera)
+   (efecto ganador))
+
+( ajuste-anual
+   (ano 2021) (partida 212)
+   (liquidacion financiera)
+   (efecto perdedor))
+
+
+
+
+ </td></tr>" crlf)
 )
 
  

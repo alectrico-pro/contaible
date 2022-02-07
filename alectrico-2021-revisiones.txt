@@ -380,9 +380,25 @@
 (revision (revisado true) (partida 197))
 (revision (revisado true) (partida 198))
 (revision (revisado true) (partida 199))
-(revision (revisado true) (partida 200))
-(revision (revisado true) (partida 201))
-(revision (revisado true) (partida 202))
+
+(revision (revisado true) (partida 200)
+ (folio 44204963)
+ (tipo 33)
+ (rechazado true)
+ (a-corregir "Reclamado en SII" )
+)
+
+(revision (revisado true) (partida 201)
+ (folio 44123442)
+ (tipo 33)
+)
+
+(revision (revisado true) (partida 202)
+ (tipo 61)
+ (rechazado true)
+ (a-corregir "Lo reclamé por error en CCM de SII. No tiene efecto en mi contabilidad" )
+)
+
 (revision (revisado true) (partida 204))
 (revision (revisado true) (partida 205))
 (revision (revisado true) (partida 206))

@@ -8,7 +8,7 @@
  (razon "alectrico® SpA"))
 
 
-(balance (dia 31) (mes enero) (ano 2021))
+(balance (dia 31) (mes diciembre) (ano 2021))
 
 
 ;dia 01/01/2021---------- asiento inicial  ----------------
@@ -3132,15 +3132,17 @@
 
 
 ;financiero
-( ajuste-anual
-   (ano 2021) (partida 212)
-   (liquidacion financiera)
-   (efecto perdedor))
 
 ( ajuste-anual
    (ano 2021) (partida 213)
    (liquidacion financiera)
    (efecto ganador))
+
+( ajuste-anual
+   (ano 2021) (partida 212)
+   (liquidacion financiera)
+   (efecto perdedor))
+
 
 
 ( ajuste-anual-de-resultado-financiero
