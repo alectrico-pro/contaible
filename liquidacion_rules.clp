@@ -864,6 +864,7 @@
                 ( liquidada true)
                 ( origen real )
                 ( haber (+ ?haber ?saldo))))
+
    ( modify ?liquidador
      ( ano ?ano)
      ( empresa ?empresa )

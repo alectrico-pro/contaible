@@ -146,10 +146,8 @@
 
 ( defrule encabezado
   ?s <- (subtotales (cuenta ?nombre) (totalizado false))
-(no)
   ?cuenta <- ( cuenta
      ( grupo patrimonio)
-     ( partida nil)
      ( mostrado-en-t false)
      ( nombre ?nombre)
      ( origen real)
@@ -178,9 +176,12 @@
 
 
 ( defrule encabezados-base-imponible
+  ?s <- (subtotales (cuenta base-imponible))
+
   (exists ( cuenta (nombre base-imponible) ))
   (not (exists ( hacer base-imponible)))
  =>
+  ( retract ?s) 
   ( printout t crlf crlf crlf )
   ( printout t base-imponible crlf )
   ( printout t "------- creando subtotales para " base-imponible " --------------------- " crlf)
