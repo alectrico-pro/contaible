@@ -102,7 +102,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <tr style='background-color: lightgreen'><td>6559</td> <td></td> <td colspan='2' >idpc</td></tr>
 <tr style='background-color: lightgreen'><td></td><td>6559</td> <td> </td><td colspan='2'> r(perdidas-y-ganancias) </td></tr> 
 <tr> <td colspan='8'>x-- Liquidando cuenta de resultados (cuando hay ganancia) en: utilidad en perdidas-y-ganancias</td></tr>
-<tr style='font-weight:bold; color: white; background-color: crimson'> <td>65595</td><td></td><td>utilidad</td><tr>
+<tr style='font-weight:bold; background-color: gold'> <td> 65595</td><td></td><td>utilidad</td><tr>
 <tr><td></td><td>65595</td><td> </td><td colspan='2'> r(perdidas-y-ganancias) </td></tr>
 <tr style='color: white; background-color: black'> <td> 72154</td><td> 72154</td><td colspan='3'>( 31 de enero	2021	 ) </td></tr>
 <tr><td colspan='9'>alectrico® SpA</td></tr>
@@ -113,6 +113,3 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <tr> <td> nil</td> <td>87314</td><td> 152909</td></tr>
 <tr style='background-color: blanchedalmond'><td>65595</td></tr>
 </table>
-<table style='background-color: lightyellow' ><tbody>
-<tr style='color: white; background-color: black'><td colspan='9'> Partida 211</td></tr>
-<tr><th>DEBE</th><th> HABER </th> <th colspan='6'> Cuenta </th></tr>

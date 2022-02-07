@@ -188,22 +188,22 @@
     (partida ?numero))
 
  =>
-  ( assert (partida (numero ?numero) (dia 31) (mes diciembre) (ano ?ano)
-    (empresa ?empresa)
-    (actividad determinacion-del-resultado-tributario)
-    (descripcion "v/Para determinar el valor del resultado Tributario del Periodo")))
+ ; ( assert (partida (numero ?numero) (dia 31) (mes diciembre) (ano ?ano)
+ ;   (empresa ?empresa)
+ ;   (actividad determinacion-del-resultado-tributario)
+ ;   (descripcion "v/Para determinar el valor del resultado Tributario del Periodo")))
 
-  ( assert (liquidacion (cuenta idpc)
-    (partida ?numero) (ano ?ano)
-    (liquidadora base-imponible)))
+ ; ( assert (liquidacion (cuenta idpc)
+ ;   (partida ?numero) (ano ?ano)
+ ;   (liquidadora base-imponible)))
 
-  ( assert (liquidacion (cuenta reserva-legal)
-    (partida ?numero) (ano ?ano)
-    (liquidadora base-imponible)))
+ ; ( assert (liquidacion (cuenta reserva-legal)
+ ;   (partida ?numero) (ano ?ano)
+  ;  (liquidadora base-imponible)))
 
-  ( assert (liquidacion (cuenta utilidad-tributaria)
-    (partida ?numero) (ano ?ano)
-    (liquidadora base-imponible)))
+;  ( assert (liquidacion (cuenta utilidad-tributaria)
+ ;   (partida ?numero) (ano ?ano)
+  ;  (liquidadora base-imponible)))
 )
 
 
@@ -881,7 +881,7 @@
 
    ( printout k "<tr><td colspan='6'>x-- Liquidando cuenta de resultados ( cuando hay ganancia) en " ?nombre " en " ?liquidora "</td></tr>" crlf)
    ( printout k "<tr style='background-color: azure'><td colspan='6'>La cuenta de liquidacion tiene un debe de " tab ?debe2 " y un haber de " tab ?haber2 "</td></tr>" crlf)
-   ( printout k "<tr style='background-color: azure'><td> " ?saldo "</td><td></td><td colspan='2'>"  ?nombre "</td></tr>" crlf)
+   ( printout k "<tr style='background-color: gold'><td> " ?saldo "</td><td></td><td colspan='2'>"  ?nombre "</td></tr>" crlf)
    ( printout k "<tr style='background-color: azure'><td> </td><td>" ?saldo "</td><td></td><td> r(" ?liquidora ") </td></tr>" crlf)
  ; ( printout t  "obtencion-utilidad-tributaria-positiva" crlf)
 )
@@ -949,7 +949,7 @@
  ;  ( printout k "<table><tbody>" crlf)
    ( printout k "<tr> <td colspan='8'>x-- Liquidando cuenta de resultados (cuando hay ganancia) en: " ?nombre " en " ?liquidora "</td></tr>" crlf)
 
-   ( printout k "<tr style='font-weight:bold; color: white; background-color: crimson'> <td>" ?saldo "</td><td></td><td>" ?nombre "</td><tr>" crlf)
+   ( printout k "<tr style='font-weight:bold; background-color: gold'> <td> " ?saldo "</td><td></td><td>" ?nombre "</td><tr>" crlf)
    ( printout k "<tr><td></td><td>" ?saldo "</td><td> </td><td colspan='2'> r(" ?liquidora ") </td></tr>" crlf)
  ;  ( printout k "</tbody> </table>" crlf)
    ( printout t  "obtencion-utilidad-positiva partida " ?numero crlf)
