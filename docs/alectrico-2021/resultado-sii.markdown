@@ -3,7 +3,7 @@ layout: page
 --- 
 
 
-Solo se consideran las transacciones hasta el día 31	mayo.
+Solo se consideran las transacciones hasta el día 31	julio.
 Cifras en pesos.
 Se han practicado liquidaciones, por lo que NO se muestran cuentas nominales
 <table rules='groups'>
@@ -13,21 +13,42 @@ Se han practicado liquidaciones, por lo que NO se muestran cuentas nominales
 <thead> <th></th><th> </th> <th align='center' colspan= '2'>SUMAS</th><th> Padre </th> </thead>
 <thead> <th></th><th></th>  <th>DEBER</th> <th>ACREEDOR</th> </thead>
 <tbody>
-<thead> <th></th><th colspan='4'> T O T A L    A C T I V O  </th> <th> 2107575</th> </thead>
-<thead> <th></th><th colspan='4'> A C T I V O    F I J O</th> <th> 405741</th> </thead>
-<thead> <th></th><th colspan='4'> A C T I V O    C I R C U L A N T E</th> <th> 1701834</th> </thead>
+<thead> <th></th><th colspan='4'> T O T A L    A C T I V O  </th> <th> 1940530</th> </thead>
+<thead> <th></th><th colspan='4'> A C T I V O    F I J O</th> <th> 454119</th> </thead>
+<thead> <th></th><th colspan='4'> A C T I V O    C I R C U L A N T E</th> <th> 1486411</th> </thead>
 <thead> <th></th><th>intangibles</th><th> 290000</th> </thead>
-<thead> <th></th><th>herramientas</th><th> 151252</th> </thead>
-<thead> <th></th><th>caja</th><th> 993022</th> </thead>
-<thead> <th></th><th>banco-estado</th><th> 524658</th> </thead>
-<thead> <th></th><th>iva-credito</th><th> 40909</th> </thead>
+<thead> <th></th><th>retencion-de-iva-articulo-11</th><th> 0</th> </thead>
+<thead> <th></th><th>iva-credito</th><th> 53388</th> </thead>
+<thead> <th></th><th>caja</th><th> 971651</th> </thead>
+<thead> <th></th><th>banco-estado</th><th> 317923</th> </thead>
 <thead> <th></th><th>materiales</th><th> 97674</th> </thead>
 <thead> <th></th><th>insumos</th><th> 46178</th> </thead>
-<thead> <th></th><th>retencion-de-iva-articulo-11</th><th> 0</th> </thead>
+<thead> <th></th><th>herramientas</th><th> 218470</th> </thead>
 <thead> <th></th><th>amortizacion-acumulada-intangibles</th><th> 0</th> </thead>
-<thead> <th></th><th>ppm</th><th> 893</th> </thead>
+<thead> <th></th><th>ppm</th><th> 1097</th> </thead>
 <thead> <th></th><th>depreciacion-acumulada-herramientas</th><th> 0</th> </thead>
-<thead> <th></th><th colspan='4'> G A S T O S    P R O M O C I O N A L E S </th> <th> 23933</th> </thead>
+<thead> <th></th><th colspan='4'> G A S T O S    P R O M O C I O N A L E S </th> <th> 206576</th> </thead>
+<tr  style='background-color: lightyellow'>
+<td></td><td><small> test-animation-video-maker </small> </td> <td align='right'> 27182</td> <td align='right'>0</td> <td> gastos-promocionales</td>
+</tr>
+<tr style='background-color: lavender'>
+<td>35</td><td><small> test-animation-video-maker </small> </td> <td align='right'> 2941</td> <td align='right'>0</td> <td> gastos-promocionales</td>
+</tr>
+<tr style='background-color: lavender'>
+<td>47</td><td><small> test-animation-video-maker </small> </td> <td align='right'> 2941</td> <td align='right'>0</td> <td> gastos-promocionales</td>
+</tr>
+<tr style='background-color: lavender'>
+<td>78</td><td><small> test-animation-video-maker </small> </td> <td align='right'> 21300</td> <td align='right'>0</td> <td> gastos-promocionales</td>
+</tr>
+<tr  style='background-color: lightyellow'>
+<td></td><td><small> macprint </small> </td> <td align='right'> 46857</td> <td align='right'>0</td> <td> gastos-promocionales</td>
+</tr>
+<tr style='background-color: lavender'>
+<td>50</td><td><small> macprint </small> </td> <td align='right'> 20000</td> <td align='right'>0</td> <td> gastos-promocionales</td>
+</tr>
+<tr style='background-color: lavender'>
+<td>64</td><td><small> macprint </small> </td> <td align='right'> 26857</td> <td align='right'>0</td> <td> gastos-promocionales</td>
+</tr>
 <tr  style='background-color: lightyellow'>
 <td></td><td><small> embros </small> </td> <td align='right'> 20992</td> <td align='right'>0</td> <td> gastos-promocionales</td>
 </tr>
@@ -35,14 +56,44 @@ Se han practicado liquidaciones, por lo que NO se muestran cuentas nominales
 <td>18</td><td><small> embros </small> </td> <td align='right'> 20992</td> <td align='right'>0</td> <td> gastos-promocionales</td>
 </tr>
 <tr  style='background-color: lightyellow'>
-<td></td><td><small> test-animation-video-maker </small> </td> <td align='right'> 2941</td> <td align='right'>0</td> <td> gastos-promocionales</td>
+<td></td><td><small> maria-jose </small> </td> <td align='right'> 15000</td> <td align='right'>0</td> <td> gastos-promocionales</td>
 </tr>
 <tr style='background-color: lavender'>
-<td>35</td><td><small> test-animation-video-maker </small> </td> <td align='right'> 2941</td> <td align='right'>0</td> <td> gastos-promocionales</td>
+<td>39</td><td><small> maria-jose </small> </td> <td align='right'> 15000</td> <td align='right'>0</td> <td> gastos-promocionales</td>
 </tr>
-<thead> <th></th><th colspan='4'> G A S T O S     A D M I N I S T R A T I V O S </th> <th> 48847</th></thead>
 <tr  style='background-color: lightyellow'>
-<td></td><td><small> entel </small> </td> <td align='right'> 23906</td> <td align='right'>0</td> <td> gastos-administrativos</td>
+<td></td><td><small> boosted </small> </td> <td align='right'> 40588</td> <td align='right'>0</td> <td> gastos-promocionales</td>
+</tr>
+<tr style='background-color: lavender'>
+<td>68</td><td><small> boosted </small> </td> <td align='right'> 40588</td> <td align='right'>0</td> <td> gastos-promocionales</td>
+</tr>
+<tr  style='background-color: lightyellow'>
+<td></td><td><small> google </small> </td> <td align='right'> 50000</td> <td align='right'>0</td> <td> gastos-promocionales</td>
+</tr>
+<tr style='background-color: lavender'>
+<td>69</td><td><small> google </small> </td> <td align='right'> 50000</td> <td align='right'>0</td> <td> gastos-promocionales</td>
+</tr>
+<tr  style='background-color: lightyellow'>
+<td></td><td><small> scrap </small> </td> <td align='right'> 1008</td> <td align='right'>0</td> <td> gastos-promocionales</td>
+</tr>
+<tr style='background-color: lavender'>
+<td>73</td><td><small> scrap </small> </td> <td align='right'> 1008</td> <td align='right'>0</td> <td> gastos-promocionales</td>
+</tr>
+<tr  style='background-color: lightyellow'>
+<td></td><td><small> ilop </small> </td> <td align='right'> 3185</td> <td align='right'>0</td> <td> gastos-promocionales</td>
+</tr>
+<tr style='background-color: lavender'>
+<td>74</td><td><small> ilop </small> </td> <td align='right'> 3185</td> <td align='right'>0</td> <td> gastos-promocionales</td>
+</tr>
+<tr  style='background-color: lightyellow'>
+<td></td><td><small> eugenio </small> </td> <td align='right'> 1764</td> <td align='right'>0</td> <td> gastos-promocionales</td>
+</tr>
+<tr style='background-color: lavender'>
+<td>85</td><td><small> eugenio </small> </td> <td align='right'> 1764</td> <td align='right'>0</td> <td> gastos-promocionales</td>
+</tr>
+<thead> <th></th><th colspan='4'> G A S T O S     A D M I N I S T R A T I V O S </th> <th> 173854</th></thead>
+<tr  style='background-color: lightyellow'>
+<td></td><td><small> entel </small> </td> <td align='right'> 30832</td> <td align='right'>0</td> <td> gastos-administrativos</td>
 </tr>
 <tr style='background-color: lavender'>
 <td> 17</td><td><small> entel </small> </td> <td align='right'> 3128</td> <td align='right'>0</td> <td> gastos-administrativos</td>
@@ -56,6 +107,48 @@ Se han practicado liquidaciones, por lo que NO se muestran cuentas nominales
 <tr style='background-color: lavender'>
 <td> 31</td><td><small> entel </small> </td> <td align='right'> 6926</td> <td align='right'>0</td> <td> gastos-administrativos</td>
 </tr>
+<tr style='background-color: lavender'>
+<td> 49</td><td><small> entel </small> </td> <td align='right'> 6926</td> <td align='right'>0</td> <td> gastos-administrativos</td>
+</tr>
+<tr  style='background-color: lightyellow'>
+<td></td><td><small> cloudflare </small> </td> <td align='right'> 10852</td> <td align='right'>0</td> <td> gastos-administrativos</td>
+</tr>
+<tr style='background-color: lavender'>
+<td> 34</td><td><small> cloudflare </small> </td> <td align='right'> 3775</td> <td align='right'>0</td> <td> gastos-administrativos</td>
+</tr>
+<tr style='background-color: lavender'>
+<td> 48</td><td><small> cloudflare </small> </td> <td align='right'> 3302</td> <td align='right'>0</td> <td> gastos-administrativos</td>
+</tr>
+<tr style='background-color: lavender'>
+<td> 79</td><td><small> cloudflare </small> </td> <td align='right'> 3775</td> <td align='right'>0</td> <td> gastos-administrativos</td>
+</tr>
+<tr  style='background-color: lightyellow'>
+<td></td><td><small> google-one </small> </td> <td align='right'> 3530</td> <td align='right'>0</td> <td> gastos-administrativos</td>
+</tr>
+<tr style='background-color: lavender'>
+<td> 36</td><td><small> google-one </small> </td> <td align='right'> 1176</td> <td align='right'>0</td> <td> gastos-administrativos</td>
+</tr>
+<tr style='background-color: lavender'>
+<td> 41</td><td><small> google-one </small> </td> <td align='right'> 1177</td> <td align='right'>0</td> <td> gastos-administrativos</td>
+</tr>
+<tr style='background-color: lavender'>
+<td> 63</td><td><small> google-one </small> </td> <td align='right'> 1177</td> <td align='right'>0</td> <td> gastos-administrativos</td>
+</tr>
+<tr  style='background-color: lightyellow'>
+<td></td><td><small> tgr </small> </td> <td align='right'> 98617</td> <td align='right'>0</td> <td> gastos-administrativos</td>
+</tr>
+<tr style='background-color: lavender'>
+<td> 46</td><td><small> tgr </small> </td> <td align='right'> 62406</td> <td align='right'>0</td> <td> gastos-administrativos</td>
+</tr>
+<tr style='background-color: lavender'>
+<td> 45</td><td><small> tgr </small> </td> <td align='right'> 3307</td> <td align='right'>0</td> <td> gastos-administrativos</td>
+</tr>
+<tr style='background-color: lavender'>
+<td> 43</td><td><small> tgr </small> </td> <td align='right'> 31203</td> <td align='right'>0</td> <td> gastos-administrativos</td>
+</tr>
+<tr style='background-color: lavender'>
+<td> 42</td><td><small> tgr </small> </td> <td align='right'> 1701</td> <td align='right'>0</td> <td> gastos-administrativos</td>
+</tr>
 <tr  style='background-color: lightyellow'>
 <td></td><td><small> trust </small> </td> <td align='right'> 19990</td> <td align='right'>0</td> <td> gastos-administrativos</td>
 </tr>
@@ -63,16 +156,16 @@ Se han practicado liquidaciones, por lo que NO se muestran cuentas nominales
 <td> 32</td><td><small> trust </small> </td> <td align='right'> 19990</td> <td align='right'>0</td> <td> gastos-administrativos</td>
 </tr>
 <tr  style='background-color: lightyellow'>
-<td></td><td><small> cloudflare </small> </td> <td align='right'> 3775</td> <td align='right'>0</td> <td> gastos-administrativos</td>
+<td></td><td><small> ie </small> </td> <td align='right'> 1672</td> <td align='right'>0</td> <td> gastos-administrativos</td>
 </tr>
 <tr style='background-color: lavender'>
-<td> 34</td><td><small> cloudflare </small> </td> <td align='right'> 3775</td> <td align='right'>0</td> <td> gastos-administrativos</td>
+<td> 67</td><td><small> ie </small> </td> <td align='right'> 1672</td> <td align='right'>0</td> <td> gastos-administrativos</td>
 </tr>
 <tr  style='background-color: lightyellow'>
-<td></td><td><small> google-one </small> </td> <td align='right'> 1176</td> <td align='right'>0</td> <td> gastos-administrativos</td>
+<td></td><td><small> u-chile </small> </td> <td align='right'> 8361</td> <td align='right'>0</td> <td> gastos-administrativos</td>
 </tr>
 <tr style='background-color: lavender'>
-<td> 36</td><td><small> google-one </small> </td> <td align='right'> 1176</td> <td align='right'>0</td> <td> gastos-administrativos</td>
+<td> 84</td><td><small> u-chile </small> </td> <td align='right'> 8361</td> <td align='right'>0</td> <td> gastos-administrativos</td>
 </tr>
 <thead> <th></th><th colspan='4'> I N T A N G I B L E S </th> <th>290000</th> </thead>
 <tr style='background-color: lightyellow'>
@@ -81,9 +174,9 @@ Se han practicado liquidaciones, por lo que NO se muestran cuentas nominales
 <tr style='background-color: lavender'>
 <td> 1</td><td><small> marca-alectrico </small> </td> <td align='right'> 290000</td> <td align='right'>0</td> <td> intangibles</td>
 </tr>
-<thead> <th></th><th colspan='4'> C O R R E C C I O N    M O N E T A R I A</th><th> 1159</th> </thead>
+<thead> <th></th><th colspan='4'> C O R R E C C I O N    M O N E T A R I A</th><th> 1658</th> </thead>
 <tr  style='background-color: lightyellow'>
-<td></td><td><small> ganancia-por-correccion-monetaria </small> </td> <td align='right'> 0</td> <td align='right'>1159</td> <td> correccion-monetaria</td>
+<td></td><td><small> ganancia-por-correccion-monetaria </small> </td> <td align='right'> 0</td> <td align='right'>1658</td> <td> correccion-monetaria</td>
 </tr>
 <tr style='background-color: lavender'>
 <td> 14333</td><td><small> ganancia-por-correccion-monetaria </small> </td> <td align='right'> 0</td> <td align='right'>33</td> <td> correccion-monetaria</td>
@@ -100,9 +193,15 @@ Se han practicado liquidaciones, por lo que NO se muestran cuentas nominales
 <tr style='background-color: lavender'>
 <td> 372</td><td><small> ganancia-por-correccion-monetaria </small> </td> <td align='right'> 0</td> <td align='right'>254</td> <td> correccion-monetaria</td>
 </tr>
-<thead> <th></th><th colspan='4'> C O S T O S   D E    V E N T A S </th> <th> 6483</th></thead>
+<tr style='background-color: lavender'>
+<td> 62</td><td><small> ganancia-por-correccion-monetaria </small> </td> <td align='right'> 0</td> <td align='right'>279</td> <td> correccion-monetaria</td>
+</tr>
+<tr style='background-color: lavender'>
+<td> 89</td><td><small> ganancia-por-correccion-monetaria </small> </td> <td align='right'> 0</td> <td align='right'>220</td> <td> correccion-monetaria</td>
+</tr>
+<thead> <th></th><th colspan='4'> C O S T O S   D E    V E N T A S </th> <th> 10714</th></thead>
 <tr  style='background-color: lightyellow'>
-<td></td><td><small> transbank </small> </td> <td align='right'> 6433</td> <td align='right'>0</td> <td> costos-de-ventas</td>
+<td></td><td><small> transbank </small> </td> <td align='right'> 10664</td> <td align='right'>0</td> <td> costos-de-ventas</td>
 </tr>
 <tr style='background-color: lavender'>
 <td> 9</td><td><small> transbank </small> </td> <td align='right'> 1678</td> <td align='right'>0</td> <td> costos-de-ventas</td>
@@ -121,6 +220,9 @@ Se han practicado liquidaciones, por lo que NO se muestran cuentas nominales
 </tr>
 <tr style='background-color: lavender'>
 <td> 33</td><td><small> transbank </small> </td> <td align='right'> 1273</td> <td align='right'>0</td> <td> costos-de-ventas</td>
+</tr>
+<tr style='background-color: lavender'>
+<td> 86</td><td><small> transbank </small> </td> <td align='right'> 4231</td> <td align='right'>0</td> <td> costos-de-ventas</td>
 </tr>
 <tr  style='background-color: lightyellow'>
 <td></td><td><small> khipu </small> </td> <td align='right'> 50</td> <td align='right'>0</td> <td> costos-de-ventas</td>
@@ -176,7 +278,7 @@ Se han practicado liquidaciones, por lo que NO se muestran cuentas nominales
 <tr style='background-color: lavender'>
 <td>16</td><td><small> dartel-materiales </small> </td> <td align='right'> 6607</td> <td align='right'>0</td> <td> materiales</td>
 </tr>
-<thead> <th></th><th colspan='4'> V E N T A S </th><th> 133480</th> </thead>
+<thead> <th></th><th colspan='4'> V E N T A S </th><th> 296657</th> </thead>
 <tr  style='background-color: lightyellow'>
 <td></td><td><small> ventas-con-eboleta-afecta </small> </td> <td align='right'> 0</td> <td align='right'>84</td> <td> ventas</td>
 </tr>
@@ -196,7 +298,7 @@ Se han practicado liquidaciones, por lo que NO se muestran cuentas nominales
 <td> 141</td> <td><small> ventas-con-eboleta-afecta </small> </td> <td align='right'> 29412</td> <td align='right'>0</td> <td> ventas</td>
 </tr>
 <tr  style='background-color: lightyellow'>
-<td></td><td><small> ventas-con-voucher-afecto </small> </td> <td align='right'> 0</td> <td align='right'>178119</td> <td> ventas</td>
+<td></td><td><small> ventas-con-voucher-afecto </small> </td> <td align='right'> 0</td> <td align='right'>178117</td> <td> ventas</td>
 </tr>
 <tr style='background-color: lavender'>
 <td> 4</td> <td><small> ventas-con-voucher-afecto </small> </td> <td align='right'> 0</td> <td align='right'>123497</td> <td> ventas</td>
@@ -207,8 +309,14 @@ Se han practicado liquidaciones, por lo que NO se muestran cuentas nominales
 <tr style='background-color: lavender'>
 <td> 30</td> <td><small> ventas-con-voucher-afecto </small> </td> <td align='right'> 0</td> <td align='right'>25210</td> <td> ventas</td>
 </tr>
+<tr style='background-color: lavender'>
+<td> 87</td> <td><small> ventas-con-voucher-afecto </small> </td> <td align='right'> 151962</td> <td align='right'>0</td> <td> ventas</td>
+</tr>
+<tr style='background-color: lavender'>
+<td> 77</td> <td><small> ventas-con-voucher-afecto </small> </td> <td align='right'> 0</td> <td align='right'>151960</td> <td> ventas</td>
+</tr>
 <tr  style='background-color: lightyellow'>
-<td></td><td><small> ventas-con-eboleta-exenta </small> </td> <td align='right'> 45050</td> <td align='right'>0</td> <td> ventas</td>
+<td></td><td><small> ventas-con-eboleta-exenta </small> </td> <td align='right'> 10050</td> <td align='right'>0</td> <td> ventas</td>
 </tr>
 <tr style='background-color: lavender'>
 <td> 6</td> <td><small> ventas-con-eboleta-exenta </small> </td> <td align='right'> 45050</td> <td align='right'>0</td> <td> ventas</td>
@@ -219,12 +327,30 @@ Se han practicado liquidaciones, por lo que NO se muestran cuentas nominales
 <tr style='background-color: lavender'>
 <td> 191</td> <td><small> ventas-con-eboleta-exenta </small> </td> <td align='right'> 0</td> <td align='right'>4505</td> <td> ventas</td>
 </tr>
+<tr style='background-color: lavender'>
+<td> 81</td> <td><small> ventas-con-eboleta-exenta </small> </td> <td align='right'> 0</td> <td align='right'>35000</td> <td> ventas</td>
+</tr>
 <tr  style='background-color: lightyellow'>
-<td></td><td><small> ventas-con-factura-afecta </small> </td> <td align='right'> 0</td> <td align='right'>327</td> <td> ventas</td>
+<td></td><td><small> ventas-con-factura-afecta </small> </td> <td align='right'> 0</td> <td align='right'>93506</td> <td> ventas</td>
 </tr>
 <tr style='background-color: lavender'>
 <td> 301</td> <td><small> ventas-con-factura-afecta </small> </td> <td align='right'> 0</td> <td align='right'>102</td> <td> ventas</td>
 </tr>
 <tr style='background-color: lavender'>
 <td> 37</td> <td><small> ventas-con-factura-afecta </small> </td> <td align='right'> 0</td> <td align='right'>225</td> <td> ventas</td>
+</tr>
+<tr style='background-color: lavender'>
+<td> 83</td> <td><small> ventas-con-factura-afecta </small> </td> <td align='right'> 0</td> <td align='right'>93179</td> <td> ventas</td>
+</tr>
+<tr style='background-color: lavender'>
+<td> 82</td> <td><small> ventas-con-factura-afecta </small> </td> <td align='right'> 558823</td> <td align='right'>0</td> <td> ventas</td>
+</tr>
+<tr style='background-color: lavender'>
+<td> 76</td> <td><small> ventas-con-factura-afecta </small> </td> <td align='right'> 0</td> <td align='right'>558823</td> <td> ventas</td>
+</tr>
+<tr  style='background-color: lightyellow'>
+<td></td><td><small> ventas-con-factura-exenta </small> </td> <td align='right'> 0</td> <td align='right'>35000</td> <td> ventas</td>
+</tr>
+<tr style='background-color: lavender'>
+<td> 75</td> <td><small> ventas-con-factura-exenta </small> </td> <td align='right'> 0</td> <td align='right'>35000</td> <td> ventas</td>
 </tr>
