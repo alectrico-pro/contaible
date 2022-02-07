@@ -8,7 +8,7 @@
  (razon "alectrico® SpA"))
 
 
-(balance (dia 31) (mes abril) (ano 2021))
+(balance (dia 31) (mes mayo) (ano 2021))
 
 
 ;dia 01/01/2021---------- asiento inicial  ----------------
