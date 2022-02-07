@@ -120,3 +120,12 @@ layout: page
 <tr> <td style='font-weight: bold; font-size: large; background-color: ivory'>58852</td> <td> (+) 701 </td><td style='font-weight: bold; font-size: large; background-color: gold'  > (=) 59553</td> <td> f29 504 </td><td> Remanente de crédito fiscal del mes anterior</td> </tr>
 <tr> <td style='font-weight: bold; font-size: large; background-color: ivory'>22902</td> <td> (+) 701 </td><td style='font-weight: bold; font-size: large; background-color: greenyellow' > (=) 23603</td> <td> f29 077 </td><td>Remanente del crédito fiscal para el mes siguiente</td></tr>
 <tr> <td> Determinando mes de ajuste de remanente de IVA </td><td> noviembre</td> <td>2021</td> </tr>
+<table> <tbody>
+<tr> <td colspan='6' style = 'font-style: small; background-color: azure'>noviembre</td></tr>
+<tr> <td colspan='2' style='background-color: lightyellow'> IVA CREDITO </td> <td colspan='2' style='background-color: beige'> IVA DEBITO </td> </tr> 
+<tr> <td> DEBE </td> <td> HABER </td> <td> DEBE </td><td> HABER </td> </tr> 
+<tr> <td>27431</td> <td> 0</td> <td> 0</td><td> 0</td> </tr>
+<tr> <td>27431</td> <td></td><td></td><td>0</td> </tr>
+<tr> <td style='font-weight: bold; font-size: large; background-color: azure'>27431</td> <td></td> <td> </td><td> </td> </tr>
+</tbody> </table>
+<tr> <td> Determinando mes de ajuste de remanente de IVA </td><td> enero</td> <td>2022</td> </tr>
