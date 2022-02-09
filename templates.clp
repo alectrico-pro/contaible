@@ -765,7 +765,8 @@
 
 (deftemplate partida-inventario-final
    (slot partida)
-   (slot hecho )
+   (slot hecho (default false))
+   (slot saldo (default 0))
 )
 
 (deftemplate footer

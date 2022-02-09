@@ -475,8 +475,8 @@
 
   =>
 
-   ( modify ?liquidacion
-     ( cumplida true))
+
+   ( modify ?liquidacion (cumplida true))
 
    ( modify ?cuenta
      ( liquidada true )
@@ -572,7 +572,7 @@
       (debe   ?debep)
       (haber  ?haberp))
 
-   ?tributacin <- (tributacion
+   ?tributacion <- (tributacion
        (partida ?numero)
        (cuenta ?nombre) (ano ?ano)
        (liquidadora ?liquidora)
@@ -1112,7 +1112,7 @@
 
 (defrule caratula-de-inventario-final
    ( declare (salience 3))
-   ( partida-inventario-final (partida ?numero) )
+   ?partida-inventario-final <-  ( partida-inventario-final (partida ?numero) (hecho false) )
    ( empresa (nombre ?empresa))
    ( balance ( mes ?mes) (ano ?ano))
   =>
@@ -1159,6 +1159,12 @@
      (liquidacion (cuenta inventario-final) (partida ?numero) (ano ?ano)
      (liquidadora perdidas-y-ganancias) (efecto perdedor)))
 
+
+   ( assert
+     (tributacion (cuenta inventario-final) (partida ?numero) (ano ?ano)
+     (liquidadora base-imponible) (efecto deduccion)))
+
+   ( modify ?partida-inventario-final (hecho true) (saldo (- ?suma-debe ?suma-haber)))
 )
 
 

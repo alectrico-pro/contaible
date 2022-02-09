@@ -14,9 +14,18 @@
   (not (exists (partida-inventario-final )))
  =>
   (assert (info (inventario-final-liquidado false)))
+  
 )
 
 
+;el inventario final desaparece subsumido por
+;la liquidacion hacia perdidas y ganancias
+;entonces hay que hacer un tracking
+(defrule obteniendo-inventario-final
+  ( partida-inventario-final (partida ?numero) (saldo ?saldo))
+ =>
+  ( printout t "Inventario Final saldo " ?saldo crlf)
+)
 
 (deffunction mes_to_numero ( ?mes )
   ( switch ?mes
