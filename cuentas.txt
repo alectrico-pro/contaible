@@ -739,6 +739,16 @@ pagos.")
   (padre gastos-administrativos)
   (origen nominativo))
 
+
+(cuenta (nombre costos-de-mercancias)
+  (descripcion costos-de-mercancias)
+  (tipo deudor)
+  (grupo resultado)
+  (circulante true)
+  (padre false)
+  (origen nominativo))
+
+
 (cuenta (nombre arriendos)
   (codigo 200103)
   (descripcion costos-en-que-se-incurre-al-vender)
@@ -1206,7 +1216,7 @@ pagos.")
   (grupo activo)
   (naturaleza deudor)
   (circulante true)
-  (origen nominativo))
+  (origen real))
 
 (cuenta (nombre inventario-inicial)
   (descripcion inventario-inicial)

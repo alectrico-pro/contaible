@@ -188,14 +188,15 @@
     then
      (if (eq diciembre ?mes) 
        then
-        (bind ?utilidad-bruta (- (- ?ventas-netas ?costos-de-ventas) ?costos-de-mercancias))
+        (bind ?utilidad-bruta (- ?ventas-netas ?costos-de-ventas) )
        else
         (bind ?utilidad-bruta (- ?ventas-netas ?costos-de-ventas))  )
 
      else
      (if (eq diciembre ?mes)
        then
-        (bind ?utilidad-bruta (- ?ventas-netas ?costos-de-ventas ))
+        ;no se ha liquidado el inventario final, tampoco acá
+        (bind ?utilidad-bruta (+ (- ?ventas-netas ?costos-de-ventas ) ?inventario-final))
        else
         (bind ?utilidad-bruta (- ?ventas-netas ?costos-de-ventas))))
 
@@ -314,8 +315,8 @@
   (printout k "<tr><td> (-) </td> <td align='right'>" ?inventario-final "</td><td> </td><td></td><td></td><td colspan='2'>Inventario Final </td></tr>" crlf)
 
 
-  (printout t "| (=) " ?costos-de-mercancias tab "|" tab tab "Costos de Mercancías " crlf)
-  (printout k "<tr><td> (=) </td> <td align='right'>" ?costos-de-mercancias "</td><td> </td><td></td><td></td><td colspan='2'>Costo de Mercancías </td></tr>" crlf)
+;  (printout t "| (=) " ?costos-de-mercancias tab "|" tab tab "Costos de Mercancías " crlf)
+;  (printout k "<tr><td> (=) </td> <td align='right'>" ?costos-de-mercancias "</td><td> </td><td></td><td></td><td colspan='2'>Costo de Mercancías </td></tr>" crlf)
 
 
 

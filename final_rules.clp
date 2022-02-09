@@ -220,11 +220,11 @@
    ( bind ?inventario-inicial (- ?inventario-inicial-deber ?inventario-inicial-acreedor))
 
    ;si el inventario-final se ha liquidado entonces no hay inventario
-   (  if (eq ?inventario-final-liquidado true)
-     then
-      ( bind ?inventario  0)
-     else
-      ( bind ?inventario  (- ?inventario-deber          ?inventario-acreedor))
+   ( if (eq ?inventario-final-liquidado true)
+    then
+     ( bind ?inventario  0)
+    else
+     ( bind ?inventario  (- ?inventario-deber          ?inventario-acreedor))
    )
 
    ( bind ?iva-por-cobrar (- ?iva-credito-deber ?iva-credito-acreedor ))
@@ -424,7 +424,7 @@
    ( printout t tab tab tab tab "|" PATRIMONIO tab tab ?patrimonio crlf)
    ( printout t tab tab tab tab "|" "Capital Social". ?capital-social crlf)
    ( printout t tab tab tab tab "|" "Reserva Legal".. (- ?reserva-legal-acreedor ?reserva-legal-deber) crlf)
-   ( printout t tab tab tab tab "|" "Utilidades ACC".. ?utilidades-acumuladas crlf)
+   ( printout t tab tab tab tab "|" "Utilidades AC".. ?utilidades-acumuladas crlf)
    ( printout t tab tab tab tab "|" "Aportes".. ?aportes crlf)
 
    ( printout t tab tab tab tab "|" "Utilidad del "  crlf)

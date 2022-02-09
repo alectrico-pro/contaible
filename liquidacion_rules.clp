@@ -1151,9 +1151,14 @@
    ;primero pasa el inventario a inventario-final para que quede del lado derecho
    ;luego pasar el inventario-final a perdidas y ganancias como efecto perdedor
    ;luego pasa el inventerio-final a perdias-y-ganancias como efecto deduccion
+;   ( assert
+ ;    (liquidacion (cuenta inventario) (partida ?numero) (ano ?ano)
+  ;   (liquidadora inventario-final) (efecto ganador)))
+
    ( assert
      (liquidacion (cuenta inventario) (partida ?numero) (ano ?ano)
      (liquidadora inventario-final) (efecto ganador)))
+
 
    ( assert
      (liquidacion (cuenta inventario-final) (partida ?numero) (ano ?ano)
@@ -1163,6 +1168,8 @@
    ( assert
      (tributacion (cuenta inventario-final) (partida ?numero) (ano ?ano)
      (liquidadora base-imponible) (efecto deduccion)))
+
+
 
    ( modify ?partida-inventario-final (hecho true) (saldo (- ?suma-debe ?suma-haber)))
 )
