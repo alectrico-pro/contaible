@@ -14,17 +14,17 @@ Se han practicado liquidaciones, por lo que NO se muestran cuentas nominales
 <thead> <th></th><th></th>  <th>DEBER</th> <th>ACREEDOR</th> </thead>
 <tbody>
 <thead> <th></th><th colspan='4'> T O T A L    A C T I V O  </th> <th> 3350650</th> </thead>
-<thead> <th></th><th colspan='4'> A C T I V O    F I J O</th> <th> 2861281</th> </thead>
-<thead> <th></th><th colspan='4'> A C T I V O    C I R C U L A N T E</th> <th> 489369</th> </thead>
+<thead> <th></th><th colspan='4'> A C T I V O    F I J O</th> <th> 2984926</th> </thead>
+<thead> <th></th><th colspan='4'> A C T I V O    C I R C U L A N T E</th> <th> 365724</th> </thead>
 <thead> <th></th><th>cuentas-por-cobrar</th><th> 20000</th> </thead>
 <thead> <th></th><th>retencion-de-iva-articulo-11</th><th> 0</th> </thead>
 <thead> <th></th><th>iva-credito</th><th> 16850</th> </thead>
 <thead> <th></th><th>ppm</th><th> 2728</th> </thead>
+<thead> <th></th><th>materiales</th><th> 0</th> </thead>
 <thead> <th></th><th>banco-estado</th><th> 322625</th> </thead>
 <thead> <th></th><th>caja</th><th> 5961</th> </thead>
+<thead> <th></th><th>intangibles</th><th> 2881912</th> </thead>
 <thead> <th></th><th>insumos</th><th> 0</th> </thead>
-<thead> <th></th><th>intangibles</th><th> 2758267</th> </thead>
-<thead> <th></th><th>materiales</th><th> 123645</th> </thead>
 <thead> <th></th><th>herramientas</th><th> 218470</th> </thead>
 <thead> <th></th><th>amortizacion-acumulada-intangibles</th><th> 0</th> </thead>
 <thead> <th></th><th>depreciacion-acumulada-herramientas</th><th> 0</th> </thead>
@@ -213,7 +213,7 @@ Se han practicado liquidaciones, por lo que NO se muestran cuentas nominales
 <tr style='background-color: lavender'>
 <td> 184</td><td><small> bazaya </small> </td> <td align='right'> 10824</td> <td align='right'>0</td> <td> gastos-administrativos</td>
 </tr>
-<thead> <th></th><th colspan='4'> I N T A N G I B L E S </th> <th>2758267</th> </thead>
+<thead> <th></th><th colspan='4'> I N T A N G I B L E S </th> <th>2881912</th> </thead>
 <tr style='background-color: lightyellow'>
 <td></td><td><small> marca-alectrico </small> </td> <td align='right'> 237369</td> <td align='right'>0</td> <td> intangibles</td>
 </tr>
@@ -224,10 +224,10 @@ Se han practicado liquidaciones, por lo que NO se muestran cuentas nominales
 <td> 138</td><td><small> marca-alectrico </small> </td> <td align='right'> 0</td> <td align='right'>52631</td> <td> intangibles</td>
 </tr>
 <tr style='background-color: lightyellow'>
-<td></td><td><small> plataforma-alectrico </small> </td> <td align='right'> 2520898</td> <td align='right'>0</td> <td> intangibles</td>
+<td></td><td><small> plataforma-alectrico </small> </td> <td align='right'> 2644543</td> <td align='right'>0</td> <td> intangibles</td>
 </tr>
 <tr style='background-color: lavender'>
-<td> 203</td><td><small> plataforma-alectrico </small> </td> <td align='right'> 2520898</td> <td align='right'>0</td> <td> intangibles</td>
+<td> 203</td><td><small> plataforma-alectrico </small> </td> <td align='right'> 2644543</td> <td align='right'>0</td> <td> intangibles</td>
 </tr>
 <thead> <th></th><th colspan='4'> C O R R E C C I O N    M O N E T A R I A</th><th> 3626</th> </thead>
 <tr  style='background-color: lightyellow'>
@@ -301,15 +301,14 @@ Se han practicado liquidaciones, por lo que NO se muestran cuentas nominales
 <td> 8</td><td><small> khipu </small> </td> <td align='right'> 50</td> <td align='right'>0</td> <td> costos-de-ventas</td>
 </tr>
 <thead> <th></th><th colspan='4'> I N S U M O S</th> <th>0</th></thead>
-<tr  style='background-color: lightyellow'>
-<td></td><td><small> materiales </small> </td> <td align='right'> 123645</td> <td align='right'>0</td> <td> insumos</td>
-</tr>
-<thead> <th></th><th>materiales</th><th> 123645</th> </thead>
 <tr style='background-color: lavender'>
 <td> 2112</td><td><small> materiales </small> </td> <td align='right'> 0</td> <td align='right'>44044</td> <td> insumos</td>
 </tr>
 <tr style='background-color: lavender'>
 <td> 1</td><td><small> materiales </small> </td> <td align='right'> 44044</td> <td align='right'>0</td> <td> insumos</td>
+</tr>
+<tr style='background-color: lavender'>
+<td> 203</td><td><small> materiales </small> </td> <td align='right'> 0</td> <td align='right'>123645</td> <td> insumos</td>
 </tr>
 <tr  style='background-color: lightyellow'>
 <td></td><td><small> sodimac-insumos </small> </td> <td align='right'> 141489</td> <td align='right'>0</td> <td> insumos</td>
@@ -362,7 +361,7 @@ Se han practicado liquidaciones, por lo que NO se muestran cuentas nominales
 <tr style='background-color: lavender'>
 <td> 120</td><td><small> electrocom-insumos </small> </td> <td align='right'> 25220</td> <td align='right'>0</td> <td> insumos</td>
 </tr>
-<thead> <th></th><th colspan='4'> M A T E R I A L E S </th> <th> 123645</th> </thead>
+<thead> <th></th><th colspan='4'> M A T E R I A L E S </th> <th> 0</th> </thead>
 <tr  style='background-color: lightyellow'>
 <td></td><td><small> easy-materiales </small> </td> <td align='right'> 46605</td> <td align='right'>0</td> <td> materiales</td>
 </tr>

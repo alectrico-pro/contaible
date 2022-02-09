@@ -312,13 +312,17 @@
   (printout k "<tr><td> (+) </td><td align='right'>"  ?inventario-inicial "</td><td></td><td></td><td></td><td colspan='2'>Inventario Inicial</td></tr> " crlf)
 
 
-  (printout t "| (=) " ?existencias tab "|" tab tab "Mercadería Disponible para la Venta " crlf)
-  (printout k "<tr><td> (=) </td><td align='right'> " ?existencias "</td><td></td><td> </td><td></td><td> Mercadería Disponible para la Venta </td></tr>" crlf)
+; (printout t "| (=) " ?existencias tab "|" tab tab "Mercadería Disponible para la Venta " crlf)
+; (printout k "<tr><td> (=) </td><td align='right'> " ?existencias "</td><td></td><td> </td><td></td><td> Mercadería Disponible para la Venta </td></tr>" crlf)
 
 
 
-  (printout t "|     0  |" tab tab "Costos de Mercancías Vendidas" crlf)
-  (printout k "<tr><td>     </td> <td align='right'> 0 </td><td> </td><td></td><td></td><td colspan='2'>Costo de Mercancías Vendidas</td></tr>" crlf)
+; (printout t "|     0  |" tab tab "Costos de Mercancías Vendidas" crlf)
+; (printout k "<tr><td>     </td> <td align='right'> 0 </td><td> </td><td></td><td></td><td colspan='2'>Costo de Mercancías Vendidas</td></tr>" crlf)
+
+
+  (printout t "| (-) " ?inventario tab "|" tab tab "Inventario " crlf)
+  (printout k "<tr><td> (-) </td> <td align='right'>" ?inventario "</td><td> </td><td></td><td></td><td colspan='2'>Inventario </td></tr>" crlf)
 
 
   (printout t "| (-) " ?inventario-final tab "|" tab tab "Inventario Final " crlf)

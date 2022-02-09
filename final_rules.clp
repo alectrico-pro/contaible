@@ -328,7 +328,15 @@
 
    ( printout k "<tr> <td colspan='2'></td> <td> Utilidad del Ejercicio </td><td align='right'>" (- ?utilidad-acreedor ?utilidad-deber) "</td> </tr>" crlf)
 
-   ( printout k "<thead><th>TOTAL ACTIVOS</th><th>" ?activos "</th><th>TOTAL PASIVO + PATRIMONIO</th><th>" (+ ?pasivos ?patrimonio) "</th></thead>" crlf)
+;   ( printout k "<thead><th>TOTAL ACTIVOS</th><th>" ?activos "</th><th>TOTAL PASIVO + PATRIMONIO</th><th>" (+ ?pasivos ?patrimonio) "</th></thead>" crlf)
+
+  ( if (eq (+ ?pasivos ?patrimonio) ?activos)
+    then
+     ( printout k "<thead><th>TOTAL ACTIVOS</th><th style='background-color: lightgreen'>" ?activos "</th><th>TOTAL PASIVO + PATRIMONIO</th><th style='background-color: lightgreen'>" (+ ?pasivos ?patrimonio) "</th></thead>" crlf)
+    else
+     ( printout k "<thead><th>TOTAL ACTIVOS</th><th style='background-color: crimson'>" ?activos "</th><th>TOTAL PASIVO + PATRIMONIO</th><th style='background-color: crimson'>" (+ ?pasivos ?patrimonio) "</th></thead>" crlf)
+   )
+
    ( printout k "<tr><td colspan='8'> " ?razon  " </td> </tr>" crlf)
    ( printout k "<tr><td colspan='8'> Partida General Final " ?ano " " ?razon "</td></tr>" crlf)
 
@@ -432,6 +440,13 @@
    ( printout t "------------------------------------------------------------------------" crlf)
    ( printout t tab tab tab tab "|" TOTAL crlf)
    ( printout t TOTAL tab tab tab tab "|" "PASIVOS +" crlf)
+
+   ( if (neq (+ ?pasivos ?patrimonio) ?activos )
+     then
+      (printout t  "Error " Desbalance-en-Balance-Final crlf)
+      (halt)
+   )
+     
    ( printout t ACTIVOS tab tab tab ?activos tab "|" PATRIMONIO tab tab (+ ?pasivos ?patrimonio) crlf)
    ( printout t "=========================================================================" crlf crlf crlf)
 

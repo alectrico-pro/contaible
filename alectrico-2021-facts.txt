@@ -3115,6 +3115,30 @@
  ( glosa activacion-plataforma-alectrico))
 
 
+(cargo
+ ( electronico false)
+ ( tipo-de-documento ajuste)
+ ( empresa alectrico-2021)
+ ( cuenta plataforma-alectrico)
+ ( monto 123645)
+ ( partida 203)
+ ( dia 31)  ( mes diciembre)  ( ano 2021)
+ ( glosa activacion-plataforma-alectrico))
+
+
+
+(abono
+ ( electronico false)
+ ( tipo-de-documento ajuste)
+ ( empresa alectrico-2021)
+ ( cuenta materiales)
+ ( monto  123645)
+ ( partida 203)
+ ( dia 31)  ( mes diciembre)  ( ano 2021)
+ ( glosa activacion-plataforma-alectrico))
+
+
+
 
 
 ;------------------------------------------
@@ -3177,14 +3201,7 @@
    (ano 2021) (partida 215))
 
 
-
-
 ;=========================== LIQUIDACION DE INVENTARIO FINAL ============================
-
-
-
-
-
 (partida-inventario-final (partida 216))
 
 ;=========================== 2 0 2 2  ===========================================
