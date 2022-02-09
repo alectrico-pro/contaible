@@ -18,15 +18,6 @@
 )
 
 
-;el inventario final desaparece subsumido por
-;la liquidacion hacia perdidas y ganancias
-;entonces hay que hacer un tracking
-(defrule obteniendo-inventario-final
-  ( partida-inventario-final (partida ?numero) (saldo ?saldo))
- =>
-  ( printout t "Inventario Final saldo " ?saldo crlf)
-)
-
 (deffunction mes_to_numero ( ?mes )
   ( switch ?mes
     ( case enero      then 1)
@@ -167,8 +158,8 @@
   (bind ?salarios (- ?salarios-deber ?salarios-acreedor))
 
   (bind ?inventario-final 
-    (- ?inventario-final-deber
-       ?inventario-final-acreedor))
+   (abs  (- ?inventario-final-deber
+       ?inventario-final-acreedor)))
 
   (bind ?gastos-administrativos
     (- ?gastos-administrativos-debe

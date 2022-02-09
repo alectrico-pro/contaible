@@ -91,10 +91,31 @@
 )
 
 
+(deftemplate info
+  (slot inventario-final-liquidado )
+)
+
+(defrule inventario-final-liquidado
+  (exists (partida-inventario-final ))
+ =>
+  (assert (info (inventario-final-liquidado true)))
+)
+
+(defrule inventario-final-no-liquidado
+  (not (exists (partida-inventario-final )))
+ =>
+  (assert (info (inventario-final-liquidado false)))
+
+)
+
+
 (defrule recuadro-de-balance
    (empresa (nombre ?nombre) (razon ?razon))
    (balance (dia ?top) (mes ?mes_top) (ano ?ano))
-   
+ 
+
+  ( info (inventario-final-liquidado ?inventario-final-liquidado))
+  
  ;(subtotales (cuenta iva)           (acreedor ?iva-por-pagar))
 ; (subtotales (cuenta iva)           (deber    ?iva-por-cobrar))
 
@@ -197,7 +218,15 @@
    (subtotales (cuenta plataforma-ccm) (acreedor ?plataforma-ccm))
   =>
    ( bind ?inventario-inicial (- ?inventario-inicial-deber ?inventario-inicial-acreedor))
-   ( bind ?inventario         (- ?inventario-deber          ?inventario-acreedor))
+
+   ;si el inventario-final se ha liquidado entonces no hay inventario
+   (  if (eq ?inventario-final-liquidado true)
+     then
+      ( bind ?inventario  0)
+     else
+      ( bind ?inventario  (- ?inventario-deber          ?inventario-acreedor))
+   )
+
    ( bind ?iva-por-cobrar (- ?iva-credito-deber ?iva-credito-acreedor ))
    ( bind ?iva-por-pagar  (- ?iva-debito-acreedor ?iva-debito-deber))
    ( printout t "=========================================================================" crlf )
@@ -344,14 +373,14 @@
   ( printout t Insumos..... tab ?insumos tab tab "|" crlf)
 
 
-  ( if (eq diciembre ?mes_top)
-     then
+;  ( if (eq diciembre ?mes_top)
+;     then
      ( printout t Materiales tab ?materiales crlf)
-     ( printout t "Inventario Final" tab  ?inventario crlf)
-     else
-    ( printout t Inventario tab ?inventario  crlf)
-    ( printout t Materiales tab ?materiales  crlf)
-   )
+     ( printout t "Inventario" tab  ?inventario crlf)
+ ;    else
+ ;   ( printout t Inventario tab ?inventario  crlf)
+  ;  ( printout t Materiales tab ?materiales  crlf)
+  ; )
 
 
    ( if (eq true ?hay-utilidad-tributaria) then 
@@ -373,9 +402,9 @@
    ( printout t y.Equipo....  tab ?mobiliario tab tab    "|" PASIVO tab tab tab ?pasivos crlf)
 ;   ( printout t Intangibles.  tab ?intangibles tab tab "|" ======================================= crlf)
 
-   ( printout t marca alectrico ®.  tab ?marca-alectrico tab tab "|" ======================================= crlf)
+   ( printout t m. alectrico ®.  tab ?marca-alectrico tab tab "|" ======================================= crlf)
 
-   ( printout t plataforma alectrico ®.  tab ?plataforma-alectrico tab tab "|"  crlf)
+   ( printout t p. alectrico ®.  tab ?plataforma-alectrico tab tab "|"  crlf)
 
    ( printout t alectrico ®.  tab ?software tab tab "|"  crlf)
 

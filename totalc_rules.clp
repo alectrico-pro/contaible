@@ -51,7 +51,7 @@
    ( declare (salience 9000))
    ( partida (numero ?numero) (dia ?dia) (mes ?mes) (ano ?ano))
    ( balance (dia ?top) (mes ?mes_top) (ano ?ano_top ))
-   ?cuenta <- ( cuenta (padre false) (origen real) (partida ?numero) (nombre ?nombre ) (grupo activo) (debe ?debe) (haber ?haber) (totalizada-como-activo false))
+   ?cuenta <- ( cuenta (padre false) (origen real) (partida ?numero) (nombre ?nombre ) (grupo activo) (debe ?debe) (haber ?haber) (totalizada-como-activo false) (liquidada false))
    ?totales <- ( totales (activos ?activos))
    (test (neq ?debe ?haber))
   ( test (>= (to_serial_date ?top ?mes_top ?ano_top) (to_serial_date ?dia ?mes ?ano)))
@@ -69,7 +69,7 @@
    ( declare (salience 8))
    ( partida (numero ?numero) (dia ?dia) (mes ?mes) (ano ?ano))
    ( balance (dia ?top) (mes ?mes_top) (ano ?ano_top ))
-   ?cuenta <- ( cuenta (padre false) (origen real) (partida ?numero) (nombre ?nombre ) (grupo activo) (circulante true) (debe ?debe) (haber ?haber) (totalizada-como-activo-circulante false))
+   ?cuenta <- ( cuenta (padre false) (origen real) (partida ?numero) (nombre ?nombre ) (grupo activo) (circulante true) (debe ?debe) (haber ?haber) (totalizada-como-activo-circulante false) (liquidada false))
    ?totales <- ( totales (activo-circulante ?activo-circulante))
    ( test (neq ?debe ?haber))
   ( test (>= (to_serial_date ?top ?mes_top ?ano_top) (to_serial_date ?dia ?mes ?ano)))
@@ -79,7 +79,7 @@
    ( bind   ?total (+ ?activo-circulante ?saldo ))
    ( modify ?totales (activo-circulante ?total))
    ( modify ?cuenta (totalizada-como-activo-circulante true))
- ;  ( printout t "--+acirculante= " ?total tab ?saldo " de " ?nombre crlf)
+   ( printout t "--+acirculante= " ?total tab ?saldo " de " ?nombre crlf)
 )
 
 
@@ -87,7 +87,7 @@
    ( declare (salience 8))
    ( partida (numero ?numero) (dia ?dia) (mes ?mes) (ano ?ano))
    ( balance (dia ?top) (mes ?mes_top) (ano ?ano_top ))
-   ?cuenta <- ( cuenta (padre false) (origen real) (partida ?numero) (nombre ?nombre ) (grupo activo) (circulante false) (debe ?debe) (haber ?haber) (totalizada-como-activo-fijo false))
+   ?cuenta <- ( cuenta (padre false) (origen real) (partida ?numero) (nombre ?nombre ) (grupo activo) (circulante false) (debe ?debe) (haber ?haber) (totalizada-como-activo-fijo false) )
    ?totales <- ( totales (activo-fijo ?activo-fijo))
    ( test (neq ?debe ?haber))
   ( test (>= (to_serial_date ?top ?mes_top ?ano_top) (to_serial_date ?dia ?mes ?ano)))
@@ -97,7 +97,7 @@
    ( bind   ?total (+ ?activo-fijo ?saldo ))
    ( modify ?totales (activo-fijo ?total))
    ( modify ?cuenta (totalizada-como-activo-fijo true))
-;   ( printout t "--+a f i j o  = " ?total tab ?saldo " de " ?nombre crlf)
+   ( printout t "--+a f i j o  = " ?total tab ?saldo " de " ?nombre crlf)
 )
 
 
@@ -115,7 +115,7 @@
    ( bind   ?total (+ ?pasivos ?saldo ))
    ( modify ?totales (pasivos ?total))
    ( modify ?cuenta (totalizada-como-pasivo true))
- ;  ( printout t "--+p a s i v o= " ?total tab ?saldo " de " ?nombre crlf)
+   ( printout t "--+p a s i v o= " ?total tab ?saldo " de " ?nombre crlf)
 )
 
 
@@ -133,7 +133,7 @@
    ( bind   ?total (+ ?pasivo-circulante ?saldo ))
    ( modify ?totales (pasivo-circulante ?total))
    ( modify ?cuenta (totalizada-como-pasivo-circulante true))
- ;  ( printout t "--+pcirculante= " ?total tab ?saldo " de " ?nombre crlf)
+   ( printout t "--+pcirculante= " ?total tab ?saldo " de " ?nombre crlf)
 )
 
 
@@ -151,7 +151,7 @@
    ( bind   ?total (+ ?pasivo-fijo ?saldo ))
    ( modify ?totales (pasivo-fijo ?total))
    ( modify ?cuenta (totalizada-como-pasivo-fijo true))
-  ; ( printout t "--+p f i j o  = " ?total tab ?saldo " de " ?nombre crlf)
+   ( printout t "--+p f i j o  = " ?total tab ?saldo " de " ?nombre crlf)
 )
 
 
@@ -178,7 +178,7 @@
    ( bind ?total (+ ?patrimonio ?saldo ))
    ( modify ?totales (patrimonio ?total ))
    ( modify ?cuenta (totalizada-como-patrimonio true))
-  ; ( printout t "--+patrimonio = " ?total tab ?saldo " de " ?nombre crlf)
+   ( printout t "--+patrimonio = " ?total tab ?saldo " de " ?nombre crlf)
 )
 
 (defrule sumando-ganancias
@@ -203,7 +203,7 @@
    ( bind ?total (+ ?resultados ?saldo ))
    ( modify ?totales (resultados ?total ))
    ( modify ?cuenta (totalizada-como-patrimonio true))
-;   ( printout t "--+ganancias  = " ?total tab ?saldo " de " ?nombre crlf)
+   ( printout t "--+ganancias  = " ?total tab ?saldo " de " ?nombre crlf)
 
 )  
 
@@ -230,5 +230,5 @@
    ( bind ?total (+ ?resultados ?saldo ))
    ( modify ?totales (resultados ?total ))
    ( modify ?cuenta (totalizada-como-patrimonio true))
-;   ( printout t "--+perdidas   = " ?total tab ?saldo " de " ?nombre crlf)
+   ( printout t "--+perdidas   = " ?total tab ?saldo " de " ?nombre crlf)
 )
