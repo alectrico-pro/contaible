@@ -1554,7 +1554,9 @@
    (slot mes )
    (slot ano)
    (slot liquidadora)
-   (slot cuenta))
+   (slot cuenta)
+   (slot cumplida (default false))
+)
 
 
 (deftemplate MAIN::tributacion
@@ -1565,9 +1567,9 @@
    (slot mes )
    (slot ano)
    (slot liquidadora)
-   (slot cuenta))
-
-
+   (slot cuenta)
+   (slot cumplida (default false))
+)
 
 
 (deftemplate MAIN::provision

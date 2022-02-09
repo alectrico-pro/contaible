@@ -4060,11 +4060,11 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <table id='Partida-203'>
 <thead> <th style='background-color: lavender' colspan='6'>Partida 203</th></thead>
 <tbody>
-<tr><td>2500000</td> <td colspan='7'>plataforma-alectrico#intangibles</td> </tr>
-<tr style='background-color: lightyellow'>  <td> </td> <td> 2500000</td> <td> 0</td> <td colspan='2'> a[intangibles] </td> </tr>
-<tr style='background-color: lightyellow'>  <td> </td> <td> 0</td> <td> 350000</td> <td colspan='2'> a[insumos] </td> </tr>
+<tr><td>2520898</td> <td colspan='7'>plataforma-alectrico#intangibles</td> </tr>
+<tr style='background-color: lightyellow'>  <td> </td> <td> 2520898</td> <td> 0</td> <td colspan='2'> a[intangibles] </td> </tr>
+<tr style='background-color: lightyellow'>  <td> </td> <td> 0</td> <td> 370898</td> <td colspan='2'> a[insumos] </td> </tr>
 <tr style='background-color: gold'>  <td> </td> <td>0 </td> <td> 2150000</td> <td> </td> <td> r[salarios] </td> </tr>
-<tr> <td> </td> <td style='background-color: blanchedalmond'> 2500000 </td> <td style='background-color: blanchedalmond'> 2500000</td> </tr>
+<tr> <td> </td> <td style='background-color: blanchedalmond'> 2520898 </td> <td style='background-color: blanchedalmond'> 2520898</td> </tr>
 <tr><td colspan='4'> alectrico® SpA</td> </tr> 
 <tr><td colspan='4'> ( 31 de diciembre	2021	 ) </td> </tr>
 <tr><td colspan='8'> Partida 203: Por Activación de Gastos Diferidos por la Construcción de la plataforma alectrico. </td></tr>

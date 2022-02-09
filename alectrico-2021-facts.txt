@@ -3097,7 +3097,7 @@
  ( tipo-de-documento ajuste)
  ( empresa alectrico-2021)
  ( cuenta plataforma-alectrico)
- ( monto 350000)
+ ( monto 370898)
  ( partida 203)
  ( dia 31)  ( mes diciembre)  ( ano 2021)
  ( glosa activacion-plataforma-alectrico))
@@ -3109,7 +3109,7 @@
  ( tipo-de-documento ajuste)
  ( empresa alectrico-2021)
  ( cuenta insumos)
- ( monto  350000)
+ ( monto  370898)
  ( partida 203)
  ( dia 31)  ( mes diciembre)  ( ano 2021)
  ( glosa activacion-plataforma-alectrico))
@@ -3145,18 +3145,18 @@
 
 ;tributario
 ( ajuste-anual
-   (ano 2021) (partida 209)
+   (ano 2021) (partida 210)
    (liquidacion tributaria)
    (efecto aporte))
 
 ( ajuste-anual
-   (ano 2021) (partida 210)
+   (ano 2021) (partida 211)
    (liquidacion tributaria)
    (efecto deduccion))
 
 
 ( ajuste-anual-de-resultado-tributario
-   (ano 2021) (partida 211))
+   (ano 2021) (partida 212))
 
 
 ;financiero
@@ -3167,14 +3167,26 @@
    (efecto ganador))
 
 ( ajuste-anual
-   (ano 2021) (partida 212)
+   (ano 2021) (partida 214)
    (liquidacion financiera)
    (efecto perdedor))
 
 
 
 ( ajuste-anual-de-resultado-financiero
-   (ano 2021) (partida 214))
+   (ano 2021) (partida 215))
+
+
+
+
+;=========================== LIQUIDACION DE INVENTARIO FINAL ============================
+;partida (numero 216) (dia 31) (mes diciembre) (ano 2021)
+;(empresa alectrico-2021)
+;(descripcion "v/Por liquidación de Inventario Inicial y Creación de Inventario Final")
+;(actividad liquidacion-de-inventario-final))
+
+(partida-inventario-final (partida 216))
+
 
 
 ;=========================== 2 0 2 2  ===========================================

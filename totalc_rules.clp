@@ -61,7 +61,7 @@
    ( bind   ?total (+ ?activos ?saldo ))
    ( modify ?totales (activos ?total))
    ( modify ?cuenta (totalizada-como-activo true))
-   ( printout t "--+a c t i v o= " ?total tab ?saldo " de " ?nombre crlf)
+ ;  ( printout t "--+a c t i v o= " ?total tab ?saldo " de " ?nombre crlf)
 )
 
 
@@ -79,7 +79,7 @@
    ( bind   ?total (+ ?activo-circulante ?saldo ))
    ( modify ?totales (activo-circulante ?total))
    ( modify ?cuenta (totalizada-como-activo-circulante true))
-   ( printout t "--+acirculante= " ?total tab ?saldo " de " ?nombre crlf)
+ ;  ( printout t "--+acirculante= " ?total tab ?saldo " de " ?nombre crlf)
 )
 
 
@@ -97,7 +97,7 @@
    ( bind   ?total (+ ?activo-fijo ?saldo ))
    ( modify ?totales (activo-fijo ?total))
    ( modify ?cuenta (totalizada-como-activo-fijo true))
-   ( printout t "--+a f i j o  = " ?total tab ?saldo " de " ?nombre crlf)
+;   ( printout t "--+a f i j o  = " ?total tab ?saldo " de " ?nombre crlf)
 )
 
 
@@ -115,7 +115,7 @@
    ( bind   ?total (+ ?pasivos ?saldo ))
    ( modify ?totales (pasivos ?total))
    ( modify ?cuenta (totalizada-como-pasivo true))
-   ( printout t "--+p a s i v o= " ?total tab ?saldo " de " ?nombre crlf)
+ ;  ( printout t "--+p a s i v o= " ?total tab ?saldo " de " ?nombre crlf)
 )
 
 
@@ -133,7 +133,7 @@
    ( bind   ?total (+ ?pasivo-circulante ?saldo ))
    ( modify ?totales (pasivo-circulante ?total))
    ( modify ?cuenta (totalizada-como-pasivo-circulante true))
-   ( printout t "--+pcirculante= " ?total tab ?saldo " de " ?nombre crlf)
+ ;  ( printout t "--+pcirculante= " ?total tab ?saldo " de " ?nombre crlf)
 )
 
 
@@ -151,7 +151,7 @@
    ( bind   ?total (+ ?pasivo-fijo ?saldo ))
    ( modify ?totales (pasivo-fijo ?total))
    ( modify ?cuenta (totalizada-como-pasivo-fijo true))
-   ( printout t "--+p f i j o  = " ?total tab ?saldo " de " ?nombre crlf)
+  ; ( printout t "--+p f i j o  = " ?total tab ?saldo " de " ?nombre crlf)
 )
 
 
@@ -178,7 +178,7 @@
    ( bind ?total (+ ?patrimonio ?saldo ))
    ( modify ?totales (patrimonio ?total ))
    ( modify ?cuenta (totalizada-como-patrimonio true))
-   ( printout t "--+patrimonio = " ?total tab ?saldo " de " ?nombre crlf)
+  ; ( printout t "--+patrimonio = " ?total tab ?saldo " de " ?nombre crlf)
 )
 
 (defrule sumando-ganancias
@@ -203,7 +203,7 @@
    ( bind ?total (+ ?resultados ?saldo ))
    ( modify ?totales (resultados ?total ))
    ( modify ?cuenta (totalizada-como-patrimonio true))
-   ( printout t "--+ganancias  = " ?total tab ?saldo " de " ?nombre crlf)
+;   ( printout t "--+ganancias  = " ?total tab ?saldo " de " ?nombre crlf)
 
 )  
 
@@ -230,5 +230,5 @@
    ( bind ?total (+ ?resultados ?saldo ))
    ( modify ?totales (resultados ?total ))
    ( modify ?cuenta (totalizada-como-patrimonio true))
-   ( printout t "--+perdidas   = " ?total tab ?saldo " de " ?nombre crlf)
+;   ( printout t "--+perdidas   = " ?total tab ?saldo " de " ?nombre crlf)
 )

@@ -195,9 +195,9 @@
      else
      (if (eq diciembre ?mes)
        then
-        (bind ?utilidad-bruta (- ?ventas-netas ?costos-de-ventas))
+        (bind ?utilidad-bruta (- ?ventas-netas ?costos-de-ventas ))
        else
-        (bind ?utilidad-bruta (- ?ventas-netas ?costos-de-ventas)) ) )
+        (bind ?utilidad-bruta (- ?ventas-netas ?costos-de-ventas))))
 
   (bind ?gastos-de-operacion 
         (+ ?gastos-administrativos
@@ -331,7 +331,7 @@
    then
 
      (printout t "|" tab tab "|     " ?utilidad-bruta tab "UTILIDAD BRUTA (Ventas Netas - Costo de Ventas - Costo de Mercancías)" crlf)
-     (printout k "<tr><td></td><td></td><td></td><td></td><td align='right'>" ?utilidad-bruta "</td><td colspan='4'>  UTILIDAD BRUTA (Ventas Netas - Costo de Ventas - Costo de Mercancías) </td></tr>"  crlf)
+     (printout k "<tr><td></td><td></td><td></td><td></td><td align='right'>" ?utilidad-bruta "</td><td colspan='4'>  UTILIDAD BRUTA (Ventas Netas - Costo de Ventas - Costo de Mercancías - Insumos) </td></tr>"  crlf)
    else
 
      (printout t "|" tab tab "|     " ?utilidad-bruta tab "UTILIDAD BRUTA (Ventas Netas - Costo de Ventas)" crlf)
@@ -366,6 +366,7 @@
   (printout k "<tr><td> (-) </td><td align='right'>" ?gastos-ventas "</td><td></td><td></td><td></td><td> Gastos del Dpto Ventas </td></tr>" crlf)
 
   (printout k "<tr><td>(-)</td><td align='right' >" ?gastos-en-investigacion-y-desarrollo "</td><td></td><td></td><td></td><td> Gastos en I+D </td></tr>" crlf)
+
   (printout k "<tr><td>(-)</td><td align='right'>" ?gastos-en-promocion "</td><td></td><td></td><td></td><td> Gastos en Promoción </td></tr>" crlf)
 
   (printout k "<tr><td>(-)</td><td align='right'>" ?salarios "</td><td></td><td></td><td></td><td> Salarios </td></tr>" crlf)
@@ -378,6 +379,7 @@
 
 
   (printout t "|" tab tab "| (-) " ?pea tab tab "Pérdida Ejercicio Anterior PEA A.33-LIR)" crlf)
+
   (printout k "<tr><td></td><td></td><td></td><td> (-) </td><td align='right'>" ?pea "</td><td> Pérdida Ejercicio Anterior PEA A.33-LIR </td></tr>" crlf)
 
   (printout t "|" tab tab "|     " ?utilidad-de-operacion tab "UTILIDAD DE OPERACION (U.Bruta - G.Ded. - PEA)" crlf)
@@ -442,6 +444,7 @@
   (printout k "<tr><th> <td colspan=6> Determina los impuestos del regimen " ?regimen "</td></th></tr>" crlf)
   (printout k "<tbody>" crlf)
   (printout t "|" tab tab "|     " ?utilidad tab "Utilidad (módulo liquidación)" crlf)
+  (printout t "|" tab tab "|     " ?margen-fuera-de-explotacion  tab "Margen fuera de Explotacion" crlf)
   (printout k "<tr style='font-weight:bold;background-color: azure'><td> <td></td></td><td> </td><td></td><td align='right'>" ?utilidad "</td><td> Utilidad del Ejercicio Ant.Impuesto (m. liquidación)</td></tr>" crlf)
 
   (printout t "| (-) " tab ?herramientas tab tab tab tab "Depreciación Instantanea Propyme" crlf)

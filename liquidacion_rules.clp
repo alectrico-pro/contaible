@@ -26,7 +26,38 @@
 (defrule fin-liquidacion
   ( declare (salience -10000) )
  =>
+
   ( close k )
+)
+
+(defrule fin-liquidacion-resumen
+
+  ( declare (salience -10000) )
+
+ =>
+  ( printout t "------------------------" crlf)
+  ( printout t "liquidaciones-realizadas" crlf)
+  ( do-for-all-facts ((?f liquidacion)) (eq ?f:cumplida true)
+    ( printout t ?f:partida tab ?f:cuenta tab ?f:cumplida crlf)
+  )
+
+  ( printout t "---------------------------" crlf)
+  ( printout t "liquidaciones-no-realizadas" crlf)
+  ( do-for-all-facts ((?f liquidacion)) (eq ?f:cumplida false)
+    ( printout t ?f:partida tab ?f:cuenta tab ?f:cumplida crlf)
+  )
+
+  ( printout t "---------------------------" crlf)
+  ( printout t "tributaciones-realizadas" crlf)
+  ( do-for-all-facts ((?f tributacion)) (eq ?f:cumplida true)
+    ( printout t ?f:partida tab ?f:cuenta tab ?f:cumplida crlf)
+  )
+
+  ( printout t "---------------------------" crlf)
+  ( printout t "tributaciones-no-realizadas" crlf)
+  ( do-for-all-facts ((?f tributacion)) (eq ?f:cumplida false)
+    ( printout t ?f:partida tab ?f:cuenta tab ?f:cumplida crlf)
+  )
 )
 
 
@@ -67,7 +98,9 @@
 
    (or
      (cuenta (nombre ?nombre&:(neq ?nombre ingresos-brutos)) (padre false) (grupo resultado))
-     (cuenta (nombre ?nombre) (padre ingresos-brutos) (grupo resultado)) )
+     (cuenta (nombre ?nombre) (padre ingresos-brutos) (grupo resultado))
+     (cuenta (nombre ?nombre&:(eq ?nombre inventario-final) ))
+ )
 
   =>
    ( assert (partida (numero ?numero) (empresa ?empresa) (dia 31) (mes ?mes) (ano ?ano) (descripcion (str-cat "Ajuste Anual Año: Liquidacion Financiera Perdedor " ?ano )) (actividad liquidacion-financiera) ))
@@ -84,7 +117,9 @@
 
    (or
      (cuenta (nombre ?nombre&:(neq ?nombre ingresos-brutos)) (padre false) (grupo resultado))
-     (cuenta (nombre ?nombre) (padre ingresos-brutos) (grupo resultado))  )
+     (cuenta (nombre ?nombre) (padre ingresos-brutos) (grupo resultado))  
+   )
+
   =>
    ( assert (partida (numero ?numero) (empresa ?empresa) (dia 31) (mes ?mes) (ano ?ano) (descripcion (str-cat "Ajuste Anual Año: Liquidacion Financiera Ganancias " ?ano )) (actividad liquidacion-financiera) ))
    ( assert (liquidacion (cuenta ?nombre) (partida ?numero) (ano ?ano) (liquidadora perdidas-y-ganancias) (efecto ganador)))
@@ -118,8 +153,12 @@
      (tributacion (cuenta no-importa) (partida ?numero) (ano ?ano)
      (liquidadora base-imponible) (efecto deduccion-propyme)))
 
+   ( assert
+     (tributacion (cuenta no-importa) (partida ?numero) (ano ?ano)
+     (liquidadora base-imponible) (efecto deduccion-propyme)))
 
 )
+
 
 
 
@@ -351,7 +390,7 @@
       (debe   ?debep)
       (haber  ?haberp))
 
-    (liquidacion
+    ?liquidacion <- (liquidacion
        (partida ?numero)
        (cuenta ?nombre) (ano ?ano)
        (liquidadora ?liquidora)
@@ -374,6 +413,9 @@
 
  =>
 
+   ( modify ?liquidacion
+     ( cumplida true))
+   
    ( modify ?cuenta
      ( liquidada true )
      ( haber     ?debe)
@@ -409,7 +451,7 @@
       (debe   ?debep)
       (haber  ?haberp))
 
-    (liquidacion
+    ?liquidacion <- (liquidacion
        (partida ?numero)
        (cuenta ?nombre) (ano ?ano)
        (liquidadora ?liquidora)
@@ -432,6 +474,9 @@
     (test (> ?haber ?debe))
 
   =>
+
+   ( modify ?liquidacion
+     ( cumplida true))
 
    ( modify ?cuenta
      ( liquidada true )
@@ -468,7 +513,7 @@
       (haber  ?haberp))
 
 
-    ?t <- (tributacion
+    ?tributacion <- (tributacion
        (partida ?numero)
        (cuenta no-importa) (ano ?ano)
        (liquidadora ?liquidora)
@@ -495,6 +540,7 @@
 
  =>
 
+  ( modify ?tributacion (cumplida true))
   ( modify ?af (liquidado true))
 
   ( modify ?liquidadora
@@ -525,7 +571,7 @@
       (debe   ?debep)
       (haber  ?haberp))
 
-    (tributacion
+   ?tributacin <- (tributacion
        (partida ?numero)
        (cuenta ?nombre) (ano ?ano)
        (liquidadora ?liquidora)
@@ -545,6 +591,7 @@
     (test (> ?debe ?haber))
 
  =>
+   ( modify ?tributacion (cumplida true))
 
    ( bind ?saldo (- ?debe ?haber))
    
@@ -588,7 +635,7 @@
       (haber  ?haberp))
 
 
-    (tributacion
+   ?tributacion <- (tributacion
         (partida     ?numero)
         (cuenta      ?nombre) (ano ?ano)
         (liquidadora ?liquidora)
@@ -612,6 +659,8 @@
     (test (> ?haber ?debe))
 
  =>
+
+   ( modify ?tributacion (cumplida true))
 
    ( bind ?saldo (- ?haber ?debe))
 
@@ -1061,16 +1110,56 @@
 ;de inventario-final
 
 (defrule caratula-de-inventario-final
-  ( declare (salience 3))
-  ?f1          <- ( partida-inventario-final (partida ?partida) )
-=>
+   ( declare (salience 3))
+   ( partida-inventario-final (partida ?numero) )
+   ( empresa (nombre ?empresa))
+   ( balance ( mes ?mes) (ano ?ano))
+  =>
+
    ( printout t " Inicio de Cuenta de Inventario Final ----------------------------"  crlf)
 
    ( printout k "<table><tbody> " crlf)
-   ( printout k "<tr><td colspan='3'> Inicio de Cuenta de Inventario Final </td></tr>"  crlf)
+   ( printout k "<tr><td colspan='3'> Cuenta de Inventario en " ?mes " de " ?ano "</td></tr>"  crlf)
    ( printout k "<tr style='background-color: cornflowerblue'><td> Partida </td> <td> DEBE </td> <td> HABER </td> </tr>" crlf)
 
+
+   ( printout t Nombre tab DEBE tab HABER tab partida crlf)
+   ( bind ?suma-debe 0)
+   ( bind ?suma-haber 0)
+
+   ( do-for-all-facts ((?f cuenta)) (and (neq nil ?f:partida) (eq ?f:nombre inventario))
+     ( printout t ?f:nombre tab ?f:debe tab ?f:haber tab ?f:partida crlf)
+     ( bind ?suma-debe  (+ ?suma-debe  ?f:debe) )
+     ( bind ?suma-haber (+ ?suma-haber ?f:haber) )
+     ( printout k "<tr> <td>" ?f:partida "</td><td> " (round ?f:debe) "</td><td>" (round ?f:haber) "</td></tr>" crlf)
+   )
+
+   ( printout t tab tab (round ?suma-debe) tab (round ?suma-haber) crlf)
+   ( printout k "<tr> <td></td><td> " (round ?suma-debe) "</td><td>" (round ?suma-haber) "</td></tr>" crlf)
+
+;  ( do-for-all-facts ((?f cuenta)) (eq ?f:nombre inventario-final)
+;    ( printout t ?f:nombre tab ?f:debe tab ?f:haber tab ?f:partida crlf)
+;  )
+
+
+   ( assert
+     (partida (numero ?numero) (empresa ?empresa) (dia 31) (mes ?mes) (ano ?ano)
+     (descripcion (str-cat "Ajuste Anual Año: Liquidacion Inventario Final " ?ano ))
+     (actividad liquidacion-inventario) ))
+
+   ;primero pasa el inventario a inventario-final para que quede del lado derecho
+   ;luego pasar el inventario-final a perdidas y ganancias como efecto perdedor
+   ;luego pasa el inventerio-final a perdias-y-ganancias como efecto deduccion
+   ( assert
+     (liquidacion (cuenta inventario) (partida ?numero) (ano ?ano)
+     (liquidadora inventario-final) (efecto ganador)))
+
+   ( assert
+     (liquidacion (cuenta inventario-final) (partida ?numero) (ano ?ano)
+     (liquidadora perdidas-y-ganancias) (efecto perdedor)))
+
 )
+
 
 (defrule pie-de-inventario-final
   ( declare (salience 1))
@@ -1087,6 +1176,7 @@
 
 (defrule liquidando-inventario-corriente-a-inventario-final-deudor
    ( declare (salience 2))
+(no)
    ( empresa (nombre ?empresa))
    ( balance (dia ?dia_b) (mes ?mes_b) (ano ?ano_top))
    ( partida (numero ?partida ) (dia ?dia) (mes ?mes) (ano ?ano) (empresa ?empresa) (descripcion ?descripcion))
@@ -1114,6 +1204,7 @@
 
 (defrule liquidando-inventario-en-inventario-final-acreedor
    ( declare (salience 2))
+(no)
    ( empresa (nombre ?empresa))
    ( balance (dia ?dia_b) (mes ?mes_b) (ano ?ano_top ))
    ( partida (numero ?partida ) (dia ?dia) (mes ?mes) (ano ?ano) (empresa ?empresa) (descripcion ?descripcion))
