@@ -100,8 +100,13 @@
   ( subtotales (cuenta inventario-inicial) (deber ?inventario-inicial))
 
   ( subtotales (cuenta inventario)
-   (deber ?inventario-final-deber)
-   (acreedor ?inventario-final-acreedor))
+    (deber ?inventario-deber)
+    (acreedor ?inventario-acreedor)
+  )
+
+  ( subtotales (cuenta inventario-final)
+    (deber ?inventario-final-deber)
+    (acreedor ?inventario-final-acreedor))
 
   ( subtotales (cuenta gastos-administrativos)
     (debe  ?gastos-administrativos-debe)
@@ -153,6 +158,11 @@
   ( selecciones (regimen ?regimen) (incentivo-al-ahorro ?incentivo-al-ahorro))
 
  =>
+
+  (bind ?inventario
+   (- ?inventario-deber
+      ?inventario-acreedor))
+
   (bind ?ventas   (- ?ventas-acreedor ?ventas-deber))
   (bind ?utilidad (- ?utilidad-acreedor ?utilidad-deber))
   (bind ?salarios (- ?salarios-deber ?salarios-acreedor))
@@ -198,7 +208,7 @@
         ;no se ha liquidado el inventario final, tampoco acá
         (bind ?utilidad-bruta (+ (- ?ventas-netas ?costos-de-ventas ) ?inventario-final))
        else
-        (bind ?utilidad-bruta (- ?ventas-netas ?costos-de-ventas))))
+        (bind ?utilidad-bruta (+ (- ?ventas-netas ?costos-de-ventas)  ?inventario ))))
 
   (bind ?gastos-de-operacion 
         (+ ?gastos-administrativos
