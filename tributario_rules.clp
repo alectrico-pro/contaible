@@ -206,7 +206,7 @@
      (if (eq diciembre ?mes)
        then
         ;no se ha liquidado el inventario final, tampoco acá
-        (bind ?utilidad-bruta (+ (- ?ventas-netas ?costos-de-ventas ) ?inventario-final))
+        (bind ?utilidad-bruta (+ (- ?ventas-netas ?costos-de-ventas ) ?inventario))
        else
         (bind ?utilidad-bruta (+ (- ?ventas-netas ?costos-de-ventas)  ?inventario ))))
 
