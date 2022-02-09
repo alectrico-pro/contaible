@@ -77,6 +77,9 @@
 ;este tramite es una excepcion pues no generará posteriormente una liquidacion,
 ;por eso la cuenta inventario ya debe ir con la bandera liquidada puesta a true
 ;no se liquida por la operaicoń de compra ya fue liquidada en el ejercicio anterior
+;me arrepentí, parece que sí hay que liquidarla, pues el nuevo inventario sí se debe liquidar a fin
+;de año. Cre que había entendido mal, liquidar es un proceso más de contabilidad que se puede
+;hacer cuando uno quiera o cuando sea necesario
 (defrule INVENTARIO::inventario-asiento-inicial
    ( empresa (nombre ?empresa) )
    ( balance (dia ?top) (mes ?mes_top) (ano ?ano_top ))
@@ -85,9 +88,10 @@
    ?cuenta <- ( cuenta (origen ?origen) (partida nil) (nombre inventario ) (grupo ?grupo) (circulante ?circulante) (debe ?debe) (haber ?haber) (balanceado ?balanceado))
    ?inventario <- (inventario (dia ?dia) (mes ?mes) (u ?unidades) (operacion asiento-inicial) (material ?material) (partida ?numero) (ct ?total) (cu ?costo_unitario) (referencia ?referencia))
   => 
-  ( assert ( cuenta (origen ?origen) (dia ?dia) (mes ?mes) (ano ?ano) (empresa ?empresa ) (partida ?numero) (nombre inventario ) (grupo ?grupo) (circulante ?circulante) (debe ?total) (haber 0) (balanceado ?balanceado) (liquidada true))) 
+; ( assert ( cuenta (origen ?origen) (dia ?dia) (mes ?mes) (ano ?ano) (empresa ?empresa ) (partida ?numero) (nombre inventario ) (grupo ?grupo) (circulante ?circulante) (debe ?total) (haber 0) (balanceado ?balanceado) (liquidada true))) 
 
-;   ( assert ( cuenta (origen ?origen) (dia ?dia) (mes ?mes) (ano ?ano) (empresa ?empresa ) (partida ?numero) (nombre inventario ) (grupo ?grupo) (circulante ?circulante) (debe ?total) (haber 0) (balanceado ?balanceado) ))
+
+   ( assert ( cuenta (origen ?origen) (dia ?dia) (mes ?mes) (ano ?ano) (empresa ?empresa ) (partida ?numero) (nombre inventario ) (grupo ?grupo) (circulante ?circulante) (debe ?total) (haber 0) (balanceado ?balanceado) ))
    
    (printout t ?material tab ?dia tab ?unidades tab ?costo_unitario tab ?total tab tab tab tab inventario-inicial crlf)
    (printout k "<tr> <td><a href= '/" ?empresa "/libro-diario#Partida-" ?numero "'>" ?numero "</a></td><td>" ?material "</td> <td>" ?dia "</td> <td>" ?mes "</td> <td>" ?unidades "</td> <td>" ?costo_unitario "</td> <td>" ?total "</td> <td colspan='3'></td> <td>asiento-inicial</td><td>" (if (neq nil ?referencia) then "<a href= '/alectrico-2021/#Partida-" ?referencia "'> </a>" else "" ) "</td></tr>" crlf)

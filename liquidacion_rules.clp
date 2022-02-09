@@ -493,6 +493,7 @@
    ( printout t crlf )
    ( printout k "<tr><td></td><td>" (round ?saldo) "</td><td> </td><td>" ?nombre "</td></tr>" crlf)
    ( printout k "<tr><td>"  (round ?saldo) "</td><td></td><td colspan='2'> r(" ?liquidora ") </td></tr>"  crlf)
+
 )
 
 
