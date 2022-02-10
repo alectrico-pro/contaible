@@ -440,7 +440,10 @@
 (revision (revisado true) (partida 01052) (tipo f-29) (rcv n-a) )
 
 
-(revision (revisado true) (partida 2001)  )
+(revision (revisado true) (partida 2001) 
+ (rechazado true)
+ (a-corregir "Temporalmente rechazado para pruebas")
+ )
 
 (revision (revisado true) (partida 2002)  )
 

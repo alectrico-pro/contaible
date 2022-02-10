@@ -8,7 +8,7 @@
  (razon "alectrico® SpA"))
 
 
-(balance (dia 31) (mes diciembre) (ano 2021))
+(balance (dia 31) (mes enero) (ano 2022))
 
 
 ;dia 01/01/2021---------- asiento inicial  ----------------
@@ -884,7 +884,7 @@
  ( glosa "Por Gasto Administrativo: Multas por Rectificatoria mayo 2020.")
  ( finalidad "Departamento de Administración"))
 
-;también tuve que pagar una multa como persona natural
+
 ( gasto-proveedor
  ( tipo-de-documento comprobante-giro-tgr)
  ( folio 6379917)
@@ -898,6 +898,41 @@
  ( glosa "Por Gasto Administrativo: RF21 Giro 6379917 por Declaración de Renta AT 2021 Fuera de Plazo.")
  ( archivo "../giros-de-renta-2.png")
  ( finalidad "Departamento de Contabilidad"))
+
+
+
+;-------------------
+(partida (numero 044) (dia 15) (mes junio) (ano 2021)
+ (empresa alectrico-2021)
+ (descripcion "v/Por Reconocimiento de Cuentas por Cobrar Por Descargo de Giro SII 6379917. Resolución 14020002501.")
+ (archivo "../descarga-de-giro-6379917.png")
+ (actividad reconocer-cuentas-por-cobrar))
+
+(cargo
+ ( electronico false)
+ ( tipo-de-documento descargo-de-giro)
+ ( empresa alectrico-2021)
+ ( cuenta cuentas-por-cobrar)
+ ( monto  31203)
+ ( partida 044)
+ ( dia 15) ( mes junio) ( ano 2021)
+ ( glosa descargo-de-giro)
+)
+
+(abono
+ ( electronico false)
+ ( tipo-de-documento descargo-de-giro)
+ ( empresa alectrico-2021)
+ ( cuenta gastos-administrativos)
+ ( monto  31203)
+ ( partida 044)
+ ( dia 15) ( mes junio) ( ano 2021)
+ ( glosa descargo-de-giro)
+)
+;----------------
+
+
+
 
 ( gasto-proveedor
  ( tipo-de-documento comprobante-giro-tgr)
@@ -3369,6 +3404,8 @@
  ( glosa asiento-inicial))
 
 ;------------------------------------ enero compras -------------------------------------
+
+
 ( gasto-administrativo
  ( tipo-de-documento 45)
  ( folio 60078791)
@@ -3386,9 +3423,43 @@
  ( archivo "../heroku-mensualidad-enero-2022.png")
  ( finalidad "Departamento de Administración"))
 
+(gasto-administrativo
+ (tipo-de-documento 33)
+ (folio 2838194)
+ (rut 60910000-1 )
+ (partida 2007)
+ (dia 27) (mes enero) (ano 2022)
+ (credito 0)
+ (total 9950)
+ (neto  8361)
+ (iva   1589)
+ (material Dominio-Internet)
+ (proveedor u-chile)
+ (glosa "Adquisión de Dominio Internet: contaible.cl.")
+ (archivo "../factura-afecta-u-chile-2838194.png")
+ (finalidad "Por Compra de Dominio contaible.cl"))
 
-( ajustes-mensuales (mes enero) (ano 2022) (partida 2007))
-( ajuste-de-iva     (mes enero) (ano 2022) (partida 2008))
+( gasto-administrativo
+ ( archivo "/factura-afecta-entel-44377492.png")
+ ( tipo-de-documento 33)
+ ( folio 44377492)
+ ( rut 96806980-2 )
+ ( partida 2008)
+ ( dia 10) (mes enero) (ano 2022)
+ ( credito 0)
+ ( neto  3128)
+ ( iva   594)
+ ( total 3722)
+ ( material servicio-telefonia)
+ ( proveedor entel)
+ ( glosa "Por Gasto Administrativo: Servicio de Datos y Telefonía: Costo de diciembre 2021.")
+ (finalidad "No subordinada a ningún departamento"))
+
+
+
+
+( ajustes-mensuales (mes enero) (ano 2022) (partida 2009))
+( ajuste-de-iva     (mes enero) (ano 2022) (partida 2010))
 
 ;--------------------------------- febrero -----------------------------------
 ;5336-4445
@@ -3397,7 +3468,7 @@
 (pago-de-salarios
  (remuneraciones false)
  (imposiciones true)
- (partida 2009)
+ (partida 2011)
  (trabajador alexander)
  (afp   47180)
  (afc   10500)
@@ -3411,8 +3482,19 @@
  (ano 2022))
 
 
-( ajustes-mensuales (mes febrero) (ano 2022) (partida 2013))
-( ajuste-de-iva     (mes febrero) (ano 2022) (partida 2014))
+
+;Corresponde a la amortización del parecer THHN
+
+(cobro-de-cuentas-por-cobrar
+  (partida 2012)
+  (monto 10000)
+  (dia 3)
+  (mes febrero)
+  (ano 2022))
+
+
+( ajustes-mensuales (mes febrero) (ano 2022) (partida 2014))
+( ajuste-de-iva     (mes febrero) (ano 2022) (partida 2015))
 
 ;---------------------------------- marzo ------------------------
 
