@@ -8,7 +8,7 @@
  (razon "alectrico® SpA"))
 
 
-(balance (dia 31) (mes enero) (ano 2022))
+(balance (dia 31) (mes diciembre) (ano 2021))
 
 
 ;dia 01/01/2021---------- asiento inicial  ----------------
@@ -3194,7 +3194,7 @@
 ;-----------------------------------------------
 
 
-(deposito (partida 206) (banco banco-estado) (monto 900000 ) (dia 31) (mes diciembre) (ano 2021) )
+(deposito (partida 206) (banco banco-estado) (monto 800000 ) (dia 31) (mes diciembre) (ano 2021) )
 
 
 

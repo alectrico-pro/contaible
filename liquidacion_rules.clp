@@ -527,7 +527,7 @@
        ( nombre-del-activo    ?nombre-activo )
        ( valor-de-adquisicion ?valor) 
        ( mes-de-adquisicion   ?mes-de-adquisicion)
-       ( ano-de-adquisicion   ?ano-de-adquisicion)
+       ( ano-de-adquisicion   ?ano)
        ( liquidado            false) )
 
     ?liquidadora <- (cuenta
@@ -537,7 +537,7 @@
 
     ( balance (dia ?top)       (mes ?mes_top)     (ano ?ano_top))
     ( test (>= (to_serial_date ?top   ?mes_top          ?ano_top)
-               (to_serial_date 1  ?mes-de-adquisicion  ?ano-de-adquisicion)))
+               (to_serial_date 1  ?mes-de-adquisicion  ?ano)))
 
  =>
 

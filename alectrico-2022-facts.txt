@@ -1,0 +1,338 @@
+( empresa (nombre alectrico-2022) (razon "alectrico® SpA"))
+
+(balance (dia 31) (mes enero) (ano 2022))
+
+
+;dia 01/01/2022---------- asiento inicial  ----------------
+
+;=========================== 2 0 2 2  ===========================================
+;================================================================================
+
+(partida
+ (numero 2001)
+ (dia 1) (mes enero) (ano 2022)
+ (descripcion "Por Inicio de Operaciones en 2022")
+ (actividad ajuste))
+
+
+
+(cargo
+ ( electronico false)
+ ( tipo-de-documento escritura-empresa)
+ ( empresa alectrico-2022)
+ ( cuenta caja)
+ ( monto  105961)
+ ( partida 2001)
+ ( dia 1)  ( mes enero)  ( ano 2022)
+ ( glosa asiento-inicial))
+
+
+(cargo
+ ( electronico false)
+ ( tipo-de-documento escritura-empresa)
+ ( empresa alectrico-2022)
+ ( cuenta banco-estado)
+ ( monto  222625)
+ ( partida 2001)
+ ( dia 1) ( mes enero) ( ano 2022)
+ ( glosa asiento-inicial))
+
+
+(cargo
+ ( electronico false)
+ ( tipo-de-documento escritura-empresa)
+ ( empresa alectrico-2022)
+ ( cuenta cuentas-por-cobrar)
+ ( monto  51203)
+ ( partida 2001)
+ ( dia 1) ( mes enero) ( ano 2022)
+ ( glosa asiento-inicial))
+
+
+
+(abono
+ ( electronico false)
+ ( tipo-de-documento escritura-empresa)
+ ( empresa alectrico-2022)
+ ( cuenta retencion-de-iva-articulo-11)
+ ( monto  2440)
+ ( partida 2001)
+ ( dia 1) ( mes enero) ( ano 2022)
+ ( glosa asiento-inicial))
+
+
+
+
+(cargo
+ ( electronico false)
+ ( tipo-de-documento escritura-empresa)
+ ( empresa alectrico-2022)
+ ( cuenta iva-credito)
+ ( monto  16850)
+ ( partida 2001)
+ ( dia 1) ( mes enero) ( ano 2022)
+ ( glosa asiento-inicial))
+
+
+(cargo
+ ( electronico false)
+ ( tipo-de-documento escritura-empresa)
+ ( empresa alectrico-2022)
+ ( cuenta ppm)
+ ( monto  2728)
+ ( partida 2001)
+ ( dia 1) ( mes enero) ( ano 2022)
+ ( glosa asiento-inicial))
+
+
+(cargo
+ ( electronico false)
+ ( tipo-de-documento escritura-empresa)
+ ( empresa alectrico-2022)
+ ( cuenta herramientas)
+ ( monto  218470)
+ ( partida 2001)
+ ( dia 1) ( mes enero) ( ano 2022)
+ ( glosa asiento-inicial))
+
+
+(cargo
+ ( electronico false)
+ ( tipo-de-documento escritura-empresa)
+ ( empresa alectrico-2022)
+ ( cuenta marca-alectrico)
+ ( monto 237369)
+ ( partida 2001)
+ ( dia 1) ( mes enero) ( ano 2022)
+ ( glosa asiento-inicial))
+
+
+(cargo
+ ( electronico false)
+ ( tipo-de-documento escritura-empresa)
+ ( empresa alectrico-2022)
+ ( cuenta plataforma-alectrico)
+ ( monto 2644543)
+ ( partida 2001)
+ ( dia 1) ( mes enero) ( ano 2022)
+ ( glosa asiento-inicial))
+
+
+(abono
+ ( electronico false)
+ ( tipo-de-documento escritura-empresa)
+ ( empresa alectrico-2022)
+ ( cuenta amortizacion-acumulada-intangibles)
+ ( monto 31420)
+ ( partida 2001)
+ ( dia 1) ( mes enero) ( ano 2022)
+ ( glosa asiento-inicial))
+
+
+(abono
+ ( electronico false)
+ ( tipo-de-documento escritura-empresa)
+ ( empresa alectrico-2022)
+ ( cuenta depreciacion-acumulada-herramientas)
+ ( monto 84036)
+ ( partida 2001)
+ ( dia 1) ( mes enero) ( ano 2022)
+ ( glosa asiento-inicial))
+
+
+
+(abono
+ ( electronico false)
+ ( tipo-de-documento escritura-empresa)
+ ( empresa alectrico-2022)
+ ( cuenta capital-social)
+ ( monto 2085294)
+ ( partida 2001)
+ ( dia 1) ( mes enero) ( ano 2022)
+ ( glosa asiento-inicial))
+
+
+(abono
+ ( electronico false)
+ ( tipo-de-documento escritura-empresa)
+ ( empresa alectrico-2022)
+ ( cuenta utilidades-acumuladas)
+ ( monto 633173)
+ ( partida 2001)
+ ( dia 1) ( mes enero) ( ano 2022)
+ ( glosa asiento-inicial))
+
+
+(abono
+ ( electronico false)
+ ( tipo-de-documento escritura-empresa)
+ ( empresa alectrico-2022)
+ ( cuenta salarios-por-pagar)
+ ( monto 627440)
+ ( partida 2001)
+ ( dia 1) ( mes enero) ( ano 2022)
+ ( glosa asiento-inicial))
+
+
+(abono
+ ( electronico false)
+ ( tipo-de-documento escritura-empresa)
+ ( empresa alectrico-2022)
+ ( cuenta iva-debito)
+ ( monto 35946)
+ ( partida 2001)
+ ( dia 1) ( mes enero) ( ano 2022)
+ ( glosa asiento-inicial))
+
+
+;------------------------------------ enero compras -------------------------------------
+
+
+( gasto-administrativo
+ ( tipo-de-documento 45)
+ ( folio 60078791)
+ ( rut 55555555-5)
+ ( partida 2006)
+ ( dia 11) (mes enero) (ano 2021)
+ ( credito 0)
+ ( neto        14024)
+ ( iva          2665)
+ ( iva-retenido 2665)
+ ( total       14024)
+ ( material pago-mensual-heroku)
+ ( proveedor heroku)
+ ( glosa "Por Gasto Administrativo: Pago Mensual de Arriendo de Almacenamiento en la nube.")
+ ( archivo "../heroku-mensualidad-enero-2022.png")
+ ( finalidad "Departamento de Administración"))
+
+(gasto-administrativo
+ (tipo-de-documento 33)
+ (folio 2838194)
+ (rut 60910000-1 )
+ (partida 2007)
+ (dia 27) (mes enero) (ano 2022)
+ (credito 0)
+ (total 9950)
+ (neto  8361)
+ (iva   1589)
+ (material Dominio-Internet)
+ (proveedor u-chile)
+ (glosa "Adquisión de Dominio Internet: contaible.cl.")
+ (archivo "../factura-afecta-u-chile-2838194.png")
+ (finalidad "Por Compra de Dominio contaible.cl"))
+
+( gasto-administrativo
+ ( archivo "/factura-afecta-entel-44377492.png")
+ ( tipo-de-documento 33)
+ ( folio 44377492)
+ ( rut 96806980-2 )
+ ( partida 2008)
+ ( dia 10) (mes enero) (ano 2022)
+ ( credito 0)
+ ( neto  3128)
+ ( iva   594)
+ ( total 3722)
+ ( material servicio-telefonia)
+ ( proveedor entel)
+ ( glosa "Por Gasto Administrativo: Servicio de Datos y Telefonía: Costo de diciembre 2021.")
+ (finalidad "No subordinada a ningún departamento"))
+
+
+( ajustes-mensuales (mes enero) (ano 2022) (partida 2009))
+( ajuste-de-iva     (mes enero) (ano 2022) (partida 2010))
+
+;--------------------------------- febrero -----------------------------------
+;5336-4445
+ ;multa=interes afp 5336-4445 + interes salud 2795 + interes afc 1003 + multas fonasa 23416
+
+(pago-de-salarios
+ (remuneraciones false)
+ (imposiciones true)
+ (partida 2011)
+ (trabajador alexander)
+ (afp   47180)
+ (afc   10500)
+ (salud  24500)
+ (multa  28105)
+ (folio-prevision 20022021092580)
+ (folio-salud 2017220100278294)
+ (remuneracion 267820)
+ (dia 1)
+ (mes febrero)
+ (ano 2022))
+
+
+;Corresponde a la amortización del parecer THHN
+(cobro-de-cuentas-por-cobrar
+  (partida 2012)
+  (monto 10000)
+  (dia 3)
+  (mes febrero)
+  (ano 2022))
+
+
+( ajustes-mensuales (mes febrero) (ano 2022) (partida 2014))
+( ajuste-de-iva     (mes febrero) (ano 2022) (partida 2015))
+
+
+
+
+;---------------------------------- marzo ------------------------
+
+;###################################################3333
+
+;financiero
+
+( ajuste-anual
+   (ano 2022) (partida 2016)
+   (liquidacion financiera)
+   (efecto ganador))
+
+( ajuste-anual
+   (ano 2022) (partida 2017)
+   (liquidacion financiera)
+   (efecto perdedor))
+
+
+( ajuste-anual-de-resultado-financiero
+   (ano 2022) (partida 2018))
+
+
+;tributario
+( ajuste-anual
+   (ano 2022) (partida 2019)
+   (liquidacion tributaria)
+   (efecto aporte))
+
+( ajuste-anual
+   (ano 2022) (partida 2020)
+   (liquidacion tributaria)
+   (efecto deduccion))
+
+
+( ajuste-anual-de-resultado-tributario
+   (ano 2022) (partida 2021))
+
+
+(partida-inventario-final (partida 2021))
+
+
+
+;--------------------------f29------------------------------------
+
+( f29 (partida 1052) (mes enero)      (ano 2022))
+( f29 (partida 1053) (mes febrero)    (ano 2022))
+( f29 (partida 1054) (mes marzo)      (ano 2022))
+( f29 (partida 1055) (mes abril)      (ano 2022))
+( f29 (partida 1056) (mes mayo)       (ano 2022))
+( f29 (partida 1057) (mes junio)      (ano 2022))
+( f29 (partida 1058) (mes julio)      (ano 2022))
+( f29 (partida 1059) (mes agosto)     (ano 2022))
+( f29 (partida 1060) (mes septiembre) (ano 2022))
+( f29 (partida 1061) (mes octubre)    (ano 2022))
+( f29 (partida 1062) (mes noviembre)  (ano 2022))
+( f29 (partida 1063) (mes diciembre)  (ano 2022))
+
+
+
+

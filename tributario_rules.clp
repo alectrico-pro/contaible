@@ -1,12 +1,15 @@
 (defmodule TRIBUTARIO (import MAIN deftemplate ?ALL))
 
 (deftemplate info
-  (slot inventario-final-liquidado )
+  (slot inventario-final-liquidado (default false) )
+  (slot amortizacion-instantanea (default 0))
+  (slot depreciacion-instantanea (default 0))
+  (slot anotado                   (default false) )
 )
 
 (defrule inventario-final-liquidado
   (exists (partida-inventario-final ))
- =>
+   =>
   (assert (info (inventario-final-liquidado true)))
 )
 
@@ -41,15 +44,44 @@
 
 (defrule inicio
   ( declare (salience 10000))
-  (cuenta (nombre utilidad-tributaria) (partida ?p&:(neq nil ?p)) 
+  ( cuenta (nombre utilidad-tributaria) (partida ?p&:(neq nil ?p)) 
                                 (haber ?haber&:(neq nil ?haber))
                                 (debe  ?debe&:(neq nil ?debe))  )
-
  =>
   ( printout t "--modulo-----------CALCULO DE BASE TRIBUTARIA-----------------" crlf )
- ; ( matches estado-de-resultados-mensual)
- ; ( halt )
 )
+
+(defrule descuentos-propyme 
+  ( balance (ano ?ano))
+  ?info <- (info (anotado false) )
+
+ =>
+
+  ( bind ?suma-de-depreciacion 0)
+
+  ( do-for-all-facts
+    ((?f registro-de-depreciacion))
+    ( eq ?f:ano-de-adquisicion ?ano)
+    (printout t ?f:nombre-del-activo crlf)
+    (bind ?suma-de-depreciacion (+ ?suma-de-depreciacion ?f:valor-de-adquisicion)))
+
+  ( bind ?suma-de-amortizacion 0)
+
+  ( do-for-all-facts
+    ((?f registro-de-amortizacion))
+    (eq ?f:ano-de-adquisicion ?ano)
+    (printout t ?f:nombre-del-activo crlf)
+    (bind ?suma-amortizacion (+ ?suma-de-amortizacion ?f:valor-de-adquisicion)))
+
+  ( modify ?info 
+    ( anotado true)
+    ( amortizacion-instantanea ?suma-de-amortizacion)
+    ( depreciacion-instantanea ?suma-de-depreciacion))
+
+  ( printout t " Suma de amortizacion: " ?suma-de-amortizacion crlf)
+  ( printout t " Suma de depreciacion: " ?suma-de-depreciacion crlf)
+)
+
 
 (defrule fin
  ( declare (salience -10000))
@@ -61,7 +93,9 @@
 (defrule inicio-kindle-k-tributario-rules
    ( declare (salience 10000))
    ( empresa (nombre ?empresa))
+
   =>
+
  ;  ( printout t "En inicio-tributario-rules" )
    ( bind ?archivo (str-cat "./doc/" ?empresa "/tributario.markdown"))
 ;   ( bind ?archivo (str-cat "./" ?empresa "/tributario.markdown"))
@@ -86,23 +120,25 @@
 
 (defrule estado-de-resultados-mensual
   ( balance (mes ?mes) (ano ?ano ))
-
-  ( info (inventario-final-liquidado ?inventario-final-liquidado))
-
   ( empresa (nombre ?empresa))
+
+
+  ( info
+    ( inventario-final-liquidado ?inventario-final-liquidado)
+    ( anotado true)
+    ( depreciacion-instantanea ?depreciacion-instantanea)
+    ( amortizacion-instantanea ?amortizacion-instantanea) )
 
   ( subtotales (cuenta ingresos-brutos) (acreedor ?ingresos-brutos))
   ( subtotales (cuenta ventas) (deber ?ventas-deber) (acreedor ?ventas-acreedor))
   ( subtotales (cuenta devolucion-sobre-ventas) (debe ?devolucion-sobre-ventas))
   ( subtotales (cuenta compras) (debe ?compras))
   ( subtotales (cuenta gastos-sobre-compras) (debe ?gastos-sobre-compras))
-
   ( subtotales (cuenta inventario-inicial) (deber ?inventario-inicial))
 
   ( subtotales (cuenta inventario)
     (deber ?inventario-deber)
-    (acreedor ?inventario-acreedor)
-  )
+    (acreedor ?inventario-acreedor))
 
   ( subtotales (cuenta inventario-final)
     (deber ?inventario-final-deber)
@@ -114,47 +150,27 @@
 
   ( subtotales (cuenta salarios ) (deber ?salarios-deber))
   ( subtotales (cuenta salarios ) (acreedor ?salarios-acreedor))
-
-
   ( subtotales (cuenta gastos-ventas) (deber ?gastos-ventas))
   ( subtotales (cuenta gastos-en-investigacion-y-desarrollo) (debe ?gastos-en-investigacion-y-desarrollo))
   ( subtotales (cuenta gastos-promocionales) (deber ?gastos-en-promocion))
   ( subtotales (cuenta costos-de-ventas) (deber ?costos-de-ventas))
   ( subtotales (cuenta idpc) (haber ?idpc))
   ( subtotales (cuenta reserva-legal) (haber ?reserva-legal))
-
-; ( cuenta (nombre utilidad-tributaria) (partida ?p&:(neq nil ?p))
-;                               (haber ?utilidad-tributaria-haber)
-;                               (debe  ?utilidad-tributaria-debe))
-
   ( subtotales (cuenta utilidad-tributaria) (deber ?utilidad-tributaria-deber) (acreedor ?utilidad-tributaria-acreedor))
-
-
   ( subtotales (cuenta base-imponible) (deber ?base-imponible-deber) (acreedor ?base-imponible-acreedor))
-
   ( subtotales (cuenta utilidad) (acreedor ?utilidad-acreedor) (deber ?utilidad-deber) )
-
   ( subtotales (cuenta provision-impuesto-a-la-renta ) (acreedor ?provision-impuesto-a-la-renta))
   ( subtotales (cuenta amortizacion-intangibles ) (deber ?amortizacion-intangibles))
-  ( subtotales (cuenta depreciacion-acumulada-herramientas ) (acreedor ?depreciacion))
-
+  ( subtotales (cuenta depreciacion) (deber ?depreciacion))
   ( subtotales (cuenta impuesto-a-la-renta-por-pagar) (acreedor ?impuesto-a-la-renta-por-pagar))
   ( subtotales (cuenta perdidas-ejercicios-anteriores) (debe ?pea))
-
-  ( subtotales (cuenta herramientas) (deber ?herramientas))
-  ( subtotales (cuenta amortizacion-acumulada-instantanea) (haber ?amortizacion-acumulada-instantanea))
-
   ( subtotales (cuenta perdida-por-correccion-monetaria) (debe ?perdida-por-correccion-monetaria))
   ( subtotales (cuenta ganancia-por-correccion-monetaria) (haber ?ganancia-por-correccion-monetaria))
-
   ( subtotales (cuenta aumentos-de-capital-aportes) (haber ?aportes))
-  
   ( subtotales (cuenta insumos) (deber ?insumos))
 
   ( cuenta (nombre impuestos-no-recuperables) (haber ?impuestos-no-recuperables))
-
   ( tasas (idpc ?tasa-idpc) (mes ?mes) (ano ?ano))  
-
   ( selecciones (regimen ?regimen) (incentivo-al-ahorro ?incentivo-al-ahorro))
 
  =>
@@ -183,15 +199,11 @@
    (- ?base-imponible-acreedor
       ?base-imponible-deber))
 
-
   (bind ?ventas-netas           (- ?ventas ?devolucion-sobre-ventas))
-
   (bind ?compras-totales        (+ ?compras ?gastos-sobre-compras))
   (bind ?compras-netas          ?compras-totales)
-
   (bind ?existencias            (+ ?compras-netas ?inventario-inicial))
   ;mercaderia disponible para ventas
-
   (bind ?costos-de-mercancias   ?inventario-final)
 
   (if (eq true ?inventario-final-liquidado)
@@ -229,7 +241,7 @@
 
   (bind ?utilidad-antes-de-idpc  ?margen-fuera-de-explotacion )
 
-  (bind ?resultado (+ ?aportes (- ?margen-fuera-de-explotacion   (+ ?herramientas   ?amortizacion-acumulada-instantanea))) )
+  (bind ?resultado (+ ?aportes (- ?margen-fuera-de-explotacion   (+ ?depreciacion-instantanea   ?amortizacion-instantanea))) )
 
   (printout k "<table><tbody>" crlf )
   (printout k "<tr><th colspan='3'>" ?empresa "</th></tr>" crlf )
@@ -332,15 +344,10 @@
 ;  (printout t "| (=) " ?costos-de-mercancias tab "|" tab tab "Costos de Mercancías " crlf)
 ;  (printout k "<tr><td> (=) </td> <td align='right'>" ?costos-de-mercancias "</td><td> </td><td></td><td></td><td colspan='2'>Costo de Mercancías </td></tr>" crlf)
 
-
-
-
   (printout t "| (-) " ?insumos tab "|" tab tab "Insumos " crlf)
   (printout k "<tr><td> (=) </td> <td align='right'>" ?insumos "</td><td> </td><td></td><td></td><td colspan='2'>Insumos </td></tr>" crlf)
 
-
   (printout t crlf)
-
   
   (if (eq true ?inventario-final-liquidado)
    then
@@ -350,18 +357,13 @@
    else
 
      (printout t "|" tab tab "|     " ?utilidad-bruta tab "UTILIDAD BRUTA (Ventas Netas - Costo de Ventas)" crlf)
-     (printout k "<tr><td></td><td></td><td></td><td></td><td align='right'>" ?utilidad-bruta "</td><td colspan='4'>  UTILIDAD BRUTA (Ventas Netas - Costo de Ventas) </td></tr>"  crlf)
-
- )
-
+     (printout k "<tr><td></td><td></td><td></td><td></td><td align='right'>" ?utilidad-bruta "</td><td colspan='4'>  UTILIDAD BRUTA (Ventas Netas - Costo de Ventas) </td></tr>"  crlf) )
 
   (printout k "<tr style='font-weight:bold; background-color: azure'><td></td><td></td><td></td><td></td><td align='right'>" ?utilidad-bruta "</td><td colspan='4'>  Margen de Explotacion </td></tr>"  crlf)
 
 
-
   (printout t "|" tab tab "| (-) " ?gastos-de-operacion tab "Gastos Operacionales (Gastos Admon + Gastos Vtas + I+D + Promocion + Amortiza + Depreciacion)" crlf)
   (printout k "<tr><td></td><td></td><td></td><td>(-)</td><td align='right'>" ?gastos-de-operacion "</td><td colspan='4'> Gastos de Deducibles de Impuesto (Gastos Admon + Gastos Vtas + I+D + Promocion + Amortiza.Int A.31-LIR) </td></tr>"  crlf)
-
 
 
   (printout t "|" ?gastos-administrativos tab tab tab tab  "Gastos del Dpto Administración" crlf)
@@ -369,9 +371,7 @@
   (printout t "|" ?gastos-en-investigacion-y-desarrollo tab tab tab tab "Gastos en I+D" crlf)
   (printout t "|" ?gastos-en-promocion tab tab tab tab "Gastos en Promocion" crlf)
   (printout t "|" ?salarios tab tab tab tab "Salarios" crlf)
-
   (printout t "|" ?perdida-por-correccion-monetaria tab tab tab tab "Pérdida por Corrección Monetaria" crlf)
-
   (printout t "|" ?amortizacion-intangibles tab tab tab tab " (-) Amortizacion Contable Intangibles" crlf)
   (printout t "|" ?depreciacion tab tab tab tab " (-) Depreciacion" crlf)
 
@@ -388,10 +388,9 @@
 
   (printout k "<tr><td>(-) </td><td align='right'>" ?perdida-por-correccion-monetaria "</td><td></td><td></td><td></td><td> Pérdida Por Corrección Monetaria </td></tr>" crlf)
 
- (printout k "<tr><td>(-) </td><td align='right'>" ?amortizacion-intangibles "</td><td></td><td></td><td></td><td> Amortización </td></tr>" crlf)
+  (printout k "<tr><td>(-) </td><td align='right'>" ?amortizacion-intangibles "</td><td></td><td></td><td></td><td> Amortización </td></tr>" crlf)
 
- (printout k "<tr><td>(-) </td><td align='right'>" ?depreciacion "</td><td></td><td></td><td></td><td> Depreciación </td></tr>" crlf)
-
+  (printout k "<tr><td>(-) </td><td align='right'>" ?depreciacion "</td><td></td><td></td><td></td><td> Depreciación </td></tr>" crlf)
 
   (printout t "|" tab tab "| (-) " ?pea tab tab "Pérdida Ejercicio Anterior PEA A.33-LIR)" crlf)
 
@@ -407,7 +406,6 @@
   (printout t "|" tab tab "|     " ?utilidad-antes-de-reserva tab "UTILIDAD ANTES DE RESERVA (U.Op-Reserva Lega)" crlf)
   (printout k "<tr><td></td><td> </td><td> </td><td></td><td align='right'>" ?utilidad-antes-de-reserva "</td><td> Utilidad Antes de Reserva </td></tr>" crlf)
 
-
   (printout t "|" tab tab  "| (-) " tab ?reserva-legal tab " Reserva Legal" crlf)
 
   (printout k "<tr><td></td><td></td><td></td><td> (-) </td><td align='right'>" ?reserva-legal "</td><td> Reserva Legal </td></tr>" crlf)
@@ -415,20 +413,14 @@
   (printout t "|" tab tab "| (=) " ?margen-de-explotacion tab "Resultado de Explotación " crlf)
   (printout k "<tr style='font-weight:bold; background-color: azure'><td> <td></td></td><td> </td><td></td><td align='right'>" ?margen-de-explotacion "</td><td> Resultado de Explotacion </td></tr>" crlf)
 
-
   (printout t "|" tab tab "| (+) " ?ganancia-por-correccion-monetaria tab "Ganancia Por Corrección Monetaria" crlf)
   (printout k "<tr><td></td><td></td><td></td><td> (+) </td><td align='right'>" ?ganancia-por-correccion-monetaria "</td><td> Ganancia Por Corrección Monetaria </td></tr>" crlf)
-
-
 
   (printout t "|" tab tab "| (-) " ?impuestos-no-recuperables tab "Impuestos No Recuperables" crlf)
   (printout k "<tr><td></td><td></td><td></td><td> (-) </td><td align='right'>"  ?impuestos-no-recuperables "</td><td> Impuestos No Recuperables </td></tr>" crlf)
 
-
   (printout t "|" tab tab "| (=) " ?margen-fuera-de-explotacion tab "Resultado Fuera de Explotación " crlf)
   (printout k "<tr style='font-weight:bold; background-color: azure'><td> <td></td></td><td> </td><td></td><td align='right'>" ?margen-fuera-de-explotacion "</td><td> Resultado Fuera de Explotacion </td></tr>" crlf)
-
-
 
   (printout t "|" tab tab "|     " ?utilidad-antes-de-idpc tab "Resultado Antes de Impuesto" crlf)
   (printout k "<tr style='font-weight:bold; background-color: azure'><td> <td></td></td><td> </td><td></td><td align='right'>" ?utilidad-antes-de-idpc "</td><td> Resultado Antes de Impuesto</td></tr>" crlf)
@@ -447,11 +439,8 @@
 
   (printout t "|" tab tab "|     " ?utilidad-despues tab "Utilidad Calc. Desp.Imp." crlf)
   (printout k "<tr style='font-weight:bold;background-color: azure'><td> <td></td></td><td> </td><td></td><td align='right'>" ?utilidad-despues "</td><td> Utilidad Después de Impuestos <small> Calculada </small></td></tr>" crlf)
-
   (printout t "---------------------------------------------------------------------------" crlf)
   (printout k "</tbody></table>" crlf)
-
-
   (printout k "<table> " crlf)
   (printout t "----------- DETERMINACIÓN DE LA BASE IMPONIBLE -----------------------------" crlf)
   (printout t " Determina los impuestos del régimen " ?regimen  crlf)
@@ -461,12 +450,10 @@
   (printout t "|" tab tab "|     " ?utilidad tab "Utilidad (módulo liquidación)" crlf)
   (printout t "|" tab tab "|     " ?margen-fuera-de-explotacion  tab "Margen fuera de Explotacion" crlf)
   (printout k "<tr style='font-weight:bold;background-color: azure'><td> <td></td></td><td> </td><td></td><td align='right'>" ?utilidad "</td><td> Utilidad del Ejercicio Ant.Impuesto (m. liquidación)</td></tr>" crlf)
-
-  (printout t "| (-) " tab ?herramientas tab tab tab tab "Depreciación Instantanea Propyme" crlf)
-  (printout t "| (-) " tab ?amortizacion-acumulada-instantanea tab tab tab tab "Amortizacion Instántanea Intangibles (no-contable) " crlf)
-
-  ( printout k "<tr><td> (-) </td><td align='right'>" ?herramientas "</td><td></td><td></td><td></td><td> Depreciación Instantánea Activo Fijo Propyme </td></tr>" crlf)
-  ( printout k "<tr><td> (-) </td><td align='right'>" ?amortizacion-acumulada-instantanea "</td><td></td><td></td><td></td><td> Amortización Instantánea Intangibles </td></tr>" crlf)
+  (printout t "| (-) " tab ?depreciacion-instantanea tab tab tab tab "Depreciación Instantanea Propyme" crlf)
+  (printout t "| (-) " tab ?amortizacion-instantanea tab tab tab tab "Amortizacion Instántanea Intangibles (no-contable) " crlf)
+  ( printout k "<tr><td> (-) </td><td align='right'>" ?depreciacion-instantanea "</td><td></td><td></td><td></td><td> Depreciación Instantánea Activo Fijo Propyme </td></tr>" crlf)
+  ( printout k "<tr><td> (-) </td><td align='right'>" ?amortizacion-instantanea "</td><td></td><td></td><td></td><td> Amortización Instantánea Intangibles </td></tr>" crlf)
 
   ( printout t "|" ?aportes tab tab tab tab "(+) Aportes Cap." crlf)
   ( printout k "<tr><td> (+) </td><td align='right'>" ?aportes "</td><td></td><td></td><td></td><td> Aportes al Capital </td></tr>" crlf)
@@ -481,7 +468,7 @@
     (printout k "<tr><td> <td></td></td><td> </td><td> (1) (=) </td><td align='right' style = 'font-weight:bold; background-color: azure'>" ?resultado "</td><td> RLI Calculada </td></tr>" crlf)
 
   )
- 
+
 
 ;  (printout t "|" tab tab "| (-) " ?idpc tab "Impuesto Determinado" crlf)
 ;  (printout k "<tr><td> <td></td></td><td> </td><td> (-) </td><td align='right'>" ?idpc "</td><td> Impuesto Determinado: " (round (* ?tasa-idpc 100) ) "% </td></tr>" crlf)
@@ -553,7 +540,6 @@
  
 ; (printout t "|" tab tab "| (=) " (- ?utilidad-antes-de-idpc ?provision-impuesto-a-la-renta) tab "UTILIDAD DEL EJERCICIO AJUSTADA (U.Ejercicio - Provision idpc)" crlf)
   (printout t "================================================================================" crlf)
-  
   (printout k "</tbody></table>")
 )
 

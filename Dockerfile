@@ -5,6 +5,7 @@ FROM cupercupu/clipspy AS build
 RUN mkdir /templates
 RUN mkdir /doc
 RUN mkdir /doc/alectrico-2021
+RUN mkdir /doc/alectrico-2022
 RUN mkdir /doc/_posts
 RUN mkdir /doc/_data
 
@@ -15,9 +16,15 @@ COPY *.clp                    ./
 COPY alectrico-2021-facts.txt              ./
 COPY alectrico-2021-revisiones.txt         ./
 COPY alectrico-2021-revisiones-cuentas.txt ./
-COPY alectrico-2021-valor-activos.txt      ./
-COPY alectrico-2021-tasas.txt              ./
 
+
+COPY alectrico-2022-facts.txt              ./
+COPY alectrico-2022-revisiones.txt         ./
+COPY alectrico-2022-revisiones-cuentas.txt ./
+
+
+COPY valor-activos.txt      ./
+COPY tasas.txt              ./
 COPY contratos.txt                ./
 copy cuentas.txt                  ./
 copy proveedores.txt              ./
@@ -50,6 +57,9 @@ COPY ./o.markdown         ./
 
 #estos resultan de contabilidad.py
 COPY --from=build ./doc/alectrico-2021/ ./alectrico-2021/
+COPY --from=build ./doc/alectrico-2022/ ./alectrico-2022/
+
+
 
 #EStos markdown son generaos pr contabilidad.py
 #Este copy a veces falla y hace abortar el proceso
@@ -66,6 +76,8 @@ COPY ./alectrico-2021/ ./
 COPY ./_config.yml     ./
 COPY ./nota/           ./nota/
 COPY ./nota/           ./alectrico-2021/
+COPY ./nota/           ./alectrico-2022/
+
 
 WORKDIR ./
 VOLUME /doc

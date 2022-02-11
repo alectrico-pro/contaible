@@ -27,13 +27,27 @@
   ( load-facts "selecciones.txt")
 )
 
+;el archivo markdown aquí generado sirve para 
+;evitar que la compilación de Dockerfile sea abortada
+(defrule creacion-de-archivo-markdown
+   ( declare (salience 9000))
+  =>
+
+   ( bind ?archivo (str-cat "./doc/archivo.markdown"))
+   ( open ?archivo l "w")
+   ( printout l (random ) crlf)
+   ( printout t "------------------- fin-archivo-markdown ------------" crlf)
+   ( close l)
+)   
+    
+
 (defrule MAIN::inicio-modulo-main
   (declare (salience 10000))
   (selecciones (empresa-seleccionada ?empresa))
 =>
 
-  ;( printout t "¿ Para qué empresa requiere la contabilidad ?"  crlf)
-   ;( bind ?empresa (read))
+ ; ( printout t "¿ Para qué empresa requiere la contabilidad ?"  crlf)
+ ; ( bind ?empresa (read))
   
    ;( bind ?empresa logica-contable)
    ;( bind ?empresa alectrico)
@@ -61,11 +75,11 @@
    ( printout t archivo-dribble tab ?archivo crlf )
    ( dribble-on ?archivo)
 
-   ( bind ?archivo (str-cat ?empresa "-tasas.txt"))
+   ( bind ?archivo (str-cat "tasas.txt"))
    ( printout t archivo-tasas tab ?archivo crlf )
    ( load-facts ?archivo)
 
-   ( bind ?archivo (str-cat ?empresa "-valor-activos.txt"))
+   ( bind ?archivo (str-cat "valor-activos.txt"))
    ( printout t archivo-valor-activos tab ?archivo crlf )
    ( load-facts ?archivo)
 
