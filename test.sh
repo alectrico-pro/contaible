@@ -4,6 +4,6 @@
 c=$(docker ps -q) && [[ $c ]] && docker kill $c
 
 
-docker build . -t test -f Dockertest
+docker build . -t test -f DockerfileTest
 
 

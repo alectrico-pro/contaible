@@ -583,6 +583,28 @@
 )
 
 
+(deftemplate revision-general
+  (slot cuenta (default ""))
+  (slot voucher (default " "))
+  (slot old (default " "))
+  (slot a-corregir (default " "))
+  (slot rcv (default "no" ))
+  (slot ccm (default "no" ))
+  (slot libro-diario (default "no"))
+  (slot legal (default " "))
+  (slot tipo (default " "))
+  (slot folio (default " "))
+  (slot revisado (default "no"))
+  (multislot partidas (type INTEGER) (default 0))
+  (slot descripcion (default " "))
+  (slot rechazado (default false) )
+  (slot reclamado (default false) )
+  (slot no-incluir (default false))
+  (slot dia)
+  (slot mes)
+  (slot ano)
+)
+
 
 
 (deftemplate revision

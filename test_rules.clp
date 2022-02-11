@@ -23,17 +23,17 @@
 )
 
 (defrule MAIN::seleccion-de-empresa
+  (declare (salience 10000))
  =>
   ( load-facts "selecciones.txt")
 )
 
 
-
 (defrule MAIN::inicio-modulo-main
-  (declare (salience 10000))
+  (declare (salience 9000))
   (selecciones (empresa-seleccionada ?empresa))
 =>
-
+;  (halt)
   ;( printout t "¿ Para qué empresa requiere la contabilidad ?"  crlf)
    ;( bind ?empresa (read))
   
@@ -46,28 +46,34 @@
 ;   ( bind ?empresa 1724 )
    ( printout t crlf crlf "------------- MAIN ----------------------" ?empresa crlf crlf crlf)
 
-   ( bind ?archivo (str-cat ?empresa "-facts.txt"))
-   ( printout t archivo-facts tab ?archivo crlf )
-   ( load-facts ?archivo)
+
+  ( bind ?archivo (str-cat ?empresa "-revisiones.txt"))
+  ( printout t archivo-revisiones-cuentas tab ?archivo crlf )
+  ( load-facts ?archivo)
+
+  ( bind ?archivo (str-cat ?empresa "-facts.txt"))
+  ( printout t archivo-facts tab ?archivo crlf )
+  ( load-facts ?archivo)
+
 
    ( bind ?archivo (str-cat ?empresa "-revisiones.txt"))
    ( printout t archivo-revisiones tab ?archivo crlf )
    ( load-facts ?archivo)
 
-
    ( bind ?archivo (str-cat ?empresa "-revisiones-cuentas.txt"))
-   ( printout t archivo-revisiones-cuentas tab ?archivo crlf )
+   ( printout t archivo-revisiones tab ?archivo crlf )
    ( load-facts ?archivo)
+
 
    ( bind ?archivo (str-cat ?empresa "-dribble.txt"))
    ( printout t archivo-dribble tab ?archivo crlf )
    ( dribble-on ?archivo)
 
-   ( bind ?archivo (str-cat ?empresa "-tasas.txt"))
+   ( bind ?archivo (str-cat "tasas.txt"))
    ( printout t archivo-tasas tab ?archivo crlf )
    ( load-facts ?archivo)
 
-   ( bind ?archivo (str-cat ?empresa "-valor-activos.txt"))
+   ( bind ?archivo (str-cat "valor-activos.txt"))
    ( printout t archivo-valor-activos tab ?archivo crlf )
    ( load-facts ?archivo)
 
@@ -129,11 +135,13 @@
 
 ;   ( focus PEDIDO PRIMITIVA ACTIVIDAD PRIMITIVA MENSUAL PRIMITIVA IVA PAGAR VALOR_ACTIVOS PRIMITIVA ECUACION PARTIDA T TOTAL RESULTADO-SII COMPROBACION FINANCIERO RECUADRO AJUSTE INVENTARIO LIQUIDACION INVENTARIO_FINAL AJUSTE TA TRIBUTARIO AJUSTEC TOTALC FINAL SUBCUENTA CCM RCV REMUNERACIONES BI )
 
+
 ;   prueba los cálculos de idpc
-;   ( focus PRIMITIVA ACTIVIDAD PRIMITIVA T TOTAL AJUSTE INVENTARIO LIQUIDACION INVENTARIO_FINAL AJUSTE TA TRIBUTARIO )
+   ( focus PRIMITIVA ACTIVIDAD PRIMITIVA T TOTAL AJUSTE INVENTARIO LIQUIDACION INVENTARIO_FINAL AJUSTE TA TRIBUTARIO )
 
-    ( focus PRIMITIVA ACTIVIDAD VALOR_ACTIVOS PRIMITIVA T TOTAL AJUSTE INVENTARIO LIQUIDACION AJUSTE TA TRIBUTARIO AJUSTEC TOTALC FINAL )
+;    ( focus PRIMITIVA ACTIVIDAD VALOR_ACTIVOS PRIMITIVA T TOTAL AJUSTE INVENTARIO LIQUIDACION AJUSTE TA TRIBUTARIO AJUSTEC TOTALC FINAL )
 
+;   ( focus PEDIDO PRIMITIVA ACTIVIDAD  )
 
 
 )

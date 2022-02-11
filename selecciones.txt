@@ -4,11 +4,11 @@
 ;inspect-f29-code: (algún código f29) muestra las partidas que se usaron para
 ;obtener ese código
 ;liquidar: Qué cuentas se liquidan (las subcuentas o las cuentas paternas)
-;parece que esto y no corre
+;parece que esto ya no corre
 ( selecciones
  (regimen propyme)
  (incentivo-al-ahorro true)
- (empresa-seleccionada alectrico-2022)
+ (empresa-seleccionada alectrico-2021)
  (imprimir-detalles true)
  (liquidar subcuentas) 
  (origen-de-subcuentas real)

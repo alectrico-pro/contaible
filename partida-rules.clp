@@ -131,7 +131,6 @@
 )
 
 
-
 (defrule inicio-de-modulo-partida
   ( declare (salience 8000))
   ( ticket (numero ?numero))

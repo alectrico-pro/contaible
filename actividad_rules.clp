@@ -131,6 +131,20 @@
 )
 
 
+
+(defrule revision-general
+  (revision-general
+    (partidas $?partidas))
+ =>
+  (printout t "Revision general hallada en el archivo <empresa>-revisiones.txt" crlf)
+  (progn$  (?i ?partidas)
+    (do-for-all-facts
+        ((?f revision))     (eq ?i ?f:partida)
+        (modify ?f ( rechazado true  ))
+        (printout t "Revisión " ?f:partida " ahora indica rechazo." crlf)) )
+)
+
+
 (defrule inicio-actividad
   (declare (salience 10000))
   (selecciones ( origen-de-subcuentas ?origen))
