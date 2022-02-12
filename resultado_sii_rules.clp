@@ -68,7 +68,7 @@
 
 
 
-;----------------- B A L A N C E ---------------------------------------------------------
+;----------------- R E S U L T A D O  S I I ---------------------------------------------------------
 
 (defrule balance-encabezado
    ( declare (salience -7000))
@@ -113,7 +113,7 @@
   (no )
   ( empresa (nombre ?empresa))
 
-  (cuenta (nombre ?cuenta) (nombre-sii ?nombre-sii))
+  (cuenta (nombre ?cuenta) (mes ?mes) (nombre-sii ?nombre-sii))
 
   ?subtotal <- (subtotales
    ( mostrado false )
@@ -133,7 +133,7 @@
   ( printout t tab tab ?debe tab ?haber tab "|" tab ?deber tab ?acreedor tab ?cuenta crlf)
 
   ( printout k "<tr style=' background: #fff; border: 1px solid red;'>" crlf)
-  ( printout k "<td>" ?nombre-sii "<small>" ?cuenta "</small> </td> <td align='right'>" ?debe "</td> <td align='right'>" ?haber "</td> <td> | </td> <td align='right'> " ?deber  "</td> <td align='right'>" ?acreedor "</td> </tr>" crlf )
+  ( printout k "<td>" ?mes "</td><td>" ?nombre-sii "<small>" ?cuenta "</small> </td> <td align='right'>" ?debe "</td> <td align='right'>" ?haber "</td> <td> | </td> <td align='right'> " ?deber  "</td> <td align='right'>" ?acreedor "</td> </tr>" crlf )
 
 
 )
@@ -143,7 +143,7 @@
   (no)
   ( empresa (nombre ?empresa))
 
-  (cuenta (nombre ?cuenta) (nombre-sii ?nombre-sii))
+  (cuenta (nombre ?cuenta) (mes ?mes) (nombre-sii ?nombre-sii))
 
   ?subtotal <- (subtotales
    ( mostrado false )
@@ -166,7 +166,7 @@
 ; ( printout k "<td>" ?nombre-sii "<small>" ?cuenta" </small></td> <td align='right'>" ?debe "</td> <td align='right'>" ?haber "</td> <td> | </td> <td align='right'> " ?deber  "</td> <td align='right'>" ?acreedor "</td> " crlf)
 ; ( printout k "<td colspan='2' style=' background: #faa; border: 1px solid red;'>" ?a-corregir " </td>" crlf)
 
-  ( printout k "<td>" ?nombre-sii "<small>" ?cuenta" </small></td> <td align='right'>" ?debe "</td> <td align='right'>" ?haber "</td>" crlf)
+  ( printout k "<td> " ?mes "</td><td>" ?nombre-sii "<small>" ?cuenta" </small></td> <td align='right'>" ?debe "</td> <td align='right'>" ?haber "</td>" crlf)
 
   ( printout k "</tr>" crlf)
 )
@@ -176,7 +176,7 @@
   ( declare (salience -9000))
   (no)
   ( empresa (nombre ?empresa))
-  ( cuenta (nombre ?cuenta) (padre ?padre) (debe ?debe) (haber ?haber) (nombre-sii ?nombre-sii))
+  ( cuenta (nombre ?cuenta) (mes ?mes) (padre ?padre) (debe ?debe) (haber ?haber) (nombre-sii ?nombre-sii))
 
   ?subtotal <- (subtotales
    ( mostrado false )
@@ -196,7 +196,7 @@
   ( printout k "<tr>" crlf)
 ;  ( printout k "<td>" ?nombre-sii "<small> " ?cuenta  " </small> </td> <td align='right'>" ?debe "</td> <td align='right'>" ?haber "</td> <td align='right'> | </td> <td align='right'> " ?deber  "</td> <td align='right'>" ?acreedor "</td>" crlf)
 
-  ( printout k "<td> <small> " ?cuenta  " </small> </td> <td align='right'> " ?debe  "</td> <td align='right'>" ?haber "</td> <td> " ?padre " </td> " crlf)
+  ( printout k "<td> " ?mes "</td>  <td> <small> " ?cuenta  " </small> </td> <td align='right'> " ?debe  "</td> <td align='right'>" ?haber "</td> <td> " ?padre " </td> " crlf)
 
   ( printout k "</tr>" crlf)
 
@@ -290,7 +290,7 @@
   ( declare (salience -8002))
 
   ( empresa (nombre ?empresa))
-  ( cuenta (nombre ?cuenta) (padre ?padre) (nombre-sii ?nombre-sii))
+  ( cuenta (nombre ?cuenta) (mes ?mes) (padre ?padre) (nombre-sii ?nombre-sii))
 
   ?subtotal <- (subtotales
    ( mostrado false )
@@ -310,7 +310,7 @@
   ( modify ?subtotal (mostrado true))
   ( printout t tab tab ?debe tab ?haber tab "|" tab ?deber tab ?acreedor tab ?cuenta crlf)
   ( printout k "<tr  style='background-color: lightyellow'>" crlf)
-  ( printout k "<td></td><td><small> " ?cuenta  " </small> </td> <td align='right'> " ?deber  "</td> <td align='right'>" ?acreedor "</td> <td> " ?padre "</td>" crlf)
+  ( printout k "<td> " ?mes "</td><td><small> " ?cuenta  " </small> </td> <td align='right'> " ?deber  "</td> <td align='right'>" ?acreedor "</td> <td> " ?padre "</td>" crlf)
   ( printout k "</tr>" crlf)
 
 )
@@ -319,7 +319,7 @@
   ( declare (salience -8002))
 
   ( empresa (nombre ?empresa))
-  ( cuenta (nombre ?cuenta) (partida ?partida) ( debe ?debe) (haber ?haber) (padre ?padre) (nombre-sii ?nombre-sii))
+  ( cuenta (nombre ?cuenta) (mes ?mes) (partida ?partida) ( debe ?debe) (haber ?haber) (padre ?padre) (nombre-sii ?nombre-sii))
 ; ( revision (cuenta ?cuenta) (revisado true) )
   ( test (neq 0 (- ?haber ?debe) ))
 
@@ -329,7 +329,7 @@
 
   ( printout t tab ?partida tab ?debe tab ?haber tab "|" tab ?debe tab ?haber tab ?cuenta crlf)
   ( printout k "<tr style='background-color: lavender'>" crlf)
-  ( printout k "<td>" ?partida "</td><td><small> " ?cuenta  " </small> </td> <td align='right'> " ?debe  "</td> <td align='right'>" ?haber "</td> <td> " ?padre "</td>" crlf)
+  ( printout k "<td> " ?mes "</td><td><a href= '/" ?empresa "/libro-diario#Partida-" ?partida "'>" ?partida "</a></td><td><small> " ?cuenta  " </small> </td> <td align='right'> " ?debe  "</td> <td align='right'>" ?haber "</td> <td> " ?padre "</td>" crlf)
   ( printout k "</tr>" crlf)
 
 )
@@ -354,7 +354,7 @@
   ( declare (salience -8004))
 
   ( empresa (nombre ?empresa))
-  ( cuenta (nombre ?cuenta) (padre ?padre) (nombre-sii ?nombre-sii))
+  ( cuenta (nombre ?cuenta) (mes ?mes) (padre ?padre) (nombre-sii ?nombre-sii))
 
   ?subtotal <- (subtotales
    ( mostrado false )
@@ -374,7 +374,7 @@
   ( modify ?subtotal (mostrado true))
   ( printout t tab tab ?debe tab ?haber tab "|" tab ?deber tab ?acreedor tab ?cuenta crlf)
   ( printout k "<tr  style='background-color: lightyellow'>" crlf)
-  ( printout k "<td></td><td><small> " ?cuenta  " </small> </td> <td align='right'> " ?deber  "</td> <td align='right'>" ?acreedor "</td> <td> " ?padre "</td>" crlf)
+  ( printout k "<td>" ?mes "</td><td><small> " ?cuenta  " </small> </td> <td align='right'> " ?deber  "</td> <td align='right'>" ?acreedor "</td> <td> " ?padre "</td>" crlf)
   ( printout k "</tr>" crlf)
 
 )
@@ -383,7 +383,7 @@
   ( declare (salience -8004))
 
   ( empresa (nombre ?empresa))
-  ( cuenta (nombre ?cuenta) (partida ?partida) (debe ?debe) (haber ?haber) (padre ?padre) (nombre-sii ?nombre-sii))
+  ( cuenta (nombre ?cuenta) (mes ?mes) (partida ?partida) (debe ?debe) (haber ?haber) (padre ?padre) (nombre-sii ?nombre-sii))
 ; ( revision (cuenta ?cuenta) (revisado true) )
   ( test (neq 0 (- ?haber ?debe) ))
   ( test (eq ?padre gastos-administrativos ))
@@ -392,7 +392,7 @@
 
   ( printout t tab ?partida tab ?debe tab ?haber tab "|" tab ?debe tab ?haber tab ?cuenta crlf)
   ( printout k "<tr style='background-color: lavender'>" crlf)
-  ( printout k "<td> " ?partida "</td><td><small> " ?cuenta  " </small> </td> <td align='right'> " ?debe  "</td> <td align='right'>" ?haber "</td> <td> " ?padre "</td>" crlf)
+  ( printout k "<td> " ?mes "</td><td><a href= '/" ?empresa "/libro-diario#Partida-" ?partida "'>" ?partida "</a></td><td><small> " ?cuenta  " </small> </td> <td align='right'> " ?debe  "</td> <td align='right'>" ?haber "</td> <td> " ?padre "</td>" crlf)
   ( printout k "</tr>" crlf)
 
 )
@@ -417,7 +417,7 @@
   ( declare (salience -8007))
 
   ( empresa (nombre ?empresa))
-  ( cuenta (nombre ?cuenta) (padre ?padre) (nombre-sii ?nombre-sii))
+  ( cuenta (nombre ?cuenta) (mes ?mes) (padre ?padre) (nombre-sii ?nombre-sii))
 
   ?subtotal <- (subtotales
    ( mostrado false )
@@ -438,7 +438,7 @@
   ( printout t tab tab ?debe tab ?haber tab "|" tab ?deber tab ?acreedor tab ?cuenta crlf)
 
   ( printout k "<tr style='background-color: lightyellow'>" crlf)
-  ( printout k "<td></td><td><small> " ?cuenta  " </small> </td> <td align='right'> " ?deber  "</td> <td align='right'>" ?acreedor "</td> <td> " ?padre "</td>" crlf)
+  ( printout k "<td>" ?mes "</td><td><small> " ?cuenta  " </small> </td> <td align='right'> " ?deber  "</td> <td align='right'>" ?acreedor "</td> <td> " ?padre "</td>" crlf)
   ( printout k "</tr>" crlf)
 
 )
@@ -447,7 +447,7 @@
   ( declare (salience -8007))
 
   ( empresa (nombre ?empresa))
-  ( cuenta (nombre ?cuenta) (partida ?partida) (debe ?debe) (haber ?haber) (padre ?padre) (nombre-sii ?nombre-sii))
+  ( cuenta (nombre ?cuenta) (partida ?partida) (mes ?mes) (debe ?debe) (haber ?haber) (padre ?padre) (nombre-sii ?nombre-sii))
 ; ( revision (cuenta ?cuenta) (revisado true) )
   ( test (neq 0 (- ?haber ?debe) ))
   ( test (eq ?padre intangibles ))
@@ -456,7 +456,7 @@
 
   ( printout t tab ?partida tab ?debe tab ?haber tab "|" tab ------ tab ----- tab ?cuenta crlf)
   ( printout k "<tr style='background-color: lavender'>" crlf)
-  ( printout k "<td> " ?partida "</td><td><small> " ?cuenta  " </small> </td> <td align='right'> " ?debe  "</td> <td align='right'>" ?haber "</td> <td> " ?padre "</td>" crlf)
+  ( printout k "<td> " ?mes "</td><td> <a href= '/" ?empresa "/libro-diario#Partida-" ?partida "'>" ?partida "</a></td><td><small> " ?cuenta  " </small> </td> <td align='right'> " ?debe  "</td> <td align='right'>" ?haber "</td> <td> " ?padre "</td>" crlf)
   ( printout k "</tr>" crlf)
 
 )
@@ -482,7 +482,7 @@
   ( declare (salience -8010))
 
   ( empresa (nombre ?empresa))
-  ( cuenta (nombre ?cuenta) (padre ?padre) (nombre-sii ?nombre-sii))
+  ( cuenta (nombre ?cuenta) (mes ?mes) (padre ?padre) (nombre-sii ?nombre-sii))
 
   ?subtotal <- (subtotales
    ( mostrado false )
@@ -501,7 +501,7 @@
   ( modify ?subtotal (mostrado true))
   ( printout t tab tab ?debe tab ?haber tab "|" tab ?deber tab ?acreedor tab ?cuenta crlf)
   ( printout k "<tr  style='background-color: lightyellow'>" crlf)
-  ( printout k "<td></td><td><small> " ?cuenta  " </small> </td> <td align='right'> " ?deber  "</td> <td align='right'>" ?acreedor "</td> <td> " ?padre "</td>" crlf)
+  ( printout k "<td>" ?mes "</td><td><small> " ?cuenta  " </small> </td> <td align='right'> " ?deber  "</td> <td align='right'>" ?acreedor "</td> <td> " ?padre "</td>" crlf)
   ( printout k "</tr>" crlf)
 
 )
@@ -511,7 +511,7 @@
   ( declare (salience -8010))
 
   ( empresa (nombre ?empresa))
-  ( cuenta (nombre ?cuenta) (partida ?partida) (debe ?debe) (haber ?haber) (padre ?padre) (nombre-sii ?nombre-sii))
+  ( cuenta (nombre ?cuenta) (mes ?mes) (partida ?partida) (debe ?debe) (haber ?haber) (padre ?padre) (nombre-sii ?nombre-sii))
 ; ( revision (cuenta ?cuenta) (revisado true) )
   ( test (neq 0 (- ?haber ?debe) ))
   ( test (eq ?padre correccion-monetaria))
@@ -520,7 +520,7 @@
 
   ( printout t tab ?partida tab ?debe tab ?haber tab "|" tab ------ tab ----- tab ?cuenta crlf)
   ( printout k "<tr style='background-color: lavender'>" crlf)
-  ( printout k "<td> " ?partida "</td><td><small> " ?cuenta  " </small> </td> <td align='right'> " ?debe  "</td> <td align='right'>" ?haber "</td> <td> " ?padre "</td>" crlf)
+  ( printout k "<td> " ?mes "</td><td> <a href= '/" ?empresa "/libro-diario#Partida-" ?partida "'>" ?partida "</a></td><td><small> " ?cuenta  " </small> </td> <td align='right'> " ?debe  "</td> <td align='right'>" ?haber "</td> <td> " ?padre "</td>" crlf)
   ( printout k "</tr>" crlf)
 
 )
@@ -546,7 +546,7 @@
   ( declare (salience -8014))
 
   ( empresa (nombre ?empresa))
-  ( cuenta (nombre ?cuenta) (padre ?padre) (nombre-sii ?nombre-sii))
+  ( cuenta (nombre ?cuenta) (mes ?mes) (padre ?padre) (nombre-sii ?nombre-sii))
 
   ?subtotal <- (subtotales
    ( mostrado false )
@@ -565,7 +565,7 @@
   ( modify ?subtotal (mostrado true))
   ( printout t tab tab ?debe tab ?haber tab "|" tab ?deber tab ?acreedor tab ?cuenta crlf)
   ( printout k "<tr  style='background-color: lightyellow'>" crlf)
-  ( printout k "<td></td><td><small> " ?cuenta  " </small> </td> <td align='right'> " ?deber  "</td> <td align='right'>" ?acreedor "</td> <td> " ?padre "</td>" crlf)
+  ( printout k "<td> " ?mes "</td><td><small> " ?cuenta  " </small> </td> <td align='right'> " ?deber  "</td> <td align='right'>" ?acreedor "</td> <td> " ?padre "</td>" crlf)
   ( printout k "</tr>" crlf)
 )
 
@@ -574,7 +574,7 @@
   ( declare (salience -8014))
 
   ( empresa (nombre ?empresa))
-  ( cuenta (nombre ?cuenta) (partida ?partida) (debe ?debe) (haber ?haber) (padre ?padre) (nombre-sii ?nombre-sii))
+  ( cuenta (nombre ?cuenta) (mes ?mes) (partida ?partida) (debe ?debe) (haber ?haber) (padre ?padre) (nombre-sii ?nombre-sii))
  ;( revision (cuenta ?cuenta) (revisado true) )
   ( test (neq 0 (- ?haber ?debe) ))
   ( test (eq ?padre costos-de-ventas ))
@@ -583,7 +583,7 @@
 
   ( printout t tab ?partida tab ?debe tab ?haber tab "|" tab ------ tab ----- tab ?cuenta crlf)
   ( printout k "<tr style='background-color: lavender'>" crlf)
-  ( printout k "<td> " ?partida "</td><td><small> " ?cuenta  " </small> </td> <td align='right'> " ?debe  "</td> <td align='right'>" ?haber "</td> <td> " ?padre "</td>" crlf)
+  ( printout k "<td> " ?mes "</td><td> <a href= '/" ?empresa "/libro-diario#Partida-" ?partida "'>" ?partida "</a></td><td><small> " ?cuenta  " </small> </td> <td align='right'> " ?debe  "</td> <td align='right'>" ?haber "</td> <td> " ?padre "</td>" crlf)
   ( printout k "</tr>" crlf)
 
 )
@@ -610,7 +610,7 @@
   ( declare (salience -8016))
 
   ( empresa (nombre ?empresa))
-  ( cuenta (nombre ?cuenta) (padre ?padre) (nombre-sii ?nombre-sii))
+  ( cuenta (nombre ?cuenta) (mes ?mes) (padre ?padre) (nombre-sii ?nombre-sii))
 
   ?subtotal <- (subtotales
    ( mostrado false )
@@ -630,7 +630,7 @@
   ( modify ?subtotal (mostrado true))
   ( printout t tab tab ?debe tab ?haber tab "|" tab ?deber tab ?acreedor tab ?cuenta crlf)
   ( printout k "<tr  style='background-color: lightyellow'>" crlf)
-  ( printout k "<td></td><td><small> " ?cuenta  " </small> </td> <td align='right'> " ?deber  "</td> <td align='right'>" ?acreedor "</td> <td> " ?padre "</td>" crlf)
+  ( printout k "<td> " ?mes "</td><td><small> " ?cuenta  " </small> </td> <td align='right'> " ?deber  "</td> <td align='right'>" ?acreedor "</td> <td> " ?padre "</td>" crlf)
   ( printout k "</tr>" crlf)
 
 )
@@ -641,7 +641,7 @@
   ( declare (salience -8016))
 
   ( empresa (nombre ?empresa))
-  ( cuenta (nombre ?cuenta) (partida ?partida) (debe ?debe) (haber ?haber) (padre ?padre) (nombre-sii ?nombre-sii))
+  ( cuenta (nombre ?cuenta) (mes ?mes) (partida ?partida) (debe ?debe) (haber ?haber) (padre ?padre) (nombre-sii ?nombre-sii))
 ; ( revision (cuenta ?cuenta) (revisado true) )
   ( test (neq 0 (- ?haber ?debe) ))
   ( test (eq ?padre insumos ))
@@ -650,7 +650,7 @@
 
   ( printout t tab ?partida tab ?debe tab ?haber tab "|" tab ------ tab ----- tab ?cuenta crlf)
   ( printout k "<tr style='background-color: lavender'>" crlf)
-  ( printout k "<td> " ?partida "</td><td><small> " ?cuenta  " </small> </td> <td align='right'> " ?debe  "</td> <td align='right'>" ?haber "</td> <td> " ?padre "</td>" crlf)
+  ( printout k "<td> " ?mes "</td><td><a href= '/" ?empresa "/libro-diario#Partida-" ?partida "'>" ?partida "</a></td><td><small> " ?cuenta  " </small> </td> <td align='right'> " ?debe  "</td> <td align='right'>" ?haber "</td> <td> " ?padre "</td>" crlf)
   ( printout k "</tr>" crlf)
 
 )
@@ -678,7 +678,7 @@
   ( declare (salience -8019))
 
   ( empresa (nombre ?empresa))
-  ( cuenta (nombre ?cuenta) (padre ?padre) (nombre-sii ?nombre-sii))
+  ( cuenta (nombre ?cuenta) (mes ?mes) (padre ?padre) (nombre-sii ?nombre-sii))
 
   ?subtotal <- (subtotales
    ( mostrado false )
@@ -698,7 +698,7 @@
   ( modify ?subtotal (mostrado true))
   ( printout t tab tab ?debe tab ?haber tab "|" tab ?deber tab ?acreedor tab ?cuenta crlf)
   ( printout k "<tr  style='background-color: lightyellow'>" crlf)
-  ( printout k "<td></td><td><small> " ?cuenta  " </small> </td> <td align='right'> " ?deber  "</td> <td align='right'>" ?acreedor "</td> <td> " ?padre "</td>" crlf)
+  ( printout k "<td> " ?mes "</td><td><small> " ?cuenta  " </small> </td> <td align='right'> " ?deber  "</td> <td align='right'>" ?acreedor "</td> <td> " ?padre "</td>" crlf)
   ( printout k "</tr>" crlf)
 )
 
@@ -707,7 +707,7 @@
   ( declare (salience -8019))
 
   ( empresa (nombre ?empresa))
-  ( cuenta (nombre ?cuenta) (partida ?partida) ( debe ?debe) (haber ?haber) (padre ?padre) (nombre-sii ?nombre-sii))
+  ( cuenta (nombre ?cuenta) (mes ?mes) (partida ?partida) ( debe ?debe) (haber ?haber) (padre ?padre) (nombre-sii ?nombre-sii))
 ; ( revision (cuenta ?cuenta) (revisado true) )
   ( test (neq 0 (- ?haber ?debe) ))
 
@@ -717,7 +717,7 @@
 
   ( printout t tab ?partida tab ?debe tab ?haber tab "|" tab ?debe tab ?haber tab ?cuenta crlf)
   ( printout k "<tr style='background-color: lavender'>" crlf)
-  ( printout k "<td>" ?partida "</td><td><small> " ?cuenta  " </small> </td> <td align='right'> " ?debe  "</td> <td align='right'>" ?haber "</td> <td> " ?padre "</td>" crlf)
+  ( printout k "<td> " ?mes "</td><td><a href= '/" ?empresa "/libro-diario#Partida-" ?partida "'>" ?partida "</a></td><td><small> " ?cuenta  " </small> </td> <td align='right'> " ?debe  "</td> <td align='right'>" ?haber "</td> <td> " ?padre "</td>" crlf)
   ( printout k "</tr>" crlf)
 )
 
@@ -742,7 +742,7 @@
   ( declare (salience -8025))
 
   ( empresa (nombre ?empresa))
-  ( cuenta (nombre ?cuenta) (padre ?padre) (nombre-sii ?nombre-sii))
+  ( cuenta (nombre ?cuenta) (mes ?mes) (padre ?padre) (nombre-sii ?nombre-sii))
   ?subtotal <- (subtotales
    ( mostrado false )
    ( cuenta   ?cuenta )
@@ -759,7 +759,7 @@
   ( modify ?subtotal (mostrado true))
   ( printout t tab tab ?debe tab ?haber tab "|" tab ?deber tab ?acreedor tab ?cuenta crlf)
   ( printout k "<tr  style='background-color: lightyellow'>" crlf)
-  ( printout k "<td></td><td><small> " ?cuenta  " </small> </td> <td align='right'> " ?deber  "</td> <td align='right'>" ?acreedor "</td> <td> " ?padre "</td>" crlf)
+  ( printout k "<td>" ?mes "</td><td><small> " ?cuenta  " </small> </td> <td align='right'> " ?deber  "</td> <td align='right'>" ?acreedor "</td> <td> " ?padre "</td>" crlf)
   ( printout k "</tr>" crlf)
 )
 
@@ -768,7 +768,7 @@
   ( declare (salience -8025))
 
   ( empresa (nombre ?empresa))
-  ( cuenta (nombre ?cuenta) (partida ?partida) (debe ?debe) (haber ?haber) (padre ?padre) (nombre-sii ?nombre-sii))
+  ( cuenta (nombre ?cuenta) (mes ?mes) (partida ?partida) (debe ?debe) (haber ?haber) (padre ?padre) (nombre-sii ?nombre-sii))
  ;( revision (cuenta ?cuenta) (revisado true) )
   ( test (neq 0 (- ?haber ?debe) ))
   ( test (eq ?padre ventas ))
@@ -777,7 +777,7 @@
 
   ( printout t tab ?partida tab ?debe tab ?haber tab "|" tab ------ tab ----- tab ?cuenta crlf)
   ( printout k "<tr style='background-color: lavender'>" crlf)
-  ( printout k "<td> " ?partida "</td> <td><small> " ?cuenta  " </small> </td> <td align='right'> " ?debe  "</td> <td align='right'>" ?haber "</td> <td> " ?padre "</td>" crlf)
+  ( printout k "<td> " ?mes "</td><td><a href= '/" ?empresa "/libro-diario#Partida-" ?partida "'>" ?partida "</a></td> <td><small> " ?cuenta  " </small> </td> <td align='right'> " ?debe  "</td> <td align='right'>" ?haber "</td> <td> " ?padre "</td>" crlf)
   ( printout k "</tr>" crlf)
 )
 
@@ -842,17 +842,11 @@
    ( printout t tab "......................................................." crlf)
    ( printout t tab tab ?debe tab ?haber tab "|" tab ?deber tab ?acreedor tab activos= ?activos crlf)
    ( printout t "------------------------------------------------------------------------" crlf)
-
    ( printout k "</tbody>" crlf)
-
    ( printout k "<tfoot>" crlf)
    ( printout k "<tr> <td></td> <td align='right'>" ?debe "</td> <td align='right'>" ?haber "</td><td> | </td> <td align='right'>" ?deber "</td> <td align='right'>" ?acreedor "</td> </tr>" crlf )
    ( printout k "</tfoot>" crlf)
-
    ( printout k "</table>" crlf)
-
-
-
 ;   ( printout t tab tab "* inventario es inventario inicial." crlf)
    ( retract ?comando)
 )
