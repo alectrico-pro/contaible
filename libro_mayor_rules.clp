@@ -1,4 +1,4 @@
-( defmodule T ( import MAIN deftemplate ?ALL))
+( defmodule LIBRO-MAYOR ( import MAIN deftemplate ?ALL))
 
 ;---- este modulo se concentra en presentar en forma de T el comportamiento de las partidas para cada cuenta
 ;---- también totaliza sumas calificadas para alimentar al balance inicial y a otros informes
@@ -160,7 +160,7 @@
  =>
   ( printout t ?partida tab ?debe tab "|" tab ?haber tab ?mes tab ?recibida tab ?activo-fijo tab ?tipo-de-documento crlf )
 
-  ( printout k "<tr> <td>" ?voucher "</td> <td align='right'>" ?partida "</td> <td align='right'>" ?debe "</td> <td> | </td> <td align='right'> " ?haber  "</td> <td>" ?mes "</td><td>" ?recibida "</td><td> " ?activo-fijo "</td><td> " ?tipo-de-documento "</td> </tr>" crlf )
+  ( printout k "<tr> <td>" ?voucher "</td> <td align='right'> <a href= '/" ?empresa "/libro-diario#Partida-" ?partida "'>" ?partida "</a> </td> <td align='right'>" ?debe "</td> <td> | </td> <td align='right'> " ?haber  "</td> <td>" ?mes "</td><td>" ?recibida "</td><td> " ?activo-fijo "</td><td> " ?tipo-de-documento "</td> </tr>" crlf )
 
   ( modify ?cuenta (mostrado-en-t true ))
   ( modify ?subtotales

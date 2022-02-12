@@ -11,7 +11,7 @@
  (empresa-seleccionada alectrico-2021)
  (imprimir-detalles true)
  (liquidar subcuentas) 
- (origen-de-subcuentas real)
+ (origen-de-subcuentas nominativo)
  (inspect-f29-code ingresos-brutos) )
 
 

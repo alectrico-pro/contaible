@@ -185,6 +185,8 @@
      ( nombre ?nombre)
      ( mes ?mes)
      ( partida ?partida) 
+     ( recibida ?recibida)
+     ( activo-fijo ?activo-fijo)
      ( debe    ?debe)
      ( haber   ?haber)
      ( mostrado-en-t false)
@@ -197,10 +199,16 @@
     ( debe ?total_debe)
     ( haber ?total_haber) )
 
+  (revision
+     ( partida ?partida)
+     ( voucher ?voucher))
+
+
   ( test (and (neq nil ?partida) (> ?partida 0)))
   ( test (or (> ?debe 0) (> ?haber 0)))
  =>
   ( printout t ?partida tab ?debe tab "|" tab ?haber tab ?mes tab tipo-de-documento tab ?tipo-de-documento crlf )
+  ( printout k "<tr> <td>" ?voucher "</td> <td align='right'> <a href= '/" ?empresa "/libro-diario#Partida-" ?partida "'>" ?partida "</a> </td> <td align='right'>" ?debe "</td> <td> | </td> <td align='right'> " ?haber  "</td> <td>" ?mes "</td><td>" ?recibida "</td><td> " ?activo-fijo "</td><td> " ?tipo-de-documento "</td> </tr>" crlf )
   ( modify ?cuenta (mostrado-en-t true ))
   ( modify ?subtotales
        (debe  (+ ?total_debe  ?debe))

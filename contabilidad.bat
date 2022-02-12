@@ -14,7 +14,7 @@
   ( load valor_activos_rules.clp)
   ( load partida-rules.clp)
   ( load pedido_rules.clp)
-  ( load t_rules.clp)
+  ( load libro_mayor_rules.clp)
   ( load ta_rules.clp)
   ( load total_rules.clp)
   ( load totala_rules.clp)
