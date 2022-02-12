@@ -1,3 +1,7 @@
+(deftemplate inicio-de-los-dias
+  (multislot partidas (default 0) (type NUMBER)) 
+)
+
 (deftemplate ajuste-anual-de-resultado-financiero
   (slot ano)
   (slot partida)
@@ -18,7 +22,7 @@
 )
 
 (deftemplate reglas
-   (multislot lista (type STRING))
+  (multislot lista (type STRING))
 )
 
 (deftemplate actividad

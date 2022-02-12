@@ -150,11 +150,14 @@
   (selecciones ( origen-de-subcuentas ?origen))
   =>
    ( assert ( subcuenta (origen ?origen)))
+   ( set-strategy breadth)
+
 )
 
 
 (defrule inicio-de-los-dias
   (declare (salience 10000))
+ (no)
 =>
   ( set-strategy breadth)
   ( printout t "----------------- ACTIVIDAD ------------------" crlf)

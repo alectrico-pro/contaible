@@ -73,11 +73,17 @@
 ;  (printout t ?nombre tab no-tiene-grupo tab partida tab ?partida tab grupo-debe-ser tab ?grupo crlf)
 )
 
-;------------------------ primitivas ---------------------------
+;------------------------ primitivas --------------------------- ya no se usan
 (defrule cargar-cuenta-existente
    ;me carga los cargos que en otras partes no se hicieron, por ejemplo cuando los rechazo
    ( declare (salience 9800))
    (no)
+   ( revision
+    (partida ?numero)
+    (rechazado false)
+   )
+
+
    ( balance (dia ?top) (mes ?mes_top) (ano ?ano_top))
    ( empresa (nombre ?empresa))
    ( partida (dia ?dia) (mes ?mes) (ano ?ano) (numero ?numero))
@@ -98,6 +104,13 @@
    ( declare (salience 980))
  (no) ;me carga los cargos que en otras partes no se hicieron, por ejemplo cuando los rechazo
 
+   ( revision
+    (partida ?numero)
+    (rechazado false)
+   )
+
+
+
    ( empresa (nombre ?empresa))
    ( balance (dia ?top) (mes ?mes_top) (ano ?ano_top))
    ( partida (dia ?dia) (mes ?mes) (ano ?ano) (numero ?numero))
@@ -116,6 +129,12 @@
 (defrule abonar-cuenta-existente
    ( declare (salience 9800))
  (no) ;me abona aún cuando correspondan a partidas rechazadas, de acuerdo a indiaciones 
+
+   ( revision
+    (partida ?numero)
+    (rechazado false)
+   )
+
 
    ( empresa (nombre ?empresa))
    ( balance (dia ?top) (mes ?mes_top) (ano ?ano_top))
@@ -142,6 +161,13 @@
    (no) ;me abona los cargos que en otras partes no se hicieron, por ejemplo cuando los rechazo
 
    ( balance (dia ?top) (mes ?mes_top) (ano ?ano_top))
+
+
+   ( revision
+    (partida ?numero)
+    (rechazado false)
+   )
+
 
    ( empresa (nombre ?empresa))
    ( partida (dia ?dia) (mes ?mes) (ano ?ano) (numero ?numero))

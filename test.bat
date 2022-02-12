@@ -1,7 +1,9 @@
 ( clear )
-  
+ 
+   
   ( load templates.clp)
   ( load test_rules.clp)
+  ( load ticket_rules.clp)
   ( load bi_rules.clp)
   ( load primitiva_rules.clp)
   ( load actividad_rules.clp)

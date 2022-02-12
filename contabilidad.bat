@@ -2,6 +2,7 @@
   
   ( load templates.clp)
   ( load main_rules.clp)
+  ( load ticket_rules.clp)
   ( load bi_rules.clp)
   ( load primitiva_rules.clp)
   ( load actividad_rules.clp)

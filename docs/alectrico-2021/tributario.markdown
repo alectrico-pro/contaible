@@ -30,7 +30,7 @@ layout: page
 <tr><td> (+) </td><td align='right'>44044</td><td></td><td></td><td></td><td colspan='2'>Inventario Inicial</td></tr> 
 <tr><td> (-) </td> <td align='right'>-142076</td><td> </td><td></td><td></td><td colspan='2'>Inventario </td></tr>
 <tr><td> (-) </td> <td align='right'>0</td><td> </td><td></td><td></td><td colspan='2'>Inventario Final </td></tr>
-<tr><td> (=) </td> <td align='right'>0</td><td> </td><td></td><td></td><td colspan='2'>Insumos </td></tr>
+<tr><td> (=) </td> <td align='right'>370898</td><td> </td><td></td><td></td><td colspan='2'>Insumos </td></tr>
 <tr><td></td><td></td><td></td><td></td><td align='right'>1163135</td><td colspan='4'>  UTILIDAD BRUTA (Ventas Netas - Costo de Ventas - Costo de Mercancías - Insumos) </td></tr>
 <tr style='font-weight:bold; background-color: azure'><td></td><td></td><td></td><td></td><td align='right'>1163135</td><td colspan='4'>  Margen de Explotacion </td></tr>
 <tr><td></td><td></td><td></td><td>(-)</td><td align='right'>481789</td><td colspan='4'> Gastos de Deducibles de Impuesto (Gastos Admon + Gastos Vtas + I+D + Promocion + Amortiza.Int A.31-LIR) </td></tr>

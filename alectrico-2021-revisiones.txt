@@ -248,7 +248,7 @@
 (revision (revisado true) (partida 118) (tipo 33) (rcv n-a) )
 (revision (revisado true) (partida 119) (tipo 33) (rcv n-a) )
 (revision (revisado true) (partida 120) (tipo 33) (rcv n-a) (ccm true))
-(revision (revisado true) (partida 120,1) (tipo 33) (rcv n-a) (ccm true))
+(revision (revisado true) (partida 1201) (tipo 33) (rcv n-a) (ccm true))
 
 (revision (revisado true) (partida 121) (tipo 33) (rcv n-a) (ccm true))
 
@@ -468,7 +468,6 @@
 (revision (revisado true) (partida 203))
 
 (revision (revisado true) (partida 127))
-
 
 
 (revision-general (partidas 88 119 124 127 129 156 157 169 172 188 203 204))
