@@ -373,7 +373,9 @@
 ;============================== Tabla de la Partida ================================
 (defrule encabezado-no-f29
   ?c <- ( cabeza ?numero ) 
-  ?partida <-  ( partida (numero ?numero) (dia ?dia) (mes ?mes) (ano ?ano) )
+  ( empresa (nombre ?empresa))
+
+  ?partida <-  ( partida (numero ?numero) (dia ?dia) (mes ?mes) (ano ?ano) (referencia ?referencia) )
  ( revision (rechazado ?rechazado) (libro-diario ?libro-diario) (voucher ?voucher) (revisado ?revisado) (partida ?numero) (folio ?folio) (descripcion ?descripcion) (legal ?legal) (rcv ?rcv) (ccm ?ccm) (a-corregir ?a-corregir) (old ?old) (tipo ?tipo))
 
   ( balance (dia ?top) (mes ?mes_top) (ano ?ano_top))
@@ -421,7 +423,7 @@
     ( if (eq ?rcv true) then ( printout k "- [x] rcv" crlf ) else ( printout k "- [ ] rcv" crlf) )
     ( if (eq ?libro-diario true) then ( printout k "- [x] libro-diario" crlf ) else ( printout k "- [ ] libro-diario" crlf) )
     ( if (eq ?ccm true) then ( printout k "- [x] ccm" crlf ) else ( printout k "- [ ] ccm" crlf) )
-
+    (if  (neq nil ?referencia) then ( printout k  "- [x] Referencia: <a href= '/" ?empresa "/libro-diario#Partida-" ?referencia "'>" ?referencia " </a>" crlf) ) 
     ( if (eq ?revisado true) 
      then  
        ( printout k "- [x] revisado" crlf ) 

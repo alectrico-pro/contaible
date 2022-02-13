@@ -146,6 +146,7 @@
   (slot pagada)
   (slot declarada)
   (slot impuesta)
+  (slot procesada (default false))
 )
 
 (deftemplate afp
@@ -928,6 +929,7 @@
 )
 
 (deftemplate MAIN::partida
+   (slot referencia)
    (slot hecho)
    (slot archivo)
    (slot proveedor)

@@ -626,6 +626,7 @@
    ( empresa (nombre ?empresa ))
 
    ( pago-de-salarios (partida ?numero) (dia ?dia) (mes ?mes) (ano ?ano)
+     (referencia ?referencia)
      (remuneraciones false)
      (imposiciones true)
      (trabajador ?trabajador)
@@ -640,7 +641,7 @@
   =>
    ( bind ?prevision (+ ?salud ?afc ?afp))
 
-   ( assert (partida (proveedor ?trabajador) (numero ?numero) (dia ?dia) (mes ?mes) (ano ?ano) (descripcion pagando-imposiciones) (actividad pagar-solo-imposiciones) ))
+   ( assert (partida (referencia ?referencia) (proveedor ?trabajador) (numero ?numero) (dia ?dia) (mes ?mes) (ano ?ano) (descripcion pagando-imposiciones) (actividad pagar-solo-imposiciones) ))
 
    ( assert (cargo (tipo-de-documento previred) (cuenta entidades-previsionales-por-pagar) (partida ?numero) (dia ?dia) (mes ?mes) (ano ?ano) (empresa ?empresa) (monto ?prevision) ))
 
@@ -665,6 +666,7 @@
    ( empresa (nombre ?empresa ))
 
    ( pago-de-salarios (partida ?numero) (dia ?dia) (mes ?mes) (ano ?ano)
+     (referencia ?referencia)
      (remuneraciones true)
      (imposiciones false)
      (trabajador ?trabajador)
@@ -681,7 +683,7 @@
   =>
    ( bind ?prevision (+ ?salud ?afc ?afp))
    ( bind ?total ( + ?remuneracion ?impuesto-unico))
-   ( assert (partida (proveedor ?trabajador) (numero ?numero) (dia ?dia) (mes ?mes) (ano ?ano) (descripcion pagando-remuneraciones) (actividad pagar-solo-remuneraciones) ))
+   ( assert (partida (referencia ?referencia) (proveedor ?trabajador) (numero ?numero) (dia ?dia) (mes ?mes) (ano ?ano) (descripcion pagando-remuneraciones) (actividad pagar-solo-remuneraciones) ))
 
 
    ( assert (cargo (tipo-de-documento previred°remuneraciones) (cuenta remuneraciones-por-pagar ) (partida ?numero) (dia ?dia) (mes ?mes) (ano ?ano) (empresa ?empresa) (monto ?remuneracion) (glosa (str-cat "Pago-a-" ?trabajador "-por-" ?remuneracion))))
@@ -708,6 +710,7 @@
    ( empresa (nombre ?empresa ))
 
    ( pago-de-salarios (partida ?numero) (dia ?dia) (mes ?mes) (ano ?ano)
+     (referencia ?referencia)
      (remuneraciones true)
      (imposiciones true)
      (trabajador ?trabajador)
@@ -726,7 +729,7 @@
    ( bind ?prevision (+ ?salud ?afc ?afp))
    ( bind ?total ( + ?prevision ?remuneracion ?impuesto-unico))
 
-   ( assert (partida (proveedor ?trabajador) (numero ?numero) (dia ?dia) (mes ?mes) (ano ?ano) (descripcion pagando-salarios) (actividad pagar-salarios) (archivo (str-cat "../previred-prevision-" ?folio ".png" ))))
+   ( assert (partida (referencia ?referencia) (proveedor ?trabajador) (numero ?numero) (dia ?dia) (mes ?mes) (ano ?ano) (descripcion pagando-salarios) (actividad pagar-salarios) (archivo (str-cat "../previred-prevision-" ?folio ".png" ))))
 
    ( assert (cargo (tipo-de-documento previred°salarios) (cuenta entidades-previsionales-por-pagar) (partida ?numero) (dia ?dia) (mes ?mes) (ano ?ano) (empresa ?empresa) (monto ?prevision) ))
 

@@ -7,10 +7,7 @@
   (semana-corrida 1)
   (declarada true)
   (pagada true)
-  (impuesta true)
-)
-
-
+  (impuesta true))
 
 (remuneracion
   (servicio electricista)
@@ -21,8 +18,7 @@
   (semana-corrida 1)
   (pagada true)
   (declarada true)
-  (impuesta true)
-)
+  (impuesta true))
 
 
 (remuneracion
@@ -34,8 +30,7 @@
   (semana-corrida 1)
   (pagada true)
   (declarada true)
-  (impuesta true)
-)
+  (impuesta true))
 
 
 (remuneracion
@@ -47,8 +42,7 @@
   (semana-corrida 1)
   (pagada false)
   (declarada false)
-  (impuesta false)
-)
+  (impuesta false))
 
 (remuneracion
   (servicio alectricista)
