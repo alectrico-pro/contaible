@@ -14,7 +14,8 @@
 
 
 
-(balance (dia 31) (mes octubre) (ano 2021))
+
+(balance (dia 31) (mes diciembre) (ano 2021))
 
 
 ;dia 01/01/2021---------- asiento inicial  ----------------
@@ -1826,6 +1827,7 @@
  ( glosa "Por Gasto Administrativo: Pago Mensual de Arriendo de Correo y Almacenamiento en la nube.")
  ( finalidad "Departamento de Administración"))
 
+
 ( gasto-administrativo
  ( tipo-de-documento 33)
  ( folio  43570704)
@@ -1841,6 +1843,7 @@
  ( glosa "Por Gasto Administrativo: Servicio de Datos y Telefonía: pago vuelto a cobrar, de julio.")
  (finalidad "No subordinada a ningún departamento"))
 
+
 ( gasto-administrativo
  ( tipo-de-documento 33)
  ( folio  43508181)
@@ -1855,6 +1858,7 @@
  ( proveedor entel)
  ( glosa "Por Gasto Administrativo: Servicio de Datos y Telefonía: agosto.")
  (finalidad "No subordinada a ningún departamento"))
+
 
 ( nota-de-credito-de-subcuenta-existente
  ( proveedor transbank)
@@ -1890,6 +1894,7 @@
  ( glosa "Por Gasto Administrativo: Pago Mensual de Workers Serverless.")
  ( finalidad "Departamento de Administración"))
 
+
 ;Esto fue anulado porque me equivoqué en el monto
 (venta-sii
  (folio 14)
@@ -1913,8 +1918,6 @@
  ( dia 27) (mes agosto) (ano 2021))
 
 
-
-
 (venta-sii
  (folio 15)
  (rut 77201295-0)
@@ -1930,7 +1933,6 @@
  (finalidad "cuota 2 de 6 presupuesto 1724"))
 
 
-
 ( nota-de-credito-de-subcuenta-existente
  ( dia 27)
  ( emitida true)
@@ -1942,12 +1944,7 @@
  ( glosa "Por la anulacion de la boleta 17 emitida por error, pues corresponde factura exenta.")
  ( total 40000)
  ( iva     0)
- ( neto  40000)
-)
-
-
-
-
+ ( neto  40000))
 
 
 (venta-sii
@@ -2163,7 +2160,6 @@
  (glosa salario-electricista))
 
 
-
 (venta-sii
  (folio 4)
  (rut 77201295-0)
@@ -2197,8 +2193,6 @@
  (dia 8)
  (mes septiembre)
  (ano 2021))
-
-
 
 
 (venta-sii
@@ -2252,8 +2246,6 @@
  ( total 15481)
  ( glosa "Por compra de materiales para ampliación")
  ( finalidad "Materiales para reparaciones"))
-
-
 
 
 ;( costo-ventas
@@ -2551,14 +2543,17 @@
 
 ;pago de remuneraciones de septiembre
 (pago-de-salarios
+ (referencia 127)
  (remuneraciones true)
  (imposiciones false)
  (partida 156)
  (trabajador alexander)
- (remuneracion 307520)
+ (remuneracion 267820)
  (dia 5)
  (mes octubre)
  (ano 2021))
+
+
 
 ;reconocimiento de salario de octubre
 (salario
@@ -2571,9 +2566,6 @@
  (mes octubre)
  (ano 2021)
  (glosa salario-programador))
-
-
-
 
 
 ( nota-de-credito-de-subcuenta-existente
@@ -2607,8 +2599,6 @@
  (archivo "./factura-propia-exenta-6.png")
  (finalidad ""))
 
-
-
 ( gasto-administrativo
  ( tipo-de-documento 45)
  ( folio 466338)
@@ -2625,8 +2615,6 @@
  ( archivo "../google-one-septiembre-2021.png")
  ( glosa "Por Gasto Administrativo: Pago Mensual de Arriendo de Correo y Almacenamiento en la nube.")
  ( finalidad "Departamento de Administración"))
-
-
 
 ( gasto-administrativo
  ( archivo "/factura-afecta-entel-43893417.png")
@@ -2653,7 +2641,6 @@
  ( total 25000)
  ( mes octubre)
  ( ano 2021))
-
 
 
 ( gasto-administrativo
@@ -2705,15 +2692,12 @@
  (colaborador gonzalo )
  (finalidad ""))
 
-
-
-  (cobro-de-cuentas-por-cobrar
+(cobro-de-cuentas-por-cobrar
   (partida 165)
   (monto 110833)
   (dia 29)
   (mes octubre)
   (ano 2021))
-
 
 
 ( insumos
@@ -2735,12 +2719,8 @@
  ( finalidad "EPD: Pack de dos máscaras N95 3M"))
 
 
-
-
-
 ( ajustes-mensuales (mes octubre) (ano 2021) (partida 167))
 ;:( ajuste-de-iva (partida 168) (mes octubre) (ano 2021))
-
 
 
 ;El f29 no maneja monto imponible negativo que resulta
@@ -3240,6 +3220,8 @@
 
 ( ajuste-anual-de-resultado-financiero
    (ano 2021) (partida 215))
+
+
 
 
 ;=========================== LIQUIDACION DE INVENTARIO FINAL ============================

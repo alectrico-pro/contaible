@@ -464,7 +464,16 @@
 (revision (revisado true) (partida 127))
 
 
-(revision-general (partidas 157 169 172 188 203 204))
+;(revision-general (partidas 172 188 204))
+;203
+; 88
 ;119
-;129 - es 128 en CCM
+;124
+;127
+;129
 ;156
+;157
+;119
+;129
+;156
+;169
