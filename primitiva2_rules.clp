@@ -235,10 +235,12 @@
 
    ?f1 <- (cuenta (partida ?numero) (dia ?dia) (mes ?mes) (ano ?ano) (nombre ?nombre) (debe ?debe) (haber ?haber) (saldo 0) )
 
+
    ( correccion-monetaria-anual
      (mes ?mes)
      (ano ?ano)
      (factor ?factor) )
+
 
    ( test (and (or (> ?debe 0) (> ?haber 0))  (> ?debe ?haber) ) )          
    ( test (>= (to_serial_date ?top ?mes_top ?ano_top) (to_serial_date ?dia ?mes ?ano)))
@@ -258,10 +260,12 @@
    ( partida (dia ?dia) (mes ?mes) (ano ?ano) (numero ?numero))
    ?f1 <- (cuenta (partida ?numero) (dia ?dia) (mes ?mes) (ano ?ano) (nombre ?nombre) (debe ?debe) (haber ?haber) (saldo 0) )
 
+
    ( correccion-monetaria-anual
      (mes ?mes)
      (ano ?ano)
      (factor ?factor) )
+
 
    ( test (and (or (> ?debe 0) (> ?haber 0))  (< ?debe ?haber) ))
    ( test (>= (to_serial_date ?top ?mes_top ?ano_top) (to_serial_date ?dia ?mes ?ano)))
@@ -317,7 +321,6 @@
    ( test (>= (to_serial_date ?top ?mes_top ?ano_top) (to_serial_date ?dia ?mes ?ano)))
 
   =>
-
    ( assert (cuenta (factor-de-correccion-monetaria ?factor) (activo-fijo ?activo-fijo) (tipo-de-documento ?tipo-de-documento) (electronico ?electronico) (empresa ?empresa) (descripcion ?descripcion) (dia ?dia) (mes ?mes) (ano ?ano) (nombre ?nombre) (partida ?numero) (grupo ?grupo) (tipo ?tipo) (circulante ?circulante) (naturaleza ?naturaleza ) (origen ?origen)))
   ( printout t "p--> Creado padre " ?nombre " grupo " ?grupo " tipo " ?tipo " para un hijo " ?nombre1 " tipo " deudor crlf)
 )
@@ -361,7 +364,6 @@
    ( test (>= (to_serial_date ?top ?mes_top ?ano_top) (to_serial_date ?dia ?mes ?ano)))
 
   =>
-
    ( bind ?haber (+ ?haber_hijo ?haber_padre))
    ( bind ?debe  (+ ?debe_hijo  ?debe_padre))
 
@@ -427,15 +429,13 @@
    ( test (>= (to_serial_date ?top ?mes_top ?ano_top) (to_serial_date ?dia ?mes ?ano)))
 
   => 
-
    ( bind ?haber (+ ?haber_hijo ?haber_padre))
    ( bind ?debe  (+ ?debe_hijo  ?debe_padre))
 
-   ( modify ?padre  (factor-de-correccion-monetaria ?factor) (activo-fijo ?activo-fijo) (tipo-de-documento ?tipo-de-documento) (partida ?numero ) (dia ?dia) (mes ?mes) (ano ?ano) (debe ?debe) (saldo 0) (haber ?haber) (empresa ?empresa) (verificada false) (mayoreado false))
+   ( modify ?padre   (factor-de-correccion-monetaria ?factor) (activo-fijo ?activo-fijo) (tipo-de-documento ?tipo-de-documento) (partida ?numero ) (dia ?dia) (mes ?mes) (ano ?ano) (debe ?debe) (saldo 0) (haber ?haber) (empresa ?empresa) (verificada false) (mayoreado false))
    ( modify ?hijo (mayoreado true))
    ( printout t "h--> Desde " ?nombre1 " debe " ?debe  " haber " ?haber "  a su padre "  ?nombre ".  >---" crlf )
 )  
-
 
 (defrule creando-padre-de-un-hijo-acreedora
    ( declare ( salience 8000))
@@ -589,9 +589,7 @@
   => 
    ( bind   ?debe  (+ ?debe-hijo  ?debe-padre ))
    ( bind   ?haber (+ ?haber-hijo ?haber-padre))
-
    ( modify ?padre (factor-de-correccion-monetaria ?factor) (activo-fijo ?activo-fijo) (tipo-de-documento ?tipo-de-documento) (electronico ?electronico) (dia ?dia) (mes ?mes) (ano ?ano) (saldo 0) (debe ?debe) (haber ?haber) (empresa ?empresa) (verificada false) (mayoreado false) (partida ?numero))
-
    ( modify ?hijo (mayoreado true)  )
    ( printout t "h<-- Desde " ?nombre1 " haber " ?haber " debe " ?debe " a su padre acreedor "  ?nombre ">---" crlf )
    
@@ -640,7 +638,6 @@
 
    ( bind   ?debe  (+ ?debe-hijo  ?debe-padre ))
    ( bind   ?haber (+ ?haber-hijo ?haber-padre))
-
    ( modify ?padre (factor-de-correccion-monetaria ?factor) (activo-fijo ?activo-fijo) (tipo-de-documento ?tipo-de-documento) (dia ?dia) (mes ?mes ) (saldo 0) (debe ?debe) (haber ?haber) (empresa ?empresa) (verificada false) (mayoreado false) (electronico ?electronico))
    ( modify ?hijo (mayoreado true)  )
    ( printout t "h<-- Desde " ?nombre1 " haber " ?haber " debe " ?debe " a su padre acreedor "  ?nombre ">---" crlf )

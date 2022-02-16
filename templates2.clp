@@ -818,8 +818,6 @@
    ( slot haber_corregido (default 0))
    ( slot haber (default 0))
    ( slot deber (default 0))
-   ( slot deber_corregido (default 0))
-   ( slot acreedor_corregido (default 0))
    ( slot acreedor (default 0))
    ( slot totalizado (default false))
    ( slot mostrado (default false))
