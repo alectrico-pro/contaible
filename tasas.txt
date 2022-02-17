@@ -43,6 +43,24 @@
 ( correccion-monetaria-anual ( mes noviembre ) (ano 2021) (factor 1.005  ))
 ( correccion-monetaria-anual ( mes diciembre ) (ano 2021) (factor 1.000  ))
 
+
+( correccion-monetaria-anual ( mes enero )     (ano 2022) (factor 1  ))
+( correccion-monetaria-anual ( mes febrero )   (ano 2022) (factor 1  ))
+( correccion-monetaria-anual ( mes marzo )     (ano 2022) (factor 1  ))
+( correccion-monetaria-anual ( mes abril )     (ano 2022) (factor 1  ))
+( correccion-monetaria-anual ( mes mayo )      (ano 2022) (factor 1  ))
+( correccion-monetaria-anual ( mes junio )     (ano 2022) (factor 1  ))
+( correccion-monetaria-anual ( mes julio )     (ano 2022) (factor 1  ))
+( correccion-monetaria-anual ( mes agosto )    (ano 2022) (factor 1  ))
+( correccion-monetaria-anual ( mes septiembre) (ano 2022) (factor 1  ))
+( correccion-monetaria-anual ( mes octubre )   (ano 2022) (factor 1  ))
+( correccion-monetaria-anual ( mes noviembre ) (ano 2022) (factor 1  ))
+( correccion-monetaria-anual ( mes diciembre ) (ano 2022) (factor 1  ))
+
+
+
+
+
 ;tope imponible afce es 122,6 UF durante el 2022
 ( tasas (utm 54.878 ) (ppm 0.00125) (idpc 0.10) (ano 2022)  (honorarios 0.1225) (mes marzo))
 ( tasas (utm 54.878 ) (ppm 0.00125) (idpc 0.10) (ano 2022)  (honorarios 0.1225) (mes abril))

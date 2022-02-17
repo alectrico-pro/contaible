@@ -162,7 +162,7 @@
   ( modify ?cuenta (mostrado-en-t true ))
   ( modify ?subtotales
        (debe_corregido (* ?factor (+ ?total_debe  ?debe)))
-       (haber_corregio (* ?factor (+ ?total_haber ?haber)))
+       (haber_corregido (* ?factor (+ ?total_haber ?haber)))
        (debe  (+ ?total_debe  ?debe))
        (haber (+ ?total_haber ?haber)))
 )

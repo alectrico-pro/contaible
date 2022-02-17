@@ -1,0 +1,10 @@
+( accionista
+ (nombre alexander)
+ (numero-de-acciones 10)
+ (valor-nominal 200000)
+ (mes julio)
+ (ano 2021)
+ (rut 14579554-0)
+ (social "Alexander Espinosa")
+ (domicilio "Pasaje Emilio Sanfuentes Vergara 526. Pudahuel"))
+

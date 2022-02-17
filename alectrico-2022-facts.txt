@@ -3,7 +3,6 @@
    (partidas 2001 2002 2003 2004 2005 2006 2007 2008 2009 2010 2011 2012 2013 2014 2015 2016 2017 2018 2019 2020 2021 2022  2023 2024 2025 1040 1041 1042 1043 1044 1045 1046 1047 1048 1049 1050 1051 1052 1053 1054 90000 90001 90002 90003 90004 )
  )
 
-
 ( empresa (nombre alectrico-2022) (razon "alectrico® SpA"))
 
 (balance (dia 31) (mes enero) (ano 2022))
@@ -27,10 +26,10 @@
  ( tipo-de-documento escritura-empresa)
  ( empresa alectrico-2022)
  ( cuenta caja)
- ( monto  105961)
+ ( monto  114688)
  ( partida 2001)
  ( dia 1)  ( mes enero)  ( ano 2022)
- ( glosa asiento-inicial))
+ ( glosa asiento-de-apertura-2022))
 
 
 (cargo
@@ -38,35 +37,102 @@
  ( tipo-de-documento escritura-empresa)
  ( empresa alectrico-2022)
  ( cuenta banco-estado)
- ( monto  222625)
+ ( monto  274735)
  ( partida 2001)
  ( dia 1) ( mes enero) ( ano 2022)
- ( glosa asiento-inicial))
+ ( glosa asiento-de-apertura-2022))
+
 
 
 (cargo
  ( electronico false)
  ( tipo-de-documento escritura-empresa)
  ( empresa alectrico-2022)
- ( cuenta cuentas-por-cobrar)
- ( monto  51203)
+ ( cuenta materiales)
+ ( monto  97674)
  ( partida 2001)
  ( dia 1) ( mes enero) ( ano 2022)
- ( glosa asiento-inicial))
+ ( glosa asiento-de-apertura-2022))
 
 
-
-(abono
+(cargo
  ( electronico false)
  ( tipo-de-documento escritura-empresa)
  ( empresa alectrico-2022)
- ( cuenta retencion-de-iva-articulo-11)
- ( monto  2440)
+ ( cuenta inventario-inicial)
+ ( monto  44044)
  ( partida 2001)
  ( dia 1) ( mes enero) ( ano 2022)
- ( glosa asiento-inicial))
+ ( glosa asiento-de-apertura-2022))
 
 
+(cargo
+ ( electronico false)
+ ( tipo-de-documento escritura-empresa)
+ ( empresa alectrico-2022)
+ ( cuenta sodimac-insumos)
+ ( monto  154498)
+ ( partida 2001)
+ ( dia 1) ( mes enero) ( ano 2022)
+ ( glosa asiento-de-apertura-2022))
+
+
+(cargo
+ ( electronico false)
+ ( tipo-de-documento escritura-empresa)
+ ( empresa alectrico-2022)
+ ( cuenta electrocom-insumos)
+ ( monto  51191)
+ ( partida 2001)
+ ( dia 1) ( mes enero) ( ano 2022)
+ ( glosa asiento-de-apertura-2022))
+
+
+
+
+(cargo
+ ( electronico false)
+ ( tipo-de-documento escritura-empresa)
+ ( empresa alectrico-2022)
+ ( cuenta dartel-insumos)
+ ( monto  158011)
+ ( partida 2001)
+ ( dia 1) ( mes enero) ( ano 2022)
+ ( glosa asiento-de-apertura-2022))
+
+
+
+(cargo
+ ( electronico false)
+ ( tipo-de-documento escritura-empresa)
+ ( empresa alectrico-2022)
+ ( cuenta easy-insumos)
+ ( monto  2134)
+ ( partida 2001)
+ ( dia 1) ( mes enero) ( ano 2022)
+ ( glosa asiento-de-apertura-2022))
+
+
+(cargo
+ ( electronico false)
+ ( tipo-de-documento escritura-empresa)
+ ( empresa alectrico-2022)
+ ( cuenta gonzalo-por-cobrar)
+ ( monto  20000)
+ ( partida 2001)
+ ( dia 1) ( mes enero) ( ano 2022)
+ ( glosa asiento-de-apertura-2022))
+
+
+(cargo
+ ( electronico false)
+ ( tipo-de-documento escritura-empresa)
+ ( empresa alectrico-2022)
+ ( cuenta tgr-por-cobrar)
+ ( monto  31203)
+ ( partida 2001)
+ ( dia 1) ( mes enero) ( ano 2022)
+ ( glosa asiento-de-apertura-2022))
 
 
 (cargo
@@ -74,10 +140,10 @@
  ( tipo-de-documento escritura-empresa)
  ( empresa alectrico-2022)
  ( cuenta iva-credito)
- ( monto  16850)
+ ( monto  1804)
  ( partida 2001)
  ( dia 1) ( mes enero) ( ano 2022)
- ( glosa asiento-inicial))
+ ( glosa asiento-de-apertura-2022))
 
 
 (cargo
@@ -88,7 +154,7 @@
  ( monto  2728)
  ( partida 2001)
  ( dia 1) ( mes enero) ( ano 2022)
- ( glosa asiento-inicial))
+ ( glosa asiento-de-apertura-2022))
 
 
 (cargo
@@ -99,7 +165,7 @@
  ( monto  218470)
  ( partida 2001)
  ( dia 1) ( mes enero) ( ano 2022)
- ( glosa asiento-inicial))
+ ( glosa asiento-de-apertura-2022))
 
 
 (cargo
@@ -110,7 +176,7 @@
  ( monto 237369)
  ( partida 2001)
  ( dia 1) ( mes enero) ( ano 2022)
- ( glosa asiento-inicial))
+ ( glosa asiento-de-apertura-2022))
 
 
 (cargo
@@ -118,10 +184,22 @@
  ( tipo-de-documento escritura-empresa)
  ( empresa alectrico-2022)
  ( cuenta plataforma-alectrico)
- ( monto 2644543)
+ ( monto 2150000)
  ( partida 2001)
  ( dia 1) ( mes enero) ( ano 2022)
- ( glosa asiento-inicial))
+ ( glosa asiento-de-apertura-2022))
+
+(abono
+ ( electronico false)
+ ( tipo-de-documento escritura-empresa)
+ ( empresa alectrico-2022)
+ ( cuenta depreciacion-acumulada-herramientas)
+ ( monto 84036)
+ ( partida 2001)
+ ( dia 1) ( mes enero) ( ano 2022)
+ ( glosa asiento-de-apertura-2022))
+
+
 
 
 (abono
@@ -132,18 +210,31 @@
  ( monto 31420)
  ( partida 2001)
  ( dia 1) ( mes enero) ( ano 2022)
- ( glosa asiento-inicial))
+ ( glosa asiento-de-apertura-2022))
+
 
 
 (abono
  ( electronico false)
  ( tipo-de-documento escritura-empresa)
  ( empresa alectrico-2022)
- ( cuenta depreciacion-acumulada-herramientas)
- ( monto 84036)
+ ( cuenta remuneraciones-por-pagar)
+ ( monto 307520)
  ( partida 2001)
  ( dia 1) ( mes enero) ( ano 2022)
- ( glosa asiento-inicial))
+ ( glosa asiento-de-apertura-2022))
+
+
+(abono
+ ( electronico false)
+ ( tipo-de-documento escritura-empresa)
+ ( empresa alectrico-2022)
+ ( cuenta entidades-previsionales-por-pagar)
+ ( monto 359620)
+ ( partida 2001)
+ ( dia 1) ( mes enero) ( ano 2022)
+ ( glosa asiento-de-apertura-2022))
+
 
 
 
@@ -155,40 +246,30 @@
  ( monto 2085294)
  ( partida 2001)
  ( dia 1) ( mes enero) ( ano 2022)
- ( glosa asiento-inicial))
+ ( glosa asiento-de-apertura-2022))
 
 
 (abono
  ( electronico false)
  ( tipo-de-documento escritura-empresa)
  ( empresa alectrico-2022)
- ( cuenta utilidades-acumuladas)
- ( monto 633173)
+ ( cuenta revalorizacion-del-capital-propio)
+ ( monto 185989)
  ( partida 2001)
  ( dia 1) ( mes enero) ( ano 2022)
- ( glosa asiento-inicial))
+ ( glosa asiento-de-apertura-2022))
 
 
 (abono
  ( electronico false)
  ( tipo-de-documento escritura-empresa)
  ( empresa alectrico-2022)
- ( cuenta salarios-por-pagar)
- ( monto 627440)
+ ( cuenta utilidad)
+ ( monto 504670)
  ( partida 2001)
  ( dia 1) ( mes enero) ( ano 2022)
- ( glosa asiento-inicial))
+ ( glosa asiento-de-apertura-2022))
 
-
-(abono
- ( electronico false)
- ( tipo-de-documento escritura-empresa)
- ( empresa alectrico-2022)
- ( cuenta iva-debito)
- ( monto 35946)
- ( partida 2001)
- ( dia 1) ( mes enero) ( ano 2022)
- ( glosa asiento-inicial))
 
 
 ;------------------------------------ enero compras -------------------------------------

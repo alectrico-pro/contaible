@@ -114,7 +114,7 @@
   ( printout k "<thead><th colspan='6'> " ?nombre "</th><th colspan='3'>" ?nombre-sii "</th></thead>" crlf)
   ( printout k "<thead><th colspan='9'> " ?descripcion "</th></thead>" crlf)
 
-  ( printout k "<thead><th> voucher </th><th> partida </th><th> debe </th> <th> | </th> <th> haber </th><th> mes </th> <th>recibida</th> <th>activo-fijo</th> <th> tipo documento</th></thead>"crlf)
+  ( printout k "<thead><th> voucher </th><th> partida </th><th> debe </th> <th> | </th> <th> haber </th><th> mes </th> <th>recibida</th> <th>factor corrección monetaria</th> <th> tipo documento</th></thead>"crlf)
   ( printout k "<tbody>" crlf)
 
 
@@ -132,8 +132,9 @@
 
   ?hacer  <- ( hacer ?nombre )
 
-  ?cuenta <- ( cuenta 
-     ( recibida ?recibida )
+  ?cuenta <- ( cuenta
+     ( factor-de-correccion-monetaria ?factor)
+      ( recibida ?recibida )
      ( tipo-de-documento ?tipo-de-documento)
      ( activo-fijo ?activo-fijo)
      ( nombre ?nombre)
@@ -160,10 +161,12 @@
  =>
   ( printout t ?partida tab ?debe tab "|" tab ?haber tab ?mes tab ?recibida tab ?activo-fijo tab ?tipo-de-documento crlf )
 
-  ( printout k "<tr> <td>" ?voucher "</td> <td align='right'> <a href= '/" ?empresa "/libro-diario#Partida-" ?partida "'>" ?partida "</a> </td> <td align='right'>" ?debe "</td> <td> | </td> <td align='right'> " ?haber  "</td> <td>" ?mes "</td><td>" ?recibida "</td><td> " ?activo-fijo "</td><td> " ?tipo-de-documento "</td> </tr>" crlf )
+  ( printout k "<tr> <td>" ?voucher "</td> <td align='right'> <a href= '/" ?empresa "/libro-diario#Partida-" ?partida "'>" ?partida "</a> </td> <td align='right'>" ?debe "</td> <td> | </td> <td align='right'> " ?haber  "</td> <td>" ?mes "</td><td>" ?recibida "</td><td> " ?factor "</td><td> " ?tipo-de-documento "</td> </tr>" crlf )
 
   ( modify ?cuenta (mostrado-en-t true ))
   ( modify ?subtotales
+       (debe_corregido  (* ?factor (+ ?total_debe ?debe)))
+       (haber_corregido (* ?factor (+ ?total_haber ?haber)))
        (debe  (+ ?total_debe  ?debe))
        (haber (+ ?total_haber ?haber)))
 )
@@ -181,7 +184,8 @@
    ( test (> ?debe ?haber))
   =>
    ( bind ?diferencia (- ?debe ?haber ))
-   ( modify ?subtotales (deber ?diferencia) (totalizado true) (acreedor 0))
+   ( modify ?subtotales
+     (deber ?diferencia) (deber_corregido ?diferencia) (totalizado true) (acreedor 0))
 )
 
 
@@ -198,13 +202,16 @@
    ( test (< ?debe ?haber))
   =>
    ( bind ?diferencia (- ?haber ?debe ))
-   ( modify ?subtotales (acreedor ?diferencia) (totalizado true) (deber 0))
+   ( modify ?subtotales
+      (acreedor ?diferencia) (acreedor_corregido ?diferencia) (totalizado true) (deber 0))
 )
 
 
 
 ( defrule t-footer-deudor
   ?subtotales <- ( subtotales 
+    ( debe_corregido ?debe_corregido)
+    ( haber_corregido ?haber_corregido)
     ( haber ?haber )
     ( debe  ?debe )
     ( totalizado true)
@@ -219,8 +226,22 @@
    ( printout t tab "--------------------" crlf)
    ( printout t "$" tab ?diferencia crlf )
 
-   ( printout k "<tr> <td></td> <td></td> <td align='right' >" ?debe "</td> <td>|</td> <td align='right'>" ?haber "</td></tr>" crlf )
-   ( printout k "<tr> <td></td> <td>$</td> <td align='right'>"  ?diferencia "</td></tr>" crlf )
+
+
+   ( printout t "---------- CORRECCION MONETARIA ANUAL -----------" crlf)
+   ( bind ?diferencia_corregida (- ?debe_corregido ?haber_corregido ))
+   ( printout t "----------------------------" crlf)
+   ( printout t tab ?debe_corregido tab "|" tab ?haber_corregido crlf )
+   ( printout t tab "--------------------" crlf)
+   ( printout t "$" tab ?diferencia_corregida crlf )
+   ( printout t monto-de-correccion "$" tab (round (- ?diferencia_corregida ?diferencia)) crlf )
+   ( printout k "<tr> <td></td> <td></td> <td align='right'>" ?debe " <small> " ?debe_corregido "</small> </td> <td>|</td> <td align='right'>" ?haber "<small> " ?haber_corregido "</small> </td></tr>" crlf )
+   ( printout k "<tr> <td></td> <td>$</td> <td align='right'>"  ?diferencia " <small> " ?diferencia_corregida "</small></td></tr>" crlf )
+
+   ( printout k "<tr> <td> Monto Corrección </td> <td>$</td> <td align='right'>" (round (- ?diferencia_corregida ?diferencia)) " </td></tr>" crlf )
+
+;   ( printout k "<tr> <td></td> <td></td> <td align='right' >" ?debe "</td> <td>|</td> <td align='right'>" ?haber "</td></tr>" crlf )
+ ;  ( printout k "<tr> <td></td> <td>$</td> <td align='right'>"  ?diferencia "</td></tr>" crlf )
 
    ( printout k "</tbody>" crlf)
    ( printout k "</table>" crlf)
@@ -230,6 +251,8 @@
 
 ( defrule t-footer-acreedor
   ?subtotales <- ( subtotales
+    ( haber_corregido ?haber_corregido)
+    ( debe_corregido ?debe_corregido)
     ( haber ?haber )
     ( debe  ?debe )
     ( totalizado true)
@@ -243,8 +266,21 @@
    ( printout t tab "---------------------" crlf)
    ( printout t tab tab "|" tab  ?diferencia tab "$" crlf )
 
-   ( printout k "<tr> <td> </td><td></td> <td align='right'>" ?debe "</td> <td>|</td> <td align='right'>" ?haber "</td> </tr>" crlf )
-   ( printout k "<tr> <td> </td><td> </td> <td></td> <td>|</td> <td align='right'>"  ?diferencia "</td> <td>$</td> </tr>" crlf )
+
+   ( printout t "---------- CORRECCION MONETARIA ANUAL -----------" crlf)
+   ( bind ?diferencia_corregida (- ?haber_corregido ?debe_corregido ))
+   ( printout t "----------------------------" crlf)
+   ( printout t tab ?debe_corregido tab "|" tab ?haber_corregido crlf )
+   ( printout t tab "--------------------" crlf)
+   ( printout t tab tab " | $" tab ?diferencia_corregida crlf )
+
+   ( printout t monto-de-correccion "$" tab (round (- ?diferencia_corregida ?diferencia)) crlf )
+   ( printout k "<tr> <td></td> <td></td> <td align='right'>" ?debe " <small> " ?debe_corregido "</small> </td> <td>|</td> <td align='right'>" ?haber "<small> " ?haber_corregido "</small> </td></tr>" crlf )
+   ( printout k "<tr> <td> </td> <td> </td> <td></td> <td>|</td> <td align='right'>"  ?diferencia " <small> " ?diferencia_corregida "</small></td> <td>$</td> </tr>" crlf )
+   ( printout k "<tr> <td colspan='2'> Monto Corrección</td><td></td><td>$</td> <td align='right'>" (round (- ?diferencia_corregida ?diferencia)) " </td></tr>" crlf )
+
+;   ( printout k "<tr> <td> </td><td></td> <td align='right'>" ?debe "</td> <td>|</td> <td align='right'>" ?haber "</td> </tr>" crlf )
+ ;  ( printout k "<tr> <td> </td><td> </td> <td></td> <td>|</td> <td align='right'>"  ?diferencia "</td> <td>$</td> </tr>" crlf )
 
    ( printout k "</tbody>" crlf)
    ( printout k "</table>" crlf)

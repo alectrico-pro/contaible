@@ -24,7 +24,7 @@ layout: page
 <tr><td>  Activo: </td><td> marca-alectrico</td></tr>
 <tr><td>  Pasivo: </td><td>  amortizacion-intangibles</td></tr>
 <tr><td> Acumuladora:</td><td>  amortizacion-acumulada-intangibles</td></tr>
-<tr><td> Fue adquirido en: </td> <td> diciembre de 2021 por $290000</td></tr>
+<tr><td> Fue adquirido en: </td> <td> enero de 2021 por $290000</td></tr>
 <tr><td> Perderá todo su valor en: </td><td> 120 meses </td></tr> 
 <tr><td> Mensualmente hay que depreciarlo en: </td><td> $2417</td></tr>
 </tbody></table> 
@@ -54,7 +54,7 @@ layout: page
 <tr><td>  Activo: </td><td> herramientas</td></tr>
 <tr><td>  Pasivo: </td><td>  depreciacion</td></tr>
 <tr><td> Acumuladora:</td><td>  depreciacion-acumulada-herramientas</td></tr>
-<tr><td> Fue adquirido en: </td> <td> julio de 2021 por $151252</td></tr>
+<tr><td> Fue adquirido en: </td> <td> julio de 2020 por $151252</td></tr>
 <tr><td> Perderá todo su valor en: </td><td> 36 meses </td></tr> 
 <tr><td> Mensualmente hay que depreciarlo en: </td><td> $4202</td></tr>
 </tbody></table> 

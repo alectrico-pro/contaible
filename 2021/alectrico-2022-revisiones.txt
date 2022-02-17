@@ -1,0 +1,21 @@
+(revision (revisado true) (partida 2001))
+(revision (revisado true) (partida 2002))
+(revision (revisado true) (partida 2003))
+(revision (revisado true) (partida 2004))
+(revision (revisado true) (partida 2007))
+(revision (revisado true) (partida 2008))
+(revision (revisado true) (partida 2009))
+(revision (revisado true) (partida 2010))
+(revision (revisado true) (partida 2011))
+(revision (revisado true) (partida 2012))
+(revision (revisado true) (partida 2013))
+(revision (revisado true) (partida 2014))
+(revision (revisado true) (partida 2015))
+(revision (revisado true) (partida 2016))
+(revision (revisado true) (partida 2017))
+(revision (revisado true) (partida 2018))
+(revision (revisado true) (partida 2019))
+(revision (revisado true) (partida 2020))
+
+
+

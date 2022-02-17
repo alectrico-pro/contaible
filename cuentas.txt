@@ -51,6 +51,10 @@
   (padre insumos)
   (origen real))
 
+
+
+
+
 (cuenta (nombre componentes)
   (nombre-sii "Materiales Eléctricos")
   (codigo 110104)
@@ -74,6 +78,35 @@
   (padre false)
   (origen real))
 
+
+(cuenta (nombre sodimac-insumos)
+  (tipo deudor)
+  (grupo activo)
+  (circulante true)
+  (padre insumos)
+  (origen real))
+
+
+(cuenta (nombre electrocom-insumos)
+  (tipo deudor)
+  (grupo activo)
+  (circulante true)
+  (padre insumos)
+  (origen real))
+
+(cuenta (nombre dartel-insumos)
+  (tipo deudor)
+  (grupo activo)
+  (circulante true)
+  (padre insumos)
+  (origen real))
+
+(cuenta (nombre easy-insumos)
+  (tipo deudor)
+  (grupo activo)
+  (circulante true)
+  (padre insumos)
+  (origen real))
 
 
 (cuenta (nombre clientes)
@@ -576,13 +609,12 @@
 
 
 (cuenta (nombre revalorizacion-del-capital-propio)
-  (codigo 141002)
   (descripcion revalorizacion-del-capital-propio)
   (tipo acreedora)
   (circulante false)
   (grupo patrimonio)
   (naturaleza acreedora)
-  (origen nominativo))
+  (origen real))
 
 (cuenta (nombre utilidades-acumuladas)
   (codigo 141003)
@@ -1259,6 +1291,23 @@ pagos.")
    (padre false)
    (naturaleza deudor)
    (origen real))
+
+(cuenta (nombre gonzalo-por-cobrar)
+   (circulante true)
+   (tipo deudor)
+   (grupo activo)
+   (padre false)
+   (naturaleza deudor)
+   (origen real))
+
+(cuenta (nombre tgr-por-cobrar)
+   (circulante true)
+   (tipo deudor)
+   (grupo activo)
+   (padre false)
+   (naturaleza deudor)
+   (origen real))
+
 
 (cuenta (nombre cuentas-por-cobrar)
    (descripcion credito-a-clientes)
