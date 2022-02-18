@@ -411,8 +411,8 @@
   => 
    ( retract ?f1 )
    ( assert (partida (proveedor cuentas-por-cobrar) (numero ?numero) (mes ?mes) (dia ?dia) (ano ?ano) (descripcion ?glosa) (actividad pagar-monto)))
-   ( assert (abono (tipo-de-documento abono-transbank) (cuenta clientes) (partida ?numero) (empresa ?empresa) (monto ?monto) (dia ?dia) (mes ?mes) (ano ?ano) (glosa cobro-de-cuenta-por-cobrar)))
-   ( assert (cargo (tipo-de-documento abono-transbank) (cuenta cuentas-por-cobrar) (partida ?numero) (empresa ?empresa) (monto ?monto) (dia ?dia) (mes ?mes) (ano ?ano) (glosa cobro-de-cuentas-por-cobrar)))
+   ( assert (cargo (tipo-de-documento traspaso) (cuenta banco-estado) (partida ?numero) (empresa ?empresa) (monto ?monto) (dia ?dia) (mes ?mes) (ano ?ano) (glosa cobro-de-cuenta-por-cobrar)))
+   ( assert (abono (tipo-de-documento traspaso) (cuenta cuentas-por-cobrar) (partida ?numero) (empresa ?empresa) (monto ?monto) (dia ?dia) (mes ?mes) (ano ?ano) (glosa cobro-de-cuentas-por-cobrar)))
    ( printout t crlf crlf "Cobrando a cuentas-por-cobrar por un valor de $" ?monto crlf)
 )
 

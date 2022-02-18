@@ -169,7 +169,7 @@
    (subtotales (cuenta inventario-inicial)      (deber    ?inventario-inicial-deber)
                                                 (acreedor ?inventario-inicial-acreedor))
 
-   ( subtotales (cuenta materiales)              (deber ?materiales ) )
+ ; ( subtotales (cuenta materiales)              (deber ?materiales ) )
 
    ( subtotales (cuenta insumos)                 (deber ?insumos) )
 
@@ -215,8 +215,12 @@
    
    (subtotales (cuenta autorizacion-uso-de-inmueble) (acreedor ?autorizacion-uso-de-inmueble))
 
+   (subtotales (cuenta revalorizacion-del-capital-propio) (acreedor ?revalorizacion-del-capital-propio))
+
    (subtotales (cuenta plataforma-ccm) (acreedor ?plataforma-ccm))
+
   =>
+
    ( bind ?inventario-inicial (- ?inventario-inicial-deber ?inventario-inicial-acreedor))
 
    ;si el inventario-final se ha liquidado entonces no hay inventario
@@ -238,92 +242,92 @@
    ( printout k "Cifras en pesos." crlf)
    ( printout k "<table>" crlf)
    ( printout k "<thead> <th colspan='6'> PARTIDA GENERAL FINAL " ?ano " </th> </thead> " crlf)
-   ( printout k "<thead> <th>  ACTIVO CIRCULANTE </th> <th> "?activo-circulante "</th>" crlf)
-   ( printout k "<th > PASIVO CIRCULANTE </th> <th>" ?pasivo-circulante "</th> </thead>" crlf)
+   ( printout k "<thead> <th>  ACTIVO CIRCULANTE </th> <th align='right' > "?activo-circulante "</th>" crlf)
+   ( printout k "<th > PASIVO CIRCULANTE </th> <th align='right' >" ?pasivo-circulante "</th> </thead>" crlf)
 
    ( printout k "<tbody>" crlf)
  ; ( printout k "<tr> <td> Efectivo y Equivalentes </td> <td>" (- ?efectivo-deber ?efectivo-acreedor) "</td> <td> Proveedores. </td> <td> " (- ?proveedores-acreedor ?proveedores-deber) "</td> </tr>" crlf)
-   ( printout k "<tr> <td> Caja </td> <td>" (- ?caja-deber ?caja-acreedor) "</td> <td> Proveedores. </td> <td> " (- ?proveedores-acreedor ?proveedores-deber) "</td> </tr>" crlf)
+   ( printout k "<tr> <td> Caja </td> <td align='right' >" (- ?caja-deber ?caja-acreedor) "</td> <td> Proveedores. </td> <td align='right' > " (- ?proveedores-acreedor ?proveedores-deber) "</td> </tr>" crlf)
 
-   ( printout k "<tr> <td> Banco Estado </td> <td>" (- ?banco-estado-deber ?banco-estado-acreedor) "</td></tr>" crlf)
+   ( printout k "<tr> <td> Banco Estado </td> <td align='right'  >" (- ?banco-estado-deber ?banco-estado-acreedor) "</td></tr>" crlf)
 
-   ( printout k "<tr> <td> Clientes </td> <td>" ?clientes "</td> <td>  IVA Débito </td> <td>" ?iva-por-pagar "</td> </tr>" crlf)
+   ( printout k "<tr> <td> Clientes </td> <td align='right' >" ?clientes "</td> <td align='right' >  IVA Débito </td> <td>" ?iva-por-pagar "</td> </tr>" crlf)
 
-   ( printout k "<tr> <td> Cuentas por Cobrar </td> <td>" ?cuentas-por-cobrar "</td></tr>" crlf)
+   ( printout k "<tr> <td> Cuentas por Cobrar </td> <td align='right' >" ?cuentas-por-cobrar "</td></tr>" crlf)
    ( printout k "<tr> <td> Retenciones </td> <td align='right' style='font-weight:bold; color: white; background-color: crimson'>(  " ?retencion-de-iva  ")</td> </tr> " crlf)
 
-   ( printout k "<tr> <td> Colaboradores </td> <td> " ?colaboradores "</td> " crlf)
+   ( printout k "<tr> <td> Colaboradores </td> <td align='right' > " ?colaboradores "</td> " crlf)
    ( printout k "<td> SalariosXPagar </td> <td align='right'> " (- ?salarios-por-pagar-acreedor ?salarios-por-pagar-deber) "</td></tr> " crlf)
 
-   ( printout k "<tr> <td> IVA Crédito </td><td>" ?iva-por-cobrar "</td> " crlf)
+   ( printout k "<tr> <td> IVA Crédito </td><td align='right' >" ?iva-por-cobrar "</td> " crlf)
    ( printout k "<td> Ingresos Adelantados </td> </tr>" crlf)
 
-   ( printout k "<tr> <td> PPM </td> <td>" ?ppm "</td></tr> " crlf)
+   ( printout k "<tr> <td> PPM </td> <td align='right' >" ?ppm "</td></tr> " crlf)
 ;   ( printout k "<tr> <td> Inventario Inicial </td> <td>" ?inventario-inicial "</td> </tr>" crlf)
 
  ;  ( printout k "<tr> <td> Materiales </td> <td>" ?materiales "</td> </tr>" crlf)
 
 
-   ( printout k "<tr> <td> Insumos</td> <td>" ?insumos "</td> </tr>" crlf)
+   ( printout k "<tr> <td> Insumos</td> <td align='right'>" ?insumos "</td> </tr>" crlf)
 
    ( if (eq diciembre ?mes_top)
      then
-     ( printout k "<tr> <td> Materiales </td> <td>" ?materiales "</td> </tr>" crlf)
+;     ( printout k "<tr> <td> Materiales </td> <td align='right' >" ?materiales "</td> </tr>" crlf)
 
      ( printout k "<tr> <td> Inventario </td>" crlf)
-     ( printout k "<td>"  ?inventario "</td> </tr> " crlf)
+     ( printout k "<td align='right'>"  ?inventario "</td> </tr> " crlf)
      else
     ( printout k "<tr> <td> Inventario </td>" crlf)
-    ( printout k "<td>" ?inventario  "</td> </tr>" crlf)
+    ( printout k "<td align='right'>" ?inventario  "</td> </tr>" crlf)
 
-    ( printout k "<tr> <td> Materiales </td>" crlf)
-    ( printout k "<td>" ?materiales "</td> </tr>" crlf)
+;    ( printout k "<tr> <td> Materiales </td>" crlf)
+;    ( printout k "<td align='right' >" ?materiales "</td> </tr>" crlf)
    )
 
 ;  ( printout k "<td>"  ?inventario "</td> " crlf)
 
    ( if (eq true ?hay-utilidad-tributaria) then 
 
-     ( printout k "<td> Impto Rta Determ. </td> <td>" ?idpc-acreedor "</td> ")
+     ( printout k "<td> Impto Rta Determ. </td> <td align='right'>" ?idpc-acreedor "</td> ")
      ( printout k "</tr>" crlf)
 
    )
-   ( printout k "<thead> <th> ACTIVO FIJO </th> <th>" ?activo-fijo "</th> " crlf )
-   ( printout k "<th> PASIVO FIJO </th> <th>" ?pasivo-fijo "</th>  </thead> " crlf)
+   ( printout k "<thead> <th> ACTIVO FIJO </th> <th align='right'>" ?activo-fijo "</th> " crlf )
+   ( printout k "<th> PASIVO FIJO </th> <th align='right'>" ?pasivo-fijo "</th>  </thead> " crlf)
 
-   ( printout k "<tr> <td> Terreno </td> <td>"  ?terreno "</td> " crlf)
-   ( printout k "<td> Préstamo Bancarios </td> <td>" ?prestamo-bancario "</td> </tr>" crlf)
+   ( printout k "<tr> <td> Terreno </td> <td align='right'>"  ?terreno "</td> " crlf)
+   ( printout k "<td> Préstamo Bancarios </td> <td align='right'>" ?prestamo-bancario "</td> </tr>" crlf)
 
-   ( printout k "<tr><td> Edificio </td> <td>" ?edificio "</td> </tr>" crlf)
+   ( printout k "<tr><td> Edificio </td> <td align='right'>" ?edificio "</td> </tr>" crlf)
 
-   ( printout k "<tr><td> Maquinaria </td> <td>" ?maquinaria "</td> <td colspan='2'> </td> </tr>" crlf)
-   ( printout k "<tr><td> Herramientas </td> <td>" ?herramientas "</td> <td colspan='2'> </td> </tr>" crlf)
+   ( printout k "<tr><td> Maquinaria </td> <td align='right'>" ?maquinaria "</td> <td colspan='2'> </td> </tr>" crlf)
+   ( printout k "<tr><td> Herramientas </td> <td align='right'>" ?herramientas "</td> <td colspan='2'> </td> </tr>" crlf)
 
-   ( printout k "<tr><td> Mobiliario y Equipamiento </td><td> 0 </td> <td colspan='2'> </td> </tr>" crlf)
-   ( printout k "<tr><td> Marca alectrico ® </td> <td>" ?marca-alectrico "</td> <td colspan='2'> </td> </tr>" crlf)
-   ( printout k "<tr><td> Plataforma alectrico ® </td> <td>" ?plataforma-alectrico "</td> <td colspan='2'> </td> </tr>" crlf)
-   ( printout k "<tr><td> Plataforma CCM SII® </td> <td>" ?plataforma-ccm"</td> <td colspan='2'> </td> </tr>" crlf)
+   ( printout k "<tr><td> Mobiliario y Equipamiento </td><td align='right' > 0 </td> <td colspan='2'> </td> </tr>" crlf)
+   ( printout k "<tr><td> Marca alectrico ® </td> <td align='right'>" ?marca-alectrico "</td> <td colspan='2'> </td> </tr>" crlf)
+   ( printout k "<tr><td> Plataforma alectrico ® </td> <td align='right'>" ?plataforma-alectrico "</td> <td colspan='2'> </td> </tr>" crlf)
+   ( printout k "<tr><td> Plataforma CCM SII® </td> <td align='right'>" ?plataforma-ccm"</td> <td colspan='2'> </td> </tr>" crlf)
 
 
 ;  ( printout k "<tr><td> Software   </td> <td>" ?software "</td> <td colspan='2'> </td> </tr>" crlf)
 
-   ( printout k "<tr><td> Licencia Contaible ®  </td> <td>" ?licencia-contaible "</td> <td colspan='2'> </td> </tr>" crlf)
+   ( printout k "<tr><td> Licencia Contaible ®  </td> <td align='right'>" ?licencia-contaible "</td> <td colspan='2'> </td> </tr>" crlf)
 
-   ( printout k "<tr><td> Autorización Uso de Inmueble </td> <td>" ?autorizacion-uso-de-inmueble "</td> <td colspan='2'> </td> </tr>" crlf)
+   ( printout k "<tr><td> Autorización Uso de Inmueble </td> <td align='right'>" ?autorizacion-uso-de-inmueble "</td> <td colspan='2'> </td> </tr>" crlf)
 
 
    ( printout k "<tr><td> Amortización Acumulada Intangibles </td> <td align='right' style='font-weight:bold; color: white; background-color: crimson'>(" ?amortizacion-acumulada-intangibles ")</td> <td colspan='2'> </td> </tr>" crlf)
    ( printout k "<tr><td> Depreciación Acumulada Herramientas </td> <td align='right' style='font-weight:bold; color: white; background-color: crimson'>("  ?depreciacion ")</td><td colspan='2'> </td> </tr>" crlf)
-   ( printout k "<thead> <td> </td> <td> </td> <th> TOTAL PASIVO </th> <th> " ?pasivos "</th></thead>"  crlf)
+   ( printout k "<thead> <td> </td> <td> </td> <th> TOTAL PASIVO </th> <th align='right'> " ?pasivos "</th></thead>"  crlf)
 
-   ( printout k "<thead> <td> </td> <td> </td> <th> PATRIMONIO </th> <th>" ?patrimonio "</th> </thead>")
+   ( printout k "<thead> <td> </td> <td> </td> <th> PATRIMONIO </th> <th align='right'>" ?patrimonio "</th> </thead>")
    ( printout k "<tr> <td colspan='2'></td> <td> Capital Social </td><td align='right'> " ?capital-social "</td> </tr>" crlf)
 
    ( printout k "<tr> <td colspan='2'></td> <td> Reserva Legal </td> <td align='right' >" (- ?reserva-legal-acreedor ?reserva-legal-deber) "</td> </tr>" crlf) 
 
    ( printout k "<tr> <td colspan='2'></td> <td> Utilidades Acumuladas </td> <td align='right' >" ?utilidades-acumuladas "</td> </tr>" crlf)
 
-   ( printout k "<tr> <td colspan='2'></td> <td> Aportes </td> <td align='right' >" ?aportes "</td> </tr>" crlf)
+   ( printout k "<tr> <td colspan='2'></td> <td> Revalorización del Capital Propio </td> <td align='right' >" ?revalorizacion-del-capital-propio "</td> </tr>" crlf)
 
 
    ( printout k "<tr> <td colspan='2'></td> <td> Utilidad del Ejercicio </td><td align='right'>" (- ?utilidad-acreedor ?utilidad-deber) "</td> </tr>" crlf)
@@ -383,7 +387,7 @@
 
 ;  ( if (eq diciembre ?mes_top)
 ;     then
-     ( printout t Materiales tab ?materiales crlf)
+;     ( printout t Materiales tab ?materiales crlf)
      ( printout t "Inventario" tab  ?inventario crlf)
  ;    else
  ;   ( printout t Inventario tab ?inventario  crlf)
