@@ -194,8 +194,7 @@
 
   ( revision (libro-diario ?libro-diario) (voucher ?voucher) (revisado ?revisado) (partida ?numero) (folio ?folio) (descripcion ?descripcion) (legal ?legal) (rcv ?rcv) (ccm ?ccm) (a-corregir ?a-corregir) (old ?old) (tipo ?tipo))
 
-   ( selecciones (imprimir-detalles ?imprimir-detalles))
-
+  ( selecciones (imprimir-detalles ?imprimir-detalles))
   ;( balance ( dia ?top ) (mes ?mes) (ano ?ano))
  ; ( empresa (nombre ?empresa) (razon ?razon))
   ;( test (>= ?top ?dia))
@@ -383,7 +382,8 @@
 
   ( not (formulario-f29 (partida ?numero)))
 
-   ( selecciones (imprimir-detalles ?imprimir-detalles))
+  ( selecciones (imprimir-detalles ?imprimir-detalles))
+  ( selecciones (ejercicio-anterior ?ejercicio-anterior))
 
  =>
   ( retract ?c )
@@ -423,7 +423,17 @@
     ( if (eq ?rcv true) then ( printout k "- [x] rcv" crlf ) else ( printout k "- [ ] rcv" crlf) )
     ( if (eq ?libro-diario true) then ( printout k "- [x] libro-diario" crlf ) else ( printout k "- [ ] libro-diario" crlf) )
     ( if (eq ?ccm true) then ( printout k "- [x] ccm" crlf ) else ( printout k "- [ ] ccm" crlf) )
-    (if  (neq nil ?referencia) then ( printout k  "- [x] Referencia: <a href= '/" ?empresa "/libro-diario#Partida-" ?referencia "'>" ?referencia " </a>" crlf) ) 
+
+    ( if  ( neq nil ?referencia)
+       then
+         ( if (< ?referencia 0)
+            then
+             ( printout k  "- [x] Referencia: <a href= '/" ?ejercicio-anterior "/libro-diario#Partida-" ?referencia "'>" ?referencia " </a>" crlf) 
+            else
+             ( printout k  "- [x] Referencia: <a href= '/" ?empresa "/libro-diario#Partida-" ?referencia "'>" ?referencia " </a>" crlf))
+    )
+
+
     ( if (eq ?revisado true) 
      then  
        ( printout k "- [x] revisado" crlf ) 

@@ -103,6 +103,7 @@
 (deftemplate selecciones
  (slot incentivo-al-ahorro (default false))
  (slot regimen)
+ (slot ejercicio-anterior)
  (slot liquidar (default paternas))
  (slot origen-de-subcuentas )
  (slot empresa-seleccionada)

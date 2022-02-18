@@ -5,6 +5,7 @@
 ;obtener ese código
 ;liquidar: Qué cuentas se liquidan (las subcuentas o las cuentas paternas), parece que esto ya no corre
 ( selecciones
+ (ejercicio-anterior     alectrico-2021)
  (regimen                propyme)
  (incentivo-al-ahorro    true)
  (empresa-seleccionada   alectrico-2022)

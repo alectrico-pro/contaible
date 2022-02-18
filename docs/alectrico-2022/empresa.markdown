@@ -112,7 +112,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 - [ ] rcv
 - [ ] libro-diario
 - [ ] ccm
-- [x] Referencia: <a href= '/alectrico-2022/libro-diario#Partida-88'>88 </a>
+- [x] Referencia: <a href= '/alectrico-2021/libro-diario#Partida--88'>-88 </a>
 - [x] revisado
 ![](../revisado.png)
 <table id='Partida-2006'>
