@@ -49,7 +49,7 @@
   (grupo activo)
   (circulante true)
   (padre insumos)
-  (origen real))
+  (origen nominativo))
 
 
 
@@ -1296,17 +1296,17 @@ pagos.")
    (circulante true)
    (tipo deudor)
    (grupo activo)
-   (padre false)
+   (padre cuentas-por-cobrar)
    (naturaleza deudor)
-   (origen real))
+   (origen nominativo))
 
 (cuenta (nombre tgr-por-cobrar)
    (circulante true)
    (tipo deudor)
    (grupo activo)
-   (padre false)
+   (padre cuentas-por-cobrar)
    (naturaleza deudor)
-   (origen real))
+   (origen nominativo))
 
 
 (cuenta (nombre cuentas-por-cobrar)
@@ -1354,7 +1354,6 @@ servicio.")
 
 
 (cuenta (nombre instalaciones)
-
   (descripcion activos-fijo-maquinaria)
   (padre false)
   (tipo deudor) 

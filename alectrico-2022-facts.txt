@@ -1,6 +1,6 @@
 
  ( inicio-de-los-dias 
-   (partidas 2001 2002 2003 2004 2005 2006 2007 2008 2009 2010 2011 2012 2013 2014 2015 2016 2017 2018 2019 2020 2021 2022  2023 2024 2025 1040 1041 1042 1043 1044 1045 1046 1047 1048 1049 1050 1051 1052 1053 1054 90000 90001 90002 90003 90004 )
+   (partidas 2000 2001 2002 2003 2004 2005 2006 2007 2008 2009 2010 2011 2012 2013 2014 2015 2016 2017 2018 2019 2020 2021 2022  2023 2024 2025 1040 1041 1042 1043 1044 1045 1046 1047 1048 1049 1050 1051 1052 1053 1054 90000 90001 90002 90003 90004 )
  )
 
 ( empresa
@@ -18,7 +18,7 @@
 ;================================================================================
 
 ( partida
- ( numero 2001)
+ ( numero 2000)
  ( dia 1) (mes enero) (ano 2022)
  ( descripcion "Por Inicio de Operaciones en 2022")
  ( actividad asiento-de-apertura-2022))
@@ -29,7 +29,7 @@
  ( empresa alectrico-2022)
  ( cuenta caja)
  ( monto  114688)
- ( partida 2001)
+ ( partida 2000)
  ( dia 1)  ( mes enero)  ( ano 2022)
  ( glosa asiento-de-apertura-2022))
 
@@ -39,7 +39,7 @@
  ( empresa alectrico-2022)
  ( cuenta banco-estado)
  ( monto  274735)
- ( partida 2001)
+ ( partida 2000)
  ( dia 1) ( mes enero) ( ano 2022)
  ( glosa asiento-de-apertura-2022))
 
@@ -49,7 +49,7 @@
  ( empresa alectrico-2022)
  ( cuenta materiales)
  ( monto  97674)
- ( partida 2001)
+ ( partida 2000)
  ( dia 1) ( mes enero) ( ano 2022)
  ( glosa asiento-de-apertura-2022))
 
@@ -59,7 +59,7 @@
  ( empresa alectrico-2022)
  ( cuenta inventario-inicial)
  ( monto  44044)
- ( partida 2001)
+ ( partida 2000)
  ( dia 1) ( mes enero) ( ano 2022)
  ( glosa asiento-de-apertura-2022))
 
@@ -69,7 +69,7 @@
  ( empresa alectrico-2022)
  ( cuenta sodimac-insumos)
  ( monto  154498)
- ( partida 2001)
+ ( partida 2000)
  ( dia 1) ( mes enero) ( ano 2022)
  ( glosa asiento-de-apertura-2022))
 
@@ -79,7 +79,7 @@
  ( empresa alectrico-2022)
  ( cuenta electrocom-insumos)
  ( monto  51191)
- ( partida 2001)
+ ( partida 2000)
  ( dia 1) ( mes enero) ( ano 2022)
  ( glosa asiento-de-apertura-2022))
 
@@ -89,7 +89,7 @@
  ( empresa alectrico-2022)
  ( cuenta dartel-insumos)
  ( monto  158011)
- ( partida 2001)
+ ( partida 2000)
  ( dia 1) ( mes enero) ( ano 2022)
  ( glosa asiento-de-apertura-2022))
 
@@ -99,7 +99,7 @@
  ( empresa alectrico-2022)
  ( cuenta easy-insumos)
  ( monto  2134)
- ( partida 2001)
+ ( partida 2000)
  ( dia 1) ( mes enero) ( ano 2022)
  ( glosa asiento-de-apertura-2022))
 
@@ -109,7 +109,7 @@
  ( empresa alectrico-2022)
  ( cuenta gonzalo-por-cobrar)
  ( monto  20000)
- ( partida 2001)
+ ( partida 2000)
  ( dia 1) ( mes enero) ( ano 2022)
  ( glosa asiento-de-apertura-2022))
 
@@ -119,7 +119,7 @@
  ( empresa alectrico-2022)
  ( cuenta tgr-por-cobrar)
  ( monto  31203)
- ( partida 2001)
+ ( partida 2000)
  ( dia 1) ( mes enero) ( ano 2022)
  ( glosa asiento-de-apertura-2022))
 
@@ -129,7 +129,7 @@
  ( empresa alectrico-2022)
  ( cuenta iva-credito)
  ( monto  1804)
- ( partida 2001)
+ ( partida 2000)
  ( dia 1) ( mes enero) ( ano 2022)
  ( glosa asiento-de-apertura-2022))
 
@@ -139,7 +139,7 @@
  ( empresa alectrico-2022)
  ( cuenta ppm)
  ( monto  2728)
- ( partida 2001)
+ ( partida 2000)
  ( dia 1) ( mes enero) ( ano 2022)
  ( glosa asiento-de-apertura-2022))
 
@@ -149,7 +149,7 @@
  ( empresa alectrico-2022)
  ( cuenta herramientas)
  ( monto  218470)
- ( partida 2001)
+ ( partida 2000)
  ( dia 1) ( mes enero) ( ano 2022)
  ( glosa asiento-de-apertura-2022))
 
@@ -159,7 +159,7 @@
  ( empresa alectrico-2022)
  ( cuenta marca-alectrico)
  ( monto 237369)
- ( partida 2001)
+ ( partida 2000)
  ( dia 1) ( mes enero) ( ano 2022)
  ( glosa asiento-de-apertura-2022))
 
@@ -169,7 +169,7 @@
  ( empresa alectrico-2022)
  ( cuenta plataforma-alectrico)
  ( monto 2150000)
- ( partida 2001)
+ ( partida 2000)
  ( dia 1) ( mes enero) ( ano 2022)
  ( glosa asiento-de-apertura-2022))
 
@@ -179,7 +179,7 @@
  ( empresa alectrico-2022)
  ( cuenta depreciacion-acumulada-herramientas)
  ( monto 84036)
- ( partida 2001)
+ ( partida 2000)
  ( dia 1) ( mes enero) ( ano 2022)
  ( glosa asiento-de-apertura-2022))
 
@@ -189,7 +189,7 @@
  ( empresa alectrico-2022)
  ( cuenta amortizacion-acumulada-intangibles)
  ( monto 31420)
- ( partida 2001)
+ ( partida 2000)
  ( dia 1) ( mes enero) ( ano 2022)
  ( glosa asiento-de-apertura-2022))
 
@@ -199,7 +199,7 @@
  ( empresa alectrico-2022)
  ( cuenta remuneraciones-por-pagar)
  ( monto 307520)
- ( partida 2001)
+ ( partida 2000)
  ( dia 1) ( mes enero) ( ano 2022)
  ( glosa asiento-de-apertura-2022))
 
@@ -209,7 +209,7 @@
  ( empresa alectrico-2022)
  ( cuenta entidades-previsionales-por-pagar)
  ( monto 359620)
- ( partida 2001)
+ ( partida 2000)
  ( dia 1) ( mes enero) ( ano 2022)
  ( glosa asiento-de-apertura-2022))
 
@@ -219,7 +219,7 @@
  ( empresa alectrico-2022)
  ( cuenta capital-social)
  ( monto 2085294)
- ( partida 2001)
+ ( partida 2000)
  ( dia 1) ( mes enero) ( ano 2022)
  ( glosa asiento-de-apertura-2022))
 
@@ -229,7 +229,7 @@
  ( empresa alectrico-2022)
  ( cuenta revalorizacion-del-capital-propio)
  ( monto 185989)
- ( partida 2001)
+ ( partida 2000)
  ( dia 1) ( mes enero) ( ano 2022)
  ( glosa asiento-de-apertura-2022))
 
@@ -239,16 +239,31 @@
  ( empresa alectrico-2022)
  ( cuenta utilidad)
  ( monto 504670)
- ( partida 2001)
+ ( partida 2000)
  ( dia 1) ( mes enero) ( ano 2022)
  ( glosa asiento-de-apertura-2022))
 
-
 ( traspaso
- (partida 2004)
+ (partida 2001)
  (dia 1) (mes enero) (ano 2022)
  (cuenta-de-origen utilidad)
- (cuenta-de-destino utilidad-del-ejercicio-anterior))
+ (cuenta-de-destino utilidades-acumuladas))
+
+;( traspaso
+; (partida 2002)
+; (dia 1) (mes enero) (ano 2022)
+; (cuenta-de-origen materiales)
+; (cuenta-de-destino inventario))
+
+;( inventario (dia 1)
+; (mes enero)
+; (u 1)
+; (operacion asiento-inicial)
+; (material materiales)
+; (partida 2003)
+; (ct 44044)
+; (cu 44044))
+
 
 
 ;------------------------------------ enero compras -------------------------------------
@@ -282,8 +297,6 @@
  (dia 8)
  (mes enero)
  (ano 2022))
-
-
 
 ( gasto-administrativo
  ( tipo-de-documento 45)
