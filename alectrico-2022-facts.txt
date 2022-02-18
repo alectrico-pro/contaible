@@ -267,7 +267,7 @@
 
 ;pago de remuneraciones de diciembre 2021
 (pago-de-salarios
- (referencia 88)
+ (referencia -88)
  (remuneraciones true)
  (imposiciones false)
  (partida 2006)
