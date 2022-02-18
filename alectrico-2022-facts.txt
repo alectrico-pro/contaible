@@ -3,9 +3,13 @@
    (partidas 2001 2002 2003 2004 2005 2006 2007 2008 2009 2010 2011 2012 2013 2014 2015 2016 2017 2018 2019 2020 2021 2022  2023 2024 2025 1040 1041 1042 1043 1044 1045 1046 1047 1048 1049 1050 1051 1052 1053 1054 90000 90001 90002 90003 90004 )
  )
 
-( empresa (nombre alectrico-2022) (razon "alectrico® SpA"))
+( empresa
+  (nombre alectrico-2022)
+  (razon "alectrico® SpA"))
 
-(balance (dia 31) (mes enero) (ano 2022))
+( balance
+  (dia 31) (mes enero) (ano 2022))
+
 
 
 ;dia 01/01/2022---------- asiento inicial  ----------------
@@ -13,15 +17,13 @@
 ;=========================== 2 0 2 2  ===========================================
 ;================================================================================
 
-(partida
- (numero 2001)
- (dia 1) (mes enero) (ano 2022)
- (descripcion "Por Inicio de Operaciones en 2022")
- (actividad ajuste))
+( partida
+ ( numero 2001)
+ ( dia 1) (mes enero) (ano 2022)
+ ( descripcion "Por Inicio de Operaciones en 2022")
+ ( actividad asiento-de-apertura-2022))
 
-
-
-(cargo
+( cargo
  ( electronico false)
  ( tipo-de-documento escritura-empresa)
  ( empresa alectrico-2022)
@@ -31,8 +33,7 @@
  ( dia 1)  ( mes enero)  ( ano 2022)
  ( glosa asiento-de-apertura-2022))
 
-
-(cargo
+( cargo
  ( electronico false)
  ( tipo-de-documento escritura-empresa)
  ( empresa alectrico-2022)
@@ -42,9 +43,7 @@
  ( dia 1) ( mes enero) ( ano 2022)
  ( glosa asiento-de-apertura-2022))
 
-
-
-(cargo
+( cargo
  ( electronico false)
  ( tipo-de-documento escritura-empresa)
  ( empresa alectrico-2022)
@@ -54,8 +53,7 @@
  ( dia 1) ( mes enero) ( ano 2022)
  ( glosa asiento-de-apertura-2022))
 
-
-(cargo
+( cargo
  ( electronico false)
  ( tipo-de-documento escritura-empresa)
  ( empresa alectrico-2022)
@@ -65,8 +63,7 @@
  ( dia 1) ( mes enero) ( ano 2022)
  ( glosa asiento-de-apertura-2022))
 
-
-(cargo
+( cargo
  ( electronico false)
  ( tipo-de-documento escritura-empresa)
  ( empresa alectrico-2022)
@@ -76,8 +73,7 @@
  ( dia 1) ( mes enero) ( ano 2022)
  ( glosa asiento-de-apertura-2022))
 
-
-(cargo
+( cargo
  ( electronico false)
  ( tipo-de-documento escritura-empresa)
  ( empresa alectrico-2022)
@@ -87,10 +83,7 @@
  ( dia 1) ( mes enero) ( ano 2022)
  ( glosa asiento-de-apertura-2022))
 
-
-
-
-(cargo
+( cargo
  ( electronico false)
  ( tipo-de-documento escritura-empresa)
  ( empresa alectrico-2022)
@@ -100,9 +93,7 @@
  ( dia 1) ( mes enero) ( ano 2022)
  ( glosa asiento-de-apertura-2022))
 
-
-
-(cargo
+( cargo
  ( electronico false)
  ( tipo-de-documento escritura-empresa)
  ( empresa alectrico-2022)
@@ -112,8 +103,7 @@
  ( dia 1) ( mes enero) ( ano 2022)
  ( glosa asiento-de-apertura-2022))
 
-
-(cargo
+( cargo
  ( electronico false)
  ( tipo-de-documento escritura-empresa)
  ( empresa alectrico-2022)
@@ -123,8 +113,7 @@
  ( dia 1) ( mes enero) ( ano 2022)
  ( glosa asiento-de-apertura-2022))
 
-
-(cargo
+( cargo
  ( electronico false)
  ( tipo-de-documento escritura-empresa)
  ( empresa alectrico-2022)
@@ -134,8 +123,7 @@
  ( dia 1) ( mes enero) ( ano 2022)
  ( glosa asiento-de-apertura-2022))
 
-
-(cargo
+( cargo
  ( electronico false)
  ( tipo-de-documento escritura-empresa)
  ( empresa alectrico-2022)
@@ -145,8 +133,7 @@
  ( dia 1) ( mes enero) ( ano 2022)
  ( glosa asiento-de-apertura-2022))
 
-
-(cargo
+( cargo
  ( electronico false)
  ( tipo-de-documento escritura-empresa)
  ( empresa alectrico-2022)
@@ -156,8 +143,7 @@
  ( dia 1) ( mes enero) ( ano 2022)
  ( glosa asiento-de-apertura-2022))
 
-
-(cargo
+( cargo
  ( electronico false)
  ( tipo-de-documento escritura-empresa)
  ( empresa alectrico-2022)
@@ -167,8 +153,7 @@
  ( dia 1) ( mes enero) ( ano 2022)
  ( glosa asiento-de-apertura-2022))
 
-
-(cargo
+( cargo
  ( electronico false)
  ( tipo-de-documento escritura-empresa)
  ( empresa alectrico-2022)
@@ -178,8 +163,7 @@
  ( dia 1) ( mes enero) ( ano 2022)
  ( glosa asiento-de-apertura-2022))
 
-
-(cargo
+( cargo
  ( electronico false)
  ( tipo-de-documento escritura-empresa)
  ( empresa alectrico-2022)
@@ -189,7 +173,7 @@
  ( dia 1) ( mes enero) ( ano 2022)
  ( glosa asiento-de-apertura-2022))
 
-(abono
+( abono
  ( electronico false)
  ( tipo-de-documento escritura-empresa)
  ( empresa alectrico-2022)
@@ -199,10 +183,7 @@
  ( dia 1) ( mes enero) ( ano 2022)
  ( glosa asiento-de-apertura-2022))
 
-
-
-
-(abono
+( abono
  ( electronico false)
  ( tipo-de-documento escritura-empresa)
  ( empresa alectrico-2022)
@@ -212,9 +193,7 @@
  ( dia 1) ( mes enero) ( ano 2022)
  ( glosa asiento-de-apertura-2022))
 
-
-
-(abono
+( abono
  ( electronico false)
  ( tipo-de-documento escritura-empresa)
  ( empresa alectrico-2022)
@@ -224,8 +203,7 @@
  ( dia 1) ( mes enero) ( ano 2022)
  ( glosa asiento-de-apertura-2022))
 
-
-(abono
+( abono
  ( electronico false)
  ( tipo-de-documento escritura-empresa)
  ( empresa alectrico-2022)
@@ -235,10 +213,7 @@
  ( dia 1) ( mes enero) ( ano 2022)
  ( glosa asiento-de-apertura-2022))
 
-
-
-
-(abono
+( abono
  ( electronico false)
  ( tipo-de-documento escritura-empresa)
  ( empresa alectrico-2022)
@@ -248,8 +223,7 @@
  ( dia 1) ( mes enero) ( ano 2022)
  ( glosa asiento-de-apertura-2022))
 
-
-(abono
+( abono
  ( electronico false)
  ( tipo-de-documento escritura-empresa)
  ( empresa alectrico-2022)
@@ -259,8 +233,7 @@
  ( dia 1) ( mes enero) ( ano 2022)
  ( glosa asiento-de-apertura-2022))
 
-
-(abono
+( abono
  ( electronico false)
  ( tipo-de-documento escritura-empresa)
  ( empresa alectrico-2022)
@@ -270,9 +243,26 @@
  ( dia 1) ( mes enero) ( ano 2022)
  ( glosa asiento-de-apertura-2022))
 
+( traspaso
+ (partida 2002)
+ (dia 1) (mes enero) (ano 2022)
+ (cuenta-de-origen utilidad)
+ (cuenta-de-destino utilidad-del-ejercicio-anterior))
 
 
 ;------------------------------------ enero compras -------------------------------------
+
+;reconocimiento de salarios de diciembre
+(salario 
+ (partida 2005)
+ (departamento electrico)
+ (nombre alexander)
+ (servicio electricista)
+ (efectivo 450000 )
+ (dia 5)
+ (mes enero)
+ (ano 2022)
+ (glosa salario-electricista))
 
 
 ( gasto-administrativo
@@ -292,21 +282,21 @@
  ( archivo "../heroku-mensualidad-enero-2022.png")
  ( finalidad "Departamento de Administración"))
 
-(gasto-administrativo
- (tipo-de-documento 33)
- (folio 2838194)
- (rut 60910000-1 )
- (partida 2007)
- (dia 27) (mes enero) (ano 2022)
- (credito 0)
- (total 9950)
- (neto  8361)
- (iva   1589)
- (material Dominio-Internet)
- (proveedor u-chile)
- (glosa "Adquisión de Dominio Internet: contaible.cl.")
- (archivo "../factura-afecta-u-chile-2838194.png")
- (finalidad "Por Compra de Dominio contaible.cl"))
+( gasto-administrativo
+ ( tipo-de-documento 33)
+ ( folio 2838194)
+ ( rut 60910000-1 )
+ ( partida 2007)
+ ( dia 27) (mes enero) (ano 2022)
+ ( credito 0)
+ ( total 9950)
+ ( neto  8361)
+ ( iva   1589)
+ ( material Dominio-Internet)
+ ( proveedor u-chile)
+ ( glosa "Adquisión de Dominio Internet: contaible.cl.")
+ ( archivo "../factura-afecta-u-chile-2838194.png")
+ ( finalidad "Por Compra de Dominio contaible.cl"))
 
 ( gasto-administrativo
  ( archivo "/factura-afecta-entel-44377492.png")
@@ -322,51 +312,76 @@
  ( material servicio-telefonia)
  ( proveedor entel)
  ( glosa "Por Gasto Administrativo: Servicio de Datos y Telefonía: Costo de diciembre 2021.")
- (finalidad "No subordinada a ningún departamento"))
+ ( finalidad "No subordinada a ningún departamento"))
 
+( ajustes-mensuales
+  (mes enero)
+  (ano 2022)
+  (partida 2009))
 
-( ajustes-mensuales (mes enero) (ano 2022) (partida 2009))
-( ajuste-de-iva     (mes enero) (ano 2022) (partida 2010))
+( ajuste-de-iva     
+  (mes enero) (ano 2022)
+  (partida 2010))
 
 ;--------------------------------- febrero -----------------------------------
-;5336-4445
- ;multa=interes afp 5336-4445 + interes salud 2795 + interes afc 1003 + multas fonasa 23416
 
-(pago-de-salarios
- (remuneraciones false)
- (imposiciones true)
+
+
+;reconocimiento de salarios de enero
+(salario
  (partida 2011)
- (trabajador alexander)
- (afp   47180)
- (afc   10500)
- (salud  24500)
- (multa  28105)
- (folio-prevision 20022021092580)
- (folio-salud 2017220100278294)
- (remuneracion 267820)
- (dia 1)
+ (departamento electrico)
+ (nombre alexander)
+ (servicio electricista)
+ (efectivo 450000 )
+ (dia 5)
  (mes febrero)
- (ano 2022))
+ (ano 2022)
+ (glosa salario-electricista))
 
+
+( pago-de-salarios
+ ( remuneraciones false)
+ ( imposiciones true)
+ ( partida 2012)
+ ( trabajador alexander)
+ ( afp   47180)
+ ( afc   10500)
+ ( salud  24500)
+ ( multa  28105)
+ ( folio-prevision 20022021092580)
+ ( folio-salud 2017220100278294)
+ ( remuneracion 267820)
+ ( dia 1)
+ ( mes febrero)
+ ( ano 2022))
 
 ;Corresponde a la amortización del parecer THHN
-(cobro-de-cuentas-por-cobrar
-  (partida 2012)
-  (monto 10000)
-  (dia 3)
-  (mes febrero)
-  (ano 2022))
+( cobro-de-cuentas-por-cobrar
+  ( partida 2013)
+  ( monto 10000)
+  ( dia 3)
+  ( mes febrero)
+  ( ano 2022))
 
 
-( ajustes-mensuales (mes febrero) (ano 2022) (partida 2014))
-( ajuste-de-iva     (mes febrero) (ano 2022) (partida 2015))
+( ajustes-mensuales 
+  ( partida 2014)
+  ( mes febrero)
+  ( ano 2022))
 
 
+( ajuste-de-iva 
+  ( partida 2015)
+  ( mes febrero)
+  ( ano 2022))
 
 
 ;---------------------------------- marzo ------------------------
 
-;###################################################3333
+
+
+;###################################################
 
 ;financiero
 
@@ -379,7 +394,6 @@
    (ano 2022) (partida 2017)
    (liquidacion financiera)
    (efecto perdedor))
-
 
 ( ajuste-anual-de-resultado-financiero
    (ano 2022) (partida 2018))

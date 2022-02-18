@@ -55,7 +55,59 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <tr><td colspan='4'> alectrico® SpA</td> </tr> 
 <tr><td colspan='4'> ( 1 de enero	2022	 ) </td> </tr>
 <tr><td colspan='8'> Partida 2001: Por Inicio de Operaciones en 2022 </td></tr>
-<tr><td colspan = '8'> ajuste</td> </tr>
+<tr><td colspan = '8'> asiento-de-apertura-2022</td> </tr>
+</tbody>
+</table>
+<p style='page-break-before: always;'>&nbsp;</p>
+<br> 
+<p style='color: white; background-color: red'>  </p>
+<br> 
+- [ ] rcv
+- [ ] libro-diario
+- [ ] ccm
+- [x] revisado
+![](../revisado.png)
+<table id='Partida-2005'>
+<thead> <th style='background-color: lavender' colspan='6'>Partida 2005</th></thead>
+<tbody>
+<tr> <td> 0 </td> <td> </td> <td colspan='7'> impuesto-unico-por-pagar#salarios-por-pagar </td> </tr> 
+<tr> <td> 345960 </td> <td> </td> <td colspan='7'> remuneraciones-por-pagar#salarios-por-pagar </td> </tr> 
+<tr> <td> 104040 </td> <td> </td> <td colspan='7'> entidades-previsionales-por-pagar#salarios-por-pagar </td> </tr> 
+<tr style='background-color: azure'>  <td> </td> <td> 0 </td> <td> 104040 </td> <td> </td><td> p[salarios-por-pagar] </td> </tr>
+<tr style='background-color: azure'>  <td> </td> <td> 0 </td> <td> 345960 </td> <td> </td><td> p[salarios-por-pagar] </td> </tr>
+<tr style='color: white; background-color: black'>  <td> </td> <td>450000 </td> <td> 0</td> <td> </td> <td> r[salarios] </td> </tr>
+<tr> <td> </td> <td style='background-color: blanchedalmond'> 450000 </td> <td style='background-color: blanchedalmond'> 450000</td> </tr>
+<tr><td colspan='4'> alectrico® SpA</td> </tr> 
+<tr><td colspan='4'> ( 5 de enero	2022	 ) </td> </tr>
+<tr><td colspan='8'> Partida 2005: Declaración de Remuneraciones de alexander días trabajados: 8 Tramo Exento: 734967.0 Sueldo Bruto de: 450000 Tasa de Impuesto Único: 0.04 Monto de Impuesto Único: 0 </td></tr>
+<tr> <td colspan='7'>efectuado a electrico </td> </tr>
+<tr><td colspan = '8'> declarar-remuneraciones</td> </tr>
+</tbody>
+</table>
+<p style='page-break-before: always;'>&nbsp;</p>
+<br> 
+<p style='color: white; background-color: red'>  </p>
+<br> 
+- [ ] rcv
+- [ ] libro-diario
+- [ ] ccm
+- [x] revisado
+![](../revisado.png)
+<table id='Partida-2006'>
+<thead> <th style='background-color: lavender' colspan='6'>Partida 2006</th></thead>
+<tbody>
+<tr> <td>14024 </td> <td colspan='7'> heroku#gastos-administrativos </td></tr>
+<tr style='background-color: lightyellow'>  <td> </td> <td> 0</td> <td> 2665</td> <td colspan='2'> a[retencion-de-iva-articulo-11] </td> </tr>
+<tr style='background-color: lightyellow'>  <td> </td> <td> 2665</td> <td> 0</td> <td colspan='2'> a[iva-credito] </td> </tr>
+<tr style='background-color: lightyellow'>  <td> </td> <td> 0</td> <td> 14024</td> <td colspan='2'> a[caja] </td> </tr>
+<tr style='color: white; background-color: black'>  <td> </td> <td>14024 </td> <td> 0</td> <td> </td> <td> r[gastos-administrativos] </td> </tr>
+<tr> <td> </td> <td style='background-color: blanchedalmond'> 16689 </td> <td style='background-color: blanchedalmond'> 16689</td> </tr>
+<tr><td colspan='4'> alectrico® SpA</td> </tr> 
+<tr><td colspan='4'> ( 11 de enero	2021	 ) </td> </tr>
+<tr><td colspan='8'> Partida 2006: Por Gasto Administrativo: Pago Mensual de Arriendo de Almacenamiento en la nube. </td></tr>
+<tr> <td colspan='7'>efectuado a heroku </td> </tr>
+<tr><td colspan = '8'> gastar-administrativo-afecto-iva-retenido</td> </tr>
+<tr style='background-color: aliceblue'> <td colspan = '8'> <img src='../heroku-mensualidad-enero-2022.png'></td> </tr>
 </tbody>
 </table>
 <p style='page-break-before: always;'>&nbsp;</p>

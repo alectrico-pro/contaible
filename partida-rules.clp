@@ -45,9 +45,9 @@
    ( bind ?archivo (str-cat "./templates/index.html"))
 
    ( open ?archivo l "w")
-   ( printout l "{% extends \"clips.html\" %}" crlf)
-   ( printout l "{% load static %}" crlf)
-   ( printout l "{% block clips %}" crlf)
+ ;  ( printout l "{% extends \"clips.html\" %}" crlf)
+ ;  ( printout l "{% load static %}" crlf)
+  ; ( printout l "{% block clips %}" crlf)
 
    ( printout t "------------------- fin-kindle-l ------------" crlf)
 )

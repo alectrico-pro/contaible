@@ -20,7 +20,7 @@
  (mes-inicio octubre)
  (ano-inicio 2021)
  (mes-fin diciembre)
- (ano-fin 2021)
+ (ano-fin 2022)
  (afp habitat)
  (salud fonasa)
  (rut 14579554-0)

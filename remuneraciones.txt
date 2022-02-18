@@ -64,7 +64,7 @@
   (ano 2021)
   (dias-trabajados 7)
   (semana-corrida 1)
-  (pagada false)
+  (pagada true)
   (declarada false)
   (impuesta false)
 )
@@ -77,10 +77,23 @@
   (ano 2022)
   (dias-trabajados 8)
   (semana-corrida 1)
-  (pagada false)
+  (pagada true)
   (declarada true)
   (impuesta false)
 )
+
+(remuneracion
+  (servicio alectricista)
+  (trabajador alexander)
+  (mes febrero)
+  (ano 2022)
+  (dias-trabajados 8)
+  (semana-corrida 1)
+  (pagada true)
+  (declarada true)
+  (impuesta false)
+)
+
 
 
 

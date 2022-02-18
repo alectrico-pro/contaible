@@ -28,6 +28,8 @@
   (+ (* 10000 ?ano) (* 100 ( mes_to_numero ?mes)) ?dia)
 )
 
+
+
 (defrule guardar-partidas
   (declare (salience 10000))
   (no)
@@ -146,12 +148,17 @@
 
 
 (defrule inicio-actividad
+
   (declare (salience 10000))
   (selecciones ( origen-de-subcuentas ?origen))
-  =>
-   ( assert ( subcuenta (origen ?origen)))
-   ( set-strategy breadth)
 
+  =>
+
+  ( assert ( subcuenta (origen ?origen)))
+  ( set-strategy breadth)
+;  ( printout t "----- PARADO EN ACTIVIDAD -----------------------------" crlf)
+ ; ( matches declarar-remuneraciones )
+ ; ( halt )
 )
 
 

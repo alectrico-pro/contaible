@@ -24,13 +24,30 @@ layout: page
 </tbody>
 </table>
 <table>
+<thead><th colspan='6'> heroku</th><th colspan='3'></th></thead>
+<thead><th colspan='9'> compras-Dpto-Administracion</th></thead>
+<thead><th> voucher </th><th> partida </th><th> debe </th> <th> | </th> <th> haber </th><th> mes </th> <th>recibida</th> <th>factor de corrección monetaria</th> <th> tipo documento</th></thead>
+<tbody>
+<tr> <td> </td> <td align='right'> <a href= '/alectrico-2022/libro-diario#Partida-2006'>2006</a> </td> <td align='right'>14024</td> <td> | </td> <td align='right'> 0</td> <td>enero</td><td>true</td><td> 1.063</td><td> 45</td> </tr>
+<tr> <td></td> <td></td> <td align='right'>14024 <small> 14907.512</small> </td> <td>|</td> <td align='right'>0<small> 0.0</small> </td></tr>
+<tr> <td></td> <td>$</td> <td align='right'>14024 <small> 14907.512</small></td></tr>
+<tr> <td> Monto Corrección </td> <td>$</td> <td align='right'>884 </td></tr>
+</tbody>
+</table>
+<table>
+<thead><th colspan='6'> impuesto-unico-por-pagar</th><th colspan='3'></th></thead>
+<thead><th colspan='9'> En esta cuenta se incluye conceptos de Impuestos; impto. único a los trabajadores.</th></thead>
+<thead><th> voucher </th><th> partida </th><th> debe </th> <th> | </th> <th> haber </th><th> mes </th> <th>recibida</th> <th>factor de corrección monetaria</th> <th> tipo documento</th></thead>
+<tbody>
+<table>
 <thead><th colspan='6'> entidades-previsionales-por-pagar</th><th colspan='3'></th></thead>
 <thead><th colspan='9'> En esta cuenta se incluye descuentos como Cotización: Previsional Obligatoria, de Ahorro, APV , Salud Obligatoria, Salud Voluntaria, Seguro Cesantía.</th></thead>
 <thead><th> voucher </th><th> partida </th><th> debe </th> <th> | </th> <th> haber </th><th> mes </th> <th>recibida</th> <th>factor de corrección monetaria</th> <th> tipo documento</th></thead>
 <tbody>
 <tr> <td> </td> <td align='right'> <a href= '/alectrico-2022/libro-diario#Partida-2001'>2001</a> </td> <td align='right'>0</td> <td> | </td> <td align='right'> 359620</td> <td>enero</td><td>false</td><td> 1</td><td> escritura-empresa</td> </tr>
-<tr> <td></td> <td></td> <td align='right'>0 <small> 0</small> </td> <td>|</td> <td align='right'>359620<small> 359620</small> </td></tr>
-<tr> <td> </td> <td> </td> <td></td> <td>|</td> <td align='right'>359620 <small> 359620</small></td> <td>$</td> </tr>
+<tr> <td> </td> <td align='right'> <a href= '/alectrico-2022/libro-diario#Partida-2005'>2005</a> </td> <td align='right'>0</td> <td> | </td> <td align='right'> 104040</td> <td>enero</td><td>false</td><td> 1</td><td> declaracion*remuneraciones</td> </tr>
+<tr> <td></td> <td></td> <td align='right'>0 <small> 0</small> </td> <td>|</td> <td align='right'>463660<small> 463660</small> </td></tr>
+<tr> <td> </td> <td> </td> <td></td> <td>|</td> <td align='right'>463660 <small> 463660</small></td> <td>$</td> </tr>
 <tr> <td colspan='2'> Monto Corrección</td><td></td><td>$</td> <td align='right'>0 </td></tr>
 </tbody>
 </table>
@@ -41,8 +58,9 @@ pagos.</th></thead>
 <thead><th> voucher </th><th> partida </th><th> debe </th> <th> | </th> <th> haber </th><th> mes </th> <th>recibida</th> <th>factor de corrección monetaria</th> <th> tipo documento</th></thead>
 <tbody>
 <tr> <td> </td> <td align='right'> <a href= '/alectrico-2022/libro-diario#Partida-2001'>2001</a> </td> <td align='right'>0</td> <td> | </td> <td align='right'> 307520</td> <td>enero</td><td>false</td><td> 1</td><td> escritura-empresa</td> </tr>
-<tr> <td></td> <td></td> <td align='right'>0 <small> 0</small> </td> <td>|</td> <td align='right'>307520<small> 307520</small> </td></tr>
-<tr> <td> </td> <td> </td> <td></td> <td>|</td> <td align='right'>307520 <small> 307520</small></td> <td>$</td> </tr>
+<tr> <td> </td> <td align='right'> <a href= '/alectrico-2022/libro-diario#Partida-2005'>2005</a> </td> <td align='right'>0</td> <td> | </td> <td align='right'> 345960</td> <td>enero</td><td>false</td><td> 1</td><td> declaracion°remuneraciones</td> </tr>
+<tr> <td></td> <td></td> <td align='right'>0 <small> 0</small> </td> <td>|</td> <td align='right'>653480<small> 653480</small> </td></tr>
+<tr> <td> </td> <td> </td> <td></td> <td>|</td> <td align='right'>653480 <small> 653480</small></td> <td>$</td> </tr>
 <tr> <td colspan='2'> Monto Corrección</td><td></td><td>$</td> <td align='right'>0 </td></tr>
 </tbody>
 </table>

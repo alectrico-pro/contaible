@@ -37,13 +37,15 @@ NO se han practicado liquidaciones, por lo que SÍ se muestran cuentas nominales
 <tr style=' background: #fff; border: 1px solid red;'>
 <td><small>amortizacion-intangibles</small></td> <td align='right'>2417</td> <td align='right'>0</td> <td> | </td> <td align='right'> 2417</td> <td align='right'>0</td> </tr>
 <tr style=' background: #fff; border: 1px solid red;'>
+<td><small>retencion-de-iva-articulo-11</small></td> <td align='right'>0</td> <td align='right'>2665</td> <td> | </td> <td align='right'> 0</td> <td align='right'>2665</td> </tr>
+<tr style=' background: #fff; border: 1px solid red;'>
+<td><small>salarios</small></td> <td align='right'>450000</td> <td align='right'>0</td> <td> | </td> <td align='right'> 450000</td> <td align='right'>0</td> </tr>
+<tr style=' background: #fff; border: 1px solid red;'>
 <td>Capital pagado<small>capital-social</small></td> <td align='right'>0</td> <td align='right'>2085294</td> <td> | </td> <td align='right'> 0</td> <td align='right'>2085294</td> </tr>
 <tr style=' background: #fff; border: 1px solid red;'>
 <td><small>revalorizacion-del-capital-propio</small></td> <td align='right'>0</td> <td align='right'>185989</td> <td> | </td> <td align='right'> 0</td> <td align='right'>185989</td> </tr>
 <tr style=' background: #fff; border: 1px solid red;'>
 <td><small>utilidad</small></td> <td align='right'>0</td> <td align='right'>504670</td> <td> | </td> <td align='right'> 0</td> <td align='right'>504670</td> </tr>
-<tr style=' background: #fff; border: 1px solid red;'>
-<td>Remuneraciones por Pagar<small>salarios-por-pagar</small></td> <td align='right'>0</td> <td align='right'>667140</td> <td> | </td> <td align='right'> 0</td> <td align='right'>667140</td> </tr>
 <tr style=' background: #fff; border: 1px solid red;'>
 <td>Banco Estado<small>banco-estado</small></td> <td align='right'>274735</td> <td align='right'>0</td> <td> | </td> <td align='right'> 274735</td> <td align='right'>0</td> </tr>
 <tr style=' background: #fff; border: 1px solid red;'>
@@ -63,13 +65,15 @@ NO se han practicado liquidaciones, por lo que SÍ se muestran cuentas nominales
 <tr style=' background: #fff; border: 1px solid red;'>
 <td>Amortización Acumulada<small>amortizacion-acumulada-intangibles</small></td> <td align='right'>0</td> <td align='right'>33837</td> <td> | </td> <td align='right'> 0</td> <td align='right'>33837</td> </tr>
 <tr style=' background: #fff; border: 1px solid red;'>
-<td><small>gastos-administrativos</small></td> <td align='right'>11489</td> <td align='right'>0</td> <td> | </td> <td align='right'> 11489</td> <td align='right'>0</td> </tr>
+<td><small>gastos-administrativos</small></td> <td align='right'>25513</td> <td align='right'>0</td> <td> | </td> <td align='right'> 25513</td> <td align='right'>0</td> </tr>
 <tr style=' background: #fff; border: 1px solid red;'>
-<td>IVA Créditos<small>iva-credito</small></td> <td align='right'>3987</td> <td align='right'>0</td> <td> | </td> <td align='right'> 3987</td> <td align='right'>0</td> </tr>
+<td>Remuneraciones por Pagar<small>salarios-por-pagar</small></td> <td align='right'>0</td> <td align='right'>1117140</td> <td> | </td> <td align='right'> 0</td> <td align='right'>1117140</td> </tr>
 <tr style=' background: #fff; border: 1px solid red;'>
-<td>Caja<small>caja</small></td> <td align='right'>114688</td> <td align='right'>13672</td> <td> | </td> <td align='right'> 101016</td> <td align='right'>0</td> </tr>
+<td>IVA Créditos<small>iva-credito</small></td> <td align='right'>6652</td> <td align='right'>0</td> <td> | </td> <td align='right'> 6652</td> <td align='right'>0</td> </tr>
+<tr style=' background: #fff; border: 1px solid red;'>
+<td>Caja<small>caja</small></td> <td align='right'>114688</td> <td align='right'>27696</td> <td> | </td> <td align='right'> 86992</td> <td align='right'>0</td> </tr>
 </tbody>
 <tfoot>
-<tr> <td></td> <td align='right'> <div>6481780</div></td> <td align='right'> <div>3584442</div></td><td> | </td> <td align='right'> <div>6468108</div></td> <td align='right'> <div>3570770</div></td> </tr>
+<tr> <td></td> <td align='right'> <div>6948469</div></td> <td align='right'> <div>4051131</div></td><td> | </td> <td align='right'> <div>6920773</div></td> <td align='right'> <div>4023435</div></td> </tr>
 </tfoot>
 </table>

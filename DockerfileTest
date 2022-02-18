@@ -16,6 +16,11 @@ COPY alectrico-2021-facts.txt              ./
 COPY alectrico-2021-revisiones.txt         ./
 COPY alectrico-2021-revisiones-cuentas.txt ./
 
+COPY alectrico-2022-facts.txt              ./
+COPY alectrico-2022-revisiones.txt         ./
+COPY alectrico-2022-revisiones-cuentas.txt ./
+
+
 COPY valor-activos.txt      ./
 COPY tasas.txt              ./
 COPY contratos.txt                ./

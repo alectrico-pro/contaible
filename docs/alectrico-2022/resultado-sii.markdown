@@ -13,9 +13,9 @@ Se han practicado liquidaciones, por lo que NO se muestran cuentas nominales
 <thead> <th></th><th> </th> <th align='center' colspan= '2'>SUMAS</th><th> Padre </th> </thead>
 <thead> <th></th><th></th>  <th>DEBER</th> <th>ACREEDOR</th> </thead>
 <tbody>
-<thead> <th></th><th colspan='4'> T O T A L    A C T I V O  </th> <th> 3419383</th> </thead>
+<thead> <th></th><th colspan='4'> T O T A L    A C T I V O  </th> <th> 3405359</th> </thead>
 <thead> <th></th><th colspan='4'> A C T I V O    F I J O</th> <th> 2478162</th> </thead>
-<thead> <th></th><th colspan='4'> A C T I V O    C I R C U L A N T E</th> <th> 941221</th> </thead>
+<thead> <th></th><th colspan='4'> A C T I V O    C I R C U L A N T E</th> <th> 927197</th> </thead>
 <thead> <th></th><th>intangibles</th><th> 2387369</th> </thead>
 <thead> <th></th><th>herramientas</th><th> 218470</th> </thead>
 <thead> <th></th><th>tgr-por-cobrar</th><th> 31203</th> </thead>
@@ -23,17 +23,21 @@ Se han practicado liquidaciones, por lo que NO se muestran cuentas nominales
 <thead> <th></th><th>ppm</th><th> 2728</th> </thead>
 <thead> <th></th><th>insumos</th><th> 507552</th> </thead>
 <thead> <th></th><th>banco-estado</th><th> 274735</th> </thead>
-<thead> <th></th><th>caja</th><th> 101016</th> </thead>
-<thead> <th></th><th>iva-credito</th><th> 3987</th> </thead>
+<thead> <th></th><th>retencion-de-iva-articulo-11</th><th> 0</th> </thead>
+<thead> <th></th><th>caja</th><th> 86992</th> </thead>
+<thead> <th></th><th>iva-credito</th><th> 6652</th> </thead>
 <thead> <th></th><th>amortizacion-acumulada-intangibles</th><th> 0</th> </thead>
 <thead> <th></th><th>depreciacion-acumulada-herramientas</th><th> 0</th> </thead>
 <thead> <th></th><th colspan='4'> G A S T O S    P R O M O C I O N A L E S </th> <th> 0</th> </thead>
-<thead> <th></th><th colspan='4'> G A S T O S     A D M I N I S T R A T I V O S </th> <th> 11489</th></thead>
+<thead> <th></th><th colspan='4'> G A S T O S     A D M I N I S T R A T I V O S </th> <th> 25513</th></thead>
 <tr style='background-color: lavender'>
 <td> enero</td><td><a href= '/alectrico-2022/libro-diario#Partida-2008'>2008</a></td><td><small> entel </small> </td> <td align='right'> 3128</td> <td align='right'>0</td> <td> gastos-administrativos</td>
 </tr>
 <tr style='background-color: lavender'>
 <td> enero</td><td><a href= '/alectrico-2022/libro-diario#Partida-2007'>2007</a></td><td><small> u-chile </small> </td> <td align='right'> 8361</td> <td align='right'>0</td> <td> gastos-administrativos</td>
+</tr>
+<tr style='background-color: lavender'>
+<td> enero</td><td><a href= '/alectrico-2022/libro-diario#Partida-2006'>2006</a></td><td><small> heroku </small> </td> <td align='right'> 14024</td> <td align='right'>0</td> <td> gastos-administrativos</td>
 </tr>
 <thead> <th></th><th colspan='4'> I N T A N G I B L E S </th> <th>2387369</th> </thead>
 <tr style='background-color: lightyellow'>

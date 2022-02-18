@@ -169,6 +169,8 @@
 
 ;-----------------------------  enero ventas -------
 
+
+
 ;considera las pérdidas del año anterior en un registro especial que se puede liquiedar en diciembre o cuando se quiera hacer. Buscar al final de este texto el liquidacion de cuentas acreedoras
 
 ;el iva del mes anterior se ha cargado en la partida 1 como parte del asiento inicial que se hereda desde un ejercicio anterior
