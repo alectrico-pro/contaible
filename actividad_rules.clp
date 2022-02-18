@@ -297,7 +297,7 @@
 )
 
 ;La cuenta de origen se carga y la de destino se abona
-(defrule traspasar
+(defrule traspasar-deudor
    ( revision 
     (partida ?numero)
     (rechazado false) 
@@ -313,12 +313,40 @@
    ( test (> ?debe_o ?haber_o))
 =>
    ( bind ?saldo (- ?debe_o ?haber_o))
-   ( assert (partida (numero ?numero) (mes ?mes) (dia ?dia) (ano ?ano) (descripcion (str-cat "Por traspaso de " ?saldo " de: " ?cuenta-de-origen " a: " ?cuenta-de-destino )) (actividad traspaso)))
+   ( assert (partida (numero ?numero) (mes ?mes) (dia ?dia) (ano ?ano) (descripcion (str-cat "Por traspaso de " ?saldo " de: " ?cuenta-de-origen " a: " ?cuenta-de-destino )) (actividad traspaso-deudor)))
    ( assert (cargo (electronico false) (tipo-de-documento traspaso) (cuenta ?cuenta-de-destino) (partida ?numero) (empresa ?empresa) (monto ?saldo) (dia ?dia) (mes ?mes) (ano ?ano) (glosa (str-cat traspaso- ?saldo)) ))
    ( assert (abono (electronico false) (tipo-de-documento traspaso) (cuenta ?cuenta-de-origen) (partida ?numero) (empresa ?empresa) (monto ?saldo) (dia ?dia) (mes ?mes) (ano ?ano) (glosa (str-cat traspaso- ?saldo))))
    ( assert (ccm (folio na) (partida ?numero) (tipo-documento traspaso) (monto-total ?saldo)))
    ( printout t "Traspaso de " ?saldo " de: " ?cuenta-de-origen " a: " ?cuenta-de-destino  crlf )
 )
+
+
+
+(defrule traspasar-acreedor
+   ( revision
+    (partida ?numero)
+    (rechazado false)
+   )
+
+   ( actual  (mes ?mes))
+   ( balance (ano ?ano_top))
+   ( ticket  (numero ?numero))
+   ( traspaso (partida ?numero ) (dia ?dia) (mes ?mes) (ano ?ano) (cuenta-de-origen ?cuenta-de-origen) (cuenta-de-destino ?cuenta-de-destino))
+   ( empresa (nombre ?empresa ))
+   ( cuenta  (nombre ?cuenta-de-origen ) (debe ?debe_o) (haber ?haber_o))
+   ( cuenta  (nombre ?cuenta-de-destino) )
+   ( test (< ?debe_o ?haber_o))
+=>
+   ( bind ?saldo (- ?haber_o ?debe_o))
+   ( assert (partida (numero ?numero) (mes ?mes) (dia ?dia) (ano ?ano) (descripcion (str-cat "Por traspaso de " ?saldo " de: " ?cuenta-de-origen " a: " ?cuenta-de-destino )) (actividad traspaso-acreedor)))
+   ( assert (abono (electronico false) (tipo-de-documento traspaso) (cuenta ?cuenta-de-destino) (partida ?numero) (empresa ?empresa) (monto ?saldo) (dia ?dia) (mes ?mes) (ano ?ano) (glosa (str-cat traspaso- ?saldo)) ))
+   ( assert (cargo (electronico false) (tipo-de-documento traspaso) (cuenta ?cuenta-de-origen) (partida ?numero) (empresa ?empresa) (monto ?saldo) (dia ?dia) (mes ?mes) (ano ?ano) (glosa (str-cat traspaso- ?saldo))))
+   ( assert (ccm (folio na) (partida ?numero) (tipo-documento traspaso) (monto-total ?saldo)))
+   ( printout t "Traspaso de " ?saldo " de: " ?cuenta-de-origen " a: " ?cuenta-de-destino  crlf )
+)
+
+
+
 
 
 (defrule gastos-en-movilizacion

@@ -19,7 +19,7 @@ Se han practicado liquidaciones, por lo que NO se muestran cuentas nominales
 <thead> <th></th><th>retencion-de-iva-articulo-11</th><th> 0</th> </thead>
 <thead> <th></th><th>iva-credito</th><th> 16140</th> </thead>
 <thead> <th></th><th>ppm</th><th> 2728</th> </thead>
-<thead> <th></th><th>materiales</th><th> 0</th> </thead>
+<thead> <th></th><th>materiales</th><th> 44044</th> </thead>
 <thead> <th></th><th>banco-estado</th><th> 293991</th> </thead>
 <thead> <th></th><th>caja</th><th> 110913</th> </thead>
 <thead> <th></th><th>cuentas-por-cobrar</th><th> 51203</th> </thead>
@@ -235,9 +235,10 @@ Se han practicado liquidaciones, por lo que NO se muestran cuentas nominales
 <td> enero</td><td> <a href= '/alectrico-2021/libro-diario#Partida-8'>8</a></td><td><small> khipu </small> </td> <td align='right'> 50</td> <td align='right'>0</td> <td> costos-de-ventas</td>
 </tr>
 <thead> <th></th><th colspan='4'> I N S U M O S</th> <th>0</th></thead>
-<tr style='background-color: lavender'>
-<td> enero</td><td><a href= '/alectrico-2021/libro-diario#Partida-2112'>2112</a></td><td><small> materiales </small> </td> <td align='right'> 0</td> <td align='right'>44044</td> <td> insumos</td>
+<tr  style='background-color: lightyellow'>
+<td> nil</td><td><small> materiales </small> </td> <td align='right'> 44044</td> <td align='right'>0</td> <td> insumos</td>
 </tr>
+<thead> <th></th><th>materiales</th><th> 44044</th> </thead>
 <tr style='background-color: lavender'>
 <td> enero</td><td><a href= '/alectrico-2021/libro-diario#Partida-1'>1</a></td><td><small> materiales </small> </td> <td align='right'> 44044</td> <td align='right'>0</td> <td> insumos</td>
 </tr>
@@ -272,12 +273,6 @@ Se han practicado liquidaciones, por lo que NO se muestran cuentas nominales
 <td> diciembre</td><td><a href= '/alectrico-2021/libro-diario#Partida-189'>189</a></td><td><small> sodimac-insumos </small> </td> <td align='right'> 8395</td> <td align='right'>0</td> <td> insumos</td>
 </tr>
 <tr  style='background-color: lightyellow'>
-<td> nil</td><td><small> inventario-inicial </small> </td> <td align='right'> 44044</td> <td align='right'>0</td> <td> insumos</td>
-</tr>
-<tr style='background-color: lavender'>
-<td> enero</td><td><a href= '/alectrico-2021/libro-diario#Partida-2112'>2112</a></td><td><small> inventario-inicial </small> </td> <td align='right'> 44044</td> <td align='right'>0</td> <td> insumos</td>
-</tr>
-<tr  style='background-color: lightyellow'>
 <td> nil</td><td><small> easy-insumos </small> </td> <td align='right'> 2134</td> <td align='right'>0</td> <td> insumos</td>
 </tr>
 <tr style='background-color: lavender'>
@@ -295,7 +290,7 @@ Se han practicado liquidaciones, por lo que NO se muestran cuentas nominales
 <tr style='background-color: lavender'>
 <td> agosto</td><td><a href= '/alectrico-2021/libro-diario#Partida-120'>120</a></td><td><small> electrocom-insumos </small> </td> <td align='right'> 25220</td> <td align='right'>0</td> <td> insumos</td>
 </tr>
-<thead> <th></th><th colspan='4'> M A T E R I A L E S </th> <th> 0</th> </thead>
+<thead> <th></th><th colspan='4'> M A T E R I A L E S </th> <th> 44044</th> </thead>
 <tr  style='background-color: lightyellow'>
 <td> nil</td><td><small> easy-materiales </small> </td> <td align='right'> 46605</td> <td align='right'>0</td> <td> materiales</td>
 </tr>

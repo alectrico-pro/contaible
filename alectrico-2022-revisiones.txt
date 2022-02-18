@@ -18,6 +18,9 @@
 (revision (revisado true) (partida 2018))
 (revision (revisado true) (partida 2019))
 (revision (revisado true) (partida 2020))
+(revision (revisado true) (partida 2021))
+(revision (revisado true) (partida 2022))
+(revision (revisado true) (partida 2023))
 
 
 

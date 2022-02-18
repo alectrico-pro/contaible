@@ -23,7 +23,7 @@ Cifras en pesos.
 <td> Ingresos Adelantados </td> </tr>
 <tr> <td> PPM </td> <td>2728</td></tr> 
 <tr> <td> Insumos</td> <td>0</td> </tr>
-<tr> <td> Materiales </td> <td>0</td> </tr>
+<tr> <td> Materiales </td> <td>44044</td> </tr>
 <tr> <td> Inventario </td>
 <td>0</td> </tr> 
 <thead> <th> ACTIVO FIJO </th> <th>2984926</th> 

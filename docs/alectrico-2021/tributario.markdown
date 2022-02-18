@@ -27,7 +27,7 @@ layout: page
 <tr><td> (-) </td><td align='right'>0</td><td></td><td></td><td></td><td> Devoluciones Sobre Compras </td></tr>
 <tr><td> (-) </td><td align='right'>0</td><td></td><td></td><td></td><td> Descuentos Sobre Compras </td></tr>
 <tr><td>(=)</td><td align='right'>0</td><td></td><td></td><td></td><td>Compras Netas</td></tr> 
-<tr><td> (+) </td><td align='right'>44044</td><td></td><td></td><td></td><td colspan='2'>Inventario Inicial</td></tr> 
+<tr><td> (+) </td><td align='right'>0</td><td></td><td></td><td></td><td colspan='2'>Inventario Inicial</td></tr> 
 <tr><td> (-) </td> <td align='right'>-142076</td><td> </td><td></td><td></td><td colspan='2'>Inventario </td></tr>
 <tr><td> (-) </td> <td align='right'>0</td><td> </td><td></td><td></td><td colspan='2'>Inventario Final </td></tr>
 <tr><td> (=) </td> <td align='right'>0</td><td> </td><td></td><td></td><td colspan='2'>Insumos </td></tr>

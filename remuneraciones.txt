@@ -20,7 +20,6 @@
   (declarada true)
   (impuesta true))
 
-
 (remuneracion
   (servicio electricista)
   (trabajador alexander)
@@ -31,7 +30,6 @@
   (pagada true)
   (declarada true)
   (impuesta true))
-
 
 (remuneracion
   ( servicio electricista)
@@ -53,9 +51,7 @@
   (semana-corrida 1)
   (pagada false)
   (declarada false)
-  (impuesta false)
-)
-
+  (impuesta false))
 
 (remuneracion
   (servicio alectricista)
@@ -66,21 +62,18 @@
   (semana-corrida 1)
   (pagada true)
   (declarada false)
-  (impuesta false)
-)
-
+  (impuesta false))
 
 (remuneracion
   (servicio alectricista)
   (trabajador alexander)
   (mes enero)
   (ano 2022)
-  (dias-trabajados 8)
+  (dias-trabajados 7)
   (semana-corrida 1)
   (pagada true)
   (declarada true)
-  (impuesta false)
-)
+  (impuesta false))
 
 (remuneracion
   (servicio alectricista)
@@ -91,11 +84,5 @@
   (semana-corrida 1)
   (pagada true)
   (declarada true)
-  (impuesta false)
-)
-
-
-
-
-
+  (impuesta false))
 

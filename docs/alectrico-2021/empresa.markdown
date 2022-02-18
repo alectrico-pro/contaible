@@ -51,30 +51,6 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'>  </p>
 <br> 
-- [x] voucher en ccm: 184
-- [x] tipo de asiento: traspaso
-- [ ] rcv
-- [ ] libro-diario
-- [ ] ccm
-- [x] revisado
-![](../revisado.png)
-<table id='Partida-2112'>
-<thead> <th style='background-color: lavender' colspan='6'>Partida 2112</th></thead>
-<tbody>
-<tr><td>44044</td> <td colspan='7'>inventario-inicial#insumos</td> </tr>
-<tr><td>44044</td> <td colspan='7'>materiales#insumos</td> </tr>
-<tr style='background-color: lightyellow'>  <td> </td> <td> 44044</td> <td> 44044</td> <td colspan='2'> a[insumos] </td> </tr>
-<tr> <td> </td> <td style='background-color: blanchedalmond'> 44044 </td> <td style='background-color: blanchedalmond'> 44044</td> </tr>
-<tr><td colspan='4'> alectrico® SpA</td> </tr> 
-<tr><td colspan='4'> ( 1 de enero	2021	 ) </td> </tr>
-<tr><td colspan='8'> Partida 2112: Por traspaso de 44044 de: materiales a: inventario-inicial </td></tr>
-<tr><td colspan = '8'> traspaso</td> </tr>
-</tbody>
-</table>
-<p style='page-break-before: always;'>&nbsp;</p>
-<br> 
-<p style='color: white; background-color: red'>  </p>
-<br> 
 - [x] antiguo número de partida: 3
 - [x] voucher en ccm: 192
 - [x] tipo de asiento: resumen-rendicion-de-e-boletas

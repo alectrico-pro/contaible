@@ -9,8 +9,8 @@ RUN mkdir /doc/_posts
 RUN mkdir /doc/_data
 
 #input to contabilidad.py
-COPY *.bat                    ./
-COPY *.clp                    ./
+COPY *.bat                                 ./
+COPY *.clp                                 ./
 
 COPY alectrico-2021-facts.txt              ./
 COPY alectrico-2021-revisiones.txt         ./
@@ -21,8 +21,8 @@ COPY alectrico-2022-revisiones.txt         ./
 COPY alectrico-2022-revisiones-cuentas.txt ./
 
 
-COPY valor-activos.txt      ./
-COPY tasas.txt              ./
+COPY valor-activos.txt            ./
+COPY tasas.txt                    ./
 COPY contratos.txt                ./
 copy cuentas.txt                  ./
 copy proveedores.txt              ./
