@@ -71,12 +71,33 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <table id='Partida-2001'>
 <thead> <th style='background-color: lavender' colspan='6'>Partida 2001</th></thead>
 <tbody>
+ <tr style='color: white; background-color: cornflowerblue' > <td> </td> <td> 185989 </td> <td>  0 </td> <td> </td> <td> k[revalorizacion-del-capital-propio]</td> </tr>
+ <tr style='color: white; background-color: cornflowerblue' > <td> </td> <td> 0 </td> <td>  185989 </td> <td> </td> <td> k[capital-social]</td> </tr>
+<tr> <td> </td> <td style='background-color: blanchedalmond'> 185989 </td> <td style='background-color: blanchedalmond'> 185989</td> </tr>
+<tr><td colspan='4'> alectrico® SpA</td> </tr> 
+<tr><td colspan='4'> ( 1 de enero	2022	 ) </td> </tr>
+<tr><td colspan='8'> Partida 2001: Por traspaso de 185989 de: revalorizacion-del-capital-propio a: capital-social </td></tr>
+<tr><td colspan = '8'> traspaso-acreedor</td> </tr>
+</tbody>
+</table>
+<p style='page-break-before: always;'>&nbsp;</p>
+<br> 
+<p style='color: white; background-color: red'>  </p>
+<br> 
+- [ ] rcv
+- [ ] libro-diario
+- [ ] ccm
+- [x] revisado
+![](../revisado.png)
+<table id='Partida-2002'>
+<thead> <th style='background-color: lavender' colspan='6'>Partida 2002</th></thead>
+<tbody>
  <tr style='color: white; background-color: cornflowerblue' > <td> </td> <td> 504670 </td> <td>  0 </td> <td> </td> <td> k[utilidad]</td> </tr>
- <tr style='color: white; background-color: cornflowerblue' > <td> </td> <td> 0 </td> <td>  504670 </td> <td> </td> <td> k[utilidades-acumuladas]</td> </tr>
+ <tr style='color: white; background-color: cornflowerblue' > <td> </td> <td> 0 </td> <td>  504670 </td> <td> </td> <td> k[capital-social]</td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 504670 </td> <td style='background-color: blanchedalmond'> 504670</td> </tr>
 <tr><td colspan='4'> alectrico® SpA</td> </tr> 
 <tr><td colspan='4'> ( 1 de enero	2022	 ) </td> </tr>
-<tr><td colspan='8'> Partida 2001: Por traspaso de 504670 de: utilidad a: utilidades-acumuladas </td></tr>
+<tr><td colspan='8'> Partida 2002: Por traspaso de 504670 de: utilidad a: capital-social </td></tr>
 <tr><td colspan = '8'> traspaso-acreedor</td> </tr>
 </tbody>
 </table>

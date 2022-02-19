@@ -613,7 +613,7 @@
   (tipo acreedora)
   (circulante false)
   (grupo patrimonio)
-  (naturaleza acreedora)
+  (naturaleza mixta)
   (origen real))
 
 (cuenta (nombre utilidades-acumuladas)

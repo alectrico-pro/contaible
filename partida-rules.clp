@@ -42,9 +42,9 @@
    ( if (neq nil l) then (close l))
    ( printout t "------------------- inicio-kindle-l ------------" crlf)
 
- ;  ( bind ?archivo (str-cat "./templates/index.html"))
+   ( bind ?archivo (str-cat "./templates/index.html"))
 
-;   ( open ?archivo l "w")
+   ( open ?archivo l "w")
  ;  ( printout l "{% extends \"clips.html\" %}" crlf)
  ;  ( printout l "{% load static %}" crlf)
   ; ( printout l "{% block clips %}" crlf)

@@ -41,10 +41,10 @@ Cifras en pesos.
 <tr><td> Amortización Acumulada Intangibles </td> <td align='right' style='font-weight:bold; color: white; background-color: crimson'>(36254)</td> <td colspan='2'> </td> </tr>
 <tr><td> Depreciación Acumulada Herramientas </td> <td align='right' style='font-weight:bold; color: white; background-color: crimson'>(103644)</td><td colspan='2'> </td> </tr>
 <thead> <td> </td> <td> </td> <th> TOTAL PASIVO </th> <th align='right'> 859620</th></thead>
-<thead> <td> </td> <td> </td> <th> PATRIMONIO </th> <th align='right'>1875998</th> </thead><tr> <td colspan='2'></td> <td> Capital Social </td><td align='right'> 2085294</td> </tr>
+<thead> <td> </td> <td> </td> <th> PATRIMONIO </th> <th align='right'>1875998</th> </thead><tr> <td colspan='2'></td> <td> Capital Social </td><td align='right'> 2775953</td> </tr>
 <tr> <td colspan='2'></td> <td> Reserva Legal </td> <td align='right' >0</td> </tr>
-<tr> <td colspan='2'></td> <td> Utilidades Acumuladas </td> <td align='right' >504670</td> </tr>
-<tr> <td colspan='2'></td> <td> Revalorización del Capital Propio </td> <td align='right' >185989</td> </tr>
+<tr> <td colspan='2'></td> <td> Utilidades Acumuladas </td> <td align='right' >0</td> </tr>
+<tr> <td colspan='2'></td> <td> Revalorización del Capital Propio </td> <td align='right' >0</td> </tr>
 <tr> <td colspan='2'></td> <td> Utilidad del Ejercicio </td><td align='right'>-899955</td> </tr>
 <thead><th>TOTAL ACTIVOS</th><th style='background-color: lightgreen'>2735618</th><th>TOTAL PASIVO + PATRIMONIO</th><th style='background-color: lightgreen'>2735618</th></thead>
 <tr><td colspan='8'> alectrico® SpA </td> </tr>

@@ -243,11 +243,21 @@
  ( dia 1) ( mes enero) ( ano 2022)
  ( glosa asiento-de-apertura-2022))
 
+
+
 ( traspaso
  (partida 2001)
  (dia 1) (mes enero) (ano 2022)
+ (cuenta-de-origen  revalorizacion-del-capital-propio)
+ (cuenta-de-destino capital-social))
+
+
+
+( traspaso
+ (partida 2002)
+ (dia 1) (mes enero) (ano 2022)
  (cuenta-de-origen utilidad)
- (cuenta-de-destino utilidades-acumuladas))
+ (cuenta-de-destino capital-social))
 
 ;( traspaso
 ; (partida 2002)
