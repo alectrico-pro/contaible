@@ -251,7 +251,7 @@
 
    ( printout k "<tr> <td> Banco Estado </td> <td align='right'  >" (- ?banco-estado-deber ?banco-estado-acreedor) "</td></tr>" crlf)
 
-   ( printout k "<tr> <td> Clientes </td> <td align='right' >" ?clientes "</td> <td align='right' >  IVA Débito </td> <td>" ?iva-por-pagar "</td> </tr>" crlf)
+   ( printout k "<tr> <td> Clientes </td> <td align='right' >" ?clientes "</td> <td >  IVA Débito </td> <td align='right'>" ?iva-por-pagar "</td> </tr>" crlf)
 
    ( printout k "<tr> <td> Cuentas por Cobrar </td> <td align='right' >" ?cuentas-por-cobrar "</td></tr>" crlf)
    ( printout k "<tr> <td> Retenciones </td> <td align='right' style='font-weight:bold; color: white; background-color: crimson'>(  " ?retencion-de-iva  ")</td> </tr> " crlf)
@@ -438,7 +438,7 @@
    ( printout t tab tab tab tab "|" "Reserva Legal".. (- ?reserva-legal-acreedor ?reserva-legal-deber) crlf)
    ( printout t tab tab tab tab "|" "Utilidades AC".. ?utilidades-acumuladas crlf)
    ( printout t tab tab tab tab "|" "Aportes".. ?aportes crlf)
-
+   ( printout t tab tab tab tab "|" "Rev.Capital" ?revalorizacion-del-capital-propio crlf)
    ( printout t tab tab tab tab "|" "Utilidad del "  crlf)
    ( printout t tab tab tab tab "|" "Ejercicio...... " (- ?utilidad-acreedor ?utilidad-deber) crlf)
    ( printout t "------------------------------------------------------------------------" crlf)

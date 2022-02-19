@@ -226,16 +226,13 @@ layout: page
 pagos.</th></thead>
 <thead><th> voucher </th><th> partida </th><th> debe </th> <th> | </th> <th> haber </th><th> mes </th> <th>recibida</th> <th>factor corrección monetaria</th> <th> tipo documento</th></thead>
 <tbody>
-<tr> <td> </td> <td align='right'> <a href= '/alectrico-2022/libro-diario#Partida-2012'>2012</a> </td> <td align='right'>0</td> <td> | </td> <td align='right'> 0</td> <td>febrero</td><td>false</td><td> 1</td><td> previred°salarios</td> </tr>
 <tr> <td> </td> <td align='right'> <a href= '/alectrico-2022/libro-diario#Partida-2011'>2011</a> </td> <td align='right'>0</td> <td> | </td> <td align='right'> 104040</td> <td>febrero</td><td>false</td><td> 1</td><td> declaracion*remuneraciones</td> </tr>
 <tr> <td> </td> <td align='right'> <a href= '/alectrico-2022/libro-diario#Partida-2011'>2011</a> </td> <td align='right'>0</td> <td> | </td> <td align='right'> 345960</td> <td>febrero</td><td>false</td><td> 1</td><td> declaracion°remuneraciones</td> </tr>
-<tr> <td> </td> <td align='right'> <a href= '/alectrico-2022/libro-diario#Partida-2012'>2012</a> </td> <td align='right'>350000</td> <td> | </td> <td align='right'> 0</td> <td>febrero</td><td>false</td><td> 1</td><td> previred°salarios</td> </tr>
 <tr> <td> </td> <td align='right'> <a href= '/alectrico-2022/libro-diario#Partida-2000'>2000</a> </td> <td align='right'>0</td> <td> | </td> <td align='right'> 667140</td> <td>enero</td><td>false</td><td> 1</td><td> escritura-empresa</td> </tr>
 <tr> <td> </td> <td align='right'> <a href= '/alectrico-2022/libro-diario#Partida-2005'>2005</a> </td> <td align='right'>0</td> <td> | </td> <td align='right'> 92480</td> <td>enero</td><td>false</td><td> 1</td><td> declaracion*remuneraciones</td> </tr>
 <tr> <td> </td> <td align='right'> <a href= '/alectrico-2022/libro-diario#Partida-2005'>2005</a> </td> <td align='right'>0</td> <td> | </td> <td align='right'> 307520</td> <td>enero</td><td>false</td><td> 1</td><td> declaracion°remuneraciones</td> </tr>
-<tr> <td> </td> <td align='right'> <a href= '/alectrico-2022/libro-diario#Partida-2006'>2006</a> </td> <td align='right'>307520</td> <td> | </td> <td align='right'> 0</td> <td>enero</td><td>false</td><td> 1</td><td> previred°remuneraciones</td> </tr>
-<tr> <td></td> <td></td> <td align='right'>657520 <small> 657520</small> </td> <td>|</td> <td align='right'>1517140<small> 1517140</small> </td></tr>
-<tr> <td> </td> <td> </td> <td></td> <td>|</td> <td align='right'>859620 <small> 859620</small></td> <td>$</td> </tr>
+<tr> <td></td> <td></td> <td align='right'>0 <small> 0</small> </td> <td>|</td> <td align='right'>1517140<small> 1517140</small> </td></tr>
+<tr> <td> </td> <td> </td> <td></td> <td>|</td> <td align='right'>1517140 <small> 1517140</small></td> <td>$</td> </tr>
 <tr> <td colspan='2'> Monto Corrección</td><td></td><td>$</td> <td align='right'>0 </td></tr>
 </tbody>
 </table>
@@ -297,13 +294,11 @@ pagos.</th></thead>
 <thead><th colspan='9'> Dinero en Banco Estado</th></thead>
 <thead><th> voucher </th><th> partida </th><th> debe </th> <th> | </th> <th> haber </th><th> mes </th> <th>recibida</th> <th>factor corrección monetaria</th> <th> tipo documento</th></thead>
 <tbody>
-<tr> <td> </td> <td align='right'> <a href= '/alectrico-2022/libro-diario#Partida-2012'>2012</a> </td> <td align='right'>0</td> <td> | </td> <td align='right'> 350000</td> <td>febrero</td><td>false</td><td> 1</td><td> previred°salarios</td> </tr>
 <tr> <td> </td> <td align='right'> <a href= '/alectrico-2022/libro-diario#Partida-2013'>2013</a> </td> <td align='right'>10000</td> <td> | </td> <td align='right'> 0</td> <td>febrero</td><td>false</td><td> 1</td><td> traspaso</td> </tr>
 <tr> <td> </td> <td align='right'> <a href= '/alectrico-2022/libro-diario#Partida-2000'>2000</a> </td> <td align='right'>274735</td> <td> | </td> <td align='right'> 0</td> <td>enero</td><td>false</td><td> 1</td><td> escritura-empresa</td> </tr>
-<tr> <td> </td> <td align='right'> <a href= '/alectrico-2022/libro-diario#Partida-2006'>2006</a> </td> <td align='right'>0</td> <td> | </td> <td align='right'> 307520</td> <td>enero</td><td>false</td><td> 1</td><td> previred°alexander</td> </tr>
-<tr> <td></td> <td></td> <td align='right'>284735 <small> 284735</small> </td> <td>|</td> <td align='right'>657520<small> 657520</small> </td></tr>
-<tr> <td> </td> <td> </td> <td></td> <td>|</td> <td align='right'>372785 <small> 372785</small></td> <td>$</td> </tr>
-<tr> <td colspan='2'> Monto Corrección</td><td></td><td>$</td> <td align='right'>0 </td></tr>
+<tr> <td></td> <td></td> <td align='right'>284735 <small> 284735</small> </td> <td>|</td> <td align='right'>0<small> 0</small> </td></tr>
+<tr> <td></td> <td>$</td> <td align='right'>284735 <small> 284735</small></td></tr>
+<tr> <td> Monto Corrección </td> <td>$</td> <td align='right'>0 </td></tr>
 </tbody>
 </table>
 <table>

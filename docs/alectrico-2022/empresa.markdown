@@ -61,8 +61,9 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 </table>
 <p style='page-break-before: always;'>&nbsp;</p>
 <br> 
-<p style='color: white; background-color: red'>  </p>
+<p style='color: white; background-color: red'> Debe hacerse una corrección en tu empresa en un dia y publicarlo en notaria</p>
 <br> 
+- [x] a corregir: Debe hacerse una corrección en tu empresa en un dia y publicarlo en notaria
 - [ ] rcv
 - [ ] libro-diario
 - [ ] ccm
@@ -82,8 +83,9 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 </table>
 <p style='page-break-before: always;'>&nbsp;</p>
 <br> 
-<p style='color: white; background-color: red'>  </p>
+<p style='color: white; background-color: red'> Debe hacerse una correción en tu empresa en un día y publicarlo en notaría</p>
 <br> 
+- [x] a corregir: Debe hacerse una correción en tu empresa en un día y publicarlo en notaría
 - [ ] rcv
 - [ ] libro-diario
 - [ ] ccm
@@ -125,31 +127,6 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <tr><td colspan='8'> Partida 2005: Declaración de Remuneraciones de alexander días trabajados: 7 Tramo Exento: 740853.0 Sueldo Bruto de: 400000 Tasa de Impuesto Único: 0.04 Monto de Impuesto Único: 0 </td></tr>
 <tr> <td colspan='7'>efectuado a electrico </td> </tr>
 <tr><td colspan = '8'> declarar-remuneraciones</td> </tr>
-</tbody>
-</table>
-<p style='page-break-before: always;'>&nbsp;</p>
-<br> 
-<p style='color: white; background-color: red'>  </p>
-<br> 
-- [ ] rcv
-- [ ] libro-diario
-- [ ] ccm
-- [x] Referencia: <a href= '/alectrico-2021/libro-diario#Partida--88'>-88 </a>
-- [x] revisado
-![](../revisado.png)
-<table id='Partida-2006'>
-<thead> <th style='background-color: lavender' colspan='6'>Partida 2006</th></thead>
-<tbody>
-<tr> <td> 0 </td> <td> </td> <td colspan='7'> impuesto-unico-por-pagar#salarios-por-pagar </td> </tr> 
-<tr> <td> 307520 </td> <td> </td> <td colspan='7'> remuneraciones-por-pagar#salarios-por-pagar </td> </tr> 
-<tr style='background-color: lightyellow'>  <td> </td> <td> 0</td> <td> 307520</td> <td colspan='2'> a[banco-estado] </td> </tr>
-<tr style='background-color: azure'>  <td> </td> <td> 307520 </td> <td> 0 </td> <td> </td><td> p[salarios-por-pagar] </td> </tr>
-<tr> <td> </td> <td style='background-color: blanchedalmond'> 307520 </td> <td style='background-color: blanchedalmond'> 307520</td> </tr>
-<tr><td colspan='4'> alectrico® SpA</td> </tr> 
-<tr><td colspan='4'> ( 8 de enero	2022	 ) </td> </tr>
-<tr><td colspan='8'> Partida 2006: pagando-remuneraciones </td></tr>
-<tr> <td colspan='7'>efectuado a alexander </td> </tr>
-<tr><td colspan = '8'> pagar-solo-remuneraciones</td> </tr>
 </tbody>
 </table>
 <p style='page-break-before: always;'>&nbsp;</p>
@@ -285,33 +262,6 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 - [ ] rcv
 - [ ] libro-diario
 - [ ] ccm
-- [x] Referencia: <a href= '/alectrico-2022/libro-diario#Partida-2005'>2005 </a>
-- [x] revisado
-![](../revisado.png)
-<table id='Partida-2012'>
-<thead> <th style='background-color: lavender' colspan='6'>Partida 2012</th></thead>
-<tbody>
-<tr> <td> 0 </td> <td> </td> <td colspan='7'> impuesto-unico-por-pagar#salarios-por-pagar </td> </tr> 
-<tr> <td> 267820 </td> <td> </td> <td colspan='7'> remuneraciones-por-pagar#salarios-por-pagar </td> </tr> 
-<tr> <td> 82180 </td> <td> </td> <td colspan='7'> entidades-previsionales-por-pagar#salarios-por-pagar </td> </tr> 
-<tr style='background-color: lightyellow'>  <td> </td> <td> 0</td> <td> 350000</td> <td colspan='2'> a[banco-estado] </td> </tr>
-<tr style='background-color: azure'>  <td> </td> <td> 350000 </td> <td> 0 </td> <td> </td><td> p[salarios-por-pagar] </td> </tr>
-<tr> <td> </td> <td style='background-color: blanchedalmond'> 350000 </td> <td style='background-color: blanchedalmond'> 350000</td> </tr>
-<tr><td colspan='4'> alectrico® SpA</td> </tr> 
-<tr><td colspan='4'> ( 1 de febrero	2022	 ) </td> </tr>
-<tr><td colspan='8'> Partida 2012: pagando-salarios </td></tr>
-<tr> <td colspan='7'>efectuado a alexander </td> </tr>
-<tr><td colspan = '8'> pagar-salarios</td> </tr>
-<tr style='background-color: aliceblue'> <td colspan = '8'> <img src='../previred-prevision-20022021092580.png'></td> </tr>
-</tbody>
-</table>
-<p style='page-break-before: always;'>&nbsp;</p>
-<br> 
-<p style='color: white; background-color: red'>  </p>
-<br> 
-- [ ] rcv
-- [ ] libro-diario
-- [ ] ccm
 - [x] revisado
 ![](../revisado.png)
 <table id='Partida-2013'>
@@ -322,7 +272,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 10000 </td> <td style='background-color: blanchedalmond'> 10000</td> </tr>
 <tr><td colspan='4'> alectrico® SpA</td> </tr> 
 <tr><td colspan='4'> ( 3 de febrero	2022	 ) </td> </tr>
-<tr><td colspan='8'> Partida 2013: nil </td></tr>
+<tr><td colspan='8'> Partida 2013: Segundo pago del Parecer THHN. Recibido de Gonzalo vía Mach. </td></tr>
 <tr> <td colspan='7'>efectuado a cuentas-por-cobrar </td> </tr>
 <tr><td colspan = '8'> pagar-monto</td> </tr>
 </tbody>
