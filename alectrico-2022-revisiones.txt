@@ -1,16 +1,30 @@
 (revision (revisado true) (partida 2000))
-(revision (revisado true) (partida 2001))
-(revision (revisado true) (partida 2002))
+
+(revision (revisado true) (partida 2001)
+ (a-corregir "Debe hacerse una corrección en tu empresa en un dia y publicarlo en notaria"))
+
+(revision (revisado true) (partida 2002)
+ (a-corregir  "Debe hacerse una correción en tu empresa en un día y publicarlo en notaría"))
+
 (revision (revisado true) (partida 2003))
 (revision (revisado true) (partida 2004))
 (revision (revisado true) (partida 2005))
-(revision (revisado true) (partida 2006))
+
+(revision (revisado true) (partida 2006)
+ (a-corregir "Todavía no puedo pagar" )
+ (rechazado true))
+
 (revision (revisado true) (partida 2007))
 (revision (revisado true) (partida 2008))
 (revision (revisado true) (partida 2009))
 (revision (revisado true) (partida 2010))
 (revision (revisado true) (partida 2011))
-(revision (revisado true) (partida 2012))
+
+
+(revision (revisado true) (partida 2012)
+ (a-corregir "Todavía no lo puedo pagar")
+ (rechazado true))
+
 (revision (revisado true) (partida 2013))
 (revision (revisado true) (partida 2014))
 (revision (revisado true) (partida 2015))

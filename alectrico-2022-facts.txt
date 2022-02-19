@@ -252,29 +252,11 @@
  (cuenta-de-destino capital-social))
 
 
-
 ( traspaso
  (partida 2002)
  (dia 1) (mes enero) (ano 2022)
  (cuenta-de-origen utilidad)
  (cuenta-de-destino capital-social))
-
-;( traspaso
-; (partida 2002)
-; (dia 1) (mes enero) (ano 2022)
-; (cuenta-de-origen materiales)
-; (cuenta-de-destino inventario))
-
-;( inventario (dia 1)
-; (mes enero)
-; (u 1)
-; (operacion asiento-inicial)
-; (material materiales)
-; (partida 2003)
-; (ct 44044)
-; (cu 44044))
-
-
 
 ;------------------------------------ enero compras -------------------------------------
 ;reconocimiento de salarios de enero
@@ -406,7 +388,9 @@
   ( monto 10000)
   ( dia 3)
   ( mes febrero)
-  ( ano 2022))
+  ( ano 2022)
+  ( glosa "Segundo pago del Parecer THHN. Recibido de Gonzalo vía Mach.")
+)
 
 
 ( ajustes-mensuales 
