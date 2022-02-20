@@ -3223,7 +3223,6 @@
    (efecto perdedor))
 
 
-
 ( ajuste-anual-de-resultado-financiero
    (ano 2021) (partida 215))
 
