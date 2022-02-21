@@ -3142,16 +3142,13 @@
  ( glosa activacion-plataforma-alectrico))
 
 
-(cargo
- ( electronico false)
- ( tipo-de-documento ajuste)
- ( empresa alectrico-2021)
- ( cuenta plataforma-alectrico)
- ( monto 123645)
- ( partida 203)
- ( dia 31)  ( mes diciembre)  ( ano 2021)
- ( glosa activacion-plataforma-alectrico))
 
+;----------------------------------------------------
+(partida
+ (numero 204)
+ (dia 31) (mes diciembre) (ano 2021)
+ (descripcion "Por Reconocimiento de Existencias de Materiales como Costos de Mercancías.")
+ (actividad reconocimiento-de-costos-de-mercancias))
 
 
 (abono
@@ -3159,10 +3156,22 @@
  ( tipo-de-documento ajuste)
  ( empresa alectrico-2021)
  ( cuenta materiales)
- ( monto  123645)
- ( partida 203)
+ ( monto 123645)
+ ( partida 204)
  ( dia 31)  ( mes diciembre)  ( ano 2021)
- ( glosa activacion-plataforma-alectrico))
+ ( glosa renocimiento-de-costos-de-mercancias))
+
+
+
+(cargo
+ ( electronico false)
+ ( tipo-de-documento ajuste)
+ ( empresa alectrico-2021)
+ ( cuenta costos-de-mercancias)
+ ( monto  123645)
+ ( partida 204)
+ ( dia 31)  ( mes diciembre)  ( ano 2021)
+ ( glosa reconocimiento-de-costos-de-mercancias))
 
 
 
@@ -3172,7 +3181,7 @@
 
 ;reconocimiento de salarios de noviembre
 (salario
- (partida 204)
+ (partida 205)
  (departamento electrico)
  (nombre alexander)
  (servicio electricista)
