@@ -31,9 +31,7 @@ NO se han practicado liquidaciones, por lo que SÍ se muestran cuentas nominales
 <thead> <th></th>  <th align='center'>DEBE</th> <th align='center'>HABER</th> <th>|</th> <th align='center'>DEBER</th> <th align='center'>ACREEDOR</th> <th>A Corregir </th> </thead>
 <tbody>
 <tr style=' background: #fff; border: 1px solid red;'>
-<td><small>costos-de-mercancias</small></td> <td align='right'>123645</td> <td align='right'>0</td> <td> | </td> <td align='right'> 123645</td> <td align='right'>0</td> </tr>
-<tr style=' background: #fff; border: 1px solid red;'>
-<td><small>plataforma-alectrico</small></td> <td align='right'>2520898</td> <td align='right'>0</td> <td> | </td> <td align='right'> 2520898</td> <td align='right'>0</td> </tr>
+<td><small>plataforma-alectrico</small></td> <td align='right'>2150000</td> <td align='right'>0</td> <td> | </td> <td align='right'> 2150000</td> <td align='right'>0</td> </tr>
 <tr style=' background: #fff; border: 1px solid red;'>
 <td><small>electrocom-materiales</small></td> <td align='right'>25971</td> <td align='right'>0</td> <td> | </td> <td align='right'> 25971</td> <td align='right'>0</td> </tr>
 <tr style=' background: #fff; border: 1px solid red;'>
@@ -95,7 +93,10 @@ NO se han practicado liquidaciones, por lo que SÍ se muestran cuentas nominales
 <td><small>ventas-con-eboleta-afecta</small></td> <td align='right'>69416</td> <td align='right'>79910</td> <td> | </td> <td align='right'> 0</td> <td align='right'>10494</td>
 </tr>
 <tr>
-<td>Intangibles<small>intangibles</small> </td> <td align='right'>2810898</td> <td align='right'>52631</td> <td> | </td> <td align='right'> 2758267</td> <td align='right'>0</td> 
+<td><small>materiales</small></td> <td align='right'>167689</td> <td align='right'>0</td> <td> | </td> <td align='right'> 167689</td> <td align='right'>0</td>
+</tr>
+<tr>
+<td>Intangibles<small>intangibles</small> </td> <td align='right'>2440000</td> <td align='right'>52631</td> <td> | </td> <td align='right'> 2387369</td> <td align='right'>0</td> 
 <td colspan='2' style=' background: #faa; border: 1px solid red;'>Subcuenta </td>
 </tr>
 <tr>
@@ -116,15 +117,12 @@ NO se han practicado liquidaciones, por lo que SÍ se muestran cuentas nominales
 <td>IVA Débitos<small>iva-debito</small></td> <td align='right'>346685</td> <td align='right'>386847</td> <td> | </td> <td align='right'> 0</td> <td align='right'>40162</td>
 </tr>
 <tr style=' background: #fff; border: 1px solid red;'>
-<td>Insumos<small>insumos</small></td> <td align='right'>370898</td> <td align='right'>494543</td> <td> | </td> <td align='right'> 0</td> <td align='right'>123645</td> </tr>
+<td>Insumos<small>insumos</small></td> <td align='right'>370898</td> <td align='right'>530147</td> <td> | </td> <td align='right'> 0</td> <td align='right'>159249</td> </tr>
 <tr>
 <td>Caja<small>caja</small></td> <td align='right'>1107841</td> <td align='right'>996928</td> <td> | </td> <td align='right'> 110913</td> <td align='right'>0</td>
 </tr>
 <tr>
 <td>Banco Estado<small>banco-estado</small></td> <td align='right'>4492808</td> <td align='right'>4198817</td> <td> | </td> <td align='right'> 293991</td> <td align='right'>0</td>
-</tr>
-<tr>
-<td><small>materiales</small></td> <td align='right'>167689</td> <td align='right'>123645</td> <td> | </td> <td align='right'> 44044</td> <td align='right'>0</td>
 </tr>
 <tr>
 <td>PPM (Pago Provisional Mensual)<small>ppm</small></td> <td align='right'>2728</td> <td align='right'>0</td> <td> | </td> <td align='right'> 2728</td> <td align='right'>0</td>
@@ -138,10 +136,10 @@ NO se han practicado liquidaciones, por lo que SÍ se muestran cuentas nominales
 <tr style=' background: #fff; border: 1px solid red;'>
 <td><small>retencion-de-iva-articulo-11</small></td> <td align='right'>23608</td> <td align='right'>25108</td> <td> | </td> <td align='right'> 0</td> <td align='right'>1500</td> </tr>
 <tr>
-<td><small>costos-de-ventas</small></td> <td align='right'>11417</td> <td align='right'>409</td> <td> | </td> <td align='right'> 11008</td> <td align='right'>0</td>
+<td><small>costos-de-ventas</small></td> <td align='right'>541564</td> <td align='right'>409</td> <td> | </td> <td align='right'> 541155</td> <td align='right'>0</td>
 </tr>
 </tbody>
 <tfoot>
-<tr> <td></td> <td align='right'> <div>21740401</div></td> <td align='right'> <div>20993130</div></td><td> | </td> <td align='right'> <div>7846865</div></td> <td align='right'> <div>7099594</div></td> </tr>
+<tr> <td></td> <td align='right'> <div>21405107</div></td> <td align='right'> <div>20905089</div></td><td> | </td> <td align='right'> <div>7635216</div></td> <td align='right'> <div>7135198</div></td> </tr>
 </tfoot>
 </table>

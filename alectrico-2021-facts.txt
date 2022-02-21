@@ -3119,35 +3119,67 @@
 
 
 
-(cargo
- ( electronico false)
- ( tipo-de-documento ajuste)
- ( empresa alectrico-2021)
- ( cuenta plataforma-alectrico)
- ( monto 370898)
- ( partida 203)
- ( dia 31)  ( mes diciembre)  ( ano 2021)
- ( glosa activacion-plataforma-alectrico))
+;(cargo
+; ( electronico false)
+; ( tipo-de-documento ajuste)
+; ( empresa alectrico-2021)
+; ( cuenta plataforma-alectrico)
+; ( monto 370898)
+; ( partida 203)
+; ( dia 31)  ( mes diciembre)  ( ano 2021)
+; ( glosa activacion-plataforma-alectrico))
 
 
 
-(abono
- ( electronico false)
- ( tipo-de-documento ajuste)
- ( empresa alectrico-2021)
- ( cuenta insumos)
- ( monto  370898)
- ( partida 203)
- ( dia 31)  ( mes diciembre)  ( ano 2021)
- ( glosa activacion-plataforma-alectrico))
+;(abono
+; ( electronico false)
+; ( tipo-de-documento ajuste)
+; ( empresa alectrico-2021)
+; ( cuenta insumos)
+; ( monto  370898)
+; ( partida 203)
+; ( dia 31)  ( mes diciembre)  ( ano 2021)
+; ( glosa activacion-plataforma-alectrico))
+
+
+
+;----------------------------------------------------
+;(partida
+; (numero 204)
+; (dia 31) (mes diciembre) (ano 2021)
+; (descripcion "Por Reconocimiento de Existencias de Materiales como Costos de Mercancías.")
+; (actividad reconocimiento-de-costos-de-mercancias))
+
+
+;(abono
+; ( electronico false)
+; ( tipo-de-documento ajuste)
+; ( empresa alectrico-2021)
+; ( cuenta materiales)
+; ( monto 123645)
+; ( partida 204)
+; ( dia 31)  ( mes diciembre)  ( ano 2021)
+; ( glosa renocimiento-de-costos-de-mercancias))
+
+
+
+;(cargo
+; ( electronico false)
+; ( tipo-de-documento ajuste)
+; ( empresa alectrico-2021)
+; ( cuenta costos-de-mercancias)
+; ( monto  123645)
+; ( partida 204)
+; ( dia 31)  ( mes diciembre)  ( ano 2021)
+; ( glosa reconocimiento-de-costos-de-mercancias))
 
 
 
 ;----------------------------------------------------
 (partida
- (numero 204)
+ (numero 205)
  (dia 31) (mes diciembre) (ano 2021)
- (descripcion "Por Reconocimiento de Existencias de Materiales como Costos de Mercancías.")
+ (descripcion "Por Reconocimiento de Existencias de Insumos como Costos de Ventas.")
  (actividad reconocimiento-de-costos-de-mercancias))
 
 
@@ -3155,25 +3187,25 @@
  ( electronico false)
  ( tipo-de-documento ajuste)
  ( empresa alectrico-2021)
- ( cuenta materiales)
- ( monto 123645)
- ( partida 204)
+ ( cuenta insumos)
+ ( monto 530147)
+ ( partida 205)
  ( dia 31)  ( mes diciembre)  ( ano 2021)
- ( glosa renocimiento-de-costos-de-mercancias))
+ ( glosa renocimiento-de-costos-de-ventas))
 
-
+;370898)
+;530147
+;494543
 
 (cargo
  ( electronico false)
  ( tipo-de-documento ajuste)
  ( empresa alectrico-2021)
- ( cuenta costos-de-mercancias)
- ( monto  123645)
- ( partida 204)
+ ( cuenta costos-de-ventas)
+ ( monto  530147) 
+ ( partida 205)
  ( dia 31)  ( mes diciembre)  ( ano 2021)
- ( glosa reconocimiento-de-costos-de-mercancias))
-
-
+ ( glosa reconocimiento-de-costos-de-ventas))
 
 
 
@@ -3181,7 +3213,7 @@
 
 ;reconocimiento de salarios de noviembre
 (salario
- (partida 205)
+ (partida 206)
  (departamento electrico)
  (nombre alexander)
  (servicio electricista)
@@ -3195,12 +3227,12 @@
 ;-----------------------------------------------
 
 
-(deposito (partida 206) (banco banco-estado) (monto 800000 ) (dia 31) (mes diciembre) (ano 2021) )
+(deposito (partida 207) (banco banco-estado) (monto 800000 ) (dia 31) (mes diciembre) (ano 2021) )
 
 
 
-( ajustes-mensuales (mes diciembre) (ano 2021) (partida 207))
-( ajuste-de-iva     (mes diciembre) (ano 2021) (partida 208))
+( ajustes-mensuales (mes diciembre) (ano 2021) (partida 208))
+( ajuste-de-iva     (mes diciembre) (ano 2021) (partida 209))
 
 
 ;tributario

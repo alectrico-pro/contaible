@@ -10,8 +10,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <li><span style='background-color: gold'>[    ]</span> ganancia </li>
 <li><span style='color: white; background-color: black'>[    ]</span> pérdida </li>
 <table><tbody>
-<tr><td>pérdida</td><td>123645</td><td></td><td>costos-de-mercancias</td></tr>
-<tr><td>pérdida</td><td>11008</td><td></td><td>costos-de-ventas</td></tr>
+<tr><td>pérdida</td><td>541155</td><td></td><td>costos-de-ventas</td></tr>
 <tr><td>pérdida</td><td>209020</td><td></td><td>gastos-administrativos</td></tr>
 <tr><td>pérdida</td><td>206576</td><td></td><td>gastos-promocionales</td></tr>
 <tr><td>pérdida</td><td>84036</td><td></td><td>depreciacion</td></tr>

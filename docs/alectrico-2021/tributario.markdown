@@ -19,7 +19,7 @@ layout: page
 <tr><td></td><td></td><td></td><td> (-) </td><td align='right'>0</td><td> Devoluciones sobre ventas </td></tr>
 <tr><td></td><td></td><td></td><td> (-) </td><td align='right'>0</td><td>Descuentos sobre ventas </td></tr>
 <tr><td></td><td></td><td></td><td> (=) </td><td align='right'>1201811</td><td> Ventas Netas </td></tr>
-<tr><td></td><td></td><td></td><td> (-) </td><td align='right'>11008</td> <td>Costos de Ventas A.30-LIR </td></tr>
+<tr><td></td><td></td><td></td><td> (-) </td><td align='right'>541155</td> <td>Costos de Ventas A.30-LIR </td></tr>
 <tr><td></td><td align='right'>0</td><td></td><td></td><td></td><td> Compras </td></tr>
 <tr><td> (+) </td><td align='right'> 0</td><td></td><td> </td><td></td><td> Gastos sobre Compras </td></tr>
 <tr><td> (=) </td><td align='right'>0</td><td></td><td></td><td></td><td>Compras Totales</td></tr> 
@@ -30,10 +30,10 @@ layout: page
 <tr><td> (+) </td><td align='right'>0</td><td></td><td></td><td></td><td colspan='2'>Inventario Inicial</td></tr> 
 <tr><td> (-) </td> <td align='right'>-142076</td><td> </td><td></td><td></td><td colspan='2'>Inventario </td></tr>
 <tr><td> (-) </td> <td align='right'>0</td><td> </td><td></td><td></td><td colspan='2'>Inventario Final </td></tr>
-<tr><td> (=) </td> <td align='right'>123645</td><td> </td><td></td><td></td><td colspan='2'>Costo de Mercancías </td></tr>
+<tr><td> (=) </td> <td align='right'>0</td><td> </td><td></td><td></td><td colspan='2'>Costo de Mercancías </td></tr>
 <tr><td> (=) </td> <td align='right'>0</td><td> </td><td></td><td></td><td colspan='2'>Insumos </td></tr>
-<tr><td></td><td></td><td></td><td></td><td align='right'>1067158</td><td colspan='4'>  UTILIDAD BRUTA (Ventas Netas - Costo de Ventas - Costos de Mercancías - Insumos) </td></tr>
-<tr style='font-weight:bold; background-color: azure'><td></td><td></td><td></td><td></td><td align='right'>1067158</td><td colspan='4'>  Margen de Explotacion </td></tr>
+<tr><td></td><td></td><td></td><td></td><td align='right'>660656</td><td colspan='4'>  UTILIDAD BRUTA (Ventas Netas - Costo de Ventas - Costos de Mercancías - Insumos) </td></tr>
+<tr style='font-weight:bold; background-color: azure'><td></td><td></td><td></td><td></td><td align='right'>660656</td><td colspan='4'>  Margen de Explotacion </td></tr>
 <tr><td></td><td></td><td></td><td>(-)</td><td align='right'>528636</td><td colspan='4'> Gastos de Deducibles de Impuesto (Gastos Admon + Gastos Vtas + I+D + Promocion + Amortiza.Int A.31-LIR) </td></tr>
 <tr><td> (-) </td><td align='right'>209020</td><td></td><td></td><td></td><td> Gastos del Dpto Administración </td></tr>
 <tr><td> (-) </td><td align='right'>0</td><td></td><td></td><td></td><td> Gastos del Dpto Ventas </td></tr>
@@ -44,26 +44,26 @@ layout: page
 <tr><td>(-) </td><td align='right'>29004</td><td></td><td></td><td></td><td> Amortización </td></tr>
 <tr><td>(-) </td><td align='right'>84036</td><td></td><td></td><td></td><td> Depreciación </td></tr>
 <tr><td></td><td></td><td></td><td> (-) </td><td align='right'>0</td><td> Pérdida Ejercicio Anterior PEA A.33-LIR </td></tr>
-<tr><td> </td><td></td><td></td><td></td><td align='right'> 538522</td><td> UTILIDAD DE OPERACIÓN </td></tr>
+<tr><td> </td><td></td><td></td><td></td><td align='right'> 132020</td><td> UTILIDAD DE OPERACIÓN </td></tr>
 <tr><td></td><td></td><td></td><td> (-) </td><td align='right'>0</td><td> Otros Gastos </td></tr>
-<tr><td></td><td> </td><td> </td><td></td><td align='right'>538522</td><td> Utilidad Antes de Reserva </td></tr>
+<tr><td></td><td> </td><td> </td><td></td><td align='right'>132020</td><td> Utilidad Antes de Reserva </td></tr>
 <tr><td></td><td></td><td></td><td> (-) </td><td align='right'>0</td><td> Reserva Legal </td></tr>
-<tr style='font-weight:bold; background-color: azure'><td> <td></td></td><td> </td><td></td><td align='right'>538522</td><td> Resultado de Explotacion </td></tr>
+<tr style='font-weight:bold; background-color: azure'><td> <td></td></td><td> </td><td></td><td align='right'>132020</td><td> Resultado de Explotacion </td></tr>
 <tr><td></td><td></td><td></td><td> (+) </td><td align='right'>3638</td><td> Ganancia Por Corrección Monetaria </td></tr>
 <tr><td></td><td></td><td></td><td> (-) </td><td align='right'>0</td><td> Impuestos No Recuperables </td></tr>
-<tr style='font-weight:bold; background-color: azure'><td> <td></td></td><td> </td><td></td><td align='right'>542160</td><td> Resultado Fuera de Explotacion </td></tr>
-<tr style='font-weight:bold; background-color: azure'><td> <td></td></td><td> </td><td></td><td align='right'>542160</td><td> Resultado Antes de Impuesto</td></tr>
-<tr style='color: white; font-weight:bold; background-color: crimson'><td></td><td></td><td></td><td> (-) </td><td align='right'> 54216</td><td> Impuesto Determinado, factor es: 0.1 en 2021 </td></tr>
-<tr style='font-weight:bold;background-color: azure'><td> <td></td></td><td> </td><td></td><td align='right'>487944</td><td> Utilidad Después de Impuestos <small> Calculada </small></td></tr>
+<tr style='font-weight:bold; background-color: azure'><td> <td></td></td><td> </td><td></td><td align='right'>135658</td><td> Resultado Fuera de Explotacion </td></tr>
+<tr style='font-weight:bold; background-color: azure'><td> <td></td></td><td> </td><td></td><td align='right'>135658</td><td> Resultado Antes de Impuesto</td></tr>
+<tr style='color: white; font-weight:bold; background-color: crimson'><td></td><td></td><td></td><td> (-) </td><td align='right'> 13566</td><td> Impuesto Determinado, factor es: 0.1 en 2021 </td></tr>
+<tr style='font-weight:bold;background-color: azure'><td> <td></td></td><td> </td><td></td><td align='right'>122092</td><td> Utilidad Después de Impuestos <small> Calculada </small></td></tr>
 </tbody></table>
 <table> 
 <tr><th> <td colspan=6> DETERMINACIÓN DE LA BASE IMPONIBLE </td></th></tr>
 <tr><th> <td colspan=6> Determina los impuestos del regimen propyme</td></th></tr>
 <tbody>
-<tr style='font-weight:bold;background-color: azure'><td> <td></td></td><td> </td><td></td><td align='right'>542160</td><td> Utilidad del Ejercicio Ant.Impuesto (m. liquidación)</td></tr>
+<tr style='font-weight:bold;background-color: azure'><td> <td></td></td><td> </td><td></td><td align='right'>135658</td><td> Utilidad del Ejercicio Ant.Impuesto (m. liquidación)</td></tr>
 <tr><td> (-) </td><td align='right'>67218</td><td></td><td></td><td></td><td> Depreciación Instantánea Activo Fijo Propyme </td></tr>
 <tr><td> (-) </td><td align='right'>0</td><td></td><td></td><td></td><td> Amortización Instantánea Intangibles </td></tr>
 <tr><td> (+) </td><td align='right'>0</td><td></td><td></td><td></td><td> Aportes al Capital </td></tr>
-<tr><td> <td></td></td><td> </td><td> (1) (=) </td><td align='right' style = 'font-weight:bold; background-color: lightgreen'>474942</td><td> RLI Calculada </td></tr>
-<tr><td></td><td></td><td></td><td> </td><td align='right' style='background-color: lightgreen'> <img src='../revisado.png'> 474942</td><td> RLI desp. Imptos ( m. liquidaciones) <small> propyme</small></td></tr>
+<tr><td> <td></td></td><td> </td><td> (1) (=) </td><td align='right' style = 'font-weight:bold; background-color: lightgreen'>68440</td><td> RLI Calculada </td></tr>
+<tr><td></td><td></td><td></td><td> </td><td align='right' style='background-color: lightgreen'> <img src='../revisado.png'> 68440</td><td> RLI desp. Imptos ( m. liquidaciones) <small> propyme</small></td></tr>
 </tbody></table>
