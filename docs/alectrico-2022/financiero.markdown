@@ -10,9 +10,9 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <li><span style='background-color: gold'>[    ]</span> ganancia </li>
 <li><span style='color: white; background-color: black'>[    ]</span> pérdida </li>
 <table><tbody>
-<tr><td>pérdida</td><td>2417</td><td></td><td>amortizacion</td></tr>
-<tr><td>pérdida</td><td>15287</td><td></td><td>gastos-administrativos</td></tr>
-<tr><td>pérdida</td><td>400000</td><td></td><td>salarios</td></tr>
-<tr><td>pérdida</td><td>9804</td><td></td><td>depreciacion</td></tr>
+<tr><td>pérdida</td><td>850000</td><td></td><td>salarios</td></tr>
+<tr><td>pérdida</td><td>24522</td><td></td><td>gastos-administrativos</td></tr>
+<tr><td>pérdida</td><td>19608</td><td></td><td>depreciacion</td></tr>
+<tr><td>pérdida</td><td>4834</td><td></td><td>amortizacion</td></tr>
 <tr><td> ganancias </td><td> </td><td>2304392</td><td>capital-social</td></tr>
 <table><tbody>

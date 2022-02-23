@@ -136,6 +136,8 @@
 ;-------------------------- ajuste inicial de remanente
 
 
+
+
 ;este comando de kernel es raro, no espera tener una partida
 ;no debe mostrarse en la contabilidad pues da cuenta de un
 ;ajuste originado en el ejercio contable anterior.
