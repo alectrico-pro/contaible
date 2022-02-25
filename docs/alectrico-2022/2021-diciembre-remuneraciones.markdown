@@ -1,4 +1,5 @@
 --- 
+title: Liquidación
 permalink: /alectrico-2022/2021-diciembre-remuneraciones 
 layout: page
 --- 
