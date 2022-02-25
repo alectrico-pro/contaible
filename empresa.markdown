@@ -28,6 +28,14 @@ permalink: /alectrico/
 
 
 
+# luidacion remueneraciones
+
+[enero](/alectrico-2022/2022/enero/remuneracion.html)|[febrero](/alectrico-2022/codigos-f29-febrero.html)|[marzo](/alectrico-2022/codigos-f29-marzo.html)|[abril](/alectrico-2022/codigos-f29-abril.html)|[mayo](/alectrico-2022/codigos-f29-mayo.html)|[junio](/alectrico-2022/codigos-f29-junio.html)
+
+[julio](/alectrico-2022/codigos-f29-julio.html)|[agosto](/alectrico-2022/codigos-f29-agosto.html)|[septiembre](/alectrico-2022/codigos-f29-septiembre.html)|[octubre](/alectrico-2022/codigos-f29-octubre.html)|[noviembre](/alectrico-2022/codigos-f29-noviembre.html)|[diciembre](/alectrico-2022/codigos-f29-diciembre.html)
+
+
+
 ## 2021
 
 [libro diario](/alectrico-2021/libro-diario.html)|[estado de resultados](/alectrico-2021/tributario.html)
