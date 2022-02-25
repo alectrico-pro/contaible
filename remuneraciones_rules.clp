@@ -26,6 +26,43 @@
 )
 
 
+(defrule fin
+  ( declare (salience -100) )
+ =>
+  ( close k )
+)
+
+;esto genera un markdown para que jekyll lo publique en el blog necios
+(defrule inicio-kindle-k-remuneraciones-rules
+   ( declare (salience 10000))
+   ( empresa (nombre ?empresa))
+
+  =>
+
+   ( if (neq nil k) then (close k))
+   ( bind ?archivo (str-cat "./doc/" ?empresa "/remuneraciones.markdown"))
+
+   ( open ?archivo k "w")
+
+   ( printout k "--- " crlf)
+   ( printout k "title: Remuneraciones" crlf)
+   ( printout k "permalink: /" ?empresa "/remuneraciones " crlf)
+   ( printout k "layout: page" crlf)
+   ( printout k "--- " crlf)
+   ( printout k "" crlf)
+   ( printout k "Contabilidad para Necios® usa el siguiente código de colores para este documento." crlf)
+   ( printout k "<ul>" crlf)
+   ( printout k "<li><span style='background-color: red'>[    ]</span> mensaje de alerta. </li>" crlf)
+   ( printout k "<li><span style='background-color: lavender'>[    ]</span> partida revisada y resultado bueno. </li>" crlf)
+   ( printout k "<li><span style='background-color: lightyellow'>[    ]</span> cuenta mayor del activo </li>" crlf)
+   ( printout k "<li><span style='background-color: azure'>[    ]</span> cuenta mayor del pasivo </li>" crlf)
+   ( printout k "<li><span style='color: white; background-color: cornflowerblue'>[    ]</span> cuenta de patrimonio </li>" crlf)
+   ( printout k "<li><span style='background-color: gold'>[    ]</span> ganancia </li>" crlf)
+   ( printout k "<li><span style='color: white; background-color: black'>[    ]</span> pérdida </li>" crlf)
+   ( printout k "<li><span style='background-color: blanchedalmond'>[    ]</span> subtotales de la transacción </li>" crlf)
+   ( printout k "</ul>" crlf)
+)
+
 
 (defrule inicio-de-modulo-mensual
    (declare (salience 10000))
