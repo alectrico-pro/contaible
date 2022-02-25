@@ -264,6 +264,7 @@
 
 
 (deftemplate trabajador
+  (slot nombre-completo)
   (slot diaria)
   (slot afp)
   (slot salud)

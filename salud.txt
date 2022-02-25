@@ -1,4 +1,4 @@
 (salud
-  (nombre fonasa )
+  (nombre Fonasa )
   (cotizacion 0.07)
 )
