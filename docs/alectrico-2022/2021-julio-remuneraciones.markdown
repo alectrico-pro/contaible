@@ -1,6 +1,5 @@
 --- 
-title: Liquidación
-permalink: /alectrico-2022/2021-julio-remuneraciones 
+permalink: /alectrico-2022/julio-remuneraciones 
 layout: page
 --- 
 <h3> Liquidación de Sueldo Mensual </h3> <small>2021-julio</small>

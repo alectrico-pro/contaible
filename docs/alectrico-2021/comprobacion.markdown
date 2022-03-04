@@ -31,18 +31,6 @@ NO se han practicado liquidaciones, por lo que SÍ se muestran cuentas nominales
 <thead> <th></th>  <th align='center'>DEBE</th> <th align='center'>HABER</th> <th>|</th> <th align='center'>DEBER</th> <th align='center'>ACREEDOR</th> <th>A Corregir </th> </thead>
 <tbody>
 <tr style=' background: #fff; border: 1px solid red;'>
-<td><small>plataforma-alectrico</small></td> <td align='right'>2150000</td> <td align='right'>0</td> <td> | </td> <td align='right'> 2150000</td> <td align='right'>0</td> </tr>
-<tr style=' background: #fff; border: 1px solid red;'>
-<td><small>electrocom-materiales</small></td> <td align='right'>25971</td> <td align='right'>0</td> <td> | </td> <td align='right'> 25971</td> <td align='right'>0</td> </tr>
-<tr style=' background: #fff; border: 1px solid red;'>
-<td><small>electrocom-insumos</small></td> <td align='right'>25220</td> <td align='right'>0</td> <td> | </td> <td align='right'> 25220</td> <td align='right'>0</td> </tr>
-<tr style=' background: #fff; border: 1px solid red;'>
-<td><small>dartel-insumos</small></td> <td align='right'>158011</td> <td align='right'>0</td> <td> | </td> <td align='right'> 158011</td> <td align='right'>0</td> </tr>
-<tr style=' background: #fff; border: 1px solid red;'>
-<td><small>easy-insumos</small></td> <td align='right'>2134</td> <td align='right'>0</td> <td> | </td> <td align='right'> 2134</td> <td align='right'>0</td> </tr>
-<tr style=' background: #fff; border: 1px solid red;'>
-<td><small>dartel-materiales</small></td> <td align='right'>6607</td> <td align='right'>0</td> <td> | </td> <td align='right'> 6607</td> <td align='right'>0</td> </tr>
-<tr style=' background: #fff; border: 1px solid red;'>
 <td><small>amortizacion</small></td> <td align='right'>29004</td> <td align='right'>0</td> <td> | </td> <td align='right'> 29004</td> <td align='right'>0</td> </tr>
 <tr>
 <td><small>amortizacion-intangibles</small></td> <td align='right'>29004</td> <td align='right'>0</td> <td> | </td> <td align='right'> 29004</td> <td align='right'>0</td>
@@ -58,9 +46,6 @@ NO se han practicado liquidaciones, por lo que SÍ se muestran cuentas nominales
 </tr>
 <tr style=' background: #fff; border: 1px solid red;'>
 <td><small>correccion-monetaria</small></td> <td align='right'>0</td> <td align='right'>3638</td> <td> | </td> <td align='right'> 0</td> <td align='right'>3638</td> </tr>
-<tr>
-<td><small>ganancia-por-correccion-monetaria</small></td> <td align='right'>0</td> <td align='right'>3638</td> <td> | </td> <td align='right'> 0</td> <td align='right'>3638</td>
-</tr>
 <tr style=' background: #fff; border: 1px solid red;'>
 <td><small>gastos-promocionales</small></td> <td align='right'>206576</td> <td align='right'>0</td> <td> | </td> <td align='right'> 206576</td> <td align='right'>0</td> </tr>
 <tr style=' background: #fff; border: 1px solid red;'>
@@ -68,32 +53,8 @@ NO se han practicado liquidaciones, por lo que SÍ se muestran cuentas nominales
 <tr>
 <td><small>ventas</small></td> <td align='right'>1393913</td> <td align='right'>2595724</td> <td> | </td> <td align='right'> 0</td> <td align='right'>1201811</td>
 </tr>
-<tr style=' background: #fff; border: 1px solid red;'>
-<td><small>sodimac-insumos</small></td> <td align='right'>141489</td> <td align='right'>0</td> <td> | </td> <td align='right'> 141489</td> <td align='right'>0</td> </tr>
-<tr>
-<td><small>ventas-con-factura-exenta</small></td> <td align='right'>0</td> <td align='right'>544996</td> <td> | </td> <td align='right'> 0</td> <td align='right'>544996</td>
-</tr>
-<tr>
-<td><small>ventas-con-factura-afecta</small></td> <td align='right'>649367</td> <td align='right'>1601234</td> <td> | </td> <td align='right'> 0</td> <td align='right'>951867</td>
-</tr>
 <tr>
 <td>Herramientas<small>herramientas</small></td> <td align='right'>218470</td> <td align='right'>0</td> <td> | </td> <td align='right'> 218470</td> <td align='right'>0</td>
-</tr>
-<tr style=' background: #fff; border: 1px solid red;'>
-<td><small>sodimac-materiales</small></td> <td align='right'>44462</td> <td align='right'>0</td> <td> | </td> <td align='right'> 44462</td> <td align='right'>0</td> </tr>
-<tr style=' background: #fff; border: 1px solid red;'>
-<td><small>easy-materiales</small></td> <td align='right'>46605</td> <td align='right'>0</td> <td> | </td> <td align='right'> 46605</td> <td align='right'>0</td> </tr>
-<tr>
-<td><small>ventas-con-eboleta-exenta</small></td> <td align='right'>489555</td> <td align='right'>39505</td> <td> | </td> <td align='right'> 450050</td> <td align='right'>0</td>
-</tr>
-<tr>
-<td><small>ventas-con-voucher-afecto</small></td> <td align='right'>185575</td> <td align='right'>330079</td> <td> | </td> <td align='right'> 0</td> <td align='right'>144504</td>
-</tr>
-<tr>
-<td><small>ventas-con-eboleta-afecta</small></td> <td align='right'>69416</td> <td align='right'>79910</td> <td> | </td> <td align='right'> 0</td> <td align='right'>10494</td>
-</tr>
-<tr>
-<td><small>materiales</small></td> <td align='right'>167689</td> <td align='right'>0</td> <td> | </td> <td align='right'> 167689</td> <td align='right'>0</td>
 </tr>
 <tr>
 <td>Intangibles<small>intangibles</small> </td> <td align='right'>2440000</td> <td align='right'>52631</td> <td> | </td> <td align='right'> 2387369</td> <td align='right'>0</td> 
@@ -129,9 +90,6 @@ NO se han practicado liquidaciones, por lo que SÍ se muestran cuentas nominales
 </tr>
 <tr>
 <td>IVA Créditos<small>iva-credito</small></td> <td align='right'>222351</td> <td align='right'>206211</td> <td> | </td> <td align='right'> 16140</td> <td align='right'>0</td>
-</tr>
-<tr>
-<td><small>marca-alectrico</small></td> <td align='right'>290000</td> <td align='right'>52631</td> <td> | </td> <td align='right'> 237369</td> <td align='right'>0</td>
 </tr>
 <tr style=' background: #fff; border: 1px solid red;'>
 <td><small>retencion-de-iva-articulo-11</small></td> <td align='right'>23608</td> <td align='right'>25108</td> <td> | </td> <td align='right'> 0</td> <td align='right'>1500</td> </tr>

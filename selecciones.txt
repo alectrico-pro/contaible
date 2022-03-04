@@ -12,6 +12,6 @@
  (imprimir-detalles      true)
  (liquidar               subcuentas) 
  (origen-de-subcuentas   nominativo)
- (inspect-f29-code       ingresos-brutos) )
+ (inspect-f29-code       111) )
 
 

@@ -255,8 +255,8 @@
    ( open ?archivo k "w")
 
    ( printout k "--- " crlf)
-   ( printout k "title: Liquidación" crlf)
-   ( printout k "permalink: /" ?empresa "/" ?ano "-" ?mes "-remuneraciones " crlf)
+  ;( printout k "title: Liquidación" crlf)
+   ( printout k "permalink: /" ?empresa "/" ?mes "-remuneraciones " crlf)
    ( printout k "layout: page" crlf)
    ( printout k "--- " crlf)
 

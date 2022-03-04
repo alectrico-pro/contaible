@@ -1,0 +1,14 @@
+#Esto se importa en dashboard
+#o se usa kubectl apply -f web-pod-necios.yaml
+#https://kubernetes.io/docs/tasks/configure-pod-container/pull-image-private-registry/
+apiVersion: v1
+kind: Pod
+metadata:
+  name: necios-app
+spec:
+  containers:
+  - name: necios-container
+    image: alectrico/repo:necios
+    
+  imagePullSecrets:
+  - name: regcred

@@ -36,8 +36,6 @@
 ( defrule inicio-de-modulo-comprobacion
    (declare (salience 10000))
   =>
-;   ( matches provision-de-idpc)
-;   ( halt )
    ( printout t "--modulo--------------- RESULTADO SII------------------" crlf)
 )
 

@@ -80,5 +80,3 @@ docker run -p 5000:4000 --name store -v $(pwd)/docs:/doc necios bash -c 'jekyll 
 
 docker run -p 5000:4000 --volumes-from store -v $(pwd)/docs:/doc necios bash -c 'cd /doc && jekyll serve'
 
-
-

@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: necios
+spec:
+  selector:
+    matchLabels:
+      app: necios
+  replicas: 2 
+  template:
+    metadata:
+      labels:
+        app: necios
+    spec:
+      containers:
+      - name: necios
+        image: necios:latest
+        ports:
+        - containerPort: 80

@@ -9,7 +9,7 @@
   (razon "alectrico® SpA"))
 
 ( balance
-  (dia 31) (mes febrero) (ano 2022))
+  (dia 31) (mes marzo) (ano 2022))
 
 
 
@@ -381,6 +381,16 @@
 
 
 ;---------------------------------- marzo ------------------------
+
+( cobro-de-cuentas-por-cobrar
+  ( partida 2017)
+  ( monto 10000)
+  ( dia 3)
+  ( mes marzo)
+  ( ano 2022)
+  ( glosa "Ultimo pago del Parecer THHN. Recibido de Gonzalo vía Mach.")
+)
+
 
 
 

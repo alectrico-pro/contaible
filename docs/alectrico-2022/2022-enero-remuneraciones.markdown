@@ -1,6 +1,5 @@
 --- 
-title: Liquidación
-permalink: /alectrico-2022/2022-enero-remuneraciones 
+permalink: /alectrico-2022/enero-remuneraciones 
 layout: page
 --- 
 <h3> Liquidación de Sueldo Mensual </h3> <small>2022-enero</small>
