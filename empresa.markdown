@@ -28,7 +28,7 @@ permalink: /alectrico/
 
 
 
-# luidacion remuneraciones
+# Liquidación remuneraciones
 
 [enero](/alectrico-2022/enero/remuneraciones.html)|[febrero](/alectrico-2022/febrero/remuneraciones.html)|[marzo](/alectrico-2022/marzo-remuneraciones.html)|[abril](/alectrico-2022/codigos-f29-abril.html)|[mayo](/alectrico-2022/codigos-f29-mayo.html)|[junio](/alectrico-2022/codigos-f29-junio.html)
 

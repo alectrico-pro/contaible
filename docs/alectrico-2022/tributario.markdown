@@ -11,7 +11,7 @@ layout: page
 <li><span style='background-color: blanchedalmond'>[    ]</span> subtotales de la transacción </li>
 <table><tbody>
 <tr><th colspan='3'>alectrico-2022</th></tr>
-<tr><td colspan='8'> CALCULO DE LA BASE IMPONIBLE PROPYME </td></tr><tr><th colspan='8'>Solo se consideran las transacciones hasta el día final de febrero. Cifras en pesos. </th></tr>
+<tr><td colspan='8'> CALCULO DE LA BASE IMPONIBLE PROPYME </td></tr><tr><th colspan='8'>Solo se consideran las transacciones hasta el día final de marzo. Cifras en pesos. </th></tr>
 <tr style='font-weight:bold;background-color: azure'><td colspan='8' align='center'>INVENTARIO-FINAL-LIQUIDADO</td></tr>
 <tr><td></td><td></td><td></td><td></td><td align='right'>0</td><td colspan='2'> Ingresos Brutos Percibidos A.29-LIR </td></tr>
 <tr><td></td><td></td><td></td><td></td><td align='right'>0</td><td> Ventas </td></tr>

@@ -116,7 +116,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 400000 </td> <td style='background-color: blanchedalmond'> 400000</td> </tr>
 <tr><td colspan='4'> alectrico® SpA</td> </tr> 
 <tr><td colspan='4'> ( 5 de enero	2022	 ) </td> </tr>
-<tr><td colspan='8'> Partida 2005: Declaración de Remuneraciones de alexander días trabajados: 7 Tramo Exento: 740853.0 Sueldo Bruto de: 400000 Tasa de Impuesto Único: 0.04 Monto de Impuesto Único: 0 </td></tr>
+<tr><td colspan='8'> Partida 2005: Declaración de Remuneraciones de alexander días trabajados: 7 Tramo Exento: 749749.5 Sueldo Bruto de: 400000 Tasa de Impuesto Único: 0.04 Monto de Impuesto Único: 0 </td></tr>
 <tr> <td colspan='7'>efectuado a electrico </td> </tr>
 <tr><td colspan = '8'> declarar-remuneraciones</td> </tr>
 </tbody>
@@ -216,7 +216,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 450000 </td> <td style='background-color: blanchedalmond'> 450000</td> </tr>
 <tr><td colspan='4'> alectrico® SpA</td> </tr> 
 <tr><td colspan='4'> ( 5 de febrero	2022	 ) </td> </tr>
-<tr><td colspan='8'> Partida 2011: Declaración de Remuneraciones de alexander días trabajados: 8 Tramo Exento: 740853.0 Sueldo Bruto de: 450000 Tasa de Impuesto Único: 0.04 Monto de Impuesto Único: 0 </td></tr>
+<tr><td colspan='8'> Partida 2011: Declaración de Remuneraciones de alexander días trabajados: 8 Tramo Exento: 749749.5 Sueldo Bruto de: 450000 Tasa de Impuesto Único: 0.04 Monto de Impuesto Único: 0 </td></tr>
 <tr> <td colspan='7'>efectuado a electrico </td> </tr>
 <tr><td colspan = '8'> declarar-remuneraciones</td> </tr>
 </tbody>
@@ -290,5 +290,27 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <tr><td colspan='4'> ( 31 de febrero	2022	 ) </td> </tr>
 <tr><td colspan='8'> Partida 2015: Por amortizacion en febrero de marca-alectrico-Por depreciacion en febrero de celular-Por depreciacion en febrero de taladro </td></tr>
 <tr><td colspan = '8'> amortizacion</td> </tr>
+</tbody>
+</table>
+<p style='page-break-before: always;'>&nbsp;</p>
+<br> 
+<p style='color: white; background-color: red'>  </p>
+<br> 
+- [ ] rcv
+- [ ] libro-diario
+- [ ] ccm
+- [x] revisado
+![](../revisado.png)
+<table id='Partida-2017'>
+<thead> <th style='background-color: lavender' colspan='6'>Partida 2017</th></thead>
+<tbody>
+<tr style='background-color: lightyellow'>  <td> </td> <td> 0</td> <td> 10000</td> <td colspan='2'> a[cuentas-por-cobrar] </td> </tr>
+<tr style='background-color: lightyellow'>  <td> </td> <td> 10000</td> <td> 0</td> <td colspan='2'> a[banco-estado] </td> </tr>
+<tr> <td> </td> <td style='background-color: blanchedalmond'> 10000 </td> <td style='background-color: blanchedalmond'> 10000</td> </tr>
+<tr><td colspan='4'> alectrico® SpA</td> </tr> 
+<tr><td colspan='4'> ( 3 de marzo	2022	 ) </td> </tr>
+<tr><td colspan='8'> Partida 2017: Ultimo pago del Parecer THHN. Recibido de Gonzalo vía Mach. </td></tr>
+<tr> <td colspan='7'>efectuado a cuentas-por-cobrar </td> </tr>
+<tr><td colspan = '8'> pagar-monto</td> </tr>
 </tbody>
 </table>

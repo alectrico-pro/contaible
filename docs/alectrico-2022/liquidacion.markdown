@@ -11,7 +11,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <li><span style='color: white; background-color: black'>[    ]</span> pérdida </li>
 <li><span style='background-color: blanchedalmond'>[    ]</span> subtotales de la transacción </li>
 <table><tbody> 
-<tr><td colspan='3'> Cuenta de Inventario en febrero de 2022</td></tr>
+<tr><td colspan='3'> Cuenta de Inventario en marzo de 2022</td></tr>
 <tr style='background-color: cornflowerblue'><td> Partida </td> <td> DEBE </td> <td> HABER </td> </tr>
 <tr> <td></td><td> 0</td><td>0</td></tr>
 <tr><td colspan='2'> Fin de Cuenta de Inventario Final </td></tr>
@@ -40,7 +40,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <tr><td>2417</td><td></td><td colspan='2'> r(base-imponible)  </td></tr>
 <tr><td></td><td>2417</td><td></td><td>amortizacion</td></tr>
 <tr><td>2417</td><td></td><td colspan='2'> r(base-imponible)  </td></tr>
-<tr style='color: white; background-color: black'> <td> 898964</td><td> 898964</td><td colspan='3'>( 31 de febrero	2022	 ) </td></tr>
+<tr style='color: white; background-color: black'> <td> 898964</td><td> 898964</td><td colspan='3'>( 31 de marzo	2022	 ) </td></tr>
 <tr><td colspan='9'>alectrico® SpA</td></tr>
 <tr><td colspan='9'>Ajuste Anual Año: Liquidacion Tributaria Deducciones 2022</td></tr>
 <table><tbody> 
@@ -53,6 +53,10 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <table style='background-color: lightyellow' ><tbody>
 <tr style='color: white; background-color: black'><td colspan='9'> Partida 2017</td></tr>
 <tr><th>DEBE</th><th> HABER </th> <th colspan='6'> Cuenta </th></tr>
+<tr style='color: white; background-color: black'> <td> 10000</td><td> 10000</td><td colspan='3'>( 3 de marzo	2022	 ) </td></tr>
+<tr><td colspan='9'>alectrico® SpA</td></tr>
+<tr><td colspan='9'>Ultimo pago del Parecer THHN. Recibido de Gonzalo vía Mach.</td></tr>
+<table><tbody> 
 <table style='background-color: lightyellow' ><tbody>
 <tr style='color: white; background-color: black'><td colspan='9'> Partida 2018</td></tr>
 <tr><th>DEBE</th><th> HABER </th> <th colspan='6'> Cuenta </th></tr>
@@ -74,7 +78,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <tr><td>2417</td><td></td><td colspan='2'> r(perdidas-y-ganancias) </td></tr>
 <tr><td></td><td>2417</td><td> </td><td>amortizacion</td></tr>
 <tr><td>2417</td><td></td><td colspan='2'> r(perdidas-y-ganancias) </td></tr>
-<tr style='color: white; background-color: black'> <td> 898964</td><td> 898964</td><td colspan='3'>( 31 de febrero	2022	 ) </td></tr>
+<tr style='color: white; background-color: black'> <td> 898964</td><td> 898964</td><td colspan='3'>( 31 de marzo	2022	 ) </td></tr>
 <tr><td colspan='9'>alectrico® SpA</td></tr>
 <tr><td colspan='9'>Ajuste Anual Año: Liquidacion Financiera Perdedor 2022</td></tr>
 <table><tbody> 

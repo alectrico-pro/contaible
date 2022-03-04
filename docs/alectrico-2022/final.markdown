@@ -5,7 +5,7 @@ layout: page
 
 
 <br> <br> <br> <br> <br> <br> 
-Solo se consideran las transacciones hasta el día 31	febrero.
+Solo se consideran las transacciones hasta el día 31	marzo.
 Cifras en pesos.
 <table>
 <thead> <th colspan='6'> PARTIDA GENERAL FINAL 2022 </th> </thead> 
@@ -13,7 +13,7 @@ Cifras en pesos.
 <th > PASIVO CIRCULANTE </th> <th align='right' >1517140</th> </thead>
 <tbody>
 <tr> <td> Caja </td> <td align='right' >85506</td> <td> Proveedores. </td> <td align='right' > 0</td> </tr>
-<tr> <td> Banco Estado </td> <td align='right'  >284735</td></tr>
+<tr> <td> Banco Estado </td> <td align='right'  >294735</td></tr>
 <tr> <td> Clientes </td> <td align='right' >0</td> <td >  IVA Débito </td> <td align='right'>0</td> </tr>
 <tr> <td> Cuentas por Cobrar </td> <td align='right' >0</td></tr>
 <tr> <td> Retenciones </td> <td align='right' style='font-weight:bold; color: white; background-color: crimson'>(  0)</td> </tr> 
