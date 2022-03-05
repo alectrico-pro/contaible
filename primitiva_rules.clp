@@ -98,6 +98,7 @@
 
 
 (defrule warning-cargando-cuenta-acreedora
+  ( selecciones (cargar-acreedoras false))
   ( cargo (cuenta ?nombre ) (partida ?partida ))
   ( cuenta (nombre ?nombre) (naturaleza acreedora ))
  =>
@@ -108,6 +109,7 @@
 )
 
 (defrule warning-abonando-cuenta-deudor
+  ( selecciones (abonar-deudoras false))
   ( abono (cuenta ?nombre ) (partida ?partida))
   ( cuenta (nombre ?nombre) (naturaleza deudor))
  =>
@@ -116,6 +118,7 @@
   (printout t "Partida: " ?partida crlf)
   (halt)
 )
+
 
 ;------------------------ primitivas ---------------------------
 (defrule cargar-cuenta-existente

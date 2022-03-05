@@ -101,6 +101,9 @@
 
 
 (deftemplate selecciones
+ (slot abonar-deudoras (default false))
+ (slot cargar-acreedoras (default false))
+ (slot devolver-a-devolucion-ventas (default false))
  (slot incentivo-al-ahorro (default false))
  (slot regimen)
  (slot ejercicio-anterior)

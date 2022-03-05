@@ -28,16 +28,16 @@
 
 
 (defrule fin
-(no)
   ( declare (salience -100) )
+  ( no)
  =>
   ( close k )
 )
 
 ;esto genera un markdown para que jekyll lo publique en el blog necios
 (defrule inicio-kindle-k-remuneraciones-rules
-(no)
    ( declare (salience 10000))
+   ( no)
    ( empresa (nombre ?empresa))
 
   =>
