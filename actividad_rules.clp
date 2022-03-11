@@ -2175,7 +2175,7 @@
    ( test (and (not (eq nil ?neto)) (> ?neto 0))) 
    ( test (and (not (eq nil ?iva)) (> ?iva 0)))
    ( test (>= (to_serial_date ?top ?mes_top ?ano_top) (to_serial_date 1 ?mes ?ano)))
-   ( selecciones (devolver-a-devolucion-ventas ?devolver-a-devolucion-ventas))
+;  ( selecciones (devolver-a-devolucion-ventas ?devolver-a-devolucion-ventas))
 
   => 
    ( bind ?dia 31)
@@ -2184,12 +2184,12 @@
    ( assert (cargo (qty ?unidades) (electronico true) (partida ?numero) (tipo-de-documento 48 ) (dia ?dia) (mes ?mes ) (ano ?ano) (empresa ?nombre) (cuenta banco-estado) (monto ?total) (glosa (str-cat " vouchers de " ?mes " de " ?ano))))
 
  
-   ( if (eq ?devolver-a-devolucion-ventas)
-    then
-     ( assert (abono (qty ?unidades) (electronico true) (partida ?numero) (tipo-de-documento 48 ) (dia ?dia) (mes ?mes ) (ano ?ano) (empresa ?nombre) (cuenta devolucion-ventas) (monto ?neto) (glosa (str-cat " vouchers de " ?mes " de " ?ano ))))
-    else
+;   ( if (eq true ?devolver-a-devolucion-ventas)
+ ;   then
+  ;   ( assert (abono (qty ?unidades) (electronico true) (partida ?numero) (tipo-de-documento 48 ) (dia ?dia) (mes ?mes ) (ano ?ano) (empresa ?nombre) (cuenta devolucion-sobre-ventas) (monto ?neto) (glosa (str-cat " vouchers de " ?mes " de " ?ano ))))
+  ;  else
      ( assert (abono (qty ?unidades) (electronico true) (partida ?numero) (tipo-de-documento 48 ) (dia ?dia) (mes ?mes ) (ano ?ano) (empresa ?nombre) (cuenta ventas-con-voucher-afecto) (monto ?neto) (glosa (str-cat " vouchers de " ?mes " de " ?ano ))))
-   )
+  ; )
 
    ( assert (abono (qty ?unidades) (partida ?numero) (electronico true) (tipo-de-documento 48 ) (dia ?dia) (mes ?mes ) (ano ?ano) (empresa ?nombre) (cuenta iva-debito) (monto ?iva) (glosa (str-cat " vouchers de " ?mes " de " ?ano))))
 
@@ -2612,10 +2612,9 @@
 
   ; ( assert (cargo (tipo-de-documento 61) (electronico true) (partida ?numero) (dia ?dia) (mes ?mes ) (ano ?ano) (empresa ?nombre) (cuenta notas-de-credito) (monto ?neto) (glosa ?glosa)))
 
-
    ( if (eq true ?devolver-a-devolucion-ventas)
     then
-     ( assert (cargo (tipo-de-documento 61) (electronico true) (partida ?numero) (dia ?dia) (mes ?mes ) (ano ?ano) (empresa ?nombre) (cuenta devolucion-ventas) (monto ?neto) (glosa ?glosa)))
+     ( assert (cargo (tipo-de-documento 61) (electronico true) (partida ?numero) (dia ?dia) (mes ?mes ) (ano ?ano) (empresa ?nombre) (cuenta devolucion-sobre-ventas) (monto ?neto) (glosa ?glosa)))
     else
      ( assert (cargo (tipo-de-documento 61) (electronico true) (partida ?numero) (dia ?dia) (mes ?mes ) (ano ?ano) (empresa ?nombre) (cuenta ?subcuenta) (monto ?neto) (glosa ?glosa)))
    )

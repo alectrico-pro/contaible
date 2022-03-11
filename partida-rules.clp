@@ -800,8 +800,6 @@
 )
 
 
-
-
 (defrule muestra-libro-mayor-resultados-subcuentas
    ( declare (salience 65))
    ( fila ?numero )
