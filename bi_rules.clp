@@ -163,7 +163,7 @@
 
 (defrule cargo-realizado-pero-no-mostrado-en-partida
    (partida (numero ?numero) (actividad ?actividad))
-   (cuenta  (mostrado-en-partida false) (partida ?numero) (ano ?ano))
+   (cuenta  (mostrada-en-partida false) (partida ?numero) (ano ?ano))
    (balance (ano ?ano))
   =>
    (printout t "x<-Cuenta No mostrado en partida: " tab ?numero tab ?actividad crlf)

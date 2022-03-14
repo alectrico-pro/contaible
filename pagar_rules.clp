@@ -61,6 +61,8 @@
 
 (defrule codigos-f29-base-imponible
    ( declare (salience -1))
+   ( balance (ano ?ano))
+
    ( empresa (nombre ?empresa))
    ?f <- ( f29 (partida ?numero) (mes ?mes) (ano ?ano))
    ( acumulador-mensual (cuenta ingresos-brutos) (haber ?haber) (debe ?debe) (mes ?mes) (ano ?ano))
@@ -73,6 +75,8 @@
 
 (defrule codigos-f29-ppm
   ( declare (salience -1))
+   ( balance (ano ?ano))
+
   ( actual  ( mes ?mes))
   ( tasas (ppm ?tasa-ppm) (mes ?mes) (ano ?ano))
   ?f <- ( f29 (partida ?numero) (mes ?mes) (ano ?ano))
@@ -93,6 +97,8 @@
 
 (defrule codigos-f29-debito-notas-de-credito-563
    ( declare (salience -1))
+   ( balance (ano ?ano))
+
    (no)
    ( empresa (nombre ?empresa))
    ?f <- ( f29 (partida ?numero) (mes ?mes) (ano ?ano))
@@ -111,6 +117,8 @@
 
 (defrule pagar-ppm
    ( tasas (mes ?mes) (ano ?ano) (ppm ?tasa-ppm))
+   ( balance (ano ?ano))
+
    ( actual  ( mes ?mes))
    ( ticket  ( numero ?numero) )
    ( empresa ( nombre ?empresa ))
@@ -132,6 +140,8 @@
 
 (defrule codigos-f29-ppm-no
   ( declare (salience -1))
+  ( balance (ano ?ano))
+
    (no)
   ( actual  ( mes ?mes))
   ( tasas (ppm ?tasa-ppm) (mes ?mes) (ano ?ano))
@@ -150,6 +160,8 @@
 
 (defrule codigos-f29-ppv
   ( declare (salience -1))
+   ( balance (ano ?ano))
+
   ( actual  ( mes ?mes))
   ?f <- ( f29 (partida ?numero) (mes ?mes) (ano ?ano))
   ( ticket ( numero ?numero ))
@@ -167,6 +179,8 @@
 
 
 (defrule pagar-ppm-no
+   ( balance (ano ?ano))
+
    (no)
    ( tasas (mes ?mes) (ano ?ano) (ppm ?tasa-ppm))
    ( actual  ( mes ?mes))
@@ -188,6 +202,8 @@
 
 (defrule declarar-ppm
    (no)
+   ( balance (ano ?ano))
+
    ( actual  ( mes ?mes))
    ( tasas (ppm ?tasa-ppm) (mes ?mes) (ano ?ano))
 
@@ -207,6 +223,8 @@
 
 (defrule codigos-f29-retencion-tasa-ley-21-133
   ( declare (salience -1))
+   ( balance (ano ?ano))
+
   ( actual  ( mes ?mes))
  ?f <- ( f29 (partida ?numero) (mes ?mes) (ano ?ano))
   ( ticket ( numero ?numero ))
@@ -222,6 +240,8 @@
 
 (defrule codigos-f29-codigo-39
    ( declare (salience -1))
+   ( balance (ano ?ano))
+
    ( empresa (nombre ?empresa))
    ?f <- ( f29 (partida ?numero) (mes ?mes) (ano ?ano))
   ( acumulador-mensual (qty ?qty) (cuenta 39) (haber ?haber) (debe ?debe) (mes ?mes) (ano ?ano))
@@ -234,6 +254,8 @@
 
 (defrule codigos-f29-codigo-511
    ( declare (salience -1))
+   ( balance (ano ?ano))
+
    ( empresa (nombre ?empresa))
    ?f <- ( f29 (partida ?numero) (mes ?mes) (ano ?ano))
   ( acumulador-mensual (qty ?qty) (cuenta 511) (haber ?haber) (debe ?debe) (mes ?mes) (ano ?ano))
@@ -247,6 +269,8 @@
 
 (defrule codigos-f29-codigo-512
    ( declare (salience -1))
+   ( balance (ano ?ano))
+
    ( empresa (nombre ?empresa))
    ?f <- ( f29 (partida ?numero) (mes ?mes) (ano ?ano))
   ( acumulador-mensual (qty ?qty) (cuenta 512) (haber ?haber) (debe ?debe) (mes ?mes) (ano ?ano))
@@ -258,6 +282,8 @@
 
 (defrule codigos-f29-codigo-513
    ( declare (salience -1))
+   ( balance (ano ?ano))
+
    ( empresa (nombre ?empresa))
    ?f <- ( f29 (partida ?numero) (mes ?mes) (ano ?ano))
   ( acumulador-mensual (qty ?qty) (cuenta 513) (haber ?haber) (debe ?debe) (mes ?mes) (ano ?ano))
@@ -269,6 +295,8 @@
 
 (defrule codigos-f29-codigo-515
    ( declare (salience -1))
+   ( balance (ano ?ano))
+
    ( empresa (nombre ?empresa))
    ?f <- ( f29 (partida ?numero) (mes ?mes) (ano ?ano))
   ( acumulador-mensual (qty ?qty) (cuenta 515) (haber ?haber) (debe ?debe) (mes ?mes) (ano ?ano))
@@ -281,6 +309,8 @@
 
 (defrule codigos-f29-codigo-142
    ( declare (salience -1))
+   ( balance (ano ?ano))
+
    ( empresa (nombre ?empresa))
    ?f <- ( f29 (partida ?numero) (mes ?mes) (ano ?ano))
   ( acumulador-mensual (qty ?qty) (cuenta 586) (haber ?haber) (debe ?debe) (mes ?mes) (ano ?ano))
@@ -293,6 +323,8 @@
 
 (defrule codigos-f29-codigo-586
    ( declare (salience -1))
+   ( balance (ano ?ano))
+
    ( empresa (nombre ?empresa))
    ?f <- ( f29 (partida ?numero) (mes ?mes) (ano ?ano))
   ( acumulador-mensual (qty ?qty) (cuenta 586) (haber ?haber) (debe ?debe) (mes ?mes) (ano ?ano))
@@ -306,6 +338,8 @@
 
 (defrule codigos-f29-codigo-587
    ( declare (salience -1))
+   ( balance (ano ?ano))
+
    ( empresa (nombre ?empresa))
    ?f <- ( f29 (partida ?numero) (mes ?mes) (ano ?ano))
   ( acumulador-mensual (qty ?qty) (cuenta 515) (haber ?haber) (debe ?debe) (mes ?mes) (ano ?ano))
@@ -319,6 +353,8 @@
 
 (defrule codigos-f29-codigo-758
    ( declare (salience -1))
+   ( balance (ano ?ano))
+
    ( empresa (nombre ?empresa))
    ?f <- ( f29 (partida ?numero) (mes ?mes) (ano ?ano))
    ( acumulador-mensual (qty ?qty) (cuenta 758) (haber ?haber) (debe ?debe) (mes ?mes) (ano ?ano))
@@ -333,6 +369,8 @@
 
 (defrule codigos-f29-codigo-759
    ( declare (salience -1))
+   ( balance (ano ?ano))
+
    ( empresa (nombre ?empresa))
    ?f <- ( f29 (partida ?numero) (mes ?mes) (ano ?ano))
    ( acumulador-mensual (qty ?qty) (cuenta 768) (haber ?haber) (debe ?debe) (mes ?mes) (ano ?ano))
@@ -349,6 +387,8 @@
 
 (defrule codigos-f29-debito-notas-de-credito-510
    ( declare (salience -1))
+   ( balance (ano ?ano))
+
    ( empresa (nombre ?empresa))
    ?f <- ( f29 (partida ?numero) (mes ?mes) (ano ?ano))
    ( acumulador-mensual (cuenta 510) (haber ?haber) (debe ?debe) (mes ?mes) (ano ?ano))
@@ -362,6 +402,8 @@
 
 (defrule codigos-f29-qty-notas-de-credito-509
    ( declare (salience -1))
+   ( balance (ano ?ano))
+
    ( empresa (nombre ?empresa))
    ?f <- ( f29 (partida ?numero) (mes ?mes) (ano ?ano))
    ( acumulador-mensual (qty ?qty) ( cuenta 509) (haber ?haber) (debe ?debe) (mes ?mes) (ano ?ano))
@@ -372,6 +414,8 @@
 
 (defrule codigos-f29-qty-sin-derecho-a-credito-fiscal
    ( declare (salience -1))
+   ( balance (ano ?ano))
+
    ( empresa (nombre ?empresa))
    ?f <- ( f29 (partida ?numero) (mes ?mes) (ano ?ano))
    ( acumulador-mensual (cuenta intangibles) (qty ?qty) (haber ?haber) (debe ?debe) (mes ?mes) (ano ?ano) (tipo-de-documento 33))
@@ -386,6 +430,8 @@
    
 (defrule codigos-f29-montos-sin-derecho-a-credito-fiscal
    ( declare (salience -1))
+   ( balance (ano ?ano))
+
    ( empresa (nombre ?empresa))
    ?f <- ( f29 (partida ?numero) (mes ?mes) (ano ?ano))
    ( acumulador-mensual (cuenta intangibles) (haber ?haber) (debe ?debe) (mes ?mes) (ano ?ano) (tipo-de-documento 33))
@@ -401,6 +447,8 @@
 
 (defrule codigos-f29-debito-facturas-emitidas
    ( declare (salience -1))
+   ( balance (ano ?ano))
+
  (no) 
    ( empresa (nombre ?empresa))
    ?f <- ( f29 (partida ?numero) (mes ?mes) (ano ?ano))
@@ -416,8 +464,9 @@
 
 
 (defrule codigos-f29-codigo-503
-  
    ( declare (salience -1))
+   ( balance (ano ?ano))
+
    ( empresa (nombre ?empresa))
    ?f <- ( f29 (partida ?numero) (mes ?mes) (ano ?ano))
    ( acumulador-mensual (qty ?qty) (cuenta 503) (haber ?haber) (debe ?debe) (mes ?mes) (ano ?ano))
@@ -433,6 +482,8 @@
 
 (defrule codigos-f29-qty-facturas-emitidas
    ( declare (salience -1))
+   ( balance (ano ?ano))
+
    (no)
    ( empresa (nombre ?empresa))
    ?f <- ( f29 (partida ?numero) (mes ?mes) (ano ?ano))
@@ -449,6 +500,8 @@
 
 (defrule codigos-f29-qty-boletas-emitidas-no
    ( declare (salience -1))
+   ( balance (ano ?ano))
+
    (no)
    ( empresa (nombre ?empresa))
    ?f <- ( f29 (partida ?numero) (mes ?mes) (ano ?ano))
@@ -464,6 +517,8 @@
 
 (defrule codigos-f29-qty-boletas-emitidas
    ( declare (salience -1))
+   ( balance (ano ?ano))
+
    ( empresa (nombre ?empresa))
    ?f <- ( f29 (partida ?numero) (mes ?mes) (ano ?ano))
    ( acumulador-mensual (cuenta 110) (qty ?qty) (haber ?haber) (debe ?debe) (mes ?mes) (ano ?ano))
@@ -479,6 +534,8 @@
 
 (defrule codigos-f29-debito-boletas-emitidas
    ( declare (salience -1))
+   ( balance (ano ?ano))
+
    ( empresa (nombre ?empresa))
    ?f <- ( f29 (partida ?numero) (mes ?mes) (ano ?ano))
    ( acumulador-mensual (cuenta 110) (haber ?haber) (debe ?debe) (mes ?mes) (ano ?ano))
@@ -492,6 +549,8 @@
 
 (defrule codigos-f29-debito-debito-total
    ( declare (salience -1))
+   ( balance (ano ?ano))
+
    ( no )
    ( empresa (nombre ?empresa))
    ?f <- ( f29 (partida ?numero) (mes ?mes) (ano ?ano))
@@ -507,6 +566,8 @@
 
 (defrule codigos-f29-debito-debito-538
    ( declare (salience -1))
+   ( balance (ano ?ano))
+
    ( empresa (nombre ?empresa))
    ?f <- ( f29 (partida ?numero) (mes ?mes) (ano ?ano))
    ( acumulador-mensual (cuenta 538) (haber ?haber) (debe ?debe) (mes ?mes) (ano ?ano))
@@ -520,6 +581,8 @@
 
 (defrule codigos-f29-debito-debito-524
    ( declare (salience -1))
+   ( balance (ano ?ano))
+
    ( empresa (nombre ?empresa))
    ?f <- ( f29 (partida ?numero) (mes ?mes) (ano ?ano))
    ( acumulador-mensual (qty ?qty) (cuenta 524) (haber ?haber) (debe ?debe) (mes ?mes) (ano ?ano))
@@ -531,6 +594,8 @@
 
 (defrule codigos-f29-debito-debito-525
    ( declare (salience -1))
+   ( balance (ano ?ano))
+
    ( empresa (nombre ?empresa))
    ?f <- ( f29 (partida ?numero) (mes ?mes) (ano ?ano))
    ( acumulador-mensual (cuenta 525) (haber ?haber) (debe ?debe) (mes ?mes) (ano ?ano))
@@ -542,6 +607,8 @@
 
 (defrule codigos-f29-debito-debito-527
    ( declare (salience -1))
+   ( balance (ano ?ano))
+
    ( empresa (nombre ?empresa))
    ?f <- ( f29 (partida ?numero) (mes ?mes) (ano ?ano))
    ( acumulador-mensual (cuenta 527) (qty ?qty) (haber ?haber) (debe ?debe) (mes ?mes) (ano ?ano))
@@ -555,6 +622,8 @@
 
 (defrule codigos-f29-debito-debito-528
    ( declare (salience -1))
+   ( balance (ano ?ano))
+
    ( empresa (nombre ?empresa))
    ?f <- ( f29 (partida ?numero) (mes ?mes) (ano ?ano))
    ( acumulador-mensual (cuenta 528) (qty ?qty) (haber ?haber) (debe ?debe) (mes ?mes) (ano ?ano))
@@ -569,8 +638,9 @@
 
 
 (defrule codigos-f29-creditos-recibidos-por-codigo-520-antiguo
-   
    ( declare (salience -1))
+   ( balance (ano ?ano))
+
    (no)
    ( empresa (nombre ?empresa))
    ?f <- ( f29 (partida ?numero) (mes ?mes) (ano ?ano))
@@ -585,6 +655,8 @@
 
 (defrule codigos-f29-creditos-recibidos-por-codigo-520
    ( declare (salience -1))
+   ( balance (ano ?ano))
+
    ( empresa (nombre ?empresa))
    ?f <- ( f29 (partida ?numero) (mes ?mes) (ano ?ano))
    ( acumulador-mensual (cuenta 520) (haber ?haber) (debe ?debe) (mes ?mes) (ano ?ano))
@@ -597,8 +669,9 @@
 
 
 (defrule codigos-f29-qty-facturas-recibidos-por-codigo-519-antiguo
-   
    ( declare (salience -1))
+   ( balance (ano ?ano))
+
    ( no)
    ( empresa (nombre ?empresa))
    ?f <- ( f29 (partida ?numero) (mes ?mes) (ano ?ano))
@@ -613,6 +686,8 @@
 
 (defrule codigos-f29-qty-facturas-recibidos-por-codigo-519
    ( declare (salience -1))
+   ( balance (ano ?ano))
+
    ( empresa (nombre ?empresa))
    ?f <- ( f29 (partida ?numero) (mes ?mes) (ano ?ano))
    ( acumulador-mensual (cuenta 519) (qty ?qty) (haber ?haber) (debe ?debe) (mes ?mes) (ano ?ano))
@@ -625,6 +700,8 @@
 
 (defrule pagar-iva-debito-v2
    ( declare (salience -1))
+   ( balance (ano ?ano))
+
    ( actual  ( mes ?mes_top))
    ( ticket  ( numero ?numero) )
    ( empresa ( nombre ?empresa ))
@@ -642,6 +719,8 @@
 
 (defrule codigos-f29-iva-a-pagar
    ( declare (salience -1))
+   ( balance (ano ?ano))
+
    ( actual  ( mes ?mes_top))
    ( ticket  ( numero ?numero) )
    ( empresa ( nombre ?empresa ))
@@ -657,6 +736,8 @@
 
 (defrule codigos-f29-creditos-recibidos-por-codigo-504
    ( declare (salience -1))
+   ( balance (ano ?ano))
+
    ( empresa (nombre ?empresa))
    ?f <- ( f29 (partida ?numero) (mes ?mes) (ano ?ano))
    ( acumulador-mensual (cuenta 504) (haber ?haber) (debe ?debe) (mes ?mes) (ano ?ano))
@@ -669,6 +750,7 @@
 
 (defrule codigos-f29-creditos-recibidos-por-codigo-077
    ( declare (salience -1))
+   ( balance (ano ?ano))
    ( empresa (nombre ?empresa))
    ?f <- ( f29 (partida ?numero) (mes ?mes) (ano ?ano))
    ( acumulador-mensual (cuenta 077) (haber ?haber) (debe ?debe) (mes ?mes) (ano ?ano))
@@ -679,4 +761,14 @@
 )
 
 
+(defrule obtencion-de-f22
+   ( declare (salience -1))
+   ( balance (ano ?ano))
+   ( empresa (nombre ?empresa))
+   ?f29 <- ( formulario-f29 (partida ?partida-f29) (codigo ?codigo) (valor ?valor) (descripcion ?descripcion) (mes ?mes) (ano ?ano) )
+   ?f22 <- ( f22 (partida ?numero) (ano ?ano))
+   =>
+   ( assert (partida (empresa ?empresa) (numero ?numero) (dia 31) (mes ?mes) (ano ?ano) (descripcion (str-cat "Formulario F22 " ?ano )) (  actividad codigos-f29)))
+   ( assert ( formulario-f22 (partida ?numero) (codigo ?codigo) (valor ?valor) (descripcion ?descripcion ) (ano ?ano) ))
+)
 

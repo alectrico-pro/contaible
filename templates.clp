@@ -414,6 +414,7 @@
   (slot haber (default 0))
 )
 
+
 (deftemplate formulario-f29
   (slot mostrado-en-partida (default false))
   (slot descripcion)
@@ -442,6 +443,7 @@
 
 
 (deftemplate f29
+  (slot anualizado (default true))
   (slot partida)
   (slot mes)
   (slot ano)
