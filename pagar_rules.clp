@@ -761,13 +761,26 @@
 )
 
 
+(defrule ordenar-codigos
+ =>
+  ( bind ?i 1)
+  ( while (< ?i 1000) do
+    ( assert (codigo-f29 (codigo ?i)))
+    ( bind ?i (+ ?i 1))
+  )
+)
+
+
 (defrule obtencion-de-f22
-   ( declare (salience -1))
+   ( declare (salience -9000))
    ( balance (ano ?ano))
    ( empresa (nombre ?empresa))
+   ( codigo-f29 (codigo ?codigo))
+   ( not  ( exists ( formulario-f29 (codigo ?inferior&:( and ( numberp ?inferior )  (> (- ?codigo ?inferior ) 1) )))))
    ?f29 <- ( formulario-f29 (partida ?partida-f29) (codigo ?codigo) (valor ?valor) (descripcion ?descripcion) (mes ?mes) (ano ?ano) )
    ?f22 <- ( f22 (partida ?numero) (ano ?ano))
-   =>
+  =>
+   ( retract ?f29 )
    ( assert (partida (empresa ?empresa) (numero ?numero) (dia 31) (mes ?mes) (ano ?ano) (descripcion (str-cat "Formulario F22 " ?ano )) (  actividad codigos-f29)))
    ( assert ( formulario-f22 (partida ?numero) (codigo ?codigo) (valor ?valor) (descripcion ?descripcion ) (ano ?ano) ))
 )

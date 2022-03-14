@@ -415,6 +415,10 @@
 )
 
 
+(deftemplate codigo-f29 
+ (slot codigo )
+)
+
 (deftemplate formulario-f29
   (slot mostrado-en-partida (default false))
   (slot descripcion)
