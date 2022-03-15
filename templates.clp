@@ -420,6 +420,7 @@
 )
 
 (deftemplate formulario-f29
+  (slot mostrado-en-f22 (default false))
   (slot mostrado-en-partida (default false))
   (slot descripcion)
   (slot codigo)
