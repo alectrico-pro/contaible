@@ -796,11 +796,13 @@
 ;   ( codigo-f29 (codigo ?codigo))
    ( fila ?numero )
    ( balance (ano ?ano))
-   ( formulario-f22 (partida ?partida-f29) (codigo ?codigo&:(numberp ?codigo) ) (valor ?valor) (descripcion ?descripcion) (ano ?ano) )
-;   ( not  ( exists ( formulario-f22  (codigo ?inferior&:( and ( numberp ?inferior )  (> (- ?codigo ?inferior ) 1) )))))
-    ?f22 <- ( f22 (partida ?numero) (ano ?ano))
+   ( codigo-f29 (codigo ?codigo))
+   ( not  ( exists ( formulario-f22 (presentado-en-f22 false)  (codigo ?inferior&:( and ( numberp ?inferior )  (> (- ?codigo ?inferior ) 0) )))))
+   ?formulario <- ( formulario-f22 (presentado-en-f22 false) (partida ?partida-f29) (codigo ?codigo&:(numberp ?codigo) ) (valor ?valor) (descripcion ?descripcion) (ano ?ano) )
+   ?f22 <- ( f22 (partida ?numero) (ano ?ano))
 
   =>
+   ( modify ?formulario (presentado-en-f22 true) )
 
    ( printout t  "codigo..." tab ?codigo tab ?valor tab ?descripcion crlf)
 
