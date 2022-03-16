@@ -780,22 +780,33 @@
 
 )
 
+(defrule ordenar-codigos
+ =>
+  ( bind ?i 1)
+  ( while (< ?i 1000) do
+    ( assert (codigo-f29 (codigo ?i)))
+    ( bind ?i (+ ?i 1))
+  )
+)
 
 
-(defrule muestra-codigo-de-formulario-f22-recuadro-17
+
+(defrule muestra-codigo-de-formulario-f22
    ( declare (salience 65))
+   ( codigo-f29 (codigo ?codigo))
    ( fila ?numero )
-   ( balance (dia ?top) (mes ?mes_top) (ano ?ano_top))
-   ( empresa (nombre ?empresa))
-   ( formulario-f22 (partida ?numero) (descripcion ?descripcion) (codigo ?codigo) (valor ?valor) (ano ?ano))
-   ( test (>= (to_serial_date ?top ?mes_top ?ano_top) (to_serial_date 1 abril ?ano)))
-   ( test (> ?ano (- ?ano_top 1)))
+   ( balance (ano ?ano))
+   ( formulario-f22 (partida ?partida-f29) (codigo ?codigo&:(numberp ?codigo) ) (valor ?valor) (descripcion ?descripcion) (ano ?ano) )
+   ( not  ( exists ( formulario-f22  (codigo ?inferior&:( and ( numberp ?inferior )  (> (- ?codigo ?inferior ) 1) )))))
+    ?f22 <- ( f22 (partida ?numero) (ano ?ano))
+
   =>
-   ( printout t  "codigo..." ?codigo tab ?valor tab ?descripcion crlf)
 
-   ( printout k " <tr> <td> </td> <td> " ?codigo " </td> <td>  " ?valor " </td> <td> " ?descripcion " </td> </tr>" crlf)
+   ( printout t  "codigo..." tab ?codigo tab ?valor tab ?descripcion crlf)
 
-   ( printout l " <tr> <td> </td> <td> " ?codigo " </td> <td>  " ?valor " </td> <td> " ?descripcion " </td> </tr>" crlf)
+   ( printout k " <tr> <td>  </td> <td> " ?codigo " </td> <td>  " ?valor " </td> <td> " ?descripcion " </td> </tr>" crlf)
+
+   ( printout l " <tr> <td>  </td> <td> " ?codigo " </td> <td>  " ?valor " </td> <td> " ?descripcion " </td> </tr>" crlf)
 
 )
 
