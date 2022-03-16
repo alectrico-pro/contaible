@@ -784,29 +784,47 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <thead> <th style='background-color: lavender' colspan='6'>Partida 1052</th></thead>
 <tbody>
  <tr> <td>  </td> <td> 110 </td> <td>  1 </td> <td> CANT.DE DCTOS.BOLETAS </td> </tr>
+ <tr> <td>  </td> <td> 110 </td> <td>  100 </td> <td> Total Anual </td> </tr>
  <tr> <td>  </td> <td> 110 </td> <td>  2 </td> <td> CANT.DE DCTOS.BOLETAS </td> </tr>
  <tr> <td>  </td> <td> 111 </td> <td>  5588 </td> <td> DEBITOS BOLETAS EMITIDAS  </td> </tr>
+ <tr> <td>  </td> <td> 111 </td> <td>  100 </td> <td> Total Anual </td> </tr>
  <tr> <td>  </td> <td> 111 </td> <td>  16 </td> <td> DEBITOS BOLETAS EMITIDAS  </td> </tr>
  <tr> <td>  </td> <td> 115 </td> <td>  0.13 </td> <td> TASA PPM 1ra Categoria </td> </tr>
+ <tr> <td>  </td> <td> 115 </td> <td>  100 </td> <td> Total Anual </td> </tr>
  <tr> <td>  </td> <td> 142 </td> <td>  4505 </td> <td> Neto Ventas/Servicios Exentos </td> </tr>
+ <tr> <td>  </td> <td> 142 </td> <td>  100 </td> <td> Total Anual </td> </tr>
  <tr> <td>  </td> <td> 511 </td> <td>  41503 </td> <td> CRED.IVA POR DCTOS. ELECTRONICOS  </td> </tr>
+ <tr> <td>  </td> <td> 511 </td> <td>  100 </td> <td> Total Anual </td> </tr>
  <tr> <td>  </td> <td> 511 </td> <td>  6344 </td> <td> CRED.IVA POR DCTOS. ELECTRONICOS  </td> </tr>
  <tr> <td>  </td> <td> 512 </td> <td>  2 </td> <td> NOTAS DE DEBITO EMITIDAS DEL GIRO </td> </tr>
+ <tr> <td>  </td> <td> 512 </td> <td>  100 </td> <td> Total Anual </td> </tr>
  <tr> <td>  </td> <td> 513 </td> <td>  5588 </td> <td> DEBITO DE NOTAS DEBITO EMITIDAS DEL GIRO </td> </tr>
+ <tr> <td>  </td> <td> 513 </td> <td>  100 </td> <td> Total Anual </td> </tr>
  <tr> <td>  </td> <td> 519 </td> <td>  2 </td> <td> CANT.DE DCTOS.FACT.RECIB.DEL GIRO </td> </tr>
+ <tr> <td>  </td> <td> 519 </td> <td>  100 </td> <td> Total Anual </td> </tr>
  <tr> <td>  </td> <td> 519 </td> <td>  3 </td> <td> CANT.DE DCTOS.FACT.RECIB.DEL GIRO </td> </tr>
  <tr> <td>  </td> <td> 520 </td> <td>  329 </td> <td> CREDITOS REC. REINT/FACT. DEL GIRO  </td> </tr>
+ <tr> <td>  </td> <td> 520 </td> <td>  100 </td> <td> Total Anual </td> </tr>
  <tr> <td>  </td> <td> 520 </td> <td>  5123 </td> <td> CREDITOS REC. REINT/FACT. DEL GIRO  </td> </tr>
  <tr> <td>  </td> <td> 524 </td> <td>  1 </td> <td> TOTAL FACTURA ACTIVO FIJO </td> </tr>
+ <tr> <td>  </td> <td> 524 </td> <td>  100 </td> <td> Total Anual </td> </tr>
  <tr> <td>  </td> <td> 525 </td> <td>  28738 </td> <td> CRÉD. RECUP. Y REINT. FACT. ACTIVO FIJO </td> </tr>
+ <tr> <td>  </td> <td> 525 </td> <td>  100 </td> <td> Total Anual </td> </tr>
  <tr> <td>  </td> <td> 527 </td> <td>  0 </td> <td> CANT.NOTAS DE CREDITO RECIBIDAS </td> </tr>
+ <tr> <td>  </td> <td> 527 </td> <td>  100 </td> <td> Total Anual </td> </tr>
  <tr> <td>  </td> <td> 528 </td> <td>  -5089 </td> <td> CREDITO RECUP.Y REINT/NOTAS DE CRED. </td> </tr>
+ <tr> <td>  </td> <td> 528 </td> <td>  100 </td> <td> Total Anual </td> </tr>
  <tr> <td>  </td> <td> 538 </td> <td>  23464 </td> <td> TOTAL DEBITOS  </td> </tr>
+ <tr> <td>  </td> <td> 538 </td> <td>  100 </td> <td> Total Anual </td> </tr>
  <tr> <td>  </td> <td> 563 </td> <td>  152909 </td> <td> BASE IMPONIBLE </td> </tr>
+ <tr> <td>  </td> <td> 563 </td> <td>  100 </td> <td> Total Anual </td> </tr>
  <tr> <td>  </td> <td> 563 </td> <td>  34001 </td> <td> BASE IMPONIBLE </td> </tr>
  <tr> <td>  </td> <td> 586 </td> <td>  1 </td> <td> Qty Ventas/Servicios Exentos </td> </tr>
+ <tr> <td>  </td> <td> 586 </td> <td>  100 </td> <td> Total Anual </td> </tr>
  <tr> <td>  </td> <td> 758 </td> <td>  20 </td> <td> CANT. RECIBO DE PAGO MEDIOS ELECTRÓNICOS </td> </tr>
+ <tr> <td>  </td> <td> 758 </td> <td>  100 </td> <td> Total Anual </td> </tr>
  <tr> <td>  </td> <td> 759 </td> <td>  23464 </td> <td> DÉB. RECIBO DE PAGO MEDIOS ELECTRÓNICOS </td> </tr>
+ <tr> <td>  </td> <td> 759 </td> <td>  100 </td> <td> Total Anual </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 0 </td> <td style='background-color: blanchedalmond'> 0</td> </tr>
 <tr><td colspan='4'> alectrico® SpA</td> </tr> 
 <tr><td colspan='4'> ( 31 de enero	2021	 ) </td> </tr>

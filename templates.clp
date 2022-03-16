@@ -431,6 +431,7 @@
 )
 
 (deftemplate formulario-f22
+  (slot sumado (default false))
   (slot presentado-en-f22 (default false))
   (slot descripcion)
   (slot codigo)

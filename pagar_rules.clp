@@ -771,6 +771,27 @@
 )
 
 
+(defrule suma-f22-condicion-inicial
+   ( codigo-f29 (codigo ?codigo))
+   ( not ( exists  ( formulario-f22 (sumado true) (codigo ?codigo) (ano ?ano) )))
+   ( exists ( formulario-f22 (sumado false) (codigo ?codigo ) (ano ?ano )))
+   ?f22 <- ( f22 (partida ?numero) (ano ?ano))
+  =>
+   ( assert ( formulario-f22 (partida ?numero) (sumado true) (codigo ?codigo) (valor 100) (descripcion "Total Anual" ) (ano ?ano) ))
+)
+
+
+(defrule suma-f22
+  (no)
+   ?mensual <- ( formulario-f22 (sumado false) (codigo ?codigo) (ano ?ano) )
+   ?anual   <- ( formulario-f22 (sumado true ) (codigo ?codigo) (descripcion "Total Anual" ) (ano ?ano) )
+  =>
+   ( modify ( ?mensual ( sumado true)))
+   ( modify ( ?anual (valor (+ ?valor ?valor))))
+)
+
+
+
 (defrule obtencion-de-f22
    ( declare (salience -9000))
    ( balance (ano ?ano))
