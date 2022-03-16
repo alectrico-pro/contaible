@@ -793,11 +793,11 @@
 
 (defrule muestra-codigo-de-formulario-f22
    ( declare (salience 65))
-   ( codigo-f29 (codigo ?codigo))
+;   ( codigo-f29 (codigo ?codigo))
    ( fila ?numero )
    ( balance (ano ?ano))
    ( formulario-f22 (partida ?partida-f29) (codigo ?codigo&:(numberp ?codigo) ) (valor ?valor) (descripcion ?descripcion) (ano ?ano) )
-   ( not  ( exists ( formulario-f22  (codigo ?inferior&:( and ( numberp ?inferior )  (> (- ?codigo ?inferior ) 1) )))))
+;   ( not  ( exists ( formulario-f22  (codigo ?inferior&:( and ( numberp ?inferior )  (> (- ?codigo ?inferior ) 1) )))))
     ?f22 <- ( f22 (partida ?numero) (ano ?ano))
 
   =>

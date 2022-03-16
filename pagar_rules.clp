@@ -776,7 +776,7 @@
    ( balance (ano ?ano))
    ( empresa (nombre ?empresa))
    ( codigo-f29 (codigo ?codigo))
-   ( not  ( exists ( formulario-f29 (mostrado-en-f22 false) (codigo ?inferior&:( and ( numberp ?inferior )  (>= (- ?codigo ?inferior ) 1) )))))
+;  ( not  ( exists ( formulario-f29 (mostrado-en-f22 false) (codigo ?inferior&:( and ( numberp ?inferior )  (>= (- ?codigo ?inferior ) 1) )))))
    ?f29 <- ( formulario-f29 (mostrado-en-f22 false) (partida ?partida-f29) (codigo ?codigo) (valor ?valor) (descripcion ?descripcion) (mes ?mes) (ano ?ano) )
    ?f22 <- ( f22 (partida ?numero) (ano ?ano))
   =>
