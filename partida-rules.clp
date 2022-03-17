@@ -806,7 +806,12 @@
 
    ( printout t  "codigo..." tab ?mes tab ?codigo tab ?valor tab ?descripcion crlf)
 
-   ( printout k " <tr> <td> " ?mes "  </td> <td> " ?codigo " </td> <td align='right' >  " ?valor " </td> <td> " ?descripcion " </td> </tr>" crlf)
+   ( if (eq ?mes "") 
+    then
+    ( printout k " <tr height='100 px' style='font-weight:bold; background-color: lightgreen'> <td> " ?mes "  </td> <td> " ?codigo " </td> <td align='right' >  " ?valor " </td> <td> " ?descripcion " </td> </tr>" crlf)
+   else
+    ( printout k " <tr> <td> " ?mes "  </td> <td> " ?codigo " </td> <td align='right' >  " ?valor " </td> <td> " ?descripcion " </td> </tr>" crlf)
+   )
 
    ( printout l " <tr> <td> " ?mes " </td> <td> " ?codigo " </td> <td align='right'>  " ?valor " </td> <td> " ?descripcion " </td> </tr>" crlf)
 

@@ -5,7 +5,7 @@ layout: page
 --- 
 
 
-Solo se consideran las transacciones hasta el día 31	mayo.
+Solo se consideran las transacciones hasta el día 31	julio.
 Cifras en pesos.
 Se han practicado liquidaciones, por lo que NO se muestran cuentas nominales
 <table rules='groups'>
@@ -17,6 +17,6 @@ Se han practicado liquidaciones, por lo que NO se muestran cuentas nominales
 <tbody>
 </tbody>
 <tfoot>
-<tr> <td></td> <td align='right'>488272</td> <td align='right'>499915</td><td> | </td> <td align='right'>128971</td> <td align='right'>140614</td> </tr>
+<tr> <td></td> <td align='right'>1895819</td> <td align='right'>968686</td><td> | </td> <td align='right'>1043238</td> <td align='right'>116105</td> </tr>
 </tfoot>
 </table>
