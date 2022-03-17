@@ -4629,19 +4629,19 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
  <tr> <td>    <a href= '/alectrico-2021/libro-diario#Partida-1045'>junio</a>  </td> <td> 39 </td> <td align='right' >  0 </td> <td> IVA RETENIDO A TERCEROS POR CAMBIO DE SUJETO  </td> </tr>
  <tr> <td>    <a href= '/alectrico-2021/libro-diario#Partida-1046'>julio</a>  </td> <td> 39 </td> <td align='right' >  223 </td> <td> IVA RETENIDO A TERCEROS POR CAMBIO DE SUJETO  </td> </tr>
  <tr height='50 px' style='font-weight:bold; background-color: lightgreen'> <td>  <a href= '/alectrico-2021/libro-diario#Partida-1052'>^</a> </td> <td> 39 </td> <td align='right' >  -1500 </td> <td> Total Anual </td> </tr>
- <tr height='50 px' >  </tr>
+ <tr height='50 px'></tr>
  <tr> <td>    <a href= '/alectrico-2021/libro-diario#Partida-1040'>enero</a>  </td> <td> 110 </td> <td align='right' >  1 </td> <td> CANT.DE DCTOS.BOLETAS </td> </tr>
  <tr> <td>    <a href= '/alectrico-2021/libro-diario#Partida-1041'>febrero</a>  </td> <td> 110 </td> <td align='right' >  2 </td> <td> CANT.DE DCTOS.BOLETAS </td> </tr>
  <tr> <td>    <a href= '/alectrico-2021/libro-diario#Partida-1046'>julio</a>  </td> <td> 110 </td> <td align='right' >  1 </td> <td> CANT.DE DCTOS.BOLETAS </td> </tr>
  <tr> <td>    <a href= '/alectrico-2021/libro-diario#Partida-1049'>octubre</a>  </td> <td> 110 </td> <td align='right' >  1 </td> <td> CANT.DE DCTOS.BOLETAS </td> </tr>
  <tr height='50 px' style='font-weight:bold; background-color: lightgreen'> <td>  <a href= '/alectrico-2021/libro-diario#Partida-1052'>^</a> </td> <td> 110 </td> <td align='right' >  5 </td> <td> Total Anual </td> </tr>
- <tr height='50 px' >  </tr>
+ <tr height='50 px'></tr>
  <tr> <td>    <a href= '/alectrico-2021/libro-diario#Partida-1040'>enero</a>  </td> <td> 111 </td> <td align='right' >  5588 </td> <td> DEBITOS BOLETAS EMITIDAS  </td> </tr>
  <tr> <td>    <a href= '/alectrico-2021/libro-diario#Partida-1041'>febrero</a>  </td> <td> 111 </td> <td align='right' >  16 </td> <td> DEBITOS BOLETAS EMITIDAS  </td> </tr>
  <tr> <td>    <a href= '/alectrico-2021/libro-diario#Partida-1046'>julio</a>  </td> <td> 111 </td> <td align='right' >  6650 </td> <td> DEBITOS BOLETAS EMITIDAS  </td> </tr>
  <tr> <td>    <a href= '/alectrico-2021/libro-diario#Partida-1049'>octubre</a>  </td> <td> 111 </td> <td align='right' >  3990 </td> <td> DEBITOS BOLETAS EMITIDAS  </td> </tr>
  <tr height='50 px' style='font-weight:bold; background-color: lightgreen'> <td>  <a href= '/alectrico-2021/libro-diario#Partida-1052'>^</a> </td> <td> 111 </td> <td align='right' >  16244 </td> <td> Total Anual </td> </tr>
- <tr style='font-weight:bold; color:white; background-color: red'> <td colspan='4' >  Debe ir en la linea 112 del Formulario de Renta F22. </td> </tr>
+ <tr style='font-weight:bold; color:white; background-color: red'> <td colspan='4' > LINEA F22: 'Boletas y Comprobante o recibo de pago de transacciones transbank'. </td> </tr>
  <tr height='50 px'></tr>
  <tr> <td>    <a href= '/alectrico-2021/libro-diario#Partida-1042'>marzo</a>  </td> <td> 115 </td> <td align='right' >  0.13 </td> <td> TASA PPM 1ra Categoria </td> </tr>
  <tr> <td>    <a href= '/alectrico-2021/libro-diario#Partida-1044'>mayo</a>  </td> <td> 115 </td> <td align='right' >  0.13 </td> <td> TASA PPM 1ra Categoria </td> </tr>
@@ -4655,7 +4655,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
  <tr> <td>    <a href= '/alectrico-2021/libro-diario#Partida-1051'>diciembre</a>  </td> <td> 115 </td> <td align='right' >  0.125 </td> <td> TASA PPM 1ra Categoria </td> </tr>
  <tr> <td>    <a href= '/alectrico-2021/libro-diario#Partida-1047'>agosto</a>  </td> <td> 115 </td> <td align='right' >  0.125 </td> <td> TASA PPM 1ra Categoria </td> </tr>
  <tr height='50 px' style='font-weight:bold; background-color: lightgreen'> <td>  <a href= '/alectrico-2021/libro-diario#Partida-1052'>^</a> </td> <td> 115 </td> <td align='right' >  1.395 </td> <td> Total Anual </td> </tr>
- <tr height='50 px' >  </tr>
+ <tr height='50 px'></tr>
  <tr> <td>    <a href= '/alectrico-2021/libro-diario#Partida-1041'>febrero</a>  </td> <td> 142 </td> <td align='right' >  4505 </td> <td> Neto Ventas/Servicios Exentos </td> </tr>
  <tr> <td>    <a href= '/alectrico-2021/libro-diario#Partida-1049'>octubre</a>  </td> <td> 142 </td> <td align='right' >  6666 </td> <td> Neto Ventas/Servicios Exentos </td> </tr>
  <tr> <td>    <a href= '/alectrico-2021/libro-diario#Partida-1050'>noviembre</a>  </td> <td> 142 </td> <td align='right' >  6666 </td> <td> Neto Ventas/Servicios Exentos </td> </tr>
@@ -4664,29 +4664,32 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
  <tr> <td>    <a href= '/alectrico-2021/libro-diario#Partida-1048'>septiembre</a>  </td> <td> 142 </td> <td align='right' >  406666 </td> <td> Neto Ventas/Servicios Exentos </td> </tr>
  <tr> <td>    <a href= '/alectrico-2021/libro-diario#Partida-1051'>diciembre</a>  </td> <td> 142 </td> <td align='right' >  43332 </td> <td> Neto Ventas/Servicios Exentos </td> </tr>
  <tr height='50 px' style='font-weight:bold; background-color: lightgreen'> <td>  <a href= '/alectrico-2021/libro-diario#Partida-1052'>^</a> </td> <td> 142 </td> <td align='right' >  584501 </td> <td> Total Anual </td> </tr>
- <tr height='50 px' >  </tr>
+ <tr style='font-weight:bold; color:white; background-color: red'> <td colspan='4' > LINEA F22: 'Ventas y/o Servicios prestados Exentos, o No Gravados'. </td> </tr>
+ <tr height='50 px'></tr>
  <tr> <td>    <a href= '/alectrico-2021/libro-diario#Partida-1049'>octubre</a>  </td> <td> 502 </td> <td align='right' >  17696 </td> <td> DÉB. FACTURAS EMITIDAS </td> </tr>
  <tr> <td>    <a href= '/alectrico-2021/libro-diario#Partida-1046'>julio</a>  </td> <td> 502 </td> <td align='right' >  123880 </td> <td> DÉB. FACTURAS EMITIDAS </td> </tr>
  <tr> <td>    <a href= '/alectrico-2021/libro-diario#Partida-1051'>diciembre</a>  </td> <td> 502 </td> <td align='right' >  35392 </td> <td> DÉB. FACTURAS EMITIDAS </td> </tr>
  <tr> <td>    <a href= '/alectrico-2021/libro-diario#Partida-1048'>septiembre</a>  </td> <td> 502 </td> <td align='right' >  53621 </td> <td> DÉB. FACTURAS EMITIDAS </td> </tr>
  <tr> <td>    <a href= '/alectrico-2021/libro-diario#Partida-1047'>agosto</a>  </td> <td> 502 </td> <td align='right' >  73583 </td> <td> DÉB. FACTURAS EMITIDAS </td> </tr>
  <tr height='50 px' style='font-weight:bold; background-color: lightgreen'> <td>  <a href= '/alectrico-2021/libro-diario#Partida-1052'>^</a> </td> <td> 502 </td> <td align='right' >  304172 </td> <td> Total Anual </td> </tr>
- <tr height='50 px' >  </tr>
+ <tr style='font-weight:bold; color:white; background-color: red'> <td colspan='4' > LINEA F22: 'Facturas por ventas y servicios gravados'. </td> </tr>
+ <tr height='50 px'></tr>
  <tr> <td>    <a href= '/alectrico-2021/libro-diario#Partida-1049'>octubre</a>  </td> <td> 503 </td> <td align='right' >  1 </td> <td> CANT. FACTURAS EMITIDAS </td> </tr>
  <tr> <td>    <a href= '/alectrico-2021/libro-diario#Partida-1046'>julio</a>  </td> <td> 503 </td> <td align='right' >  2 </td> <td> CANT. FACTURAS EMITIDAS </td> </tr>
  <tr> <td>    <a href= '/alectrico-2021/libro-diario#Partida-1051'>diciembre</a>  </td> <td> 503 </td> <td align='right' >  2 </td> <td> CANT. FACTURAS EMITIDAS </td> </tr>
  <tr> <td>    <a href= '/alectrico-2021/libro-diario#Partida-1048'>septiembre</a>  </td> <td> 503 </td> <td align='right' >  3 </td> <td> CANT. FACTURAS EMITIDAS </td> </tr>
  <tr> <td>    <a href= '/alectrico-2021/libro-diario#Partida-1047'>agosto</a>  </td> <td> 503 </td> <td align='right' >  4 </td> <td> CANT. FACTURAS EMITIDAS </td> </tr>
  <tr height='50 px' style='font-weight:bold; background-color: lightgreen'> <td>  <a href= '/alectrico-2021/libro-diario#Partida-1052'>^</a> </td> <td> 503 </td> <td align='right' >  12 </td> <td> Total Anual </td> </tr>
- <tr height='50 px' >  </tr>
+ <tr height='50 px'></tr>
  <tr> <td>    <a href= '/alectrico-2021/libro-diario#Partida-1046'>julio</a>  </td> <td> 509 </td> <td align='right' >  1 </td> <td> QtyNOTAS CREDITO EMITIDAS/Ref FACTURA | NOTA-CREDITO-RECIBIDA-RETENCION-PARCIAL-CAMBIO-SUEJETO </td> </tr>
  <tr> <td>    <a href= '/alectrico-2021/libro-diario#Partida-1047'>agosto</a>  </td> <td> 509 </td> <td align='right' >  1 </td> <td> QtyNOTAS CREDITO EMITIDAS/Ref FACTURA | NOTA-CREDITO-RECIBIDA-RETENCION-PARCIAL-CAMBIO-SUEJETO </td> </tr>
  <tr height='50 px' style='font-weight:bold; background-color: lightgreen'> <td>  <a href= '/alectrico-2021/libro-diario#Partida-1052'>^</a> </td> <td> 509 </td> <td align='right' >  2 </td> <td> Total Anual </td> </tr>
- <tr height='50 px' >  </tr>
+ <tr height='50 px'></tr>
  <tr> <td>    <a href= '/alectrico-2021/libro-diario#Partida-1046'>julio</a>  </td> <td> 510 </td> <td align='right' >  106176 </td> <td> DEBITO N.CREDITO EMITIDAS/Ref FACTURA | NOTA-CREDITO-RECIBIDA-RETENCION-PARCIAL-CAMBIO-SUJETO </td> </tr>
  <tr> <td>    <a href= '/alectrico-2021/libro-diario#Partida-1047'>agosto</a>  </td> <td> 510 </td> <td align='right' >  17203 </td> <td> DEBITO N.CREDITO EMITIDAS/Ref FACTURA | NOTA-CREDITO-RECIBIDA-RETENCION-PARCIAL-CAMBIO-SUJETO </td> </tr>
  <tr height='50 px' style='font-weight:bold; background-color: lightgreen'> <td>  <a href= '/alectrico-2021/libro-diario#Partida-1052'>^</a> </td> <td> 510 </td> <td align='right' >  123379 </td> <td> Total Anual </td> </tr>
- <tr height='50 px' >  </tr>
+ <tr style='font-weight:bold; color:white; background-color: red'> <td colspan='4' > LINEA F22: 'Notas de Crédito emitidas por ventas y servicios'. </td> </tr>
+ <tr height='50 px'></tr>
  <tr> <td>    <a href= '/alectrico-2021/libro-diario#Partida-1049'>octubre</a>  </td> <td> 511 </td> <td align='right' >  2257 </td> <td> CRED.IVA POR DCTOS. ELECTRONICOS  </td> </tr>
  <tr> <td>    <a href= '/alectrico-2021/libro-diario#Partida-1051'>diciembre</a>  </td> <td> 511 </td> <td align='right' >  2911 </td> <td> CRED.IVA POR DCTOS. ELECTRONICOS  </td> </tr>
  <tr> <td>    <a href= '/alectrico-2021/libro-diario#Partida-1042'>marzo</a>  </td> <td> 511 </td> <td align='right' >  6217 </td> <td> CRED.IVA POR DCTOS. ELECTRONICOS  </td> </tr>
@@ -4700,13 +4703,14 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
  <tr> <td>    <a href= '/alectrico-2021/libro-diario#Partida-1046'>julio</a>  </td> <td> 511 </td> <td align='right' >  21718 </td> <td> CRED.IVA POR DCTOS. ELECTRONICOS  </td> </tr>
  <tr> <td>    <a href= '/alectrico-2021/libro-diario#Partida-1047'>agosto</a>  </td> <td> 511 </td> <td align='right' >  55003 </td> <td> CRED.IVA POR DCTOS. ELECTRONICOS  </td> </tr>
  <tr height='50 px' style='font-weight:bold; background-color: lightgreen'> <td>  <a href= '/alectrico-2021/libro-diario#Partida-1052'>^</a> </td> <td> 511 </td> <td align='right' >  170181 </td> <td> Total Anual </td> </tr>
- <tr height='50 px' >  </tr>
+ <tr height='50 px'></tr>
  <tr> <td>    <a href= '/alectrico-2021/libro-diario#Partida-1041'>febrero</a>  </td> <td> 512 </td> <td align='right' >  2 </td> <td> NOTAS DE DEBITO EMITIDAS DEL GIRO </td> </tr>
  <tr height='50 px' style='font-weight:bold; background-color: lightgreen'> <td>  <a href= '/alectrico-2021/libro-diario#Partida-1052'>^</a> </td> <td> 512 </td> <td align='right' >  2 </td> <td> Total Anual </td> </tr>
- <tr height='50 px' >  </tr>
+ <tr height='50 px'></tr>
  <tr> <td>    <a href= '/alectrico-2021/libro-diario#Partida-1041'>febrero</a>  </td> <td> 513 </td> <td align='right' >  5588 </td> <td> DEBITO DE NOTAS DEBITO EMITIDAS DEL GIRO </td> </tr>
  <tr height='50 px' style='font-weight:bold; background-color: lightgreen'> <td>  <a href= '/alectrico-2021/libro-diario#Partida-1052'>^</a> </td> <td> 513 </td> <td align='right' >  5588 </td> <td> Total Anual </td> </tr>
- <tr height='50 px' >  </tr>
+ <tr style='font-weight:bold; color:white; background-color: red'> <td colspan='4' > LINEA F22: 'Notas de débito emitidas'. </td> </tr>
+ <tr height='50 px'></tr>
  <tr> <td>    <a href= '/alectrico-2021/libro-diario#Partida-1051'>diciembre</a>  </td> <td> 519 </td> <td align='right' >  1 </td> <td> CANT.DE DCTOS.FACT.RECIB.DEL GIRO </td> </tr>
  <tr> <td>    <a href= '/alectrico-2021/libro-diario#Partida-1049'>octubre</a>  </td> <td> 519 </td> <td align='right' >  1 </td> <td> CANT.DE DCTOS.FACT.RECIB.DEL GIRO </td> </tr>
  <tr> <td>    <a href= '/alectrico-2021/libro-diario#Partida-1047'>agosto</a>  </td> <td> 519 </td> <td align='right' >  2 </td> <td> CANT.DE DCTOS.FACT.RECIB.DEL GIRO </td> </tr>
@@ -4720,7 +4724,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
  <tr> <td>    <a href= '/alectrico-2021/libro-diario#Partida-1048'>septiembre</a>  </td> <td> 519 </td> <td align='right' >  4 </td> <td> CANT.DE DCTOS.FACT.RECIB.DEL GIRO </td> </tr>
  <tr> <td>    <a href= '/alectrico-2021/libro-diario#Partida-1046'>julio</a>  </td> <td> 519 </td> <td align='right' >  7 </td> <td> CANT.DE DCTOS.FACT.RECIB.DEL GIRO </td> </tr>
  <tr height='50 px' style='font-weight:bold; background-color: lightgreen'> <td>  <a href= '/alectrico-2021/libro-diario#Partida-1052'>^</a> </td> <td> 519 </td> <td align='right' >  33 </td> <td> Total Anual </td> </tr>
- <tr height='50 px' >  </tr>
+ <tr height='50 px'></tr>
  <tr> <td>    <a href= '/alectrico-2021/libro-diario#Partida-1051'>diciembre</a>  </td> <td> 520 </td> <td align='right' >  1316 </td> <td> CREDITOS REC. REINT/FACT. DEL GIRO  </td> </tr>
  <tr> <td>    <a href= '/alectrico-2021/libro-diario#Partida-1049'>octubre</a>  </td> <td> 520 </td> <td align='right' >  1316 </td> <td> CREDITOS REC. REINT/FACT. DEL GIRO  </td> </tr>
  <tr> <td>    <a href= '/alectrico-2021/libro-diario#Partida-1047'>agosto</a>  </td> <td> 520 </td> <td align='right' >  8921 </td> <td> CREDITOS REC. REINT/FACT. DEL GIRO  </td> </tr>
@@ -4734,15 +4738,15 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
  <tr> <td>    <a href= '/alectrico-2021/libro-diario#Partida-1048'>septiembre</a>  </td> <td> 520 </td> <td align='right' >  4594 </td> <td> CREDITOS REC. REINT/FACT. DEL GIRO  </td> </tr>
  <tr> <td>    <a href= '/alectrico-2021/libro-diario#Partida-1046'>julio</a>  </td> <td> 520 </td> <td align='right' >  8946 </td> <td> CREDITOS REC. REINT/FACT. DEL GIRO  </td> </tr>
  <tr height='50 px' style='font-weight:bold; background-color: lightgreen'> <td>  <a href= '/alectrico-2021/libro-diario#Partida-1052'>^</a> </td> <td> 520 </td> <td align='right' >  50822 </td> <td> Total Anual </td> </tr>
- <tr height='50 px' >  </tr>
+ <tr height='50 px'></tr>
  <tr> <td>    <a href= '/alectrico-2021/libro-diario#Partida-1040'>enero</a>  </td> <td> 524 </td> <td align='right' >  1 </td> <td> TOTAL FACTURA ACTIVO FIJO </td> </tr>
  <tr> <td>    <a href= '/alectrico-2021/libro-diario#Partida-1046'>julio</a>  </td> <td> 524 </td> <td align='right' >  1 </td> <td> TOTAL FACTURA ACTIVO FIJO </td> </tr>
  <tr height='50 px' style='font-weight:bold; background-color: lightgreen'> <td>  <a href= '/alectrico-2021/libro-diario#Partida-1052'>^</a> </td> <td> 524 </td> <td align='right' >  2 </td> <td> Total Anual </td> </tr>
- <tr height='50 px' >  </tr>
+ <tr height='50 px'></tr>
  <tr> <td>    <a href= '/alectrico-2021/libro-diario#Partida-1040'>enero</a>  </td> <td> 525 </td> <td align='right' >  28738 </td> <td> CRÉD. RECUP. Y REINT. FACT. ACTIVO FIJO </td> </tr>
  <tr> <td>    <a href= '/alectrico-2021/libro-diario#Partida-1046'>julio</a>  </td> <td> 525 </td> <td align='right' >  12772 </td> <td> CRÉD. RECUP. Y REINT. FACT. ACTIVO FIJO </td> </tr>
  <tr height='50 px' style='font-weight:bold; background-color: lightgreen'> <td>  <a href= '/alectrico-2021/libro-diario#Partida-1052'>^</a> </td> <td> 525 </td> <td align='right' >  41510 </td> <td> Total Anual </td> </tr>
- <tr height='50 px' >  </tr>
+ <tr height='50 px'></tr>
  <tr> <td>    <a href= '/alectrico-2021/libro-diario#Partida-1040'>enero</a>  </td> <td> 527 </td> <td align='right' >  0 </td> <td> CANT.NOTAS DE CREDITO RECIBIDAS </td> </tr>
  <tr> <td>    <a href= '/alectrico-2021/libro-diario#Partida-1041'>febrero</a>  </td> <td> 527 </td> <td align='right' >  0 </td> <td> CANT.NOTAS DE CREDITO RECIBIDAS </td> </tr>
  <tr> <td>    <a href= '/alectrico-2021/libro-diario#Partida-1046'>julio</a>  </td> <td> 527 </td> <td align='right' >  0 </td> <td> CANT.NOTAS DE CREDITO RECIBIDAS </td> </tr>
@@ -4752,19 +4756,19 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
  <tr> <td>    <a href= '/alectrico-2021/libro-diario#Partida-1043'>abril</a>  </td> <td> 527 </td> <td align='right' >  1 </td> <td> CANT.NOTAS DE CREDITO RECIBIDAS </td> </tr>
  <tr> <td>    <a href= '/alectrico-2021/libro-diario#Partida-1044'>mayo</a>  </td> <td> 527 </td> <td align='right' >  1 </td> <td> CANT.NOTAS DE CREDITO RECIBIDAS </td> </tr>
  <tr height='50 px' style='font-weight:bold; background-color: lightgreen'> <td>  <a href= '/alectrico-2021/libro-diario#Partida-1052'>^</a> </td> <td> 527 </td> <td align='right' >  2 </td> <td> Total Anual </td> </tr>
- <tr height='50 px' >  </tr>
+ <tr height='50 px'></tr>
  <tr> <td>    <a href= '/alectrico-2021/libro-diario#Partida-1043'>abril</a>  </td> <td> 528 </td> <td align='right' >  -1416 </td> <td> CREDITO RECUP.Y REINT/NOTAS DE CRED. </td> </tr>
  <tr> <td>    <a href= '/alectrico-2021/libro-diario#Partida-1041'>febrero</a>  </td> <td> 528 </td> <td align='right' >  -5089 </td> <td> CREDITO RECUP.Y REINT/NOTAS DE CRED. </td> </tr>
  <tr> <td>    <a href= '/alectrico-2021/libro-diario#Partida-1047'>agosto</a>  </td> <td> 528 </td> <td align='right' >  -1272 </td> <td> CREDITO RECUP.Y REINT/NOTAS DE CRED. </td> </tr>
  <tr> <td>    <a href= '/alectrico-2021/libro-diario#Partida-1044'>mayo</a>  </td> <td> 528 </td> <td align='right' >  -6813 </td> <td> CREDITO RECUP.Y REINT/NOTAS DE CRED. </td> </tr>
  <tr height='50 px' style='font-weight:bold; background-color: lightgreen'> <td>  <a href= '/alectrico-2021/libro-diario#Partida-1052'>^</a> </td> <td> 528 </td> <td align='right' >  -14590 </td> <td> Total Anual </td> </tr>
- <tr height='50 px' >  </tr>
+ <tr height='50 px'></tr>
  <tr> <td>    <a href= '/alectrico-2021/libro-diario#Partida-1040'>enero</a>  </td> <td> 538 </td> <td align='right' >  23464 </td> <td> TOTAL DEBITOS  </td> </tr>
  <tr> <td>    <a href= '/alectrico-2021/libro-diario#Partida-1042'>marzo</a>  </td> <td> 538 </td> <td align='right' >  5588 </td> <td> TOTAL DEBITOS  </td> </tr>
  <tr> <td>    <a href= '/alectrico-2021/libro-diario#Partida-1043'>abril</a>  </td> <td> 538 </td> <td align='right' >  4790 </td> <td> TOTAL DEBITOS  </td> </tr>
  <tr> <td>    <a href= '/alectrico-2021/libro-diario#Partida-1046'>julio</a>  </td> <td> 538 </td> <td align='right' >  28873 </td> <td> TOTAL DEBITOS  </td> </tr>
  <tr height='50 px' style='font-weight:bold; background-color: lightgreen'> <td>  <a href= '/alectrico-2021/libro-diario#Partida-1052'>^</a> </td> <td> 538 </td> <td align='right' >  62715 </td> <td> Total Anual </td> </tr>
- <tr height='50 px' >  </tr>
+ <tr height='50 px'></tr>
  <tr> <td>    <a href= '/alectrico-2021/libro-diario#Partida-1042'>marzo</a>  </td> <td> 563 </td> <td align='right' >  29412 </td> <td> BASE IMPONIBLE </td> </tr>
  <tr> <td>    <a href= '/alectrico-2021/libro-diario#Partida-1044'>mayo</a>  </td> <td> 563 </td> <td align='right' >  225 </td> <td> BASE IMPONIBLE </td> </tr>
  <tr> <td>    <a href= '/alectrico-2021/libro-diario#Partida-1050'>noviembre</a>  </td> <td> 563 </td> <td align='right' >  6666 </td> <td> BASE IMPONIBLE </td> </tr>
@@ -4777,7 +4781,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
  <tr> <td>    <a href= '/alectrico-2021/libro-diario#Partida-1051'>diciembre</a>  </td> <td> 563 </td> <td align='right' >  229606 </td> <td> BASE IMPONIBLE </td> </tr>
  <tr> <td>    <a href= '/alectrico-2021/libro-diario#Partida-1047'>agosto</a>  </td> <td> 563 </td> <td align='right' >  433943 </td> <td> BASE IMPONIBLE </td> </tr>
  <tr height='50 px' style='font-weight:bold; background-color: lightgreen'> <td>  <a href= '/alectrico-2021/libro-diario#Partida-1052'>^</a> </td> <td> 563 </td> <td align='right' >  2596504 </td> <td> Total Anual </td> </tr>
- <tr height='50 px' >  </tr>
+ <tr height='50 px'></tr>
  <tr> <td>    <a href= '/alectrico-2021/libro-diario#Partida-1041'>febrero</a>  </td> <td> 586 </td> <td align='right' >  1 </td> <td> Qty Ventas/Servicios Exentos </td> </tr>
  <tr> <td>    <a href= '/alectrico-2021/libro-diario#Partida-1049'>octubre</a>  </td> <td> 586 </td> <td align='right' >  1 </td> <td> Qty Ventas/Servicios Exentos </td> </tr>
  <tr> <td>    <a href= '/alectrico-2021/libro-diario#Partida-1050'>noviembre</a>  </td> <td> 586 </td> <td align='right' >  1 </td> <td> Qty Ventas/Servicios Exentos </td> </tr>
@@ -4786,19 +4790,20 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
  <tr> <td>    <a href= '/alectrico-2021/libro-diario#Partida-1048'>septiembre</a>  </td> <td> 586 </td> <td align='right' >  2 </td> <td> Qty Ventas/Servicios Exentos </td> </tr>
  <tr> <td>    <a href= '/alectrico-2021/libro-diario#Partida-1051'>diciembre</a>  </td> <td> 586 </td> <td align='right' >  3 </td> <td> Qty Ventas/Servicios Exentos </td> </tr>
  <tr height='50 px' style='font-weight:bold; background-color: lightgreen'> <td>  <a href= '/alectrico-2021/libro-diario#Partida-1052'>^</a> </td> <td> 586 </td> <td align='right' >  12 </td> <td> Total Anual </td> </tr>
- <tr height='50 px' >  </tr>
+ <tr height='50 px'></tr>
  <tr> <td>    <a href= '/alectrico-2021/libro-diario#Partida-1040'>enero</a>  </td> <td> 758 </td> <td align='right' >  20 </td> <td> CANT. RECIBO DE PAGO MEDIOS ELECTRÓNICOS </td> </tr>
  <tr> <td>    <a href= '/alectrico-2021/libro-diario#Partida-1042'>marzo</a>  </td> <td> 758 </td> <td align='right' >  1 </td> <td> CANT. RECIBO DE PAGO MEDIOS ELECTRÓNICOS </td> </tr>
  <tr> <td>    <a href= '/alectrico-2021/libro-diario#Partida-1043'>abril</a>  </td> <td> 758 </td> <td align='right' >  1 </td> <td> CANT. RECIBO DE PAGO MEDIOS ELECTRÓNICOS </td> </tr>
  <tr> <td>    <a href= '/alectrico-2021/libro-diario#Partida-1046'>julio</a>  </td> <td> 758 </td> <td align='right' >  3 </td> <td> CANT. RECIBO DE PAGO MEDIOS ELECTRÓNICOS </td> </tr>
  <tr height='50 px' style='font-weight:bold; background-color: lightgreen'> <td>  <a href= '/alectrico-2021/libro-diario#Partida-1052'>^</a> </td> <td> 758 </td> <td align='right' >  25 </td> <td> Total Anual </td> </tr>
- <tr height='50 px' >  </tr>
+ <tr height='50 px'></tr>
  <tr> <td>    <a href= '/alectrico-2021/libro-diario#Partida-1040'>enero</a>  </td> <td> 759 </td> <td align='right' >  23464 </td> <td> DÉB. RECIBO DE PAGO MEDIOS ELECTRÓNICOS </td> </tr>
  <tr> <td>    <a href= '/alectrico-2021/libro-diario#Partida-1042'>marzo</a>  </td> <td> 759 </td> <td align='right' >  5588 </td> <td> DÉB. RECIBO DE PAGO MEDIOS ELECTRÓNICOS </td> </tr>
  <tr> <td>    <a href= '/alectrico-2021/libro-diario#Partida-1043'>abril</a>  </td> <td> 759 </td> <td align='right' >  4790 </td> <td> DÉB. RECIBO DE PAGO MEDIOS ELECTRÓNICOS </td> </tr>
  <tr> <td>    <a href= '/alectrico-2021/libro-diario#Partida-1046'>julio</a>  </td> <td> 759 </td> <td align='right' >  28872 </td> <td> DÉB. RECIBO DE PAGO MEDIOS ELECTRÓNICOS </td> </tr>
  <tr height='50 px' style='font-weight:bold; background-color: lightgreen'> <td>  <a href= '/alectrico-2021/libro-diario#Partida-1052'>^</a> </td> <td> 759 </td> <td align='right' >  62714 </td> <td> Total Anual </td> </tr>
- <tr height='50 px' >  </tr>
+ <tr style='font-weight:bold; color:white; background-color: red'> <td colspan='4' > LINEA F22: 'Boletas y Comprobante o recibo de pago de transacciones transbank'. </td> </tr>
+ <tr height='50 px'></tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 0 </td> <td style='background-color: blanchedalmond'> 0</td> </tr>
 <tr><td colspan='4'> alectrico® SpA</td> </tr> 
 <tr><td colspan='4'> ( 31 de enero	2021	 ) </td> </tr>

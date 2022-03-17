@@ -799,8 +799,7 @@
    ( not  ( exists ( formulario-f22 (presentado-en-f22 false)  (codigo ?inferior&:( and ( numberp ?inferior )  (> (- ?codigo ?inferior ) 0) )))))
    ?formulario <- ( formulario-f22 (presentado-en-f22 false) (partida ?partida-f29) (codigo ?codigo&:(numberp ?codigo) ) (valor ?valor) (descripcion ?descripcion) (mes ?mes) (ano ?ano) )
    ?f22 <- ( f22 (partida ?numero) (ano ?ano))
-   ( f29-f22 (codigo-f29 ?codigo-f29) (linea-f22 ?linea-f22) )
-   ( test (eq ?codigo-f29 ?codigo))
+   ( f29-f22 (codigo-f29 ?codigo) (linea-f22 ?linea-f22) )
 
   =>
 
@@ -811,7 +810,7 @@
    ( if (eq ?mes "")
     then
       ( printout k " <tr height='50 px' style='font-weight:bold; background-color: lightgreen'> <td>  <a href= '/" ?empresa "/libro-diario#Partida-" ?numero "'>" ^ "</a> </td> <td> " ?codigo " </td> <td align='right' >  " ?valor " </td> <td> " ?descripcion " </td> </tr>" crlf)
-      ( printout k " <tr style='font-weight:bold; color:white; background-color: red'> <td colspan='4' >  Debe ir en la linea " ?linea-f22 " del Formulario de Renta F22. </td> </tr>" crlf)
+      ( printout k " <tr style='font-weight:bold; color:white; background-color: red'> <td colspan='4' > LINEA F22: '" ?linea-f22 "'. </td> </tr>" crlf)
       ( printout k " <tr height='50 px'></tr>" crlf)
 
     else
@@ -823,9 +822,7 @@
 )
 
 
-
-
-(defrule muestra-codigo-de-formulario-f22
+(defrule muestra-codigo-de-formulario-f22-sin-linea-de-documento
    ( declare (salience 65))
    ( fila ?numero )
    ( empresa (nombre ?empresa))
@@ -834,18 +831,19 @@
    ( not  ( exists ( formulario-f22 (presentado-en-f22 false)  (codigo ?inferior&:( and ( numberp ?inferior )  (> (- ?codigo ?inferior ) 0) )))))
    ?formulario <- ( formulario-f22 (presentado-en-f22 false) (partida ?partida-f29) (codigo ?codigo&:(numberp ?codigo) ) (valor ?valor) (descripcion ?descripcion) (mes ?mes) (ano ?ano) )
    ?f22 <- ( f22 (partida ?numero) (ano ?ano))
-   ( f29-f22 (codigo-f29 ?codigo-f29) ) 
-   ( test (neq ?codigo-f29 ?codigo))
+   (not (exists   ( f29-f22 (codigo-f29 ?codigo)  )))
+
   =>
 
    ( modify ?formulario (presentado-en-f22 true) )
 
    ( printout t  "codigo..." tab ?mes tab ?codigo tab ?valor tab ?descripcion crlf)
 
-   ( if (eq ?mes "") 
+   ( if (eq ?mes "")
     then
       ( printout k " <tr height='50 px' style='font-weight:bold; background-color: lightgreen'> <td>  <a href= '/" ?empresa "/libro-diario#Partida-" ?numero "'>" ^ "</a> </td> <td> " ?codigo " </td> <td align='right' >  " ?valor " </td> <td> " ?descripcion " </td> </tr>" crlf)
-      ( printout k " <tr height='50 px' >  </tr>" crlf)
+      ( printout k " <tr height='50 px'></tr>" crlf)
+
     else
       ( printout k " <tr> <td>    <a href= '/" ?empresa "/libro-diario#Partida-" ?partida-f29 "'>" ?mes "</a>  </td> <td> " ?codigo " </td> <td align='right' >  " ?valor " </td> <td> " ?descripcion " </td> </tr>" crlf)
    )
