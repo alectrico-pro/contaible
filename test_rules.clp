@@ -119,6 +119,7 @@
    ( load-facts ?archivo)
 
    ( load-facts "actividades.txt")
+   ( load-facts "f29-f22.txt" )
 
 
    ( assert (actual (mes enero     )))

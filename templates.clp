@@ -430,6 +430,12 @@
   (slot partida)
 )
 
+
+(deftemplate f29-f22
+  (slot codigo-f29)
+  (slot linea-f22)
+)
+
 (deftemplate formulario-f22
   (slot sumado (default false))
   (slot presentado-en-f22 (default false))

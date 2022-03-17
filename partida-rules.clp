@@ -240,11 +240,10 @@
      )
   )
 
-  ( printout k "<table id='Partida-" ?numero "'>" crlf)
 
 
   ( printout k "<p style='page-break-after: always;'>&nbsp;</p>" crlf)
-  ( printout k "<table style='background-color:cornsilk'>" crlf)
+  ( printout k "<table id='Partida-" ?numero "' style='background-color:cornsilk'>" crlf)
   ( printout k "<thead><th colspan='6'>Partida " ?numero "</th></thead>"crlf)
   ( printout k " <thead> <th> </th> <th> " Código " </th> <th>  " Valor " </th> <th> " Descripción " </th> </thead>" crlf)
   ( printout k "<tbody>" crlf)
@@ -252,7 +251,7 @@
 
   ( printout l crlf crlf )
   ( printout l "<br> <br> <br> <br> <br> <br> " crlf)
-  ( printout l "<table  class='table-bordered' >" crlf)
+  ( printout l "<table id='Partida-" ?numero "'  class='table-bordered' >" crlf)
   ( printout l "<thead><th colspan='6'>Partida " ?numero "</th></thead>"crlf)
   ( printout l " <thead> <th> </th> <th> " Código " </th> <th>  " Valor " </th> <th> " Descripción " </th> </thead>" crlf)
   ( printout l "<tbody>" crlf)
@@ -260,7 +259,7 @@
 
   ( printout h crlf crlf )
   ( printout h "<br> <br> <br> <br> <br> <br> " crlf)
-  ( printout h "<table  class='table-bordered' >" crlf)
+  ( printout h "<table id='Partida-" ?numero "'  class='table-bordered' >" crlf)
   ( printout h "<thead><th colspan='6'>Partida " ?numero "</th></thead>"crlf)
   ( printout h " <thead> <th> </th> <th> " Código " </th> <th>  " Valor " </th> <th> " Descripción " </th> </thead>" crlf)
   ( printout h "<tbody>" crlf)
@@ -791,6 +790,40 @@
 )
 
 
+(defrule muestra-codigo-de-formulario-f22-con-linea-de-documento
+   ( declare (salience 65))
+   ( fila ?numero )
+   ( empresa (nombre ?empresa))
+   ( balance (ano ?ano))
+   ( codigo-f29 (codigo ?codigo))
+   ( not  ( exists ( formulario-f22 (presentado-en-f22 false)  (codigo ?inferior&:( and ( numberp ?inferior )  (> (- ?codigo ?inferior ) 0) )))))
+   ?formulario <- ( formulario-f22 (presentado-en-f22 false) (partida ?partida-f29) (codigo ?codigo&:(numberp ?codigo) ) (valor ?valor) (descripcion ?descripcion) (mes ?mes) (ano ?ano) )
+   ?f22 <- ( f22 (partida ?numero) (ano ?ano))
+   ( f29-f22 (codigo-f29 ?codigo-f29) (linea-f22 ?linea-f22) )
+   ( test (eq ?codigo-f29 ?codigo))
+
+  =>
+
+   ( modify ?formulario (presentado-en-f22 true) )
+
+   ( printout t  "codigo..." tab ?mes tab ?codigo tab ?valor tab ?descripcion crlf)
+
+   ( if (eq ?mes "")
+    then
+      ( printout k " <tr height='50 px' style='font-weight:bold; background-color: lightgreen'> <td>  <a href= '/" ?empresa "/libro-diario#Partida-" ?numero "'>" ^ "</a> </td> <td> " ?codigo " </td> <td align='right' >  " ?valor " </td> <td> " ?descripcion " </td> </tr>" crlf)
+      ( printout k " <tr style='font-weight:bold; color:white; background-color: red'> <td colspan='4' >  Debe ir en la linea " ?linea-f22 " del Formulario de Renta F22. </td> </tr>" crlf)
+      ( printout k " <tr height='50 px'></tr>" crlf)
+
+    else
+      ( printout k " <tr> <td>    <a href= '/" ?empresa "/libro-diario#Partida-" ?partida-f29 "'>" ?mes "</a>  </td> <td> " ?codigo " </td> <td align='right' >  " ?valor " </td> <td> " ?descripcion " </td> </tr>" crlf)
+   )
+
+   ( printout l " <tr> <td> " ?mes " </td> <td> " ?codigo " </td> <td align='right'>  " ?valor " </td> <td> " ?descripcion " </td> </tr>" crlf)
+
+)
+
+
+
 
 (defrule muestra-codigo-de-formulario-f22
    ( declare (salience 65))
@@ -801,7 +834,8 @@
    ( not  ( exists ( formulario-f22 (presentado-en-f22 false)  (codigo ?inferior&:( and ( numberp ?inferior )  (> (- ?codigo ?inferior ) 0) )))))
    ?formulario <- ( formulario-f22 (presentado-en-f22 false) (partida ?partida-f29) (codigo ?codigo&:(numberp ?codigo) ) (valor ?valor) (descripcion ?descripcion) (mes ?mes) (ano ?ano) )
    ?f22 <- ( f22 (partida ?numero) (ano ?ano))
-
+   ( f29-f22 (codigo-f29 ?codigo-f29) ) 
+   ( test (neq ?codigo-f29 ?codigo))
   =>
 
    ( modify ?formulario (presentado-en-f22 true) )
