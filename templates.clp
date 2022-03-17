@@ -436,6 +436,7 @@
   (slot descripcion)
   (slot codigo)
   (slot valor)
+  (slot mes (default ""))
   (slot ano)
   (slot partida)
 )

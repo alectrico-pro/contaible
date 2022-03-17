@@ -781,7 +781,7 @@
 )
 
 
-(defrule suma-f22
+(defrule suma-para-obtener-codigo-en-formulario-f22-de-renta
    ?mensual <- ( formulario-f22 (sumado false) (valor ?valor-mensual) (codigo ?codigo) (ano ?ano) )
    ?anual   <- ( formulario-f22 (sumado true ) (valor ?valor-anual&:(numberp ?valor-anual)) (codigo ?codigo) (descripcion "Total Anual" ) (ano ?ano) )
   =>
@@ -791,17 +791,16 @@
 
 
 
-(defrule obtencion-de-f22
+(defrule obtencion-de-un-codigo-mensual-f29-para-ser-presentado-en-formulario-f22
    ( declare (salience -9000))
    ( balance (ano ?ano))
    ( empresa (nombre ?empresa))
    ( codigo-f29 (codigo ?codigo))
-;  ( not  ( exists ( formulario-f29 (mostrado-en-f22 false) (codigo ?inferior&:( and ( numberp ?inferior )  (>= (- ?codigo ?inferior ) 1) )))))
    ?f29 <- ( formulario-f29 (mostrado-en-f22 false) (partida ?partida-f29) (codigo ?codigo) (valor ?valor) (descripcion ?descripcion) (mes ?mes) (ano ?ano) )
    ?f22 <- ( f22 (partida ?numero) (ano ?ano))
   =>
    ( modify ?f29 (mostrado-en-f22 true)  )
    ( assert (partida (empresa ?empresa) (numero ?numero) (dia 31) (mes ?mes) (ano ?ano) (descripcion (str-cat "Formulario F22 " ?ano )) (  actividad codigos-f29)))
-   ( assert ( formulario-f22 (partida ?numero) (codigo ?codigo) (valor ?valor) (descripcion ?descripcion ) (ano ?ano) ))
+   ( assert ( formulario-f22 (partida ?numero) (codigo ?codigo) (valor ?valor) (descripcion ?descripcion ) (mes ?mes) (ano ?ano) ))
 )
 
