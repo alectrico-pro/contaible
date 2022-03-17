@@ -431,6 +431,12 @@
 )
 
 
+
+(deftemplate codigo-de-partida
+  (slot codigo)
+  (slot partida)
+)
+
 (deftemplate f29-f22
   (slot codigo-f29)
   (slot linea-f22)

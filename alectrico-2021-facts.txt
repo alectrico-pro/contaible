@@ -1408,7 +1408,7 @@
  ( folio-nota 15)
  ( folio 11)
  ( partida 082)
- ( archivo "../nota-de-credito-propia-15.png")
+ ( archivo "../nota-de-credito-propia-11.png")
  ( dia 27) (mes julio) (ano 2021))
 
 ;se prefiere esta regla en vez e nota-de-credito-sii

@@ -2796,7 +2796,7 @@
   ;     (padre colaboradores)
  ;      (origen nominativo) ) )
 ;
-   ( assert (partida (proveedor ?colaborador) (numero ?numero) (dia ?dia) (mes ?mes) (ano ?ano) (descripcion (str-cat "Nota de Crédito SII: " ?folio-nota " que anula Factura SII " ?folio " de "  ?material " a " ?colaborador)) (actividad dar-nota-de-credito-sii) (archivo (str-cat "../nota-de-credito-propia-" ?folio ".png"))))
+   ( assert (partida (proveedor ?colaborador) (numero ?numero) (dia ?dia) (mes ?mes) (ano ?ano) (descripcion (str-cat "Nota de Crédito SII: " ?folio-nota " que anula Factura SII " ?folio " de "  ?material " a " ?colaborador)) (actividad dar-nota-de-credito-sii) (archivo (str-cat "../nota-de-credito-propia-" ?folio-nota ".png"))))
 
    ( assert (abono (tipo-de-documento 61) (electronico true) (partida ?numero) (dia ?dia) (mes ?mes ) (ano ?ano) (empresa ?nombre) (cuenta banco-estado) (monto ?total) (glosa (str-cat " nota-credito " ?material))))
 

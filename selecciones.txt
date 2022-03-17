@@ -18,6 +18,6 @@
  (imprimir-detalles      true)
  (liquidar               subcuentas) 
  (origen-de-subcuentas   nominativo)
- (inspect-f29-code       709) )
+ (inspect-f29-code       510) )
 
 
