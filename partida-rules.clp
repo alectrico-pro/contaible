@@ -240,6 +240,7 @@
      )
   )
 
+  ( printout k "<table id='Partida-" ?numero "'>" crlf)
 
 
   ( printout k "<p style='page-break-after: always;'>&nbsp;</p>" crlf)
@@ -793,8 +794,8 @@
 
 (defrule muestra-codigo-de-formulario-f22
    ( declare (salience 65))
-;   ( codigo-f29 (codigo ?codigo))
    ( fila ?numero )
+   ( empresa (nombre ?empresa))
    ( balance (ano ?ano))
    ( codigo-f29 (codigo ?codigo))
    ( not  ( exists ( formulario-f22 (presentado-en-f22 false)  (codigo ?inferior&:( and ( numberp ?inferior )  (> (- ?codigo ?inferior ) 0) )))))
@@ -802,15 +803,17 @@
    ?f22 <- ( f22 (partida ?numero) (ano ?ano))
 
   =>
+
    ( modify ?formulario (presentado-en-f22 true) )
 
    ( printout t  "codigo..." tab ?mes tab ?codigo tab ?valor tab ?descripcion crlf)
 
    ( if (eq ?mes "") 
     then
-    ( printout k " <tr height='100 px' style='font-weight:bold; background-color: lightgreen'> <td> " ?mes "  </td> <td> " ?codigo " </td> <td align='right' >  " ?valor " </td> <td> " ?descripcion " </td> </tr>" crlf)
-   else
-    ( printout k " <tr> <td> " ?mes "  </td> <td> " ?codigo " </td> <td align='right' >  " ?valor " </td> <td> " ?descripcion " </td> </tr>" crlf)
+      ( printout k " <tr height='50 px' style='font-weight:bold; background-color: lightgreen'> <td>  <a href= '/" ?empresa "/libro-diario#Partida-" ?numero "'>" ^ "</a> </td> <td> " ?codigo " </td> <td align='right' >  " ?valor " </td> <td> " ?descripcion " </td> </tr>" crlf)
+      ( printout k " <tr height='50 px' >  </tr>" crlf)
+    else
+      ( printout k " <tr> <td>    <a href= '/" ?empresa "/libro-diario#Partida-" ?partida-f29 "'>" ?mes "</a>  </td> <td> " ?codigo " </td> <td align='right' >  " ?valor " </td> <td> " ?descripcion " </td> </tr>" crlf)
    )
 
    ( printout l " <tr> <td> " ?mes " </td> <td> " ?codigo " </td> <td align='right'>  " ?valor " </td> <td> " ?descripcion " </td> </tr>" crlf)

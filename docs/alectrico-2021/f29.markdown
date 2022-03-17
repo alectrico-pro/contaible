@@ -13,6 +13,8 @@ layout: page
  <tr> <td> </td> <td> 511 </td> <td align='right'>  41503 </td> <td> CRED.IVA POR DCTOS. ELECTRONICOS  </td> </tr>
  <tr> <td> </td> <td> 077 </td> <td align='right'>  28981 </td> <td> REMANENTE DE CREDITO FISC.  </td> </tr>
  <tr> <td> </td> <td> 504 </td> <td align='right'>  10942 </td> <td> REMANENTE CREDITO FISCAL MES ANTERIOR.  </td> </tr>
+ <tr> <td> </td> <td> 077 </td> <td align='right'>  0 </td> <td> REMANENTE DE CREDITO FISC.  </td> </tr>
+ <tr> <td> </td> <td> 504 </td> <td align='right'>  0 </td> <td> REMANENTE CREDITO FISCAL MES ANTERIOR.  </td> </tr>
  <tr> <td> </td> <td> 062 </td> <td align='right'>  199 </td> <td> PPM NETO DETERMINADO </td> </tr>
  <tr> <td> </td> <td> 527 </td> <td align='right'>  0 </td> <td> CANT.NOTAS DE CREDITO RECIBIDAS </td> </tr>
  <tr> <td> </td> <td> 524 </td> <td align='right'>  1 </td> <td> TOTAL FACTURA ACTIVO FIJO </td> </tr>
@@ -192,6 +194,137 @@ layout: page
 <tr><td colspan='4'> alectrico® SpA</td> </tr> 
 <tr><td colspan='4'> ( 31 de julio	2021	 ) </td> </tr>
 <tr><td colspan='8'> Partida 1046: Formulario F29 julio </td></tr>
+<tr><td colspan = '8'> codigos-f29</td> </tr>
+</tbody>
+</table>
+
+
+<br> <br> <br> <br> <br> <br> 
+<table  class='table-bordered' >
+<thead><th colspan='6'>Partida 1047</th></thead>
+ <thead> <th> </th> <th> Código </th> <th>  Valor </th> <th> Descripción </th> </thead>
+<tbody>
+ <tr> <td> </td> <td> 511 </td> <td align='right'>  55003 </td> <td> CRED.IVA POR DCTOS. ELECTRONICOS  </td> </tr>
+ <tr> <td> </td> <td> 077 </td> <td align='right'>  59140 </td> <td> REMANENTE DE CREDITO FISC.  </td> </tr>
+ <tr> <td> </td> <td> 504 </td> <td align='right'>  53631 </td> <td> REMANENTE CREDITO FISCAL MES ANTERIOR.  </td> </tr>
+ <tr> <td> </td> <td> 062 </td> <td align='right'>  542 </td> <td> PPM NETO DETERMINADO </td> </tr>
+ <tr> <td> </td> <td> 527 </td> <td align='right'>  0 </td> <td> CANT.NOTAS DE CREDITO RECIBIDAS </td> </tr>
+ <tr> <td> </td> <td> 509 </td> <td align='right'>  1 </td> <td> QtyNOTAS CREDITO EMITIDAS/Ref FACTURA | NOTA-CREDITO-RECIBIDA-RETENCION-PARCIAL-CAMBIO-SUEJETO </td> </tr>
+ <tr> <td> </td> <td> 510 </td> <td align='right'>  17203 </td> <td> DEBITO N.CREDITO EMITIDAS/Ref FACTURA | NOTA-CREDITO-RECIBIDA-RETENCION-PARCIAL-CAMBIO-SUJETO </td> </tr>
+ <tr> <td> </td> <td> 519 </td> <td align='right'>  2 </td> <td> CANT.DE DCTOS.FACT.RECIB.DEL GIRO </td> </tr>
+ <tr> <td> </td> <td> 520 </td> <td align='right'>  8921 </td> <td> CREDITOS REC. REINT/FACT. DEL GIRO  </td> </tr>
+ <tr> <td> </td> <td> 586 </td> <td align='right'>  2 </td> <td> Qty Ventas/Servicios Exentos </td> </tr>
+ <tr> <td> </td> <td> 142 </td> <td align='right'>  46666 </td> <td> Neto Ventas/Servicios Exentos </td> </tr>
+ <tr> <td> </td> <td> 528 </td> <td align='right'>  -1272 </td> <td> CREDITO RECUP.Y REINT/NOTAS DE CRED. </td> </tr>
+ <tr> <td> </td> <td> 503 </td> <td align='right'>  4 </td> <td> CANT. FACTURAS EMITIDAS </td> </tr>
+ <tr> <td> </td> <td> 502 </td> <td align='right'>  73583 </td> <td> DÉB. FACTURAS EMITIDAS </td> </tr>
+ <tr> <td> </td> <td> 115 </td> <td align='right'>  0.125 </td> <td> TASA PPM 1ra Categoria </td> </tr>
+ <tr> <td> </td> <td> 563 </td> <td align='right'>  433943 </td> <td> BASE IMPONIBLE </td> </tr>
+<tr> <td> </td> <td> 55003 </td> <td> 0</td> </tr>
+<tr><td colspan='4'> alectrico® SpA</td> </tr> 
+<tr><td colspan='4'> ( 31 de agosto	2021	 ) </td> </tr>
+<tr><td colspan='8'> Partida 1047: Formulario F29 agosto </td></tr>
+<tr><td colspan = '8'> codigos-f29</td> </tr>
+</tbody>
+</table>
+
+
+<br> <br> <br> <br> <br> <br> 
+<table  class='table-bordered' >
+<thead><th colspan='6'>Partida 1048</th></thead>
+ <thead> <th> </th> <th> Código </th> <th>  Valor </th> <th> Descripción </th> </thead>
+<tbody>
+ <tr> <td> </td> <td> 511 </td> <td align='right'>  14958 </td> <td> CRED.IVA POR DCTOS. ELECTRONICOS  </td> </tr>
+ <tr> <td> </td> <td> 077 </td> <td align='right'>  23392 </td> <td> REMANENTE DE CREDITO FISC.  </td> </tr>
+ <tr> <td> </td> <td> 504 </td> <td align='right'>  59342 </td> <td> REMANENTE CREDITO FISCAL MES ANTERIOR.  </td> </tr>
+ <tr> <td> </td> <td> 062 </td> <td align='right'>  861 </td> <td> PPM NETO DETERMINADO </td> </tr>
+ <tr> <td> </td> <td> 527 </td> <td align='right'>  0 </td> <td> CANT.NOTAS DE CREDITO RECIBIDAS </td> </tr>
+ <tr> <td> </td> <td> 586 </td> <td align='right'>  2 </td> <td> Qty Ventas/Servicios Exentos </td> </tr>
+ <tr> <td> </td> <td> 142 </td> <td align='right'>  406666 </td> <td> Neto Ventas/Servicios Exentos </td> </tr>
+ <tr> <td> </td> <td> 503 </td> <td align='right'>  3 </td> <td> CANT. FACTURAS EMITIDAS </td> </tr>
+ <tr> <td> </td> <td> 502 </td> <td align='right'>  53621 </td> <td> DÉB. FACTURAS EMITIDAS </td> </tr>
+ <tr> <td> </td> <td> 520 </td> <td align='right'>  4594 </td> <td> CREDITOS REC. REINT/FACT. DEL GIRO  </td> </tr>
+ <tr> <td> </td> <td> 519 </td> <td align='right'>  4 </td> <td> CANT.DE DCTOS.FACT.RECIB.DEL GIRO </td> </tr>
+ <tr> <td> </td> <td> 115 </td> <td align='right'>  0.125 </td> <td> TASA PPM 1ra Categoria </td> </tr>
+ <tr> <td> </td> <td> 563 </td> <td align='right'>  688883 </td> <td> BASE IMPONIBLE </td> </tr>
+<tr> <td> </td> <td> 14958 </td> <td> 0</td> </tr>
+<tr><td colspan='4'> alectrico® SpA</td> </tr> 
+<tr><td colspan='4'> ( 31 de septiembre	2021	 ) </td> </tr>
+<tr><td colspan='8'> Partida 1048: Formulario F29 septiembre </td></tr>
+<tr><td colspan = '8'> codigos-f29</td> </tr>
+</tbody>
+</table>
+
+
+<br> <br> <br> <br> <br> <br> 
+<table  class='table-bordered' >
+<thead><th colspan='6'>Partida 1049</th></thead>
+ <thead> <th> </th> <th> Código </th> <th>  Valor </th> <th> Descripción </th> </thead>
+<tbody>
+ <tr> <td> </td> <td> 111 </td> <td align='right'>  3990 </td> <td> DEBITOS BOLETAS EMITIDAS  </td> </tr>
+ <tr> <td> </td> <td> 511 </td> <td align='right'>  2257 </td> <td> CRED.IVA POR DCTOS. ELECTRONICOS  </td> </tr>
+ <tr> <td> </td> <td> 062 </td> <td align='right'>  152 </td> <td> PPM NETO DETERMINADO </td> </tr>
+ <tr> <td> </td> <td> 527 </td> <td align='right'>  0 </td> <td> CANT.NOTAS DE CREDITO RECIBIDAS </td> </tr>
+ <tr> <td> </td> <td> 519 </td> <td align='right'>  1 </td> <td> CANT.DE DCTOS.FACT.RECIB.DEL GIRO </td> </tr>
+ <tr> <td> </td> <td> 520 </td> <td align='right'>  1316 </td> <td> CREDITOS REC. REINT/FACT. DEL GIRO  </td> </tr>
+ <tr> <td> </td> <td> 39 </td> <td align='right'>  -223 </td> <td> IVA RETENIDO A TERCEROS POR CAMBIO DE SUJETO  </td> </tr>
+ <tr> <td> </td> <td> 586 </td> <td align='right'>  1 </td> <td> Qty Ventas/Servicios Exentos </td> </tr>
+ <tr> <td> </td> <td> 142 </td> <td align='right'>  6666 </td> <td> Neto Ventas/Servicios Exentos </td> </tr>
+ <tr> <td> </td> <td> 110 </td> <td align='right'>  1 </td> <td> CANT.DE DCTOS.BOLETAS </td> </tr>
+ <tr> <td> </td> <td> 503 </td> <td align='right'>  1 </td> <td> CANT. FACTURAS EMITIDAS </td> </tr>
+ <tr> <td> </td> <td> 502 </td> <td align='right'>  17696 </td> <td> DÉB. FACTURAS EMITIDAS </td> </tr>
+ <tr> <td> </td> <td> 115 </td> <td align='right'>  0.125 </td> <td> TASA PPM 1ra Categoria </td> </tr>
+ <tr> <td> </td> <td> 563 </td> <td align='right'>  121585 </td> <td> BASE IMPONIBLE </td> </tr>
+<tr> <td> </td> <td> -1733 </td> <td> 0</td> </tr>
+<tr><td colspan='4'> alectrico® SpA</td> </tr> 
+<tr><td colspan='4'> ( 31 de octubre	2021	 ) </td> </tr>
+<tr><td colspan='8'> Partida 1049: Formulario F29 octubre </td></tr>
+<tr><td colspan = '8'> codigos-f29</td> </tr>
+</tbody>
+</table>
+
+
+<br> <br> <br> <br> <br> <br> 
+<table  class='table-bordered' >
+<thead><th colspan='6'>Partida 1050</th></thead>
+ <thead> <th> </th> <th> Código </th> <th>  Valor </th> <th> Descripción </th> </thead>
+<tbody>
+ <tr> <td> </td> <td> 511 </td> <td align='right'>  4169 </td> <td> CRED.IVA POR DCTOS. ELECTRONICOS  </td> </tr>
+ <tr> <td> </td> <td> 062 </td> <td align='right'>  8 </td> <td> PPM NETO DETERMINADO </td> </tr>
+ <tr> <td> </td> <td> 586 </td> <td align='right'>  1 </td> <td> Qty Ventas/Servicios Exentos </td> </tr>
+ <tr> <td> </td> <td> 142 </td> <td align='right'>  6666 </td> <td> Neto Ventas/Servicios Exentos </td> </tr>
+ <tr> <td> </td> <td> 115 </td> <td align='right'>  0.125 </td> <td> TASA PPM 1ra Categoria </td> </tr>
+ <tr> <td> </td> <td> 563 </td> <td align='right'>  6666 </td> <td> BASE IMPONIBLE </td> </tr>
+ <tr> <td> </td> <td> 519 </td> <td align='right'>  3 </td> <td> CANT.DE DCTOS.FACT.RECIB.DEL GIRO </td> </tr>
+ <tr> <td> </td> <td> 520 </td> <td align='right'>  4169 </td> <td> CREDITOS REC. REINT/FACT. DEL GIRO  </td> </tr>
+<tr> <td> </td> <td> 4169 </td> <td> 0</td> </tr>
+<tr><td colspan='4'> alectrico® SpA</td> </tr> 
+<tr><td colspan='4'> ( 31 de noviembre	2021	 ) </td> </tr>
+<tr><td colspan='8'> Partida 1050: Formulario F29 noviembre </td></tr>
+<tr><td colspan = '8'> codigos-f29</td> </tr>
+</tbody>
+</table>
+
+
+<br> <br> <br> <br> <br> <br> 
+<table  class='table-bordered' >
+<thead><th colspan='6'>Partida 1051</th></thead>
+ <thead> <th> </th> <th> Código </th> <th>  Valor </th> <th> Descripción </th> </thead>
+<tbody>
+ <tr> <td> </td> <td> 511 </td> <td align='right'>  2911 </td> <td> CRED.IVA POR DCTOS. ELECTRONICOS  </td> </tr>
+ <tr> <td> </td> <td> 062 </td> <td align='right'>  287 </td> <td> PPM NETO DETERMINADO </td> </tr>
+ <tr> <td> </td> <td> 519 </td> <td align='right'>  1 </td> <td> CANT.DE DCTOS.FACT.RECIB.DEL GIRO </td> </tr>
+ <tr> <td> </td> <td> 520 </td> <td align='right'>  1316 </td> <td> CREDITOS REC. REINT/FACT. DEL GIRO  </td> </tr>
+ <tr> <td> </td> <td> 503 </td> <td align='right'>  2 </td> <td> CANT. FACTURAS EMITIDAS </td> </tr>
+ <tr> <td> </td> <td> 502 </td> <td align='right'>  35392 </td> <td> DÉB. FACTURAS EMITIDAS </td> </tr>
+ <tr> <td> </td> <td> 586 </td> <td align='right'>  3 </td> <td> Qty Ventas/Servicios Exentos </td> </tr>
+ <tr> <td> </td> <td> 142 </td> <td align='right'>  43332 </td> <td> Neto Ventas/Servicios Exentos </td> </tr>
+ <tr> <td> </td> <td> 115 </td> <td align='right'>  0.125 </td> <td> TASA PPM 1ra Categoria </td> </tr>
+ <tr> <td> </td> <td> 563 </td> <td align='right'>  229606 </td> <td> BASE IMPONIBLE </td> </tr>
+<tr> <td> </td> <td> 2911 </td> <td> 0</td> </tr>
+<tr><td colspan='4'> alectrico® SpA</td> </tr> 
+<tr><td colspan='4'> ( 31 de diciembre	2021	 ) </td> </tr>
+<tr><td colspan='8'> Partida 1051: Formulario F29 diciembre </td></tr>
 <tr><td colspan = '8'> codigos-f29</td> </tr>
 </tbody>
 </table>

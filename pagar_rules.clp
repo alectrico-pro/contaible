@@ -801,6 +801,6 @@
   =>
    ( modify ?f29 (mostrado-en-f22 true)  )
    ( assert (partida (empresa ?empresa) (numero ?numero) (dia 31) (mes ?mes) (ano ?ano) (descripcion (str-cat "Formulario F22 " ?ano )) (  actividad codigos-f29)))
-   ( assert ( formulario-f22 (partida ?numero) (codigo ?codigo) (valor ?valor) (descripcion ?descripcion ) (mes ?mes) (ano ?ano) ))
+   ( assert ( formulario-f22 (partida ?partida-f29) (codigo ?codigo) (valor ?valor) (descripcion ?descripcion ) (mes ?mes) (ano ?ano) ))
 )
 
