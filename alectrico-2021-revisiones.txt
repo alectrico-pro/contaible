@@ -205,7 +205,11 @@
 (revision (revisado true) (partida 086) (tipo 33) (rcv n-a) )
 
 (revision (revisado true) (partida 0867) (tipo ajuste-iva) (rcv n-a) )
-(revision (revisado true) (partida 087) (tipo ajuste-remanente) (rcv n-a) (a-corregir "Total debe ser 151960, pero es 151962. Es la anulación de vouchers por 151962. No tiene el efecto de disminuir el monto imponible, debe ser poque no tienen campo REF") )
+
+(revision (revisado true) (partida 087) (tipo nota-de-credito) (rcv true)
+  (rechazado true)
+ (no-incluir true)
+ (a-corregir "La emití a nombre de alectrico pero  no anulé la nota que se recibe en consecuencia") )
 
 
 (revision (revisado true) (partida 088) (tipo 33) (rcv n-a) )

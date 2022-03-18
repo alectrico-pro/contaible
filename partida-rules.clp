@@ -828,12 +828,13 @@
    ( empresa (nombre ?empresa))
    ( balance (ano ?ano))
    ( codigo-f29 (codigo ?codigo))
-   ( not  ( exists ( formulario-f22 (presentado-en-f22 false)  (codigo ?inferior&:( and ( numberp ?inferior )  (> (- ?codigo ?inferior ) 0) )))))
-   ?formulario <- ( formulario-f22 (presentado-en-f22 false) (partida ?partida-f29) (codigo ?codigo&:(numberp ?codigo) ) (valor ?valor) (descripcion ?descripcion) (mes ?mes) (ano ?ano) )
+ ;  ( not  ( exists ( formulario-f22 (presentado-en-codigo-de-partida false) (presentado-en-f22 false)  (codigo ?inferior&:( and ( numberp ?inferior )  (> (- ?codigo ?inferior ) 0) )))))
+   ?formulario <- ( formulario-f22 (presentado-en-codigo-de-partida false) (presentado-en-f22 true) (partida ?partida-f29) (codigo ?codigo&:(numberp ?codigo) ) (valor ?valor) (descripcion ?descripcion) (mes ?mes) (ano ?ano) )
    ?f22 <- ( f22 (partida ?numero) (ano ?ano))
    ( codigo-de-partida (codigo ?codigo) (partida ?partida))
    ( partida (numero ?partida ) (mes ?mes) (descripcion ?descripcion-partida))
   =>
+   ( modify ?formulario (presentado-en-codigo-de-partida true))
    ( printout k " <tr height='50 px' style= 'background-color: azure'> <td> " ?mes "   <a href= '/" ?empresa "/libro-diario#Partida-" ?partida "'>" ?partida "</a> </td> <td colspan='3' align='right' > " ?descripcion-partida " </td>  </tr>" crlf)
 )
 
@@ -844,8 +845,8 @@
    ( empresa (nombre ?empresa))
    ( balance (ano ?ano))
    ( codigo-f29 (codigo ?codigo))
-   ( not  ( exists ( formulario-f22 (presentado-en-f22 false)  (codigo ?inferior&:( and ( numberp ?inferior )  (> (- ?codigo ?inferior ) 0) )))))
-   ?formulario <- ( formulario-f22 (presentado-en-f22 false) (partida ?partida-f29) (codigo ?codigo&:(numberp ?codigo) ) (valor ?valor) (descripcion ?descripcion) (mes ?mes) (ano ?ano) )
+   ( not  ( exists ( formulario-f22 (presentado-en-codigo-de-partida false) (presentado-en-f22 false)  (codigo ?inferior&:( and ( numberp ?inferior )  (> (- ?codigo ?inferior ) 0) )))))
+   ?formulario <- ( formulario-f22 (presentado-en-codigo-de-partida false) (presentado-en-f22 false) (partida ?partida-f29) (codigo ?codigo&:(numberp ?codigo) ) (valor ?valor) (descripcion ?descripcion) (mes ?mes) (ano ?ano) )
    ?f22 <- ( f22 (partida ?numero) (ano ?ano))
    (not (exists   ( f29-f22 (codigo-f29 ?codigo)  )))
   =>
