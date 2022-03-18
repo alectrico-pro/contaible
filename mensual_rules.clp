@@ -468,9 +468,9 @@
 
 (defrule creando-acumulador-759
    ( declare (salience 9000))
-   ( cuenta (nombre iva-debito) (tipo-de-documento 61) (partida ?partida) (haber ?haber) (debe ?debe) (mes ?mes) (ano ?ano))
+   ( cuenta (nombre iva-debito) (tipo-de-documento 48) (partida ?partida) (haber ?haber) (debe ?debe) (mes ?mes) (ano ?ano))
    ( not (exists ( acumulador-mensual (cuenta 759) (mes ?mes) (ano ?ano))))
-  ( test (or (> ?haber 0) (> ?debe 0)))
+   ( test (or (> ?haber 0) (> ?debe 0)))
 
  =>
   ( assert ( acumulador-mensual (cuenta 759) (mes ?mes) (ano ?ano) (debe 0) (haber 0)))

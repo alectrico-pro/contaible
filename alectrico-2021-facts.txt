@@ -16,9 +16,6 @@
 
 ;dia 01/01/2021---------- asiento inicial  ----------------
 
-
-
-
 (registro-de-accionistas
   (partida 001)
   (nombre comu)
