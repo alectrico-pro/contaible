@@ -811,7 +811,7 @@
     then
       ( printout k " <tr height='50 px' style='font-weight:bold; background-color: lightgreen'> <td>  <a href= '/" ?empresa "/libro-diario#Partida-" ?numero "'>" ^ "</a> </td> <td> " ?codigo " </td> <td align='right' >  " ?valor " </td> <td> " ?descripcion " </td> </tr>" crlf)
       ( printout k " <tr style='font-weight:bold; color:white; background-color: red'> <td colspan='4' > LINEA F22: '" ?linea-f22 "'. </td> </tr>" crlf)
-      ( printout k " <tr height='50 px'></tr>" crlf)
+    ; ( printout k " <tr height='50 px'></tr>" crlf)
 
     else
       ( printout k " <tr> <td>    <a href= '/" ?empresa "/libro-diario#Partida-" ?partida-f29 "'>" ?mes "</a>  </td> <td> " ?codigo " </td> <td align='right' >  " ?valor " </td> <td> " ?descripcion " </td> </tr>" crlf)
@@ -829,13 +829,14 @@
    ( balance (ano ?ano))
    ( codigo-f29 (codigo ?codigo))
  ;  ( not  ( exists ( formulario-f22 (presentado-en-codigo-de-partida false) (presentado-en-f22 false)  (codigo ?inferior&:( and ( numberp ?inferior )  (> (- ?codigo ?inferior ) 0) )))))
-   ?formulario <- ( formulario-f22 (presentado-en-codigo-de-partida false) (presentado-en-f22 true) (partida ?partida-f29) (codigo ?codigo&:(numberp ?codigo) ) (valor ?valor) (descripcion ?descripcion) (mes ?mes) (ano ?ano) )
+   ?formulario <- ( formulario-f22 (presentado-en-f22 true) (partida ?partida-f29) (codigo ?codigo&:(numberp ?codigo) ) (valor ?valor) (descripcion ?descripcion) (mes ?mes) (ano ?ano) )
    ?f22 <- ( f22 (partida ?numero) (ano ?ano))
-   ( codigo-de-partida (codigo ?codigo) (partida ?partida))
+   ?cdp <-   ( codigo-de-partida (codigo ?codigo) (partida ?partida))
    ( partida (numero ?partida ) (mes ?mes) (descripcion ?descripcion-partida))
   =>
-   ( modify ?formulario (presentado-en-codigo-de-partida true))
-   ( printout k " <tr height='50 px' style= 'background-color: azure'> <td> " ?mes "   <a href= '/" ?empresa "/libro-diario#Partida-" ?partida "'>" ?partida "</a> </td> <td colspan='3' align='right' > " ?descripcion-partida " </td>  </tr>" crlf)
+   ( retract ?cdp )
+;  ( modify ?formulario (presentado-en-codigo-de-partida true))
+   ( printout k " <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> " ?codigo "</td> <td align='right'>   <a href= '/" ?empresa "/libro-diario#Partida-" ?partida "'> Ir a partida: "  ?partida "</a> </td> <td colspan='3' align='left' > " ?descripcion-partida " </td>  </tr>" crlf)
 )
 
 
@@ -858,7 +859,7 @@
    ( if (eq ?mes "")
     then
       ( printout k " <tr height='50 px' style='font-weight:bold; background-color: lightgreen'> <td>  <a href= '/" ?empresa "/libro-diario#Partida-" ?numero "'>" ^ "</a> </td> <td> " ?codigo " </td> <td align='right' >  " ?valor " </td> <td> " ?descripcion " </td> </tr>" crlf)
-      ( printout k " <tr height='50 px'></tr>" crlf)
+;      ( printout k " <tr height='50 px'></tr>" crlf)
 
     else
       ( printout k " <tr> <td>    <a href= '/" ?empresa "/libro-diario#Partida-" ?partida-f29 "'>" ?mes "</a>  </td> <td> " ?codigo " </td> <td align='right' >  " ?valor " </td> <td> " ?descripcion " </td> </tr>" crlf)
