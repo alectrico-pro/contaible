@@ -35,6 +35,10 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <tr><td></td><td>40027</td><td></td><td> r(base-imponible) </td></tr>
 <tr><td>31203</td><td></td><td colspan='2'>gastos-administrativos</td></tr>
 <tr><td></td><td>31203</td><td></td><td> r(base-imponible) </td></tr>
+<tr><td>4505</td><td></td><td colspan='2'>devolucion-sobre-ventas</td></tr>
+<tr><td></td><td>4505</td><td></td><td> r(base-imponible) </td></tr>
+<tr><td>29412</td><td></td><td colspan='2'>devolucion-sobre-ventas</td></tr>
+<tr><td></td><td>29412</td><td></td><td> r(base-imponible) </td></tr>
 <tr><td>6666</td><td></td><td colspan='2'>ventas</td></tr>
 <tr><td></td><td>6666</td><td></td><td> r(base-imponible) </td></tr>
 <tr><td>6666</td><td></td><td colspan='2'>ventas</td></tr>
@@ -93,12 +97,8 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <tr><td></td><td>102</td><td></td><td> r(base-imponible) </td></tr>
 <tr><td>29412</td><td></td><td colspan='2'>ventas</td></tr>
 <tr><td></td><td>29412</td><td></td><td> r(base-imponible) </td></tr>
-<tr><td>4505</td><td></td><td colspan='2'>ventas</td></tr>
-<tr><td></td><td>4505</td><td></td><td> r(base-imponible) </td></tr>
 <tr><td>84</td><td></td><td colspan='2'>ventas</td></tr>
 <tr><td></td><td>84</td><td></td><td> r(base-imponible) </td></tr>
-<tr><td>29412</td><td></td><td colspan='2'>ventas</td></tr>
-<tr><td></td><td>29412</td><td></td><td> r(base-imponible) </td></tr>
 <tr><td>29412</td><td></td><td colspan='2'>ventas</td></tr>
 <tr><td></td><td>29412</td><td></td><td> r(base-imponible) </td></tr>
 <tr><td>123497</td><td></td><td colspan='2'>ventas</td></tr>
@@ -353,16 +353,16 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <tr><td></td><td>31203</td><td></td><td> r(perdidas-y-ganancias) </td></tr>
 <tr><td>40027</td><td></td><td colspan='2'>gastos-administrativos</td></tr>
 <tr><td></td><td>40027</td><td></td><td> r(perdidas-y-ganancias) </td></tr>
+<tr><td>29412</td><td></td><td colspan='2'>devolucion-sobre-ventas</td></tr>
+<tr><td></td><td>29412</td><td></td><td> r(perdidas-y-ganancias) </td></tr>
+<tr><td>4505</td><td></td><td colspan='2'>devolucion-sobre-ventas</td></tr>
+<tr><td></td><td>4505</td><td></td><td> r(perdidas-y-ganancias) </td></tr>
 <tr><td>123497</td><td></td><td colspan='2'>ventas</td></tr>
 <tr><td></td><td>123497</td><td></td><td> r(perdidas-y-ganancias) </td></tr>
 <tr><td>29412</td><td></td><td colspan='2'>ventas</td></tr>
 <tr><td></td><td>29412</td><td></td><td> r(perdidas-y-ganancias) </td></tr>
-<tr><td>29412</td><td></td><td colspan='2'>ventas</td></tr>
-<tr><td></td><td>29412</td><td></td><td> r(perdidas-y-ganancias) </td></tr>
 <tr><td>84</td><td></td><td colspan='2'>ventas</td></tr>
 <tr><td></td><td>84</td><td></td><td> r(perdidas-y-ganancias) </td></tr>
-<tr><td>4505</td><td></td><td colspan='2'>ventas</td></tr>
-<tr><td></td><td>4505</td><td></td><td> r(perdidas-y-ganancias) </td></tr>
 <tr><td>29412</td><td></td><td colspan='2'>ventas</td></tr>
 <tr><td></td><td>29412</td><td></td><td> r(perdidas-y-ganancias) </td></tr>
 <tr><td>102</td><td></td><td colspan='2'>ventas</td></tr>

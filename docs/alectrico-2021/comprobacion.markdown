@@ -51,20 +51,20 @@ NO se han practicado liquidaciones, por lo que SÍ se muestran cuentas nominales
 <tr style=' background: #fff; border: 1px solid red;'>
 <td>Remuneraciones por Pagar<small>salarios-por-pagar</small></td> <td align='right'>1482860</td> <td align='right'>2150000</td> <td> | </td> <td align='right'> 0</td> <td align='right'>667140</td> </tr>
 <tr>
-<td><small>ventas</small></td> <td align='right'>0</td> <td align='right'>2595724</td> <td> | </td> <td align='right'> 0</td> <td align='right'>2595724</td>
+<td><small>ventas</small></td> <td align='right'>0</td> <td align='right'>2561807</td> <td> | </td> <td align='right'> 0</td> <td align='right'>2561807</td>
 </tr>
 <tr>
 <td>Herramientas<small>herramientas</small></td> <td align='right'>218470</td> <td align='right'>0</td> <td> | </td> <td align='right'> 218470</td> <td align='right'>0</td>
 </tr>
 <tr>
-<td><small>devolucion-sobre-ventas</small></td> <td align='right'>1241951</td> <td align='right'>0</td> <td> | </td> <td align='right'> 1241951</td> <td align='right'>0</td>
+<td><small>devolucion-sobre-ventas</small></td> <td align='right'>1241951</td> <td align='right'>33917</td> <td> | </td> <td align='right'> 1208034</td> <td align='right'>0</td>
 </tr>
 <tr>
 <td>Intangibles<small>intangibles</small> </td> <td align='right'>2440000</td> <td align='right'>52631</td> <td> | </td> <td align='right'> 2387369</td> <td align='right'>0</td> 
 <td colspan='2' style=' background: #faa; border: 1px solid red;'>Subcuenta </td>
 </tr>
 <tr>
-<td><small>ingresos-brutos</small></td> <td align='right'>0</td> <td align='right'>2598749</td> <td> | </td> <td align='right'> 0</td> <td align='right'>2598749</td>
+<td><small>ingresos-brutos</small></td> <td align='right'>0</td> <td align='right'>2564832</td> <td> | </td> <td align='right'> 0</td> <td align='right'>2564832</td>
 </tr>
 <tr style=' background: #fff; border: 1px solid red;'>
 <td><small>cuentas-por-cobrar</small></td> <td align='right'>51203</td> <td align='right'>0</td> <td> | </td> <td align='right'> 51203</td> <td align='right'>0</td> </tr>
@@ -86,10 +86,10 @@ NO se han practicado liquidaciones, por lo que SÍ se muestran cuentas nominales
 <td>Caja<small>caja</small></td> <td align='right'>1107841</td> <td align='right'>996928</td> <td> | </td> <td align='right'> 110913</td> <td align='right'>0</td>
 </tr>
 <tr>
-<td>Banco Estado<small>banco-estado</small></td> <td align='right'>4492808</td> <td align='right'>4019229</td> <td> | </td> <td align='right'> 473579</td> <td align='right'>0</td>
+<td>Banco Estado<small>banco-estado</small></td> <td align='right'>4492808</td> <td align='right'>4019185</td> <td> | </td> <td align='right'> 473623</td> <td align='right'>0</td>
 </tr>
 <tr>
-<td>PPM (Pago Provisional Mensual)<small>ppm</small></td> <td align='right'>3975</td> <td align='right'>0</td> <td> | </td> <td align='right'> 3975</td> <td align='right'>0</td>
+<td>PPM (Pago Provisional Mensual)<small>ppm</small></td> <td align='right'>3931</td> <td align='right'>0</td> <td> | </td> <td align='right'> 3931</td> <td align='right'>0</td>
 </tr>
 <tr>
 <td>IVA Créditos<small>iva-credito</small></td> <td align='right'>251998</td> <td align='right'>183475</td> <td> | </td> <td align='right'> 68523</td> <td align='right'>0</td>
@@ -101,6 +101,6 @@ NO se han practicado liquidaciones, por lo que SÍ se muestran cuentas nominales
 </tr>
 </tbody>
 <tfoot>
-<tr> <td></td> <td align='right'> <div>18444604</div></td> <td align='right'> <div>20731186</div></td><td> | </td> <td align='right'> <div>8660335</div></td> <td align='right'> <div>10946917</div></td> </tr>
+<tr> <td></td> <td align='right'> <div>18444560</div></td> <td align='right'> <div>20663308</div></td><td> | </td> <td align='right'> <div>8626418</div></td> <td align='right'> <div>10845166</div></td> </tr>
 </tfoot>
 </table>

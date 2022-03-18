@@ -171,6 +171,8 @@
 
  =>
   ( assert ( acumulador-mensual (cuenta 110) (mes ?mes) (ano ?ano) (debe 0) (haber 0)))
+  ( assert ( acumulador-mensual (cuenta 111) (mes ?mes) (ano ?ano) (debe 0) (haber 0)))
+
   ( printout t "Cuenta acumulador mensual 110 afecta " tab ?mes crlf)
 )
 
@@ -182,6 +184,8 @@
 
  =>
   ( assert ( acumulador-mensual (cuenta 110) (mes ?mes) (ano ?ano) (debe 0) (haber 0)))
+  ( assert ( acumulador-mensual (cuenta 111) (mes ?mes) (ano ?ano) (debe 0) (haber 0)))
+
   ( printout t "Cuenta acumulador mensual 110 exenta  "tab ?mes crlf)
 
 )
@@ -487,11 +491,13 @@
 
 (defrule ordenar-incremento-codigo-110-exenta
   ( declare (salience 9000))
-  ( cuenta (partida ?partida) (qty ?qty) (tipo-de-documento 39) (nombre ventas-con-eboleta-exenta) (haber ?haber) (debe ?debe) (mes ?mes) (ano ?ano))
+  ( cuenta (partida ?partida) (qty ?qty) (tipo-de-documento 34) (nombre ventas-con-eboleta-exenta) (haber ?haber) (debe ?debe) (mes ?mes) (ano ?ano))
   ( test (or (> ?haber 0) (> ?debe 0)))
 
  =>
-  (assert (sumar (partida ?partida) (qty ?qty) (debe ?debe) (haber ?haber) (tipo-de-documento 39) (cuenta 110) (mes ?mes) (ano ?ano)))
+  (assert (sumar (partida ?partida) (qty ?qty) (debe ?debe) (haber ?haber) (tipo-de-documento 34) (cuenta 110) (mes ?mes) (ano ?ano)))
+  (assert (sumar (partida ?partida) (qty ?qty) (debe ?debe) (haber ?haber) (tipo-de-documento 34) (cuenta 111) (mes ?mes) (ano ?ano)))
+
 )
 
 (defrule ordenar-incremento-codigo-110-boleta
@@ -500,6 +506,9 @@
   ( test (or (> ?haber 0) (> ?debe 0)))
  =>
   (assert (sumar (partida ?partida) (qty ?qty) (debe ?debe) (tipo-de-documento 39) (haber ?haber) (cuenta 110) (mes ?mes) (ano ?ano)))
+  (assert (sumar (partida ?partida) (qty ?qty) (debe ?debe) (tipo-de-documento 39) (haber ?haber) (cuenta 111) (mes ?mes) (ano ?ano)))
+
+
   (printout t "Sumando tipo 39 para codigo 110 " tab ?partida tab ?debe "------------" ?haber crlf)
 )
 

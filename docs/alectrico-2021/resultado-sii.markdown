@@ -18,8 +18,8 @@ Se han practicado liquidaciones, por lo que NO se muestran cuentas nominales
 <thead> <th></th><th colspan='4'> A C T I V O    C I R C U L A N T E</th> <th> 671089</th> </thead>
 <thead> <th></th><th>retencion-de-iva-articulo-11</th><th> 0</th> </thead>
 <thead> <th></th><th>iva-credito</th><th> 68523</th> </thead>
-<thead> <th></th><th>ppm</th><th> 3975</th> </thead>
-<thead> <th></th><th>banco-estado</th><th> 473579</th> </thead>
+<thead> <th></th><th>ppm</th><th> 3931</th> </thead>
+<thead> <th></th><th>banco-estado</th><th> 473623</th> </thead>
 <thead> <th></th><th>caja</th><th> 110913</th> </thead>
 <thead> <th></th><th>insumos</th><th> 0</th> </thead>
 <thead> <th></th><th>cuentas-por-cobrar</th><th> 51203</th> </thead>
@@ -318,15 +318,12 @@ Se han practicado liquidaciones, por lo que NO se muestran cuentas nominales
 <tr style='background-color: lavender'>
 <td> agosto</td><td><a href= '/alectrico-2021/libro-diario#Partida-121'>121</a></td><td><small> electrocom-materiales </small> </td> <td align='right'> 25971</td> <td align='right'>0</td> <td> materiales</td>
 </tr>
-<thead> <th></th><th colspan='4'> V E N T A S </th><th> 2595724</th> </thead>
+<thead> <th></th><th colspan='4'> V E N T A S </th><th> 2561807</th> </thead>
 <tr  style='background-color: lightyellow'>
-<td>nil</td><td><small> ventas-con-eboleta-afecta </small> </td> <td align='right'> 0</td> <td align='right'>79910</td> <td> ventas</td>
+<td>nil</td><td><small> ventas-con-eboleta-afecta </small> </td> <td align='right'> 0</td> <td align='right'>50498</td> <td> ventas</td>
 </tr>
 <tr style='background-color: lavender'>
 <td> enero</td><td><a href= '/alectrico-2021/libro-diario#Partida-3'>3</a></td> <td><small> ventas-con-eboleta-afecta </small> </td> <td align='right'> 0</td> <td align='right'>29412</td> <td> ventas</td>
-</tr>
-<tr style='background-color: lavender'>
-<td> febrero</td><td><a href= '/alectrico-2021/libro-diario#Partida-192'>192</a></td> <td><small> ventas-con-eboleta-afecta </small> </td> <td align='right'> 0</td> <td align='right'>29412</td> <td> ventas</td>
 </tr>
 <tr style='background-color: lavender'>
 <td> febrero</td><td><a href= '/alectrico-2021/libro-diario#Partida-1911'>1911</a></td> <td><small> ventas-con-eboleta-afecta </small> </td> <td align='right'> 0</td> <td align='right'>84</td> <td> ventas</td>
@@ -348,15 +345,6 @@ Se han practicado liquidaciones, por lo que NO se muestran cuentas nominales
 </tr>
 <tr style='background-color: lavender'>
 <td> julio</td><td><a href= '/alectrico-2021/libro-diario#Partida-77'>77</a></td> <td><small> ventas-con-voucher-afecto </small> </td> <td align='right'> 0</td> <td align='right'>151960</td> <td> ventas</td>
-</tr>
-<tr  style='background-color: lightyellow'>
-<td>nil</td><td><small> ventas-con-eboleta-exenta </small> </td> <td align='right'> 0</td> <td align='right'>39505</td> <td> ventas</td>
-</tr>
-<tr style='background-color: lavender'>
-<td> febrero</td><td><a href= '/alectrico-2021/libro-diario#Partida-191'>191</a></td> <td><small> ventas-con-eboleta-exenta </small> </td> <td align='right'> 0</td> <td align='right'>4505</td> <td> ventas</td>
-</tr>
-<tr style='background-color: lavender'>
-<td> julio</td><td><a href= '/alectrico-2021/libro-diario#Partida-81'>81</a></td> <td><small> ventas-con-eboleta-exenta </small> </td> <td align='right'> 0</td> <td align='right'>35000</td> <td> ventas</td>
 </tr>
 <tr  style='background-color: lightyellow'>
 <td>nil</td><td><small> ventas-con-factura-afecta </small> </td> <td align='right'> 0</td> <td align='right'>1601234</td> <td> ventas</td>
@@ -435,4 +423,10 @@ Se han practicado liquidaciones, por lo que NO se muestran cuentas nominales
 </tr>
 <tr style='background-color: lavender'>
 <td> diciembre</td><td><a href= '/alectrico-2021/libro-diario#Partida-195'>195</a></td> <td><small> ventas-con-factura-exenta </small> </td> <td align='right'> 0</td> <td align='right'>6666</td> <td> ventas</td>
+</tr>
+<tr  style='background-color: lightyellow'>
+<td>nil</td><td><small> ventas-con-eboleta-exenta </small> </td> <td align='right'> 0</td> <td align='right'>35000</td> <td> ventas</td>
+</tr>
+<tr style='background-color: lavender'>
+<td> julio</td><td><a href= '/alectrico-2021/libro-diario#Partida-81'>81</a></td> <td><small> ventas-con-eboleta-exenta </small> </td> <td align='right'> 0</td> <td align='right'>35000</td> <td> ventas</td>
 </tr>

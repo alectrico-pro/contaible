@@ -532,8 +532,9 @@
 
 
 
-(defrule codigos-f29-debito-boletas-emitidas
+(defrule codigos-f29-debito-boletas-emitidas-no
    ( declare (salience -1))
+(no)
    ( balance (ano ?ano))
 
    ( empresa (nombre ?empresa))
@@ -546,6 +547,24 @@
    ( assert (partida (empresa ?empresa) (numero ?numero) (dia 31) (mes ?mes) (ano ?ano) (descripcion (str-cat "Formulario F29 " ?mes )) (  actividad codigos-f29)))
    ( assert ( formulario-f29 (partida ?numero) (codigo 111) (valor (round (* ?monto 0.19))) (descripcion  "DEBITOS BOLETAS EMITIDAS "  ) (mes ?mes) (ano ?ano) ))
 ) 
+
+
+
+(defrule codigos-f29-debito-boletas-emitidas
+   ( declare (salience -1))
+   ( balance (ano ?ano))
+
+   ( empresa (nombre ?empresa))
+   ?f <- ( f29 (partida ?numero) (mes ?mes) (ano ?ano))
+   ( acumulador-mensual (cuenta 111) (haber ?haber) (debe ?debe) (mes ?mes) (ano ?ano))
+;   ( cuenta (partida ?partida) (nombre ventas-con-eboleta-afecta) (haber ?haber) (debe ?debe) (mes ?mes) (ano ?ano))
+  ; (test (> ?haber ?debe))
+  =>
+   ( bind ?monto (- ?haber ?debe))
+   ( assert (partida (empresa ?empresa) (numero ?numero) (dia 31) (mes ?mes) (ano ?ano) (descripcion (str-cat "Formulario F29 " ?mes )) (  actividad codigos-f29)))
+   ( assert ( formulario-f29 (partida ?numero) (codigo 111) (valor (round (* ?monto 0.19))) (descripcion  "DEBITOS BOLETAS EMITIDAS "  ) (mes ?mes) (ano ?ano) ))
+)
+
 
 (defrule codigos-f29-debito-debito-total
    ( declare (salience -1))

@@ -13,7 +13,7 @@ Cifras en pesos.
 <th > PASIVO CIRCULANTE </th> <th align='right' >789171</th> </thead>
 <tbody>
 <tr> <td> Caja </td> <td align='right' >110913</td> <td> Proveedores. </td> <td align='right' > 0</td> </tr>
-<tr> <td> Banco Estado </td> <td align='right'  >473579</td></tr>
+<tr> <td> Banco Estado </td> <td align='right'  >473623</td></tr>
 <tr> <td> Clientes </td> <td align='right' >0</td> <td >  IVA Débito </td> <td align='right'>122031</td> </tr>
 <tr> <td> Cuentas por Cobrar </td> <td align='right' >51203</td></tr>
 <tr> <td> Retenciones </td> <td align='right' style='font-weight:bold; color: white; background-color: crimson'>(  1500)</td> </tr> 
@@ -21,7 +21,7 @@ Cifras en pesos.
 <td> SalariosXPagar </td> <td align='right'> 667140</td></tr> 
 <tr> <td> IVA Crédito </td><td align='right' >68523</td> 
 <td> Ingresos Adelantados </td> </tr>
-<tr> <td> PPM </td> <td align='right' >3975</td></tr> 
+<tr> <td> PPM </td> <td align='right' >3931</td></tr> 
 <tr> <td> Insumos</td> <td align='right'>0</td> </tr>
 <tr> <td> Inventario </td>
 <td align='right'>0</td> </tr> 

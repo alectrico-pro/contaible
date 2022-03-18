@@ -2691,6 +2691,9 @@
    ( test (and (not (eq nil ?total)) (> ?total 0)))
    ( test (and (not (eq nil ?neto)) (> ?neto 0)))
    ( test (>= (to_serial_date ?top ?mes_top ?ano_top) (to_serial_date ?dia ?mes ?ano)))
+   ( selecciones (devolver-a-devolucion-sobre-ventas ?devolver-a-devolucion-sobre-ventas))
+
+
   =>
    ( assert (partida (archivo ?archivo) (numero ?numero) (dia ?dia) (mes ?mes) (ano ?ano) (descripcion (str-cat "Nota de Débito Manual: " ?folio-debito " que anula a Nota de Crédito SII " ?folio-credito )) (actividad dar-nota-de-debito-manual)))
 
@@ -2701,9 +2704,16 @@
    ( assert (abono (tipo-de-documento 56) (electronico true) (partida ?numero) (dia ?dia) (mes ?mes ) (ano ?ano) (empresa ?nombre) (cuenta iva-debito) (monto ?iva) (glosa nota-debito )))
 
 
-   ( assert (abono (tipo-de-documento 56) (partida ?numero) (dia ?dia) (mes ?mes ) (ano ?ano) (empresa ?nombre) (cuenta ?subcuenta) (monto ?neto) (glosa (str-cat " nota-debito " ?folio-debito))))
+   ( if (eq true ?devolver-a-devolucion-sobre-ventas)
+   then
+     ( assert (abono (tipo-de-documento 56) (partida ?numero) (dia ?dia) (mes ?mes ) (ano ?ano) (empresa ?nombre) (cuenta devolucion-sobre-ventas) (monto ?neto) (glosa (str-cat " nota-debito " ?folio-debito))))
+   else
+     ( assert (abono (tipo-de-documento 56) (partida ?numero) (dia ?dia) (mes ?mes ) (ano ?ano) (empresa ?nombre) (cuenta ?subcuenta) (monto ?neto) (glosa (str-cat " nota-debito " ?folio-debito))))
+   )
 
    ( assert (ccm (folio ?folio-debito) (partida ?numero) (tipo-documento 56) (monto-total ?neto) (razon-social-contraparte ?subcuenta) (rut-contraparte ?rut) (monto-neto ?neto)))
+
+
 )
 
 
@@ -2733,14 +2743,21 @@
    ( test (and (not (eq nil ?total)) (> ?total 0)))
    ( test (and (not (eq nil ?neto)) (> ?neto 0)))
    ( test (>= (to_serial_date ?top ?mes_top ?ano_top) (to_serial_date ?dia ?mes ?ano)))
+   ( selecciones (devolver-a-devolucion-sobre-ventas ?devolver-a-devolucion-sobre-ventas))
+
  =>
    ( assert (partida (archivo ?archivo) (numero ?numero) (dia ?dia) (mes ?mes) (ano ?ano) (descripcion (str-cat "Nota de Débito SII: " ?folio-debito " que anula a Nota de Crédito SII " ?folio-credito )) (actividad dar-nota-de-debito-sii)))
+
+   ( if (eq true ?devolver-a-devolucion-sobre-ventas)
+   then
+     ( assert (abono (tipo-de-documento 56) (partida ?numero) (dia ?dia) (mes ?mes ) (ano ?ano) (empresa ?nombre) (cuenta devolucion-sobre-ventas) (monto ?neto) (glosa (str-cat " nota-debito " ?folio-debito))))
+   else
+     ( assert (abono (tipo-de-documento 56) (partida ?numero) (dia ?dia) (mes ?mes ) (ano ?ano) (empresa ?nombre) (cuenta ?subcuenta) (monto ?neto) (glosa (str-cat " nota-debito " ?folio-debito))))
+   )
 
    ( assert (cargo (tipo-de-documento 56) (electronico true) (partida ?numero) (dia ?dia) (mes ?mes ) (ano ?ano) (empresa ?nombre) (cuenta banco-estado) (monto ?total) (glosa (str-cat " nota-debito " ?folio-debito))))
 
    ( assert (abono (tipo-de-documento 56) (electronico true) (partida ?numero) (dia ?dia) (mes ?mes ) (ano ?ano) (empresa ?nombre) (cuenta iva-credito) (monto ?iva) (glosa nota-debito )))
-
-  ( assert (abono (tipo-de-documento 56) (partida ?numero) (dia ?dia) (mes ?mes ) (ano ?ano) (empresa ?nombre) (cuenta ?subcuenta) (monto ?neto) (glosa (str-cat " nota-debito " ?folio-debito))))
 
    ( assert (ccm (folio ?folio-credito) (partida ?numero) (tipo-documento 56) (monto-total ?neto) (rut-contraparte ?rut) (monto-neto ?neto)))
 
