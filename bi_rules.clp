@@ -101,6 +101,8 @@
 )
 
 
+
+
 (defrule mostrando-hechos
   (no)
    (hecho (id ?id) (gravado true) (partida ?numero) (regla ?regla))
@@ -157,6 +159,16 @@
   =>
    (printout t "x<-c Cargo no realizado: " tab ?numero tab ?actividad crlf)
 )
+
+
+(defrule cargo-realizado-pero-no-mostrado-en-partida
+   (partida (numero ?numero) (actividad ?actividad))
+   (cuenta  (mostrada-en-partida false) (partida ?numero) (ano ?ano))
+   (balance (ano ?ano))
+  =>
+   (printout t "x<-Cuenta No mostrado en partida: " tab ?numero tab ?actividad crlf)
+)
+
 
 
 

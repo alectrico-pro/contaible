@@ -243,7 +243,7 @@
 
 
   ( printout k "<p style='page-break-after: always;'>&nbsp;</p>" crlf)
-  ( printout k "<table style='background-color:cornsilk'>" crlf)
+  ( printout k "<table id='Partida-" ?numero "' style='background-color:cornsilk'>" crlf)
   ( printout k "<thead><th colspan='6'>Partida " ?numero "</th></thead>"crlf)
   ( printout k " <thead> <th> </th> <th> " Código " </th> <th>  " Valor " </th> <th> " Descripción " </th> </thead>" crlf)
   ( printout k "<tbody>" crlf)
@@ -251,7 +251,7 @@
 
   ( printout l crlf crlf )
   ( printout l "<br> <br> <br> <br> <br> <br> " crlf)
-  ( printout l "<table  class='table-bordered' >" crlf)
+  ( printout l "<table id='Partida-" ?numero "'  class='table-bordered' >" crlf)
   ( printout l "<thead><th colspan='6'>Partida " ?numero "</th></thead>"crlf)
   ( printout l " <thead> <th> </th> <th> " Código " </th> <th>  " Valor " </th> <th> " Descripción " </th> </thead>" crlf)
   ( printout l "<tbody>" crlf)
@@ -259,7 +259,7 @@
 
   ( printout h crlf crlf )
   ( printout h "<br> <br> <br> <br> <br> <br> " crlf)
-  ( printout h "<table  class='table-bordered' >" crlf)
+  ( printout h "<table id='Partida-" ?numero "'  class='table-bordered' >" crlf)
   ( printout h "<thead><th colspan='6'>Partida " ?numero "</th></thead>"crlf)
   ( printout h " <thead> <th> </th> <th> " Código " </th> <th>  " Valor " </th> <th> " Descripción " </th> </thead>" crlf)
   ( printout h "<tbody>" crlf)
@@ -646,11 +646,11 @@
   =>
    ( printout t  "codigo..." ?codigo tab ?valor tab ?descripcion crlf)
 
-   ( printout k " <tr> <td> </td> <td> " ?codigo " </td> <td>  " ?valor " </td> <td> " ?descripcion " </td> </tr>" crlf)
+   ( printout k " <tr> <td> </td> <td> " ?codigo " </td> <td align='right'>  " ?valor " </td> <td> " ?descripcion " </td> </tr>" crlf)
 
-   ( printout l " <tr> <td> </td> <td> " ?codigo " </td> <td>  " ?valor " </td> <td> " ?descripcion " </td> </tr>" crlf)
+   ( printout l " <tr> <td> </td> <td> " ?codigo " </td> <td align='right'>  " ?valor " </td> <td> " ?descripcion " </td> </tr>" crlf)
 
-   ( printout h " <tr> <td> </td> <td> " ?codigo " </td> <td>  " ?valor " </td> <td> " ?descripcion " </td> </tr>" crlf)
+   ( printout h " <tr> <td> </td> <td> " ?codigo " </td> <td align='right'>  " ?valor " </td> <td> " ?descripcion " </td> </tr>" crlf)
 
 
    ( modify ?f (mostrado-en-partida true))
@@ -671,10 +671,10 @@
   =>
    ( printout t  "codigo..." ?codigo tab ?valor tab ?descripcion crlf)
 
-   ( printout k " <tr> <td> </td> <td> " ?codigo " </td> <td>  " ?valor " </td> <td> " ?descripcion " </td> </tr>" crlf)
+   ( printout k " <tr> <td> </td> <td> " ?codigo " </td> <td align='right'>  " ?valor " </td> <td> " ?descripcion " </td> </tr>" crlf)
 
-   ( printout l " <tr> <td> </td> <td> " ?codigo " </td> <td>  " ?valor " </td> <td> " ?descripcion " </td> </tr>" crlf)
-   ( printout h " <tr> <td> </td> <td> " ?codigo " </td> <td>  " ?valor " </td> <td> " ?descripcion " </td> </tr>" crlf)
+   ( printout l " <tr> <td> </td> <td> " ?codigo " </td> <td align='right'>  " ?valor " </td> <td> " ?descripcion " </td> </tr>" crlf)
+   ( printout h " <tr> <td> </td> <td> " ?codigo " </td> <td align='right'>  " ?valor " </td> <td> " ?descripcion " </td> </tr>" crlf)
 
 
    ( modify ?partida (debe (+ ?debe ?valor)) (haber (+ ?haber 0)))
@@ -696,10 +696,10 @@
   =>
    ( printout t  "codigo..." ?codigo tab ?valor tab ?descripcion crlf)
 
-   ( printout k " <tr> <td> </td> <td> " ?codigo " </td> <td>  " ?valor " </td> <td> " ?descripcion " </td> </tr>" crlf)
+   ( printout k " <tr> <td> </td> <td> " ?codigo " </td> <td align='right'>  " ?valor " </td> <td> " ?descripcion " </td> </tr>" crlf)
 
-   ( printout l " <tr> <td> </td> <td> " ?codigo " </td> <td>  " ?valor " </td> <td> " ?descripcion " </td> </tr>" crlf)
-   ( printout h " <tr> <td> </td> <td> " ?codigo " </td> <td>  " ?valor " </td> <td> " ?descripcion " </td> </tr>" crlf)
+   ( printout l " <tr> <td> </td> <td> " ?codigo " </td> <td align='right'>  " ?valor " </td> <td> " ?descripcion " </td> </tr>" crlf)
+   ( printout h " <tr> <td> </td> <td> " ?codigo " </td> <td align='right'>  " ?valor " </td> <td> " ?descripcion " </td> </tr>" crlf)
 
    ( modify ?partida (debe (+ ?debe ?valor)) (haber (+ ?haber 0)))
    ( modify ?f (mostrado-en-partida true))
@@ -721,10 +721,10 @@
   =>
    ( printout t  "codigo..." ?codigo tab ?valor tab ?descripcion crlf)
 
-   ( printout k " <tr> <td> </td> <td> " ?codigo " </td> <td>  " ?valor " </td> <td> " ?descripcion " </td> </tr>" crlf)
+   ( printout k " <tr> <td> </td> <td> " ?codigo " </td> <td align='right'>  " ?valor " </td> <td> " ?descripcion " </td> </tr>" crlf)
 
-   ( printout l " <tr> <td> </td> <td> " ?codigo " </td> <td>  " ?valor " </td> <td> " ?descripcion " </td> </tr>" crlf)
-   ( printout h " <tr> <td> </td> <td> " ?codigo " </td> <td>  " ?valor " </td> <td> " ?descripcion " </td> </tr>" crlf)
+   ( printout l " <tr> <td> </td> <td> " ?codigo " </td> <td align='right'>  " ?valor " </td> <td> " ?descripcion " </td> </tr>" crlf)
+   ( printout h " <tr> <td> </td> <td> " ?codigo " </td> <td align='right'>  " ?valor " </td> <td> " ?descripcion " </td> </tr>" crlf)
 
    ( modify ?partida (debe (- ?debe ?valor)) (haber (+ ?haber 0)))
    ( modify ?f (mostrado-en-partida true))
@@ -745,10 +745,10 @@
   =>
    ( printout t  "codigo..." ?codigo tab ?valor tab ?descripcion crlf)
 
-   ( printout k " <tr> <td> </td> <td> " ?codigo " </td> <td>  " ?valor " </td> <td> " ?descripcion " </td> </tr>" crlf)
+   ( printout k " <tr> <td> </td> <td> " ?codigo " </td> <td align='right'>  " ?valor " </td> <td> " ?descripcion " </td> </tr>" crlf)
 
-   ( printout l " <tr> <td> </td> <td> " ?codigo " </td> <td>  " ?valor " </td> <td> " ?descripcion " </td> </tr>" crlf)
-   ( printout h " <tr> <td> </td> <td> " ?codigo " </td> <td>  " ?valor " </td> <td> " ?descripcion " </td> </tr>" crlf)
+   ( printout l " <tr> <td> </td> <td> " ?codigo " </td> <td align='right'>  " ?valor " </td> <td> " ?descripcion " </td> </tr>" crlf)
+   ( printout h " <tr> <td> </td> <td> " ?codigo " </td> <td align='right'>  " ?valor " </td> <td> " ?descripcion " </td> </tr>" crlf)
 
    ( modify ?partida (debe (- ?debe ?valor)) (haber (+ ?haber 0)))
    ( modify ?f (mostrado-en-partida true))
@@ -769,10 +769,10 @@
   =>
    ( printout t  "codigo..." ?codigo tab ?valor tab ?descripcion crlf)
 
-   ( printout k " <tr> <td> </td> <td> " ?codigo " </td> <td>  " ?valor " </td> <td> " ?descripcion " </td> </tr>" crlf)
+   ( printout k " <tr> <td> </td> <td> " ?codigo " </td> <td align='right'>  " ?valor " </td> <td> " ?descripcion " </td> </tr>" crlf)
 
-   ( printout l " <tr> <td> </td> <td> " ?codigo " </td> <td>  " ?valor " </td> <td> " ?descripcion " </td> </tr>" crlf)
-   ( printout h " <tr> <td> </td> <td> " ?codigo " </td> <td>  " ?valor " </td> <td> " ?descripcion " </td> </tr>" crlf)
+   ( printout l " <tr> <td> </td> <td> " ?codigo " </td> <td align='right'>  " ?valor " </td> <td> " ?descripcion " </td> </tr>" crlf)
+   ( printout h " <tr> <td> </td> <td> " ?codigo " </td> <td align='right'>  " ?valor " </td> <td> " ?descripcion " </td> </tr>" crlf)
 
 
    ( modify ?partida (debe (+ ?debe 0)) (haber (+ ?haber ?valor)))
@@ -780,26 +780,94 @@
 
 )
 
+(defrule ordenar-codigos
+ =>
+  ( bind ?i 1)
+  ( while (< ?i 1000) do
+    ( assert (codigo-f29 (codigo ?i)))
+    ( bind ?i (+ ?i 1))
+  )
+)
 
 
-(defrule muestra-codigo-de-formulario-f22-recuadro-17
+(defrule muestra-codigo-de-formulario-f22-con-linea-de-documento
    ( declare (salience 65))
    ( fila ?numero )
-   ( balance (dia ?top) (mes ?mes_top) (ano ?ano_top))
    ( empresa (nombre ?empresa))
-   ( formulario-f22 (partida ?numero) (descripcion ?descripcion) (codigo ?codigo) (valor ?valor) (ano ?ano))
-   ( test (>= (to_serial_date ?top ?mes_top ?ano_top) (to_serial_date 1 abril ?ano)))
-   ( test (> ?ano (- ?ano_top 1)))
+   ( balance (ano ?ano))
+   ( codigo-f29 (codigo ?codigo))
+   ( not  ( exists ( formulario-f22 (presentado-en-f22 false)  (codigo ?inferior&:( and ( numberp ?inferior )  (> (- ?codigo ?inferior ) 0) )))))
+   ?formulario <- ( formulario-f22 (presentado-en-f22 false) (partida ?partida-f29) (codigo ?codigo&:(numberp ?codigo) ) (valor ?valor) (descripcion ?descripcion) (mes ?mes) (ano ?ano) )
+   ?f22 <- ( f22 (partida ?numero) (ano ?ano))
+   ( f29-f22 (codigo-f29 ?codigo) (linea-f22 ?linea-f22) )
+
   =>
-   ( printout t  "codigo..." ?codigo tab ?valor tab ?descripcion crlf)
 
-   ( printout k " <tr> <td> </td> <td> " ?codigo " </td> <td>  " ?valor " </td> <td> " ?descripcion " </td> </tr>" crlf)
+   ( modify ?formulario (presentado-en-f22 true) )
 
-   ( printout l " <tr> <td> </td> <td> " ?codigo " </td> <td>  " ?valor " </td> <td> " ?descripcion " </td> </tr>" crlf)
+   ( printout t  "codigo..." tab ?mes tab ?codigo tab ?valor tab ?descripcion crlf)
+
+   ( if (eq ?mes "")
+    then
+      ( printout k " <tr height='50 px' style='font-weight:bold; background-color: lightgreen'> <td>  <a href= '/" ?empresa "/libro-diario#Partida-" ?numero "'>" ^ "</a> </td> <td> " ?codigo " </td> <td align='right' >  " ?valor " </td> <td> " ?descripcion " </td> </tr>" crlf)
+      ( printout k " <tr style='font-weight:bold; color:white; background-color: red'> <td colspan='4' > LINEA F22: '" ?linea-f22 "'. </td> </tr>" crlf)
+    ; ( printout k " <tr height='50 px'></tr>" crlf)
+
+    else
+      ( printout k " <tr> <td>    <a href= '/" ?empresa "/libro-diario#Partida-" ?partida-f29 "'>" ?mes "</a>  </td> <td> " ?codigo " </td> <td align='right' >  " ?valor " </td> <td> " ?descripcion " </td> </tr>" crlf)
+   )
+
+   ( printout l " <tr> <td> " ?mes " </td> <td> " ?codigo " </td> <td align='right'>  " ?valor " </td> <td> " ?descripcion " </td> </tr>" crlf)
 
 )
 
 
+(defrule codigo-de-partida
+   ( declare (salience 65))
+   ( fila ?numero )
+   ( empresa (nombre ?empresa))
+   ( balance (ano ?ano))
+   ( codigo-f29 (codigo ?codigo))
+ ;  ( not  ( exists ( formulario-f22 (presentado-en-codigo-de-partida false) (presentado-en-f22 false)  (codigo ?inferior&:( and ( numberp ?inferior )  (> (- ?codigo ?inferior ) 0) )))))
+   ?formulario <- ( formulario-f22 (presentado-en-f22 true) (partida ?partida-f29) (codigo ?codigo&:(numberp ?codigo) ) (valor ?valor) (descripcion ?descripcion) (mes ?mes) (ano ?ano) )
+   ?f22 <- ( f22 (partida ?numero) (ano ?ano))
+   ?cdp <-   ( codigo-de-partida (codigo ?codigo) (partida ?partida))
+   ( partida (numero ?partida ) (mes ?mes) (descripcion ?descripcion-partida))
+  =>
+   ( retract ?cdp )
+;  ( modify ?formulario (presentado-en-codigo-de-partida true))
+   ( printout k " <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> " ?codigo "</td> <td align='right'>   <a href= '/" ?empresa "/libro-diario#Partida-" ?partida "'> Ir a partida: "  ?partida "</a> </td> <td colspan='3' align='left' > " ?descripcion-partida " </td>  </tr>" crlf)
+)
+
+
+(defrule muestra-codigo-de-formulario-f22-sin-linea-de-documento
+   ( declare (salience 65))
+   ( fila ?numero )
+   ( empresa (nombre ?empresa))
+   ( balance (ano ?ano))
+   ( codigo-f29 (codigo ?codigo))
+   ( not  ( exists ( formulario-f22 (presentado-en-codigo-de-partida false) (presentado-en-f22 false)  (codigo ?inferior&:( and ( numberp ?inferior )  (> (- ?codigo ?inferior ) 0) )))))
+   ?formulario <- ( formulario-f22 (presentado-en-codigo-de-partida false) (presentado-en-f22 false) (partida ?partida-f29) (codigo ?codigo&:(numberp ?codigo) ) (valor ?valor) (descripcion ?descripcion) (mes ?mes) (ano ?ano) )
+   ?f22 <- ( f22 (partida ?numero) (ano ?ano))
+   (not (exists   ( f29-f22 (codigo-f29 ?codigo)  )))
+  =>
+
+   ( modify ?formulario (presentado-en-f22 true) )
+
+   ( printout t  "codigo..." tab ?mes tab ?codigo tab ?valor tab ?descripcion crlf)
+
+   ( if (eq ?mes "")
+    then
+      ( printout k " <tr height='50 px' style='font-weight:bold; background-color: lightgreen'> <td>  <a href= '/" ?empresa "/libro-diario#Partida-" ?numero "'>" ^ "</a> </td> <td> " ?codigo " </td> <td align='right' >  " ?valor " </td> <td> " ?descripcion " </td> </tr>" crlf)
+;      ( printout k " <tr height='50 px'></tr>" crlf)
+
+    else
+      ( printout k " <tr> <td>    <a href= '/" ?empresa "/libro-diario#Partida-" ?partida-f29 "'>" ?mes "</a>  </td> <td> " ?codigo " </td> <td align='right' >  " ?valor " </td> <td> " ?descripcion " </td> </tr>" crlf)
+   )
+
+   ( printout l " <tr> <td> " ?mes " </td> <td> " ?codigo " </td> <td align='right'>  " ?valor " </td> <td> " ?descripcion " </td> </tr>" crlf)
+
+)
 
 
 (defrule muestra-libro-mayor-resultados-subcuentas
@@ -816,9 +884,9 @@
    ( modify ?cuenta (mostrada-en-partida true))
    ( printout t tab ?saldo2 tab tab tab ?nombre2 # ?nombre crlf)
 
-   ( printout k "<tr> <td>" ?saldo2 " </td> <td colspan='7'> " ?nombre2 # ?nombre " </td></tr>" crlf)
+   ( printout k "<tr> <td align='right' >" ?saldo2 " </td> <td colspan='7'> " ?nombre2 # ?nombre " </td></tr>" crlf)
 
-   ( printout l "<tr> <td>" ?saldo2 " </td> <td colspan='7'> " ?nombre2 # ?nombre " </td></tr>" crlf)
+   ( printout l "<tr> <td align='right'>" ?saldo2 " </td> <td colspan='7'> " ?nombre2 # ?nombre " </td></tr>" crlf)
 ) 
 
 (defrule muestra-libro-mayor-activos-subcuentas
@@ -838,8 +906,8 @@
 ;   ( printout t ?debe " | " ?haber " --" partida  crlf)
    ( printout t tab ?saldo2 tab tab tab ?nombre2 # ?nombre crlf)
 
-   ( printout k "<tr><td>" ?saldo2 "</td> <td colspan='7'>" ?nombre2 # ?nombre "</td> </tr>" crlf)
-   ( printout l "<tr><td>" ?saldo2 "</td> <td colspan='7'>" ?nombre2 # ?nombre "</td> </tr>" crlf)
+   ( printout k "<tr><td align='right'>" ?saldo2 "</td> <td colspan='7'>" ?nombre2 # ?nombre "</td> </tr>" crlf)
+   ( printout l "<tr><td align='right'>" ?saldo2 "</td> <td colspan='7'>" ?nombre2 # ?nombre "</td> </tr>" crlf)
 
 
 )
@@ -861,9 +929,9 @@
  ;  ( printout t ?debe " | " ?haber " --" partida  crlf)
    ( printout t tab ?saldo2 tab tab tab tab ?nombre2 # ?nombre crlf)
 
-   ( printout k "<tr> <td> " ?saldo2 " </td> <td> </td> <td colspan='7'> " ?nombre2 # ?nombre " </td> </tr> " crlf)
+   ( printout k "<tr> <td align='right'> " ?saldo2 " </td> <td> </td> <td colspan='7'> " ?nombre2 # ?nombre " </td> </tr> " crlf)
 
-   ( printout l "<tr> <td> " ?saldo2 " </td> <td> </td> <td colspan='7'> " ?nombre2 # ?nombre " </td> </tr> " crlf)
+   ( printout l "<tr> <td align='right'> " ?saldo2 " </td> <td> </td> <td colspan='7'> " ?nombre2 # ?nombre " </td> </tr> " crlf)
 
 
 
@@ -884,9 +952,9 @@
  ;  ( printout t ?debe " | " ?haber " --" partida  crlf)
    ( printout t tab tab ?debe1 tab ?haber1 tab "a<" ?nombre ">" crlf)
 
-   ( printout k "<tr style='background-color: lightyellow'>  <td> </td> <td> " ?debe1 "</td> <td> " ?haber1 "</td> <td colspan='2'> a[" ?nombre "] </td> </tr>" crlf)
+   ( printout k "<tr style='background-color: lightyellow'>  <td> </td> <td align='right'> " ?debe1 "</td> <td align='right'> " ?haber1 "</td> <td colspan='2'> a[" ?nombre "] </td> </tr>" crlf)
 
-   ( printout l "<tr>  <td> </td> <td> " ?debe1 "</td> <td> " ?haber1 "</td> <td colspan='2'> a[" ?nombre "] </td> </tr>" crlf)
+   ( printout l "<tr>  <td> </td> <td align='right'> " ?debe1 "</td> <td align='right'> " ?haber1 "</td> <td colspan='2'> a[" ?nombre "] </td> </tr>" crlf)
 
 )
 
@@ -905,9 +973,9 @@
  ;  ( printout t ?debe " | " ?haber " --" partida  crlf)
    ( printout t tab tab ?debe1 tab ?haber1 tab tab "r<" ?nombre ">" crlf)
 
-   ( printout k "<tr style='background-color: gold'>  <td> </td> <td>" ?debe1 " </td> <td> " ?haber1 "</td> <td> </td> <td> r[" ?nombre "] </td> </tr>" crlf)
+   ( printout k "<tr style='background-color: gold'>  <td> </td> <td align='right'>" ?debe1 " </td> <td align='right'> " ?haber1 "</td> <td> </td> <td> r[" ?nombre "] </td> </tr>" crlf)
 
-   ( printout l "<tr>  <td> </td> <td>" ?debe1 " </td> <td> " ?haber1 "</td> <td> </td> <td> r[" ?nombre "] </td> </tr>" crlf)
+   ( printout l "<tr>  <td> </td> <td align='right'>" ?debe1 " </td> <td align='right'> " ?haber1 "</td> <td> </td> <td> r[" ?nombre "] </td> </tr>" crlf)
 )  
 
 (defrule muestra-de-resultados-black
@@ -925,9 +993,9 @@
  ;  ( printout t ?debe " | " ?haber " --" partida  crlf)
    ( printout t tab tab ?debe1 tab ?haber1 tab tab "r<" ?nombre ">" crlf)
 
-   ( printout k "<tr style='color: white; background-color: black'>  <td> </td> <td>" ?debe1 " </td> <td> " ?haber1 "</td> <td> </td> <td> r[" ?nombre "] </td> </tr>" crlf)
+   ( printout k "<tr style='color: white; background-color: black'>  <td> </td> <td align='right'>" ?debe1 " </td> <td align='right'> " ?haber1 "</td> <td> </td> <td> r[" ?nombre "] </td> </tr>" crlf)
 
-   ( printout l "<tr>  <td> </td> <td>" ?debe1 " </td> <td> " ?haber1 "</td> <td> </td> <td> r[" ?nombre "] </td> </tr>" crlf)
+   ( printout l "<tr>  <td> </td> <td align='right'>" ?debe1 " </td> <td align='right'> " ?haber1 "</td> <td> </td> <td> r[" ?nombre "] </td> </tr>" crlf)
 )  
 
 
@@ -947,9 +1015,9 @@
  ;  ( printout t ?debe " | " ?haber " --" partida  crlf)
    ( printout t tab extra-contable tab ?debe1 tab ?haber1 tab tab "t<" ?nombre ">" crlf)
 
-   ( printout k "<tr>  <td>extra-contable </td> <td> " ?debe1 "</td> <td>" ?haber1 "</td> <td> </td> <td> t[" ?nombre "] </td></tr> " crlf)
+   ( printout k "<tr>  <td>extra-contable </td> <td align='right'> " ?debe1 "</td> <td align='right'>" ?haber1 "</td> <td> </td> <td> t[" ?nombre "] </td></tr> " crlf)
 
-   ( printout l "<tr>  <td>extra-contable </td> <td> " ?debe1 "</td> <td>" ?haber1 "</td> <td> </td> <td> t[" ?nombre "] </td></tr> " crlf)
+   ( printout l "<tr>  <td>extra-contable </td> <td align='right'> " ?debe1 "</td> <td align='right'>" ?haber1 "</td> <td> </td> <td> t[" ?nombre "] </td></tr> " crlf)
 
 
 )
@@ -971,9 +1039,9 @@
  ;  ( printout t ?debe " | " ?haber " --" partida  crlf)
    ( printout t tab tab ?debe1 tab ?haber1 tab tab "p<" ?nombre ">" crlf)
 
-   ( printout k "<tr style='background-color: azure'>  <td> </td> <td> " ?debe1 " </td> <td> " ?haber1 " </td> <td> </td><td> p[" ?nombre "] </td> </tr>" crlf)
+   ( printout k "<tr style='background-color: azure'>  <td> </td> <td align='right'> " ?debe1 " </td> <td align='right'> " ?haber1 " </td> <td> </td><td> p[" ?nombre "] </td> </tr>" crlf)
 
-   ( printout l "<tr>  <td> </td> <td> " ?debe1 " </td> <td> " ?haber1 " </td> <td> </td><td> p[" ?nombre "] </td> </tr>" crlf)
+   ( printout l "<tr>  <td> </td> <td align='right'> " ?debe1 " </td> <td align='right'> " ?haber1 " </td> <td> </td><td> p[" ?nombre "] </td> </tr>" crlf)
 
 
 )
@@ -995,9 +1063,9 @@
  ;  ( printout t ?debe " | " ?haber " --" partida  crlf)
    ( printout t tab tab ?debe1 tab ?haber1 tab tab "k<" ?nombre ">" crlf)
 
-   ( printout k " <tr style='color: white; background-color: cornflowerblue' > <td> </td> <td> " ?debe1 " </td> <td>  " ?haber1 " </td> <td> </td> <td> k[" ?nombre "]</td> </tr>" crlf)
+   ( printout k " <tr style='color: white; background-color: cornflowerblue' > <td> </td> <td align='right'> " ?debe1 " </td> <td align='right'>  " ?haber1 " </td> <td> </td> <td> k[" ?nombre "]</td> </tr>" crlf)
 
-   ( printout l " <tr> <td> </td> <td> " ?debe1 " </td> <td>  " ?haber1 " </td> <td> </td> <td> k[" ?nombre "]</td> </tr>" crlf)
+   ( printout l " <tr> <td> </td> <td align='right'> " ?debe1 " </td> <td align='right'>  " ?haber1 " </td> <td> </td> <td> k[" ?nombre "]</td> </tr>" crlf)
 
 )
 

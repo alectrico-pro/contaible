@@ -1,5 +1,4 @@
 ( clear )
-  
   ( load templates.clp)
   ( load main_rules.clp)
   ( load ticket_rules.clp)

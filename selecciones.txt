@@ -4,14 +4,20 @@
 ;inspect-f29-code: (algún código f29) muestra las partidas que se usaron para
 ;obtener ese código
 ;liquidar: Qué cuentas se liquidan (las subcuentas o las cuentas paternas), parece que esto ya no corre
+;abonar-deudoras permite compactar los estaodos financieros, 
+;no abonar-deudoras avisa si se quiere abonar una deudora
+;devolver-a-devolucion-ventas es la forma de SII para manejar la parte financiera y la tributaria
+;esto se maneja en las actividades de notas de credito
 ( selecciones
+ (abonar-deudoras false) 
+ (devolver-a-devolucion-sobre-ventas true)
  (ejercicio-anterior     alectrico-2021)
  (regimen                propyme)
  (incentivo-al-ahorro    true)
- (empresa-seleccionada   alectrico-2022)
+ (empresa-seleccionada   alectrico-2021)
  (imprimir-detalles      true)
  (liquidar               subcuentas) 
  (origen-de-subcuentas   nominativo)
- (inspect-f29-code       ingresos-brutos) )
+ (inspect-f29-code       111) )
 
 

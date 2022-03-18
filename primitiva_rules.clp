@@ -98,6 +98,7 @@
 
 
 (defrule warning-cargando-cuenta-acreedora
+  ( selecciones (cargar-acreedoras false))
   ( cargo (cuenta ?nombre ) (partida ?partida ))
   ( cuenta (nombre ?nombre) (naturaleza acreedora ))
  =>
@@ -107,7 +108,34 @@
   (halt)
 )
 
+(defrule debug-partida-5
+   ( declare (salience 10000))
+(no)
+   ( balance (dia ?top) (mes ?mes_top) (ano ?ano_top ))
+   ( empresa (nombre ?empresa))
+   ( partida (dia ?dia) (mes ?mes) (ano ?ano) (numero ?numero))
+
+   ( revision
+    (partida ?numero)
+    (rechazado false)
+   )
+
+  ?cargo <- (cargo (recibida ?recibida) (activo-fijo ?activo-fijo) (qty ?qty-cargo) (tipo-de-documento ?tipo-de-documento) (electronico ?electronico) (partida ?numero) (realizado false) (empresa ?empresa) (dia ?dia) (mes ?mes) (ano ?ano) (cuenta ?nombre) (monto ?monto) (glosa ?glosa) )
+   ?cuenta <- (cuenta (partida ?numero) (qty ?qty) (nombre ?nombre) (debe ?debe) (haber ?haber)  )
+   ( test (>= (to_serial_date ?top ?mes_top ?ano_top) (to_serial_date ?dia ?mes ?ano)))
+
+  ; cargo (cuenta ?nombre ) (partida ?numero) (realizado false) )
+ ; ( cuenta (nombre ?nombre) )
+  ( test (eq ?numero 5))
+  =>
+  (printout t "---------- debug partida - 5 " crlf)
+  (printout t "Cuenta: " ?nombre crlf)
+  (printout t "Partida: " ?numero crlf)
+  (halt )
+)
+
 (defrule warning-abonando-cuenta-deudor
+  ( selecciones (abonar-deudoras false))
   ( abono (cuenta ?nombre ) (partida ?partida))
   ( cuenta (nombre ?nombre) (naturaleza deudor))
  =>
@@ -116,6 +144,7 @@
   (printout t "Partida: " ?partida crlf)
   (halt)
 )
+
 
 ;------------------------ primitivas ---------------------------
 (defrule cargar-cuenta-existente

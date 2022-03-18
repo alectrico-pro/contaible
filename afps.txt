@@ -1,7 +1,7 @@
 (afp
   (mes julio)
   (ano 2021 )
-  (nombre habitat)
+  (nombre Habitat)
   (comision 0.0127)
   (sis 0.0221)
   (afc 0.03)
@@ -12,7 +12,7 @@
 (afp
   (mes septiembre)
   (ano 2021 )
-  (nombre habitat)
+  (nombre Habitat)
   (comision 0.0127)
   (sis 0.0221)
   (afc 0.03)
@@ -23,7 +23,7 @@
 (afp
   (mes agosto)
   (ano 2021 )
-  (nombre habitat)
+  (nombre Habitat)
   (comision 0.0127)
   (sis 0.0221)
   (afc 0.03)
@@ -33,7 +33,7 @@
 (afp
   (mes octubre)
   (ano 2021 )
-  (nombre habitat)
+  (nombre Habitat)
   (comision 0.0127)
   (sis 0.0185)
   (afc 0.03)
@@ -44,7 +44,7 @@
 (afp
   (mes noviembre)
   (ano 2021 )
-  (nombre habitat)
+  (nombre Habitat)
   (comision 0.0127)
   (sis 0.0185)
   (afc 0.03)
@@ -54,7 +54,7 @@
 (afp
   (mes diciembre)
   (ano 2021 )
-  (nombre habitat)
+  (nombre Habitat)
   (comision 0.0127)
   (sis 0.0185)
   (afc 0.03)
@@ -64,7 +64,7 @@
 (afp
   (mes enero)
   (ano 2022 )
-  (nombre habitat)
+  (nombre Habitat)
   (comision 0.0127)
   (sis 0.0185)
   (afc 0.03)
@@ -74,7 +74,7 @@
 (afp
   (mes febrero)
   (ano 2022 )
-  (nombre habitat)
+  (nombre Habitat)
   (comision 0.0127)
   (sis 0.0185)
   (afc 0.03)

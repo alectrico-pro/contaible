@@ -168,12 +168,15 @@
   ( subtotales (cuenta ganancia-por-correccion-monetaria) (haber ?ganancia-por-correccion-monetaria))
   ( subtotales (cuenta aumentos-de-capital-aportes) (haber ?aportes))
   ( subtotales (cuenta insumos) (deber ?insumos))
+  ( subtotales (cuenta costos-de-mercancias) (deber ?costos-de-mercancias-deber) (acreedor ?costos-de-mercancias-acreedor))
 
   ( cuenta (nombre impuestos-no-recuperables) (haber ?impuestos-no-recuperables))
   ( tasas (idpc ?tasa-idpc) (mes ?mes) (ano ?ano))  
   ( selecciones (regimen ?regimen) (incentivo-al-ahorro ?incentivo-al-ahorro))
 
  =>
+
+  (bind ?costos-de-mercancias (- ?costos-de-mercancias-deber ?costos-de-mercancias-acreedor))
 
   (bind ?inventario
    (- ?inventario-deber
@@ -204,23 +207,23 @@
   (bind ?compras-netas          ?compras-totales)
   (bind ?existencias            (+ ?compras-netas ?inventario-inicial))
   ;mercaderia disponible para ventas
-  (bind ?costos-de-mercancias   ?inventario-final)
+;  (bind ?costos-de-mercancias   ?inventario-final)
 
   (if (eq true ?inventario-final-liquidado)
     then
      (if (eq diciembre ?mes) 
        then
-        (bind ?utilidad-bruta (- ?ventas-netas ?costos-de-ventas) )
+        (bind ?utilidad-bruta (- ?ventas-netas ?costos-de-mercancias ?costos-de-ventas) )
        else
-        (bind ?utilidad-bruta (- ?ventas-netas ?costos-de-ventas))  )
+        (bind ?utilidad-bruta (- ?ventas-netas ?costos-de-mercancias ?costos-de-ventas))  )
 
      else
      (if (eq diciembre ?mes)
        then
         ;no se ha liquidado el inventario final, tampoco acá
-        (bind ?utilidad-bruta (+ (- ?ventas-netas ?costos-de-ventas ) ?inventario))
+        (bind ?utilidad-bruta (+ (- ?ventas-netas ?costos-de-mercancias ?costos-de-ventas ) ?inventario))
        else
-        (bind ?utilidad-bruta (+ (- ?ventas-netas ?costos-de-ventas)  ?inventario ))))
+        (bind ?utilidad-bruta (+ (- ?ventas-netas ?costos-de-mercancias ?costos-de-ventas)  ?inventario ))))
 
   (bind ?gastos-de-operacion 
         (+ ?gastos-administrativos
@@ -341,8 +344,8 @@
   (printout k "<tr><td> (-) </td> <td align='right'>" ?inventario-final "</td><td> </td><td></td><td></td><td colspan='2'>Inventario Final </td></tr>" crlf)
 
 
-;  (printout t "| (=) " ?costos-de-mercancias tab "|" tab tab "Costos de Mercancías " crlf)
-;  (printout k "<tr><td> (=) </td> <td align='right'>" ?costos-de-mercancias "</td><td> </td><td></td><td></td><td colspan='2'>Costo de Mercancías </td></tr>" crlf)
+  (printout t "| (=) " ?costos-de-mercancias tab "|" tab tab "Costos de Mercancías " crlf)
+  (printout k "<tr><td> (=) </td> <td align='right'>" ?costos-de-mercancias "</td><td> </td><td></td><td></td><td colspan='2'>Costo de Mercancías </td></tr>" crlf)
 
   (printout t "| (-) " ?insumos tab "|" tab tab "Insumos " crlf)
   (printout k "<tr><td> (=) </td> <td align='right'>" ?insumos "</td><td> </td><td></td><td></td><td colspan='2'>Insumos </td></tr>" crlf)
@@ -352,8 +355,8 @@
   (if (eq true ?inventario-final-liquidado)
    then
 
-     (printout t "|" tab tab "|     " ?utilidad-bruta tab "UTILIDAD BRUTA (Ventas Netas - Costo de Ventas - Costo de Mercancías)" crlf)
-     (printout k "<tr><td></td><td></td><td></td><td></td><td align='right'>" ?utilidad-bruta "</td><td colspan='4'>  UTILIDAD BRUTA (Ventas Netas - Costo de Ventas - Costo de Mercancías - Insumos) </td></tr>"  crlf)
+     (printout t "|" tab tab "|     " ?utilidad-bruta tab "UTILIDAD BRUTA (Ventas Netas - Costo de Ventas - Costos de Mercancías)" crlf)
+     (printout k "<tr><td></td><td></td><td></td><td></td><td align='right'>" ?utilidad-bruta "</td><td colspan='4'>  UTILIDAD BRUTA (Ventas Netas - Costo de Ventas - Costos de Mercancías - Insumos) </td></tr>"  crlf)
    else
 
      (printout t "|" tab tab "|     " ?utilidad-bruta tab "UTILIDAD BRUTA (Ventas Netas - Costo de Ventas)" crlf)

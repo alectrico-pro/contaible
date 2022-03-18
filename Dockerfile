@@ -30,6 +30,7 @@ copy cuentas.txt                  ./
 copy proveedores.txt              ./
 COPY remuneraciones.txt           ./
 COPY trabajadores.txt             ./
+COPY f29-f22.txt                  ./
 COPY salud.txt                    ./
 COPY tipos_de_depreciaciones.txt  ./
 COPY selecciones.txt              ./

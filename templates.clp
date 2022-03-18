@@ -101,6 +101,9 @@
 
 
 (deftemplate selecciones
+ (slot abonar-deudoras (default false))
+ (slot cargar-acreedoras (default false))
+ (slot devolver-a-devolucion-sobre-ventas (default false))
  (slot incentivo-al-ahorro (default false))
  (slot regimen)
  (slot ejercicio-anterior)
@@ -264,6 +267,7 @@
 
 
 (deftemplate trabajador
+  (slot nombre-completo)
   (slot diaria)
   (slot afp)
   (slot salud)
@@ -410,7 +414,13 @@
   (slot haber (default 0))
 )
 
+
+(deftemplate codigo-f29 
+ (slot codigo )
+)
+
 (deftemplate formulario-f29
+  (slot mostrado-en-f22 (default false))
   (slot mostrado-en-partida (default false))
   (slot descripcion)
   (slot codigo)
@@ -420,10 +430,26 @@
   (slot partida)
 )
 
+
+
+(deftemplate codigo-de-partida
+  (slot codigo)
+  (slot partida)
+)
+
+(deftemplate f29-f22
+  (slot codigo-f29)
+  (slot linea-f22)
+)
+
 (deftemplate formulario-f22
+  (slot sumado (default false))
+  (slot presentado-en-codigo-de-partida (default false))
+  (slot presentado-en-f22 (default false))
   (slot descripcion)
   (slot codigo)
   (slot valor)
+  (slot mes (default ""))
   (slot ano)
   (slot partida)
 )
@@ -438,6 +464,7 @@
 
 
 (deftemplate f29
+  (slot anualizado (default true))
   (slot partida)
   (slot mes)
   (slot ano)

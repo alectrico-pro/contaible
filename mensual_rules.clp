@@ -40,6 +40,7 @@
 ;esto genera un markdown para que jekyll lo publique en el blog necios
 (defrule inicio-kindle-k-mensual-rules
    ( declare (salience 10000))
+  (no)
    ( empresa (nombre ?empresa))
    ( balance (mes ?mes))
    ( selecciones (inspect-f29-code ?codigo))
@@ -237,21 +238,21 @@
    ( test (or (> ?haber 0) (> ?debe 0)))
 
 
-   ( nota-de-credito-sii (folio-nota ?folio-nota) (folio ?folio) (partida ?numero) (dia ?dia) (mes ?mes) (ano ?ano) (archivo ?archivo))
+;   ( nota-de-credito-sii (folio-nota ?folio-nota) (folio ?folio) (partida ?numero) (dia ?dia) (mes ?mes) (ano ?ano) (archivo ?archivo))
 
-   ?f1 <- ( venta-sii
-     (rut ?rut)
-     (partida ?numero_2)
-     (folio ?folio)
-     (unidades ?unidades)
-     (costo_unitario ?costo_unitario)
-     (dia ?dia_1) (mes ?mes_2) (ano ?ano)
-     (credito ?credito)
-     (colaborador ?colaborador)
-     (material ?material)
-     (total ?total)
-     (neto ?neto)
-     (iva ?iva))
+ ;  ?f1 <- ( venta-sii
+ ;    (rut ?rut)
+ ;    (partida ?numero_2)
+ ;    (folio ?folio)
+ ;    (unidades ?unidades)
+ ;    (costo_unitario ?costo_unitario)
+ ;    (dia ?dia_1) (mes ?mes_2) (ano ?ano)
+  ;   (credito ?credito)
+  ;   (colaborador ?colaborador)
+  ;   (material ?material)
+  ;   (total ?total)
+  ;   (neto ?neto)
+  ;   (iva ?iva))
 
  =>
   ( assert ( acumulador-mensual (cuenta 510) (mes ?mes) (ano ?ano) (debe 0) (haber 0)))
@@ -551,21 +552,21 @@
   ( test (> ?debe 0))
   ( test (or (> ?haber 0) (> ?debe 0)))
 
-  ( nota-de-credito-sii (folio-nota ?folio-nota) (folio ?folio) (partida ?partida) (dia ?dia) (mes ?mes) (ano ?ano) (archivo ?archivo))
+;  ( nota-de-credito-sii (folio-nota ?folio-nota) (folio ?folio) (partida ?partida) (dia ?dia) (mes ?mes) (ano ?ano) (archivo ?archivo))
 
-   ?f1 <- ( venta-sii
-     (rut ?rut)
-     (partida ?numero_2)
-     (folio ?folio)
-     (unidades ?unidades)
-     (costo_unitario ?costo_unitario)
-     (dia ?dia_1) (mes ?mes_2) (ano ?ano)
-     (credito ?credito)
-     (colaborador ?colaborador)
-     (material ?material)
-     (total ?total)
-     (neto ?neto)
-     (iva ?iva))
+ ;  ?f1 <- ( venta-sii
+ ;   (rut ?rut)
+  ;  (partida ?numero_2)
+  ;  (folio ?folio)
+  ;  (unidades ?unidades)
+  ;  (costo_unitario ?costo_unitario)
+  ;  (dia ?dia_1) (mes ?mes_2) (ano ?ano)
+  ;  (credito ?credito)
+  ;  (colaborador ?colaborador)
+  ;  (material ?material)
+  ;  (total ?total)
+  ;  (neto ?neto)
+  ;  (iva ?iva))
 
 
  =>
@@ -831,21 +832,28 @@
 )
 
 (defrule sumar-incremento
+
   ( declare (salience 9000))
   ( balance (mes ?mes-balance))
-  ( selecciones (inspect-f29-code ?codigo))
+  ( empresa (nombre ?empresa))
+;  ( selecciones (inspect-f29-code ?codigo))
    ?suma <- ( sumar (partida ?partida) (qty ?qty-suma) (tipo-de-documento ?tipo-de-documento) (debe ?debe-suma) (haber ?haber-suma) (cuenta ?cuenta) (mes ?mes) (ano ?ano))
   ?acc  <- ( acumulador-mensual (cuenta ?cuenta) (qty ?qty) (debe ?debe) (haber ?haber ) (mes ?mes) (ano ?ano))
 ;  ( test (or (> ?haber-suma 0) (> ?debe-suma 0)))
 
  =>
+
   ( retract ?suma)
+;  ( if (eq ?cuenta ?codigo)
+;   then
+  ( assert (codigo-de-partida (codigo ?cuenta) (partida ?partida)))
+; )
   ( modify ?acc (debe (+ ?debe ?debe-suma)) (tipo-de-documento ?tipo-de-documento) (haber (+ ?haber ?haber-suma)) (qty (+ ?qty-suma ?qty) ))
-  ( printout t "SUmado " ?cuenta tab ?qty-suma tab ?debe-suma -------- ?haber-suma tab ?tipo-de-documento crlf)
+  ( printout t "SUmado " ?cuenta " partida " ?partida tab ?qty-suma tab ?debe-suma -------- ?haber-suma tab ?tipo-de-documento crlf)
 ;  ( printout k "SUmado " ?cuenta tab ?qty-suma tab ?debe-suma -------- ?haber-suma tab ?tipo-de-documento crlf)
-  ( if (and (eq ?mes ?mes-balance ) (eq ?cuenta ?codigo)) then
-    ( printout k "<tr> <td> " ?partida " </td> <td> " ?tipo-de-documento "</td> <td> " ?mes " </td> <td>  " ?cuenta " </td> <td> " (- (+ ?debe ?debe-suma) (+ ?haber ?haber-suma))  "</td> <td style='color: white; background-color: cornflowerblue'>  " ?qty-suma " </td> <td> " ?debe " </td> <td style='color: white; background-color: cornflowerblue'> " ?debe-suma "</td> <td> " ?haber "</td> <td style='color: white; background-color: cornflowerblue'>" ?haber-suma "  </td> </tr>" crlf)
-  )
+; ( if (and (eq ?mes ?mes-balance ) (eq ?cuenta ?codigo)) then
+ ;  ( printout k "<tr> <td> <a href= '/" ?empresa "/libro-diario#Partida-" ?partida "'>" ?partida "</a> </td> <td> " ?tipo-de-documento "</td> <td> " ?mes " </td> <td>  " ?cuenta " </td> <td> " (- (+ ?debe ?debe-suma) (+ ?haber ?haber-suma))  "</td> <td style='color: white; background-color: cornflowerblue'>  " ?qty-suma " </td> <td> " ?debe " </td> <td style='color: white; background-color: cornflowerblue'> " ?debe-suma "</td> <td> " ?haber "</td> <td style='color: white; background-color: cornflowerblue'>" ?haber-suma "  </td> </tr>" crlf)
+ ;)
 
 )
 

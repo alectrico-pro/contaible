@@ -9,7 +9,7 @@
   (razon "alectrico® SpA"))
 
 ( balance
-  (dia 31) (mes febrero) (ano 2022))
+  (dia 31) (mes marzo) (ano 2022))
 
 
 
@@ -40,66 +40,6 @@
  ( empresa alectrico-2022)
  ( cuenta banco-estado)
  ( monto  274735)
- ( partida 2000)
- ( dia 1) ( mes enero) ( ano 2022)
- ( glosa asiento-de-apertura-2022))
-
-( cargo
- ( electronico false)
- ( tipo-de-documento escritura-empresa)
- ( empresa alectrico-2022)
- ( cuenta materiales)
- ( monto  97674)
- ( partida 2000)
- ( dia 1) ( mes enero) ( ano 2022)
- ( glosa asiento-de-apertura-2022))
-
-( cargo
- ( electronico false)
- ( tipo-de-documento escritura-empresa)
- ( empresa alectrico-2022)
- ( cuenta inventario-inicial)
- ( monto  44044)
- ( partida 2000)
- ( dia 1) ( mes enero) ( ano 2022)
- ( glosa asiento-de-apertura-2022))
-
-( cargo
- ( electronico false)
- ( tipo-de-documento escritura-empresa)
- ( empresa alectrico-2022)
- ( cuenta sodimac-insumos)
- ( monto  154498)
- ( partida 2000)
- ( dia 1) ( mes enero) ( ano 2022)
- ( glosa asiento-de-apertura-2022))
-
-( cargo
- ( electronico false)
- ( tipo-de-documento escritura-empresa)
- ( empresa alectrico-2022)
- ( cuenta electrocom-insumos)
- ( monto  51191)
- ( partida 2000)
- ( dia 1) ( mes enero) ( ano 2022)
- ( glosa asiento-de-apertura-2022))
-
-( cargo
- ( electronico false)
- ( tipo-de-documento escritura-empresa)
- ( empresa alectrico-2022)
- ( cuenta dartel-insumos)
- ( monto  158011)
- ( partida 2000)
- ( dia 1) ( mes enero) ( ano 2022)
- ( glosa asiento-de-apertura-2022))
-
-( cargo
- ( electronico false)
- ( tipo-de-documento escritura-empresa)
- ( empresa alectrico-2022)
- ( cuenta easy-insumos)
- ( monto  2134)
  ( partida 2000)
  ( dia 1) ( mes enero) ( ano 2022)
  ( glosa asiento-de-apertura-2022))
@@ -149,7 +89,7 @@
  ( tipo-de-documento escritura-empresa)
  ( empresa alectrico-2022)
  ( cuenta herramientas)
- ( monto  218470)
+ ( monto  232234)
  ( partida 2000)
  ( dia 1) ( mes enero) ( ano 2022)
  ( glosa asiento-de-apertura-2022))
@@ -159,7 +99,7 @@
  ( tipo-de-documento escritura-empresa)
  ( empresa alectrico-2022)
  ( cuenta marca-alectrico)
- ( monto 237369)
+ ( monto 252323)
  ( partida 2000)
  ( dia 1) ( mes enero) ( ano 2022)
  ( glosa asiento-de-apertura-2022))
@@ -179,7 +119,7 @@
  ( tipo-de-documento escritura-empresa)
  ( empresa alectrico-2022)
  ( cuenta depreciacion-acumulada-herramientas)
- ( monto 84036)
+ ( monto 78742)
  ( partida 2000)
  ( dia 1) ( mes enero) ( ano 2022)
  ( glosa asiento-de-apertura-2022))
@@ -189,7 +129,7 @@
  ( tipo-de-documento escritura-empresa)
  ( empresa alectrico-2022)
  ( cuenta amortizacion-acumulada-intangibles)
- ( monto 31420)
+ ( monto 29441)
  ( partida 2000)
  ( dia 1) ( mes enero) ( ano 2022)
  ( glosa asiento-de-apertura-2022))
@@ -239,7 +179,7 @@
  ( tipo-de-documento escritura-empresa)
  ( empresa alectrico-2022)
  ( cuenta utilidad)
- ( monto 504670)
+ ( monto 33109)
  ( partida 2000)
  ( dia 1) ( mes enero) ( ano 2022)
  ( glosa asiento-de-apertura-2022))
@@ -258,6 +198,19 @@
  (dia 1) (mes enero) (ano 2022)
  (cuenta-de-origen utilidad)
  (cuenta-de-destino capital-social))
+
+
+( acarreo-de-iva )
+( remanente-de-iva
+    ( emitido false ) 
+    ( determinado false)
+    ( ajustado false)
+    ( valor 1804)
+    ( mes diciembre)
+    ( ano 2021)
+    ( utm 54.171))
+ 
+
 
 ;------------------------------------ enero compras -------------------------------------
 ;reconocimiento de salarios de enero
@@ -332,9 +285,9 @@
  ( partida 2009)
  ( dia 10) (mes enero) (ano 2022)
  ( credito 0)
- ( neto  3128)
- ( iva   594)
- ( total 3722)
+ ( neto  6926)
+ ( iva   1316)
+ ( total 8242)
  ( material servicio-telefonia)
  ( proveedor entel)
  ( glosa "Por Gasto Administrativo: Servicio de Datos y Telefonía: Costo de diciembre 2021.")
@@ -394,19 +347,50 @@
 )
 
 
+
+
+( gasto-administrativo
+ ( archivo "/factura-afecta-entel-44577128.png")
+ ( tipo-de-documento 33)
+ ( folio 44577128)
+ ( rut 96806980-2 )
+ ( partida 2014)
+ ( dia 23) (mes febrero) (ano 2022)
+ ( credito 0)
+ ( neto  9235)
+ ( iva   1755)
+ ( total 10990)
+ ( material servicio-telefonia)
+ ( proveedor entel)
+ ( glosa "Por Gasto Administrativo: Servicio de Datos y Telefonía: Costo de enero 2022.")
+ ( finalidad "No subordinada a ningún departamento"))
+
+
+
+
 ( ajustes-mensuales 
-  ( partida 2014)
-  ( mes febrero)
-  ( ano 2022))
-
-
-( ajuste-de-iva 
   ( partida 2015)
   ( mes febrero)
   ( ano 2022))
 
 
+( ajuste-de-iva 
+  ( partida 2016)
+  ( mes febrero)
+  ( ano 2022))
+
+
 ;---------------------------------- marzo ------------------------
+
+( cobro-de-cuentas-por-cobrar
+  ( partida 2017)
+  ( monto 10000)
+  ( dia 3)
+  ( mes marzo)
+  ( ano 2022)
+  ( glosa "Ultimo pago del Parecer THHN. Recibido de Gonzalo vía Mach.")
+)
+
 
 
 
@@ -414,39 +398,39 @@
 ;financiero
 ( ajuste-anual
    (ano 2022)
-   (partida 2016)
+   (partida 2017)
    (liquidacion financiera)
    (efecto ganador))
 
 ( ajuste-anual
    (ano 2022)
-   (partida 2017)
+   (partida 2018)
    (liquidacion financiera)
    (efecto perdedor))
 
 ( ajuste-anual-de-resultado-financiero
-   (partida 2018)
+   (partida 2019)
    (ano 2022) )
 
 ;tributario
 ( ajuste-anual
-   (partida 2019)
+   (partida 2020)
    (ano 2022) 
    (liquidacion tributaria)
    (efecto aporte))
 
 ( ajuste-anual
-   (partida 2020)
+   (partida 2021)
    (ano 2022) 
    (liquidacion tributaria)
    (efecto deduccion))
 
 ( ajuste-anual-de-resultado-tributario
-   (partida 2021)
+   (partida 2022)
    (ano 2022))
 
 (partida-inventario-final
-   (partida 2022))
+   (partida 2023))
 
 
 

@@ -27,6 +27,48 @@
 
 
 
+(defrule fin
+  ( declare (salience -100) )
+  ( no)
+ =>
+  ( close k )
+)
+
+;esto genera un markdown para que jekyll lo publique en el blog necios
+(defrule inicio-kindle-k-remuneraciones-rules
+   ( declare (salience 10000))
+   ( no)
+   ( empresa (nombre ?empresa))
+
+  =>
+
+   ( if (neq nil k) then (close k))
+   ( bind ?archivo (str-cat "./doc/" ?empresa "/remuneraciones.markdown"))
+
+   ( open ?archivo k "w")
+
+   ( printout k "--- " crlf)
+   ( printout k "title: Remuneraciones" crlf)
+   ( printout k "permalink: /" ?empresa "/remuneraciones " crlf)
+   ( printout k "layout: page" crlf)
+   ( printout k "--- " crlf)
+   ( printout k "" crlf)
+   ( printout k "Contabilidad para Necios® usa el siguiente código de colores para este documento." crlf)
+   ( printout k "<ul>" crlf)
+   ( printout k "<li><span style='background-color: red'>[    ]</span> mensaje de alerta. </li>" crlf)
+   ( printout k "<li><span style='background-color: lavender'>[    ]</span> partida revisada y resultado bueno. </li>" crlf)
+   ( printout k "<li><span style='background-color: lightyellow'>[    ]</span> cuenta mayor del activo </li>" crlf)
+   ( printout k "<li><span style='background-color: azure'>[    ]</span> cuenta mayor del pasivo </li>" crlf)
+   ( printout k "<li><span style='color: white; background-color: cornflowerblue'>[    ]</span> cuenta de patrimonio </li>" crlf)
+   ( printout k "<li><span style='background-color: gold'>[    ]</span> ganancia </li>" crlf)
+   ( printout k "<li><span style='color: white; background-color: black'>[    ]</span> pérdida </li>" crlf)
+   ( printout k "<li><span style='background-color: blanchedalmond'>[    ]</span> subtotales de la transacción </li>" crlf)
+   ( printout k "</ul>" crlf)
+
+
+)
+
+
 (defrule inicio-de-modulo-mensual
    (declare (salience 10000))
    (empresa (nombre ?empresa ))
@@ -155,8 +197,9 @@
 
 
 (defrule calculo-de-descuentos-legales
-   (exists ( salario (nombre ?nombre)))
-   (exists ( contrato (trabajador ?nombre)))
+   ( empresa (nombre ?empresa))
+   ( exists ( salario (nombre ?nombre)))
+   ( exists ( contrato (trabajador ?nombre)))
    ( remuneracion
      ( trabajador ?nombre)
      ( mes ?mes)
@@ -176,8 +219,10 @@
      ( mes-fin ?mes-fin)
      ( ano-fin ?ano-fin)
      ( nombre ?nombre)
+     ( nombre-completo ?nombre-completo)
+     ( rut ?rut)
      ( afp ?afp)
-     ( salud fonasa)
+     ( salud ?salud)
      ( duracion ?duracion)
    )
    ( afp
@@ -202,6 +247,21 @@
     ( test (>= (to_serial_date 31 ?mes-fin ?ano-fin) (to_serial_date 31 ?mes ?ano)))
   )
   =>
+
+
+  ( if (neq nil k) then (close k))
+   ( bind ?archivo (str-cat "./doc/" ?empresa "/" ?ano "-" ?mes "-remuneraciones.markdown"))
+
+   ( open ?archivo k "w")
+
+   ( printout k "--- " crlf)
+  ;( printout k "title: Liquidación" crlf)
+   ( printout k "permalink: /" ?empresa "/" ?mes "-remuneraciones " crlf)
+   ( printout k "layout: page" crlf)
+   ( printout k "--- " crlf)
+
+   ( printout k "<h3> Liquidación de Sueldo Mensual </h3> <small>" ?ano "-" ?mes "</small>" crlf)
+
    ( bind ?afc (+ ?afc-empleador ?afc-trabajador))
    ( bind ?sueldo (* ?diaria (+ ?dias-trabajados ?semana-corrida)))
    ( printout t crlf)
@@ -255,7 +315,56 @@
 
 
    ( printout t crlf)
+
+ ( printout k "<p style='page-break-after: always;'>&nbsp;</p>" crlf)
+ ( printout k "<table style='background-color:cornsilk'>" crlf)
+
+ ( printout k "<thead><th colspan='6'>  DATOS DEL TRABAJADOR </th></thead>"crlf)
+
+  ( printout k "<tbody>" )
+   ( printout k "<tr><td> RUT     </td> <td> " ?rut    " </td></tr>")
+   ( printout k "<tr><td> Nombre  </td> <td> " ?nombre-completo " </td></tr>")
+   ( printout k "<tr><td> Mes     </td> <td> " ?mes    " </td></tr>")
+   ( printout k "<tr><td> Año     </td> <td> " ?ano    " </td></tr>")
+  ( printout k "</tbody></table>")
+
+
+  ( printout k "<p style='page-break-after: always;'>&nbsp;</p>" crlf)
+   ( printout k "<table style='background-color:cornsilk'>" crlf)
+   ( printout k "<thead><th colspan='6'>DETALLE DE REMUNERACIÓN </th></thead>" crlf)
+   ( printout k "<tbody>" crlf)
+   ( printout k "<tr><td> AFP </td><td>" ?afp "</td></tr>" crlf)
+   ( printout k "<tr><td colspan='2'>Cotización. Obligatoria </td><td></td><td align='right'> $ " tab (round (* ?sueldo (+ 0.10 ?comision))) "</td></tr>" crlf)
+   ( printout k "<tr><td colspan='2'>Seguro Invalidez y Sobrevivencia (SIS) </td><td>    (+) </td><td align='right'> $" tab (round (* ?sueldo ?sis)) "</td></tr>" crlf)
+   ( printout k "<tr><td colspan='2'> SubTotal a Pagar Fondo de Pensiones (AFP) </td><td> (+) </td><td align='right'> $ " tab (round (* ?sueldo (+ 0.10 ?comision ?sis ))) "</td></tr>" crlf)
+   ( printout k "<tr><td colspan='2'> Comisión AFP  " tab (* ?comision 100) "%"  "</td><td>  (+) </td><td align ='right'> $ " (round (* ?sueldo ?comision)) "</td></tr>" crlf)
+   ( printout k "<tr><td></td><td></td><td>  (=) </td><td align='right'> $ " tab (round (* ?sueldo (+ 0.10 ?comision ?sis ))) "</td></tr>" crlf )
+   ( printout k "<tr><td colspan='2'> Resumen Cotizaciones Fondo de Cesantía (AFC) </td> </tr>" crlf)
+   ( printout k "<tr><td colspan='2'>  Cotización Afiliado " tab " 6.0 % $ " tab (round (* ?sueldo 0.006 )) "</td></tr>"  crlf)
+   ( printout k "<tr><td colspan='2'>  Cotización Empleado " tab " 2.4 % $ " tab (round (* ?sueldo 0.024 )) "</td></tr>" crlf)
+   ( printout k "<tr><td colspan='2'>Total a Pagar al Fondo de Cesantía " tab (* ?afc 100) "% </td> <td> (+) </td><td align= 'right'> $ " tab (round (* ?sueldo ?afc)) "</td></tr>" crlf)
+   ( printout k "<tr></tr>" crlf)
+   ( printout k "<tr><td colspan='2'>             T O T A L   A  F  P   </td><td>  (=) </td><td align='right'> $ " tab (round (* ?sueldo (+ 0.10 ?afc ?sis ?comision))) "</td></tr>" crlf)
+   ( printout k "<tr height='100 px'> </tr>" crlf)
+   ( printout k "<tr><td> " ?salud tab comision tab (round (* 100 ?cotizacion)) "% </td></tr>" crlf)
+   ( printout k "<tr><td></td><td></td><td> (+) </td><td align='right'> $ " tab (round (* ?cotizacion ?sueldo)) "</td></tr>" crlf)
+   ( printout k "<tr><td colspan='2'>             TOTAL </td><td> (=) </td><td align='right'> $ " tab (round (* ?sueldo (+ 0.10 ?cotizacion ?afc ?sis ?comision))) "</td></tr>" crlf)
+  ( printout k "<tr><td> </td><td></td><td> </td><td align='right'>======== </td> </tr>" crlf)
+
+   ( printout k "<tr><td colspan='2'> -------REMUNERACION LIQUIDA-------------- </td><td></td><td align='right'> $ " tab (round (* ?sueldo (- 1 (+ 0.10 ?cotizacion ?afc ?sis ?comision)))) "</td></tr>" crlf)
+   ( printout k "</tbody>")
+   ( printout k "</table>")
+   ( printout k "<table>" crlf)
+   ( printout k "<tbody>" crlf)
+   ( printout k "<tr> <td colspan='12'> Certifico que he recibido de mi Empleador ALECTRICO SPA mi total y entera satisfacción el saldo líquido indicado en la presente liquidación, sin tener cargo ni cobro posterior alguno que hacer, por los conceptos de esta liquidación. </td></tr>")
+   ( printout k "<tr> <th> Fecha </th><td colspan='10'></td> </tr>")
+   ( printout k "<tr height='100 px'><td></td></tr>" crlf )
+   ( printout k "<tr> <td colspan = '10' align='center'> Firma Trabajador </td></tr>")
+   ( printout k "</tbody>" crlf)
+   ( printout k "</table>" crlf)
+   ( close k )
 )
+
 
 
 

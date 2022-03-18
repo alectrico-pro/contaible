@@ -2,6 +2,7 @@
  
    
   ( load templates.clp)
+  ( load f22_rules.clp)
   ( load test_rules.clp)
   ( load ticket_rules.clp)
   ( load bi_rules.clp)
