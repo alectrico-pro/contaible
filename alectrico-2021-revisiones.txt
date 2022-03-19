@@ -53,7 +53,7 @@
 (revision (revisado true) (partida 017) (tipo 33) (rcv n-a) )
 (revision (revisado true) (partida 018) (tipo 33) (rcv n-a) )
 (revision (revisado true) (partida 019) (tipo 33) (rcv n-a) (a-corregir "Tipo de Documento den Libro Tributario aparece como Nota de Crédito de Papel y en el asiento centralizado correspondiente aparece como 60, debe ser 61") )
-(revision (revisado true) (partida 0191) (tipo 33) (rcv n-a) )
+(revision (revisado true) (partida 0191) (tipo 33) (rcv n-a))
 (revision (revisado true) (partida 01911) (tipo 33) (rcv n-a) )
 
 (revision (revisado true) (partida 0192) (tipo 33) (rcv n-a) )

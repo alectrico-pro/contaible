@@ -404,7 +404,7 @@
 )
 
 
-(deftemplate acumulador-mensual
+edeftemplate acumulador-mensual
   (slot tipo-de-documento)
   (slot qty (default 0))
   (slot cuenta)
@@ -613,7 +613,6 @@
   (slot iva)
 )
 
-
 (deftemplate revision-general
   (slot cuenta (default ""))
   (slot voucher (default " "))
@@ -629,6 +628,7 @@
   (multislot partidas (type INTEGER) (default 0))
   (slot descripcion (default " "))
   (slot rechazado (default false) )
+  (slot ignorado-por-sii (defualut false))
   (slot reclamado (default false) )
   (slot no-incluir (default false))
   (slot dia)

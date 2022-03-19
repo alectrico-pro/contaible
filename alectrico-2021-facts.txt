@@ -503,6 +503,7 @@
 
 ;esta nota de credito parece que no afecta que no afectan el imponible del f29 de febrero
 ;probablemente se deba a que anula una nota de credito emitida el 31 de enero
+;definitivamente no fue aceptada por sii
 (nota-de-debito-sii
  ( partida 0191)
  ( folio-debito 1)
@@ -1583,6 +1584,18 @@
 ( ajustes-mensuales (mes julio) (ano 2021) (partida 091))
 ;------------------------------------------- agosto -----------------------------------
 
+
+( rendicion-de-vouchers-sii
+ ( partida 092)
+ ( unidades 1)
+ ( neto  33613)
+ ( iva    6387)
+ ( total 40000)
+ ( mes agosto)
+ ( ano 2021))
+
+
+
 (venta-sii
  (folio 2)
  (rut 77201295-0)
@@ -2292,6 +2305,18 @@
   (dia 1)
   (mes septiembre)
   (ano 2021))
+
+
+( rendicion-de-eboletas-sii
+ ( partida 135)
+ ( unidades 1)
+ ( neto  23197)
+ ( iva    4408)
+ ( total 27605)
+ ( mes septiembre)
+ ( ano 2021))
+
+
 
 
 (partida (numero 138) (dia 12) (mes septiembre ) (ano 2021)
