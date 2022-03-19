@@ -900,9 +900,9 @@
    ( modify ?cuenta (mostrada-en-partida true))
    ( printout t tab ?saldo2 tab tab tab ?nombre2 # ?nombre crlf)
 
-   ( printout k "<tr> <td align='right' >" ?saldo2 " </td> <td colspan='7'> " ?nombre2 # ?nombre " </td></tr>" crlf)
+   ( printout k "<tr> <td name = 'Debe' align='right' >" ?saldo2 " </td> <td colspan='7'> " ?nombre2 # ?nombre " </td></tr>" crlf)
 
-   ( printout l "<tr> <td align='right'>" ?saldo2 " </td> <td colspan='7'> " ?nombre2 # ?nombre " </td></tr>" crlf)
+   ( printout l "<tr> <td name = 'Debe' align='right'>" ?saldo2 " </td> <td colspan='7'> " ?nombre2 # ?nombre " </td></tr>" crlf)
 ) 
 
 (defrule muestra-libro-mayor-activos-subcuentas
@@ -922,8 +922,8 @@
 ;   ( printout t ?debe " | " ?haber " --" partida  crlf)
    ( printout t tab ?saldo2 tab tab tab ?nombre2 # ?nombre crlf)
 
-   ( printout k "<tr><td align='right'>" ?saldo2 "</td> <td colspan='7'>" ?nombre2 # ?nombre "</td> </tr>" crlf)
-   ( printout l "<tr><td align='right'>" ?saldo2 "</td> <td colspan='7'>" ?nombre2 # ?nombre "</td> </tr>" crlf)
+   ( printout k "<tr><td name='Debe' align='right'>" ?saldo2 "</td> <td colspan='7'>" ?nombre2 # ?nombre "</td> </tr>" crlf)
+   ( printout l "<tr><td name='Debe' align='right'>" ?saldo2 "</td> <td colspan='7'>" ?nombre2 # ?nombre "</td> </tr>" crlf)
 
 
 )
@@ -945,9 +945,9 @@
  ;  ( printout t ?debe " | " ?haber " --" partida  crlf)
    ( printout t tab ?saldo2 tab tab tab tab ?nombre2 # ?nombre crlf)
 
-   ( printout k "<tr> <td align='right'> " ?saldo2 " </td> <td> </td> <td colspan='7'> " ?nombre2 # ?nombre " </td> </tr> " crlf)
+   ( printout k "<tr> <td name='Debe' align='right'> " ?saldo2 " </td> <td> </td> <td colspan='7'> " ?nombre2 # ?nombre " </td> </tr> " crlf)
 
-   ( printout l "<tr> <td align='right'> " ?saldo2 " </td> <td> </td> <td colspan='7'> " ?nombre2 # ?nombre " </td> </tr> " crlf)
+   ( printout l "<tr> <td name='Debe' align='right'> " ?saldo2 " </td> <td> </td> <td colspan='7'> " ?nombre2 # ?nombre " </td> </tr> " crlf)
 
 
 
@@ -968,9 +968,9 @@
  ;  ( printout t ?debe " | " ?haber " --" partida  crlf)
    ( printout t tab tab ?debe1 tab ?haber1 tab "a<" ?nombre ">" crlf)
 
-   ( printout k "<tr style='background-color: lightyellow'>  <td> </td> <td align='right'> " ?debe1 "</td> <td align='right'> " ?haber1 "</td> <td colspan='2'> a[" ?nombre "] </td> </tr>" crlf)
+   ( printout k "<tr style='background-color: lightyellow'>  <td> </td> <td name='Debe' align='right'> " ?debe1 "</td> <td name='Haber' align='right'> " ?haber1 "</td> <td colspan='2'> a[" ?nombre "] </td> </tr>" crlf)
 
-   ( printout l "<tr>  <td> </td> <td align='right'> " ?debe1 "</td> <td align='right'> " ?haber1 "</td> <td colspan='2'> a[" ?nombre "] </td> </tr>" crlf)
+   ( printout l "<tr>  <td> </td> <td name='Debe' align='right'> " ?debe1 "</td> <td name='Haber' align='right'> " ?haber1 "</td> <td colspan='2'> a[" ?nombre "] </td> </tr>" crlf)
 
 )
 

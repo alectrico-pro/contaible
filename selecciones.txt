@@ -10,7 +10,7 @@
 ;esto se maneja en las actividades de notas de credito
 ( selecciones
  (abonar-deudoras false) 
- (devolver-a-devolucion-sobre-ventas true)
+ (devolver-a-devolucion-sobre-ventas false)
  (ejercicio-anterior     alectrico-2021)
  (regimen                propyme)
  (incentivo-al-ahorro    true)
