@@ -40,9 +40,6 @@ layout: page
 <tr><td> Perderá todo su valor en: </td><td> 12 meses </td></tr> 
 <tr><td> Mensualmente hay que depreciarlo en: </td><td> $5602</td></tr>
 </tbody></table> 
-<table><tbody>
-<tr><td> taladro</td> <td>enero</td><td> Depreciando por: </td> <td>4202</td></tr>
-</tbody></table>
 <table> <tbody>
 <tr><th>taladro</th></tr>
 <tr><td>depreciacion-lineal-en-tres-años de: </td><td> taladro </td> </tr> 
@@ -51,7 +48,7 @@ layout: page
 <tr><td>  Activo: </td><td> herramientas</td></tr>
 <tr><td>  Pasivo: </td><td>  depreciacion</td></tr>
 <tr><td> Acumuladora:</td><td>  depreciacion-acumulada-herramientas</td></tr>
-<tr><td> Fue adquirido en: </td> <td> enero de 2021 por $151252</td></tr>
+<tr><td> Fue adquirido en: </td> <td> julio de 2021 por $151252</td></tr>
 <tr><td> Perderá todo su valor en: </td><td> 36 meses </td></tr> 
 <tr><td> Mensualmente hay que depreciarlo en: </td><td> $4202</td></tr>
 </tbody></table> 

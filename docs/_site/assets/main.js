@@ -3,7 +3,7 @@ const miDebe   = document.querySelectorAll('#Debe');
 const miHaber  = document.querySelectorAll('#Haber');
 
 
-miTitulo.textContent = '¡Hola mund!';
+miTitulo.textContent = '¡Ejercicio Contable 2021. Alectrico SpA';
 // Create our number formatter.
 var formatter = new Intl.NumberFormat('el-ES', {
   style: 'currency',

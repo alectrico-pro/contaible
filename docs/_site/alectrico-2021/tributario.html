@@ -91,7 +91,7 @@
 <tr><td></td><td></td><td></td><td> (-) </td><td align="right">0</td><td> Impuestos No Recuperables </td></tr>
 <tr style="font-weight:bold; background-color: azure"><td> <td></td></td><td> </td><td></td><td align="right">0</td><td> Resultado Fuera de Explotacion </td></tr>
 <tr style="font-weight:bold; background-color: azure"><td> <td></td></td><td> </td><td></td><td align="right">0</td><td> Resultado Antes de Impuesto</td></tr>
-<tr style="color: white;background-color: lightgreen"><td></td><td></td><td></td><td> (X) </td><td align="right"> 0</td><td> Impuesto No Aplica porque hay pérdida tributaria </td></tr>
+<tr style="color: white; font-weight:bold; background-color: crimson"><td></td><td></td><td></td><td> (-) </td><td align="right"> 0</td><td> Impuesto Determinado, factor es: 0.1 en 2021 </td></tr>
 <tr style="font-weight:bold;background-color: azure"><td> <td></td></td><td> </td><td></td><td align="right">0</td><td> Utilidad Después de Impuestos <small> Calculada </small></td></tr>
 </tbody></table>
 <table> 
@@ -99,44 +99,11 @@
 <tr><th> <td colspan="6"> Determina los impuestos del regimen propyme</td></th></tr>
 <tbody>
 <tr style="font-weight:bold;background-color: azure"><td> <td></td></td><td> </td><td></td><td align="right">0</td><td> Utilidad del Ejercicio Ant.Impuesto (m. liquidación)</td></tr>
-<tr><td> (-) </td><td align="right">218470</td><td></td><td></td><td></td><td> Depreciación Instantánea Activo Fijo Propyme </td></tr>
+<tr><td> (-) </td><td align="right">0</td><td></td><td></td><td></td><td> Depreciación Instantánea Activo Fijo Propyme </td></tr>
 <tr><td> (-) </td><td align="right">0</td><td></td><td></td><td></td><td> Amortización Instantánea Intangibles </td></tr>
 <tr><td> (+) </td><td align="right">0</td><td></td><td></td><td></td><td> Aportes al Capital </td></tr>
-<tr><td> <td></td></td><td> </td><td> (1) (=) </td><td align="right" style="font-weight:bold; background-color: azure">-218470</td><td> RLI Calculada </td></tr>
-<tr><td></td><td></td><td></td><td> (2) </td><td align="right" style="font-weight:bold; background-color: lightgreen">-151252</td><td>  RLI deps. Imptos (m. liquidaciones) <small>propyme</small></td></tr>
-<tr></tr><tr><td colspan="6" rowspan="1" style="color: white; font-weight:bold; background-color: crimson"> (1) y (2) deben ser iguales: Lasliquidaciones pueden que esté con problemas. Revise que las cuentas de resultados estén bien configuradas en cuentas.txt. Deben tener grupo=resultado. Revise que estas líneas estén en el alectrico-2021-facts.txt 
-;tributario
-( ajuste-anual
-   (ano 2021) (partida 209)
-   (liquidacion tributaria)
-   (efecto aporte))
-
-( ajuste-anual
-   (ano 2021) (partida 210)
-   (liquidacion tributaria)
-   (efecto deduccion))
-
-
-( ajuste-anual-de-resultado-tributario
-   (ano 2021) (partida 211))
-
-
-;financiero
-
-( ajuste-anual
-   (ano 2021) (partida 213)
-   (liquidacion financiera)
-   (efecto ganador))
-
-( ajuste-anual
-   (ano 2021) (partida 212)
-   (liquidacion financiera)
-   (efecto perdedor))
-
-
-
-
- </td></tr>
+<tr><td> <td></td></td><td> </td><td> (1) (=) </td><td align="right" style="font-weight:bold; background-color: lightgreen">0</td><td> RLI Calculada </td></tr>
+<tr><td></td><td></td><td></td><td> </td><td align="right" style="background-color: lightgreen"> <img src="../revisado.png" /> 0</td><td> RLI desp. Imptos ( m. liquidaciones) <small> propyme</small></td></tr>
 </tbody></table>
 
   </div>

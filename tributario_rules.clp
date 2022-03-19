@@ -52,16 +52,19 @@
 )
 
 (defrule descuentos-propyme 
-  ( balance (ano ?ano))
+  ( balance (dia ?top) (mes ?mes_top) (ano ?ano_top))
   ?info <- (info (anotado false) )
 
  =>
+;   ( (>= (to_serial_date ?top ?mes_top ?ano_top) (to_serial_date 1 ?f:mes-de-adquisicion ?f:ano-de-adquisicion)))
+
+:;    ( and (eq ?f:ano-de-adquisicion ?ano_top) (>  (mes_to_numero ?mes_top) (mes_to_numero ?f:mes-de-adquisicion)))
 
   ( bind ?suma-de-depreciacion 0)
 
   ( do-for-all-facts
     ((?f registro-de-depreciacion))
-    ( eq ?f:ano-de-adquisicion ?ano)
+    (>= (to_serial_date ?top ?mes_top ?ano_top) (to_serial_date 1 ?f:mes-de-adquisicion ?f:ano-de-adquisicion))
     (printout t ?f:nombre-del-activo crlf)
     (bind ?suma-de-depreciacion (+ ?suma-de-depreciacion ?f:valor-de-adquisicion)))
 
@@ -69,7 +72,7 @@
 
   ( do-for-all-facts
     ((?f registro-de-amortizacion))
-    (eq ?f:ano-de-adquisicion ?ano)
+    (>= (to_serial_date ?top ?mes_top ?ano_top) (to_serial_date 1 ?f:mes-de-adquisicion ?f:ano-de-adquisicion))
     (printout t ?f:nombre-del-activo crlf)
     (bind ?suma-amortizacion (+ ?suma-de-amortizacion ?f:valor-de-adquisicion)))
 
