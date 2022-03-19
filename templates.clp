@@ -655,6 +655,7 @@
   (slot rechazado (default false) )
   (slot reclamado (default false) )
   (slot no-incluir (default false))
+  (slot ignorar (default false))
   (slot dia)
   (slot mes)
   (slot ano)

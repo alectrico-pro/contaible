@@ -12,10 +12,10 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <table><tbody>
 <tr><td>pérdida</td><td>541155</td><td></td><td>costos-de-ventas</td></tr>
 <tr><td>pérdida</td><td>218496</td><td></td><td>gastos-administrativos</td></tr>
-<tr><td>pérdida</td><td>1359996</td><td></td><td>devolucion-sobre-ventas</td></tr>
+<tr><td>pérdida</td><td>1208034</td><td></td><td>devolucion-sobre-ventas</td></tr>
 <tr><td>pérdida</td><td>203635</td><td></td><td>gastos-promocionales</td></tr>
 <tr><td>pérdida</td><td>84036</td><td></td><td>depreciacion</td></tr>
 <tr><td>pérdida</td><td>29004</td><td></td><td>amortizacion</td></tr>
 <tr><td> ganancias </td><td> </td><td>2085294</td><td>capital-social</td></tr>
-<tr><td> ganancias </td><td> </td><td>2622140</td><td>ingresos-brutos</td></tr>
+<tr><td> ganancias </td><td> </td><td>2621474</td><td>ingresos-brutos</td></tr>
 <table><tbody>

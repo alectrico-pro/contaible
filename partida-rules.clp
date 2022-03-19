@@ -245,7 +245,7 @@
   ( printout k "<p style='page-break-after: always;'>&nbsp;</p>" crlf)
   ( printout k "<table id='Partida-" ?numero "' style='background-color:cornsilk'>" crlf)
   ( printout k "<thead><th colspan='6'>Partida " ?numero "</th></thead>"crlf)
-  ( printout k " <thead> <th> </th> <th> " Código " </th> <th>  " Valor " </th> <th> " Descripción " </th> </thead>" crlf)
+  ( printout k "<thead> <th> </th> <th> " Código " </th> <th>  " Valor " </th> <th> " Descripción " </th> </thead>" crlf)
   ( printout k "<tbody>" crlf)
 
 
@@ -375,7 +375,7 @@
   ( empresa (nombre ?empresa))
 
   ?partida <-  ( partida (numero ?numero) (dia ?dia) (mes ?mes) (ano ?ano) (referencia ?referencia) )
- ( revision (rechazado ?rechazado) (libro-diario ?libro-diario) (voucher ?voucher) (revisado ?revisado) (partida ?numero) (folio ?folio) (descripcion ?descripcion) (legal ?legal) (rcv ?rcv) (ccm ?ccm) (a-corregir ?a-corregir) (old ?old) (tipo ?tipo))
+ ( revision (rechazado ?rechazado) (no-incluir ?no-incluir) (libro-diario ?libro-diario) (voucher ?voucher) (revisado ?revisado) (partida ?numero) (folio ?folio) (descripcion ?descripcion) (legal ?legal) (rcv ?rcv) (ccm ?ccm) (a-corregir ?a-corregir) (old ?old) (tipo ?tipo))
 
   ( balance (dia ?top) (mes ?mes_top) (ano ?ano_top))
   ( test (>= (to_serial_date ?top ?mes_top ?ano_top) (to_serial_date ?dia ?mes ?ano)))
@@ -411,8 +411,15 @@
   ( printout k "<p style='color: white; background-color: red'> " ?a-corregir "</p>" crlf)
   ( printout k "<br>" ?legal crlf)
 
-  ( if (eq ?imprimir-detalles true) then
-    ( if (eq ?rechazado true) then ( printout k "- [x] partida rechazada en SII " crlf ) )
+  ( if (eq ?imprimir-detalles true)
+    then
+
+    ( if (eq ?rechazado true)   then
+      ( printout k "- [x] rechazado: Partida rechazada por SII, significa que si la dejamos nos podría generar multas o que no tendría el efecto deseado. Así que solo podemos quitarla de SII, pero eso requiere rectificar el f29 y eso nos generaría multas. Por ejemplo, una nota de crédito que no descuente monto imponible, aunque esté en registro de compra-venta. El F22 al año siguiente no incluirá estos DTE. No es lo mismo que gasto rechazado. También podríamos declararla como no-incluir, pero eso no conveniente, pues todo debe estar en la contabilidad de la empresa, pera que sea fidedigna. Hay casos donde se declara un gasto para el que no hay boleta de respaldo, eso es muy crítico y sí será rechazado, y además la contabilidad financiera objetada. El caso de las facturas de compra 45 a proveedor extranjero es parecido, pero ahora sé como se hace. " crlf )  )
+
+    ( if (eq ?no-incluir true)   then
+      ( printout k "- [x] no-incluir: Partida que estando en RCV SII se estimó no incluir en la contabilidad financiera" crlf )  )
+
     ( if (neq ?old " ") then ( printout k "- [x] antiguo número de partida: " ?old crlf ) )
     ( if (neq ?voucher " ") then ( printout k "- [x] voucher en ccm: " ?voucher crlf ) )
     ( if (neq ?tipo " ") then ( printout k "- [x] tipo de asiento: " ?tipo crlf ) )
@@ -443,17 +450,24 @@
      )
   )
 
-
+  
   ( printout k "<table id='Partida-" ?numero "'>" crlf)
+ 
 
   ( if (eq ?revisado true) then  
     ( printout k "<thead> <th style='background-color: lavender' colspan='6'>Partida " ?numero "</th></thead>"crlf)
   else
     ( printout k "<thead > <th colspan='6'>Partida " ?numero "</th></thead>"crlf)
   )
-  
-  ( printout k "<tbody>" crlf)
+ 
 
+  ( if (eq ?rechazado true)
+    then
+      ( printout k "<tbody  style =' text-decoration: line-through; text-decoration-color: crimson'  > " crlf )
+    else
+      ( printout k "<tbody>" crlf)
+  )
+ 
   ( printout l crlf crlf )
   ( printout l "<br> <br> <br> <br> <br> <br> " crlf)
   ( printout l "<br>" ?descripcion crlf)
@@ -516,6 +530,7 @@
     ( halt )
   )
 ;  ( printout k "</tbody></table><table style='background-color: cornsilk'><tbody>" crlf)
+  ( printout k "</tbody><tbody>" crlf)
   ( printout k "<tr><td colspan='4'> " ?razon "</td> </tr> " crlf)
   ( printout k "<tr><td colspan='4'> ( " ?dia " de " ?mes tab ?ano tab " ) </td> </tr>" crlf)
   ( printout k "<tr><td colspan='8'> Partida " ?numero ": " ?descripcion " </td></tr>" crlf)

@@ -41,6 +41,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
  <tr style='color: white; background-color: cornflowerblue' > <td> </td> <td align='right'> 0 </td> <td align='right'>  85294 </td> <td> </td> <td> k[utilidad-del-ejercicio-anterior]</td> </tr>
  <tr style='color: white; background-color: cornflowerblue' > <td> </td> <td align='right'> 0 </td> <td align='right'>  2000000 </td> <td> </td> <td> k[capital-social]</td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 2087710 </td> <td style='background-color: blanchedalmond'> 2087710</td> </tr>
+</tbody><tbody>
 <tr><td colspan='4'> alectrico® SpA</td> </tr> 
 <tr><td colspan='4'> ( 1 de enero	2021	 ) </td> </tr>
 <tr><td colspan='8'> Partida 1: Por Inicio de Operaciones en 2021 </td></tr>
@@ -68,6 +69,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <tr style='background-color: azure'>  <td> </td> <td align='right'> 0 </td> <td align='right'> 5588 </td> <td> </td><td> p[iva-debito] </td> </tr>
 <tr style='background-color: gold'>  <td> </td> <td align='right'>0 </td> <td align='right'> 29412</td> <td> </td> <td> r[ingresos-brutos] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 35000 </td> <td style='background-color: blanchedalmond'> 35000</td> </tr>
+</tbody><tbody>
 <tr><td colspan='4'> alectrico® SpA</td> </tr> 
 <tr><td colspan='4'> ( 31 de enero	2021	 ) </td> </tr>
 <tr><td colspan='8'> Partida 3: Por rendición de e-boletas afectas de enero de 2021 </td></tr>
@@ -95,6 +97,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <tr style='background-color: azure'>  <td> </td> <td align='right'> 0 </td> <td align='right'> 23464 </td> <td> </td><td> p[iva-debito] </td> </tr>
 <tr style='background-color: gold'>  <td> </td> <td align='right'>0 </td> <td align='right'> 123497</td> <td> </td> <td> r[ingresos-brutos] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 146961 </td> <td style='background-color: blanchedalmond'> 146961</td> </tr>
+</tbody><tbody>
 <tr><td colspan='4'> alectrico® SpA</td> </tr> 
 <tr><td colspan='4'> ( 31 de enero	2021	 ) </td> </tr>
 <tr><td colspan='8'> Partida 4: Por rendición de vouchers de enero de 2021 </td></tr>
@@ -119,6 +122,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <tr style='background-color: lightyellow'>  <td> </td> <td align='right'> 0</td> <td align='right'> 4505</td> <td colspan='2'> a[banco-estado] </td> </tr>
 <tr style='color: white; background-color: black'>  <td> </td> <td align='right'>4505 </td> <td align='right'> 0</td> <td> </td> <td> r[devolucion-sobre-ventas] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 4505 </td> <td style='background-color: blanchedalmond'> 4505</td> </tr>
+</tbody><tbody>
 <tr><td colspan='4'> alectrico® SpA</td> </tr> 
 <tr><td colspan='4'> ( 31 de enero	2021	 ) </td> </tr>
 <tr><td colspan='8'> Partida 5: Devolución a subcuenta ventas-con-eboleta-exenta por Por la anulacion del monto total de boletas exentas del mes de enero debido a que se refieren a transacciones ya cubiertas por vouchers. mes enero </td></tr>
@@ -146,6 +150,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <tr style='background-color: lightyellow'>  <td> </td> <td align='right'> 0</td> <td align='right'> 45050</td> <td colspan='2'> a[banco-estado] </td> </tr>
 <tr style='color: white; background-color: black'>  <td> </td> <td align='right'>45050 </td> <td align='right'> 0</td> <td> </td> <td> r[devolucion-sobre-ventas] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 45050 </td> <td style='background-color: blanchedalmond'> 45050</td> </tr>
+</tbody><tbody>
 <tr><td colspan='4'> alectrico® SpA</td> </tr> 
 <tr><td colspan='4'> ( 31 de enero	2021	 ) </td> </tr>
 <tr><td colspan='8'> Partida 6: Devolución a subcuenta ventas-con-eboleta-exenta por Por la anulacion del monto total de boletas exentas del mes de enero debido a que se refieren a transacciones ya cubiertas por vouchers. mes enero </td></tr>
@@ -174,6 +179,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <tr style='background-color: azure'>  <td> </td> <td align='right'> 5588 </td> <td align='right'> 0 </td> <td> </td><td> p[iva-debito] </td> </tr>
 <tr style='color: white; background-color: black'>  <td> </td> <td align='right'>29412 </td> <td align='right'> 0</td> <td> </td> <td> r[devolucion-sobre-ventas] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 35000 </td> <td style='background-color: blanchedalmond'> 35000</td> </tr>
+</tbody><tbody>
 <tr><td colspan='4'> alectrico® SpA</td> </tr> 
 <tr><td colspan='4'> ( 31 de enero	2021	 ) </td> </tr>
 <tr><td colspan='8'> Partida 7: Devolución a subcuenta ventas-con-eboleta-afecta por Por la anulacion del monto total de la boleta afecta con folio 7 del 13 de enero. Se refiere a una transaccion ya cubiertas por un voucher. mes enero </td></tr>
@@ -202,6 +208,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <tr style='background-color: lightyellow'>  <td> </td> <td align='right'> 0</td> <td align='right'> 60</td> <td colspan='2'> a[banco-estado] </td> </tr>
 <tr style='color: white; background-color: black'>  <td> </td> <td align='right'>50 </td> <td align='right'> 0</td> <td> </td> <td> r[costos-de-ventas] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 60 </td> <td style='background-color: blanchedalmond'> 60</td> </tr>
+</tbody><tbody>
 <tr><td colspan='4'> alectrico® SpA</td> </tr> 
 <tr><td colspan='4'> ( 6 de enero	2021	 ) </td> </tr>
 <tr><td colspan='8'> Partida 8: Por Costo Directo de Ventas: Comisión diciembre por pagos en pasarela KHIPU </td></tr>
@@ -230,6 +237,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <tr style='background-color: lightyellow'>  <td> </td> <td align='right'> 0</td> <td align='right'> 1997</td> <td colspan='2'> a[banco-estado] </td> </tr>
 <tr style='color: white; background-color: black'>  <td> </td> <td align='right'>1678 </td> <td align='right'> 0</td> <td> </td> <td> r[costos-de-ventas] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 1997 </td> <td style='background-color: blanchedalmond'> 1997</td> </tr>
+</tbody><tbody>
 <tr><td colspan='4'> alectrico® SpA</td> </tr> 
 <tr><td colspan='4'> ( 3 de enero	2021	 ) </td> </tr>
 <tr><td colspan='8'> Partida 9: Por Costo Directo de Ventas: Comisión Pasarela diciembre Transbank </td></tr>
@@ -258,6 +266,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <tr style='background-color: lightyellow'>  <td> </td> <td align='right'> 39487</td> <td align='right'> 0</td> <td colspan='2'> a[materiales] </td> </tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td align='right'> 0</td> <td align='right'> 46990</td> <td colspan='2'> a[banco-estado] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 46990 </td> <td style='background-color: blanchedalmond'> 46990</td> </tr>
+</tbody><tbody>
 <tr><td colspan='4'> alectrico® SpA</td> </tr> 
 <tr><td colspan='4'> ( 28 de enero	2021	 ) </td> </tr>
 <tr><td colspan='8'> Partida 10: Por compra de 1 meson de cocina a easy </td></tr>
@@ -287,6 +296,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <tr style='background-color: lightyellow'>  <td> </td> <td align='right'> 18849</td> <td align='right'> 0</td> <td colspan='2'> a[materiales] </td> </tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td align='right'> 0</td> <td align='right'> 22430</td> <td colspan='2'> a[banco-estado] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 22430 </td> <td style='background-color: blanchedalmond'> 22430</td> </tr>
+</tbody><tbody>
 <tr><td colspan='4'> alectrico® SpA</td> </tr> 
 <tr><td colspan='4'> ( 14 de enero	2021	 ) </td> </tr>
 <tr><td colspan='8'> Partida 12: Por compra de materiales eléctricos a Sodimac </td></tr>
@@ -315,6 +325,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <tr style='background-color: lightyellow'>  <td> </td> <td align='right'> 0</td> <td align='right'> 179990</td> <td colspan='2'> a[banco-estado] </td> </tr>
 <tr>  <td>extra-contable </td> <td align='right'> 151252</td> <td align='right'>0</td> <td> </td> <td> t[depreciacion-instantanea-de-activos-fijos-propyme] </td></tr> 
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 179990 </td> <td style='background-color: blanchedalmond'> 179990</td> </tr>
+</tbody><tbody>
 <tr><td colspan='4'> alectrico® SpA</td> </tr> 
 <tr><td colspan='4'> ( 14 de enero	2021	 ) </td> </tr>
 <tr><td colspan='8'> Partida 13: Por compra de taladro inalámbrico DeWalt a Sodimac </td></tr>
@@ -348,6 +359,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <tr style='color: white; background-color: black'>  <td> </td> <td align='right'>4202 </td> <td align='right'> 0</td> <td> </td> <td> r[depreciacion] </td> </tr>
 <tr style='color: white; background-color: black'>  <td> </td> <td align='right'>2417 </td> <td align='right'> 0</td> <td> </td> <td> r[amortizacion] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 9950 </td> <td style='background-color: blanchedalmond'> 9950</td> </tr>
+</tbody><tbody>
 <tr><td colspan='4'> alectrico® SpA</td> </tr> 
 <tr><td colspan='4'> ( 6 de septiembre	2021	 ) </td> </tr>
 <tr><td colspan='8'> Partida 131: Adquisión de Dominio Internet: necios.cl. </td></tr>
@@ -375,6 +387,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <tr style='background-color: lightyellow'>  <td> </td> <td align='right'> 7118</td> <td align='right'> 0</td> <td colspan='2'> a[materiales] </td> </tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td align='right'> 0</td> <td align='right'> 8470</td> <td colspan='2'> a[banco-estado] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 8470 </td> <td style='background-color: blanchedalmond'> 8470</td> </tr>
+</tbody><tbody>
 <tr><td colspan='4'> alectrico® SpA</td> </tr> 
 <tr><td colspan='4'> ( 4 de enero	2021	 ) </td> </tr>
 <tr><td colspan='8'> Partida 14: Por compra 2 interruptores y 1 guantes a Easy </td></tr>
@@ -406,6 +419,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <tr style='background-color: azure'>  <td> </td> <td align='right'> 23464 </td> <td align='right'> 0 </td> <td> </td><td> p[iva-debito] </td> </tr>
 <tr style='background-color: gold'>  <td> </td> <td align='right'>0 </td> <td align='right'> 33</td> <td> </td> <td> r[ingresos-brutos] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 23696 </td> <td style='background-color: blanchedalmond'> 23696</td> </tr>
+</tbody><tbody>
 <tr><td colspan='4'> alectrico® SpA</td> </tr> 
 <tr><td colspan='4'> ( 31 de enero	2021	 ) </td> </tr>
 <tr><td colspan='8'> Partida 14333: Por ajuste del Debito Fiscal Contra el Credito Fiscal, mes de enero-Por pago del ppm, con factor de  0.0013 mes enero </td></tr>
@@ -429,6 +443,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <tr style='background-color: azure'>  <td> </td> <td align='right'> 5588 </td> <td align='right'> 0 </td> <td> </td><td> p[iva-debito] </td> </tr>
 <tr style='color: white; background-color: black'>  <td> </td> <td align='right'>29412 </td> <td align='right'> 0</td> <td> </td> <td> r[devolucion-sobre-ventas] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 35000 </td> <td style='background-color: blanchedalmond'> 35000</td> </tr>
+</tbody><tbody>
 <tr><td colspan='4'> alectrico® SpA</td> </tr> 
 <tr><td colspan='4'> ( 13 de febrero	2021	 ) </td> </tr>
 <tr><td colspan='8'> Partida 141: Devolución a subcuenta ventas-con-eboleta-afecta por Por la anulacion del monto total de la boleta afecta con folio 7 del 13 de enero. Se refiere a una transaccion ya cubierta por un voucher. mes febrero </td></tr>
@@ -456,6 +471,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <tr style='color: white; background-color: black'>  <td> </td> <td align='right'>4202 </td> <td align='right'> 0</td> <td> </td> <td> r[depreciacion] </td> </tr>
 <tr style='color: white; background-color: black'>  <td> </td> <td align='right'>2417 </td> <td align='right'> 0</td> <td> </td> <td> r[amortizacion] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 6619 </td> <td style='background-color: blanchedalmond'> 6619</td> </tr>
+</tbody><tbody>
 <tr><td colspan='4'> alectrico® SpA</td> </tr> 
 <tr><td colspan='4'> ( 31 de febrero	2021	 ) </td> </tr>
 <tr><td colspan='8'> Partida 142: Por amortizacion en febrero de marca-alectrico-Por depreciacion en febrero de taladro </td></tr>
@@ -481,6 +497,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <tr style='background-color: azure'>  <td> </td> <td align='right'> 16 </td> <td align='right'> 0 </td> <td> </td><td> p[iva-debito] </td> </tr>
 <tr style='background-color: gold'>  <td> </td> <td align='right'>0 </td> <td align='right'> 298</td> <td> </td> <td> r[ingresos-brutos] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 314 </td> <td style='background-color: blanchedalmond'> 314</td> </tr>
+</tbody><tbody>
 <tr><td colspan='4'> alectrico® SpA</td> </tr> 
 <tr><td colspan='4'> ( 31 de febrero	2021	 ) </td> </tr>
 <tr><td colspan='8'> Partida 14444: Por ajuste del Debito Fiscal Contra el Credito Fiscal, mes de febrero-Por pago del ppm, con factor de  0.0013 mes febrero </td></tr>
@@ -505,6 +522,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <tr style='background-color: lightyellow'>  <td> </td> <td align='right'> 0</td> <td align='right'> 3389</td> <td colspan='2'> a[banco-estado] </td> </tr>
 <tr style='color: white; background-color: black'>  <td> </td> <td align='right'>2848 </td> <td align='right'> 0</td> <td> </td> <td> r[costos-de-ventas] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 3389 </td> <td style='background-color: blanchedalmond'> 3389</td> </tr>
+</tbody><tbody>
 <tr><td colspan='4'> alectrico® SpA</td> </tr> 
 <tr><td colspan='4'> ( 2 de febrero	2021	 ) </td> </tr>
 <tr><td colspan='8'> Partida 15: Por Costo Directo de Ventas: Comisión Pasarela enero Transbank </td></tr>
@@ -531,6 +549,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <tr style='background-color: lightyellow'>  <td> </td> <td align='right'> 6607</td> <td align='right'> 0</td> <td colspan='2'> a[materiales] </td> </tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td align='right'> 0</td> <td align='right'> 7862</td> <td colspan='2'> a[banco-estado] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 7862 </td> <td style='background-color: blanchedalmond'> 7862</td> </tr>
+</tbody><tbody>
 <tr><td colspan='4'> alectrico® SpA</td> </tr> 
 <tr><td colspan='4'> ( 4 de febrero	2021	 ) </td> </tr>
 <tr><td colspan='8'> Partida 16: Por compra a Dartel Santiago de 3 cajas de enchufes 506L </td></tr>
@@ -557,6 +576,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <tr style='background-color: lightyellow'>  <td> </td> <td align='right'> 0</td> <td align='right'> 3722</td> <td colspan='2'> a[caja] </td> </tr>
 <tr style='color: white; background-color: black'>  <td> </td> <td align='right'>3128 </td> <td align='right'> 0</td> <td> </td> <td> r[gastos-administrativos] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 3722 </td> <td style='background-color: blanchedalmond'> 3722</td> </tr>
+</tbody><tbody>
 <tr><td colspan='4'> alectrico® SpA</td> </tr> 
 <tr><td colspan='4'> ( 10 de febrero	2021	 ) </td> </tr>
 <tr><td colspan='8'> Partida 17: Por Gasto Administrativo: Servicio de Datos y Telefonía: pago inicial. </td></tr>
@@ -583,6 +603,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <tr style='background-color: lightyellow'>  <td> </td> <td align='right'> 0</td> <td align='right'> 24980</td> <td colspan='2'> a[banco-estado] </td> </tr>
 <tr style='color: white; background-color: black'>  <td> </td> <td align='right'>20992 </td> <td align='right'> 0</td> <td> </td> <td> r[gastos-promocionales] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 24980 </td> <td style='background-color: blanchedalmond'> 24980</td> </tr>
+</tbody><tbody>
 <tr><td colspan='4'> alectrico® SpA</td> </tr> 
 <tr><td colspan='4'> ( 18 de febrero	2021	 ) </td> </tr>
 <tr><td colspan='8'> Partida 18: Por Gasto Administrativo: Matriz de Bordado y Parche QR Bordado Corporativo alectrico ®. </td></tr>
@@ -610,6 +631,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <tr style='background-color: lightyellow'>  <td> </td> <td align='right'> 212</td> <td align='right'> 0</td> <td colspan='2'> a[banco-estado] </td> </tr>
 <tr style='background-color: gold'>  <td> </td> <td align='right'>0 </td> <td align='right'> 178</td> <td> </td> <td> r[costos-de-ventas] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 212 </td> <td style='background-color: blanchedalmond'> 212</td> </tr>
+</tbody><tbody>
 <tr><td colspan='4'> alectrico® SpA</td> </tr> 
 <tr><td colspan='4'> ( 24 de febrero	2021	 ) </td> </tr>
 <tr><td colspan='8'> Partida 19: Devolución a subcuenta transbank por Ajuste Mensual de Comisión mes febrero </td></tr>
@@ -634,6 +656,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <tr style='background-color: lightyellow'>  <td> </td> <td align='right'> 4505</td> <td align='right'> 0</td> <td colspan='2'> a[banco-estado] </td> </tr>
 <tr style='background-color: gold'>  <td> </td> <td align='right'>0 </td> <td align='right'> 4505</td> <td> </td> <td> r[devolucion-sobre-ventas] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 4505 </td> <td style='background-color: blanchedalmond'> 4505</td> </tr>
+</tbody><tbody>
 <tr><td colspan='4'> alectrico® SpA</td> </tr> 
 <tr><td colspan='4'> ( 27 de febrero	2021	 ) </td> </tr>
 <tr><td colspan='8'> Partida 191: Nota de Débito SII: 1 que anula a Nota de Crédito SII 12 </td></tr>
@@ -660,6 +683,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <tr style='background-color: azure'>  <td> </td> <td align='right'> 0 </td> <td align='right'> 16 </td> <td> </td><td> p[iva-debito] </td> </tr>
 <tr style='background-color: gold'>  <td> </td> <td align='right'>0 </td> <td align='right'> 84</td> <td> </td> <td> r[ingresos-brutos] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 100 </td> <td style='background-color: blanchedalmond'> 100</td> </tr>
+</tbody><tbody>
 <tr><td colspan='4'> alectrico® SpA</td> </tr> 
 <tr><td colspan='4'> ( 31 de febrero	2021	 ) </td> </tr>
 <tr><td colspan='8'> Partida 1911: Por rendición de e-boletas afectas de febrero de 2021 </td></tr>
@@ -683,6 +707,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <tr style='background-color: azure'>  <td> </td> <td align='right'> 0 </td> <td align='right'> 5588 </td> <td> </td><td> p[iva-debito] </td> </tr>
 <tr style='background-color: gold'>  <td> </td> <td align='right'>0 </td> <td align='right'> 29412</td> <td> </td> <td> r[devolucion-sobre-ventas] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 35000 </td> <td style='background-color: blanchedalmond'> 35000</td> </tr>
+</tbody><tbody>
 <tr><td colspan='4'> alectrico® SpA</td> </tr> 
 <tr><td colspan='4'> ( 28 de febrero	2021	 ) </td> </tr>
 <tr><td colspan='8'> Partida 192: Nota de Débito Manual: 2 que anula a Nota de Crédito SII 11 </td></tr>
@@ -708,6 +733,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <tr style='background-color: lightyellow'>  <td> </td> <td align='right'> 0</td> <td align='right'> 220</td> <td colspan='2'> a[banco-estado] </td> </tr>
 <tr style='color: white; background-color: black'>  <td> </td> <td align='right'>185 </td> <td align='right'> 0</td> <td> </td> <td> r[costos-de-ventas] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 220 </td> <td style='background-color: blanchedalmond'> 220</td> </tr>
+</tbody><tbody>
 <tr><td colspan='4'> alectrico® SpA</td> </tr> 
 <tr><td colspan='4'> ( 1 de marzo	2021	 ) </td> </tr>
 <tr><td colspan='8'> Partida 20: Por Costo Directo de Ventas: Comisión Pasarela enero Transbank </td></tr>
@@ -735,6 +761,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <tr style='background-color: lightyellow'>  <td> </td> <td align='right'> 25613</td> <td align='right'> 0</td> <td colspan='2'> a[materiales] </td> </tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td align='right'> 0</td> <td align='right'> 30479</td> <td colspan='2'> a[banco-estado] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 30479 </td> <td style='background-color: blanchedalmond'> 30479</td> </tr>
+</tbody><tbody>
 <tr><td colspan='4'> alectrico® SpA</td> </tr> 
 <tr><td colspan='4'> ( 12 de marzo	2021	 ) </td> </tr>
 <tr><td colspan='8'> Partida 21: Por compra de 1 máscara cubrerrostro y bolsa filtros P100 </td></tr>
@@ -761,6 +788,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <tr style='background-color: lightyellow'>  <td> </td> <td align='right'> 0</td> <td align='right'> 8242</td> <td colspan='2'> a[caja] </td> </tr>
 <tr style='color: white; background-color: black'>  <td> </td> <td align='right'>6926 </td> <td align='right'> 0</td> <td> </td> <td> r[gastos-administrativos] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 8242 </td> <td style='background-color: blanchedalmond'> 8242</td> </tr>
+</tbody><tbody>
 <tr><td colspan='4'> alectrico® SpA</td> </tr> 
 <tr><td colspan='4'> ( 17 de marzo	2021	 ) </td> </tr>
 <tr><td colspan='8'> Partida 22: Por Gasto Administrativo: Servicio de Datos y Telefonía: consumo enero. </td></tr>
@@ -788,6 +816,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <tr style='background-color: azure'>  <td> </td> <td align='right'> 0 </td> <td align='right'> 5588 </td> <td> </td><td> p[iva-debito] </td> </tr>
 <tr style='background-color: gold'>  <td> </td> <td align='right'>0 </td> <td align='right'> 29412</td> <td> </td> <td> r[ingresos-brutos] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 35000 </td> <td style='background-color: blanchedalmond'> 35000</td> </tr>
+</tbody><tbody>
 <tr><td colspan='4'> alectrico® SpA</td> </tr> 
 <tr><td colspan='4'> ( 31 de marzo	2021	 ) </td> </tr>
 <tr><td colspan='8'> Partida 26: Por rendición de vouchers de marzo de 2021 </td></tr>
@@ -813,6 +842,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <tr style='color: white; background-color: black'>  <td> </td> <td align='right'>4202 </td> <td align='right'> 0</td> <td> </td> <td> r[depreciacion] </td> </tr>
 <tr style='color: white; background-color: black'>  <td> </td> <td align='right'>2417 </td> <td align='right'> 0</td> <td> </td> <td> r[amortizacion] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 6619 </td> <td style='background-color: blanchedalmond'> 6619</td> </tr>
+</tbody><tbody>
 <tr><td colspan='4'> alectrico® SpA</td> </tr> 
 <tr><td colspan='4'> ( 31 de marzo	2021	 ) </td> </tr>
 <tr><td colspan='8'> Partida 261: Por amortizacion en marzo de marca-alectrico-Por depreciacion en marzo de taladro </td></tr>
@@ -840,6 +870,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <tr style='background-color: azure'>  <td> </td> <td align='right'> 5588 </td> <td align='right'> 0 </td> <td> </td><td> p[iva-debito] </td> </tr>
 <tr style='background-color: gold'>  <td> </td> <td align='right'>0 </td> <td align='right'> 334</td> <td> </td> <td> r[ingresos-brutos] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 5960 </td> <td style='background-color: blanchedalmond'> 5960</td> </tr>
+</tbody><tbody>
 <tr><td colspan='4'> alectrico® SpA</td> </tr> 
 <tr><td colspan='4'> ( 31 de marzo	2021	 ) </td> </tr>
 <tr><td colspan='8'> Partida 262: Por ajuste del Debito Fiscal Contra el Credito Fiscal, mes de marzo-Por pago del ppm, con factor de  0.0013 mes marzo </td></tr>
@@ -864,6 +895,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <tr style='background-color: lightyellow'>  <td> </td> <td align='right'> 0</td> <td align='right'> 746</td> <td colspan='2'> a[banco-estado] </td> </tr>
 <tr style='color: white; background-color: black'>  <td> </td> <td align='right'>627 </td> <td align='right'> 0</td> <td> </td> <td> r[costos-de-ventas] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 746 </td> <td style='background-color: blanchedalmond'> 746</td> </tr>
+</tbody><tbody>
 <tr><td colspan='4'> alectrico® SpA</td> </tr> 
 <tr><td colspan='4'> ( 7 de abril	2021	 ) </td> </tr>
 <tr><td colspan='8'> Partida 27: Por Costo Directo de Ventas: Comisión Pasarela marzo Transbank. </td></tr>
@@ -890,6 +922,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <tr style='background-color: lightyellow'>  <td> </td> <td align='right'> 0</td> <td align='right'> 8242</td> <td colspan='2'> a[caja] </td> </tr>
 <tr style='color: white; background-color: black'>  <td> </td> <td align='right'>6926 </td> <td align='right'> 0</td> <td> </td> <td> r[gastos-administrativos] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 8242 </td> <td style='background-color: blanchedalmond'> 8242</td> </tr>
+</tbody><tbody>
 <tr><td colspan='4'> alectrico® SpA</td> </tr> 
 <tr><td colspan='4'> ( 19 de abril	2021	 ) </td> </tr>
 <tr><td colspan='8'> Partida 28: Por Gasto Administrativo: Servicio de Datos y Telefonía: consumo marzo. </td></tr>
@@ -916,6 +949,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <tr style='background-color: lightyellow'>  <td> </td> <td align='right'> 2134</td> <td align='right'> 0</td> <td colspan='2'> a[insumos] </td> </tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td align='right'> 0</td> <td align='right'> 2540</td> <td colspan='2'> a[banco-estado] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 2540 </td> <td style='background-color: blanchedalmond'> 2540</td> </tr>
+</tbody><tbody>
 <tr><td colspan='4'> alectrico® SpA</td> </tr> 
 <tr><td colspan='4'> ( 26 de abril	2021	 ) </td> </tr>
 <tr><td colspan='8'> Partida 281: Por compra de 10 enchufes eléctricos $4404.4 promedio a DARTEL-Temuco </td></tr>
@@ -943,6 +977,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <tr style='background-color: azure'>  <td> </td> <td align='right'> 0 </td> <td align='right'> 4790 </td> <td> </td><td> p[iva-debito] </td> </tr>
 <tr style='background-color: gold'>  <td> </td> <td align='right'>0 </td> <td align='right'> 25210</td> <td> </td> <td> r[ingresos-brutos] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 30000 </td> <td style='background-color: blanchedalmond'> 30000</td> </tr>
+</tbody><tbody>
 <tr><td colspan='4'> alectrico® SpA</td> </tr> 
 <tr><td colspan='4'> ( 31 de abril	2021	 ) </td> </tr>
 <tr><td colspan='8'> Partida 30: Por rendición de vouchers de abril de 2021 </td></tr>
@@ -968,6 +1003,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <tr style='background-color: lightyellow'>  <td> </td> <td align='right'> 121</td> <td align='right'> 0</td> <td colspan='2'> a[banco-estado] </td> </tr>
 <tr style='background-color: gold'>  <td> </td> <td align='right'>0 </td> <td align='right'> 102</td> <td> </td> <td> r[ingresos-brutos] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 121 </td> <td style='background-color: blanchedalmond'> 121</td> </tr>
+</tbody><tbody>
 <tr><td colspan='4'> alectrico® SpA</td> </tr> 
 <tr><td colspan='4'> ( 28 de abril	2021	 ) </td> </tr>
 <tr><td colspan='8'> Partida 301: Devolución a subcuenta ventas-con-factura-afecta por Ajuste Mensual de Comisión Transbank mes abril </td></tr>
@@ -995,6 +1031,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <tr style='color: white; background-color: black'>  <td> </td> <td align='right'>4202 </td> <td align='right'> 0</td> <td> </td> <td> r[depreciacion] </td> </tr>
 <tr style='color: white; background-color: black'>  <td> </td> <td align='right'>2417 </td> <td align='right'> 0</td> <td> </td> <td> r[amortizacion] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 6619 </td> <td style='background-color: blanchedalmond'> 6619</td> </tr>
+</tbody><tbody>
 <tr><td colspan='4'> alectrico® SpA</td> </tr> 
 <tr><td colspan='4'> ( 31 de abril	2021	 ) </td> </tr>
 <tr><td colspan='8'> Partida 302: Por amortizacion en abril de marca-alectrico-Por depreciacion en abril de taladro </td></tr>
@@ -1022,6 +1059,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <tr style='background-color: azure'>  <td> </td> <td align='right'> 4790 </td> <td align='right'> 0 </td> <td> </td><td> p[iva-debito] </td> </tr>
 <tr style='background-color: gold'>  <td> </td> <td align='right'>0 </td> <td align='right'> 240</td> <td> </td> <td> r[ingresos-brutos] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 5062 </td> <td style='background-color: blanchedalmond'> 5062</td> </tr>
+</tbody><tbody>
 <tr><td colspan='4'> alectrico® SpA</td> </tr> 
 <tr><td colspan='4'> ( 31 de abril	2021	 ) </td> </tr>
 <tr><td colspan='8'> Partida 303: Por ajuste del Debito Fiscal Contra el Credito Fiscal, mes de abril-Por pago del ppm, con factor de  0.00125 mes abril </td></tr>
@@ -1046,6 +1084,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <tr style='background-color: lightyellow'>  <td> </td> <td align='right'> 0</td> <td align='right'> 8242</td> <td colspan='2'> a[caja] </td> </tr>
 <tr style='color: white; background-color: black'>  <td> </td> <td align='right'>6926 </td> <td align='right'> 0</td> <td> </td> <td> r[gastos-administrativos] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 8242 </td> <td style='background-color: blanchedalmond'> 8242</td> </tr>
+</tbody><tbody>
 <tr><td colspan='4'> alectrico® SpA</td> </tr> 
 <tr><td colspan='4'> ( 18 de mayo	2021	 ) </td> </tr>
 <tr><td colspan='8'> Partida 31: Por Gasto Administrativo: Servicio de Datos y Telefonía: consumo marzo. </td></tr>
@@ -1072,6 +1111,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <tr style='background-color: lightyellow'>  <td> </td> <td align='right'> 0</td> <td align='right'> 23788</td> <td colspan='2'> a[caja] </td> </tr>
 <tr style='color: white; background-color: black'>  <td> </td> <td align='right'>19990 </td> <td align='right'> 0</td> <td> </td> <td> r[gastos-administrativos] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 23788 </td> <td style='background-color: blanchedalmond'> 23788</td> </tr>
+</tbody><tbody>
 <tr><td colspan='4'> alectrico® SpA</td> </tr> 
 <tr><td colspan='4'> ( 13 de mayo	2021	 ) </td> </tr>
 <tr><td colspan='8'> Partida 32: Por Gasto Administrativo: Certificado Digital por 3 años. </td></tr>
@@ -1098,12 +1138,88 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <tr style='background-color: lightyellow'>  <td> </td> <td align='right'> 0</td> <td align='right'> 1515</td> <td colspan='2'> a[banco-estado] </td> </tr>
 <tr style='color: white; background-color: black'>  <td> </td> <td align='right'>1273 </td> <td align='right'> 0</td> <td> </td> <td> r[costos-de-ventas] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 1515 </td> <td style='background-color: blanchedalmond'> 1515</td> </tr>
+</tbody><tbody>
 <tr><td colspan='4'> alectrico® SpA</td> </tr> 
 <tr><td colspan='4'> ( 1 de mayo	2021	 ) </td> </tr>
 <tr><td colspan='8'> Partida 33: Por Costo Directo de Ventas: Comisión Pasarela abril Transbank. </td></tr>
 <tr> <td colspan='7'>efectuado a transbank </td> </tr>
 <tr><td colspan = '8'> costar-directo-ventas</td> </tr>
 <tr style='background-color: aliceblue'> <td colspan = '8'> <img src='../factura-afecta-transbank-36597345.png'></td> </tr>
+</tbody>
+</table>
+<p style='page-break-before: always;'>&nbsp;</p>
+<br> 
+<p style='color: white; background-color: red'> No aparece en asientos centralizado</p>
+<br> 
+- [x] no-incluir: Partida que estando en RCV SII se estimó no incluir en la contabilidad financiera
+- [x] tipo de asiento: 33
+- [x] a corregir: No aparece en asientos centralizado
+- [ ] rcv
+- [ ] libro-diario
+- [ ] ccm
+- [x] revisado
+![](../revisado.png)
+<table id='Partida-34'>
+<thead> <th style='background-color: lavender' colspan='6'>Partida 34</th></thead>
+<tbody>
+<tr> <td> </td> <td style='background-color: blanchedalmond'> 0 </td> <td style='background-color: blanchedalmond'> 0</td> </tr>
+</tbody><tbody>
+<tr><td colspan='4'> alectrico® SpA</td> </tr> 
+<tr><td colspan='4'> ( 13 de mayo	2021	 ) </td> </tr>
+<tr><td colspan='8'> Partida 34: Por Gasto Administrativo: Pago Mensual de Workers Serverless. </td></tr>
+<tr> <td colspan='7'>efectuado a cloudflare </td> </tr>
+<tr><td colspan = '8'> gastar-administrativo-afecto-iva-retenido</td> </tr>
+<tr style='background-color: aliceblue'> <td colspan = '8'> <img src='../invoice-cloudflare-3198930.png'></td> </tr>
+</tbody>
+</table>
+<p style='page-break-before: always;'>&nbsp;</p>
+<br> 
+<p style='color: white; background-color: red'> No aparece en sii, seguramente porque tuve que borrarlo porque es una compra a proveedor extranjero</p>
+<br> 
+- [x] no-incluir: Partida que estando en RCV SII se estimó no incluir en la contabilidad financiera
+- [x] tipo de asiento: 33
+- [x] a corregir: No aparece en sii, seguramente porque tuve que borrarlo porque es una compra a proveedor extranjero
+- [ ] rcv
+- [ ] libro-diario
+- [ ] ccm
+- [x] revisado
+![](../revisado.png)
+<table id='Partida-35'>
+<thead> <th style='background-color: lavender' colspan='6'>Partida 35</th></thead>
+<tbody>
+<tr> <td> </td> <td style='background-color: blanchedalmond'> 0 </td> <td style='background-color: blanchedalmond'> 0</td> </tr>
+</tbody><tbody>
+<tr><td colspan='4'> alectrico® SpA</td> </tr> 
+<tr><td colspan='4'> ( 13 de mayo	2021	 ) </td> </tr>
+<tr><td colspan='8'> Partida 35: Por Gasto Promocional: Pago Mensual de 1TM Video Maker. </td></tr>
+<tr> <td colspan='7'>efectuado a test-animation-video-maker </td> </tr>
+<tr><td colspan = '8'> gastar-promocional-afecto-iva-retenido</td> </tr>
+<tr style='background-color: aliceblue'> <td colspan = '8'> <img src='../video-maker-mensualidad-mayo.png'></td> </tr>
+</tbody>
+</table>
+<p style='page-break-before: always;'>&nbsp;</p>
+<br> 
+<p style='color: white; background-color: red'> No aparece en sii, seguramente porque tuve que borrarlo porque es una compra a proveedor entranjero</p>
+<br> 
+- [x] no-incluir: Partida que estando en RCV SII se estimó no incluir en la contabilidad financiera
+- [x] tipo de asiento: 33
+- [x] a corregir: No aparece en sii, seguramente porque tuve que borrarlo porque es una compra a proveedor entranjero
+- [ ] rcv
+- [ ] libro-diario
+- [ ] ccm
+- [x] revisado
+![](../revisado.png)
+<table id='Partida-36'>
+<thead> <th style='background-color: lavender' colspan='6'>Partida 36</th></thead>
+<tbody>
+<tr> <td> </td> <td style='background-color: blanchedalmond'> 0 </td> <td style='background-color: blanchedalmond'> 0</td> </tr>
+</tbody><tbody>
+<tr><td colspan='4'> alectrico® SpA</td> </tr> 
+<tr><td colspan='4'> ( 13 de mayo	2021	 ) </td> </tr>
+<tr><td colspan='8'> Partida 36: Por Gasto Administrativo: Pago Mensual de Arriendo de Correo y Almacenamiento en la nube. </td></tr>
+<tr> <td colspan='7'>efectuado a google-one </td> </tr>
+<tr><td colspan = '8'> gastar-administrativo-afecto-iva-retenido</td> </tr>
+<tr style='background-color: aliceblue'> <td colspan = '8'> <img src='../google-one-mensualidad-mayo.png'></td> </tr>
 </tbody>
 </table>
 <p style='page-break-before: always;'>&nbsp;</p>
@@ -1125,6 +1241,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <tr style='background-color: lightyellow'>  <td> </td> <td align='right'> 268</td> <td align='right'> 0</td> <td colspan='2'> a[banco-estado] </td> </tr>
 <tr style='background-color: gold'>  <td> </td> <td align='right'>0 </td> <td align='right'> 225</td> <td> </td> <td> r[ingresos-brutos] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 268 </td> <td style='background-color: blanchedalmond'> 268</td> </tr>
+</tbody><tbody>
 <tr><td colspan='4'> alectrico® SpA</td> </tr> 
 <tr><td colspan='4'> ( 31 de mayo	2021	 ) </td> </tr>
 <tr><td colspan='8'> Partida 37: Devolución a subcuenta ventas-con-factura-afecta por Ajuste Mensual de Comisión Transbank mes mayo </td></tr>
@@ -1152,6 +1269,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <tr style='color: white; background-color: black'>  <td> </td> <td align='right'>4202 </td> <td align='right'> 0</td> <td> </td> <td> r[depreciacion] </td> </tr>
 <tr style='color: white; background-color: black'>  <td> </td> <td align='right'>2417 </td> <td align='right'> 0</td> <td> </td> <td> r[amortizacion] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 6619 </td> <td style='background-color: blanchedalmond'> 6619</td> </tr>
+</tbody><tbody>
 <tr><td colspan='4'> alectrico® SpA</td> </tr> 
 <tr><td colspan='4'> ( 31 de mayo	2021	 ) </td> </tr>
 <tr><td colspan='8'> Partida 371: Por amortizacion en mayo de marca-alectrico-Por depreciacion en mayo de taladro </td></tr>
@@ -1176,6 +1294,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <tr style='background-color: lightyellow'>  <td> </td> <td align='right'> 254</td> <td align='right'> 0</td> <td colspan='2'> a[iva-credito] </td> </tr>
 <tr style='background-color: gold'>  <td> </td> <td align='right'>0 </td> <td align='right'> 254</td> <td> </td> <td> r[ingresos-brutos] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 254 </td> <td style='background-color: blanchedalmond'> 254</td> </tr>
+</tbody><tbody>
 <tr><td colspan='4'> alectrico® SpA</td> </tr> 
 <tr><td colspan='4'> ( 31 de mayo	2021	 ) </td> </tr>
 <tr><td colspan='8'> Partida 372: Por ajuste del Debito Fiscal Contra el Credito Fiscal, mes de mayo-Por pago del ppm, con factor de  0.0013 mes mayo </td></tr>
@@ -1200,6 +1319,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <tr style='background-color: lightyellow'>  <td> </td> <td align='right'> 0</td> <td align='right'> 17850</td> <td colspan='2'> a[banco-estado] </td> </tr>
 <tr style='color: white; background-color: black'>  <td> </td> <td align='right'>15000 </td> <td align='right'> 0</td> <td> </td> <td> r[gastos-promocionales] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 17850 </td> <td style='background-color: blanchedalmond'> 17850</td> </tr>
+</tbody><tbody>
 <tr><td colspan='4'> alectrico® SpA</td> </tr> 
 <tr><td colspan='4'> ( 8 de junio	2021	 ) </td> </tr>
 <tr><td colspan='8'> Partida 39: Por Gasto Promocional: Compra de Flyers para Visitas a Terreno. </td></tr>
@@ -1227,6 +1347,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <tr style='background-color: lightyellow'>  <td> </td> <td align='right'> 0</td> <td align='right'> 1177</td> <td colspan='2'> a[caja] </td> </tr>
 <tr style='color: white; background-color: black'>  <td> </td> <td align='right'>1177 </td> <td align='right'> 0</td> <td> </td> <td> r[gastos-administrativos] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 1400 </td> <td style='background-color: blanchedalmond'> 1400</td> </tr>
+</tbody><tbody>
 <tr><td colspan='4'> alectrico® SpA</td> </tr> 
 <tr><td colspan='4'> ( 13 de junio	2021	 ) </td> </tr>
 <tr><td colspan='8'> Partida 41: Por Gasto Administrativo: Pago Mensual de Arriendo de Correo y Almacenamiento en la nube. </td></tr>
@@ -1252,6 +1373,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <tr style='background-color: lightyellow'>  <td> </td> <td align='right'> 0</td> <td align='right'> 1701</td> <td colspan='2'> a[banco-estado] </td> </tr>
 <tr style='color: white; background-color: black'>  <td> </td> <td align='right'>1701 </td> <td align='right'> 0</td> <td> </td> <td> r[gastos-administrativos] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 1701 </td> <td style='background-color: blanchedalmond'> 1701</td> </tr>
+</tbody><tbody>
 <tr><td colspan='4'> alectrico® SpA</td> </tr> 
 <tr><td colspan='4'> ( 2 de junio	2021	 ) </td> </tr>
 <tr><td colspan='8'> Partida 42: Por Gasto Administrativo: Multas por Rectificatoria mayo 2020. </td></tr>
@@ -1276,6 +1398,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <tr style='background-color: lightyellow'>  <td> </td> <td align='right'> 0</td> <td align='right'> 31203</td> <td colspan='2'> a[banco-estado] </td> </tr>
 <tr style='color: white; background-color: black'>  <td> </td> <td align='right'>31203 </td> <td align='right'> 0</td> <td> </td> <td> r[gastos-administrativos] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 31203 </td> <td style='background-color: blanchedalmond'> 31203</td> </tr>
+</tbody><tbody>
 <tr><td colspan='4'> alectrico® SpA</td> </tr> 
 <tr><td colspan='4'> ( 2 de junio	2021	 ) </td> </tr>
 <tr><td colspan='8'> Partida 43: Por Gasto Administrativo: RF21 Giro 6379917 por Declaración de Renta AT 2021 Fuera de Plazo. </td></tr>
@@ -1300,6 +1423,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <tr style='background-color: lightyellow'>  <td> </td> <td align='right'> 31203</td> <td align='right'> 0</td> <td colspan='2'> a[cuentas-por-cobrar] </td> </tr>
 <tr style='background-color: gold'>  <td> </td> <td align='right'>0 </td> <td align='right'> 31203</td> <td> </td> <td> r[gastos-administrativos] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 31203 </td> <td style='background-color: blanchedalmond'> 31203</td> </tr>
+</tbody><tbody>
 <tr><td colspan='4'> alectrico® SpA</td> </tr> 
 <tr><td colspan='4'> ( 15 de junio	2021	 ) </td> </tr>
 <tr><td colspan='8'> Partida 44: v/Por Reconocimiento de Cuentas por Cobrar Por Descargo de Giro SII 6379917. Resolución 14020002501. </td></tr>
@@ -1324,6 +1448,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <tr style='background-color: lightyellow'>  <td> </td> <td align='right'> 0</td> <td align='right'> 3307</td> <td colspan='2'> a[banco-estado] </td> </tr>
 <tr style='color: white; background-color: black'>  <td> </td> <td align='right'>3307 </td> <td align='right'> 0</td> <td> </td> <td> r[gastos-administrativos] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 3307 </td> <td style='background-color: blanchedalmond'> 3307</td> </tr>
+</tbody><tbody>
 <tr><td colspan='4'> alectrico® SpA</td> </tr> 
 <tr><td colspan='4'> ( 18 de junio	2021	 ) </td> </tr>
 <tr><td colspan='8'> Partida 45: Por Gasto Administrativo: RF21 Giro por Pago de IVA (3.307) retrasado de Rectificatoria 05/2020. </td></tr>
@@ -1349,6 +1474,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <tr style='background-color: lightyellow'>  <td> </td> <td align='right'> 0</td> <td align='right'> 62406</td> <td colspan='2'> a[banco-estado] </td> </tr>
 <tr style='color: white; background-color: black'>  <td> </td> <td align='right'>62406 </td> <td align='right'> 0</td> <td> </td> <td> r[gastos-administrativos] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 62406 </td> <td style='background-color: blanchedalmond'> 62406</td> </tr>
+</tbody><tbody>
 <tr><td colspan='4'> alectrico® SpA</td> </tr> 
 <tr><td colspan='4'> ( 16 de junio	2021	 ) </td> </tr>
 <tr><td colspan='8'> Partida 46: Por Gasto Administrativo: Multa por Rectificatoria de febrero de 2021. </td></tr>
@@ -1375,6 +1501,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <tr style='background-color: lightyellow'>  <td> </td> <td align='right'> 0</td> <td align='right'> 2941</td> <td colspan='2'> a[banco-estado] </td> </tr>
 <tr style='color: white; background-color: black'>  <td> </td> <td align='right'>2941 </td> <td align='right'> 0</td> <td> </td> <td> r[gastos-promocionales] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 3500 </td> <td style='background-color: blanchedalmond'> 3500</td> </tr>
+</tbody><tbody>
 <tr><td colspan='4'> alectrico® SpA</td> </tr> 
 <tr><td colspan='4'> ( 21 de junio	2021	 ) </td> </tr>
 <tr><td colspan='8'> Partida 47: Por Gasto Promocional: Pago Mensual de 1TM Video Maker. </td></tr>
@@ -1402,6 +1529,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <tr style='background-color: lightyellow'>  <td> </td> <td align='right'> 0</td> <td align='right'> 3302</td> <td colspan='2'> a[caja] </td> </tr>
 <tr style='color: white; background-color: black'>  <td> </td> <td align='right'>3302 </td> <td align='right'> 0</td> <td> </td> <td> r[gastos-administrativos] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 3929 </td> <td style='background-color: blanchedalmond'> 3929</td> </tr>
+</tbody><tbody>
 <tr><td colspan='4'> alectrico® SpA</td> </tr> 
 <tr><td colspan='4'> ( 22 de junio	2021	 ) </td> </tr>
 <tr><td colspan='8'> Partida 48: Por Gasto Administrativo: Pago Mensual de Workers Serverless. </td></tr>
@@ -1428,6 +1556,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <tr style='background-color: lightyellow'>  <td> </td> <td align='right'> 0</td> <td align='right'> 8242</td> <td colspan='2'> a[banco-estado] </td> </tr>
 <tr style='color: white; background-color: black'>  <td> </td> <td align='right'>6926 </td> <td align='right'> 0</td> <td> </td> <td> r[gastos-administrativos] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 8242 </td> <td style='background-color: blanchedalmond'> 8242</td> </tr>
+</tbody><tbody>
 <tr><td colspan='4'> alectrico® SpA</td> </tr> 
 <tr><td colspan='4'> ( 17 de junio	2021	 ) </td> </tr>
 <tr><td colspan='8'> Partida 49: Por Gasto Administrativo: Servicio de Datos y Telefonía: pago junio. </td></tr>
@@ -1454,6 +1583,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <tr style='background-color: lightyellow'>  <td> </td> <td align='right'> 0</td> <td align='right'> 23800</td> <td colspan='2'> a[banco-estado] </td> </tr>
 <tr style='color: white; background-color: black'>  <td> </td> <td align='right'>20000 </td> <td align='right'> 0</td> <td> </td> <td> r[gastos-promocionales] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 23800 </td> <td style='background-color: blanchedalmond'> 23800</td> </tr>
+</tbody><tbody>
 <tr><td colspan='4'> alectrico® SpA</td> </tr> 
 <tr><td colspan='4'> ( 24 de junio	2021	 ) </td> </tr>
 <tr><td colspan='8'> Partida 50: Por Gasto Promocional: Pendón Promocional Norma 4. </td></tr>
@@ -1479,6 +1609,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <tr style='background-color: lightyellow'>  <td> </td> <td align='right'> 1409</td> <td align='right'> 0</td> <td colspan='2'> a[retencion-de-iva-articulo-11] </td> </tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td align='right'> 0</td> <td align='right'> 1409</td> <td colspan='2'> a[iva-credito] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 1409 </td> <td style='background-color: blanchedalmond'> 1409</td> </tr>
+</tbody><tbody>
 <tr><td colspan='4'> alectrico® SpA</td> </tr> 
 <tr><td colspan='4'> ( 30 de junio	2021	 ) </td> </tr>
 <tr><td colspan='8'> Partida 51: Ajuste de retencion de iva contra iva-credito </td></tr>
@@ -1504,6 +1635,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <tr style='color: white; background-color: black'>  <td> </td> <td align='right'>4202 </td> <td align='right'> 0</td> <td> </td> <td> r[depreciacion] </td> </tr>
 <tr style='color: white; background-color: black'>  <td> </td> <td align='right'>2417 </td> <td align='right'> 0</td> <td> </td> <td> r[amortizacion] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 6619 </td> <td style='background-color: blanchedalmond'> 6619</td> </tr>
+</tbody><tbody>
 <tr><td colspan='4'> alectrico® SpA</td> </tr> 
 <tr><td colspan='4'> ( 31 de junio	2021	 ) </td> </tr>
 <tr><td colspan='8'> Partida 52: Por amortizacion en junio de marca-alectrico-Por depreciacion en junio de taladro </td></tr>
@@ -1528,6 +1660,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <tr style='background-color: lightyellow'>  <td> </td> <td align='right'> 266</td> <td align='right'> 0</td> <td colspan='2'> a[iva-credito] </td> </tr>
 <tr style='background-color: gold'>  <td> </td> <td align='right'>0 </td> <td align='right'> 266</td> <td> </td> <td> r[ingresos-brutos] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 266 </td> <td style='background-color: blanchedalmond'> 266</td> </tr>
+</tbody><tbody>
 <tr><td colspan='4'> alectrico® SpA</td> </tr> 
 <tr><td colspan='4'> ( 31 de junio	2021	 ) </td> </tr>
 <tr><td colspan='8'> Partida 62: Por ajuste del Debito Fiscal Contra el Credito Fiscal, mes de junio </td></tr>
@@ -1538,7 +1671,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'> Fuera de plazo</p>
 <br> 
-- [x] partida rechazada en SII 
+- [x] rechazado: Partida rechazada por SII, significa que si la dejamos nos podría generar multas o que no tendría el efecto deseado. Así que solo podemos quitarla de SII, pero eso requiere rectificar el f29 y eso nos generaría multas. Por ejemplo, una nota de crédito que no descuente monto imponbile, aunque esté en registro de compra-ventas. El F22 al año siguiente no incluirá estos DTE. No es lo mismo que gasto rechazado. También podríamos declararla como no-incluir, pero eso no conveniente, pues todo debe estar en la contabilidad de la empresa, pera que sea fidedigna. Hay casos donde se declara un gasto para el que no hay boleta de resplado, eso es muy crítico y sí será rechazado, y además la contabilidad financiera objetada. El caso de las facturas de compra 45 a proveedor extranjero es parecido, pero ahora sé como se hace. 
 - [x] tipo de asiento: 33
 - [x] a corregir: Fuera de plazo
 - [ ] rcv
@@ -1548,13 +1681,14 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 ![](../revisado.png)
 <table id='Partida-63'>
 <thead> <th style='background-color: lavender' colspan='6'>Partida 63</th></thead>
-<tbody>
+<tbody  style =' text-decoration: line-through; text-decoration-color: crimson'  > 
 <tr> <td align='right' >1177 </td> <td colspan='7'> google-one#gastos-administrativos </td></tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td align='right'> 0</td> <td align='right'> 223</td> <td colspan='2'> a[retencion-de-iva-articulo-11] </td> </tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td align='right'> 223</td> <td align='right'> 0</td> <td colspan='2'> a[iva-credito] </td> </tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td align='right'> 0</td> <td align='right'> 1177</td> <td colspan='2'> a[caja] </td> </tr>
 <tr style='color: white; background-color: black'>  <td> </td> <td align='right'>1177 </td> <td align='right'> 0</td> <td> </td> <td> r[gastos-administrativos] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 1400 </td> <td style='background-color: blanchedalmond'> 1400</td> </tr>
+</tbody><tbody>
 <tr><td colspan='4'> alectrico® SpA</td> </tr> 
 <tr><td colspan='4'> ( 13 de julio	2021	 ) </td> </tr>
 <tr><td colspan='8'> Partida 63: Por Gasto Administrativo: Pago Mensual de Arriendo de Correo y Almacenamiento en la nube. </td></tr>
@@ -1581,12 +1715,38 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <tr style='background-color: lightyellow'>  <td> </td> <td align='right'> 0</td> <td align='right'> 31960</td> <td colspan='2'> a[banco-estado] </td> </tr>
 <tr style='color: white; background-color: black'>  <td> </td> <td align='right'>26857 </td> <td align='right'> 0</td> <td> </td> <td> r[gastos-promocionales] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 31960 </td> <td style='background-color: blanchedalmond'> 31960</td> </tr>
+</tbody><tbody>
 <tr><td colspan='4'> alectrico® SpA</td> </tr> 
 <tr><td colspan='4'> ( 1 de julio	2021	 ) </td> </tr>
 <tr><td colspan='8'> Partida 64: Por Gasto Promocional: 400 tarjetas de Visita. </td></tr>
 <tr> <td colspan='7'>efectuado a macprint </td> </tr>
 <tr><td colspan = '8'> gastar-en-promocion</td> </tr>
 <tr style='background-color: aliceblue'> <td colspan = '8'> <img src='../factura-afecta-macprint-25625.png'></td> </tr>
+</tbody>
+</table>
+<p style='page-break-before: always;'>&nbsp;</p>
+<br> 
+<p style='color: white; background-color: red'> La reclamé (fue un error) en el LIBRO DE COMPRA-VENTA</p>
+<br> 
+- [x] no-incluir: Partida que estando en RCV SII se estimó no incluir en la contabilidad financiera
+- [x] tipo de asiento: 33
+- [x] a corregir: La reclamé (fue un error) en el LIBRO DE COMPRA-VENTA
+- [ ] rcv
+- [ ] libro-diario
+- [ ] ccm
+- [x] revisado
+![](../revisado.png)
+<table id='Partida-65'>
+<thead> <th style='background-color: lavender' colspan='6'>Partida 65</th></thead>
+<tbody>
+<tr> <td> </td> <td style='background-color: blanchedalmond'> 0 </td> <td style='background-color: blanchedalmond'> 0</td> </tr>
+</tbody><tbody>
+<tr><td colspan='4'> alectrico® SpA</td> </tr> 
+<tr><td colspan='4'> ( 21 de julio	2021	 ) </td> </tr>
+<tr><td colspan='8'> Partida 65: Por Gasto Administrativo: Servicio de Datos y Telefonía: pago julio. </td></tr>
+<tr> <td colspan='7'>efectuado a entel </td> </tr>
+<tr><td colspan = '8'> gastar-proveedor-afecto</td> </tr>
+<tr style='background-color: aliceblue'> <td colspan = '8'> <img src='../factura-afecta-entel-43342312.png'></td> </tr>
 </tbody>
 </table>
 <p style='page-break-before: always;'>&nbsp;</p>
@@ -1607,6 +1767,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <tr style='background-color: lightyellow'>  <td> </td> <td align='right'> 0</td> <td align='right'> 1990</td> <td colspan='2'> a[caja] </td> </tr>
 <tr style='color: white; background-color: black'>  <td> </td> <td align='right'>1672 </td> <td align='right'> 0</td> <td> </td> <td> r[gastos-administrativos] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 1990 </td> <td style='background-color: blanchedalmond'> 1990</td> </tr>
+</tbody><tbody>
 <tr><td colspan='4'> alectrico® SpA</td> </tr> 
 <tr><td colspan='4'> ( 16 de julio	2021	 ) </td> </tr>
 <tr><td colspan='8'> Partida 67: Gasto Adm: Certificado Digital </td></tr>
@@ -1634,6 +1795,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <tr style='background-color: lightyellow'>  <td> </td> <td align='right'> 0</td> <td align='right'> 40588</td> <td colspan='2'> a[banco-estado] </td> </tr>
 <tr style='color: white; background-color: black'>  <td> </td> <td align='right'>40588 </td> <td align='right'> 0</td> <td> </td> <td> r[gastos-promocionales] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 48300 </td> <td style='background-color: blanchedalmond'> 48300</td> </tr>
+</tbody><tbody>
 <tr><td colspan='4'> alectrico® SpA</td> </tr> 
 <tr><td colspan='4'> ( 17 de julio	2021	 ) </td> </tr>
 <tr><td colspan='8'> Partida 68: Por Gasto Promocional: Pago Anual Boosted. </td></tr>
@@ -1661,6 +1823,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <tr style='background-color: lightyellow'>  <td> </td> <td align='right'> 0</td> <td align='right'> 50000</td> <td colspan='2'> a[banco-estado] </td> </tr>
 <tr style='color: white; background-color: black'>  <td> </td> <td align='right'>50000 </td> <td align='right'> 0</td> <td> </td> <td> r[gastos-promocionales] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 59500 </td> <td style='background-color: blanchedalmond'> 59500</td> </tr>
+</tbody><tbody>
 <tr><td colspan='4'> alectrico® SpA</td> </tr> 
 <tr><td colspan='4'> ( 17 de julio	2021	 ) </td> </tr>
 <tr><td colspan='8'> Partida 69: Por Gasto Promocional: Pago Mensual Julio Google Ads. </td></tr>
@@ -1686,6 +1849,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
  <tr style='color: white; background-color: cornflowerblue' > <td> </td> <td align='right'> 85294 </td> <td align='right'>  0 </td> <td> </td> <td> k[utilidad-del-ejercicio-anterior]</td> </tr>
  <tr style='color: white; background-color: cornflowerblue' > <td> </td> <td align='right'> 0 </td> <td align='right'>  85294 </td> <td> </td> <td> k[capital-social]</td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 85294 </td> <td style='background-color: blanchedalmond'> 85294</td> </tr>
+</tbody><tbody>
 <tr><td colspan='4'> alectrico® SpA</td> </tr> 
 <tr><td colspan='4'> ( 17 de julio	2021	 ) </td> </tr>
 <tr><td colspan='8'> Partida 70: Por traspaso de utilidad a Capital Social 85294 </td></tr>
@@ -1710,6 +1874,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <tr style='background-color: lightyellow'>  <td> </td> <td align='right'> 0</td> <td align='right'> 79990</td> <td colspan='2'> a[banco-estado] </td> </tr>
 <tr>  <td>extra-contable </td> <td align='right'> 67218</td> <td align='right'>0</td> <td> </td> <td> t[depreciacion-instantanea-de-activos-fijos-propyme] </td></tr> 
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 79990 </td> <td style='background-color: blanchedalmond'> 79990</td> </tr>
+</tbody><tbody>
 <tr><td colspan='4'> alectrico® SpA</td> </tr> 
 <tr><td colspan='4'> ( 21 de julio	2021	 ) </td> </tr>
 <tr><td colspan='8'> Partida 71: Por compra de celular samsung </td></tr>
@@ -1736,6 +1901,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <tr style='background-color: lightyellow'>  <td> </td> <td align='right'> 0</td> <td align='right'> 1200</td> <td colspan='2'> a[banco-estado] </td> </tr>
 <tr style='color: white; background-color: black'>  <td> </td> <td align='right'>1008 </td> <td align='right'> 0</td> <td> </td> <td> r[gastos-promocionales] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 1200 </td> <td style='background-color: blanchedalmond'> 1200</td> </tr>
+</tbody><tbody>
 <tr><td colspan='4'> alectrico® SpA</td> </tr> 
 <tr><td colspan='4'> ( 21 de julio	2021	 ) </td> </tr>
 <tr><td colspan='8'> Partida 73: Por Compra de Etiquetas </td></tr>
@@ -1762,6 +1928,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <tr style='background-color: lightyellow'>  <td> </td> <td align='right'> 0</td> <td align='right'> 3790</td> <td colspan='2'> a[banco-estado] </td> </tr>
 <tr style='color: white; background-color: black'>  <td> </td> <td align='right'>3185 </td> <td align='right'> 0</td> <td> </td> <td> r[gastos-promocionales] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 3790 </td> <td style='background-color: blanchedalmond'> 3790</td> </tr>
+</tbody><tbody>
 <tr><td colspan='4'> alectrico® SpA</td> </tr> 
 <tr><td colspan='4'> ( 21 de julio	2021	 ) </td> </tr>
 <tr><td colspan='8'> Partida 74: Por Gasto Administrativo: Etiquetas </td></tr>
@@ -1788,6 +1955,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <tr style='background-color: lightyellow'>  <td> </td> <td align='right'> 35000</td> <td align='right'> 0</td> <td colspan='2'> a[banco-estado] </td> </tr>
 <tr style='background-color: gold'>  <td> </td> <td align='right'>0 </td> <td align='right'> 35000</td> <td> </td> <td> r[ingresos-brutos] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 35000 </td> <td style='background-color: blanchedalmond'> 35000</td> </tr>
+</tbody><tbody>
 <tr><td colspan='4'> alectrico® SpA</td> </tr> 
 <tr><td colspan='4'> ( 21 de julio	2021	 ) </td> </tr>
 <tr><td colspan='8'> Partida 75: Por venta en registro de compra-ventas del SII folio: 1 de revision-electrica a gonzalo </td></tr>
@@ -1815,6 +1983,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <tr style='background-color: azure'>  <td> </td> <td align='right'> 0 </td> <td align='right'> 106176 </td> <td> </td><td> p[iva-debito] </td> </tr>
 <tr style='background-color: gold'>  <td> </td> <td align='right'>0 </td> <td align='right'> 558823</td> <td> </td> <td> r[ingresos-brutos] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 664999 </td> <td style='background-color: blanchedalmond'> 664999</td> </tr>
+</tbody><tbody>
 <tr><td colspan='4'> alectrico® SpA</td> </tr> 
 <tr><td colspan='4'> ( 21 de julio	2021	 ) </td> </tr>
 <tr><td colspan='8'> Partida 76: Por venta en registro de compra-ventas del SII folio: 11 de recableado a gonzalo </td></tr>
@@ -1842,6 +2011,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <tr style='background-color: azure'>  <td> </td> <td align='right'> 0 </td> <td align='right'> 28873 </td> <td> </td><td> p[iva-debito] </td> </tr>
 <tr style='background-color: gold'>  <td> </td> <td align='right'>0 </td> <td align='right'> 151960</td> <td> </td> <td> r[ingresos-brutos] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 180833 </td> <td style='background-color: blanchedalmond'> 180833</td> </tr>
+</tbody><tbody>
 <tr><td colspan='4'> alectrico® SpA</td> </tr> 
 <tr><td colspan='4'> ( 31 de julio	2021	 ) </td> </tr>
 <tr><td colspan='8'> Partida 77: Por rendición de vouchers de julio de 2021 </td></tr>
@@ -1867,6 +2037,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <tr style='background-color: lightyellow'>  <td> </td> <td align='right'> 0</td> <td align='right'> 21300</td> <td colspan='2'> a[banco-estado] </td> </tr>
 <tr style='color: white; background-color: black'>  <td> </td> <td align='right'>21300 </td> <td align='right'> 0</td> <td> </td> <td> r[gastos-promocionales] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 25347 </td> <td style='background-color: blanchedalmond'> 25347</td> </tr>
+</tbody><tbody>
 <tr><td colspan='4'> alectrico® SpA</td> </tr> 
 <tr><td colspan='4'> ( 24 de julio	2021	 ) </td> </tr>
 <tr><td colspan='8'> Partida 78: Por Gasto Promocional: Pago Anual de 1TM Video Maker. </td></tr>
@@ -1894,6 +2065,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <tr style='background-color: lightyellow'>  <td> </td> <td align='right'> 0</td> <td align='right'> 3775</td> <td colspan='2'> a[caja] </td> </tr>
 <tr style='color: white; background-color: black'>  <td> </td> <td align='right'>3775 </td> <td align='right'> 0</td> <td> </td> <td> r[gastos-administrativos] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 4492 </td> <td style='background-color: blanchedalmond'> 4492</td> </tr>
+</tbody><tbody>
 <tr><td colspan='4'> alectrico® SpA</td> </tr> 
 <tr><td colspan='4'> ( 22 de julio	2021	 ) </td> </tr>
 <tr><td colspan='8'> Partida 79: Por Gasto Administrativo: Pago Mensual de Workers Serverless. </td></tr>
@@ -1920,6 +2092,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <tr style='background-color: lightyellow'>  <td> </td> <td align='right'> 35000</td> <td align='right'> 0</td> <td colspan='2'> a[banco-estado] </td> </tr>
 <tr style='background-color: gold'>  <td> </td> <td align='right'>0 </td> <td align='right'> 35000</td> <td> </td> <td> r[ingresos-brutos] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 35000 </td> <td style='background-color: blanchedalmond'> 35000</td> </tr>
+</tbody><tbody>
 <tr><td colspan='4'> alectrico® SpA</td> </tr> 
 <tr><td colspan='4'> ( 31 de julio	2021	 ) </td> </tr>
 <tr><td colspan='8'> Partida 81: Por rendición de e-boletas exentas de julio de 2021 </td></tr>
@@ -1943,6 +2116,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <tr style='background-color: azure'>  <td> </td> <td align='right'> 106176 </td> <td align='right'> 0 </td> <td> </td><td> p[iva-debito] </td> </tr>
 <tr style='color: white; background-color: black'>  <td> </td> <td align='right'>558823 </td> <td align='right'> 0</td> <td> </td> <td> r[devolucion-sobre-ventas] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 664999 </td> <td style='background-color: blanchedalmond'> 664999</td> </tr>
+</tbody><tbody>
 <tr><td colspan='4'> alectrico® SpA</td> </tr> 
 <tr><td colspan='4'> ( 27 de julio	2021	 ) </td> </tr>
 <tr><td colspan='8'> Partida 82: Nota de Crédito SII: 15 que anula Factura SII 11 de recableado a gonzalo </td></tr>
@@ -1970,6 +2144,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <tr style='background-color: azure'>  <td> </td> <td align='right'> 0 </td> <td align='right'> 17704 </td> <td> </td><td> p[iva-debito] </td> </tr>
 <tr style='background-color: gold'>  <td> </td> <td align='right'>0 </td> <td align='right'> 93179</td> <td> </td> <td> r[ingresos-brutos] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 110883 </td> <td style='background-color: blanchedalmond'> 110883</td> </tr>
+</tbody><tbody>
 <tr><td colspan='4'> alectrico® SpA</td> </tr> 
 <tr><td colspan='4'> ( 28 de julio	2021	 ) </td> </tr>
 <tr><td colspan='8'> Partida 83: Por venta en registro de compra-ventas del SII folio: 12 de recableado a gonzalo </td></tr>
@@ -1996,6 +2171,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <tr style='background-color: lightyellow'>  <td> </td> <td align='right'> 0</td> <td align='right'> 9950</td> <td colspan='2'> a[caja] </td> </tr>
 <tr style='color: white; background-color: black'>  <td> </td> <td align='right'>8361 </td> <td align='right'> 0</td> <td> </td> <td> r[gastos-administrativos] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 9950 </td> <td style='background-color: blanchedalmond'> 9950</td> </tr>
+</tbody><tbody>
 <tr><td colspan='4'> alectrico® SpA</td> </tr> 
 <tr><td colspan='4'> ( 28 de julio	2021	 ) </td> </tr>
 <tr><td colspan='8'> Partida 84: Adquisión de Dominio Internet: aelectrico.cl. </td></tr>
@@ -2022,6 +2198,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <tr style='background-color: lightyellow'>  <td> </td> <td align='right'> 0</td> <td align='right'> 2099</td> <td colspan='2'> a[banco-estado] </td> </tr>
 <tr style='color: white; background-color: black'>  <td> </td> <td align='right'>1764 </td> <td align='right'> 0</td> <td> </td> <td> r[gastos-promocionales] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 2099 </td> <td style='background-color: blanchedalmond'> 2099</td> </tr>
+</tbody><tbody>
 <tr><td colspan='4'> alectrico® SpA</td> </tr> 
 <tr><td colspan='4'> ( 20 de julio	2021	 ) </td> </tr>
 <tr><td colspan='8'> Partida 85: Por Gasto Promocinal: Masking-Tape </td></tr>
@@ -2048,6 +2225,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <tr style='background-color: lightyellow'>  <td> </td> <td align='right'> 0</td> <td align='right'> 5035</td> <td colspan='2'> a[banco-estado] </td> </tr>
 <tr style='color: white; background-color: black'>  <td> </td> <td align='right'>4231 </td> <td align='right'> 0</td> <td> </td> <td> r[costos-de-ventas] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 5035 </td> <td style='background-color: blanchedalmond'> 5035</td> </tr>
+</tbody><tbody>
 <tr><td colspan='4'> alectrico® SpA</td> </tr> 
 <tr><td colspan='4'> ( 28 de julio	2021	 ) </td> </tr>
 <tr><td colspan='8'> Partida 86: Por Costo Directo de Ventas: Comisión Pasarela julio Transbank </td></tr>
@@ -2060,7 +2238,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'> La emití a nombre de alectrico pero  no anulé la nota que se recibe en consecuencia</p>
 <br> 
-- [x] partida rechazada en SII 
+- [x] no-incluir: Partida que estando en RCV SII se estimó no incluir en la contabilidad financiera
 - [x] tipo de asiento: nota-de-credito
 - [x] a corregir: La emití a nombre de alectrico pero  no anulé la nota que se recibe en consecuencia
 - [x] rcv
@@ -2071,10 +2249,8 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <table id='Partida-87'>
 <thead> <th style='background-color: lavender' colspan='6'>Partida 87</th></thead>
 <tbody>
-<tr style='background-color: lightyellow'>  <td> </td> <td align='right'> 0</td> <td align='right'> 180835</td> <td colspan='2'> a[banco-estado] </td> </tr>
-<tr style='background-color: azure'>  <td> </td> <td align='right'> 28873 </td> <td align='right'> 0 </td> <td> </td><td> p[iva-debito] </td> </tr>
-<tr style='color: white; background-color: black'>  <td> </td> <td align='right'>151962 </td> <td align='right'> 0</td> <td> </td> <td> r[devolucion-sobre-ventas] </td> </tr>
-<tr> <td> </td> <td style='background-color: blanchedalmond'> 180835 </td> <td style='background-color: blanchedalmond'> 180835</td> </tr>
+<tr> <td> </td> <td style='background-color: blanchedalmond'> 0 </td> <td style='background-color: blanchedalmond'> 0</td> </tr>
+</tbody><tbody>
 <tr><td colspan='4'> alectrico® SpA</td> </tr> 
 <tr><td colspan='4'> ( 31 de julio	2021	 ) </td> </tr>
 <tr><td colspan='8'> Partida 87: Devolución a subcuenta ventas-con-voucher-afecto por Anula Vouchers para Ser Reemplazados por Otros Docs. mes julio </td></tr>
@@ -2103,6 +2279,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <tr style='background-color: azure'>  <td> </td> <td align='right'> 0 </td> <td align='right'> 229560 </td> <td> </td><td> p[salarios-por-pagar] </td> </tr>
 <tr style='color: white; background-color: black'>  <td> </td> <td align='right'>300000 </td> <td align='right'> 0</td> <td> </td> <td> r[salarios] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 300000 </td> <td style='background-color: blanchedalmond'> 300000</td> </tr>
+</tbody><tbody>
 <tr><td colspan='4'> alectrico® SpA</td> </tr> 
 <tr><td colspan='4'> ( 20 de julio	2021	 ) </td> </tr>
 <tr><td colspan='8'> Partida 88: Declaración de Remuneraciones de alexander días trabajados: 5 Tramo Exento: 731308.5 Sueldo Bruto de: 300000 Tasa de Impuesto Único: 0.04 Monto de Impuesto Único: 0 </td></tr>
@@ -2125,12 +2302,13 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <tbody>
 <tr> <td align='right' >167 </td> <td colspan='7'> ganancia-por-correccion-monetaria#correccion-monetaria </td></tr>
 <tr> <td align='right' >167 </td> <td colspan='7'> correccion-monetaria#ingresos-brutos </td></tr>
-<tr style='background-color: lightyellow'>  <td> </td> <td align='right'> 167</td> <td align='right'> 17704</td> <td colspan='2'> a[iva-credito] </td> </tr>
+<tr style='background-color: lightyellow'>  <td> </td> <td align='right'> 167</td> <td align='right'> 46577</td> <td colspan='2'> a[iva-credito] </td> </tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td align='right'> 1092</td> <td align='right'> 0</td> <td colspan='2'> a[ppm] </td> </tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td align='right'> 0</td> <td align='right'> 1092</td> <td colspan='2'> a[banco-estado] </td> </tr>
-<tr style='background-color: azure'>  <td> </td> <td align='right'> 17704 </td> <td align='right'> 0 </td> <td> </td><td> p[iva-debito] </td> </tr>
+<tr style='background-color: azure'>  <td> </td> <td align='right'> 46577 </td> <td align='right'> 0 </td> <td> </td><td> p[iva-debito] </td> </tr>
 <tr style='background-color: gold'>  <td> </td> <td align='right'>0 </td> <td align='right'> 167</td> <td> </td> <td> r[ingresos-brutos] </td> </tr>
-<tr> <td> </td> <td style='background-color: blanchedalmond'> 18963 </td> <td style='background-color: blanchedalmond'> 18963</td> </tr>
+<tr> <td> </td> <td style='background-color: blanchedalmond'> 47836 </td> <td style='background-color: blanchedalmond'> 47836</td> </tr>
+</tbody><tbody>
 <tr><td colspan='4'> alectrico® SpA</td> </tr> 
 <tr><td colspan='4'> ( 31 de julio	2021	 ) </td> </tr>
 <tr><td colspan='8'> Partida 89: Por ajuste del Debito Fiscal Contra el Credito Fiscal, mes de julio-Por pago del ppm, con factor de  0.00125 mes julio </td></tr>
@@ -2154,6 +2332,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <tr style='background-color: lightyellow'>  <td> </td> <td align='right'> 22199</td> <td align='right'> 0</td> <td colspan='2'> a[retencion-de-iva-articulo-11] </td> </tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td align='right'> 0</td> <td align='right'> 22199</td> <td colspan='2'> a[iva-credito] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 22199 </td> <td style='background-color: blanchedalmond'> 22199</td> </tr>
+</tbody><tbody>
 <tr><td colspan='4'> alectrico® SpA</td> </tr> 
 <tr><td colspan='4'> ( 30 de julio	2021	 ) </td> </tr>
 <tr><td colspan='8'> Partida 90: Ajuste de retencion de iva contra iva-credito </td></tr>
@@ -2179,6 +2358,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <tr style='color: white; background-color: black'>  <td> </td> <td align='right'>9804 </td> <td align='right'> 0</td> <td> </td> <td> r[depreciacion] </td> </tr>
 <tr style='color: white; background-color: black'>  <td> </td> <td align='right'>2417 </td> <td align='right'> 0</td> <td> </td> <td> r[amortizacion] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 12221 </td> <td style='background-color: blanchedalmond'> 12221</td> </tr>
+</tbody><tbody>
 <tr><td colspan='4'> alectrico® SpA</td> </tr> 
 <tr><td colspan='4'> ( 31 de julio	2021	 ) </td> </tr>
 <tr><td colspan='8'> Partida 91: Por amortizacion en julio de marca-alectrico-Por depreciacion en julio de celular-Por depreciacion en julio de taladro </td></tr>
@@ -2204,6 +2384,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <tr style='background-color: azure'>  <td> </td> <td align='right'> 0 </td> <td align='right'> 6387 </td> <td> </td><td> p[iva-debito] </td> </tr>
 <tr style='background-color: gold'>  <td> </td> <td align='right'>0 </td> <td align='right'> 33613</td> <td> </td> <td> r[ingresos-brutos] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 40000 </td> <td style='background-color: blanchedalmond'> 40000</td> </tr>
+</tbody><tbody>
 <tr><td colspan='4'> alectrico® SpA</td> </tr> 
 <tr><td colspan='4'> ( 31 de agosto	2021	 ) </td> </tr>
 <tr><td colspan='8'> Partida 92: Por rendición de vouchers de agosto de 2021 </td></tr>
@@ -2228,6 +2409,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <tr style='background-color: lightyellow'>  <td> </td> <td align='right'> 6666</td> <td align='right'> 0</td> <td colspan='2'> a[banco-estado] </td> </tr>
 <tr style='background-color: gold'>  <td> </td> <td align='right'>0 </td> <td align='right'> 6666</td> <td> </td> <td> r[ingresos-brutos] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 6666 </td> <td style='background-color: blanchedalmond'> 6666</td> </tr>
+</tbody><tbody>
 <tr><td colspan='4'> alectrico® SpA</td> </tr> 
 <tr><td colspan='4'> ( 3 de agosto	2021	 ) </td> </tr>
 <tr><td colspan='8'> Partida 93: Por venta en registro de compra-ventas del SII folio: 2 de visita-a-huelen a gonzalo </td></tr>
@@ -2254,6 +2436,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <tr style='background-color: lightyellow'>  <td> </td> <td align='right'> 12630</td> <td align='right'> 0</td> <td colspan='2'> a[insumos] </td> </tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td align='right'> 0</td> <td align='right'> 15030</td> <td colspan='2'> a[banco-estado] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 15030 </td> <td style='background-color: blanchedalmond'> 15030</td> </tr>
+</tbody><tbody>
 <tr><td colspan='4'> alectrico® SpA</td> </tr> 
 <tr><td colspan='4'> ( 6 de agosto	2021	 ) </td> </tr>
 <tr><td colspan='8'> Partida 95: Por Materiales para Puesta a Tierra de Protección </td></tr>
@@ -2280,6 +2463,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <tr style='background-color: lightyellow'>  <td> </td> <td align='right'> 34134</td> <td align='right'> 0</td> <td colspan='2'> a[insumos] </td> </tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td align='right'> 0</td> <td align='right'> 40619</td> <td colspan='2'> a[banco-estado] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 40619 </td> <td style='background-color: blanchedalmond'> 40619</td> </tr>
+</tbody><tbody>
 <tr><td colspan='4'> alectrico® SpA</td> </tr> 
 <tr><td colspan='4'> ( 6 de agosto	2021	 ) </td> </tr>
 <tr><td colspan='8'> Partida 96: Por Materiales para Recableado </td></tr>
@@ -2306,6 +2490,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <tr style='background-color: lightyellow'>  <td> </td> <td align='right'> 158011</td> <td align='right'> 0</td> <td colspan='2'> a[insumos] </td> </tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td align='right'> 0</td> <td align='right'> 188033</td> <td colspan='2'> a[banco-estado] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 188033 </td> <td style='background-color: blanchedalmond'> 188033</td> </tr>
+</tbody><tbody>
 <tr><td colspan='4'> alectrico® SpA</td> </tr> 
 <tr><td colspan='4'> ( 6 de agosto	2021	 ) </td> </tr>
 <tr><td colspan='8'> Partida 97: Por compra a Dartel Santiago de artefactos para los capitanes </td></tr>
@@ -2333,6 +2518,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <tr style='background-color: lightyellow'>  <td> </td> <td align='right'> 47632</td> <td align='right'> 0</td> <td colspan='2'> a[caja] </td> </tr>
 <tr style='background-color: gold'>  <td> </td> <td align='right'>0 </td> <td align='right'> 40027</td> <td> </td> <td> r[gastos-administrativos] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 47632 </td> <td style='background-color: blanchedalmond'> 47632</td> </tr>
+</tbody><tbody>
 <tr><td colspan='4'> alectrico® SpA</td> </tr> 
 <tr><td colspan='4'> ( 6 de agosto	2021	 ) </td> </tr>
 <tr><td colspan='8'> Partida 98: Devolución a subcuenta entel por Por Gasto Administrativo: Servicio de Datos y Telefonía: pago julio. mes agosto </td></tr>
@@ -2360,6 +2546,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <tr style='background-color: azure'>  <td> </td> <td align='right'> 0 </td> <td align='right'> 26903 </td> <td> </td><td> p[iva-debito] </td> </tr>
 <tr style='background-color: gold'>  <td> </td> <td align='right'>0 </td> <td align='right'> 141596</td> <td> </td> <td> r[ingresos-brutos] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 168499 </td> <td style='background-color: blanchedalmond'> 168499</td> </tr>
+</tbody><tbody>
 <tr><td colspan='4'> alectrico® SpA</td> </tr> 
 <tr><td colspan='4'> ( 11 de agosto	2021	 ) </td> </tr>
 <tr><td colspan='8'> Partida 99: Por venta en registro de compra-ventas del SII folio: 13 de materiales-para-recableado a gonzalo </td></tr>
@@ -2386,6 +2573,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <tr style='background-color: lightyellow'>  <td> </td> <td align='right'> 13127</td> <td align='right'> 0</td> <td colspan='2'> a[insumos] </td> </tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td align='right'> 0</td> <td align='right'> 15621</td> <td colspan='2'> a[banco-estado] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 15621 </td> <td style='background-color: blanchedalmond'> 15621</td> </tr>
+</tbody><tbody>
 <tr><td colspan='4'> alectrico® SpA</td> </tr> 
 <tr><td colspan='4'> ( 9 de agosto	2021	 ) </td> </tr>
 <tr><td colspan='8'> Partida 101: Por compra de materiales eléctricos a Sodimac </td></tr>
@@ -2412,6 +2600,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <tr style='background-color: lightyellow'>  <td> </td> <td align='right'> 13706</td> <td align='right'> 0</td> <td colspan='2'> a[insumos] </td> </tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td align='right'> 0</td> <td align='right'> 16310</td> <td colspan='2'> a[banco-estado] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 16310 </td> <td style='background-color: blanchedalmond'> 16310</td> </tr>
+</tbody><tbody>
 <tr><td colspan='4'> alectrico® SpA</td> </tr> 
 <tr><td colspan='4'> ( 12 de agosto	2021	 ) </td> </tr>
 <tr><td colspan='8'> Partida 102: Por compra de materiales para ampliación </td></tr>
@@ -2424,7 +2613,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'> No lo incluí a tiempo</p>
 <br> 
-- [x] partida rechazada en SII 
+- [x] rechazado: Partida rechazada por SII, significa que si la dejamos nos podría generar multas o que no tendría el efecto deseado. Así que solo podemos quitarla de SII, pero eso requiere rectificar el f29 y eso nos generaría multas. Por ejemplo, una nota de crédito que no descuente monto imponbile, aunque esté en registro de compra-ventas. El F22 al año siguiente no incluirá estos DTE. No es lo mismo que gasto rechazado. También podríamos declararla como no-incluir, pero eso no conveniente, pues todo debe estar en la contabilidad de la empresa, pera que sea fidedigna. Hay casos donde se declara un gasto para el que no hay boleta de resplado, eso es muy crítico y sí será rechazado, y además la contabilidad financiera objetada. El caso de las facturas de compra 45 a proveedor extranjero es parecido, pero ahora sé como se hace. 
 - [x] tipo de asiento: 45
 - [x] a corregir: No lo incluí a tiempo
 - [ ] rcv
@@ -2434,13 +2623,14 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 ![](../revisado.png)
 <table id='Partida-104'>
 <thead> <th style='background-color: lavender' colspan='6'>Partida 104</th></thead>
-<tbody>
+<tbody  style =' text-decoration: line-through; text-decoration-color: crimson'  > 
 <tr> <td align='right' >1177 </td> <td colspan='7'> google-one#gastos-administrativos </td></tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td align='right'> 0</td> <td align='right'> 223</td> <td colspan='2'> a[retencion-de-iva-articulo-11] </td> </tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td align='right'> 223</td> <td align='right'> 0</td> <td colspan='2'> a[iva-credito] </td> </tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td align='right'> 0</td> <td align='right'> 1177</td> <td colspan='2'> a[caja] </td> </tr>
 <tr style='color: white; background-color: black'>  <td> </td> <td align='right'>1177 </td> <td align='right'> 0</td> <td> </td> <td> r[gastos-administrativos] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 1400 </td> <td style='background-color: blanchedalmond'> 1400</td> </tr>
+</tbody><tbody>
 <tr><td colspan='4'> alectrico® SpA</td> </tr> 
 <tr><td colspan='4'> ( 13 de agosto	2021	 ) </td> </tr>
 <tr><td colspan='8'> Partida 104: Partida rechazada-Gasto Administrativo Rechazado-Por Gasto Administrativo: Pago Mensual de Arriendo de Correo y Almacenamiento en la nube. </td></tr>
@@ -2465,6 +2655,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <tr style='background-color: lightyellow'>  <td> </td> <td align='right'> 0</td> <td align='right'> 47632</td> <td colspan='2'> a[caja] </td> </tr>
 <tr style='color: white; background-color: black'>  <td> </td> <td align='right'>40027 </td> <td align='right'> 0</td> <td> </td> <td> r[gastos-administrativos] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 47632 </td> <td style='background-color: blanchedalmond'> 47632</td> </tr>
+</tbody><tbody>
 <tr><td colspan='4'> alectrico® SpA</td> </tr> 
 <tr><td colspan='4'> ( 6 de agosto	2021	 ) </td> </tr>
 <tr><td colspan='8'> Partida 105: Por Gasto Administrativo: Servicio de Datos y Telefonía: pago vuelto a cobrar, de julio. </td></tr>
@@ -2491,6 +2682,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <tr style='background-color: lightyellow'>  <td> </td> <td align='right'> 0</td> <td align='right'> 8242</td> <td colspan='2'> a[caja] </td> </tr>
 <tr style='color: white; background-color: black'>  <td> </td> <td align='right'>6926 </td> <td align='right'> 0</td> <td> </td> <td> r[gastos-administrativos] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 8242 </td> <td style='background-color: blanchedalmond'> 8242</td> </tr>
+</tbody><tbody>
 <tr><td colspan='4'> alectrico® SpA</td> </tr> 
 <tr><td colspan='4'> ( 19 de agosto	2021	 ) </td> </tr>
 <tr><td colspan='8'> Partida 107: Por Gasto Administrativo: Servicio de Datos y Telefonía: agosto. </td></tr>
@@ -2518,6 +2710,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <tr style='background-color: lightyellow'>  <td> </td> <td align='right'> 275</td> <td align='right'> 0</td> <td colspan='2'> a[banco-estado] </td> </tr>
 <tr style='background-color: gold'>  <td> </td> <td align='right'>0 </td> <td align='right'> 231</td> <td> </td> <td> r[costos-de-ventas] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 275 </td> <td style='background-color: blanchedalmond'> 275</td> </tr>
+</tbody><tbody>
 <tr><td colspan='4'> alectrico® SpA</td> </tr> 
 <tr><td colspan='4'> ( 22 de agosto	2021	 ) </td> </tr>
 <tr><td colspan='8'> Partida 108: Devolución a subcuenta transbank por Ajuste Mensual de Comisión mes agosto </td></tr>
@@ -2530,7 +2723,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'> Adjuntar factura</p>
 <br> 
-- [x] partida rechazada en SII 
+- [x] rechazado: Partida rechazada por SII, significa que si la dejamos nos podría generar multas o que no tendría el efecto deseado. Así que solo podemos quitarla de SII, pero eso requiere rectificar el f29 y eso nos generaría multas. Por ejemplo, una nota de crédito que no descuente monto imponbile, aunque esté en registro de compra-ventas. El F22 al año siguiente no incluirá estos DTE. No es lo mismo que gasto rechazado. También podríamos declararla como no-incluir, pero eso no conveniente, pues todo debe estar en la contabilidad de la empresa, pera que sea fidedigna. Hay casos donde se declara un gasto para el que no hay boleta de resplado, eso es muy crítico y sí será rechazado, y además la contabilidad financiera objetada. El caso de las facturas de compra 45 a proveedor extranjero es parecido, pero ahora sé como se hace. 
 - [x] tipo de asiento: 33
 - [x] a corregir: Adjuntar factura
 - [ ] rcv
@@ -2540,13 +2733,14 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 ![](../revisado.png)
 <table id='Partida-109'>
 <thead> <th style='background-color: lavender' colspan='6'>Partida 109</th></thead>
-<tbody>
+<tbody  style =' text-decoration: line-through; text-decoration-color: crimson'  > 
 <tr> <td align='right' >4149 </td> <td colspan='7'> cloudflare#gastos-administrativos </td></tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td align='right'> 0</td> <td align='right'> 3487</td> <td colspan='2'> a[retencion-de-iva-articulo-11] </td> </tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td align='right'> 3487</td> <td align='right'> 0</td> <td colspan='2'> a[iva-credito] </td> </tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td align='right'> 0</td> <td align='right'> 4149</td> <td colspan='2'> a[caja] </td> </tr>
 <tr style='color: white; background-color: black'>  <td> </td> <td align='right'>4149 </td> <td align='right'> 0</td> <td> </td> <td> r[gastos-administrativos] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 7636 </td> <td style='background-color: blanchedalmond'> 7636</td> </tr>
+</tbody><tbody>
 <tr><td colspan='4'> alectrico® SpA</td> </tr> 
 <tr><td colspan='4'> ( 22 de agosto	2021	 ) </td> </tr>
 <tr><td colspan='8'> Partida 109: Por Gasto Administrativo: Pago Mensual de Workers Serverless. </td></tr>
@@ -2574,6 +2768,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <tr style='background-color: azure'>  <td> </td> <td align='right'> 0 </td> <td align='right'> 17203 </td> <td> </td><td> p[iva-debito] </td> </tr>
 <tr style='background-color: gold'>  <td> </td> <td align='right'>0 </td> <td align='right'> 90544</td> <td> </td> <td> r[ingresos-brutos] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 107747 </td> <td style='background-color: blanchedalmond'> 107747</td> </tr>
+</tbody><tbody>
 <tr><td colspan='4'> alectrico® SpA</td> </tr> 
 <tr><td colspan='4'> ( 26 de agosto	2021	 ) </td> </tr>
 <tr><td colspan='8'> Partida 113: Por venta en registro de compra-ventas del SII folio: 14 de revision-electrica a gonzalo </td></tr>
@@ -2599,6 +2794,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <tr style='background-color: azure'>  <td> </td> <td align='right'> 17203 </td> <td align='right'> 0 </td> <td> </td><td> p[iva-debito] </td> </tr>
 <tr style='color: white; background-color: black'>  <td> </td> <td align='right'>90544 </td> <td align='right'> 0</td> <td> </td> <td> r[devolucion-sobre-ventas] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 107747 </td> <td style='background-color: blanchedalmond'> 107747</td> </tr>
+</tbody><tbody>
 <tr><td colspan='4'> alectrico® SpA</td> </tr> 
 <tr><td colspan='4'> ( 27 de agosto	2021	 ) </td> </tr>
 <tr><td colspan='8'> Partida 114: Nota de Crédito SII: 17 que anula Factura SII 14 de revision-electrica a gonzalo </td></tr>
@@ -2626,6 +2822,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <tr style='background-color: azure'>  <td> </td> <td align='right'> 0 </td> <td align='right'> 17696 </td> <td> </td><td> p[iva-debito] </td> </tr>
 <tr style='background-color: gold'>  <td> </td> <td align='right'>0 </td> <td align='right'> 93137</td> <td> </td> <td> r[ingresos-brutos] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 110833 </td> <td style='background-color: blanchedalmond'> 110833</td> </tr>
+</tbody><tbody>
 <tr><td colspan='4'> alectrico® SpA</td> </tr> 
 <tr><td colspan='4'> ( 27 de agosto	2021	 ) </td> </tr>
 <tr><td colspan='8'> Partida 115: Por venta en registro de compra-ventas del SII folio: 15 de revision-electrica a gonzalo </td></tr>
@@ -2650,6 +2847,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <tr style='background-color: lightyellow'>  <td> </td> <td align='right'> 0</td> <td align='right'> 40000</td> <td colspan='2'> a[banco-estado] </td> </tr>
 <tr style='color: white; background-color: black'>  <td> </td> <td align='right'>40000 </td> <td align='right'> 0</td> <td> </td> <td> r[devolucion-sobre-ventas] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 40000 </td> <td style='background-color: blanchedalmond'> 40000</td> </tr>
+</tbody><tbody>
 <tr><td colspan='4'> alectrico® SpA</td> </tr> 
 <tr><td colspan='4'> ( 27 de agosto	2021	 ) </td> </tr>
 <tr><td colspan='8'> Partida 116: Devolución a subcuenta ventas-con-eboleta-exenta por Por la anulacion de la boleta 17 emitida por error, pues corresponde factura exenta. mes agosto </td></tr>
@@ -2676,6 +2874,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <tr style='background-color: lightyellow'>  <td> </td> <td align='right'> 40000</td> <td align='right'> 0</td> <td colspan='2'> a[banco-estado] </td> </tr>
 <tr style='background-color: gold'>  <td> </td> <td align='right'>0 </td> <td align='right'> 40000</td> <td> </td> <td> r[ingresos-brutos] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 40000 </td> <td style='background-color: blanchedalmond'> 40000</td> </tr>
+</tbody><tbody>
 <tr><td colspan='4'> alectrico® SpA</td> </tr> 
 <tr><td colspan='4'> ( 27 de agosto	2021	 ) </td> </tr>
 <tr><td colspan='8'> Partida 117: Por venta en registro de compra-ventas del SII folio: 3 de diseño-electrico-los-capitanes-fase-2 a gonzalo </td></tr>
@@ -2704,6 +2903,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <tr style='background-color: lightyellow'>  <td> </td> <td align='right'> 0</td> <td align='right'> 300000</td> <td colspan='2'> a[banco-estado] </td> </tr>
 <tr style='background-color: azure'>  <td> </td> <td align='right'> 300000 </td> <td align='right'> 0 </td> <td> </td><td> p[salarios-por-pagar] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 300000 </td> <td style='background-color: blanchedalmond'> 300000</td> </tr>
+</tbody><tbody>
 <tr><td colspan='4'> alectrico® SpA</td> </tr> 
 <tr><td colspan='4'> ( 8 de agosto	2021	 ) </td> </tr>
 <tr><td colspan='8'> Partida 119: pagando-salarios </td></tr>
@@ -2730,6 +2930,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <tr style='background-color: lightyellow'>  <td> </td> <td align='right'> 25220</td> <td align='right'> 0</td> <td colspan='2'> a[insumos] </td> </tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td align='right'> 0</td> <td align='right'> 30012</td> <td colspan='2'> a[banco-estado] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 30012 </td> <td style='background-color: blanchedalmond'> 30012</td> </tr>
+</tbody><tbody>
 <tr><td colspan='4'> alectrico® SpA</td> </tr> 
 <tr><td colspan='4'> ( 27 de agosto	2021	 ) </td> </tr>
 <tr><td colspan='8'> Partida 120: Por compra de materiales para ampliación </td></tr>
@@ -2752,6 +2953,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <thead> <th style='background-color: lavender' colspan='6'>Partida 1201</th></thead>
 <tbody>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 0 </td> <td style='background-color: blanchedalmond'> 0</td> </tr>
+</tbody><tbody>
 <tr><td colspan='4'> alectrico® SpA</td> </tr> 
 <tr><td colspan='4'> ( 27 de agosto	2021	 ) </td> </tr>
 <tr><td colspan='8'> Partida 1201: Pedido 1724Abierto </td></tr>
@@ -2776,6 +2978,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <tr style='background-color: lightyellow'>  <td> </td> <td align='right'> 25971</td> <td align='right'> 0</td> <td colspan='2'> a[materiales] </td> </tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td align='right'> 0</td> <td align='right'> 30905</td> <td colspan='2'> a[banco-estado] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 30905 </td> <td style='background-color: blanchedalmond'> 30905</td> </tr>
+</tbody><tbody>
 <tr><td colspan='4'> alectrico® SpA</td> </tr> 
 <tr><td colspan='4'> ( 27 de agosto	2021	 ) </td> </tr>
 <tr><td colspan='8'> Partida 121: Por Costo Directo de Ventas: Materiales para Ampliación </td></tr>
@@ -2802,6 +3005,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <tr style='background-color: azure'>  <td> </td> <td align='right'> 0 </td> <td align='right'> 11780 </td> <td> </td><td> p[iva-debito] </td> </tr>
 <tr style='background-color: gold'>  <td> </td> <td align='right'>0 </td> <td align='right'> 62000</td> <td> </td> <td> r[ingresos-brutos] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 73780 </td> <td style='background-color: blanchedalmond'> 73780</td> </tr>
+</tbody><tbody>
 <tr><td colspan='4'> alectrico® SpA</td> </tr> 
 <tr><td colspan='4'> ( 27 de agosto	2021	 ) </td> </tr>
 <tr><td colspan='8'> Partida 122: Por venta en registro de compra-ventas del SII folio: 16 de tablero a gonzalo </td></tr>
@@ -2827,6 +3031,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <tr style='background-color: azure'>  <td> </td> <td align='right'> 6386 </td> <td align='right'> 0 </td> <td> </td><td> p[iva-debito] </td> </tr>
 <tr style='color: white; background-color: black'>  <td> </td> <td align='right'>33613 </td> <td align='right'> 0</td> <td> </td> <td> r[devolucion-sobre-ventas] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 39999 </td> <td style='background-color: blanchedalmond'> 39999</td> </tr>
+</tbody><tbody>
 <tr><td colspan='4'> alectrico® SpA</td> </tr> 
 <tr><td colspan='4'> ( 28 de agosto	2021	 ) </td> </tr>
 <tr><td colspan='8'> Partida 123: Devolución a subcuenta ventas-con-voucher-afecto por Por la anulacion del voucher pues cliente necesita factura afecta. mes agosto </td></tr>
@@ -2855,6 +3060,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <tr style='background-color: azure'>  <td> </td> <td align='right'> 0 </td> <td align='right'> 229560 </td> <td> </td><td> p[salarios-por-pagar] </td> </tr>
 <tr style='color: white; background-color: black'>  <td> </td> <td align='right'>300000 </td> <td align='right'> 0</td> <td> </td> <td> r[salarios] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 300000 </td> <td style='background-color: blanchedalmond'> 300000</td> </tr>
+</tbody><tbody>
 <tr><td colspan='4'> alectrico® SpA</td> </tr> 
 <tr><td colspan='4'> ( 20 de agosto	2021	 ) </td> </tr>
 <tr><td colspan='8'> Partida 124: Declaración de Remuneraciones de alexander días trabajados: 5 Tramo Exento: 731308.5 Sueldo Bruto de: 300000 Tasa de Impuesto Único: 0.04 Monto de Impuesto Único: 0 </td></tr>
@@ -2881,6 +3087,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <tr style='color: white; background-color: black'>  <td> </td> <td align='right'>9804 </td> <td align='right'> 0</td> <td> </td> <td> r[depreciacion] </td> </tr>
 <tr style='color: white; background-color: black'>  <td> </td> <td align='right'>2417 </td> <td align='right'> 0</td> <td> </td> <td> r[amortizacion] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 12221 </td> <td style='background-color: blanchedalmond'> 12221</td> </tr>
+</tbody><tbody>
 <tr><td colspan='4'> alectrico® SpA</td> </tr> 
 <tr><td colspan='4'> ( 31 de agosto	2021	 ) </td> </tr>
 <tr><td colspan='8'> Partida 125: Por amortizacion en agosto de marca-alectrico-Por depreciacion en agosto de celular-Por depreciacion en agosto de taladro </td></tr>
@@ -2900,14 +3107,15 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <table id='Partida-126'>
 <thead> <th style='background-color: lavender' colspan='6'>Partida 126</th></thead>
 <tbody>
-<tr> <td align='right' >474 </td> <td colspan='7'> ganancia-por-correccion-monetaria#correccion-monetaria </td></tr>
-<tr> <td align='right' >474 </td> <td colspan='7'> correccion-monetaria#ingresos-brutos </td></tr>
-<tr style='background-color: lightyellow'>  <td> </td> <td align='right'> 474</td> <td align='right'> 56380</td> <td colspan='2'> a[iva-credito] </td> </tr>
+<tr> <td align='right' >189 </td> <td colspan='7'> ganancia-por-correccion-monetaria#correccion-monetaria </td></tr>
+<tr> <td align='right' >189 </td> <td colspan='7'> correccion-monetaria#ingresos-brutos </td></tr>
+<tr style='background-color: lightyellow'>  <td> </td> <td align='right'> 189</td> <td align='right'> 56380</td> <td colspan='2'> a[iva-credito] </td> </tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td align='right'> 584</td> <td align='right'> 0</td> <td colspan='2'> a[ppm] </td> </tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td align='right'> 0</td> <td align='right'> 584</td> <td colspan='2'> a[banco-estado] </td> </tr>
 <tr style='background-color: azure'>  <td> </td> <td align='right'> 56380 </td> <td align='right'> 0 </td> <td> </td><td> p[iva-debito] </td> </tr>
-<tr style='background-color: gold'>  <td> </td> <td align='right'>0 </td> <td align='right'> 474</td> <td> </td> <td> r[ingresos-brutos] </td> </tr>
-<tr> <td> </td> <td style='background-color: blanchedalmond'> 57438 </td> <td style='background-color: blanchedalmond'> 57438</td> </tr>
+<tr style='background-color: gold'>  <td> </td> <td align='right'>0 </td> <td align='right'> 189</td> <td> </td> <td> r[ingresos-brutos] </td> </tr>
+<tr> <td> </td> <td style='background-color: blanchedalmond'> 57153 </td> <td style='background-color: blanchedalmond'> 57153</td> </tr>
+</tbody><tbody>
 <tr><td colspan='4'> alectrico® SpA</td> </tr> 
 <tr><td colspan='4'> ( 31 de agosto	2021	 ) </td> </tr>
 <tr><td colspan='8'> Partida 126: Por ajuste del Debito Fiscal Contra el Credito Fiscal, mes de agosto-Por pago del ppm, con factor de  0.00125 mes agosto </td></tr>
@@ -2933,6 +3141,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <tr style='background-color: azure'>  <td> </td> <td align='right'> 0 </td> <td align='right'> 267820 </td> <td> </td><td> p[salarios-por-pagar] </td> </tr>
 <tr style='color: white; background-color: black'>  <td> </td> <td align='right'>350000 </td> <td align='right'> 0</td> <td> </td> <td> r[salarios] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 350000 </td> <td style='background-color: blanchedalmond'> 350000</td> </tr>
+</tbody><tbody>
 <tr><td colspan='4'> alectrico® SpA</td> </tr> 
 <tr><td colspan='4'> ( 5 de septiembre	2021	 ) </td> </tr>
 <tr><td colspan='8'> Partida 127: Declaración de Remuneraciones de alexander días trabajados: 6 Tramo Exento: 731308.5 Sueldo Bruto de: 350000 Tasa de Impuesto Único: 0.04 Monto de Impuesto Único: 0 </td></tr>
@@ -2958,6 +3167,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <tr style='background-color: lightyellow'>  <td> </td> <td align='right'> 400000</td> <td align='right'> 0</td> <td colspan='2'> a[banco-estado] </td> </tr>
 <tr style='background-color: gold'>  <td> </td> <td align='right'>0 </td> <td align='right'> 400000</td> <td> </td> <td> r[ingresos-brutos] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 400000 </td> <td style='background-color: blanchedalmond'> 400000</td> </tr>
+</tbody><tbody>
 <tr><td colspan='4'> alectrico® SpA</td> </tr> 
 <tr><td colspan='4'> ( 2 de septiembre	2021	 ) </td> </tr>
 <tr><td colspan='8'> Partida 128: Por venta en registro de compra-ventas del SII folio: 4 de diseño-electrico-los-capitanes-fase-2 a gonzalo </td></tr>
@@ -2986,6 +3196,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <tr style='background-color: lightyellow'>  <td> </td> <td align='right'> 0</td> <td align='right'> 300000</td> <td colspan='2'> a[banco-estado] </td> </tr>
 <tr style='background-color: azure'>  <td> </td> <td align='right'> 300000 </td> <td align='right'> 0 </td> <td> </td><td> p[salarios-por-pagar] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 300000 </td> <td style='background-color: blanchedalmond'> 300000</td> </tr>
+</tbody><tbody>
 <tr><td colspan='4'> alectrico® SpA</td> </tr> 
 <tr><td colspan='4'> ( 8 de septiembre	2021	 ) </td> </tr>
 <tr><td colspan='8'> Partida 129: pagando-salarios </td></tr>
@@ -3013,6 +3224,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <tr style='background-color: azure'>  <td> </td> <td align='right'> 0 </td> <td align='right'> 11976 </td> <td> </td><td> p[iva-debito] </td> </tr>
 <tr style='background-color: gold'>  <td> </td> <td align='right'>0 </td> <td align='right'> 63030</td> <td> </td> <td> r[ingresos-brutos] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 75006 </td> <td style='background-color: blanchedalmond'> 75006</td> </tr>
+</tbody><tbody>
 <tr><td colspan='4'> alectrico® SpA</td> </tr> 
 <tr><td colspan='4'> ( 6 de septiembre	2021	 ) </td> </tr>
 <tr><td colspan='8'> Partida 130: Por venta en registro de compra-ventas del SII folio: 17 de ensacado-de-15-sacos-de-escombros a gonzalo </td></tr>
@@ -3038,12 +3250,37 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <tr style='background-color: lightyellow'>  <td> </td> <td align='right'> 6666</td> <td align='right'> 0</td> <td colspan='2'> a[banco-estado] </td> </tr>
 <tr style='background-color: gold'>  <td> </td> <td align='right'>0 </td> <td align='right'> 6666</td> <td> </td> <td> r[ingresos-brutos] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 6666 </td> <td style='background-color: blanchedalmond'> 6666</td> </tr>
+</tbody><tbody>
 <tr><td colspan='4'> alectrico® SpA</td> </tr> 
 <tr><td colspan='4'> ( 1 de septiembre	2021	 ) </td> </tr>
 <tr><td colspan='8'> Partida 133: Por venta en registro de compra-ventas del SII folio: 5 de visita-huelen-pago-2-6-la-boleta-dice-pago-1-de-6 a gonzalo </td></tr>
 <tr> <td colspan='7'>efectuado a gonzalo </td> </tr>
 <tr><td colspan = '8'> vender-en-registro-de-compra-venta-sii</td> </tr>
 <tr style='background-color: aliceblue'> <td colspan = '8'> <img src='../factura-propia-exenta-5.png'></td> </tr>
+</tbody>
+</table>
+<p style='page-break-before: always;'>&nbsp;</p>
+<br> 
+<p style='color: white; background-color: red'> No corresponde incluir, pues se emitieron documentos de pago contado</p>
+<br> 
+- [x] no-incluir: Partida que estando en RCV SII se estimó no incluir en la contabilidad financiera
+- [x] tipo de asiento: traspaso
+- [x] a corregir: No corresponde incluir, pues se emitieron documentos de pago contado
+- [ ] rcv
+- [ ] libro-diario
+- [ ] ccm
+- [x] revisado
+![](../revisado.png)
+<table id='Partida-134'>
+<thead> <th style='background-color: lavender' colspan='6'>Partida 134</th></thead>
+<tbody>
+<tr> <td> </td> <td style='background-color: blanchedalmond'> 0 </td> <td style='background-color: blanchedalmond'> 0</td> </tr>
+</tbody><tbody>
+<tr><td colspan='4'> alectrico® SpA</td> </tr> 
+<tr><td colspan='4'> ( 1 de septiembre	2021	 ) </td> </tr>
+<tr><td colspan='8'> Partida 134: nil </td></tr>
+<tr> <td colspan='7'>efectuado a cuentas-por-cobrar </td> </tr>
+<tr><td colspan = '8'> pagar-monto</td> </tr>
 </tbody>
 </table>
 <p style='page-break-before: always;'>&nbsp;</p>
@@ -3064,6 +3301,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <tr style='background-color: azure'>  <td> </td> <td align='right'> 0 </td> <td align='right'> 4408 </td> <td> </td><td> p[iva-debito] </td> </tr>
 <tr style='background-color: gold'>  <td> </td> <td align='right'>0 </td> <td align='right'> 23197</td> <td> </td> <td> r[ingresos-brutos] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 27605 </td> <td style='background-color: blanchedalmond'> 27605</td> </tr>
+</tbody><tbody>
 <tr><td colspan='4'> alectrico® SpA</td> </tr> 
 <tr><td colspan='4'> ( 31 de septiembre	2021	 ) </td> </tr>
 <tr><td colspan='8'> Partida 135: Por rendición de e-boletas afectas de septiembre de 2021 </td></tr>
@@ -3086,6 +3324,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <tr style='background-color: lightyellow'>  <td> </td> <td align='right'> 0</td> <td align='right'> 52631</td> <td colspan='2'> a[intangibles] </td> </tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td align='right'> 52631</td> <td align='right'> 0</td> <td colspan='2'> a[banco-estado] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 52631 </td> <td style='background-color: blanchedalmond'> 52631</td> </tr>
+</tbody><tbody>
 <tr><td colspan='4'> alectrico® SpA</td> </tr> 
 <tr><td colspan='4'> ( 12 de septiembre	2021	 ) </td> </tr>
 <tr><td colspan='8'> Partida 138: Por adquisión del control legal de la marca alectrico </td></tr>
@@ -3110,12 +3349,38 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <tr style='background-color: lightyellow'>  <td> </td> <td align='right'> 0</td> <td align='right'> 8242</td> <td colspan='2'> a[caja] </td> </tr>
 <tr style='color: white; background-color: black'>  <td> </td> <td align='right'>6926 </td> <td align='right'> 0</td> <td> </td> <td> r[gastos-administrativos] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 8242 </td> <td style='background-color: blanchedalmond'> 8242</td> </tr>
+</tbody><tbody>
 <tr><td colspan='4'> alectrico® SpA</td> </tr> 
 <tr><td colspan='4'> ( 10 de septiembre	2021	 ) </td> </tr>
 <tr><td colspan='8'> Partida 139: Por Gasto Administrativo: Servicio de Datos y Telefonía: consumo agosto. </td></tr>
 <tr> <td colspan='7'>efectuado a entel </td> </tr>
 <tr><td colspan = '8'> gastar-en-administracion-afecto</td> </tr>
 <tr style='background-color: aliceblue'> <td colspan = '8'> <img src='../factura-afecta-entel-43683315.png'></td> </tr>
+</tbody>
+</table>
+<p style='page-break-before: always;'>&nbsp;</p>
+<br> 
+<p style='color: white; background-color: red'> Está repetido en los facts.</p>
+<br> 
+- [x] no-incluir: Partida que estando en RCV SII se estimó no incluir en la contabilidad financiera
+- [x] tipo de asiento: 33
+- [x] a corregir: Está repetido en los facts.
+- [ ] rcv
+- [ ] libro-diario
+- [ ] ccm
+- [x] revisado
+![](../revisado.png)
+<table id='Partida-140'>
+<thead> <th style='background-color: lavender' colspan='6'>Partida 140</th></thead>
+<tbody>
+<tr> <td> </td> <td style='background-color: blanchedalmond'> 0 </td> <td style='background-color: blanchedalmond'> 0</td> </tr>
+</tbody><tbody>
+<tr><td colspan='4'> alectrico® SpA</td> </tr> 
+<tr><td colspan='4'> ( 6 de septiembre	2021	 ) </td> </tr>
+<tr><td colspan='8'> Partida 140: Adquisión de Dominio Internet: necios.cl. </td></tr>
+<tr> <td colspan='7'>efectuado a u-chile </td> </tr>
+<tr><td colspan = '8'> gastar-en-administracion-afecto</td> </tr>
+<tr style='background-color: aliceblue'> <td colspan = '8'> <img src='../factura-afecta-u-chile-2761647.png'></td> </tr>
 </tbody>
 </table>
 <p style='page-break-before: always;'>&nbsp;</p>
@@ -3135,6 +3400,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <tr style='background-color: lightyellow'>  <td> </td> <td align='right'> 0</td> <td align='right'> 9950</td> <td colspan='2'> a[caja] </td> </tr>
 <tr style='color: white; background-color: black'>  <td> </td> <td align='right'>8361 </td> <td align='right'> 0</td> <td> </td> <td> r[gastos-administrativos] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 9950 </td> <td style='background-color: blanchedalmond'> 9950</td> </tr>
+</tbody><tbody>
 <tr><td colspan='4'> alectrico® SpA</td> </tr> 
 <tr><td colspan='4'> ( 13 de septiembre	2021	 ) </td> </tr>
 <tr><td colspan='8'> Partida 145: Renovación de Dominio Internet: alectrica.cl. </td></tr>
@@ -3160,6 +3426,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <tr style='background-color: lightyellow'>  <td> </td> <td align='right'> 48404</td> <td align='right'> 0</td> <td colspan='2'> a[insumos] </td> </tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td align='right'> 0</td> <td align='right'> 57601</td> <td colspan='2'> a[banco-estado] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 57601 </td> <td style='background-color: blanchedalmond'> 57601</td> </tr>
+</tbody><tbody>
 <tr><td colspan='4'> alectrico® SpA</td> </tr> 
 <tr><td colspan='4'> ( 8 de septiembre	2021	 ) </td> </tr>
 <tr><td colspan='8'> Partida 146: Por compra de materiales para ampliación </td></tr>
@@ -3172,7 +3439,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'> No alcancé a incluirla en el registro de compra-venta</p>
 <br> 
-- [x] partida rechazada en SII 
+- [x] rechazado: Partida rechazada por SII, significa que si la dejamos nos podría generar multas o que no tendría el efecto deseado. Así que solo podemos quitarla de SII, pero eso requiere rectificar el f29 y eso nos generaría multas. Por ejemplo, una nota de crédito que no descuente monto imponbile, aunque esté en registro de compra-ventas. El F22 al año siguiente no incluirá estos DTE. No es lo mismo que gasto rechazado. También podríamos declararla como no-incluir, pero eso no conveniente, pues todo debe estar en la contabilidad de la empresa, pera que sea fidedigna. Hay casos donde se declara un gasto para el que no hay boleta de resplado, eso es muy crítico y sí será rechazado, y además la contabilidad financiera objetada. El caso de las facturas de compra 45 a proveedor extranjero es parecido, pero ahora sé como se hace. 
 - [x] tipo de asiento: 33
 - [x] a corregir: No alcancé a incluirla en el registro de compra-venta
 - [ ] rcv
@@ -3182,13 +3449,14 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 ![](../revisado.png)
 <table id='Partida-147'>
 <thead> <th style='background-color: lavender' colspan='6'>Partida 147</th></thead>
-<tbody>
+<tbody  style =' text-decoration: line-through; text-decoration-color: crimson'  > 
 <tr> <td align='right' >4149 </td> <td colspan='7'> cloudflare#gastos-administrativos </td></tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td align='right'> 0</td> <td align='right'> 3487</td> <td colspan='2'> a[retencion-de-iva-articulo-11] </td> </tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td align='right'> 3487</td> <td align='right'> 0</td> <td colspan='2'> a[iva-credito] </td> </tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td align='right'> 0</td> <td align='right'> 4149</td> <td colspan='2'> a[caja] </td> </tr>
 <tr style='color: white; background-color: black'>  <td> </td> <td align='right'>4149 </td> <td align='right'> 0</td> <td> </td> <td> r[gastos-administrativos] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 7636 </td> <td style='background-color: blanchedalmond'> 7636</td> </tr>
+</tbody><tbody>
 <tr><td colspan='4'> alectrico® SpA</td> </tr> 
 <tr><td colspan='4'> ( 22 de septiembre	2021	 ) </td> </tr>
 <tr><td colspan='8'> Partida 147: Por Gasto Administrativo: Pago Mensual de Workers Serverless. </td></tr>
@@ -3213,6 +3481,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <tr style='background-color: azure'>  <td> </td> <td align='right'> 2013 </td> <td align='right'> 0 </td> <td> </td><td> p[iva-debito] </td> </tr>
 <tr style='color: white; background-color: black'>  <td> </td> <td align='right'>10592 </td> <td align='right'> 0</td> <td> </td> <td> r[devolucion-sobre-ventas] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 12605 </td> <td style='background-color: blanchedalmond'> 12605</td> </tr>
+</tbody><tbody>
 <tr><td colspan='4'> alectrico® SpA</td> </tr> 
 <tr><td colspan='4'> ( 24 de septiembre	2021	 ) </td> </tr>
 <tr><td colspan='8'> Partida 148: Devolución a subcuenta ventas-con-eboleta-afecta por Por la anulacion del monto total de la boleta afecta con folio 11 del 24 de enero. Por error en el monto. mes septiembre </td></tr>
@@ -3238,6 +3507,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <tr style='background-color: lightyellow'>  <td> </td> <td align='right'> 6143</td> <td align='right'> 0</td> <td colspan='2'> a[insumos] </td> </tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td align='right'> 0</td> <td align='right'> 7310</td> <td colspan='2'> a[banco-estado] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 7310 </td> <td style='background-color: blanchedalmond'> 7310</td> </tr>
+</tbody><tbody>
 <tr><td colspan='4'> alectrico® SpA</td> </tr> 
 <tr><td colspan='4'> ( 24 de septiembre	2021	 ) </td> </tr>
 <tr><td colspan='8'> Partida 149: Por compra de materiales para ampliación </td></tr>
@@ -3264,6 +3534,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <tr style='background-color: azure'>  <td> </td> <td align='right'> 0 </td> <td align='right'> 23950 </td> <td> </td><td> p[iva-debito] </td> </tr>
 <tr style='background-color: gold'>  <td> </td> <td align='right'>0 </td> <td align='right'> 126050</td> <td> </td> <td> r[ingresos-brutos] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 150000 </td> <td style='background-color: blanchedalmond'> 150000</td> </tr>
+</tbody><tbody>
 <tr><td colspan='4'> alectrico® SpA</td> </tr> 
 <tr><td colspan='4'> ( 24 de septiembre	2021	 ) </td> </tr>
 <tr><td colspan='8'> Partida 151: Por venta en registro de compra-ventas del SII folio: 18 de instalacion-de-alimentador a gonzalo </td></tr>
@@ -3290,6 +3561,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <tr style='background-color: azure'>  <td> </td> <td align='right'> 0 </td> <td align='right'> 17696 </td> <td> </td><td> p[iva-debito] </td> </tr>
 <tr style='background-color: gold'>  <td> </td> <td align='right'>0 </td> <td align='right'> 93137</td> <td> </td> <td> r[ingresos-brutos] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 110833 </td> <td style='background-color: blanchedalmond'> 110833</td> </tr>
+</tbody><tbody>
 <tr><td colspan='4'> alectrico® SpA</td> </tr> 
 <tr><td colspan='4'> ( 29 de septiembre	2021	 ) </td> </tr>
 <tr><td colspan='8'> Partida 152: Por venta en registro de compra-ventas del SII folio: 19 de los-capitanes-pago-3-de-6 a gonzalo </td></tr>
@@ -3316,6 +3588,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <tr style='background-color: lightyellow'>  <td> </td> <td align='right'> 0</td> <td align='right'> 625</td> <td colspan='2'> a[banco-estado] </td> </tr>
 <tr style='color: white; background-color: black'>  <td> </td> <td align='right'>525 </td> <td align='right'> 0</td> <td> </td> <td> r[costos-de-ventas] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 625 </td> <td style='background-color: blanchedalmond'> 625</td> </tr>
+</tbody><tbody>
 <tr><td colspan='4'> alectrico® SpA</td> </tr> 
 <tr><td colspan='4'> ( 29 de septiembre	2021	 ) </td> </tr>
 <tr><td colspan='8'> Partida 153: Por Costo Directo de Ventas: Comisión Pasarela septiembre Transbank </td></tr>
@@ -3337,18 +3610,19 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <table id='Partida-154'>
 <thead> <th style='background-color: lavender' colspan='6'>Partida 154</th></thead>
 <tbody>
-<tr> <td align='right' >677 </td> <td colspan='7'> ganancia-por-correccion-monetaria#correccion-monetaria </td></tr>
-<tr> <td align='right' >677 </td> <td colspan='7'> correccion-monetaria#ingresos-brutos </td></tr>
-<tr style='background-color: lightyellow'>  <td> </td> <td align='right'> 677</td> <td align='right'> 56017</td> <td colspan='2'> a[iva-credito] </td> </tr>
+<tr> <td align='right' >296 </td> <td colspan='7'> ganancia-por-correccion-monetaria#correccion-monetaria </td></tr>
+<tr> <td align='right' >296 </td> <td colspan='7'> correccion-monetaria#ingresos-brutos </td></tr>
+<tr style='background-color: lightyellow'>  <td> </td> <td align='right'> 12134</td> <td align='right'> 0</td> <td colspan='2'> a[iva-credito] </td> </tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td align='right'> 890</td> <td align='right'> 0</td> <td colspan='2'> a[ppm] </td> </tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td align='right'> 0</td> <td align='right'> 890</td> <td colspan='2'> a[banco-estado] </td> </tr>
-<tr style='background-color: azure'>  <td> </td> <td align='right'> 56017 </td> <td align='right'> 0 </td> <td> </td><td> p[iva-debito] </td> </tr>
-<tr style='background-color: gold'>  <td> </td> <td align='right'>0 </td> <td align='right'> 677</td> <td> </td> <td> r[ingresos-brutos] </td> </tr>
-<tr> <td> </td> <td style='background-color: blanchedalmond'> 57584 </td> <td style='background-color: blanchedalmond'> 57584</td> </tr>
+<tr style='background-color: azure'>  <td> </td> <td align='right'> 0 </td> <td align='right'> 11838 </td> <td> </td><td> p[iva-debito] </td> </tr>
+<tr style='background-color: gold'>  <td> </td> <td align='right'>0 </td> <td align='right'> 296</td> <td> </td> <td> r[ingresos-brutos] </td> </tr>
+<tr> <td> </td> <td style='background-color: blanchedalmond'> 13024 </td> <td style='background-color: blanchedalmond'> 13024</td> </tr>
+</tbody><tbody>
 <tr><td colspan='4'> alectrico® SpA</td> </tr> 
 <tr><td colspan='4'> ( 31 de septiembre	2021	 ) </td> </tr>
-<tr><td colspan='8'> Partida 154: Por ajuste del Debito Fiscal Contra el Credito Fiscal, mes de septiembre-Por pago del ppm, con factor de  0.00125 mes septiembre </td></tr>
-<tr><td colspan = '8'> ajustar-iva-contra-credito</td> </tr>
+<tr><td colspan='8'> Partida 154: Por ajuste del Credito Fiscal Contra el Debito Fiscal, mes de septiembre-Por pago del ppm, con factor de  0.00125 mes septiembre </td></tr>
+<tr><td colspan = '8'> ajustar-iva-contra-debito</td> </tr>
 </tbody>
 </table>
 <p style='page-break-before: always;'>&nbsp;</p>
@@ -3369,6 +3643,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <tr style='color: white; background-color: black'>  <td> </td> <td align='right'>9804 </td> <td align='right'> 0</td> <td> </td> <td> r[depreciacion] </td> </tr>
 <tr style='color: white; background-color: black'>  <td> </td> <td align='right'>2417 </td> <td align='right'> 0</td> <td> </td> <td> r[amortizacion] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 12221 </td> <td style='background-color: blanchedalmond'> 12221</td> </tr>
+</tbody><tbody>
 <tr><td colspan='4'> alectrico® SpA</td> </tr> 
 <tr><td colspan='4'> ( 31 de septiembre	2021	 ) </td> </tr>
 <tr><td colspan='8'> Partida 155: Por amortizacion en septiembre de marca-alectrico-Por depreciacion en septiembre de celular-Por depreciacion en septiembre de taladro </td></tr>
@@ -3394,6 +3669,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <tr style='background-color: lightyellow'>  <td> </td> <td align='right'> 0</td> <td align='right'> 267820</td> <td colspan='2'> a[banco-estado] </td> </tr>
 <tr style='background-color: azure'>  <td> </td> <td align='right'> 267820 </td> <td align='right'> 0 </td> <td> </td><td> p[salarios-por-pagar] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 267820 </td> <td style='background-color: blanchedalmond'> 267820</td> </tr>
+</tbody><tbody>
 <tr><td colspan='4'> alectrico® SpA</td> </tr> 
 <tr><td colspan='4'> ( 5 de octubre	2021	 ) </td> </tr>
 <tr><td colspan='8'> Partida 156: pagando-remuneraciones </td></tr>
@@ -3421,6 +3697,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <tr style='background-color: azure'>  <td> </td> <td align='right'> 0 </td> <td align='right'> 307520 </td> <td> </td><td> p[salarios-por-pagar] </td> </tr>
 <tr style='color: white; background-color: black'>  <td> </td> <td align='right'>400000 </td> <td align='right'> 0</td> <td> </td> <td> r[salarios] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 400000 </td> <td style='background-color: blanchedalmond'> 400000</td> </tr>
+</tbody><tbody>
 <tr><td colspan='4'> alectrico® SpA</td> </tr> 
 <tr><td colspan='4'> ( 5 de octubre	2021	 ) </td> </tr>
 <tr><td colspan='8'> Partida 157: Declaración de Remuneraciones de alexander días trabajados: 7 Tramo Exento: 731308.5 Sueldo Bruto de: 400000 Tasa de Impuesto Único: 0.04 Monto de Impuesto Único: 0 </td></tr>
@@ -3443,6 +3720,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <tr style='background-color: lightyellow'>  <td> </td> <td align='right'> 0</td> <td align='right'> 400000</td> <td colspan='2'> a[banco-estado] </td> </tr>
 <tr style='color: white; background-color: black'>  <td> </td> <td align='right'>400000 </td> <td align='right'> 0</td> <td> </td> <td> r[devolucion-sobre-ventas] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 400000 </td> <td style='background-color: blanchedalmond'> 400000</td> </tr>
+</tbody><tbody>
 <tr><td colspan='4'> alectrico® SpA</td> </tr> 
 <tr><td colspan='4'> ( 2 de octubre	2021	 ) </td> </tr>
 <tr><td colspan='8'> Partida 158: Devolución a subcuenta ventas-con-eboleta-exenta por Por anulación de proyecto 1724. mes octubre </td></tr>
@@ -3469,6 +3747,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <tr style='background-color: lightyellow'>  <td> </td> <td align='right'> 6666</td> <td align='right'> 0</td> <td colspan='2'> a[banco-estado] </td> </tr>
 <tr style='background-color: gold'>  <td> </td> <td align='right'>0 </td> <td align='right'> 6666</td> <td> </td> <td> r[ingresos-brutos] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 6666 </td> <td style='background-color: blanchedalmond'> 6666</td> </tr>
+</tbody><tbody>
 <tr><td colspan='4'> alectrico® SpA</td> </tr> 
 <tr><td colspan='4'> ( 5 de octubre	2021	 ) </td> </tr>
 <tr><td colspan='8'> Partida 159: Por venta en registro de compra-ventas del SII folio: 6 de visita-huelen-pago-4-6 a gonzalo </td></tr>
@@ -3495,6 +3774,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <tr style='background-color: lightyellow'>  <td> </td> <td align='right'> 0</td> <td align='right'> 1177</td> <td colspan='2'> a[caja] </td> </tr>
 <tr style='color: white; background-color: black'>  <td> </td> <td align='right'>1177 </td> <td align='right'> 0</td> <td> </td> <td> r[gastos-administrativos] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 1400 </td> <td style='background-color: blanchedalmond'> 1400</td> </tr>
+</tbody><tbody>
 <tr><td colspan='4'> alectrico® SpA</td> </tr> 
 <tr><td colspan='4'> ( 13 de octubre	2021	 ) </td> </tr>
 <tr><td colspan='8'> Partida 160: Por Gasto Administrativo: Pago Mensual de Arriendo de Correo y Almacenamiento en la nube. </td></tr>
@@ -3520,6 +3800,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <tr style='background-color: lightyellow'>  <td> </td> <td align='right'> 0</td> <td align='right'> 8242</td> <td colspan='2'> a[caja] </td> </tr>
 <tr style='color: white; background-color: black'>  <td> </td> <td align='right'>6926 </td> <td align='right'> 0</td> <td> </td> <td> r[gastos-administrativos] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 8242 </td> <td style='background-color: blanchedalmond'> 8242</td> </tr>
+</tbody><tbody>
 <tr><td colspan='4'> alectrico® SpA</td> </tr> 
 <tr><td colspan='4'> ( 24 de octubre	2021	 ) </td> </tr>
 <tr><td colspan='8'> Partida 161: Por Gasto Administrativo: Servicio de Datos y Telefonía de septiembre. </td></tr>
@@ -3547,6 +3828,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <tr style='background-color: azure'>  <td> </td> <td align='right'> 0 </td> <td align='right'> 3998 </td> <td> </td><td> p[iva-debito] </td> </tr>
 <tr style='background-color: gold'>  <td> </td> <td align='right'>0 </td> <td align='right'> 21002</td> <td> </td> <td> r[ingresos-brutos] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 25000 </td> <td style='background-color: blanchedalmond'> 25000</td> </tr>
+</tbody><tbody>
 <tr><td colspan='4'> alectrico® SpA</td> </tr> 
 <tr><td colspan='4'> ( 31 de octubre	2021	 ) </td> </tr>
 <tr><td colspan='8'> Partida 162: Por rendición de e-boletas afectas de octubre de 2021 </td></tr>
@@ -3557,7 +3839,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'> Fuera de Plazo</p>
 <br> 
-- [x] partida rechazada en SII 
+- [x] rechazado: Partida rechazada por SII, significa que si la dejamos nos podría generar multas o que no tendría el efecto deseado. Así que solo podemos quitarla de SII, pero eso requiere rectificar el f29 y eso nos generaría multas. Por ejemplo, una nota de crédito que no descuente monto imponbile, aunque esté en registro de compra-ventas. El F22 al año siguiente no incluirá estos DTE. No es lo mismo que gasto rechazado. También podríamos declararla como no-incluir, pero eso no conveniente, pues todo debe estar en la contabilidad de la empresa, pera que sea fidedigna. Hay casos donde se declara un gasto para el que no hay boleta de resplado, eso es muy crítico y sí será rechazado, y además la contabilidad financiera objetada. El caso de las facturas de compra 45 a proveedor extranjero es parecido, pero ahora sé como se hace. 
 - [x] tipo de asiento: 33
 - [x] a corregir: Fuera de Plazo
 - [ ] rcv
@@ -3566,13 +3848,14 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 - [ ] revisado
 <table id='Partida-163'>
 <thead > <th colspan='6'>Partida 163</th></thead>
-<tbody>
+<tbody  style =' text-decoration: line-through; text-decoration-color: crimson'  > 
 <tr> <td align='right' >3775 </td> <td colspan='7'> cloudflare#gastos-administrativos </td></tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td align='right'> 0</td> <td align='right'> 717</td> <td colspan='2'> a[retencion-de-iva-articulo-11] </td> </tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td align='right'> 717</td> <td align='right'> 0</td> <td colspan='2'> a[iva-credito] </td> </tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td align='right'> 0</td> <td align='right'> 3775</td> <td colspan='2'> a[caja] </td> </tr>
 <tr style='color: white; background-color: black'>  <td> </td> <td align='right'>3775 </td> <td align='right'> 0</td> <td> </td> <td> r[gastos-administrativos] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 4492 </td> <td style='background-color: blanchedalmond'> 4492</td> </tr>
+</tbody><tbody>
 <tr><td colspan='4'> alectrico® SpA</td> </tr> 
 <tr><td colspan='4'> ( 13 de octubre	2021	 ) </td> </tr>
 <tr><td colspan='8'> Partida 163: Por Gasto Administrativo: Pago Mensual de Workers Serverless. </td></tr>
@@ -3600,12 +3883,38 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <tr style='background-color: azure'>  <td> </td> <td align='right'> 0 </td> <td align='right'> 17696 </td> <td> </td><td> p[iva-debito] </td> </tr>
 <tr style='background-color: gold'>  <td> </td> <td align='right'>0 </td> <td align='right'> 93137</td> <td> </td> <td> r[ingresos-brutos] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 110833 </td> <td style='background-color: blanchedalmond'> 110833</td> </tr>
+</tbody><tbody>
 <tr><td colspan='4'> alectrico® SpA</td> </tr> 
 <tr><td colspan='4'> ( 29 de octubre	2021	 ) </td> </tr>
 <tr><td colspan='8'> Partida 164: Por venta en registro de compra-ventas del SII folio: 19 de los-capitanes-pago-4-de-6 a gonzalo </td></tr>
 <tr> <td colspan='7'>efectuado a gonzalo </td> </tr>
 <tr><td colspan = '8'> vender-en-registro-de-compra-venta-sii</td> </tr>
 <tr style='background-color: aliceblue'> <td colspan = '8'> <img src='../factura-propia-afecta-19.png'></td> </tr>
+</tbody>
+</table>
+<p style='page-break-before: always;'>&nbsp;</p>
+<br> 
+<p style='color: white; background-color: red'> No se puede tener cuentas por cobrar a menos que se haya vendido al contado</p>
+<br> 
+- [x] rechazado: Partida rechazada por SII, significa que si la dejamos nos podría generar multas o que no tendría el efecto deseado. Así que solo podemos quitarla de SII, pero eso requiere rectificar el f29 y eso nos generaría multas. Por ejemplo, una nota de crédito que no descuente monto imponbile, aunque esté en registro de compra-ventas. El F22 al año siguiente no incluirá estos DTE. No es lo mismo que gasto rechazado. También podríamos declararla como no-incluir, pero eso no conveniente, pues todo debe estar en la contabilidad de la empresa, pera que sea fidedigna. Hay casos donde se declara un gasto para el que no hay boleta de resplado, eso es muy crítico y sí será rechazado, y además la contabilidad financiera objetada. El caso de las facturas de compra 45 a proveedor extranjero es parecido, pero ahora sé como se hace. 
+- [x] no-incluir: Partida que estando en RCV SII se estimó no incluir en la contabilidad financiera
+- [x] tipo de asiento: 33
+- [x] a corregir: No se puede tener cuentas por cobrar a menos que se haya vendido al contado
+- [ ] rcv
+- [ ] libro-diario
+- [ ] ccm
+- [x] revisado
+![](../revisado.png)
+<table id='Partida-165'>
+<thead> <th style='background-color: lavender' colspan='6'>Partida 165</th></thead>
+<tbody  style =' text-decoration: line-through; text-decoration-color: crimson'  > 
+<tr> <td> </td> <td style='background-color: blanchedalmond'> 0 </td> <td style='background-color: blanchedalmond'> 0</td> </tr>
+</tbody><tbody>
+<tr><td colspan='4'> alectrico® SpA</td> </tr> 
+<tr><td colspan='4'> ( 29 de octubre	2021	 ) </td> </tr>
+<tr><td colspan='8'> Partida 165: nil </td></tr>
+<tr> <td colspan='7'>efectuado a cuentas-por-cobrar </td> </tr>
+<tr><td colspan = '8'> pagar-monto</td> </tr>
 </tbody>
 </table>
 <p style='page-break-before: always;'>&nbsp;</p>
@@ -3625,6 +3934,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <tr style='background-color: lightyellow'>  <td> </td> <td align='right'> 4950</td> <td align='right'> 0</td> <td colspan='2'> a[insumos] </td> </tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td align='right'> 0</td> <td align='right'> 5891</td> <td colspan='2'> a[banco-estado] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 5891 </td> <td style='background-color: blanchedalmond'> 5891</td> </tr>
+</tbody><tbody>
 <tr><td colspan='4'> alectrico® SpA</td> </tr> 
 <tr><td colspan='4'> ( 26 de octubre	2021	 ) </td> </tr>
 <tr><td colspan='8'> Partida 166: Por compra de materiales eléctricos a Sodimac </td></tr>
@@ -3651,6 +3961,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <tr style='color: white; background-color: black'>  <td> </td> <td align='right'>9804 </td> <td align='right'> 0</td> <td> </td> <td> r[depreciacion] </td> </tr>
 <tr style='color: white; background-color: black'>  <td> </td> <td align='right'>2417 </td> <td align='right'> 0</td> <td> </td> <td> r[amortizacion] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 12221 </td> <td style='background-color: blanchedalmond'> 12221</td> </tr>
+</tbody><tbody>
 <tr><td colspan='4'> alectrico® SpA</td> </tr> 
 <tr><td colspan='4'> ( 31 de octubre	2021	 ) </td> </tr>
 <tr><td colspan='8'> Partida 167: Por amortizacion en octubre de marca-alectrico-Por depreciacion en octubre de celular-Por depreciacion en octubre de taladro </td></tr>
@@ -3678,6 +3989,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <tr style='background-color: azure'>  <td> </td> <td align='right'> 21694 </td> <td align='right'> 0 </td> <td> </td><td> p[iva-debito] </td> </tr>
 <tr style='background-color: gold'>  <td> </td> <td align='right'>0 </td> <td align='right'> 780</td> <td> </td> <td> r[ingresos-brutos] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 22625 </td> <td style='background-color: blanchedalmond'> 22625</td> </tr>
+</tbody><tbody>
 <tr><td colspan='4'> alectrico® SpA</td> </tr> 
 <tr><td colspan='4'> ( 31 de octubre	2021	 ) </td> </tr>
 <tr><td colspan='8'> Partida 168: Partida 168: Por ajuste del Debito Fiscal Contra el Credito Fiscal, mes de octubre-Por pago del ppm, con factor de 0.00125 mes octubre </td></tr>
@@ -3702,6 +4014,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <tr style='background-color: lightyellow'>  <td> </td> <td align='right'> 0</td> <td align='right'> 307520</td> <td colspan='2'> a[banco-estado] </td> </tr>
 <tr style='background-color: azure'>  <td> </td> <td align='right'> 307520 </td> <td align='right'> 0 </td> <td> </td><td> p[salarios-por-pagar] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 307520 </td> <td style='background-color: blanchedalmond'> 307520</td> </tr>
+</tbody><tbody>
 <tr><td colspan='4'> alectrico® SpA</td> </tr> 
 <tr><td colspan='4'> ( 5 de noviembre	2021	 ) </td> </tr>
 <tr><td colspan='8'> Partida 169: pagando-remuneraciones </td></tr>
@@ -3727,6 +4040,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <tr style='background-color: lightyellow'>  <td> </td> <td align='right'> 6666</td> <td align='right'> 0</td> <td colspan='2'> a[banco-estado] </td> </tr>
 <tr style='background-color: gold'>  <td> </td> <td align='right'>0 </td> <td align='right'> 6666</td> <td> </td> <td> r[ingresos-brutos] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 6666 </td> <td style='background-color: blanchedalmond'> 6666</td> </tr>
+</tbody><tbody>
 <tr><td colspan='4'> alectrico® SpA</td> </tr> 
 <tr><td colspan='4'> ( 8 de noviembre	2021	 ) </td> </tr>
 <tr><td colspan='8'> Partida 170: Por venta en registro de compra-ventas del SII folio: 7 de visita-huelen-pago-5-6 a gonzalo </td></tr>
@@ -3752,6 +4066,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <tr style='background-color: lightyellow'>  <td> </td> <td align='right'> 0</td> <td align='right'> 8242</td> <td colspan='2'> a[banco-estado] </td> </tr>
 <tr style='color: white; background-color: black'>  <td> </td> <td align='right'>6926 </td> <td align='right'> 0</td> <td> </td> <td> r[gastos-administrativos] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 8242 </td> <td style='background-color: blanchedalmond'> 8242</td> </tr>
+</tbody><tbody>
 <tr><td colspan='4'> alectrico® SpA</td> </tr> 
 <tr><td colspan='4'> ( 11 de noviembre	2021	 ) </td> </tr>
 <tr><td colspan='8'> Partida 171: Por Gasto Administrativo: Servicio de Datos y Telefonía: pago julio. </td></tr>
@@ -3779,6 +4094,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <tr style='background-color: azure'>  <td> </td> <td align='right'> 0 </td> <td align='right'> 307520 </td> <td> </td><td> p[salarios-por-pagar] </td> </tr>
 <tr style='color: white; background-color: black'>  <td> </td> <td align='right'>400000 </td> <td align='right'> 0</td> <td> </td> <td> r[salarios] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 400000 </td> <td style='background-color: blanchedalmond'> 400000</td> </tr>
+</tbody><tbody>
 <tr><td colspan='4'> alectrico® SpA</td> </tr> 
 <tr><td colspan='4'> ( 20 de noviembre	2021	 ) </td> </tr>
 <tr><td colspan='8'> Partida 172: Declaración de Remuneraciones de alexander días trabajados: 7 Tramo Exento: 731308.5 Sueldo Bruto de: 400000 Tasa de Impuesto Único: 0.04 Monto de Impuesto Único: 0 </td></tr>
@@ -3803,6 +4119,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <tr style='background-color: lightyellow'>  <td> </td> <td align='right'> 0</td> <td align='right'> 4990</td> <td colspan='2'> a[caja] </td> </tr>
 <tr style='color: white; background-color: black'>  <td> </td> <td align='right'>4193 </td> <td align='right'> 0</td> <td> </td> <td> r[gastos-administrativos] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 4990 </td> <td style='background-color: blanchedalmond'> 4990</td> </tr>
+</tbody><tbody>
 <tr><td colspan='4'> alectrico® SpA</td> </tr> 
 <tr><td colspan='4'> ( 8 de noviembre	2021	 ) </td> </tr>
 <tr><td colspan='8'> Partida 183: Por Gasto Administrativo: Mouse. </td></tr>
@@ -3828,6 +4145,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <tr style='background-color: lightyellow'>  <td> </td> <td align='right'> 0</td> <td align='right'> 12880</td> <td colspan='2'> a[caja] </td> </tr>
 <tr style='color: white; background-color: black'>  <td> </td> <td align='right'>10824 </td> <td align='right'> 0</td> <td> </td> <td> r[gastos-administrativos] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 12880 </td> <td style='background-color: blanchedalmond'> 12880</td> </tr>
+</tbody><tbody>
 <tr><td colspan='4'> alectrico® SpA</td> </tr> 
 <tr><td colspan='4'> ( 9 de noviembre	2021	 ) </td> </tr>
 <tr><td colspan='8'> Partida 184: Por Gasto Administrativo: WebCam. </td></tr>
@@ -3854,6 +4172,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <tr style='color: white; background-color: black'>  <td> </td> <td align='right'>9804 </td> <td align='right'> 0</td> <td> </td> <td> r[depreciacion] </td> </tr>
 <tr style='color: white; background-color: black'>  <td> </td> <td align='right'>2417 </td> <td align='right'> 0</td> <td> </td> <td> r[amortizacion] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 12221 </td> <td style='background-color: blanchedalmond'> 12221</td> </tr>
+</tbody><tbody>
 <tr><td colspan='4'> alectrico® SpA</td> </tr> 
 <tr><td colspan='4'> ( 31 de noviembre	2021	 ) </td> </tr>
 <tr><td colspan='8'> Partida 186: Por amortizacion en noviembre de marca-alectrico-Por depreciacion en noviembre de celular-Por depreciacion en noviembre de taladro </td></tr>
@@ -3875,6 +4194,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <tr style='background-color: lightyellow'>  <td> </td> <td align='right'> 8</td> <td align='right'> 0</td> <td colspan='2'> a[ppm] </td> </tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td align='right'> 0</td> <td align='right'> 8</td> <td colspan='2'> a[banco-estado] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 8 </td> <td style='background-color: blanchedalmond'> 8</td> </tr>
+</tbody><tbody>
 <tr><td colspan='4'> alectrico® SpA</td> </tr> 
 <tr><td colspan='4'> ( 31 de noviembre	2021	 ) </td> </tr>
 <tr><td colspan='8'> Partida 187: Por ajuste del Debito Fiscal Contra el Credito Fiscal, mes de noviembre-Por pago del ppm, con factor de  0.00125 mes noviembre </td></tr>
@@ -3898,6 +4218,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <tr style='background-color: lightyellow'>  <td> </td> <td align='right'> 0</td> <td align='right'> 307520</td> <td colspan='2'> a[banco-estado] </td> </tr>
 <tr style='background-color: azure'>  <td> </td> <td align='right'> 307520 </td> <td align='right'> 0 </td> <td> </td><td> p[salarios-por-pagar] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 307520 </td> <td style='background-color: blanchedalmond'> 307520</td> </tr>
+</tbody><tbody>
 <tr><td colspan='4'> alectrico® SpA</td> </tr> 
 <tr><td colspan='4'> ( 8 de diciembre	2021	 ) </td> </tr>
 <tr><td colspan='8'> Partida 188: pagando-remuneraciones </td></tr>
@@ -3922,6 +4243,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <tr style='background-color: lightyellow'>  <td> </td> <td align='right'> 8395</td> <td align='right'> 0</td> <td colspan='2'> a[insumos] </td> </tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td align='right'> 0</td> <td align='right'> 9990</td> <td colspan='2'> a[banco-estado] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 9990 </td> <td style='background-color: blanchedalmond'> 9990</td> </tr>
+</tbody><tbody>
 <tr><td colspan='4'> alectrico® SpA</td> </tr> 
 <tr><td colspan='4'> ( 1 de diciembre	2021	 ) </td> </tr>
 <tr><td colspan='8'> Partida 189: Por pack 3M de máscaras N95 </td></tr>
@@ -3947,6 +4269,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <tr style='background-color: lightyellow'>  <td> </td> <td align='right'> 6666</td> <td align='right'> 0</td> <td colspan='2'> a[banco-estado] </td> </tr>
 <tr style='background-color: gold'>  <td> </td> <td align='right'>0 </td> <td align='right'> 6666</td> <td> </td> <td> r[ingresos-brutos] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 6666 </td> <td style='background-color: blanchedalmond'> 6666</td> </tr>
+</tbody><tbody>
 <tr><td colspan='4'> alectrico® SpA</td> </tr> 
 <tr><td colspan='4'> ( 9 de diciembre	2021	 ) </td> </tr>
 <tr><td colspan='8'> Partida 195: Por venta en registro de compra-ventas del SII folio: 8 de visita-huelen-pago-5-6 a gonzalo </td></tr>
@@ -3972,6 +4295,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <tr style='background-color: lightyellow'>  <td> </td> <td align='right'> 6666</td> <td align='right'> 0</td> <td colspan='2'> a[banco-estado] </td> </tr>
 <tr style='background-color: gold'>  <td> </td> <td align='right'>0 </td> <td align='right'> 6666</td> <td> </td> <td> r[ingresos-brutos] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 6666 </td> <td style='background-color: blanchedalmond'> 6666</td> </tr>
+</tbody><tbody>
 <tr><td colspan='4'> alectrico® SpA</td> </tr> 
 <tr><td colspan='4'> ( 28 de diciembre	2021	 ) </td> </tr>
 <tr><td colspan='8'> Partida 196: Por venta en registro de compra-ventas del SII folio: 9 de visita-huelen-pago-6-6 a gonzalo </td></tr>
@@ -3998,6 +4322,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <tr style='background-color: azure'>  <td> </td> <td align='right'> 0 </td> <td align='right'> 17696 </td> <td> </td><td> p[iva-debito] </td> </tr>
 <tr style='background-color: gold'>  <td> </td> <td align='right'>0 </td> <td align='right'> 93137</td> <td> </td> <td> r[ingresos-brutos] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 110833 </td> <td style='background-color: blanchedalmond'> 110833</td> </tr>
+</tbody><tbody>
 <tr><td colspan='4'> alectrico® SpA</td> </tr> 
 <tr><td colspan='4'> ( 9 de diciembre	2021	 ) </td> </tr>
 <tr><td colspan='8'> Partida 197: Por venta en registro de compra-ventas del SII folio: 21 de los-capitanes-pago-5-de-6 a gonzalo </td></tr>
@@ -4024,6 +4349,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <tr style='background-color: azure'>  <td> </td> <td align='right'> 0 </td> <td align='right'> 17696 </td> <td> </td><td> p[iva-debito] </td> </tr>
 <tr style='background-color: gold'>  <td> </td> <td align='right'>0 </td> <td align='right'> 93137</td> <td> </td> <td> r[ingresos-brutos] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 110833 </td> <td style='background-color: blanchedalmond'> 110833</td> </tr>
+</tbody><tbody>
 <tr><td colspan='4'> alectrico® SpA</td> </tr> 
 <tr><td colspan='4'> ( 26 de diciembre	2021	 ) </td> </tr>
 <tr><td colspan='8'> Partida 198: Por venta en registro de compra-ventas del SII folio: 22 de los-capitanes-pago-6-de-6 a gonzalo </td></tr>
@@ -4050,11 +4376,38 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <tr style='background-color: lightyellow'>  <td> </td> <td align='right'> 10000</td> <td align='right'> 0</td> <td colspan='2'> a[caja] </td> </tr>
 <tr style='background-color: gold'>  <td> </td> <td align='right'>0 </td> <td align='right'> 30000</td> <td> </td> <td> r[ingresos-brutos] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 30000 </td> <td style='background-color: blanchedalmond'> 30000</td> </tr>
+</tbody><tbody>
 <tr><td colspan='4'> alectrico® SpA</td> </tr> 
 <tr><td colspan='4'> ( 31 de diciembre	2021	 ) </td> </tr>
 <tr><td colspan='8'> Partida 199: Por venta a gonzalo </td></tr>
 <tr><td colspan = '8'> vender-al-credito-y-efectivo-exento</td> </tr>
 <tr style='background-color: aliceblue'> <td colspan = '8'> <img src='../factura-propia-exenta-10.png'></td> </tr>
+</tbody>
+</table>
+<p style='page-break-before: always;'>&nbsp;</p>
+<br> 
+<p style='color: white; background-color: red'> Reclamado en SII</p>
+<br> 
+- [x] no-incluir: Partida que estando en RCV SII se estimó no incluir en la contabilidad financiera
+- [x] tipo de asiento: 33
+- [x] folio: 44204963
+- [x] a corregir: Reclamado en SII
+- [ ] rcv
+- [ ] libro-diario
+- [ ] ccm
+- [x] revisado
+![](../revisado.png)
+<table id='Partida-200'>
+<thead> <th style='background-color: lavender' colspan='6'>Partida 200</th></thead>
+<tbody>
+<tr> <td> </td> <td style='background-color: blanchedalmond'> 0 </td> <td style='background-color: blanchedalmond'> 0</td> </tr>
+</tbody><tbody>
+<tr><td colspan='4'> alectrico® SpA</td> </tr> 
+<tr><td colspan='4'> ( 10 de diciembre	2021	 ) </td> </tr>
+<tr><td colspan='8'> Partida 200: Por Gasto Administrativo: Servicio de Datos y Telefonía de octubre. </td></tr>
+<tr> <td colspan='7'>efectuado a entel </td> </tr>
+<tr><td colspan = '8'> gastar-en-administracion-afecto</td> </tr>
+<tr style='background-color: aliceblue'> <td colspan = '8'> <img src='../factura-afecta-entel-44204963.png'></td> </tr>
 </tbody>
 </table>
 <p style='page-break-before: always;'>&nbsp;</p>
@@ -4076,12 +4429,38 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <tr style='background-color: lightyellow'>  <td> </td> <td align='right'> 0</td> <td align='right'> 8242</td> <td colspan='2'> a[caja] </td> </tr>
 <tr style='color: white; background-color: black'>  <td> </td> <td align='right'>6926 </td> <td align='right'> 0</td> <td> </td> <td> r[gastos-administrativos] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 8242 </td> <td style='background-color: blanchedalmond'> 8242</td> </tr>
+</tbody><tbody>
 <tr><td colspan='4'> alectrico® SpA</td> </tr> 
 <tr><td colspan='4'> ( 13 de diciembre	2021	 ) </td> </tr>
 <tr><td colspan='8'> Partida 201: Por Gasto Administrativo: Servicio de Datos y Telefonía de octubre. </td></tr>
 <tr> <td colspan='7'>efectuado a entel </td> </tr>
 <tr><td colspan = '8'> gastar-en-administracion-afecto</td> </tr>
 <tr style='background-color: aliceblue'> <td colspan = '8'> <img src='../factura-afecta-entel-44123442.png'></td> </tr>
+</tbody>
+</table>
+<p style='page-break-before: always;'>&nbsp;</p>
+<br> 
+<p style='color: white; background-color: red'> Lo reclamé por error en CCM de SII. No tiene efecto en mi contabilidad</p>
+<br> 
+- [x] no-incluir: Partida que estando en RCV SII se estimó no incluir en la contabilidad financiera
+- [x] tipo de asiento: 61
+- [x] a corregir: Lo reclamé por error en CCM de SII. No tiene efecto en mi contabilidad
+- [ ] rcv
+- [ ] libro-diario
+- [ ] ccm
+- [x] revisado
+![](../revisado.png)
+<table id='Partida-202'>
+<thead> <th style='background-color: lavender' colspan='6'>Partida 202</th></thead>
+<tbody>
+<tr> <td> </td> <td style='background-color: blanchedalmond'> 0 </td> <td style='background-color: blanchedalmond'> 0</td> </tr>
+</tbody><tbody>
+<tr><td colspan='4'> alectrico® SpA</td> </tr> 
+<tr><td colspan='4'> ( 7 de diciembre	2021	 ) </td> </tr>
+<tr><td colspan='8'> Partida 202: Devolución a subcuenta entel por Por Gasto Administrativo: Servicio de Datos y Telefonía: pago julio. mes diciembre </td></tr>
+<tr> <td colspan='7'>efectuado a subcuenta </td> </tr>
+<tr><td colspan = '8'> dar-cuenta-de-nota-de-credito-de-factura-reclamada-de-proveedor</td> </tr>
+<tr style='background-color: aliceblue'> <td colspan = '8'> <img src='../nota-de-credito-entel-6744009.png'></td> </tr>
 </tbody>
 </table>
 <p style='page-break-before: always;'>&nbsp;</p>
@@ -4100,6 +4479,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <tr style='background-color: lightyellow'>  <td> </td> <td align='right'> 2150000</td> <td align='right'> 0</td> <td colspan='2'> a[intangibles] </td> </tr>
 <tr style='background-color: gold'>  <td> </td> <td align='right'>0 </td> <td align='right'> 2150000</td> <td> </td> <td> r[salarios] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 2150000 </td> <td style='background-color: blanchedalmond'> 2150000</td> </tr>
+</tbody><tbody>
 <tr><td colspan='4'> alectrico® SpA</td> </tr> 
 <tr><td colspan='4'> ( 31 de diciembre	2021	 ) </td> </tr>
 <tr><td colspan='8'> Partida 203: Por Activación de Gastos Diferidos por la Construcción de la plataforma alectrico. </td></tr>
@@ -4121,6 +4501,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <tr style='background-color: lightyellow'>  <td> </td> <td align='right'> 0</td> <td align='right'> 530147</td> <td colspan='2'> a[insumos] </td> </tr>
 <tr style='color: white; background-color: black'>  <td> </td> <td align='right'>530147 </td> <td align='right'> 0</td> <td> </td> <td> r[costos-de-ventas] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 530147 </td> <td style='background-color: blanchedalmond'> 530147</td> </tr>
+</tbody><tbody>
 <tr><td colspan='4'> alectrico® SpA</td> </tr> 
 <tr><td colspan='4'> ( 31 de diciembre	2021	 ) </td> </tr>
 <tr><td colspan='8'> Partida 205: Por Reconocimiento de Existencias de Insumos como Costos de Ventas. </td></tr>
@@ -4146,6 +4527,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <tr style='background-color: azure'>  <td> </td> <td align='right'> 0 </td> <td align='right'> 307520 </td> <td> </td><td> p[salarios-por-pagar] </td> </tr>
 <tr style='color: white; background-color: black'>  <td> </td> <td align='right'>400000 </td> <td align='right'> 0</td> <td> </td> <td> r[salarios] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 400000 </td> <td style='background-color: blanchedalmond'> 400000</td> </tr>
+</tbody><tbody>
 <tr><td colspan='4'> alectrico® SpA</td> </tr> 
 <tr><td colspan='4'> ( 20 de diciembre	2021	 ) </td> </tr>
 <tr><td colspan='8'> Partida 206: Declaración de Remuneraciones de alexander días trabajados: 7 Tramo Exento: 731308.5 Sueldo Bruto de: 400000 Tasa de Impuesto Único: 0.04 Monto de Impuesto Único: 0 </td></tr>
@@ -4168,6 +4550,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <tr style='background-color: lightyellow'>  <td> </td> <td align='right'> 800000</td> <td align='right'> 0</td> <td colspan='2'> a[banco-estado] </td> </tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td align='right'> 0</td> <td align='right'> 800000</td> <td colspan='2'> a[caja] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 800000 </td> <td style='background-color: blanchedalmond'> 800000</td> </tr>
+</tbody><tbody>
 <tr><td colspan='4'> alectrico® SpA</td> </tr> 
 <tr><td colspan='4'> ( 31 de diciembre	2021	 ) </td> </tr>
 <tr><td colspan='8'> Partida 207: nil </td></tr>
@@ -4192,6 +4575,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <tr style='color: white; background-color: black'>  <td> </td> <td align='right'>9804 </td> <td align='right'> 0</td> <td> </td> <td> r[depreciacion] </td> </tr>
 <tr style='color: white; background-color: black'>  <td> </td> <td align='right'>2417 </td> <td align='right'> 0</td> <td> </td> <td> r[amortizacion] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 12221 </td> <td style='background-color: blanchedalmond'> 12221</td> </tr>
+</tbody><tbody>
 <tr><td colspan='4'> alectrico® SpA</td> </tr> 
 <tr><td colspan='4'> ( 31 de diciembre	2021	 ) </td> </tr>
 <tr><td colspan='8'> Partida 208: Por amortizacion en diciembre de marca-alectrico-Por depreciacion en diciembre de celular-Por depreciacion en diciembre de taladro </td></tr>
@@ -4210,11 +4594,12 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <table id='Partida-209'>
 <thead> <th style='background-color: lavender' colspan='6'>Partida 209</th></thead>
 <tbody>
-<tr style='background-color: lightyellow'>  <td> </td> <td align='right'> 9942</td> <td align='right'> 0</td> <td colspan='2'> a[iva-credito] </td> </tr>
+<tr style='background-color: lightyellow'>  <td> </td> <td align='right'> 28235</td> <td align='right'> 0</td> <td colspan='2'> a[iva-credito] </td> </tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td align='right'> 287</td> <td align='right'> 0</td> <td colspan='2'> a[ppm] </td> </tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td align='right'> 0</td> <td align='right'> 287</td> <td colspan='2'> a[banco-estado] </td> </tr>
-<tr style='background-color: azure'>  <td> </td> <td align='right'> 0 </td> <td align='right'> 9942 </td> <td> </td><td> p[iva-debito] </td> </tr>
-<tr> <td> </td> <td style='background-color: blanchedalmond'> 10229 </td> <td style='background-color: blanchedalmond'> 10229</td> </tr>
+<tr style='background-color: azure'>  <td> </td> <td align='right'> 0 </td> <td align='right'> 28235 </td> <td> </td><td> p[iva-debito] </td> </tr>
+<tr> <td> </td> <td style='background-color: blanchedalmond'> 28522 </td> <td style='background-color: blanchedalmond'> 28522</td> </tr>
+</tbody><tbody>
 <tr><td colspan='4'> alectrico® SpA</td> </tr> 
 <tr><td colspan='4'> ( 31 de diciembre	2021	 ) </td> </tr>
 <tr><td colspan='8'> Partida 209: Por ajuste del Credito Fiscal Contra el Debito Fiscal, mes de diciembre-Por pago del ppm, con factor de  0.00125 mes diciembre </td></tr>
@@ -4234,7 +4619,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <p style='page-break-after: always;'>&nbsp;</p>
 <table id='Partida-1040' style='background-color:cornsilk'>
 <thead><th colspan='6'>Partida 1040</th></thead>
- <thead> <th> </th> <th> Código </th> <th>  Valor </th> <th> Descripción </th> </thead>
+<thead> <th> </th> <th> Código </th> <th>  Valor </th> <th> Descripción </th> </thead>
 <tbody>
  <tr> <td> </td> <td> 111 </td> <td align='right'>  5588 </td> <td> DEBITOS BOLETAS EMITIDAS  </td> </tr>
  <tr> <td> </td> <td> 538 </td> <td align='right'>  23464 </td> <td> TOTAL DEBITOS  </td> </tr>
@@ -4278,7 +4663,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <p style='page-break-after: always;'>&nbsp;</p>
 <table id='Partida-1041' style='background-color:cornsilk'>
 <thead><th colspan='6'>Partida 1041</th></thead>
- <thead> <th> </th> <th> Código </th> <th>  Valor </th> <th> Descripción </th> </thead>
+<thead> <th> </th> <th> Código </th> <th>  Valor </th> <th> Descripción </th> </thead>
 <tbody>
  <tr> <td> </td> <td> 111 </td> <td align='right'>  16 </td> <td> DEBITOS BOLETAS EMITIDAS  </td> </tr>
  <tr> <td> </td> <td> 511 </td> <td align='right'>  6344 </td> <td> CRED.IVA POR DCTOS. ELECTRONICOS  </td> </tr>
@@ -4317,7 +4702,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <p style='page-break-after: always;'>&nbsp;</p>
 <table id='Partida-1042' style='background-color:cornsilk'>
 <thead><th colspan='6'>Partida 1042</th></thead>
- <thead> <th> </th> <th> Código </th> <th>  Valor </th> <th> Descripción </th> </thead>
+<thead> <th> </th> <th> Código </th> <th>  Valor </th> <th> Descripción </th> </thead>
 <tbody>
  <tr> <td> </td> <td> 538 </td> <td align='right'>  5588 </td> <td> TOTAL DEBITOS  </td> </tr>
  <tr> <td> </td> <td> 511 </td> <td align='right'>  6217 </td> <td> CRED.IVA POR DCTOS. ELECTRONICOS  </td> </tr>
@@ -4352,7 +4737,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <p style='page-break-after: always;'>&nbsp;</p>
 <table id='Partida-1043' style='background-color:cornsilk'>
 <thead><th colspan='6'>Partida 1043</th></thead>
- <thead> <th> </th> <th> Código </th> <th>  Valor </th> <th> Descripción </th> </thead>
+<thead> <th> </th> <th> Código </th> <th>  Valor </th> <th> Descripción </th> </thead>
 <tbody>
  <tr> <td> </td> <td> 538 </td> <td align='right'>  4790 </td> <td> TOTAL DEBITOS  </td> </tr>
  <tr> <td> </td> <td> 511 </td> <td align='right'>  1822 </td> <td> CRED.IVA POR DCTOS. ELECTRONICOS  </td> </tr>
@@ -4389,7 +4774,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <p style='page-break-after: always;'>&nbsp;</p>
 <table id='Partida-1044' style='background-color:cornsilk'>
 <thead><th colspan='6'>Partida 1044</th></thead>
- <thead> <th> </th> <th> Código </th> <th>  Valor </th> <th> Descripción </th> </thead>
+<thead> <th> </th> <th> Código </th> <th>  Valor </th> <th> Descripción </th> </thead>
 <tbody>
  <tr> <td> </td> <td> 511 </td> <td align='right'>  5313 </td> <td> CRED.IVA POR DCTOS. ELECTRONICOS  </td> </tr>
  <tr> <td> </td> <td> 077 </td> <td align='right'>  39630 </td> <td> REMANENTE DE CREDITO FISC.  </td> </tr>
@@ -4423,7 +4808,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <p style='page-break-after: always;'>&nbsp;</p>
 <table id='Partida-1045' style='background-color:cornsilk'>
 <thead><th colspan='6'>Partida 1045</th></thead>
- <thead> <th> </th> <th> Código </th> <th>  Valor </th> <th> Descripción </th> </thead>
+<thead> <th> </th> <th> Código </th> <th>  Valor </th> <th> Descripción </th> </thead>
 <tbody>
  <tr> <td> </td> <td> 511 </td> <td align='right'>  7966 </td> <td> CRED.IVA POR DCTOS. ELECTRONICOS  </td> </tr>
  <tr> <td> </td> <td> 077 </td> <td align='right'>  47874 </td> <td> REMANENTE DE CREDITO FISC.  </td> </tr>
@@ -4453,12 +4838,12 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <p style='page-break-after: always;'>&nbsp;</p>
 <table id='Partida-1046' style='background-color:cornsilk'>
 <thead><th colspan='6'>Partida 1046</th></thead>
- <thead> <th> </th> <th> Código </th> <th>  Valor </th> <th> Descripción </th> </thead>
+<thead> <th> </th> <th> Código </th> <th>  Valor </th> <th> Descripción </th> </thead>
 <tbody>
  <tr> <td> </td> <td> 111 </td> <td align='right'>  0 </td> <td> DEBITOS BOLETAS EMITIDAS  </td> </tr>
  <tr> <td> </td> <td> 538 </td> <td align='right'>  28873 </td> <td> TOTAL DEBITOS  </td> </tr>
  <tr> <td> </td> <td> 511 </td> <td align='right'>  21718 </td> <td> CRED.IVA POR DCTOS. ELECTRONICOS  </td> </tr>
- <tr> <td> </td> <td> 077 </td> <td align='right'>  51956 </td> <td> REMANENTE DE CREDITO FISC.  </td> </tr>
+ <tr> <td> </td> <td> 077 </td> <td align='right'>  23083 </td> <td> REMANENTE DE CREDITO FISC.  </td> </tr>
  <tr> <td> </td> <td> 504 </td> <td align='right'>  47775 </td> <td> REMANENTE CREDITO FISCAL MES ANTERIOR.  </td> </tr>
  <tr> <td> </td> <td> 062 </td> <td align='right'>  1092 </td> <td> PPM NETO DETERMINADO </td> </tr>
  <tr> <td> </td> <td> 527 </td> <td align='right'>  0 </td> <td> CANT.NOTAS DE CREDITO RECIBIDAS </td> </tr>
@@ -4466,9 +4851,9 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
  <tr> <td> </td> <td> 524 </td> <td align='right'>  1 </td> <td> TOTAL FACTURA ACTIVO FIJO </td> </tr>
  <tr> <td> </td> <td> 525 </td> <td align='right'>  12772 </td> <td> CRÉD. RECUP. Y REINT. FACT. ACTIVO FIJO </td> </tr>
  <tr> <td> </td> <td> 509 </td> <td align='right'>  1 </td> <td> QtyNOTAS CREDITO EMITIDAS/Ref FACTURA | NOTA-CREDITO-RECIBIDA-RETENCION-PARCIAL-CAMBIO-SUEJETO </td> </tr>
+ <tr> <td> </td> <td> 510 </td> <td align='right'>  106176 </td> <td> DEBITO N.CREDITO EMITIDAS/Ref FACTURA | NOTA-CREDITO-RECIBIDA-RETENCION-PARCIAL-CAMBIO-SUJETO </td> </tr>
  <tr> <td> </td> <td> 758 </td> <td align='right'>  3 </td> <td> CANT. RECIBO DE PAGO MEDIOS ELECTRÓNICOS </td> </tr>
  <tr> <td> </td> <td> 759 </td> <td align='right'>  28872 </td> <td> DÉB. RECIBO DE PAGO MEDIOS ELECTRÓNICOS </td> </tr>
- <tr> <td> </td> <td> 510 </td> <td align='right'>  135049 </td> <td> DEBITO N.CREDITO EMITIDAS/Ref FACTURA | NOTA-CREDITO-RECIBIDA-RETENCION-PARCIAL-CAMBIO-SUJETO </td> </tr>
  <tr> <td> </td> <td> 586 </td> <td align='right'>  2 </td> <td> Qty Ventas/Servicios Exentos </td> </tr>
  <tr> <td> </td> <td> 142 </td> <td align='right'>  70000 </td> <td> Neto Ventas/Servicios Exentos </td> </tr>
  <tr> <td> </td> <td> 503 </td> <td align='right'>  2 </td> <td> CANT. FACTURAS EMITIDAS </td> </tr>
@@ -4500,12 +4885,12 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <p style='page-break-after: always;'>&nbsp;</p>
 <table id='Partida-1047' style='background-color:cornsilk'>
 <thead><th colspan='6'>Partida 1047</th></thead>
- <thead> <th> </th> <th> Código </th> <th>  Valor </th> <th> Descripción </th> </thead>
+<thead> <th> </th> <th> Código </th> <th>  Valor </th> <th> Descripción </th> </thead>
 <tbody>
  <tr> <td> </td> <td> 538 </td> <td align='right'>  6387 </td> <td> TOTAL DEBITOS  </td> </tr>
  <tr> <td> </td> <td> 511 </td> <td align='right'>  55003 </td> <td> CRED.IVA POR DCTOS. ELECTRONICOS  </td> </tr>
- <tr> <td> </td> <td> 077 </td> <td align='right'>  55070 </td> <td> REMANENTE DE CREDITO FISC.  </td> </tr>
- <tr> <td> </td> <td> 504 </td> <td align='right'>  52263 </td> <td> REMANENTE CREDITO FISCAL MES ANTERIOR.  </td> </tr>
+ <tr> <td> </td> <td> 077 </td> <td align='right'>  25627 </td> <td> REMANENTE DE CREDITO FISC.  </td> </tr>
+ <tr> <td> </td> <td> 504 </td> <td align='right'>  23105 </td> <td> REMANENTE CREDITO FISCAL MES ANTERIOR.  </td> </tr>
  <tr> <td> </td> <td> 062 </td> <td align='right'>  584 </td> <td> PPM NETO DETERMINADO </td> </tr>
  <tr> <td> </td> <td> 527 </td> <td align='right'>  0 </td> <td> CANT.NOTAS DE CREDITO RECIBIDAS </td> </tr>
  <tr> <td> </td> <td> 509 </td> <td align='right'>  1 </td> <td> QtyNOTAS CREDITO EMITIDAS/Ref FACTURA | NOTA-CREDITO-RECIBIDA-RETENCION-PARCIAL-CAMBIO-SUEJETO </td> </tr>
@@ -4544,12 +4929,12 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <p style='page-break-after: always;'>&nbsp;</p>
 <table id='Partida-1048' style='background-color:cornsilk'>
 <thead><th colspan='6'>Partida 1048</th></thead>
- <thead> <th> </th> <th> Código </th> <th>  Valor </th> <th> Descripción </th> </thead>
+<thead> <th> </th> <th> Código </th> <th>  Valor </th> <th> Descripción </th> </thead>
 <tbody>
  <tr> <td> </td> <td> 111 </td> <td align='right'>  4407 </td> <td> DEBITOS BOLETAS EMITIDAS  </td> </tr>
  <tr> <td> </td> <td> 511 </td> <td align='right'>  14958 </td> <td> CRED.IVA POR DCTOS. ELECTRONICOS  </td> </tr>
- <tr> <td> </td> <td> 077 </td> <td align='right'>  18378 </td> <td> REMANENTE DE CREDITO FISC.  </td> </tr>
- <tr> <td> </td> <td> 504 </td> <td align='right'>  55273 </td> <td> REMANENTE CREDITO FISCAL MES ANTERIOR.  </td> </tr>
+ <tr> <td> </td> <td> 077 </td> <td align='right'>  296 </td> <td> REMANENTE DE CREDITO FISC.  </td> </tr>
+ <tr> <td> </td> <td> 504 </td> <td align='right'>  25734 </td> <td> REMANENTE CREDITO FISCAL MES ANTERIOR.  </td> </tr>
  <tr> <td> </td> <td> 062 </td> <td align='right'>  890 </td> <td> PPM NETO DETERMINADO </td> </tr>
  <tr> <td> </td> <td> 527 </td> <td align='right'>  0 </td> <td> CANT.NOTAS DE CREDITO RECIBIDAS </td> </tr>
  <tr> <td> </td> <td> 510 </td> <td align='right'>  2013 </td> <td> DEBITO N.CREDITO EMITIDAS/Ref FACTURA | NOTA-CREDITO-RECIBIDA-RETENCION-PARCIAL-CAMBIO-SUJETO </td> </tr>
@@ -4585,7 +4970,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <p style='page-break-after: always;'>&nbsp;</p>
 <table id='Partida-1049' style='background-color:cornsilk'>
 <thead><th colspan='6'>Partida 1049</th></thead>
- <thead> <th> </th> <th> Código </th> <th>  Valor </th> <th> Descripción </th> </thead>
+<thead> <th> </th> <th> Código </th> <th>  Valor </th> <th> Descripción </th> </thead>
 <tbody>
  <tr> <td> </td> <td> 111 </td> <td align='right'>  3990 </td> <td> DEBITOS BOLETAS EMITIDAS  </td> </tr>
  <tr> <td> </td> <td> 511 </td> <td align='right'>  2257 </td> <td> CRED.IVA POR DCTOS. ELECTRONICOS  </td> </tr>
@@ -4623,7 +5008,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <p style='page-break-after: always;'>&nbsp;</p>
 <table id='Partida-1050' style='background-color:cornsilk'>
 <thead><th colspan='6'>Partida 1050</th></thead>
- <thead> <th> </th> <th> Código </th> <th>  Valor </th> <th> Descripción </th> </thead>
+<thead> <th> </th> <th> Código </th> <th>  Valor </th> <th> Descripción </th> </thead>
 <tbody>
  <tr> <td> </td> <td> 511 </td> <td align='right'>  4169 </td> <td> CRED.IVA POR DCTOS. ELECTRONICOS  </td> </tr>
  <tr> <td> </td> <td> 062 </td> <td align='right'>  8 </td> <td> PPM NETO DETERMINADO </td> </tr>
@@ -4655,7 +5040,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <p style='page-break-after: always;'>&nbsp;</p>
 <table id='Partida-1051' style='background-color:cornsilk'>
 <thead><th colspan='6'>Partida 1051</th></thead>
- <thead> <th> </th> <th> Código </th> <th>  Valor </th> <th> Descripción </th> </thead>
+<thead> <th> </th> <th> Código </th> <th>  Valor </th> <th> Descripción </th> </thead>
 <tbody>
  <tr> <td> </td> <td> 511 </td> <td align='right'>  2911 </td> <td> CRED.IVA POR DCTOS. ELECTRONICOS  </td> </tr>
  <tr> <td> </td> <td> 062 </td> <td align='right'>  287 </td> <td> PPM NETO DETERMINADO </td> </tr>
@@ -4783,16 +5168,15 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
  <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 509</td> <td align='right'>   <a href= '/alectrico-2021/libro-diario#Partida-114'> Ir a partida: 114</a> </td> <td colspan='3' align='left' > Nota de Crédito SII: 17 que anula Factura SII 14 de revision-electrica a gonzalo </td>  </tr>
  <tr> <td>    <a href= '/alectrico-2021/libro-diario#Partida-1040'>enero</a>  </td> <td> 510 </td> <td align='right' >  5588 </td> <td> DEBITO N.CREDITO EMITIDAS/Ref FACTURA | NOTA-CREDITO-RECIBIDA-RETENCION-PARCIAL-CAMBIO-SUJETO </td> </tr>
  <tr> <td>    <a href= '/alectrico-2021/libro-diario#Partida-1041'>febrero</a>  </td> <td> 510 </td> <td align='right' >  5588 </td> <td> DEBITO N.CREDITO EMITIDAS/Ref FACTURA | NOTA-CREDITO-RECIBIDA-RETENCION-PARCIAL-CAMBIO-SUJETO </td> </tr>
+ <tr> <td>    <a href= '/alectrico-2021/libro-diario#Partida-1046'>julio</a>  </td> <td> 510 </td> <td align='right' >  106176 </td> <td> DEBITO N.CREDITO EMITIDAS/Ref FACTURA | NOTA-CREDITO-RECIBIDA-RETENCION-PARCIAL-CAMBIO-SUJETO </td> </tr>
  <tr> <td>    <a href= '/alectrico-2021/libro-diario#Partida-1048'>septiembre</a>  </td> <td> 510 </td> <td align='right' >  2013 </td> <td> DEBITO N.CREDITO EMITIDAS/Ref FACTURA | NOTA-CREDITO-RECIBIDA-RETENCION-PARCIAL-CAMBIO-SUJETO </td> </tr>
- <tr> <td>    <a href= '/alectrico-2021/libro-diario#Partida-1046'>julio</a>  </td> <td> 510 </td> <td align='right' >  135049 </td> <td> DEBITO N.CREDITO EMITIDAS/Ref FACTURA | NOTA-CREDITO-RECIBIDA-RETENCION-PARCIAL-CAMBIO-SUJETO </td> </tr>
  <tr> <td>    <a href= '/alectrico-2021/libro-diario#Partida-1047'>agosto</a>  </td> <td> 510 </td> <td align='right' >  23589 </td> <td> DEBITO N.CREDITO EMITIDAS/Ref FACTURA | NOTA-CREDITO-RECIBIDA-RETENCION-PARCIAL-CAMBIO-SUJETO </td> </tr>
- <tr height='50 px' style='font-weight:bold; background-color: lightgreen'> <td>  <a href= '/alectrico-2021/libro-diario#Partida-1052'>^</a> </td> <td> 510 </td> <td align='right' >  171827 </td> <td> Total Anual </td> </tr>
+ <tr height='50 px' style='font-weight:bold; background-color: lightgreen'> <td>  <a href= '/alectrico-2021/libro-diario#Partida-1052'>^</a> </td> <td> 510 </td> <td align='right' >  142954 </td> <td> Total Anual </td> </tr>
  <tr style='font-weight:bold; color:white; background-color: red'> <td colspan='4' > LINEA F22: 'Notas de Crédito emitidas por ventas y servicios'. </td> </tr>
  <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 510</td> <td align='right'>   <a href= '/alectrico-2021/libro-diario#Partida-7'> Ir a partida: 7</a> </td> <td colspan='3' align='left' > Devolución a subcuenta ventas-con-eboleta-afecta por Por la anulacion del monto total de la boleta afecta con folio 7 del 13 de enero. Se refiere a una transaccion ya cubiertas por un voucher. mes enero </td>  </tr>
  <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 510</td> <td align='right'>   <a href= '/alectrico-2021/libro-diario#Partida-141'> Ir a partida: 141</a> </td> <td colspan='3' align='left' > Devolución a subcuenta ventas-con-eboleta-afecta por Por la anulacion del monto total de la boleta afecta con folio 7 del 13 de enero. Se refiere a una transaccion ya cubierta por un voucher. mes febrero </td>  </tr>
- <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 510</td> <td align='right'>   <a href= '/alectrico-2021/libro-diario#Partida-148'> Ir a partida: 148</a> </td> <td colspan='3' align='left' > Devolución a subcuenta ventas-con-eboleta-afecta por Por la anulacion del monto total de la boleta afecta con folio 11 del 24 de enero. Por error en el monto. mes septiembre </td>  </tr>
  <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 510</td> <td align='right'>   <a href= '/alectrico-2021/libro-diario#Partida-82'> Ir a partida: 82</a> </td> <td colspan='3' align='left' > Nota de Crédito SII: 15 que anula Factura SII 11 de recableado a gonzalo </td>  </tr>
- <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 510</td> <td align='right'>   <a href= '/alectrico-2021/libro-diario#Partida-87'> Ir a partida: 87</a> </td> <td colspan='3' align='left' > Devolución a subcuenta ventas-con-voucher-afecto por Anula Vouchers para Ser Reemplazados por Otros Docs. mes julio </td>  </tr>
+ <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 510</td> <td align='right'>   <a href= '/alectrico-2021/libro-diario#Partida-148'> Ir a partida: 148</a> </td> <td colspan='3' align='left' > Devolución a subcuenta ventas-con-eboleta-afecta por Por la anulacion del monto total de la boleta afecta con folio 11 del 24 de enero. Por error en el monto. mes septiembre </td>  </tr>
  <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 510</td> <td align='right'>   <a href= '/alectrico-2021/libro-diario#Partida-114'> Ir a partida: 114</a> </td> <td colspan='3' align='left' > Nota de Crédito SII: 17 que anula Factura SII 14 de revision-electrica a gonzalo </td>  </tr>
  <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 510</td> <td align='right'>   <a href= '/alectrico-2021/libro-diario#Partida-123'> Ir a partida: 123</a> </td> <td colspan='3' align='left' > Devolución a subcuenta ventas-con-voucher-afecto por Por la anulacion del voucher pues cliente necesita factura afecta. mes agosto </td>  </tr>
  <tr> <td>    <a href= '/alectrico-2021/libro-diario#Partida-1049'>octubre</a>  </td> <td> 511 </td> <td align='right' >  2257 </td> <td> CRED.IVA POR DCTOS. ELECTRONICOS  </td> </tr>
@@ -5074,6 +5458,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
  <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 759</td> <td align='right'>   <a href= '/alectrico-2021/libro-diario#Partida-77'> Ir a partida: 77</a> </td> <td colspan='3' align='left' > Por rendición de vouchers de julio de 2021 </td>  </tr>
  <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 759</td> <td align='right'>   <a href= '/alectrico-2021/libro-diario#Partida-92'> Ir a partida: 92</a> </td> <td colspan='3' align='left' > Por rendición de vouchers de agosto de 2021 </td>  </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 0 </td> <td style='background-color: blanchedalmond'> 0</td> </tr>
+</tbody><tbody>
 <tr><td colspan='4'> alectrico® SpA</td> </tr> 
 <tr><td colspan='4'> ( 31 de enero	2021	 ) </td> </tr>
 <tr><td colspan='8'> Partida 1052: Formulario F22 2021 </td></tr>
