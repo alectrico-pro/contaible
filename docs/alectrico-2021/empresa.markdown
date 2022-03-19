@@ -2,6 +2,7 @@
 permalink: /alectrico-2021/libro-diario 
 layout: page
 --- 
+<script src='{{ base.url | prepend: site.url }}/assets/main.js'></script>
 
 Contabilidad para Necios® usa el siguiente código de colores para este documento.
 <ul>

@@ -79,6 +79,7 @@
    ( printout k "permalink: /" ?empresa "/libro-diario " crlf)
    ( printout k "layout: page" crlf)
    ( printout k "--- " crlf)
+   ( printout k "<script src='{{ base.url | prepend: site.url }}/assets/main.js'></script>" crlf)
    ( printout k "" crlf)
    ( printout k "Contabilidad para Necios® usa el siguiente código de colores para este documento." crlf)
    ( printout k "<ul>" crlf)
