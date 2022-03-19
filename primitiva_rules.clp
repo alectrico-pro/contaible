@@ -117,7 +117,7 @@
 
    ( revision
     (partida ?numero)
-    (rechazado false)
+    (no-incluir false)
    )
 
   ?cargo <- (cargo (recibida ?recibida) (activo-fijo ?activo-fijo) (qty ?qty-cargo) (tipo-de-documento ?tipo-de-documento) (electronico ?electronico) (partida ?numero) (realizado false) (empresa ?empresa) (dia ?dia) (mes ?mes) (ano ?ano) (cuenta ?nombre) (monto ?monto) (glosa ?glosa) )
@@ -156,7 +156,7 @@
 
    ( revision
     (partida ?numero)
-    (rechazado false)
+    (no-incluir false)
    )
 
 
@@ -206,7 +206,7 @@
    ( partida (dia ?dia) (mes ?mes) (ano ?ano) (numero ?numero))
    ( revision
     (partida ?numero)
-    (rechazado false)
+    (no-incluir false)
    )
 
    ( correccion-monetaria-anual
@@ -233,7 +233,7 @@
    ( partida (dia ?dia) (mes ?mes) (ano ?ano) (numero ?numero))
    ( revision
     (partida ?numero)
-    (rechazado false)
+    (no-incluir false)
    )
 
 

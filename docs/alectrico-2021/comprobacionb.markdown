@@ -17,6 +17,6 @@ Se han practicado liquidaciones, por lo que NO se muestran cuentas nominales
 <tbody>
 </tbody>
 <tfoot>
-<tr> <td></td> <td align='right'>4893927</td> <td align='right'>5529851</td><td> | </td> <td align='right'>0</td> <td align='right'>635924</td> </tr>
+<tr> <td></td> <td align='right'>5052424</td> <td align='right'>5366248</td><td> | </td> <td align='right'>32652</td> <td align='right'>346476</td> </tr>
 </tfoot>
 </table>

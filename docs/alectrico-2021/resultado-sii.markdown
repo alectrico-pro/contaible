@@ -13,14 +13,14 @@ Se han practicado liquidaciones, por lo que NO se muestran cuentas nominales
 <thead> <th></th><th> </th> <th align='center' colspan= '2'>SUMAS</th><th> Padre </th> </thead>
 <thead> <th></th><th></th>  <th>DEBER</th> <th>ACREEDOR</th> </thead>
 <tbody>
-<thead> <th></th><th colspan='4'> T O T A L    A C T I V O  </th> <th> 3228980</th> </thead>
+<thead> <th></th><th colspan='4'> T O T A L    A C T I V O  </th> <th> 2983586</th> </thead>
 <thead> <th></th><th colspan='4'> A C T I V O    F I J O</th> <th> 2490383</th> </thead>
-<thead> <th></th><th colspan='4'> A C T I V O    C I R C U L A N T E</th> <th> 738597</th> </thead>
+<thead> <th></th><th colspan='4'> A C T I V O    C I R C U L A N T E</th> <th> 493203</th> </thead>
 <thead> <th></th><th>retencion-de-iva-articulo-11</th><th> 0</th> </thead>
-<thead> <th></th><th>iva-credito</th><th> 72931</th> </thead>
+<thead> <th></th><th>iva-credito</th><th> 17039</th> </thead>
 <thead> <th></th><th>ppm</th><th> 4002</th> </thead>
-<thead> <th></th><th>banco-estado</th><th> 536652</th> </thead>
-<thead> <th></th><th>caja</th><th> 110913</th> </thead>
+<thead> <th></th><th>banco-estado</th><th> 363263</th> </thead>
+<thead> <th></th><th>caja</th><th> 101437</th> </thead>
 <thead> <th></th><th>insumos</th><th> 0</th> </thead>
 <thead> <th></th><th>cuentas-por-cobrar</th><th> 51203</th> </thead>
 <thead> <th></th><th>intangibles</th><th> 2387369</th> </thead>
@@ -28,7 +28,7 @@ Se han practicado liquidaciones, por lo que NO se muestran cuentas nominales
 <thead> <th></th><th>herramientas</th><th> 218470</th> </thead>
 <thead> <th></th><th>amortizacion-acumulada-intangibles</th><th> 0</th> </thead>
 <thead> <th></th><th>depreciacion-acumulada-herramientas</th><th> 0</th> </thead>
-<thead> <th></th><th colspan='4'> G A S T O S    P R O M O C I O N A L E S </th> <th> 206576</th> </thead>
+<thead> <th></th><th colspan='4'> G A S T O S    P R O M O C I O N A L E S </th> <th> 203635</th> </thead>
 <tr style='background-color: lavender'>
 <td> julio</td><td><a href= '/alectrico-2021/libro-diario#Partida-85'>85</a></td><td><small> eugenio </small> </td> <td align='right'> 1764</td> <td align='right'>0</td> <td> gastos-promocionales</td>
 </tr>
@@ -60,12 +60,9 @@ Se han practicado liquidaciones, por lo que NO se muestran cuentas nominales
 <td> junio</td><td><a href= '/alectrico-2021/libro-diario#Partida-39'>39</a></td><td><small> maria-jose </small> </td> <td align='right'> 15000</td> <td align='right'>0</td> <td> gastos-promocionales</td>
 </tr>
 <tr style='background-color: lavender'>
-<td> mayo</td><td><a href= '/alectrico-2021/libro-diario#Partida-35'>35</a></td><td><small> test-animation-video-maker </small> </td> <td align='right'> 2941</td> <td align='right'>0</td> <td> gastos-promocionales</td>
-</tr>
-<tr style='background-color: lavender'>
 <td> febrero</td><td><a href= '/alectrico-2021/libro-diario#Partida-18'>18</a></td><td><small> embros </small> </td> <td align='right'> 20992</td> <td align='right'>0</td> <td> gastos-promocionales</td>
 </tr>
-<thead> <th></th><th colspan='4'> G A S T O S     A D M I N I S T R A T I V O S </th> <th> 209020</th></thead>
+<thead> <th></th><th colspan='4'> G A S T O S     A D M I N I S T R A T I V O S </th> <th> 218496</th></thead>
 <tr style='background-color: lavender'>
 <td> diciembre</td><td><a href= '/alectrico-2021/libro-diario#Partida-201'>201</a></td><td><small> entel </small> </td> <td align='right'> 6926</td> <td align='right'>0</td> <td> gastos-administrativos</td>
 </tr>
@@ -79,10 +76,16 @@ Se han practicado liquidaciones, por lo que NO se muestran cuentas nominales
 <td> noviembre</td><td><a href= '/alectrico-2021/libro-diario#Partida-171'>171</a></td><td><small> entel </small> </td> <td align='right'> 6926</td> <td align='right'>0</td> <td> gastos-administrativos</td>
 </tr>
 <tr style='background-color: lavender'>
+<td> octubre</td><td><a href= '/alectrico-2021/libro-diario#Partida-163'>163</a></td><td><small> cloudflare </small> </td> <td align='right'> 3775</td> <td align='right'>0</td> <td> gastos-administrativos</td>
+</tr>
+<tr style='background-color: lavender'>
 <td> octubre</td><td><a href= '/alectrico-2021/libro-diario#Partida-161'>161</a></td><td><small> entel </small> </td> <td align='right'> 6926</td> <td align='right'>0</td> <td> gastos-administrativos</td>
 </tr>
 <tr style='background-color: lavender'>
 <td> octubre</td><td><a href= '/alectrico-2021/libro-diario#Partida-160'>160</a></td><td><small> google-one </small> </td> <td align='right'> 1177</td> <td align='right'>0</td> <td> gastos-administrativos</td>
+</tr>
+<tr style='background-color: lavender'>
+<td> septiembre</td><td><a href= '/alectrico-2021/libro-diario#Partida-147'>147</a></td><td><small> cloudflare </small> </td> <td align='right'> 4149</td> <td align='right'>0</td> <td> gastos-administrativos</td>
 </tr>
 <tr style='background-color: lavender'>
 <td> septiembre</td><td><a href= '/alectrico-2021/libro-diario#Partida-145'>145</a></td><td><small> u-chile </small> </td> <td align='right'> 8361</td> <td align='right'>0</td> <td> gastos-administrativos</td>
@@ -91,10 +94,16 @@ Se han practicado liquidaciones, por lo que NO se muestran cuentas nominales
 <td> septiembre</td><td><a href= '/alectrico-2021/libro-diario#Partida-139'>139</a></td><td><small> entel </small> </td> <td align='right'> 6926</td> <td align='right'>0</td> <td> gastos-administrativos</td>
 </tr>
 <tr style='background-color: lavender'>
+<td> agosto</td><td><a href= '/alectrico-2021/libro-diario#Partida-109'>109</a></td><td><small> cloudflare </small> </td> <td align='right'> 4149</td> <td align='right'>0</td> <td> gastos-administrativos</td>
+</tr>
+<tr style='background-color: lavender'>
 <td> agosto</td><td><a href= '/alectrico-2021/libro-diario#Partida-107'>107</a></td><td><small> entel </small> </td> <td align='right'> 6926</td> <td align='right'>0</td> <td> gastos-administrativos</td>
 </tr>
 <tr style='background-color: lavender'>
 <td> agosto</td><td><a href= '/alectrico-2021/libro-diario#Partida-105'>105</a></td><td><small> entel </small> </td> <td align='right'> 40027</td> <td align='right'>0</td> <td> gastos-administrativos</td>
+</tr>
+<tr style='background-color: lavender'>
+<td> agosto</td><td><a href= '/alectrico-2021/libro-diario#Partida-104'>104</a></td><td><small> google-one </small> </td> <td align='right'> 1177</td> <td align='right'>0</td> <td> gastos-administrativos</td>
 </tr>
 <tr style='background-color: lavender'>
 <td> agosto</td><td><a href= '/alectrico-2021/libro-diario#Partida-98'>98</a></td><td><small> entel </small> </td> <td align='right'> 0</td> <td align='right'>40027</td> <td> gastos-administrativos</td>
@@ -107,6 +116,9 @@ Se han practicado liquidaciones, por lo que NO se muestran cuentas nominales
 </tr>
 <tr style='background-color: lavender'>
 <td> julio</td><td><a href= '/alectrico-2021/libro-diario#Partida-67'>67</a></td><td><small> ie </small> </td> <td align='right'> 1672</td> <td align='right'>0</td> <td> gastos-administrativos</td>
+</tr>
+<tr style='background-color: lavender'>
+<td> julio</td><td><a href= '/alectrico-2021/libro-diario#Partida-63'>63</a></td><td><small> google-one </small> </td> <td align='right'> 1177</td> <td align='right'>0</td> <td> gastos-administrativos</td>
 </tr>
 <tr style='background-color: lavender'>
 <td> junio</td><td><a href= '/alectrico-2021/libro-diario#Partida-49'>49</a></td><td><small> entel </small> </td> <td align='right'> 6926</td> <td align='right'>0</td> <td> gastos-administrativos</td>
@@ -128,12 +140,6 @@ Se han practicado liquidaciones, por lo que NO se muestran cuentas nominales
 </tr>
 <tr style='background-color: lavender'>
 <td> junio</td><td><a href= '/alectrico-2021/libro-diario#Partida-41'>41</a></td><td><small> google-one </small> </td> <td align='right'> 1177</td> <td align='right'>0</td> <td> gastos-administrativos</td>
-</tr>
-<tr style='background-color: lavender'>
-<td> mayo</td><td><a href= '/alectrico-2021/libro-diario#Partida-36'>36</a></td><td><small> google-one </small> </td> <td align='right'> 1176</td> <td align='right'>0</td> <td> gastos-administrativos</td>
-</tr>
-<tr style='background-color: lavender'>
-<td> mayo</td><td><a href= '/alectrico-2021/libro-diario#Partida-34'>34</a></td><td><small> cloudflare </small> </td> <td align='right'> 3775</td> <td align='right'>0</td> <td> gastos-administrativos</td>
 </tr>
 <tr style='background-color: lavender'>
 <td> mayo</td><td><a href= '/alectrico-2021/libro-diario#Partida-32'>32</a></td><td><small> trust </small> </td> <td align='right'> 19990</td> <td align='right'>0</td> <td> gastos-administrativos</td>
@@ -169,9 +175,9 @@ Se han practicado liquidaciones, por lo que NO se muestran cuentas nominales
 <tr style='background-color: lavender'>
 <td> diciembre</td><td> <a href= '/alectrico-2021/libro-diario#Partida-203'>203</a></td><td><small> plataforma-alectrico </small> </td> <td align='right'> 2150000</td> <td align='right'>0</td> <td> intangibles</td>
 </tr>
-<thead> <th></th><th colspan='4'> C O R R E C C I O N    M O N E T A R I A</th><th> 2912</th> </thead>
+<thead> <th></th><th colspan='4'> C O R R E C C I O N    M O N E T A R I A</th><th> 3523</th> </thead>
 <tr  style='background-color: lightyellow'>
-<td>nil</td><td><small> ganancia-por-correccion-monetaria </small> </td> <td align='right'> 0</td> <td align='right'>2912</td> <td> correccion-monetaria</td>
+<td>nil</td><td><small> ganancia-por-correccion-monetaria </small> </td> <td align='right'> 0</td> <td align='right'>3523</td> <td> correccion-monetaria</td>
 </tr>
 <tr style='background-color: lavender'>
 <td> enero</td><td> <a href= '/alectrico-2021/libro-diario#Partida-14333'>14333</a></td><td><small> ganancia-por-correccion-monetaria </small> </td> <td align='right'> 0</td> <td align='right'>33</td> <td> correccion-monetaria</td>
@@ -189,16 +195,16 @@ Se han practicado liquidaciones, por lo que NO se muestran cuentas nominales
 <td> mayo</td><td> <a href= '/alectrico-2021/libro-diario#Partida-372'>372</a></td><td><small> ganancia-por-correccion-monetaria </small> </td> <td align='right'> 0</td> <td align='right'>254</td> <td> correccion-monetaria</td>
 </tr>
 <tr style='background-color: lavender'>
-<td> junio</td><td> <a href= '/alectrico-2021/libro-diario#Partida-62'>62</a></td><td><small> ganancia-por-correccion-monetaria </small> </td> <td align='right'> 0</td> <td align='right'>279</td> <td> correccion-monetaria</td>
+<td> junio</td><td> <a href= '/alectrico-2021/libro-diario#Partida-62'>62</a></td><td><small> ganancia-por-correccion-monetaria </small> </td> <td align='right'> 0</td> <td align='right'>266</td> <td> correccion-monetaria</td>
 </tr>
 <tr style='background-color: lavender'>
-<td> julio</td><td> <a href= '/alectrico-2021/libro-diario#Partida-89'>89</a></td><td><small> ganancia-por-correccion-monetaria </small> </td> <td align='right'> 0</td> <td align='right'>220</td> <td> correccion-monetaria</td>
+<td> julio</td><td> <a href= '/alectrico-2021/libro-diario#Partida-89'>89</a></td><td><small> ganancia-por-correccion-monetaria </small> </td> <td align='right'> 0</td> <td align='right'>167</td> <td> correccion-monetaria</td>
 </tr>
 <tr style='background-color: lavender'>
-<td> agosto</td><td> <a href= '/alectrico-2021/libro-diario#Partida-126'>126</a></td><td><small> ganancia-por-correccion-monetaria </small> </td> <td align='right'> 0</td> <td align='right'>214</td> <td> correccion-monetaria</td>
+<td> agosto</td><td> <a href= '/alectrico-2021/libro-diario#Partida-126'>126</a></td><td><small> ganancia-por-correccion-monetaria </small> </td> <td align='right'> 0</td> <td align='right'>474</td> <td> correccion-monetaria</td>
 </tr>
 <tr style='background-color: lavender'>
-<td> septiembre</td><td> <a href= '/alectrico-2021/libro-diario#Partida-154'>154</a></td><td><small> ganancia-por-correccion-monetaria </small> </td> <td align='right'> 0</td> <td align='right'>260</td> <td> correccion-monetaria</td>
+<td> septiembre</td><td> <a href= '/alectrico-2021/libro-diario#Partida-154'>154</a></td><td><small> ganancia-por-correccion-monetaria </small> </td> <td align='right'> 0</td> <td align='right'>677</td> <td> correccion-monetaria</td>
 </tr>
 <tr style='background-color: lavender'>
 <td> octubre</td><td> <a href= '/alectrico-2021/libro-diario#Partida-168'>168</a></td><td><small> ganancia-por-correccion-monetaria </small> </td> <td align='right'> 0</td> <td align='right'>780</td> <td> correccion-monetaria</td>
