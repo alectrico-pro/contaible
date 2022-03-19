@@ -404,7 +404,7 @@
 )
 
 
-edeftemplate acumulador-mensual
+(deftemplate acumulador-mensual
   (slot tipo-de-documento)
   (slot qty (default 0))
   (slot cuenta)
@@ -628,7 +628,7 @@ edeftemplate acumulador-mensual
   (multislot partidas (type INTEGER) (default 0))
   (slot descripcion (default " "))
   (slot rechazado (default false) )
-  (slot ignorado-por-sii (defualut false))
+  (slot ignorado-por-sii (default false))
   (slot reclamado (default false) )
   (slot no-incluir (default false))
   (slot dia)
@@ -655,6 +655,7 @@ edeftemplate acumulador-mensual
   (slot rechazado (default false) )
   (slot reclamado (default false) )
   (slot no-incluir (default false))
+  (slot ignorar (default false))
   (slot dia)
   (slot mes)
   (slot ano)

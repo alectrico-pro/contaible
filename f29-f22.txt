@@ -8,6 +8,6 @@
 (f29-f22 (codigo-f29 510) (linea-f22 "Notas de Crédito emitidas por ventas y servicios" ))
 (f29-f22 (codigo-f29 709) (linea-f22 "Notas de Crédito emitidas por ventas y servicios" ))
 (f29-f22 (codigo-f29 734) (linea-f22 "Notas de Crédito emitidas por ventas y servicios" ))
-(f29-f22 (codigo-f29 513) (linea-f22 "Notas de débito emitidas" ))
+(f29-f22 (codigo-f29 513) (linea-f22 "Notas de débito emitidas -- (nota alectrico) con referencia a documentos c/iva --" ))
 
 

@@ -142,7 +142,7 @@
   (progn$  (?i ?partidas)
     (do-for-all-facts
         ((?f revision))     (eq ?i ?f:partida)
-        (modify ?f ( rechazado true  ))
+        (modify ?f ( ignorar true  ))
         (printout t "Revisión " ?f:partida " ahora indica rechazo." crlf)) )
 )
 
@@ -252,7 +252,7 @@
 (defrule determinacion-perdida-ejercicio-anterior-pea
    ( revision
     (partida ?numero) 
-    (rechazado false)
+    (ignorar false)
    )
 
    ( actual  (mes ?mes))
@@ -273,7 +273,7 @@
 (defrule distribucion-de-utilidades-del-ejercicio-anterior-a-cuenta-destino
    ( revision 
     (partida ?numero)
-    (rechazado false) 
+    (ignorar false) 
    )
 
    ( actual  (mes ?mes))
@@ -300,7 +300,7 @@
 (defrule traspasar-deudor
    ( revision 
     (partida ?numero)
-    (rechazado false) 
+    (ignorar false) 
    )
 
    ( actual  (mes ?mes))
@@ -325,7 +325,7 @@
 (defrule traspasar-acreedor
    ( revision
     (partida ?numero)
-    (rechazado false)
+    (ignorar false)
    )
 
    ( actual  (mes ?mes))
@@ -352,7 +352,7 @@
 (defrule gastos-en-movilizacion
    ( revision 
     (partida ?numero)
-    (rechazado false) 
+    (ignorar false) 
    )
 
    ( actual  (mes ?mes))
@@ -375,7 +375,7 @@
 (defrule depositar-en-cuenta-corriente
    ( revision 
     (partida ?numero)
-    (rechazado false) 
+    (ignorar false) 
    )
 
    ( actual  (mes ?mes))
@@ -398,7 +398,7 @@
 (defrule cobrar-cuentas-por-cobrar
    ( revision 
     (partida ?numero)
-    (rechazado false) 
+    (ignorar false) 
    )
 
    ( actual  (mes ?mes))
@@ -420,7 +420,7 @@
 (defrule pagar-monto
    ( revision 
     (partida ?numero)
-    (rechazado false) 
+    (ignorar false) 
    )
 
    ( actual  (mes ?mes))
@@ -458,7 +458,7 @@
 (defrule pagar-honorarios
    ( revision 
     (partida ?numero)
-    (rechazado false) 
+    (ignorar false) 
    )
 
    ( actual  (mes ?mes))
@@ -493,7 +493,7 @@
 (defrule declarar-remuneraciones
    ( revision 
     (partida ?numero)
-    (rechazado false) 
+    (ignorar false) 
    )
 
    ( balance (dia ?top) (mes ?mes_top) (ano ?ano_top))
@@ -652,7 +652,7 @@
 (defrule pagar-solo-imposiciones
    ( revision
     (partida ?numero)
-    (rechazado false)
+    (ignorar false)
    )
 
    ( balance (dia ?top) (mes ?mes_top) (ano ?ano_top))
@@ -692,7 +692,7 @@
 (defrule pagar-solo-remuneraciones
    ( revision
     (partida ?numero)
-    (rechazado false)
+    (ignorar false)
    )
 
    ( balance (dia ?top) (mes ?mes_top) (ano ?ano_top))
@@ -736,7 +736,7 @@
 (defrule pagar-salarios
    ( revision 
     (partida ?numero)
-    (rechazado false) 
+    (ignorar false) 
    )
 
    ( balance (dia ?top) (mes ?mes_top) (ano ?ano_top))
@@ -786,7 +786,7 @@
 (defrule comprar-intangible
    ( revision 
     (partida ?numero)
-    (rechazado false) 
+    (ignorar false) 
    )
 
    ( balance (dia ?top) (mes ?mes_top) (ano ?ano_top))
@@ -851,7 +851,7 @@
 (defrule comprar-activos-fijos-al-contado
    ( revision 
     (partida ?numero)
-    (rechazado false) 
+    (ignorar false) 
    )
 
    ( balance (dia ?top) (mes ?mes_top) (ano ?ano_top))
@@ -907,7 +907,7 @@
 (defrule comprar-acciones
    ( revision 
     (partida ?numero)
-    (rechazado false) 
+    (ignorar false) 
    )
 
    ( balance (dia ?top) (mes ?mes_top) (ano ?ano_top))
@@ -992,7 +992,7 @@
 (defrule comprar-inventario-revision
    ( revision
     (partida ?numero)
-    (rechazado false)
+    (ignorar false)
    )
 
    ( balance (dia ?top) (mes ?mes_top) (ano ?ano_top))
@@ -1041,7 +1041,7 @@
 (defrule comprar-inventario
    ( revision 
     (partida ?numero)
-    (rechazado false) 
+    (ignorar false) 
    )
 
    ( balance (dia ?top) (mes ?mes_top) (ano ?ano_top))
@@ -1109,7 +1109,7 @@
 (defrule comprar-insumos-al-contado
    ( revision
     (partida ?numero)
-    (rechazado false)
+    (ignorar false)
    )
 
    ( balance (dia ?top) (mes ?mes_top) (ano ?ano_top))
@@ -1181,7 +1181,7 @@
 (defrule comprar-materiales-al-contado 
    ( revision 
     (partida ?numero)
-    (rechazado false) 
+    (ignorar false) 
    )
 
    ( balance (dia ?top) (mes ?mes_top) (ano ?ano_top))
@@ -1253,7 +1253,7 @@
 (defrule comprar-con-letras
    ( revision 
     (partida ?numero)
-    (rechazado false) 
+    (ignorar false) 
    )
 
    ( balance (dia ?top) (mes ?mes_top) (ano ?ano_top))
@@ -1298,7 +1298,7 @@
 (defrule comprar-al-credito
    ( revision 
     (partida ?numero)
-    (rechazado false) 
+    (ignorar false) 
    )
 
    ( balance (dia ?top) (mes ?mes_top) (ano ?ano_top))
@@ -1354,7 +1354,7 @@
 (defrule devolver
    ( revision 
     (partida ?numero)
-    (rechazado false) 
+    (ignorar false) 
    )
 
    ( balance (dia ?top) (mes ?mes_top) (ano ?ano_top))
@@ -1383,7 +1383,7 @@
 (defrule gastar-proveedor-no-afecto 
    ( revision 
     (partida ?numero)
-    (rechazado false) 
+    (ignorar false) 
    )
 
    ( subcuenta (origen ?origen))
@@ -1428,7 +1428,7 @@
 (defrule gastar-administrativo-no-afecto
    ( revision 
     (partida ?numero)
-    (rechazado false) 
+    (ignorar false) 
    )
 
    ( subcuenta (origen ?origen))
@@ -1476,7 +1476,7 @@
 (defrule gastar-en-departamento-ventas-no-afecto
    ( revision 
     (partida ?numero)
-    (rechazado false) 
+    (ignorar false) 
    )
 
    ( subcuenta (origen ?origen))
@@ -1515,7 +1515,7 @@
 (defrule costar-directo-ventas-revision
    ( revision
     (partida ?numero)
-    (rechazado false)
+    (ignorar false)
    )
    ( subcuenta (origen ?origen))
    ( balance (dia ?top) (mes ?mes_top) (ano ?ano_top))
@@ -1538,7 +1538,7 @@
 (defrule costar-directo-ventas
    ( revision 
     (partida ?numero)
-    (rechazado false) 
+    (ignorar false) 
    )
    ( subcuenta (origen ?origen))
    ( balance (dia ?top) (mes ?mes_top) (ano ?ano_top))
@@ -1583,7 +1583,7 @@
 (defrule gastar-promocional-afecto-iva-retenido
    ( revision 
     (partida ?numero)
-    (rechazado false) 
+    (ignorar false) 
    )
 
    ( subcuenta (origen ?origen))
@@ -1638,7 +1638,7 @@
 (defrule gastar-proveedores-afecto-iva-retenido
    ( revision 
     (partida ?numero)
-    (rechazado false) 
+    (ignorar false) 
    )
 
    ( subcuenta (origen ?origen))
@@ -1697,7 +1697,7 @@
 (defrule gastar-administrativo-afecto-iva-retenido
    ( revision 
     (partida ?numero)
-    (rechazado false) 
+    (ignorar false) 
    )
 
    ( subcuenta (origen ?origen))
@@ -1756,7 +1756,7 @@
 (defrule gastar-en-investigacion-y-desarrollo-sin-retencion
    ( revision 
     (partida ?numero)
-    (rechazado false) 
+    (ignorar false) 
    )
 
    ( balance (dia ?top) (mes ?mes_top) (ano ?ano_top))
@@ -1797,7 +1797,7 @@
 (defrule gastar-en-investigacion-y-desarrollo-con-retencion
    ( revision 
     (partida ?numero)
-    (rechazado false) 
+    (ignorar false) 
    )
 
    ( balance (dia ?top) (mes ?mes_top) (ano ?ano_top))
@@ -1837,7 +1837,7 @@
 (defrule gastar-en-promocion
    ( revision 
     (partida ?numero)
-    (rechazado false) 
+    (ignorar false) 
    )
 
    ( subcuenta (origen ?origen))
@@ -1893,7 +1893,7 @@
 (defrule gastar-proveedor-afecto
    ( revision 
     (partida ?numero)
-    (rechazado false) 
+    (ignorar false) 
    )
 
    ( subcuenta (origen ?origen))
@@ -1950,7 +1950,7 @@
 (defrule gastar-en-depto-administracion-afecto
    ( revision 
     (partida ?numero)
-    (rechazado false) 
+    (ignorar false) 
    )
 
    ( subcuenta (origen ?origen))
@@ -2005,7 +2005,7 @@
 (defrule gastar-afecto
    ( revision 
     (partida ?numero)
-    (rechazado false) 
+    (ignorar false) 
    )
 
    ( balance (dia ?top) (mes ?mes_top) (ano ?ano_top))
@@ -2063,7 +2063,7 @@
 (defrule amortizar-credito-de-atencion-a-colaborador
    ( revision 
     (partida ?numero)
-    (rechazado false) 
+    (ignorar false) 
    )
 
 
@@ -2116,7 +2116,7 @@
 (defrule rendir-vouchers-exentos-sii
    ( revision 
     (partida ?numero)
-    (rechazado false) 
+    (ignorar false) 
    )
 
    
@@ -2154,7 +2154,7 @@
 (defrule rendir-vouchers-afectos-sii
    ( revision 
     (partida ?numero)
-    (rechazado false) 
+    (ignorar false) 
    )
 
    
@@ -2202,7 +2202,7 @@
 (defrule rendir-eboletas-exenta-sii
    ( revision 
     (partida ?numero)
-    (rechazado false) 
+    (ignorar false) 
    )
 
    
@@ -2242,7 +2242,7 @@
 (defrule rendir-eboletas-afecta-sii
    ( revision 
     (partida ?numero)
-    (rechazado false) 
+    (ignorar false) 
    )
 
    ( balance (dia ?top) (mes ?mes_top) (ano ?ano_top))
@@ -2283,7 +2283,7 @@
 (defrule vender-en-registro-compra-venta-no-afecto-sii
    ( revision 
     (partida ?numero)
-    (rechazado false) 
+    (ignorar false) 
    )
 
    ( balance (dia ?top) (mes ?mes_top) (ano ?ano_top))
@@ -2334,7 +2334,7 @@
 (defrule vender-en-registro-compra-venta-sii
    ( revision 
     (partida ?numero)
-    (rechazado false) 
+    (ignorar false) 
    )
 
    ( balance (dia ?top) (mes ?mes_top) (ano ?ano_top))
@@ -2388,7 +2388,7 @@
 (defrule ingreso-anticipado-de-credito-de-atencion-a-colaborador
    ( revision 
     (partida ?numero)
-    (rechazado false) 
+    (ignorar false) 
    )
 
    ( balance (dia ?top) (mes ?mes_top) (ano ?ano_top))
@@ -2435,7 +2435,7 @@
    (no funciona)
    ( revision 
     (partida ?numero)
-    (rechazado false) 
+    (ignorar false) 
    )
 
    ( balance (dia ?top) (mes ?mes_top) (ano ?ano_top))
@@ -2476,7 +2476,7 @@
 (defrule dar-cuenta-de-nota-de-credito-de-factura-reclamada-de-proveedor
    ( revision 
     (partida ?numero)
-    (rechazado false) 
+    (ignorar false) 
    )
 
    ( balance (dia ?top) (mes ?mes_top) (ano ?ano_top))
@@ -2512,7 +2512,7 @@
 (defrule recibir-nota-de-credito-recibida-de-subcuenta-existente
    ( revision 
     (partida ?numero)
-    (rechazado false) 
+    (ignorar false) 
    )
 
    ( balance (dia ?top) (mes ?mes_top) (ano ?ano_top))
@@ -2566,7 +2566,7 @@
 (defrule dar-nota-de-credito-emitida-de-subcuenta-existente
    ( revision 
     (partida ?numero)
-    (rechazado false) 
+    (ignorar false) 
    )
 
    ( balance (dia ?top) (mes ?mes_top) (ano ?ano_top))
@@ -2626,7 +2626,7 @@
 (defrule dar-nota-de-credito-anonima-con-monto
    ( revision 
     (partida ?numero)
-    (rechazado false) 
+    (ignorar false) 
    )
 
    ( balance (dia ?top) (mes ?mes_top) (ano ?ano_top))
@@ -2668,7 +2668,7 @@
 (defrule dar-nota-de-debito-manual
    ( revision 
     (partida ?numero)
-    (rechazado false) 
+    (ignorar false) 
    )
 
    ( balance (dia ?top) (mes ?mes_top) (ano ?ano_top))
@@ -2720,7 +2720,7 @@
 (defrule dar-nota-de-debito-sii
    ( revision 
     (partida ?numero)
-    (rechazado false) 
+    (ignorar false) 
    )
 
    ( balance (dia ?top) (mes ?mes_top) (ano ?ano_top))
@@ -2767,7 +2767,7 @@
 (defrule dar-nota-de-credito-sii
    ( revision 
     (partida ?numero)
-    (rechazado false) 
+    (ignorar false) 
    )
 
    ( balance (dia ?top) (mes ?mes_top) (ano ?ano_top))
@@ -2837,7 +2837,7 @@
 (defrule dar-nota-de-credito-a-venta
    ( revision 
     (partida ?numero)
-    (rechazado false) 
+    (ignorar false) 
    )
 
    ( balance (dia ?top) (mes ?mes_top) (ano ?ano_top))
@@ -2900,7 +2900,7 @@
 (defrule vender-a-cliente-al-contado
    ( revision 
     (partida ?numero)
-    (rechazado false) 
+    (ignorar false) 
    )
 
    ( balance (dia ?top) (mes ?mes_top) (ano ?ano_top))
@@ -2936,7 +2936,7 @@
 (defrule vender-al-credito-y-efectivo-exento
    ( revision 
     (partida ?numero)
-    (rechazado false) 
+    (ignorar false) 
    )
 
    ( balance (dia ?top) (mes ?mes_top) (ano ?ano_top))
@@ -2997,7 +2997,7 @@
 (defrule vender-al-credito-y-efectivo-afecto
    ( revision 
     (partida ?numero)
-    (rechazado false) 
+    (ignorar false) 
    )
 
    ( balance (dia ?top) (mes ?mes_top) (ano ?ano_top))
@@ -3061,7 +3061,7 @@
 (defrule vender-al-credito
    ( revision 
     (partida ?numero)
-    (rechazado false) 
+    (ignorar false) 
    )
 
    ( balance (dia ?top) (mes ?mes_top) (ano ?ano_top))
@@ -3116,7 +3116,7 @@
 (defrule gastar-al-comprar
    ( revision 
     (partida ?numero)
-    (rechazado false) 
+    (ignorar false) 
    )
 
    ( balance (dia ?top) (mes ?mes_top) (ano ?ano_top))
@@ -3157,7 +3157,7 @@
 (defrule despagar-con-cheque
    ( revision 
     (partida ?numero)
-    (rechazado false) 
+    (ignorar false) 
    )
 
    ( balance (dia ?top) (mes ?mes_top) (ano ?ano_top))
@@ -3198,7 +3198,7 @@
 (defrule pagar-neto-mas-iva-a-proveedor
    ( revision 
     (partida ?numero)
-    (rechazado false) 
+    (ignorar false) 
    )
 
    ( balance (dia ?top) (mes ?mes_top) (ano ?ano_top))
@@ -3246,7 +3246,7 @@
 (defrule pagar-retenciones-de-honorarios
    ( revision 
     (partida ?numero)
-    (rechazado false) 
+    (ignorar false) 
    )
 
    ( actual  ( mes ?mes))
@@ -3267,7 +3267,7 @@
 (defrule depreciar-herramienta
    ( revision 
     (partida ?numero)
-    (rechazado false) 
+    (ignorar false) 
    )
 
    ( actual  ( mes ?mes))
@@ -3297,7 +3297,7 @@
 (defrule amortizar-intangible
    ( revision 
     (partida ?numero)
-    (rechazado false) 
+    (ignorar false) 
    )
 
    ( actual  ( mes ?mes))
@@ -3325,7 +3325,7 @@
 (defrule amortizar-instantanea-de-intangible
    ( revision 
     (partida ?numero)
-    (rechazado false) 
+    (ignorar false) 
    )
 
    ( actual  ( mes ?mes))
@@ -3352,7 +3352,7 @@
 (defrule pagar-ppv
    ( revision 
     (partida ?numero)
-    (rechazado false) 
+    (ignorar false) 
    )
 
    ( actual  ( mes ?mes))
@@ -3375,7 +3375,7 @@
 (defrule constituir-spa
    ( revision 
     (partida ?numero)
-    (rechazado false) 
+    (ignorar false) 
    )
 
   ( constitucion-de-spa ( mes ?mes) (ano ?ano) (partida ?numero) (capital ?capital) (numero-de-acciones ?numero-de-acciones) (serie ?serie) (nominativa ?nominativa) (valor-nominal ?valor-nominal) )

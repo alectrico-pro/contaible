@@ -53,7 +53,9 @@
 (revision (revisado true) (partida 017) (tipo 33) (rcv n-a) )
 (revision (revisado true) (partida 018) (tipo 33) (rcv n-a) )
 (revision (revisado true) (partida 019) (tipo 33) (rcv n-a) (a-corregir "Tipo de Documento den Libro Tributario aparece como Nota de Crédito de Papel y en el asiento centralizado correspondiente aparece como 60, debe ser 61") )
-(revision (revisado true) (partida 0191) (tipo 33) (rcv n-a))
+(revision (revisado true) (partida 0191) (tipo 56) (rcv n-a)
+
+)
 (revision (revisado true) (partida 01911) (tipo 33) (rcv n-a) )
 
 (revision (revisado true) (partida 0192) (tipo 33) (rcv n-a) )
@@ -174,7 +176,7 @@
   (a-corregir "Fuera de plazo")
  )
 (revision (revisado true) (partida 064) (tipo 33) (rcv n-a) )
-(revision (revisado true) (partida 065) (tipo 33) (rcv n-a) (rechazado true) (dia 21) (mes julio) (ano 2021) (a-corregir "La reclamé (fue un error) en el LIBRO DE COMPRA-VENTA"))
+(revision (revisado true) (partida 065) (tipo 33) (rcv n-a) (no-incluir true) (dia 21) (mes julio) (ano 2021) (a-corregir "La reclamé (fue un error) en el LIBRO DE COMPRA-VENTA"))
 (revision (revisado true) (partida 066) (tipo 33) (rcv n-a) ) 
 
 (revision (revisado true) (partida 067) (tipo 33) (rcv n-a) )
@@ -206,8 +208,13 @@
 
 (revision (revisado true) (partida 0867) (tipo ajuste-iva) (rcv n-a) )
 
+;la emití, pero no hice la cancelación de la vuelta y 
+;decidí no incluirla en la contabilidad financiera.
+;dado que la culpa fue mía
+;es decir, no me la rechazaron, solo que no cumplí el trámite 
+;en tiempo y forma
 (revision (revisado true) (partida 087) (tipo nota-de-credito) (rcv true)
-  (rechazado true)
+ (rechazado false)
  (no-incluir true)
  (a-corregir "La emití a nombre de alectrico pero  no anulé la nota que se recibe en consecuencia") )
 
@@ -283,7 +290,7 @@
 
 (revision (revisado false) (partida 133) (tipo 34) (rcv n-a))
 
-(revision (revisado true) (partida 134) (tipo traspaso) (rcv n-a) (rechazado true) (a-corregir "No corresponde incluir, pues se emitieron documentos de pago contado"))
+(revision (revisado true) (partida 134) (tipo traspaso) (rcv n-a) (no-incluir true) (a-corregir "No corresponde incluir, pues se emitieron documentos de pago contado"))
 
 
 (revision (revisado false) (partida 135) (tipo amortizacion) (rcv n-a))
@@ -296,7 +303,7 @@
 
 (revision (revisado false) (partida 139) (tipo 33) (rcv n-a))
 
-(revision (revisado true) (partida 140) (tipo 33) (rcv n-a) (rechazado true) (a-corregir "Está repetido en los facts." ))
+(revision (revisado true) (partida 140) (tipo 33) (rcv n-a) (no-incluir true) (a-corregir "Está repetido en los facts." ))
 
 (revision (revisado false) (partida 145) (tipo 33) (rcv n-a))
 
@@ -382,7 +389,7 @@
 (revision (revisado true) (partida 200)
  (folio 44204963)
  (tipo 33)
- (rechazado true)
+ (no-incluir true)
  (a-corregir "Reclamado en SII" )
 )
 
@@ -393,7 +400,7 @@
 
 (revision (revisado true) (partida 202)
  (tipo 61)
- (rechazado true)
+ (no-incluir true)
  (a-corregir "Lo reclamé por error en CCM de SII. No tiene efecto en mi contabilidad" )
 )
 
@@ -439,8 +446,8 @@
 
 
 (revision (revisado true) (partida 2001) 
- (rechazado true)
- (a-corregir "Temporalmente rechazado para pruebas")
+ (no-incluir true)
+ (a-corregir "Temporalmente no-incluir para pruebas")
  )
 
 (revision (revisado true) (partida 2002)  )

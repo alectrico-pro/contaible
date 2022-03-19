@@ -9,6 +9,7 @@ RUN mkdir /doc/alectrico-2022
 RUN mkdir /doc/_posts
 RUN mkdir /doc/_data
 
+
 #input to contabilidad.py
 COPY *.bat                    ./
 COPY *.clp                    ./
@@ -23,8 +24,8 @@ COPY alectrico-2022-revisiones.txt         ./
 COPY alectrico-2022-revisiones-cuentas.txt ./
 
 
-COPY valor-activos.txt      ./
-COPY tasas.txt              ./
+COPY valor-activos.txt            ./
+COPY tasas.txt                    ./
 COPY contratos.txt                ./
 copy cuentas.txt                  ./
 copy proveedores.txt              ./
@@ -54,6 +55,7 @@ COPY ./contaible.markdown ./
 COPY ./empresa.markdown   ./
 COPY ./nota.markdown      ./
 COPY ./o.markdown         ./
+COPY ./assets/            ./assets/
 
 
 #estos resultan de contabilidad.py
@@ -62,7 +64,7 @@ COPY --from=build ./doc/alectrico-2022/ ./alectrico-2022/
 
 
 
-#EStos markdown son generaos pr contabilidad.py
+#EStos markdown son generados pr contabilidad.py
 #Este copy a veces falla y hace abortar el proceso
 #Ocurre cuando no hay *.markdown que copiar
 COPY --from=build ./doc/*.markdown      ./
@@ -75,6 +77,7 @@ COPY --from=build ./doc/*.markdown      ./
 #dese las paginas del servidor que pone en funcionamiento jekyll
 COPY ./alectrico-2021/ ./
 COPY ./_config.yml     ./
+COPY ./assets/         ./assets/
 COPY ./nota/           ./nota/
 COPY ./nota/           ./alectrico-2021/
 COPY ./nota/           ./alectrico-2022/
