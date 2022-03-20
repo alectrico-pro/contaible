@@ -137,8 +137,10 @@
    (ajuste-anual (ano ?ano) (liquidacion tributaria) (partida ?numero) (efecto deduccion) )
 
    (or
-     (cuenta (nombre ?nombre&:(neq ?nombre ingresos-brutos)) (padre false) (grupo resultado))
-     (cuenta (nombre ?nombre) (padre ingresos-brutos) (grupo resultado))  )
+     (cuenta (partida ?partida) (nombre ?nombre&:(neq ?nombre ingresos-brutos)) (padre false) (grupo resultado))
+     (cuenta (partida ?partida) (nombre ?nombre) (padre ingresos-brutos) (grupo resultado))  )
+   (revision (partida ?partida) (rechazado false))
+
   =>
    ( assert
      (partida (numero ?numero) (empresa ?empresa) (dia 31) (mes ?mes) (ano ?ano)
@@ -172,8 +174,9 @@
    (ajuste-anual (ano ?ano) (liquidacion tributaria) (partida ?numero) (efecto aporte))
 
    (or
-     (cuenta (nombre ?nombre&:(neq ?nombre ingresos-brutos)) (padre false) (grupo resultado))
-     (cuenta (nombre ?nombre) (padre ingresos-brutos) (grupo resultado)))
+     (cuenta (partida ?partida)  (nombre ?nombre&:(neq ?nombre ingresos-brutos)) (padre false) (grupo resultado))
+     (cuenta (partida ?partida)  (nombre ?nombre) (padre ingresos-brutos) (grupo resultado)))
+  (revision (partida ?partida) (rechazado false))
 
   =>
 

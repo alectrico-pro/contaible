@@ -433,6 +433,7 @@
 
 
 (deftemplate codigo-de-partida
+  (slot rechazado (default false))
   (slot codigo)
   (slot partida)
 )

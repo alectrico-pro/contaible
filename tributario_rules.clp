@@ -51,6 +51,30 @@
   ( printout t "--modulo-----------CALCULO DE BASE TRIBUTARIA-----------------" crlf )
 )
 
+
+
+(defrule abonos-rechazados
+  ?info <- (info (anotado false) )
+  (abono (partida ?partida) (cuenta ?cuenta))
+  (partida (numero ?partida) (rechazado true))
+ =>
+  (printout t "Cuenta: " ?cuenta crlf)
+  (printout t "Reintegrar abonos rechazados" crlf)
+  ( halt )
+)
+
+(defrule cargos-rechazados
+  ?info <- (info (anotado false) )
+  (cargo (partida ?partida) (cuenta ?cuenta))
+  (partida (numero ?partida) (rechazado true))
+ =>
+  (printout t "Cuenta: " ?cuenta crlf)
+  (printout t "Reintegrar cargos rechazados" crlf)
+  ( halt )
+)
+
+
+
 (defrule descuentos-propyme 
   ( balance (dia ?top) (mes ?mes_top) (ano ?ano_top))
   ?info <- (info (anotado false) )
