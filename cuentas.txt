@@ -1445,6 +1445,19 @@ servicio.")
   (origen real)
 )
 
+
+(cuenta (nombre reintegro-de-devolucion-sobre-ventas)
+  (descripcion reintegro-por-notas-de-debito-emitidas)
+  (tipo acreedora)
+  (grupo resultado)
+  (naturaleza acreedora)
+  (padre false)
+  (circulante true)
+  (origen real)
+)
+
+
+
 (cuenta (nombre notas-de-credito)
   (descripcion materiales-sin-valor-comercial)
   (tipo acreedora)

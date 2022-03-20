@@ -8,9 +8,15 @@
 ;no abonar-deudoras avisa si se quiere abonar una deudora
 ;devolver-a-devolucion-ventas es la forma de SII para manejar la parte financiera y la tributaria
 ;esto se maneja en las actividades de notas de credito
+
+;(devolver-a-devolucion-sobre-ventas true) requiere cambiar
+;la naturaleza de las cuentas que estén involucradas
+;en general las cuentas de ventas, las que son
+;de naturaleza acreedora tendrán que ser de
+;naturaleza mixta
 ( selecciones
  (abonar-deudoras false) 
- (devolver-a-devolucion-sobre-ventas false)
+ (devolver-a-devolucion-sobre-ventas true)
  (ejercicio-anterior     alectrico-2021)
  (regimen                propyme)
  (incentivo-al-ahorro    true)

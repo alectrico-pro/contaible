@@ -14,6 +14,9 @@ layout: page
 <tr><td> Mensualmente hay que depreciarlo en: </td><td> $1000000</td></tr>
 </tbody></table> 
 <table><tbody>
+<tr><td> marca-alectrico</td> <td>febrero</td><td> Amortizando por: </td> <td>2417</td></tr>
+</tbody></table>
+<table><tbody>
 <tr><td> marca-alectrico</td> <td>enero</td><td> Amortizando por: </td> <td>2417</td></tr>
 </tbody></table>
 <table> <tbody>

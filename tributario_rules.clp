@@ -135,6 +135,8 @@
   ( subtotales (cuenta ingresos-brutos) (acreedor ?ingresos-brutos))
   ( subtotales (cuenta ventas) (deber ?ventas-deber) (acreedor ?ventas-acreedor))
   ( subtotales (cuenta devolucion-sobre-ventas) (debe ?devolucion-sobre-ventas))
+  ( subtotales (cuenta reintegro-de-devolucion-sobre-ventas) (haber ?reintegro-de-devolucion-sobre-ventas))
+
   ( subtotales (cuenta compras) (debe ?compras))
   ( subtotales (cuenta gastos-sobre-compras) (debe ?gastos-sobre-compras))
   ( subtotales (cuenta inventario-inicial) (deber ?inventario-inicial))
@@ -205,7 +207,7 @@
    (- ?base-imponible-acreedor
       ?base-imponible-deber))
 
-  (bind ?ventas-netas           (- ?ventas ?devolucion-sobre-ventas))
+  (bind ?ventas-netas           (- ?ventas  (- ?devolucion-sobre-ventas ?reintegro-de-devolucion-sobre-ventas) ))
   (bind ?compras-totales        (+ ?compras ?gastos-sobre-compras))
   (bind ?compras-netas          ?compras-totales)
   (bind ?existencias            (+ ?compras-netas ?inventario-inicial))
@@ -281,6 +283,10 @@
 
   (printout t "|" tab tab "| (-) " ?devolucion-sobre-ventas tab tab "Devoluciones sobre ventas" crlf)  
   (printout k "<tr><td></td><td></td><td></td><td> (-) </td><td align='right'>" ?devolucion-sobre-ventas "</td><td> Devoluciones sobre ventas </td></tr>" crlf)  
+
+  (printout t "|" tab tab "| (+) " ?reintegro-de-devolucion-sobre-ventas tab tab "Reintegros de Devoluciones sobre ventas" crlf)
+  (printout k "<tr><td></td><td></td><td></td><td> (-) </td><td align='right'>" ?reintegro-de-devolucion-sobre-ventas "</td><td> Reintegro de Devoluciones sobre ventas </td></tr>" crlf)
+
 
   (printout t "|" tab tab "| (-) -  " tab tab "Descuentos sobre ventas" crlf)
   (printout k "<tr><td></td><td></td><td></td><td> (-) </td><td align='right'>0</td><td>Descuentos sobre ventas </td></tr>" crlf)
