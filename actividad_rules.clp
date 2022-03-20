@@ -2706,7 +2706,7 @@
 
    ( if (eq true ?devolver-a-devolucion-sobre-ventas)
    then
-     ( assert (abono (tipo-de-documento 56) (partida ?numero) (dia ?dia) (mes ?mes ) (ano ?ano) (empresa ?nombre) (cuenta devolucion-sobre-ventas) (monto ?neto) (glosa (str-cat " nota-debito " ?folio-debito))))
+     ( assert (abono (tipo-de-documento 56) (partida ?numero) (dia ?dia) (mes ?mes ) (ano ?ano) (empresa ?nombre) (cuenta reintegro-de-devolucion-sobre-ventas) (monto ?neto) (glosa (str-cat " nota-debito " ?folio-debito))))
    else
      ( assert (abono (tipo-de-documento 56) (partida ?numero) (dia ?dia) (mes ?mes ) (ano ?ano) (empresa ?nombre) (cuenta ?subcuenta) (monto ?neto) (glosa (str-cat " nota-debito " ?folio-debito))))
    )
@@ -2750,7 +2750,7 @@
 
    ( if (eq true ?devolver-a-devolucion-sobre-ventas)
    then
-     ( assert (abono (tipo-de-documento 56) (partida ?numero) (dia ?dia) (mes ?mes ) (ano ?ano) (empresa ?nombre) (cuenta devolucion-sobre-ventas) (monto ?neto) (glosa (str-cat " nota-debito " ?folio-debito))))
+     ( assert (abono (tipo-de-documento 56) (partida ?numero) (dia ?dia) (mes ?mes ) (ano ?ano) (empresa ?nombre) (cuenta reintegro-de-devolucion-sobre-ventas) (monto ?neto) (glosa (str-cat " nota-debito " ?folio-debito))))
    else
      ( assert (abono (tipo-de-documento 56) (partida ?numero) (dia ?dia) (mes ?mes ) (ano ?ano) (empresa ?nombre) (cuenta ?subcuenta) (monto ?neto) (glosa (str-cat " nota-debito " ?folio-debito))))
    )

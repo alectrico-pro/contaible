@@ -36,10 +36,10 @@
   (cuenta-acumuladora   depreciacion-acumulada-herramientas)
   (cuenta-del-pasivo    depreciacion  )
   (cuenta-del-activo    herramientas  )
-  (mes-de-adquisicion   enero         )
+  (mes-de-adquisicion   julio         )
   (ano-de-adquisicion   2021          )
   (meses-de-vida-util   36            )
-  (mes-final            enero         )
+  (mes-final            julio         )
   (ano-final            2023          )
   (valor-de-adquisicion 151252        )
   (depreciacion-mensual 4202          ) ;aproximar por exceso pera que la ultima cuota sea menor

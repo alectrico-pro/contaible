@@ -52,16 +52,19 @@
 )
 
 (defrule descuentos-propyme 
-  ( balance (ano ?ano))
+  ( balance (dia ?top) (mes ?mes_top) (ano ?ano_top))
   ?info <- (info (anotado false) )
 
  =>
+;   ( (>= (to_serial_date ?top ?mes_top ?ano_top) (to_serial_date 1 ?f:mes-de-adquisicion ?f:ano-de-adquisicion)))
+
+:;    ( and (eq ?f:ano-de-adquisicion ?ano_top) (>  (mes_to_numero ?mes_top) (mes_to_numero ?f:mes-de-adquisicion)))
 
   ( bind ?suma-de-depreciacion 0)
 
   ( do-for-all-facts
     ((?f registro-de-depreciacion))
-    ( eq ?f:ano-de-adquisicion ?ano)
+    (>= (to_serial_date ?top ?mes_top ?ano_top) (to_serial_date 1 ?f:mes-de-adquisicion ?f:ano-de-adquisicion))
     (printout t ?f:nombre-del-activo crlf)
     (bind ?suma-de-depreciacion (+ ?suma-de-depreciacion ?f:valor-de-adquisicion)))
 
@@ -69,7 +72,7 @@
 
   ( do-for-all-facts
     ((?f registro-de-amortizacion))
-    (eq ?f:ano-de-adquisicion ?ano)
+    (>= (to_serial_date ?top ?mes_top ?ano_top) (to_serial_date 1 ?f:mes-de-adquisicion ?f:ano-de-adquisicion))
     (printout t ?f:nombre-del-activo crlf)
     (bind ?suma-amortizacion (+ ?suma-de-amortizacion ?f:valor-de-adquisicion)))
 
@@ -119,7 +122,7 @@
 
 
 (defrule estado-de-resultados-mensual
-  ( balance (mes ?mes) (ano ?ano ))
+  ( balance (dia ?dia) (mes ?mes) (ano ?ano ))
   ( empresa (nombre ?empresa))
 
 
@@ -132,6 +135,8 @@
   ( subtotales (cuenta ingresos-brutos) (acreedor ?ingresos-brutos))
   ( subtotales (cuenta ventas) (deber ?ventas-deber) (acreedor ?ventas-acreedor))
   ( subtotales (cuenta devolucion-sobre-ventas) (debe ?devolucion-sobre-ventas))
+  ( subtotales (cuenta reintegro-de-devolucion-sobre-ventas) (haber ?reintegro-de-devolucion-sobre-ventas))
+
   ( subtotales (cuenta compras) (debe ?compras))
   ( subtotales (cuenta gastos-sobre-compras) (debe ?gastos-sobre-compras))
   ( subtotales (cuenta inventario-inicial) (deber ?inventario-inicial))
@@ -202,7 +207,7 @@
    (- ?base-imponible-acreedor
       ?base-imponible-deber))
 
-  (bind ?ventas-netas           (- ?ventas ?devolucion-sobre-ventas))
+  (bind ?ventas-netas           (- ?ventas  (- ?devolucion-sobre-ventas ?reintegro-de-devolucion-sobre-ventas) ))
   (bind ?compras-totales        (+ ?compras ?gastos-sobre-compras))
   (bind ?compras-netas          ?compras-totales)
   (bind ?existencias            (+ ?compras-netas ?inventario-inicial))
@@ -249,15 +254,12 @@
   (printout k "<table><tbody>" crlf )
   (printout k "<tr><th colspan='3'>" ?empresa "</th></tr>" crlf )
 
-  (printout t "Solo se consideran las transacciones hasta el día 31 febrero. Cifras en pesos." crlf)
-
-
   (printout t ?empresa crlf)
   (printout t "================================================================================" crlf)
   (printout t "CALCULO DE LA BASE IMPONIBLE PROPYME" crlf)
-
-  (printout k "<tr><td colspan='8'> CALCULO DE LA BASE IMPONIBLE PROPYME </td></tr>" )
-  (printout k "<tr><th colspan='8'>Solo se consideran las transacciones hasta el día final de " ?mes ". Cifras en pesos. </th></tr>" crlf)
+  (printout t " Solo se consideran las transacciones hasta el día " ?dia " de " ?mes " de " ?ano "o. Cifras en pesos." crlf)
+  (printout k "<tr><th colspan='8'> CALCULO DE LA BASE IMPONIBLE PROPYME </th></tr>" )
+  (printout k "<tr><td colspan='8'>Solo se consideran las transacciones hasta el día " ?dia " de " ?mes tab ?ano ". Cifras en pesos. </td></tr>" crlf)
 
   (printout t "================================================================================" crlf)
 
@@ -278,6 +280,10 @@
 
   (printout t "|" tab tab "| (-) " ?devolucion-sobre-ventas tab tab "Devoluciones sobre ventas" crlf)  
   (printout k "<tr><td></td><td></td><td></td><td> (-) </td><td align='right'>" ?devolucion-sobre-ventas "</td><td> Devoluciones sobre ventas </td></tr>" crlf)  
+
+  (printout t "|" tab tab "| (+) " ?reintegro-de-devolucion-sobre-ventas tab tab "Reintegros de Devoluciones sobre ventas" crlf)
+  (printout k "<tr><td></td><td></td><td></td><td> (-) </td><td align='right'>" ?reintegro-de-devolucion-sobre-ventas "</td><td> Reintegro de Devoluciones sobre ventas </td></tr>" crlf)
+
 
   (printout t "|" tab tab "| (-) -  " tab tab "Descuentos sobre ventas" crlf)
   (printout k "<tr><td></td><td></td><td></td><td> (-) </td><td align='right'>0</td><td>Descuentos sobre ventas </td></tr>" crlf)
