@@ -43,16 +43,16 @@ layout: page
 <tbody>
  <tr> <td> </td> <td> 111 </td> <td align='right'>  16 </td> <td> DEBITOS BOLETAS EMITIDAS  </td> </tr>
  <tr> <td> </td> <td> 511 </td> <td align='right'>  6344 </td> <td> CRED.IVA POR DCTOS. ELECTRONICOS  </td> </tr>
- <tr> <td> </td> <td> 077 </td> <td align='right'>  41460 </td> <td> REMANENTE DE CREDITO FISC.  </td> </tr>
+ <tr> <td> </td> <td> 077 </td> <td align='right'>  35872 </td> <td> REMANENTE DE CREDITO FISC.  </td> </tr>
  <tr> <td> </td> <td> 504 </td> <td align='right'>  29246 </td> <td> REMANENTE CREDITO FISCAL MES ANTERIOR.  </td> </tr>
  <tr> <td> </td> <td> 062 </td> <td align='right'>  0 </td> <td> PPM NETO DETERMINADO </td> </tr>
  <tr> <td> </td> <td> 527 </td> <td align='right'>  0 </td> <td> CANT.NOTAS DE CREDITO RECIBIDAS </td> </tr>
- <tr> <td> </td> <td> 513 </td> <td align='right'>  0 </td> <td> DEBITO DE NOTAS DEBITO EMITIDAS DEL GIRO </td> </tr>
  <tr> <td> </td> <td> 510 </td> <td align='right'>  5588 </td> <td> DEBITO N.CREDITO EMITIDAS/Ref FACTURA | NOTA-CREDITO-RECIBIDA-RETENCION-PARCIAL-CAMBIO-SUJETO </td> </tr>
- <tr> <td> </td> <td> 512 </td> <td align='right'>  1 </td> <td> NOTAS DE DEBITO EMITIDAS DEL GIRO </td> </tr>
+ <tr> <td> </td> <td> 513 </td> <td align='right'>  5588 </td> <td> DEBITO DE NOTAS DEBITO EMITIDAS DEL GIRO </td> </tr>
  <tr> <td> </td> <td> 110 </td> <td align='right'>  2 </td> <td> CANT.DE DCTOS.BOLETAS </td> </tr>
  <tr> <td> </td> <td> 115 </td> <td align='right'>  0.13 </td> <td> TASA PPM 1ra Categoria </td> </tr>
  <tr> <td> </td> <td> 563 </td> <td align='right'>  84 </td> <td> BASE IMPONIBLE </td> </tr>
+ <tr> <td> </td> <td> 512 </td> <td align='right'>  2 </td> <td> NOTAS DE DEBITO EMITIDAS DEL GIRO </td> </tr>
  <tr> <td> </td> <td> 519 </td> <td align='right'>  3 </td> <td> CANT.DE DCTOS.FACT.RECIB.DEL GIRO </td> </tr>
  <tr> <td> </td> <td> 520 </td> <td align='right'>  5123 </td> <td> CREDITOS REC. REINT/FACT. DEL GIRO  </td> </tr>
  <tr> <td> </td> <td> 528 </td> <td align='right'>  -5089 </td> <td> CREDITO RECUP.Y REINT/NOTAS DE CRED. </td> </tr>
@@ -72,8 +72,8 @@ layout: page
 <tbody>
  <tr> <td> </td> <td> 538 </td> <td align='right'>  5588 </td> <td> TOTAL DEBITOS  </td> </tr>
  <tr> <td> </td> <td> 511 </td> <td align='right'>  6217 </td> <td> CRED.IVA POR DCTOS. ELECTRONICOS  </td> </tr>
- <tr> <td> </td> <td> 077 </td> <td align='right'>  42531 </td> <td> REMANENTE DE CREDITO FISC.  </td> </tr>
- <tr> <td> </td> <td> 504 </td> <td align='right'>  41532 </td> <td> REMANENTE CREDITO FISCAL MES ANTERIOR.  </td> </tr>
+ <tr> <td> </td> <td> 077 </td> <td align='right'>  36871 </td> <td> REMANENTE DE CREDITO FISC.  </td> </tr>
+ <tr> <td> </td> <td> 504 </td> <td align='right'>  35908 </td> <td> REMANENTE CREDITO FISCAL MES ANTERIOR.  </td> </tr>
  <tr> <td> </td> <td> 062 </td> <td align='right'>  38 </td> <td> PPM NETO DETERMINADO </td> </tr>
  <tr> <td> </td> <td> 758 </td> <td align='right'>  1 </td> <td> CANT. RECIBO DE PAGO MEDIOS ELECTRÓNICOS </td> </tr>
  <tr> <td> </td> <td> 759 </td> <td align='right'>  5588 </td> <td> DÉB. RECIBO DE PAGO MEDIOS ELECTRÓNICOS </td> </tr>
@@ -97,8 +97,8 @@ layout: page
 <tbody>
  <tr> <td> </td> <td> 538 </td> <td align='right'>  4790 </td> <td> TOTAL DEBITOS  </td> </tr>
  <tr> <td> </td> <td> 511 </td> <td align='right'>  1822 </td> <td> CRED.IVA POR DCTOS. ELECTRONICOS  </td> </tr>
- <tr> <td> </td> <td> 077 </td> <td align='right'>  39717 </td> <td> REMANENTE DE CREDITO FISC.  </td> </tr>
- <tr> <td> </td> <td> 504 </td> <td align='right'>  42423 </td> <td> REMANENTE CREDITO FISCAL MES ANTERIOR.  </td> </tr>
+ <tr> <td> </td> <td> 077 </td> <td align='right'>  34049 </td> <td> REMANENTE DE CREDITO FISC.  </td> </tr>
+ <tr> <td> </td> <td> 504 </td> <td align='right'>  36777 </td> <td> REMANENTE CREDITO FISCAL MES ANTERIOR.  </td> </tr>
  <tr> <td> </td> <td> 062 </td> <td align='right'>  32 </td> <td> PPM NETO DETERMINADO </td> </tr>
  <tr> <td> </td> <td> 758 </td> <td align='right'>  1 </td> <td> CANT. RECIBO DE PAGO MEDIOS ELECTRÓNICOS </td> </tr>
  <tr> <td> </td> <td> 759 </td> <td align='right'>  4790 </td> <td> DÉB. RECIBO DE PAGO MEDIOS ELECTRÓNICOS </td> </tr>
@@ -123,8 +123,8 @@ layout: page
  <thead> <th> </th> <th> Código </th> <th>  Valor </th> <th> Descripción </th> </thead>
 <tbody>
  <tr> <td> </td> <td> 511 </td> <td align='right'>  5313 </td> <td> CRED.IVA POR DCTOS. ELECTRONICOS  </td> </tr>
- <tr> <td> </td> <td> 077 </td> <td align='right'>  45426 </td> <td> REMANENTE DE CREDITO FISC.  </td> </tr>
- <tr> <td> </td> <td> 504 </td> <td align='right'>  39784 </td> <td> REMANENTE CREDITO FISCAL MES ANTERIOR.  </td> </tr>
+ <tr> <td> </td> <td> 077 </td> <td align='right'>  39630 </td> <td> REMANENTE DE CREDITO FISC.  </td> </tr>
+ <tr> <td> </td> <td> 504 </td> <td align='right'>  34063 </td> <td> REMANENTE CREDITO FISCAL MES ANTERIOR.  </td> </tr>
  <tr> <td> </td> <td> 062 </td> <td align='right'>  0 </td> <td> PPM NETO DETERMINADO </td> </tr>
  <tr> <td> </td> <td> 527 </td> <td align='right'>  1 </td> <td> CANT.NOTAS DE CREDITO RECIBIDAS </td> </tr>
  <tr> <td> </td> <td> 115 </td> <td align='right'>  0.13 </td> <td> TASA PPM 1ra Categoria </td> </tr>
@@ -147,8 +147,8 @@ layout: page
  <thead> <th> </th> <th> Código </th> <th>  Valor </th> <th> Descripción </th> </thead>
 <tbody>
  <tr> <td> </td> <td> 511 </td> <td align='right'>  7966 </td> <td> CRED.IVA POR DCTOS. ELECTRONICOS  </td> </tr>
- <tr> <td> </td> <td> 077 </td> <td align='right'>  53733 </td> <td> REMANENTE DE CREDITO FISC.  </td> </tr>
- <tr> <td> </td> <td> 504 </td> <td align='right'>  45432 </td> <td> REMANENTE CREDITO FISCAL MES ANTERIOR.  </td> </tr>
+ <tr> <td> </td> <td> 077 </td> <td align='right'>  47874 </td> <td> REMANENTE DE CREDITO FISC.  </td> </tr>
+ <tr> <td> </td> <td> 504 </td> <td align='right'>  39642 </td> <td> REMANENTE CREDITO FISCAL MES ANTERIOR.  </td> </tr>
  <tr> <td> </td> <td> 519 </td> <td align='right'>  3 </td> <td> CANT.DE DCTOS.FACT.RECIB.DEL GIRO </td> </tr>
  <tr> <td> </td> <td> 520 </td> <td align='right'>  7966 </td> <td> CREDITOS REC. REINT/FACT. DEL GIRO  </td> </tr>
  <tr> <td> </td> <td> 39 </td> <td align='right'>  0 </td> <td> IVA RETENIDO A TERCEROS POR CAMBIO DE SUJETO  </td> </tr>
@@ -169,8 +169,8 @@ layout: page
  <tr> <td> </td> <td> 111 </td> <td align='right'>  0 </td> <td> DEBITOS BOLETAS EMITIDAS  </td> </tr>
  <tr> <td> </td> <td> 538 </td> <td align='right'>  28873 </td> <td> TOTAL DEBITOS  </td> </tr>
  <tr> <td> </td> <td> 511 </td> <td align='right'>  21718 </td> <td> CRED.IVA POR DCTOS. ELECTRONICOS  </td> </tr>
- <tr> <td> </td> <td> 077 </td> <td align='right'>  57862 </td> <td> REMANENTE DE CREDITO FISC.  </td> </tr>
- <tr> <td> </td> <td> 504 </td> <td align='right'>  53623 </td> <td> REMANENTE CREDITO FISCAL MES ANTERIOR.  </td> </tr>
+ <tr> <td> </td> <td> 077 </td> <td align='right'>  51956 </td> <td> REMANENTE DE CREDITO FISC.  </td> </tr>
+ <tr> <td> </td> <td> 504 </td> <td align='right'>  47775 </td> <td> REMANENTE CREDITO FISCAL MES ANTERIOR.  </td> </tr>
  <tr> <td> </td> <td> 062 </td> <td align='right'>  1092 </td> <td> PPM NETO DETERMINADO </td> </tr>
  <tr> <td> </td> <td> 527 </td> <td align='right'>  0 </td> <td> CANT.NOTAS DE CREDITO RECIBIDAS </td> </tr>
  <tr> <td> </td> <td> 110 </td> <td align='right'>  0 </td> <td> CANT.DE DCTOS.BOLETAS </td> </tr>
@@ -205,8 +205,8 @@ layout: page
 <tbody>
  <tr> <td> </td> <td> 538 </td> <td align='right'>  6387 </td> <td> TOTAL DEBITOS  </td> </tr>
  <tr> <td> </td> <td> 511 </td> <td align='right'>  55003 </td> <td> CRED.IVA POR DCTOS. ELECTRONICOS  </td> </tr>
- <tr> <td> </td> <td> 077 </td> <td align='right'>  61010 </td> <td> REMANENTE DE CREDITO FISC.  </td> </tr>
- <tr> <td> </td> <td> 504 </td> <td align='right'>  58157 </td> <td> REMANENTE CREDITO FISCAL MES ANTERIOR.  </td> </tr>
+ <tr> <td> </td> <td> 077 </td> <td align='right'>  55070 </td> <td> REMANENTE DE CREDITO FISC.  </td> </tr>
+ <tr> <td> </td> <td> 504 </td> <td align='right'>  52263 </td> <td> REMANENTE CREDITO FISCAL MES ANTERIOR.  </td> </tr>
  <tr> <td> </td> <td> 062 </td> <td align='right'>  584 </td> <td> PPM NETO DETERMINADO </td> </tr>
  <tr> <td> </td> <td> 527 </td> <td align='right'>  0 </td> <td> CANT.NOTAS DE CREDITO RECIBIDAS </td> </tr>
  <tr> <td> </td> <td> 39 </td> <td align='right'>  0 </td> <td> IVA RETENIDO A TERCEROS POR CAMBIO DE SUJETO  </td> </tr>
@@ -239,8 +239,8 @@ layout: page
 <tbody>
  <tr> <td> </td> <td> 111 </td> <td align='right'>  4407 </td> <td> DEBITOS BOLETAS EMITIDAS  </td> </tr>
  <tr> <td> </td> <td> 511 </td> <td align='right'>  14958 </td> <td> CRED.IVA POR DCTOS. ELECTRONICOS  </td> </tr>
- <tr> <td> </td> <td> 077 </td> <td align='right'>  24426 </td> <td> REMANENTE DE CREDITO FISC.  </td> </tr>
- <tr> <td> </td> <td> 504 </td> <td align='right'>  61244 </td> <td> REMANENTE CREDITO FISCAL MES ANTERIOR.  </td> </tr>
+ <tr> <td> </td> <td> 077 </td> <td align='right'>  18378 </td> <td> REMANENTE DE CREDITO FISC.  </td> </tr>
+ <tr> <td> </td> <td> 504 </td> <td align='right'>  55273 </td> <td> REMANENTE CREDITO FISCAL MES ANTERIOR.  </td> </tr>
  <tr> <td> </td> <td> 062 </td> <td align='right'>  890 </td> <td> PPM NETO DETERMINADO </td> </tr>
  <tr> <td> </td> <td> 527 </td> <td align='right'>  0 </td> <td> CANT.NOTAS DE CREDITO RECIBIDAS </td> </tr>
  <tr> <td> </td> <td> 39 </td> <td align='right'>  0 </td> <td> IVA RETENIDO A TERCEROS POR CAMBIO DE SUJETO  </td> </tr>
@@ -271,6 +271,7 @@ layout: page
  <tr> <td> </td> <td> 111 </td> <td align='right'>  3990 </td> <td> DEBITOS BOLETAS EMITIDAS  </td> </tr>
  <tr> <td> </td> <td> 511 </td> <td align='right'>  2257 </td> <td> CRED.IVA POR DCTOS. ELECTRONICOS  </td> </tr>
  <tr> <td> </td> <td> 062 </td> <td align='right'>  152 </td> <td> PPM NETO DETERMINADO </td> </tr>
+ <tr> <td> </td> <td> 527 </td> <td align='right'>  0 </td> <td> CANT.NOTAS DE CREDITO RECIBIDAS </td> </tr>
  <tr> <td> </td> <td> 519 </td> <td align='right'>  1 </td> <td> CANT.DE DCTOS.FACT.RECIB.DEL GIRO </td> </tr>
  <tr> <td> </td> <td> 520 </td> <td align='right'>  1316 </td> <td> CREDITOS REC. REINT/FACT. DEL GIRO  </td> </tr>
  <tr> <td> </td> <td> 39 </td> <td align='right'>  -223 </td> <td> IVA RETENIDO A TERCEROS POR CAMBIO DE SUJETO  </td> </tr>
