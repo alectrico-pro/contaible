@@ -691,7 +691,7 @@
   (slot rut)
   (slot subcuenta)
   (slot neto )
-  (slot iva)
+  (slot iva (default 0))
   (slot total)
   (slot folio-credito)
   (slot folio-debito)

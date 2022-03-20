@@ -1435,15 +1435,38 @@ servicio.")
 
 
 (cuenta (nombre devolucion-sobre-ventas)
-  (nombre-sii devoluciones-sobre-ventas)
   (descripcion materiales-sin-valor-comercial)
   (tipo deudor)
   (grupo resultado)
-  (naturaleza mixta)
+  (naturaleza deudora)
   (padre false) 
   (circulante true)
   (origen real)
 )
+
+
+(cuenta (nombre devolucion-sobre-ventas-afectas)
+  (descripcion devoluciones-sobre-ventas-afectas)
+  (tipo deudor)
+  (grupo resultado)
+  (naturaleza deudora)
+  (padre devolucion-sobre-ventas)
+  (circulante true)
+  (origen nominativo)
+)
+
+
+(cuenta (nombre devolucion-sobre-ventas-exentas)
+  (descripcion devoluicones-sobre-ventas-exentas)
+  (tipo deudor)
+  (grupo resultado)
+  (naturaleza deudora)
+  (padre devolucion-sobre-ventas)
+  (circulante true)
+  (origen nominativo)
+)
+
+
 
 
 (cuenta (nombre reintegro-de-devolucion-sobre-ventas)
@@ -1454,6 +1477,26 @@ servicio.")
   (padre false)
   (circulante true)
   (origen real)
+)
+
+(cuenta (nombre reintegro-de-devolucion-sobre-ventas-afectas)
+  (descripcion reintegro-por-notas-de-debito-afectas-emitidas)
+  (tipo acreedora)
+  (grupo resultado)
+  (naturaleza acreedora)
+  (padre reintegro-de-devolucion-sobre-ventas)
+  (circulante true)
+  (origen nominativo)
+)
+
+(cuenta (nombre reintegro-de-devolucion-sobre-ventas-exentas)
+  (descripcion reintegro-por-notas-de-debito-exentas-emitidas)
+  (tipo acreedora)
+  (grupo resultado)
+  (naturaleza acreedora)
+  (padre reintegro-de-devolucion-sobre-ventas-exentas)
+  (circulante true)
+  (origen nominativo)
 )
 
 
