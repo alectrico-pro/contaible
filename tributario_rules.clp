@@ -122,7 +122,7 @@
 
 
 (defrule estado-de-resultados-mensual
-  ( balance (mes ?mes) (ano ?ano ))
+  ( balance (dia ?dia) (mes ?mes) (ano ?ano ))
   ( empresa (nombre ?empresa))
 
 
@@ -254,15 +254,12 @@
   (printout k "<table><tbody>" crlf )
   (printout k "<tr><th colspan='3'>" ?empresa "</th></tr>" crlf )
 
-  (printout t "Solo se consideran las transacciones hasta el día 31 febrero. Cifras en pesos." crlf)
-
-
   (printout t ?empresa crlf)
   (printout t "================================================================================" crlf)
   (printout t "CALCULO DE LA BASE IMPONIBLE PROPYME" crlf)
-
-  (printout k "<tr><td colspan='8'> CALCULO DE LA BASE IMPONIBLE PROPYME </td></tr>" )
-  (printout k "<tr><th colspan='8'>Solo se consideran las transacciones hasta el día final de " ?mes ". Cifras en pesos. </th></tr>" crlf)
+  (printout t " Solo se consideran las transacciones hasta el día " ?dia " de " ?mes " de " ?ano "o. Cifras en pesos." crlf)
+  (printout k "<tr><th colspan='8'> CALCULO DE LA BASE IMPONIBLE PROPYME </th></tr>" )
+  (printout k "<tr><td colspan='8'>Solo se consideran las transacciones hasta el día " ?dia " de " ?mes tab ?ano ". Cifras en pesos. </td></tr>" crlf)
 
   (printout t "================================================================================" crlf)
 
