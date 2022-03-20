@@ -215,7 +215,7 @@
 ;en tiempo y forma
 (revision (revisado true) (partida 087) (tipo nota-de-credito) (rcv true)
  (rechazado false)
- (no-incluir false)
+ (no-incluir true)
  (a-corregir "La emití a nombre de alectrico pero  no anulé la nota que se recibe en consecuencia") )
 
 
