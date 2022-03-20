@@ -183,8 +183,8 @@ layout: page
 <thead><th> voucher </th><th> partida </th><th> debe </th> <th> | </th> <th> haber </th><th> mes </th> <th>recibida</th> <th>factor corrección monetaria</th> <th> tipo documento</th></thead>
 <tbody>
 <tr> <td> </td> <td align='right'> <a href= '/alectrico-2021/libro-diario#Partida-168'>168</a> </td> <td align='right'>0</td> <td> | </td> <td align='right'> 780</td> <td>octubre</td><td>false</td><td> 1.018</td><td> ajuste-mensual-manual</td> </tr>
-<tr> <td> </td> <td align='right'> <a href= '/alectrico-2021/libro-diario#Partida-154'>154</a> </td> <td align='right'>0</td> <td> | </td> <td align='right'> 296</td> <td>septiembre</td><td>false</td><td> 1.031</td><td> remanente-iva</td> </tr>
-<tr> <td> </td> <td align='right'> <a href= '/alectrico-2021/libro-diario#Partida-126'>126</a> </td> <td align='right'>0</td> <td> | </td> <td align='right'> 189</td> <td>agosto</td><td>false</td><td> 1.034</td><td> remanente-iva</td> </tr>
+<tr> <td> </td> <td align='right'> <a href= '/alectrico-2021/libro-diario#Partida-154'>154</a> </td> <td align='right'>0</td> <td> | </td> <td align='right'> 677</td> <td>septiembre</td><td>false</td><td> 1.031</td><td> remanente-iva</td> </tr>
+<tr> <td> </td> <td align='right'> <a href= '/alectrico-2021/libro-diario#Partida-126'>126</a> </td> <td align='right'>0</td> <td> | </td> <td align='right'> 474</td> <td>agosto</td><td>false</td><td> 1.034</td><td> remanente-iva</td> </tr>
 <tr> <td> </td> <td align='right'> <a href= '/alectrico-2021/libro-diario#Partida-89'>89</a> </td> <td align='right'>0</td> <td> | </td> <td align='right'> 167</td> <td>julio</td><td>false</td><td> 1.043</td><td> remanente-iva</td> </tr>
 <tr> <td> </td> <td align='right'> <a href= '/alectrico-2021/libro-diario#Partida-62'>62</a> </td> <td align='right'>0</td> <td> | </td> <td align='right'> 266</td> <td>junio</td><td>false</td><td> 1.043</td><td> remanente-iva</td> </tr>
 <tr> <td> </td> <td align='right'> <a href= '/alectrico-2021/libro-diario#Partida-372'>372</a> </td> <td align='right'>0</td> <td> | </td> <td align='right'> 254</td> <td>mayo</td><td>false</td><td> 1.046</td><td> remanente-iva</td> </tr>
@@ -192,9 +192,9 @@ layout: page
 <tr> <td> </td> <td align='right'> <a href= '/alectrico-2021/libro-diario#Partida-262'>262</a> </td> <td align='right'>0</td> <td> | </td> <td align='right'> 334</td> <td>marzo</td><td>false</td><td> 1.054</td><td> remanente-iva</td> </tr>
 <tr> <td> </td> <td align='right'> <a href= '/alectrico-2021/libro-diario#Partida-14444'>14444</a> </td> <td align='right'>0</td> <td> | </td> <td align='right'> 298</td> <td>febrero</td><td>false</td><td> 1.056</td><td> remanente-iva</td> </tr>
 <tr> <td>188</td> <td align='right'> <a href= '/alectrico-2021/libro-diario#Partida-14333'>14333</a> </td> <td align='right'>0</td> <td> | </td> <td align='right'> 33</td> <td>enero</td><td>false</td><td> 1.063</td><td> remanente-iva</td> </tr>
-<tr> <td></td> <td></td> <td align='right'>0 <small> 0.0</small> </td> <td>|</td> <td align='right'>2857<small> 3036.991</small> </td></tr>
-<tr> <td> </td> <td> </td> <td></td> <td>|</td> <td align='right'>2857 <small> 3036.991</small></td> <td>$</td> </tr>
-<tr> <td colspan='2'> Monto Corrección</td><td></td><td>$</td> <td align='right'>180 </td></tr>
+<tr> <td></td> <td></td> <td align='right'>0 <small> 0.0</small> </td> <td>|</td> <td align='right'>3523<small> 3744.949</small> </td></tr>
+<tr> <td> </td> <td> </td> <td></td> <td>|</td> <td align='right'>3523 <small> 3744.949</small></td> <td>$</td> </tr>
+<tr> <td colspan='2'> Monto Corrección</td><td></td><td>$</td> <td align='right'>222 </td></tr>
 </tbody>
 </table>
 <table>
@@ -203,8 +203,8 @@ layout: page
 <thead><th> voucher </th><th> partida </th><th> debe </th> <th> | </th> <th> haber </th><th> mes </th> <th>recibida</th> <th>factor corrección monetaria</th> <th> tipo documento</th></thead>
 <tbody>
 <tr> <td> </td> <td align='right'> <a href= '/alectrico-2021/libro-diario#Partida-168'>168</a> </td> <td align='right'>0</td> <td> | </td> <td align='right'> 780</td> <td>octubre</td><td>false</td><td> 1.018</td><td> ajuste-mensual-manual</td> </tr>
-<tr> <td> </td> <td align='right'> <a href= '/alectrico-2021/libro-diario#Partida-154'>154</a> </td> <td align='right'>0</td> <td> | </td> <td align='right'> 296</td> <td>septiembre</td><td>false</td><td> 1.031</td><td> remanente-iva</td> </tr>
-<tr> <td> </td> <td align='right'> <a href= '/alectrico-2021/libro-diario#Partida-126'>126</a> </td> <td align='right'>0</td> <td> | </td> <td align='right'> 189</td> <td>agosto</td><td>false</td><td> 1.034</td><td> remanente-iva</td> </tr>
+<tr> <td> </td> <td align='right'> <a href= '/alectrico-2021/libro-diario#Partida-154'>154</a> </td> <td align='right'>0</td> <td> | </td> <td align='right'> 677</td> <td>septiembre</td><td>false</td><td> 1.031</td><td> remanente-iva</td> </tr>
+<tr> <td> </td> <td align='right'> <a href= '/alectrico-2021/libro-diario#Partida-126'>126</a> </td> <td align='right'>0</td> <td> | </td> <td align='right'> 474</td> <td>agosto</td><td>false</td><td> 1.034</td><td> remanente-iva</td> </tr>
 <tr> <td> </td> <td align='right'> <a href= '/alectrico-2021/libro-diario#Partida-89'>89</a> </td> <td align='right'>0</td> <td> | </td> <td align='right'> 167</td> <td>julio</td><td>false</td><td> 1.043</td><td> remanente-iva</td> </tr>
 <tr> <td> </td> <td align='right'> <a href= '/alectrico-2021/libro-diario#Partida-62'>62</a> </td> <td align='right'>0</td> <td> | </td> <td align='right'> 266</td> <td>junio</td><td>false</td><td> 1.043</td><td> remanente-iva</td> </tr>
 <tr> <td> </td> <td align='right'> <a href= '/alectrico-2021/libro-diario#Partida-372'>372</a> </td> <td align='right'>0</td> <td> | </td> <td align='right'> 254</td> <td>mayo</td><td>false</td><td> 1.046</td><td> remanente-iva</td> </tr>
@@ -212,9 +212,9 @@ layout: page
 <tr> <td> </td> <td align='right'> <a href= '/alectrico-2021/libro-diario#Partida-262'>262</a> </td> <td align='right'>0</td> <td> | </td> <td align='right'> 334</td> <td>marzo</td><td>false</td><td> 1.054</td><td> remanente-iva</td> </tr>
 <tr> <td> </td> <td align='right'> <a href= '/alectrico-2021/libro-diario#Partida-14444'>14444</a> </td> <td align='right'>0</td> <td> | </td> <td align='right'> 298</td> <td>febrero</td><td>false</td><td> 1.056</td><td> remanente-iva</td> </tr>
 <tr> <td>188</td> <td align='right'> <a href= '/alectrico-2021/libro-diario#Partida-14333'>14333</a> </td> <td align='right'>0</td> <td> | </td> <td align='right'> 33</td> <td>enero</td><td>false</td><td> 1.063</td><td> remanente-iva</td> </tr>
-<tr> <td></td> <td></td> <td align='right'>0 <small> 0.0</small> </td> <td>|</td> <td align='right'>2857<small> 3036.991</small> </td></tr>
-<tr> <td> </td> <td> </td> <td></td> <td>|</td> <td align='right'>2857 <small> 3036.991</small></td> <td>$</td> </tr>
-<tr> <td colspan='2'> Monto Corrección</td><td></td><td>$</td> <td align='right'>180 </td></tr>
+<tr> <td></td> <td></td> <td align='right'>0 <small> 0.0</small> </td> <td>|</td> <td align='right'>3523<small> 3744.949</small> </td></tr>
+<tr> <td> </td> <td> </td> <td></td> <td>|</td> <td align='right'>3523 <small> 3744.949</small></td> <td>$</td> </tr>
+<tr> <td colspan='2'> Monto Corrección</td><td></td><td>$</td> <td align='right'>222 </td></tr>
 </tbody>
 </table>
 <table>
@@ -432,15 +432,15 @@ pagos.</th></thead>
 <tr> <td> </td> <td align='right'> <a href= '/alectrico-2021/libro-diario#Partida-114'>114</a> </td> <td align='right'>90544</td> <td> | </td> <td align='right'> 0</td> <td>agosto</td><td>false</td><td> 1.034</td><td> 61</td> </tr>
 <tr> <td> </td> <td align='right'> <a href= '/alectrico-2021/libro-diario#Partida-116'>116</a> </td> <td align='right'>40000</td> <td> | </td> <td align='right'> 0</td> <td>agosto</td><td>false</td><td> 1.034</td><td> 61</td> </tr>
 <tr> <td> </td> <td align='right'> <a href= '/alectrico-2021/libro-diario#Partida-123'>123</a> </td> <td align='right'>33613</td> <td> | </td> <td align='right'> 0</td> <td>agosto</td><td>false</td><td> 1.034</td><td> 61</td> </tr>
-<tr> <td> </td> <td align='right'> <a href= '/alectrico-2021/libro-diario#Partida-87'>87</a> </td> <td align='right'>0</td> <td> | </td> <td align='right'> 0</td> <td>julio</td><td>false</td><td> 1.043</td><td> 61</td> </tr>
 <tr> <td> </td> <td align='right'> <a href= '/alectrico-2021/libro-diario#Partida-82'>82</a> </td> <td align='right'>558823</td> <td> | </td> <td align='right'> 0</td> <td>julio</td><td>false</td><td> 1.043</td><td> 61</td> </tr>
+<tr> <td> </td> <td align='right'> <a href= '/alectrico-2021/libro-diario#Partida-87'>87</a> </td> <td align='right'>151962</td> <td> | </td> <td align='right'> 0</td> <td>julio</td><td>false</td><td> 1.043</td><td> 61</td> </tr>
 <tr> <td> </td> <td align='right'> <a href= '/alectrico-2021/libro-diario#Partida-141'>141</a> </td> <td align='right'>29412</td> <td> | </td> <td align='right'> 0</td> <td>febrero</td><td>false</td><td> 1.056</td><td> 61</td> </tr>
 <tr> <td>192</td> <td align='right'> <a href= '/alectrico-2021/libro-diario#Partida-5'>5</a> </td> <td align='right'>4505</td> <td> | </td> <td align='right'> 0</td> <td>enero</td><td>false</td><td> 1.063</td><td> 61</td> </tr>
 <tr> <td>192</td> <td align='right'> <a href= '/alectrico-2021/libro-diario#Partida-6'>6</a> </td> <td align='right'>45050</td> <td> | </td> <td align='right'> 0</td> <td>enero</td><td>false</td><td> 1.063</td><td> 61</td> </tr>
 <tr> <td>192</td> <td align='right'> <a href= '/alectrico-2021/libro-diario#Partida-7'>7</a> </td> <td align='right'>29412</td> <td> | </td> <td align='right'> 0</td> <td>enero</td><td>false</td><td> 1.063</td><td> 61</td> </tr>
-<tr> <td></td> <td></td> <td align='right'>1241951 <small> 1320193.913</small> </td> <td>|</td> <td align='right'>0<small> 0.0</small> </td></tr>
-<tr> <td></td> <td>$</td> <td align='right'>1241951 <small> 1320193.913</small></td></tr>
-<tr> <td> Monto Corrección </td> <td>$</td> <td align='right'>78243 </td></tr>
+<tr> <td></td> <td></td> <td align='right'>1393913 <small> 1481729.519</small> </td> <td>|</td> <td align='right'>0<small> 0.0</small> </td></tr>
+<tr> <td></td> <td>$</td> <td align='right'>1393913 <small> 1481729.519</small></td></tr>
+<tr> <td> Monto Corrección </td> <td>$</td> <td align='right'>87817 </td></tr>
 </tbody>
 </table>
 <table>
@@ -523,7 +523,7 @@ pagos.</th></thead>
 <tr> <td> </td> <td align='right'> <a href= '/alectrico-2021/libro-diario#Partida-135'>135</a> </td> <td align='right'>0</td> <td> | </td> <td align='right'> 23197</td> <td>septiembre</td><td>false</td><td> 1.031</td><td> 39</td> </tr>
 <tr> <td> </td> <td align='right'> <a href= '/alectrico-2021/libro-diario#Partida-151'>151</a> </td> <td align='right'>0</td> <td> | </td> <td align='right'> 126050</td> <td>septiembre</td><td>false</td><td> 1.031</td><td> 33</td> </tr>
 <tr> <td> </td> <td align='right'> <a href= '/alectrico-2021/libro-diario#Partida-152'>152</a> </td> <td align='right'>0</td> <td> | </td> <td align='right'> 93137</td> <td>septiembre</td><td>false</td><td> 1.031</td><td> 33</td> </tr>
-<tr> <td> </td> <td align='right'> <a href= '/alectrico-2021/libro-diario#Partida-154'>154</a> </td> <td align='right'>0</td> <td> | </td> <td align='right'> 296</td> <td>septiembre</td><td>false</td><td> 1.031</td><td> remanente-iva</td> </tr>
+<tr> <td> </td> <td align='right'> <a href= '/alectrico-2021/libro-diario#Partida-154'>154</a> </td> <td align='right'>0</td> <td> | </td> <td align='right'> 677</td> <td>septiembre</td><td>false</td><td> 1.031</td><td> remanente-iva</td> </tr>
 <tr> <td> </td> <td align='right'> <a href= '/alectrico-2021/libro-diario#Partida-92'>92</a> </td> <td align='right'>0</td> <td> | </td> <td align='right'> 33613</td> <td>agosto</td><td>false</td><td> 1.034</td><td> 48</td> </tr>
 <tr> <td> </td> <td align='right'> <a href= '/alectrico-2021/libro-diario#Partida-93'>93</a> </td> <td align='right'>0</td> <td> | </td> <td align='right'> 6666</td> <td>agosto</td><td>false</td><td> 1.034</td><td> 34</td> </tr>
 <tr> <td> </td> <td align='right'> <a href= '/alectrico-2021/libro-diario#Partida-99'>99</a> </td> <td align='right'>0</td> <td> | </td> <td align='right'> 141596</td> <td>agosto</td><td>false</td><td> 1.034</td><td> 33</td> </tr>
@@ -531,7 +531,7 @@ pagos.</th></thead>
 <tr> <td> </td> <td align='right'> <a href= '/alectrico-2021/libro-diario#Partida-115'>115</a> </td> <td align='right'>0</td> <td> | </td> <td align='right'> 93137</td> <td>agosto</td><td>false</td><td> 1.034</td><td> 33</td> </tr>
 <tr> <td> </td> <td align='right'> <a href= '/alectrico-2021/libro-diario#Partida-117'>117</a> </td> <td align='right'>0</td> <td> | </td> <td align='right'> 40000</td> <td>agosto</td><td>false</td><td> 1.034</td><td> 34</td> </tr>
 <tr> <td> </td> <td align='right'> <a href= '/alectrico-2021/libro-diario#Partida-122'>122</a> </td> <td align='right'>0</td> <td> | </td> <td align='right'> 62000</td> <td>agosto</td><td>false</td><td> 1.034</td><td> 33</td> </tr>
-<tr> <td> </td> <td align='right'> <a href= '/alectrico-2021/libro-diario#Partida-126'>126</a> </td> <td align='right'>0</td> <td> | </td> <td align='right'> 189</td> <td>agosto</td><td>false</td><td> 1.034</td><td> remanente-iva</td> </tr>
+<tr> <td> </td> <td align='right'> <a href= '/alectrico-2021/libro-diario#Partida-126'>126</a> </td> <td align='right'>0</td> <td> | </td> <td align='right'> 474</td> <td>agosto</td><td>false</td><td> 1.034</td><td> remanente-iva</td> </tr>
 <tr> <td> </td> <td align='right'> <a href= '/alectrico-2021/libro-diario#Partida-75'>75</a> </td> <td align='right'>0</td> <td> | </td> <td align='right'> 35000</td> <td>julio</td><td>false</td><td> 1.043</td><td> 34</td> </tr>
 <tr> <td> </td> <td align='right'> <a href= '/alectrico-2021/libro-diario#Partida-76'>76</a> </td> <td align='right'>0</td> <td> | </td> <td align='right'> 558823</td> <td>julio</td><td>false</td><td> 1.043</td><td> 33</td> </tr>
 <tr> <td> </td> <td align='right'> <a href= '/alectrico-2021/libro-diario#Partida-77'>77</a> </td> <td align='right'>0</td> <td> | </td> <td align='right'> 151960</td> <td>julio</td><td>false</td><td> 1.043</td><td> 48</td> </tr>
@@ -551,9 +551,9 @@ pagos.</th></thead>
 <tr> <td>192</td> <td align='right'> <a href= '/alectrico-2021/libro-diario#Partida-3'>3</a> </td> <td align='right'>0</td> <td> | </td> <td align='right'> 29412</td> <td>enero</td><td>false</td><td> 1.063</td><td> 39</td> </tr>
 <tr> <td>192</td> <td align='right'> <a href= '/alectrico-2021/libro-diario#Partida-4'>4</a> </td> <td align='right'>0</td> <td> | </td> <td align='right'> 123497</td> <td>enero</td><td>false</td><td> 1.063</td><td> 48</td> </tr>
 <tr> <td>188</td> <td align='right'> <a href= '/alectrico-2021/libro-diario#Partida-14333'>14333</a> </td> <td align='right'>0</td> <td> | </td> <td align='right'> 33</td> <td>enero</td><td>false</td><td> 1.063</td><td> remanente-iva</td> </tr>
-<tr> <td></td> <td></td> <td align='right'>0 <small> 0.0</small> </td> <td>|</td> <td align='right'>2621474<small> 2786626.862</small> </td></tr>
-<tr> <td> </td> <td> </td> <td></td> <td>|</td> <td align='right'>2621474 <small> 2786626.862</small></td> <td>$</td> </tr>
-<tr> <td colspan='2'> Monto Corrección</td><td></td><td>$</td> <td align='right'>165153 </td></tr>
+<tr> <td></td> <td></td> <td align='right'>0 <small> 0.0</small> </td> <td>|</td> <td align='right'>2622140<small> 2787334.82</small> </td></tr>
+<tr> <td> </td> <td> </td> <td></td> <td>|</td> <td align='right'>2622140 <small> 2787334.82</small></td> <td>$</td> </tr>
+<tr> <td colspan='2'> Monto Corrección</td><td></td><td>$</td> <td align='right'>165195 </td></tr>
 </tbody>
 </table>
 <table>
@@ -670,7 +670,7 @@ pagos.</th></thead>
 <tbody>
 <tr> <td> </td> <td align='right'> <a href= '/alectrico-2021/libro-diario#Partida-197'>197</a> </td> <td align='right'>0</td> <td> | </td> <td align='right'> 17696</td> <td>diciembre</td><td>false</td><td> 1.0</td><td> 33</td> </tr>
 <tr> <td> </td> <td align='right'> <a href= '/alectrico-2021/libro-diario#Partida-198'>198</a> </td> <td align='right'>0</td> <td> | </td> <td align='right'> 17696</td> <td>diciembre</td><td>false</td><td> 1.0</td><td> 33</td> </tr>
-<tr> <td> </td> <td align='right'> <a href= '/alectrico-2021/libro-diario#Partida-209'>209</a> </td> <td align='right'>0</td> <td> | </td> <td align='right'> 28235</td> <td>diciembre</td><td>false</td><td> 1.0</td><td> ajuste-iva-debito</td> </tr>
+<tr> <td> </td> <td align='right'> <a href= '/alectrico-2021/libro-diario#Partida-209'>209</a> </td> <td align='right'>0</td> <td> | </td> <td align='right'> 9942</td> <td>diciembre</td><td>false</td><td> 1.0</td><td> ajuste-iva-debito</td> </tr>
 <tr> <td> </td> <td align='right'> <a href= '/alectrico-2021/libro-diario#Partida-187'>187</a> </td> <td align='right'>0</td> <td> | </td> <td align='right'> 0</td> <td>noviembre</td><td>false</td><td> 1.005</td><td> ajuste-iva-credito</td> </tr>
 <tr> <td> </td> <td align='right'> <a href= '/alectrico-2021/libro-diario#Partida-158'>158</a> </td> <td align='right'>0</td> <td> | </td> <td align='right'> 0</td> <td>octubre</td><td>false</td><td> 1.018</td><td> 61</td> </tr>
 <tr> <td> </td> <td align='right'> <a href= '/alectrico-2021/libro-diario#Partida-162'>162</a> </td> <td align='right'>0</td> <td> | </td> <td align='right'> 3998</td> <td>octubre</td><td>false</td><td> 1.018</td><td> 39</td> </tr>
@@ -681,7 +681,7 @@ pagos.</th></thead>
 <tr> <td> </td> <td align='right'> <a href= '/alectrico-2021/libro-diario#Partida-148'>148</a> </td> <td align='right'>2013</td> <td> | </td> <td align='right'> 0</td> <td>septiembre</td><td>false</td><td> 1.031</td><td> 61</td> </tr>
 <tr> <td> </td> <td align='right'> <a href= '/alectrico-2021/libro-diario#Partida-151'>151</a> </td> <td align='right'>0</td> <td> | </td> <td align='right'> 23950</td> <td>septiembre</td><td>false</td><td> 1.031</td><td> 33</td> </tr>
 <tr> <td> </td> <td align='right'> <a href= '/alectrico-2021/libro-diario#Partida-152'>152</a> </td> <td align='right'>0</td> <td> | </td> <td align='right'> 17696</td> <td>septiembre</td><td>false</td><td> 1.031</td><td> 33</td> </tr>
-<tr> <td> </td> <td align='right'> <a href= '/alectrico-2021/libro-diario#Partida-154'>154</a> </td> <td align='right'>0</td> <td> | </td> <td align='right'> 11838</td> <td>septiembre</td><td>false</td><td> 1.031</td><td> ajuste-iva-debito</td> </tr>
+<tr> <td> </td> <td align='right'> <a href= '/alectrico-2021/libro-diario#Partida-154'>154</a> </td> <td align='right'>56017</td> <td> | </td> <td align='right'> 0</td> <td>septiembre</td><td>false</td><td> 1.031</td><td> ajuste-iva-credito</td> </tr>
 <tr> <td> </td> <td align='right'> <a href= '/alectrico-2021/libro-diario#Partida-116'>116</a> </td> <td align='right'>0</td> <td> | </td> <td align='right'> 0</td> <td>agosto</td><td>false</td><td> 1.034</td><td> 61</td> </tr>
 <tr> <td> </td> <td align='right'> <a href= '/alectrico-2021/libro-diario#Partida-92'>92</a> </td> <td align='right'>0</td> <td> | </td> <td align='right'> 6387</td> <td>agosto</td><td>false</td><td> 1.034</td><td> 48</td> </tr>
 <tr> <td> </td> <td align='right'> <a href= '/alectrico-2021/libro-diario#Partida-99'>99</a> </td> <td align='right'>0</td> <td> | </td> <td align='right'> 26903</td> <td>agosto</td><td>false</td><td> 1.034</td><td> 33</td> </tr>
@@ -691,12 +691,12 @@ pagos.</th></thead>
 <tr> <td> </td> <td align='right'> <a href= '/alectrico-2021/libro-diario#Partida-122'>122</a> </td> <td align='right'>0</td> <td> | </td> <td align='right'> 11780</td> <td>agosto</td><td>false</td><td> 1.034</td><td> 33</td> </tr>
 <tr> <td> </td> <td align='right'> <a href= '/alectrico-2021/libro-diario#Partida-123'>123</a> </td> <td align='right'>6386</td> <td> | </td> <td align='right'> 0</td> <td>agosto</td><td>false</td><td> 1.034</td><td> 61</td> </tr>
 <tr> <td> </td> <td align='right'> <a href= '/alectrico-2021/libro-diario#Partida-126'>126</a> </td> <td align='right'>56380</td> <td> | </td> <td align='right'> 0</td> <td>agosto</td><td>false</td><td> 1.034</td><td> ajuste-iva-credito</td> </tr>
-<tr> <td> </td> <td align='right'> <a href= '/alectrico-2021/libro-diario#Partida-87'>87</a> </td> <td align='right'>0</td> <td> | </td> <td align='right'> 0</td> <td>julio</td><td>false</td><td> 1.043</td><td> 61</td> </tr>
 <tr> <td> </td> <td align='right'> <a href= '/alectrico-2021/libro-diario#Partida-76'>76</a> </td> <td align='right'>0</td> <td> | </td> <td align='right'> 106176</td> <td>julio</td><td>false</td><td> 1.043</td><td> 33</td> </tr>
 <tr> <td> </td> <td align='right'> <a href= '/alectrico-2021/libro-diario#Partida-77'>77</a> </td> <td align='right'>0</td> <td> | </td> <td align='right'> 28873</td> <td>julio</td><td>false</td><td> 1.043</td><td> 48</td> </tr>
 <tr> <td> </td> <td align='right'> <a href= '/alectrico-2021/libro-diario#Partida-82'>82</a> </td> <td align='right'>106176</td> <td> | </td> <td align='right'> 0</td> <td>julio</td><td>false</td><td> 1.043</td><td> 61</td> </tr>
 <tr> <td> </td> <td align='right'> <a href= '/alectrico-2021/libro-diario#Partida-83'>83</a> </td> <td align='right'>0</td> <td> | </td> <td align='right'> 17704</td> <td>julio</td><td>false</td><td> 1.043</td><td> 33</td> </tr>
-<tr> <td> </td> <td align='right'> <a href= '/alectrico-2021/libro-diario#Partida-89'>89</a> </td> <td align='right'>46577</td> <td> | </td> <td align='right'> 0</td> <td>julio</td><td>false</td><td> 1.043</td><td> ajuste-iva-credito</td> </tr>
+<tr> <td> </td> <td align='right'> <a href= '/alectrico-2021/libro-diario#Partida-87'>87</a> </td> <td align='right'>28873</td> <td> | </td> <td align='right'> 0</td> <td>julio</td><td>false</td><td> 1.043</td><td> 61</td> </tr>
+<tr> <td> </td> <td align='right'> <a href= '/alectrico-2021/libro-diario#Partida-89'>89</a> </td> <td align='right'>17704</td> <td> | </td> <td align='right'> 0</td> <td>julio</td><td>false</td><td> 1.043</td><td> ajuste-iva-credito</td> </tr>
 <tr> <td> </td> <td align='right'> <a href= '/alectrico-2021/libro-diario#Partida-62'>62</a> </td> <td align='right'>0</td> <td> | </td> <td align='right'> 0</td> <td>junio</td><td>false</td><td> 1.043</td><td> ajuste-iva-credito</td> </tr>
 <tr> <td> </td> <td align='right'> <a href= '/alectrico-2021/libro-diario#Partida-372'>372</a> </td> <td align='right'>0</td> <td> | </td> <td align='right'> 0</td> <td>mayo</td><td>false</td><td> 1.046</td><td> ajuste-iva-credito</td> </tr>
 <tr> <td> </td> <td align='right'> <a href= '/alectrico-2021/libro-diario#Partida-30'>30</a> </td> <td align='right'>0</td> <td> | </td> <td align='right'> 4790</td> <td>abril</td><td>false</td><td> 1.05</td><td> 48</td> </tr>
@@ -713,9 +713,9 @@ pagos.</th></thead>
 <tr> <td>192</td> <td align='right'> <a href= '/alectrico-2021/libro-diario#Partida-4'>4</a> </td> <td align='right'>0</td> <td> | </td> <td align='right'> 23464</td> <td>enero</td><td>false</td><td> 1.063</td><td> 48</td> </tr>
 <tr> <td>192</td> <td align='right'> <a href= '/alectrico-2021/libro-diario#Partida-7'>7</a> </td> <td align='right'>5588</td> <td> | </td> <td align='right'> 0</td> <td>enero</td><td>false</td><td> 1.063</td><td> 61</td> </tr>
 <tr> <td>188</td> <td align='right'> <a href= '/alectrico-2021/libro-diario#Partida-14333'>14333</a> </td> <td align='right'>23464</td> <td> | </td> <td align='right'> 0</td> <td>enero</td><td>false</td><td> 1.063</td><td> ajuste-iva-credito</td> </tr>
-<tr> <td></td> <td></td> <td align='right'>301463 <small> 320455.169</small> </td> <td>|</td> <td align='right'>432945<small> 460220.535</small> </td></tr>
-<tr> <td> </td> <td> </td> <td></td> <td>|</td> <td align='right'>131482 <small> 139765.366</small></td> <td>$</td> </tr>
-<tr> <td colspan='2'> Monto Corrección</td><td></td><td>$</td> <td align='right'>8283 </td></tr>
+<tr> <td></td> <td></td> <td align='right'>357480 <small> 380001.24</small> </td> <td>|</td> <td align='right'>402814<small> 428191.282</small> </td></tr>
+<tr> <td> </td> <td> </td> <td></td> <td>|</td> <td align='right'>45334 <small> 48190.042</small></td> <td>$</td> </tr>
+<tr> <td colspan='2'> Monto Corrección</td><td></td><td>$</td> <td align='right'>2856 </td></tr>
 </tbody>
 </table>
 <table>
@@ -855,6 +855,7 @@ pagos.</th></thead>
 <tr> <td> </td> <td align='right'> <a href= '/alectrico-2021/libro-diario#Partida-83'>83</a> </td> <td align='right'>110883</td> <td> | </td> <td align='right'> 0</td> <td>julio</td><td>false</td><td> 1.043</td><td> 33</td> </tr>
 <tr> <td> </td> <td align='right'> <a href= '/alectrico-2021/libro-diario#Partida-85'>85</a> </td> <td align='right'>0</td> <td> | </td> <td align='right'> 2099</td> <td>julio</td><td>true</td><td> 1.043</td><td> 33</td> </tr>
 <tr> <td> </td> <td align='right'> <a href= '/alectrico-2021/libro-diario#Partida-86'>86</a> </td> <td align='right'>0</td> <td> | </td> <td align='right'> 5035</td> <td>julio</td><td>true</td><td> 1.043</td><td> 33</td> </tr>
+<tr> <td> </td> <td align='right'> <a href= '/alectrico-2021/libro-diario#Partida-87'>87</a> </td> <td align='right'>0</td> <td> | </td> <td align='right'> 180835</td> <td>julio</td><td>false</td><td> 1.043</td><td> 61</td> </tr>
 <tr> <td> </td> <td align='right'> <a href= '/alectrico-2021/libro-diario#Partida-89'>89</a> </td> <td align='right'>0</td> <td> | </td> <td align='right'> 1092</td> <td>julio</td><td>false</td><td> 1.043</td><td> pago-de-ppm</td> </tr>
 <tr> <td> </td> <td align='right'> <a href= '/alectrico-2021/libro-diario#Partida-39'>39</a> </td> <td align='right'>0</td> <td> | </td> <td align='right'> 17850</td> <td>junio</td><td>true</td><td> 1.043</td><td> 33</td> </tr>
 <tr> <td> </td> <td align='right'> <a href= '/alectrico-2021/libro-diario#Partida-42'>42</a> </td> <td align='right'>0</td> <td> | </td> <td align='right'> 1701</td> <td>junio</td><td>false</td><td> 1.043</td><td> comprobante-pago</td> </tr>
@@ -898,9 +899,9 @@ pagos.</th></thead>
 <tr> <td> </td> <td align='right'> <a href= '/alectrico-2021/libro-diario#Partida-13'>13</a> </td> <td align='right'>0</td> <td> | </td> <td align='right'> 179990</td> <td>enero</td><td>true</td><td> 1.063</td><td> 33</td> </tr>
 <tr> <td> </td> <td align='right'> <a href= '/alectrico-2021/libro-diario#Partida-14'>14</a> </td> <td align='right'>0</td> <td> | </td> <td align='right'> 8470</td> <td>enero</td><td>false</td><td> 1.063</td><td> 33</td> </tr>
 <tr> <td>188</td> <td align='right'> <a href= '/alectrico-2021/libro-diario#Partida-14333'>14333</a> </td> <td align='right'>0</td> <td> | </td> <td align='right'> 199</td> <td>enero</td><td>false</td><td> 1.063</td><td> pago-de-ppm</td> </tr>
-<tr> <td></td> <td></td> <td align='right'>4560413 <small> 4847719.019</small> </td> <td>|</td> <td align='right'>4016315<small> 4269342.845</small> </td></tr>
-<tr> <td></td> <td>$</td> <td align='right'>544098 <small> 578376.174</small></td></tr>
-<tr> <td> Monto Corrección </td> <td>$</td> <td align='right'>34278 </td></tr>
+<tr> <td></td> <td></td> <td align='right'>4560413 <small> 4847719.019</small> </td> <td>|</td> <td align='right'>4197150<small> 4461570.45</small> </td></tr>
+<tr> <td></td> <td>$</td> <td align='right'>363263 <small> 386148.568999999</small></td></tr>
+<tr> <td> Monto Corrección </td> <td>$</td> <td align='right'>22886 </td></tr>
 </tbody>
 </table>
 <table>
@@ -933,7 +934,7 @@ pagos.</th></thead>
 <tr> <td> </td> <td align='right'> <a href= '/alectrico-2021/libro-diario#Partida-200'>200</a> </td> <td align='right'>0</td> <td> | </td> <td align='right'> 0</td> <td>diciembre</td><td>false</td><td> 1.0</td><td> 33</td> </tr>
 <tr> <td> </td> <td align='right'> <a href= '/alectrico-2021/libro-diario#Partida-189'>189</a> </td> <td align='right'>1595</td> <td> | </td> <td align='right'> 0</td> <td>diciembre</td><td>false</td><td> 1.0</td><td> 33</td> </tr>
 <tr> <td> </td> <td align='right'> <a href= '/alectrico-2021/libro-diario#Partida-201'>201</a> </td> <td align='right'>1316</td> <td> | </td> <td align='right'> 0</td> <td>diciembre</td><td>true</td><td> 1.0</td><td> 33</td> </tr>
-<tr> <td> </td> <td align='right'> <a href= '/alectrico-2021/libro-diario#Partida-209'>209</a> </td> <td align='right'>28235</td> <td> | </td> <td align='right'> 0</td> <td>diciembre</td><td>false</td><td> 1.0</td><td> ajuste-iva-debito</td> </tr>
+<tr> <td> </td> <td align='right'> <a href= '/alectrico-2021/libro-diario#Partida-209'>209</a> </td> <td align='right'>9942</td> <td> | </td> <td align='right'> 0</td> <td>diciembre</td><td>false</td><td> 1.0</td><td> ajuste-iva-debito</td> </tr>
 <tr> <td> </td> <td align='right'> <a href= '/alectrico-2021/libro-diario#Partida-187'>187</a> </td> <td align='right'>0</td> <td> | </td> <td align='right'> 0</td> <td>noviembre</td><td>false</td><td> 1.005</td><td> ajuste-iva-credito</td> </tr>
 <tr> <td> </td> <td align='right'> <a href= '/alectrico-2021/libro-diario#Partida-171'>171</a> </td> <td align='right'>1316</td> <td> | </td> <td align='right'> 0</td> <td>noviembre</td><td>true</td><td> 1.005</td><td> 33</td> </tr>
 <tr> <td> </td> <td align='right'> <a href= '/alectrico-2021/libro-diario#Partida-183'>183</a> </td> <td align='right'>797</td> <td> | </td> <td align='right'> 0</td> <td>noviembre</td><td>true</td><td> 1.005</td><td> 33</td> </tr>
@@ -951,7 +952,7 @@ pagos.</th></thead>
 <tr> <td> </td> <td align='right'> <a href= '/alectrico-2021/libro-diario#Partida-147'>147</a> </td> <td align='right'>3487</td> <td> | </td> <td align='right'> 0</td> <td>septiembre</td><td>true</td><td> 1.031</td><td> 45</td> </tr>
 <tr> <td> </td> <td align='right'> <a href= '/alectrico-2021/libro-diario#Partida-149'>149</a> </td> <td align='right'>1167</td> <td> | </td> <td align='right'> 0</td> <td>septiembre</td><td>false</td><td> 1.031</td><td> 33</td> </tr>
 <tr> <td> </td> <td align='right'> <a href= '/alectrico-2021/libro-diario#Partida-153'>153</a> </td> <td align='right'>100</td> <td> | </td> <td align='right'> 0</td> <td>septiembre</td><td>true</td><td> 1.031</td><td> 33</td> </tr>
-<tr> <td> </td> <td align='right'> <a href= '/alectrico-2021/libro-diario#Partida-154'>154</a> </td> <td align='right'>12134</td> <td> | </td> <td align='right'> 0</td> <td>septiembre</td><td>false</td><td> 1.031</td><td> ajuste-iva-debito</td> </tr>
+<tr> <td> </td> <td align='right'> <a href= '/alectrico-2021/libro-diario#Partida-154'>154</a> </td> <td align='right'>677</td> <td> | </td> <td align='right'> 56017</td> <td>septiembre</td><td>false</td><td> 1.031</td><td> ajuste-iva-credito</td> </tr>
 <tr> <td> </td> <td align='right'> <a href= '/alectrico-2021/libro-diario#Partida-95'>95</a> </td> <td align='right'>2400</td> <td> | </td> <td align='right'> 0</td> <td>agosto</td><td>false</td><td> 1.034</td><td> 33</td> </tr>
 <tr> <td> </td> <td align='right'> <a href= '/alectrico-2021/libro-diario#Partida-96'>96</a> </td> <td align='right'>6485</td> <td> | </td> <td align='right'> 0</td> <td>agosto</td><td>false</td><td> 1.034</td><td> 33</td> </tr>
 <tr> <td> </td> <td align='right'> <a href= '/alectrico-2021/libro-diario#Partida-97'>97</a> </td> <td align='right'>30022</td> <td> | </td> <td align='right'> 0</td> <td>agosto</td><td>false</td><td> 1.034</td><td> 33</td> </tr>
@@ -965,7 +966,7 @@ pagos.</th></thead>
 <tr> <td> </td> <td align='right'> <a href= '/alectrico-2021/libro-diario#Partida-109'>109</a> </td> <td align='right'>3487</td> <td> | </td> <td align='right'> 0</td> <td>agosto</td><td>true</td><td> 1.034</td><td> 45</td> </tr>
 <tr> <td> </td> <td align='right'> <a href= '/alectrico-2021/libro-diario#Partida-120'>120</a> </td> <td align='right'>4792</td> <td> | </td> <td align='right'> 0</td> <td>agosto</td><td>false</td><td> 1.034</td><td> 33</td> </tr>
 <tr> <td> </td> <td align='right'> <a href= '/alectrico-2021/libro-diario#Partida-121'>121</a> </td> <td align='right'>4934</td> <td> | </td> <td align='right'> 0</td> <td>agosto</td><td>false</td><td> 1.034</td><td> 33</td> </tr>
-<tr> <td> </td> <td align='right'> <a href= '/alectrico-2021/libro-diario#Partida-126'>126</a> </td> <td align='right'>189</td> <td> | </td> <td align='right'> 56380</td> <td>agosto</td><td>false</td><td> 1.034</td><td> ajuste-iva-credito</td> </tr>
+<tr> <td> </td> <td align='right'> <a href= '/alectrico-2021/libro-diario#Partida-126'>126</a> </td> <td align='right'>474</td> <td> | </td> <td align='right'> 56380</td> <td>agosto</td><td>false</td><td> 1.034</td><td> ajuste-iva-credito</td> </tr>
 <tr> <td> </td> <td align='right'> <a href= '/alectrico-2021/libro-diario#Partida-65'>65</a> </td> <td align='right'>0</td> <td> | </td> <td align='right'> 0</td> <td>julio</td><td>false</td><td> 1.043</td><td> 33</td> </tr>
 <tr> <td> </td> <td align='right'> <a href= '/alectrico-2021/libro-diario#Partida-63'>63</a> </td> <td align='right'>223</td> <td> | </td> <td align='right'> 0</td> <td>julio</td><td>true</td><td> 1.043</td><td> 45</td> </tr>
 <tr> <td> </td> <td align='right'> <a href= '/alectrico-2021/libro-diario#Partida-64'>64</a> </td> <td align='right'>5103</td> <td> | </td> <td align='right'> 0</td> <td>julio</td><td>true</td><td> 1.043</td><td> 33</td> </tr>
@@ -980,7 +981,7 @@ pagos.</th></thead>
 <tr> <td> </td> <td align='right'> <a href= '/alectrico-2021/libro-diario#Partida-84'>84</a> </td> <td align='right'>1589</td> <td> | </td> <td align='right'> 0</td> <td>julio</td><td>true</td><td> 1.043</td><td> 33</td> </tr>
 <tr> <td> </td> <td align='right'> <a href= '/alectrico-2021/libro-diario#Partida-85'>85</a> </td> <td align='right'>335</td> <td> | </td> <td align='right'> 0</td> <td>julio</td><td>true</td><td> 1.043</td><td> 33</td> </tr>
 <tr> <td> </td> <td align='right'> <a href= '/alectrico-2021/libro-diario#Partida-86'>86</a> </td> <td align='right'>804</td> <td> | </td> <td align='right'> 0</td> <td>julio</td><td>true</td><td> 1.043</td><td> 33</td> </tr>
-<tr> <td> </td> <td align='right'> <a href= '/alectrico-2021/libro-diario#Partida-89'>89</a> </td> <td align='right'>167</td> <td> | </td> <td align='right'> 46577</td> <td>julio</td><td>false</td><td> 1.043</td><td> ajuste-iva-credito</td> </tr>
+<tr> <td> </td> <td align='right'> <a href= '/alectrico-2021/libro-diario#Partida-89'>89</a> </td> <td align='right'>167</td> <td> | </td> <td align='right'> 17704</td> <td>julio</td><td>false</td><td> 1.043</td><td> ajuste-iva-credito</td> </tr>
 <tr> <td> </td> <td align='right'> <a href= '/alectrico-2021/libro-diario#Partida-90'>90</a> </td> <td align='right'>0</td> <td> | </td> <td align='right'> 22199</td> <td>julio</td><td>false</td><td> 1.043</td><td> ajuste</td> </tr>
 <tr> <td> </td> <td align='right'> <a href= '/alectrico-2021/libro-diario#Partida-39'>39</a> </td> <td align='right'>2850</td> <td> | </td> <td align='right'> 0</td> <td>junio</td><td>true</td><td> 1.043</td><td> 33</td> </tr>
 <tr> <td> </td> <td align='right'> <a href= '/alectrico-2021/libro-diario#Partida-41'>41</a> </td> <td align='right'>223</td> <td> | </td> <td align='right'> 0</td> <td>junio</td><td>true</td><td> 1.043</td><td> 45</td> </tr>
@@ -1022,9 +1023,9 @@ pagos.</th></thead>
 <tr> <td> </td> <td align='right'> <a href= '/alectrico-2021/libro-diario#Partida-13'>13</a> </td> <td align='right'>28738</td> <td> | </td> <td align='right'> 0</td> <td>enero</td><td>true</td><td> 1.063</td><td> 33</td> </tr>
 <tr> <td> </td> <td align='right'> <a href= '/alectrico-2021/libro-diario#Partida-14'>14</a> </td> <td align='right'>1352</td> <td> | </td> <td align='right'> 0</td> <td>enero</td><td>false</td><td> 1.063</td><td> 33</td> </tr>
 <tr> <td>188</td> <td align='right'> <a href= '/alectrico-2021/libro-diario#Partida-14333'>14333</a> </td> <td align='right'>33</td> <td> | </td> <td align='right'> 23464</td> <td>enero</td><td>false</td><td> 1.063</td><td> ajuste-iva-credito</td> </tr>
-<tr> <td></td> <td></td> <td align='right'>263510 <small> 280111.13</small> </td> <td>|</td> <td align='right'>189862<small> 201823.306</small> </td></tr>
-<tr> <td></td> <td>$</td> <td align='right'>73648 <small> 78287.824</small></td></tr>
-<tr> <td> Monto Corrección </td> <td>$</td> <td align='right'>4640 </td></tr>
+<tr> <td></td> <td></td> <td align='right'>234045 <small> 248789.835</small> </td> <td>|</td> <td align='right'>217006<small> 230677.378</small> </td></tr>
+<tr> <td></td> <td>$</td> <td align='right'>17039 <small> 18112.457</small></td></tr>
+<tr> <td> Monto Corrección </td> <td>$</td> <td align='right'>1073 </td></tr>
 </tbody>
 </table>
 <table>
