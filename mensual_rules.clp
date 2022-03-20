@@ -429,11 +429,13 @@
    ( declare (salience 9000))
    ( cuenta (nombre ventas-con-factura-exenta) (tipo-de-documento ?tipo-de-documento) (partida ?partida) (haber ?haber) (debe ?debe) (mes ?mes) (ano ?ano))
    ( not (exists ( acumulador-mensual (cuenta 586) (mes ?mes) (ano ?ano))))
-  ( test (or (> ?haber 0) (> ?debe 0)))
+   ( test (or (> ?haber 0) (> ?debe 0)))
 
  =>
   ( assert ( acumulador-mensual (cuenta 586) (mes ?mes) (ano ?ano) (debe 0) (haber 0)))
-  ( printout t "Cuenta acumulador mensual 586 " tab ?mes crlf)
+  ( assert ( acumulador-mensual (cuenta 142) (mes ?mes) (ano ?ano) (debe 0) (haber 0)))
+
+  ( printout t "Cuenta acumulador mensual 586 y 142 " tab ?mes crlf)
 
 )
 
@@ -442,11 +444,13 @@
    ( declare (salience 9000))
    ( cuenta (nombre ventas-con-eboleta-exenta) (tipo-de-documento ?tipo-de-documento) (partida ?partida) (haber ?haber) (debe ?debe) (mes ?mes) (ano ?ano))
    ( not (exists ( acumulador-mensual (cuenta 586) (mes ?mes) (ano ?ano))))
-  ( test (or (> ?haber 0) (> ?debe 0)))
+   ( test (or (> ?haber 0) (> ?debe 0)))
 
  =>
   ( assert ( acumulador-mensual (cuenta 586) (mes ?mes) (ano ?ano) (debe 0) (haber 0)))
-  ( printout t "Cuenta acumulador mensual 586 " tab ?mes crlf)
+  ( assert ( acumulador-mensual (cuenta 142) (mes ?mes) (ano ?ano) (debe 0) (haber 0)))
+
+  ( printout t "Cuenta acumulador mensual 586 y 142 " tab ?mes crlf)
 
 )
 
@@ -802,7 +806,9 @@
 
  =>
   (assert (sumar (partida ?partida) (debe ?debe) (haber ?haber) (tipo-de-documento ?tipo-de-documento) (cuenta 586) (mes ?mes) (ano ?ano)))
-  (printout t "Sumando iva-debito tipo-de-documento 38 para 586 " tab ?partida tab ?debe "------------" ?haber crlf)
+  (assert (sumar (partida ?partida) (debe ?debe) (haber ?haber) (tipo-de-documento ?tipo-de-documento) (cuenta 142) (mes ?mes) (ano ?ano)))
+
+  (printout t "Sumando iva-debito tipo-de-documento 38 para 586 y 142 " tab ?partida tab ?debe "------------" ?haber crlf)
 )
 
 
@@ -813,7 +819,9 @@
 
  =>
   (assert (sumar (partida ?partida) (debe ?debe) (haber ?haber) (tipo-de-documento ?tipo-de-documento) (cuenta 586) (mes ?mes) (ano ?ano)))
-  (printout t "Sumando iva-debito tipo-de-documento 38 para 586 " tab ?partida tab ?debe "------------" ?haber crlf)
+  (assert (sumar (partida ?partida) (debe ?debe) (haber ?haber) (tipo-de-documento ?tipo-de-documento) (cuenta 142) (mes ?mes) (ano ?ano)))
+
+  (printout t "Sumando iva-debito tipo-de-documento 38 para 586 y 142 " tab ?partida tab ?debe "------------" ?haber crlf)
 )
 
 

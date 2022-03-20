@@ -333,7 +333,12 @@
 (revision (revisado true) (partida 157) (tipo 33) (rcv n-a))
 
 (revision (revisado false) (partida 158) (tipo 33) (rcv n-a))
-(revision (revisado true) (partida 159) (tipo 33) (rcv n-a))
+
+(revision (revisado true) (partida 159) (tipo 33) (rcv n-a)
+ (rechazado true)
+ (a-corregir "No fue incluido en el f29 de octubre en el código 142")
+)
+
 (revision (revisado false) (partida 160) (tipo 33) (rcv n-a))
 (revision (revisado false) (partida 161) (tipo 33) (rcv n-a))
 

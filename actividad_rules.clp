@@ -2543,12 +2543,12 @@
 
    ( assert (cargo (tipo-de-documento 61) (recibida true) (electronico true) (partida ?numero) (dia ?dia) (mes ?mes ) (ano ?ano) (empresa ?nombre) (cuenta banco-estado) (monto ?total) (glosa (str-cat nota-credito ?subcuenta) )))
 
-;   ( if (eq true ?devolver-a-devolucion-sobre-ventas)
- ;   then
- ;    ( assert (cargo (tipo-de-documento 61) (recibida true) (electronico true) (partida ?numero) (dia ?dia) (mes ?mes ) (ano ?ano) (empresa ?nombre) (cuenta devolucion-sobre-ventas) (monto ?neto) (glosa ?glosa)))
- ;   else
+   ( if (eq true ?devolver-a-devolucion-sobre-ventas)
+    then
+     ( assert (abono (tipo-de-documento 61) (recibida true) (electronico true) (partida ?numero) (dia ?dia) (mes ?mes ) (ano ?ano) (empresa ?nombre) (cuenta devolucion-sobre-gastos ) (monto ?neto) (glosa ?glosa)))
+    else
      ( assert (abono (tipo-de-documento 61) (recibida true) (electronico true) (partida ?numero) (dia ?dia) (mes ?mes ) (ano ?ano) (empresa ?nombre) (cuenta ?subcuenta) (monto ?neto) (glosa ?glosa)))
- ;  )
+   )
 
    ( assert (abono (tipo-de-documento 61) (recibida true) (electronico true) (partida ?numero) (dia ?dia) (mes ?mes ) (ano ?ano) (empresa ?nombre) (cuenta iva-credito) (monto ?iva) (glosa (str-cat nota-credito ?subcuenta))))
 

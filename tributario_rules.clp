@@ -159,6 +159,9 @@
   ( subtotales (cuenta ingresos-brutos) (acreedor ?ingresos-brutos))
   ( subtotales (cuenta ventas) (deber ?ventas-deber) (acreedor ?ventas-acreedor))
   ( subtotales (cuenta devolucion-sobre-ventas) (debe ?devolucion-sobre-ventas))
+
+
+  ( subtotales (cuenta devolucion-sobre-gastos) (haber ?devolucion-sobre-gastos))
   ( subtotales (cuenta reintegro-de-devolucion-sobre-ventas) (haber ?reintegro-de-devolucion-sobre-ventas))
 
   ( subtotales (cuenta compras) (debe ?compras))
@@ -232,7 +235,7 @@
       ?base-imponible-deber))
 
   (bind ?ventas-netas           (- ?ventas  (- ?devolucion-sobre-ventas ?reintegro-de-devolucion-sobre-ventas) ))
-  (bind ?compras-totales        (+ ?compras ?gastos-sobre-compras))
+  (bind ?compras-totales        (+ ?compras ?gastos-sobre-compras ))
   (bind ?compras-netas          ?compras-totales)
   (bind ?existencias            (+ ?compras-netas ?inventario-inicial))
   ;mercaderia disponible para ventas
@@ -255,14 +258,15 @@
         (bind ?utilidad-bruta (+ (- ?ventas-netas ?costos-de-mercancias ?costos-de-ventas)  ?inventario ))))
 
   (bind ?gastos-de-operacion 
-        (+ ?gastos-administrativos
-           ?gastos-ventas
-           ?gastos-en-investigacion-y-desarrollo 
-           ?gastos-en-promocion
-           ?amortizacion-intangibles
-           ?depreciacion
-           ?salarios ) ) 
-
+      (-  (+ ?gastos-administrativos
+             ?gastos-ventas
+             ?gastos-en-investigacion-y-desarrollo 
+             ?gastos-en-promocion
+             ?amortizacion-intangibles
+             ?depreciacion
+             ?salarios )
+           ?devolucion-sobre-gastos )  )
+  
   (bind ?utilidad-de-operacion  (- ?utilidad-bruta ?gastos-de-operacion ?pea))
   (bind ?utilidad-antes-de-reserva ?utilidad-de-operacion)
   (bind ?margen-de-explotacion (- ?utilidad-de-operacion ?reserva-legal))
@@ -344,7 +348,7 @@
   (printout t "| (-) - " tab tab tab tab "Descuentos sobre Compras" crlf)
 
   (printout k "<tr><td> (-) </td><td align='right'>" 0 "</td><td></td><td></td><td></td><td> Rebajas Cobre Compras </td></tr>" crlf)
-  (printout k "<tr><td> (-) </td><td align='right'>" 0 "</td><td></td><td></td><td></td><td> Devoluciones Sobre Compras </td></tr>" crlf)
+
   (printout k "<tr><td> (-) </td><td align='right'>" 0 "</td><td></td><td></td><td></td><td> Descuentos Sobre Compras </td></tr>" crlf)
 
 
@@ -410,6 +414,9 @@
 
 
   (printout k "<tr><td> (-) </td><td align='right'>" ?gastos-administrativos "</td><td></td><td></td><td></td><td> Gastos del Dpto Administración </td></tr>" crlf)
+
+  (printout k "<tr><td> (-) </td><td align='right'>" ?devolucion-sobre-gastos "</td><td></td><td></td><td></td><td> Devolución sobre Gastos </td></tr>" crlf)
+
 
   (printout k "<tr><td> (-) </td><td align='right'>" ?gastos-ventas "</td><td></td><td></td><td></td><td> Gastos del Dpto Ventas </td></tr>" crlf)
 

@@ -1446,6 +1446,19 @@ servicio.")
 )
 
 
+
+(cuenta (nombre devolucion-sobre-gastos)
+  (descripcion devoluciones-sobre-gastos)
+  (tipo acreedora)
+  (grupo resultado)
+  (naturaleza acreedora)
+  (padre false)
+  (circulante true)
+  (origen real)
+)
+
+
+
 (cuenta (nombre reintegro-de-devolucion-sobre-ventas)
   (descripcion reintegro-por-notas-de-debito-emitidas)
   (tipo acreedora)
