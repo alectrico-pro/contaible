@@ -840,7 +840,23 @@
   (printout t "Sumando iva-debito tipo-de-documento 48 para 759 " tab ?partida tab ?debe "------------" ?haber crlf)
 )
 
-(defrule sumar-incremento
+(defrule no-sumar-incremento-por-rechazado
+  ( declare (salience 9000))
+  ( balance (mes ?mes-balance))
+  ( empresa (nombre ?empresa))
+   ?suma <- ( sumar (partida ?partida) (qty ?qty-suma) (tipo-de-documento ?tipo-de-documento) (debe ?debe-suma) (haber ?haber-suma) (cuenta ?cuenta) (mes ?mes) (ano ?ano))
+  ?acc  <- ( acumulador-mensual (cuenta ?cuenta) (qty ?qty) (debe ?debe) (haber ?haber ) (mes ?mes) (ano ?ano))
+   (revision (partida ?partida) (rechazado true))
+ =>
+
+  ( retract ?suma)
+  ( assert (codigo-de-partida (codigo ?cuenta) (partida ?partida) (rechazado true)))
+  ( printout t "NO SUmado " ?cuenta " partida " ?partida tab ?qty-suma tab ?debe-suma -------- ?haber-suma tab ?tipo-de-documento crlf)
+)
+
+
+
+(defrule sumar-incremento-que-no-fue-rechazado
 
   ( declare (salience 9000))
   ( balance (mes ?mes-balance))
@@ -848,6 +864,7 @@
 ;  ( selecciones (inspect-f29-code ?codigo))
    ?suma <- ( sumar (partida ?partida) (qty ?qty-suma) (tipo-de-documento ?tipo-de-documento) (debe ?debe-suma) (haber ?haber-suma) (cuenta ?cuenta) (mes ?mes) (ano ?ano))
   ?acc  <- ( acumulador-mensual (cuenta ?cuenta) (qty ?qty) (debe ?debe) (haber ?haber ) (mes ?mes) (ano ?ano))
+   (revision (partida ?partida) (rechazado false))
 ;  ( test (or (> ?haber-suma 0) (> ?debe-suma 0)))
 
  =>

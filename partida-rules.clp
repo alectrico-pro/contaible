@@ -816,7 +816,6 @@
    ?formulario <- ( formulario-f22 (presentado-en-f22 false) (partida ?partida-f29) (codigo ?codigo&:(numberp ?codigo) ) (valor ?valor) (descripcion ?descripcion) (mes ?mes) (ano ?ano) )
    ?f22 <- ( f22 (partida ?numero) (ano ?ano))
    ( f29-f22 (codigo-f29 ?codigo) (linea-f22 ?linea-f22) )
-
   =>
 
    ( modify ?formulario (presentado-en-f22 true) )
@@ -847,12 +846,19 @@
  ;  ( not  ( exists ( formulario-f22 (presentado-en-codigo-de-partida false) (presentado-en-f22 false)  (codigo ?inferior&:( and ( numberp ?inferior )  (> (- ?codigo ?inferior ) 0) )))))
    ?formulario <- ( formulario-f22 (presentado-en-f22 true) (partida ?partida-f29) (codigo ?codigo&:(numberp ?codigo) ) (valor ?valor) (descripcion ?descripcion) (mes ?mes) (ano ?ano) )
    ?f22 <- ( f22 (partida ?numero) (ano ?ano))
-   ?cdp <-   ( codigo-de-partida (codigo ?codigo) (partida ?partida))
+   ?cdp <-   ( codigo-de-partida (codigo ?codigo) (partida ?partida) (rechazado ?rechazado))
    ( partida (numero ?partida ) (mes ?mes) (descripcion ?descripcion-partida))
   =>
    ( retract ?cdp )
 ;  ( modify ?formulario (presentado-en-codigo-de-partida true))
-   ( printout k " <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> " ?codigo "</td> <td align='right'>   <a href= '/" ?empresa "/libro-diario#Partida-" ?partida "'> Ir a partida: "  ?partida "</a> </td> <td colspan='3' align='left' > " ?descripcion-partida " </td>  </tr>" crlf)
+
+   ( if (eq true ?rechazado)
+    then
+     ( printout k " <tr height='50 px' style= 'text-decoration-line: line-through; text-decoration-line-color: red; font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> " ?codigo "</td> <td align='right'>   <a href= '/" ?empresa "/libro-diario#Partida-" ?partida "'> Ir a partida: "  ?partida "</a> </td> <td colspan='3' align='left' > " ?descripcion-partida " </td>  </tr>" crlf)
+    else
+     ( printout k " <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> " ?codigo "</td> <td align='right'>   <a href= '/" ?empresa "/libro-diario#Partida-" ?partida "'> Ir a partida: "  ?partida "</a> </td> <td colspan='3' align='left' > " ?descripcion-partida " </td>  </tr>" crlf)
+    )
+
 )
 
 
