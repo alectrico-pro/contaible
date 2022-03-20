@@ -147,6 +147,7 @@
 
    (revision
      ( partida ?partida)
+     ( rechazado ?rechazado)
      ( voucher ?voucher))
 
   ?subtotales <- ( subtotales
@@ -161,7 +162,12 @@
  =>
   ( printout t ?partida tab ?debe tab "|" tab ?haber tab ?mes tab ?recibida tab ?activo-fijo tab ?tipo-de-documento crlf )
 
-  ( printout k "<tr> <td>" ?voucher "</td> <td align='right'> <a href= '/" ?empresa "/libro-diario#Partida-" ?partida "'>" ?partida "</a> </td> <td align='right'>" ?debe "</td> <td> | </td> <td align='right'> " ?haber  "</td> <td>" ?mes "</td><td>" ?recibida "</td><td> " ?factor "</td><td> " ?tipo-de-documento "</td> </tr>" crlf )
+  ( if (eq true ?rechazado)
+   then
+    ( printout k "<tr  >  <td>" ?voucher "</td> <td align='right'> <a href= '/" ?empresa "/libro-diario#Partida-" ?partida "'>" ?partida "</a> </td> <td style='text-decoration-line: line-through' align='right'>" ?debe "</td> <td> | </td> <td style='text-decoration-line:line-through' align='right'> " ?haber  "</td> <td>" ?mes "</td><td>" ?recibida "</td><td> " ?factor "</td><td> " ?tipo-de-documento "</td> </tr>" crlf )
+   else
+    ( printout k "<tr> <td>" ?voucher "</td> <td align='right'> <a href= '/" ?empresa "/libro-diario#Partida-" ?partida "'>" ?partida "</a> </td> <td align='right'>" ?debe "</td> <td> | </td> <td align='right'> " ?haber  "</td> <td>" ?mes "</td><td>" ?recibida "</td><td> " ?factor "</td><td> " ?tipo-de-documento "</td> </tr>" crlf )
+  )
 
   ( modify ?cuenta (mostrado-en-t true ))
   ( modify ?subtotales
