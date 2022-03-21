@@ -40,9 +40,9 @@
   ( bind ?iva-de-saldo (round (* ?debe 0.19)))
   ( if (eq ?iva-de-saldo ?valor)
     then
-   (bind ?resultado 'ok')
+   (bind ?resultado 'pass')
     else
-   (bind ?resultado 'error')
+   (bind ?resultado 'fail')
   )
   (printout t ?codigo tab ?valor tab ?debe tab ?iva-de-saldo tab ?resultado tab ?cuenta  crlf) 
 )
