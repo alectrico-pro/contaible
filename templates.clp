@@ -439,11 +439,13 @@
 )
 
 (deftemplate f29-f22
+  (slot cuenta)
   (slot codigo-f29)
   (slot linea-f22)
 )
 
 (deftemplate formulario-f22
+  (slot anual (default false))
   (slot sumado (default false))
   (slot presentado-en-codigo-de-partida (default false))
   (slot presentado-en-f22 (default false))

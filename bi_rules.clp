@@ -19,6 +19,60 @@
   ) 
 )
 
+(defrule formulario-f22-encabezado
+  (declare (salience 20))
+ =>
+  (printout t crlf crlf F22 crlf)
+  (printout t Codigo tab valor tab saldo tab iva tab resultado tab cuenta crlf)
+  ( assert (hacer-f22))
+)
+
+(defrule comprobando-formulario-f22-deudora
+  (declare (salience 19))
+  (hacer-f22)
+  (f29-f22 (cuenta ?cuenta) (codigo-f29 ?codigo) )
+  (formulario-f22  (codigo ?codigo) (valor ?valor) (anual true) )
+  (exists  (cuenta (nombre ?cuenta)))
+  (subtotales (cuenta ?cuenta) (debe ?debe) (haber ?haber))
+  (cuenta (nombre ?cuenta) (tipo deudor))
+ =>
+
+  ( bind ?iva-de-saldo (round (* ?debe 0.19)))
+  ( if (eq ?iva-de-saldo ?valor)
+    then
+   (bind ?resultado 'ok')
+    else
+   (bind ?resultado 'error')
+  )
+  (printout t ?codigo tab ?valor tab ?debe tab ?iva-de-saldo tab ?resultado tab ?cuenta  crlf) 
+)
+
+(defrule comprobando-formulario-f22-acreedora
+  (declare (salience 18))
+  (hacer-f22)
+  (f29-f22 (cuenta ?cuenta) (codigo-f29 ?codigo) )
+  (formulario-f22  (codigo ?codigo) (valor ?valor) (anual true) )
+  (exists  (cuenta (nombre ?cuenta)))
+  (subtotales (cuenta ?cuenta) (debe ?debe) (haber ?haber))
+  (cuenta (nombre ?cuenta) (tipo acreedora))
+ =>
+  ( bind ?iva-de-saldo (round (* ?haber 0.19)))
+  ( if (eq ?iva-de-saldo ?valor) 
+    then 
+   (bind ?resultado 'bien')
+    else
+   (bind ?resultado 'error')
+  )
+  (printout t  ?codigo tab ?valor tab ?haber tab ?iva-de-saldo tab ?resultado  tab ?cuenta crlf)
+)
+
+
+(defrule formulario-f22-pie
+  (declare (salience 17))
+ =>
+  (printout t "-----------------------------------------------" crlf)  
+  (printout t crlf crlf crlf)
+)
 
 
 (defrule iterando-venta-sii

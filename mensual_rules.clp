@@ -198,7 +198,10 @@
 
  =>
   ( assert ( acumulador-mensual (cuenta 503) (mes ?mes) (ano ?ano) (debe 0) (haber 0)))
-  ( printout t "Cuenta acumulador mensual 503 factura afecta "tab ?mes crlf)
+
+  ( assert ( acumulador-mensual (cuenta 502) (mes ?mes) (ano ?ano) (debe 0) (haber 0)))
+
+  ( printout t "Cuenta acumulador mensual 503 factura afecta y 502 "tab ?mes crlf)
 
 )
 
@@ -743,7 +746,9 @@
   ( cuenta (partida ?partida) (nombre ventas-con-factura-afecta) (tipo-de-documento 33) (haber ?haber) (debe ?debe) (mes ?mes) (ano ?ano))
  =>
   (assert (sumar (partida ?partida) (debe ?debe) (haber ?haber) (tipo-de-documento 33) (cuenta 503) (mes ?mes) (ano ?ano)))
-  (printout t "Sumando 503 " tab ?partida tab ?debe "------------" ?haber crlf)
+  (assert (sumar (partida ?partida) (debe ?debe) (haber ?haber) (tipo-de-documento 33) (cuenta 502) (mes ?mes) (ano ?ano)))
+
+  (printout t "Sumando 503 y 502" tab ?partida tab ?debe "------------" ?haber crlf)
 )
 
 (defrule ordenar-incremento-503-factura-exentas-emitidas

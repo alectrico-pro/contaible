@@ -796,13 +796,13 @@
    ( exists ( formulario-f22 (sumado false) (codigo ?codigo ) (ano ?ano )))
    ?f22 <- ( f22 (partida ?numero) (ano ?ano))
   =>
-   ( assert ( formulario-f22 (partida ?numero) (sumado true) (codigo ?codigo) (valor 0) (descripcion "Total Anual" ) (ano ?ano) ))
+   ( assert ( formulario-f22 (partida ?numero) (sumado true) (codigo ?codigo) (valor 0) (anual true) (descripcion "Total Anual" ) (ano ?ano) ))
 )
 
 
 (defrule suma-para-obtener-codigo-en-formulario-f22-de-renta
    ?mensual <- ( formulario-f22 (sumado false) (valor ?valor-mensual) (codigo ?codigo) (ano ?ano) )
-   ?anual   <- ( formulario-f22 (sumado true ) (valor ?valor-anual&:(numberp ?valor-anual)) (codigo ?codigo) (descripcion "Total Anual" ) (ano ?ano) )
+   ?anual   <- ( formulario-f22 (sumado true ) (valor ?valor-anual&:(numberp ?valor-anual)) (codigo ?codigo) (anual true) (ano ?ano) )
   =>
    ( modify  ?mensual ( sumado true))
    ( modify  ?anual (valor (+ ?valor-anual ?valor-mensual)))
