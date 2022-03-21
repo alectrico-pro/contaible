@@ -120,6 +120,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <table id='Partida-5'>
 <thead> <th style='background-color: lavender' colspan='6'>Partida 5</th></thead>
 <tbody>
+<tr> <td name = 'Debe' align='right' >4505 </td> <td colspan='7'> devolucion-sobre-ventas-exentas#devolucion-sobre-ventas </td></tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td name='Debe' align='right'> 0</td> <td name='Haber' align='right'> 4505</td> <td colspan='2'> a[banco-estado] </td> </tr>
 <tr style='color: white; background-color: black'>  <td> </td> <td align='right'>4505 </td> <td align='right'> 0</td> <td> </td> <td> r[devolucion-sobre-ventas] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 4505 </td> <td style='background-color: blanchedalmond'> 4505</td> </tr>
@@ -148,6 +149,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <table id='Partida-6'>
 <thead> <th style='background-color: lavender' colspan='6'>Partida 6</th></thead>
 <tbody>
+<tr> <td name = 'Debe' align='right' >45050 </td> <td colspan='7'> devolucion-sobre-ventas-exentas#devolucion-sobre-ventas </td></tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td name='Debe' align='right'> 0</td> <td name='Haber' align='right'> 45050</td> <td colspan='2'> a[banco-estado] </td> </tr>
 <tr style='color: white; background-color: black'>  <td> </td> <td align='right'>45050 </td> <td align='right'> 0</td> <td> </td> <td> r[devolucion-sobre-ventas] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 45050 </td> <td style='background-color: blanchedalmond'> 45050</td> </tr>
@@ -176,6 +178,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <table id='Partida-7'>
 <thead> <th style='background-color: lavender' colspan='6'>Partida 7</th></thead>
 <tbody>
+<tr> <td name = 'Debe' align='right' >29412 </td> <td colspan='7'> devolucion-sobre-ventas-afectas#devolucion-sobre-ventas </td></tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td name='Debe' align='right'> 0</td> <td name='Haber' align='right'> 35000</td> <td colspan='2'> a[banco-estado] </td> </tr>
 <tr style='background-color: azure'>  <td> </td> <td align='right'> 5588 </td> <td align='right'> 0 </td> <td> </td><td> p[iva-debito] </td> </tr>
 <tr style='color: white; background-color: black'>  <td> </td> <td align='right'>29412 </td> <td align='right'> 0</td> <td> </td> <td> r[devolucion-sobre-ventas] </td> </tr>
@@ -436,6 +439,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <table id='Partida-141'>
 <thead> <th style='background-color: lavender' colspan='6'>Partida 141</th></thead>
 <tbody>
+<tr> <td name = 'Debe' align='right' >29412 </td> <td colspan='7'> devolucion-sobre-ventas-afectas#devolucion-sobre-ventas </td></tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td name='Debe' align='right'> 0</td> <td name='Haber' align='right'> 35000</td> <td colspan='2'> a[banco-estado] </td> </tr>
 <tr style='background-color: azure'>  <td> </td> <td align='right'> 5588 </td> <td align='right'> 0 </td> <td> </td><td> p[iva-debito] </td> </tr>
 <tr style='color: white; background-color: black'>  <td> </td> <td align='right'>29412 </td> <td align='right'> 0</td> <td> </td> <td> r[devolucion-sobre-ventas] </td> </tr>
@@ -647,6 +651,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <table id='Partida-191'>
 <thead> <th style='background-color: lavender' colspan='6'>Partida 191</th></thead>
 <tbody>
+<tr> <td name = 'Debe' align='right' >4505 </td> <td colspan='7'> reintegro-de-devolucion-sobre-ventas-exentas#reintegro-de-devolucion-sobre-ventas </td></tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td name='Debe' align='right'> 4505</td> <td name='Haber' align='right'> 0</td> <td colspan='2'> a[banco-estado] </td> </tr>
 <tr style='background-color: gold'>  <td> </td> <td align='right'>0 </td> <td align='right'> 4505</td> <td> </td> <td> r[reintegro-de-devolucion-sobre-ventas] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 4505 </td> <td style='background-color: blanchedalmond'> 4505</td> </tr>
@@ -697,6 +702,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <table id='Partida-192'>
 <thead> <th style='background-color: lavender' colspan='6'>Partida 192</th></thead>
 <tbody>
+<tr> <td name = 'Debe' align='right' >29412 </td> <td colspan='7'> reintegro-de-devolucion-sobre-ventas-afectas#reintegro-de-devolucion-sobre-ventas </td></tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td name='Debe' align='right'> 35000</td> <td name='Haber' align='right'> 0</td> <td colspan='2'> a[banco-estado] </td> </tr>
 <tr style='background-color: azure'>  <td> </td> <td align='right'> 0 </td> <td align='right'> 5588 </td> <td> </td><td> p[iva-debito] </td> </tr>
 <tr style='background-color: gold'>  <td> </td> <td align='right'>0 </td> <td align='right'> 29412</td> <td> </td> <td> r[reintegro-de-devolucion-sobre-ventas] </td> </tr>
@@ -2094,6 +2100,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <table id='Partida-82'>
 <thead> <th style='background-color: lavender' colspan='6'>Partida 82</th></thead>
 <tbody>
+<tr> <td name = 'Debe' align='right' >558823 </td> <td colspan='7'> devolucion-sobre-ventas-afectas#devolucion-sobre-ventas </td></tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td name='Debe' align='right'> 0</td> <td name='Haber' align='right'> 664999</td> <td colspan='2'> a[banco-estado] </td> </tr>
 <tr style='background-color: azure'>  <td> </td> <td align='right'> 106176 </td> <td align='right'> 0 </td> <td> </td><td> p[iva-debito] </td> </tr>
 <tr style='color: white; background-color: black'>  <td> </td> <td align='right'>558823 </td> <td align='right'> 0</td> <td> </td> <td> r[devolucion-sobre-ventas] </td> </tr>
@@ -2231,6 +2238,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <table id='Partida-87'>
 <thead> <th style='background-color: lavender' colspan='6'>Partida 87</th></thead>
 <tbody  style =' text-decoration: line-through; text-decoration-color: crimson'  > 
+<tr> <td name = 'Debe' align='right' >151962 </td> <td colspan='7'> devolucion-sobre-ventas-afectas#devolucion-sobre-ventas </td></tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td name='Debe' align='right'> 0</td> <td name='Haber' align='right'> 180835</td> <td colspan='2'> a[banco-estado] </td> </tr>
 <tr style='background-color: azure'>  <td> </td> <td align='right'> 28873 </td> <td align='right'> 0 </td> <td> </td><td> p[iva-debito] </td> </tr>
 <tr style='color: white; background-color: black'>  <td> </td> <td align='right'>151962 </td> <td align='right'> 0</td> <td> </td> <td> r[devolucion-sobre-ventas] </td> </tr>
@@ -2774,6 +2782,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <table id='Partida-114'>
 <thead> <th style='background-color: lavender' colspan='6'>Partida 114</th></thead>
 <tbody>
+<tr> <td name = 'Debe' align='right' >90544 </td> <td colspan='7'> devolucion-sobre-ventas-afectas#devolucion-sobre-ventas </td></tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td name='Debe' align='right'> 0</td> <td name='Haber' align='right'> 107747</td> <td colspan='2'> a[banco-estado] </td> </tr>
 <tr style='background-color: azure'>  <td> </td> <td align='right'> 17203 </td> <td align='right'> 0 </td> <td> </td><td> p[iva-debito] </td> </tr>
 <tr style='color: white; background-color: black'>  <td> </td> <td align='right'>90544 </td> <td align='right'> 0</td> <td> </td> <td> r[devolucion-sobre-ventas] </td> </tr>
@@ -2828,6 +2837,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <table id='Partida-116'>
 <thead> <th style='background-color: lavender' colspan='6'>Partida 116</th></thead>
 <tbody>
+<tr> <td name = 'Debe' align='right' >40000 </td> <td colspan='7'> devolucion-sobre-ventas-exentas#devolucion-sobre-ventas </td></tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td name='Debe' align='right'> 0</td> <td name='Haber' align='right'> 40000</td> <td colspan='2'> a[banco-estado] </td> </tr>
 <tr style='color: white; background-color: black'>  <td> </td> <td align='right'>40000 </td> <td align='right'> 0</td> <td> </td> <td> r[devolucion-sobre-ventas] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 40000 </td> <td style='background-color: blanchedalmond'> 40000</td> </tr>
@@ -3011,6 +3021,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <table id='Partida-123'>
 <thead> <th style='background-color: lavender' colspan='6'>Partida 123</th></thead>
 <tbody>
+<tr> <td name = 'Debe' align='right' >33613 </td> <td colspan='7'> devolucion-sobre-ventas-afectas#devolucion-sobre-ventas </td></tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td name='Debe' align='right'> 0</td> <td name='Haber' align='right'> 39999</td> <td colspan='2'> a[banco-estado] </td> </tr>
 <tr style='background-color: azure'>  <td> </td> <td align='right'> 6386 </td> <td align='right'> 0 </td> <td> </td><td> p[iva-debito] </td> </tr>
 <tr style='color: white; background-color: black'>  <td> </td> <td align='right'>33613 </td> <td align='right'> 0</td> <td> </td> <td> r[devolucion-sobre-ventas] </td> </tr>
@@ -3461,6 +3472,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <table id='Partida-148'>
 <thead > <th colspan='6'>Partida 148</th></thead>
 <tbody>
+<tr> <td name = 'Debe' align='right' >10592 </td> <td colspan='7'> devolucion-sobre-ventas-afectas#devolucion-sobre-ventas </td></tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td name='Debe' align='right'> 0</td> <td name='Haber' align='right'> 12605</td> <td colspan='2'> a[banco-estado] </td> </tr>
 <tr style='background-color: azure'>  <td> </td> <td align='right'> 2013 </td> <td align='right'> 0 </td> <td> </td><td> p[iva-debito] </td> </tr>
 <tr style='color: white; background-color: black'>  <td> </td> <td align='right'>10592 </td> <td align='right'> 0</td> <td> </td> <td> r[devolucion-sobre-ventas] </td> </tr>
@@ -3701,6 +3713,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <table id='Partida-158'>
 <thead > <th colspan='6'>Partida 158</th></thead>
 <tbody>
+<tr> <td name = 'Debe' align='right' >400000 </td> <td colspan='7'> devolucion-sobre-ventas-exentas#devolucion-sobre-ventas </td></tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td name='Debe' align='right'> 0</td> <td name='Haber' align='right'> 400000</td> <td colspan='2'> a[banco-estado] </td> </tr>
 <tr style='color: white; background-color: black'>  <td> </td> <td align='right'>400000 </td> <td align='right'> 0</td> <td> </td> <td> r[devolucion-sobre-ventas] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 400000 </td> <td style='background-color: blanchedalmond'> 400000</td> </tr>

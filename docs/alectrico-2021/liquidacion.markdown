@@ -39,10 +39,6 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <tr><td></td><td>102</td><td></td><td> r(base-imponible) </td></tr>
 <tr><td>178</td><td></td><td colspan='2'>devolucion-sobre-gastos</td></tr>
 <tr><td></td><td>178</td><td></td><td> r(base-imponible) </td></tr>
-<tr><td>4505</td><td></td><td colspan='2'>reintegro-de-devolucion-sobre-ventas</td></tr>
-<tr><td></td><td>4505</td><td></td><td> r(base-imponible) </td></tr>
-<tr><td>29412</td><td></td><td colspan='2'>reintegro-de-devolucion-sobre-ventas</td></tr>
-<tr><td></td><td>29412</td><td></td><td> r(base-imponible) </td></tr>
 <tr><td>6666</td><td></td><td colspan='2'>ventas</td></tr>
 <tr><td></td><td>6666</td><td></td><td> r(base-imponible) </td></tr>
 <tr><td>6666</td><td></td><td colspan='2'>ventas</td></tr>
@@ -107,6 +103,10 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <tr><td></td><td>29412</td><td></td><td> r(base-imponible) </td></tr>
 <tr><td>123497</td><td></td><td colspan='2'>ventas</td></tr>
 <tr><td></td><td>123497</td><td></td><td> r(base-imponible) </td></tr>
+<tr><td>4505</td><td></td><td colspan='2'>reintegro-de-devolucion-sobre-ventas</td></tr>
+<tr><td></td><td>4505</td><td></td><td> r(base-imponible) </td></tr>
+<tr><td>29412</td><td></td><td colspan='2'>reintegro-de-devolucion-sobre-ventas</td></tr>
+<tr><td></td><td>29412</td><td></td><td> r(base-imponible) </td></tr>
 <tr><td>780</td><td></td><td colspan='2'>correccion-monetaria</td></tr>
 <tr><td></td><td>780</td><td></td><td> r(base-imponible) </td></tr>
 <tr><td>677</td><td></td><td colspan='2'>correccion-monetaria</td></tr>
@@ -355,10 +355,6 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <tr><td></td><td>225</td><td></td><td> r(perdidas-y-ganancias) </td></tr>
 <tr><td>231</td><td></td><td colspan='2'>devolucion-sobre-gastos</td></tr>
 <tr><td></td><td>231</td><td></td><td> r(perdidas-y-ganancias) </td></tr>
-<tr><td>29412</td><td></td><td colspan='2'>reintegro-de-devolucion-sobre-ventas</td></tr>
-<tr><td></td><td>29412</td><td></td><td> r(perdidas-y-ganancias) </td></tr>
-<tr><td>4505</td><td></td><td colspan='2'>reintegro-de-devolucion-sobre-ventas</td></tr>
-<tr><td></td><td>4505</td><td></td><td> r(perdidas-y-ganancias) </td></tr>
 <tr><td>123497</td><td></td><td colspan='2'>ventas</td></tr>
 <tr><td></td><td>123497</td><td></td><td> r(perdidas-y-ganancias) </td></tr>
 <tr><td>29412</td><td></td><td colspan='2'>ventas</td></tr>
@@ -423,6 +419,10 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <tr><td></td><td>6666</td><td></td><td> r(perdidas-y-ganancias) </td></tr>
 <tr><td>6666</td><td></td><td colspan='2'>ventas</td></tr>
 <tr><td></td><td>6666</td><td></td><td> r(perdidas-y-ganancias) </td></tr>
+<tr><td>29412</td><td></td><td colspan='2'>reintegro-de-devolucion-sobre-ventas</td></tr>
+<tr><td></td><td>29412</td><td></td><td> r(perdidas-y-ganancias) </td></tr>
+<tr><td>4505</td><td></td><td colspan='2'>reintegro-de-devolucion-sobre-ventas</td></tr>
+<tr><td></td><td>4505</td><td></td><td> r(perdidas-y-ganancias) </td></tr>
 <tr><td>33</td><td></td><td colspan='2'>correccion-monetaria</td></tr>
 <tr><td></td><td>33</td><td></td><td> r(perdidas-y-ganancias) </td></tr>
 <tr><td>298</td><td></td><td colspan='2'>correccion-monetaria</td></tr>

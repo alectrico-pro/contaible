@@ -1373,7 +1373,7 @@
    ( assert (partida (proveedor ?cliente) (numero ?numero) (dia ?dia) (mes ?mes) (ano ?ano) (descripcion ?glosa ) (actividad devolver)))
    ( assert (abono (tipo-de-documento ?tipo-de-documento) (cuenta banco-estado) (empresa ?empresa) (partida ?numero) (dia ?dia) (mes ?mes) (ano ?ano) (monto ?total ) (glosa (str-cat (str-cat (str-cat devolucion-de- ?material) -a-) ?cliente) )))
    ( assert (cargo (tipo-de-documento ?tipo-de-documento) (cuenta iva-debito) (empresa ?empresa) (dia ?dia) (mes ?mes) (ano ?ano) (partida ?numero) (monto ?iva) (glosa (str-cat devolucion-de- ?material)) ) )
-   ( assert (cargo (tipo-de-documento ?tipo-de-documento) (cuenta devolucion-sobre-ventas) (empresa ?empresa) (dia ?dia) (mes ?mes) (ano ?ano) (partida ?numero) (monto (round ?neto) ) (glosa (str-cat (str-cat (str-cat devolucion-de- ?material) -a-) ?cliente) )))
+   ( assert (cargo (tipo-de-documento ?tipo-de-documento) (cuenta devolucion-sobre-ventas-afectas) (empresa ?empresa) (dia ?dia) (mes ?mes) (ano ?ano) (partida ?numero) (monto (round ?neto) ) (glosa (str-cat (str-cat (str-cat devolucion-de- ?material) -a-) ?cliente) )))
    ( assert (abono (tipo-de-documento ?tipo-de-documento) (partida ?numero) (dia ?dia) (mes ?mes ) (ano ?ano) (empresa ?empresa) (cuenta costos-de-ventas) (monto (round (* ?unidades ?costo_unitario))) (glosa (str-cat devolucion-de- ?material) )))
    ( assert (ccm (folio na) (partida ?numero) (tipo-documento ?tipo-de-documento) (monto-total ?total) (rut-contraparte ?rut) (monto-neto ?neto)))
    ( printout t "-->d Devolviendo con nota de crédito " ?material " por un valor total de " ?total crlf )
@@ -2588,6 +2588,7 @@
    )
    ( test (and (not (eq nil ?total)) (> ?total 0)))
    ( test (and (not (eq nil ?neto)) (> ?neto 0)))
+
 ;   ( test (and (not (eq nil ?iva)) (> ?iva 0)))
    ( test (>= (to_serial_date ?top ?mes_top ?ano_top) (to_serial_date ?dia ?mes ?ano)))
    ( selecciones (devolver-a-devolucion-sobre-ventas ?devolver-a-devolucion-sobre-ventas))
@@ -2601,7 +2602,12 @@
 
    ( if (eq true ?devolver-a-devolucion-sobre-ventas)
     then
-     ( assert (cargo (tipo-de-documento 61) (electronico true) (partida ?numero) (dia ?dia) (mes ?mes ) (ano ?ano) (empresa ?nombre) (cuenta devolucion-sobre-ventas) (monto ?neto) (glosa ?glosa)))
+     ( if (> ?iva 0)
+      then
+       ( assert (cargo (tipo-de-documento 61) (electronico true) (partida ?numero) (dia ?dia) (mes ?mes ) (ano ?ano) (empresa ?nombre) (cuenta devolucion-sobre-ventas-afectas) (monto ?neto) (glosa ?glosa)))
+      else
+       ( assert (cargo (tipo-de-documento 61) (electronico true) (partida ?numero) (dia ?dia) (mes ?mes ) (ano ?ano) (empresa ?nombre) (cuenta devolucion-sobre-ventas-exentas) (monto ?neto) (glosa ?glosa)))
+     )
     else
      ( assert (cargo (tipo-de-documento 61) (electronico true) (partida ?numero) (dia ?dia) (mes ?mes ) (ano ?ano) (empresa ?nombre) (cuenta ?subcuenta) (monto ?neto) (glosa ?glosa)))
    )
@@ -2690,6 +2696,7 @@
 
    ( test (and (not (eq nil ?total)) (> ?total 0)))
    ( test (and (not (eq nil ?neto)) (> ?neto 0)))
+
    ( test (>= (to_serial_date ?top ?mes_top ?ano_top) (to_serial_date ?dia ?mes ?ano)))
    ( selecciones (devolver-a-devolucion-sobre-ventas ?devolver-a-devolucion-sobre-ventas))
 
@@ -2706,7 +2713,12 @@
 
    ( if (eq true ?devolver-a-devolucion-sobre-ventas)
    then
-     ( assert (abono (tipo-de-documento 56) (partida ?numero) (dia ?dia) (mes ?mes ) (ano ?ano) (empresa ?nombre) (cuenta reintegro-de-devolucion-sobre-ventas) (monto ?neto) (glosa (str-cat " nota-debito " ?folio-debito))))
+     (if (> ?iva 0)
+       then
+        ( assert (abono (tipo-de-documento 56) (partida ?numero) (dia ?dia) (mes ?mes ) (ano ?ano) (empresa ?nombre) (cuenta reintegro-de-devolucion-sobre-ventas-afectas) (monto ?neto) (glosa (str-cat " nota-debito " ?folio-debito))))
+       else
+        ( assert (abono (tipo-de-documento 56) (partida ?numero) (dia ?dia) (mes ?mes ) (ano ?ano) (empresa ?nombre) (cuenta reintegro-de-devolucion-sobre-ventas-exentas) (monto ?neto) (glosa (str-cat " nota-debito " ?folio-debito))))
+     )
    else
      ( assert (abono (tipo-de-documento 56) (partida ?numero) (dia ?dia) (mes ?mes ) (ano ?ano) (empresa ?nombre) (cuenta ?subcuenta) (monto ?neto) (glosa (str-cat " nota-debito " ?folio-debito))))
    )
@@ -2750,7 +2762,12 @@
 
    ( if (eq true ?devolver-a-devolucion-sobre-ventas)
    then
-     ( assert (abono (tipo-de-documento 56) (partida ?numero) (dia ?dia) (mes ?mes ) (ano ?ano) (empresa ?nombre) (cuenta reintegro-de-devolucion-sobre-ventas) (monto ?neto) (glosa (str-cat " nota-debito " ?folio-debito))))
+     ( if (> ?iva 0) 
+      then
+       ( assert (abono (tipo-de-documento 56) (partida ?numero) (dia ?dia) (mes ?mes ) (ano ?ano) (empresa ?nombre) (cuenta reintegro-de-devolucion-sobre-ventas-afectas) (monto ?neto) (glosa (str-cat " nota-debito " ?folio-debito))))
+      else
+       ( assert (abono (tipo-de-documento 56) (partida ?numero) (dia ?dia) (mes ?mes ) (ano ?ano) (empresa ?nombre) (cuenta reintegro-de-devolucion-sobre-ventas-exentas) (monto ?neto) (glosa (str-cat " nota-debito " ?folio-debito))))
+     )
    else
      ( assert (abono (tipo-de-documento 56) (partida ?numero) (dia ?dia) (mes ?mes ) (ano ?ano) (empresa ?nombre) (cuenta ?subcuenta) (monto ?neto) (glosa (str-cat " nota-debito " ?folio-debito))))
    )
@@ -2797,7 +2814,6 @@
    ( test (eq nil ?credito ))
    ( test (and (not (eq nil ?total)) (> ?total 0)))
    ( test (and (not (eq nil ?neto)) (> ?neto 0)))
-   ( test (and (not (eq nil ?iva)) (> ?iva 0)))
    ( test (>= (to_serial_date ?top ?mes_top ?ano_top) (to_serial_date ?dia ?mes ?ano)))
    ( selecciones (devolver-a-devolucion-sobre-ventas ?devolver-a-devolucion-sobre-ventas))
 
@@ -2819,7 +2835,12 @@
 
    ( if (eq true ?devolver-a-devolucion-sobre-ventas)
    then
-     ( assert (cargo (tipo-de-documento 61) (partida ?numero) (dia ?dia) (mes ?mes ) (ano ?ano) (empresa ?nombre) (cuenta devolucion-sobre-ventas) (monto ?neto) (glosa (str-cat " nota-credito " ?material))))
+     ( if (> ?iva 0)
+      then
+       ( assert (cargo (tipo-de-documento 61) (partida ?numero) (dia ?dia) (mes ?mes ) (ano ?ano) (empresa ?nombre) (cuenta devolucion-sobre-ventas-afectas) (monto ?neto) (glosa (str-cat " nota-credito " ?material))))
+      else
+       ( assert (cargo (tipo-de-documento 61) (partida ?numero) (dia ?dia) (mes ?mes ) (ano ?ano) (empresa ?nombre) (cuenta devolucion-sobre-ventas-exentas) (monto ?neto) (glosa (str-cat " nota-credito " ?material))))
+      )
    else
      ( assert (cargo (tipo-de-documento 61) (partida ?numero) (dia ?dia) (mes ?mes ) (ano ?ano) (empresa ?nombre) (cuenta ventas-con-factura-afecta) (monto ?neto) (glosa (str-cat " nota-credito " ?material))))
    )

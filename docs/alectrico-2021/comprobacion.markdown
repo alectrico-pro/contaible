@@ -31,6 +31,10 @@ NO se han practicado liquidaciones, por lo que SÍ se muestran cuentas nominales
 <thead> <th></th>  <th align='center'>DEBE</th> <th align='center'>HABER</th> <th>|</th> <th align='center'>DEBER</th> <th align='center'>ACREEDOR</th> <th>A Corregir </th> </thead>
 <tbody>
 <tr style=' background: #fff; border: 1px solid red;'>
+<td><small>reintegro-de-devolucion-sobre-ventas-afectas</small></td> <td align='right'>0</td> <td align='right'>29412</td> <td> | </td> <td align='right'> 0</td> <td align='right'>29412</td> </tr>
+<tr style=' background: #fff; border: 1px solid red;'>
+<td><small>reintegro-de-devolucion-sobre-ventas-exentas</small></td> <td align='right'>0</td> <td align='right'>4505</td> <td> | </td> <td align='right'> 0</td> <td align='right'>4505</td> </tr>
+<tr style=' background: #fff; border: 1px solid red;'>
 <td><small>amortizacion</small></td> <td align='right'>29004</td> <td align='right'>0</td> <td> | </td> <td align='right'> 29004</td> <td align='right'>0</td> </tr>
 <tr>
 <td><small>amortizacion-intangibles</small></td> <td align='right'>29004</td> <td align='right'>0</td> <td> | </td> <td align='right'> 29004</td> <td align='right'>0</td>
@@ -50,19 +54,23 @@ NO se han practicado liquidaciones, por lo que SÍ se muestran cuentas nominales
 <td><small>gastos-promocionales</small></td> <td align='right'>203635</td> <td align='right'>0</td> <td> | </td> <td align='right'> 203635</td> <td align='right'>0</td> </tr>
 <tr style=' background: #fff; border: 1px solid red;'>
 <td>Remuneraciones por Pagar<small>salarios-por-pagar</small></td> <td align='right'>1482860</td> <td align='right'>2150000</td> <td> | </td> <td align='right'> 0</td> <td align='right'>667140</td> </tr>
+<tr style=' background: #fff; border: 1px solid red;'>
+<td><small>reintegro-de-devolucion-sobre-ventas</small></td> <td align='right'>0</td> <td align='right'>33917</td> <td> | </td> <td align='right'> 0</td> <td align='right'>33917</td> </tr>
+<tr>
+<td><small>devolucion-sobre-ventas</small></td> <td align='right'>1393913</td> <td align='right'>0</td> <td> | </td> <td align='right'> 1393913</td> <td align='right'>0</td>
+</tr>
 <tr>
 <td><small>ventas</small></td> <td align='right'>0</td> <td align='right'>2618290</td> <td> | </td> <td align='right'> 0</td> <td align='right'>2618290</td>
 </tr>
-<tr style=' background: #fff; border: 1px solid red;'>
-<td><small>reintegro-de-devolucion-sobre-ventas</small></td> <td align='right'>0</td> <td align='right'>33917</td> <td> | </td> <td align='right'> 0</td> <td align='right'>33917</td> </tr>
 <tr style=' background: #fff; border: 1px solid red;'>
 <td><small>devolucion-sobre-gastos</small></td> <td align='right'>0</td> <td align='right'>736</td> <td> | </td> <td align='right'> 0</td> <td align='right'>736</td> </tr>
 <tr>
 <td>Herramientas<small>herramientas</small></td> <td align='right'>218470</td> <td align='right'>0</td> <td> | </td> <td align='right'> 218470</td> <td align='right'>0</td>
 </tr>
-<tr>
-<td><small>devolucion-sobre-ventas</small></td> <td align='right'>1393913</td> <td align='right'>0</td> <td> | </td> <td align='right'> 1393913</td> <td align='right'>0</td>
-</tr>
+<tr style=' background: #fff; border: 1px solid red;'>
+<td><small>devolucion-sobre-ventas-afectas</small></td> <td align='right'>904358</td> <td align='right'>0</td> <td> | </td> <td align='right'> 904358</td> <td align='right'>0</td> </tr>
+<tr style=' background: #fff; border: 1px solid red;'>
+<td><small>devolucion-sobre-ventas-exentas</small></td> <td align='right'>489555</td> <td align='right'>0</td> <td> | </td> <td align='right'> 489555</td> <td align='right'>0</td> </tr>
 <tr>
 <td>Intangibles<small>intangibles</small> </td> <td align='right'>2440000</td> <td align='right'>52631</td> <td> | </td> <td align='right'> 2387369</td> <td align='right'>0</td> 
 <td colspan='2' style=' background: #faa; border: 1px solid red;'>Subcuenta </td>
@@ -105,6 +113,6 @@ NO se han practicado liquidaciones, por lo que SÍ se muestran cuentas nominales
 </tr>
 </tbody>
 <tfoot>
-<tr> <td></td> <td align='right'> <div>18689972</div></td> <td align='right'> <div>21022682</div></td><td> | </td> <td align='right'> <div>8622780</div></td> <td align='right'> <div>10955490</div></td> </tr>
+<tr> <td></td> <td align='right'> <div>20083885</div></td> <td align='right'> <div>21056599</div></td><td> | </td> <td align='right'> <div>10016693</div></td> <td align='right'> <div>10989407</div></td> </tr>
 </tfoot>
 </table>
