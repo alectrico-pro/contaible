@@ -310,7 +310,7 @@
   (printout k "<tr><td></td><td></td><td></td><td> (-) </td><td align='right'>" ?devolucion-sobre-ventas "</td><td> Devoluciones sobre ventas </td></tr>" crlf)  
 
   (printout t "|" tab tab "| (+) " ?reintegro-de-devolucion-sobre-ventas tab tab "Reintegros de Devoluciones sobre ventas" crlf)
-  (printout k "<tr><td></td><td></td><td></td><td> (-) </td><td align='right'>" ?reintegro-de-devolucion-sobre-ventas "</td><td> Reintegro de Devoluciones sobre ventas </td></tr>" crlf)
+  (printout k "<tr><td></td><td></td><td></td><td> (+) </td><td align='right'>" ?reintegro-de-devolucion-sobre-ventas "</td><td> Reintegro de Devoluciones sobre ventas </td></tr>" crlf)
 
 
   (printout t "|" tab tab "| (-) -  " tab tab "Descuentos sobre ventas" crlf)
