@@ -180,6 +180,7 @@
     (debe  ?gastos-administrativos-debe)
     (haber ?gastos-administrativos-haber))
 
+  ( cuenta (nombre rechazados) (debe ?debe-rechazados) (haber ?haber-rechazados))
   ( subtotales (cuenta salarios ) (deber ?salarios-deber))
   ( subtotales (cuenta salarios ) (acreedor ?salarios-acreedor))
   ( subtotales (cuenta gastos-ventas) (deber ?gastos-ventas))
@@ -207,6 +208,8 @@
   ( selecciones (regimen ?regimen) (incentivo-al-ahorro ?incentivo-al-ahorro))
 
  =>
+
+  (bind ?rechazados (- ?haber-rechazados ?debe-rechazados))
 
   (bind ?costos-de-mercancias (- ?costos-de-mercancias-deber ?costos-de-mercancias-acreedor))
 
@@ -498,15 +501,20 @@
   ( printout t "|" ?aportes tab tab tab tab "(+) Aportes Cap." crlf)
   ( printout k "<tr><td> (+) </td><td align='right'>" ?aportes "</td><td></td><td></td><td></td><td> Aportes al Capital </td></tr>" crlf)
 
+  (printout t "|" tab tab "| (=) " ?resultado tab "RLI Calculada sin considerar partidas rechazadas" crlf)
+  (printout k "<tr><td> <td></td></td><td> </td><td> (=) </td><td align='right' style = 'font-weight:bold; background-color: lightgreen'>" ?resultado "</td><td> RLI Calculada sin considerar partidas rechazadas </td></tr>" crlf)
 
-  (if (eq ?base-imponible ?resultado)
+
+  (if (eq ?base-imponible (- ?resultado ?rechazados))
    then
-    (printout t "|" tab tab "| (=) " ?resultado tab "RLI Calculada" crlf)
-    (printout k "<tr><td> <td></td></td><td> </td><td> (1) (=) </td><td align='right' style = 'font-weight:bold; background-color: lightgreen'>" ?resultado "</td><td> RLI Calculada </td></tr>" crlf)
+    (printout t "|" tab tab "| (=) " (- ?resultado ?rechazados) tab "RLI Calculada" crlf)
+    (printout k "<tr><td> <td></td></td><td> </td><td> (1) (=) </td><td align='right' style = 'font-weight:bold; background-color: lightgreen'>" (- ?resultado ?rechazados) "</td><td> RLI Calculada </td></tr>" crlf)
    else
-    (printout t "|" tab tab "| (=) " ?resultado tab "RLI Calculada (1)" crlf)
-    (printout k "<tr><td> <td></td></td><td> </td><td> (1) (=) </td><td align='right' style = 'font-weight:bold; background-color: azure'>" ?resultado "</td><td> RLI Calculada </td></tr>" crlf)
+    (printout t "|" tab tab "| (-) " ?rechazados tab "Rechazados" crlf)
+    (printout k "<tr><td> <td></td></td><td> </td><td>  (-) </td><td align='right' >" ?rechazados "</td><td> Rechazados </td></tr>" crlf)
 
+    (printout t "|" tab tab "| (=) " (- ?resultado ?rechazados) tab "RLI Calculada (1)" crlf)
+    (printout k "<tr><td> <td></td></td><td> </td><td> (1) (=) </td><td align='right' style = 'color: white;font-weight:bold; background-color: red'>" (- ?resultado ?rechazados) "</td><td> RLI Calculada </td></tr>" crlf)
   )
 
 
@@ -519,10 +527,10 @@
 
   (if (eq ?base-imponible ?resultado)
    then
-    (printout k "<tr><td></td><td></td><td></td><td> </td><td align='right' style='background-color: lightgreen'> <img src='../revisado.png'> " ?base-imponible "</td><td> RLI desp. Imptos ( m. liquidaciones) <small> " ?regimen "</small></td></tr>" crlf)
+    (printout k "<tr><td></td><td></td><td></td><td> </td><td align='right' style=' background-color: lightgreen'> <img src='../revisado.png'> " ?base-imponible "</td><td> RLI desp. Imptos ( m. liquidaciones) <small> " ?regimen "</small></td></tr>" crlf)
    
    else
-    (printout k "<tr><td></td><td></td><td></td><td> (2) </td><td align='right' style='font-weight:bold; background-color: lightgreen'>" ?base-imponible "</td><td>  RLI deps. Imptos (m. liquidaciones) <small>" ?regimen "</small></td></tr>" crlf)
+    (printout k "<tr><td></td><td></td><td></td><td> (2) </td><td align='right' style='font-weight:bold; color:white; background-color: red'>" ?base-imponible "</td><td>  RLI deps. Imptos (m. liquidaciones) <small>" ?regimen "</small></td></tr>" crlf)
     (printout k "<tr></tr><tr><td colspan=6 rowspan=1 style='color: white; font-weight:bold; background-color: crimson'> (1) y (2) deben ser iguales: Lasliquidaciones pueden que esté con problemas. Revise que las cuentas de resultados estén bien configuradas en cuentas.txt. Deben tener grupo=resultado. Revise que estas líneas estén en el alectrico-2021-facts.txt 
 ;tributario
 ( ajuste-anual

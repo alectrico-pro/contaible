@@ -1394,6 +1394,20 @@ servicio.")
   (origen nominativo))
 
 
+
+(cuenta (nombre rechazados)
+  (parte 0)
+  (descripcion partidas-rechazadas-por-sii)
+  (tipo acreedora)
+  (circulante false)
+  (padre false)
+  (grupo tributario)
+  (de-resultado true)
+  (naturaleza mixta)
+  (origen nominativo))
+
+
+
 (cuenta (nombre utilidad)
   (parte 0)
   (descripcion utilidad)

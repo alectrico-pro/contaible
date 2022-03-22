@@ -586,6 +586,9 @@
 
     ?cuenta <- (cuenta
       (partida   ?partida-cuenta)
+      (dia       ?dia-partida)
+      (mes       ?mes-partida)
+      (ano       ?ano-partida)
       (nombre    ?nombre)
       (debe      ?debe)
       (haber     ?haber)
@@ -597,6 +600,8 @@
     (test (> ?debe ?haber))
 
     (revision (partida ?partida-cuenta) (rechazado true) )
+    
+    ?r <- (cuenta (nombre rechazados) (partida nil) (debe ?debe-rechazados) (haber ?haber-rechazados) )
 
  =>
 
@@ -609,17 +614,16 @@
        ( haber     ?debe)
        ( debe      ?haber))
 
+  ; ( modify ?liquidadora ( debe (+ ?debe-liquidadora ?debe)))
 
-   ( modify ?liquidadora
-       ( debe (+ ?debe-liquidadora ?debe)))
+   ( modify ?r (debe (+ ?debe-rechazados ?debe )) (haber (+ ?haber-rechazados ?haber)))
 
-
-  ( modify ?partida (debe (+ ?debep ?saldo)) (haber (+ ?haberp ?saldo)))
-  ( printout t tab tab "    |-- " tab (round ?saldo) tab ?nombre crlf)
-  ( printout t tab (round ?saldo)  tab" <--| " tab "r<" ?liquidora ">" crlf)
-  ( printout t crlf )
-  ( printout k "<tr style='decoration-text: line-through; background-color: violet; color: white '><td></td><td>" (round ?saldo) "</td><td></td><td>" ?nombre "</td></tr>" crlf)
-  ( printout k "<tr><td>" (round ?saldo) "</td><td></td><td colspan='2'> r(" ?liquidora ")  </td></tr>"  crlf)
+   ( modify ?partida (debe (+ ?debep ?saldo)) (haber (+ ?haberp ?saldo)))
+   ( printout t tab tab "    |-- " tab (round ?saldo) tab ?nombre crlf)
+   ( printout t tab (round ?saldo)  tab" <--| " tab "r<" ?liquidora ">" crlf)
+   ( printout t crlf )
+   ( printout k "<tr style='decoration-text: line-through; background-color: violet; color: white '><td></td><td>" (round ?saldo) "</td><td></td><td>" ?nombre "</td></tr>" crlf)
+   ( printout k "<tr><td>" (round ?saldo) "</td><td></td><td colspan='2'> r(" ?liquidora ")  </td></tr>"  crlf)
 
 )
 

@@ -65,8 +65,10 @@ layout: page
 <tr><td> (-) </td><td align='right'>218470</td><td></td><td></td><td></td><td> Depreciación Instantánea Activo Fijo Propyme </td></tr>
 <tr><td> (-) </td><td align='right'>0</td><td></td><td></td><td></td><td> Amortización Instantánea Intangibles </td></tr>
 <tr><td> (+) </td><td align='right'>0</td><td></td><td></td><td></td><td> Aportes al Capital </td></tr>
-<tr><td> <td></td></td><td> </td><td> (1) (=) </td><td align='right' style = 'font-weight:bold; background-color: azure'>-598993</td><td> RLI Calculada </td></tr>
-<tr><td></td><td></td><td></td><td> (2) </td><td align='right' style='font-weight:bold; background-color: lightgreen'>-482888</td><td>  RLI deps. Imptos (m. liquidaciones) <small>propyme</small></td></tr>
+<tr><td> <td></td></td><td> </td><td> (=) </td><td align='right' style = 'font-weight:bold; background-color: lightgreen'>-598993</td><td> RLI Calculada sin considerar partidas rechazadas </td></tr>
+<tr><td> <td></td></td><td> </td><td>  (-) </td><td align='right' >-153139</td><td> Rechazados </td></tr>
+<tr><td> <td></td></td><td> </td><td> (1) (=) </td><td align='right' style = 'color: white;font-weight:bold; background-color: red'>-445854</td><td> RLI Calculada </td></tr>
+<tr><td></td><td></td><td></td><td> (2) </td><td align='right' style='font-weight:bold; color:white; background-color: red'>-329749</td><td>  RLI deps. Imptos (m. liquidaciones) <small>propyme</small></td></tr>
 <tr></tr><tr><td colspan=6 rowspan=1 style='color: white; font-weight:bold; background-color: crimson'> (1) y (2) deben ser iguales: Lasliquidaciones pueden que esté con problemas. Revise que las cuentas de resultados estén bien configuradas en cuentas.txt. Deben tener grupo=resultado. Revise que estas líneas estén en el alectrico-2021-facts.txt 
 ;tributario
 ( ajuste-anual
