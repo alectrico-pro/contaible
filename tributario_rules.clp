@@ -282,6 +282,8 @@
 
   (bind ?resultado (+ ?aportes (- ?margen-fuera-de-explotacion   (+ ?depreciacion-instantanea   ?amortizacion-instantanea))) )
 
+  (bind ?resultado-final (- ?resultado ?rechazados))
+
   (printout k "<table><tbody>" crlf )
   (printout k "<tr><th colspan='3'>" ?empresa "</th></tr>" crlf )
 
@@ -574,17 +576,17 @@
 
  
 
- (if (and (eq ?incentivo-al-ahorro true) (eq ?regimen propyme) (> ?utilidad-tributaria 0))
+ (if (and (eq ?incentivo-al-ahorro true) (eq ?regimen propyme) (> ?base-imponible 0))
    then 
     (printout t "  INCENTIVO AL AHORRO SOLICITADO EN selecciones.txt " crlf)
     (printout t tab tab ?base-imponible tab " RLI Calculada " crlf)
-    (printout t tab tab (round (* ?resultado 0.5)) tab tab "Rebaja Art.14 Letra E " ?regimen  crlf)
-    (printout t tab tab (round (* ?resultado ?tasa-idpc)) tab "IDPC A PAGAR" tab (round (* ?tasa-idpc 100)) "%" crlf)
+    (printout t tab tab (round (* ?resultado-final 0.5)) tab tab "Rebaja Art.14 Letra E " ?regimen  crlf)
+    (printout t tab tab (round (* ?resultado-final ?tasa-idpc)) tab "IDPC A PAGAR" tab (round (* ?tasa-idpc 100)) "%" crlf)
     (printout k "<tr> <th> INCENTIVO AL AHORRO SOLICITADO EN selecciones.txt </th></tr> " crlf)
-    (printout k "<tr><td></td><td></td><td></td><td> (-) </td><td align='right' style = 'font-weight:bold; background-color: azure'  >" ?resultado "</td><td> RENTA LIQUIDA IMPONIBLE</td></tr>" crlf)
-    (printout k "<tr><td></td><td></td><td></td><td> (-) </td><td align='right' style=' background-color: gold'>" (round (* ?resultado 0.5)) "</td><td>    Rebaja Art.14 Letra E <small>" ?regimen "</small></td></tr>" crlf)
-    (printout k "<tr><td></td><td></td><td></td><td> (=) </td><td align='right' style='font-weight:bold; background-color: lightgreen'>" (round (* ?resultado 0.5))"</td><td> RESULTADO DESPUES DE IMPUESTO <img src='../revisado.png'></td> </tr>" crlf)
-    (printout k "<tr><td></td><td></td><td></td><td> (=) </td><td align='right' style='font-weight:bold; color: white; background-color: crimson'>" (round (* ?resultado 0.5 ?tasa-idpc)) "</td><td> IDPC A PAGAR <small> " (round (* ?tasa-idpc 100) )  "% en abril </small></td></tr>" crlf)
+    (printout k "<tr><td></td><td></td><td></td><td> (-) </td><td align='right' style = 'font-weight:bold; background-color: azure'  >" ?resultado-final "</td><td> RENTA LIQUIDA IMPONIBLE</td></tr>" crlf)
+    (printout k "<tr><td></td><td></td><td></td><td> (-) </td><td align='right' style=' background-color: gold'>" (round (* ?resultado-final 0.5)) "</td><td>    Rebaja Art.14 Letra E <small>" ?regimen "</small></td></tr>" crlf)
+    (printout k "<tr><td></td><td></td><td></td><td> (=) </td><td align='right' style='font-weight:bold; background-color: lightgreen'>" (round (* ?resultado-final 0.5))"</td><td> RESULTADO DESPUES DE IMPUESTO <img src='../revisado.png'></td> </tr>" crlf)
+    (printout k "<tr><td></td><td></td><td></td><td> (=) </td><td align='right' style='font-weight:bold; color: white; background-color: crimson'>" (round (* ?resultado-final 0.5 ?tasa-idpc)) "</td><td> IDPC A PAGAR <small> " (round (* ?tasa-idpc 100) )  "% en abril </small></td></tr>" crlf)
  )  
 
 ; (printout t "|" tab tab "|     ------" crlf)
