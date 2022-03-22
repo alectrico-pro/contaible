@@ -614,7 +614,7 @@
        ( haber     ?debe)
        ( debe      ?haber))
 
-   ( modify ?liquidadora ( debe (+ ?debe-liquidadora ?debe)))
+ ;  ( modify ?liquidadora ( debe (+ ?debe-liquidadora ?debe)))
 
    ( modify ?r (debe (+ ?debe-rechazados ?debe )) (haber (+ ?haber-rechazados ?haber)))
 

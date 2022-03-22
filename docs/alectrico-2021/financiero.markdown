@@ -10,10 +10,15 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <li><span style='background-color: gold'>[    ]</span> ganancia </li>
 <li><span style='color: white; background-color: black'>[    ]</span> pérdida </li>
 <table><tbody>
-<tr><td>pérdida</td><td>1728</td><td></td><td>costos-de-ventas</td></tr>
-<tr><td>pérdida</td><td>78967</td><td></td><td>devolucion-sobre-ventas</td></tr>
-<tr><td>pérdida</td><td>2417</td><td></td><td>amortizacion</td></tr>
-<tr><td> ganancias </td><td> </td><td>152942</td><td>ingresos-brutos</td></tr>
-<tr><td> ganancias </td><td> </td><td>85294</td><td>utilidad-del-ejercicio-anterior</td></tr>
-<tr><td> ganancias </td><td> </td><td>2000000</td><td>capital-social</td></tr>
+<tr><td>pérdida</td><td>10892</td><td></td><td>costos-de-ventas</td></tr>
+<tr><td>pérdida</td><td>137700</td><td></td><td>gastos-administrativos</td></tr>
+<tr><td>pérdida</td><td>819164</td><td></td><td>devolucion-sobre-ventas</td></tr>
+<tr><td>pérdida</td><td>203635</td><td></td><td>gastos-promocionales</td></tr>
+<tr><td>pérdida</td><td>16919</td><td></td><td>amortizacion</td></tr>
+<tr><td>pérdida</td><td>300000</td><td></td><td>salarios</td></tr>
+<tr><td>pérdida</td><td>9804</td><td></td><td>depreciacion</td></tr>
+<tr><td> ganancias </td><td> </td><td>2085294</td><td>capital-social</td></tr>
+<tr><td> ganancias </td><td> </td><td>505</td><td>devolucion-sobre-gastos</td></tr>
+<tr><td> ganancias </td><td> </td><td>33917</td><td>reintegro-de-devolucion-sobre-ventas</td></tr>
+<tr><td> ganancias </td><td> </td><td>1083169</td><td>ingresos-brutos</td></tr>
 <table><tbody>
