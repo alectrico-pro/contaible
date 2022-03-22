@@ -84,7 +84,7 @@
    ( printout k "<li><span style='background-color: gold'>[    ]</span> ganancia </li>" crlf)
    ( printout k "<li><span style='color: white; background-color: black'>[    ]</span> pérdida </li>" crlf)
    ( printout k "<li><span style='background-color: blanchedalmond'>[    ]</span> subtotales de la transacción </li>" crlf)
-
+   ( printout k "<li><span style='decoration-text: line-through; background-color: violet; color: white '>[    ]</span> transacción rechazada por SII </li>" crlf)
 )
 
 
@@ -139,7 +139,7 @@
    (or
      (cuenta (partida ?partida) (nombre ?nombre&:(neq ?nombre ingresos-brutos)) (padre false) (grupo resultado))
      (cuenta (partida ?partida) (nombre ?nombre) (padre ingresos-brutos) (grupo resultado))  )
-   (revision (partida ?partida) (rechazado false))
+
 
   =>
    ( assert
@@ -176,7 +176,7 @@
    (or
      (cuenta (partida ?partida)  (nombre ?nombre&:(neq ?nombre ingresos-brutos)) (padre false) (grupo resultado))
      (cuenta (partida ?partida)  (nombre ?nombre) (padre ingresos-brutos) (grupo resultado)))
-  (revision (partida ?partida) (rechazado false))
+
 
   =>
 
@@ -560,6 +560,71 @@
 
 )
 
+
+
+(defrule liquidar-cuentas-tributarias-deducciones-rechazadas
+  (declare (salience 80))
+
+    (fila ?numero )
+
+    (empresa (nombre ?empresa ))
+
+    ?partida <- (partida
+      (numero ?numero )
+      (dia    ?dia)
+      (mes    ?mes)
+      (ano    ?ano)
+      (debe   ?debep)
+      (haber  ?haberp))
+
+   ?tributacion <- (tributacion
+       (partida ?numero)
+       (cuenta ?nombre) (ano ?ano)
+       (liquidadora ?liquidora)
+       (efecto  deduccion))
+
+
+    ?cuenta <- (cuenta
+      (partida   ?partida-cuenta)
+      (nombre    ?nombre)
+      (debe      ?debe)
+      (haber     ?haber)
+      (grupo     ?grupo)
+      (tributada false))
+
+    ?liquidadora <- (cuenta (nombre ?liquidora) (partida nil) (debe ?debe-liquidadora))
+
+    (test (> ?debe ?haber))
+
+    (revision (partida ?partida-cuenta) (rechazado true) )
+
+ =>
+
+   ( modify ?tributacion (cumplida true))
+
+   ( bind ?saldo (- ?debe ?haber))
+
+   ( modify ?cuenta
+       ( tributada true )
+       ( haber     ?debe)
+       ( debe      ?haber))
+
+
+   ( modify ?liquidadora
+       ( debe (+ ?debe-liquidadora ?debe)))
+
+
+  ( modify ?partida (debe (+ ?debep ?saldo)) (haber (+ ?haberp ?saldo)))
+  ( printout t tab tab "    |-- " tab (round ?saldo) tab ?nombre crlf)
+  ( printout t tab (round ?saldo)  tab" <--| " tab "r<" ?liquidora ">" crlf)
+  ( printout t crlf )
+  ( printout k "<tr style='decoration-text: line-through; background-color: violet; color: white '><td></td><td>" (round ?saldo) "</td><td></td><td>" ?nombre "</td></tr>" crlf)
+  ( printout k "<tr><td>" (round ?saldo) "</td><td></td><td colspan='2'> r(" ?liquidora ")  </td></tr>"  crlf)
+
+)
+
+
+
 (defrule liquidar-cuentas-tributarias-deducciones
   (declare (salience 80))
 
@@ -593,6 +658,9 @@
     ?liquidadora <- (cuenta (nombre ?liquidora) (partida nil) (debe ?debe-liquidadora))
  
     (test (> ?debe ?haber))
+
+    (revision (partida ?partida-cuenta) (rechazado false) )
+
 
  =>
    ( modify ?tributacion (cumplida true))

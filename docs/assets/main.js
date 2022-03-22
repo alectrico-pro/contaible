@@ -1,6 +1,9 @@
 const miTitulo = document.querySelector('h1');
-const miDebe   = document.querySelectorAll('#Debe');
-const miHaber  = document.querySelectorAll('#Haber');
+var highlightedItems = document.querySelectorAll('td, #Debe');
+
+highlightedItems.forEach(function(userItem) {
+  userItem.textContent = "hu";
+});
 
 
 miTitulo.textContent = 'alectrico SpA. Ejercicio 2021.';

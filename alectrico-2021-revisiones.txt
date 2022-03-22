@@ -354,7 +354,7 @@
 
 (revision (revisado true) (partida 165) (tipo 33) (rcv n-a)
  (no-incluir true)
- (rechazado true) (a-corregir "No se puede tener cuentas por cobrar a menos que se haya vendido al contado")
+ (a-corregir "No se puede tener cuentas por cobrar a menos que se haya vendido al contado")
 )
 
 (revision (revisado false) (partida 166) (tipo 33) (rcv n-a))

@@ -19,6 +19,14 @@
   ) 
 )
 
+
+(defrule partidas-sin-revision
+  (partida (numero ?numero)) 
+  (not (exists (revision (partida ?numero))))
+ =>
+  (printout t "Partida sin registro de revisión: " ?numero crlf)
+)
+
 (defrule formulario-f22-encabezado
   (declare (salience 20))
  =>
