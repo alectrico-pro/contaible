@@ -525,7 +525,7 @@
 
   (printout t "(1) debe ser igual que (2) " crlf)
 
-  (if (eq ?base-imponible ?resultado)
+  (if (eq ?base-imponible (- ?resultado ?rechazados))
    then
     (printout k "<tr><td></td><td></td><td></td><td> </td><td align='right' style=' background-color: lightgreen'> <img src='../revisado.png'> " ?base-imponible "</td><td> RLI desp. Imptos ( m. liquidaciones) <small> " ?regimen "</small></td></tr>" crlf)
    

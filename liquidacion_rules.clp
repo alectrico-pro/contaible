@@ -544,7 +544,7 @@
 
  =>
 
-  ( modify ?tributacion (cumplida true))
+; ( modify ?tributacion (cumplida true))
   ( modify ?af (liquidado true))
 
   ( modify ?liquidadora
@@ -605,7 +605,7 @@
 
  =>
 
-   ( modify ?tributacion (cumplida true))
+;  ( modify ?tributacion (cumplida true))
 
    ( bind ?saldo (- ?debe ?haber))
 
@@ -614,7 +614,7 @@
        ( haber     ?debe)
        ( debe      ?haber))
 
-  ; ( modify ?liquidadora ( debe (+ ?debe-liquidadora ?debe)))
+   ( modify ?liquidadora ( debe (+ ?debe-liquidadora ?debe)))
 
    ( modify ?r (debe (+ ?debe-rechazados ?debe )) (haber (+ ?haber-rechazados ?haber)))
 
@@ -667,7 +667,7 @@
 
 
  =>
-   ( modify ?tributacion (cumplida true))
+;   ( modify ?tributacion (cumplida true))
 
    ( bind ?saldo (- ?debe ?haber))
    
@@ -691,10 +691,77 @@
 )
 
 
+(defrule liquidar-cuentas-tributarias-aportes-rechazados
+
+    (declare (salience 280))
+
+    (fila ?numero )
+
+    (empresa (nombre ?empresa ))
+
+    ?partida <- (partida
+      (numero ?numero )
+      (dia    ?dia)
+      (mes    ?mes)
+      (ano    ?ano)
+      (debe   ?debep)
+      (haber  ?haberp))
+
+
+   ?tributacion <- (tributacion
+        (partida     ?numero)
+        (cuenta      ?nombre) (ano ?ano)
+        (liquidadora ?liquidora)
+        (efecto      aporte))
+
+    ?cuenta <- (cuenta
+      (partida   ?partida-cuenta)
+      (nombre    ?nombre)
+      (debe      ?debe)
+      (haber     ?haber)
+      (grupo     ?grupo)
+      (tributada false))
+
+
+    ?liquidadora <- (cuenta
+      ( nombre ?liquidora)
+      ( partida nil)
+      ( haber ?haber-liquidadora))
+
+    ;en las cuentas de resultado, el haber significa ganancia o aporte
+    (test (> ?haber ?debe))
+
+    (revision (partida ?partida-cuenta) (rechazado true) )
+
+ =>
+
+   ( modify ?tributacion (cumplida true))
+
+   ( bind ?saldo (- ?haber ?debe))
+
+
+   ( modify ?cuenta
+       ( tributada true  )
+       ( haber     ?debe)
+       ( debe      ?haber))
+
+;   ( modify ?liquidadora
+ ;      ( haber (+ ?haber ?haber-liquidadora)))
+
+
+   ( modify ?partida (debe (+ ?debep ?saldo)) (haber (+ ?haberp ?saldo)))
+   ( printout t tab (round ?saldo) tab " --| " tab tab ?nombre crlf)
+   ( printout t tab tab "   |-> " tab (round ?saldo)  tab tab "r<" ?liquidora ">" crlf)
+   ( printout t crlf )
+   ( printout k "<tr style='background-color: violet; color: white' ><td>" (round ?saldo) "</td><td></td><td colspan='2'>" ?nombre "</td></tr>" crlf)
+   ( printout k "<tr><td></td><td>"  (round ?saldo) "</td><td></td><td> r(" ?liquidora ") </td></tr>"  crlf)
+)
 
 
 
-(defrule liquidar-cuentas-tributarias-aportes
+
+
+(defrule liquidar-cuentas-tributarias-aportes-no-rechazados
 
     (declare (salience 280))
 
@@ -733,6 +800,8 @@
 
     ;en las cuentas de resultado, el haber significa ganancia o aporte
     (test (> ?haber ?debe))
+
+    (revision (partida ?partida-cuenta) (rechazado false) )
 
  =>
 
