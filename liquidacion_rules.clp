@@ -731,11 +731,13 @@
     ;en las cuentas de resultado, el haber significa ganancia o aporte
     (test (> ?haber ?debe))
 
+    ?r <- (cuenta (nombre rechazados) (partida nil) (debe ?debe-rechazados) (haber ?haber-rechazados) )
+
     (revision (partida ?partida-cuenta) (rechazado true) )
 
  =>
 
-   ( modify ?tributacion (cumplida true))
+  ; ( modify ?tributacion (cumplida true))
 
    ( bind ?saldo (- ?haber ?debe))
 
@@ -748,6 +750,7 @@
 ;   ( modify ?liquidadora
  ;      ( haber (+ ?haber ?haber-liquidadora)))
 
+   ( modify ?r (debe (+ ?debe-rechazados ?debe )) (haber (+ ?haber-rechazados ?haber)))
 
    ( modify ?partida (debe (+ ?debep ?saldo)) (haber (+ ?haberp ?saldo)))
    ( printout t tab (round ?saldo) tab " --| " tab tab ?nombre crlf)
@@ -805,7 +808,7 @@
 
  =>
 
-   ( modify ?tributacion (cumplida true))
+  ; ( modify ?tributacion (cumplida true))
 
    ( bind ?saldo (- ?haber ?debe))
 
