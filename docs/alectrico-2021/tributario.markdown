@@ -65,6 +65,7 @@ layout: page
 <tr><td> (-) </td><td align='right'>0</td><td></td><td></td><td></td><td> Amortización Instantánea Intangibles </td></tr>
 <tr><td> (+) </td><td align='right'>0</td><td></td><td></td><td></td><td> Aportes al Capital </td></tr>
 <tr><td> <td></td></td><td> </td><td> (=) </td><td align='right' style = 'font-weight:bold; background-color: lightgreen'>134636</td><td> RLI Calculada sin considerar partidas rechazadas </td></tr>
+<tr><td> <td></td></td><td> </td><td>  (-) </td><td align='right' >-159723</td><td> Rechazados </td></tr>
 <tr><td> <td></td></td><td> </td><td> (1) (=) </td><td align='right' style = 'font-weight:bold; background-color: lightgreen'>294359</td><td> RLI Calculada </td></tr>
 <tr><td></td><td></td><td></td><td> </td><td align='right' style=' background-color: lightgreen'> <img src='../revisado.png'> 294359</td><td> RLI desp. Imptos ( m. liquidaciones) <small> propyme</small></td></tr>
 </tbody></table>

@@ -507,8 +507,14 @@
 
   (if (eq ?base-imponible (- ?resultado ?rechazados))
    then
+
+
+    (printout t "|" tab tab "| (-) " ?rechazados tab "Rechazados" crlf)
+    (printout k "<tr><td> <td></td></td><td> </td><td>  (-) </td><td align='right' >" ?rechazados "</td><td> Rechazados </td></tr>" crlf)
     (printout t "|" tab tab "| (=) " (- ?resultado ?rechazados) tab "RLI Calculada" crlf)
     (printout k "<tr><td> <td></td></td><td> </td><td> (1) (=) </td><td align='right' style = 'font-weight:bold; background-color: lightgreen'>" (- ?resultado ?rechazados) "</td><td> RLI Calculada </td></tr>" crlf)
+
+
    else
     (printout t "|" tab tab "| (-) " ?rechazados tab "Rechazados" crlf)
     (printout k "<tr><td> <td></td></td><td> </td><td>  (-) </td><td align='right' >" ?rechazados "</td><td> Rechazados </td></tr>" crlf)
