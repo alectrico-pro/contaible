@@ -544,7 +544,8 @@
 
  =>
 
-; ( modify ?tributacion (cumplida true))
+  ( modify ?tributacion (cumplida true))
+
   ( modify ?af (liquidado true))
 
   ( modify ?liquidadora
@@ -605,7 +606,7 @@
 
  =>
 
-;  ( modify ?tributacion (cumplida true))
+   ( modify ?tributacion (cumplida true))
 
    ( bind ?saldo (- ?debe ?haber))
 
@@ -627,6 +628,74 @@
 
 )
 
+
+;esta regla es específica para inventario pues no se pueden rechazar y 
+;no está asociado a cuentas que se puedan asociar a registro de revisiones
+(defrule liquidar-inventario-deducciones
+
+  (declare (salience 80))
+
+    (fila ?numero )
+
+    (empresa (nombre ?empresa ))
+
+    ?partida <- (partida
+      (numero ?numero )
+      (dia    ?dia)
+      (mes    ?mes)
+      (ano    ?ano)
+      (debe   ?debep)
+      (haber  ?haberp))
+   
+   ?tributacion <- (tributacion
+       (partida ?numero)
+       (cuenta ?nombre) (ano ?ano)
+       (liquidadora ?liquidora)
+       (efecto  deduccion))
+
+
+    ?cuenta <- (cuenta
+      (partida   ?partida-cuenta)
+      (nombre    ?nombre)
+      (debe      ?debe)
+      (haber     ?haber)
+      (grupo     ?grupo)
+      (tributada false))
+
+    (partida-inventario-final (partida ?partida-inventario))
+
+    ?liquidadora <- (cuenta (nombre ?liquidora) (partida nil) (debe ?debe-liquidadora))
+
+    (test (> ?debe ?haber))
+
+   (revision (partida ?partida-inventario) (rechazado false) )
+ 
+    (test (eq ?nombre inventario-final))
+    (test (eq ?liquidora base-imponible))
+
+  =>
+
+   ( modify ?tributacion (cumplida true))
+
+   ( bind ?saldo (- ?debe ?haber))
+
+   ( modify ?cuenta
+       ( tributada true )
+       ( haber     ?debe)
+       ( debe      ?haber))
+
+
+   ( modify ?liquidadora
+       ( debe (+ ?debe-liquidadora ?debe)))
+
+
+  ( modify ?partida (debe (+ ?debep ?saldo)) (haber (+ ?haberp ?saldo)))
+  ( printout t tab tab "    |-- " tab (round ?saldo) tab ?nombre crlf)
+  ( printout t tab (round ?saldo)  tab" <--| " tab "r<" ?liquidora ">" crlf)
+  ( printout t crlf )
+  ( printout k "<tr><td></td><td>" (round ?saldo) "</td><td></td><td>" ?nombre "</td></tr>" crlf)
+  ( printout k "<tr><td>" (round ?saldo) "</td><td></td><td colspan='2'> r(" ?liquidora ")  </td></tr>"  crlf)
+)
 
 
 (defrule liquidar-cuentas-tributarias-deducciones
@@ -663,11 +732,8 @@
  
     (test (> ?debe ?haber))
 
-    (revision (partida ?partida-cuenta) (rechazado false) )
-
-
  =>
-;   ( modify ?tributacion (cumplida true))
+   ( modify ?tributacion (cumplida true))
 
    ( bind ?saldo (- ?debe ?haber))
    
@@ -737,7 +803,7 @@
 
  =>
 
-  ; ( modify ?tributacion (cumplida true))
+   ( modify ?tributacion (cumplida true))
 
    ( bind ?saldo (- ?haber ?debe))
 
@@ -808,7 +874,7 @@
 
  =>
 
-  ; ( modify ?tributacion (cumplida true))
+   ( modify ?tributacion (cumplida true))
 
    ( bind ?saldo (- ?haber ?debe))
 

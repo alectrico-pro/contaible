@@ -231,6 +231,13 @@
    (printout t "x<-Cuenta No mostrado en partida: " tab ?numero tab ?actividad crlf)
 )
 
+(defrule tributacion-no-complida
+   (partida (numero ?numero) (actividad ?actividad))
+   (cuenta  (nombre ?cuenta) (partida ?numero))
+   (tributacion (cumplida false) (cuenta ?cuenta) )
+  =>
+   (printout t "x<-Tributación no Cumplida: " tab partida tab ?numero tab ?actividad crlf)
+)
 
 
 
