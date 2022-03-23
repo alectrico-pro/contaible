@@ -399,34 +399,6 @@
    ( assert ( formulario-f29 (partida ?numero) (codigo 510) (valor ?monto ) (descripcion  "DEBITO N.CREDITO EMITIDAS/Ref FACTURA | NOTA-CREDITO-RECIBIDA-RETENCION-PARCIAL-CAMBIO-SUJETO" ) (mes ?mes) (ano ?ano) ))
 )
 
-(defrule acumuladors-mensuales
-   ( declare (salience -1))
-   ( balance (ano ?ano))
-
-   ( empresa (nombre ?empresa))
-   ?f <- ( f29 (partida ?numero) (mes ?mes) (ano ?ano))
-   ( acumulador-mensual (cuenta ?cuenta) (haber ?haber) (debe ?debe) (mes ?mes) (ano ?ano))
- =>
-   ( printout t "Acumuladores Mensuales " ?cuenta crlf)
-)
-
-
-(defrule codigos-f29-debito-notas-de-credito-510-negativo
-   ( declare (salience -1))
-   ( balance (ano ?ano))
-
-   ( empresa (nombre ?empresa))
-   ?f <- ( f29 (partida ?numero) (mes ?mes) (ano ?ano))
-   ( acumulador-mensual (cuenta -510) (haber ?haber) (debe ?debe) (mes ?mes) (ano ?ano))
-   (test (< ?haber ?debe))
-  =>
-   ( bind ?monto (- ?debe ?haber))
-   ( assert (partida (empresa ?empresa) (numero ?numero) (dia 31) (mes ?mes) (ano ?ano) (descripcion (str-cat "Formulario F29 " ?mes )) (  actividad codigos-f29)))
-   ( assert ( formulario-f29 (partida ?numero) (codigo -510) (valor ?monto ) (descripcion  " Rechazados  DEBITO N.CREDITO EMITIDAS/Ref FACTURA | NOTA-CREDITO-RECIBIDA-RETENCION-PARCIAL-CAMBIO-SUJETO" ) (mes ?mes) (ano ?ano) ))
-)
-
-
-
 
 
 (defrule codigos-f29-qty-notas-de-credito-509
@@ -809,6 +781,37 @@
 )
 
 
+
+(defrule listando-acumuladores-mensuales
+   ( declare (salience -1))
+   ( balance (ano ?ano))
+
+   ( empresa (nombre ?empresa))
+   ?f <- ( f29 (partida ?numero) (mes ?mes) (ano ?ano))
+   ( acumulador-mensual (cuenta ?cuenta) (haber ?haber) (debe ?debe) (mes ?mes) (ano ?ano))
+ =>
+   ( printout t "Acumuladores Mensuales " ?cuenta crlf)
+)
+
+
+(defrule codigos-negativos
+   ( declare (salience -1))
+   ( balance (ano ?ano))
+
+   ( empresa (nombre ?empresa))
+   ?f <- ( f29 (partida ?numero) (mes ?mes) (ano ?ano))
+   ( acumulador-mensual (cuenta ?codigo&:(numberp ?codigo)) (haber ?haber) (debe ?debe) (mes ?mes) (ano ?ano))
+  ;( test (< ?haber ?debe))
+   ( test ( < ?codigo 0))
+  =>
+   ( bind ?monto (- ?debe ?haber))
+   ( assert (partida (empresa ?empresa) (numero ?numero) (dia 31) (mes ?mes) (ano ?ano) (descripcion (str-cat "Formulario F29 " ?mes )) (  actividad codigos-f29)))
+   ( assert ( formulario-f29 (partida ?numero) (codigo ?codigo) (valor ?monto ) (descripcion (str-cat " Rechazados  " ?codigo) ) (mes ?mes) (ano ?ano) ))
+)
+
+
+
+
 (defrule ordenar-codigos
  =>
   ( bind ?i -1000)
@@ -817,6 +820,7 @@
     ( bind ?i (+ ?i 1))
   )
 )
+
 
 
 (defrule suma-f22-condicion-inicial
@@ -836,7 +840,6 @@
    ( modify  ?mensual ( sumado true))
    ( modify  ?anual (valor (+ ?valor-anual ?valor-mensual)))
 )
-
 
 
 (defrule obtencion-de-un-codigo-mensual-f29-para-ser-presentado-en-formulario-f22
