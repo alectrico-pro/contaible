@@ -56,7 +56,8 @@
 (defrule abonos-rechazados
   ?info <- (info (anotado false) )
   (abono (partida ?partida) (cuenta ?cuenta))
-  (partida (numero ?partida) (rechazado true))
+  (partida (numero ?partida))
+  (revision (partida ?partida) (rechazado true))
  =>
   (printout t "Cuenta: " ?cuenta crlf)
   (printout t "Reintegrar abonos rechazados" crlf)
@@ -66,7 +67,9 @@
 (defrule cargos-rechazados
   ?info <- (info (anotado false) )
   (cargo (partida ?partida) (cuenta ?cuenta))
-  (partida (numero ?partida) (rechazado true))
+  (partida (numero ?partida))
+  (revision (partida ?partida) (rechazado true))
+
  =>
   (printout t "Cuenta: " ?cuenta crlf)
   (printout t "Reintegrar cargos rechazados" crlf)

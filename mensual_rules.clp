@@ -855,6 +855,7 @@
 
 (defrule no-sumar-incremento-por-rechazado
   ( declare (salience 9000))
+(no)
   ( balance (mes ?mes-balance))
   ( empresa (nombre ?empresa))
    ?suma <- ( sumar (partida ?partida) (qty ?qty-suma) (tipo-de-documento ?tipo-de-documento) (debe ?debe-suma) (haber ?haber-suma) (cuenta ?cuenta) (mes ?mes) (ano ?ano))
@@ -868,9 +869,44 @@
 )
 
 
+(defrule crear-codigos-negativos-para-rechazados
+  ( declare (salience 9001))
+  ( balance (mes ?mes-balance))
+  ( empresa (nombre ?empresa))
+  ?s <- ( sumar (partida ?partida) (cuenta ?cuenta&:(numberp ?cuenta)) (mes ?mes) (ano ?ano))
+  ( not (exists (acumulador-mensual (cuenta ?c&:(eq ?c (* -1 ?cuenta) )))))
+  ( revision (partida ?partida) (rechazado true))
+
+ =>
+  ( bind ?codigo-negativo (* -1 ?cuenta ))
+
+  ( assert (acumulador-mensual (cuenta ?codigo-negativo) (mes ?mes) (ano ?ano)))
+
+  ( printout t "Creado código: " ?codigo-negativo crlf)
+
+)
+
+
+(defrule sumar-incremento-que-fue-rechazado
+  ( declare (salience 9000))
+  ( balance (mes ?mes-balance))
+  ( empresa (nombre ?empresa))
+  ?suma <- ( sumar (partida ?partida) (qty ?qty-suma) (tipo-de-documento ?tipo-de-documento) (debe ?debe-suma) (haber ?haber-suma) (cuenta ?cuenta&:(numberp ?cuenta)) (mes ?mes) (ano ?ano))
+  ?acc  <- ( acumulador-mensual (cuenta ?c&:(eq ?c (* -1 ?cuenta))) (qty ?qty) (debe ?debe) (haber ?haber ) (mes ?mes) (ano ?ano))
+   (revision (partida ?partida) (rechazado true))
+
+ =>
+
+  ( retract ?suma)
+  ( assert (codigo-de-partida (codigo ?cuenta) (partida ?partida) (rechazado true)))
+  ( assert (codigo-de-partida (codigo (* -1 ?cuenta)) (partida ?partida)))
+  ( modify ?acc (debe (+ ?debe ?debe-suma)) (tipo-de-documento ?tipo-de-documento) (haber (+ ?haber ?haber-suma)) (qty (+ ?qty-suma ?qty) ))
+  ( printout t "SUmado " (str-cat "-" ?cuenta) " partida " ?partida tab ?qty-suma tab ?debe-suma -------- ?haber-suma tab ?tipo-de-documento crlf)
+;  ( printout t "Sumar incremento que fue rechazado" crlf)
+)
+
 
 (defrule sumar-incremento-que-no-fue-rechazado
-
   ( declare (salience 9000))
   ( balance (mes ?mes-balance))
   ( empresa (nombre ?empresa))

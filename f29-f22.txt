@@ -6,6 +6,8 @@
 (f29-f22 (codigo-f29 717) (linea-f22 "Facturas por ventas y servicios gravados" ))
 (f29-f22 (codigo-f29 501) (linea-f22 "Facturas por ventas y servicios gravados" ))
 (f29-f22 (codigo-f29 510) (cuenta devolucion-sobre-ventas-afectas) (linea-f22 "Notas de Crédito emitidas por ventas y servicios" ))
+(f29-f22 (codigo-f29 -510) (cuenta devolucion-sobre-ventas-afectas) (linea-f22 "Rechazados de Notas de Crédito emitidas por ventas y servicios" ))
+
 (f29-f22 (codigo-f29 709) (linea-f22 "Notas de Crédito emitidas por ventas y servicios" ))
 (f29-f22 (codigo-f29 734) (linea-f22 "Notas de Crédito emitidas por ventas y servicios" ))
 (f29-f22 (codigo-f29 513) (cuenta reintegro-de-devolucion-sobre-ventas-afectas) (linea-f22 "Notas de débito emitidas -- (nota alectrico) con referencia a documentos c/iva --" ))
