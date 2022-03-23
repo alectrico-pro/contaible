@@ -782,7 +782,7 @@
 
 
 
-(defrule listando-acumuladors-mensuales
+(defrule listando-acumuladores-mensuales
    ( declare (salience -1))
    ( balance (ano ?ano))
 
@@ -801,7 +801,7 @@
    ( empresa (nombre ?empresa))
    ?f <- ( f29 (partida ?numero) (mes ?mes) (ano ?ano))
    ( acumulador-mensual (cuenta ?codigo&:(numberp ?codigo)) (haber ?haber) (debe ?debe) (mes ?mes) (ano ?ano))
-   (test (< ?haber ?debe))
+  ;( test (< ?haber ?debe))
    ( test ( < ?codigo 0))
   =>
    ( bind ?monto (- ?debe ?haber))

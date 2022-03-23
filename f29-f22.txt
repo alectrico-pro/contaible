@@ -1,7 +1,7 @@
 (f29-f22 (codigo-f29 111) (cuenta ventas-con-eboleta-afecta) (linea-f22 "Boletas y Comprobante o recibo de pago de transacciones transbank"))
 (f29-f22 (codigo-f29 759) (cuenta ventas-con-voucher-afecto) (linea-f22 "Boletas y Comprobante o recibo de pago de transacciones transbank"))
-(f29-f22 (codigo-f29 142) (linea-f22 "Ventas y/o Servicios prestados Exentos, o No Gravados" ))
-(f29-f22 (codigo-f29 -142) (linea-f22 "Rechazados de Ventas y/o Servicios prestados Exentos, o No Gravados" ))
+(f29-f22 (codigo-f29 142) (cuenta ventas-con-eboleta-exenta) (linea-f22 "Ventas y/o Servicios prestados Exentos, o No Gravados" ))
+(f29-f22 (codigo-f29 -142) (cuenta ventas-con-eboleta-exenta) (linea-f22 "Rechazados de Ventas y/o Servicios prestados Exentos, o No Gravados" ))
 
 (f29-f22 (codigo-f29 715) (linea-f22 "Ventas y/o Servicios prestados Exentos, o No Gravados" ))
 (f29-f22 (codigo-f29 502) (cuenta ventas-con-factura-afecta) (linea-f22 "Facturas por ventas y servicios gravados" ))
