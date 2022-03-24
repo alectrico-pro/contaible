@@ -42,7 +42,7 @@
   (formulario-f22  (codigo ?codigo) (valor ?valor) (anual true) )
   (exists  (cuenta (nombre ?cuenta)))
   (subtotales (cuenta ?cuenta) (debe ?debe) (haber ?haber))
-  (cuenta (nombre ?cuenta) (tipo deudor))
+  (exists  (cuenta (nombre ?cuenta) (tipo deudor)))
  =>
 
   ( bind ?iva-de-saldo (round (* ?debe 0.19)))
@@ -53,6 +53,8 @@
    (bind ?resultado 'fail')
   )
   (printout t ?codigo tab ?valor tab ?debe tab ?iva-de-saldo tab ?resultado tab ?cuenta  crlf) 
+  (assert (codigo-f22 (codigo ?codigo) (valor ?valor)))
+
 )
 
 (defrule comprobando-formulario-f22-acreedora
@@ -62,7 +64,7 @@
   (formulario-f22  (codigo ?codigo) (valor ?valor) (anual true) )
   (exists  (cuenta (nombre ?cuenta)))
   (subtotales (cuenta ?cuenta) (debe ?debe) (haber ?haber))
-  (cuenta (nombre ?cuenta) (tipo acreedora))
+  (exists  (cuenta (nombre ?cuenta) (tipo acreedora)) )
  =>
   ( bind ?iva-de-saldo (round (* ?haber 0.19)))
   ( if (eq ?iva-de-saldo ?valor) 
@@ -72,6 +74,31 @@
    (bind ?resultado 'error')
   )
   (printout t  ?codigo tab ?valor tab ?haber tab ?iva-de-saldo tab ?resultado  tab ?cuenta crlf)
+  (assert (codigo-f22 (codigo ?codigo) (valor ?valor)))
+)
+
+(defrule ver-codigo-f22
+  (declare (salience -1))
+  (codigo-f22 (codigo ?codigo) (valor ?valor))
+  (test (> ?codigo 0))
+ =>
+  (printout t "Código " ?codigo " Valor: " ?valor crlf)
+)
+
+
+(defrule consolidando-codigo-f22
+  ?c1 <-  (codigo-f22 (codigo ?codigo)  (valor ?valor))
+  ?c2 <- (codigo-f22 (codigo ?codigo2) (valor ?valor2))
+  (test ( eq ?codigo (* -1 ?codigo2)))
+  (test ( < ?codigo2 0))
+  (test ( > ?codigo 0))
+
+ =>
+
+  ( modify ?c1 (codigo ?codigo) (valor (- ?valor ?valor2)))
+  ( retract ?c2)
+  ( printout t "Cambiando " ?codigo " Valor: " (- ?valor ?valor2)  crlf)
+
 )
 
 

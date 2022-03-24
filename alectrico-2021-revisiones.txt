@@ -15,7 +15,10 @@
 
 (revision (revisado true) (voucher 192) (partida 004) (old 4) (tipo resumen-rendicion-de-comprobantes-electronicos-vouchers) (rcv n-a) (ccm true) (libro-diario true) )
 
-(revision (revisado true) (voucher 192) (partida 005) (tipo 61) (rcv true) (ccm true) (libro-diario true ) (folio 12) )
+(revision (revisado true) (voucher 192) (partida 005)
+ (rechazado false)
+ (tipo 61) (rcv true) (ccm true) (libro-diario true ) (folio 12) )
+
 (revision (revisado true) (voucher 192) (partida 006) (old 6) (tipo 61) (rcv true) (ccm true) (libro-diario true) (folio 13) )
 (revision (revisado true) (voucher 192) (partida 007) (old 7) (tipo 61) (rcv true) (ccm true) (libro-diario true) (folio 14) )
 (revision (revisado true) (partida 008) (old 8)   (tipo 61) (rcv true) (ccm true) (libro-diario true) (folio 29457    )  )

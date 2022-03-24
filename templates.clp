@@ -457,6 +457,10 @@
   (slot partida)
 )
 
+(deftemplate codigo-f22
+  (slot codigo)
+  (slot valor)
+)
 
 
 (deftemplate f22
