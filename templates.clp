@@ -460,6 +460,9 @@
 (deftemplate codigo-f22
   (slot codigo)
   (slot valor)
+  (slot cuenta)
+  (slot saldo)
+  (slot iva)
 )
 
 

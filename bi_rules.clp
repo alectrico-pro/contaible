@@ -53,7 +53,7 @@
    (bind ?resultado 'fail')
   )
   (printout t ?codigo tab ?valor tab ?debe tab ?iva-de-saldo tab ?resultado tab ?cuenta  crlf) 
-  (assert (codigo-f22 (codigo ?codigo) (valor ?valor)))
+  (assert (codigo-f22 (codigo ?codigo) (valor ?valor) (cuenta ?cuenta) (saldo ?debe) (iva ?iva-de-saldo)))
 
 )
 
@@ -74,15 +74,24 @@
    (bind ?resultado 'error')
   )
   (printout t  ?codigo tab ?valor tab ?haber tab ?iva-de-saldo tab ?resultado  tab ?cuenta crlf)
-  (assert (codigo-f22 (codigo ?codigo) (valor ?valor)))
+  (assert (codigo-f22 (codigo ?codigo) (valor ?valor) (cuenta ?cuenta) (saldo ?haber) (iva ?iva-de-saldo)))
 )
 
 (defrule ver-codigo-f22
   (declare (salience -1))
-  (codigo-f22 (codigo ?codigo) (valor ?valor))
+  (codigo-f22 (codigo ?codigo) (valor ?valor) (cuenta ?cuenta) (saldo ?saldo) (iva ?iva))
   (test (> ?codigo 0))
+  (exists  (cuenta (nombre ?cuenta)))
+  (subtotales (cuenta ?cuenta) (debe ?debe) (haber ?haber))
+
  =>
-  (printout t "Código " ?codigo " Valor: " ?valor crlf)
+  (bind ?diferencia (abs (- ( abs ?valor) (abs ?iva))))
+  (if  (<= ?diferencia 1)
+   then
+    (printout t "Código: " ?codigo " Valor: " tab ?valor tab  " Saldo: " tab ?saldo  tab " iva: " tab ?iva tab  " dif: " tab ?diferencia tab " Bien!  cuenta: " tab ?cuenta  crlf)
+   else
+    (printout t "Código: " ?codigo " Valor: " tab ?valor tab  " Saldo: " tab ?saldo tab  " iva: " tab ?iva tab " dif: " tab ?diferencia tab " Mal?! cuenta: " tab ?cuenta crlf)
+  )
 )
 
 
@@ -95,9 +104,9 @@
 
  =>
 
-  ( modify ?c1 (codigo ?codigo) (valor (- ?valor ?valor2)))
+  ( modify ?c1 (codigo ?codigo) (valor (+ ?valor ?valor2)))
   ( retract ?c2)
-  ( printout t "Cambiando " ?codigo " Valor: " (- ?valor ?valor2)  crlf)
+  ( printout t "Cambiando " ?codigo " Valor: " (+ ?valor ?valor2)  crlf)
 
 )
 
