@@ -20,32 +20,6 @@
 )
 
 
-(defrule iterando-f29-f22-acreedora
- (no)
-
-   ( or
-    ( and 
-      ( f29-f22         ( codigo-f29 ?codigo1) (cuenta ?cuenta1))
-      ( formulario-f22  ( codigo     ?codigo1) (anual true) )
-      ( subtotales      ( cuenta     ?cuenta1))  
-    )
-    ( and
-      ( f29-f22         ( codigo-f29 ?codigo2) (cuenta ?cuenta2))
-      ( formulario-f22  ( codigo     ?codigo2) (anual true) )
-      ( subtotales      ( cuenta     ?cuenta2))  
-    )
-   )
-   
-  =>
-
-   ( bind ?i 0)
-   ( printout t "F22s----------ACREEDORA------------" crlf)
-  ; ( do-for-all-facts ((?f f29-f22))  ( eq ?codigo ?f:codigo-f29)  
-  ;  ( bind ?i (+ ?i 1))
-  ;  ( printout t ?f:codigo-f29 tab ?valor tab (* ?deber 0.19) tab  (* ?acreedor 0.19) tab ?f:cuenta tab ?i crlf) )
-   ( printout t "---------------------------" crlf)
-
-)
 
 
 (defrule iterando-f29-f22-deudor
@@ -191,10 +165,10 @@
   ( bind ?ndebe  (+ ?debe ?rechazo))
   ( modify ?c1 (codigo ?codigo) (valor ?nvalor))
   ( retract ?c2)
-  ( printout t "-----------------------------------------------" crlf)
+  ( printout t "-------- Consolidación 3X --- Acreedora --------------" crlf)
   ( printout t tab tab codigo tab valor tab rechazo crlf)
-  ( printout t tab "a): cuenta 3X " ?cuenta  " debe: " ?debe " haber: " ?haber crlf)
-  ( printout t tab "b): cuenta 3X " ?cuenta2 " debe: " ?debe2 " haber: " ?haber2 crlf)
+  ( printout t tab "a): " ?cuenta  " debe: " ?debe " haber: " ?haber crlf)
+  ( printout t tab "b): " ?cuenta2 " debe: " ?debe2 " haber: " ?haber2 crlf)
   ( printout t tab "c): " tab ?codigo tab ?valor tab ?rechazo crlf)
   ( printout t tab "------------------------------------------------------------" crlf)
   ( printout t tab "                                       a (=) " ?haber crlf)
@@ -218,7 +192,7 @@
 
 
 
-(defrule consolidando-los-rechazados-de-cuentas-debe-mayor-con-dos-cuentas
+(defrule consolidando-los-rechazados-de-cuentas-debe-mayor-con-codigos-de-la-misma-cuenta-solo-iva
 
   (declare (salience 30))
   (hacer-f22)
@@ -231,35 +205,49 @@
   (test ( > ?codigo-f29 0))
 
   (f29-f22    (cuenta ?cuenta)  (codigo-f29 ?codigo-f29) )
-  (f29-f22    (cuenta ?cuenta2) (codigo-f29 ?codigo-f29) )
-
   (f29-f22    (cuenta ?cuenta)  (codigo-f29 ?codigo-de-rechazo))
 
   (subtotales (cuenta ?cuenta)  (debe ?debe)  (haber ?haber))
+
   (cuenta (nombre ?cuenta) )
 
   (test (> ?debe ?haber))
 
  =>
 
-  ( bind ?nvalor (+ ?valor ?rechazo))
+  ( bind ?nvalor (round (+ ?valor ?rechazo)))
+  ( bind ?iva (round (* 0.19 ?debe)) )
   ( modify ?c1 (codigo ?codigo-f29) (valor ?nvalor))
   ( retract ?c2)
-  ( printout t "-----------------------------------------------" crlf)
+  ( printout t "------- Consolidación 2X Deudoras -------------" crlf)
   ( printout t tab tab codigo tab valor tab rechazo crlf)
-  ( printout t tab "1: " tab ?codigo-f29 tab ?valor tab ?rechazo crlf)
-  ( printout t tab "cuenta 2X " ?cuenta " debe: " ?debe " haber: " ?haber crlf)
+  ( printout t tab "a): " ?cuenta  " debe: " ?debe tab iva tab  ?iva crlf)
+  ( printout t tab "c): " tab ?codigo-f29 tab ?valor tab ?nvalor tab ?iva crlf)
+  ( printout t tab "------------------------------------------------------------" crlf)
+  ( printout t tab "                                       a (=) " ?valor crlf)
+  ( printout t tab "                                       c (+) " ?rechazo crlf)
+  ( printout t tab "                                           -------------------- " crlf)
+  ( printout t tab "                                         (=) " ?nvalor crlf)
+
+  (if (< (abs  (- ?nvalor ?iva)) 2)  then
+     (printout t "                    PASS ok"  crlf)
+    else
+     (printout t "                    FAIL  "  crlf)
+  )
+
   ( printout t tab "Será ajustado el saldo de la cuenta para aceptar rechazos informados por los códigos." crlf)
-  ( printout t tab tab (- ?debe ?rechazo) crlf)
+  ( printout t tab (abs (- ?nvalor ?iva)) crlf)
   ( printout t tab "-------------------------------------" crlf)
   ( printout t "-----------------------------------------------" crlf)
 
 )
 
 
+
 (defrule consolidando-los-rechazados-de-cuentas-debe-mayor-con-tres-cuentas
 
   (declare (salience 30))
+(no probado)
   (hacer-f22)
 
   ?c1 <- (codigo-f22 (codigo ?codigo-f29)  (valor ?valor))
