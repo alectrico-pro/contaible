@@ -22,14 +22,13 @@
 
 
 
-(defrule iterando-f29-f22-deudor
-  (no)
+(defrule iterando-f29-f22-lista
   ( f29-f22 (codigo-f29 ?codigo) (cuenta ?cuenta))
   ( subtotales (cuenta ?cuenta) (deber ?deber) (acreedor ?acreedor))
   ( formulario-f22  (codigo ?codigo) (valor ?valor) (anual true) )
-  ( exists  ( cuenta (nombre ?cuenta) (tipo deudor)))
+  ( exists  ( cuenta (nombre ?cuenta)))
   =>
-   (printout t "F22s----------DEUDOR-------------" crlf)
+   (printout t "F22s----------LISTA-------------" crlf)
    (do-for-all-facts ((?f f29-f22))  ( eq ?codigo ?f:codigo-f29)
      (printout t ?f:codigo-f29 tab ?valor tab (* ?deber 0.19) tab  (* ?acreedor 0.19) tab ?f:cuenta crlf)
    )
@@ -220,6 +219,7 @@
   ( printout t "------- Consolidación 2X Deudoras -------------" crlf)
   ( printout t tab tab codigo tab valor tab rechazo crlf)
   ( printout t tab "a): " ?cuenta  " debe: " ?debe tab iva tab  ?iva crlf)
+  ( printout t tab "    " tab codigo tab valor tab ajuste tab iva crlf)
   ( printout t tab "c): " tab ?codigo-f29 tab ?valor tab ?nvalor tab ?iva crlf)
   ( printout t tab "------------------------------------------------------------" crlf)
   ( printout t tab "                                       a (=) " ?valor crlf)
@@ -233,7 +233,6 @@
      (printout t "                    FAIL  "  crlf)
   )
 
-  ( printout t tab "Será ajustado el saldo de la cuenta para aceptar rechazos informados por los códigos." crlf)
   ( printout t tab (abs (- ?nvalor ?iva)) crlf)
   ( printout t tab "-------------------------------------" crlf)
   ( printout t "-----------------------------------------------" crlf)
