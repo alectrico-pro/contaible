@@ -139,18 +139,17 @@
 
   ?c1 <- (codigo-f22 (codigo ?codigo)  (valor ?valor))
   ?c2 <- (codigo-f22 (codigo ?codigo2) (valor ?rechazo))
-
+ 
   (test ( eq ?codigo (* -1 ?codigo2)))
   (test ( < ?codigo2 0))
   (test ( > ?codigo 0))
 
-  (f29-f22    (cuenta ?cuenta)  (codigo-f29 ?codigo))
-  (f29-f22    (cuenta ?cuenta2)  (codigo-f29 ?codigo))
-  (f29-f22    (cuenta ?cuenta) (codigo-f29 ?codigo2))
+  ?f1 <- (f29-f22    (cuenta ?cuenta)   (codigo-f29 ?codigo))
+  ?f2 <- (f29-f22    (cuenta ?cuenta2)  (codigo-f29 ?codigo))
+  ?f3 <- (f29-f22    (cuenta ?cuenta)   (codigo-f29 ?codigo2))
 
-  (subtotales (cuenta ?cuenta)  (debe ?debe)  (haber ?haber))
+  (subtotales (cuenta ?cuenta)   (debe ?debe)  (haber ?haber))
   (subtotales (cuenta ?cuenta2)  (debe ?debe2)  (haber ?haber2))
-
 
   (cuenta (nombre ?cuenta) )
   (cuenta (nombre ?cuenta2))
@@ -165,6 +164,9 @@
   ( bind ?ndebe  (+ ?debe ?rechazo))
   ( modify ?c1 (codigo ?codigo) (valor ?nvalor))
   ( retract ?c2)
+  ( retract ?f1)
+  ( retract ?f2)
+  ( retract ?f3)
   ( printout t "-------- Consolidación 3X --- Acreedora --------------" crlf)
   ( printout t tab tab codigo tab valor tab rechazo crlf)
   ( printout t tab "a): " ?cuenta  " debe: " ?debe " haber: " ?haber crlf)
@@ -183,10 +185,6 @@
     else
      (printout t "                    FAIL  "  crlf)
   )
-
-  ( printout t tab "Será ajustado el saldo de la cuenta para aceptar rechazos informados por los códigos." crlf)
-  ( printout t tab (- ?haber ?rechazo) crlf)
-  ( printout t tab "-------------------------------------" crlf)
   ( printout t "-----------------------------------------------" crlf)
 )
 
@@ -344,7 +342,7 @@
   (exists  (cuenta (nombre ?cuenta) (tipo acreedora)) )
  =>
   ( bind ?iva-de-saldo (round (* ?haber 0.19)))
-  ( if (eq ?iva-de-saldo ?valor) 
+  ( if (< (abs (- ?iva-de-saldo ?valor) ) 2)
     then 
    (bind ?resultado 'pass-a')
     else
