@@ -405,6 +405,7 @@
       (debe      ?debe)
       (haber     ?haber)
       (grupo     ?grupo)
+      (deducible ?deducible)
       (liquidada false))
 
    ?liquidadora <- (cuenta
@@ -432,7 +433,7 @@
    ( printout t tab (round ?saldo) tab " ---| " tab tab ?nombre crlf)
    ( printout t tab tab "    |-> " tab (round ?saldo)  tab tab "r<" ?liquidora ">" crlf)
    ( printout t crlf )
-   ( printout k "<tr><td>" (round ?saldo) "</td><td></td><td colspan='2'>" ?nombre "</td></tr>" crlf)
+   ( printout k "<tr><td>" (round ?saldo) "</td><td><small> " (if (eq ?deducible true) then ganadoras-deducible else ganadoras-no-deducible) "</small></td> <td colspan='2'>" ?nombre "</td></tr>" crlf)
    ( printout k "<tr><td></td><td>"  (round ?saldo) "</td><td></td><td> r(" ?liquidora ") </td></tr>"  crlf)
 
 )
@@ -466,6 +467,7 @@
       (debe      ?debe)
       (haber     ?haber)
       (grupo     ?grupo)
+      (deducible ?deducible)
       (liquidada false)) 
 
 
@@ -494,8 +496,8 @@
    ( printout t tab tab "    |-- " tab (round ?saldo) tab ?nombre crlf)
    ( printout t tab (round ?saldo) tab " <--|" tab tab "r<" ?liquidora ">" crlf)
    ( printout t crlf )
-   ( printout k "<tr><td></td><td>" (round ?saldo) "</td><td> </td><td>" ?nombre "</td></tr>" crlf)
-   ( printout k "<tr><td>"  (round ?saldo) "</td><td></td><td colspan='2'> r(" ?liquidora ") </td></tr>"  crlf)
+   ( printout k "<tr><td> </td><td>" (round ?saldo) "</td><td> </td><td>" ?nombre "</td></tr>" crlf)
+   ( printout k "<tr><td>"  (round ?saldo) "</td><td><small> " (if (eq ?deducible true) then perdedoras-deducible else perdedoras-no-deducible) "</small> </td><td colspan='2'> r(" ?liquidora ") </td></tr>"  crlf)
 
 )
 
@@ -660,6 +662,7 @@
       (debe      ?debe)
       (haber     ?haber)
       (grupo     ?grupo)
+      (deducible ?deducible)
       (tributada false))
 
     (partida-inventario-final (partida ?partida-inventario))
@@ -693,7 +696,7 @@
   ( printout t tab tab "    |-- " tab (round ?saldo) tab ?nombre crlf)
   ( printout t tab (round ?saldo)  tab" <--| " tab "r<" ?liquidora ">" crlf)
   ( printout t crlf )
-  ( printout k "<tr><td></td><td>" (round ?saldo) "</td><td></td><td>" ?nombre "</td></tr>" crlf)
+  ( printout k "<tr><td> </td><td>" (round ?saldo) "</td><td><small> " (if (eq ?deducible true) then inventario-deducciones-deducible else inventario-deducciones-no-deducible)   "</small></td><td>" ?nombre "</td></tr>" crlf)
   ( printout k "<tr><td>" (round ?saldo) "</td><td></td><td colspan='2'> r(" ?liquidora ")  </td></tr>"  crlf)
 )
 
@@ -726,6 +729,7 @@
       (debe      ?debe)
       (haber     ?haber)
       (grupo     ?grupo)
+      (deducible ?deducible)
       (tributada false))
 
     ?liquidadora <- (cuenta (nombre ?liquidora) (partida nil) (debe ?debe-liquidadora))
@@ -752,7 +756,7 @@
   ( printout t tab (round ?saldo)  tab" <--| " tab "r<" ?liquidora ">" crlf)
   ( printout t crlf )
   ( printout k "<tr><td></td><td>" (round ?saldo) "</td><td></td><td>" ?nombre "</td></tr>" crlf)
-  ( printout k "<tr><td>" (round ?saldo) "</td><td></td><td colspan='2'> r(" ?liquidora ")  </td></tr>"  crlf)
+  ( printout k "<tr><td>" (round ?saldo) "</td><td><small> " (if (eq ?deducible true) then deducciones-deducible else deducciones-no-deducible) "</small> </td><td colspan='2'> r(" ?liquidora ")  </td></tr>"  crlf)
    
 )
 
@@ -786,6 +790,7 @@
       (debe      ?debe)
       (haber     ?haber)
       (grupo     ?grupo)
+      (deducible ?deducible)
       (tributada false))
 
 
@@ -823,7 +828,7 @@
    ( printout t tab tab "   |-> " tab (round ?saldo)  tab tab "r<" ?liquidora ">" crlf)
    ( printout t crlf )
    ( printout k "<tr style='background-color: violet; color: white' ><td>" (round ?saldo) "</td><td></td><td colspan='2'>" ?nombre "</td></tr>" crlf)
-   ( printout k "<tr><td></td><td>"  (round ?saldo) "</td><td></td><td> r(" ?liquidora ") </td></tr>"  crlf)
+   ( printout k "<tr><td> " (if (eq ?deducible true) then aportes-deducible else aportes-no-deducible)  " </td><td>"  (round ?saldo) "</td><td></td><td> r(" ?liquidora ") </td></tr>"  crlf)
 )
 
 
@@ -859,6 +864,7 @@
       (debe      ?debe)
       (haber     ?haber)
       (grupo     ?grupo)
+      (deducible ?deducible)
       (tributada false)) 
 
 
@@ -892,7 +898,7 @@
    ( printout t tab (round ?saldo) tab " --| " tab tab ?nombre crlf)
    ( printout t tab tab "   |-> " tab (round ?saldo)  tab tab "r<" ?liquidora ">" crlf)
    ( printout t crlf )
-   ( printout k "<tr><td>" (round ?saldo) "</td><td></td><td colspan='2'>" ?nombre "</td></tr>" crlf)
+   ( printout k "<tr><td>" (round ?saldo) "</td><td><small> " (if (eq ?deducible true) then aportes-deducible else aportes-no-deducible) "</small></td> <td colspan='2'>" ?nombre "</td></tr>" crlf)
    ( printout k "<tr><td></td><td>"  (round ?saldo) "</td><td></td><td> r(" ?liquidora ") </td></tr>"  crlf)
 )
 

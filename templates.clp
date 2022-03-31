@@ -1061,6 +1061,7 @@
    (slot tipo        (default false))
    (slot grupo       (default false))
    (slot naturaleza  (default false))
+   (slot deducible   (default false))
    (slot origen      (default false)))
 
 (deftemplate MAIN::cargo
