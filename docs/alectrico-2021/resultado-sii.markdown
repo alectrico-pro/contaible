@@ -3,7 +3,7 @@ layout: page
 --- 
 
 
-Solo se consideran las transacciones hasta el día 31	octubre.
+Solo se consideran las transacciones hasta el día 31	noviembre.
 Cifras en pesos.
 Se han practicado liquidaciones, por lo que NO se muestran cuentas nominales
 <table rules='groups'>
@@ -13,15 +13,15 @@ Se han practicado liquidaciones, por lo que NO se muestran cuentas nominales
 <thead> <th></th><th> </th> <th align='center' colspan= '2'>SUMAS</th><th> Padre </th> </thead>
 <thead> <th></th><th></th>  <th>DEBER</th> <th>ACREEDOR</th> </thead>
 <tbody>
-<thead> <th></th><th colspan='4'> T O T A L    A C T I V O  </th> <th> 1750478</th> </thead>
-<thead> <th></th><th colspan='4'> A C T I V O    F I J O</th> <th> 364825</th> </thead>
-<thead> <th></th><th colspan='4'> A C T I V O    C I R C U L A N T E</th> <th> 1385653</th> </thead>
+<thead> <th></th><th colspan='4'> T O T A L    A C T I V O  </th> <th> 1415460</th> </thead>
+<thead> <th></th><th colspan='4'> A C T I V O    F I J O</th> <th> 352604</th> </thead>
+<thead> <th></th><th colspan='4'> A C T I V O    C I R C U L A N T E</th> <th> 1062856</th> </thead>
 <thead> <th></th><th>cuentas-por-cobrar</th><th> 31203</th> </thead>
 <thead> <th></th><th>retencion-de-iva-articulo-11</th><th> 0</th> </thead>
-<thead> <th></th><th>iva-credito</th><th> 17</th> </thead>
-<thead> <th></th><th>ppm</th><th> 3707</th> </thead>
+<thead> <th></th><th>iva-credito</th><th> 4186</th> </thead>
+<thead> <th></th><th>ppm</th><th> 3715</th> </thead>
 <thead> <th></th><th>banco-estado</th><th> 0</th> </thead>
-<thead> <th></th><th>caja</th><th> 917549</th> </thead>
+<thead> <th></th><th>caja</th><th> 899679</th> </thead>
 <thead> <th></th><th>intangibles</th><th> 237369</th> </thead>
 <thead> <th></th><th>materiales</th><th> 167689</th> </thead>
 <thead> <th></th><th>insumos</th><th> 362503</th> </thead>
@@ -62,7 +62,16 @@ Se han practicado liquidaciones, por lo que NO se muestran cuentas nominales
 <tr style='background-color: lavender'>
 <td> febrero</td><td><a href= '/alectrico-2021/libro-diario#Partida-18'>18</a></td><td><small> embros </small> </td> <td align='right'> 20992</td> <td align='right'>0</td> <td> gastos-promocionales</td>
 </tr>
-<thead> <th></th><th colspan='4'> G A S T O S     A D M I N I S T R A T I V O S </th> <th> 189627</th></thead>
+<thead> <th></th><th colspan='4'> G A S T O S     A D M I N I S T R A T I V O S </th> <th> 211570</th></thead>
+<tr style='background-color: lavender'>
+<td> noviembre</td><td><a href= '/alectrico-2021/libro-diario#Partida-184'>184</a></td><td><small> bazaya </small> </td> <td align='right'> 10824</td> <td align='right'>0</td> <td> gastos-administrativos</td>
+</tr>
+<tr style='background-color: lavender'>
+<td> noviembre</td><td><a href= '/alectrico-2021/libro-diario#Partida-183'>183</a></td><td><small> smart </small> </td> <td align='right'> 4193</td> <td align='right'>0</td> <td> gastos-administrativos</td>
+</tr>
+<tr style='background-color: lavender'>
+<td> noviembre</td><td><a href= '/alectrico-2021/libro-diario#Partida-171'>171</a></td><td><small> entel </small> </td> <td align='right'> 6926</td> <td align='right'>0</td> <td> gastos-administrativos</td>
+</tr>
 <tr style='background-color: lavender'>
 <td> octubre</td><td><a href= '/alectrico-2021/libro-diario#Partida-163'>163</a></td><td><small> cloudflare </small> </td> <td align='right'> 3775</td> <td align='right'>0</td> <td> gastos-administrativos</td>
 </tr>
@@ -297,7 +306,7 @@ Se han practicado liquidaciones, por lo que NO se muestran cuentas nominales
 <tr style='background-color: lavender'>
 <td> agosto</td><td><a href= '/alectrico-2021/libro-diario#Partida-121'>121</a></td><td><small> electrocom-materiales </small> </td> <td align='right'> 25971</td> <td align='right'>0</td> <td> materiales</td>
 </tr>
-<thead> <th></th><th colspan='4'> V E N T A S </th><th> 2382018</th> </thead>
+<thead> <th></th><th colspan='4'> V E N T A S </th><th> 2388684</th> </thead>
 <tr  style='background-color: lightyellow'>
 <td>nil</td><td><small> ventas-con-eboleta-afecta </small> </td> <td align='right'> 0</td> <td align='right'>73695</td> <td> ventas</td>
 </tr>
@@ -332,7 +341,7 @@ Se han practicado liquidaciones, por lo que NO se muestran cuentas nominales
 <td> agosto</td><td><a href= '/alectrico-2021/libro-diario#Partida-92'>92</a></td> <td><small> ventas-con-voucher-afecto </small> </td> <td align='right'> 0</td> <td align='right'>33613</td> <td> ventas</td>
 </tr>
 <tr  style='background-color: lightyellow'>
-<td>nil</td><td><small> ventas-con-factura-exenta </small> </td> <td align='right'> 0</td> <td align='right'>494998</td> <td> ventas</td>
+<td>nil</td><td><small> ventas-con-factura-exenta </small> </td> <td align='right'> 0</td> <td align='right'>501664</td> <td> ventas</td>
 </tr>
 <tr style='background-color: lavender'>
 <td> julio</td><td><a href= '/alectrico-2021/libro-diario#Partida-75'>75</a></td> <td><small> ventas-con-factura-exenta </small> </td> <td align='right'> 0</td> <td align='right'>35000</td> <td> ventas</td>
@@ -351,6 +360,9 @@ Se han practicado liquidaciones, por lo que NO se muestran cuentas nominales
 </tr>
 <tr style='background-color: lavender'>
 <td> octubre</td><td><a href= '/alectrico-2021/libro-diario#Partida-159'>159</a></td> <td><small> ventas-con-factura-exenta </small> </td> <td align='right'> 0</td> <td align='right'>6666</td> <td> ventas</td>
+</tr>
+<tr style='background-color: lavender'>
+<td> noviembre</td><td><a href= '/alectrico-2021/libro-diario#Partida-170'>170</a></td> <td><small> ventas-con-factura-exenta </small> </td> <td align='right'> 0</td> <td align='right'>6666</td> <td> ventas</td>
 </tr>
 <tr  style='background-color: lightyellow'>
 <td>nil</td><td><small> ventas-con-factura-afecta </small> </td> <td align='right'> 0</td> <td align='right'>1414633</td> <td> ventas</td>

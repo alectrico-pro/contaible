@@ -11,14 +11,14 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <li><span style='color: white; background-color: black'>[    ]</span> pérdida </li>
 <table><tbody>
 <tr><td>pérdida</td><td>11417</td><td></td><td>costos-de-ventas</td></tr>
-<tr><td>pérdida</td><td>189627</td><td></td><td>gastos-administrativos</td></tr>
-<tr><td>pérdida</td><td>1350000</td><td></td><td>salarios</td></tr>
+<tr><td>pérdida</td><td>211570</td><td></td><td>gastos-administrativos</td></tr>
+<tr><td>pérdida</td><td>1750000</td><td></td><td>salarios</td></tr>
 <tr><td>pérdida</td><td>1393913</td><td></td><td>devolucion-sobre-ventas</td></tr>
 <tr><td>pérdida</td><td>203635</td><td></td><td>gastos-promocionales</td></tr>
-<tr><td>pérdida</td><td>64428</td><td></td><td>depreciacion</td></tr>
-<tr><td>pérdida</td><td>24170</td><td></td><td>amortizacion</td></tr>
+<tr><td>pérdida</td><td>74232</td><td></td><td>depreciacion</td></tr>
+<tr><td>pérdida</td><td>26587</td><td></td><td>amortizacion</td></tr>
 <tr><td> ganancias </td><td> </td><td>2085294</td><td>capital-social</td></tr>
-<tr><td> ganancias </td><td> </td><td>2385541</td><td>ingresos-brutos</td></tr>
+<tr><td> ganancias </td><td> </td><td>2392207</td><td>ingresos-brutos</td></tr>
 <tr><td> ganancias </td><td> </td><td>736</td><td>devolucion-sobre-gastos</td></tr>
 <tr><td> ganancias </td><td> </td><td>33917</td><td>reintegro-de-devolucion-sobre-ventas</td></tr>
 <table><tbody>
