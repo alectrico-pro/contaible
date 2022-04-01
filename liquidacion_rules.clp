@@ -809,6 +809,9 @@
 
     (revision (partida ?partida-cuenta) (rechazado true) )
 
+    (test (eq ?deducible true))
+
+
  =>
 
    ( modify ?tributacion (cumplida true))
@@ -881,6 +884,7 @@
 
     (revision (partida ?partida-cuenta) (rechazado false) )
 
+    (test (eq ?deducible true))
 
  =>
 
