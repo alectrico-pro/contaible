@@ -94,3 +94,16 @@ layout: page
 <tr> <td style='font-weight: bold; font-size: large; background-color: ivory'>47608</td> <td> (+) 167 </td><td style='font-weight: bold; font-size: large; background-color: gold'  > (=) 47775</td> <td> f29 504 </td><td> Remanente de crédito fiscal del mes anterior</td> </tr>
 <tr> <td style='font-weight: bold; font-size: large; background-color: ivory'>51789</td> <td> (+) 167 </td><td style='font-weight: bold; font-size: large; background-color: greenyellow' > (=) 51956</td> <td> f29 077 </td><td>Remanente del crédito fiscal para el mes siguiente</td></tr>
 <tr> <td> Determinando mes de ajuste de remanente de IVA </td><td> septiembre</td> <td>2021</td> </tr>
+<table> <tbody>
+<tr> <td colspan='6' style = 'font-style: small; background-color: azure'>agosto</td></tr>
+<tr> <td colspan='2' style='background-color: lightyellow'> IVA CREDITO </td> <td colspan='2' style='background-color: beige'> IVA DEBITO </td> </tr> 
+<tr> <td> DEBE </td> <td> HABER </td> <td> DEBE </td><td> HABER </td> </tr> 
+<tr> <td>118625</td> <td> 7649</td> <td> 23589</td><td> 79969</td> </tr>
+<tr> <td>110976</td> <td></td><td></td><td>56380</td> </tr>
+<tr> <td style='font-weight: bold; font-size: large; background-color: azure'>54596</td> <td></td> <td> </td><td> </td> </tr>
+</tbody> </table>
+<table> <tbody> 
+<tr> <td >-->ari Ajustar a Ingresos Remanente de IVA </td><td> agosto-2021</td> <td style='font-weight: bold; font-size: large; background-color: azure'> (+) 474</td> </tr>
+<tr> <td style='font-weight: bold; font-size: large; background-color: ivory'>51789</td> <td> (+) 474 </td><td style='font-weight: bold; font-size: large; background-color: gold'  > (=) 52263</td> <td> f29 504 </td><td> Remanente de crédito fiscal del mes anterior</td> </tr>
+<tr> <td style='font-weight: bold; font-size: large; background-color: ivory'>54596</td> <td> (+) 474 </td><td style='font-weight: bold; font-size: large; background-color: greenyellow' > (=) 55070</td> <td> f29 077 </td><td>Remanente del crédito fiscal para el mes siguiente</td></tr>
+<tr> <td> Determinando mes de ajuste de remanente de IVA </td><td> octubre</td> <td>2021</td> </tr>
