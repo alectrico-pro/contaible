@@ -692,8 +692,8 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <tr><td></td><td>25971</td><td></td><td> r(inventario-final) </td></tr>
 <tr><td> </td><td>142076</td><td> </td><td>inventario-final</td></tr>
 <tr><td>142076</td><td><small> perdedoras-deducible</small> </td><td colspan='2'> r(perdidas-y-ganancias) </td></tr>
-<tr><td></td><td>142076</td><td></td><td>inventario-final</td></tr>
-<tr><td>142076</td><td><small> deducciones-deducible</small> </td><td colspan='2'> r(base-imponible)  </td></tr>
+<tr><td> </td><td>142076</td><td><small> inventario-deducciones-deducible</small></td><td>inventario-final</td></tr>
+<tr><td>142076</td><td></td><td colspan='2'> r(base-imponible)  </td></tr>
 <tr style='color: white; background-color: black'> <td> 426228</td><td> 426228</td><td colspan='3'>( 31 de diciembre	2021	 ) </td></tr>
 <tr><td colspan='9'>alectrico® SpA</td></tr>
 <tr><td colspan='9'>Ajuste Anual Año: Liquidacion Inventario Final 2021</td></tr>

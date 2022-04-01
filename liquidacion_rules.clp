@@ -736,8 +736,10 @@
  
     (test (> ?debe ?haber))
 
-;    (test (eq ?deducible true))
+    (test (eq ?deducible true))
+
  =>
+
    ( modify ?tributacion (cumplida true))
 
    ( bind ?saldo (- ?debe ?haber))
