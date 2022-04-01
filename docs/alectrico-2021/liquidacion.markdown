@@ -24,19 +24,19 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <table style='background-color: lightyellow' ><tbody>
 <tr style='color: white; background-color: black'><td colspan='9'> Partida 210</td></tr>
 <tr><th>DEBE</th><th> HABER </th> <th colspan='6'> Cuenta </th></tr>
-<tr><td>29412</td><td><small> aportes-no-deducible</small></td> <td colspan='2'>ventas</td></tr>
+<tr><td>29412</td><td><small> aportes-deducible</small></td> <td colspan='2'>ventas</td></tr>
 <tr><td></td><td>29412</td><td></td><td> r(base-imponible) </td></tr>
-<tr><td>123497</td><td><small> aportes-no-deducible</small></td> <td colspan='2'>ventas</td></tr>
+<tr><td>123497</td><td><small> aportes-deducible</small></td> <td colspan='2'>ventas</td></tr>
 <tr><td></td><td>123497</td><td></td><td> r(base-imponible) </td></tr>
-<tr><td>33</td><td><small> aportes-no-deducible</small></td> <td colspan='2'>correccion-monetaria</td></tr>
+<tr><td>33</td><td><small> aportes-deducible</small></td> <td colspan='2'>correccion-monetaria</td></tr>
 <tr><td></td><td>33</td><td></td><td> r(base-imponible) </td></tr>
-<tr><td>18849</td><td><small> aportes-no-deducible</small></td> <td colspan='2'>costos-de-mercancias</td></tr>
+<tr><td>18849</td><td><small> aportes-deducible</small></td> <td colspan='2'>costos-de-mercancias</td></tr>
 <tr><td></td><td>18849</td><td></td><td> r(base-imponible) </td></tr>
-<tr><td>39487</td><td><small> aportes-no-deducible</small></td> <td colspan='2'>costos-de-mercancias</td></tr>
+<tr><td>39487</td><td><small> aportes-deducible</small></td> <td colspan='2'>costos-de-mercancias</td></tr>
 <tr><td></td><td>39487</td><td></td><td> r(base-imponible) </td></tr>
-<tr><td>44044</td><td><small> aportes-no-deducible</small></td> <td colspan='2'>costos-de-mercancias</td></tr>
+<tr><td>44044</td><td><small> aportes-deducible</small></td> <td colspan='2'>costos-de-mercancias</td></tr>
 <tr><td></td><td>44044</td><td></td><td> r(base-imponible) </td></tr>
-<tr><td>7118</td><td><small> aportes-no-deducible</small></td> <td colspan='2'>costos-de-mercancias</td></tr>
+<tr><td>7118</td><td><small> aportes-deducible</small></td> <td colspan='2'>costos-de-mercancias</td></tr>
 <tr><td></td><td>7118</td><td></td><td> r(base-imponible) </td></tr>
 <tr style='color: white; background-color: black'> <td> 262440</td><td> 262440</td><td colspan='3'>( 31 de enero	2021	 ) </td></tr>
 <tr><td colspan='9'>alectrico® SpA</td></tr>
@@ -80,19 +80,19 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <table style='background-color: lightyellow' ><tbody>
 <tr style='color: white; background-color: black'><td colspan='9'> Partida 213</td></tr>
 <tr><th>DEBE</th><th> HABER </th> <th colspan='6'> Cuenta </th></tr>
-<tr><td>123497</td><td><small> ganadoras-no-deducible</small></td> <td colspan='2'>ventas</td></tr>
+<tr><td>123497</td><td><small> ganadoras-deducible</small></td> <td colspan='2'>ventas</td></tr>
 <tr><td></td><td>123497</td><td></td><td> r(perdidas-y-ganancias) </td></tr>
-<tr><td>29412</td><td><small> ganadoras-no-deducible</small></td> <td colspan='2'>ventas</td></tr>
+<tr><td>29412</td><td><small> ganadoras-deducible</small></td> <td colspan='2'>ventas</td></tr>
 <tr><td></td><td>29412</td><td></td><td> r(perdidas-y-ganancias) </td></tr>
-<tr><td>33</td><td><small> ganadoras-no-deducible</small></td> <td colspan='2'>correccion-monetaria</td></tr>
+<tr><td>33</td><td><small> ganadoras-deducible</small></td> <td colspan='2'>correccion-monetaria</td></tr>
 <tr><td></td><td>33</td><td></td><td> r(perdidas-y-ganancias) </td></tr>
-<tr><td>7118</td><td><small> ganadoras-no-deducible</small></td> <td colspan='2'>costos-de-mercancias</td></tr>
+<tr><td>7118</td><td><small> ganadoras-deducible</small></td> <td colspan='2'>costos-de-mercancias</td></tr>
 <tr><td></td><td>7118</td><td></td><td> r(perdidas-y-ganancias) </td></tr>
-<tr><td>44044</td><td><small> ganadoras-no-deducible</small></td> <td colspan='2'>costos-de-mercancias</td></tr>
+<tr><td>44044</td><td><small> ganadoras-deducible</small></td> <td colspan='2'>costos-de-mercancias</td></tr>
 <tr><td></td><td>44044</td><td></td><td> r(perdidas-y-ganancias) </td></tr>
-<tr><td>39487</td><td><small> ganadoras-no-deducible</small></td> <td colspan='2'>costos-de-mercancias</td></tr>
+<tr><td>39487</td><td><small> ganadoras-deducible</small></td> <td colspan='2'>costos-de-mercancias</td></tr>
 <tr><td></td><td>39487</td><td></td><td> r(perdidas-y-ganancias) </td></tr>
-<tr><td>18849</td><td><small> ganadoras-no-deducible</small></td> <td colspan='2'>costos-de-mercancias</td></tr>
+<tr><td>18849</td><td><small> ganadoras-deducible</small></td> <td colspan='2'>costos-de-mercancias</td></tr>
 <tr><td></td><td>18849</td><td></td><td> r(perdidas-y-ganancias) </td></tr>
 <tr style='color: white; background-color: black'> <td> 262440</td><td> 262440</td><td colspan='3'>( 31 de enero	2021	 ) </td></tr>
 <tr><td colspan='9'>alectrico® SpA</td></tr>
