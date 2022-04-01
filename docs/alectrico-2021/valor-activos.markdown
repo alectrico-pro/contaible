@@ -14,6 +14,9 @@ layout: page
 <tr><td> Mensualmente hay que depreciarlo en: </td><td> $1000000</td></tr>
 </tbody></table> 
 <table><tbody>
+<tr><td> marca-alectrico</td> <td>julio</td><td> Amortizando por: </td> <td>2417</td></tr>
+</tbody></table>
+<table><tbody>
 <tr><td> marca-alectrico</td> <td>junio</td><td> Amortizando por: </td> <td>2417</td></tr>
 </tbody></table>
 <table><tbody>
@@ -43,6 +46,9 @@ layout: page
 <tr><td> Perderá todo su valor en: </td><td> 120 meses </td></tr> 
 <tr><td> Mensualmente hay que depreciarlo en: </td><td> $2417</td></tr>
 </tbody></table> 
+<table><tbody>
+<tr><td> celular</td> <td>julio</td><td> Depreciando por: </td> <td>5602</td></tr>
+</tbody></table>
 <table> <tbody>
 <tr><th>celular</th></tr>
 <tr><td>depreciacion-lineal-en-un-año de: </td><td> celular </td> </tr> 
@@ -55,6 +61,9 @@ layout: page
 <tr><td> Perderá todo su valor en: </td><td> 12 meses </td></tr> 
 <tr><td> Mensualmente hay que depreciarlo en: </td><td> $5602</td></tr>
 </tbody></table> 
+<table><tbody>
+<tr><td> taladro</td> <td>julio</td><td> Depreciando por: </td> <td>4202</td></tr>
+</tbody></table>
 <table><tbody>
 <tr><td> taladro</td> <td>junio</td><td> Depreciando por: </td> <td>4202</td></tr>
 </tbody></table>

@@ -896,6 +896,7 @@ pagos.")
   (circulante true)
   (padre false)
   (origen real)
+  (deducible true)
   (naturaleza mixta))
 
 
