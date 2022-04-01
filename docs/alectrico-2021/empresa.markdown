@@ -1066,6 +1066,239 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 </table>
 <p style='page-break-before: always;'>&nbsp;</p>
 <br> 
+<p style='color: white; background-color: red'>  </p>
+<br> 
+- [x] tipo de asiento: 33
+- [ ] rcv
+- [ ] libro-diario
+- [ ] ccm
+- [x] revisado
+![](../revisado.png)
+<table id='Partida-31'>
+<thead> <th style='background-color: lavender' colspan='6'>Partida 31</th></thead>
+<tbody>
+<tr> <td name = 'Debe' align='right' >6926 </td> <td colspan='7'> entel#gastos-administrativos </td></tr>
+<tr style='background-color: lightyellow'>  <td> </td> <td name='Debe' align='right'> 1316</td> <td name='Haber' align='right'> 0</td> <td colspan='2'> a[iva-credito] </td> </tr>
+<tr style='background-color: lightyellow'>  <td> </td> <td name='Debe' align='right'> 0</td> <td name='Haber' align='right'> 8242</td> <td colspan='2'> a[caja] </td> </tr>
+<tr style='color: white; background-color: black'>  <td> </td> <td align='right'>6926 </td> <td align='right'> 0</td> <td> </td> <td> r[gastos-administrativos] </td> </tr>
+<tr> <td> </td> <td style='background-color: blanchedalmond'> 8242 </td> <td style='background-color: blanchedalmond'> 8242</td> </tr>
+</tbody><tbody>
+<tr><td colspan='4'> alectrico® SpA</td> </tr> 
+<tr><td colspan='4'> ( 18 de mayo	2021	 ) </td> </tr>
+<tr><td colspan='8'> Partida 31: Por Gasto Administrativo: Servicio de Datos y Telefonía: consumo marzo. </td></tr>
+<tr> <td colspan='7'>efectuado a entel </td> </tr>
+<tr><td colspan = '8'> gastar-en-administracion-afecto</td> </tr>
+<tr style='background-color: aliceblue'> <td colspan = '8'> <img src='../factura-afecta-entel-43051648.png'></td> </tr>
+</tbody>
+</table>
+<p style='page-break-before: always;'>&nbsp;</p>
+<br> 
+<p style='color: white; background-color: red'>  </p>
+<br> 
+- [x] tipo de asiento: 33
+- [ ] rcv
+- [ ] libro-diario
+- [ ] ccm
+- [x] revisado
+![](../revisado.png)
+<table id='Partida-32'>
+<thead> <th style='background-color: lavender' colspan='6'>Partida 32</th></thead>
+<tbody>
+<tr> <td name = 'Debe' align='right' >19990 </td> <td colspan='7'> trust#gastos-administrativos </td></tr>
+<tr style='background-color: lightyellow'>  <td> </td> <td name='Debe' align='right'> 3798</td> <td name='Haber' align='right'> 0</td> <td colspan='2'> a[iva-credito] </td> </tr>
+<tr style='background-color: lightyellow'>  <td> </td> <td name='Debe' align='right'> 0</td> <td name='Haber' align='right'> 23788</td> <td colspan='2'> a[caja] </td> </tr>
+<tr style='color: white; background-color: black'>  <td> </td> <td align='right'>19990 </td> <td align='right'> 0</td> <td> </td> <td> r[gastos-administrativos] </td> </tr>
+<tr> <td> </td> <td style='background-color: blanchedalmond'> 23788 </td> <td style='background-color: blanchedalmond'> 23788</td> </tr>
+</tbody><tbody>
+<tr><td colspan='4'> alectrico® SpA</td> </tr> 
+<tr><td colspan='4'> ( 13 de mayo	2021	 ) </td> </tr>
+<tr><td colspan='8'> Partida 32: Por Gasto Administrativo: Certificado Digital por 3 años. </td></tr>
+<tr> <td colspan='7'>efectuado a trust </td> </tr>
+<tr><td colspan = '8'> gastar-en-administracion-afecto</td> </tr>
+<tr style='background-color: aliceblue'> <td colspan = '8'> <img src='../factura-afecta-trust-provider-4564.png'></td> </tr>
+</tbody>
+</table>
+<p style='page-break-before: always;'>&nbsp;</p>
+<br> 
+<p style='color: white; background-color: red'>  </p>
+<br> 
+- [x] tipo de asiento: 33
+- [ ] rcv
+- [ ] libro-diario
+- [ ] ccm
+- [x] revisado
+![](../revisado.png)
+<table id='Partida-33'>
+<thead> <th style='background-color: lavender' colspan='6'>Partida 33</th></thead>
+<tbody>
+<tr> <td name = 'Debe' align='right' >1273 </td> <td colspan='7'> transbank#costos-de-ventas </td></tr>
+<tr style='background-color: lightyellow'>  <td> </td> <td name='Debe' align='right'> 242</td> <td name='Haber' align='right'> 0</td> <td colspan='2'> a[iva-credito] </td> </tr>
+<tr style='background-color: lightyellow'>  <td> </td> <td name='Debe' align='right'> 0</td> <td name='Haber' align='right'> 1515</td> <td colspan='2'> a[banco-estado] </td> </tr>
+<tr style='color: white; background-color: black'>  <td> </td> <td align='right'>1273 </td> <td align='right'> 0</td> <td> </td> <td> r[costos-de-ventas] </td> </tr>
+<tr> <td> </td> <td style='background-color: blanchedalmond'> 1515 </td> <td style='background-color: blanchedalmond'> 1515</td> </tr>
+</tbody><tbody>
+<tr><td colspan='4'> alectrico® SpA</td> </tr> 
+<tr><td colspan='4'> ( 1 de mayo	2021	 ) </td> </tr>
+<tr><td colspan='8'> Partida 33: Por Costo Directo de Ventas: Comisión Pasarela abril Transbank. </td></tr>
+<tr> <td colspan='7'>efectuado a transbank </td> </tr>
+<tr><td colspan = '8'> costar-directo-ventas</td> </tr>
+<tr style='background-color: aliceblue'> <td colspan = '8'> <img src='../factura-afecta-transbank-36597345.png'></td> </tr>
+</tbody>
+</table>
+<p style='page-break-before: always;'>&nbsp;</p>
+<br> 
+<p style='color: white; background-color: red'> No aparece en asientos centralizado</p>
+<br> 
+- [x] no-incluir: Partida que estando en RCV SII se estimó no incluir en la contabilidad financiera
+- [x] tipo de asiento: 33
+- [x] a corregir: No aparece en asientos centralizado
+- [ ] rcv
+- [ ] libro-diario
+- [ ] ccm
+- [x] revisado
+![](../revisado.png)
+<table id='Partida-34'>
+<thead> <th style='background-color: lavender' colspan='6'>Partida 34</th></thead>
+<tbody>
+<tr> <td> </td> <td style='background-color: blanchedalmond'> 0 </td> <td style='background-color: blanchedalmond'> 0</td> </tr>
+</tbody><tbody>
+<tr><td colspan='4'> alectrico® SpA</td> </tr> 
+<tr><td colspan='4'> ( 13 de mayo	2021	 ) </td> </tr>
+<tr><td colspan='8'> Partida 34: Por Gasto Administrativo: Pago Mensual de Workers Serverless. </td></tr>
+<tr> <td colspan='7'>efectuado a cloudflare </td> </tr>
+<tr><td colspan = '8'> gastar-administrativo-afecto-iva-retenido</td> </tr>
+<tr style='background-color: aliceblue'> <td colspan = '8'> <img src='../invoice-cloudflare-3198930.png'></td> </tr>
+</tbody>
+</table>
+<p style='page-break-before: always;'>&nbsp;</p>
+<br> 
+<p style='color: white; background-color: red'> No aparece en sii, seguramente porque tuve que borrarlo porque es una compra a proveedor extranjero</p>
+<br> 
+- [x] no-incluir: Partida que estando en RCV SII se estimó no incluir en la contabilidad financiera
+- [x] tipo de asiento: 33
+- [x] a corregir: No aparece en sii, seguramente porque tuve que borrarlo porque es una compra a proveedor extranjero
+- [ ] rcv
+- [ ] libro-diario
+- [ ] ccm
+- [x] revisado
+![](../revisado.png)
+<table id='Partida-35'>
+<thead> <th style='background-color: lavender' colspan='6'>Partida 35</th></thead>
+<tbody>
+<tr> <td> </td> <td style='background-color: blanchedalmond'> 0 </td> <td style='background-color: blanchedalmond'> 0</td> </tr>
+</tbody><tbody>
+<tr><td colspan='4'> alectrico® SpA</td> </tr> 
+<tr><td colspan='4'> ( 13 de mayo	2021	 ) </td> </tr>
+<tr><td colspan='8'> Partida 35: Por Gasto Promocional: Pago Mensual de 1TM Video Maker. </td></tr>
+<tr> <td colspan='7'>efectuado a test-animation-video-maker </td> </tr>
+<tr><td colspan = '8'> gastar-promocional-afecto-iva-retenido</td> </tr>
+<tr style='background-color: aliceblue'> <td colspan = '8'> <img src='../video-maker-mensualidad-mayo.png'></td> </tr>
+</tbody>
+</table>
+<p style='page-break-before: always;'>&nbsp;</p>
+<br> 
+<p style='color: white; background-color: red'> No aparece en sii, seguramente porque tuve que borrarlo porque es una compra a proveedor entranjero</p>
+<br> 
+- [x] no-incluir: Partida que estando en RCV SII se estimó no incluir en la contabilidad financiera
+- [x] tipo de asiento: 33
+- [x] a corregir: No aparece en sii, seguramente porque tuve que borrarlo porque es una compra a proveedor entranjero
+- [ ] rcv
+- [ ] libro-diario
+- [ ] ccm
+- [x] revisado
+![](../revisado.png)
+<table id='Partida-36'>
+<thead> <th style='background-color: lavender' colspan='6'>Partida 36</th></thead>
+<tbody>
+<tr> <td> </td> <td style='background-color: blanchedalmond'> 0 </td> <td style='background-color: blanchedalmond'> 0</td> </tr>
+</tbody><tbody>
+<tr><td colspan='4'> alectrico® SpA</td> </tr> 
+<tr><td colspan='4'> ( 13 de mayo	2021	 ) </td> </tr>
+<tr><td colspan='8'> Partida 36: Por Gasto Administrativo: Pago Mensual de Arriendo de Correo y Almacenamiento en la nube. </td></tr>
+<tr> <td colspan='7'>efectuado a google-one </td> </tr>
+<tr><td colspan = '8'> gastar-administrativo-afecto-iva-retenido</td> </tr>
+<tr style='background-color: aliceblue'> <td colspan = '8'> <img src='../google-one-mensualidad-mayo.png'></td> </tr>
+</tbody>
+</table>
+<p style='page-break-before: always;'>&nbsp;</p>
+<br> 
+<p style='color: white; background-color: red'>  </p>
+<br> 
+- [x] tipo de asiento: 33
+- [ ] rcv
+- [ ] libro-diario
+- [ ] ccm
+- [x] revisado
+![](../revisado.png)
+<table id='Partida-37'>
+<thead> <th style='background-color: lavender' colspan='6'>Partida 37</th></thead>
+<tbody>
+<tr style='background-color: lightyellow'>  <td> </td> <td name='Debe' align='right'> 0</td> <td name='Haber' align='right'> 43</td> <td colspan='2'> a[iva-credito] </td> </tr>
+<tr style='background-color: lightyellow'>  <td> </td> <td name='Debe' align='right'> 268</td> <td name='Haber' align='right'> 0</td> <td colspan='2'> a[banco-estado] </td> </tr>
+<tr style='background-color: gold'>  <td> </td> <td align='right'>0 </td> <td align='right'> 225</td> <td> </td> <td> r[devolucion-sobre-gastos] </td> </tr>
+<tr> <td> </td> <td style='background-color: blanchedalmond'> 268 </td> <td style='background-color: blanchedalmond'> 268</td> </tr>
+</tbody><tbody>
+<tr><td colspan='4'> alectrico® SpA</td> </tr> 
+<tr><td colspan='4'> ( 31 de mayo	2021	 ) </td> </tr>
+<tr><td colspan='8'> Partida 37: Devolución a subcuenta ventas-con-factura-afecta por Ajuste Mensual de Comisión Transbank mes mayo </td></tr>
+<tr> <td colspan='7'>efectuado a subcuenta </td> </tr>
+<tr><td colspan = '8'> dar-nota-de-credito-recibida-subcuenta-existente</td> </tr>
+<tr style='background-color: aliceblue'> <td colspan = '8'> <img src='../nota-de-credito-transbank-2697395.png'></td> </tr>
+</tbody>
+</table>
+<p style='page-break-before: always;'>&nbsp;</p>
+<br> 
+<p style='color: white; background-color: red'>  </p>
+<br> 
+- [x] tipo de asiento: 33
+- [ ] rcv
+- [ ] libro-diario
+- [ ] ccm
+- [x] revisado
+![](../revisado.png)
+<table id='Partida-371'>
+<thead> <th style='background-color: lavender' colspan='6'>Partida 371</th></thead>
+<tbody>
+<tr> <td name = 'Debe' align='right' >2417 </td> <td colspan='7'> amortizacion-intangibles#amortizacion </td></tr>
+<tr style='background-color: lightyellow'>  <td> </td> <td name='Debe' align='right'> 0</td> <td name='Haber' align='right'> 2417</td> <td colspan='2'> a[amortizacion-acumulada-intangibles] </td> </tr>
+<tr style='background-color: lightyellow'>  <td> </td> <td name='Debe' align='right'> 0</td> <td name='Haber' align='right'> 4202</td> <td colspan='2'> a[depreciacion-acumulada-herramientas] </td> </tr>
+<tr style='color: white; background-color: black'>  <td> </td> <td align='right'>4202 </td> <td align='right'> 0</td> <td> </td> <td> r[depreciacion] </td> </tr>
+<tr style='color: white; background-color: black'>  <td> </td> <td align='right'>2417 </td> <td align='right'> 0</td> <td> </td> <td> r[amortizacion] </td> </tr>
+<tr> <td> </td> <td style='background-color: blanchedalmond'> 6619 </td> <td style='background-color: blanchedalmond'> 6619</td> </tr>
+</tbody><tbody>
+<tr><td colspan='4'> alectrico® SpA</td> </tr> 
+<tr><td colspan='4'> ( 31 de mayo	2021	 ) </td> </tr>
+<tr><td colspan='8'> Partida 371: Por amortizacion en mayo de marca-alectrico-Por depreciacion en mayo de taladro </td></tr>
+<tr><td colspan = '8'> amortizacion</td> </tr>
+</tbody>
+</table>
+<p style='page-break-before: always;'>&nbsp;</p>
+<br> 
+<p style='color: white; background-color: red'>  </p>
+<br> 
+- [x] tipo de asiento: ajuste-iva
+- [ ] rcv
+- [ ] libro-diario
+- [ ] ccm
+- [x] revisado
+![](../revisado.png)
+<table id='Partida-372'>
+<thead> <th style='background-color: lavender' colspan='6'>Partida 372</th></thead>
+<tbody>
+<tr> <td name = 'Debe' align='right' >254 </td> <td colspan='7'> ganancia-por-correccion-monetaria#correccion-monetaria </td></tr>
+<tr> <td name = 'Debe' align='right' >254 </td> <td colspan='7'> correccion-monetaria#ingresos-brutos </td></tr>
+<tr style='background-color: lightyellow'>  <td> </td> <td name='Debe' align='right'> 254</td> <td name='Haber' align='right'> 0</td> <td colspan='2'> a[iva-credito] </td> </tr>
+<tr style='background-color: gold'>  <td> </td> <td align='right'>0 </td> <td align='right'> 254</td> <td> </td> <td> r[ingresos-brutos] </td> </tr>
+<tr> <td> </td> <td style='background-color: blanchedalmond'> 254 </td> <td style='background-color: blanchedalmond'> 254</td> </tr>
+</tbody><tbody>
+<tr><td colspan='4'> alectrico® SpA</td> </tr> 
+<tr><td colspan='4'> ( 31 de mayo	2021	 ) </td> </tr>
+<tr><td colspan='8'> Partida 372: Por ajuste del Debito Fiscal Contra el Credito Fiscal, mes de mayo </td></tr>
+<tr><td colspan = '8'> ajustar-iva-contra-credito</td> </tr>
+</tbody>
+</table>
+<p style='page-break-before: always;'>&nbsp;</p>
+<br> 
 <br> 
 <p style='color: white; background-color: red'>  </p>
 - [x] tipo de asiento: f29
@@ -1218,6 +1451,36 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 </table>
 <p style='page-break-before: always;'>&nbsp;</p>
 <br> 
+<br> 
+<p style='color: white; background-color: red'>  </p>
+- [x] tipo de asiento: f-29
+- [ ] rcv
+- [ ] libro-diario
+- [ ] ccm
+- [x] revisado
+![](../revisado.png)
+<p style='page-break-after: always;'>&nbsp;</p>
+<table id='Partida-1044' style='background-color:cornsilk'>
+<thead><th colspan='6'>Partida 1044</th></thead>
+<thead> <th> </th> <th> Código </th> <th>  Valor </th> <th> Descripción </th> </thead>
+<tbody>
+ <tr> <td> </td> <td> 511 </td> <td align='right'>  5313 </td> <td> CRED.IVA POR DCTOS. ELECTRONICOS  </td> </tr>
+ <tr> <td> </td> <td> 077 </td> <td align='right'>  39630 </td> <td> REMANENTE DE CREDITO FISC.  </td> </tr>
+ <tr> <td> </td> <td> 504 </td> <td align='right'>  34063 </td> <td> REMANENTE CREDITO FISCAL MES ANTERIOR.  </td> </tr>
+ <tr> <td> </td> <td> 520 </td> <td align='right'>  5356 </td> <td> CREDITOS REC. REINT/FACT. DEL GIRO  </td> </tr>
+ <tr> <td> </td> <td> 519 </td> <td align='right'>  3 </td> <td> CANT.DE DCTOS.FACT.RECIB.DEL GIRO </td> </tr>
+ <tr> <td> </td> <td> 528 </td> <td align='right'>  -5313 </td> <td> CREDITO RECUP.Y REINT/NOTAS DE CRED. </td> </tr>
+</tbody></table><table>
+<tbody>
+<tr> <td> </td> <td> 5313 </td> <td> 0</td> </tr>
+<tr><td colspan='4'> alectrico® SpA</td> </tr> 
+<tr><td colspan='4'> ( 31 de mayo	2021	 ) </td> </tr>
+<tr><td colspan='8'> Partida 1044: Formulario F29 mayo </td></tr>
+<tr><td colspan = '8'> codigos-f29</td> </tr>
+</tbody>
+</table>
+<p style='page-break-before: always;'>&nbsp;</p>
+<br> 
 <p style='color: white; background-color: red'>  </p>
 <br> 
 - [x] tipo de asiento: f-29
@@ -1253,9 +1516,10 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
  <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 510</td> <td align='right'>   <a href= '/alectrico-2021/libro-diario#Partida-141'> Ir a partida: 141</a> </td> <td colspan='3' align='left' > Devolución a subcuenta ventas-con-eboleta-afecta por Por la anulacion del monto total de la boleta afecta con folio 7 del 13 de enero. Se refiere a una transaccion ya cubierta por un voucher. mes febrero </td>  </tr>
  <tr> <td>    <a href= '/alectrico-2021/libro-diario#Partida-1042'>marzo</a>  </td> <td> 511 </td> <td align='right' >  6217 </td> <td> CRED.IVA POR DCTOS. ELECTRONICOS  </td> </tr>
  <tr> <td>    <a href= '/alectrico-2021/libro-diario#Partida-1043'>abril</a>  </td> <td> 511 </td> <td align='right' >  1822 </td> <td> CRED.IVA POR DCTOS. ELECTRONICOS  </td> </tr>
+ <tr> <td>    <a href= '/alectrico-2021/libro-diario#Partida-1044'>mayo</a>  </td> <td> 511 </td> <td align='right' >  5313 </td> <td> CRED.IVA POR DCTOS. ELECTRONICOS  </td> </tr>
  <tr> <td>    <a href= '/alectrico-2021/libro-diario#Partida-1040'>enero</a>  </td> <td> 511 </td> <td align='right' >  41503 </td> <td> CRED.IVA POR DCTOS. ELECTRONICOS  </td> </tr>
  <tr> <td>    <a href= '/alectrico-2021/libro-diario#Partida-1041'>febrero</a>  </td> <td> 511 </td> <td align='right' >  6344 </td> <td> CRED.IVA POR DCTOS. ELECTRONICOS  </td> </tr>
- <tr height='50 px' style='font-weight:bold; background-color: lightgreen'> <td>  <a href= '/alectrico-2021/libro-diario#Partida-1052'>^</a> </td> <td> 511 </td> <td align='right' >  55886 </td> <td> Total Anual </td> </tr>
+ <tr height='50 px' style='font-weight:bold; background-color: lightgreen'> <td>  <a href= '/alectrico-2021/libro-diario#Partida-1052'>^</a> </td> <td> 511 </td> <td align='right' >  61199 </td> <td> Total Anual </td> </tr>
  <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 511</td> <td align='right'>   <a href= '/alectrico-2021/libro-diario#Partida-21'> Ir a partida: 21</a> </td> <td colspan='3' align='left' > Por compra de 1 máscara cubrerrostro y bolsa filtros P100 </td>  </tr>
  <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 511</td> <td align='right'>   <a href= '/alectrico-2021/libro-diario#Partida-20'> Ir a partida: 20</a> </td> <td colspan='3' align='left' > Por Costo Directo de Ventas: Comisión Pasarela enero Transbank </td>  </tr>
  <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 511</td> <td align='right'>   <a href= '/alectrico-2021/libro-diario#Partida-22'> Ir a partida: 22</a> </td> <td colspan='3' align='left' > Por Gasto Administrativo: Servicio de Datos y Telefonía: consumo enero. </td>  </tr>
@@ -1263,6 +1527,10 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
  <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 511</td> <td align='right'>   <a href= '/alectrico-2021/libro-diario#Partida-27'> Ir a partida: 27</a> </td> <td colspan='3' align='left' > Por Costo Directo de Ventas: Comisión Pasarela marzo Transbank. </td>  </tr>
  <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 511</td> <td align='right'>   <a href= '/alectrico-2021/libro-diario#Partida-28'> Ir a partida: 28</a> </td> <td colspan='3' align='left' > Por Gasto Administrativo: Servicio de Datos y Telefonía: consumo marzo. </td>  </tr>
  <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 511</td> <td align='right'>   <a href= '/alectrico-2021/libro-diario#Partida-301'> Ir a partida: 301</a> </td> <td colspan='3' align='left' > Devolución a subcuenta ventas-con-factura-afecta por Ajuste Mensual de Comisión Transbank mes abril </td>  </tr>
+ <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 511</td> <td align='right'>   <a href= '/alectrico-2021/libro-diario#Partida-37'> Ir a partida: 37</a> </td> <td colspan='3' align='left' > Devolución a subcuenta ventas-con-factura-afecta por Ajuste Mensual de Comisión Transbank mes mayo </td>  </tr>
+ <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 511</td> <td align='right'>   <a href= '/alectrico-2021/libro-diario#Partida-31'> Ir a partida: 31</a> </td> <td colspan='3' align='left' > Por Gasto Administrativo: Servicio de Datos y Telefonía: consumo marzo. </td>  </tr>
+ <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 511</td> <td align='right'>   <a href= '/alectrico-2021/libro-diario#Partida-32'> Ir a partida: 32</a> </td> <td colspan='3' align='left' > Por Gasto Administrativo: Certificado Digital por 3 años. </td>  </tr>
+ <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 511</td> <td align='right'>   <a href= '/alectrico-2021/libro-diario#Partida-33'> Ir a partida: 33</a> </td> <td colspan='3' align='left' > Por Costo Directo de Ventas: Comisión Pasarela abril Transbank. </td>  </tr>
  <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 511</td> <td align='right'>   <a href= '/alectrico-2021/libro-diario#Partida-10'> Ir a partida: 10</a> </td> <td colspan='3' align='left' > Por compra de 1 meson de cocina a easy </td>  </tr>
  <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 511</td> <td align='right'>   <a href= '/alectrico-2021/libro-diario#Partida-8'> Ir a partida: 8</a> </td> <td colspan='3' align='left' > Por Costo Directo de Ventas: Comisión diciembre por pagos en pasarela KHIPU </td>  </tr>
  <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 511</td> <td align='right'>   <a href= '/alectrico-2021/libro-diario#Partida-9'> Ir a partida: 9</a> </td> <td colspan='3' align='left' > Por Costo Directo de Ventas: Comisión Pasarela diciembre Transbank </td>  </tr>
@@ -1286,28 +1554,36 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
  <tr> <td>    <a href= '/alectrico-2021/libro-diario#Partida-1043'>abril</a>  </td> <td> 519 </td> <td align='right' >  2 </td> <td> CANT.DE DCTOS.FACT.RECIB.DEL GIRO </td> </tr>
  <tr> <td>    <a href= '/alectrico-2021/libro-diario#Partida-1042'>marzo</a>  </td> <td> 519 </td> <td align='right' >  2 </td> <td> CANT.DE DCTOS.FACT.RECIB.DEL GIRO </td> </tr>
  <tr> <td>    <a href= '/alectrico-2021/libro-diario#Partida-1040'>enero</a>  </td> <td> 519 </td> <td align='right' >  2 </td> <td> CANT.DE DCTOS.FACT.RECIB.DEL GIRO </td> </tr>
+ <tr> <td>    <a href= '/alectrico-2021/libro-diario#Partida-1044'>mayo</a>  </td> <td> 519 </td> <td align='right' >  3 </td> <td> CANT.DE DCTOS.FACT.RECIB.DEL GIRO </td> </tr>
  <tr> <td>    <a href= '/alectrico-2021/libro-diario#Partida-1041'>febrero</a>  </td> <td> 519 </td> <td align='right' >  3 </td> <td> CANT.DE DCTOS.FACT.RECIB.DEL GIRO </td> </tr>
- <tr height='50 px' style='font-weight:bold; background-color: lightgreen'> <td>  <a href= '/alectrico-2021/libro-diario#Partida-1052'>^</a> </td> <td> 519 </td> <td align='right' >  9 </td> <td> Total Anual </td> </tr>
+ <tr height='50 px' style='font-weight:bold; background-color: lightgreen'> <td>  <a href= '/alectrico-2021/libro-diario#Partida-1052'>^</a> </td> <td> 519 </td> <td align='right' >  12 </td> <td> Total Anual </td> </tr>
  <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 519</td> <td align='right'>   <a href= '/alectrico-2021/libro-diario#Partida-28'> Ir a partida: 28</a> </td> <td colspan='3' align='left' > Por Gasto Administrativo: Servicio de Datos y Telefonía: consumo marzo. </td>  </tr>
  <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 519</td> <td align='right'>   <a href= '/alectrico-2021/libro-diario#Partida-27'> Ir a partida: 27</a> </td> <td colspan='3' align='left' > Por Costo Directo de Ventas: Comisión Pasarela marzo Transbank. </td>  </tr>
  <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 519</td> <td align='right'>   <a href= '/alectrico-2021/libro-diario#Partida-22'> Ir a partida: 22</a> </td> <td colspan='3' align='left' > Por Gasto Administrativo: Servicio de Datos y Telefonía: consumo enero. </td>  </tr>
  <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 519</td> <td align='right'>   <a href= '/alectrico-2021/libro-diario#Partida-20'> Ir a partida: 20</a> </td> <td colspan='3' align='left' > Por Costo Directo de Ventas: Comisión Pasarela enero Transbank </td>  </tr>
  <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 519</td> <td align='right'>   <a href= '/alectrico-2021/libro-diario#Partida-9'> Ir a partida: 9</a> </td> <td colspan='3' align='left' > Por Costo Directo de Ventas: Comisión Pasarela diciembre Transbank </td>  </tr>
  <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 519</td> <td align='right'>   <a href= '/alectrico-2021/libro-diario#Partida-8'> Ir a partida: 8</a> </td> <td colspan='3' align='left' > Por Costo Directo de Ventas: Comisión diciembre por pagos en pasarela KHIPU </td>  </tr>
+ <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 519</td> <td align='right'>   <a href= '/alectrico-2021/libro-diario#Partida-33'> Ir a partida: 33</a> </td> <td colspan='3' align='left' > Por Costo Directo de Ventas: Comisión Pasarela abril Transbank. </td>  </tr>
+ <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 519</td> <td align='right'>   <a href= '/alectrico-2021/libro-diario#Partida-31'> Ir a partida: 31</a> </td> <td colspan='3' align='left' > Por Gasto Administrativo: Servicio de Datos y Telefonía: consumo marzo. </td>  </tr>
+ <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 519</td> <td align='right'>   <a href= '/alectrico-2021/libro-diario#Partida-32'> Ir a partida: 32</a> </td> <td colspan='3' align='left' > Por Gasto Administrativo: Certificado Digital por 3 años. </td>  </tr>
  <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 519</td> <td align='right'>   <a href= '/alectrico-2021/libro-diario#Partida-18'> Ir a partida: 18</a> </td> <td colspan='3' align='left' > Por Gasto Administrativo: Matriz de Bordado y Parche QR Bordado Corporativo alectrico ®. </td>  </tr>
  <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 519</td> <td align='right'>   <a href= '/alectrico-2021/libro-diario#Partida-15'> Ir a partida: 15</a> </td> <td colspan='3' align='left' > Por Costo Directo de Ventas: Comisión Pasarela enero Transbank </td>  </tr>
  <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 519</td> <td align='right'>   <a href= '/alectrico-2021/libro-diario#Partida-17'> Ir a partida: 17</a> </td> <td colspan='3' align='left' > Por Gasto Administrativo: Servicio de Datos y Telefonía: pago inicial. </td>  </tr>
  <tr> <td>    <a href= '/alectrico-2021/libro-diario#Partida-1043'>abril</a>  </td> <td> 520 </td> <td align='right' >  1435 </td> <td> CREDITOS REC. REINT/FACT. DEL GIRO  </td> </tr>
  <tr> <td>    <a href= '/alectrico-2021/libro-diario#Partida-1042'>marzo</a>  </td> <td> 520 </td> <td align='right' >  1351 </td> <td> CREDITOS REC. REINT/FACT. DEL GIRO  </td> </tr>
  <tr> <td>    <a href= '/alectrico-2021/libro-diario#Partida-1040'>enero</a>  </td> <td> 520 </td> <td align='right' >  329 </td> <td> CREDITOS REC. REINT/FACT. DEL GIRO  </td> </tr>
+ <tr> <td>    <a href= '/alectrico-2021/libro-diario#Partida-1044'>mayo</a>  </td> <td> 520 </td> <td align='right' >  5356 </td> <td> CREDITOS REC. REINT/FACT. DEL GIRO  </td> </tr>
  <tr> <td>    <a href= '/alectrico-2021/libro-diario#Partida-1041'>febrero</a>  </td> <td> 520 </td> <td align='right' >  5123 </td> <td> CREDITOS REC. REINT/FACT. DEL GIRO  </td> </tr>
- <tr height='50 px' style='font-weight:bold; background-color: lightgreen'> <td>  <a href= '/alectrico-2021/libro-diario#Partida-1052'>^</a> </td> <td> 520 </td> <td align='right' >  8238 </td> <td> Total Anual </td> </tr>
+ <tr height='50 px' style='font-weight:bold; background-color: lightgreen'> <td>  <a href= '/alectrico-2021/libro-diario#Partida-1052'>^</a> </td> <td> 520 </td> <td align='right' >  13594 </td> <td> Total Anual </td> </tr>
  <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 520</td> <td align='right'>   <a href= '/alectrico-2021/libro-diario#Partida-28'> Ir a partida: 28</a> </td> <td colspan='3' align='left' > Por Gasto Administrativo: Servicio de Datos y Telefonía: consumo marzo. </td>  </tr>
  <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 520</td> <td align='right'>   <a href= '/alectrico-2021/libro-diario#Partida-27'> Ir a partida: 27</a> </td> <td colspan='3' align='left' > Por Costo Directo de Ventas: Comisión Pasarela marzo Transbank. </td>  </tr>
  <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 520</td> <td align='right'>   <a href= '/alectrico-2021/libro-diario#Partida-22'> Ir a partida: 22</a> </td> <td colspan='3' align='left' > Por Gasto Administrativo: Servicio de Datos y Telefonía: consumo enero. </td>  </tr>
  <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 520</td> <td align='right'>   <a href= '/alectrico-2021/libro-diario#Partida-20'> Ir a partida: 20</a> </td> <td colspan='3' align='left' > Por Costo Directo de Ventas: Comisión Pasarela enero Transbank </td>  </tr>
  <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 520</td> <td align='right'>   <a href= '/alectrico-2021/libro-diario#Partida-9'> Ir a partida: 9</a> </td> <td colspan='3' align='left' > Por Costo Directo de Ventas: Comisión Pasarela diciembre Transbank </td>  </tr>
  <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 520</td> <td align='right'>   <a href= '/alectrico-2021/libro-diario#Partida-8'> Ir a partida: 8</a> </td> <td colspan='3' align='left' > Por Costo Directo de Ventas: Comisión diciembre por pagos en pasarela KHIPU </td>  </tr>
+ <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 520</td> <td align='right'>   <a href= '/alectrico-2021/libro-diario#Partida-33'> Ir a partida: 33</a> </td> <td colspan='3' align='left' > Por Costo Directo de Ventas: Comisión Pasarela abril Transbank. </td>  </tr>
+ <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 520</td> <td align='right'>   <a href= '/alectrico-2021/libro-diario#Partida-31'> Ir a partida: 31</a> </td> <td colspan='3' align='left' > Por Gasto Administrativo: Servicio de Datos y Telefonía: consumo marzo. </td>  </tr>
+ <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 520</td> <td align='right'>   <a href= '/alectrico-2021/libro-diario#Partida-32'> Ir a partida: 32</a> </td> <td colspan='3' align='left' > Por Gasto Administrativo: Certificado Digital por 3 años. </td>  </tr>
  <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 520</td> <td align='right'>   <a href= '/alectrico-2021/libro-diario#Partida-18'> Ir a partida: 18</a> </td> <td colspan='3' align='left' > Por Gasto Administrativo: Matriz de Bordado y Parche QR Bordado Corporativo alectrico ®. </td>  </tr>
  <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 520</td> <td align='right'>   <a href= '/alectrico-2021/libro-diario#Partida-15'> Ir a partida: 15</a> </td> <td colspan='3' align='left' > Por Costo Directo de Ventas: Comisión Pasarela enero Transbank </td>  </tr>
  <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 520</td> <td align='right'>   <a href= '/alectrico-2021/libro-diario#Partida-17'> Ir a partida: 17</a> </td> <td colspan='3' align='left' > Por Gasto Administrativo: Servicio de Datos y Telefonía: pago inicial. </td>  </tr>
@@ -1322,7 +1598,8 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
  <tr height='50 px' style='font-weight:bold; background-color: lightgreen'> <td>  <a href= '/alectrico-2021/libro-diario#Partida-1052'>^</a> </td> <td> 527 </td> <td align='right' >  0 </td> <td> Total Anual </td> </tr>
  <tr> <td>    <a href= '/alectrico-2021/libro-diario#Partida-1043'>abril</a>  </td> <td> 528 </td> <td align='right' >  -1416 </td> <td> CREDITO RECUP.Y REINT/NOTAS DE CRED. </td> </tr>
  <tr> <td>    <a href= '/alectrico-2021/libro-diario#Partida-1041'>febrero</a>  </td> <td> 528 </td> <td align='right' >  -5089 </td> <td> CREDITO RECUP.Y REINT/NOTAS DE CRED. </td> </tr>
- <tr height='50 px' style='font-weight:bold; background-color: lightgreen'> <td>  <a href= '/alectrico-2021/libro-diario#Partida-1052'>^</a> </td> <td> 528 </td> <td align='right' >  -6505 </td> <td> Total Anual </td> </tr>
+ <tr> <td>    <a href= '/alectrico-2021/libro-diario#Partida-1044'>mayo</a>  </td> <td> 528 </td> <td align='right' >  -5313 </td> <td> CREDITO RECUP.Y REINT/NOTAS DE CRED. </td> </tr>
+ <tr height='50 px' style='font-weight:bold; background-color: lightgreen'> <td>  <a href= '/alectrico-2021/libro-diario#Partida-1052'>^</a> </td> <td> 528 </td> <td align='right' >  -11818 </td> <td> Total Anual </td> </tr>
  <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 528</td> <td align='right'>   <a href= '/alectrico-2021/libro-diario#Partida-301'> Ir a partida: 301</a> </td> <td colspan='3' align='left' > Devolución a subcuenta ventas-con-factura-afecta por Ajuste Mensual de Comisión Transbank mes abril </td>  </tr>
  <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 528</td> <td align='right'>   <a href= '/alectrico-2021/libro-diario#Partida-27'> Ir a partida: 27</a> </td> <td colspan='3' align='left' > Por Costo Directo de Ventas: Comisión Pasarela marzo Transbank. </td>  </tr>
  <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 528</td> <td align='right'>   <a href= '/alectrico-2021/libro-diario#Partida-28'> Ir a partida: 28</a> </td> <td colspan='3' align='left' > Por Gasto Administrativo: Servicio de Datos y Telefonía: consumo marzo. </td>  </tr>
@@ -1330,6 +1607,10 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
  <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 528</td> <td align='right'>   <a href= '/alectrico-2021/libro-diario#Partida-15'> Ir a partida: 15</a> </td> <td colspan='3' align='left' > Por Costo Directo de Ventas: Comisión Pasarela enero Transbank </td>  </tr>
  <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 528</td> <td align='right'>   <a href= '/alectrico-2021/libro-diario#Partida-17'> Ir a partida: 17</a> </td> <td colspan='3' align='left' > Por Gasto Administrativo: Servicio de Datos y Telefonía: pago inicial. </td>  </tr>
  <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 528</td> <td align='right'>   <a href= '/alectrico-2021/libro-diario#Partida-18'> Ir a partida: 18</a> </td> <td colspan='3' align='left' > Por Gasto Administrativo: Matriz de Bordado y Parche QR Bordado Corporativo alectrico ®. </td>  </tr>
+ <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 528</td> <td align='right'>   <a href= '/alectrico-2021/libro-diario#Partida-37'> Ir a partida: 37</a> </td> <td colspan='3' align='left' > Devolución a subcuenta ventas-con-factura-afecta por Ajuste Mensual de Comisión Transbank mes mayo </td>  </tr>
+ <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 528</td> <td align='right'>   <a href= '/alectrico-2021/libro-diario#Partida-31'> Ir a partida: 31</a> </td> <td colspan='3' align='left' > Por Gasto Administrativo: Servicio de Datos y Telefonía: consumo marzo. </td>  </tr>
+ <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 528</td> <td align='right'>   <a href= '/alectrico-2021/libro-diario#Partida-32'> Ir a partida: 32</a> </td> <td colspan='3' align='left' > Por Gasto Administrativo: Certificado Digital por 3 años. </td>  </tr>
+ <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 528</td> <td align='right'>   <a href= '/alectrico-2021/libro-diario#Partida-33'> Ir a partida: 33</a> </td> <td colspan='3' align='left' > Por Costo Directo de Ventas: Comisión Pasarela abril Transbank. </td>  </tr>
  <tr> <td>    <a href= '/alectrico-2021/libro-diario#Partida-1040'>enero</a>  </td> <td> 538 </td> <td align='right' >  23464 </td> <td> TOTAL DEBITOS  </td> </tr>
  <tr> <td>    <a href= '/alectrico-2021/libro-diario#Partida-1042'>marzo</a>  </td> <td> 538 </td> <td align='right' >  5588 </td> <td> TOTAL DEBITOS  </td> </tr>
  <tr> <td>    <a href= '/alectrico-2021/libro-diario#Partida-1043'>abril</a>  </td> <td> 538 </td> <td align='right' >  4790 </td> <td> TOTAL DEBITOS  </td> </tr>
