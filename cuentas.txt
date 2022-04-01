@@ -1219,6 +1219,7 @@ pagos.")
   (grupo resultado)
   (circulante true)
   (padre false)
+  (deducible true)
   (origen real))
 
 
@@ -1230,6 +1231,7 @@ pagos.")
   (grupo resultado)
   (circulante true)
   (padre false)
+  (deducible true)
   (origen real))
 
 (cuenta (nombre impuestos-no-recuperables)
