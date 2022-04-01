@@ -86,3 +86,29 @@ layout: page
 <tr><td colspan = '8'> codigos-f29</td> </tr>
 </tbody>
 </table>
+
+
+<br> <br> <br> <br> <br> <br> 
+<table id='Partida-1043'  class='table-bordered' >
+<thead><th colspan='6'>Partida 1043</th></thead>
+ <thead> <th> </th> <th> Código </th> <th>  Valor </th> <th> Descripción </th> </thead>
+<tbody>
+ <tr> <td> </td> <td> 538 </td> <td align='right'>  4790 </td> <td> TOTAL DEBITOS  </td> </tr>
+ <tr> <td> </td> <td> 511 </td> <td align='right'>  1822 </td> <td> CRED.IVA POR DCTOS. ELECTRONICOS  </td> </tr>
+ <tr> <td> </td> <td> 077 </td> <td align='right'>  34049 </td> <td> REMANENTE DE CREDITO FISC.  </td> </tr>
+ <tr> <td> </td> <td> 504 </td> <td align='right'>  36777 </td> <td> REMANENTE CREDITO FISCAL MES ANTERIOR.  </td> </tr>
+ <tr> <td> </td> <td> 062 </td> <td align='right'>  32 </td> <td> PPM NETO DETERMINADO </td> </tr>
+ <tr> <td> </td> <td> 758 </td> <td align='right'>  1 </td> <td> CANT. RECIBO DE PAGO MEDIOS ELECTRÓNICOS </td> </tr>
+ <tr> <td> </td> <td> 759 </td> <td align='right'>  4790 </td> <td> DÉB. RECIBO DE PAGO MEDIOS ELECTRÓNICOS </td> </tr>
+ <tr> <td> </td> <td> 115 </td> <td align='right'>  0.125 </td> <td> TASA PPM 1ra Categoria </td> </tr>
+ <tr> <td> </td> <td> 563 </td> <td align='right'>  25210 </td> <td> BASE IMPONIBLE </td> </tr>
+ <tr> <td> </td> <td> 519 </td> <td align='right'>  2 </td> <td> CANT.DE DCTOS.FACT.RECIB.DEL GIRO </td> </tr>
+ <tr> <td> </td> <td> 520 </td> <td align='right'>  1435 </td> <td> CREDITOS REC. REINT/FACT. DEL GIRO  </td> </tr>
+ <tr> <td> </td> <td> 528 </td> <td align='right'>  -1416 </td> <td> CREDITO RECUP.Y REINT/NOTAS DE CRED. </td> </tr>
+<tr> <td> </td> <td> -2968 </td> <td> 0</td> </tr>
+<tr><td colspan='4'> alectrico® SpA</td> </tr> 
+<tr><td colspan='4'> ( 31 de abril	2021	 ) </td> </tr>
+<tr><td colspan='8'> Partida 1043: Formulario F29 abril </td></tr>
+<tr><td colspan = '8'> codigos-f29</td> </tr>
+</tbody>
+</table>

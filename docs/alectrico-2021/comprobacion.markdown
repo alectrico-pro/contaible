@@ -20,7 +20,7 @@ $('* div').each(function () {
  
 
 
-Solo se consideran las transacciones hasta el día 31	marzo.
+Solo se consideran las transacciones hasta el día 31	abril.
 Cifras en pesos.
 NO se han practicado liquidaciones, por lo que SÍ se muestran cuentas nominales
 <table rules='groups'>
@@ -35,8 +35,6 @@ NO se han practicado liquidaciones, por lo que SÍ se muestran cuentas nominales
 <tr style=' background: #fff; border: 1px solid red;'>
 <td><small>reintegro-de-devolucion-sobre-ventas-exentas</small></td> <td align='right'>0</td> <td align='right'>4505</td> <td> | </td> <td align='right'> 0</td> <td align='right'>4505</td> </tr>
 <tr style=' background: #fff; border: 1px solid red;'>
-<td><small>devolucion-sobre-gastos</small></td> <td align='right'>0</td> <td align='right'>178</td> <td> | </td> <td align='right'> 0</td> <td align='right'>178</td> </tr>
-<tr style=' background: #fff; border: 1px solid red;'>
 <td><small>gastos-promocionales</small></td> <td align='right'>20992</td> <td align='right'>0</td> <td> | </td> <td align='right'> 20992</td> <td align='right'>0</td> </tr>
 <tr>
 <td>Herramientas<small>herramientas</small></td> <td align='right'>151252</td> <td align='right'>0</td> <td> | </td> <td align='right'> 151252</td> <td align='right'>0</td>
@@ -46,65 +44,67 @@ NO se han practicado liquidaciones, por lo que SÍ se muestran cuentas nominales
 </tr>
 <tr style=' background: #fff; border: 1px solid red;'>
 <td><small>utilidad-del-ejercicio-anterior</small></td> <td align='right'>0</td> <td align='right'>85294</td> <td> | </td> <td align='right'> 0</td> <td align='right'>85294</td> </tr>
-<tr style=' background: #fff; border: 1px solid red;'>
-<td>Insumos<small>insumos</small></td> <td align='right'>44044</td> <td align='right'>0</td> <td> | </td> <td align='right'> 44044</td> <td align='right'>0</td> </tr>
 <tr>
 <td>Intangibles<small>intangibles</small> </td> <td align='right'>290000</td> <td align='right'>0</td> <td> | </td> <td align='right'> 290000</td> <td align='right'>0</td> 
 <td colspan='2' style=' background: #faa; border: 1px solid red;'>Subcuenta </td>
 </tr>
 <tr style=' background: #fff; border: 1px solid red;'>
-<td><small>correccion-monetaria</small></td> <td align='right'>0</td> <td align='right'>665</td> <td> | </td> <td align='right'> 0</td> <td align='right'>665</td> </tr>
+<td><small>correccion-monetaria</small></td> <td align='right'>0</td> <td align='right'>905</td> <td> | </td> <td align='right'> 0</td> <td align='right'>905</td> </tr>
 <tr style=' background: #fff; border: 1px solid red;'>
-<td><small>amortizacion</small></td> <td align='right'>7251</td> <td align='right'>0</td> <td> | </td> <td align='right'> 7251</td> <td align='right'>0</td> </tr>
+<td><small>amortizacion</small></td> <td align='right'>9668</td> <td align='right'>0</td> <td> | </td> <td align='right'> 9668</td> <td align='right'>0</td> </tr>
 <tr>
-<td><small>amortizacion-intangibles</small></td> <td align='right'>7251</td> <td align='right'>0</td> <td> | </td> <td align='right'> 7251</td> <td align='right'>0</td>
+<td><small>amortizacion-intangibles</small></td> <td align='right'>9668</td> <td align='right'>0</td> <td> | </td> <td align='right'> 9668</td> <td align='right'>0</td>
 </tr>
 <tr>
-<td><small>depreciacion</small></td> <td align='right'>12606</td> <td align='right'>0</td> <td> | </td> <td align='right'> 12606</td> <td align='right'>0</td>
+<td><small>depreciacion</small></td> <td align='right'>16808</td> <td align='right'>0</td> <td> | </td> <td align='right'> 16808</td> <td align='right'>0</td>
 </tr>
 <tr>
-<td>Depreciación Acumulada<small>depreciacion-acumulada-herramientas</small></td> <td align='right'>0</td> <td align='right'>12606</td> <td> | </td> <td align='right'> 0</td> <td align='right'>12606</td>
+<td>Depreciación Acumulada<small>depreciacion-acumulada-herramientas</small></td> <td align='right'>0</td> <td align='right'>16808</td> <td> | </td> <td align='right'> 0</td> <td align='right'>16808</td>
 </tr>
 <tr>
-<td>PPM (Pago Provisional Mensual)<small>ppm</small></td> <td align='right'>958</td> <td align='right'>0</td> <td> | </td> <td align='right'> 958</td> <td align='right'>0</td>
+<td>PPM (Pago Provisional Mensual)<small>ppm</small></td> <td align='right'>990</td> <td align='right'>0</td> <td> | </td> <td align='right'> 990</td> <td align='right'>0</td>
 </tr>
 <tr>
-<td>Amortización Acumulada<small>amortizacion-acumulada-intangibles</small></td> <td align='right'>0</td> <td align='right'>9667</td> <td> | </td> <td align='right'> 0</td> <td align='right'>9667</td>
+<td>Amortización Acumulada<small>amortizacion-acumulada-intangibles</small></td> <td align='right'>0</td> <td align='right'>12084</td> <td> | </td> <td align='right'> 0</td> <td align='right'>12084</td>
 </tr>
 <tr>
-<td><small>ingresos-brutos</small></td> <td align='right'>0</td> <td align='right'>183070</td> <td> | </td> <td align='right'> 0</td> <td align='right'>183070</td>
+<td><small>ingresos-brutos</small></td> <td align='right'>0</td> <td align='right'>208520</td> <td> | </td> <td align='right'> 0</td> <td align='right'>208520</td>
 </tr>
 <tr style=' background: #fff; border: 1px solid red;'>
-<td><small>gastos-administrativos</small></td> <td align='right'>10054</td> <td align='right'>0</td> <td> | </td> <td align='right'> 10054</td> <td align='right'>0</td> </tr>
+<td><small>gastos-administrativos</small></td> <td align='right'>16980</td> <td align='right'>0</td> <td> | </td> <td align='right'> 16980</td> <td align='right'>0</td> </tr>
 <tr style=' background: #fff; border: 1px solid red;'>
 <td><small>reintegro-de-devolucion-sobre-ventas</small></td> <td align='right'>0</td> <td align='right'>33917</td> <td> | </td> <td align='right'> 0</td> <td align='right'>33917</td> </tr>
 <tr>
 <td><small>devolucion-sobre-ventas</small></td> <td align='right'>108379</td> <td align='right'>0</td> <td> | </td> <td align='right'> 108379</td> <td align='right'>0</td>
 </tr>
 <tr>
-<td><small>ventas</small></td> <td align='right'>0</td> <td align='right'>182405</td> <td> | </td> <td align='right'> 0</td> <td align='right'>182405</td>
+<td><small>ventas</small></td> <td align='right'>0</td> <td align='right'>207615</td> <td> | </td> <td align='right'> 0</td> <td align='right'>207615</td>
 </tr>
+<tr style=' background: #fff; border: 1px solid red;'>
+<td><small>devolucion-sobre-gastos</small></td> <td align='right'>0</td> <td align='right'>280</td> <td> | </td> <td align='right'> 0</td> <td align='right'>280</td> </tr>
 <tr style=' background: #fff; border: 1px solid red;'>
 <td><small>devolucion-sobre-ventas-afectas</small></td> <td align='right'>58824</td> <td align='right'>0</td> <td> | </td> <td align='right'> 58824</td> <td align='right'>0</td> </tr>
 <tr style=' background: #fff; border: 1px solid red;'>
 <td><small>devolucion-sobre-ventas-exentas</small></td> <td align='right'>49555</td> <td align='right'>0</td> <td> | </td> <td align='right'> 49555</td> <td align='right'>0</td> </tr>
 <tr>
-<td>IVA Débitos<small>iva-debito</small></td> <td align='right'>40244</td> <td align='right'>40244</td> <td> | </td> <td align='right'> 0</td> <td align='right'>0</td>
+<td>IVA Débitos<small>iva-debito</small></td> <td align='right'>45034</td> <td align='right'>45034</td> <td> | </td> <td align='right'> 0</td> <td align='right'>0</td>
+</tr>
+<tr style=' background: #fff; border: 1px solid red;'>
+<td>Insumos<small>insumos</small></td> <td align='right'>46178</td> <td align='right'>0</td> <td> | </td> <td align='right'> 46178</td> <td align='right'>0</td> </tr>
+<tr>
+<td>IVA Créditos<small>iva-credito</small></td> <td align='right'>67753</td> <td align='right'>33911</td> <td> | </td> <td align='right'> 33842</td> <td align='right'>0</td>
 </tr>
 <tr>
-<td>IVA Créditos<small>iva-credito</small></td> <td align='right'>65672</td> <td align='right'>29102</td> <td> | </td> <td align='right'> 36570</td> <td align='right'>0</td>
+<td>Banco Estado<small>banco-estado</small></td> <td align='right'>978726</td> <td align='right'>449977</td> <td> | </td> <td align='right'> 528749</td> <td align='right'>0</td>
 </tr>
 <tr>
-<td>Banco Estado<small>banco-estado</small></td> <td align='right'>948605</td> <td align='right'>446659</td> <td> | </td> <td align='right'> 501946</td> <td align='right'>0</td>
+<td>Caja<small>caja</small></td> <td align='right'>1050209</td> <td align='right'>20206</td> <td> | </td> <td align='right'> 1030003</td> <td align='right'>0</td>
 </tr>
 <tr>
-<td>Caja<small>caja</small></td> <td align='right'>1050209</td> <td align='right'>11964</td> <td> | </td> <td align='right'> 1038245</td> <td align='right'>0</td>
-</tr>
-<tr>
-<td><small>costos-de-ventas</small></td> <td align='right'>4761</td> <td align='right'>0</td> <td> | </td> <td align='right'> 4761</td> <td align='right'>0</td>
+<td><small>costos-de-ventas</small></td> <td align='right'>5388</td> <td align='right'>0</td> <td> | </td> <td align='right'> 5388</td> <td align='right'>0</td>
 </tr>
 </tbody>
 <tfoot>
-<tr> <td></td> <td align='right'> <div>3400049</div></td> <td align='right'> <div>3252758</div></td><td> | </td> <td align='right'> <div>2872080</div></td> <td align='right'> <div>2724789</div></td> </tr>
+<tr> <td></td> <td align='right'> <div>3457930</div></td> <td align='right'> <div>3356988</div></td><td> | </td> <td align='right'> <div>2908802</div></td> <td align='right'> <div>2807860</div></td> </tr>
 </tfoot>
 </table>
