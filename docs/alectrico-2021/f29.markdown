@@ -239,8 +239,6 @@ layout: page
  <tr> <td> </td> <td> 527 </td> <td align='right'>  0 </td> <td> CANT.NOTAS DE CREDITO RECIBIDAS </td> </tr>
  <tr> <td> </td> <td> 39 </td> <td align='right'>  0 </td> <td> IVA RETENIDO A TERCEROS POR CAMBIO DE SUJETO  </td> </tr>
  <tr> <td> </td> <td> 510 </td> <td align='right'>  2013 </td> <td> DEBITO N.CREDITO EMITIDAS/Ref FACTURA | NOTA-CREDITO-RECIBIDA-RETENCION-PARCIAL-CAMBIO-SUJETO </td> </tr>
- <tr> <td> </td> <td> -528 </td> <td align='right'>  3487 </td> <td>  Rechazados  -528 </td> </tr>
- <tr> <td> </td> <td> -39 </td> <td align='right'>  -3487 </td> <td>  Rechazados  -39 </td> </tr>
  <tr> <td> </td> <td> 110 </td> <td align='right'>  1 </td> <td> CANT.DE DCTOS.BOLETAS </td> </tr>
  <tr> <td> </td> <td> 586 </td> <td align='right'>  2 </td> <td> Qty Ventas/Servicios Exentos </td> </tr>
  <tr> <td> </td> <td> 142 </td> <td align='right'>  406666 </td> <td> Neto Ventas/Servicios Exentos </td> </tr>
@@ -254,6 +252,38 @@ layout: page
 <tr><td colspan='4'> alectrico® SpA</td> </tr> 
 <tr><td colspan='4'> ( 31 de septiembre	2021	 ) </td> </tr>
 <tr><td colspan='8'> Partida 1048: Formulario F29 septiembre </td></tr>
+<tr><td colspan = '8'> codigos-f29</td> </tr>
+</tbody>
+</table>
+
+
+<br> <br> <br> <br> <br> <br> 
+<table id='Partida-1049'  class='table-bordered' >
+<thead><th colspan='6'>Partida 1049</th></thead>
+ <thead> <th> </th> <th> Código </th> <th>  Valor </th> <th> Descripción </th> </thead>
+<tbody>
+ <tr> <td> </td> <td> 111 </td> <td align='right'>  3990 </td> <td> DEBITOS BOLETAS EMITIDAS  </td> </tr>
+ <tr> <td> </td> <td> 511 </td> <td align='right'>  2257 </td> <td> CRED.IVA POR DCTOS. ELECTRONICOS  </td> </tr>
+ <tr> <td> </td> <td> 062 </td> <td align='right'>  144 </td> <td> PPM NETO DETERMINADO </td> </tr>
+ <tr> <td> </td> <td> 527 </td> <td align='right'>  0 </td> <td> CANT.NOTAS DE CREDITO RECIBIDAS </td> </tr>
+ <tr> <td> </td> <td> 586 </td> <td align='right'>  0 </td> <td> Qty Ventas/Servicios Exentos </td> </tr>
+ <tr> <td> </td> <td> 142 </td> <td align='right'>  0 </td> <td> Neto Ventas/Servicios Exentos </td> </tr>
+ <tr> <td> </td> <td> -528 </td> <td align='right'>  717 </td> <td>  Rechazados  -528 </td> </tr>
+ <tr> <td> </td> <td> -39 </td> <td align='right'>  -717 </td> <td>  Rechazados  -39 </td> </tr>
+ <tr> <td> </td> <td> 519 </td> <td align='right'>  1 </td> <td> CANT.DE DCTOS.FACT.RECIB.DEL GIRO </td> </tr>
+ <tr> <td> </td> <td> 520 </td> <td align='right'>  1316 </td> <td> CREDITOS REC. REINT/FACT. DEL GIRO  </td> </tr>
+ <tr> <td> </td> <td> 39 </td> <td align='right'>  -223 </td> <td> IVA RETENIDO A TERCEROS POR CAMBIO DE SUJETO  </td> </tr>
+ <tr> <td> </td> <td> -586 </td> <td align='right'>  -6666 </td> <td>  Rechazados  -586 </td> </tr>
+ <tr> <td> </td> <td> -142 </td> <td align='right'>  -6666 </td> <td>  Rechazados  -142 </td> </tr>
+ <tr> <td> </td> <td> 110 </td> <td align='right'>  1 </td> <td> CANT.DE DCTOS.BOLETAS </td> </tr>
+ <tr> <td> </td> <td> 503 </td> <td align='right'>  1 </td> <td> CANT. FACTURAS EMITIDAS </td> </tr>
+ <tr> <td> </td> <td> 502 </td> <td align='right'>  17696 </td> <td> DÉB. FACTURAS EMITIDAS </td> </tr>
+ <tr> <td> </td> <td> 115 </td> <td align='right'>  0.125 </td> <td> TASA PPM 1ra Categoria </td> </tr>
+ <tr> <td> </td> <td> 563 </td> <td align='right'>  114919 </td> <td> BASE IMPONIBLE </td> </tr>
+<tr> <td> </td> <td> -1733 </td> <td> 0</td> </tr>
+<tr><td colspan='4'> alectrico® SpA</td> </tr> 
+<tr><td colspan='4'> ( 31 de octubre	2021	 ) </td> </tr>
+<tr><td colspan='8'> Partida 1049: Formulario F29 octubre </td></tr>
 <tr><td colspan = '8'> codigos-f29</td> </tr>
 </tbody>
 </table>

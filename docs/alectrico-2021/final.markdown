@@ -5,27 +5,27 @@ layout: page
 
 
 <br> <br> <br> <br> <br> <br> 
-Solo se consideran las transacciones hasta el día 31	septiembre.
+Solo se consideran las transacciones hasta el día 31	octubre.
 Cifras en pesos.
 <table>
 <thead> <th colspan='6'> PARTIDA GENERAL FINAL 2021 </th> </thead> 
-<thead> <th>  ACTIVO CIRCULANTE </th> <th align='right' > 1943766</th>
-<th > PASIVO CIRCULANTE </th> <th align='right' >350000</th> </thead>
+<thead> <th>  ACTIVO CIRCULANTE </th> <th align='right' > 1385653</th>
+<th > PASIVO CIRCULANTE </th> <th align='right' >482180</th> </thead>
 <tbody>
-<tr> <td> Caja </td> <td align='right' >930743</td> <td> Proveedores. </td> <td align='right' > 0</td> </tr>
-<tr> <td> Banco Estado </td> <td align='right'  >486529</td></tr>
+<tr> <td> Caja </td> <td align='right' >917549</td> <td> Proveedores. </td> <td align='right' > 0</td> </tr>
+<tr> <td> Banco Estado </td> <td align='right'  >-44834</td></tr>
 <tr> <td> Clientes </td> <td align='right' >0</td> <td >  IVA Débito </td> <td align='right'>0</td> </tr>
 <tr> <td> Cuentas por Cobrar </td> <td align='right' >31203</td></tr>
-<tr> <td> Retenciones </td> <td align='right' style='font-weight:bold; color: white; background-color: crimson'>(  7197)</td> </tr> 
+<tr> <td> Retenciones </td> <td align='right' style='font-weight:bold; color: white; background-color: crimson'>(  8137)</td> </tr> 
 <tr> <td> Colaboradores </td> <td align='right' > 0</td> 
-<td> SalariosXPagar </td> <td align='right'> 350000</td></tr> 
-<tr> <td> IVA Crédito </td><td align='right' >17734</td> 
+<td> SalariosXPagar </td> <td align='right'> 482180</td></tr> 
+<tr> <td> IVA Crédito </td><td align='right' >17</td> 
 <td> Ingresos Adelantados </td> </tr>
-<tr> <td> PPM </td> <td align='right' >3556</td></tr> 
-<tr> <td> Insumos</td> <td align='right'>357553</td> </tr>
+<tr> <td> PPM </td> <td align='right' >3707</td></tr> 
+<tr> <td> Insumos</td> <td align='right'>362503</td> </tr>
 <tr> <td> Inventario </td>
 <td align='right'>0</td> </tr>
-<thead> <th> ACTIVO FIJO </th> <th align='right'>377046</th> 
+<thead> <th> ACTIVO FIJO </th> <th align='right'>364825</th> 
 <th> PASIVO FIJO </th> <th align='right'>0</th>  </thead> 
 <tr> <td> Terreno </td> <td align='right'>0</td> 
 <td> Préstamo Bancarios </td> <td align='right'>0</td> </tr>
@@ -38,15 +38,15 @@ Cifras en pesos.
 <tr><td> Plataforma CCM SII® </td> <td align='right'>0</td> <td colspan='2'> </td> </tr>
 <tr><td> Licencia Contaible ®  </td> <td align='right'>0</td> <td colspan='2'> </td> </tr>
 <tr><td> Autorización Uso de Inmueble </td> <td align='right'>0</td> <td colspan='2'> </td> </tr>
-<tr><td> Amortización Acumulada Intangibles </td> <td align='right' style='font-weight:bold; color: white; background-color: crimson'>(24169)</td> <td colspan='2'> </td> </tr>
-<tr><td> Depreciación Acumulada Herramientas </td> <td align='right' style='font-weight:bold; color: white; background-color: crimson'>(54624)</td><td colspan='2'> </td> </tr>
-<thead> <td> </td> <td> </td> <th> TOTAL PASIVO </th> <th align='right'> 350000</th></thead>
-<thead> <td> </td> <td> </td> <th> PATRIMONIO </th> <th align='right'>1970812</th> </thead><tr> <td colspan='2'></td> <td> Capital Social </td><td align='right'> 2085294</td> </tr>
+<tr><td> Amortización Acumulada Intangibles </td> <td align='right' style='font-weight:bold; color: white; background-color: crimson'>(26586)</td> <td colspan='2'> </td> </tr>
+<tr><td> Depreciación Acumulada Herramientas </td> <td align='right' style='font-weight:bold; color: white; background-color: crimson'>(64428)</td><td colspan='2'> </td> </tr>
+<thead> <td> </td> <td> </td> <th> TOTAL PASIVO </th> <th align='right'> 482180</th></thead>
+<thead> <td> </td> <td> </td> <th> PATRIMONIO </th> <th align='right'>1268298</th> </thead><tr> <td colspan='2'></td> <td> Capital Social </td><td align='right'> 2085294</td> </tr>
 <tr> <td colspan='2'></td> <td> Reserva Legal </td> <td align='right' >0</td> </tr>
 <tr> <td colspan='2'></td> <td> Utilidades Acumuladas </td> <td align='right' >0</td> </tr>
 <tr> <td colspan='2'></td> <td> Revalorización del Capital Propio </td> <td align='right' >0</td> </tr>
-<tr> <td colspan='2'></td> <td> Utilidad del Ejercicio </td><td align='right'>-114482</td> </tr>
-<thead><th>TOTAL ACTIVOS</th><th style='background-color: lightgreen'>2320812</th><th>TOTAL PASIVO + PATRIMONIO</th><th style='background-color: lightgreen'>2320812</th></thead>
+<tr> <td colspan='2'></td> <td> Utilidad del Ejercicio </td><td align='right'>-816996</td> </tr>
+<thead><th>TOTAL ACTIVOS</th><th style='background-color: lightgreen'>1750478</th><th>TOTAL PASIVO + PATRIMONIO</th><th style='background-color: lightgreen'>1750478</th></thead>
 <tr><td colspan='8'> alectrico® SpA </td> </tr>
 <tr><td colspan='8'> Partida General Final 2021 alectrico® SpA</td></tr>
 <tr> <hr> </tr>
