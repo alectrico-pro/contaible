@@ -13,17 +13,6 @@ layout: page
 </tbody>
 </table>
 <table>
-<thead><th colspan='6'> u-chile</th><th colspan='3'></th></thead>
-<thead><th colspan='9'> compras-Dpto-Administracion</th></thead>
-<thead><th> voucher </th><th> partida </th><th> debe </th> <th> | </th> <th> haber </th><th> mes </th> <th>recibida</th> <th>factor de corrección monetaria</th> <th> tipo documento</th></thead>
-<tbody>
-<tr> <td> </td> <td align='right'> <a href= '/alectrico-2021/libro-diario#Partida-84'>84</a> </td> <td align='right'>8361</td> <td> | </td> <td align='right'> 0</td> <td>julio</td><td>true</td><td> 1.043</td><td> 33</td> </tr>
-<tr> <td></td> <td></td> <td align='right'>8361 <small> 8720.523</small> </td> <td>|</td> <td align='right'>0<small> 0.0</small> </td></tr>
-<tr> <td></td> <td>$</td> <td align='right'>8361 <small> 8720.523</small></td></tr>
-<tr> <td> Monto Corrección </td> <td>$</td> <td align='right'>360 </td></tr>
-</tbody>
-</table>
-<table>
 <thead><th colspan='6'> ilop</th><th colspan='3'></th></thead>
 <thead><th colspan='9'> ilop</th></thead>
 <thead><th> voucher </th><th> partida </th><th> debe </th> <th> | </th> <th> haber </th><th> mes </th> <th>recibida</th> <th>factor de corrección monetaria</th> <th> tipo documento</th></thead>
@@ -161,22 +150,6 @@ layout: page
 </tbody>
 </table>
 <table>
-<thead><th colspan='6'> transbank</th><th colspan='3'></th></thead>
-<thead><th colspan='9'> gastos-a-este-departamento</th></thead>
-<thead><th> voucher </th><th> partida </th><th> debe </th> <th> | </th> <th> haber </th><th> mes </th> <th>recibida</th> <th>factor de corrección monetaria</th> <th> tipo documento</th></thead>
-<tbody>
-<tr> <td> </td> <td align='right'> <a href= '/alectrico-2021/libro-diario#Partida-9'>9</a> </td> <td align='right'>1678</td> <td> | </td> <td align='right'> 0</td> <td>enero</td><td>true</td><td> 1.063</td><td> 33</td> </tr>
-<tr> <td> </td> <td align='right'> <a href= '/alectrico-2021/libro-diario#Partida-86'>86</a> </td> <td align='right'>4231</td> <td> | </td> <td align='right'> 0</td> <td>julio</td><td>true</td><td> 1.043</td><td> 33</td> </tr>
-<tr> <td> </td> <td align='right'> <a href= '/alectrico-2021/libro-diario#Partida-33'>33</a> </td> <td align='right'>1273</td> <td> | </td> <td align='right'> 0</td> <td>mayo</td><td>true</td><td> 1.046</td><td> 33</td> </tr>
-<tr> <td> </td> <td align='right'> <a href= '/alectrico-2021/libro-diario#Partida-27'>27</a> </td> <td align='right'>627</td> <td> | </td> <td align='right'> 0</td> <td>abril</td><td>true</td><td> 1.05</td><td> 33</td> </tr>
-<tr> <td> </td> <td align='right'> <a href= '/alectrico-2021/libro-diario#Partida-20'>20</a> </td> <td align='right'>185</td> <td> | </td> <td align='right'> 0</td> <td>marzo</td><td>true</td><td> 1.054</td><td> 33</td> </tr>
-<tr> <td> </td> <td align='right'> <a href= '/alectrico-2021/libro-diario#Partida-15'>15</a> </td> <td align='right'>2848</td> <td> | </td> <td align='right'> 0</td> <td>febrero</td><td>true</td><td> 1.056</td><td> 33</td> </tr>
-<tr> <td></td> <td></td> <td align='right'>10842 <small> 11449.152</small> </td> <td>|</td> <td align='right'>0<small> 0.0</small> </td></tr>
-<tr> <td></td> <td>$</td> <td align='right'>10842 <small> 11449.152</small></td></tr>
-<tr> <td> Monto Corrección </td> <td>$</td> <td align='right'>607 </td></tr>
-</tbody>
-</table>
-<table>
 <thead><th colspan='6'> google-one</th><th colspan='3'></th></thead>
 <thead><th colspan='9'> compras-Dpto-Administracion</th></thead>
 <thead><th> voucher </th><th> partida </th><th> debe </th> <th> | </th> <th> haber </th><th> mes </th> <th>recibida</th> <th>factor de corrección monetaria</th> <th> tipo documento</th></thead>
@@ -195,6 +168,7 @@ layout: page
 <thead><th> voucher </th><th> partida </th><th> debe </th> <th> | </th> <th> haber </th><th> mes </th> <th>recibida</th> <th>factor de corrección monetaria</th> <th> tipo documento</th></thead>
 <tbody>
 <tr> <td> </td> <td align='right'> <a href= '/alectrico-2021/libro-diario#Partida-17'>17</a> </td> <td align='right'>3128</td> <td> | </td> <td align='right'> 0</td> <td>febrero</td><td>true</td><td> 1.056</td><td> 33</td> </tr>
+<tr> <td> </td> <td align='right'> <a href= '/alectrico-2021/libro-diario#Partida-139'>139</a> </td> <td align='right'>6926</td> <td> | </td> <td align='right'> 0</td> <td>septiembre</td><td>true</td><td> 1.031</td><td> 33</td> </tr>
 <tr> <td> </td> <td align='right'> <a href= '/alectrico-2021/libro-diario#Partida-107'>107</a> </td> <td align='right'>6926</td> <td> | </td> <td align='right'> 0</td> <td>agosto</td><td>true</td><td> 1.034</td><td> 33</td> </tr>
 <tr> <td> </td> <td align='right'> <a href= '/alectrico-2021/libro-diario#Partida-105'>105</a> </td> <td align='right'>40027</td> <td> | </td> <td align='right'> 0</td> <td>agosto</td><td>true</td><td> 1.034</td><td> 33</td> </tr>
 <tr> <td> </td> <td align='right'> <a href= '/alectrico-2021/libro-diario#Partida-98'>98</a> </td> <td align='right'>0</td> <td> | </td> <td align='right'> 40027</td> <td>agosto</td><td>true</td><td> 1.034</td><td> 61</td> </tr>
@@ -202,9 +176,22 @@ layout: page
 <tr> <td> </td> <td align='right'> <a href= '/alectrico-2021/libro-diario#Partida-31'>31</a> </td> <td align='right'>6926</td> <td> | </td> <td align='right'> 0</td> <td>mayo</td><td>true</td><td> 1.046</td><td> 33</td> </tr>
 <tr> <td> </td> <td align='right'> <a href= '/alectrico-2021/libro-diario#Partida-28'>28</a> </td> <td align='right'>6926</td> <td> | </td> <td align='right'> 0</td> <td>abril</td><td>true</td><td> 1.05</td><td> 33</td> </tr>
 <tr> <td> </td> <td align='right'> <a href= '/alectrico-2021/libro-diario#Partida-22'>22</a> </td> <td align='right'>6926</td> <td> | </td> <td align='right'> 0</td> <td>marzo</td><td>true</td><td> 1.054</td><td> 33</td> </tr>
-<tr> <td></td> <td></td> <td align='right'>77785 <small> 81985.39</small> </td> <td>|</td> <td align='right'>40027<small> 42188.458</small> </td></tr>
-<tr> <td></td> <td>$</td> <td align='right'>37758 <small> 39796.932</small></td></tr>
-<tr> <td> Monto Corrección </td> <td>$</td> <td align='right'>2039 </td></tr>
+<tr> <td></td> <td></td> <td align='right'>84711 <small> 89285.394</small> </td> <td>|</td> <td align='right'>40027<small> 42188.458</small> </td></tr>
+<tr> <td></td> <td>$</td> <td align='right'>44684 <small> 47096.936</small></td></tr>
+<tr> <td> Monto Corrección </td> <td>$</td> <td align='right'>2413 </td></tr>
+</tbody>
+</table>
+<table>
+<thead><th colspan='6'> u-chile</th><th colspan='3'></th></thead>
+<thead><th colspan='9'> compras-Dpto-Administracion</th></thead>
+<thead><th> voucher </th><th> partida </th><th> debe </th> <th> | </th> <th> haber </th><th> mes </th> <th>recibida</th> <th>factor de corrección monetaria</th> <th> tipo documento</th></thead>
+<tbody>
+<tr> <td> </td> <td align='right'> <a href= '/alectrico-2021/libro-diario#Partida-131'>131</a> </td> <td align='right'>8361</td> <td> | </td> <td align='right'> 0</td> <td>septiembre</td><td>true</td><td> 1.031</td><td> 33</td> </tr>
+<tr> <td> </td> <td align='right'> <a href= '/alectrico-2021/libro-diario#Partida-145'>145</a> </td> <td align='right'>8361</td> <td> | </td> <td align='right'> 0</td> <td>septiembre</td><td>true</td><td> 1.031</td><td> 33</td> </tr>
+<tr> <td> </td> <td align='right'> <a href= '/alectrico-2021/libro-diario#Partida-84'>84</a> </td> <td align='right'>8361</td> <td> | </td> <td align='right'> 0</td> <td>julio</td><td>true</td><td> 1.043</td><td> 33</td> </tr>
+<tr> <td></td> <td></td> <td align='right'>25083 <small> 26161.569</small> </td> <td>|</td> <td align='right'>0<small> 0.0</small> </td></tr>
+<tr> <td></td> <td>$</td> <td align='right'>25083 <small> 26161.569</small></td></tr>
+<tr> <td> Monto Corrección </td> <td>$</td> <td align='right'>1079 </td></tr>
 </tbody>
 </table>
 <table>
@@ -213,11 +200,29 @@ layout: page
 <thead><th> voucher </th><th> partida </th><th> debe </th> <th> | </th> <th> haber </th><th> mes </th> <th>recibida</th> <th>factor de corrección monetaria</th> <th> tipo documento</th></thead>
 <tbody>
 <tr> <td> </td> <td align='right'> <a href= '/alectrico-2021/libro-diario#Partida-48'>48</a> </td> <td align='right'>3302</td> <td> | </td> <td align='right'> 0</td> <td>junio</td><td>true</td><td> 1.043</td><td> 45</td> </tr>
+<tr> <td> </td> <td align='right'> <a href= '/alectrico-2021/libro-diario#Partida-147'>147</a> </td> <td align='right'>4149</td> <td> | </td> <td align='right'> 0</td> <td>septiembre</td><td>true</td><td> 1.031</td><td> 45</td> </tr>
 <tr> <td> </td> <td align='right'> <a href= '/alectrico-2021/libro-diario#Partida-109'>109</a> </td> <td align='right'>4149</td> <td> | </td> <td align='right'> 0</td> <td>agosto</td><td>true</td><td> 1.034</td><td> 45</td> </tr>
 <tr> <td> </td> <td align='right'> <a href= '/alectrico-2021/libro-diario#Partida-79'>79</a> </td> <td align='right'>3775</td> <td> | </td> <td align='right'> 0</td> <td>julio</td><td>true</td><td> 1.043</td><td> 45</td> </tr>
-<tr> <td></td> <td></td> <td align='right'>11226 <small> 11708.718</small> </td> <td>|</td> <td align='right'>0<small> 0.0</small> </td></tr>
-<tr> <td></td> <td>$</td> <td align='right'>11226 <small> 11708.718</small></td></tr>
-<tr> <td> Monto Corrección </td> <td>$</td> <td align='right'>483 </td></tr>
+<tr> <td></td> <td></td> <td align='right'>15375 <small> 16036.125</small> </td> <td>|</td> <td align='right'>0<small> 0.0</small> </td></tr>
+<tr> <td></td> <td>$</td> <td align='right'>15375 <small> 16036.125</small></td></tr>
+<tr> <td> Monto Corrección </td> <td>$</td> <td align='right'>661 </td></tr>
+</tbody>
+</table>
+<table>
+<thead><th colspan='6'> transbank</th><th colspan='3'></th></thead>
+<thead><th colspan='9'> gastos-a-este-departamento</th></thead>
+<thead><th> voucher </th><th> partida </th><th> debe </th> <th> | </th> <th> haber </th><th> mes </th> <th>recibida</th> <th>factor de corrección monetaria</th> <th> tipo documento</th></thead>
+<tbody>
+<tr> <td> </td> <td align='right'> <a href= '/alectrico-2021/libro-diario#Partida-9'>9</a> </td> <td align='right'>1678</td> <td> | </td> <td align='right'> 0</td> <td>enero</td><td>true</td><td> 1.063</td><td> 33</td> </tr>
+<tr> <td> </td> <td align='right'> <a href= '/alectrico-2021/libro-diario#Partida-153'>153</a> </td> <td align='right'>525</td> <td> | </td> <td align='right'> 0</td> <td>septiembre</td><td>true</td><td> 1.031</td><td> 33</td> </tr>
+<tr> <td> </td> <td align='right'> <a href= '/alectrico-2021/libro-diario#Partida-86'>86</a> </td> <td align='right'>4231</td> <td> | </td> <td align='right'> 0</td> <td>julio</td><td>true</td><td> 1.043</td><td> 33</td> </tr>
+<tr> <td> </td> <td align='right'> <a href= '/alectrico-2021/libro-diario#Partida-33'>33</a> </td> <td align='right'>1273</td> <td> | </td> <td align='right'> 0</td> <td>mayo</td><td>true</td><td> 1.046</td><td> 33</td> </tr>
+<tr> <td> </td> <td align='right'> <a href= '/alectrico-2021/libro-diario#Partida-27'>27</a> </td> <td align='right'>627</td> <td> | </td> <td align='right'> 0</td> <td>abril</td><td>true</td><td> 1.05</td><td> 33</td> </tr>
+<tr> <td> </td> <td align='right'> <a href= '/alectrico-2021/libro-diario#Partida-20'>20</a> </td> <td align='right'>185</td> <td> | </td> <td align='right'> 0</td> <td>marzo</td><td>true</td><td> 1.054</td><td> 33</td> </tr>
+<tr> <td> </td> <td align='right'> <a href= '/alectrico-2021/libro-diario#Partida-15'>15</a> </td> <td align='right'>2848</td> <td> | </td> <td align='right'> 0</td> <td>febrero</td><td>true</td><td> 1.056</td><td> 33</td> </tr>
+<tr> <td></td> <td></td> <td align='right'>11367 <small> 12003.552</small> </td> <td>|</td> <td align='right'>0<small> 0.0</small> </td></tr>
+<tr> <td></td> <td>$</td> <td align='right'>11367 <small> 12003.552</small></td></tr>
+<tr> <td> Monto Corrección </td> <td>$</td> <td align='right'>637 </td></tr>
 </tbody>
 </table>
 <table>
@@ -232,11 +237,13 @@ pagos.</th></thead>
 <thead><th> voucher </th><th> partida </th><th> debe </th> <th> | </th> <th> haber </th><th> mes </th> <th>recibida</th> <th>factor de corrección monetaria</th> <th> tipo documento</th></thead>
 <tbody>
 <tr> <td> </td> <td align='right'> <a href= '/alectrico-2021/libro-diario#Partida-88'>88</a> </td> <td align='right'>0</td> <td> | </td> <td align='right'> 229560</td> <td>julio</td><td>false</td><td> 1.043</td><td> declaracion°remuneraciones</td> </tr>
+<tr> <td> </td> <td align='right'> <a href= '/alectrico-2021/libro-diario#Partida-129'>129</a> </td> <td align='right'>229560</td> <td> | </td> <td align='right'> 0</td> <td>septiembre</td><td>false</td><td> 1.031</td><td> previred°salarios</td> </tr>
+<tr> <td> </td> <td align='right'> <a href= '/alectrico-2021/libro-diario#Partida-127'>127</a> </td> <td align='right'>0</td> <td> | </td> <td align='right'> 267820</td> <td>septiembre</td><td>false</td><td> 1.031</td><td> declaracion°remuneraciones</td> </tr>
 <tr> <td> </td> <td align='right'> <a href= '/alectrico-2021/libro-diario#Partida-124'>124</a> </td> <td align='right'>0</td> <td> | </td> <td align='right'> 229560</td> <td>agosto</td><td>false</td><td> 1.034</td><td> declaracion°remuneraciones</td> </tr>
 <tr> <td> </td> <td align='right'> <a href= '/alectrico-2021/libro-diario#Partida-119'>119</a> </td> <td align='right'>229560</td> <td> | </td> <td align='right'> 0</td> <td>agosto</td><td>false</td><td> 1.034</td><td> previred°salarios</td> </tr>
-<tr> <td></td> <td></td> <td align='right'>229560 <small> 237365.04</small> </td> <td>|</td> <td align='right'>459120<small> 474730.08</small> </td></tr>
-<tr> <td> </td> <td> </td> <td></td> <td>|</td> <td align='right'>229560 <small> 237365.04</small></td> <td>$</td> </tr>
-<tr> <td colspan='2'> Monto Corrección</td><td></td><td>$</td> <td align='right'>7805 </td></tr>
+<tr> <td></td> <td></td> <td align='right'>459120 <small> 474730.08</small> </td> <td>|</td> <td align='right'>726940<small> 751655.96</small> </td></tr>
+<tr> <td> </td> <td> </td> <td></td> <td>|</td> <td align='right'>267820 <small> 276925.88</small></td> <td>$</td> </tr>
+<tr> <td colspan='2'> Monto Corrección</td><td></td><td>$</td> <td align='right'>9106 </td></tr>
 </tbody>
 </table>
 <table>
@@ -245,10 +252,12 @@ pagos.</th></thead>
 <thead><th> voucher </th><th> partida </th><th> debe </th> <th> | </th> <th> haber </th><th> mes </th> <th>recibida</th> <th>factor de corrección monetaria</th> <th> tipo documento</th></thead>
 <tbody>
 <tr> <td> </td> <td align='right'> <a href= '/alectrico-2021/libro-diario#Partida-88'>88</a> </td> <td align='right'>0</td> <td> | </td> <td align='right'> 70440</td> <td>julio</td><td>false</td><td> 1.043</td><td> declaracion*remuneraciones</td> </tr>
+<tr> <td> </td> <td align='right'> <a href= '/alectrico-2021/libro-diario#Partida-129'>129</a> </td> <td align='right'>70440</td> <td> | </td> <td align='right'> 0</td> <td>septiembre</td><td>false</td><td> 1.031</td><td> previred°salarios</td> </tr>
+<tr> <td> </td> <td align='right'> <a href= '/alectrico-2021/libro-diario#Partida-127'>127</a> </td> <td align='right'>0</td> <td> | </td> <td align='right'> 82180</td> <td>septiembre</td><td>false</td><td> 1.031</td><td> declaracion*remuneraciones</td> </tr>
 <tr> <td> </td> <td align='right'> <a href= '/alectrico-2021/libro-diario#Partida-124'>124</a> </td> <td align='right'>0</td> <td> | </td> <td align='right'> 70440</td> <td>agosto</td><td>false</td><td> 1.034</td><td> declaracion*remuneraciones</td> </tr>
 <tr> <td> </td> <td align='right'> <a href= '/alectrico-2021/libro-diario#Partida-119'>119</a> </td> <td align='right'>70440</td> <td> | </td> <td align='right'> 0</td> <td>agosto</td><td>false</td><td> 1.034</td><td> previred°salarios</td> </tr>
-<tr> <td></td> <td></td> <td align='right'>70440 <small> 72834.96</small> </td> <td>|</td> <td align='right'>140880<small> 145669.92</small> </td></tr>
-<tr> <td> </td> <td> </td> <td></td> <td>|</td> <td align='right'>70440 <small> 72834.96</small></td> <td>$</td> </tr>
-<tr> <td colspan='2'> Monto Corrección</td><td></td><td>$</td> <td align='right'>2395 </td></tr>
+<tr> <td></td> <td></td> <td align='right'>140880 <small> 145669.92</small> </td> <td>|</td> <td align='right'>223060<small> 230644.04</small> </td></tr>
+<tr> <td> </td> <td> </td> <td></td> <td>|</td> <td align='right'>82180 <small> 84974.12</small></td> <td>$</td> </tr>
+<tr> <td colspan='2'> Monto Corrección</td><td></td><td>$</td> <td align='right'>2794 </td></tr>
 </tbody>
 </table>
