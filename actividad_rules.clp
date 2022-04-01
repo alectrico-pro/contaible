@@ -1547,10 +1547,12 @@
    ( ticket ( numero ?numero))
    (empresa (nombre ?empresa))
    ?f1 <- (costo-ventas (folio ?folio) (rut ?rut) (tipo-de-documento ?tipo-de-documento) (partida ?numero) (dia ?dia) (mes ?mes) (ano ?ano) (credito ?credito) (proveedor ?proveedor) (material ?material) (monto ?monto) (glosa ?glosa) (iva ?iva) (neto ?neto) (total ?total) (archivo ?archivo) )
+   ( cuenta (nombre costos-de-ventas) (deducible ?deducible))
    ( test (not (eq nil ?material)))
    ( test (and (not (eq nil ?total)) (> ?total 0)))
    ( test (and (not (eq nil ?neto)) (> ?neto 0)))
    ( test (and (not (eq nil ?iva)) (> ?iva 0)))
+   
 
    ( test (>= (to_serial_date ?top ?mes_top ?ano_top) (to_serial_date ?dia ?mes ?ano)))
    ( proveedor (nombre ?proveedor) (padre costos-ventas))
@@ -1566,6 +1568,7 @@
        (tipo deudor)
        (grupo resultado)
        (circulante true)
+       (deducible ?deducible)
        (padre costos-de-ventas)
        (origen ?origen) ) )
 
@@ -2236,6 +2239,7 @@
   ( assert (ccm (folio na) (partida ?numero) (tipo-documento 39) (monto-total ?total) (monto-neto ?neto)))
   ( printout t "-->rv Rendición Mensual de e-Boletas Electrónicas Exentas en SII $" ?total crlf  )
 )
+
 
 
 

@@ -671,7 +671,7 @@
 
     (test (> ?debe ?haber))
 
-   (revision (partida ?partida-inventario) (rechazado false) )
+    (revision (partida ?partida-inventario) (rechazado false) )
  
     (test (eq ?nombre inventario-final))
     (test (eq ?liquidora base-imponible))
@@ -736,6 +736,7 @@
  
     (test (> ?debe ?haber))
 
+;    (test (eq ?deducible true))
  =>
    ( modify ?tributacion (cumplida true))
 
@@ -877,6 +878,7 @@
     (test (> ?haber ?debe))
 
     (revision (partida ?partida-cuenta) (rechazado false) )
+
 
  =>
 

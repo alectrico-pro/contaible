@@ -632,6 +632,7 @@
   (circulante false)
   (grupo patrimonio)
   (naturaleza mixta)
+  (deducible true)
   (origen real))
 
 
@@ -744,6 +745,7 @@ pagos.")
   (circulante true)
   (padre false)
   (naturaleza mixta)
+  (deducible true)
   (origen real)) ;real para que se vea el recuadro en biblioteca de recuadro
                     ;nominativo para que se calculen los totales de las comprobaciones
 
@@ -852,6 +854,7 @@ pagos.")
   (grupo resultado)
   (circulante true)
   (padre false)
+  (deducible true)
   (origen real))
 
 
@@ -863,6 +866,7 @@ pagos.")
   (grupo resultado)
   (circulante true)
   (padre false)
+  (deducible true)
   (origen real))
 
 
@@ -879,6 +883,7 @@ pagos.")
   (grupo resultado)
   (circulante true)
   (padre amortizacion)
+  (deducible true)
   (origen real))
 
 
@@ -985,6 +990,7 @@ pagos.")
   (circulante true)
   (padre ingresos-brutos)
   (naturaleza mixta)
+  (deducible true)
   (origen real))
 
 (cuenta (nombre ventas-con-eboleta-afecta)
@@ -1458,6 +1464,7 @@ servicio.")
   (naturaleza deudora)
   (padre false) 
   (circulante true)
+  (deducible true)
   (origen real)
 )
 
@@ -1471,6 +1478,7 @@ servicio.")
   (naturaleza deudora)
   (padre devolucion-sobre-ventas)
   (circulante true)
+  (deducible true)
   (origen real)
 )
 
@@ -1483,6 +1491,7 @@ servicio.")
   (naturaleza deudora)
   (padre devolucion-sobre-ventas)
   (circulante true)
+  (deducible true)
   (origen real)
 )
 
