@@ -173,6 +173,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 - [x] rcv
 - [x] libro-diario
 - [x] ccm
+- [x] Referencia: <a href= '/alectrico-2021/libro-diario#Partida-3'>3 </a>
 - [x] revisado
 ![](../revisado.png)
 <table id='Partida-7'>
@@ -438,6 +439,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 - [ ] rcv
 - [ ] libro-diario
 - [ ] ccm
+- [x] Referencia: <a href= '/alectrico-2021/libro-diario#Partida-3'>3 </a>
 - [x] revisado
 ![](../revisado.png)
 <table id='Partida-141'>
@@ -2109,6 +2111,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 - [ ] rcv
 - [ ] libro-diario
 - [ ] ccm
+- [x] Referencia: <a href= '/alectrico-2021/libro-diario#Partida-76'>76 </a>
 - [x] revisado
 ![](../revisado.png)
 <table id='Partida-82'>
@@ -2791,6 +2794,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 - [ ] rcv
 - [ ] libro-diario
 - [x] ccm
+- [x] Referencia: <a href= '/alectrico-2021/libro-diario#Partida-113'>113 </a>
 - [x] revisado
 ![](../revisado.png)
 <table id='Partida-114'>

@@ -2596,6 +2596,7 @@
    ( ticket ( numero ?numero))
    ( empresa (nombre ?nombre))
    ( nota-de-credito-de-subcuenta-existente
+     (referencia ?referencia)
      (proveedor ?proveedor)
      (archivo ?archivo)
      (rut ?rut)
@@ -2616,7 +2617,7 @@
    ( selecciones (devolver-a-devolucion-sobre-ventas ?devolver-a-devolucion-sobre-ventas))
 
  =>
-   ( assert (partida (proveedor subcuenta) (numero ?numero) (dia ?dia) (mes ?mes) (ano ?ano) (descripcion (str-cat  "Devolución a subcuenta " ?subcuenta " por " ?glosa " mes " ?mes)) (actividad dar-nota-de-credito-emitida-subcuenta-existente) (archivo (str-cat "../nota-de-credito-propia-" ?folio-nota ".png")  )  ))
+   ( assert (partida (proveedor subcuenta) (referencia ?referencia) (numero ?numero) (dia ?dia) (mes ?mes) (ano ?ano) (descripcion (str-cat  "Devolución a subcuenta " ?subcuenta " por " ?glosa " mes " ?mes)) (actividad dar-nota-de-credito-emitida-subcuenta-existente) (archivo (str-cat "../nota-de-credito-propia-" ?folio-nota ".png")  )  ))
 
    ( assert (abono (tipo-de-documento 61) (electronico true) (partida ?numero) (dia ?dia) (mes ?mes ) (ano ?ano) (empresa ?nombre) (cuenta banco-estado) (monto ?total) (glosa (str-cat nota-credito ?subcuenta) )))
 
@@ -2851,7 +2852,7 @@
   ;     (padre colaboradores)
  ;      (origen nominativo) ) )
 ;
-   ( assert (partida (proveedor ?colaborador) (numero ?numero) (dia ?dia) (mes ?mes) (ano ?ano) (descripcion (str-cat "Nota de Crédito SII: " ?folio-nota " que anula Factura SII " ?folio " de "  ?material " a " ?colaborador)) (actividad dar-nota-de-credito-sii) (archivo (str-cat "../nota-de-credito-propia-" ?folio-nota ".png"))))
+   ( assert (partida (proveedor ?colaborador) (referencia ?numero_2) (numero ?numero) (dia ?dia) (mes ?mes) (ano ?ano) (descripcion (str-cat "Nota de Crédito SII: " ?folio-nota " que anula Factura SII " ?folio " de "  ?material " a " ?colaborador)) (actividad dar-nota-de-credito-sii) (archivo (str-cat "../nota-de-credito-propia-" ?folio-nota ".png"))))
 
    ( assert (abono (tipo-de-documento 61) (electronico true) (partida ?numero) (dia ?dia) (mes ?mes ) (ano ?ano) (empresa ?nombre) (cuenta banco-estado) (monto ?total) (glosa (str-cat " nota-credito " ?material))))
 

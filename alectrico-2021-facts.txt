@@ -224,6 +224,7 @@
 )
 
 ( nota-de-credito-de-subcuenta-existente
+ ( referencia 3)
  ( dia 31)
  ( emitida true)
  ( folio-nota 14)
@@ -531,6 +532,7 @@
 )
 
 ( nota-de-credito-de-subcuenta-existente
+  ( referencia 3)
   ( archivo "/nota-de-credito-propia-11.png")
   ( dia 13)
   ( emitida true)

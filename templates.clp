@@ -731,6 +731,7 @@
 
 
 (deftemplate nota-de-credito-de-subcuenta-existente
+  (slot referencia )
   (slot archivo)
   (slot rut)
   (slot proveedor)
