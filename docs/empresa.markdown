@@ -17,7 +17,7 @@ permalink: /alectrico/
 [iva](/alectrico-2022/iva.html)|[subcuentas](/alectrico-2022/subcuentas.html)
 [resultado SII](/alectrico-2022/resultado-sii.html)|[pedidos](/alectrico-2022/pedidos.html)
 [comprobacion](/alectrico-2022/comprobacion.html)|[amortizaciones](/alectrico-2022/valor-activos.html)
-
+[bi](/alectrico-2022/bi.html)|
 
 
 # revisión códigos f29
@@ -45,7 +45,7 @@ permalink: /alectrico/
 [iva](/alectrico-2021/iva.html)|[subcuentas](/alectrico-2021/subcuentas.html)
 [resultado SII](/alectrico-2021/resultado-sii.html)|[pedidos](/alectrico-2021/pedidos.html)
 [comprobacion](/alectrico-2021/comprobacion.html)|[amortizaciones](/alectrico-2021/valor-activos.html)
-
+[bi](/alectrico-2021/bi.html)|
 
 # revisión códigos f29
 

@@ -21,6 +21,46 @@
 
 
 
+(defrule fin
+  ( declare (salience -100) )
+ =>
+  ( printout k "</ul>" crlf)
+
+  ( close k )
+)
+
+;esto genera un markdown para que jekyll lo publique en el blog necios
+(defrule inicio-kindle-k-partida-rules
+   ( declare (salience 10000))
+   ( empresa (nombre ?empresa))
+
+  =>
+
+   ( if (neq nil k) then (close k))
+   ( if (neq nil h) then (close h))
+
+
+   ( bind ?archivo (str-cat "./doc/" ?empresa "/bi.markdown"))
+
+   ( open ?archivo k "w")
+
+   ( printout k "--- " crlf)
+;   ( printout k "title: Libro Diaro" crlf)
+   ( printout k "permalink: /" ?empresa "/bi " crlf)
+   ( printout k "layout: page" crlf)
+   ( printout k "--- " crlf)
+   ( printout k "" crlf)
+   ( printout k "<ul>" crlf)
+   ( printout k "<li><span style='background-color: red'>[    ]</span> mensaje de alerta. </li>" crlf)
+   ( printout k "<li><span style='background-color: lavender'>[    ]</span> partida revisada y resultado bueno. </li>" crlf)
+   ( printout k "<li><span style='background-color: lightyellow'>[    ]</span> cuenta mayor del activo </li>" crlf)
+   ( printout k "<li><span style='background-color: azure'>[    ]</span> cuenta mayor del pasivo </li>" crlf)
+   ( printout k "<li><span style='color: white; background-color: cornflowerblue'>[    ]</span> cuenta de patrimonio </li>" crlf)
+   ( printout k "<li><span style='background-color: gold'>[    ]</span> ganancia </li>" crlf)
+   ( printout k "<li><span style='color: white; background-color: black'>[    ]</span> pérdida </li>" crlf)
+   ( printout k "<li><span style='background-color: blanchedalmond'>[    ]</span> subtotales de la transacción </li>" crlf)
+
+)
 
 (defrule iterando-f29-f22-lista
   ( f29-f22 (codigo-f29 ?codigo) (cuenta ?cuenta))
@@ -159,6 +199,10 @@
 
  =>
 
+  ( printout k "<table>" crlf)
+
+; ( printout k "<li><span style='color: white; background-color: cornflowerblue'>[    ]</span> -------- Consolidación 3X --- Acreedora --------------  </li>" crlf)
+
   ( bind ?nvalor (+ ?valor ?rechazo))
   ( bind ?ndebe  (+ ?debe ?rechazo))
   ( modify ?c1 (codigo ?codigo) (valor ?nvalor))
@@ -167,24 +211,50 @@
   ( retract ?f2)
   ( retract ?f3)
   ( printout t "-------- Consolidación 3X --- Acreedora --------------" crlf)
-  ( printout t tab tab codigo tab valor tab rechazo crlf)
+  ( printout t tab tab codigo tab valor tab rechazo crlf) 
+  ( printout k "<thead> " crlf)
+  ( printout k "<tr><th align='center' colspan=7> Consolidación 3X --- Acreedora </th></tr> " crlf) 
+  ( printout k "<tr><th> caso </th> <th> cuenta </th><th> Meta </th><th> </th> <th> debe </th> <th> haber </th> </tr> " crlf)
   ( printout t tab "a): " ?cuenta  " debe: " ?debe " haber: " ?haber crlf)
-  ( printout t tab "b): " ?cuenta2 " debe: " ?debe2 " haber: " ?haber2 crlf)
+  ( printout k "<tr> <td> a):  </td> <td> " ?cuenta "</td><td></td><td> </td><td> " ?debe "</td> <td>  " ?haber "</td> </tr> " crlf)
+  ( printout t tab "b): " ?cuenta2 " debe: " ?debe2 " haber: " ?haber2 crlf) 
+  ( printout k "<tr><td> b): </td><td> " ?cuenta2 " </td> <td> </td><td></td><td> " ?debe2 "</td> <td> " ?haber2 " </td> </tr>" crlf)
   ( printout t tab "c): " tab ?codigo tab ?valor tab ?rechazo crlf)
+  ( if (> ?rechazo 0)
+    then
+   ( printout k "<tr><td> c): </td> <td> " ?codigo " </td><td> " ?valor " </td> <td> </td> <td> </td><td> "  ?rechazo " </td> </tr> " crlf)
+    else
+   ( printout k "<tr><td> c): </td> <td> " ?codigo " </td><td> " ?valor " </td> <td> </td><td> " (abs ?rechazo) " </td><td> </td> </tr> " crlf)
+  )
   ( printout t tab "------------------------------------------------------------" crlf)
+  
   ( printout t tab "                                       a (=) " ?haber crlf)
+  ( printout k "<tr><td></td><td></td><td></td><td> a </td><td> (=) </td><td>  " ?haber  " </td></tr>" crlf)
   ( printout t tab "                                       b (+) " ?haber2 crlf)
+  ( printout k "<tr><td></td><td></td><td></td><td> b </td><td> (+) </td><td>  " ?haber2  " </td></tr>" crlf)
+
   ( printout t tab "                                         (=) " (+ ?haber ?haber2 ) crlf)
+  ( printout k "<tr><td></td><td></td><td></td><td>  </td><td>  (=) </td><td> " (+ ?haber ?haber2 ) " </td></tr>" crlf)
+
   ( printout t tab "                                       c (-) " ?rechazo crlf)
+  ( printout k "<tr><td></td><td></td><td></td><td>   c </td><td> (-) </td> <td> " ?rechazo "</td> </tr>"crlf)
+
   ( printout t tab "                                           -------------------- " crlf)
+
+  ( printout k "<tr><td></td><td></td><td> " ?valor "</td><td> </td><td>  (=) </td><td> " (+ ?haber ?haber2 ?rechazo ) " </td></tr> "  crlf)
+
   ( printout t tab "                                         (=) " (+ ?haber ?haber2 ?rechazo ) crlf)
+
   (if
     (eq ?valor (+ ?haber ?haber2 ?rechazo))  then
      (printout t "                    PASS ok"  crlf)
+     ( printout k "<tr style='background-color:lightgreen' ><td> </td><td></td><td></td><td></td><td>    PASS OK </td><td></td></tr> "  crlf)
     else
      (printout t "                    FAIL  "  crlf)
+     ( printout k "<tr style='background-color:crimson' > <td></td><td></td><td></td><td></td><td>    FAIL </td></tr> " crlf)
   )
   ( printout t "-----------------------------------------------" crlf)
+  ( printout k "</thead></table> " crlf)
 )
 
 
