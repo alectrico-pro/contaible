@@ -24,7 +24,7 @@
 (defrule fin
   ( declare (salience -100) )
  =>
-  ( printout k "</ul>" crlf)
+; ( printout k "</ul>" crlf)
 
   ( close k )
 )
@@ -59,6 +59,7 @@
    ( printout k "<li><span style='background-color: gold'>[    ]</span> ganancia </li>" crlf)
    ( printout k "<li><span style='color: white; background-color: black'>[    ]</span> pérdida </li>" crlf)
    ( printout k "<li><span style='background-color: blanchedalmond'>[    ]</span> subtotales de la transacción </li>" crlf)
+   ( printout k "</ul>" crlf)
 
 )
 
@@ -136,7 +137,6 @@
 
 (defrule consolidando-los-rechazados-de-cuentas-haber-mayor-con-dos-cuentas
   (declare (salience 30))
-(no)
   (hacer-f22)
 
   ?c1 <- (codigo-f22 (codigo ?codigo)  (valor ?valor))
@@ -214,44 +214,44 @@
   ( printout t tab tab codigo tab valor tab rechazo crlf) 
   ( printout k "<thead> " crlf)
   ( printout k "<tr><th align='center' colspan=7> Consolidación 3X --- Acreedora </th></tr> " crlf) 
-  ( printout k "<tr><th> caso </th> <th> cuenta </th><th> Meta </th><th> </th> <th> debe </th> <th> haber </th> </tr> " crlf)
+  ( printout k "<tr><th> caso </th> <th> cuenta </th><th style='background-color:gold'> Meta </th><th> </th> <th> debe </th> <th> haber </th> </tr> " crlf)
   ( printout t tab "a): " ?cuenta  " debe: " ?debe " haber: " ?haber crlf)
-  ( printout k "<tr> <td> a):  </td> <td> " ?cuenta "</td><td></td><td> </td><td> " ?debe "</td> <td>  " ?haber "</td> </tr> " crlf)
+  ( printout k "<tr> <td> a):  </td> <td> " ?cuenta "</td><td></td><td> </td><td align='right' > " ?debe "</td> <td align='right'>  " ?haber "</td> </tr> " crlf)
   ( printout t tab "b): " ?cuenta2 " debe: " ?debe2 " haber: " ?haber2 crlf) 
-  ( printout k "<tr><td> b): </td><td> " ?cuenta2 " </td> <td> </td><td></td><td> " ?debe2 "</td> <td> " ?haber2 " </td> </tr>" crlf)
+  ( printout k "<tr><td> b): </td><td> " ?cuenta2 " </td> <td> </td><td></td><td align='right'> " ?debe2 "</td> <td align='right'> " ?haber2 " </td> </tr>" crlf)
   ( printout t tab "c): " tab ?codigo tab ?valor tab ?rechazo crlf)
   ( if (> ?rechazo 0)
     then
-   ( printout k "<tr><td> c): </td> <td> " ?codigo " </td><td> " ?valor " </td> <td> </td> <td> </td><td> "  ?rechazo " </td> </tr> " crlf)
+   ( printout k "<tr><td> c): </td> <td> " ?codigo " </td><td> " ?valor " </td> <td> </td> <td> </td><td align='right'> "  ?rechazo " </td> </tr> " crlf)
     else
-   ( printout k "<tr><td> c): </td> <td> " ?codigo " </td><td> " ?valor " </td> <td> </td><td> " (abs ?rechazo) " </td><td> </td> </tr> " crlf)
+   ( printout k "<tr><td> c): </td> <td> " ?codigo " </td><td> " ?valor " </td> <td> </td><td align='right' > " (abs ?rechazo) " </td><td> </td> </tr> " crlf)
   )
   ( printout t tab "------------------------------------------------------------" crlf)
   
   ( printout t tab "                                       a (=) " ?haber crlf)
-  ( printout k "<tr><td></td><td></td><td></td><td> a </td><td> (=) </td><td>  " ?haber  " </td></tr>" crlf)
+  ( printout k "<tr><td></td><td></td><td></td><td> a </td><td> (=) </td><td align='right'>  " ?haber  " </td></tr>" crlf)
   ( printout t tab "                                       b (+) " ?haber2 crlf)
-  ( printout k "<tr><td></td><td></td><td></td><td> b </td><td> (+) </td><td>  " ?haber2  " </td></tr>" crlf)
+  ( printout k "<tr><td></td><td></td><td></td><td> b </td><td> (+) </td><td align='right'>  " ?haber2  " </td></tr>" crlf)
 
   ( printout t tab "                                         (=) " (+ ?haber ?haber2 ) crlf)
-  ( printout k "<tr><td></td><td></td><td></td><td>  </td><td>  (=) </td><td> " (+ ?haber ?haber2 ) " </td></tr>" crlf)
+  ( printout k "<tr><td></td><td></td><td></td><td>  </td><td>  (=) </td><td align='right'> " (+ ?haber ?haber2 ) " </td></tr>" crlf)
 
   ( printout t tab "                                       c (-) " ?rechazo crlf)
-  ( printout k "<tr><td></td><td></td><td></td><td>   c </td><td> (-) </td> <td> " ?rechazo "</td> </tr>"crlf)
+  ( printout k "<tr><td></td><td></td><td></td><td>   c </td><td> (-) </td> <td align='right'> " ?rechazo "</td> </tr>"crlf)
 
   ( printout t tab "                                           -------------------- " crlf)
 
-  ( printout k "<tr><td></td><td></td><td> " ?valor "</td><td> </td><td>  (=) </td><td> " (+ ?haber ?haber2 ?rechazo ) " </td></tr> "  crlf)
+  ( printout k "<tr><td></td><td></td><td> " ?valor "</td><td> </td><td>  (=) </td><td align='right'> " (+ ?haber ?haber2 ?rechazo ) " </td></tr> "  crlf)
 
   ( printout t tab "                                         (=) " (+ ?haber ?haber2 ?rechazo ) crlf)
 
   (if
     (eq ?valor (+ ?haber ?haber2 ?rechazo))  then
      (printout t "                    PASS ok"  crlf)
-     ( printout k "<tr style='background-color:lightgreen' ><td> </td><td></td><td></td><td></td><td>    PASS OK </td><td></td></tr> "  crlf)
+     ( printout k "<tr style='background-color:lightgreen' ><td> </td><td></td><td></td><td></td><td></td><td>   PASA OK </td><td></td></tr> "  crlf)
     else
      (printout t "                    FAIL  "  crlf)
-     ( printout k "<tr style='background-color:crimson' > <td></td><td></td><td></td><td></td><td>    FAIL </td></tr> " crlf)
+     ( printout k "<tr style='background-color:crimson' > <td></td><td></td><td></td><td></td><td></td><td>   NO PASA </td></tr> " crlf)
   )
   ( printout t "-----------------------------------------------" crlf)
   ( printout k "</thead></table> " crlf)
@@ -287,26 +287,45 @@
   ( modify ?c1 (codigo ?codigo-f29) (valor ?nvalor))
   ( retract ?c2)
   ( printout t "------- Consolidación 2X Deudoras -------------" crlf)
+  ( printout k "<table>" crlf)
+  ( printout k "<thead> <tr> <th colspan='8' align='center'> Consolidación 2X Deudoras </th> </tr>" crlf)
+  
   ( printout t tab tab codigo tab valor tab rechazo crlf)
+  ( printout k "<tr> <th></th> <th> cuenta </th><th> debe </th> <th> haber </th><th colspan='3'>  iva </th> </tr> " crlf)
+  ( printout k "</thead>" crlf)
   ( printout t tab "a): " ?cuenta  " debe: " ?debe tab iva tab  ?iva crlf)
+  ( printout k "<tr> <td> a): </td> <td>" ?cuenta "</td> <td align='right'> " ?debe " </td> <td align='right'> 0 </td> <td></td><td></td> <td align='right'> " ?iva " </td> </tr> " crlf)
   ( printout t tab "    " tab codigo tab valor tab ajuste tab iva crlf)
-  ( printout t tab "c): " tab ?codigo-f29 tab ?valor tab ?nvalor tab ?iva crlf)
+  ( printout k "<tr>  <td> F29 </td> <td> código </td> <td> </td> <td>  </td><td> valor <small> b): </small> </td> <td> ajuste por transacciones rechazadas <small> c): </small> </td> </tr> " crlf)
+  ( printout t tab "c: " tab ?codigo-f29 tab ?valor tab ?nvalor tab ?iva crlf)
+  ( printout k "<tr> <td> </td> <td> " ?codigo-f29 " </td> <td></td><td></td> <td align='right'> " ?valor " </td> <td align='right'>" ?rechazo "</td></tr>" crlf)
   ( printout t tab "------------------------------------------------------------" crlf)
+  ( printout k "<thead>" crlf)
+  ( printout k "<tr> <th> </th> <th></th> <th></th> <th></th><th></th> <th></th><th style='background-color:gold'> Meta </th> </tr> " crlf)
+  ( printout k "</thead> " crlf)
   ( printout t tab "                                       a (=) " ?valor crlf)
+  ( printout k "<tr> <td> b): <td></td><td></td> </td> <td> (=) </td> <td align='right'> " ?valor "</td> </tr>" crlf)
   ( printout t tab "                                       c (+) " ?rechazo crlf)
+  ( printout k "<tr> <td> c): </td> <td></td><td></td> <td> (+) </td> <td align='right'> " ?rechazo "</td>  </tr>" crlf)
+
   ( printout t tab "                                           -------------------- " crlf)
   ( printout t tab "                                         (=) " ?nvalor crlf)
+  ( printout k "<tr><td></td><td> </td><td></td> <td> (=) </td> <td align='right'> " ?nvalor "</td><td></td><td> " ?iva "</td> </tr>" crlf)
 
   (if (< (abs  (- ?nvalor ?iva)) 2)  then
-     (printout t "                    PASS ok"  crlf)
+     (printout t "                    PASA OK"  crlf)
+    ( printout k "<tr style='background-color:lightgreen'> <td> </td> <td></td><td></td><td> </td> <td></td><td></td> <td></td><td> PASA </td> </tr>" crlf)
     else
-     (printout t "                    FAIL  "  crlf)
+     (printout t "                    NO PASA  "  crlf)
+    ( printout k "<tr style='background-color:crimson'> <td> </td> <td> </td> <td> </td><td></td><td></td><td></td><td><td></td><td></td><td> NO PASA </td> </tr>" crlf)
+
   )
 
   ( printout t tab (abs (- ?nvalor ?iva)) crlf)
   ( printout t tab "-------------------------------------" crlf)
   ( printout t "-----------------------------------------------" crlf)
-
+  ( printout k "" crlf)
+  ( printout k "</table>" crlf)
 )
 
 
