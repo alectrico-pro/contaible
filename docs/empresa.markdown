@@ -30,9 +30,9 @@ permalink: /alectrico/
 
 # luidacion remuneraciones
 
-[enero](/alectrico-2022/enero/remuneraciones.html)|[febrero](/alectrico-2022/febrero/remuneraciones.html)|[marzo](/alectrico-2022/marzo-remuneraciones.html)|[abril](/alectrico-2022/codigos-f29-abril.html)|[mayo](/alectrico-2022/codigos-f29-mayo.html)|[junio](/alectrico-2022/codigos-f29-junio.html)
+[enero](/alectrico-2022/enero-remuneraciones.html)|[febrero](/alectrico-2022/febrero-remuneraciones.html)|[marzo](/alectrico-2022/marzo-remuneraciones.html)|[abril](/alectrico-2022/abril-remuneraciones.html)|[mayo](/alectrico-2022/mayo-remuneraciones.html)|[junio](/alectrico-2022/junio-remuneraciones.html)
 
-[julio](/alectrico-2022/codigos-f29-julio.html)|[agosto](/alectrico-2022/codigos-f29-agosto.html)|[septiembre](/alectrico-2022/codigos-f29-septiembre.html)|[octubre](/alectrico-2022/codigos-f29-octubre.html)|[noviembre](/alectrico-2022/codigos-f29-noviembre.html)|[diciembre](/alectrico-2022/codigos-f29-diciembre.html)
+[julio](/alectrico-2022/julio-remuneraciones.html)|[agosto](/alectrico-2022/agosto-remuneraciones.html)|[septiembre](/alectrico-2022/septiembre-remuneraciones.html)|[octubre](/alectrico-2022/octubre-remuneraciones.html)|[noviembre](/alectrico-2022/noviembre-remuneraciones.html)|[diciembre](/alectrico-2022/diciembre-remuneraciones.html)
 
 
 

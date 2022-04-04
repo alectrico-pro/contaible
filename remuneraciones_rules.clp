@@ -37,7 +37,6 @@
 ;esto genera un markdown para que jekyll lo publique en el blog necios
 (defrule inicio-kindle-k-remuneraciones-rules
    ( declare (salience 10000))
-   ( no)
    ( empresa (nombre ?empresa))
 
   =>
