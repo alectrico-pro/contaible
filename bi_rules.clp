@@ -86,11 +86,15 @@
   (printout t "Partida sin registro de revisión: " ?numero crlf)
 )
 
+
 (defrule formulario-f22-encabezado
   (declare (salience 20))
  =>
+  (printout k "<table>" crlf)
   (printout t crlf crlf F22 crlf)
+  
   (printout t Codigo tab valor tab saldo tab iva tab resultado tab cuenta crlf)
+  (printout k "<thead><tr> <th> " Código "</th><th> " Valor "</th><th> " Saldo " </th><th> " Resultado "</th><th> " Cuenta "</th></tr> </thead>  " crlf)
   ( assert (hacer-f22))
 )
 
@@ -160,12 +164,18 @@
   ( bind ?ndebe  (+ ?debe ?rechazo))
   ( modify ?c1 (codigo ?codigo) (valor ?nvalor))
   ( retract ?c2)
+  ( printout k "<table>" crlf)
   ( printout t "-----------------------------------------------" crlf)
   ( printout t tab tab codigo tab valor tab rechazo crlf)
+  ( printout k "<tr><td></td><td>código </td><td> valor </td> <td> ajuste </td> </tr>" crlf)
   ( printout t tab "1: " tab ?codigo tab ?valor tab ?rechazo crlf)
+  ( printout k "<tr> <td> 1: </td> <td> " ?codigo " </td><td> " ?valor "</td><td>" ?rechazo "</td></tr>" crlf)
   ( printout t tab "cuenta " ?cuenta " debe: " ?debe " haber: " ?haber crlf)
+  ( printout k "<tr> <td> cuenta: </td> <td> " ?cuenta "</td><td> " ?debe "</td> <td> " ?haber "</td><td> </tr> " crlf)
   ( printout t tab "Será ajustado el saldo de la cuenta para aceptar rechazos informados por los códigos." crlf)
   ( printout t tab (- ?haber ?rechazo) crlf)
+  ( printout k "<tr> <td> " (- ?haber ?rechazo)  "</td></tr> " crlf)
+  ( printout k "</table> " crlf)
   ( printout t tab "-------------------------------------" crlf)
   ( printout t "-----------------------------------------------" crlf)
 )
@@ -254,7 +264,8 @@
      ( printout k "<tr style='background-color:crimson' > <td></td><td></td><td></td><td></td><td></td><td>   NO PASA </td></tr> " crlf)
   )
   ( printout t "-----------------------------------------------" crlf)
-  ( printout k "</thead></table> " crlf)
+  ( printout k "</thead>" crlf)
+ ;able> " crlf)
 )
 
 
@@ -325,7 +336,7 @@
   ( printout t tab "-------------------------------------" crlf)
   ( printout t "-----------------------------------------------" crlf)
   ( printout k "" crlf)
-  ( printout k "</table>" crlf)
+ ; ( printout k "</table>" crlf)
 )
 
 
@@ -415,6 +426,7 @@
     else
    (bind ?resultado 'fail-d')
   )
+  (printout k "<tr><td>"  ?codigo "</td><td>"  ?valor  "</td><td>" ?debe "</td><td>" ?iva-de-saldo "</td><td>" ?resultado "</td><td>" ?cuenta  "</td></tr>" crlf)
   (printout t ?codigo tab ?valor tab ?debe tab ?iva-de-saldo tab ?resultado tab ?cuenta  crlf) 
   (assert (codigo-f22 (codigo ?codigo) (valor ?valor) (cuenta ?cuenta) (saldo ?debe) (iva ?iva-de-saldo)))
 
@@ -437,6 +449,8 @@
    (bind ?resultado 'fail-a')
   )
   (printout t  ?codigo tab ?valor tab ?haber tab ?iva-de-saldo tab ?resultado  tab ?cuenta crlf)
+  (printout k "<tr><td>"  ?codigo "</td><td>"  ?valor  "</td><td>" ?haber "</td><td>" ?iva-de-saldo "</td><td>" ?resultado "</td><td>" ?cuenta  "</td></tr>" crlf)
+
   (assert (codigo-f22 (codigo ?codigo) (valor ?valor) (cuenta ?cuenta) (saldo ?haber) (iva ?iva-de-saldo)))
 )
 
@@ -463,6 +477,7 @@
 (defrule formulario-f22-pie
   (declare (salience 17))
  =>
+  (printout k "</table>" crlf)
   (printout t "-----------------------------------------------" crlf)  
   (printout t crlf crlf crlf)
 )
