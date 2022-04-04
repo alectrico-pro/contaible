@@ -70,8 +70,10 @@
   ( exists  ( cuenta (nombre ?cuenta)))
   =>
    (printout t "F22s----------LISTA-------------" crlf)
+   (printout k "<table><thead> <tr> <th> F22s LISTA </th></tr></thead> " crlf)
    (do-for-all-facts ((?f f29-f22))  ( eq ?codigo ?f:codigo-f29)
      (printout t ?f:codigo-f29 tab ?valor tab (* ?deber 0.19) tab  (* ?acreedor 0.19) tab ?f:cuenta crlf)
+     (printout k "<tr> <td> " ?f:codigo-f29 " </td><td> " ?valor  " </td><td> " (* ?deber 0.19) " </td><td> "  (* ?acreedor 0.19) "</td><td>"  ?f:cuenta "</td></tr>" crlf)
    )
    (printout t "---------------------------" crlf)
 )
@@ -94,7 +96,7 @@
   (printout t crlf crlf F22 crlf)
   
   (printout t Codigo tab valor tab saldo tab iva tab resultado tab cuenta crlf)
-  (printout k "<thead><tr> <th> " Código "</th><th> " Valor "</th><th> " Saldo " </th><th> " Resultado "</th><th> " Cuenta "</th></tr> </thead>  " crlf)
+  (printout k "<thead><tr> <th> " Código "</th><th> " Valor "</th><th> " Saldo " </th><th> " IVA "</th> <th> " Resultado "</th><th> " Cuenta "</th></tr> </thead>  " crlf)
   ( assert (hacer-f22))
 )
 
@@ -128,13 +130,16 @@
   ( modify ?c1 (codigo ?codigo) (valor ?nvalor))
   ( retract ?c2)
   ( printout t "Consolidando =" tab ?codigo " Valor: " ?nvalor  crlf)
+  ( printout k "<table>" crlf)
+  ( printout k "<thead> <tr> <th> Consolidando  </th><th>" ?codigo "</th> <th> " ?nvalor " </th> </tr> </thead" crlf)
   ( printout t tab "valor: " ?valor tab " Valor2 " ?valor2 crlf)
   ( printout t tab tab codigo tab valor debe tab haber tab cuenta crlf)
   ( printout t tab "1: " tab ?codigo tab ?valor tab ?debe tab ?haber tab ?cuenta tab crlf)
   ( printout t tab "2: " tab ?codigo2 tab ?valor2 tab ?debe2 tab ?haber2 tab ?cuenta2 tab crlf)
   ( printout t tab "-------------------------------------" crlf)
   ( printout t tab tab tab ?nvalor tab ?ndebe tab ?nhaber tab "dif: " (abs (- ?nvalor (+ ?ndebe ?nhaber))) crlf)
-  ( printout t "Diferencia de cuenta acreedora es: " (abs (- ?nvalor (* 0.19 ?debe))) crlf)
+  ( printout t "Diferencia de cuenta acreedora es: " (abs (- ?nvalor (* 0.19 ?debe))) crlf)}
+  
 )
 
 
@@ -422,11 +427,13 @@
   ( bind ?iva-de-saldo (round (* ?debe 0.19)))
   ( if (eq ?iva-de-saldo ?valor)
     then
-   (bind ?resultado 'pass-d')
+   (bind ?resultado 'PASA OK')
+   (printout k "<tr><td>"  ?codigo "</td><td>"  ?valor  "</td><td>" ?debe "</td><td>" ?iva-de-saldo "</td><td style='background-color:lightgreen'>" ?resultado "</td><td>" ?cuenta  "</td></tr>" crlf)
     else
-   (bind ?resultado 'fail-d')
+   (bind ?resultado 'NO PASA')
+   (printout k "<tr><td>"  ?codigo "</td><td>"  ?valor  "</td><td>" ?debe "</td><td>" ?iva-de-saldo "</td><td>" ?resultado "</td><td>" ?cuenta  "</td></tr>" crlf)
   )
-  (printout k "<tr><td>"  ?codigo "</td><td>"  ?valor  "</td><td>" ?debe "</td><td>" ?iva-de-saldo "</td><td>" ?resultado "</td><td>" ?cuenta  "</td></tr>" crlf)
+
   (printout t ?codigo tab ?valor tab ?debe tab ?iva-de-saldo tab ?resultado tab ?cuenta  crlf) 
   (assert (codigo-f22 (codigo ?codigo) (valor ?valor) (cuenta ?cuenta) (saldo ?debe) (iva ?iva-de-saldo)))
 
@@ -444,13 +451,14 @@
   ( bind ?iva-de-saldo (round (* ?haber 0.19)))
   ( if (< (abs (- ?iva-de-saldo ?valor) ) 2)
     then 
-   (bind ?resultado 'pass-a')
+   (bind ?resultado 'PASA OK')
+   (printout k "<tr><td>"  ?codigo "</td><td>"  ?valor  "</td><td>" ?haber "</td><td>" ?iva-de-saldo "</td><td style='background-color:lightgreen'>" ?resultado "</td><td>" ?cuenta  "</td></tr>" crlf)
     else
-   (bind ?resultado 'fail-a')
+   (bind ?resultado 'NO PASA')
+   (printout k "<tr><td>"  ?codigo "</td><td>"  ?valor  "</td><td>" ?haber "</td><td>" ?iva-de-saldo "</td><td>" ?resultado "</td><td>" ?cuenta  "</td></tr>" crlf)
   )
-  (printout t  ?codigo tab ?valor tab ?haber tab ?iva-de-saldo tab ?resultado  tab ?cuenta crlf)
-  (printout k "<tr><td>"  ?codigo "</td><td>"  ?valor  "</td><td>" ?haber "</td><td>" ?iva-de-saldo "</td><td>" ?resultado "</td><td>" ?cuenta  "</td></tr>" crlf)
 
+  (printout t  ?codigo tab ?valor tab ?haber tab ?iva-de-saldo tab ?resultado  tab ?cuenta crlf)
   (assert (codigo-f22 (codigo ?codigo) (valor ?valor) (cuenta ?cuenta) (saldo ?haber) (iva ?iva-de-saldo)))
 )
 
