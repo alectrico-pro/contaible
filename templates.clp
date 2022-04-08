@@ -111,6 +111,7 @@
  (slot origen-de-subcuentas )
  (slot empresa-seleccionada)
  (slot imprimir-detalles)
+ (slot cargar-imagenes-de-dte (default true))
  (slot inspect-f29-code)
 )
 

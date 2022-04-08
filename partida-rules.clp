@@ -509,6 +509,7 @@
 
   ( test (>= (to_serial_date ?top ?mes_top ?ano_top) (to_serial_date ?dia ?mes ?ano)))
   ( not (formulario-f29 (partida ?numero)))
+  ( selecciones (cargar-imagenes-de-dte ?cargar-imagenes-de-dte))
 
  =>
   ( retract ?fila )
@@ -539,7 +540,7 @@
     (  printout k "<tr> <td colspan='7'>efectuado a " ?proveedor " </td> </tr>" crlf )
   )
   ( printout k "<tr><td colspan = '8'> " ?actividad "</td> </tr>" crlf)
-  ( if (neq nil ?archivo) then
+  ( if (and (eq true ?cargar-imagenes-de-dte) (neq nil ?archivo)) then
    ( printout k "<tr style='background-color: aliceblue'> <td colspan = '8'> <img src='" ?archivo "'></td> </tr>" crlf)
   )
   ( printout k "</tbody>" crlf)

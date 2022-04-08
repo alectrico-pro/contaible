@@ -4,6 +4,7 @@ FROM cupercupu/clipspy AS build
 #oputput from contabilidad.py
 RUN mkdir /templates
 RUN mkdir /doc
+RUN mkdir /doc/necios-2021
 RUN mkdir /doc/alectrico-2021
 RUN mkdir /doc/alectrico-2022
 RUN mkdir /doc/_posts
@@ -13,6 +14,11 @@ RUN mkdir /doc/_data
 #input to contabilidad.py
 COPY *.bat                    ./
 COPY *.clp                    ./
+
+COPY necios-2021-facts.txt              ./
+COPY necios-2021-revisiones.txt         ./
+COPY necios-2021-revisiones-cuentas.txt ./
+
 
 COPY alectrico-2021-facts.txt              ./
 COPY alectrico-2021-revisiones.txt         ./

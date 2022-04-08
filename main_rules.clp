@@ -158,12 +158,42 @@
    ;probando en clips shell 6.4
 
   ;adelantando resultado-kindle para evitar que el proceso de liquidacion desarme los subtotales
-  ( focus PEDIDO TICKET PRIMITIVA ACTIVIDAD PRIMITIVA MENSUAL PRIMITIVA IVA PAGAR VALOR_ACTIVOS PRIMITIVA ECUACION PARTIDA LIBRO-MAYOR TOTAL RESULTADO-SII COMPROBACION FINANCIERO RECUADRO AJUSTE INVENTARIO LIQUIDACION INVENTARIO_FINAL RESULTADO-KINDLE TA TOTALA COMPROBACIONB AJUSTEB TOTALB TRIBUTARIO RESULTADO AJUSTEC TOTALC FINAL AJUSTE SUBCUENTA CCM RCV REMUNERACIONES BI)
+; ( focus PEDIDO TICKET PRIMITIVA ACTIVIDAD PRIMITIVA MENSUAL PRIMITIVA IVA PAGAR VALOR_ACTIVOS PRIMITIVA ECUACION PARTIDA LIBRO-MAYOR TOTAL RESULTADO-SII COMPROBACION FINANCIERO RECUADRO AJUSTE INVENTARIO LIQUIDACION INVENTARIO_FINAL RESULTADO-KINDLE TA TOTALA COMPROBACIONB AJUSTEB TOTALB TRIBUTARIO RESULTADO AJUSTEC TOTALC FINAL AJUSTE SUBCUENTA CCM RCV REMUNERACIONES BI)
 
 
 
   ;Eliminando inventari-final pues solamente se usan sus primitivas de cargo y abono, pero no es exclusivo para inventarios.
 ;  ( focus PEDIDO TICKET PRIMITIVA ACTIVIDAD PRIMITIVA MENSUAL PRIMITIVA IVA PAGAR VALOR_ACTIVOS PRIMITIVA ECUACION PARTIDA LIBRO-MAYOR TOTAL COMPROBACION FINANCIERO RECUADRO AJUSTE INVENTARIO LIQUIDACION TA TOTALA COMPROBACIONB RESULTADO RESULTADO-KINDLE AJUSTEB TOTALB TRIBUTARIO RESULTADO AJUSTEC TOTALC FINAL AJUSTE SUBCUENTA CCM RCV REMUNERACIONES )
+
+  ;PEDIDO consolida las partias para un pedido de un cliente
+  ;TICKET ordenas las partidas
+  ;PRIMITIVA contiene las reglas básicas
+  ;MENSUAL calcula los impuestos mensuales y soporta el F29
+  ;IVA y PAGAR trabjan con mensual
+  ;VALOR_ACTIVOS es un registro permanente de los activos de la empresa
+  ;ECUACION, trata de establecer la igualdas contable
+  ;PARTIDA, muestra las partidas
+  ;LIBRO-MAYOR, muestra el libro mayor
+  ;COMPROBACION, muestra sumas de comprobacion
+  ;AJUSTEB,  ajuste de cuentas para evitar mostrar subtotales de cuentas nominativas o desquilibrar los estados
+  ;INVENTARIO, genera el inventario físico a partir del compras de inventario
+  ;LIQUIDACION, genera liquidaciones financieras y fiscales
+  ;INVENTARIO_FINAL, valor el inventario final
+  ;REGULATADO-KINDLE, muestra el detalle de las cuentas que leugo serán mostadas en un estado de resultados
+  ;TA, genera las cuentas en T
+  ;TOTAlA, genar los totales mostrados en los estados
+  ;COMPROBACIONb, comprobación  luego de las liquidaciones
+  ;TOTALb, total luego de las liquidacions
+  ;ESTADO DE RESULTADO
+  ;AJUSTEC, TOTALC son procedimientos estándar
+  ;SUBCUENTA, muestra las subcuentas
+  ;CCM, exporta código para el sistema de contabilidad completa
+  ;RCV, exporta código para REgistro de Compra Ventas
+  ;REMUNERACIONES, genera las hojas de remuneraciones y liquidaciones
+  ;BI muestra algunas comprobaciones de auditoría, con fuerza en el asistente propyme y en el F22 del año siguiente al del ejercicio
+ 
+
+  ( focus PEDIDO TICKET PRIMITIVA ACTIVIDAD PRIMITIVA MENSUAL PRIMITIVA IVA PAGAR VALOR_ACTIVOS PRIMITIVA ECUACION PARTIDA LIBRO-MAYOR TOTAL RESULTADO-SII COMPROBACION FINANCIERO RECUADRO AJUSTE INVENTARIO LIQUIDACION INVENTARIO_FINAL RESULTADO-KINDLE TA TOTALA COMPROBACIONB AJUSTEB TOTALB TRIBUTARIO RESULTADO AJUSTEC TOTALC FINAL AJUSTE SUBCUENTA CCM RCV REMUNERACIONES BI)
 
 
    ( printout t "1. Usar el asistente csm sii f29" crlf "2. Comparar con asistente f29 alectrico" crlf "3. Ver si hay saldo debito y restarlo a saldo credito, hay un procedimiento para ello: pago-de-via." crlf "4. Lo que quede de saldo de iva-credito se coloca en código 77, hay un procedimiento: remanente-iva se debe coloar el iva-credito en este procedimiento" crlf "5. Pagar los ppm si hay monto imponible, se hace con procedimiento pago-ppm" crlf "6. Pagar las retenciones pendientes, se hace junto con la declarion y pago de f29" crlf "7. Cuando se declare f29 anotar los giros como gastos, o sea: anotar un movimiento en ccm." crlf "8. Anotar las multas que se pagan a sii y pasarlas como gastos: o sea, crar un movimiento en ccm" crlf "9. Estar atento a los pagos de proveedores extranjeros, las facturas deben guardarse en directorio de contabilidad" crlf "10. Ir a factura DTE históricos y bajar los pdf de cada DTE y luego guardarlo en el directorio de contabilidad" crlf "11. Revisar que el saldo de iva-credito cuadre con alectrico y los estados de ccm sii y con el código 77 de remanente de iva mes siguiente" crlf "12. Averiguar como se asientan los pagos de la cuenta de retenciones por pagar, creo que no se tocan" crlf "14. Ir a Cartola fiscal del tgr y revisar que no haya deudas fiscales pendientes, a veces las pasarelas dejan la cagá y los pagos aparecen por allá sin pagar" crlf "15. Agregar las tasas en el archivo de tasas" crlf)
