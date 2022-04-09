@@ -67,6 +67,7 @@ COPY ./assets/            ./assets/
 #estos resultan de contabilidad.py
 COPY --from=build ./doc/alectrico-2021/ ./alectrico-2021/
 COPY --from=build ./doc/alectrico-2022/ ./alectrico-2022/
+COPY --from=build ./doc/necios-2021/    ./necios-2021/
 
 
 
@@ -81,7 +82,10 @@ COPY --from=build ./doc/*.markdown      ./
 #Estos son manuales
 #En alectrico-2021 se guardan los archivos que se son referidos 
 #dese las paginas del servidor que pone en funcionamiento jekyll
-COPY ./alectrico-2021/ ./
+#OPY ./alectrico-2021/ ./
+#COPY ./alectrico-2022/ ./
+
+#OPY ./necios-2021/    ./
 COPY ./_config.yml     ./
 COPY ./assets/         ./assets/
 COPY ./nota/           ./nota/

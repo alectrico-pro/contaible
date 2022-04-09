@@ -6,7 +6,7 @@ highlightedItems.forEach(function(userItem) {
 });
 
 
-miTitulo.textContent = 'alectrico SpA. Ejercicio 2021.';
+//miTitulo.textContent = 'alectrico SpA. Ejercicio 2021.';
 // Create our number formatter.
 var formatter = new Intl.NumberFormat('el-ES', {
   style: 'currency',

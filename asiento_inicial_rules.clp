@@ -26,7 +26,7 @@
 (defrule MAIN::seleccion-de-empresa
   (declare (salience 10000))
  =>
-  ( load-facts "selecciones.txt")
+  ( load-facts "selecciones-asiento-inicial.txt")
 )
 
 
@@ -35,8 +35,8 @@
   (selecciones (empresa-seleccionada ?empresa))
 =>
 ;  (halt)
-  ;( printout t "¿ Para qué empresa requiere la contabilidad ?"  crlf)
-   ;( bind ?empresa (read))
+ ; ( printout t "¿ Para qué empresa requiere la contabilidad ?"  crlf)
+ ;  ( bind ?empresa (read))
   
    ;( bind ?empresa logica-contable)
    ;( bind ?empresa alectrico)
@@ -45,7 +45,7 @@
  ;  ( load-facts "empresa-seleccionada.txt")
 
 ;   ( bind ?empresa 1724 )
-   ( printout t crlf crlf "------------- TEST ----------------------" ?empresa crlf crlf crlf)
+   ( printout t crlf crlf "------------- ASIENTO INICIAL ----------------------" ?empresa crlf crlf crlf)
 
 
   ( bind ?archivo (str-cat ?empresa "-revisiones.txt"))
@@ -143,10 +143,10 @@
 
 ; ( focus TICKET PRIMITIVA ACTIVIDAD PRIMITIVA PARTIDA VALOR_ACTIVOS PRIMITIVA LIBRO-MAYOR TOTAL AJUSTE INVENTARIO LIQUIDACION AJUSTE TA TRIBUTARIO AJUSTEC TOTALC FINAL SUBCUENTA)
 
+  ( focus PEDIDO TICKET PRIMITIVA ACTIVIDAD PRIMITIVA MENSUAL PRIMITIVA IVA PAGAR VALOR_ACTIVOS PRIMITIVA ECUACION LIBRO-MAYOR TOTAL RESULTADO-SII COMPROBACION FINANCIERO RECUADRO AJUSTE INVENTARIO PARTIDA LIQUIDACION  INVENTARIO_FINAL AJUSTE TA TRIBUTARIO AJUSTEC TOTALC FINAL SUBCUENTA CCM RCV REMUNERACIONES BI )
 
-;  ( focus PEDIDO TICKET PRIMITIVA ACTIVIDAD PRIMITIVA MENSUAL PRIMITIVA IVA PAGAR VALOR_ACTIVOS PRIMITIVA ECUACION LIBRO-MAYOR TOTAL RESULTADO-SII COMPROBACION FINANCIERO RECUADRO AJUSTE INVENTARIO PARTIDA LIQUIDACION  INVENTARIO_FINAL AJUSTE TA TRIBUTARIO AJUSTEC TOTALC FINAL SUBCUENTA CCM RCV REMUNERACIONES BI )
 ;   ( focus TICKET PRIMITIVA ACTIVIDAD PRIMITIVA PARTIDA BI )
-   ( focus TICKET PRIMITIVA ACTIVIDAD PRIMITIVA MENSUAL PRIMITIVA IVA PAGAR PRIMITIVA LIBRO-MAYOR TOTAL AJUSTE INVENTARIO PARTIDA LIQUIDACION  INVENTARIO_FINAL AJUSTE TA TRIBUTARIO AJUSTEC  BI )
+;   ( focus TICKET PRIMITIVA ACTIVIDAD PRIMITIVA MENSUAL PRIMITIVA IVA PAGAR PRIMITIVA LIBRO-MAYOR TOTAL AJUSTE INVENTARIO PARTIDA LIQUIDACION  INVENTARIO_FINAL AJUSTE TA TRIBUTARIO AJUSTEC  BI )
 
 
 )

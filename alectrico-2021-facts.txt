@@ -14,7 +14,6 @@
 
 
 
-
 (balance (dia 31) (mes diciembre) (ano 2021))
 
 ;dia 01/01/2021---------- asiento inicial  ----------------

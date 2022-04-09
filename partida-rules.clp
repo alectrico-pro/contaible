@@ -79,7 +79,7 @@
    ( printout k "permalink: /" ?empresa "/libro-diario " crlf)
    ( printout k "layout: page" crlf)
    ( printout k "--- " crlf)
-   ( printout k "<script src='{{ base.url | prepend: site.url }}/assets/main.js'></script>" crlf)
+;   ( printout k "<script src='{{ base.url | prepend: site.url }}/assets/main.js'></script>" crlf)
    ( printout k "" crlf)
    ( printout k "Contabilidad para Necios® usa el siguiente código de colores para este documento." crlf)
    ( printout k "<ul>" crlf)
@@ -674,6 +674,8 @@
 
 )
 
+
+;En adelante: comprobaciones de códigos f29
 ;comprobando el remanente con códigos-> 504+511-538-111=77
 (defrule muestra-codigo-de-formulario-f29-con-acumulacion-504
    ( declare (salience 66))
@@ -797,17 +799,22 @@
 
 )
 
+;Sistema de ticket para mostrar los códigos en orden
 (defrule ordenar-codigos
  =>
   ( bind ?i 1)
-  ( while (< ?i 1000) do
+  ( while (< ?i 1000) do 
     ( assert (codigo-f29 (codigo ?i)))
     ( bind ?i (+ ?i 1))
   )
 )
 
 
+
+;toma los datos del asistente propyme de impuestos interno y lo usa para encontrar la partida que está asocaida a este.
+;los f22 con mes nul son totales globales que han sido obtenidos sumando los totales mensuales de cada código f29
 (defrule muestra-codigo-de-formulario-f22-con-linea-de-documento
+
    ( declare (salience 65))
    ( fila ?numero )
    ( empresa (nombre ?empresa))
@@ -817,6 +824,7 @@
    ?formulario <- ( formulario-f22 (presentado-en-f22 false) (partida ?partida-f29) (codigo ?codigo&:(numberp ?codigo) ) (valor ?valor) (descripcion ?descripcion) (mes ?mes) (ano ?ano) )
    ?f22 <- ( f22 (partida ?numero) (ano ?ano))
    ( f29-f22 (codigo-f29 ?codigo) (linea-f22 ?linea-f22) )
+
   =>
 
    ( modify ?formulario (presentado-en-f22 true) )
@@ -837,7 +845,7 @@
 
 )
 
-
+;encuentra la partida que dió origen a un código f29 y la identifica de acuerdo a si corresponde a transacciones rechazadas
 (defrule codigo-de-partida
    ( declare (salience 65))
    ( fila ?numero )
@@ -862,7 +870,7 @@
 
 )
 
-
+;esto ocurre para los F22 que no 
 (defrule muestra-codigo-de-formulario-f22-sin-linea-de-documento
    ( declare (salience 65))
    ( fila ?numero )
@@ -892,6 +900,7 @@
 
 )
 
+;formato de partida normal
 
 (defrule muestra-libro-mayor-resultados-subcuentas
    ( declare (salience 65))

@@ -409,7 +409,7 @@
   ( modify ?c1 (codigo ?codigo) (valor ?nvalor))
   ( retract ?c2)
   ( printout t "Cambiando " ?codigo " Valor: " ?nvalor  crlf)
-  ( printout t "Valor " ?valor tab " Valor2 " ?valor2 tab (abs (- ?valor ?valor2) crlf)
+  ( printout t "Valor " ?valor tab " Valor2 " ?valor2 tab (abs (- ?valor ?valor2)) crlf)
   ( printout t "Diferencia de cuenta deudor es: " (abs (- ?nvalor (* 0.19 ?debe))) crlf)
 )
 
