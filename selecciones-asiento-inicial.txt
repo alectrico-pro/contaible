@@ -15,13 +15,15 @@
 ;de naturaleza acreedora tendrán que ser de
 ;naturaleza mixta
 ( selecciones
+ (nombre-archivo "necios.html")
+ (un-solo-archivo  true)
  (abonar-deudoras false) 
  (devolver-a-devolucion-sobre-ventas true)
  (ejercicio-anterior     necios-2021)
  (regimen                propyme)
  (incentivo-al-ahorro    true)
  (empresa-seleccionada   necios-2021)
- (imprimir-detalles      true)
+ (imprimir-detalles      false)
  (liquidar               subcuentas) 
  (origen-de-subcuentas   nominativo)
  (inspect-f29-code       111) )

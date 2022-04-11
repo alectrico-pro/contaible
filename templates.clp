@@ -101,6 +101,8 @@
 
 
 (deftemplate selecciones
+ (slot nombre-archivo (default ""))
+ (slot un-solo-archivo (default false))
  (slot abonar-deudoras (default false))
  (slot cargar-acreedoras (default false))
  (slot devolver-a-devolucion-sobre-ventas (default false))
