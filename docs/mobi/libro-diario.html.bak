@@ -1,29 +1,29 @@
 <!DOCTYPE html>
 <html lang="en"><head>
-  <meta charset="utf-8"></meta>
-  <meta http-equiv="X-UA-Compatible" content="IE=edge"></meta>
-  <meta name="viewport" content="width=device-width, initial-scale=1"></meta><!-- Begin Jekyll SEO tag v2.7.1 -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.7.1 -->
 <title>Contaible ¬Æ</title>
-<meta name="generator" content="Jekyll v4.2.0"></meta>
-<meta property="og:title" content="Contaible ¬Æ"></meta>
-<meta property="og:locale" content="en_US"></meta>
-<link rel="canonical" href="www.contaible.cl/necios-2021/libro-diario"></link>
-<meta property="og:url" content="www.contaible.cl/necios-2021/libro-diario"></meta>
-<meta property="og:site_name" content="Contaible ¬Æ"></meta>
-<meta name="twitter:card" content="summary"></meta>
-<meta property="twitter:title" content="Contaible ¬Æ"></meta>
-<script type="application/ld+json"><![CDATA[
-{"@type":"WebPage","url":"www.contaible.cl/necios-2021/libro-diario","headline":"Contaible ¬Æ","@context":"https://schema.org"}]]></script>
+<meta name="generator" content="Jekyll v4.2.0" />
+<meta property="og:title" content="Contaible ¬Æ" />
+<meta property="og:locale" content="en_US" />
+<link rel="canonical" href="www.contaible.cl/necios-2021/libro-diario" />
+<meta property="og:url" content="www.contaible.cl/necios-2021/libro-diario" />
+<meta property="og:site_name" content="Contaible ¬Æ" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Contaible ¬Æ" />
+<script type="application/ld+json">
+{"@type":"WebPage","url":"www.contaible.cl/necios-2021/libro-diario","headline":"Contaible ¬Æ","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
-<link rel="stylesheet" href="/assets/main.css"></link><link type="application/atom+xml" rel="alternate" href="www.contaible.cl/feed.xml" title="Contaible ¬Æ"></link></head>
-<body><a id="start" name="Beginning"/><header class="site-header" role="banner">
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="www.contaible.cl/feed.xml" title="Contaible ¬Æ" /></head>
+<body><header class="site-header" role="banner">
 
   <div class="wrapper"><a class="site-title" rel="author" href="/">Contaible ¬Æ</a><nav class="site-nav">
-        <input type="checkbox" id="nav-trigger" class="nav-trigger"></input>
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
         <label for="nav-trigger">
           <span class="menu-icon">
-            <svg viewbox="0 0 18 15" width="18px" height="15px">
-              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"></path>
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
             </svg>
           </span>
         </label>
@@ -51,10 +51,10 @@
 <li><span style="color: white; background-color: black">[    ]</span> p√©rdida </li>
 <li><span style="background-color: blanchedalmond">[    ]</span> subtotales de la transacci√≥n </li>
 </ul>
-<p style="page-break-before: always;">†</p>
-<p><br></br></p>
+<p style="page-break-before: always;">&nbsp;</p>
+<p><br /></p>
 <p style="color: white; background-color: red">  </p>
-<p><br></br></p>
+<p><br /></p>
 <table id="Partida-1">
 <thead> <th style="background-color: lavender" colspan="6">Partida 1</th></thead>
 <tbody>
@@ -79,10 +79,10 @@
 <tr><td colspan="8"> ajuste</td> </tr>
 </tbody>
 </table>
-<p style="page-break-before: always;">†</p>
-<p><br></br></p>
+<p style="page-break-before: always;">&nbsp;</p>
+<p><br /></p>
 <p style="color: white; background-color: red">  </p>
-<p><br></br></p>
+<p><br /></p>
 <table id="Partida-3">
 <thead> <th style="background-color: lavender" colspan="6">Partida 3</th></thead>
 <tbody>
@@ -99,10 +99,10 @@
 <tr><td colspan="8"> rendir-boletas-sii</td> </tr>
 </tbody>
 </table>
-<p style="page-break-before: always;">†</p>
-<p><br></br></p>
+<p style="page-break-before: always;">&nbsp;</p>
+<p><br /></p>
 <p style="color: white; background-color: red">  </p>
-<p><br></br></p>
+<p><br /></p>
 <table id="Partida-4">
 <thead> <th style="background-color: lavender" colspan="6">Partida 4</th></thead>
 <tbody>
@@ -119,10 +119,10 @@
 <tr><td colspan="8"> rendir-vouchers-afectos-sii</td> </tr>
 </tbody>
 </table>
-<p style="page-break-before: always;">†</p>
-<p><br></br></p>
+<p style="page-break-before: always;">&nbsp;</p>
+<p><br /></p>
 <p style="color: white; background-color: red">  </p>
-<p><br></br></p>
+<p><br /></p>
 <table id="Partida-5">
 <thead> <th style="background-color: lavender" colspan="6">Partida 5</th></thead>
 <tbody>
@@ -136,13 +136,13 @@
 <tr><td colspan="8"> Partida 5: Devoluci√≥n a subcuenta ventas-con-eboleta-exenta por Por la anulacion del monto total de boletas exentas del mes de enero debido a que se refieren a transacciones ya cubiertas por vouchers. mes enero </td></tr>
 <tr> <td colspan="7">efectuado a subcuenta </td> </tr>
 <tr><td colspan="8"> dar-nota-de-credito-emitida-subcuenta-existente</td> </tr>
-<tr style="background-color: aliceblue"> <td colspan="8"> <img src="../nota-de-credito-propia-12.png"></img></td> </tr>
+<tr style="background-color: aliceblue"> <td colspan="8"> <img src="../nota-de-credito-propia-12.png" /></td> </tr>
 </tbody>
 </table>
-<p style="page-break-before: always;">†</p>
-<p><br></br></p>
+<p style="page-break-before: always;">&nbsp;</p>
+<p><br /></p>
 <p style="color: white; background-color: red">  </p>
-<p><br></br></p>
+<p><br /></p>
 <table id="Partida-6">
 <thead> <th style="background-color: lavender" colspan="6">Partida 6</th></thead>
 <tbody>
@@ -156,13 +156,13 @@
 <tr><td colspan="8"> Partida 6: Devoluci√≥n a subcuenta ventas-con-eboleta-exenta por Por la anulacion del monto total de boletas exentas del mes de enero debido a que se refieren a transacciones ya cubiertas por vouchers. mes enero </td></tr>
 <tr> <td colspan="7">efectuado a subcuenta </td> </tr>
 <tr><td colspan="8"> dar-nota-de-credito-emitida-subcuenta-existente</td> </tr>
-<tr style="background-color: aliceblue"> <td colspan="8"> <img src="../nota-de-credito-propia-13.png"></img></td> </tr>
+<tr style="background-color: aliceblue"> <td colspan="8"> <img src="../nota-de-credito-propia-13.png" /></td> </tr>
 </tbody>
 </table>
-<p style="page-break-before: always;">†</p>
-<p><br></br></p>
+<p style="page-break-before: always;">&nbsp;</p>
+<p><br /></p>
 <p style="color: white; background-color: red">  </p>
-<p><br></br></p>
+<p><br /></p>
 <table id="Partida-7">
 <thead> <th style="background-color: lavender" colspan="6">Partida 7</th></thead>
 <tbody>
@@ -177,13 +177,13 @@
 <tr><td colspan="8"> Partida 7: Devoluci√≥n a subcuenta ventas-con-eboleta-afecta por Por la anulacion del monto total de la boleta afecta con folio 7 del 13 de enero. Se refiere a una transaccion ya cubiertas por un voucher. mes enero </td></tr>
 <tr> <td colspan="7">efectuado a subcuenta </td> </tr>
 <tr><td colspan="8"> dar-nota-de-credito-emitida-subcuenta-existente</td> </tr>
-<tr style="background-color: aliceblue"> <td colspan="8"> <img src="../nota-de-credito-propia-14.png"></img></td> </tr>
+<tr style="background-color: aliceblue"> <td colspan="8"> <img src="../nota-de-credito-propia-14.png" /></td> </tr>
 </tbody>
 </table>
-<p style="page-break-before: always;">†</p>
-<p><br></br></p>
+<p style="page-break-before: always;">&nbsp;</p>
+<p><br /></p>
 <p style="color: white; background-color: red">  </p>
-<p><br></br></p>
+<p><br /></p>
 <table id="Partida-8">
 <thead> <th style="background-color: lavender" colspan="6">Partida 8</th></thead>
 <tbody>
@@ -198,13 +198,13 @@
 <tr><td colspan="8"> Partida 8: Por Costo Directo de Ventas: Comisi√≥n diciembre por pagos en pasarela KHIPU </td></tr>
 <tr> <td colspan="7">efectuado a khipu </td> </tr>
 <tr><td colspan="8"> costar-directo-ventas</td> </tr>
-<tr style="background-color: aliceblue"> <td colspan="8"> <img src="../factura-afecta-khipu-29457.png"></img></td> </tr>
+<tr style="background-color: aliceblue"> <td colspan="8"> <img src="../factura-afecta-khipu-29457.png" /></td> </tr>
 </tbody>
 </table>
-<p style="page-break-before: always;">†</p>
-<p><br></br></p>
+<p style="page-break-before: always;">&nbsp;</p>
+<p><br /></p>
 <p style="color: white; background-color: red">  </p>
-<p><br></br></p>
+<p><br /></p>
 <table id="Partida-9">
 <thead> <th style="background-color: lavender" colspan="6">Partida 9</th></thead>
 <tbody>
@@ -219,13 +219,13 @@
 <tr><td colspan="8"> Partida 9: Por Costo Directo de Ventas: Comisi√≥n Pasarela diciembre Transbank </td></tr>
 <tr> <td colspan="7">efectuado a transbank </td> </tr>
 <tr><td colspan="8"> costar-directo-ventas</td> </tr>
-<tr style="background-color: aliceblue"> <td colspan="8"> <img src="../factura-afecta-transbank-35258718.png"></img></td> </tr>
+<tr style="background-color: aliceblue"> <td colspan="8"> <img src="../factura-afecta-transbank-35258718.png" /></td> </tr>
 </tbody>
 </table>
-<p style="page-break-before: always;">†</p>
-<p><br></br></p>
+<p style="page-break-before: always;">&nbsp;</p>
+<p><br /></p>
 <p style="color: white; background-color: red">  </p>
-<p><br></br></p>
+<p><br /></p>
 <table id="Partida-10">
 <thead> <th style="background-color: lavender" colspan="6">Partida 10</th></thead>
 <tbody>
@@ -242,13 +242,13 @@
 <tr><td colspan="8"> Partida 10: Por compra de 1 meson de cocina a easy </td></tr>
 <tr> <td colspan="7">efectuado a easy </td> </tr>
 <tr><td colspan="8"> comprar-inventario</td> </tr>
-<tr style="background-color: aliceblue"> <td colspan="8"> <img src="../factura-afecta-easy-23667281.png"></img></td> </tr>
+<tr style="background-color: aliceblue"> <td colspan="8"> <img src="../factura-afecta-easy-23667281.png" /></td> </tr>
 </tbody>
 </table>
-<p style="page-break-before: always;">†</p>
-<p><br></br></p>
+<p style="page-break-before: always;">&nbsp;</p>
+<p><br /></p>
 <p style="color: white; background-color: red">  </p>
-<p><br></br></p>
+<p><br /></p>
 <table id="Partida-12">
 <thead> <th style="background-color: lavender" colspan="6">Partida 12</th></thead>
 <tbody>
@@ -265,13 +265,13 @@
 <tr><td colspan="8"> Partida 12: Por compra de materiales el√©ctricos a Sodimac </td></tr>
 <tr> <td colspan="7">efectuado a sodimac </td> </tr>
 <tr><td colspan="8"> comprar-inventario</td> </tr>
-<tr style="background-color: aliceblue"> <td colspan="8"> <img src="../factura-afecta-sodimac-109127578.png"></img></td> </tr>
+<tr style="background-color: aliceblue"> <td colspan="8"> <img src="../factura-afecta-sodimac-109127578.png" /></td> </tr>
 </tbody>
 </table>
-<p style="page-break-before: always;">†</p>
-<p><br></br></p>
+<p style="page-break-before: always;">&nbsp;</p>
+<p><br /></p>
 <p style="color: white; background-color: red">  </p>
-<p><br></br></p>
+<p><br /></p>
 <table id="Partida-13">
 <thead> <th style="background-color: lavender" colspan="6">Partida 13</th></thead>
 <tbody>
@@ -286,13 +286,13 @@
 <tr><td colspan="8"> Partida 13: Por compra de taladro inal√°mbrico DeWalt a Sodimac </td></tr>
 <tr> <td colspan="7">efectuado a sodimac </td> </tr>
 <tr><td colspan="8"> comprar-activos-fijos-al-contado</td> </tr>
-<tr style="background-color: aliceblue"> <td colspan="8"> <img src="../factura-afecta-sodimac-109127577.png"></img></td> </tr>
+<tr style="background-color: aliceblue"> <td colspan="8"> <img src="../factura-afecta-sodimac-109127577.png" /></td> </tr>
 </tbody>
 </table>
-<p style="page-break-before: always;">†</p>
-<p><br></br></p>
+<p style="page-break-before: always;">&nbsp;</p>
+<p><br /></p>
 <p style="color: white; background-color: red">  </p>
-<p><br></br></p>
+<p><br /></p>
 <table id="Partida-131">
 <thead> <th style="background-color: lavender" colspan="6">Partida 131</th></thead>
 <tbody>
@@ -309,10 +309,10 @@
 <tr><td colspan="8"> amortizacion</td> </tr>
 </tbody>
 </table>
-<p style="page-break-before: always;">†</p>
-<p><br></br></p>
+<p style="page-break-before: always;">&nbsp;</p>
+<p><br /></p>
 <p style="color: white; background-color: red">  </p>
-<p><br></br></p>
+<p><br /></p>
 <table id="Partida-14">
 <thead> <th style="background-color: lavender" colspan="6">Partida 14</th></thead>
 <tbody>
@@ -329,13 +329,13 @@
 <tr><td colspan="8"> Partida 14: Por compra 2 interruptores y 1 guantes a Easy </td></tr>
 <tr> <td colspan="7">efectuado a easy </td> </tr>
 <tr><td colspan="8"> comprar-inventario</td> </tr>
-<tr style="background-color: aliceblue"> <td colspan="8"> <img src="../factura-afecta-easy-23342872.png"></img></td> </tr>
+<tr style="background-color: aliceblue"> <td colspan="8"> <img src="../factura-afecta-easy-23342872.png" /></td> </tr>
 </tbody>
 </table>
-<p style="page-break-before: always;">†</p>
-<p><br></br></p>
+<p style="page-break-before: always;">&nbsp;</p>
+<p><br /></p>
 <p style="color: white; background-color: red">  </p>
-<p><br></br></p>
+<p><br /></p>
 <table id="Partida-14333">
 <thead> <th style="background-color: lavender" colspan="6">Partida 14333</th></thead>
 <tbody>
@@ -354,11 +354,11 @@
 <tr><td colspan="8"> ajustar-iva-contra-credito</td> </tr>
 </tbody>
 </table>
-<p style="page-break-before: always;">†</p>
-<p><br></br> 
-<br></br></p>
+<p style="page-break-before: always;">&nbsp;</p>
+<p><br /> 
+<br /></p>
 <p style="color: white; background-color: red">  </p>
-<p style="page-break-after: always;">†</p>
+<p style="page-break-after: always;">&nbsp;</p>
 <table id="Partida-1040" style="background-color:cornsilk">
 <thead><th colspan="6">Partida 1040</th></thead>
 <thead> <th> </th> <th> C√≥digo </th> <th>  Valor </th> <th> Descripci√≥n </th> </thead>
@@ -390,10 +390,10 @@
 <tr><td colspan="8"> codigos-f29</td> </tr>
 </tbody>
 </table>
-<p style="page-break-before: always;">†</p>
-<p><br></br></p>
+<p style="page-break-before: always;">&nbsp;</p>
+<p><br /></p>
 <p style="color: white; background-color: red">  </p>
-<p><br></br></p>
+<p><br /></p>
 <table id="Partida-1052">
 <thead> <th style="background-color: lavender" colspan="6">Partida 1052</th></thead>
 <tbody>
@@ -465,7 +465,7 @@
 
   <div class="wrapper">
 
-    
+    <h2 class="footer-heading">Contaible ¬Æ</h2>
 
     <div class="footer-col-wrapper">
       <div class="footer-col footer-col-1">

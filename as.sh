@@ -14,7 +14,7 @@ docker run -p 4000:4000 --name st -v $(pwd)/docs:/doc as bash -c 'jekyll build .
 
 #ocker run -p 4000:4000 --volumes-from st -v $(pwd)/docs:/doc as bash -c 'cd /doc && jekyll serve'
 
-docker run --volumes-from st -v $(pwd)/docs:/doc as bash -c 'jekyll build . && cp /doc/_site/necios-2021/libro-diario.html /doc/mobi && cd /doc/mobi && make mobi '
+docker run --volumes-from st -v $(pwd)/docs:/doc as bash -c 'jekyll build . && cp /doc/_site/necios-2021/*.html /doc/mobi/ && cp /doc/_site/assets/* /doc/mobi/assets && cd /doc/mobi && make mobi '
 
 
 

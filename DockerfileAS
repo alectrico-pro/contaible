@@ -87,6 +87,7 @@ COPY --from=build ./doc/*.markdown      ./
 #desde las paginas del servidor que pone en funcionamiento jekyll
 COPY ./_config.yml     ./
 COPY ./assets/         ./assets/
+copy ./assets/         ./mobi/assets/
 COPY ./nota/           ./nota/
 COPY ./nota/           ./necios-2021/
 COPY ./script/         ./mobi/script/
