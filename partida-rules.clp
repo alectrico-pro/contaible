@@ -653,6 +653,11 @@
 )
 
 
+
+
+;------------------------------------------ códigos f29 -------------------------------
+
+
 (defrule muestra-codigo-de-formulario-f29-sin-acumulacion
    ( declare (salience 65))
    ( fila ?numero )
@@ -812,6 +817,23 @@
   )
 )
 
+;toma los datos del asistente propyme de impuestos interno y lo usa para encontrar la partida que está asocaida a este.
+;los f22 con mes nul son totales globales que han sido obtenidos sumando los totales mensuales de cada código f29
+(defrule muestra-codigo-de-formulario-f22-con-linea-de-documento-cierra-tabla
+
+   ( declare (salience 65))
+   ( fila ?numero )
+   ( empresa (nombre ?empresa))
+   ( balance (ano ?ano))
+   ( codigo-f29 (codigo ?codigo))
+   ( not  ( exists ( formulario-f22 (presentado-en-f22 false)  (codigo ?inferior&:( and ( numberp ?inferior )  (> (- ?codigo ?inferior ) 0) )))))
+   (not (exists ( formulario-f22 (presentado-en-f22 false) (partida ?partida-f29) (codigo ?codigo&:(numberp ?codigo) ) (valor ?valor) (descripcion ?descripcion) (mes ?mes) (ano ?ano) )))
+   ?f22 <- ( f22 (partida ?numero) (ano ?ano))
+   ( f29-f22 (codigo-f29 ?codigo) (linea-f22 ?linea-f22) )
+
+  =>
+   ( printout k "<\table><table><tbody>" crlf)
+)
 
 
 ;toma los datos del asistente propyme de impuestos interno y lo usa para encontrar la partida que está asocaida a este.

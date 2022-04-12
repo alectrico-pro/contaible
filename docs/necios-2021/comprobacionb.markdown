@@ -5,7 +5,7 @@ layout: page
 --- 
 
 
-Solo se consideran las transacciones hasta el día 31	enero.
+Solo se consideran las transacciones hasta el día 31	diciembre.
 Cifras en pesos.
 Se han practicado liquidaciones, por lo que NO se muestran cuentas nominales
 <table rules='groups'>
@@ -17,6 +17,6 @@ Se han practicado liquidaciones, por lo que NO se muestran cuentas nominales
 <tbody>
 </tbody>
 <tfoot>
-<tr> <td></td> <td align='right'>348064</td> <td align='right'>444129</td><td> | </td> <td align='right'>85624</td> <td align='right'>181689</td> </tr>
+<tr> <td></td> <td align='right'>4355888</td> <td align='right'>1508157</td><td> | </td> <td align='right'>2989807</td> <td align='right'>142076</td> </tr>
 </tfoot>
 </table>
