@@ -89,6 +89,10 @@ COPY ./_config.yml     ./
 COPY ./assets/         ./assets/
 COPY ./assets/         ./mobi/assets/
 COPY ./libro-diario.ncx.erb  ./mobi
+COPY ./libro-diario.opf ./mobi
+COPY ./mobi.css        ./mobi
+COPY ./kindlegen       ./mobi
+COPY ./cover.jpg       ./mobi
 COPY ./nota/           ./nota/
 COPY ./nota/           ./necios-2021/
 COPY ./script/         ./mobi/script/

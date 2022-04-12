@@ -28,3 +28,7 @@
 !/Makefile
 !/script/
 !/*.ncx.erb
+!/libro-diario.opf
+!/cover.jpg
+!/mobi.css
+!/kindlegen

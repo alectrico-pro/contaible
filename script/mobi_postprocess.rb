@@ -20,6 +20,7 @@ doc.xpath("//div[not(@class)]/table[count(tr)=1]/tr[count(td)=1]/td").each do |n
   topdiv.remove
 end
 
+
 # turn chapter anchors from this:  <h2 class='chapter_name|appendixHead'><i>1. <a name='xx'></a> Chapter Name</i></h2>
 #                      into this:  <a name='xx'><h2><i>1. Chapter Name</i></h2></a>
 
@@ -46,6 +47,14 @@ doc.xpath("//h3/a").each do |node|
 end
 # then remove spurious <a></a> inside <h3>
 doc.xpath("//h3/a").each { |node| node.remove }
+
+
+#Agregado por mí, elminia el menún principal pues contiene hreferencias que no he podido
+#satisfacer y que impiden el trabajo de kindlegen
+doc.xpath("//div[@class='trigger']").each do |node|
+  node.remove
+end
+
 
 # add line numbers to all inline code examples
 doc.xpath("//pre[@class='code']").each do |node|

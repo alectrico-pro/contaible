@@ -438,8 +438,11 @@
             then
              ( printout k  "- [x] Referencia: <a href= '/" ?ejercicio-anterior "/libro-diario#Partida-" ?referencia "'>" ?referencia " </a>" crlf) 
             else
-             ( printout k  "- [x] Referencia: <a href= '/" ?empresa "/libro-diario#Partida-" ?referencia "'>" ?referencia " </a>" crlf))
+             ( printout k  "- [x] Referencia: <a href= '#Partida-" ?referencia "'>" ?referencia " </a>" crlf))
     )
+
+; esto genera problemas en kindlegen     else
+ ;           ( printout k  "- [x] Referencia: <a href= '/" ?empresa "/libro-diario#Partida-" ?referencia "'>" ?referencia " </a>" crlf))
 
 
     ( if (eq ?revisado true) 
