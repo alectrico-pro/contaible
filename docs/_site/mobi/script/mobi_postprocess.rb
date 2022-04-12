@@ -3,7 +3,8 @@
 require 'rubygems'
 require 'nokogiri'
 
-doc = Nokogiri::HTML::Document.parse(IO.read(ARGV[0]), nil, 'ISO-8859-1')
+#doc = Nokogiri::HTML::Document.parse(IO.read(ARGV[0]), nil, 'ISO-8859-1')
+doc = Nokogiri::HTML::Document.parse(IO.read(ARGV[0]), nil, 'utf-8')
 
 
 # last row of actual text TABLES seems to contain a single TD with empty whitespace

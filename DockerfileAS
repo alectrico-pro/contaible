@@ -17,6 +17,7 @@ FROM cupercupu/clipspy AS build
 RUN mkdir /templates
 RUN mkdir /doc
 RUN mkdir /doc/mobi
+RUN mkdir /doc/assets
 RUN mkdir /doc/mobi/script
 RUN mkdir /doc/necios-2021
 RUN mkdir /doc/_posts
@@ -79,6 +80,7 @@ COPY --from=build ./doc/necios-2021/ ./necios-2021/
 COPY --from=build ./doc/*.markdown      ./
 
 
+
 #En algún momento jekyll convertíra los *.markdown
 #a html y los enlazará de acuerdo
 #a los lugares donde espera encontrar los archivos
@@ -99,6 +101,7 @@ COPY ./script/         ./mobi/script/
 COPY ./Makefile        ./mobi
 
 WORKDIR ./
+
 
 #Recordar que doc es mapeado en as.sh al directorio real docs
 VOLUME /doc
