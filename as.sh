@@ -32,7 +32,7 @@ docker run  \
   -v $(pwd)/docs/guacamole:/config \
   --restart unless-stopped \
   lscr.io/linuxserver/calibre \
-  bash -c 'cd /doc/mobi && ebook-convert libro-diario.mobi libro-diario.epub --input-encoding=iso-8859-1' 
+  bash -c 'cd /doc/mobi && ebook-convert libro-diario.mobi libro-diario.epub ' 
 
 
 #docker run -p 4000:4000 --volumes-from st -v $(pwd)/docs:/doc jeky bash -c 'cd /doc && jekyll serve'
