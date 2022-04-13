@@ -15,8 +15,8 @@
 ;de naturaleza acreedora tendrán que ser de
 ;naturaleza mixta
 ( selecciones
- (nombre-archivo "necios.html")
- (un-solo-archivo  true)
+ (archivo-unico-markdown true)
+ (nombre-de-archivo-k "libro-diario" )
  (abonar-deudoras false) 
  (devolver-a-devolucion-sobre-ventas true)
  (ejercicio-anterior     necios-2021)

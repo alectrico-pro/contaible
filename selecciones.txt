@@ -16,7 +16,7 @@
 ;naturaleza mixta
 ( selecciones
  (archivo-unico-markdown true)
- (nombre-de-archivo-k "k" )
+ (nombre-de-archivo-k "./doc/archivo-unico.markdown" )
  (abonar-deudoras false) 
  (devolver-a-devolucion-sobre-ventas true)
  (ejercicio-anterior     alectrico-2021)

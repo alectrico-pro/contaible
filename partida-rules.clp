@@ -63,7 +63,8 @@
 (defrule inicio-kindle-k-partida-rules
    ( declare (salience 10000))
    ( empresa (nombre ?empresa))
-   ( selecciones (archivo-unico-markdown ?archivo-unico))
+   ( selecciones (archivo-unico-markdown ?archivo-unico) (nombre-de-archivo-k ?archivo-nombre))
+
   =>  
 
    ( if (neq nil k) then (close k))
@@ -71,18 +72,30 @@
 
    ( if (eq true ?archivo-unico)
      then
-      ( bind ?archivo (str-cat "./doc/k.markdown"))
+      ( bind ?archivo (str-cat "./doc/" ?empresa "/" ?archivo-nombre ".markdown"))
       ( open ?archivo k "a")
+      ( printout k "--- " crlf)
+
+      ( printout k "permalink: /" ?empresa "/" ?archivo-nombre  crlf)
+      ( printout k "layout: page" crlf)
+      ( printout k "--- " crlf)
      else
       ( bind ?archivo (str-cat "./doc/" ?empresa "/empresa.markdown"))
       ( open ?archivo k "w")
-   )
-
    ( printout k "--- " crlf)
 ;   ( printout k "title: Libro Diaro" crlf)
    ( printout k "permalink: /" ?empresa "/libro-diario " crlf)
    ( printout k "layout: page" crlf)
    ( printout k "--- " crlf)
+
+
+   )
+
+;   ( printout k "--- " crlf)
+;;   ( printout k "title: Libro Diaro" crlf)
+ ;  ( printout k "permalink: /" ?empresa "/libro-diario " crlf)
+;   ( printout k "layout: page" crlf)
+;   ( printout k "--- " crlf)
 ;   ( printout k "<script src='{{ base.url | prepend: site.url }}/assets/main.js'></script>" crlf)
    ( printout k "" crlf)
    ( printout k "Contabilidad para Necios® usa el siguiente código de colores para este documento." crlf)

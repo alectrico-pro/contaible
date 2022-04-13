@@ -126,13 +126,17 @@
 (defrule inicio-kindle-k-tributario-rules
    ( declare (salience 10000))
    ( empresa (nombre ?empresa))
-   ( selecciones (archivo-unico-markdown ?archivo-unico))
+;  ( selecciones (archivo-unico-markdown ?archivo-unico))
+    ( selecciones (archivo-unico-markdown ?archivo-unico) (nombre-de-archivo-k ?archivo-nombre))
 
   =>
 
   ( if (eq true ?archivo-unico)
      then
-      ( bind ?archivo (str-cat "./doc/k.markdown"))
+
+     ;( bind ?archivo (str-cat "./doc/" ?archivo ".markdown"))
+      ( bind ?archivo (str-cat "./doc/" ?empresa "/" ?archivo-nombre ".markdown"))
+
       ( open ?archivo k "a")
      else
       ( bind ?archivo (str-cat "./doc/" ?empresa "/tributario.markdown"))

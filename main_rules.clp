@@ -45,14 +45,15 @@
 
 (defrule creacion-de-archivo-unico-k-markdown
    ( declare (salience 10000))
-   ( selecciones (archivo-unico-markdown true))
+   ( selecciones (archivo-unico-markdown true) (nombre-de-archivo-k ?archivo))
 
   =>
 
-   ( bind ?archivo (str-cat "./doc/k.markdown"))
+;   ( bind ?archivo (str-cat "./doc/" ?archivo ".markdown"))
+   ( bind ?archivo (str-cat "./doc/" ?empresa "/" ?archivo ".markdown"))
    ( open ?archivo g "w")
    ( printout g (random ) crlf)
-   ( printout t "------------------- fin-archivo-unico-markdown ------------" crlf)
+   ( printout t "------------------- fin-archivo-unico-markdown - " tab ?archivo tab "-----------" crlf)
    ( close g)
 )
 

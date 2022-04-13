@@ -1,0 +1,6 @@
+[20220413-04:14:18] [CORE ] main: app started pid 526(0x0000020e)
+[20220413-04:14:18] [INFO ] main: DISPLAY env var set to :11.0
+[20220413-04:14:18] [INFO ] main: using DISPLAY 11
+[20220413-04:14:18] [INFO ] channel_thread_loop: thread start
+[20220413-04:14:19] [INFO ] Socket 12: AF_UNIX connection received
+[20220413-04:14:19] [INFO ] send_init_response_message:
