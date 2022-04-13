@@ -850,6 +850,7 @@
 (defrule muestra-codigo-de-formulario-f22-con-linea-de-documento-cierra-tabla
 
    ( declare (salience 65))
+(no)
    ( fila ?numero )
    ( empresa (nombre ?empresa))
    ( balance (ano ?ano))
@@ -860,24 +861,42 @@
    ( f29-f22 (codigo-f29 ?codigo) (linea-f22 ?linea-f22) )
 
   =>
-   ( printout k "<\tbody><\table><table><tbody>" crlf)
+;   ( printout k "<\tbody><\table><table><tbody>" crlf)
 )
 
 
 
-(defrule f22-inicio
+(defrule asistente-f22-inicio
    ( declare (salience 95))
    ( fila ?numero )
    ( empresa (nombre ?empresa))
    ( balance (ano ?ano))
 ;   ( codigo-f29 (codigo ?codigo))
    ( not (exists ( formulario-f22 (presentado-en-f22 true) (partida ?partida-f29) (codigo ?codigo&:(numberp ?codigo) ) (valor ?valor) (descripcion ?descripcion) (mes ?mes) (ano ?ano) )))
-;   ?f22 <- ( f22 (partida ?numero) (ano ?ano))
+   ?f22 <- ( f22 (partida ?numero) (ano ?ano))
 ;   ( f29-f22 (codigo-f29 ?codigo) (linea-f22 ?linea-f22) )
 
   =>
+   ( printout k "<section>" crlf)
    ( printout k "<h2> Asistente F22 </h2> " crlf)
+   ( printout k "<table><tbody> " crlf)
+
 )
+
+
+(defrule asistente-f22-final
+   ( declare (salience 64))
+   ( fila ?numero )
+   ( empresa (nombre ?empresa))
+   ( balance (ano ?ano))
+   ( not (exists ( formulario-f22 (presentado-en-f22 false) )))
+   ?f22 <- ( f22 (partida ?numero) (ano ?ano))
+
+  =>
+;  ( printout k "<h2> Fin Asistente F22 </h2> " crlf)
+   ( printout k "</section>" crlf)
+)
+
 
 
 ;toma los datos del asistente propyme de impuestos interno y lo usa para encontrar la partida que está asocaida a este.

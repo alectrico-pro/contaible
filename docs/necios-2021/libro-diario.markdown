@@ -230,7 +230,6 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <table id='Partida-1'>
 <thead> <th style='background-color: lavender' colspan='6'>Partida 1</th></thead>
 <tbody>
-<h2> Asistente F22 </h2> 
 <tr><td name='Debe' align='right'>44044</td> <td colspan='7'>materiales#insumos</td> </tr>
 <tr><td name='Debe' align='right'>290000</td> <td colspan='7'>marca-alectrico#intangibles</td> </tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td name='Debe' align='right'> 44044</td> <td name='Haber' align='right'> 0</td> <td colspan='2'> a[inventario] </td> </tr>
@@ -259,7 +258,6 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <table id='Partida-3'>
 <thead> <th style='background-color: lavender' colspan='6'>Partida 3</th></thead>
 <tbody>
-<h2> Asistente F22 </h2> 
 <tr> <td name = 'Debe' align='right' >29412 </td> <td colspan='7'> ventas#ingresos-brutos </td></tr>
 <tr> <td name = 'Debe' align='right' >29412 </td> <td colspan='7'> ventas-con-eboleta-afecta#ventas </td></tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td name='Debe' align='right'> 35000</td> <td name='Haber' align='right'> 0</td> <td colspan='2'> a[banco-estado] </td> </tr>
@@ -280,7 +278,6 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <table id='Partida-4'>
 <thead> <th style='background-color: lavender' colspan='6'>Partida 4</th></thead>
 <tbody>
-<h2> Asistente F22 </h2> 
 <tr> <td name = 'Debe' align='right' >123497 </td> <td colspan='7'> ventas#ingresos-brutos </td></tr>
 <tr> <td name = 'Debe' align='right' >123497 </td> <td colspan='7'> ventas-con-voucher-afecto#ventas </td></tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td name='Debe' align='right'> 146961</td> <td name='Haber' align='right'> 0</td> <td colspan='2'> a[banco-estado] </td> </tr>
@@ -301,7 +298,6 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <table id='Partida-5'>
 <thead> <th style='background-color: lavender' colspan='6'>Partida 5</th></thead>
 <tbody>
-<h2> Asistente F22 </h2> 
 <tr> <td name = 'Debe' align='right' >4505 </td> <td colspan='7'> devolucion-sobre-ventas-exentas#devolucion-sobre-ventas </td></tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td name='Debe' align='right'> 0</td> <td name='Haber' align='right'> 4505</td> <td colspan='2'> a[banco-estado] </td> </tr>
 <tr style='color: white; background-color: black'>  <td> </td> <td align='right'>4505 </td> <td align='right'> 0</td> <td> </td> <td> r[devolucion-sobre-ventas] </td> </tr>
@@ -322,7 +318,6 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <table id='Partida-6'>
 <thead> <th style='background-color: lavender' colspan='6'>Partida 6</th></thead>
 <tbody>
-<h2> Asistente F22 </h2> 
 <tr> <td name = 'Debe' align='right' >45050 </td> <td colspan='7'> devolucion-sobre-ventas-exentas#devolucion-sobre-ventas </td></tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td name='Debe' align='right'> 0</td> <td name='Haber' align='right'> 45050</td> <td colspan='2'> a[banco-estado] </td> </tr>
 <tr style='color: white; background-color: black'>  <td> </td> <td align='right'>45050 </td> <td align='right'> 0</td> <td> </td> <td> r[devolucion-sobre-ventas] </td> </tr>
@@ -343,7 +338,6 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <table id='Partida-7'>
 <thead> <th style='background-color: lavender' colspan='6'>Partida 7</th></thead>
 <tbody>
-<h2> Asistente F22 </h2> 
 <tr> <td name = 'Debe' align='right' >29412 </td> <td colspan='7'> devolucion-sobre-ventas-afectas#devolucion-sobre-ventas </td></tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td name='Debe' align='right'> 0</td> <td name='Haber' align='right'> 35000</td> <td colspan='2'> a[banco-estado] </td> </tr>
 <tr style='color: white; background-color: black'>  <td> </td> <td align='right'>29412 </td> <td align='right'> 0</td> <td> </td> <td> r[devolucion-sobre-ventas] </td> </tr>
@@ -365,7 +359,6 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <table id='Partida-8'>
 <thead> <th style='background-color: lavender' colspan='6'>Partida 8</th></thead>
 <tbody>
-<h2> Asistente F22 </h2> 
 <tr> <td name = 'Debe' align='right' >50 </td> <td colspan='7'> khipu#costos-de-ventas </td></tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td name='Debe' align='right'> 10</td> <td name='Haber' align='right'> 0</td> <td colspan='2'> a[iva-credito] </td> </tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td name='Debe' align='right'> 0</td> <td name='Haber' align='right'> 60</td> <td colspan='2'> a[banco-estado] </td> </tr>
@@ -387,7 +380,6 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <table id='Partida-9'>
 <thead> <th style='background-color: lavender' colspan='6'>Partida 9</th></thead>
 <tbody>
-<h2> Asistente F22 </h2> 
 <tr> <td name = 'Debe' align='right' >1678 </td> <td colspan='7'> transbank#costos-de-ventas </td></tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td name='Debe' align='right'> 319</td> <td name='Haber' align='right'> 0</td> <td colspan='2'> a[iva-credito] </td> </tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td name='Debe' align='right'> 0</td> <td name='Haber' align='right'> 1997</td> <td colspan='2'> a[banco-estado] </td> </tr>
@@ -409,7 +401,6 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <table id='Partida-10'>
 <thead> <th style='background-color: lavender' colspan='6'>Partida 10</th></thead>
 <tbody>
-<h2> Asistente F22 </h2> 
 <tr><td name='Debe' align='right'>39487</td> <td colspan='7'>easy-materiales#materiales</td> </tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td name='Debe' align='right'> 39487</td> <td name='Haber' align='right'> 0</td> <td colspan='2'> a[inventario] </td> </tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td name='Debe' align='right'> 39487</td> <td name='Haber' align='right'> 0</td> <td colspan='2'> a[materiales] </td> </tr>
@@ -433,7 +424,6 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <table id='Partida-12'>
 <thead> <th style='background-color: lavender' colspan='6'>Partida 12</th></thead>
 <tbody>
-<h2> Asistente F22 </h2> 
 <tr><td name='Debe' align='right'>18849</td> <td colspan='7'>sodimac-materiales#materiales</td> </tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td name='Debe' align='right'> 18849</td> <td name='Haber' align='right'> 0</td> <td colspan='2'> a[inventario] </td> </tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td name='Debe' align='right'> 18849</td> <td name='Haber' align='right'> 0</td> <td colspan='2'> a[materiales] </td> </tr>
@@ -457,7 +447,6 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <table id='Partida-13'>
 <thead> <th style='background-color: lavender' colspan='6'>Partida 13</th></thead>
 <tbody>
-<h2> Asistente F22 </h2> 
 <tr style='background-color: lightyellow'>  <td> </td> <td name='Debe' align='right'> 28738</td> <td name='Haber' align='right'> 0</td> <td colspan='2'> a[iva-credito] </td> </tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td name='Debe' align='right'> 0</td> <td name='Haber' align='right'> 179990</td> <td colspan='2'> a[banco-estado] </td> </tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td name='Debe' align='right'> 151252</td> <td name='Haber' align='right'> 0</td> <td colspan='2'> a[herramientas] </td> </tr>
@@ -479,7 +468,6 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <table id='Partida-131'>
 <thead> <th style='background-color: lavender' colspan='6'>Partida 131</th></thead>
 <tbody>
-<h2> Asistente F22 </h2> 
 <tr> <td name = 'Debe' align='right' >2417 </td> <td colspan='7'> amortizacion-intangibles#amortizacion </td></tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td name='Debe' align='right'> 0</td> <td name='Haber' align='right'> 4202</td> <td colspan='2'> a[depreciacion-acumulada-herramientas] </td> </tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td name='Debe' align='right'> 0</td> <td name='Haber' align='right'> 2417</td> <td colspan='2'> a[amortizacion-acumulada-intangibles] </td> </tr>
@@ -500,7 +488,6 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <table id='Partida-14'>
 <thead> <th style='background-color: lavender' colspan='6'>Partida 14</th></thead>
 <tbody>
-<h2> Asistente F22 </h2> 
 <tr><td name='Debe' align='right'>7118</td> <td colspan='7'>easy-materiales#materiales</td> </tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td name='Debe' align='right'> 7118</td> <td name='Haber' align='right'> 0</td> <td colspan='2'> a[inventario] </td> </tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td name='Debe' align='right'> 7118</td> <td name='Haber' align='right'> 0</td> <td colspan='2'> a[materiales] </td> </tr>
@@ -524,7 +511,6 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <table id='Partida-14333'>
 <thead> <th style='background-color: lavender' colspan='6'>Partida 14333</th></thead>
 <tbody>
-<h2> Asistente F22 </h2> 
 <tr> <td name = 'Debe' align='right' >33 </td> <td colspan='7'> ganancia-por-correccion-monetaria#correccion-monetaria </td></tr>
 <tr> <td name = 'Debe' align='right' >33 </td> <td colspan='7'> correccion-monetaria#ingresos-brutos </td></tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td name='Debe' align='right'> 0</td> <td name='Haber' align='right'> 199</td> <td colspan='2'> a[banco-estado] </td> </tr>
@@ -549,7 +535,6 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <thead><th colspan='6'>Partida 1040</th></thead>
 <thead> <th> </th> <th> Código </th> <th>  Valor </th> <th> Descripción </th> </thead>
 <tbody>
-<h2> Asistente F22 </h2> 
  <tr> <td> </td> <td> 511 </td> <td align='right'>  41503 </td> <td> CRED.IVA POR DCTOS. ELECTRONICOS  </td> </tr>
  <tr> <td> </td> <td> 538 </td> <td align='right'>  23464 </td> <td> TOTAL DEBITOS  </td> </tr>
  <tr> <td> </td> <td> 111 </td> <td align='right'>  5588 </td> <td> DEBITOS BOLETAS EMITIDAS  </td> </tr>
@@ -583,7 +568,9 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <table id='Partida-1052'>
 <thead> <th style='background-color: lavender' colspan='6'>Partida 1052</th></thead>
 <tbody>
+<section>
 <h2> Asistente F22 </h2> 
+<table><tbody> 
 </tbody></table><table><tbody> 
  <tr height='50 px' style='font-weight:bold; background-color: lightgreen'> <td>  <a href= '/necios-2021/libro-diario#Partida-1052'>^</a> </td> <td> 110 </td> <td align='right' >  1 </td> <td> Total Anual </td> </tr>
 </tbody></table><table><tbody> 
@@ -597,10 +584,6 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
  <tr height='50 px' style='font-weight:bold; background-color: lightgreen'> <td>  <a href= '/necios-2021/libro-diario#Partida-1052'>^</a> </td> <td> 115 </td> <td align='right' >  0.13 </td> <td> Total Anual </td> </tr>
 </tbody></table><table><tbody> 
  <tr> <td>    <a href= '/necios-2021/libro-diario#Partida-1040'>enero</a>  </td> <td> 115 </td> <td align='right' >  0.13 </td> <td> TASA PPM 1ra Categoria </td> </tr>
-<tbody><table><table><tbody>
-<tbody><table><table><tbody>
-<tbody><table><table><tbody>
-<tbody><table><table><tbody>
  <tr height='50 px' style='font-weight:bold; background-color: lightgreen'> <td>  <a href= '/necios-2021/libro-diario#Partida-1052'>^</a> </td> <td> 510 </td> <td align='right' >  5588 </td> <td> Total Anual </td> </tr>
  <tr style='font-weight:bold; color:white; background-color: red'> <td colspan='4' > LINEA F22: 'Notas de Crédito emitidas por ventas y servicios'. </td> </tr>
  <tr> <td>    <a href= '/necios-2021/libro-diario#Partida-1040'>enero</a>  </td> <td> 510 </td> <td align='right' >  5588 </td> <td> DEBITO N.CREDITO EMITIDAS/Ref FACTURA | NOTA-CREDITO-RECIBIDA-RETENCION-PARCIAL-CAMBIO-SUJETO </td> </tr>
@@ -659,16 +642,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
  <tr style='font-weight:bold; color:white; background-color: red'> <td colspan='4' > LINEA F22: 'Boletas y Comprobante o recibo de pago de transacciones transbank'. </td> </tr>
  <tr> <td>    <a href= '/necios-2021/libro-diario#Partida-1040'>enero</a>  </td> <td> 759 </td> <td align='right' >  23464 </td> <td> DÉB. RECIBO DE PAGO MEDIOS ELECTRÓNICOS </td> </tr>
  <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 759</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-4'> Ir a partida: 4</a> </td> <td colspan='3' align='left' > Por rendición de vouchers de enero de 2021 </td>  </tr>
-<tbody><table><table><tbody>
-<tbody><table><table><tbody>
-<tbody><table><table><tbody>
-<tbody><table><table><tbody>
-<tbody><table><table><tbody>
-<tbody><table><table><tbody>
-<tbody><table><table><tbody>
-<tbody><table><table><tbody>
-<tbody><table><table><tbody>
-<tbody><table><table><tbody>
+</section>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 0 </td> <td style='background-color: blanchedalmond'> 0</td> </tr>
 </tbody><tbody>
 <tr><td colspan='4'> necios SA</td> </tr> 
