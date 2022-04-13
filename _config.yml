@@ -27,7 +27,7 @@ baseurl: ""
 #url: https://alectrico-pro.github.io/contaible/ # the base hostname & protocol for your site, e.g. http://example.com
 url: www.contaible.cl
 #witter_username: 
-github_username:  alectrico-pro
+#github_username:  alectrico-pro
 
 # Build settings
 #heme: jekyll-theme-minimal

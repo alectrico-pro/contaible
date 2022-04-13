@@ -316,7 +316,9 @@
   (bind ?resultado (+ ?aportes (- ?margen-fuera-de-explotacion   (+ ?depreciacion-instantanea   ?amortizacion-instantanea))) )
 
   (bind ?resultado-final (- ?resultado ?rechazados))
-
+  
+  (printout k "<section>" crlf)
+  (printout k "<h2> ESTADO DE RESULTADOS CON INDICACIONES TRIBUTARIAS </h2>" crlf)
   (printout k "<table><tbody>" crlf )
   (printout k "<tr><th colspan='3'>" ?empresa "</th></tr>" crlf )
 
@@ -630,6 +632,7 @@
 ; (printout t "|" tab tab "| (=) " (- ?utilidad-antes-de-idpc ?provision-impuesto-a-la-renta) tab "UTILIDAD DEL EJERCICIO AJUSTADA (U.Ejercicio - Provision idpc)" crlf)
   (printout t "================================================================================" crlf)
   (printout k "</tbody></table>")
+  (printout k "</section>" crlf)
 )
 
 

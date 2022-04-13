@@ -3,33 +3,6 @@
 
 
 
-  ( if (eq true ?archivo-unico)
-     then
-
-     ;( bind ?archivo (str-cat "./doc/" ?archivo ".markdown"))
-      ( bind ?archivo (str-cat "./doc/" ?empresa "/" ?archivo-nombre ".markdown"))
-
-      ( open ?archivo k "a")
-     else
-      ( bind ?archivo (str-cat "./doc/" ?empresa "/tributario.markdown"))
-      ( open ?archivo k "w")
-      ( printout k "--- " crlf)
-      ( printout k "layout: page" crlf)
-      ( printout k "--- " crlf)
-      ( printout k "" crlf)
-      ( printout k "<li><span style='background-color: lavender'>[    ]</span> partida revisada y resultado bueno. </li>" crlf)
-      ( printout k "<li><span style='background-color: lightyellow'>[    ]</span> cuenta mayor del activo </li>" crlf)
-      ( printout k "<li><span style='background-color: azure'>[    ]</span> cuenta mayor del pasivo </li>" crlf)
-      ( printout k "<li><span style='color: white; background-color: cornflowerblue'>[    ]</span> cuenta de patrimonio </li>" crlf)
-      ( printout k "<li><span style='background-color: gold'>[    ]</span> ganancia </li>" crlf)
-      ( printout k "<li><span style='color: white; background-color: black'>[    ]</span> pérdida </li>" crlf)
-      ( printout k "<li><span style='background-color: blanchedalmond'>[    ]</span> subtotales de la transacción </li>" crlf)
-   )
-
-
-
-
-
 (defrule inicio-kindle
    ( declare (salience 10000))
    ( empresa (nombre ?empresa))
@@ -40,14 +13,6 @@
      then
        ( bind ?archivo (str-cat "./doc/" ?empresa "/" ?archivo-nombre ".markdown"))
        ( open ?archivo k "a")
-      ( printout k "<li><span style='background-color: lavender'>[    ]</span> partida revisada y resultado bueno. </li>" crlf)
-      ( printout k "<li><span style='background-color: lightyellow'>[    ]</span> cuenta mayor del activo </li>" crlf)
-      ( printout k "<li><span style='background-color: azure'>[    ]</span> cuenta mayor del pasivo </li>" crlf)
-      ( printout k "<li><span style='color: white; background-color: cornflowerblue'>[    ]</span> cuenta de patrimonio </li>" crlf)
-      ( printout k "<li><span style='background-color: gold'>[    ]</span> ganancia </li>" crlf)
-      ( printout k "<li><span style='color: white; background-color: black'>[    ]</span> pérdida </li>" crlf)
-      ( printout k "<li><span style='background-color: blanchedalmond'>[    ]</span> subtotales de la transacción </li>" crlf)
-
       else
        ( bind ?archivo (str-cat "./doc/" ?empresa "/final.markdown"))
        ( open ?archivo k "w")
@@ -277,15 +242,14 @@
    ( bind ?iva-por-pagar  (- ?iva-debito-acreedor ?iva-debito-deber))
    ( printout t "=========================================================================" crlf )
 
-
-   ( printout k crlf crlf )
-   ( printout k "<br> <br> <br> <br> <br> <br> " crlf)
+   ( printout k "<section>" crlf )
+   ( printout k "<h2> PARTIDA GENERAL FINAL </h2>" crlf) 
    ( printout k "Solo se consideran las transacciones hasta el día " ?top tab ?mes_top "."  crlf)
    ( printout k "Cifras en pesos." crlf)
    ( printout k "<table>" crlf)
-   ( printout k "<thead> <th colspan='6'> PARTIDA GENERAL FINAL " ?ano " </th> </thead> " crlf)
-   ( printout k "<thead> <th>  ACTIVO CIRCULANTE </th> <th align='right' > "?activo-circulante "</th>" crlf)
-   ( printout k "<th > PASIVO CIRCULANTE </th> <th align='right' >" ?pasivo-circulante "</th> </thead>" crlf)
+   ( printout k "<tr> <td colspan='6'> PARTIDA GENERAL FINAL " ?ano " </td> </tr> " crlf)
+   ( printout k "<tr> <td>  ACTIVO CIRCULANTE </td> <td align='right' > "?activo-circulante "</td>" crlf)
+   ( printout k "<td > PASIVO CIRCULANTE </td> <td align='right' >" ?pasivo-circulante "</td> </tr>" crlf)
 
    ( printout k "<tbody>" crlf)
  ; ( printout k "<tr> <td> Efectivo y Equivalentes </td> <td>" (- ?efectivo-deber ?efectivo-acreedor) "</td> <td> Proveedores. </td> <td> " (- ?proveedores-acreedor ?proveedores-deber) "</td> </tr>" crlf)
@@ -330,12 +294,12 @@
 
    ( if (eq true ?hay-utilidad-tributaria) then 
 
-     ( printout k "<td> Impto Rta Determ. </td> <td align='right'>" ?idpc-acreedor "</td> ")
+     ( printout k "<tr><td> Impto Rta Determ. </td> <td align='right'>" ?idpc-acreedor "</td> ")
      ( printout k "</tr>" crlf)
 
    )
-   ( printout k "<thead> <th> ACTIVO FIJO </th> <th align='right'>" ?activo-fijo "</th> " crlf )
-   ( printout k "<th> PASIVO FIJO </th> <th align='right'>" ?pasivo-fijo "</th>  </thead> " crlf)
+   ( printout k "<tr><td> ACTIVO FIJO </td> <td align='right'>" ?activo-fijo "</td></tr> " crlf )
+   ( printout k "<tr><td> PASIVO FIJO </td> <td align='right'>" ?pasivo-fijo "</td></tr> " crlf)
 
    ( printout k "<tr> <td> Terreno </td> <td align='right'>"  ?terreno "</td> " crlf)
    ( printout k "<td> Préstamo Bancarios </td> <td align='right'>" ?prestamo-bancario "</td> </tr>" crlf)
@@ -360,9 +324,9 @@
 
    ( printout k "<tr><td> Amortización Acumulada Intangibles </td> <td align='right' style='font-weight:bold; color: white; background-color: crimson'>(" ?amortizacion-acumulada-intangibles ")</td> <td colspan='2'> </td> </tr>" crlf)
    ( printout k "<tr><td> Depreciación Acumulada Herramientas </td> <td align='right' style='font-weight:bold; color: white; background-color: crimson'>("  ?depreciacion ")</td><td colspan='2'> </td> </tr>" crlf)
-   ( printout k "<thead> <td> </td> <td> </td> <th> TOTAL PASIVO </th> <th align='right'> " ?pasivos "</th></thead>"  crlf)
+   ( printout k "<tr> <td> </td> <td> </td> <td> TOTAL PASIVO </td> <td align='right'> " ?pasivos "</td></tr>"  crlf)
 
-   ( printout k "<thead> <td> </td> <td> </td> <th> PATRIMONIO </th> <th align='right'>" ?patrimonio "</th> </thead>")
+   ( printout k "<tr> <td> </td> <td> </td> <td> PATRIMONIO </td> <td align='right'>" ?patrimonio "</td> </tr>")
    ( printout k "<tr> <td colspan='2'></td> <td> Capital Social </td><td align='right'> " ?capital-social "</td> </tr>" crlf)
 
    ( printout k "<tr> <td colspan='2'></td> <td> Reserva Legal </td> <td align='right' >" (- ?reserva-legal-acreedor ?reserva-legal-deber) "</td> </tr>" crlf) 
@@ -378,9 +342,9 @@
 
   ( if (eq (+ ?pasivos ?patrimonio) ?activos)
     then
-     ( printout k "<thead><th>TOTAL ACTIVOS</th><th style='background-color: lightgreen'>" ?activos "</th><th>TOTAL PASIVO + PATRIMONIO</th><th style='background-color: lightgreen'>" (+ ?pasivos ?patrimonio) "</th></thead>" crlf)
+     ( printout k "<tr><td>TOTAL ACTIVOS</td><td style='background-color: lightgreen'>" ?activos "</td><td>TOTAL PASIVO + PATRIMONIO</td><td style='background-color: lightgreen'>" (+ ?pasivos ?patrimonio) "</td></tr>" crlf)
     else
-     ( printout k "<thead><th>TOTAL ACTIVOS</th><th style='background-color: crimson'>" ?activos "</th><th>TOTAL PASIVO + PATRIMONIO</th><th style='background-color: crimson'>" (+ ?pasivos ?patrimonio) "</th></thead>" crlf)
+     ( printout k "<tr><td>TOTAL ACTIVOS</td><td style='background-color: crimson'>" ?activos "</td><td>TOTAL PASIVO + PATRIMONIO</td><td style='background-color: crimson'>" (+ ?pasivos ?patrimonio) "</td></tr>" crlf)
    )
 
    ( printout k "<tr><td colspan='8'> " ?razon  " </td> </tr>" crlf)
@@ -499,6 +463,7 @@
  ; ( printout k "==================================================================" crlf)
   ( printout k "</tbody>" crlf)
   ( printout k "</table>" crlf)
+  ( printout k "</section>" crlf )
 
 
 )

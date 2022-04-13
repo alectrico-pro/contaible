@@ -834,6 +834,8 @@
   )
 )
 
+
+
 ;toma los datos del asistente propyme de impuestos interno y lo usa para encontrar la partida que está asocaida a este.
 ;los f22 con mes nul son totales globales que han sido obtenidos sumando los totales mensuales de cada código f29
 (defrule muestra-codigo-de-formulario-f22-con-linea-de-documento-cierra-tabla
@@ -849,7 +851,7 @@
    ( f29-f22 (codigo-f29 ?codigo) (linea-f22 ?linea-f22) )
 
   =>
-   ( printout k "<\table><table><tbody>" crlf)
+   ( printout k "<\tbody><\table><table><tbody>" crlf)
 )
 
 
@@ -870,6 +872,7 @@
   =>
 
    ( modify ?formulario (presentado-en-f22 true) )
+
 
    ( printout t  "codigo..." tab ?mes tab ?codigo tab ?valor tab ?descripcion crlf)
 
@@ -925,6 +928,11 @@
    (not (exists   ( f29-f22 (codigo-f29 ?codigo)  )))
   =>
 
+
+
+;   ( printout k "<table></table>" crlf)
+
+
    ( modify ?formulario (presentado-en-f22 true) )
 
    ( printout t  "codigo..." tab ?mes tab ?codigo tab ?valor tab ?descripcion crlf)
@@ -933,11 +941,12 @@
     then
       
       ( printout k " <tr height='50 px' style='font-weight:bold; background-color: lightgreen'> <td>  <a href= '/" ?empresa "/libro-diario#Partida-" ?numero "'>" ^ "</a> </td> <td> " ?codigo " </td> <td align='right' >  " ?valor " </td> <td> " ?descripcion " </td> </tr>" crlf)
-      ( printout k "</table><table>" crlf)
+;      ( printout k "<table></table>" crlf)
 ;      ( printout k " <tr height='50 px'></tr>" crlf)
 
     else
       ( printout k " <tr> <td>    <a href= '/" ?empresa "/libro-diario#Partida-" ?partida-f29 "'>" ?mes "</a>  </td> <td> " ?codigo " </td> <td align='right' >  " ?valor " </td> <td> " ?descripcion " </td> </tr>" crlf)
+ ;     ( printout k "<table></table>" crlf)
    )
 
    ( printout l " <tr> <td> " ?mes " </td> <td> " ?codigo " </td> <td align='right'>  " ?valor " </td> <td> " ?descripcion " </td> </tr>" crlf)
