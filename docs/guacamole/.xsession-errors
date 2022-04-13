@@ -4397,3 +4397,67 @@ dbus-update-activation-environment: setting PWD=/config
 Obt-Message: Xinerama extension is not present on the server
 Openbox-Message: Unable to find a valid menu file "/var/lib/openbox/debian-menu.xml"
 QStandardPaths: XDG_RUNTIME_DIR not set, defaulting to '/tmp/runtime-abc'
+Xsession: X session started for abc at Wed Apr 13 11:23:34 UTC 2022
+Xsession: X session started for abc at Wed Apr 13 11:46:26 UTC 2022
+localuser:abc being added to access control list
+dbus-update-activation-environment: systemd --user not found, ignoring --systemd argument
+dbus-update-activation-environment: setting USER=abc
+dbus-update-activation-environment: setting HOME=/config
+dbus-update-activation-environment: setting DBUS_SESSION_BUS_ADDRESS=unix:abstract=/tmp/dbus-BWuIGwmhzc,guid=a15496c0a187d63c56d2fef16256b813
+dbus-update-activation-environment: setting PULSE_SCRIPT=/etc/xrdp/pulse/default.pa
+dbus-update-activation-environment: setting LOGNAME=abc
+dbus-update-activation-environment: setting PATH=/sbin:/bin:/usr/bin:/usr/local/bin
+dbus-update-activation-environment: setting XRDP_SOCKET_PATH=/var/run/xrdp/sockdir
+dbus-update-activation-environment: setting DISPLAY=:11.0
+dbus-update-activation-environment: setting UID=1000
+dbus-update-activation-environment: setting SHELL=/bin/bash
+dbus-update-activation-environment: setting XRDP_SESSION=1
+dbus-update-activation-environment: setting GPG_AGENT_INFO=/config/.gnupg/S.gpg-agent:0:1
+dbus-update-activation-environment: setting PWD=/config
+Obt-Message: Xinerama extension is not present on the server
+Openbox-Message: Unable to find a valid menu file "/var/lib/openbox/debian-menu.xml"
+Xsession: X session started for abc at Wed Apr 13 18:38:47 UTC 2022
+Xsession: X session started for abc at Wed Apr 13 18:42:22 UTC 2022
+localuser:abc being added to access control list
+dbus-update-activation-environment: systemd --user not found, ignoring --systemd argument
+dbus-update-activation-environment: setting USER=abc
+dbus-update-activation-environment: setting HOME=/config
+dbus-update-activation-environment: setting DBUS_SESSION_BUS_ADDRESS=unix:abstract=/tmp/dbus-r40cYJkqQE,guid=bfcb529e0122da75e4639ff46257198f
+dbus-update-activation-environment: setting PULSE_SCRIPT=/etc/xrdp/pulse/default.pa
+dbus-update-activation-environment: setting LOGNAME=abc
+dbus-update-activation-environment: setting PATH=/sbin:/bin:/usr/bin:/usr/local/bin
+dbus-update-activation-environment: setting XRDP_SOCKET_PATH=/var/run/xrdp/sockdir
+dbus-update-activation-environment: setting DISPLAY=:10.0
+dbus-update-activation-environment: setting UID=1000
+dbus-update-activation-environment: setting SHELL=/bin/bash
+dbus-update-activation-environment: setting XRDP_SESSION=1
+dbus-update-activation-environment: setting GPG_AGENT_INFO=/config/.gnupg/S.gpg-agent:0:1
+dbus-update-activation-environment: setting PWD=/config
+Obt-Message: Xinerama extension is not present on the server
+Xsession: X session started for abc at Wed Apr 13 18:42:50 UTC 2022
+xrdb: Cannot assign requested address
+xrdb: Can't open display ':11.0'
+xhost:  unable to open display ":11.0"
+xhost:  unable to open display ":11.0"
+dbus-update-activation-environment: error: unable to connect to D-Bus: Failed to connect to socket /tmp/dbus-l0vjJGEvvD: Connection refused
+Openbox-Message: Failed to open the display from the DISPLAY environment variable.
+Xsession: X session started for abc at Wed Apr 13 18:50:29 UTC 2022
+localuser:abc being added to access control list
+dbus-update-activation-environment: systemd --user not found, ignoring --systemd argument
+dbus-update-activation-environment: setting USER=abc
+dbus-update-activation-environment: setting HOME=/config
+dbus-update-activation-environment: setting DBUS_SESSION_BUS_ADDRESS=unix:abstract=/tmp/dbus-t3PBfB0FBB,guid=81e108bf8a4a3e251a5243a562571b76
+dbus-update-activation-environment: setting PULSE_SCRIPT=/etc/xrdp/pulse/default.pa
+dbus-update-activation-environment: setting LOGNAME=abc
+dbus-update-activation-environment: setting PATH=/sbin:/bin:/usr/bin:/usr/local/bin
+dbus-update-activation-environment: setting XRDP_SOCKET_PATH=/var/run/xrdp/sockdir
+dbus-update-activation-environment: setting DISPLAY=:11.0
+dbus-update-activation-environment: setting UID=1000
+dbus-update-activation-environment: setting SHELL=/bin/bash
+dbus-update-activation-environment: setting XRDP_SESSION=1
+dbus-update-activation-environment: setting GPG_AGENT_INFO=/config/.gnupg/S.gpg-agent:0:1
+dbus-update-activation-environment: setting PWD=/config
+Obt-Message: Xinerama extension is not present on the server
+Openbox-Message: Unable to find a valid menu file "/var/lib/openbox/debian-menu.xml"
+QStandardPaths: XDG_RUNTIME_DIR not set, defaulting to '/tmp/runtime-abc'
+qt.qpa.xcb: QXcbConnection: XCB error: 148 (Unknown), sequence: 186, resource id: 0, major code: 140 (Unknown), minor code: 20

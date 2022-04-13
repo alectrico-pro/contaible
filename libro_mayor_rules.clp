@@ -51,17 +51,32 @@
 (defrule inicio-kindle-k-t-rules
    ( declare (salience 10000))
    ( empresa (nombre ?empresa))
+   ( selecciones (archivo-unico-markdown ?archivo-unico) (nombre-de-archivo-k ?archivo-nombre))
+
   =>
 
-   ( bind ?archivo (str-cat "./doc/" ?empresa "/libro-mayor.markdown"))
-   ( open ?archivo k "w")
 
-   ( printout k "--- " crlf)
+  ( if (eq true ?archivo-unico)
+     then
+      ( bind ?archivo (str-cat "./doc/" ?empresa "/" ?archivo-nombre ".markdown"))
+      ( open ?archivo k "w")
+      ( printout k "--- " crlf)
+      ( printout k "permalink: /" ?empresa "/" ?archivo-nombre  crlf)
+      ( printout k "layout: page" crlf)
+      ( printout k "--- " crlf)
+
+     else
+      ( bind ?archivo (str-cat "./doc/" ?empresa "/libro-mayor.markdown"))
+      ( open ?archivo k "w")
+      ( printout k "--- " crlf)
 ;   ( printout k "title: L.Mayor-" ?empresa crlf)
 ;   ( printout k "permalink: /" ?empresa "/libro-mayor " crlf)
-   ( printout k "layout: page" crlf)
-   ( printout k "--- " crlf)
+      ( printout k "layout: page" crlf)
+      ( printout k "--- " crlf)
+  )
+  ( printout k "<h2> Libro Mayor </h2>" crlf)
 )
+
 
 (defrule fin-kindle-k
   ( declare (salience -100) )
@@ -111,11 +126,11 @@
 
 
   ( printout k "<table>" crlf)
-  ( printout k "<thead><th colspan='6'> " ?nombre "</th><th colspan='3'>" ?nombre-sii "</th></thead>" crlf)
-  ( printout k "<thead><th colspan='9'> " ?descripcion "</th></thead>" crlf)
+ ; ( printout k "<thead><th colspan='6'> " ?nombre "</th><th colspan='3'>" ?nombre-sii "</th></thead>" crlf)
+ ; ( printout k "<thead><th colspan='9'> " ?descripcion "</th></thead>" crlf)
 
-  ( printout k "<thead><th> voucher </th><th> partida </th><th> debe </th> <th> | </th> <th> haber </th><th> mes </th> <th>recibida</th> <th>factor corrección monetaria</th> <th> tipo documento</th></thead>"crlf)
-  ( printout k "<tbody>" crlf)
+  ;( printout k "<thead><th> voucher </th><th> partida </th><th> debe </th> <th> | </th> <th> haber </th><th> mes </th> <th>recibida</th> <th>factor corrección monetaria</th> <th> tipo documento</th></thead>"crlf)
+ ; ( printout k "<tbody>" crlf)
 
 
   ( assert ( hacer ?nombre))
@@ -249,7 +264,7 @@
 ;   ( printout k "<tr> <td></td> <td></td> <td align='right' >" ?debe "</td> <td>|</td> <td align='right'>" ?haber "</td></tr>" crlf )
  ;  ( printout k "<tr> <td></td> <td>$</td> <td align='right'>"  ?diferencia "</td></tr>" crlf )
 
-   ( printout k "</tbody>" crlf)
+;  ( printout k "</tbody>" crlf)
    ( printout k "</table>" crlf)
 )
 
@@ -288,7 +303,7 @@
 ;   ( printout k "<tr> <td> </td><td></td> <td align='right'>" ?debe "</td> <td>|</td> <td align='right'>" ?haber "</td> </tr>" crlf )
  ;  ( printout k "<tr> <td> </td><td> </td> <td></td> <td>|</td> <td align='right'>"  ?diferencia "</td> <td>$</td> </tr>" crlf )
 
-   ( printout k "</tbody>" crlf)
+ ; ( printout k "</tbody>" crlf)
    ( printout k "</table>" crlf)
 )
 

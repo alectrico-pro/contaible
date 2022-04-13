@@ -1,3 +1,8 @@
+;este modulo genera todo lo que se haya implementado a través de partidas
+;1. Libro diario
+;2. f29 junto con el libro diario y en archivo aparte
+;3. asistente propyme f22
+
 (defmodule PARTIDA
   ( import MAIN deftemplate ?ALL )
 )
@@ -74,11 +79,11 @@
      then
       ( bind ?archivo (str-cat "./doc/" ?empresa "/" ?archivo-nombre ".markdown"))
       ( open ?archivo k "a")
-      ( printout k "--- " crlf)
+;      ( printout k "--- " crlf)
 
-      ( printout k "permalink: /" ?empresa "/" ?archivo-nombre  crlf)
-      ( printout k "layout: page" crlf)
-      ( printout k "--- " crlf)
+ ;     ( printout k "permalink: /" ?empresa "/" ?archivo-nombre  crlf)
+  ;    ( printout k "layout: page" crlf)
+   ;   ( printout k "--- " crlf)
      else
       ( bind ?archivo (str-cat "./doc/" ?empresa "/empresa.markdown"))
       ( open ?archivo k "w")
@@ -97,7 +102,9 @@
 ;   ( printout k "layout: page" crlf)
 ;   ( printout k "--- " crlf)
 ;   ( printout k "<script src='{{ base.url | prepend: site.url }}/assets/main.js'></script>" crlf)
-   ( printout k "" crlf)
+   
+   ( printout k "<section>" crlf)
+   ( printout k "<h2> Libro Diario </h2>" crlf)
    ( printout k "Contabilidad para Necios® usa el siguiente código de colores para este documento." crlf)
    ( printout k "<ul>" crlf)
    ( printout k "<li><span style='background-color: red'>[    ]</span> mensaje de alerta. </li>" crlf)
@@ -824,6 +831,10 @@
 
 )
 
+;Terminan aquí las partidas f29
+
+;Comienza aquí el asistente propýme F22
+
 ;Sistema de ticket para mostrar los códigos en orden
 (defrule ordenar-codigos
  =>
@@ -833,8 +844,6 @@
     ( bind ?i (+ ?i 1))
   )
 )
-
-
 
 ;toma los datos del asistente propyme de impuestos interno y lo usa para encontrar la partida que está asocaida a este.
 ;los f22 con mes nul son totales globales que han sido obtenidos sumando los totales mensuales de cada código f29
@@ -852,6 +861,22 @@
 
   =>
    ( printout k "<\tbody><\table><table><tbody>" crlf)
+)
+
+
+
+(defrule f22-inicio
+   ( declare (salience 95))
+   ( fila ?numero )
+   ( empresa (nombre ?empresa))
+   ( balance (ano ?ano))
+;   ( codigo-f29 (codigo ?codigo))
+   ( not (exists ( formulario-f22 (presentado-en-f22 true) (partida ?partida-f29) (codigo ?codigo&:(numberp ?codigo) ) (valor ?valor) (descripcion ?descripcion) (mes ?mes) (ano ?ano) )))
+;   ?f22 <- ( f22 (partida ?numero) (ano ?ano))
+;   ( f29-f22 (codigo-f29 ?codigo) (linea-f22 ?linea-f22) )
+
+  =>
+   ( printout k "<h2> Asistente F22 </h2> " crlf)
 )
 
 
@@ -954,7 +979,7 @@
 )
 
 ;formato de partida normal
-
+;comienza aqui el libro diario
 (defrule muestra-libro-mayor-resultados-subcuentas
    ( declare (salience 65))
    ( fila ?numero )

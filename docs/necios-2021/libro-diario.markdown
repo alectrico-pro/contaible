@@ -2,7 +2,216 @@
 permalink: /necios-2021/libro-diario
 layout: page
 --- 
-
+<h2> Libro Mayor </h2>
+<table>
+<tr> <td>188</td> <td align='right'> <a href= '/necios-2021/libro-diario#Partida-14333'>14333</a> </td> <td align='right'>0</td> <td> | </td> <td align='right'> 33</td> <td>enero</td><td>false</td><td> 1.063</td><td> remanente-iva</td> </tr>
+<tr> <td></td> <td></td> <td align='right'>0 <small> 0.0</small> </td> <td>|</td> <td align='right'>33<small> 35.079</small> </td></tr>
+<tr> <td> </td> <td> </td> <td></td> <td>|</td> <td align='right'>33 <small> 35.079</small></td> <td>$</td> </tr>
+<tr> <td colspan='2'> Monto Corrección</td><td></td><td>$</td> <td align='right'>2 </td></tr>
+</table>
+<table>
+<tr> <td>188</td> <td align='right'> <a href= '/necios-2021/libro-diario#Partida-14333'>14333</a> </td> <td align='right'>0</td> <td> | </td> <td align='right'> 33</td> <td>enero</td><td>false</td><td> 1.063</td><td> remanente-iva</td> </tr>
+<tr> <td></td> <td></td> <td align='right'>0 <small> 0.0</small> </td> <td>|</td> <td align='right'>33<small> 35.079</small> </td></tr>
+<tr> <td> </td> <td> </td> <td></td> <td>|</td> <td align='right'>33 <small> 35.079</small></td> <td>$</td> </tr>
+<tr> <td colspan='2'> Monto Corrección</td><td></td><td>$</td> <td align='right'>2 </td></tr>
+</table>
+<table>
+<tr> <td>186</td> <td align='right'> <a href= '/necios-2021/libro-diario#Partida-131'>131</a> </td> <td align='right'>2417</td> <td> | </td> <td align='right'> 0</td> <td>enero</td><td>false</td><td> 1.063</td><td> amortizacion</td> </tr>
+<tr> <td></td> <td></td> <td align='right'>2417 <small> 2569.271</small> </td> <td>|</td> <td align='right'>0<small> 0.0</small> </td></tr>
+<tr> <td></td> <td>$</td> <td align='right'>2417 <small> 2569.271</small></td></tr>
+<tr> <td> Monto Corrección </td> <td>$</td> <td align='right'>152 </td></tr>
+</table>
+<table>
+<tr> <td>186</td> <td align='right'> <a href= '/necios-2021/libro-diario#Partida-131'>131</a> </td> <td align='right'>2417</td> <td> | </td> <td align='right'> 0</td> <td>enero</td><td>false</td><td> 1.063</td><td> amortizacion</td> </tr>
+<tr> <td></td> <td></td> <td align='right'>2417 <small> 2569.271</small> </td> <td>|</td> <td align='right'>0<small> 0.0</small> </td></tr>
+<tr> <td></td> <td>$</td> <td align='right'>2417 <small> 2569.271</small></td></tr>
+<tr> <td> Monto Corrección </td> <td>$</td> <td align='right'>152 </td></tr>
+</table>
+<table>
+<tr> <td>186</td> <td align='right'> <a href= '/necios-2021/libro-diario#Partida-131'>131</a> </td> <td align='right'>0</td> <td> | </td> <td align='right'> 4202</td> <td>enero</td><td>false</td><td> 1.063</td><td> depreciacion-de-herramienta</td> </tr>
+<tr> <td></td> <td></td> <td align='right'>0 <small> 0.0</small> </td> <td>|</td> <td align='right'>4202<small> 4466.726</small> </td></tr>
+<tr> <td> </td> <td> </td> <td></td> <td>|</td> <td align='right'>4202 <small> 4466.726</small></td> <td>$</td> </tr>
+<tr> <td colspan='2'> Monto Corrección</td><td></td><td>$</td> <td align='right'>265 </td></tr>
+</table>
+<table>
+<tr> <td>186</td> <td align='right'> <a href= '/necios-2021/libro-diario#Partida-131'>131</a> </td> <td align='right'>4202</td> <td> | </td> <td align='right'> 0</td> <td>enero</td><td>false</td><td> 1.063</td><td> depreciacion</td> </tr>
+<tr> <td></td> <td></td> <td align='right'>4202 <small> 4466.726</small> </td> <td>|</td> <td align='right'>0<small> 0.0</small> </td></tr>
+<tr> <td></td> <td>$</td> <td align='right'>4202 <small> 4466.726</small></td></tr>
+<tr> <td> Monto Corrección </td> <td>$</td> <td align='right'>265 </td></tr>
+</table>
+<table>
+<tr> <td>132</td> <td align='right'> <a href= '/necios-2021/libro-diario#Partida-1'>1</a> </td> <td align='right'>1050209</td> <td> | </td> <td align='right'> 0</td> <td>enero</td><td>false</td><td> 1.063</td><td> escritura-empresa</td> </tr>
+<tr> <td></td> <td></td> <td align='right'>1050209 <small> 1116372.167</small> </td> <td>|</td> <td align='right'>0<small> 0.0</small> </td></tr>
+<tr> <td></td> <td>$</td> <td align='right'>1050209 <small> 1116372.167</small></td></tr>
+<tr> <td> Monto Corrección </td> <td>$</td> <td align='right'>66163 </td></tr>
+</table>
+<table>
+<tr> <td>132</td> <td align='right'> <a href= '/necios-2021/libro-diario#Partida-1'>1</a> </td> <td align='right'>44044</td> <td> | </td> <td align='right'> 0</td> <td>enero</td><td>false</td><td> 1.063</td><td> escritura-empresa</td> </tr>
+<tr> <td></td> <td></td> <td align='right'>44044 <small> 46818.772</small> </td> <td>|</td> <td align='right'>0<small> 0.0</small> </td></tr>
+<tr> <td></td> <td>$</td> <td align='right'>44044 <small> 46818.772</small></td></tr>
+<tr> <td> Monto Corrección </td> <td>$</td> <td align='right'>2775 </td></tr>
+</table>
+<table>
+<tr> <td>132</td> <td align='right'> <a href= '/necios-2021/libro-diario#Partida-1'>1</a> </td> <td align='right'>721</td> <td> | </td> <td align='right'> 0</td> <td>enero</td><td>false</td><td> 1.063</td><td> escritura-empresa</td> </tr>
+<tr> <td>188</td> <td align='right'> <a href= '/necios-2021/libro-diario#Partida-14333'>14333</a> </td> <td align='right'>199</td> <td> | </td> <td align='right'> 0</td> <td>enero</td><td>false</td><td> 1.063</td><td> pago-de-ppm</td> </tr>
+<tr> <td></td> <td></td> <td align='right'>920 <small> 977.96</small> </td> <td>|</td> <td align='right'>0<small> 0.0</small> </td></tr>
+<tr> <td></td> <td>$</td> <td align='right'>920 <small> 977.96</small></td></tr>
+<tr> <td> Monto Corrección </td> <td>$</td> <td align='right'>58 </td></tr>
+</table>
+<table>
+<tr> <td> </td> <td align='right'> <a href= '/necios-2021/libro-diario#Partida-13'>13</a> </td> <td align='right'>151252</td> <td> | </td> <td align='right'> 0</td> <td>enero</td><td>true</td><td> 1.063</td><td> 33</td> </tr>
+<tr> <td></td> <td></td> <td align='right'>151252 <small> 160780.876</small> </td> <td>|</td> <td align='right'>0<small> 0.0</small> </td></tr>
+<tr> <td></td> <td>$</td> <td align='right'>151252 <small> 160780.876</small></td></tr>
+<tr> <td> Monto Corrección </td> <td>$</td> <td align='right'>9529 </td></tr>
+</table>
+<table>
+<tr> <td>132</td> <td align='right'> <a href= '/necios-2021/libro-diario#Partida-1'>1</a> </td> <td align='right'>290000</td> <td> | </td> <td align='right'> 0</td> <td>enero</td><td>false</td><td> 1.063</td><td> escritura-empresa</td> </tr>
+<tr> <td></td> <td></td> <td align='right'>290000 <small> 308270.0</small> </td> <td>|</td> <td align='right'>0<small> 0.0</small> </td></tr>
+<tr> <td></td> <td>$</td> <td align='right'>290000 <small> 308270.0</small></td></tr>
+<tr> <td> Monto Corrección </td> <td>$</td> <td align='right'>18270 </td></tr>
+</table>
+<table>
+<tr> <td>132</td> <td align='right'> <a href= '/necios-2021/libro-diario#Partida-1'>1</a> </td> <td align='right'>290000</td> <td> | </td> <td align='right'> 0</td> <td>enero</td><td>false</td><td> 1.063</td><td> escritura-empresa</td> </tr>
+<tr> <td></td> <td></td> <td align='right'>290000 <small> 308270.0</small> </td> <td>|</td> <td align='right'>0<small> 0.0</small> </td></tr>
+<tr> <td></td> <td>$</td> <td align='right'>290000 <small> 308270.0</small></td></tr>
+<tr> <td> Monto Corrección </td> <td>$</td> <td align='right'>18270 </td></tr>
+</table>
+<table>
+<tr> <td>132</td> <td align='right'> <a href= '/necios-2021/libro-diario#Partida-1'>1</a> </td> <td align='right'>0</td> <td> | </td> <td align='right'> 2416</td> <td>enero</td><td>false</td><td> 1.063</td><td> escritura-empresa</td> </tr>
+<tr> <td>186</td> <td align='right'> <a href= '/necios-2021/libro-diario#Partida-131'>131</a> </td> <td align='right'>0</td> <td> | </td> <td align='right'> 2417</td> <td>enero</td><td>false</td><td> 1.063</td><td> amortizacion-de-intangible</td> </tr>
+<tr> <td></td> <td></td> <td align='right'>0 <small> 0.0</small> </td> <td>|</td> <td align='right'>4833<small> 5137.479</small> </td></tr>
+<tr> <td> </td> <td> </td> <td></td> <td>|</td> <td align='right'>4833 <small> 5137.479</small></td> <td>$</td> </tr>
+<tr> <td colspan='2'> Monto Corrección</td><td></td><td>$</td> <td align='right'>304 </td></tr>
+</table>
+<table>
+<tr> <td>132</td> <td align='right'> <a href= '/necios-2021/libro-diario#Partida-1'>1</a> </td> <td align='right'>0</td> <td> | </td> <td align='right'> 2000000</td> <td>enero</td><td>false</td><td> 1.063</td><td> escritura-empresa</td> </tr>
+<tr> <td></td> <td></td> <td align='right'>0 <small> 0.0</small> </td> <td>|</td> <td align='right'>2000000<small> 2126000.0</small> </td></tr>
+<tr> <td> </td> <td> </td> <td></td> <td>|</td> <td align='right'>2000000 <small> 2126000.0</small></td> <td>$</td> </tr>
+<tr> <td colspan='2'> Monto Corrección</td><td></td><td>$</td> <td align='right'>126000 </td></tr>
+</table>
+<table>
+<tr> <td>132</td> <td align='right'> <a href= '/necios-2021/libro-diario#Partida-1'>1</a> </td> <td align='right'>0</td> <td> | </td> <td align='right'> 85294</td> <td>enero</td><td>false</td><td> 1.063</td><td> escritura-empresa</td> </tr>
+<tr> <td></td> <td></td> <td align='right'>0 <small> 0.0</small> </td> <td>|</td> <td align='right'>85294<small> 90667.522</small> </td></tr>
+<tr> <td> </td> <td> </td> <td></td> <td>|</td> <td align='right'>85294 <small> 90667.522</small></td> <td>$</td> </tr>
+<tr> <td colspan='2'> Monto Corrección</td><td></td><td>$</td> <td align='right'>5374 </td></tr>
+</table>
+<table>
+<tr> <td>192</td> <td align='right'> <a href= '/necios-2021/libro-diario#Partida-3'>3</a> </td> <td align='right'>0</td> <td> | </td> <td align='right'> 29412</td> <td>enero</td><td>false</td><td> 1.063</td><td> 39</td> </tr>
+<tr> <td></td> <td></td> <td align='right'>0 <small> 0.0</small> </td> <td>|</td> <td align='right'>29412<small> 31264.956</small> </td></tr>
+<tr> <td> </td> <td> </td> <td></td> <td>|</td> <td align='right'>29412 <small> 31264.956</small></td> <td>$</td> </tr>
+<tr> <td colspan='2'> Monto Corrección</td><td></td><td>$</td> <td align='right'>1853 </td></tr>
+</table>
+<table>
+<tr> <td>192</td> <td align='right'> <a href= '/necios-2021/libro-diario#Partida-4'>4</a> </td> <td align='right'>0</td> <td> | </td> <td align='right'> 123497</td> <td>enero</td><td>false</td><td> 1.063</td><td> 48</td> </tr>
+<tr> <td></td> <td></td> <td align='right'>0 <small> 0.0</small> </td> <td>|</td> <td align='right'>123497<small> 131277.311</small> </td></tr>
+<tr> <td> </td> <td> </td> <td></td> <td>|</td> <td align='right'>123497 <small> 131277.311</small></td> <td>$</td> </tr>
+<tr> <td colspan='2'> Monto Corrección</td><td></td><td>$</td> <td align='right'>7780 </td></tr>
+</table>
+<table>
+<tr> <td>192</td> <td align='right'> <a href= '/necios-2021/libro-diario#Partida-7'>7</a> </td> <td align='right'>29412</td> <td> | </td> <td align='right'> 0</td> <td>enero</td><td>false</td><td> 1.063</td><td> 61</td> </tr>
+<tr> <td></td> <td></td> <td align='right'>29412 <small> 31264.956</small> </td> <td>|</td> <td align='right'>0<small> 0.0</small> </td></tr>
+<tr> <td></td> <td>$</td> <td align='right'>29412 <small> 31264.956</small></td></tr>
+<tr> <td> Monto Corrección </td> <td>$</td> <td align='right'>1853 </td></tr>
+</table>
+<table>
+<tr> <td> </td> <td align='right'> <a href= '/necios-2021/libro-diario#Partida-12'>12</a> </td> <td align='right'>18849</td> <td> | </td> <td align='right'> 0</td> <td>enero</td><td>false</td><td> 1.063</td><td> 33</td> </tr>
+<tr> <td></td> <td></td> <td align='right'>18849 <small> 20036.487</small> </td> <td>|</td> <td align='right'>0<small> 0.0</small> </td></tr>
+<tr> <td></td> <td>$</td> <td align='right'>18849 <small> 20036.487</small></td></tr>
+<tr> <td> Monto Corrección </td> <td>$</td> <td align='right'>1187 </td></tr>
+</table>
+<table>
+<tr> <td>192</td> <td align='right'> <a href= '/necios-2021/libro-diario#Partida-4'>4</a> </td> <td align='right'>0</td> <td> | </td> <td align='right'> 123497</td> <td>enero</td><td>false</td><td> 1.063</td><td> 48</td> </tr>
+<tr> <td>192</td> <td align='right'> <a href= '/necios-2021/libro-diario#Partida-3'>3</a> </td> <td align='right'>0</td> <td> | </td> <td align='right'> 29412</td> <td>enero</td><td>false</td><td> 1.063</td><td> 39</td> </tr>
+<tr> <td>188</td> <td align='right'> <a href= '/necios-2021/libro-diario#Partida-14333'>14333</a> </td> <td align='right'>0</td> <td> | </td> <td align='right'> 33</td> <td>enero</td><td>false</td><td> 1.063</td><td> remanente-iva</td> </tr>
+<tr> <td></td> <td></td> <td align='right'>0 <small> 0.0</small> </td> <td>|</td> <td align='right'>152942<small> 162577.346</small> </td></tr>
+<tr> <td> </td> <td> </td> <td></td> <td>|</td> <td align='right'>152942 <small> 162577.346</small></td> <td>$</td> </tr>
+<tr> <td colspan='2'> Monto Corrección</td><td></td><td>$</td> <td align='right'>9635 </td></tr>
+</table>
+<table>
+<tr> <td> </td> <td align='right'> <a href= '/necios-2021/libro-diario#Partida-8'>8</a> </td> <td align='right'>50</td> <td> | </td> <td align='right'> 0</td> <td>enero</td><td>false</td><td> 1.063</td><td> 33</td> </tr>
+<tr> <td> </td> <td align='right'> <a href= '/necios-2021/libro-diario#Partida-9'>9</a> </td> <td align='right'>1678</td> <td> | </td> <td align='right'> 0</td> <td>enero</td><td>false</td><td> 1.063</td><td> 33</td> </tr>
+<tr> <td></td> <td></td> <td align='right'>1728 <small> 1836.864</small> </td> <td>|</td> <td align='right'>0<small> 0.0</small> </td></tr>
+<tr> <td></td> <td>$</td> <td align='right'>1728 <small> 1836.864</small></td></tr>
+<tr> <td> Monto Corrección </td> <td>$</td> <td align='right'>109 </td></tr>
+</table>
+<table>
+<tr> <td>192</td> <td align='right'> <a href= '/necios-2021/libro-diario#Partida-7'>7</a> </td> <td align='right'>29412</td> <td> | </td> <td align='right'> 0</td> <td>enero</td><td>false</td><td> 1.063</td><td> 61</td> </tr>
+<tr> <td>192</td> <td align='right'> <a href= '/necios-2021/libro-diario#Partida-6'>6</a> </td> <td align='right'>45050</td> <td> | </td> <td align='right'> 0</td> <td>enero</td><td>false</td><td> 1.063</td><td> 61</td> </tr>
+<tr> <td>192</td> <td align='right'> <a href= '/necios-2021/libro-diario#Partida-5'>5</a> </td> <td align='right'>4505</td> <td> | </td> <td align='right'> 0</td> <td>enero</td><td>false</td><td> 1.063</td><td> 61</td> </tr>
+<tr> <td></td> <td></td> <td align='right'>78967 <small> 83941.921</small> </td> <td>|</td> <td align='right'>0<small> 0.0</small> </td></tr>
+<tr> <td></td> <td>$</td> <td align='right'>78967 <small> 83941.921</small></td></tr>
+<tr> <td> Monto Corrección </td> <td>$</td> <td align='right'>4975 </td></tr>
+</table>
+<table>
+<tr> <td>192</td> <td align='right'> <a href= '/necios-2021/libro-diario#Partida-4'>4</a> </td> <td align='right'>0</td> <td> | </td> <td align='right'> 123497</td> <td>enero</td><td>false</td><td> 1.063</td><td> 48</td> </tr>
+<tr> <td>192</td> <td align='right'> <a href= '/necios-2021/libro-diario#Partida-3'>3</a> </td> <td align='right'>0</td> <td> | </td> <td align='right'> 29412</td> <td>enero</td><td>false</td><td> 1.063</td><td> 39</td> </tr>
+<tr> <td></td> <td></td> <td align='right'>0 <small> 0.0</small> </td> <td>|</td> <td align='right'>152909<small> 162542.267</small> </td></tr>
+<tr> <td> </td> <td> </td> <td></td> <td>|</td> <td align='right'>152909 <small> 162542.267</small></td> <td>$</td> </tr>
+<tr> <td colspan='2'> Monto Corrección</td><td></td><td>$</td> <td align='right'>9633 </td></tr>
+</table>
+<table>
+<tr> <td> </td> <td align='right'> <a href= '/necios-2021/libro-diario#Partida-14'>14</a> </td> <td align='right'>7118</td> <td> | </td> <td align='right'> 0</td> <td>enero</td><td>false</td><td> 1.063</td><td> 33</td> </tr>
+<tr> <td> </td> <td align='right'> <a href= '/necios-2021/libro-diario#Partida-10'>10</a> </td> <td align='right'>39487</td> <td> | </td> <td align='right'> 0</td> <td>enero</td><td>false</td><td> 1.063</td><td> 33</td> </tr>
+<tr> <td></td> <td></td> <td align='right'>46605 <small> 49541.115</small> </td> <td>|</td> <td align='right'>0<small> 0.0</small> </td></tr>
+<tr> <td></td> <td>$</td> <td align='right'>46605 <small> 49541.115</small></td></tr>
+<tr> <td> Monto Corrección </td> <td>$</td> <td align='right'>2936 </td></tr>
+</table>
+<table>
+<tr> <td>192</td> <td align='right'> <a href= '/necios-2021/libro-diario#Partida-6'>6</a> </td> <td align='right'>45050</td> <td> | </td> <td align='right'> 0</td> <td>enero</td><td>false</td><td> 1.063</td><td> 61</td> </tr>
+<tr> <td>192</td> <td align='right'> <a href= '/necios-2021/libro-diario#Partida-5'>5</a> </td> <td align='right'>4505</td> <td> | </td> <td align='right'> 0</td> <td>enero</td><td>false</td><td> 1.063</td><td> 61</td> </tr>
+<tr> <td></td> <td></td> <td align='right'>49555 <small> 52676.965</small> </td> <td>|</td> <td align='right'>0<small> 0.0</small> </td></tr>
+<tr> <td></td> <td>$</td> <td align='right'>49555 <small> 52676.965</small></td></tr>
+<tr> <td> Monto Corrección </td> <td>$</td> <td align='right'>3122 </td></tr>
+</table>
+<table>
+<tr> <td>192</td> <td align='right'> <a href= '/necios-2021/libro-diario#Partida-7'>7</a> </td> <td align='right'>5588</td> <td> | </td> <td align='right'> 0</td> <td>enero</td><td>false</td><td> 1.063</td><td> 61</td> </tr>
+<tr> <td>192</td> <td align='right'> <a href= '/necios-2021/libro-diario#Partida-4'>4</a> </td> <td align='right'>0</td> <td> | </td> <td align='right'> 23464</td> <td>enero</td><td>false</td><td> 1.063</td><td> 48</td> </tr>
+<tr> <td>192</td> <td align='right'> <a href= '/necios-2021/libro-diario#Partida-3'>3</a> </td> <td align='right'>0</td> <td> | </td> <td align='right'> 5588</td> <td>enero</td><td>false</td><td> 1.063</td><td> 39</td> </tr>
+<tr> <td>192</td> <td align='right'> <a href= '/necios-2021/libro-diario#Partida-6'>6</a> </td> <td align='right'>0</td> <td> | </td> <td align='right'> 0</td> <td>enero</td><td>false</td><td> 1.063</td><td> 61</td> </tr>
+<tr> <td>192</td> <td align='right'> <a href= '/necios-2021/libro-diario#Partida-5'>5</a> </td> <td align='right'>0</td> <td> | </td> <td align='right'> 0</td> <td>enero</td><td>false</td><td> 1.063</td><td> 61</td> </tr>
+<tr> <td>188</td> <td align='right'> <a href= '/necios-2021/libro-diario#Partida-14333'>14333</a> </td> <td align='right'>23464</td> <td> | </td> <td align='right'> 0</td> <td>enero</td><td>false</td><td> 1.063</td><td> ajuste-iva-credito</td> </tr>
+<table>
+<tr> <td> </td> <td align='right'> <a href= '/necios-2021/libro-diario#Partida-14'>14</a> </td> <td align='right'>7118</td> <td> | </td> <td align='right'> 0</td> <td>enero</td><td>false</td><td> 1.063</td><td> 33</td> </tr>
+<tr> <td> </td> <td align='right'> <a href= '/necios-2021/libro-diario#Partida-12'>12</a> </td> <td align='right'>18849</td> <td> | </td> <td align='right'> 0</td> <td>enero</td><td>false</td><td> 1.063</td><td> 33</td> </tr>
+<tr> <td> </td> <td align='right'> <a href= '/necios-2021/libro-diario#Partida-10'>10</a> </td> <td align='right'>39487</td> <td> | </td> <td align='right'> 0</td> <td>enero</td><td>false</td><td> 1.063</td><td> 33</td> </tr>
+<tr> <td>132</td> <td align='right'> <a href= '/necios-2021/libro-diario#Partida-1'>1</a> </td> <td align='right'>44044</td> <td> | </td> <td align='right'> 0</td> <td>enero</td><td>false</td><td> 1.063</td><td> escritura-empresa</td> </tr>
+<tr> <td></td> <td></td> <td align='right'>109498 <small> 116396.374</small> </td> <td>|</td> <td align='right'>0<small> 0.0</small> </td></tr>
+<tr> <td></td> <td>$</td> <td align='right'>109498 <small> 116396.374</small></td></tr>
+<tr> <td> Monto Corrección </td> <td>$</td> <td align='right'>6898 </td></tr>
+</table>
+<table>
+<tr> <td> </td> <td align='right'> <a href= '/necios-2021/libro-diario#Partida-8'>8</a> </td> <td align='right'>10</td> <td> | </td> <td align='right'> 0</td> <td>enero</td><td>true</td><td> 1.063</td><td> 33</td> </tr>
+<tr> <td> </td> <td align='right'> <a href= '/necios-2021/libro-diario#Partida-9'>9</a> </td> <td align='right'>319</td> <td> | </td> <td align='right'> 0</td> <td>enero</td><td>true</td><td> 1.063</td><td> 33</td> </tr>
+<tr> <td> </td> <td align='right'> <a href= '/necios-2021/libro-diario#Partida-14'>14</a> </td> <td align='right'>1352</td> <td> | </td> <td align='right'> 0</td> <td>enero</td><td>false</td><td> 1.063</td><td> 33</td> </tr>
+<tr> <td> </td> <td align='right'> <a href= '/necios-2021/libro-diario#Partida-13'>13</a> </td> <td align='right'>28738</td> <td> | </td> <td align='right'> 0</td> <td>enero</td><td>true</td><td> 1.063</td><td> 33</td> </tr>
+<tr> <td> </td> <td align='right'> <a href= '/necios-2021/libro-diario#Partida-12'>12</a> </td> <td align='right'>3581</td> <td> | </td> <td align='right'> 0</td> <td>enero</td><td>false</td><td> 1.063</td><td> 33</td> </tr>
+<tr> <td> </td> <td align='right'> <a href= '/necios-2021/libro-diario#Partida-10'>10</a> </td> <td align='right'>7503</td> <td> | </td> <td align='right'> 0</td> <td>enero</td><td>false</td><td> 1.063</td><td> 33</td> </tr>
+<tr> <td>132</td> <td align='right'> <a href= '/necios-2021/libro-diario#Partida-1'>1</a> </td> <td align='right'>10909</td> <td> | </td> <td align='right'> 0</td> <td>enero</td><td>false</td><td> 1.063</td><td> escritura-empresa</td> </tr>
+<tr> <td>188</td> <td align='right'> <a href= '/necios-2021/libro-diario#Partida-14333'>14333</a> </td> <td align='right'>33</td> <td> | </td> <td align='right'> 23464</td> <td>enero</td><td>false</td><td> 1.063</td><td> ajuste-iva-credito</td> </tr>
+<tr> <td></td> <td></td> <td align='right'>52445 <small> 55749.035</small> </td> <td>|</td> <td align='right'>23464<small> 24942.232</small> </td></tr>
+<tr> <td></td> <td>$</td> <td align='right'>28981 <small> 30806.803</small></td></tr>
+<tr> <td> Monto Corrección </td> <td>$</td> <td align='right'>1826 </td></tr>
+</table>
+<table>
+<tr> <td> </td> <td align='right'> <a href= '/necios-2021/libro-diario#Partida-8'>8</a> </td> <td align='right'>0</td> <td> | </td> <td align='right'> 60</td> <td>enero</td><td>true</td><td> 1.063</td><td> 33</td> </tr>
+<tr> <td> </td> <td align='right'> <a href= '/necios-2021/libro-diario#Partida-9'>9</a> </td> <td align='right'>0</td> <td> | </td> <td align='right'> 1997</td> <td>enero</td><td>true</td><td> 1.063</td><td> 33</td> </tr>
+<tr> <td> </td> <td align='right'> <a href= '/necios-2021/libro-diario#Partida-14'>14</a> </td> <td align='right'>0</td> <td> | </td> <td align='right'> 8470</td> <td>enero</td><td>false</td><td> 1.063</td><td> 33</td> </tr>
+<tr> <td> </td> <td align='right'> <a href= '/necios-2021/libro-diario#Partida-13'>13</a> </td> <td align='right'>0</td> <td> | </td> <td align='right'> 179990</td> <td>enero</td><td>true</td><td> 1.063</td><td> 33</td> </tr>
+<tr> <td> </td> <td align='right'> <a href= '/necios-2021/libro-diario#Partida-12'>12</a> </td> <td align='right'>0</td> <td> | </td> <td align='right'> 22430</td> <td>enero</td><td>false</td><td> 1.063</td><td> 33</td> </tr>
+<tr> <td> </td> <td align='right'> <a href= '/necios-2021/libro-diario#Partida-10'>10</a> </td> <td align='right'>0</td> <td> | </td> <td align='right'> 46990</td> <td>enero</td><td>false</td><td> 1.063</td><td> 33</td> </tr>
+<tr> <td>192</td> <td align='right'> <a href= '/necios-2021/libro-diario#Partida-7'>7</a> </td> <td align='right'>0</td> <td> | </td> <td align='right'> 35000</td> <td>enero</td><td>false</td><td> 1.063</td><td> 61</td> </tr>
+<tr> <td>192</td> <td align='right'> <a href= '/necios-2021/libro-diario#Partida-6'>6</a> </td> <td align='right'>0</td> <td> | </td> <td align='right'> 45050</td> <td>enero</td><td>false</td><td> 1.063</td><td> 61</td> </tr>
+<tr> <td>192</td> <td align='right'> <a href= '/necios-2021/libro-diario#Partida-5'>5</a> </td> <td align='right'>0</td> <td> | </td> <td align='right'> 4505</td> <td>enero</td><td>false</td><td> 1.063</td><td> 61</td> </tr>
+<tr> <td>192</td> <td align='right'> <a href= '/necios-2021/libro-diario#Partida-4'>4</a> </td> <td align='right'>146961</td> <td> | </td> <td align='right'> 0</td> <td>enero</td><td>false</td><td> 1.063</td><td> 48</td> </tr>
+<tr> <td>192</td> <td align='right'> <a href= '/necios-2021/libro-diario#Partida-3'>3</a> </td> <td align='right'>35000</td> <td> | </td> <td align='right'> 0</td> <td>enero</td><td>false</td><td> 1.063</td><td> 39</td> </tr>
+<tr> <td>132</td> <td align='right'> <a href= '/necios-2021/libro-diario#Partida-1'>1</a> </td> <td align='right'>691827</td> <td> | </td> <td align='right'> 0</td> <td>enero</td><td>false</td><td> 1.063</td><td> escritura-empresa</td> </tr>
+<tr> <td>188</td> <td align='right'> <a href= '/necios-2021/libro-diario#Partida-14333'>14333</a> </td> <td align='right'>0</td> <td> | </td> <td align='right'> 199</td> <td>enero</td><td>false</td><td> 1.063</td><td> pago-de-ppm</td> </tr>
+<tr> <td></td> <td></td> <td align='right'>873788 <small> 928836.644</small> </td> <td>|</td> <td align='right'>344691<small> 366406.533</small> </td></tr>
+<tr> <td></td> <td>$</td> <td align='right'>529097 <small> 562430.111</small></td></tr>
+<tr> <td> Monto Corrección </td> <td>$</td> <td align='right'>33333 </td></tr>
+</table>
+<section>
+<h2> Libro Diario </h2>
 Contabilidad para Necios® usa el siguiente código de colores para este documento.
 <ul>
 <li><span style='background-color: red'>[    ]</span> mensaje de alerta. </li>
@@ -21,6 +230,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <table id='Partida-1'>
 <thead> <th style='background-color: lavender' colspan='6'>Partida 1</th></thead>
 <tbody>
+<h2> Asistente F22 </h2> 
 <tr><td name='Debe' align='right'>44044</td> <td colspan='7'>materiales#insumos</td> </tr>
 <tr><td name='Debe' align='right'>290000</td> <td colspan='7'>marca-alectrico#intangibles</td> </tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td name='Debe' align='right'> 44044</td> <td name='Haber' align='right'> 0</td> <td colspan='2'> a[inventario] </td> </tr>
@@ -49,6 +259,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <table id='Partida-3'>
 <thead> <th style='background-color: lavender' colspan='6'>Partida 3</th></thead>
 <tbody>
+<h2> Asistente F22 </h2> 
 <tr> <td name = 'Debe' align='right' >29412 </td> <td colspan='7'> ventas#ingresos-brutos </td></tr>
 <tr> <td name = 'Debe' align='right' >29412 </td> <td colspan='7'> ventas-con-eboleta-afecta#ventas </td></tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td name='Debe' align='right'> 35000</td> <td name='Haber' align='right'> 0</td> <td colspan='2'> a[banco-estado] </td> </tr>
@@ -69,6 +280,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <table id='Partida-4'>
 <thead> <th style='background-color: lavender' colspan='6'>Partida 4</th></thead>
 <tbody>
+<h2> Asistente F22 </h2> 
 <tr> <td name = 'Debe' align='right' >123497 </td> <td colspan='7'> ventas#ingresos-brutos </td></tr>
 <tr> <td name = 'Debe' align='right' >123497 </td> <td colspan='7'> ventas-con-voucher-afecto#ventas </td></tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td name='Debe' align='right'> 146961</td> <td name='Haber' align='right'> 0</td> <td colspan='2'> a[banco-estado] </td> </tr>
@@ -89,6 +301,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <table id='Partida-5'>
 <thead> <th style='background-color: lavender' colspan='6'>Partida 5</th></thead>
 <tbody>
+<h2> Asistente F22 </h2> 
 <tr> <td name = 'Debe' align='right' >4505 </td> <td colspan='7'> devolucion-sobre-ventas-exentas#devolucion-sobre-ventas </td></tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td name='Debe' align='right'> 0</td> <td name='Haber' align='right'> 4505</td> <td colspan='2'> a[banco-estado] </td> </tr>
 <tr style='color: white; background-color: black'>  <td> </td> <td align='right'>4505 </td> <td align='right'> 0</td> <td> </td> <td> r[devolucion-sobre-ventas] </td> </tr>
@@ -109,6 +322,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <table id='Partida-6'>
 <thead> <th style='background-color: lavender' colspan='6'>Partida 6</th></thead>
 <tbody>
+<h2> Asistente F22 </h2> 
 <tr> <td name = 'Debe' align='right' >45050 </td> <td colspan='7'> devolucion-sobre-ventas-exentas#devolucion-sobre-ventas </td></tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td name='Debe' align='right'> 0</td> <td name='Haber' align='right'> 45050</td> <td colspan='2'> a[banco-estado] </td> </tr>
 <tr style='color: white; background-color: black'>  <td> </td> <td align='right'>45050 </td> <td align='right'> 0</td> <td> </td> <td> r[devolucion-sobre-ventas] </td> </tr>
@@ -129,6 +343,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <table id='Partida-7'>
 <thead> <th style='background-color: lavender' colspan='6'>Partida 7</th></thead>
 <tbody>
+<h2> Asistente F22 </h2> 
 <tr> <td name = 'Debe' align='right' >29412 </td> <td colspan='7'> devolucion-sobre-ventas-afectas#devolucion-sobre-ventas </td></tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td name='Debe' align='right'> 0</td> <td name='Haber' align='right'> 35000</td> <td colspan='2'> a[banco-estado] </td> </tr>
 <tr style='color: white; background-color: black'>  <td> </td> <td align='right'>29412 </td> <td align='right'> 0</td> <td> </td> <td> r[devolucion-sobre-ventas] </td> </tr>
@@ -150,6 +365,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <table id='Partida-8'>
 <thead> <th style='background-color: lavender' colspan='6'>Partida 8</th></thead>
 <tbody>
+<h2> Asistente F22 </h2> 
 <tr> <td name = 'Debe' align='right' >50 </td> <td colspan='7'> khipu#costos-de-ventas </td></tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td name='Debe' align='right'> 10</td> <td name='Haber' align='right'> 0</td> <td colspan='2'> a[iva-credito] </td> </tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td name='Debe' align='right'> 0</td> <td name='Haber' align='right'> 60</td> <td colspan='2'> a[banco-estado] </td> </tr>
@@ -171,6 +387,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <table id='Partida-9'>
 <thead> <th style='background-color: lavender' colspan='6'>Partida 9</th></thead>
 <tbody>
+<h2> Asistente F22 </h2> 
 <tr> <td name = 'Debe' align='right' >1678 </td> <td colspan='7'> transbank#costos-de-ventas </td></tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td name='Debe' align='right'> 319</td> <td name='Haber' align='right'> 0</td> <td colspan='2'> a[iva-credito] </td> </tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td name='Debe' align='right'> 0</td> <td name='Haber' align='right'> 1997</td> <td colspan='2'> a[banco-estado] </td> </tr>
@@ -192,6 +409,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <table id='Partida-10'>
 <thead> <th style='background-color: lavender' colspan='6'>Partida 10</th></thead>
 <tbody>
+<h2> Asistente F22 </h2> 
 <tr><td name='Debe' align='right'>39487</td> <td colspan='7'>easy-materiales#materiales</td> </tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td name='Debe' align='right'> 39487</td> <td name='Haber' align='right'> 0</td> <td colspan='2'> a[inventario] </td> </tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td name='Debe' align='right'> 39487</td> <td name='Haber' align='right'> 0</td> <td colspan='2'> a[materiales] </td> </tr>
@@ -215,6 +433,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <table id='Partida-12'>
 <thead> <th style='background-color: lavender' colspan='6'>Partida 12</th></thead>
 <tbody>
+<h2> Asistente F22 </h2> 
 <tr><td name='Debe' align='right'>18849</td> <td colspan='7'>sodimac-materiales#materiales</td> </tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td name='Debe' align='right'> 18849</td> <td name='Haber' align='right'> 0</td> <td colspan='2'> a[inventario] </td> </tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td name='Debe' align='right'> 18849</td> <td name='Haber' align='right'> 0</td> <td colspan='2'> a[materiales] </td> </tr>
@@ -238,6 +457,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <table id='Partida-13'>
 <thead> <th style='background-color: lavender' colspan='6'>Partida 13</th></thead>
 <tbody>
+<h2> Asistente F22 </h2> 
 <tr style='background-color: lightyellow'>  <td> </td> <td name='Debe' align='right'> 28738</td> <td name='Haber' align='right'> 0</td> <td colspan='2'> a[iva-credito] </td> </tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td name='Debe' align='right'> 0</td> <td name='Haber' align='right'> 179990</td> <td colspan='2'> a[banco-estado] </td> </tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td name='Debe' align='right'> 151252</td> <td name='Haber' align='right'> 0</td> <td colspan='2'> a[herramientas] </td> </tr>
@@ -259,6 +479,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <table id='Partida-131'>
 <thead> <th style='background-color: lavender' colspan='6'>Partida 131</th></thead>
 <tbody>
+<h2> Asistente F22 </h2> 
 <tr> <td name = 'Debe' align='right' >2417 </td> <td colspan='7'> amortizacion-intangibles#amortizacion </td></tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td name='Debe' align='right'> 0</td> <td name='Haber' align='right'> 4202</td> <td colspan='2'> a[depreciacion-acumulada-herramientas] </td> </tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td name='Debe' align='right'> 0</td> <td name='Haber' align='right'> 2417</td> <td colspan='2'> a[amortizacion-acumulada-intangibles] </td> </tr>
@@ -279,6 +500,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <table id='Partida-14'>
 <thead> <th style='background-color: lavender' colspan='6'>Partida 14</th></thead>
 <tbody>
+<h2> Asistente F22 </h2> 
 <tr><td name='Debe' align='right'>7118</td> <td colspan='7'>easy-materiales#materiales</td> </tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td name='Debe' align='right'> 7118</td> <td name='Haber' align='right'> 0</td> <td colspan='2'> a[inventario] </td> </tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td name='Debe' align='right'> 7118</td> <td name='Haber' align='right'> 0</td> <td colspan='2'> a[materiales] </td> </tr>
@@ -302,6 +524,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <table id='Partida-14333'>
 <thead> <th style='background-color: lavender' colspan='6'>Partida 14333</th></thead>
 <tbody>
+<h2> Asistente F22 </h2> 
 <tr> <td name = 'Debe' align='right' >33 </td> <td colspan='7'> ganancia-por-correccion-monetaria#correccion-monetaria </td></tr>
 <tr> <td name = 'Debe' align='right' >33 </td> <td colspan='7'> correccion-monetaria#ingresos-brutos </td></tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td name='Debe' align='right'> 0</td> <td name='Haber' align='right'> 199</td> <td colspan='2'> a[banco-estado] </td> </tr>
@@ -326,6 +549,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <thead><th colspan='6'>Partida 1040</th></thead>
 <thead> <th> </th> <th> Código </th> <th>  Valor </th> <th> Descripción </th> </thead>
 <tbody>
+<h2> Asistente F22 </h2> 
  <tr> <td> </td> <td> 511 </td> <td align='right'>  41503 </td> <td> CRED.IVA POR DCTOS. ELECTRONICOS  </td> </tr>
  <tr> <td> </td> <td> 538 </td> <td align='right'>  23464 </td> <td> TOTAL DEBITOS  </td> </tr>
  <tr> <td> </td> <td> 111 </td> <td align='right'>  5588 </td> <td> DEBITOS BOLETAS EMITIDAS  </td> </tr>
@@ -359,6 +583,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <table id='Partida-1052'>
 <thead> <th style='background-color: lavender' colspan='6'>Partida 1052</th></thead>
 <tbody>
+<h2> Asistente F22 </h2> 
 </tbody></table><table><tbody> 
  <tr height='50 px' style='font-weight:bold; background-color: lightgreen'> <td>  <a href= '/necios-2021/libro-diario#Partida-1052'>^</a> </td> <td> 110 </td> <td align='right' >  1 </td> <td> Total Anual </td> </tr>
 </tbody></table><table><tbody> 

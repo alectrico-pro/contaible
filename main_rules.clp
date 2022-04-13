@@ -35,11 +35,19 @@
 
   =>
 
-   ( bind ?archivo (str-cat "./doc/archivo.markdown"))
-   ( open ?archivo l "w")
-   ( printout l (random ) crlf)
-   ( printout t "------------------- fin-archivo-markdown ------------" crlf)
-   ( close l)
+      ( bind ?archivo (str-cat "./doc/" ?empresa "/" ?archivo-nombre ".markdown"))
+      ( open ?archivo k "w")
+      ( printout k "--- " crlf)
+      ( printout k "permalink: /" ?empresa "/" ?archivo-nombre  crlf)
+      ( printout k "layout: page" crlf)
+      ( printout k "--- " crlf)
+
+;  ( bind ?archivo (str-cat "./doc/archivo.markdown"))
+ ; ( open ?archivo l "w")
+;   ( printout l (random ) crlf)
+ ;  ( printout t "------------------- fin-archivo-markdown ------------" crlf)
+;  ( close l)
+    (close k)
 )   
 
 
