@@ -1,234 +1,234 @@
-[ 40407.852] 
+[ 52026.166] 
 X.Org X Server 1.19.6
 Release Date: 2017-12-20
-[ 40407.853] X Protocol Version 11, Revision 0
-[ 40407.853] Build Operating System: Linux 4.15.0-163-generic x86_64 Ubuntu
-[ 40407.853] Current Operating System: Linux 4fc64dd86d1a 5.4.0-94-generic #106~18.04.1-Ubuntu SMP Fri Jan 7 07:23:53 UTC 2022 x86_64
-[ 40407.853] Kernel command line: BOOT_IMAGE=/boot/vmlinuz-5.4.0-94-generic root=UUID=df1b026e-8fd1-433a-b105-72fdafc099ca ro quiet splash vt.handoff=1
-[ 40407.853] Build Date: 14 December 2021  04:11:54PM
-[ 40407.853] xorg-server 2:1.19.6-1ubuntu4.10 (For technical support please see http://www.ubuntu.com/support) 
-[ 40407.853] Current version of pixman: 0.34.0
-[ 40407.854] 	Before reporting problems, check http://wiki.x.org
+[ 52026.166] X Protocol Version 11, Revision 0
+[ 52026.166] Build Operating System: Linux 4.15.0-163-generic x86_64 Ubuntu
+[ 52026.166] Current Operating System: Linux 7c6d8d6a3f71 5.4.0-94-generic #106~18.04.1-Ubuntu SMP Fri Jan 7 07:23:53 UTC 2022 x86_64
+[ 52026.166] Kernel command line: BOOT_IMAGE=/boot/vmlinuz-5.4.0-94-generic root=UUID=df1b026e-8fd1-433a-b105-72fdafc099ca ro quiet splash vt.handoff=1
+[ 52026.166] Build Date: 14 December 2021  04:11:54PM
+[ 52026.166] xorg-server 2:1.19.6-1ubuntu4.10 (For technical support please see http://www.ubuntu.com/support) 
+[ 52026.166] Current version of pixman: 0.34.0
+[ 52026.166] 	Before reporting problems, check http://wiki.x.org
 	to make sure that you have the latest version.
-[ 40407.854] Markers: (--) probed, (**) from config file, (==) default setting,
+[ 52026.166] Markers: (--) probed, (**) from config file, (==) default setting,
 	(++) from command line, (!!) notice, (II) informational,
 	(WW) warning, (EE) error, (NI) not implemented, (??) unknown.
-[ 40407.854] (++) Log file: ".xorgxrdp.10.log", Time: Wed Apr 13 05:57:24 2022
-[ 40407.855] (++) Using config file: "/etc/X11/xrdp/xorg.conf"
-[ 40407.855] (==) Using system config directory "/usr/share/X11/xorg.conf.d"
-[ 40407.855] (==) ServerLayout "X11 Server"
-[ 40407.855] (**) |-->Screen "Screen (xrdpdev)" (0)
-[ 40407.855] (**) |   |-->Monitor "Monitor"
-[ 40407.855] (**) |   |-->Device "Video Card (xrdpdev)"
-[ 40407.856] (**) |-->Input Device "xrdpMouse"
-[ 40407.856] (**) |-->Input Device "xrdpKeyboard"
-[ 40407.856] (**) Option "DontVTSwitch" "on"
-[ 40407.856] (**) Option "AutoAddDevices" "off"
-[ 40407.856] (**) Not automatically adding devices
-[ 40407.856] (==) Automatically enabling devices
-[ 40407.856] (==) Automatically adding GPU devices
-[ 40407.856] (==) Automatically binding GPU devices
-[ 40407.856] (==) Max clients allowed: 256, resource mask: 0x1fffff
-[ 40407.856] (WW) The directory "/usr/share/fonts/X11/cyrillic" does not exist.
-[ 40407.856] 	Entry deleted from font path.
-[ 40407.856] (WW) The directory "/usr/share/fonts/X11/100dpi/" does not exist.
-[ 40407.856] 	Entry deleted from font path.
-[ 40407.856] (WW) The directory "/usr/share/fonts/X11/75dpi/" does not exist.
-[ 40407.856] 	Entry deleted from font path.
-[ 40407.856] (WW) The directory "/usr/share/fonts/X11/Type1" does not exist.
-[ 40407.856] 	Entry deleted from font path.
-[ 40407.856] (WW) The directory "/usr/share/fonts/X11/100dpi" does not exist.
-[ 40407.856] 	Entry deleted from font path.
-[ 40407.856] (WW) The directory "/usr/share/fonts/X11/75dpi" does not exist.
-[ 40407.856] 	Entry deleted from font path.
-[ 40407.856] (==) FontPath set to:
+[ 52026.166] (++) Log file: ".xorgxrdp.10.log", Time: Wed Apr 13 09:11:02 2022
+[ 52026.177] (++) Using config file: "/etc/X11/xrdp/xorg.conf"
+[ 52026.177] (==) Using system config directory "/usr/share/X11/xorg.conf.d"
+[ 52026.177] (==) ServerLayout "X11 Server"
+[ 52026.177] (**) |-->Screen "Screen (xrdpdev)" (0)
+[ 52026.177] (**) |   |-->Monitor "Monitor"
+[ 52026.177] (**) |   |-->Device "Video Card (xrdpdev)"
+[ 52026.177] (**) |-->Input Device "xrdpMouse"
+[ 52026.178] (**) |-->Input Device "xrdpKeyboard"
+[ 52026.178] (**) Option "DontVTSwitch" "on"
+[ 52026.178] (**) Option "AutoAddDevices" "off"
+[ 52026.178] (**) Not automatically adding devices
+[ 52026.178] (==) Automatically enabling devices
+[ 52026.178] (==) Automatically adding GPU devices
+[ 52026.178] (==) Automatically binding GPU devices
+[ 52026.178] (==) Max clients allowed: 256, resource mask: 0x1fffff
+[ 52026.188] (WW) The directory "/usr/share/fonts/X11/cyrillic" does not exist.
+[ 52026.188] 	Entry deleted from font path.
+[ 52026.188] (WW) The directory "/usr/share/fonts/X11/100dpi/" does not exist.
+[ 52026.188] 	Entry deleted from font path.
+[ 52026.188] (WW) The directory "/usr/share/fonts/X11/75dpi/" does not exist.
+[ 52026.188] 	Entry deleted from font path.
+[ 52026.188] (WW) The directory "/usr/share/fonts/X11/Type1" does not exist.
+[ 52026.188] 	Entry deleted from font path.
+[ 52026.188] (WW) The directory "/usr/share/fonts/X11/100dpi" does not exist.
+[ 52026.188] 	Entry deleted from font path.
+[ 52026.188] (WW) The directory "/usr/share/fonts/X11/75dpi" does not exist.
+[ 52026.188] 	Entry deleted from font path.
+[ 52026.188] (==) FontPath set to:
 	/usr/share/fonts/X11/misc,
 	built-ins
-[ 40407.856] (==) ModulePath set to "/usr/lib/xorg/modules"
-[ 40407.856] (II) Loader magic: 0x55a7bc27e020
-[ 40407.856] (II) Module ABI versions:
-[ 40407.856] 	X.Org ANSI C Emulation: 0.4
-[ 40407.856] 	X.Org Video Driver: 23.0
-[ 40407.856] 	X.Org XInput driver : 24.1
-[ 40407.856] 	X.Org Server Extension : 10.0
-[ 40407.856] (EE) dbus-core: error connecting to system bus: org.freedesktop.DBus.Error.FileNotFound (Failed to connect to socket /var/run/dbus/system_bus_socket: No such file or directory)
-[ 40407.857] (II) xfree86: Adding drm device (/dev/dri/card0)
-[ 40407.860] (--) PCI:*(0:0:2:0) 8086:0102:103c:1495 rev 9, Mem @ 0xfe000000/4194304, 0xd0000000/268435456, I/O @ 0x0000f000/64, BIOS @ 0x????????/131072
-[ 40407.860] (II) "glx" will be loaded. This was enabled by default and also specified in the config file.
-[ 40407.860] (II) LoadModule: "dbe"
-[ 40407.861] (II) Module "dbe" already built-in
-[ 40407.861] (II) LoadModule: "ddc"
-[ 40407.861] (II) Module "ddc" already built-in
-[ 40407.861] (II) LoadModule: "extmod"
-[ 40407.861] (II) Module "extmod" already built-in
-[ 40407.861] (II) LoadModule: "glx"
-[ 40407.861] (II) Loading /usr/lib/xorg/modules/extensions/libglx.so
-[ 40407.862] (II) Module glx: vendor="X.Org Foundation"
-[ 40407.862] 	compiled for 1.19.6, module version = 1.0.0
-[ 40407.862] 	ABI class: X.Org Server Extension, version 10.0
-[ 40407.862] (II) LoadModule: "int10"
-[ 40407.862] (II) Loading /usr/lib/xorg/modules/libint10.so
-[ 40407.862] (II) Module int10: vendor="X.Org Foundation"
-[ 40407.862] 	compiled for 1.19.6, module version = 1.0.0
-[ 40407.863] 	ABI class: X.Org Video Driver, version 23.0
-[ 40407.863] (II) LoadModule: "record"
-[ 40407.863] (II) Module "record" already built-in
-[ 40407.863] (II) LoadModule: "vbe"
-[ 40407.863] (II) Loading /usr/lib/xorg/modules/libvbe.so
-[ 40407.863] (II) Module vbe: vendor="X.Org Foundation"
-[ 40407.863] 	compiled for 1.19.6, module version = 1.1.0
-[ 40407.863] 	ABI class: X.Org Video Driver, version 23.0
-[ 40407.863] (II) LoadModule: "xorgxrdp"
-[ 40407.863] (II) Loading /usr/lib/xorg/modules/libxorgxrdp.so
-[ 40407.863] (II) Module XORGXRDP: vendor="X.Org Foundation"
-[ 40407.863] 	compiled for 1.19.6, module version = 1.0.0
-[ 40407.863] 	ABI class: X.Org Video Driver, version 23.0
-[ 40407.863] xorgxrdpSetup:
-[ 40407.863] (II) LoadModule: "fb"
-[ 40407.863] (II) Loading /usr/lib/xorg/modules/libfb.so
-[ 40407.864] (II) Module fb: vendor="X.Org Foundation"
-[ 40407.864] 	compiled for 1.19.6, module version = 1.0.0
-[ 40407.864] 	ABI class: X.Org ANSI C Emulation, version 0.4
-[ 40407.864] (II) LoadModule: "xrdpdev"
-[ 40407.864] (II) Loading /usr/lib/xorg/modules/drivers/xrdpdev_drv.so
-[ 40407.864] (II) Module XRDPDEV: vendor="X.Org Foundation"
-[ 40407.864] 	compiled for 1.19.6, module version = 1.0.0
-[ 40407.864] 	ABI class: X.Org Video Driver, version 23.0
-[ 40407.864] xrdpdevSetup:
-[ 40407.864] (II) LoadModule: "xrdpmouse"
-[ 40407.864] (II) Loading /usr/lib/xorg/modules/input/xrdpmouse_drv.so
-[ 40407.864] (II) Module XRDPMOUSE: vendor="X.Org Foundation"
-[ 40407.864] 	compiled for 1.19.6, module version = 1.0.0
-[ 40407.864] 	Module class: X.Org XInput Driver
-[ 40407.864] 	ABI class: X.Org XInput driver, version 24.1
-[ 40407.864] rdpmousePlug:
-[ 40407.864] (II) LoadModule: "xrdpkeyb"
-[ 40407.865] (II) Loading /usr/lib/xorg/modules/input/xrdpkeyb_drv.so
-[ 40407.865] (II) Module XRDPKEYB: vendor="X.Org Foundation"
-[ 40407.865] 	compiled for 1.19.6, module version = 1.0.0
-[ 40407.865] 	Module class: X.Org XInput Driver
-[ 40407.865] 	ABI class: X.Org XInput driver, version 24.1
-[ 40407.865] rdpkeybPlug:
-[ 40407.865] rdpIdentify:
-[ 40407.865] (II) XRDPDEV: driver for xrdp: XRDPDEV
-[ 40407.865] rdpDriverFunc: op 10
-[ 40407.865] (WW) Falling back to old probe method for XRDPDEV
-[ 40407.865] rdpProbe:
-[ 40407.865] (II) Loading sub module "fb"
-[ 40407.865] (II) LoadModule: "fb"
-[ 40407.865] (II) Loading /usr/lib/xorg/modules/libfb.so
-[ 40407.865] (II) Module fb: vendor="X.Org Foundation"
-[ 40407.865] 	compiled for 1.19.6, module version = 1.0.0
-[ 40407.865] 	ABI class: X.Org ANSI C Emulation, version 0.4
-[ 40407.865] (II) XRDPDEV(0): using default device
-[ 40407.865] (WW) VGA arbiter: cannot open kernel arbiter, no multi-card support
-[ 40407.865] rdpPreInit:
-[ 40407.865] (**) XRDPDEV(0): Depth 24, (--) framebuffer bpp 32
-[ 40407.865] (==) XRDPDEV(0): RGB weight 888
-[ 40407.865] (==) XRDPDEV(0): Using gamma correction (1.0, 1.0, 1.0)
-[ 40407.865] (==) XRDPDEV(0): Default visual is TrueColor
-[ 40407.865] (==) XRDPDEV(0): DPI set to (96, 96)
-[ 40407.865] (II) XRDPDEV(0): 	mode "640x480" ok
-[ 40407.865] (II) XRDPDEV(0): 	mode "800x600" ok
-[ 40407.865] (--) XRDPDEV(0): Virtual size is 800x600 (pitch 800)
-[ 40407.865] (**) XRDPDEV(0):  Default mode "800x600": 36.0 MHz (scaled from 0.0 MHz), 35.2 kHz, 56.2 Hz
-[ 40407.865] (II) XRDPDEV(0): Modeline "800x600"x0.0   36.00  800 824 896 1024  600 601 603 625 +hsync +vsync (35.2 kHz d)
-[ 40407.865] (==) Depth 24 pixmap format is 32 bpp
-[ 40407.865] rdpScreenInit: virtualX 800 virtualY 600 rgbBits 8 depth 24
-[ 40407.865] rdpScreenInit: pfbMemory bytes 1920000
-[ 40407.865] rdpScreenInit: pfbMemory 0x7f4e58c40010
-[ 40407.865] rdpSimdInit: assigning yuv functions
-[ 40407.865] rdpSimdInit: cpuid ax 1 cx 0 return ax 0x000206a7 bx 0x02100800 cx 0x1d9ae3bf dx 0xbfebfbff
-[ 40407.865] rdpSimdInit: sse2 amd64 yuv functions assigned
-[ 40407.865] rdpXvInit: depth 24
-[ 40407.865] (==) XRDPDEV(0): Backing store enabled
-[ 40407.866] rdpClientConInit: kill disconnected [0] timeout [0] sec
-[ 40407.866] 
-[ 40407.866] rdpScreenInit: out
-[ 40407.866] (==) RandR enabled
-[ 40407.870] (II) SELinux: Disabled on system
-[ 40407.871] (II) AIGLX: Screen 0 is not DRI2 capable
-[ 40407.871] (EE) AIGLX: reverting to software rendering
-[ 40407.920] (II) IGLX: enabled GLX_MESA_copy_sub_buffer
-[ 40407.921] (II) IGLX: Loaded and initialized swrast
-[ 40407.921] (II) GLX: Initialized DRISWRAST GL provider for screen 0
-[ 40407.963] (II) Using input driver 'XRDPMOUSE' for 'xrdpMouse'
-[ 40407.963] (**) Option "CorePointer"
-[ 40407.963] (**) xrdpMouse: always reports core events
-[ 40407.963] rdpmousePreInit: drv 0x55a7bc93d910 info 0x55a7bca91190, flags 0x0
-[ 40407.963] (II) XINPUT: Adding extended input device "xrdpMouse" (type: Mouse, id 6)
-[ 40407.963] rdpmouseControl: what 0
-[ 40407.963] rdpmouseDeviceInit:
-[ 40407.963] rdpmouseCtrl:
-[ 40407.963] rdpRegisterInputCallback: type 1 proc 0x7f4e59019c60
-[ 40407.963] (**) xrdpMouse: (accel) keeping acceleration scheme 1
-[ 40407.963] (**) xrdpMouse: (accel) acceleration profile 0
-[ 40407.963] (**) xrdpMouse: (accel) acceleration factor: 2.000
-[ 40407.963] (**) xrdpMouse: (accel) acceleration threshold: 4
-[ 40407.963] rdpmouseControl: what 1
-[ 40407.964] rdpmouseDeviceOn:
-[ 40407.964] (II) Using input driver 'XRDPKEYB' for 'xrdpKeyboard'
-[ 40407.964] (**) Option "CoreKeyboard"
-[ 40407.964] (**) xrdpKeyboard: always reports core events
-[ 40407.964] rdpkeybPreInit: drv 0x55a7bc94fb30 info 0x55a7bcc01db0, flags 0x0
-[ 40407.964] (II) XINPUT: Adding extended input device "xrdpKeyboard" (type: Keyboard, id 7)
-[ 40407.964] rdpkeybControl: what 0
-[ 40407.964] rdpkeybDeviceInit:
-[ 40407.994] rdpkeybChangeKeyboardControl:
-[ 40407.994] rdpkeybChangeKeyboardControl: autoRepeat on
-[ 40407.994] rdpRegisterInputCallback: type 0 proc 0x7f4e58e16530
-[ 40407.994] rdpkeybControl: what 1
-[ 40407.994] rdpkeybDeviceOn:
-[ 40408.016] (II) config/udev: Adding drm device (/dev/dri/card0)
-[ 40408.016] (II) xfree86: Adding drm device (/dev/dri/card0)
-[ 40408.029] rdpSaveScreen:
-[ 40408.029] (EE) dbus-core: error connecting to system bus: org.freedesktop.DBus.Error.FileNotFound (Failed to connect to socket /var/run/dbus/system_bus_socket: No such file or directory)
-[ 40408.029] rdpDeferredRandR:
-[ 40408.030] rdpResizeSession: width 1024 height 768
-[ 40408.030]   calling RRScreenSizeSet
-[ 40408.030] rdpRRScreenSetSize: width 1024 height 768 mmWidth 271 mmHeight 203
-[ 40408.030] rdpRRGetInfo:
-[ 40408.030]   screen resized to 1024x768
-[ 40408.032]   RRScreenSizeSet ok 1
-[ 40408.033] rdpResizeSession: width 1024 height 768
-[ 40408.094] rdpInDeferredUpdateCallback:
-[ 40408.094] rdpkeybChangeKeyboardControl:
-[ 40408.094] rdpkeybChangeKeyboardControl: autoRepeat off
-[ 40408.370] rdpClientConGotConnection:
-[ 40408.370] rdpClientConGotConnection: g_sck_accept ok new_sck 17
-[ 40408.370] rdpClientConGotConnection: adding only clientCon
-[ 40408.398] rdpClientConProcessMsgVersion: version 0 0 0 1
-[ 40408.398] rdpClientConProcessScreenSizeMsg: set width 1024 height 768 bpp 16
-[ 40408.399] rdpClientConProcessScreenSizeMsg: shmemid 0 shmemptr 0x7f4e58c95000
-[ 40408.399] rdpClientConProcessMsgClientInput: invalidate x 0 y 0 cx 1024 cy 768
-[ 40408.498] rdpClientConProcessMsgClientInfo:
-[ 40408.499]   got client info bytes 5744
-[ 40408.499]   jpeg support 0
-[ 40408.499]   offscreen support 0
-[ 40408.499]   offscreen size 0
-[ 40408.499]   offscreen entries 0
-[ 40408.499]   client supports glyph cache but server disabled
-[ 40408.499]   client can not do offscreen to offscreen blits
-[ 40408.499]   client can do new(color) cursor
-[ 40408.499]   client can not do multimon
-[ 40408.499] rdpRRSetRdpOutputs: numCrtcs 0 monitorCount 0
-[ 40408.499] rdpRRSetRdpOutputs: add output 0 left 0 top 0 width 1024 height 768
-[ 40408.499] rdpLoadLayout: keylayout 0x00000409 variant  display 10
-[ 40408.499] rdpkeybChangeKeyboardControl:
-[ 40408.499] rdpkeybChangeKeyboardControl: autoRepeat on
-[ 40408.500] rdpkeybChangeKeyboardControl:
-[ 40408.500] rdpkeybChangeKeyboardControl: autoRepeat on
-[ 40408.600] rdpInDeferredUpdateCallback:
-[ 40408.600] rdpkeybChangeKeyboardControl:
-[ 40408.600] rdpkeybChangeKeyboardControl: autoRepeat off
-[ 40408.600] rdpkeybChangeKeyboardControl:
-[ 40408.601] rdpkeybChangeKeyboardControl: autoRepeat off
-[ 40409.192] Using O_TMPFILE
-[ 40418.034] (EE) dbus-core: error connecting to system bus: org.freedesktop.DBus.Error.FileNotFound (Failed to connect to socket /var/run/dbus/system_bus_socket: No such file or directory)
-[ 40420.369] rdpClientConRecv: g_sck_recv failed(returned 0)
-[ 40420.369] rdpClientConDisconnect:
-[ 40420.369] rdpClientConDisconnect: clientCon removed from dev list
-[ 40420.369] rdpClientConRecvMsg: error
-[ 40420.369] rdpClientConCheck: rdpClientConGotData failed
-[ 40428.043] (EE) dbus-core: error connecting to system bus: org.freedesktop.DBus.Error.FileNotFound (Failed to connect to socket /var/run/dbus/system_bus_socket: No such file or directory)
-[ 40438.052] (EE) dbus-core: error connecting to system bus: org.freedesktop.DBus.Error.FileNotFound (Failed to connect to socket /var/run/dbus/system_bus_socket: No such file or directory)
+[ 52026.188] (==) ModulePath set to "/usr/lib/xorg/modules"
+[ 52026.188] (II) Loader magic: 0x5589ee7c0020
+[ 52026.188] (II) Module ABI versions:
+[ 52026.188] 	X.Org ANSI C Emulation: 0.4
+[ 52026.188] 	X.Org Video Driver: 23.0
+[ 52026.188] 	X.Org XInput driver : 24.1
+[ 52026.188] 	X.Org Server Extension : 10.0
+[ 52026.188] (EE) dbus-core: error connecting to system bus: org.freedesktop.DBus.Error.FileNotFound (Failed to connect to socket /var/run/dbus/system_bus_socket: No such file or directory)
+[ 52026.189] (II) xfree86: Adding drm device (/dev/dri/card0)
+[ 52026.193] (--) PCI:*(0:0:2:0) 8086:0102:103c:1495 rev 9, Mem @ 0xfe000000/4194304, 0xd0000000/268435456, I/O @ 0x0000f000/64, BIOS @ 0x????????/131072
+[ 52026.193] (II) "glx" will be loaded. This was enabled by default and also specified in the config file.
+[ 52026.193] (II) LoadModule: "dbe"
+[ 52026.193] (II) Module "dbe" already built-in
+[ 52026.193] (II) LoadModule: "ddc"
+[ 52026.193] (II) Module "ddc" already built-in
+[ 52026.193] (II) LoadModule: "extmod"
+[ 52026.193] (II) Module "extmod" already built-in
+[ 52026.193] (II) LoadModule: "glx"
+[ 52026.201] (II) Loading /usr/lib/xorg/modules/extensions/libglx.so
+[ 52026.202] (II) Module glx: vendor="X.Org Foundation"
+[ 52026.202] 	compiled for 1.19.6, module version = 1.0.0
+[ 52026.202] 	ABI class: X.Org Server Extension, version 10.0
+[ 52026.202] (II) LoadModule: "int10"
+[ 52026.203] (II) Loading /usr/lib/xorg/modules/libint10.so
+[ 52026.203] (II) Module int10: vendor="X.Org Foundation"
+[ 52026.203] 	compiled for 1.19.6, module version = 1.0.0
+[ 52026.203] 	ABI class: X.Org Video Driver, version 23.0
+[ 52026.203] (II) LoadModule: "record"
+[ 52026.203] (II) Module "record" already built-in
+[ 52026.203] (II) LoadModule: "vbe"
+[ 52026.203] (II) Loading /usr/lib/xorg/modules/libvbe.so
+[ 52026.203] (II) Module vbe: vendor="X.Org Foundation"
+[ 52026.203] 	compiled for 1.19.6, module version = 1.1.0
+[ 52026.203] 	ABI class: X.Org Video Driver, version 23.0
+[ 52026.203] (II) LoadModule: "xorgxrdp"
+[ 52026.204] (II) Loading /usr/lib/xorg/modules/libxorgxrdp.so
+[ 52026.204] (II) Module XORGXRDP: vendor="X.Org Foundation"
+[ 52026.204] 	compiled for 1.19.6, module version = 1.0.0
+[ 52026.204] 	ABI class: X.Org Video Driver, version 23.0
+[ 52026.204] xorgxrdpSetup:
+[ 52026.204] (II) LoadModule: "fb"
+[ 52026.204] (II) Loading /usr/lib/xorg/modules/libfb.so
+[ 52026.204] (II) Module fb: vendor="X.Org Foundation"
+[ 52026.204] 	compiled for 1.19.6, module version = 1.0.0
+[ 52026.204] 	ABI class: X.Org ANSI C Emulation, version 0.4
+[ 52026.204] (II) LoadModule: "xrdpdev"
+[ 52026.205] (II) Loading /usr/lib/xorg/modules/drivers/xrdpdev_drv.so
+[ 52026.205] (II) Module XRDPDEV: vendor="X.Org Foundation"
+[ 52026.205] 	compiled for 1.19.6, module version = 1.0.0
+[ 52026.205] 	ABI class: X.Org Video Driver, version 23.0
+[ 52026.205] xrdpdevSetup:
+[ 52026.205] (II) LoadModule: "xrdpmouse"
+[ 52026.205] (II) Loading /usr/lib/xorg/modules/input/xrdpmouse_drv.so
+[ 52026.205] (II) Module XRDPMOUSE: vendor="X.Org Foundation"
+[ 52026.205] 	compiled for 1.19.6, module version = 1.0.0
+[ 52026.205] 	Module class: X.Org XInput Driver
+[ 52026.205] 	ABI class: X.Org XInput driver, version 24.1
+[ 52026.205] rdpmousePlug:
+[ 52026.205] (II) LoadModule: "xrdpkeyb"
+[ 52026.205] (II) Loading /usr/lib/xorg/modules/input/xrdpkeyb_drv.so
+[ 52026.205] (II) Module XRDPKEYB: vendor="X.Org Foundation"
+[ 52026.205] 	compiled for 1.19.6, module version = 1.0.0
+[ 52026.205] 	Module class: X.Org XInput Driver
+[ 52026.205] 	ABI class: X.Org XInput driver, version 24.1
+[ 52026.205] rdpkeybPlug:
+[ 52026.205] rdpIdentify:
+[ 52026.206] (II) XRDPDEV: driver for xrdp: XRDPDEV
+[ 52026.206] rdpDriverFunc: op 10
+[ 52026.206] (WW) Falling back to old probe method for XRDPDEV
+[ 52026.206] rdpProbe:
+[ 52026.206] (II) Loading sub module "fb"
+[ 52026.206] (II) LoadModule: "fb"
+[ 52026.206] (II) Loading /usr/lib/xorg/modules/libfb.so
+[ 52026.206] (II) Module fb: vendor="X.Org Foundation"
+[ 52026.206] 	compiled for 1.19.6, module version = 1.0.0
+[ 52026.206] 	ABI class: X.Org ANSI C Emulation, version 0.4
+[ 52026.206] (II) XRDPDEV(0): using default device
+[ 52026.206] (WW) VGA arbiter: cannot open kernel arbiter, no multi-card support
+[ 52026.206] rdpPreInit:
+[ 52026.206] (**) XRDPDEV(0): Depth 24, (--) framebuffer bpp 32
+[ 52026.206] (==) XRDPDEV(0): RGB weight 888
+[ 52026.206] (==) XRDPDEV(0): Using gamma correction (1.0, 1.0, 1.0)
+[ 52026.206] (==) XRDPDEV(0): Default visual is TrueColor
+[ 52026.206] (==) XRDPDEV(0): DPI set to (96, 96)
+[ 52026.206] (II) XRDPDEV(0): 	mode "640x480" ok
+[ 52026.206] (II) XRDPDEV(0): 	mode "800x600" ok
+[ 52026.206] (--) XRDPDEV(0): Virtual size is 800x600 (pitch 800)
+[ 52026.206] (**) XRDPDEV(0):  Default mode "800x600": 36.0 MHz (scaled from 0.0 MHz), 35.2 kHz, 56.2 Hz
+[ 52026.206] (II) XRDPDEV(0): Modeline "800x600"x0.0   36.00  800 824 896 1024  600 601 603 625 +hsync +vsync (35.2 kHz d)
+[ 52026.206] (==) Depth 24 pixmap format is 32 bpp
+[ 52026.206] rdpScreenInit: virtualX 800 virtualY 600 rgbBits 8 depth 24
+[ 52026.206] rdpScreenInit: pfbMemory bytes 1920000
+[ 52026.206] rdpScreenInit: pfbMemory 0x7f58d407d010
+[ 52026.206] rdpSimdInit: assigning yuv functions
+[ 52026.206] rdpSimdInit: cpuid ax 1 cx 0 return ax 0x000206a7 bx 0x00100800 cx 0x1d9ae3bf dx 0xbfebfbff
+[ 52026.206] rdpSimdInit: sse2 amd64 yuv functions assigned
+[ 52026.206] rdpXvInit: depth 24
+[ 52026.206] (==) XRDPDEV(0): Backing store enabled
+[ 52026.206] rdpClientConInit: kill disconnected [0] timeout [0] sec
+[ 52026.206] 
+[ 52026.206] rdpScreenInit: out
+[ 52026.207] (==) RandR enabled
+[ 52026.212] (II) SELinux: Disabled on system
+[ 52026.213] (II) AIGLX: Screen 0 is not DRI2 capable
+[ 52026.213] (EE) AIGLX: reverting to software rendering
+[ 52026.262] (II) IGLX: enabled GLX_MESA_copy_sub_buffer
+[ 52026.263] (II) IGLX: Loaded and initialized swrast
+[ 52026.263] (II) GLX: Initialized DRISWRAST GL provider for screen 0
+[ 52026.323] (II) Using input driver 'XRDPMOUSE' for 'xrdpMouse'
+[ 52026.323] (**) Option "CorePointer"
+[ 52026.323] (**) xrdpMouse: always reports core events
+[ 52026.323] rdpmousePreInit: drv 0x5589efc4c8c0 info 0x5589efda0160, flags 0x0
+[ 52026.324] (II) XINPUT: Adding extended input device "xrdpMouse" (type: Mouse, id 6)
+[ 52026.324] rdpmouseControl: what 0
+[ 52026.324] rdpmouseDeviceInit:
+[ 52026.324] rdpmouseCtrl:
+[ 52026.326] rdpRegisterInputCallback: type 1 proc 0x7f58d4456c60
+[ 52026.327] (**) xrdpMouse: (accel) keeping acceleration scheme 1
+[ 52026.327] (**) xrdpMouse: (accel) acceleration profile 0
+[ 52026.327] (**) xrdpMouse: (accel) acceleration factor: 2.000
+[ 52026.327] (**) xrdpMouse: (accel) acceleration threshold: 4
+[ 52026.327] rdpmouseControl: what 1
+[ 52026.327] rdpmouseDeviceOn:
+[ 52026.328] (II) Using input driver 'XRDPKEYB' for 'xrdpKeyboard'
+[ 52026.328] (**) Option "CoreKeyboard"
+[ 52026.328] (**) xrdpKeyboard: always reports core events
+[ 52026.328] rdpkeybPreInit: drv 0x5589efc5eb30 info 0x5589eff10d80, flags 0x0
+[ 52026.328] (II) XINPUT: Adding extended input device "xrdpKeyboard" (type: Keyboard, id 7)
+[ 52026.328] rdpkeybControl: what 0
+[ 52026.328] rdpkeybDeviceInit:
+[ 52026.369] rdpkeybChangeKeyboardControl:
+[ 52026.369] rdpkeybChangeKeyboardControl: autoRepeat on
+[ 52026.369] rdpRegisterInputCallback: type 0 proc 0x7f58d4253530
+[ 52026.369] rdpkeybControl: what 1
+[ 52026.369] rdpkeybDeviceOn:
+[ 52026.401] (II) config/udev: Adding drm device (/dev/dri/card0)
+[ 52026.401] (II) xfree86: Adding drm device (/dev/dri/card0)
+[ 52026.414] rdpSaveScreen:
+[ 52026.414] (EE) dbus-core: error connecting to system bus: org.freedesktop.DBus.Error.FileNotFound (Failed to connect to socket /var/run/dbus/system_bus_socket: No such file or directory)
+[ 52026.415] rdpDeferredRandR:
+[ 52026.415] rdpResizeSession: width 1024 height 768
+[ 52026.415]   calling RRScreenSizeSet
+[ 52026.417] rdpRRScreenSetSize: width 1024 height 768 mmWidth 271 mmHeight 203
+[ 52026.418] rdpRRGetInfo:
+[ 52026.418]   screen resized to 1024x768
+[ 52026.421]   RRScreenSizeSet ok 1
+[ 52026.421] rdpResizeSession: width 1024 height 768
+[ 52026.469] rdpInDeferredUpdateCallback:
+[ 52026.469] rdpkeybChangeKeyboardControl:
+[ 52026.469] rdpkeybChangeKeyboardControl: autoRepeat off
+[ 52026.597] rdpClientConGotConnection:
+[ 52026.597] rdpClientConGotConnection: g_sck_accept ok new_sck 7
+[ 52026.597] rdpClientConGotConnection: adding only clientCon
+[ 52026.631] rdpClientConProcessMsgVersion: version 0 0 0 1
+[ 52026.631] rdpClientConProcessScreenSizeMsg: set width 1024 height 768 bpp 16
+[ 52026.632] rdpClientConProcessScreenSizeMsg: shmemid 0 shmemptr 0x7f58d40d2000
+[ 52026.633] rdpClientConProcessMsgClientInput: invalidate x 0 y 0 cx 1024 cy 768
+[ 52026.732] rdpClientConProcessMsgClientInfo:
+[ 52026.732]   got client info bytes 5744
+[ 52026.732]   jpeg support 0
+[ 52026.732]   offscreen support 0
+[ 52026.732]   offscreen size 0
+[ 52026.732]   offscreen entries 0
+[ 52026.732]   client supports glyph cache but server disabled
+[ 52026.732]   client can not do offscreen to offscreen blits
+[ 52026.732]   client can do new(color) cursor
+[ 52026.732]   client can not do multimon
+[ 52026.732] rdpRRSetRdpOutputs: numCrtcs 0 monitorCount 0
+[ 52026.732] rdpRRSetRdpOutputs: add output 0 left 0 top 0 width 1024 height 768
+[ 52026.732] rdpLoadLayout: keylayout 0x00000409 variant  display 10
+[ 52026.732] rdpkeybChangeKeyboardControl:
+[ 52026.732] rdpkeybChangeKeyboardControl: autoRepeat on
+[ 52026.733] rdpkeybChangeKeyboardControl:
+[ 52026.733] rdpkeybChangeKeyboardControl: autoRepeat on
+[ 52026.833] rdpInDeferredUpdateCallback:
+[ 52026.833] rdpkeybChangeKeyboardControl:
+[ 52026.833] rdpkeybChangeKeyboardControl: autoRepeat off
+[ 52026.833] rdpkeybChangeKeyboardControl:
+[ 52026.834] rdpkeybChangeKeyboardControl: autoRepeat off
+[ 52029.594] Using O_TMPFILE
+[ 52036.420] (EE) dbus-core: error connecting to system bus: org.freedesktop.DBus.Error.FileNotFound (Failed to connect to socket /var/run/dbus/system_bus_socket: No such file or directory)
+[ 52038.270] rdpClientConRecv: g_sck_recv failed(returned 0)
+[ 52038.270] rdpClientConDisconnect:
+[ 52038.270] rdpClientConDisconnect: clientCon removed from dev list
+[ 52038.270] rdpClientConRecvMsg: error
+[ 52038.270] rdpClientConCheck: rdpClientConGotData failed
+[ 52046.428] (EE) dbus-core: error connecting to system bus: org.freedesktop.DBus.Error.FileNotFound (Failed to connect to socket /var/run/dbus/system_bus_socket: No such file or directory)
+[ 52056.436] (EE) dbus-core: error connecting to system bus: org.freedesktop.DBus.Error.FileNotFound (Failed to connect to socket /var/run/dbus/system_bus_socket: No such file or directory)

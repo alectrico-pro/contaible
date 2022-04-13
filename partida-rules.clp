@@ -930,7 +930,7 @@
 
 
 
-;   ( printout k "<table></table>" crlf)
+   ( printout k "</tbody></table><table><tbody> " crlf)
 
 
    ( modify ?formulario (presentado-en-f22 true) )
