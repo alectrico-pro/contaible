@@ -35,5 +35,5 @@ docker run  \
   bash -c 'cd /doc/mobi && ebook-convert libro-diario.mobi libro-diario.epub ' 
 
 
-#docker run -p 4000:4000 --volumes-from st -v $(pwd)/docs:/doc jeky bash -c 'cd /doc && jekyll serve'
+docker run -p 4000:4000 --volumes-from st -v $(pwd)/docs:/doc jeky bash -c 'cd /doc && jekyll serve'
 

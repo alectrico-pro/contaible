@@ -931,7 +931,9 @@
 
    ( if (eq ?mes "")
     then
+      
       ( printout k " <tr height='50 px' style='font-weight:bold; background-color: lightgreen'> <td>  <a href= '/" ?empresa "/libro-diario#Partida-" ?numero "'>" ^ "</a> </td> <td> " ?codigo " </td> <td align='right' >  " ?valor " </td> <td> " ?descripcion " </td> </tr>" crlf)
+      ( printout k "</table><table>" crlf)
 ;      ( printout k " <tr height='50 px'></tr>" crlf)
 
     else

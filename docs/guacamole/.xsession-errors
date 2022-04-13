@@ -1717,3 +1717,804 @@ dbus-update-activation-environment: setting PWD=/config
 Obt-Message: Xinerama extension is not present on the server
 Openbox-Message: Unable to find a valid menu file "/var/lib/openbox/debian-menu.xml"
 QStandardPaths: XDG_RUNTIME_DIR not set, defaulting to '/tmp/runtime-abc'
+Xsession: X session started for abc at Wed Apr 13 05:06:57 UTC 2022
+localuser:abc being added to access control list
+dbus-update-activation-environment: systemd --user not found, ignoring --systemd argument
+dbus-update-activation-environment: setting USER=abc
+dbus-update-activation-environment: setting HOME=/config
+dbus-update-activation-environment: setting DBUS_SESSION_BUS_ADDRESS=unix:abstract=/tmp/dbus-odJGStJxAx,guid=7e5dcd88bc9dffee48a08acc62565a74
+dbus-update-activation-environment: setting PULSE_SCRIPT=/etc/xrdp/pulse/default.pa
+dbus-update-activation-environment: setting LOGNAME=abc
+dbus-update-activation-environment: setting PATH=/sbin:/bin:/usr/bin:/usr/local/bin
+dbus-update-activation-environment: setting XRDP_SOCKET_PATH=/var/run/xrdp/sockdir
+dbus-update-activation-environment: setting DISPLAY=:10.0
+dbus-update-activation-environment: setting UID=1000
+dbus-update-activation-environment: setting SHELL=/bin/bash
+dbus-update-activation-environment: setting XRDP_SESSION=1
+dbus-update-activation-environment: setting GPG_AGENT_INFO=/config/.gnupg/S.gpg-agent:0:1
+dbus-update-activation-environment: setting PWD=/config
+Openbox-Message: Unable to find a valid menu file "/var/lib/openbox/debian-menu.xml"
+QStandardPaths: XDG_RUNTIME_DIR not set, defaulting to '/tmp/runtime-abc'
+XIO:  fatal IO error 11 (Resource temporarily unavailable) on X server ":10.0"
+      after 2015 requests (2015 known processed) with 0 events remaining.
+Xsession: X session started for abc at Wed Apr 13 05:07:55 UTC 2022
+localuser:abc being added to access control list
+dbus-update-activation-environment: systemd --user not found, ignoring --systemd argument
+dbus-update-activation-environment: setting USER=abc
+dbus-update-activation-environment: setting HOME=/config
+dbus-update-activation-environment: setting DBUS_SESSION_BUS_ADDRESS=unix:abstract=/tmp/dbus-xa5hAg9tzM,guid=2e88561abedef7c3cd9e4c6e62565aab
+dbus-update-activation-environment: setting PULSE_SCRIPT=/etc/xrdp/pulse/default.pa
+dbus-update-activation-environment: setting LOGNAME=abc
+dbus-update-activation-environment: setting PATH=/sbin:/bin:/usr/bin:/usr/local/bin
+dbus-update-activation-environment: setting XRDP_SOCKET_PATH=/var/run/xrdp/sockdir
+dbus-update-activation-environment: setting DISPLAY=:10.0
+dbus-update-activation-environment: setting UID=1000
+dbus-update-activation-environment: setting SHELL=/bin/bash
+dbus-update-activation-environment: setting XRDP_SESSION=1
+dbus-update-activation-environment: setting GPG_AGENT_INFO=/config/.gnupg/S.gpg-agent:0:1
+dbus-update-activation-environment: setting PWD=/config
+Obt-Message: Xinerama extension is not present on the server
+Openbox-Message: Unable to find a valid menu file "/var/lib/openbox/debian-menu.xml"
+QStandardPaths: XDG_RUNTIME_DIR not set, defaulting to '/tmp/runtime-abc'
+XIO:  fatal IO error 11 (Resource temporarily unavailable) on X server ":10.0"
+      after 4953 requests (4953 known processed) with 0 events remaining.
+Xsession: X session started for abc at Wed Apr 13 05:08:52 UTC 2022
+localuser:abc being added to access control list
+dbus-update-activation-environment: systemd --user not found, ignoring --systemd argument
+dbus-update-activation-environment: setting USER=abc
+dbus-update-activation-environment: setting HOME=/config
+dbus-update-activation-environment: setting DBUS_SESSION_BUS_ADDRESS=unix:abstract=/tmp/dbus-PpvHZGYCzb,guid=cdfe17e12749cc973590de5c62565ae4
+dbus-update-activation-environment: setting PULSE_SCRIPT=/etc/xrdp/pulse/default.pa
+dbus-update-activation-environment: setting LOGNAME=abc
+dbus-update-activation-environment: setting PATH=/sbin:/bin:/usr/bin:/usr/local/bin
+dbus-update-activation-environment: setting XRDP_SOCKET_PATH=/var/run/xrdp/sockdir
+dbus-update-activation-environment: setting DISPLAY=:10.0
+dbus-update-activation-environment: setting UID=1000
+dbus-update-activation-environment: setting SHELL=/bin/bash
+dbus-update-activation-environment: setting XRDP_SESSION=1
+dbus-update-activation-environment: setting GPG_AGENT_INFO=/config/.gnupg/S.gpg-agent:0:1
+dbus-update-activation-environment: setting PWD=/config
+Obt-Message: Xinerama extension is not present on the server
+Openbox-Message: Unable to find a valid menu file "/var/lib/openbox/debian-menu.xml"
+QStandardPaths: XDG_RUNTIME_DIR not set, defaulting to '/tmp/runtime-abc'
+XIO:  fatal IO error 11 (Resource temporarily unavailable) on X server ":10.0"
+      after 4952 requests (4952 known processed) with 0 events remaining.
+Xsession: X session started for abc at Wed Apr 13 05:09:49 UTC 2022
+localuser:abc being added to access control list
+dbus-update-activation-environment: systemd --user not found, ignoring --systemd argument
+dbus-update-activation-environment: setting USER=abc
+dbus-update-activation-environment: setting HOME=/config
+dbus-update-activation-environment: setting DBUS_SESSION_BUS_ADDRESS=unix:abstract=/tmp/dbus-hBeTsgpkYn,guid=edf67985e36650e5ab61078f62565b1d
+dbus-update-activation-environment: setting PULSE_SCRIPT=/etc/xrdp/pulse/default.pa
+dbus-update-activation-environment: setting LOGNAME=abc
+dbus-update-activation-environment: setting PATH=/sbin:/bin:/usr/bin:/usr/local/bin
+dbus-update-activation-environment: setting XRDP_SOCKET_PATH=/var/run/xrdp/sockdir
+dbus-update-activation-environment: setting DISPLAY=:10.0
+dbus-update-activation-environment: setting UID=1000
+dbus-update-activation-environment: setting SHELL=/bin/bash
+dbus-update-activation-environment: setting XRDP_SESSION=1
+dbus-update-activation-environment: setting GPG_AGENT_INFO=/config/.gnupg/S.gpg-agent:0:1
+dbus-update-activation-environment: setting PWD=/config
+Obt-Message: Xinerama extension is not present on the server
+Openbox-Message: Unable to find a valid menu file "/var/lib/openbox/debian-menu.xml"
+QStandardPaths: XDG_RUNTIME_DIR not set, defaulting to '/tmp/runtime-abc'
+XIO:  fatal IO error 10 (No child processes) on X server ":10.0"
+      after 4752 requests (4749 known processed) with 0 events remaining.
+Xsession: X session started for abc at Wed Apr 13 05:10:46 UTC 2022
+localuser:abc being added to access control list
+dbus-update-activation-environment: systemd --user not found, ignoring --systemd argument
+dbus-update-activation-environment: setting USER=abc
+dbus-update-activation-environment: setting HOME=/config
+dbus-update-activation-environment: setting DBUS_SESSION_BUS_ADDRESS=unix:abstract=/tmp/dbus-tUuUYM3RV0,guid=751d296a98218e44a95e502a62565b56
+dbus-update-activation-environment: setting PULSE_SCRIPT=/etc/xrdp/pulse/default.pa
+dbus-update-activation-environment: setting LOGNAME=abc
+dbus-update-activation-environment: setting PATH=/sbin:/bin:/usr/bin:/usr/local/bin
+dbus-update-activation-environment: setting XRDP_SOCKET_PATH=/var/run/xrdp/sockdir
+dbus-update-activation-environment: setting DISPLAY=:10.0
+dbus-update-activation-environment: setting UID=1000
+dbus-update-activation-environment: setting SHELL=/bin/bash
+dbus-update-activation-environment: setting XRDP_SESSION=1
+dbus-update-activation-environment: setting GPG_AGENT_INFO=/config/.gnupg/S.gpg-agent:0:1
+dbus-update-activation-environment: setting PWD=/config
+Obt-Message: Xinerama extension is not present on the server
+Openbox-Message: Unable to find a valid menu file "/var/lib/openbox/debian-menu.xml"
+QStandardPaths: XDG_RUNTIME_DIR not set, defaulting to '/tmp/runtime-abc'
+XIO:  fatal IO error 11 (Resource temporarily unavailable) on X server ":10.0"
+      after 4751 requests (4748 known processed) with 0 events remaining.
+Xsession: X session started for abc at Wed Apr 13 05:11:44 UTC 2022
+localuser:abc being added to access control list
+dbus-update-activation-environment: systemd --user not found, ignoring --systemd argument
+dbus-update-activation-environment: setting USER=abc
+dbus-update-activation-environment: setting HOME=/config
+dbus-update-activation-environment: setting DBUS_SESSION_BUS_ADDRESS=unix:abstract=/tmp/dbus-dKsBqKBUdM,guid=f417238fc902a45daeb2a33062565b90
+dbus-update-activation-environment: setting PULSE_SCRIPT=/etc/xrdp/pulse/default.pa
+dbus-update-activation-environment: setting LOGNAME=abc
+dbus-update-activation-environment: setting PATH=/sbin:/bin:/usr/bin:/usr/local/bin
+dbus-update-activation-environment: setting XRDP_SOCKET_PATH=/var/run/xrdp/sockdir
+dbus-update-activation-environment: setting DISPLAY=:10.0
+dbus-update-activation-environment: setting UID=1000
+dbus-update-activation-environment: setting SHELL=/bin/bash
+dbus-update-activation-environment: setting XRDP_SESSION=1
+dbus-update-activation-environment: setting GPG_AGENT_INFO=/config/.gnupg/S.gpg-agent:0:1
+dbus-update-activation-environment: setting PWD=/config
+Obt-Message: Xinerama extension is not present on the server
+Openbox-Message: Unable to find a valid menu file "/var/lib/openbox/debian-menu.xml"
+QStandardPaths: XDG_RUNTIME_DIR not set, defaulting to '/tmp/runtime-abc'
+XIO:  fatal IO error 4 (Interrupted system call) on X server ":10.0"
+      after 4953 requests (4953 known processed) with 0 events remaining.
+Xsession: X session started for abc at Wed Apr 13 05:12:43 UTC 2022
+localuser:abc being added to access control list
+dbus-update-activation-environment: systemd --user not found, ignoring --systemd argument
+dbus-update-activation-environment: setting USER=abc
+dbus-update-activation-environment: setting HOME=/config
+dbus-update-activation-environment: setting DBUS_SESSION_BUS_ADDRESS=unix:abstract=/tmp/dbus-0wxq6UbFr0,guid=41aa46cd10bf31f9e7b5e3c362565bcb
+dbus-update-activation-environment: setting PULSE_SCRIPT=/etc/xrdp/pulse/default.pa
+dbus-update-activation-environment: setting LOGNAME=abc
+dbus-update-activation-environment: setting PATH=/sbin:/bin:/usr/bin:/usr/local/bin
+dbus-update-activation-environment: setting XRDP_SOCKET_PATH=/var/run/xrdp/sockdir
+dbus-update-activation-environment: setting DISPLAY=:10.0
+dbus-update-activation-environment: setting UID=1000
+dbus-update-activation-environment: setting SHELL=/bin/bash
+dbus-update-activation-environment: setting XRDP_SESSION=1
+dbus-update-activation-environment: setting GPG_AGENT_INFO=/config/.gnupg/S.gpg-agent:0:1
+dbus-update-activation-environment: setting PWD=/config
+Obt-Message: Xinerama extension is not present on the server
+Openbox-Message: Unable to find a valid menu file "/var/lib/openbox/debian-menu.xml"
+QStandardPaths: XDG_RUNTIME_DIR not set, defaulting to '/tmp/runtime-abc'
+XIO:  fatal IO error 11 (Resource temporarily unavailable) on X server ":10.0"
+      after 4952 requests (4952 known processed) with 0 events remaining.
+Xsession: X session started for abc at Wed Apr 13 05:13:40 UTC 2022
+localuser:abc being added to access control list
+dbus-update-activation-environment: systemd --user not found, ignoring --systemd argument
+dbus-update-activation-environment: setting USER=abc
+dbus-update-activation-environment: setting HOME=/config
+dbus-update-activation-environment: setting DBUS_SESSION_BUS_ADDRESS=unix:abstract=/tmp/dbus-T0kaI6jw1p,guid=35aa450ce90d440780a5bed462565c04
+dbus-update-activation-environment: setting PULSE_SCRIPT=/etc/xrdp/pulse/default.pa
+dbus-update-activation-environment: setting LOGNAME=abc
+dbus-update-activation-environment: setting PATH=/sbin:/bin:/usr/bin:/usr/local/bin
+dbus-update-activation-environment: setting XRDP_SOCKET_PATH=/var/run/xrdp/sockdir
+dbus-update-activation-environment: setting DISPLAY=:10.0
+dbus-update-activation-environment: setting UID=1000
+dbus-update-activation-environment: setting SHELL=/bin/bash
+dbus-update-activation-environment: setting XRDP_SESSION=1
+dbus-update-activation-environment: setting GPG_AGENT_INFO=/config/.gnupg/S.gpg-agent:0:1
+dbus-update-activation-environment: setting PWD=/config
+Obt-Message: Xinerama extension is not present on the server
+Openbox-Message: Unable to find a valid menu file "/var/lib/openbox/debian-menu.xml"
+QStandardPaths: XDG_RUNTIME_DIR not set, defaulting to '/tmp/runtime-abc'
+XIO:  fatal IO error 11 (Resource temporarily unavailable) on X server ":10.0"
+      after 4952 requests (4952 known processed) with 0 events remaining.
+Xsession: X session started for abc at Wed Apr 13 05:14:37 UTC 2022
+localuser:abc being added to access control list
+dbus-update-activation-environment: systemd --user not found, ignoring --systemd argument
+dbus-update-activation-environment: setting USER=abc
+dbus-update-activation-environment: setting HOME=/config
+dbus-update-activation-environment: setting DBUS_SESSION_BUS_ADDRESS=unix:abstract=/tmp/dbus-aAgmdJvgAA,guid=ce809506e585cffdc624446e62565c3d
+dbus-update-activation-environment: setting PULSE_SCRIPT=/etc/xrdp/pulse/default.pa
+dbus-update-activation-environment: setting LOGNAME=abc
+dbus-update-activation-environment: setting PATH=/sbin:/bin:/usr/bin:/usr/local/bin
+dbus-update-activation-environment: setting XRDP_SOCKET_PATH=/var/run/xrdp/sockdir
+dbus-update-activation-environment: setting DISPLAY=:10.0
+dbus-update-activation-environment: setting UID=1000
+dbus-update-activation-environment: setting SHELL=/bin/bash
+dbus-update-activation-environment: setting XRDP_SESSION=1
+dbus-update-activation-environment: setting GPG_AGENT_INFO=/config/.gnupg/S.gpg-agent:0:1
+dbus-update-activation-environment: setting PWD=/config
+Obt-Message: Xinerama extension is not present on the server
+Openbox-Message: Unable to find a valid menu file "/var/lib/openbox/debian-menu.xml"
+QStandardPaths: XDG_RUNTIME_DIR not set, defaulting to '/tmp/runtime-abc'
+XIO:  fatal IO error 11 (Resource temporarily unavailable) on X server ":10.0"
+      after 4952 requests (4952 known processed) with 0 events remaining.
+Xsession: X session started for abc at Wed Apr 13 05:15:33 UTC 2022
+localuser:abc being added to access control list
+dbus-update-activation-environment: systemd --user not found, ignoring --systemd argument
+dbus-update-activation-environment: setting USER=abc
+dbus-update-activation-environment: setting HOME=/config
+dbus-update-activation-environment: setting DBUS_SESSION_BUS_ADDRESS=unix:abstract=/tmp/dbus-lIuqHF7C4l,guid=0136fa6179cfeb0eab9c330362565c75
+dbus-update-activation-environment: setting PULSE_SCRIPT=/etc/xrdp/pulse/default.pa
+dbus-update-activation-environment: setting LOGNAME=abc
+dbus-update-activation-environment: setting PATH=/sbin:/bin:/usr/bin:/usr/local/bin
+dbus-update-activation-environment: setting XRDP_SOCKET_PATH=/var/run/xrdp/sockdir
+dbus-update-activation-environment: setting DISPLAY=:10.0
+dbus-update-activation-environment: setting UID=1000
+dbus-update-activation-environment: setting SHELL=/bin/bash
+dbus-update-activation-environment: setting XRDP_SESSION=1
+dbus-update-activation-environment: setting GPG_AGENT_INFO=/config/.gnupg/S.gpg-agent:0:1
+dbus-update-activation-environment: setting PWD=/config
+Obt-Message: Xinerama extension is not present on the server
+Openbox-Message: Unable to find a valid menu file "/var/lib/openbox/debian-menu.xml"
+QStandardPaths: XDG_RUNTIME_DIR not set, defaulting to '/tmp/runtime-abc'
+XIO:  fatal IO error 11 (Resource temporarily unavailable) on X server ":10.0"
+      after 4952 requests (4952 known processed) with 0 events remaining.
+Xsession: X session started for abc at Wed Apr 13 05:16:31 UTC 2022
+localuser:abc being added to access control list
+dbus-update-activation-environment: systemd --user not found, ignoring --systemd argument
+dbus-update-activation-environment: setting USER=abc
+dbus-update-activation-environment: setting HOME=/config
+dbus-update-activation-environment: setting DBUS_SESSION_BUS_ADDRESS=unix:abstract=/tmp/dbus-9C9wnX9sfR,guid=a775ceb143cab7801bf1fc7862565caf
+dbus-update-activation-environment: setting PULSE_SCRIPT=/etc/xrdp/pulse/default.pa
+dbus-update-activation-environment: setting LOGNAME=abc
+dbus-update-activation-environment: setting PATH=/sbin:/bin:/usr/bin:/usr/local/bin
+dbus-update-activation-environment: setting XRDP_SOCKET_PATH=/var/run/xrdp/sockdir
+dbus-update-activation-environment: setting DISPLAY=:10.0
+dbus-update-activation-environment: setting UID=1000
+dbus-update-activation-environment: setting SHELL=/bin/bash
+dbus-update-activation-environment: setting XRDP_SESSION=1
+dbus-update-activation-environment: setting GPG_AGENT_INFO=/config/.gnupg/S.gpg-agent:0:1
+dbus-update-activation-environment: setting PWD=/config
+Openbox-Message: Unable to find a valid menu file "/var/lib/openbox/debian-menu.xml"
+QStandardPaths: XDG_RUNTIME_DIR not set, defaulting to '/tmp/runtime-abc'
+XIO:  fatal IO error 11 (Resource temporarily unavailable) on X server ":10.0"
+      after 2012 requests (2012 known processed) with 0 events remaining.
+Xsession: X session started for abc at Wed Apr 13 05:17:25 UTC 2022
+localuser:abc being added to access control list
+dbus-update-activation-environment: systemd --user not found, ignoring --systemd argument
+dbus-update-activation-environment: setting USER=abc
+dbus-update-activation-environment: setting HOME=/config
+dbus-update-activation-environment: setting DBUS_SESSION_BUS_ADDRESS=unix:abstract=/tmp/dbus-BM6RjmRBgF,guid=fda8e12046ea96d7b4a01bfe62565ce5
+dbus-update-activation-environment: setting PULSE_SCRIPT=/etc/xrdp/pulse/default.pa
+dbus-update-activation-environment: setting LOGNAME=abc
+dbus-update-activation-environment: setting PATH=/sbin:/bin:/usr/bin:/usr/local/bin
+dbus-update-activation-environment: setting XRDP_SOCKET_PATH=/var/run/xrdp/sockdir
+dbus-update-activation-environment: setting DISPLAY=:10.0
+dbus-update-activation-environment: setting UID=1000
+dbus-update-activation-environment: setting SHELL=/bin/bash
+dbus-update-activation-environment: setting XRDP_SESSION=1
+dbus-update-activation-environment: setting GPG_AGENT_INFO=/config/.gnupg/S.gpg-agent:0:1
+dbus-update-activation-environment: setting PWD=/config
+Obt-Message: Xinerama extension is not present on the server
+Openbox-Message: Unable to find a valid menu file "/var/lib/openbox/debian-menu.xml"
+QStandardPaths: XDG_RUNTIME_DIR not set, defaulting to '/tmp/runtime-abc'
+Xsession: X session started for abc at Wed Apr 13 05:20:22 UTC 2022
+localuser:abc being added to access control list
+dbus-update-activation-environment: systemd --user not found, ignoring --systemd argument
+dbus-update-activation-environment: setting USER=abc
+dbus-update-activation-environment: setting HOME=/config
+dbus-update-activation-environment: setting DBUS_SESSION_BUS_ADDRESS=unix:abstract=/tmp/dbus-yUsb9EOY1k,guid=54c739324b5ab0cf578ab21d62565d96
+dbus-update-activation-environment: setting PULSE_SCRIPT=/etc/xrdp/pulse/default.pa
+dbus-update-activation-environment: setting LOGNAME=abc
+dbus-update-activation-environment: setting PATH=/sbin:/bin:/usr/bin:/usr/local/bin
+dbus-update-activation-environment: setting XRDP_SOCKET_PATH=/var/run/xrdp/sockdir
+dbus-update-activation-environment: setting DISPLAY=:10.0
+dbus-update-activation-environment: setting UID=1000
+dbus-update-activation-environment: setting SHELL=/bin/bash
+dbus-update-activation-environment: setting XRDP_SESSION=1
+dbus-update-activation-environment: setting GPG_AGENT_INFO=/config/.gnupg/S.gpg-agent:0:1
+dbus-update-activation-environment: setting PWD=/config
+Obt-Message: Xinerama extension is not present on the server
+Openbox-Message: Unable to find a valid menu file "/var/lib/openbox/debian-menu.xml"
+QStandardPaths: XDG_RUNTIME_DIR not set, defaulting to '/tmp/runtime-abc'
+XIO:  fatal IO error 4 (Interrupted system call) on X server ":10.0"
+      after 4952 requests (4952 known processed) with 0 events remaining.
+Xsession: X session started for abc at Wed Apr 13 05:21:14 UTC 2022
+localuser:abc being added to access control list
+dbus-update-activation-environment: systemd --user not found, ignoring --systemd argument
+dbus-update-activation-environment: setting USER=abc
+dbus-update-activation-environment: setting HOME=/config
+dbus-update-activation-environment: setting DBUS_SESSION_BUS_ADDRESS=unix:abstract=/tmp/dbus-EPgdnvmOUF,guid=f8495c3449a51e74e5b5493b62565dca
+dbus-update-activation-environment: setting PULSE_SCRIPT=/etc/xrdp/pulse/default.pa
+dbus-update-activation-environment: setting LOGNAME=abc
+dbus-update-activation-environment: setting PATH=/sbin:/bin:/usr/bin:/usr/local/bin
+dbus-update-activation-environment: setting XRDP_SOCKET_PATH=/var/run/xrdp/sockdir
+dbus-update-activation-environment: setting DISPLAY=:10.0
+dbus-update-activation-environment: setting UID=1000
+dbus-update-activation-environment: setting SHELL=/bin/bash
+dbus-update-activation-environment: setting XRDP_SESSION=1
+dbus-update-activation-environment: setting GPG_AGENT_INFO=/config/.gnupg/S.gpg-agent:0:1
+dbus-update-activation-environment: setting PWD=/config
+Obt-Message: Xinerama extension is not present on the server
+Openbox-Message: Unable to find a valid menu file "/var/lib/openbox/debian-menu.xml"
+QStandardPaths: XDG_RUNTIME_DIR not set, defaulting to '/tmp/runtime-abc'
+XIO:  fatal IO error 11 (Resource temporarily unavailable) on X server ":10.0"
+      after 4751 requests (4748 known processed) with 0 events remaining.
+Xsession: X session started for abc at Wed Apr 13 05:22:14 UTC 2022
+localuser:abc being added to access control list
+dbus-update-activation-environment: systemd --user not found, ignoring --systemd argument
+dbus-update-activation-environment: setting USER=abc
+dbus-update-activation-environment: setting HOME=/config
+dbus-update-activation-environment: setting DBUS_SESSION_BUS_ADDRESS=unix:abstract=/tmp/dbus-5l1RaN0nfz,guid=65b34700626a5eff8045b72e62565e06
+dbus-update-activation-environment: setting PULSE_SCRIPT=/etc/xrdp/pulse/default.pa
+dbus-update-activation-environment: setting LOGNAME=abc
+dbus-update-activation-environment: setting PATH=/sbin:/bin:/usr/bin:/usr/local/bin
+dbus-update-activation-environment: setting XRDP_SOCKET_PATH=/var/run/xrdp/sockdir
+dbus-update-activation-environment: setting DISPLAY=:10.0
+dbus-update-activation-environment: setting UID=1000
+dbus-update-activation-environment: setting SHELL=/bin/bash
+dbus-update-activation-environment: setting XRDP_SESSION=1
+dbus-update-activation-environment: setting GPG_AGENT_INFO=/config/.gnupg/S.gpg-agent:0:1
+dbus-update-activation-environment: setting PWD=/config
+Obt-Message: Xinerama extension is not present on the server
+Openbox-Message: Unable to find a valid menu file "/var/lib/openbox/debian-menu.xml"
+QStandardPaths: XDG_RUNTIME_DIR not set, defaulting to '/tmp/runtime-abc'
+XIO:  fatal IO error 11 (Resource temporarily unavailable) on X server ":10.0"
+      after 4952 requests (4952 known processed) with 0 events remaining.
+Xsession: X session started for abc at Wed Apr 13 05:23:07 UTC 2022
+localuser:abc being added to access control list
+dbus-update-activation-environment: systemd --user not found, ignoring --systemd argument
+dbus-update-activation-environment: setting USER=abc
+dbus-update-activation-environment: setting HOME=/config
+dbus-update-activation-environment: setting DBUS_SESSION_BUS_ADDRESS=unix:abstract=/tmp/dbus-XdmUN32OhI,guid=f9da18b5f55e30e5662b96f162565e3b
+dbus-update-activation-environment: setting PULSE_SCRIPT=/etc/xrdp/pulse/default.pa
+dbus-update-activation-environment: setting LOGNAME=abc
+dbus-update-activation-environment: setting PATH=/sbin:/bin:/usr/bin:/usr/local/bin
+dbus-update-activation-environment: setting XRDP_SOCKET_PATH=/var/run/xrdp/sockdir
+dbus-update-activation-environment: setting DISPLAY=:10.0
+dbus-update-activation-environment: setting UID=1000
+dbus-update-activation-environment: setting SHELL=/bin/bash
+dbus-update-activation-environment: setting XRDP_SESSION=1
+dbus-update-activation-environment: setting GPG_AGENT_INFO=/config/.gnupg/S.gpg-agent:0:1
+dbus-update-activation-environment: setting PWD=/config
+Obt-Message: Xinerama extension is not present on the server
+Openbox-Message: Unable to find a valid menu file "/var/lib/openbox/debian-menu.xml"
+QStandardPaths: XDG_RUNTIME_DIR not set, defaulting to '/tmp/runtime-abc'
+XIO:  fatal IO error 11 (Resource temporarily unavailable) on X server ":10.0"
+      after 4953 requests (4953 known processed) with 0 events remaining.
+Xsession: X session started for abc at Wed Apr 13 05:24:01 UTC 2022
+localuser:abc being added to access control list
+dbus-update-activation-environment: systemd --user not found, ignoring --systemd argument
+dbus-update-activation-environment: setting USER=abc
+dbus-update-activation-environment: setting HOME=/config
+dbus-update-activation-environment: setting DBUS_SESSION_BUS_ADDRESS=unix:abstract=/tmp/dbus-BqvxMaggBf,guid=0d1396d9e3e5b6aaaa228ff962565e71
+dbus-update-activation-environment: setting PULSE_SCRIPT=/etc/xrdp/pulse/default.pa
+dbus-update-activation-environment: setting LOGNAME=abc
+dbus-update-activation-environment: setting PATH=/sbin:/bin:/usr/bin:/usr/local/bin
+dbus-update-activation-environment: setting XRDP_SOCKET_PATH=/var/run/xrdp/sockdir
+dbus-update-activation-environment: setting DISPLAY=:10.0
+dbus-update-activation-environment: setting UID=1000
+dbus-update-activation-environment: setting SHELL=/bin/bash
+dbus-update-activation-environment: setting XRDP_SESSION=1
+dbus-update-activation-environment: setting GPG_AGENT_INFO=/config/.gnupg/S.gpg-agent:0:1
+dbus-update-activation-environment: setting PWD=/config
+Obt-Message: Xinerama extension is not present on the server
+Openbox-Message: Unable to find a valid menu file "/var/lib/openbox/debian-menu.xml"
+QStandardPaths: XDG_RUNTIME_DIR not set, defaulting to '/tmp/runtime-abc'
+XIO:  fatal IO error 11 (Resource temporarily unavailable) on X server ":10.0"
+      after 4952 requests (4952 known processed) with 0 events remaining.
+Xsession: X session started for abc at Wed Apr 13 05:24:54 UTC 2022
+localuser:abc being added to access control list
+dbus-update-activation-environment: systemd --user not found, ignoring --systemd argument
+dbus-update-activation-environment: setting USER=abc
+dbus-update-activation-environment: setting HOME=/config
+dbus-update-activation-environment: setting DBUS_SESSION_BUS_ADDRESS=unix:abstract=/tmp/dbus-TQ74biORi1,guid=47542ebadcd04cf48177b18762565ea6
+dbus-update-activation-environment: setting PULSE_SCRIPT=/etc/xrdp/pulse/default.pa
+dbus-update-activation-environment: setting LOGNAME=abc
+dbus-update-activation-environment: setting PATH=/sbin:/bin:/usr/bin:/usr/local/bin
+dbus-update-activation-environment: setting XRDP_SOCKET_PATH=/var/run/xrdp/sockdir
+dbus-update-activation-environment: setting DISPLAY=:10.0
+dbus-update-activation-environment: setting UID=1000
+dbus-update-activation-environment: setting SHELL=/bin/bash
+dbus-update-activation-environment: setting XRDP_SESSION=1
+dbus-update-activation-environment: setting GPG_AGENT_INFO=/config/.gnupg/S.gpg-agent:0:1
+dbus-update-activation-environment: setting PWD=/config
+Obt-Message: Xinerama extension is not present on the server
+Openbox-Message: Unable to find a valid menu file "/var/lib/openbox/debian-menu.xml"
+QStandardPaths: XDG_RUNTIME_DIR not set, defaulting to '/tmp/runtime-abc'
+Xsession: X session started for abc at Wed Apr 13 05:29:42 UTC 2022
+localuser:abc being added to access control list
+dbus-update-activation-environment: systemd --user not found, ignoring --systemd argument
+dbus-update-activation-environment: setting USER=abc
+dbus-update-activation-environment: setting HOME=/config
+dbus-update-activation-environment: setting DBUS_SESSION_BUS_ADDRESS=unix:abstract=/tmp/dbus-EnXrELMVW6,guid=f155dfb8da8e6aee618a02e262565fc6
+dbus-update-activation-environment: setting PULSE_SCRIPT=/etc/xrdp/pulse/default.pa
+dbus-update-activation-environment: setting LOGNAME=abc
+dbus-update-activation-environment: setting PATH=/sbin:/bin:/usr/bin:/usr/local/bin
+dbus-update-activation-environment: setting XRDP_SOCKET_PATH=/var/run/xrdp/sockdir
+dbus-update-activation-environment: setting DISPLAY=:10.0
+dbus-update-activation-environment: setting UID=1000
+dbus-update-activation-environment: setting SHELL=/bin/bash
+dbus-update-activation-environment: setting XRDP_SESSION=1
+dbus-update-activation-environment: setting GPG_AGENT_INFO=/config/.gnupg/S.gpg-agent:0:1
+dbus-update-activation-environment: setting PWD=/config
+Openbox-Message: Unable to find a valid menu file "/var/lib/openbox/debian-menu.xml"
+QStandardPaths: XDG_RUNTIME_DIR not set, defaulting to '/tmp/runtime-abc'
+XIO:  fatal IO error 11 (Resource temporarily unavailable) on X server ":10.0"
+      after 2015 requests (2015 known processed) with 0 events remaining.
+Xsession: X session started for abc at Wed Apr 13 05:30:24 UTC 2022
+localuser:abc being added to access control list
+dbus-update-activation-environment: systemd --user not found, ignoring --systemd argument
+dbus-update-activation-environment: setting USER=abc
+dbus-update-activation-environment: setting HOME=/config
+dbus-update-activation-environment: setting DBUS_SESSION_BUS_ADDRESS=unix:abstract=/tmp/dbus-N4alAqojlg,guid=4a88cff092fe71855f40261462565ff0
+dbus-update-activation-environment: setting PULSE_SCRIPT=/etc/xrdp/pulse/default.pa
+dbus-update-activation-environment: setting LOGNAME=abc
+dbus-update-activation-environment: setting PATH=/sbin:/bin:/usr/bin:/usr/local/bin
+dbus-update-activation-environment: setting XRDP_SOCKET_PATH=/var/run/xrdp/sockdir
+dbus-update-activation-environment: setting DISPLAY=:10.0
+dbus-update-activation-environment: setting UID=1000
+dbus-update-activation-environment: setting SHELL=/bin/bash
+dbus-update-activation-environment: setting XRDP_SESSION=1
+dbus-update-activation-environment: setting GPG_AGENT_INFO=/config/.gnupg/S.gpg-agent:0:1
+dbus-update-activation-environment: setting PWD=/config
+Openbox-Message: Unable to find a valid menu file "/var/lib/openbox/debian-menu.xml"
+QStandardPaths: XDG_RUNTIME_DIR not set, defaulting to '/tmp/runtime-abc'
+XIO:  fatal IO error 11 (Resource temporarily unavailable) on X server ":10.0"
+      after 2016 requests (2016 known processed) with 0 events remaining.
+Xsession: X session started for abc at Wed Apr 13 05:31:03 UTC 2022
+localuser:abc being added to access control list
+dbus-update-activation-environment: systemd --user not found, ignoring --systemd argument
+dbus-update-activation-environment: setting USER=abc
+dbus-update-activation-environment: setting HOME=/config
+dbus-update-activation-environment: setting DBUS_SESSION_BUS_ADDRESS=unix:abstract=/tmp/dbus-g4T7KiMtOO,guid=2e5dfeec15faeb0b56e45b0362566017
+dbus-update-activation-environment: setting PULSE_SCRIPT=/etc/xrdp/pulse/default.pa
+dbus-update-activation-environment: setting LOGNAME=abc
+dbus-update-activation-environment: setting PATH=/sbin:/bin:/usr/bin:/usr/local/bin
+dbus-update-activation-environment: setting XRDP_SOCKET_PATH=/var/run/xrdp/sockdir
+dbus-update-activation-environment: setting DISPLAY=:10.0
+dbus-update-activation-environment: setting UID=1000
+dbus-update-activation-environment: setting SHELL=/bin/bash
+dbus-update-activation-environment: setting XRDP_SESSION=1
+dbus-update-activation-environment: setting GPG_AGENT_INFO=/config/.gnupg/S.gpg-agent:0:1
+dbus-update-activation-environment: setting PWD=/config
+Obt-Message: Xinerama extension is not present on the server
+Openbox-Message: Unable to find a valid menu file "/var/lib/openbox/debian-menu.xml"
+QStandardPaths: XDG_RUNTIME_DIR not set, defaulting to '/tmp/runtime-abc'
+qt.qpa.xcb: QXcbConnection: XCB error: 148 (Unknown), sequence: 186, resource id: 0, major code: 140 (Unknown), minor code: 20
+XIO:  fatal IO error 11 (Resource temporarily unavailable) on X server ":10.0"
+      after 4953 requests (4953 known processed) with 0 events remaining.
+Xsession: X session started for abc at Wed Apr 13 05:31:41 UTC 2022
+localuser:abc being added to access control list
+dbus-update-activation-environment: systemd --user not found, ignoring --systemd argument
+dbus-update-activation-environment: setting USER=abc
+dbus-update-activation-environment: setting HOME=/config
+dbus-update-activation-environment: setting DBUS_SESSION_BUS_ADDRESS=unix:abstract=/tmp/dbus-MVqKuBoKbw,guid=5490e0b65ade3f65cd6fbaab6256603d
+dbus-update-activation-environment: setting PULSE_SCRIPT=/etc/xrdp/pulse/default.pa
+dbus-update-activation-environment: setting LOGNAME=abc
+dbus-update-activation-environment: setting PATH=/sbin:/bin:/usr/bin:/usr/local/bin
+dbus-update-activation-environment: setting XRDP_SOCKET_PATH=/var/run/xrdp/sockdir
+dbus-update-activation-environment: setting DISPLAY=:10.0
+dbus-update-activation-environment: setting UID=1000
+dbus-update-activation-environment: setting SHELL=/bin/bash
+dbus-update-activation-environment: setting XRDP_SESSION=1
+dbus-update-activation-environment: setting GPG_AGENT_INFO=/config/.gnupg/S.gpg-agent:0:1
+dbus-update-activation-environment: setting PWD=/config
+Obt-Message: Xinerama extension is not present on the server
+Openbox-Message: Unable to find a valid menu file "/var/lib/openbox/debian-menu.xml"
+QStandardPaths: XDG_RUNTIME_DIR not set, defaulting to '/tmp/runtime-abc'
+XIO:  fatal IO error 11 (Resource temporarily unavailable) on X server ":10.0"
+      after 4754 requests (4751 known processed) with 0 events remaining.
+Xsession: X session started for abc at Wed Apr 13 05:32:18 UTC 2022
+localuser:abc being added to access control list
+dbus-update-activation-environment: systemd --user not found, ignoring --systemd argument
+dbus-update-activation-environment: setting USER=abc
+dbus-update-activation-environment: setting HOME=/config
+dbus-update-activation-environment: setting DBUS_SESSION_BUS_ADDRESS=unix:abstract=/tmp/dbus-mfw6FSfpEI,guid=5950de6e7b8188dcf87612e362566063
+dbus-update-activation-environment: setting PULSE_SCRIPT=/etc/xrdp/pulse/default.pa
+dbus-update-activation-environment: setting LOGNAME=abc
+dbus-update-activation-environment: setting PATH=/sbin:/bin:/usr/bin:/usr/local/bin
+dbus-update-activation-environment: setting XRDP_SOCKET_PATH=/var/run/xrdp/sockdir
+dbus-update-activation-environment: setting DISPLAY=:10.0
+dbus-update-activation-environment: setting UID=1000
+dbus-update-activation-environment: setting SHELL=/bin/bash
+dbus-update-activation-environment: setting XRDP_SESSION=1
+dbus-update-activation-environment: setting GPG_AGENT_INFO=/config/.gnupg/S.gpg-agent:0:1
+dbus-update-activation-environment: setting PWD=/config
+Obt-Message: Xinerama extension is not present on the server
+Openbox-Message: Unable to find a valid menu file "/var/lib/openbox/debian-menu.xml"
+QStandardPaths: XDG_RUNTIME_DIR not set, defaulting to '/tmp/runtime-abc'
+XIO:  fatal IO error 4 (Interrupted system call) on X server ":10.0"
+      after 4952 requests (4952 known processed) with 0 events remaining.
+Xsession: X session started for abc at Wed Apr 13 05:32:58 UTC 2022
+localuser:abc being added to access control list
+dbus-update-activation-environment: systemd --user not found, ignoring --systemd argument
+dbus-update-activation-environment: setting USER=abc
+dbus-update-activation-environment: setting HOME=/config
+dbus-update-activation-environment: setting DBUS_SESSION_BUS_ADDRESS=unix:abstract=/tmp/dbus-JKHfDEAx11,guid=30f8fe56a28a82eee67ea6c26256608a
+dbus-update-activation-environment: setting PULSE_SCRIPT=/etc/xrdp/pulse/default.pa
+dbus-update-activation-environment: setting LOGNAME=abc
+dbus-update-activation-environment: setting PATH=/sbin:/bin:/usr/bin:/usr/local/bin
+dbus-update-activation-environment: setting XRDP_SOCKET_PATH=/var/run/xrdp/sockdir
+dbus-update-activation-environment: setting DISPLAY=:10.0
+dbus-update-activation-environment: setting UID=1000
+dbus-update-activation-environment: setting SHELL=/bin/bash
+dbus-update-activation-environment: setting XRDP_SESSION=1
+dbus-update-activation-environment: setting GPG_AGENT_INFO=/config/.gnupg/S.gpg-agent:0:1
+dbus-update-activation-environment: setting PWD=/config
+Obt-Message: Xinerama extension is not present on the server
+Openbox-Message: Unable to find a valid menu file "/var/lib/openbox/debian-menu.xml"
+QStandardPaths: XDG_RUNTIME_DIR not set, defaulting to '/tmp/runtime-abc'
+XIO:  fatal IO error 4 (Interrupted system call) on X server ":10.0"
+      after 4751 requests (4748 known processed) with 0 events remaining.
+Xsession: X session started for abc at Wed Apr 13 05:33:40 UTC 2022
+localuser:abc being added to access control list
+dbus-update-activation-environment: systemd --user not found, ignoring --systemd argument
+dbus-update-activation-environment: setting USER=abc
+dbus-update-activation-environment: setting HOME=/config
+dbus-update-activation-environment: setting DBUS_SESSION_BUS_ADDRESS=unix:abstract=/tmp/dbus-wGGSRywLM7,guid=e779141643697978b010f2f9625660b4
+dbus-update-activation-environment: setting PULSE_SCRIPT=/etc/xrdp/pulse/default.pa
+dbus-update-activation-environment: setting LOGNAME=abc
+dbus-update-activation-environment: setting PATH=/sbin:/bin:/usr/bin:/usr/local/bin
+dbus-update-activation-environment: setting XRDP_SOCKET_PATH=/var/run/xrdp/sockdir
+dbus-update-activation-environment: setting DISPLAY=:10.0
+dbus-update-activation-environment: setting UID=1000
+dbus-update-activation-environment: setting SHELL=/bin/bash
+dbus-update-activation-environment: setting XRDP_SESSION=1
+dbus-update-activation-environment: setting GPG_AGENT_INFO=/config/.gnupg/S.gpg-agent:0:1
+dbus-update-activation-environment: setting PWD=/config
+Obt-Message: Xinerama extension is not present on the server
+Openbox-Message: Unable to find a valid menu file "/var/lib/openbox/debian-menu.xml"
+QStandardPaths: XDG_RUNTIME_DIR not set, defaulting to '/tmp/runtime-abc'
+Xsession: X session started for abc at Wed Apr 13 05:38:49 UTC 2022
+localuser:abc being added to access control list
+dbus-update-activation-environment: systemd --user not found, ignoring --systemd argument
+dbus-update-activation-environment: setting USER=abc
+dbus-update-activation-environment: setting HOME=/config
+dbus-update-activation-environment: setting DBUS_SESSION_BUS_ADDRESS=unix:abstract=/tmp/dbus-PsjAjFWlv5,guid=a2312b561d41b995733900b0625661e9
+dbus-update-activation-environment: setting PULSE_SCRIPT=/etc/xrdp/pulse/default.pa
+dbus-update-activation-environment: setting LOGNAME=abc
+dbus-update-activation-environment: setting PATH=/sbin:/bin:/usr/bin:/usr/local/bin
+dbus-update-activation-environment: setting XRDP_SOCKET_PATH=/var/run/xrdp/sockdir
+dbus-update-activation-environment: setting DISPLAY=:10.0
+dbus-update-activation-environment: setting UID=1000
+dbus-update-activation-environment: setting SHELL=/bin/bash
+dbus-update-activation-environment: setting XRDP_SESSION=1
+dbus-update-activation-environment: setting GPG_AGENT_INFO=/config/.gnupg/S.gpg-agent:0:1
+dbus-update-activation-environment: setting PWD=/config
+Openbox-Message: Unable to find a valid menu file "/var/lib/openbox/debian-menu.xml"
+QStandardPaths: XDG_RUNTIME_DIR not set, defaulting to '/tmp/runtime-abc'
+XIO:  fatal IO error 11 (Resource temporarily unavailable) on X server ":10.0"
+      after 2015 requests (2015 known processed) with 0 events remaining.
+Xsession: X session started for abc at Wed Apr 13 05:39:40 UTC 2022
+localuser:abc being added to access control list
+dbus-update-activation-environment: systemd --user not found, ignoring --systemd argument
+dbus-update-activation-environment: setting USER=abc
+dbus-update-activation-environment: setting HOME=/config
+dbus-update-activation-environment: setting DBUS_SESSION_BUS_ADDRESS=unix:abstract=/tmp/dbus-MEUFeb9zhE,guid=ec7b681c3ae82f82b6b6ae296256621c
+dbus-update-activation-environment: setting PULSE_SCRIPT=/etc/xrdp/pulse/default.pa
+dbus-update-activation-environment: setting LOGNAME=abc
+dbus-update-activation-environment: setting PATH=/sbin:/bin:/usr/bin:/usr/local/bin
+dbus-update-activation-environment: setting XRDP_SOCKET_PATH=/var/run/xrdp/sockdir
+dbus-update-activation-environment: setting DISPLAY=:10.0
+dbus-update-activation-environment: setting UID=1000
+dbus-update-activation-environment: setting SHELL=/bin/bash
+dbus-update-activation-environment: setting XRDP_SESSION=1
+dbus-update-activation-environment: setting GPG_AGENT_INFO=/config/.gnupg/S.gpg-agent:0:1
+dbus-update-activation-environment: setting PWD=/config
+Obt-Message: Xinerama extension is not present on the server
+Openbox-Message: Unable to find a valid menu file "/var/lib/openbox/debian-menu.xml"
+QStandardPaths: XDG_RUNTIME_DIR not set, defaulting to '/tmp/runtime-abc'
+XIO:  fatal IO error 11 (Resource temporarily unavailable) on X server ":10.0"
+      after 4751 requests (4748 known processed) with 0 events remaining.
+Xsession: X session started for abc at Wed Apr 13 05:40:40 UTC 2022
+localuser:abc being added to access control list
+dbus-update-activation-environment: systemd --user not found, ignoring --systemd argument
+dbus-update-activation-environment: setting USER=abc
+dbus-update-activation-environment: setting HOME=/config
+dbus-update-activation-environment: setting DBUS_SESSION_BUS_ADDRESS=unix:abstract=/tmp/dbus-7eGb5bbHnZ,guid=272da22414efacf9e15639cd6256625a
+dbus-update-activation-environment: setting PULSE_SCRIPT=/etc/xrdp/pulse/default.pa
+dbus-update-activation-environment: setting LOGNAME=abc
+dbus-update-activation-environment: setting PATH=/sbin:/bin:/usr/bin:/usr/local/bin
+dbus-update-activation-environment: setting XRDP_SOCKET_PATH=/var/run/xrdp/sockdir
+dbus-update-activation-environment: setting DISPLAY=:10.0
+dbus-update-activation-environment: setting UID=1000
+dbus-update-activation-environment: setting SHELL=/bin/bash
+dbus-update-activation-environment: setting XRDP_SESSION=1
+dbus-update-activation-environment: setting GPG_AGENT_INFO=/config/.gnupg/S.gpg-agent:0:1
+dbus-update-activation-environment: setting PWD=/config
+Openbox-Message: Unable to find a valid menu file "/var/lib/openbox/debian-menu.xml"
+QStandardPaths: XDG_RUNTIME_DIR not set, defaulting to '/tmp/runtime-abc'
+XIO:  fatal IO error 11 (Resource temporarily unavailable) on X server ":10.0"
+      after 2016 requests (2016 known processed) with 0 events remaining.
+Xsession: X session started for abc at Wed Apr 13 05:41:41 UTC 2022
+localuser:abc being added to access control list
+dbus-update-activation-environment: systemd --user not found, ignoring --systemd argument
+dbus-update-activation-environment: setting USER=abc
+dbus-update-activation-environment: setting HOME=/config
+dbus-update-activation-environment: setting DBUS_SESSION_BUS_ADDRESS=unix:abstract=/tmp/dbus-eqeiwMl2oF,guid=34c88665266364d13cf7310262566295
+dbus-update-activation-environment: setting PULSE_SCRIPT=/etc/xrdp/pulse/default.pa
+dbus-update-activation-environment: setting LOGNAME=abc
+dbus-update-activation-environment: setting PATH=/sbin:/bin:/usr/bin:/usr/local/bin
+dbus-update-activation-environment: setting XRDP_SOCKET_PATH=/var/run/xrdp/sockdir
+dbus-update-activation-environment: setting DISPLAY=:10.0
+dbus-update-activation-environment: setting UID=1000
+dbus-update-activation-environment: setting SHELL=/bin/bash
+dbus-update-activation-environment: setting XRDP_SESSION=1
+dbus-update-activation-environment: setting GPG_AGENT_INFO=/config/.gnupg/S.gpg-agent:0:1
+dbus-update-activation-environment: setting PWD=/config
+Openbox-Message: Unable to find a valid menu file "/var/lib/openbox/debian-menu.xml"
+QStandardPaths: XDG_RUNTIME_DIR not set, defaulting to '/tmp/runtime-abc'
+XIO:  fatal IO error 11 (Resource temporarily unavailable) on X server ":10.0"
+      after 2015 requests (2015 known processed) with 0 events remaining.
+Xsession: X session started for abc at Wed Apr 13 05:42:40 UTC 2022
+localuser:abc being added to access control list
+dbus-update-activation-environment: systemd --user not found, ignoring --systemd argument
+dbus-update-activation-environment: setting USER=abc
+dbus-update-activation-environment: setting HOME=/config
+dbus-update-activation-environment: setting DBUS_SESSION_BUS_ADDRESS=unix:abstract=/tmp/dbus-28bTvV0cXw,guid=c9f08444e5cfb4c237ad7125625662d0
+dbus-update-activation-environment: setting PULSE_SCRIPT=/etc/xrdp/pulse/default.pa
+dbus-update-activation-environment: setting LOGNAME=abc
+dbus-update-activation-environment: setting PATH=/sbin:/bin:/usr/bin:/usr/local/bin
+dbus-update-activation-environment: setting XRDP_SOCKET_PATH=/var/run/xrdp/sockdir
+dbus-update-activation-environment: setting DISPLAY=:10.0
+dbus-update-activation-environment: setting UID=1000
+dbus-update-activation-environment: setting SHELL=/bin/bash
+dbus-update-activation-environment: setting XRDP_SESSION=1
+dbus-update-activation-environment: setting GPG_AGENT_INFO=/config/.gnupg/S.gpg-agent:0:1
+dbus-update-activation-environment: setting PWD=/config
+Obt-Message: Xinerama extension is not present on the server
+Openbox-Message: Unable to find a valid menu file "/var/lib/openbox/debian-menu.xml"
+QStandardPaths: XDG_RUNTIME_DIR not set, defaulting to '/tmp/runtime-abc'
+XIO:  fatal IO error 11 (Resource temporarily unavailable) on X server ":10.0"
+      after 4953 requests (4953 known processed) with 0 events remaining.
+Xsession: X session started for abc at Wed Apr 13 05:43:37 UTC 2022
+localuser:abc being added to access control list
+dbus-update-activation-environment: systemd --user not found, ignoring --systemd argument
+dbus-update-activation-environment: setting USER=abc
+dbus-update-activation-environment: setting HOME=/config
+dbus-update-activation-environment: setting DBUS_SESSION_BUS_ADDRESS=unix:abstract=/tmp/dbus-I4sMUrSrPw,guid=c1bd79a3181f659103a1704562566309
+dbus-update-activation-environment: setting PULSE_SCRIPT=/etc/xrdp/pulse/default.pa
+dbus-update-activation-environment: setting LOGNAME=abc
+dbus-update-activation-environment: setting PATH=/sbin:/bin:/usr/bin:/usr/local/bin
+dbus-update-activation-environment: setting XRDP_SOCKET_PATH=/var/run/xrdp/sockdir
+dbus-update-activation-environment: setting DISPLAY=:10.0
+dbus-update-activation-environment: setting UID=1000
+dbus-update-activation-environment: setting SHELL=/bin/bash
+dbus-update-activation-environment: setting XRDP_SESSION=1
+dbus-update-activation-environment: setting GPG_AGENT_INFO=/config/.gnupg/S.gpg-agent:0:1
+dbus-update-activation-environment: setting PWD=/config
+Obt-Message: Xinerama extension is not present on the server
+Openbox-Message: Unable to find a valid menu file "/var/lib/openbox/debian-menu.xml"
+QStandardPaths: XDG_RUNTIME_DIR not set, defaulting to '/tmp/runtime-abc'
+XIO:  fatal IO error 11 (Resource temporarily unavailable) on X server ":10.0"
+      after 4752 requests (4749 known processed) with 0 events remaining.
+Xsession: X session started for abc at Wed Apr 13 05:44:40 UTC 2022
+localuser:abc being added to access control list
+dbus-update-activation-environment: systemd --user not found, ignoring --systemd argument
+dbus-update-activation-environment: setting USER=abc
+dbus-update-activation-environment: setting HOME=/config
+dbus-update-activation-environment: setting DBUS_SESSION_BUS_ADDRESS=unix:abstract=/tmp/dbus-GCm6ldG8Hr,guid=b1d6ad0794dd5f51ad91480762566348
+dbus-update-activation-environment: setting PULSE_SCRIPT=/etc/xrdp/pulse/default.pa
+dbus-update-activation-environment: setting LOGNAME=abc
+dbus-update-activation-environment: setting PATH=/sbin:/bin:/usr/bin:/usr/local/bin
+dbus-update-activation-environment: setting XRDP_SOCKET_PATH=/var/run/xrdp/sockdir
+dbus-update-activation-environment: setting DISPLAY=:10.0
+dbus-update-activation-environment: setting UID=1000
+dbus-update-activation-environment: setting SHELL=/bin/bash
+dbus-update-activation-environment: setting XRDP_SESSION=1
+dbus-update-activation-environment: setting GPG_AGENT_INFO=/config/.gnupg/S.gpg-agent:0:1
+dbus-update-activation-environment: setting PWD=/config
+Obt-Message: Xinerama extension is not present on the server
+Openbox-Message: Unable to find a valid menu file "/var/lib/openbox/debian-menu.xml"
+QStandardPaths: XDG_RUNTIME_DIR not set, defaulting to '/tmp/runtime-abc'
+XIO:  fatal IO error 11 (Resource temporarily unavailable) on X server ":10.0"
+      after 2018 requests (2018 known processed) with 0 events remaining.
+Xsession: X session started for abc at Wed Apr 13 05:45:40 UTC 2022
+localuser:abc being added to access control list
+dbus-update-activation-environment: systemd --user not found, ignoring --systemd argument
+dbus-update-activation-environment: setting USER=abc
+dbus-update-activation-environment: setting HOME=/config
+dbus-update-activation-environment: setting DBUS_SESSION_BUS_ADDRESS=unix:abstract=/tmp/dbus-caM5EJ6Yx5,guid=0a4a52538defa266eddd2c5d62566384
+dbus-update-activation-environment: setting PULSE_SCRIPT=/etc/xrdp/pulse/default.pa
+dbus-update-activation-environment: setting LOGNAME=abc
+dbus-update-activation-environment: setting PATH=/sbin:/bin:/usr/bin:/usr/local/bin
+dbus-update-activation-environment: setting XRDP_SOCKET_PATH=/var/run/xrdp/sockdir
+dbus-update-activation-environment: setting DISPLAY=:10.0
+dbus-update-activation-environment: setting UID=1000
+dbus-update-activation-environment: setting SHELL=/bin/bash
+dbus-update-activation-environment: setting XRDP_SESSION=1
+dbus-update-activation-environment: setting GPG_AGENT_INFO=/config/.gnupg/S.gpg-agent:0:1
+dbus-update-activation-environment: setting PWD=/config
+Obt-Message: Xinerama extension is not present on the server
+Openbox-Message: Unable to find a valid menu file "/var/lib/openbox/debian-menu.xml"
+QStandardPaths: XDG_RUNTIME_DIR not set, defaulting to '/tmp/runtime-abc'
+XIO:  fatal IO error 11 (Resource temporarily unavailable) on X server ":10.0"
+      after 1814 requests (1811 known processed) with 0 events remaining.
+Xsession: X session started for abc at Wed Apr 13 05:46:39 UTC 2022
+localuser:abc being added to access control list
+dbus-update-activation-environment: systemd --user not found, ignoring --systemd argument
+dbus-update-activation-environment: setting USER=abc
+dbus-update-activation-environment: setting HOME=/config
+dbus-update-activation-environment: setting DBUS_SESSION_BUS_ADDRESS=unix:abstract=/tmp/dbus-H6YZ8DGs6n,guid=cc2c8403003faa565ce05ea2625663bf
+dbus-update-activation-environment: setting PULSE_SCRIPT=/etc/xrdp/pulse/default.pa
+dbus-update-activation-environment: setting LOGNAME=abc
+dbus-update-activation-environment: setting PATH=/sbin:/bin:/usr/bin:/usr/local/bin
+dbus-update-activation-environment: setting XRDP_SOCKET_PATH=/var/run/xrdp/sockdir
+dbus-update-activation-environment: setting DISPLAY=:10.0
+dbus-update-activation-environment: setting UID=1000
+dbus-update-activation-environment: setting SHELL=/bin/bash
+dbus-update-activation-environment: setting XRDP_SESSION=1
+dbus-update-activation-environment: setting GPG_AGENT_INFO=/config/.gnupg/S.gpg-agent:0:1
+dbus-update-activation-environment: setting PWD=/config
+Openbox-Message: Unable to find a valid menu file "/var/lib/openbox/debian-menu.xml"
+QStandardPaths: XDG_RUNTIME_DIR not set, defaulting to '/tmp/runtime-abc'
+XIO:  fatal IO error 11 (Resource temporarily unavailable) on X server ":10.0"
+      after 1814 requests (1811 known processed) with 0 events remaining.
+Xsession: X session started for abc at Wed Apr 13 05:47:41 UTC 2022
+localuser:abc being added to access control list
+dbus-update-activation-environment: systemd --user not found, ignoring --systemd argument
+dbus-update-activation-environment: setting USER=abc
+dbus-update-activation-environment: setting HOME=/config
+dbus-update-activation-environment: setting DBUS_SESSION_BUS_ADDRESS=unix:abstract=/tmp/dbus-x37iuXvbGu,guid=958afe9f1d59dbea6fe275c7625663fe
+dbus-update-activation-environment: setting PULSE_SCRIPT=/etc/xrdp/pulse/default.pa
+dbus-update-activation-environment: setting LOGNAME=abc
+dbus-update-activation-environment: setting PATH=/sbin:/bin:/usr/bin:/usr/local/bin
+dbus-update-activation-environment: setting XRDP_SOCKET_PATH=/var/run/xrdp/sockdir
+dbus-update-activation-environment: setting DISPLAY=:10.0
+dbus-update-activation-environment: setting UID=1000
+dbus-update-activation-environment: setting SHELL=/bin/bash
+dbus-update-activation-environment: setting XRDP_SESSION=1
+dbus-update-activation-environment: setting GPG_AGENT_INFO=/config/.gnupg/S.gpg-agent:0:1
+dbus-update-activation-environment: setting PWD=/config
+Openbox-Message: Unable to find a valid menu file "/var/lib/openbox/debian-menu.xml"
+QStandardPaths: XDG_RUNTIME_DIR not set, defaulting to '/tmp/runtime-abc'
+XIO:  fatal IO error 11 (Resource temporarily unavailable) on X server ":10.0"
+      after 2015 requests (2015 known processed) with 0 events remaining.
+Xsession: X session started for abc at Wed Apr 13 05:48:36 UTC 2022
+localuser:abc being added to access control list
+dbus-update-activation-environment: systemd --user not found, ignoring --systemd argument
+dbus-update-activation-environment: setting USER=abc
+dbus-update-activation-environment: setting HOME=/config
+dbus-update-activation-environment: setting DBUS_SESSION_BUS_ADDRESS=unix:abstract=/tmp/dbus-JtqPChkLNf,guid=7f6676a9a6b5eeea0be8f05962566434
+dbus-update-activation-environment: setting PULSE_SCRIPT=/etc/xrdp/pulse/default.pa
+dbus-update-activation-environment: setting LOGNAME=abc
+dbus-update-activation-environment: setting PATH=/sbin:/bin:/usr/bin:/usr/local/bin
+dbus-update-activation-environment: setting XRDP_SOCKET_PATH=/var/run/xrdp/sockdir
+dbus-update-activation-environment: setting DISPLAY=:10.0
+dbus-update-activation-environment: setting UID=1000
+dbus-update-activation-environment: setting SHELL=/bin/bash
+dbus-update-activation-environment: setting XRDP_SESSION=1
+dbus-update-activation-environment: setting GPG_AGENT_INFO=/config/.gnupg/S.gpg-agent:0:1
+dbus-update-activation-environment: setting PWD=/config
+Obt-Message: Xinerama extension is not present on the server
+Openbox-Message: Unable to find a valid menu file "/var/lib/openbox/debian-menu.xml"
+QStandardPaths: XDG_RUNTIME_DIR not set, defaulting to '/tmp/runtime-abc'
+XIO:  fatal IO error 11 (Resource temporarily unavailable) on X server ":10.0"
+      after 4952 requests (4952 known processed) with 0 events remaining.
+Xsession: X session started for abc at Wed Apr 13 05:49:33 UTC 2022
+localuser:abc being added to access control list
+dbus-update-activation-environment: systemd --user not found, ignoring --systemd argument
+dbus-update-activation-environment: setting USER=abc
+dbus-update-activation-environment: setting HOME=/config
+dbus-update-activation-environment: setting DBUS_SESSION_BUS_ADDRESS=unix:abstract=/tmp/dbus-Fg2yLChPy2,guid=7ff3e019bea38f6b907704de6256646e
+dbus-update-activation-environment: setting PULSE_SCRIPT=/etc/xrdp/pulse/default.pa
+dbus-update-activation-environment: setting LOGNAME=abc
+dbus-update-activation-environment: setting PATH=/sbin:/bin:/usr/bin:/usr/local/bin
+dbus-update-activation-environment: setting XRDP_SOCKET_PATH=/var/run/xrdp/sockdir
+dbus-update-activation-environment: setting DISPLAY=:10.0
+dbus-update-activation-environment: setting UID=1000
+dbus-update-activation-environment: setting SHELL=/bin/bash
+dbus-update-activation-environment: setting XRDP_SESSION=1
+dbus-update-activation-environment: setting GPG_AGENT_INFO=/config/.gnupg/S.gpg-agent:0:1
+dbus-update-activation-environment: setting PWD=/config
+Openbox-Message: Unable to find a valid menu file "/var/lib/openbox/debian-menu.xml"
+QStandardPaths: XDG_RUNTIME_DIR not set, defaulting to '/tmp/runtime-abc'
+XIO:  fatal IO error 10 (No child processes) on X server ":10.0"
+      after 1815 requests (1812 known processed) with 0 events remaining.
+Xsession: X session started for abc at Wed Apr 13 05:50:31 UTC 2022
+localuser:abc being added to access control list
+dbus-update-activation-environment: systemd --user not found, ignoring --systemd argument
+dbus-update-activation-environment: setting USER=abc
+dbus-update-activation-environment: setting HOME=/config
+dbus-update-activation-environment: setting DBUS_SESSION_BUS_ADDRESS=unix:abstract=/tmp/dbus-o7yqEPsI2T,guid=f16101d4ae322ece02135075625664a8
+dbus-update-activation-environment: setting PULSE_SCRIPT=/etc/xrdp/pulse/default.pa
+dbus-update-activation-environment: setting LOGNAME=abc
+dbus-update-activation-environment: setting PATH=/sbin:/bin:/usr/bin:/usr/local/bin
+dbus-update-activation-environment: setting XRDP_SOCKET_PATH=/var/run/xrdp/sockdir
+dbus-update-activation-environment: setting DISPLAY=:10.0
+dbus-update-activation-environment: setting UID=1000
+dbus-update-activation-environment: setting SHELL=/bin/bash
+dbus-update-activation-environment: setting XRDP_SESSION=1
+dbus-update-activation-environment: setting GPG_AGENT_INFO=/config/.gnupg/S.gpg-agent:0:1
+dbus-update-activation-environment: setting PWD=/config
+Openbox-Message: Unable to find a valid menu file "/var/lib/openbox/debian-menu.xml"
+QStandardPaths: XDG_RUNTIME_DIR not set, defaulting to '/tmp/runtime-abc'
+XIO:  fatal IO error 10 (No child processes) on X server ":10.0"
+      after 1815 requests (1812 known processed) with 0 events remaining.
+Xsession: X session started for abc at Wed Apr 13 05:51:23 UTC 2022
+localuser:abc being added to access control list
+dbus-update-activation-environment: systemd --user not found, ignoring --systemd argument
+dbus-update-activation-environment: setting USER=abc
+dbus-update-activation-environment: setting HOME=/config
+dbus-update-activation-environment: setting DBUS_SESSION_BUS_ADDRESS=unix:abstract=/tmp/dbus-cCJqaWbqjn,guid=e543974bb793f6fb444e8956625664db
+dbus-update-activation-environment: setting PULSE_SCRIPT=/etc/xrdp/pulse/default.pa
+dbus-update-activation-environment: setting LOGNAME=abc
+dbus-update-activation-environment: setting PATH=/sbin:/bin:/usr/bin:/usr/local/bin
+dbus-update-activation-environment: setting XRDP_SOCKET_PATH=/var/run/xrdp/sockdir
+dbus-update-activation-environment: setting DISPLAY=:10.0
+dbus-update-activation-environment: setting UID=1000
+dbus-update-activation-environment: setting SHELL=/bin/bash
+dbus-update-activation-environment: setting XRDP_SESSION=1
+dbus-update-activation-environment: setting GPG_AGENT_INFO=/config/.gnupg/S.gpg-agent:0:1
+dbus-update-activation-environment: setting PWD=/config
+Obt-Message: Xinerama extension is not present on the server
+Openbox-Message: Unable to find a valid menu file "/var/lib/openbox/debian-menu.xml"
+QStandardPaths: XDG_RUNTIME_DIR not set, defaulting to '/tmp/runtime-abc'

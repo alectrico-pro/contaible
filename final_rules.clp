@@ -1,22 +1,64 @@
 (defmodule FINAL ( import MAIN deftemplate ?ALL))
 
 
+
+
+  ( if (eq true ?archivo-unico)
+     then
+
+     ;( bind ?archivo (str-cat "./doc/" ?archivo ".markdown"))
+      ( bind ?archivo (str-cat "./doc/" ?empresa "/" ?archivo-nombre ".markdown"))
+
+      ( open ?archivo k "a")
+     else
+      ( bind ?archivo (str-cat "./doc/" ?empresa "/tributario.markdown"))
+      ( open ?archivo k "w")
+      ( printout k "--- " crlf)
+      ( printout k "layout: page" crlf)
+      ( printout k "--- " crlf)
+      ( printout k "" crlf)
+      ( printout k "<li><span style='background-color: lavender'>[    ]</span> partida revisada y resultado bueno. </li>" crlf)
+      ( printout k "<li><span style='background-color: lightyellow'>[    ]</span> cuenta mayor del activo </li>" crlf)
+      ( printout k "<li><span style='background-color: azure'>[    ]</span> cuenta mayor del pasivo </li>" crlf)
+      ( printout k "<li><span style='color: white; background-color: cornflowerblue'>[    ]</span> cuenta de patrimonio </li>" crlf)
+      ( printout k "<li><span style='background-color: gold'>[    ]</span> ganancia </li>" crlf)
+      ( printout k "<li><span style='color: white; background-color: black'>[    ]</span> pérdida </li>" crlf)
+      ( printout k "<li><span style='background-color: blanchedalmond'>[    ]</span> subtotales de la transacción </li>" crlf)
+   )
+
+
+
+
+
 (defrule inicio-kindle
    ( declare (salience 10000))
    ( empresa (nombre ?empresa))
+   ( selecciones (archivo-unico-markdown ?archivo-unico) (nombre-de-archivo-k ?archivo-nombre))
   =>
 
-   ( bind ?archivo (str-cat "./doc/" ?empresa "/final.markdown"))
-   ( open ?archivo k "w")
+  ( if (eq true ?archivo-unico)
+     then
+       ( bind ?archivo (str-cat "./doc/" ?empresa "/" ?archivo-nombre ".markdown"))
+       ( open ?archivo k "a")
+      ( printout k "<li><span style='background-color: lavender'>[    ]</span> partida revisada y resultado bueno. </li>" crlf)
+      ( printout k "<li><span style='background-color: lightyellow'>[    ]</span> cuenta mayor del activo </li>" crlf)
+      ( printout k "<li><span style='background-color: azure'>[    ]</span> cuenta mayor del pasivo </li>" crlf)
+      ( printout k "<li><span style='color: white; background-color: cornflowerblue'>[    ]</span> cuenta de patrimonio </li>" crlf)
+      ( printout k "<li><span style='background-color: gold'>[    ]</span> ganancia </li>" crlf)
+      ( printout k "<li><span style='color: white; background-color: black'>[    ]</span> pérdida </li>" crlf)
+      ( printout k "<li><span style='background-color: blanchedalmond'>[    ]</span> subtotales de la transacción </li>" crlf)
 
-   ( printout k "--- " crlf)
+      else
+       ( bind ?archivo (str-cat "./doc/" ?empresa "/final.markdown"))
+       ( open ?archivo k "w")
+
+        ( printout k "--- " crlf)
 ;  ( printout k "title: " ?empresa "-final" crlf)
 ;   ( printout k "permalink: /" ?empresa "/final/ " crlf)
-   ( printout k "layout: page" crlf)
-   ( printout k "--- " crlf)
-   ( printout k "" crlf)
-
-
+        ( printout k "layout: page" crlf)
+        ( printout k "--- " crlf)
+        ( printout k "" crlf)
+  ) 
 )
 
 
@@ -454,7 +496,6 @@
    ( printout t ACTIVOS tab tab tab ?activos tab "|" PATRIMONIO tab tab (+ ?pasivos ?patrimonio) crlf)
    ( printout t "=========================================================================" crlf crlf crlf)
 
-  ( printout k "<tr> <hr> </tr>" crlf)
  ; ( printout k "==================================================================" crlf)
   ( printout k "</tbody>" crlf)
   ( printout k "</table>" crlf)
