@@ -15,6 +15,8 @@
 ;de naturaleza acreedora tendrán que ser de
 ;naturaleza mixta
 ( selecciones
+ (archivo-unico-markdown true)
+ (nombre-de-archivo-k "k" )
  (abonar-deudoras false) 
  (devolver-a-devolucion-sobre-ventas true)
  (ejercicio-anterior     alectrico-2021)

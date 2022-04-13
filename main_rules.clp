@@ -30,7 +30,9 @@
 ;el archivo markdown aquí generado sirve para 
 ;evitar que la compilación de Dockerfile sea abortada
 (defrule creacion-de-archivo-markdown
-   ( declare (salience 9000))
+   ( declare (salience 10000))
+   ( selecciones (archivo-unico-markdown false))
+
   =>
 
    ( bind ?archivo (str-cat "./doc/archivo.markdown"))
@@ -39,10 +41,25 @@
    ( printout t "------------------- fin-archivo-markdown ------------" crlf)
    ( close l)
 )   
+
+
+(defrule creacion-de-archivo-unico-k-markdown
+   ( declare (salience 10000))
+   ( selecciones (archivo-unico-markdown true))
+
+  =>
+
+   ( bind ?archivo (str-cat "./doc/k.markdown"))
+   ( open ?archivo g "w")
+   ( printout g (random ) crlf)
+   ( printout t "------------------- fin-archivo-unico-markdown ------------" crlf)
+   ( close g)
+)
+
     
 
 (defrule MAIN::inicio-modulo-main
-  (declare (salience 10000))
+  (declare (salience 9999))
   (selecciones (empresa-seleccionada ?empresa))
 =>
 

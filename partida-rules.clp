@@ -63,17 +63,21 @@
 (defrule inicio-kindle-k-partida-rules
    ( declare (salience 10000))
    ( empresa (nombre ?empresa))
-
+   ( selecciones (archivo-unico-markdown ?archivo-unico))
   =>  
 
    ( if (neq nil k) then (close k))
    ( if (neq nil h) then (close h))
 
+   ( if (eq true ?archivo-unico)
+     then
+      ( bind ?archivo (str-cat "./doc/k.markdown"))
+      ( open ?archivo k "a")
+     else
+      ( bind ?archivo (str-cat "./doc/" ?empresa "/empresa.markdown"))
+      ( open ?archivo k "w")
+   )
 
-   ( bind ?archivo (str-cat "./doc/" ?empresa "/empresa.markdown"))
-
-   ( open ?archivo k "w")
-  
    ( printout k "--- " crlf)
 ;   ( printout k "title: Libro Diaro" crlf)
    ( printout k "permalink: /" ?empresa "/libro-diario " crlf)

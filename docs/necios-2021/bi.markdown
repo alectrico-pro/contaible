@@ -54,14 +54,14 @@ layout: page
 <tr><td>513</td><td>5588</td><td>29412</td><td>5588</td><td style='background-color:lightgreen'>('PASA OK')</td><td>reintegro-de-devolucion-sobre-ventas-afectas</td></tr>
 </table>
 <table><thead> <tr> <th> F22s LISTA </th></tr></thead> 
-<tr> <td> 510 </td><td> 142954 </td><td> 171828.02 </td><td> 0.0</td><td>devolucion-sobre-ventas-afectas</td></tr>
-<table><thead> <tr> <th> F22s LISTA </th></tr></thead> 
 <tr> <td> -510 </td><td> 28873 </td><td> 171828.02 </td><td> 0.0</td><td>devolucion-sobre-ventas-afectas</td></tr>
 <table><thead> <tr> <th> F22s LISTA </th></tr></thead> 
-<tr> <td> 513 </td><td> 5588 </td><td> 0.0 </td><td> 5588.28</td><td>reintegro-de-devolucion-sobre-ventas-afectas</td></tr>
+<tr> <td> 111 </td><td> 14001 </td><td> 0.0 </td><td> 14002.05</td><td>ventas-con-eboleta-afecta</td></tr>
 <table><thead> <tr> <th> F22s LISTA </th></tr></thead> 
 <tr> <td> 502 </td><td> 304172 </td><td> 0.0 </td><td> 304172.33</td><td>ventas-con-factura-afecta</td></tr>
 <table><thead> <tr> <th> F22s LISTA </th></tr></thead> 
-<tr> <td> 759 </td><td> 69100 </td><td> 0.0 </td><td> 69101.48</td><td>ventas-con-voucher-afecto</td></tr>
+<tr> <td> 510 </td><td> 142954 </td><td> 171828.02 </td><td> 0.0</td><td>devolucion-sobre-ventas-afectas</td></tr>
 <table><thead> <tr> <th> F22s LISTA </th></tr></thead> 
-<tr> <td> 111 </td><td> 14001 </td><td> 0.0 </td><td> 14002.05</td><td>ventas-con-eboleta-afecta</td></tr>
+<tr> <td> 513 </td><td> 5588 </td><td> 0.0 </td><td> 5588.28</td><td>reintegro-de-devolucion-sobre-ventas-afectas</td></tr>
+<table><thead> <tr> <th> F22s LISTA </th></tr></thead> 
+<tr> <td> 759 </td><td> 69100 </td><td> 0.0 </td><td> 69101.48</td><td>ventas-con-voucher-afecto</td></tr>

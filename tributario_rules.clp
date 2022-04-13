@@ -119,32 +119,58 @@
   ( close k )
 )
 
+
+
+
 ;esto genera un markdown para que jekyll lo publique en el blog necios
 (defrule inicio-kindle-k-tributario-rules
    ( declare (salience 10000))
    ( empresa (nombre ?empresa))
+   ( selecciones (archivo-unico-markdown ?archivo-unico))
 
   =>
 
+  ( if (eq true ?archivo-unico)
+     then
+      ( bind ?archivo (str-cat "./doc/k.markdown"))
+      ( open ?archivo k "a")
+     else
+      ( bind ?archivo (str-cat "./doc/" ?empresa "/tributario.markdown"))
+      ( open ?archivo k "w")
+      ( printout k "--- " crlf)
+      ( printout k "layout: page" crlf)
+      ( printout k "--- " crlf)
+      ( printout k "" crlf)
+      ( printout k "<li><span style='background-color: lavender'>[    ]</span> partida revisada y resultado bueno. </li>" crlf)
+      ( printout k "<li><span style='background-color: lightyellow'>[    ]</span> cuenta mayor del activo </li>" crlf)
+      ( printout k "<li><span style='background-color: azure'>[    ]</span> cuenta mayor del pasivo </li>" crlf)
+      ( printout k "<li><span style='color: white; background-color: cornflowerblue'>[    ]</span> cuenta de patrimonio </li>" crlf)
+      ( printout k "<li><span style='background-color: gold'>[    ]</span> ganancia </li>" crlf)
+      ( printout k "<li><span style='color: white; background-color: black'>[    ]</span> pérdida </li>" crlf)
+      ( printout k "<li><span style='background-color: blanchedalmond'>[    ]</span> subtotales de la transacción </li>" crlf)
+   )
+
+
+
+
  ;  ( printout t "En inicio-tributario-rules" )
-   ( bind ?archivo (str-cat "./doc/" ?empresa "/tributario.markdown"))
-;   ( bind ?archivo (str-cat "./" ?empresa "/tributario.markdown"))
+;  ( bind ?archivo (str-cat "./doc/" ?empresa "/tributario.markdown"))
 
-   ( open ?archivo k "w")
+;   ( open ?archivo k "w")
 
-   ( printout k "--- " crlf)
+;   ( printout k "--- " crlf)
 ;   ( printout k "title: " ?empresa "-tributario" crlf)
 ;  ( printout k "permalink: /" ?empresa "/tributario/ " crlf)
-   ( printout k "layout: page" crlf)
-   ( printout k "--- " crlf)
-   ( printout k "" crlf)
-   ( printout k "<li><span style='background-color: lavender'>[    ]</span> partida revisada y resultado bueno. </li>" crlf)
-   ( printout k "<li><span style='background-color: lightyellow'>[    ]</span> cuenta mayor del activo </li>" crlf)
-   ( printout k "<li><span style='background-color: azure'>[    ]</span> cuenta mayor del pasivo </li>" crlf)
-   ( printout k "<li><span style='color: white; background-color: cornflowerblue'>[    ]</span> cuenta de patrimonio </li>" crlf)
-   ( printout k "<li><span style='background-color: gold'>[    ]</span> ganancia </li>" crlf)
-   ( printout k "<li><span style='color: white; background-color: black'>[    ]</span> pérdida </li>" crlf)
-   ( printout k "<li><span style='background-color: blanchedalmond'>[    ]</span> subtotales de la transacción </li>" crlf)
+;   ( printout k "layout: page" crlf)
+;   ( printout k "--- " crlf)
+;   ( printout k "" crlf)
+;   ( printout k "<li><span style='background-color: lavender'>[    ]</span> partida revisada y resultado bueno. </li>" crlf)
+;   ( printout k "<li><span style='background-color: lightyellow'>[    ]</span> cuenta mayor del activo </li>" crlf)
+;   ( printout k "<li><span style='background-color: azure'>[    ]</span> cuenta mayor del pasivo </li>" crlf)
+ ;  ( printout k "<li><span style='color: white; background-color: cornflowerblue'>[    ]</span> cuenta de patrimonio </li>" crlf)
+;   ( printout k "<li><span style='background-color: gold'>[    ]</span> ganancia </li>" crlf)
+;   ( printout k "<li><span style='color: white; background-color: black'>[    ]</span> pérdida </li>" crlf)
+;   ( printout k "<li><span style='background-color: blanchedalmond'>[    ]</span> subtotales de la transacción </li>" crlf)
 )
 
 

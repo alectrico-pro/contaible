@@ -18,29 +18,23 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'>  </p>
 <br> 
-- [x] antiguo número de partida: n-a
-- [x] voucher en ccm: 132
-- [x] tipo de asiento: asiento-inicial
-- [ ] rcv
-- [ ] libro-diario
-- [x] ccm
-- [x] revisado
-![](../revisado.png)
 <table id='Partida-1'>
 <thead> <th style='background-color: lavender' colspan='6'>Partida 1</th></thead>
 <tbody>
-<tr><td name='Debe' align='right'>290000</td> <td colspan='7'>marca-alectrico#intangibles</td> </tr>
 <tr><td name='Debe' align='right'>44044</td> <td colspan='7'>materiales#insumos</td> </tr>
-<tr style='background-color: lightyellow'>  <td> </td> <td name='Debe' align='right'> 0</td> <td name='Haber' align='right'> 2416</td> <td colspan='2'> a[amortizacion-acumulada-intangibles] </td> </tr>
-<tr style='background-color: lightyellow'>  <td> </td> <td name='Debe' align='right'> 290000</td> <td name='Haber' align='right'> 0</td> <td colspan='2'> a[intangibles] </td> </tr>
-<tr style='background-color: lightyellow'>  <td> </td> <td name='Debe' align='right'> 10909</td> <td name='Haber' align='right'> 0</td> <td colspan='2'> a[iva-credito] </td> </tr>
+<tr><td name='Debe' align='right'>290000</td> <td colspan='7'>marca-alectrico#intangibles</td> </tr>
+<tr style='background-color: lightyellow'>  <td> </td> <td name='Debe' align='right'> 44044</td> <td name='Haber' align='right'> 0</td> <td colspan='2'> a[inventario] </td> </tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td name='Debe' align='right'> 721</td> <td name='Haber' align='right'> 0</td> <td colspan='2'> a[ppm] </td> </tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td name='Debe' align='right'> 44044</td> <td name='Haber' align='right'> 0</td> <td colspan='2'> a[insumos] </td> </tr>
+<tr style='background-color: lightyellow'>  <td> </td> <td name='Debe' align='right'> 10909</td> <td name='Haber' align='right'> 0</td> <td colspan='2'> a[iva-credito] </td> </tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td name='Debe' align='right'> 691827</td> <td name='Haber' align='right'> 0</td> <td colspan='2'> a[banco-estado] </td> </tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td name='Debe' align='right'> 1050209</td> <td name='Haber' align='right'> 0</td> <td colspan='2'> a[caja] </td> </tr>
+<tr style='background-color: lightyellow'>  <td> </td> <td name='Debe' align='right'> 290000</td> <td name='Haber' align='right'> 0</td> <td colspan='2'> a[intangibles] </td> </tr>
+<tr style='background-color: lightyellow'>  <td> </td> <td name='Debe' align='right'> 0</td> <td name='Haber' align='right'> 2416</td> <td colspan='2'> a[amortizacion-acumulada-intangibles] </td> </tr>
+<tr style='background-color: gold'>  <td> </td> <td align='right'>0 </td> <td align='right'> 44044</td> <td> </td> <td> r[costos-de-mercancias] </td> </tr>
  <tr style='color: white; background-color: cornflowerblue' > <td> </td> <td align='right'> 0 </td> <td align='right'>  85294 </td> <td> </td> <td> k[utilidad-del-ejercicio-anterior]</td> </tr>
  <tr style='color: white; background-color: cornflowerblue' > <td> </td> <td align='right'> 0 </td> <td align='right'>  2000000 </td> <td> </td> <td> k[capital-social]</td> </tr>
-<tr> <td> </td> <td style='background-color: blanchedalmond'> 2087710 </td> <td style='background-color: blanchedalmond'> 2087710</td> </tr>
+<tr> <td> </td> <td style='background-color: blanchedalmond'> 2131754 </td> <td style='background-color: blanchedalmond'> 2131754</td> </tr>
 </tbody><tbody>
 <tr><td colspan='4'> necios SA</td> </tr> 
 <tr><td colspan='4'> ( 1 de enero	2021	 ) </td> </tr>
@@ -52,22 +46,14 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'>  </p>
 <br> 
-- [x] antiguo número de partida: 3
-- [x] voucher en ccm: 192
-- [x] tipo de asiento: resumen-rendicion-de-e-boletas
-- [ ] rcv
-- [x] libro-diario
-- [x] ccm
-- [x] revisado
-![](../revisado.png)
 <table id='Partida-3'>
 <thead> <th style='background-color: lavender' colspan='6'>Partida 3</th></thead>
 <tbody>
 <tr> <td name = 'Debe' align='right' >29412 </td> <td colspan='7'> ventas#ingresos-brutos </td></tr>
 <tr> <td name = 'Debe' align='right' >29412 </td> <td colspan='7'> ventas-con-eboleta-afecta#ventas </td></tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td name='Debe' align='right'> 35000</td> <td name='Haber' align='right'> 0</td> <td colspan='2'> a[banco-estado] </td> </tr>
-<tr style='background-color: azure'>  <td> </td> <td align='right'> 0 </td> <td align='right'> 5588 </td> <td> </td><td> p[iva-debito] </td> </tr>
 <tr style='background-color: gold'>  <td> </td> <td align='right'>0 </td> <td align='right'> 29412</td> <td> </td> <td> r[ingresos-brutos] </td> </tr>
+<tr style='background-color: azure'>  <td> </td> <td align='right'> 0 </td> <td align='right'> 5588 </td> <td> </td><td> p[iva-debito] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 35000 </td> <td style='background-color: blanchedalmond'> 35000</td> </tr>
 </tbody><tbody>
 <tr><td colspan='4'> necios SA</td> </tr> 
@@ -80,22 +66,14 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'>  </p>
 <br> 
-- [x] antiguo número de partida: 4
-- [x] voucher en ccm: 192
-- [x] tipo de asiento: resumen-rendicion-de-comprobantes-electronicos-vouchers
-- [ ] rcv
-- [x] libro-diario
-- [x] ccm
-- [x] revisado
-![](../revisado.png)
 <table id='Partida-4'>
 <thead> <th style='background-color: lavender' colspan='6'>Partida 4</th></thead>
 <tbody>
 <tr> <td name = 'Debe' align='right' >123497 </td> <td colspan='7'> ventas#ingresos-brutos </td></tr>
 <tr> <td name = 'Debe' align='right' >123497 </td> <td colspan='7'> ventas-con-voucher-afecto#ventas </td></tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td name='Debe' align='right'> 146961</td> <td name='Haber' align='right'> 0</td> <td colspan='2'> a[banco-estado] </td> </tr>
-<tr style='background-color: azure'>  <td> </td> <td align='right'> 0 </td> <td align='right'> 23464 </td> <td> </td><td> p[iva-debito] </td> </tr>
 <tr style='background-color: gold'>  <td> </td> <td align='right'>0 </td> <td align='right'> 123497</td> <td> </td> <td> r[ingresos-brutos] </td> </tr>
+<tr style='background-color: azure'>  <td> </td> <td align='right'> 0 </td> <td align='right'> 23464 </td> <td> </td><td> p[iva-debito] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 146961 </td> <td style='background-color: blanchedalmond'> 146961</td> </tr>
 </tbody><tbody>
 <tr><td colspan='4'> necios SA</td> </tr> 
@@ -108,14 +86,6 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'>  </p>
 <br> 
-- [x] voucher en ccm: 192
-- [x] tipo de asiento: 61
-- [x] folio: 12
-- [x] rcv
-- [x] libro-diario
-- [x] ccm
-- [x] revisado
-![](../revisado.png)
 <table id='Partida-5'>
 <thead> <th style='background-color: lavender' colspan='6'>Partida 5</th></thead>
 <tbody>
@@ -136,15 +106,6 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'>  </p>
 <br> 
-- [x] antiguo número de partida: 6
-- [x] voucher en ccm: 192
-- [x] tipo de asiento: 61
-- [x] folio: 13
-- [x] rcv
-- [x] libro-diario
-- [x] ccm
-- [x] revisado
-![](../revisado.png)
 <table id='Partida-6'>
 <thead> <th style='background-color: lavender' colspan='6'>Partida 6</th></thead>
 <tbody>
@@ -165,23 +126,13 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'>  </p>
 <br> 
-- [x] antiguo número de partida: 7
-- [x] voucher en ccm: 192
-- [x] tipo de asiento: 61
-- [x] folio: 14
-- [x] rcv
-- [x] libro-diario
-- [x] ccm
-- [x] Referencia: <a href= '#Partida-3'>3 </a>
-- [x] revisado
-![](../revisado.png)
 <table id='Partida-7'>
 <thead> <th style='background-color: lavender' colspan='6'>Partida 7</th></thead>
 <tbody>
 <tr> <td name = 'Debe' align='right' >29412 </td> <td colspan='7'> devolucion-sobre-ventas-afectas#devolucion-sobre-ventas </td></tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td name='Debe' align='right'> 0</td> <td name='Haber' align='right'> 35000</td> <td colspan='2'> a[banco-estado] </td> </tr>
-<tr style='background-color: azure'>  <td> </td> <td align='right'> 5588 </td> <td align='right'> 0 </td> <td> </td><td> p[iva-debito] </td> </tr>
 <tr style='color: white; background-color: black'>  <td> </td> <td align='right'>29412 </td> <td align='right'> 0</td> <td> </td> <td> r[devolucion-sobre-ventas] </td> </tr>
+<tr style='background-color: azure'>  <td> </td> <td align='right'> 5588 </td> <td align='right'> 0 </td> <td> </td><td> p[iva-debito] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 35000 </td> <td style='background-color: blanchedalmond'> 35000</td> </tr>
 </tbody><tbody>
 <tr><td colspan='4'> necios SA</td> </tr> 
@@ -196,14 +147,6 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'>  </p>
 <br> 
-- [x] antiguo número de partida: 8
-- [x] tipo de asiento: 61
-- [x] folio: 29457
-- [x] rcv
-- [x] libro-diario
-- [x] ccm
-- [x] revisado
-![](../revisado.png)
 <table id='Partida-8'>
 <thead> <th style='background-color: lavender' colspan='6'>Partida 8</th></thead>
 <tbody>
@@ -225,14 +168,6 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'>  </p>
 <br> 
-- [x] antiguo número de partida: 9
-- [x] tipo de asiento: 33
-- [x] folio: 35258718
-- [x] rcv
-- [x] libro-diario
-- [x] ccm
-- [x] revisado
-![](../revisado.png)
 <table id='Partida-9'>
 <thead> <th style='background-color: lavender' colspan='6'>Partida 9</th></thead>
 <tbody>
@@ -254,22 +189,16 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'>  </p>
 <br> 
-- [x] antiguo número de partida: 10
-- [x] tipo de asiento: 33
-- [x] folio: 23667281
-- [x] rcv
-- [x] libro-diario
-- [x] ccm
-- [x] revisado
-![](../revisado.png)
 <table id='Partida-10'>
 <thead> <th style='background-color: lavender' colspan='6'>Partida 10</th></thead>
 <tbody>
 <tr><td name='Debe' align='right'>39487</td> <td colspan='7'>easy-materiales#materiales</td> </tr>
-<tr style='background-color: lightyellow'>  <td> </td> <td name='Debe' align='right'> 7503</td> <td name='Haber' align='right'> 0</td> <td colspan='2'> a[iva-credito] </td> </tr>
+<tr style='background-color: lightyellow'>  <td> </td> <td name='Debe' align='right'> 39487</td> <td name='Haber' align='right'> 0</td> <td colspan='2'> a[inventario] </td> </tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td name='Debe' align='right'> 39487</td> <td name='Haber' align='right'> 0</td> <td colspan='2'> a[materiales] </td> </tr>
+<tr style='background-color: lightyellow'>  <td> </td> <td name='Debe' align='right'> 7503</td> <td name='Haber' align='right'> 0</td> <td colspan='2'> a[iva-credito] </td> </tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td name='Debe' align='right'> 0</td> <td name='Haber' align='right'> 46990</td> <td colspan='2'> a[banco-estado] </td> </tr>
-<tr> <td> </td> <td style='background-color: blanchedalmond'> 46990 </td> <td style='background-color: blanchedalmond'> 46990</td> </tr>
+<tr style='background-color: gold'>  <td> </td> <td align='right'>0 </td> <td align='right'> 39487</td> <td> </td> <td> r[costos-de-mercancias] </td> </tr>
+<tr> <td> </td> <td style='background-color: blanchedalmond'> 86477 </td> <td style='background-color: blanchedalmond'> 86477</td> </tr>
 </tbody><tbody>
 <tr><td colspan='4'> necios SA</td> </tr> 
 <tr><td colspan='4'> ( 28 de enero	2021	 ) </td> </tr>
@@ -283,23 +212,17 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'>  </p>
 <br> 
-- [x] antiguo número de partida: 12
-- [x] tipo de asiento: 33
-- [x] folio: 109127578
-- [x] rcv
-- [x] libro-diario
-- [x] ccm
-- [x] revisado
-![](../revisado.png)
 <table id='Partida-12'>
 <thead> <th style='background-color: lavender' colspan='6'>Partida 12</th></thead>
 <tbody>
-<tr><td name='Debe' align='right'>0</td> <td colspan='7'>sodimac-materiales#materiales</td> </tr>
 <tr><td name='Debe' align='right'>18849</td> <td colspan='7'>sodimac-materiales#materiales</td> </tr>
-<tr style='background-color: lightyellow'>  <td> </td> <td name='Debe' align='right'> 3581</td> <td name='Haber' align='right'> 0</td> <td colspan='2'> a[iva-credito] </td> </tr>
+<tr><td name='Debe' align='right'>0</td> <td colspan='7'>sodimac-materiales#materiales</td> </tr>
+<tr style='background-color: lightyellow'>  <td> </td> <td name='Debe' align='right'> 18849</td> <td name='Haber' align='right'> 0</td> <td colspan='2'> a[inventario] </td> </tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td name='Debe' align='right'> 18849</td> <td name='Haber' align='right'> 0</td> <td colspan='2'> a[materiales] </td> </tr>
+<tr style='background-color: lightyellow'>  <td> </td> <td name='Debe' align='right'> 3581</td> <td name='Haber' align='right'> 0</td> <td colspan='2'> a[iva-credito] </td> </tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td name='Debe' align='right'> 0</td> <td name='Haber' align='right'> 22430</td> <td colspan='2'> a[banco-estado] </td> </tr>
-<tr> <td> </td> <td style='background-color: blanchedalmond'> 22430 </td> <td style='background-color: blanchedalmond'> 22430</td> </tr>
+<tr style='background-color: gold'>  <td> </td> <td align='right'>0 </td> <td align='right'> 18849</td> <td> </td> <td> r[costos-de-mercancias] </td> </tr>
+<tr> <td> </td> <td style='background-color: blanchedalmond'> 41279 </td> <td style='background-color: blanchedalmond'> 41279</td> </tr>
 </tbody><tbody>
 <tr><td colspan='4'> necios SA</td> </tr> 
 <tr><td colspan='4'> ( 14 de enero	2021	 ) </td> </tr>
@@ -313,20 +236,12 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'>  </p>
 <br> 
-- [x] antiguo número de partida: 13
-- [x] tipo de asiento: 33
-- [x] folio: 109127577
-- [x] rcv
-- [x] libro-diario
-- [x] ccm
-- [x] revisado
-![](../revisado.png)
 <table id='Partida-13'>
 <thead> <th style='background-color: lavender' colspan='6'>Partida 13</th></thead>
 <tbody>
-<tr style='background-color: lightyellow'>  <td> </td> <td name='Debe' align='right'> 151252</td> <td name='Haber' align='right'> 0</td> <td colspan='2'> a[herramientas] </td> </tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td name='Debe' align='right'> 28738</td> <td name='Haber' align='right'> 0</td> <td colspan='2'> a[iva-credito] </td> </tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td name='Debe' align='right'> 0</td> <td name='Haber' align='right'> 179990</td> <td colspan='2'> a[banco-estado] </td> </tr>
+<tr style='background-color: lightyellow'>  <td> </td> <td name='Debe' align='right'> 151252</td> <td name='Haber' align='right'> 0</td> <td colspan='2'> a[herramientas] </td> </tr>
 <tr>  <td>extra-contable </td> <td align='right'> 151252</td> <td align='right'>0</td> <td> </td> <td> t[depreciacion-instantanea-de-activos-fijos-propyme] </td></tr> 
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 179990 </td> <td style='background-color: blanchedalmond'> 179990</td> </tr>
 </tbody><tbody>
@@ -342,55 +257,40 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'>  </p>
 <br> 
-- [x] antiguo número de partida: 131
-- [x] voucher en ccm: 186
-- [x] tipo de asiento: depreciacion
-- [ ] rcv
-- [ ] libro-diario
-- [x] ccm
-- [x] revisado
-![](../revisado.png)
 <table id='Partida-131'>
 <thead> <th style='background-color: lavender' colspan='6'>Partida 131</th></thead>
 <tbody>
-<tr> <td name = 'Debe' align='right' >8361 </td> <td colspan='7'> u-chile#gastos-administrativos </td></tr>
 <tr> <td name = 'Debe' align='right' >2417 </td> <td colspan='7'> amortizacion-intangibles#amortizacion </td></tr>
-<tr style='background-color: lightyellow'>  <td> </td> <td name='Debe' align='right'> 1589</td> <td name='Haber' align='right'> 0</td> <td colspan='2'> a[iva-credito] </td> </tr>
-<tr style='background-color: lightyellow'>  <td> </td> <td name='Debe' align='right'> 0</td> <td name='Haber' align='right'> 2417</td> <td colspan='2'> a[amortizacion-acumulada-intangibles] </td> </tr>
-<tr style='background-color: lightyellow'>  <td> </td> <td name='Debe' align='right'> 0</td> <td name='Haber' align='right'> 9950</td> <td colspan='2'> a[caja] </td> </tr>
+<tr> <td name = 'Debe' align='right' >8361 </td> <td colspan='7'> u-chile#gastos-administrativos </td></tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td name='Debe' align='right'> 0</td> <td name='Haber' align='right'> 4202</td> <td colspan='2'> a[depreciacion-acumulada-herramientas] </td> </tr>
+<tr style='background-color: lightyellow'>  <td> </td> <td name='Debe' align='right'> 0</td> <td name='Haber' align='right'> 2417</td> <td colspan='2'> a[amortizacion-acumulada-intangibles] </td> </tr>
+<tr style='background-color: lightyellow'>  <td> </td> <td name='Debe' align='right'> 1589</td> <td name='Haber' align='right'> 0</td> <td colspan='2'> a[iva-credito] </td> </tr>
+<tr style='background-color: lightyellow'>  <td> </td> <td name='Debe' align='right'> 0</td> <td name='Haber' align='right'> 9950</td> <td colspan='2'> a[caja] </td> </tr>
 <tr style='color: white; background-color: black'>  <td> </td> <td align='right'>8361 </td> <td align='right'> 0</td> <td> </td> <td> r[gastos-administrativos] </td> </tr>
-<tr style='color: white; background-color: black'>  <td> </td> <td align='right'>4202 </td> <td align='right'> 0</td> <td> </td> <td> r[depreciacion] </td> </tr>
 <tr style='color: white; background-color: black'>  <td> </td> <td align='right'>2417 </td> <td align='right'> 0</td> <td> </td> <td> r[amortizacion] </td> </tr>
-<tr> <td> </td> <td style='background-color: blanchedalmond'> 9950 </td> <td style='background-color: blanchedalmond'> 9950</td> </tr>
+<tr style='color: white; background-color: black'>  <td> </td> <td align='right'>4202 </td> <td align='right'> 0</td> <td> </td> <td> r[depreciacion] </td> </tr>
+<tr> <td> </td> <td style='background-color: blanchedalmond'> 6619 </td> <td style='background-color: blanchedalmond'> 6619</td> </tr>
 </tbody><tbody>
 <tr><td colspan='4'> necios SA</td> </tr> 
-<tr><td colspan='4'> ( 6 de septiembre	2021	 ) </td> </tr>
-<tr><td colspan='8'> Partida 131: Adquisión de Dominio Internet: necios.cl. </td></tr>
-<tr> <td colspan='7'>efectuado a u-chile </td> </tr>
-<tr><td colspan = '8'> gastar-en-administracion-afecto</td> </tr>
-<tr style='background-color: aliceblue'> <td colspan = '8'> <img src='../factura-afecta-u-chile-2761647.png'></td> </tr>
+<tr><td colspan='4'> ( 31 de enero	2021	 ) </td> </tr>
+<tr><td colspan='8'> Partida 131: Por amortizacion en enero de marca-alectrico-Por depreciacion en enero de taladro </td></tr>
+<tr><td colspan = '8'> amortizacion</td> </tr>
 </tbody>
 </table>
 <p style='page-break-before: always;'>&nbsp;</p>
 <br> 
 <p style='color: white; background-color: red'>  </p>
 <br> 
-- [x] antiguo número de partida: 14
-- [x] tipo de asiento: 33
-- [x] rcv
-- [x] libro-diario
-- [x] ccm
-- [x] revisado
-![](../revisado.png)
 <table id='Partida-14'>
 <thead> <th style='background-color: lavender' colspan='6'>Partida 14</th></thead>
 <tbody>
 <tr><td name='Debe' align='right'>7118</td> <td colspan='7'>easy-materiales#materiales</td> </tr>
-<tr style='background-color: lightyellow'>  <td> </td> <td name='Debe' align='right'> 1352</td> <td name='Haber' align='right'> 0</td> <td colspan='2'> a[iva-credito] </td> </tr>
+<tr style='background-color: lightyellow'>  <td> </td> <td name='Debe' align='right'> 7118</td> <td name='Haber' align='right'> 0</td> <td colspan='2'> a[inventario] </td> </tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td name='Debe' align='right'> 7118</td> <td name='Haber' align='right'> 0</td> <td colspan='2'> a[materiales] </td> </tr>
+<tr style='background-color: lightyellow'>  <td> </td> <td name='Debe' align='right'> 1352</td> <td name='Haber' align='right'> 0</td> <td colspan='2'> a[iva-credito] </td> </tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td name='Debe' align='right'> 0</td> <td name='Haber' align='right'> 8470</td> <td colspan='2'> a[banco-estado] </td> </tr>
-<tr> <td> </td> <td style='background-color: blanchedalmond'> 8470 </td> <td style='background-color: blanchedalmond'> 8470</td> </tr>
+<tr style='background-color: gold'>  <td> </td> <td align='right'>0 </td> <td align='right'> 7118</td> <td> </td> <td> r[costos-de-mercancias] </td> </tr>
+<tr> <td> </td> <td style='background-color: blanchedalmond'> 15588 </td> <td style='background-color: blanchedalmond'> 15588</td> </tr>
 </tbody><tbody>
 <tr><td colspan='4'> necios SA</td> </tr> 
 <tr><td colspan='4'> ( 4 de enero	2021	 ) </td> </tr>
@@ -404,24 +304,16 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'>  </p>
 <br> 
-- [x] antiguo número de partida: 14333
-- [x] voucher en ccm: 188
-- [x] tipo de asiento: ajuste-iva-enero
-- [ ] rcv
-- [ ] libro-diario
-- [x] ccm
-- [x] revisado
-![](../revisado.png)
 <table id='Partida-14333'>
 <thead> <th style='background-color: lavender' colspan='6'>Partida 14333</th></thead>
 <tbody>
 <tr> <td name = 'Debe' align='right' >33 </td> <td colspan='7'> ganancia-por-correccion-monetaria#correccion-monetaria </td></tr>
 <tr> <td name = 'Debe' align='right' >33 </td> <td colspan='7'> correccion-monetaria#ingresos-brutos </td></tr>
-<tr style='background-color: lightyellow'>  <td> </td> <td name='Debe' align='right'> 33</td> <td name='Haber' align='right'> 23464</td> <td colspan='2'> a[iva-credito] </td> </tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td name='Debe' align='right'> 199</td> <td name='Haber' align='right'> 0</td> <td colspan='2'> a[ppm] </td> </tr>
+<tr style='background-color: lightyellow'>  <td> </td> <td name='Debe' align='right'> 33</td> <td name='Haber' align='right'> 23464</td> <td colspan='2'> a[iva-credito] </td> </tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td name='Debe' align='right'> 0</td> <td name='Haber' align='right'> 199</td> <td colspan='2'> a[banco-estado] </td> </tr>
-<tr style='background-color: azure'>  <td> </td> <td align='right'> 23464 </td> <td align='right'> 0 </td> <td> </td><td> p[iva-debito] </td> </tr>
 <tr style='background-color: gold'>  <td> </td> <td align='right'>0 </td> <td align='right'> 33</td> <td> </td> <td> r[ingresos-brutos] </td> </tr>
+<tr style='background-color: azure'>  <td> </td> <td align='right'> 23464 </td> <td align='right'> 0 </td> <td> </td><td> p[iva-debito] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 23696 </td> <td style='background-color: blanchedalmond'> 23696</td> </tr>
 </tbody><tbody>
 <tr><td colspan='4'> necios SA</td> </tr> 
@@ -434,20 +326,13 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'>  </p>
 <br> 
-- [x] tipo de asiento: 33
-- [ ] rcv
-- [ ] libro-diario
-- [ ] ccm
-- [x] Referencia: <a href= '#Partida-3'>3 </a>
-- [x] revisado
-![](../revisado.png)
 <table id='Partida-141'>
 <thead> <th style='background-color: lavender' colspan='6'>Partida 141</th></thead>
 <tbody>
 <tr> <td name = 'Debe' align='right' >29412 </td> <td colspan='7'> devolucion-sobre-ventas-afectas#devolucion-sobre-ventas </td></tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td name='Debe' align='right'> 0</td> <td name='Haber' align='right'> 35000</td> <td colspan='2'> a[banco-estado] </td> </tr>
-<tr style='background-color: azure'>  <td> </td> <td align='right'> 5588 </td> <td align='right'> 0 </td> <td> </td><td> p[iva-debito] </td> </tr>
 <tr style='color: white; background-color: black'>  <td> </td> <td align='right'>29412 </td> <td align='right'> 0</td> <td> </td> <td> r[devolucion-sobre-ventas] </td> </tr>
+<tr style='background-color: azure'>  <td> </td> <td align='right'> 5588 </td> <td align='right'> 0 </td> <td> </td><td> p[iva-debito] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 35000 </td> <td style='background-color: blanchedalmond'> 35000</td> </tr>
 </tbody><tbody>
 <tr><td colspan='4'> necios SA</td> </tr> 
@@ -462,20 +347,14 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'>  </p>
 <br> 
-- [x] tipo de asiento: 33
-- [ ] rcv
-- [ ] libro-diario
-- [ ] ccm
-- [x] revisado
-![](../revisado.png)
 <table id='Partida-142'>
 <thead> <th style='background-color: lavender' colspan='6'>Partida 142</th></thead>
 <tbody>
 <tr> <td name = 'Debe' align='right' >2417 </td> <td colspan='7'> amortizacion-intangibles#amortizacion </td></tr>
-<tr style='background-color: lightyellow'>  <td> </td> <td name='Debe' align='right'> 0</td> <td name='Haber' align='right'> 2417</td> <td colspan='2'> a[amortizacion-acumulada-intangibles] </td> </tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td name='Debe' align='right'> 0</td> <td name='Haber' align='right'> 4202</td> <td colspan='2'> a[depreciacion-acumulada-herramientas] </td> </tr>
-<tr style='color: white; background-color: black'>  <td> </td> <td align='right'>4202 </td> <td align='right'> 0</td> <td> </td> <td> r[depreciacion] </td> </tr>
+<tr style='background-color: lightyellow'>  <td> </td> <td name='Debe' align='right'> 0</td> <td name='Haber' align='right'> 2417</td> <td colspan='2'> a[amortizacion-acumulada-intangibles] </td> </tr>
 <tr style='color: white; background-color: black'>  <td> </td> <td align='right'>2417 </td> <td align='right'> 0</td> <td> </td> <td> r[amortizacion] </td> </tr>
+<tr style='color: white; background-color: black'>  <td> </td> <td align='right'>4202 </td> <td align='right'> 0</td> <td> </td> <td> r[depreciacion] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 6619 </td> <td style='background-color: blanchedalmond'> 6619</td> </tr>
 </tbody><tbody>
 <tr><td colspan='4'> necios SA</td> </tr> 
@@ -488,20 +367,14 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'>  </p>
 <br> 
-- [x] tipo de asiento: ajuste-de-iva
-- [ ] rcv
-- [ ] libro-diario
-- [ ] ccm
-- [x] revisado
-![](../revisado.png)
 <table id='Partida-14444'>
 <thead> <th style='background-color: lavender' colspan='6'>Partida 14444</th></thead>
 <tbody>
 <tr> <td name = 'Debe' align='right' >298 </td> <td colspan='7'> ganancia-por-correccion-monetaria#correccion-monetaria </td></tr>
 <tr> <td name = 'Debe' align='right' >298 </td> <td colspan='7'> correccion-monetaria#ingresos-brutos </td></tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td name='Debe' align='right'> 298</td> <td name='Haber' align='right'> 16</td> <td colspan='2'> a[iva-credito] </td> </tr>
-<tr style='background-color: azure'>  <td> </td> <td align='right'> 16 </td> <td align='right'> 0 </td> <td> </td><td> p[iva-debito] </td> </tr>
 <tr style='background-color: gold'>  <td> </td> <td align='right'>0 </td> <td align='right'> 298</td> <td> </td> <td> r[ingresos-brutos] </td> </tr>
+<tr style='background-color: azure'>  <td> </td> <td align='right'> 16 </td> <td align='right'> 0 </td> <td> </td><td> p[iva-debito] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 314 </td> <td style='background-color: blanchedalmond'> 314</td> </tr>
 </tbody><tbody>
 <tr><td colspan='4'> necios SA</td> </tr> 
@@ -514,12 +387,6 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'>  </p>
 <br> 
-- [x] tipo de asiento: 33
-- [ ] rcv
-- [ ] libro-diario
-- [ ] ccm
-- [x] revisado
-![](../revisado.png)
 <table id='Partida-15'>
 <thead> <th style='background-color: lavender' colspan='6'>Partida 15</th></thead>
 <tbody>
@@ -541,20 +408,16 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'>  </p>
 <br> 
-- [x] tipo de asiento: 33
-- [ ] rcv
-- [ ] libro-diario
-- [ ] ccm
-- [x] revisado
-![](../revisado.png)
 <table id='Partida-16'>
 <thead> <th style='background-color: lavender' colspan='6'>Partida 16</th></thead>
 <tbody>
 <tr><td name='Debe' align='right'>6607</td> <td colspan='7'>dartel-materiales#materiales</td> </tr>
-<tr style='background-color: lightyellow'>  <td> </td> <td name='Debe' align='right'> 1255</td> <td name='Haber' align='right'> 0</td> <td colspan='2'> a[iva-credito] </td> </tr>
+<tr style='background-color: lightyellow'>  <td> </td> <td name='Debe' align='right'> 6607</td> <td name='Haber' align='right'> 0</td> <td colspan='2'> a[inventario] </td> </tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td name='Debe' align='right'> 6607</td> <td name='Haber' align='right'> 0</td> <td colspan='2'> a[materiales] </td> </tr>
+<tr style='background-color: lightyellow'>  <td> </td> <td name='Debe' align='right'> 1255</td> <td name='Haber' align='right'> 0</td> <td colspan='2'> a[iva-credito] </td> </tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td name='Debe' align='right'> 0</td> <td name='Haber' align='right'> 7862</td> <td colspan='2'> a[banco-estado] </td> </tr>
-<tr> <td> </td> <td style='background-color: blanchedalmond'> 7862 </td> <td style='background-color: blanchedalmond'> 7862</td> </tr>
+<tr style='background-color: gold'>  <td> </td> <td align='right'>0 </td> <td align='right'> 6607</td> <td> </td> <td> r[costos-de-mercancias] </td> </tr>
+<tr> <td> </td> <td style='background-color: blanchedalmond'> 14469 </td> <td style='background-color: blanchedalmond'> 14469</td> </tr>
 </tbody><tbody>
 <tr><td colspan='4'> necios SA</td> </tr> 
 <tr><td colspan='4'> ( 4 de febrero	2021	 ) </td> </tr>
@@ -568,12 +431,6 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'>  </p>
 <br> 
-- [x] tipo de asiento: 33
-- [ ] rcv
-- [ ] libro-diario
-- [ ] ccm
-- [x] revisado
-![](../revisado.png)
 <table id='Partida-17'>
 <thead> <th style='background-color: lavender' colspan='6'>Partida 17</th></thead>
 <tbody>
@@ -595,12 +452,6 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'>  </p>
 <br> 
-- [x] tipo de asiento: 33
-- [ ] rcv
-- [ ] libro-diario
-- [ ] ccm
-- [x] revisado
-![](../revisado.png)
 <table id='Partida-18'>
 <thead> <th style='background-color: lavender' colspan='6'>Partida 18</th></thead>
 <tbody>
@@ -622,13 +473,6 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'> Tipo de Documento den Libro Tributario aparece como Nota de Crédito de Papel y en el asiento centralizado correspondiente aparece como 60, debe ser 61</p>
 <br> 
-- [x] tipo de asiento: 33
-- [x] a corregir: Tipo de Documento den Libro Tributario aparece como Nota de Crédito de Papel y en el asiento centralizado correspondiente aparece como 60, debe ser 61
-- [ ] rcv
-- [ ] libro-diario
-- [ ] ccm
-- [x] revisado
-![](../revisado.png)
 <table id='Partida-19'>
 <thead> <th style='background-color: lavender' colspan='6'>Partida 19</th></thead>
 <tbody>
@@ -649,12 +493,6 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'>  </p>
 <br> 
-- [x] tipo de asiento: 56
-- [ ] rcv
-- [ ] libro-diario
-- [ ] ccm
-- [x] revisado
-![](../revisado.png)
 <table id='Partida-191'>
 <thead> <th style='background-color: lavender' colspan='6'>Partida 191</th></thead>
 <tbody>
@@ -674,20 +512,14 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'>  </p>
 <br> 
-- [x] tipo de asiento: 33
-- [ ] rcv
-- [ ] libro-diario
-- [ ] ccm
-- [x] revisado
-![](../revisado.png)
 <table id='Partida-1911'>
 <thead> <th style='background-color: lavender' colspan='6'>Partida 1911</th></thead>
 <tbody>
 <tr> <td name = 'Debe' align='right' >84 </td> <td colspan='7'> ventas#ingresos-brutos </td></tr>
 <tr> <td name = 'Debe' align='right' >84 </td> <td colspan='7'> ventas-con-eboleta-afecta#ventas </td></tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td name='Debe' align='right'> 100</td> <td name='Haber' align='right'> 0</td> <td colspan='2'> a[banco-estado] </td> </tr>
-<tr style='background-color: azure'>  <td> </td> <td align='right'> 0 </td> <td align='right'> 16 </td> <td> </td><td> p[iva-debito] </td> </tr>
 <tr style='background-color: gold'>  <td> </td> <td align='right'>0 </td> <td align='right'> 84</td> <td> </td> <td> r[ingresos-brutos] </td> </tr>
+<tr style='background-color: azure'>  <td> </td> <td align='right'> 0 </td> <td align='right'> 16 </td> <td> </td><td> p[iva-debito] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 100 </td> <td style='background-color: blanchedalmond'> 100</td> </tr>
 </tbody><tbody>
 <tr><td colspan='4'> necios SA</td> </tr> 
@@ -700,19 +532,13 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'>  </p>
 <br> 
-- [x] tipo de asiento: 33
-- [ ] rcv
-- [ ] libro-diario
-- [ ] ccm
-- [x] revisado
-![](../revisado.png)
 <table id='Partida-192'>
 <thead> <th style='background-color: lavender' colspan='6'>Partida 192</th></thead>
 <tbody>
 <tr> <td name = 'Debe' align='right' >29412 </td> <td colspan='7'> reintegro-de-devolucion-sobre-ventas-afectas#reintegro-de-devolucion-sobre-ventas </td></tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td name='Debe' align='right'> 35000</td> <td name='Haber' align='right'> 0</td> <td colspan='2'> a[banco-estado] </td> </tr>
-<tr style='background-color: azure'>  <td> </td> <td align='right'> 0 </td> <td align='right'> 5588 </td> <td> </td><td> p[iva-debito] </td> </tr>
 <tr style='background-color: gold'>  <td> </td> <td align='right'>0 </td> <td align='right'> 29412</td> <td> </td> <td> r[reintegro-de-devolucion-sobre-ventas] </td> </tr>
+<tr style='background-color: azure'>  <td> </td> <td align='right'> 0 </td> <td align='right'> 5588 </td> <td> </td><td> p[iva-debito] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 35000 </td> <td style='background-color: blanchedalmond'> 35000</td> </tr>
 </tbody><tbody>
 <tr><td colspan='4'> necios SA</td> </tr> 
@@ -726,12 +552,6 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'>  </p>
 <br> 
-- [x] tipo de asiento: 33
-- [ ] rcv
-- [ ] libro-diario
-- [ ] ccm
-- [x] revisado
-![](../revisado.png)
 <table id='Partida-20'>
 <thead> <th style='background-color: lavender' colspan='6'>Partida 20</th></thead>
 <tbody>
@@ -753,19 +573,13 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'>  </p>
 <br> 
-- [x] tipo de asiento: 33
-- [ ] rcv
-- [ ] libro-diario
-- [ ] ccm
-- [x] revisado
-![](../revisado.png)
 <table id='Partida-21'>
 <thead> <th style='background-color: lavender' colspan='6'>Partida 21</th></thead>
 <tbody>
-<tr><td name='Debe' align='right'>0</td> <td colspan='7'>sodimac-materiales#materiales</td> </tr>
 <tr><td name='Debe' align='right'>25613</td> <td colspan='7'>sodimac-materiales#materiales</td> </tr>
-<tr style='background-color: lightyellow'>  <td> </td> <td name='Debe' align='right'> 4866</td> <td name='Haber' align='right'> 0</td> <td colspan='2'> a[iva-credito] </td> </tr>
+<tr><td name='Debe' align='right'>0</td> <td colspan='7'>sodimac-materiales#materiales</td> </tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td name='Debe' align='right'> 25613</td> <td name='Haber' align='right'> 0</td> <td colspan='2'> a[materiales] </td> </tr>
+<tr style='background-color: lightyellow'>  <td> </td> <td name='Debe' align='right'> 4866</td> <td name='Haber' align='right'> 0</td> <td colspan='2'> a[iva-credito] </td> </tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td name='Debe' align='right'> 0</td> <td name='Haber' align='right'> 30479</td> <td colspan='2'> a[banco-estado] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 30479 </td> <td style='background-color: blanchedalmond'> 30479</td> </tr>
 </tbody><tbody>
@@ -781,12 +595,6 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'>  </p>
 <br> 
-- [x] tipo de asiento: 33
-- [ ] rcv
-- [ ] libro-diario
-- [ ] ccm
-- [x] revisado
-![](../revisado.png)
 <table id='Partida-22'>
 <thead> <th style='background-color: lavender' colspan='6'>Partida 22</th></thead>
 <tbody>
@@ -808,20 +616,14 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'>  </p>
 <br> 
-- [x] tipo de asiento: 33
-- [ ] rcv
-- [ ] libro-diario
-- [ ] ccm
-- [x] revisado
-![](../revisado.png)
 <table id='Partida-26'>
 <thead> <th style='background-color: lavender' colspan='6'>Partida 26</th></thead>
 <tbody>
 <tr> <td name = 'Debe' align='right' >29412 </td> <td colspan='7'> ventas#ingresos-brutos </td></tr>
 <tr> <td name = 'Debe' align='right' >29412 </td> <td colspan='7'> ventas-con-voucher-afecto#ventas </td></tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td name='Debe' align='right'> 35000</td> <td name='Haber' align='right'> 0</td> <td colspan='2'> a[banco-estado] </td> </tr>
-<tr style='background-color: azure'>  <td> </td> <td align='right'> 0 </td> <td align='right'> 5588 </td> <td> </td><td> p[iva-debito] </td> </tr>
 <tr style='background-color: gold'>  <td> </td> <td align='right'>0 </td> <td align='right'> 29412</td> <td> </td> <td> r[ingresos-brutos] </td> </tr>
+<tr style='background-color: azure'>  <td> </td> <td align='right'> 0 </td> <td align='right'> 5588 </td> <td> </td><td> p[iva-debito] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 35000 </td> <td style='background-color: blanchedalmond'> 35000</td> </tr>
 </tbody><tbody>
 <tr><td colspan='4'> necios SA</td> </tr> 
@@ -834,20 +636,14 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'>  </p>
 <br> 
-- [x] tipo de asiento: 33
-- [ ] rcv
-- [ ] libro-diario
-- [ ] ccm
-- [x] revisado
-![](../revisado.png)
 <table id='Partida-261'>
 <thead> <th style='background-color: lavender' colspan='6'>Partida 261</th></thead>
 <tbody>
 <tr> <td name = 'Debe' align='right' >2417 </td> <td colspan='7'> amortizacion-intangibles#amortizacion </td></tr>
-<tr style='background-color: lightyellow'>  <td> </td> <td name='Debe' align='right'> 0</td> <td name='Haber' align='right'> 2417</td> <td colspan='2'> a[amortizacion-acumulada-intangibles] </td> </tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td name='Debe' align='right'> 0</td> <td name='Haber' align='right'> 4202</td> <td colspan='2'> a[depreciacion-acumulada-herramientas] </td> </tr>
-<tr style='color: white; background-color: black'>  <td> </td> <td align='right'>4202 </td> <td align='right'> 0</td> <td> </td> <td> r[depreciacion] </td> </tr>
+<tr style='background-color: lightyellow'>  <td> </td> <td name='Debe' align='right'> 0</td> <td name='Haber' align='right'> 2417</td> <td colspan='2'> a[amortizacion-acumulada-intangibles] </td> </tr>
 <tr style='color: white; background-color: black'>  <td> </td> <td align='right'>2417 </td> <td align='right'> 0</td> <td> </td> <td> r[amortizacion] </td> </tr>
+<tr style='color: white; background-color: black'>  <td> </td> <td align='right'>4202 </td> <td align='right'> 0</td> <td> </td> <td> r[depreciacion] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 6619 </td> <td style='background-color: blanchedalmond'> 6619</td> </tr>
 </tbody><tbody>
 <tr><td colspan='4'> necios SA</td> </tr> 
@@ -860,22 +656,16 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'>  </p>
 <br> 
-- [x] tipo de asiento: ajuste-iva
-- [ ] rcv
-- [ ] libro-diario
-- [ ] ccm
-- [x] revisado
-![](../revisado.png)
 <table id='Partida-262'>
 <thead> <th style='background-color: lavender' colspan='6'>Partida 262</th></thead>
 <tbody>
 <tr> <td name = 'Debe' align='right' >334 </td> <td colspan='7'> ganancia-por-correccion-monetaria#correccion-monetaria </td></tr>
 <tr> <td name = 'Debe' align='right' >334 </td> <td colspan='7'> correccion-monetaria#ingresos-brutos </td></tr>
-<tr style='background-color: lightyellow'>  <td> </td> <td name='Debe' align='right'> 334</td> <td name='Haber' align='right'> 5588</td> <td colspan='2'> a[iva-credito] </td> </tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td name='Debe' align='right'> 38</td> <td name='Haber' align='right'> 0</td> <td colspan='2'> a[ppm] </td> </tr>
+<tr style='background-color: lightyellow'>  <td> </td> <td name='Debe' align='right'> 334</td> <td name='Haber' align='right'> 5588</td> <td colspan='2'> a[iva-credito] </td> </tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td name='Debe' align='right'> 0</td> <td name='Haber' align='right'> 38</td> <td colspan='2'> a[banco-estado] </td> </tr>
-<tr style='background-color: azure'>  <td> </td> <td align='right'> 5588 </td> <td align='right'> 0 </td> <td> </td><td> p[iva-debito] </td> </tr>
 <tr style='background-color: gold'>  <td> </td> <td align='right'>0 </td> <td align='right'> 334</td> <td> </td> <td> r[ingresos-brutos] </td> </tr>
+<tr style='background-color: azure'>  <td> </td> <td align='right'> 5588 </td> <td align='right'> 0 </td> <td> </td><td> p[iva-debito] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 5960 </td> <td style='background-color: blanchedalmond'> 5960</td> </tr>
 </tbody><tbody>
 <tr><td colspan='4'> necios SA</td> </tr> 
@@ -888,12 +678,6 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'>  </p>
 <br> 
-- [x] tipo de asiento: 33
-- [ ] rcv
-- [ ] libro-diario
-- [ ] ccm
-- [x] revisado
-![](../revisado.png)
 <table id='Partida-27'>
 <thead> <th style='background-color: lavender' colspan='6'>Partida 27</th></thead>
 <tbody>
@@ -915,12 +699,6 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'>  </p>
 <br> 
-- [x] tipo de asiento: 33
-- [ ] rcv
-- [ ] libro-diario
-- [ ] ccm
-- [x] revisado
-![](../revisado.png)
 <table id='Partida-28'>
 <thead> <th style='background-color: lavender' colspan='6'>Partida 28</th></thead>
 <tbody>
@@ -942,18 +720,12 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'>  </p>
 <br> 
-- [x] tipo de asiento: 33
-- [ ] rcv
-- [ ] libro-diario
-- [ ] ccm
-- [x] revisado
-![](../revisado.png)
 <table id='Partida-281'>
 <thead> <th style='background-color: lavender' colspan='6'>Partida 281</th></thead>
 <tbody>
 <tr><td name='Debe' align='right'>2134</td> <td colspan='7'>easy-insumos#insumos</td> </tr>
-<tr style='background-color: lightyellow'>  <td> </td> <td name='Debe' align='right'> 406</td> <td name='Haber' align='right'> 0</td> <td colspan='2'> a[iva-credito] </td> </tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td name='Debe' align='right'> 2134</td> <td name='Haber' align='right'> 0</td> <td colspan='2'> a[insumos] </td> </tr>
+<tr style='background-color: lightyellow'>  <td> </td> <td name='Debe' align='right'> 406</td> <td name='Haber' align='right'> 0</td> <td colspan='2'> a[iva-credito] </td> </tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td name='Debe' align='right'> 0</td> <td name='Haber' align='right'> 2540</td> <td colspan='2'> a[banco-estado] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 2540 </td> <td style='background-color: blanchedalmond'> 2540</td> </tr>
 </tbody><tbody>
@@ -969,20 +741,14 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'>  </p>
 <br> 
-- [x] tipo de asiento: 33
-- [ ] rcv
-- [ ] libro-diario
-- [ ] ccm
-- [x] revisado
-![](../revisado.png)
 <table id='Partida-30'>
 <thead> <th style='background-color: lavender' colspan='6'>Partida 30</th></thead>
 <tbody>
 <tr> <td name = 'Debe' align='right' >25210 </td> <td colspan='7'> ventas#ingresos-brutos </td></tr>
 <tr> <td name = 'Debe' align='right' >25210 </td> <td colspan='7'> ventas-con-voucher-afecto#ventas </td></tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td name='Debe' align='right'> 30000</td> <td name='Haber' align='right'> 0</td> <td colspan='2'> a[banco-estado] </td> </tr>
-<tr style='background-color: azure'>  <td> </td> <td align='right'> 0 </td> <td align='right'> 4790 </td> <td> </td><td> p[iva-debito] </td> </tr>
 <tr style='background-color: gold'>  <td> </td> <td align='right'>0 </td> <td align='right'> 25210</td> <td> </td> <td> r[ingresos-brutos] </td> </tr>
+<tr style='background-color: azure'>  <td> </td> <td align='right'> 0 </td> <td align='right'> 4790 </td> <td> </td><td> p[iva-debito] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 30000 </td> <td style='background-color: blanchedalmond'> 30000</td> </tr>
 </tbody><tbody>
 <tr><td colspan='4'> necios SA</td> </tr> 
@@ -995,12 +761,6 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'>  </p>
 <br> 
-- [x] tipo de asiento: 33
-- [ ] rcv
-- [ ] libro-diario
-- [ ] ccm
-- [x] revisado
-![](../revisado.png)
 <table id='Partida-301'>
 <thead> <th style='background-color: lavender' colspan='6'>Partida 301</th></thead>
 <tbody>
@@ -1021,20 +781,14 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'>  </p>
 <br> 
-- [x] tipo de asiento: 33
-- [ ] rcv
-- [ ] libro-diario
-- [ ] ccm
-- [x] revisado
-![](../revisado.png)
 <table id='Partida-302'>
 <thead> <th style='background-color: lavender' colspan='6'>Partida 302</th></thead>
 <tbody>
 <tr> <td name = 'Debe' align='right' >2417 </td> <td colspan='7'> amortizacion-intangibles#amortizacion </td></tr>
-<tr style='background-color: lightyellow'>  <td> </td> <td name='Debe' align='right'> 0</td> <td name='Haber' align='right'> 2417</td> <td colspan='2'> a[amortizacion-acumulada-intangibles] </td> </tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td name='Debe' align='right'> 0</td> <td name='Haber' align='right'> 4202</td> <td colspan='2'> a[depreciacion-acumulada-herramientas] </td> </tr>
-<tr style='color: white; background-color: black'>  <td> </td> <td align='right'>4202 </td> <td align='right'> 0</td> <td> </td> <td> r[depreciacion] </td> </tr>
+<tr style='background-color: lightyellow'>  <td> </td> <td name='Debe' align='right'> 0</td> <td name='Haber' align='right'> 2417</td> <td colspan='2'> a[amortizacion-acumulada-intangibles] </td> </tr>
 <tr style='color: white; background-color: black'>  <td> </td> <td align='right'>2417 </td> <td align='right'> 0</td> <td> </td> <td> r[amortizacion] </td> </tr>
+<tr style='color: white; background-color: black'>  <td> </td> <td align='right'>4202 </td> <td align='right'> 0</td> <td> </td> <td> r[depreciacion] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 6619 </td> <td style='background-color: blanchedalmond'> 6619</td> </tr>
 </tbody><tbody>
 <tr><td colspan='4'> necios SA</td> </tr> 
@@ -1047,22 +801,16 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'>  </p>
 <br> 
-- [x] tipo de asiento: ajuste-iva
-- [ ] rcv
-- [ ] libro-diario
-- [ ] ccm
-- [x] revisado
-![](../revisado.png)
 <table id='Partida-303'>
 <thead> <th style='background-color: lavender' colspan='6'>Partida 303</th></thead>
 <tbody>
 <tr> <td name = 'Debe' align='right' >240 </td> <td colspan='7'> ganancia-por-correccion-monetaria#correccion-monetaria </td></tr>
 <tr> <td name = 'Debe' align='right' >240 </td> <td colspan='7'> correccion-monetaria#ingresos-brutos </td></tr>
-<tr style='background-color: lightyellow'>  <td> </td> <td name='Debe' align='right'> 240</td> <td name='Haber' align='right'> 4790</td> <td colspan='2'> a[iva-credito] </td> </tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td name='Debe' align='right'> 32</td> <td name='Haber' align='right'> 0</td> <td colspan='2'> a[ppm] </td> </tr>
+<tr style='background-color: lightyellow'>  <td> </td> <td name='Debe' align='right'> 240</td> <td name='Haber' align='right'> 4790</td> <td colspan='2'> a[iva-credito] </td> </tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td name='Debe' align='right'> 0</td> <td name='Haber' align='right'> 32</td> <td colspan='2'> a[banco-estado] </td> </tr>
-<tr style='background-color: azure'>  <td> </td> <td align='right'> 4790 </td> <td align='right'> 0 </td> <td> </td><td> p[iva-debito] </td> </tr>
 <tr style='background-color: gold'>  <td> </td> <td align='right'>0 </td> <td align='right'> 240</td> <td> </td> <td> r[ingresos-brutos] </td> </tr>
+<tr style='background-color: azure'>  <td> </td> <td align='right'> 4790 </td> <td align='right'> 0 </td> <td> </td><td> p[iva-debito] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 5062 </td> <td style='background-color: blanchedalmond'> 5062</td> </tr>
 </tbody><tbody>
 <tr><td colspan='4'> necios SA</td> </tr> 
@@ -1075,12 +823,6 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'>  </p>
 <br> 
-- [x] tipo de asiento: 33
-- [ ] rcv
-- [ ] libro-diario
-- [ ] ccm
-- [x] revisado
-![](../revisado.png)
 <table id='Partida-31'>
 <thead> <th style='background-color: lavender' colspan='6'>Partida 31</th></thead>
 <tbody>
@@ -1102,18 +844,12 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'>  </p>
 <br> 
-- [x] tipo de asiento: 33
-- [ ] rcv
-- [ ] libro-diario
-- [ ] ccm
-- [x] revisado
-![](../revisado.png)
 <table id='Partida-32'>
 <thead> <th style='background-color: lavender' colspan='6'>Partida 32</th></thead>
 <tbody>
 <tr> <td name = 'Debe' align='right' >19990 </td> <td colspan='7'> trust#gastos-administrativos </td></tr>
-<tr style='background-color: lightyellow'>  <td> </td> <td name='Debe' align='right'> 3798</td> <td name='Haber' align='right'> 0</td> <td colspan='2'> a[iva-credito] </td> </tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td name='Debe' align='right'> 0</td> <td name='Haber' align='right'> 23788</td> <td colspan='2'> a[caja] </td> </tr>
+<tr style='background-color: lightyellow'>  <td> </td> <td name='Debe' align='right'> 3798</td> <td name='Haber' align='right'> 0</td> <td colspan='2'> a[iva-credito] </td> </tr>
 <tr style='color: white; background-color: black'>  <td> </td> <td align='right'>19990 </td> <td align='right'> 0</td> <td> </td> <td> r[gastos-administrativos] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 23788 </td> <td style='background-color: blanchedalmond'> 23788</td> </tr>
 </tbody><tbody>
@@ -1129,12 +865,6 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'>  </p>
 <br> 
-- [x] tipo de asiento: 33
-- [ ] rcv
-- [ ] libro-diario
-- [ ] ccm
-- [x] revisado
-![](../revisado.png)
 <table id='Partida-33'>
 <thead> <th style='background-color: lavender' colspan='6'>Partida 33</th></thead>
 <tbody>
@@ -1156,14 +886,6 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'> No aparece en asientos centralizado</p>
 <br> 
-- [x] no-incluir: Partida que estando en RCV SII se estimó no incluir en la contabilidad financiera
-- [x] tipo de asiento: 33
-- [x] a corregir: No aparece en asientos centralizado
-- [ ] rcv
-- [ ] libro-diario
-- [ ] ccm
-- [x] revisado
-![](../revisado.png)
 <table id='Partida-34'>
 <thead> <th style='background-color: lavender' colspan='6'>Partida 34</th></thead>
 <tbody>
@@ -1181,14 +903,6 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'> No aparece en sii, seguramente porque tuve que borrarlo porque es una compra a proveedor extranjero</p>
 <br> 
-- [x] no-incluir: Partida que estando en RCV SII se estimó no incluir en la contabilidad financiera
-- [x] tipo de asiento: 33
-- [x] a corregir: No aparece en sii, seguramente porque tuve que borrarlo porque es una compra a proveedor extranjero
-- [ ] rcv
-- [ ] libro-diario
-- [ ] ccm
-- [x] revisado
-![](../revisado.png)
 <table id='Partida-35'>
 <thead> <th style='background-color: lavender' colspan='6'>Partida 35</th></thead>
 <tbody>
@@ -1206,14 +920,6 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'> No aparece en sii, seguramente porque tuve que borrarlo porque es una compra a proveedor entranjero</p>
 <br> 
-- [x] no-incluir: Partida que estando en RCV SII se estimó no incluir en la contabilidad financiera
-- [x] tipo de asiento: 33
-- [x] a corregir: No aparece en sii, seguramente porque tuve que borrarlo porque es una compra a proveedor entranjero
-- [ ] rcv
-- [ ] libro-diario
-- [ ] ccm
-- [x] revisado
-![](../revisado.png)
 <table id='Partida-36'>
 <thead> <th style='background-color: lavender' colspan='6'>Partida 36</th></thead>
 <tbody>
@@ -1231,12 +937,6 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'>  </p>
 <br> 
-- [x] tipo de asiento: 33
-- [ ] rcv
-- [ ] libro-diario
-- [ ] ccm
-- [x] revisado
-![](../revisado.png)
 <table id='Partida-37'>
 <thead> <th style='background-color: lavender' colspan='6'>Partida 37</th></thead>
 <tbody>
@@ -1257,20 +957,14 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'>  </p>
 <br> 
-- [x] tipo de asiento: 33
-- [ ] rcv
-- [ ] libro-diario
-- [ ] ccm
-- [x] revisado
-![](../revisado.png)
 <table id='Partida-371'>
 <thead> <th style='background-color: lavender' colspan='6'>Partida 371</th></thead>
 <tbody>
 <tr> <td name = 'Debe' align='right' >2417 </td> <td colspan='7'> amortizacion-intangibles#amortizacion </td></tr>
-<tr style='background-color: lightyellow'>  <td> </td> <td name='Debe' align='right'> 0</td> <td name='Haber' align='right'> 2417</td> <td colspan='2'> a[amortizacion-acumulada-intangibles] </td> </tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td name='Debe' align='right'> 0</td> <td name='Haber' align='right'> 4202</td> <td colspan='2'> a[depreciacion-acumulada-herramientas] </td> </tr>
-<tr style='color: white; background-color: black'>  <td> </td> <td align='right'>4202 </td> <td align='right'> 0</td> <td> </td> <td> r[depreciacion] </td> </tr>
+<tr style='background-color: lightyellow'>  <td> </td> <td name='Debe' align='right'> 0</td> <td name='Haber' align='right'> 2417</td> <td colspan='2'> a[amortizacion-acumulada-intangibles] </td> </tr>
 <tr style='color: white; background-color: black'>  <td> </td> <td align='right'>2417 </td> <td align='right'> 0</td> <td> </td> <td> r[amortizacion] </td> </tr>
+<tr style='color: white; background-color: black'>  <td> </td> <td align='right'>4202 </td> <td align='right'> 0</td> <td> </td> <td> r[depreciacion] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 6619 </td> <td style='background-color: blanchedalmond'> 6619</td> </tr>
 </tbody><tbody>
 <tr><td colspan='4'> necios SA</td> </tr> 
@@ -1283,12 +977,6 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'>  </p>
 <br> 
-- [x] tipo de asiento: ajuste-iva
-- [ ] rcv
-- [ ] libro-diario
-- [ ] ccm
-- [x] revisado
-![](../revisado.png)
 <table id='Partida-372'>
 <thead> <th style='background-color: lavender' colspan='6'>Partida 372</th></thead>
 <tbody>
@@ -1308,12 +996,6 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'>  </p>
 <br> 
-- [x] tipo de asiento: 33
-- [ ] rcv
-- [ ] libro-diario
-- [ ] ccm
-- [x] revisado
-![](../revisado.png)
 <table id='Partida-39'>
 <thead> <th style='background-color: lavender' colspan='6'>Partida 39</th></thead>
 <tbody>
@@ -1335,12 +1017,6 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'>  </p>
 <br> 
-- [x] tipo de asiento: 33
-- [ ] rcv
-- [ ] libro-diario
-- [ ] ccm
-- [x] revisado
-![](../revisado.png)
 <table id='Partida-41'>
 <thead> <th style='background-color: lavender' colspan='6'>Partida 41</th></thead>
 <tbody>
@@ -1363,12 +1039,6 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'>  </p>
 <br> 
-- [x] tipo de asiento: 33
-- [ ] rcv
-- [ ] libro-diario
-- [ ] ccm
-- [x] revisado
-![](../revisado.png)
 <table id='Partida-42'>
 <thead> <th style='background-color: lavender' colspan='6'>Partida 42</th></thead>
 <tbody>
@@ -1388,12 +1058,6 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'>  </p>
 <br> 
-- [x] tipo de asiento: 33
-- [ ] rcv
-- [ ] libro-diario
-- [ ] ccm
-- [x] revisado
-![](../revisado.png)
 <table id='Partida-43'>
 <thead> <th style='background-color: lavender' colspan='6'>Partida 43</th></thead>
 <tbody>
@@ -1414,12 +1078,6 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'>  </p>
 <br> 
-- [x] tipo de asiento: 33
-- [ ] rcv
-- [ ] libro-diario
-- [ ] ccm
-- [x] revisado
-![](../revisado.png)
 <table id='Partida-44'>
 <thead> <th style='background-color: lavender' colspan='6'>Partida 44</th></thead>
 <tbody>
@@ -1436,12 +1094,6 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'>  </p>
 <br> 
-- [x] tipo de asiento: 33
-- [ ] rcv
-- [ ] libro-diario
-- [ ] ccm
-- [x] revisado
-![](../revisado.png)
 <table id='Partida-45'>
 <thead> <th style='background-color: lavender' colspan='6'>Partida 45</th></thead>
 <tbody>
@@ -1462,12 +1114,6 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'>  </p>
 <br> 
-- [x] tipo de asiento: 33
-- [ ] rcv
-- [ ] libro-diario
-- [ ] ccm
-- [x] revisado
-![](../revisado.png)
 <table id='Partida-46'>
 <thead> <th style='background-color: lavender' colspan='6'>Partida 46</th></thead>
 <tbody>
@@ -1487,12 +1133,6 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'>  </p>
 <br> 
-- [x] tipo de asiento: 33
-- [ ] rcv
-- [ ] libro-diario
-- [ ] ccm
-- [x] revisado
-![](../revisado.png)
 <table id='Partida-47'>
 <thead> <th style='background-color: lavender' colspan='6'>Partida 47</th></thead>
 <tbody>
@@ -1515,12 +1155,6 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'>  </p>
 <br> 
-- [x] tipo de asiento: 33
-- [ ] rcv
-- [ ] libro-diario
-- [ ] ccm
-- [x] revisado
-![](../revisado.png)
 <table id='Partida-48'>
 <thead> <th style='background-color: lavender' colspan='6'>Partida 48</th></thead>
 <tbody>
@@ -1543,12 +1177,6 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'>  </p>
 <br> 
-- [x] tipo de asiento: 33
-- [ ] rcv
-- [ ] libro-diario
-- [ ] ccm
-- [x] revisado
-![](../revisado.png)
 <table id='Partida-49'>
 <thead> <th style='background-color: lavender' colspan='6'>Partida 49</th></thead>
 <tbody>
@@ -1570,12 +1198,6 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'>  </p>
 <br> 
-- [x] tipo de asiento: 33
-- [ ] rcv
-- [ ] libro-diario
-- [ ] ccm
-- [x] revisado
-![](../revisado.png)
 <table id='Partida-50'>
 <thead> <th style='background-color: lavender' colspan='6'>Partida 50</th></thead>
 <tbody>
@@ -1597,13 +1219,6 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'> Debe corregirse el f29 de este mes y colocar en el código 039 el valor de 1409</p>
 <br> 
-- [x] tipo de asiento: 33
-- [x] a corregir: Debe corregirse el f29 de este mes y colocar en el código 039 el valor de 1409
-- [ ] rcv
-- [ ] libro-diario
-- [ ] ccm
-- [x] revisado
-![](../revisado.png)
 <table id='Partida-51'>
 <thead> <th style='background-color: lavender' colspan='6'>Partida 51</th></thead>
 <tbody>
@@ -1619,20 +1234,14 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'>  </p>
 <br> 
-- [x] tipo de asiento: 33
-- [ ] rcv
-- [ ] libro-diario
-- [ ] ccm
-- [x] revisado
-![](../revisado.png)
 <table id='Partida-52'>
 <thead> <th style='background-color: lavender' colspan='6'>Partida 52</th></thead>
 <tbody>
 <tr> <td name = 'Debe' align='right' >2417 </td> <td colspan='7'> amortizacion-intangibles#amortizacion </td></tr>
-<tr style='background-color: lightyellow'>  <td> </td> <td name='Debe' align='right'> 0</td> <td name='Haber' align='right'> 2417</td> <td colspan='2'> a[amortizacion-acumulada-intangibles] </td> </tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td name='Debe' align='right'> 0</td> <td name='Haber' align='right'> 4202</td> <td colspan='2'> a[depreciacion-acumulada-herramientas] </td> </tr>
-<tr style='color: white; background-color: black'>  <td> </td> <td align='right'>4202 </td> <td align='right'> 0</td> <td> </td> <td> r[depreciacion] </td> </tr>
+<tr style='background-color: lightyellow'>  <td> </td> <td name='Debe' align='right'> 0</td> <td name='Haber' align='right'> 2417</td> <td colspan='2'> a[amortizacion-acumulada-intangibles] </td> </tr>
 <tr style='color: white; background-color: black'>  <td> </td> <td align='right'>2417 </td> <td align='right'> 0</td> <td> </td> <td> r[amortizacion] </td> </tr>
+<tr style='color: white; background-color: black'>  <td> </td> <td align='right'>4202 </td> <td align='right'> 0</td> <td> </td> <td> r[depreciacion] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 6619 </td> <td style='background-color: blanchedalmond'> 6619</td> </tr>
 </tbody><tbody>
 <tr><td colspan='4'> necios SA</td> </tr> 
@@ -1645,12 +1254,6 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'>  </p>
 <br> 
-- [x] tipo de asiento: 33
-- [ ] rcv
-- [ ] libro-diario
-- [ ] ccm
-- [x] revisado
-![](../revisado.png)
 <table id='Partida-62'>
 <thead> <th style='background-color: lavender' colspan='6'>Partida 62</th></thead>
 <tbody>
@@ -1670,14 +1273,6 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'> Fuera de plazo</p>
 <br> 
-- [x] rechazado: Partida rechazada por SII, significa que si la dejamos nos podría generar multas o que no tendría el efecto deseado. Así que solo podemos quitarla de SII, pero eso requiere rectificar el f29 y eso nos generaría multas. Por ejemplo, una nota de crédito que no descuente monto imponible, aunque esté en registro de compra-venta. El F22 al año siguiente no incluirá estos DTE. No es lo mismo que gasto rechazado. También podríamos declararla como no-incluir, pero eso no conveniente, pues todo debe estar en la contabilidad de la empresa, pera que sea fidedigna. Hay casos donde se declara un gasto para el que no hay boleta de respaldo, eso es muy crítico y sí será rechazado, y además la contabilidad financiera objetada. El caso de las facturas de compra 45 a proveedor extranjero es parecido, pero ahora sé como se hace. 
-- [x] tipo de asiento: 33
-- [x] a corregir: Fuera de plazo
-- [ ] rcv
-- [ ] libro-diario
-- [ ] ccm
-- [x] revisado
-![](../revisado.png)
 <table id='Partida-63'>
 <thead> <th style='background-color: lavender' colspan='6'>Partida 63</th></thead>
 <tbody  style =' text-decoration: line-through; text-decoration-color: crimson'  > 
@@ -1700,12 +1295,6 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'>  </p>
 <br> 
-- [x] tipo de asiento: 33
-- [ ] rcv
-- [ ] libro-diario
-- [ ] ccm
-- [x] revisado
-![](../revisado.png)
 <table id='Partida-64'>
 <thead> <th style='background-color: lavender' colspan='6'>Partida 64</th></thead>
 <tbody>
@@ -1727,14 +1316,6 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'> La reclamé (fue un error) en el LIBRO DE COMPRA-VENTA</p>
 <br> 
-- [x] no-incluir: Partida que estando en RCV SII se estimó no incluir en la contabilidad financiera
-- [x] tipo de asiento: 33
-- [x] a corregir: La reclamé (fue un error) en el LIBRO DE COMPRA-VENTA
-- [ ] rcv
-- [ ] libro-diario
-- [ ] ccm
-- [x] revisado
-![](../revisado.png)
 <table id='Partida-65'>
 <thead> <th style='background-color: lavender' colspan='6'>Partida 65</th></thead>
 <tbody>
@@ -1752,12 +1333,6 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'>  </p>
 <br> 
-- [x] tipo de asiento: 33
-- [ ] rcv
-- [ ] libro-diario
-- [ ] ccm
-- [x] revisado
-![](../revisado.png)
 <table id='Partida-67'>
 <thead> <th style='background-color: lavender' colspan='6'>Partida 67</th></thead>
 <tbody>
@@ -1779,12 +1354,6 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'>  </p>
 <br> 
-- [x] tipo de asiento: 33
-- [ ] rcv
-- [ ] libro-diario
-- [ ] ccm
-- [x] revisado
-![](../revisado.png)
 <table id='Partida-68'>
 <thead> <th style='background-color: lavender' colspan='6'>Partida 68</th></thead>
 <tbody>
@@ -1807,12 +1376,6 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'>  </p>
 <br> 
-- [x] tipo de asiento: 33
-- [ ] rcv
-- [ ] libro-diario
-- [ ] ccm
-- [x] revisado
-![](../revisado.png)
 <table id='Partida-69'>
 <thead> <th style='background-color: lavender' colspan='6'>Partida 69</th></thead>
 <tbody>
@@ -1835,13 +1398,6 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'> No se permite en el registroempresas.cl ingresar un capital en otra forma que no sea efectivo</p>
 <br> 
-- [x] tipo de asiento: 33
-- [x] a corregir: No se permite en el registroempresas.cl ingresar un capital en otra forma que no sea efectivo
-- [ ] rcv
-- [ ] libro-diario
-- [ ] ccm
-- [x] revisado
-![](../revisado.png)
 <table id='Partida-70'>
 <thead> <th style='background-color: lavender' colspan='6'>Partida 70</th></thead>
 <tbody>
@@ -1859,18 +1415,12 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'>  </p>
 <br> 
-- [x] tipo de asiento: 33
-- [ ] rcv
-- [ ] libro-diario
-- [ ] ccm
-- [x] revisado
-![](../revisado.png)
 <table id='Partida-71'>
 <thead> <th style='background-color: lavender' colspan='6'>Partida 71</th></thead>
 <tbody>
-<tr style='background-color: lightyellow'>  <td> </td> <td name='Debe' align='right'> 67218</td> <td name='Haber' align='right'> 0</td> <td colspan='2'> a[herramientas] </td> </tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td name='Debe' align='right'> 12772</td> <td name='Haber' align='right'> 0</td> <td colspan='2'> a[iva-credito] </td> </tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td name='Debe' align='right'> 0</td> <td name='Haber' align='right'> 79990</td> <td colspan='2'> a[banco-estado] </td> </tr>
+<tr style='background-color: lightyellow'>  <td> </td> <td name='Debe' align='right'> 67218</td> <td name='Haber' align='right'> 0</td> <td colspan='2'> a[herramientas] </td> </tr>
 <tr>  <td>extra-contable </td> <td align='right'> 67218</td> <td align='right'>0</td> <td> </td> <td> t[depreciacion-instantanea-de-activos-fijos-propyme] </td></tr> 
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 79990 </td> <td style='background-color: blanchedalmond'> 79990</td> </tr>
 </tbody><tbody>
@@ -1886,12 +1436,6 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'>  </p>
 <br> 
-- [x] tipo de asiento: 33
-- [ ] rcv
-- [ ] libro-diario
-- [ ] ccm
-- [x] revisado
-![](../revisado.png)
 <table id='Partida-73'>
 <thead> <th style='background-color: lavender' colspan='6'>Partida 73</th></thead>
 <tbody>
@@ -1913,12 +1457,6 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'>  </p>
 <br> 
-- [x] tipo de asiento: 34
-- [ ] rcv
-- [ ] libro-diario
-- [ ] ccm
-- [x] revisado
-![](../revisado.png)
 <table id='Partida-74'>
 <thead> <th style='background-color: lavender' colspan='6'>Partida 74</th></thead>
 <tbody>
@@ -1940,12 +1478,6 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'>  </p>
 <br> 
-- [x] tipo de asiento: 33
-- [ ] rcv
-- [ ] libro-diario
-- [ ] ccm
-- [x] revisado
-![](../revisado.png)
 <table id='Partida-75'>
 <thead> <th style='background-color: lavender' colspan='6'>Partida 75</th></thead>
 <tbody>
@@ -1967,20 +1499,14 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'>  </p>
 <br> 
-- [x] tipo de asiento: 33
-- [ ] rcv
-- [ ] libro-diario
-- [ ] ccm
-- [x] revisado
-![](../revisado.png)
 <table id='Partida-76'>
 <thead> <th style='background-color: lavender' colspan='6'>Partida 76</th></thead>
 <tbody>
 <tr> <td name = 'Debe' align='right' >558823 </td> <td colspan='7'> ventas#ingresos-brutos </td></tr>
 <tr> <td name = 'Debe' align='right' >558823 </td> <td colspan='7'> ventas-con-factura-afecta#ventas </td></tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td name='Debe' align='right'> 664999</td> <td name='Haber' align='right'> 0</td> <td colspan='2'> a[banco-estado] </td> </tr>
-<tr style='background-color: azure'>  <td> </td> <td align='right'> 0 </td> <td align='right'> 106176 </td> <td> </td><td> p[iva-debito] </td> </tr>
 <tr style='background-color: gold'>  <td> </td> <td align='right'>0 </td> <td align='right'> 558823</td> <td> </td> <td> r[ingresos-brutos] </td> </tr>
+<tr style='background-color: azure'>  <td> </td> <td align='right'> 0 </td> <td align='right'> 106176 </td> <td> </td><td> p[iva-debito] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 664999 </td> <td style='background-color: blanchedalmond'> 664999</td> </tr>
 </tbody><tbody>
 <tr><td colspan='4'> necios SA</td> </tr> 
@@ -1995,20 +1521,14 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'>  </p>
 <br> 
-- [x] tipo de asiento: 33
-- [ ] rcv
-- [ ] libro-diario
-- [ ] ccm
-- [x] revisado
-![](../revisado.png)
 <table id='Partida-77'>
 <thead> <th style='background-color: lavender' colspan='6'>Partida 77</th></thead>
 <tbody>
 <tr> <td name = 'Debe' align='right' >151960 </td> <td colspan='7'> ventas#ingresos-brutos </td></tr>
 <tr> <td name = 'Debe' align='right' >151960 </td> <td colspan='7'> ventas-con-voucher-afecto#ventas </td></tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td name='Debe' align='right'> 180833</td> <td name='Haber' align='right'> 0</td> <td colspan='2'> a[banco-estado] </td> </tr>
-<tr style='background-color: azure'>  <td> </td> <td align='right'> 0 </td> <td align='right'> 28873 </td> <td> </td><td> p[iva-debito] </td> </tr>
 <tr style='background-color: gold'>  <td> </td> <td align='right'>0 </td> <td align='right'> 151960</td> <td> </td> <td> r[ingresos-brutos] </td> </tr>
+<tr style='background-color: azure'>  <td> </td> <td align='right'> 0 </td> <td align='right'> 28873 </td> <td> </td><td> p[iva-debito] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 180833 </td> <td style='background-color: blanchedalmond'> 180833</td> </tr>
 </tbody><tbody>
 <tr><td colspan='4'> necios SA</td> </tr> 
@@ -2021,12 +1541,6 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'>  </p>
 <br> 
-- [x] tipo de asiento: 33
-- [ ] rcv
-- [ ] libro-diario
-- [ ] ccm
-- [x] revisado
-![](../revisado.png)
 <table id='Partida-78'>
 <thead> <th style='background-color: lavender' colspan='6'>Partida 78</th></thead>
 <tbody>
@@ -2049,12 +1563,6 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'>  </p>
 <br> 
-- [x] tipo de asiento: 33
-- [ ] rcv
-- [ ] libro-diario
-- [ ] ccm
-- [x] revisado
-![](../revisado.png)
 <table id='Partida-79'>
 <thead> <th style='background-color: lavender' colspan='6'>Partida 79</th></thead>
 <tbody>
@@ -2077,12 +1585,6 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'>  </p>
 <br> 
-- [x] tipo de asiento: 41
-- [ ] rcv
-- [ ] libro-diario
-- [ ] ccm
-- [x] revisado
-![](../revisado.png)
 <table id='Partida-81'>
 <thead> <th style='background-color: lavender' colspan='6'>Partida 81</th></thead>
 <tbody>
@@ -2102,20 +1604,13 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'>  </p>
 <br> 
-- [x] tipo de asiento: 61
-- [ ] rcv
-- [ ] libro-diario
-- [ ] ccm
-- [x] Referencia: <a href= '#Partida-76'>76 </a>
-- [x] revisado
-![](../revisado.png)
 <table id='Partida-82'>
 <thead> <th style='background-color: lavender' colspan='6'>Partida 82</th></thead>
 <tbody>
 <tr> <td name = 'Debe' align='right' >558823 </td> <td colspan='7'> devolucion-sobre-ventas-afectas#devolucion-sobre-ventas </td></tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td name='Debe' align='right'> 0</td> <td name='Haber' align='right'> 664999</td> <td colspan='2'> a[banco-estado] </td> </tr>
-<tr style='background-color: azure'>  <td> </td> <td align='right'> 106176 </td> <td align='right'> 0 </td> <td> </td><td> p[iva-debito] </td> </tr>
 <tr style='color: white; background-color: black'>  <td> </td> <td align='right'>558823 </td> <td align='right'> 0</td> <td> </td> <td> r[devolucion-sobre-ventas] </td> </tr>
+<tr style='background-color: azure'>  <td> </td> <td align='right'> 106176 </td> <td align='right'> 0 </td> <td> </td><td> p[iva-debito] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 664999 </td> <td style='background-color: blanchedalmond'> 664999</td> </tr>
 </tbody><tbody>
 <tr><td colspan='4'> necios SA</td> </tr> 
@@ -2130,20 +1625,14 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'>  </p>
 <br> 
-- [x] tipo de asiento: 33
-- [ ] rcv
-- [ ] libro-diario
-- [ ] ccm
-- [x] revisado
-![](../revisado.png)
 <table id='Partida-83'>
 <thead> <th style='background-color: lavender' colspan='6'>Partida 83</th></thead>
 <tbody>
 <tr> <td name = 'Debe' align='right' >93179 </td> <td colspan='7'> ventas#ingresos-brutos </td></tr>
 <tr> <td name = 'Debe' align='right' >93179 </td> <td colspan='7'> ventas-con-factura-afecta#ventas </td></tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td name='Debe' align='right'> 110883</td> <td name='Haber' align='right'> 0</td> <td colspan='2'> a[banco-estado] </td> </tr>
-<tr style='background-color: azure'>  <td> </td> <td align='right'> 0 </td> <td align='right'> 17704 </td> <td> </td><td> p[iva-debito] </td> </tr>
 <tr style='background-color: gold'>  <td> </td> <td align='right'>0 </td> <td align='right'> 93179</td> <td> </td> <td> r[ingresos-brutos] </td> </tr>
+<tr style='background-color: azure'>  <td> </td> <td align='right'> 0 </td> <td align='right'> 17704 </td> <td> </td><td> p[iva-debito] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 110883 </td> <td style='background-color: blanchedalmond'> 110883</td> </tr>
 </tbody><tbody>
 <tr><td colspan='4'> necios SA</td> </tr> 
@@ -2158,12 +1647,6 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'>  </p>
 <br> 
-- [x] tipo de asiento: 33
-- [ ] rcv
-- [ ] libro-diario
-- [ ] ccm
-- [x] revisado
-![](../revisado.png)
 <table id='Partida-84'>
 <thead> <th style='background-color: lavender' colspan='6'>Partida 84</th></thead>
 <tbody>
@@ -2185,12 +1668,6 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'>  </p>
 <br> 
-- [x] tipo de asiento: 33
-- [ ] rcv
-- [ ] libro-diario
-- [ ] ccm
-- [x] revisado
-![](../revisado.png)
 <table id='Partida-85'>
 <thead> <th style='background-color: lavender' colspan='6'>Partida 85</th></thead>
 <tbody>
@@ -2212,12 +1689,6 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'>  </p>
 <br> 
-- [x] tipo de asiento: 33
-- [ ] rcv
-- [ ] libro-diario
-- [ ] ccm
-- [x] revisado
-![](../revisado.png)
 <table id='Partida-86'>
 <thead> <th style='background-color: lavender' colspan='6'>Partida 86</th></thead>
 <tbody>
@@ -2239,21 +1710,13 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'> La emití a nombre de alectrico pero  no anulé la nota que se recibe en consecuencia</p>
 <br> 
-- [x] rechazado: Partida rechazada por SII, significa que si la dejamos nos podría generar multas o que no tendría el efecto deseado. Así que solo podemos quitarla de SII, pero eso requiere rectificar el f29 y eso nos generaría multas. Por ejemplo, una nota de crédito que no descuente monto imponible, aunque esté en registro de compra-venta. El F22 al año siguiente no incluirá estos DTE. No es lo mismo que gasto rechazado. También podríamos declararla como no-incluir, pero eso no conveniente, pues todo debe estar en la contabilidad de la empresa, pera que sea fidedigna. Hay casos donde se declara un gasto para el que no hay boleta de respaldo, eso es muy crítico y sí será rechazado, y además la contabilidad financiera objetada. El caso de las facturas de compra 45 a proveedor extranjero es parecido, pero ahora sé como se hace. 
-- [x] tipo de asiento: nota-de-credito
-- [x] a corregir: La emití a nombre de alectrico pero  no anulé la nota que se recibe en consecuencia
-- [x] rcv
-- [ ] libro-diario
-- [ ] ccm
-- [x] revisado
-![](../revisado.png)
 <table id='Partida-87'>
 <thead> <th style='background-color: lavender' colspan='6'>Partida 87</th></thead>
 <tbody  style =' text-decoration: line-through; text-decoration-color: crimson'  > 
 <tr> <td name = 'Debe' align='right' >151962 </td> <td colspan='7'> devolucion-sobre-ventas-afectas#devolucion-sobre-ventas </td></tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td name='Debe' align='right'> 0</td> <td name='Haber' align='right'> 180835</td> <td colspan='2'> a[banco-estado] </td> </tr>
-<tr style='background-color: azure'>  <td> </td> <td align='right'> 28873 </td> <td align='right'> 0 </td> <td> </td><td> p[iva-debito] </td> </tr>
 <tr style='color: white; background-color: black'>  <td> </td> <td align='right'>151962 </td> <td align='right'> 0</td> <td> </td> <td> r[devolucion-sobre-ventas] </td> </tr>
+<tr style='background-color: azure'>  <td> </td> <td align='right'> 28873 </td> <td align='right'> 0 </td> <td> </td><td> p[iva-debito] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 180835 </td> <td style='background-color: blanchedalmond'> 180835</td> </tr>
 </tbody><tbody>
 <tr><td colspan='4'> necios SA</td> </tr> 
@@ -2268,21 +1731,15 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'>  </p>
 <br> 
-- [x] tipo de asiento: 33
-- [ ] rcv
-- [ ] libro-diario
-- [ ] ccm
-- [x] revisado
-![](../revisado.png)
 <table id='Partida-88'>
 <thead> <th style='background-color: lavender' colspan='6'>Partida 88</th></thead>
 <tbody>
-<tr> <td name='Debe' align='right'> 0 </td> <td> </td> <td colspan='7'> impuesto-unico-por-pagar#salarios-por-pagar </td> </tr> 
-<tr> <td name='Debe' align='right'> 229560 </td> <td> </td> <td colspan='7'> remuneraciones-por-pagar#salarios-por-pagar </td> </tr> 
 <tr> <td name='Debe' align='right'> 70440 </td> <td> </td> <td colspan='7'> entidades-previsionales-por-pagar#salarios-por-pagar </td> </tr> 
+<tr> <td name='Debe' align='right'> 229560 </td> <td> </td> <td colspan='7'> remuneraciones-por-pagar#salarios-por-pagar </td> </tr> 
+<tr> <td name='Debe' align='right'> 0 </td> <td> </td> <td colspan='7'> impuesto-unico-por-pagar#salarios-por-pagar </td> </tr> 
+<tr style='color: white; background-color: black'>  <td> </td> <td align='right'>300000 </td> <td align='right'> 0</td> <td> </td> <td> r[salarios] </td> </tr>
 <tr style='background-color: azure'>  <td> </td> <td align='right'> 0 </td> <td align='right'> 70440 </td> <td> </td><td> p[salarios-por-pagar] </td> </tr>
 <tr style='background-color: azure'>  <td> </td> <td align='right'> 0 </td> <td align='right'> 229560 </td> <td> </td><td> p[salarios-por-pagar] </td> </tr>
-<tr style='color: white; background-color: black'>  <td> </td> <td align='right'>300000 </td> <td align='right'> 0</td> <td> </td> <td> r[salarios] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 300000 </td> <td style='background-color: blanchedalmond'> 300000</td> </tr>
 </tbody><tbody>
 <tr><td colspan='4'> necios SA</td> </tr> 
@@ -2296,22 +1753,16 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'>  </p>
 <br> 
-- [x] tipo de asiento: 33
-- [ ] rcv
-- [ ] libro-diario
-- [ ] ccm
-- [x] revisado
-![](../revisado.png)
 <table id='Partida-89'>
 <thead> <th style='background-color: lavender' colspan='6'>Partida 89</th></thead>
 <tbody>
 <tr> <td name = 'Debe' align='right' >220 </td> <td colspan='7'> ganancia-por-correccion-monetaria#correccion-monetaria </td></tr>
 <tr> <td name = 'Debe' align='right' >220 </td> <td colspan='7'> correccion-monetaria#ingresos-brutos </td></tr>
-<tr style='background-color: lightyellow'>  <td> </td> <td name='Debe' align='right'> 220</td> <td name='Haber' align='right'> 17704</td> <td colspan='2'> a[iva-credito] </td> </tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td name='Debe' align='right'> 1092</td> <td name='Haber' align='right'> 0</td> <td colspan='2'> a[ppm] </td> </tr>
+<tr style='background-color: lightyellow'>  <td> </td> <td name='Debe' align='right'> 220</td> <td name='Haber' align='right'> 17704</td> <td colspan='2'> a[iva-credito] </td> </tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td name='Debe' align='right'> 0</td> <td name='Haber' align='right'> 1092</td> <td colspan='2'> a[banco-estado] </td> </tr>
-<tr style='background-color: azure'>  <td> </td> <td align='right'> 17704 </td> <td align='right'> 0 </td> <td> </td><td> p[iva-debito] </td> </tr>
 <tr style='background-color: gold'>  <td> </td> <td align='right'>0 </td> <td align='right'> 220</td> <td> </td> <td> r[ingresos-brutos] </td> </tr>
+<tr style='background-color: azure'>  <td> </td> <td align='right'> 17704 </td> <td align='right'> 0 </td> <td> </td><td> p[iva-debito] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 19016 </td> <td style='background-color: blanchedalmond'> 19016</td> </tr>
 </tbody><tbody>
 <tr><td colspan='4'> necios SA</td> </tr> 
@@ -2324,13 +1775,6 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'> Rectificar f29 de julio y colocar en código 039 el valor de 22199</p>
 <br> 
-- [x] tipo de asiento: ajuste-hecho-n
-- [x] a corregir: Rectificar f29 de julio y colocar en código 039 el valor de 22199
-- [ ] rcv
-- [ ] libro-diario
-- [ ] ccm
-- [x] revisado
-![](../revisado.png)
 <table id='Partida-90'>
 <thead> <th style='background-color: lavender' colspan='6'>Partida 90</th></thead>
 <tbody>
@@ -2346,20 +1790,14 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'>  </p>
 <br> 
-- [x] tipo de asiento: 33
-- [ ] rcv
-- [ ] libro-diario
-- [ ] ccm
-- [x] revisado
-![](../revisado.png)
 <table id='Partida-91'>
 <thead> <th style='background-color: lavender' colspan='6'>Partida 91</th></thead>
 <tbody>
 <tr> <td name = 'Debe' align='right' >2417 </td> <td colspan='7'> amortizacion-intangibles#amortizacion </td></tr>
-<tr style='background-color: lightyellow'>  <td> </td> <td name='Debe' align='right'> 0</td> <td name='Haber' align='right'> 2417</td> <td colspan='2'> a[amortizacion-acumulada-intangibles] </td> </tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td name='Debe' align='right'> 0</td> <td name='Haber' align='right'> 9804</td> <td colspan='2'> a[depreciacion-acumulada-herramientas] </td> </tr>
-<tr style='color: white; background-color: black'>  <td> </td> <td align='right'>9804 </td> <td align='right'> 0</td> <td> </td> <td> r[depreciacion] </td> </tr>
+<tr style='background-color: lightyellow'>  <td> </td> <td name='Debe' align='right'> 0</td> <td name='Haber' align='right'> 2417</td> <td colspan='2'> a[amortizacion-acumulada-intangibles] </td> </tr>
 <tr style='color: white; background-color: black'>  <td> </td> <td align='right'>2417 </td> <td align='right'> 0</td> <td> </td> <td> r[amortizacion] </td> </tr>
+<tr style='color: white; background-color: black'>  <td> </td> <td align='right'>9804 </td> <td align='right'> 0</td> <td> </td> <td> r[depreciacion] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 12221 </td> <td style='background-color: blanchedalmond'> 12221</td> </tr>
 </tbody><tbody>
 <tr><td colspan='4'> necios SA</td> </tr> 
@@ -2372,20 +1810,14 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'>  </p>
 <br> 
-- [x] tipo de asiento: 33
-- [ ] rcv
-- [ ] libro-diario
-- [ ] ccm
-- [x] revisado
-![](../revisado.png)
 <table id='Partida-92'>
 <thead> <th style='background-color: lavender' colspan='6'>Partida 92</th></thead>
 <tbody>
 <tr> <td name = 'Debe' align='right' >33613 </td> <td colspan='7'> ventas#ingresos-brutos </td></tr>
 <tr> <td name = 'Debe' align='right' >33613 </td> <td colspan='7'> ventas-con-voucher-afecto#ventas </td></tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td name='Debe' align='right'> 40000</td> <td name='Haber' align='right'> 0</td> <td colspan='2'> a[banco-estado] </td> </tr>
-<tr style='background-color: azure'>  <td> </td> <td align='right'> 0 </td> <td align='right'> 6387 </td> <td> </td><td> p[iva-debito] </td> </tr>
 <tr style='background-color: gold'>  <td> </td> <td align='right'>0 </td> <td align='right'> 33613</td> <td> </td> <td> r[ingresos-brutos] </td> </tr>
+<tr style='background-color: azure'>  <td> </td> <td align='right'> 0 </td> <td align='right'> 6387 </td> <td> </td><td> p[iva-debito] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 40000 </td> <td style='background-color: blanchedalmond'> 40000</td> </tr>
 </tbody><tbody>
 <tr><td colspan='4'> necios SA</td> </tr> 
@@ -2398,12 +1830,6 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'>  </p>
 <br> 
-- [x] tipo de asiento: 34
-- [ ] rcv
-- [ ] libro-diario
-- [x] ccm
-- [x] revisado
-![](../revisado.png)
 <table id='Partida-93'>
 <thead> <th style='background-color: lavender' colspan='6'>Partida 93</th></thead>
 <tbody>
@@ -2425,18 +1851,12 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'>  </p>
 <br> 
-- [x] tipo de asiento: 33
-- [ ] rcv
-- [ ] libro-diario
-- [x] ccm
-- [x] revisado
-![](../revisado.png)
 <table id='Partida-95'>
 <thead> <th style='background-color: lavender' colspan='6'>Partida 95</th></thead>
 <tbody>
 <tr><td name='Debe' align='right'>12630</td> <td colspan='7'>sodimac-insumos#insumos</td> </tr>
-<tr style='background-color: lightyellow'>  <td> </td> <td name='Debe' align='right'> 2400</td> <td name='Haber' align='right'> 0</td> <td colspan='2'> a[iva-credito] </td> </tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td name='Debe' align='right'> 12630</td> <td name='Haber' align='right'> 0</td> <td colspan='2'> a[insumos] </td> </tr>
+<tr style='background-color: lightyellow'>  <td> </td> <td name='Debe' align='right'> 2400</td> <td name='Haber' align='right'> 0</td> <td colspan='2'> a[iva-credito] </td> </tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td name='Debe' align='right'> 0</td> <td name='Haber' align='right'> 15030</td> <td colspan='2'> a[banco-estado] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 15030 </td> <td style='background-color: blanchedalmond'> 15030</td> </tr>
 </tbody><tbody>
@@ -2452,18 +1872,12 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'>  </p>
 <br> 
-- [x] tipo de asiento: 33
-- [ ] rcv
-- [ ] libro-diario
-- [x] ccm
-- [x] revisado
-![](../revisado.png)
 <table id='Partida-96'>
 <thead> <th style='background-color: lavender' colspan='6'>Partida 96</th></thead>
 <tbody>
 <tr><td name='Debe' align='right'>34134</td> <td colspan='7'>sodimac-insumos#insumos</td> </tr>
-<tr style='background-color: lightyellow'>  <td> </td> <td name='Debe' align='right'> 6485</td> <td name='Haber' align='right'> 0</td> <td colspan='2'> a[iva-credito] </td> </tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td name='Debe' align='right'> 34134</td> <td name='Haber' align='right'> 0</td> <td colspan='2'> a[insumos] </td> </tr>
+<tr style='background-color: lightyellow'>  <td> </td> <td name='Debe' align='right'> 6485</td> <td name='Haber' align='right'> 0</td> <td colspan='2'> a[iva-credito] </td> </tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td name='Debe' align='right'> 0</td> <td name='Haber' align='right'> 40619</td> <td colspan='2'> a[banco-estado] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 40619 </td> <td style='background-color: blanchedalmond'> 40619</td> </tr>
 </tbody><tbody>
@@ -2479,18 +1893,12 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'>  </p>
 <br> 
-- [x] tipo de asiento: 33
-- [ ] rcv
-- [ ] libro-diario
-- [x] ccm
-- [x] revisado
-![](../revisado.png)
 <table id='Partida-97'>
 <thead> <th style='background-color: lavender' colspan='6'>Partida 97</th></thead>
 <tbody>
 <tr><td name='Debe' align='right'>158011</td> <td colspan='7'>dartel-insumos#insumos</td> </tr>
-<tr style='background-color: lightyellow'>  <td> </td> <td name='Debe' align='right'> 30022</td> <td name='Haber' align='right'> 0</td> <td colspan='2'> a[iva-credito] </td> </tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td name='Debe' align='right'> 158011</td> <td name='Haber' align='right'> 0</td> <td colspan='2'> a[insumos] </td> </tr>
+<tr style='background-color: lightyellow'>  <td> </td> <td name='Debe' align='right'> 30022</td> <td name='Haber' align='right'> 0</td> <td colspan='2'> a[iva-credito] </td> </tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td name='Debe' align='right'> 0</td> <td name='Haber' align='right'> 188033</td> <td colspan='2'> a[banco-estado] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 188033 </td> <td style='background-color: blanchedalmond'> 188033</td> </tr>
 </tbody><tbody>
@@ -2506,13 +1914,6 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'> Cambiar la regla a otra que contemple la cuenta</p>
 <br> 
-- [x] tipo de asiento: 61
-- [x] a corregir: Cambiar la regla a otra que contemple la cuenta
-- [ ] rcv
-- [ ] libro-diario
-- [x] ccm
-- [x] revisado
-![](../revisado.png)
 <table id='Partida-98'>
 <thead> <th style='background-color: lavender' colspan='6'>Partida 98</th></thead>
 <tbody>
@@ -2534,20 +1935,14 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'>  </p>
 <br> 
-- [x] tipo de asiento: 33
-- [ ] rcv
-- [ ] libro-diario
-- [x] ccm
-- [x] revisado
-![](../revisado.png)
 <table id='Partida-99'>
 <thead> <th style='background-color: lavender' colspan='6'>Partida 99</th></thead>
 <tbody>
 <tr> <td name = 'Debe' align='right' >141596 </td> <td colspan='7'> ventas#ingresos-brutos </td></tr>
 <tr> <td name = 'Debe' align='right' >141596 </td> <td colspan='7'> ventas-con-factura-afecta#ventas </td></tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td name='Debe' align='right'> 168499</td> <td name='Haber' align='right'> 0</td> <td colspan='2'> a[banco-estado] </td> </tr>
-<tr style='background-color: azure'>  <td> </td> <td align='right'> 0 </td> <td align='right'> 26903 </td> <td> </td><td> p[iva-debito] </td> </tr>
 <tr style='background-color: gold'>  <td> </td> <td align='right'>0 </td> <td align='right'> 141596</td> <td> </td> <td> r[ingresos-brutos] </td> </tr>
+<tr style='background-color: azure'>  <td> </td> <td align='right'> 0 </td> <td align='right'> 26903 </td> <td> </td><td> p[iva-debito] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 168499 </td> <td style='background-color: blanchedalmond'> 168499</td> </tr>
 </tbody><tbody>
 <tr><td colspan='4'> necios SA</td> </tr> 
@@ -2562,18 +1957,12 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'>  </p>
 <br> 
-- [x] tipo de asiento: 33
-- [ ] rcv
-- [ ] libro-diario
-- [x] ccm
-- [x] revisado
-![](../revisado.png)
 <table id='Partida-101'>
 <thead> <th style='background-color: lavender' colspan='6'>Partida 101</th></thead>
 <tbody>
 <tr><td name='Debe' align='right'>13127</td> <td colspan='7'>sodimac-insumos#insumos</td> </tr>
-<tr style='background-color: lightyellow'>  <td> </td> <td name='Debe' align='right'> 2494</td> <td name='Haber' align='right'> 0</td> <td colspan='2'> a[iva-credito] </td> </tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td name='Debe' align='right'> 13127</td> <td name='Haber' align='right'> 0</td> <td colspan='2'> a[insumos] </td> </tr>
+<tr style='background-color: lightyellow'>  <td> </td> <td name='Debe' align='right'> 2494</td> <td name='Haber' align='right'> 0</td> <td colspan='2'> a[iva-credito] </td> </tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td name='Debe' align='right'> 0</td> <td name='Haber' align='right'> 15621</td> <td colspan='2'> a[banco-estado] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 15621 </td> <td style='background-color: blanchedalmond'> 15621</td> </tr>
 </tbody><tbody>
@@ -2589,18 +1978,12 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'>  </p>
 <br> 
-- [x] tipo de asiento: 33
-- [ ] rcv
-- [ ] libro-diario
-- [x] ccm
-- [x] revisado
-![](../revisado.png)
 <table id='Partida-102'>
 <thead> <th style='background-color: lavender' colspan='6'>Partida 102</th></thead>
 <tbody>
 <tr><td name='Debe' align='right'>13706</td> <td colspan='7'>sodimac-insumos#insumos</td> </tr>
-<tr style='background-color: lightyellow'>  <td> </td> <td name='Debe' align='right'> 2604</td> <td name='Haber' align='right'> 0</td> <td colspan='2'> a[iva-credito] </td> </tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td name='Debe' align='right'> 13706</td> <td name='Haber' align='right'> 0</td> <td colspan='2'> a[insumos] </td> </tr>
+<tr style='background-color: lightyellow'>  <td> </td> <td name='Debe' align='right'> 2604</td> <td name='Haber' align='right'> 0</td> <td colspan='2'> a[iva-credito] </td> </tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td name='Debe' align='right'> 0</td> <td name='Haber' align='right'> 16310</td> <td colspan='2'> a[banco-estado] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 16310 </td> <td style='background-color: blanchedalmond'> 16310</td> </tr>
 </tbody><tbody>
@@ -2616,14 +1999,6 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'> No lo incluí a tiempo</p>
 <br> 
-- [x] rechazado: Partida rechazada por SII, significa que si la dejamos nos podría generar multas o que no tendría el efecto deseado. Así que solo podemos quitarla de SII, pero eso requiere rectificar el f29 y eso nos generaría multas. Por ejemplo, una nota de crédito que no descuente monto imponible, aunque esté en registro de compra-venta. El F22 al año siguiente no incluirá estos DTE. No es lo mismo que gasto rechazado. También podríamos declararla como no-incluir, pero eso no conveniente, pues todo debe estar en la contabilidad de la empresa, pera que sea fidedigna. Hay casos donde se declara un gasto para el que no hay boleta de respaldo, eso es muy crítico y sí será rechazado, y además la contabilidad financiera objetada. El caso de las facturas de compra 45 a proveedor extranjero es parecido, pero ahora sé como se hace. 
-- [x] tipo de asiento: 45
-- [x] a corregir: No lo incluí a tiempo
-- [ ] rcv
-- [ ] libro-diario
-- [ ] ccm
-- [x] revisado
-![](../revisado.png)
 <table id='Partida-104'>
 <thead> <th style='background-color: lavender' colspan='6'>Partida 104</th></thead>
 <tbody  style =' text-decoration: line-through; text-decoration-color: crimson'  > 
@@ -2644,12 +2019,6 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'>  </p>
 <br> 
-- [x] tipo de asiento: 33
-- [ ] rcv
-- [ ] libro-diario
-- [x] ccm
-- [x] revisado
-![](../revisado.png)
 <table id='Partida-105'>
 <thead> <th style='background-color: lavender' colspan='6'>Partida 105</th></thead>
 <tbody>
@@ -2671,12 +2040,6 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'>  </p>
 <br> 
-- [x] tipo de asiento: 33
-- [ ] rcv
-- [ ] libro-diario
-- [ ] ccm
-- [x] revisado
-![](../revisado.png)
 <table id='Partida-107'>
 <thead> <th style='background-color: lavender' colspan='6'>Partida 107</th></thead>
 <tbody>
@@ -2698,13 +2061,6 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'> Esta representación digital no está disponible para bajar en SII, ya hice una solicitud para no me dijeron nada importante</p>
 <br> 
-- [x] tipo de asiento: 33
-- [x] a corregir: Esta representación digital no está disponible para bajar en SII, ya hice una solicitud para no me dijeron nada importante
-- [ ] rcv
-- [ ] libro-diario
-- [ ] ccm
-- [x] revisado
-![](../revisado.png)
 <table id='Partida-108'>
 <thead> <th style='background-color: lavender' colspan='6'>Partida 108</th></thead>
 <tbody>
@@ -2725,14 +2081,6 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'> Adjuntar factura</p>
 <br> 
-- [x] rechazado: Partida rechazada por SII, significa que si la dejamos nos podría generar multas o que no tendría el efecto deseado. Así que solo podemos quitarla de SII, pero eso requiere rectificar el f29 y eso nos generaría multas. Por ejemplo, una nota de crédito que no descuente monto imponible, aunque esté en registro de compra-venta. El F22 al año siguiente no incluirá estos DTE. No es lo mismo que gasto rechazado. También podríamos declararla como no-incluir, pero eso no conveniente, pues todo debe estar en la contabilidad de la empresa, pera que sea fidedigna. Hay casos donde se declara un gasto para el que no hay boleta de respaldo, eso es muy crítico y sí será rechazado, y además la contabilidad financiera objetada. El caso de las facturas de compra 45 a proveedor extranjero es parecido, pero ahora sé como se hace. 
-- [x] tipo de asiento: 33
-- [x] a corregir: Adjuntar factura
-- [ ] rcv
-- [ ] libro-diario
-- [x] ccm
-- [x] revisado
-![](../revisado.png)
 <table id='Partida-109'>
 <thead> <th style='background-color: lavender' colspan='6'>Partida 109</th></thead>
 <tbody  style =' text-decoration: line-through; text-decoration-color: crimson'  > 
@@ -2755,20 +2103,14 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'>  </p>
 <br> 
-- [x] tipo de asiento: 33
-- [ ] rcv
-- [ ] libro-diario
-- [x] ccm
-- [x] revisado
-![](../revisado.png)
 <table id='Partida-113'>
 <thead> <th style='background-color: lavender' colspan='6'>Partida 113</th></thead>
 <tbody>
 <tr> <td name = 'Debe' align='right' >90544 </td> <td colspan='7'> ventas#ingresos-brutos </td></tr>
 <tr> <td name = 'Debe' align='right' >90544 </td> <td colspan='7'> ventas-con-factura-afecta#ventas </td></tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td name='Debe' align='right'> 107747</td> <td name='Haber' align='right'> 0</td> <td colspan='2'> a[banco-estado] </td> </tr>
-<tr style='background-color: azure'>  <td> </td> <td align='right'> 0 </td> <td align='right'> 17203 </td> <td> </td><td> p[iva-debito] </td> </tr>
 <tr style='background-color: gold'>  <td> </td> <td align='right'>0 </td> <td align='right'> 90544</td> <td> </td> <td> r[ingresos-brutos] </td> </tr>
+<tr style='background-color: azure'>  <td> </td> <td align='right'> 0 </td> <td align='right'> 17203 </td> <td> </td><td> p[iva-debito] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 107747 </td> <td style='background-color: blanchedalmond'> 107747</td> </tr>
 </tbody><tbody>
 <tr><td colspan='4'> necios SA</td> </tr> 
@@ -2783,20 +2125,13 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'>  </p>
 <br> 
-- [x] tipo de asiento: 61
-- [ ] rcv
-- [ ] libro-diario
-- [x] ccm
-- [x] Referencia: <a href= '#Partida-113'>113 </a>
-- [x] revisado
-![](../revisado.png)
 <table id='Partida-114'>
 <thead> <th style='background-color: lavender' colspan='6'>Partida 114</th></thead>
 <tbody>
 <tr> <td name = 'Debe' align='right' >90544 </td> <td colspan='7'> devolucion-sobre-ventas-afectas#devolucion-sobre-ventas </td></tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td name='Debe' align='right'> 0</td> <td name='Haber' align='right'> 107747</td> <td colspan='2'> a[banco-estado] </td> </tr>
-<tr style='background-color: azure'>  <td> </td> <td align='right'> 17203 </td> <td align='right'> 0 </td> <td> </td><td> p[iva-debito] </td> </tr>
 <tr style='color: white; background-color: black'>  <td> </td> <td align='right'>90544 </td> <td align='right'> 0</td> <td> </td> <td> r[devolucion-sobre-ventas] </td> </tr>
+<tr style='background-color: azure'>  <td> </td> <td align='right'> 17203 </td> <td align='right'> 0 </td> <td> </td><td> p[iva-debito] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 107747 </td> <td style='background-color: blanchedalmond'> 107747</td> </tr>
 </tbody><tbody>
 <tr><td colspan='4'> necios SA</td> </tr> 
@@ -2811,20 +2146,14 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'>  </p>
 <br> 
-- [x] tipo de asiento: 33
-- [ ] rcv
-- [ ] libro-diario
-- [x] ccm
-- [x] revisado
-![](../revisado.png)
 <table id='Partida-115'>
 <thead> <th style='background-color: lavender' colspan='6'>Partida 115</th></thead>
 <tbody>
 <tr> <td name = 'Debe' align='right' >93137 </td> <td colspan='7'> ventas#ingresos-brutos </td></tr>
 <tr> <td name = 'Debe' align='right' >93137 </td> <td colspan='7'> ventas-con-factura-afecta#ventas </td></tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td name='Debe' align='right'> 110833</td> <td name='Haber' align='right'> 0</td> <td colspan='2'> a[banco-estado] </td> </tr>
-<tr style='background-color: azure'>  <td> </td> <td align='right'> 0 </td> <td align='right'> 17696 </td> <td> </td><td> p[iva-debito] </td> </tr>
 <tr style='background-color: gold'>  <td> </td> <td align='right'>0 </td> <td align='right'> 93137</td> <td> </td> <td> r[ingresos-brutos] </td> </tr>
+<tr style='background-color: azure'>  <td> </td> <td align='right'> 0 </td> <td align='right'> 17696 </td> <td> </td><td> p[iva-debito] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 110833 </td> <td style='background-color: blanchedalmond'> 110833</td> </tr>
 </tbody><tbody>
 <tr><td colspan='4'> necios SA</td> </tr> 
@@ -2839,12 +2168,6 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'>  </p>
 <br> 
-- [x] tipo de asiento: 61
-- [ ] rcv
-- [ ] libro-diario
-- [x] ccm
-- [x] revisado
-![](../revisado.png)
 <table id='Partida-116'>
 <thead> <th style='background-color: lavender' colspan='6'>Partida 116</th></thead>
 <tbody>
@@ -2865,12 +2188,6 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'>  </p>
 <br> 
-- [x] tipo de asiento: 34
-- [ ] rcv
-- [ ] libro-diario
-- [x] ccm
-- [x] revisado
-![](../revisado.png)
 <table id='Partida-117'>
 <thead> <th style='background-color: lavender' colspan='6'>Partida 117</th></thead>
 <tbody>
@@ -2892,19 +2209,12 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'>  </p>
 <br> 
-- [x] tipo de asiento: 33
-- [ ] rcv
-- [ ] libro-diario
-- [ ] ccm
-- [x] Referencia: <a href= '#Partida-88'>88 </a>
-- [x] revisado
-![](../revisado.png)
 <table id='Partida-119'>
 <thead> <th style='background-color: lavender' colspan='6'>Partida 119</th></thead>
 <tbody>
-<tr> <td name='Debe' align='right'> 0 </td> <td> </td> <td colspan='7'> impuesto-unico-por-pagar#salarios-por-pagar </td> </tr> 
-<tr> <td name='Debe' align='right'> 229560 </td> <td> </td> <td colspan='7'> remuneraciones-por-pagar#salarios-por-pagar </td> </tr> 
 <tr> <td name='Debe' align='right'> 70440 </td> <td> </td> <td colspan='7'> entidades-previsionales-por-pagar#salarios-por-pagar </td> </tr> 
+<tr> <td name='Debe' align='right'> 229560 </td> <td> </td> <td colspan='7'> remuneraciones-por-pagar#salarios-por-pagar </td> </tr> 
+<tr> <td name='Debe' align='right'> 0 </td> <td> </td> <td colspan='7'> impuesto-unico-por-pagar#salarios-por-pagar </td> </tr> 
 <tr style='background-color: lightyellow'>  <td> </td> <td name='Debe' align='right'> 0</td> <td name='Haber' align='right'> 300000</td> <td colspan='2'> a[banco-estado] </td> </tr>
 <tr style='background-color: azure'>  <td> </td> <td align='right'> 300000 </td> <td align='right'> 0 </td> <td> </td><td> p[salarios-por-pagar] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 300000 </td> <td style='background-color: blanchedalmond'> 300000</td> </tr>
@@ -2921,18 +2231,12 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'>  </p>
 <br> 
-- [x] tipo de asiento: 33
-- [ ] rcv
-- [ ] libro-diario
-- [x] ccm
-- [x] revisado
-![](../revisado.png)
 <table id='Partida-120'>
 <thead> <th style='background-color: lavender' colspan='6'>Partida 120</th></thead>
 <tbody>
 <tr><td name='Debe' align='right'>25220</td> <td colspan='7'>electrocom-insumos#insumos</td> </tr>
-<tr style='background-color: lightyellow'>  <td> </td> <td name='Debe' align='right'> 4792</td> <td name='Haber' align='right'> 0</td> <td colspan='2'> a[iva-credito] </td> </tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td name='Debe' align='right'> 25220</td> <td name='Haber' align='right'> 0</td> <td colspan='2'> a[insumos] </td> </tr>
+<tr style='background-color: lightyellow'>  <td> </td> <td name='Debe' align='right'> 4792</td> <td name='Haber' align='right'> 0</td> <td colspan='2'> a[iva-credito] </td> </tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td name='Debe' align='right'> 0</td> <td name='Haber' align='right'> 30012</td> <td colspan='2'> a[banco-estado] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 30012 </td> <td style='background-color: blanchedalmond'> 30012</td> </tr>
 </tbody><tbody>
@@ -2948,12 +2252,6 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'>  </p>
 <br> 
-- [x] tipo de asiento: 33
-- [ ] rcv
-- [ ] libro-diario
-- [x] ccm
-- [x] revisado
-![](../revisado.png)
 <table id='Partida-1201'>
 <thead> <th style='background-color: lavender' colspan='6'>Partida 1201</th></thead>
 <tbody>
@@ -2969,20 +2267,16 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'>  </p>
 <br> 
-- [x] tipo de asiento: 33
-- [ ] rcv
-- [ ] libro-diario
-- [x] ccm
-- [x] revisado
-![](../revisado.png)
 <table id='Partida-121'>
 <thead> <th style='background-color: lavender' colspan='6'>Partida 121</th></thead>
 <tbody>
 <tr><td name='Debe' align='right'>25971</td> <td colspan='7'>electrocom-materiales#materiales</td> </tr>
-<tr style='background-color: lightyellow'>  <td> </td> <td name='Debe' align='right'> 4934</td> <td name='Haber' align='right'> 0</td> <td colspan='2'> a[iva-credito] </td> </tr>
+<tr style='background-color: lightyellow'>  <td> </td> <td name='Debe' align='right'> 25971</td> <td name='Haber' align='right'> 0</td> <td colspan='2'> a[inventario] </td> </tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td name='Debe' align='right'> 25971</td> <td name='Haber' align='right'> 0</td> <td colspan='2'> a[materiales] </td> </tr>
+<tr style='background-color: lightyellow'>  <td> </td> <td name='Debe' align='right'> 4934</td> <td name='Haber' align='right'> 0</td> <td colspan='2'> a[iva-credito] </td> </tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td name='Debe' align='right'> 0</td> <td name='Haber' align='right'> 30905</td> <td colspan='2'> a[banco-estado] </td> </tr>
-<tr> <td> </td> <td style='background-color: blanchedalmond'> 30905 </td> <td style='background-color: blanchedalmond'> 30905</td> </tr>
+<tr style='background-color: gold'>  <td> </td> <td align='right'>0 </td> <td align='right'> 25971</td> <td> </td> <td> r[costos-de-mercancias] </td> </tr>
+<tr> <td> </td> <td style='background-color: blanchedalmond'> 56876 </td> <td style='background-color: blanchedalmond'> 56876</td> </tr>
 </tbody><tbody>
 <tr><td colspan='4'> necios SA</td> </tr> 
 <tr><td colspan='4'> ( 27 de agosto	2021	 ) </td> </tr>
@@ -2995,20 +2289,14 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'>  </p>
 <br> 
-- [x] tipo de asiento: 34
-- [ ] rcv
-- [ ] libro-diario
-- [x] ccm
-- [x] revisado
-![](../revisado.png)
 <table id='Partida-122'>
 <thead> <th style='background-color: lavender' colspan='6'>Partida 122</th></thead>
 <tbody>
 <tr> <td name = 'Debe' align='right' >62000 </td> <td colspan='7'> ventas#ingresos-brutos </td></tr>
 <tr> <td name = 'Debe' align='right' >62000 </td> <td colspan='7'> ventas-con-factura-afecta#ventas </td></tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td name='Debe' align='right'> 73780</td> <td name='Haber' align='right'> 0</td> <td colspan='2'> a[banco-estado] </td> </tr>
-<tr style='background-color: azure'>  <td> </td> <td align='right'> 0 </td> <td align='right'> 11780 </td> <td> </td><td> p[iva-debito] </td> </tr>
 <tr style='background-color: gold'>  <td> </td> <td align='right'>0 </td> <td align='right'> 62000</td> <td> </td> <td> r[ingresos-brutos] </td> </tr>
+<tr style='background-color: azure'>  <td> </td> <td align='right'> 0 </td> <td align='right'> 11780 </td> <td> </td><td> p[iva-debito] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 73780 </td> <td style='background-color: blanchedalmond'> 73780</td> </tr>
 </tbody><tbody>
 <tr><td colspan='4'> necios SA</td> </tr> 
@@ -3023,19 +2311,13 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'>  </p>
 <br> 
-- [x] tipo de asiento: 61
-- [ ] rcv
-- [ ] libro-diario
-- [x] ccm
-- [x] revisado
-![](../revisado.png)
 <table id='Partida-123'>
 <thead> <th style='background-color: lavender' colspan='6'>Partida 123</th></thead>
 <tbody>
 <tr> <td name = 'Debe' align='right' >33613 </td> <td colspan='7'> devolucion-sobre-ventas-afectas#devolucion-sobre-ventas </td></tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td name='Debe' align='right'> 0</td> <td name='Haber' align='right'> 39999</td> <td colspan='2'> a[banco-estado] </td> </tr>
-<tr style='background-color: azure'>  <td> </td> <td align='right'> 6386 </td> <td align='right'> 0 </td> <td> </td><td> p[iva-debito] </td> </tr>
 <tr style='color: white; background-color: black'>  <td> </td> <td align='right'>33613 </td> <td align='right'> 0</td> <td> </td> <td> r[devolucion-sobre-ventas] </td> </tr>
+<tr style='background-color: azure'>  <td> </td> <td align='right'> 6386 </td> <td align='right'> 0 </td> <td> </td><td> p[iva-debito] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 39999 </td> <td style='background-color: blanchedalmond'> 39999</td> </tr>
 </tbody><tbody>
 <tr><td colspan='4'> necios SA</td> </tr> 
@@ -3050,21 +2332,15 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'>  </p>
 <br> 
-- [x] tipo de asiento: ajuste-iva
-- [ ] rcv
-- [ ] libro-diario
-- [ ] ccm
-- [x] revisado
-![](../revisado.png)
 <table id='Partida-124'>
 <thead> <th style='background-color: lavender' colspan='6'>Partida 124</th></thead>
 <tbody>
-<tr> <td name='Debe' align='right'> 0 </td> <td> </td> <td colspan='7'> impuesto-unico-por-pagar#salarios-por-pagar </td> </tr> 
-<tr> <td name='Debe' align='right'> 229560 </td> <td> </td> <td colspan='7'> remuneraciones-por-pagar#salarios-por-pagar </td> </tr> 
 <tr> <td name='Debe' align='right'> 70440 </td> <td> </td> <td colspan='7'> entidades-previsionales-por-pagar#salarios-por-pagar </td> </tr> 
+<tr> <td name='Debe' align='right'> 229560 </td> <td> </td> <td colspan='7'> remuneraciones-por-pagar#salarios-por-pagar </td> </tr> 
+<tr> <td name='Debe' align='right'> 0 </td> <td> </td> <td colspan='7'> impuesto-unico-por-pagar#salarios-por-pagar </td> </tr> 
+<tr style='color: white; background-color: black'>  <td> </td> <td align='right'>300000 </td> <td align='right'> 0</td> <td> </td> <td> r[salarios] </td> </tr>
 <tr style='background-color: azure'>  <td> </td> <td align='right'> 0 </td> <td align='right'> 70440 </td> <td> </td><td> p[salarios-por-pagar] </td> </tr>
 <tr style='background-color: azure'>  <td> </td> <td align='right'> 0 </td> <td align='right'> 229560 </td> <td> </td><td> p[salarios-por-pagar] </td> </tr>
-<tr style='color: white; background-color: black'>  <td> </td> <td align='right'>300000 </td> <td align='right'> 0</td> <td> </td> <td> r[salarios] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 300000 </td> <td style='background-color: blanchedalmond'> 300000</td> </tr>
 </tbody><tbody>
 <tr><td colspan='4'> necios SA</td> </tr> 
@@ -3078,20 +2354,14 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'>  </p>
 <br> 
-- [x] tipo de asiento: ajuste-remanente
-- [ ] rcv
-- [ ] libro-diario
-- [ ] ccm
-- [x] revisado
-![](../revisado.png)
 <table id='Partida-125'>
 <thead> <th style='background-color: lavender' colspan='6'>Partida 125</th></thead>
 <tbody>
 <tr> <td name = 'Debe' align='right' >2417 </td> <td colspan='7'> amortizacion-intangibles#amortizacion </td></tr>
-<tr style='background-color: lightyellow'>  <td> </td> <td name='Debe' align='right'> 0</td> <td name='Haber' align='right'> 2417</td> <td colspan='2'> a[amortizacion-acumulada-intangibles] </td> </tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td name='Debe' align='right'> 0</td> <td name='Haber' align='right'> 9804</td> <td colspan='2'> a[depreciacion-acumulada-herramientas] </td> </tr>
-<tr style='color: white; background-color: black'>  <td> </td> <td align='right'>9804 </td> <td align='right'> 0</td> <td> </td> <td> r[depreciacion] </td> </tr>
+<tr style='background-color: lightyellow'>  <td> </td> <td name='Debe' align='right'> 0</td> <td name='Haber' align='right'> 2417</td> <td colspan='2'> a[amortizacion-acumulada-intangibles] </td> </tr>
 <tr style='color: white; background-color: black'>  <td> </td> <td align='right'>2417 </td> <td align='right'> 0</td> <td> </td> <td> r[amortizacion] </td> </tr>
+<tr style='color: white; background-color: black'>  <td> </td> <td align='right'>9804 </td> <td align='right'> 0</td> <td> </td> <td> r[depreciacion] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 12221 </td> <td style='background-color: blanchedalmond'> 12221</td> </tr>
 </tbody><tbody>
 <tr><td colspan='4'> necios SA</td> </tr> 
@@ -3104,22 +2374,16 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'>  </p>
 <br> 
-- [x] tipo de asiento: amortizacion
-- [ ] rcv
-- [ ] libro-diario
-- [ ] ccm
-- [x] revisado
-![](../revisado.png)
 <table id='Partida-126'>
 <thead> <th style='background-color: lavender' colspan='6'>Partida 126</th></thead>
 <tbody>
 <tr> <td name = 'Debe' align='right' >654 </td> <td colspan='7'> ganancia-por-correccion-monetaria#correccion-monetaria </td></tr>
 <tr> <td name = 'Debe' align='right' >654 </td> <td colspan='7'> correccion-monetaria#ingresos-brutos </td></tr>
-<tr style='background-color: lightyellow'>  <td> </td> <td name='Debe' align='right'> 654</td> <td name='Haber' align='right'> 56380</td> <td colspan='2'> a[iva-credito] </td> </tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td name='Debe' align='right'> 584</td> <td name='Haber' align='right'> 0</td> <td colspan='2'> a[ppm] </td> </tr>
+<tr style='background-color: lightyellow'>  <td> </td> <td name='Debe' align='right'> 654</td> <td name='Haber' align='right'> 56380</td> <td colspan='2'> a[iva-credito] </td> </tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td name='Debe' align='right'> 0</td> <td name='Haber' align='right'> 584</td> <td colspan='2'> a[banco-estado] </td> </tr>
-<tr style='background-color: azure'>  <td> </td> <td align='right'> 56380 </td> <td align='right'> 0 </td> <td> </td><td> p[iva-debito] </td> </tr>
 <tr style='background-color: gold'>  <td> </td> <td align='right'>0 </td> <td align='right'> 654</td> <td> </td> <td> r[ingresos-brutos] </td> </tr>
+<tr style='background-color: azure'>  <td> </td> <td align='right'> 56380 </td> <td align='right'> 0 </td> <td> </td><td> p[iva-debito] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 57618 </td> <td style='background-color: blanchedalmond'> 57618</td> </tr>
 </tbody><tbody>
 <tr><td colspan='4'> necios SA</td> </tr> 
@@ -3132,20 +2396,15 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'>  </p>
 <br> 
-- [ ] rcv
-- [ ] libro-diario
-- [ ] ccm
-- [x] revisado
-![](../revisado.png)
 <table id='Partida-127'>
 <thead> <th style='background-color: lavender' colspan='6'>Partida 127</th></thead>
 <tbody>
-<tr> <td name='Debe' align='right'> 0 </td> <td> </td> <td colspan='7'> impuesto-unico-por-pagar#salarios-por-pagar </td> </tr> 
-<tr> <td name='Debe' align='right'> 267820 </td> <td> </td> <td colspan='7'> remuneraciones-por-pagar#salarios-por-pagar </td> </tr> 
 <tr> <td name='Debe' align='right'> 82180 </td> <td> </td> <td colspan='7'> entidades-previsionales-por-pagar#salarios-por-pagar </td> </tr> 
+<tr> <td name='Debe' align='right'> 267820 </td> <td> </td> <td colspan='7'> remuneraciones-por-pagar#salarios-por-pagar </td> </tr> 
+<tr> <td name='Debe' align='right'> 0 </td> <td> </td> <td colspan='7'> impuesto-unico-por-pagar#salarios-por-pagar </td> </tr> 
+<tr style='color: white; background-color: black'>  <td> </td> <td align='right'>350000 </td> <td align='right'> 0</td> <td> </td> <td> r[salarios] </td> </tr>
 <tr style='background-color: azure'>  <td> </td> <td align='right'> 0 </td> <td align='right'> 82180 </td> <td> </td><td> p[salarios-por-pagar] </td> </tr>
 <tr style='background-color: azure'>  <td> </td> <td align='right'> 0 </td> <td align='right'> 267820 </td> <td> </td><td> p[salarios-por-pagar] </td> </tr>
-<tr style='color: white; background-color: black'>  <td> </td> <td align='right'>350000 </td> <td align='right'> 0</td> <td> </td> <td> r[salarios] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 350000 </td> <td style='background-color: blanchedalmond'> 350000</td> </tr>
 </tbody><tbody>
 <tr><td colspan='4'> necios SA</td> </tr> 
@@ -3159,12 +2418,6 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'>  </p>
 <br> 
-- [x] tipo de asiento: 33
-- [ ] rcv
-- [ ] libro-diario
-- [ ] ccm
-- [x] revisado
-![](../revisado.png)
 <table id='Partida-128'>
 <thead> <th style='background-color: lavender' colspan='6'>Partida 128</th></thead>
 <tbody>
@@ -3186,19 +2439,12 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'>  </p>
 <br> 
-- [x] tipo de asiento: 33
-- [ ] rcv
-- [ ] libro-diario
-- [ ] ccm
-- [x] Referencia: <a href= '#Partida-124'>124 </a>
-- [x] revisado
-![](../revisado.png)
 <table id='Partida-129'>
 <thead> <th style='background-color: lavender' colspan='6'>Partida 129</th></thead>
 <tbody>
-<tr> <td name='Debe' align='right'> 0 </td> <td> </td> <td colspan='7'> impuesto-unico-por-pagar#salarios-por-pagar </td> </tr> 
-<tr> <td name='Debe' align='right'> 229560 </td> <td> </td> <td colspan='7'> remuneraciones-por-pagar#salarios-por-pagar </td> </tr> 
 <tr> <td name='Debe' align='right'> 70440 </td> <td> </td> <td colspan='7'> entidades-previsionales-por-pagar#salarios-por-pagar </td> </tr> 
+<tr> <td name='Debe' align='right'> 229560 </td> <td> </td> <td colspan='7'> remuneraciones-por-pagar#salarios-por-pagar </td> </tr> 
+<tr> <td name='Debe' align='right'> 0 </td> <td> </td> <td colspan='7'> impuesto-unico-por-pagar#salarios-por-pagar </td> </tr> 
 <tr style='background-color: lightyellow'>  <td> </td> <td name='Debe' align='right'> 0</td> <td name='Haber' align='right'> 300000</td> <td colspan='2'> a[banco-estado] </td> </tr>
 <tr style='background-color: azure'>  <td> </td> <td align='right'> 300000 </td> <td align='right'> 0 </td> <td> </td><td> p[salarios-por-pagar] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 300000 </td> <td style='background-color: blanchedalmond'> 300000</td> </tr>
@@ -3215,20 +2461,14 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'>  </p>
 <br> 
-- [x] tipo de asiento: 33
-- [ ] rcv
-- [ ] libro-diario
-- [ ] ccm
-- [x] revisado
-![](../revisado.png)
 <table id='Partida-130'>
 <thead> <th style='background-color: lavender' colspan='6'>Partida 130</th></thead>
 <tbody>
 <tr> <td name = 'Debe' align='right' >63030 </td> <td colspan='7'> ventas#ingresos-brutos </td></tr>
 <tr> <td name = 'Debe' align='right' >63030 </td> <td colspan='7'> ventas-con-factura-afecta#ventas </td></tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td name='Debe' align='right'> 75006</td> <td name='Haber' align='right'> 0</td> <td colspan='2'> a[banco-estado] </td> </tr>
-<tr style='background-color: azure'>  <td> </td> <td align='right'> 0 </td> <td align='right'> 11976 </td> <td> </td><td> p[iva-debito] </td> </tr>
 <tr style='background-color: gold'>  <td> </td> <td align='right'>0 </td> <td align='right'> 63030</td> <td> </td> <td> r[ingresos-brutos] </td> </tr>
+<tr style='background-color: azure'>  <td> </td> <td align='right'> 0 </td> <td align='right'> 11976 </td> <td> </td><td> p[iva-debito] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 75006 </td> <td style='background-color: blanchedalmond'> 75006</td> </tr>
 </tbody><tbody>
 <tr><td colspan='4'> necios SA</td> </tr> 
@@ -3243,11 +2483,6 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'>  </p>
 <br> 
-- [x] tipo de asiento: 34
-- [ ] rcv
-- [ ] libro-diario
-- [ ] ccm
-- [ ] revisado
 <table id='Partida-133'>
 <thead > <th colspan='6'>Partida 133</th></thead>
 <tbody>
@@ -3269,14 +2504,6 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'> No corresponde incluir, pues se emitieron documentos de pago contado</p>
 <br> 
-- [x] no-incluir: Partida que estando en RCV SII se estimó no incluir en la contabilidad financiera
-- [x] tipo de asiento: traspaso
-- [x] a corregir: No corresponde incluir, pues se emitieron documentos de pago contado
-- [ ] rcv
-- [ ] libro-diario
-- [ ] ccm
-- [x] revisado
-![](../revisado.png)
 <table id='Partida-134'>
 <thead> <th style='background-color: lavender' colspan='6'>Partida 134</th></thead>
 <tbody>
@@ -3293,19 +2520,14 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'>  </p>
 <br> 
-- [x] tipo de asiento: amortizacion
-- [ ] rcv
-- [ ] libro-diario
-- [ ] ccm
-- [ ] revisado
 <table id='Partida-135'>
 <thead > <th colspan='6'>Partida 135</th></thead>
 <tbody>
 <tr> <td name = 'Debe' align='right' >23197 </td> <td colspan='7'> ventas#ingresos-brutos </td></tr>
 <tr> <td name = 'Debe' align='right' >23197 </td> <td colspan='7'> ventas-con-eboleta-afecta#ventas </td></tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td name='Debe' align='right'> 27605</td> <td name='Haber' align='right'> 0</td> <td colspan='2'> a[banco-estado] </td> </tr>
-<tr style='background-color: azure'>  <td> </td> <td align='right'> 0 </td> <td align='right'> 4408 </td> <td> </td><td> p[iva-debito] </td> </tr>
 <tr style='background-color: gold'>  <td> </td> <td align='right'>0 </td> <td align='right'> 23197</td> <td> </td> <td> r[ingresos-brutos] </td> </tr>
+<tr style='background-color: azure'>  <td> </td> <td align='right'> 0 </td> <td align='right'> 4408 </td> <td> </td><td> p[iva-debito] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 27605 </td> <td style='background-color: blanchedalmond'> 27605</td> </tr>
 </tbody><tbody>
 <tr><td colspan='4'> necios SA</td> </tr> 
@@ -3318,11 +2540,6 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'>  </p>
 <br> 
-- [x] tipo de asiento: control-activo
-- [ ] rcv
-- [ ] libro-diario
-- [ ] ccm
-- [ ] revisado
 <table id='Partida-138'>
 <thead > <th colspan='6'>Partida 138</th></thead>
 <tbody>
@@ -3339,11 +2556,6 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'>  </p>
 <br> 
-- [x] tipo de asiento: 33
-- [ ] rcv
-- [ ] libro-diario
-- [ ] ccm
-- [ ] revisado
 <table id='Partida-139'>
 <thead > <th colspan='6'>Partida 139</th></thead>
 <tbody>
@@ -3365,14 +2577,6 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'> Está repetido en los facts.</p>
 <br> 
-- [x] no-incluir: Partida que estando en RCV SII se estimó no incluir en la contabilidad financiera
-- [x] tipo de asiento: 33
-- [x] a corregir: Está repetido en los facts.
-- [ ] rcv
-- [ ] libro-diario
-- [ ] ccm
-- [x] revisado
-![](../revisado.png)
 <table id='Partida-140'>
 <thead> <th style='background-color: lavender' colspan='6'>Partida 140</th></thead>
 <tbody>
@@ -3390,11 +2594,6 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'>  </p>
 <br> 
-- [x] tipo de asiento: 33
-- [ ] rcv
-- [ ] libro-diario
-- [ ] ccm
-- [ ] revisado
 <table id='Partida-145'>
 <thead > <th colspan='6'>Partida 145</th></thead>
 <tbody>
@@ -3416,17 +2615,12 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'>  </p>
 <br> 
-- [x] tipo de asiento: 33
-- [ ] rcv
-- [ ] libro-diario
-- [ ] ccm
-- [ ] revisado
 <table id='Partida-146'>
 <thead > <th colspan='6'>Partida 146</th></thead>
 <tbody>
 <tr><td name='Debe' align='right'>48404</td> <td colspan='7'>sodimac-insumos#insumos</td> </tr>
-<tr style='background-color: lightyellow'>  <td> </td> <td name='Debe' align='right'> 9197</td> <td name='Haber' align='right'> 0</td> <td colspan='2'> a[iva-credito] </td> </tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td name='Debe' align='right'> 48404</td> <td name='Haber' align='right'> 0</td> <td colspan='2'> a[insumos] </td> </tr>
+<tr style='background-color: lightyellow'>  <td> </td> <td name='Debe' align='right'> 9197</td> <td name='Haber' align='right'> 0</td> <td colspan='2'> a[iva-credito] </td> </tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td name='Debe' align='right'> 0</td> <td name='Haber' align='right'> 57601</td> <td colspan='2'> a[banco-estado] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 57601 </td> <td style='background-color: blanchedalmond'> 57601</td> </tr>
 </tbody><tbody>
@@ -3442,14 +2636,6 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'> No alcancé a incluirla en el registro de compra-venta</p>
 <br> 
-- [x] rechazado: Partida rechazada por SII, significa que si la dejamos nos podría generar multas o que no tendría el efecto deseado. Así que solo podemos quitarla de SII, pero eso requiere rectificar el f29 y eso nos generaría multas. Por ejemplo, una nota de crédito que no descuente monto imponible, aunque esté en registro de compra-venta. El F22 al año siguiente no incluirá estos DTE. No es lo mismo que gasto rechazado. También podríamos declararla como no-incluir, pero eso no conveniente, pues todo debe estar en la contabilidad de la empresa, pera que sea fidedigna. Hay casos donde se declara un gasto para el que no hay boleta de respaldo, eso es muy crítico y sí será rechazado, y además la contabilidad financiera objetada. El caso de las facturas de compra 45 a proveedor extranjero es parecido, pero ahora sé como se hace. 
-- [x] tipo de asiento: 33
-- [x] a corregir: No alcancé a incluirla en el registro de compra-venta
-- [ ] rcv
-- [ ] libro-diario
-- [ ] ccm
-- [x] revisado
-![](../revisado.png)
 <table id='Partida-147'>
 <thead> <th style='background-color: lavender' colspan='6'>Partida 147</th></thead>
 <tbody  style =' text-decoration: line-through; text-decoration-color: crimson'  > 
@@ -3472,18 +2658,13 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'>  </p>
 <br> 
-- [x] tipo de asiento: 33
-- [ ] rcv
-- [ ] libro-diario
-- [ ] ccm
-- [ ] revisado
 <table id='Partida-148'>
 <thead > <th colspan='6'>Partida 148</th></thead>
 <tbody>
 <tr> <td name = 'Debe' align='right' >10592 </td> <td colspan='7'> devolucion-sobre-ventas-afectas#devolucion-sobre-ventas </td></tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td name='Debe' align='right'> 0</td> <td name='Haber' align='right'> 12605</td> <td colspan='2'> a[banco-estado] </td> </tr>
-<tr style='background-color: azure'>  <td> </td> <td align='right'> 2013 </td> <td align='right'> 0 </td> <td> </td><td> p[iva-debito] </td> </tr>
 <tr style='color: white; background-color: black'>  <td> </td> <td align='right'>10592 </td> <td align='right'> 0</td> <td> </td> <td> r[devolucion-sobre-ventas] </td> </tr>
+<tr style='background-color: azure'>  <td> </td> <td align='right'> 2013 </td> <td align='right'> 0 </td> <td> </td><td> p[iva-debito] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 12605 </td> <td style='background-color: blanchedalmond'> 12605</td> </tr>
 </tbody><tbody>
 <tr><td colspan='4'> necios SA</td> </tr> 
@@ -3498,17 +2679,12 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'>  </p>
 <br> 
-- [x] tipo de asiento: 33
-- [ ] rcv
-- [ ] libro-diario
-- [ ] ccm
-- [ ] revisado
 <table id='Partida-149'>
 <thead > <th colspan='6'>Partida 149</th></thead>
 <tbody>
 <tr><td name='Debe' align='right'>6143</td> <td colspan='7'>sodimac-insumos#insumos</td> </tr>
-<tr style='background-color: lightyellow'>  <td> </td> <td name='Debe' align='right'> 1167</td> <td name='Haber' align='right'> 0</td> <td colspan='2'> a[iva-credito] </td> </tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td name='Debe' align='right'> 6143</td> <td name='Haber' align='right'> 0</td> <td colspan='2'> a[insumos] </td> </tr>
+<tr style='background-color: lightyellow'>  <td> </td> <td name='Debe' align='right'> 1167</td> <td name='Haber' align='right'> 0</td> <td colspan='2'> a[iva-credito] </td> </tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td name='Debe' align='right'> 0</td> <td name='Haber' align='right'> 7310</td> <td colspan='2'> a[banco-estado] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 7310 </td> <td style='background-color: blanchedalmond'> 7310</td> </tr>
 </tbody><tbody>
@@ -3524,19 +2700,14 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'>  </p>
 <br> 
-- [x] tipo de asiento: 33
-- [ ] rcv
-- [ ] libro-diario
-- [ ] ccm
-- [ ] revisado
 <table id='Partida-151'>
 <thead > <th colspan='6'>Partida 151</th></thead>
 <tbody>
 <tr> <td name = 'Debe' align='right' >126050 </td> <td colspan='7'> ventas#ingresos-brutos </td></tr>
 <tr> <td name = 'Debe' align='right' >126050 </td> <td colspan='7'> ventas-con-factura-afecta#ventas </td></tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td name='Debe' align='right'> 150000</td> <td name='Haber' align='right'> 0</td> <td colspan='2'> a[banco-estado] </td> </tr>
-<tr style='background-color: azure'>  <td> </td> <td align='right'> 0 </td> <td align='right'> 23950 </td> <td> </td><td> p[iva-debito] </td> </tr>
 <tr style='background-color: gold'>  <td> </td> <td align='right'>0 </td> <td align='right'> 126050</td> <td> </td> <td> r[ingresos-brutos] </td> </tr>
+<tr style='background-color: azure'>  <td> </td> <td align='right'> 0 </td> <td align='right'> 23950 </td> <td> </td><td> p[iva-debito] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 150000 </td> <td style='background-color: blanchedalmond'> 150000</td> </tr>
 </tbody><tbody>
 <tr><td colspan='4'> necios SA</td> </tr> 
@@ -3551,19 +2722,14 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'>  </p>
 <br> 
-- [x] tipo de asiento: 33
-- [ ] rcv
-- [ ] libro-diario
-- [ ] ccm
-- [ ] revisado
 <table id='Partida-152'>
 <thead > <th colspan='6'>Partida 152</th></thead>
 <tbody>
 <tr> <td name = 'Debe' align='right' >93137 </td> <td colspan='7'> ventas#ingresos-brutos </td></tr>
 <tr> <td name = 'Debe' align='right' >93137 </td> <td colspan='7'> ventas-con-factura-afecta#ventas </td></tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td name='Debe' align='right'> 110833</td> <td name='Haber' align='right'> 0</td> <td colspan='2'> a[banco-estado] </td> </tr>
-<tr style='background-color: azure'>  <td> </td> <td align='right'> 0 </td> <td align='right'> 17696 </td> <td> </td><td> p[iva-debito] </td> </tr>
 <tr style='background-color: gold'>  <td> </td> <td align='right'>0 </td> <td align='right'> 93137</td> <td> </td> <td> r[ingresos-brutos] </td> </tr>
+<tr style='background-color: azure'>  <td> </td> <td align='right'> 0 </td> <td align='right'> 17696 </td> <td> </td><td> p[iva-debito] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 110833 </td> <td style='background-color: blanchedalmond'> 110833</td> </tr>
 </tbody><tbody>
 <tr><td colspan='4'> necios SA</td> </tr> 
@@ -3578,12 +2744,6 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'>  </p>
 <br> 
-- [x] tipo de asiento: ajuste-iva
-- [ ] rcv
-- [ ] libro-diario
-- [ ] ccm
-- [x] revisado
-![](../revisado.png)
 <table id='Partida-153'>
 <thead> <th style='background-color: lavender' colspan='6'>Partida 153</th></thead>
 <tbody>
@@ -3605,22 +2765,16 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'>  </p>
 <br> 
-- [x] tipo de asiento: 33
-- [ ] rcv
-- [ ] libro-diario
-- [ ] ccm
-- [x] revisado
-![](../revisado.png)
 <table id='Partida-154'>
 <thead> <th style='background-color: lavender' colspan='6'>Partida 154</th></thead>
 <tbody>
 <tr> <td name = 'Debe' align='right' >932 </td> <td colspan='7'> ganancia-por-correccion-monetaria#correccion-monetaria </td></tr>
 <tr> <td name = 'Debe' align='right' >932 </td> <td colspan='7'> correccion-monetaria#ingresos-brutos </td></tr>
-<tr style='background-color: lightyellow'>  <td> </td> <td name='Debe' align='right'> 932</td> <td name='Haber' align='right'> 56017</td> <td colspan='2'> a[iva-credito] </td> </tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td name='Debe' align='right'> 890</td> <td name='Haber' align='right'> 0</td> <td colspan='2'> a[ppm] </td> </tr>
+<tr style='background-color: lightyellow'>  <td> </td> <td name='Debe' align='right'> 932</td> <td name='Haber' align='right'> 56017</td> <td colspan='2'> a[iva-credito] </td> </tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td name='Debe' align='right'> 0</td> <td name='Haber' align='right'> 890</td> <td colspan='2'> a[banco-estado] </td> </tr>
-<tr style='background-color: azure'>  <td> </td> <td align='right'> 56017 </td> <td align='right'> 0 </td> <td> </td><td> p[iva-debito] </td> </tr>
 <tr style='background-color: gold'>  <td> </td> <td align='right'>0 </td> <td align='right'> 932</td> <td> </td> <td> r[ingresos-brutos] </td> </tr>
+<tr style='background-color: azure'>  <td> </td> <td align='right'> 56017 </td> <td align='right'> 0 </td> <td> </td><td> p[iva-debito] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 57839 </td> <td style='background-color: blanchedalmond'> 57839</td> </tr>
 </tbody><tbody>
 <tr><td colspan='4'> necios SA</td> </tr> 
@@ -3633,19 +2787,14 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'>  </p>
 <br> 
-- [x] tipo de asiento: 33
-- [ ] rcv
-- [ ] libro-diario
-- [ ] ccm
-- [ ] revisado
 <table id='Partida-155'>
 <thead > <th colspan='6'>Partida 155</th></thead>
 <tbody>
 <tr> <td name = 'Debe' align='right' >2417 </td> <td colspan='7'> amortizacion-intangibles#amortizacion </td></tr>
-<tr style='background-color: lightyellow'>  <td> </td> <td name='Debe' align='right'> 0</td> <td name='Haber' align='right'> 2417</td> <td colspan='2'> a[amortizacion-acumulada-intangibles] </td> </tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td name='Debe' align='right'> 0</td> <td name='Haber' align='right'> 9804</td> <td colspan='2'> a[depreciacion-acumulada-herramientas] </td> </tr>
-<tr style='color: white; background-color: black'>  <td> </td> <td align='right'>9804 </td> <td align='right'> 0</td> <td> </td> <td> r[depreciacion] </td> </tr>
+<tr style='background-color: lightyellow'>  <td> </td> <td name='Debe' align='right'> 0</td> <td name='Haber' align='right'> 2417</td> <td colspan='2'> a[amortizacion-acumulada-intangibles] </td> </tr>
 <tr style='color: white; background-color: black'>  <td> </td> <td align='right'>2417 </td> <td align='right'> 0</td> <td> </td> <td> r[amortizacion] </td> </tr>
+<tr style='color: white; background-color: black'>  <td> </td> <td align='right'>9804 </td> <td align='right'> 0</td> <td> </td> <td> r[depreciacion] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 12221 </td> <td style='background-color: blanchedalmond'> 12221</td> </tr>
 </tbody><tbody>
 <tr><td colspan='4'> necios SA</td> </tr> 
@@ -3658,18 +2807,11 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'>  </p>
 <br> 
-- [x] tipo de asiento: 33
-- [ ] rcv
-- [ ] libro-diario
-- [ ] ccm
-- [x] Referencia: <a href= '#Partida-127'>127 </a>
-- [x] revisado
-![](../revisado.png)
 <table id='Partida-156'>
 <thead> <th style='background-color: lavender' colspan='6'>Partida 156</th></thead>
 <tbody>
-<tr> <td name='Debe' align='right'> 0 </td> <td> </td> <td colspan='7'> impuesto-unico-por-pagar#salarios-por-pagar </td> </tr> 
 <tr> <td name='Debe' align='right'> 267820 </td> <td> </td> <td colspan='7'> remuneraciones-por-pagar#salarios-por-pagar </td> </tr> 
+<tr> <td name='Debe' align='right'> 0 </td> <td> </td> <td colspan='7'> impuesto-unico-por-pagar#salarios-por-pagar </td> </tr> 
 <tr style='background-color: lightyellow'>  <td> </td> <td name='Debe' align='right'> 0</td> <td name='Haber' align='right'> 267820</td> <td colspan='2'> a[banco-estado] </td> </tr>
 <tr style='background-color: azure'>  <td> </td> <td align='right'> 267820 </td> <td align='right'> 0 </td> <td> </td><td> p[salarios-por-pagar] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 267820 </td> <td style='background-color: blanchedalmond'> 267820</td> </tr>
@@ -3685,21 +2827,15 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'>  </p>
 <br> 
-- [x] tipo de asiento: 33
-- [ ] rcv
-- [ ] libro-diario
-- [ ] ccm
-- [x] revisado
-![](../revisado.png)
 <table id='Partida-157'>
 <thead> <th style='background-color: lavender' colspan='6'>Partida 157</th></thead>
 <tbody>
-<tr> <td name='Debe' align='right'> 0 </td> <td> </td> <td colspan='7'> impuesto-unico-por-pagar#salarios-por-pagar </td> </tr> 
-<tr> <td name='Debe' align='right'> 307520 </td> <td> </td> <td colspan='7'> remuneraciones-por-pagar#salarios-por-pagar </td> </tr> 
 <tr> <td name='Debe' align='right'> 92480 </td> <td> </td> <td colspan='7'> entidades-previsionales-por-pagar#salarios-por-pagar </td> </tr> 
+<tr> <td name='Debe' align='right'> 307520 </td> <td> </td> <td colspan='7'> remuneraciones-por-pagar#salarios-por-pagar </td> </tr> 
+<tr> <td name='Debe' align='right'> 0 </td> <td> </td> <td colspan='7'> impuesto-unico-por-pagar#salarios-por-pagar </td> </tr> 
+<tr style='color: white; background-color: black'>  <td> </td> <td align='right'>400000 </td> <td align='right'> 0</td> <td> </td> <td> r[salarios] </td> </tr>
 <tr style='background-color: azure'>  <td> </td> <td align='right'> 0 </td> <td align='right'> 92480 </td> <td> </td><td> p[salarios-por-pagar] </td> </tr>
 <tr style='background-color: azure'>  <td> </td> <td align='right'> 0 </td> <td align='right'> 307520 </td> <td> </td><td> p[salarios-por-pagar] </td> </tr>
-<tr style='color: white; background-color: black'>  <td> </td> <td align='right'>400000 </td> <td align='right'> 0</td> <td> </td> <td> r[salarios] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 400000 </td> <td style='background-color: blanchedalmond'> 400000</td> </tr>
 </tbody><tbody>
 <tr><td colspan='4'> necios SA</td> </tr> 
@@ -3713,11 +2849,6 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'>  </p>
 <br> 
-- [x] tipo de asiento: 33
-- [ ] rcv
-- [ ] libro-diario
-- [ ] ccm
-- [ ] revisado
 <table id='Partida-158'>
 <thead > <th colspan='6'>Partida 158</th></thead>
 <tbody>
@@ -3738,14 +2869,6 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'> No fue incluido en el f29 de octubre en el código 142</p>
 <br> 
-- [x] rechazado: Partida rechazada por SII, significa que si la dejamos nos podría generar multas o que no tendría el efecto deseado. Así que solo podemos quitarla de SII, pero eso requiere rectificar el f29 y eso nos generaría multas. Por ejemplo, una nota de crédito que no descuente monto imponible, aunque esté en registro de compra-venta. El F22 al año siguiente no incluirá estos DTE. No es lo mismo que gasto rechazado. También podríamos declararla como no-incluir, pero eso no conveniente, pues todo debe estar en la contabilidad de la empresa, pera que sea fidedigna. Hay casos donde se declara un gasto para el que no hay boleta de respaldo, eso es muy crítico y sí será rechazado, y además la contabilidad financiera objetada. El caso de las facturas de compra 45 a proveedor extranjero es parecido, pero ahora sé como se hace. 
-- [x] tipo de asiento: 33
-- [x] a corregir: No fue incluido en el f29 de octubre en el código 142
-- [ ] rcv
-- [ ] libro-diario
-- [ ] ccm
-- [x] revisado
-![](../revisado.png)
 <table id='Partida-159'>
 <thead> <th style='background-color: lavender' colspan='6'>Partida 159</th></thead>
 <tbody  style =' text-decoration: line-through; text-decoration-color: crimson'  > 
@@ -3767,11 +2890,6 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'>  </p>
 <br> 
-- [x] tipo de asiento: 33
-- [ ] rcv
-- [ ] libro-diario
-- [ ] ccm
-- [ ] revisado
 <table id='Partida-160'>
 <thead > <th colspan='6'>Partida 160</th></thead>
 <tbody>
@@ -3794,11 +2912,6 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'>  </p>
 <br> 
-- [x] tipo de asiento: 33
-- [ ] rcv
-- [ ] libro-diario
-- [ ] ccm
-- [ ] revisado
 <table id='Partida-161'>
 <thead > <th colspan='6'>Partida 161</th></thead>
 <tbody>
@@ -3820,20 +2933,14 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'>  </p>
 <br> 
-- [x] tipo de asiento: 33
-- [ ] rcv
-- [ ] libro-diario
-- [ ] ccm
-- [x] revisado
-![](../revisado.png)
 <table id='Partida-162'>
 <thead> <th style='background-color: lavender' colspan='6'>Partida 162</th></thead>
 <tbody>
 <tr> <td name = 'Debe' align='right' >21002 </td> <td colspan='7'> ventas#ingresos-brutos </td></tr>
 <tr> <td name = 'Debe' align='right' >21002 </td> <td colspan='7'> ventas-con-eboleta-afecta#ventas </td></tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td name='Debe' align='right'> 25000</td> <td name='Haber' align='right'> 0</td> <td colspan='2'> a[banco-estado] </td> </tr>
-<tr style='background-color: azure'>  <td> </td> <td align='right'> 0 </td> <td align='right'> 3998 </td> <td> </td><td> p[iva-debito] </td> </tr>
 <tr style='background-color: gold'>  <td> </td> <td align='right'>0 </td> <td align='right'> 21002</td> <td> </td> <td> r[ingresos-brutos] </td> </tr>
+<tr style='background-color: azure'>  <td> </td> <td align='right'> 0 </td> <td align='right'> 3998 </td> <td> </td><td> p[iva-debito] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 25000 </td> <td style='background-color: blanchedalmond'> 25000</td> </tr>
 </tbody><tbody>
 <tr><td colspan='4'> necios SA</td> </tr> 
@@ -3846,13 +2953,6 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'> Fuera de Plazo</p>
 <br> 
-- [x] rechazado: Partida rechazada por SII, significa que si la dejamos nos podría generar multas o que no tendría el efecto deseado. Así que solo podemos quitarla de SII, pero eso requiere rectificar el f29 y eso nos generaría multas. Por ejemplo, una nota de crédito que no descuente monto imponible, aunque esté en registro de compra-venta. El F22 al año siguiente no incluirá estos DTE. No es lo mismo que gasto rechazado. También podríamos declararla como no-incluir, pero eso no conveniente, pues todo debe estar en la contabilidad de la empresa, pera que sea fidedigna. Hay casos donde se declara un gasto para el que no hay boleta de respaldo, eso es muy crítico y sí será rechazado, y además la contabilidad financiera objetada. El caso de las facturas de compra 45 a proveedor extranjero es parecido, pero ahora sé como se hace. 
-- [x] tipo de asiento: 33
-- [x] a corregir: Fuera de Plazo
-- [ ] rcv
-- [ ] libro-diario
-- [ ] ccm
-- [ ] revisado
 <table id='Partida-163'>
 <thead > <th colspan='6'>Partida 163</th></thead>
 <tbody  style =' text-decoration: line-through; text-decoration-color: crimson'  > 
@@ -3875,20 +2975,14 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'>  </p>
 <br> 
-- [x] tipo de asiento: 33
-- [ ] rcv
-- [ ] libro-diario
-- [ ] ccm
-- [x] revisado
-![](../revisado.png)
 <table id='Partida-164'>
 <thead> <th style='background-color: lavender' colspan='6'>Partida 164</th></thead>
 <tbody>
 <tr> <td name = 'Debe' align='right' >93137 </td> <td colspan='7'> ventas#ingresos-brutos </td></tr>
 <tr> <td name = 'Debe' align='right' >93137 </td> <td colspan='7'> ventas-con-factura-afecta#ventas </td></tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td name='Debe' align='right'> 110833</td> <td name='Haber' align='right'> 0</td> <td colspan='2'> a[banco-estado] </td> </tr>
-<tr style='background-color: azure'>  <td> </td> <td align='right'> 0 </td> <td align='right'> 17696 </td> <td> </td><td> p[iva-debito] </td> </tr>
 <tr style='background-color: gold'>  <td> </td> <td align='right'>0 </td> <td align='right'> 93137</td> <td> </td> <td> r[ingresos-brutos] </td> </tr>
+<tr style='background-color: azure'>  <td> </td> <td align='right'> 0 </td> <td align='right'> 17696 </td> <td> </td><td> p[iva-debito] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 110833 </td> <td style='background-color: blanchedalmond'> 110833</td> </tr>
 </tbody><tbody>
 <tr><td colspan='4'> necios SA</td> </tr> 
@@ -3903,14 +2997,6 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'> No se puede tener cuentas por cobrar a menos que se haya vendido al contado</p>
 <br> 
-- [x] no-incluir: Partida que estando en RCV SII se estimó no incluir en la contabilidad financiera
-- [x] tipo de asiento: 33
-- [x] a corregir: No se puede tener cuentas por cobrar a menos que se haya vendido al contado
-- [ ] rcv
-- [ ] libro-diario
-- [ ] ccm
-- [x] revisado
-![](../revisado.png)
 <table id='Partida-165'>
 <thead> <th style='background-color: lavender' colspan='6'>Partida 165</th></thead>
 <tbody>
@@ -3927,17 +3013,12 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'>  </p>
 <br> 
-- [x] tipo de asiento: 33
-- [ ] rcv
-- [ ] libro-diario
-- [ ] ccm
-- [ ] revisado
 <table id='Partida-166'>
 <thead > <th colspan='6'>Partida 166</th></thead>
 <tbody>
 <tr><td name='Debe' align='right'>4950</td> <td colspan='7'>sodimac-insumos#insumos</td> </tr>
-<tr style='background-color: lightyellow'>  <td> </td> <td name='Debe' align='right'> 941</td> <td name='Haber' align='right'> 0</td> <td colspan='2'> a[iva-credito] </td> </tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td name='Debe' align='right'> 4950</td> <td name='Haber' align='right'> 0</td> <td colspan='2'> a[insumos] </td> </tr>
+<tr style='background-color: lightyellow'>  <td> </td> <td name='Debe' align='right'> 941</td> <td name='Haber' align='right'> 0</td> <td colspan='2'> a[iva-credito] </td> </tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td name='Debe' align='right'> 0</td> <td name='Haber' align='right'> 5891</td> <td colspan='2'> a[banco-estado] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 5891 </td> <td style='background-color: blanchedalmond'> 5891</td> </tr>
 </tbody><tbody>
@@ -3953,19 +3034,14 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'>  </p>
 <br> 
-- [x] tipo de asiento: 33
-- [ ] rcv
-- [ ] libro-diario
-- [ ] ccm
-- [ ] revisado
 <table id='Partida-167'>
 <thead > <th colspan='6'>Partida 167</th></thead>
 <tbody>
 <tr> <td name = 'Debe' align='right' >2417 </td> <td colspan='7'> amortizacion-intangibles#amortizacion </td></tr>
-<tr style='background-color: lightyellow'>  <td> </td> <td name='Debe' align='right'> 0</td> <td name='Haber' align='right'> 2417</td> <td colspan='2'> a[amortizacion-acumulada-intangibles] </td> </tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td name='Debe' align='right'> 0</td> <td name='Haber' align='right'> 9804</td> <td colspan='2'> a[depreciacion-acumulada-herramientas] </td> </tr>
-<tr style='color: white; background-color: black'>  <td> </td> <td align='right'>9804 </td> <td align='right'> 0</td> <td> </td> <td> r[depreciacion] </td> </tr>
+<tr style='background-color: lightyellow'>  <td> </td> <td name='Debe' align='right'> 0</td> <td name='Haber' align='right'> 2417</td> <td colspan='2'> a[amortizacion-acumulada-intangibles] </td> </tr>
 <tr style='color: white; background-color: black'>  <td> </td> <td align='right'>2417 </td> <td align='right'> 0</td> <td> </td> <td> r[amortizacion] </td> </tr>
+<tr style='color: white; background-color: black'>  <td> </td> <td align='right'>9804 </td> <td align='right'> 0</td> <td> </td> <td> r[depreciacion] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 12221 </td> <td style='background-color: blanchedalmond'> 12221</td> </tr>
 </tbody><tbody>
 <tr><td colspan='4'> necios SA</td> </tr> 
@@ -3978,12 +3054,6 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'>  </p>
 <br> 
-- [x] tipo de asiento: 33
-- [ ] rcv
-- [ ] libro-diario
-- [ ] ccm
-- [x] revisado
-![](../revisado.png)
 <table id='Partida-168'>
 <thead> <th style='background-color: lavender' colspan='6'>Partida 168</th></thead>
 <tbody>
@@ -3999,17 +3069,11 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'>  </p>
 <br> 
-- [x] tipo de asiento: 34
-- [ ] rcv
-- [ ] libro-diario
-- [ ] ccm
-- [x] revisado
-![](../revisado.png)
 <table id='Partida-169'>
 <thead> <th style='background-color: lavender' colspan='6'>Partida 169</th></thead>
 <tbody>
-<tr> <td name='Debe' align='right'> 0 </td> <td> </td> <td colspan='7'> impuesto-unico-por-pagar#salarios-por-pagar </td> </tr> 
 <tr> <td name='Debe' align='right'> 307520 </td> <td> </td> <td colspan='7'> remuneraciones-por-pagar#salarios-por-pagar </td> </tr> 
+<tr> <td name='Debe' align='right'> 0 </td> <td> </td> <td colspan='7'> impuesto-unico-por-pagar#salarios-por-pagar </td> </tr> 
 <tr style='background-color: lightyellow'>  <td> </td> <td name='Debe' align='right'> 0</td> <td name='Haber' align='right'> 307520</td> <td colspan='2'> a[banco-estado] </td> </tr>
 <tr style='background-color: azure'>  <td> </td> <td align='right'> 307520 </td> <td align='right'> 0 </td> <td> </td><td> p[salarios-por-pagar] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 307520 </td> <td style='background-color: blanchedalmond'> 307520</td> </tr>
@@ -4025,12 +3089,6 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'>  </p>
 <br> 
-- [x] tipo de asiento: 34
-- [ ] rcv
-- [ ] libro-diario
-- [ ] ccm
-- [x] revisado
-![](../revisado.png)
 <table id='Partida-170'>
 <thead> <th style='background-color: lavender' colspan='6'>Partida 170</th></thead>
 <tbody>
@@ -4052,11 +3110,6 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'>  </p>
 <br> 
-- [ ] rcv
-- [ ] libro-diario
-- [ ] ccm
-- [x] revisado
-![](../revisado.png)
 <table id='Partida-171'>
 <thead> <th style='background-color: lavender' colspan='6'>Partida 171</th></thead>
 <tbody>
@@ -4078,20 +3131,15 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'>  </p>
 <br> 
-- [ ] rcv
-- [ ] libro-diario
-- [ ] ccm
-- [x] revisado
-![](../revisado.png)
 <table id='Partida-172'>
 <thead> <th style='background-color: lavender' colspan='6'>Partida 172</th></thead>
 <tbody>
-<tr> <td name='Debe' align='right'> 0 </td> <td> </td> <td colspan='7'> impuesto-unico-por-pagar#salarios-por-pagar </td> </tr> 
-<tr> <td name='Debe' align='right'> 307520 </td> <td> </td> <td colspan='7'> remuneraciones-por-pagar#salarios-por-pagar </td> </tr> 
 <tr> <td name='Debe' align='right'> 92480 </td> <td> </td> <td colspan='7'> entidades-previsionales-por-pagar#salarios-por-pagar </td> </tr> 
+<tr> <td name='Debe' align='right'> 307520 </td> <td> </td> <td colspan='7'> remuneraciones-por-pagar#salarios-por-pagar </td> </tr> 
+<tr> <td name='Debe' align='right'> 0 </td> <td> </td> <td colspan='7'> impuesto-unico-por-pagar#salarios-por-pagar </td> </tr> 
+<tr style='color: white; background-color: black'>  <td> </td> <td align='right'>400000 </td> <td align='right'> 0</td> <td> </td> <td> r[salarios] </td> </tr>
 <tr style='background-color: azure'>  <td> </td> <td align='right'> 0 </td> <td align='right'> 92480 </td> <td> </td><td> p[salarios-por-pagar] </td> </tr>
 <tr style='background-color: azure'>  <td> </td> <td align='right'> 0 </td> <td align='right'> 307520 </td> <td> </td><td> p[salarios-por-pagar] </td> </tr>
-<tr style='color: white; background-color: black'>  <td> </td> <td align='right'>400000 </td> <td align='right'> 0</td> <td> </td> <td> r[salarios] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 400000 </td> <td style='background-color: blanchedalmond'> 400000</td> </tr>
 </tbody><tbody>
 <tr><td colspan='4'> necios SA</td> </tr> 
@@ -4105,11 +3153,6 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'>  </p>
 <br> 
-- [ ] rcv
-- [ ] libro-diario
-- [ ] ccm
-- [x] revisado
-![](../revisado.png)
 <table id='Partida-183'>
 <thead> <th style='background-color: lavender' colspan='6'>Partida 183</th></thead>
 <tbody>
@@ -4131,11 +3174,6 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'>  </p>
 <br> 
-- [ ] rcv
-- [ ] libro-diario
-- [ ] ccm
-- [x] revisado
-![](../revisado.png)
 <table id='Partida-184'>
 <thead> <th style='background-color: lavender' colspan='6'>Partida 184</th></thead>
 <tbody>
@@ -4157,19 +3195,14 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'>  </p>
 <br> 
-- [ ] rcv
-- [ ] libro-diario
-- [ ] ccm
-- [x] revisado
-![](../revisado.png)
 <table id='Partida-186'>
 <thead> <th style='background-color: lavender' colspan='6'>Partida 186</th></thead>
 <tbody>
 <tr> <td name = 'Debe' align='right' >2417 </td> <td colspan='7'> amortizacion-intangibles#amortizacion </td></tr>
-<tr style='background-color: lightyellow'>  <td> </td> <td name='Debe' align='right'> 0</td> <td name='Haber' align='right'> 2417</td> <td colspan='2'> a[amortizacion-acumulada-intangibles] </td> </tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td name='Debe' align='right'> 0</td> <td name='Haber' align='right'> 9804</td> <td colspan='2'> a[depreciacion-acumulada-herramientas] </td> </tr>
-<tr style='color: white; background-color: black'>  <td> </td> <td align='right'>9804 </td> <td align='right'> 0</td> <td> </td> <td> r[depreciacion] </td> </tr>
+<tr style='background-color: lightyellow'>  <td> </td> <td name='Debe' align='right'> 0</td> <td name='Haber' align='right'> 2417</td> <td colspan='2'> a[amortizacion-acumulada-intangibles] </td> </tr>
 <tr style='color: white; background-color: black'>  <td> </td> <td align='right'>2417 </td> <td align='right'> 0</td> <td> </td> <td> r[amortizacion] </td> </tr>
+<tr style='color: white; background-color: black'>  <td> </td> <td align='right'>9804 </td> <td align='right'> 0</td> <td> </td> <td> r[depreciacion] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 12221 </td> <td style='background-color: blanchedalmond'> 12221</td> </tr>
 </tbody><tbody>
 <tr><td colspan='4'> necios SA</td> </tr> 
@@ -4182,11 +3215,6 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'>  </p>
 <br> 
-- [ ] rcv
-- [ ] libro-diario
-- [ ] ccm
-- [x] revisado
-![](../revisado.png)
 <table id='Partida-187'>
 <thead> <th style='background-color: lavender' colspan='6'>Partida 187</th></thead>
 <tbody>
@@ -4204,16 +3232,11 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'>  </p>
 <br> 
-- [ ] rcv
-- [ ] libro-diario
-- [ ] ccm
-- [x] revisado
-![](../revisado.png)
 <table id='Partida-188'>
 <thead> <th style='background-color: lavender' colspan='6'>Partida 188</th></thead>
 <tbody>
-<tr> <td name='Debe' align='right'> 0 </td> <td> </td> <td colspan='7'> impuesto-unico-por-pagar#salarios-por-pagar </td> </tr> 
 <tr> <td name='Debe' align='right'> 307520 </td> <td> </td> <td colspan='7'> remuneraciones-por-pagar#salarios-por-pagar </td> </tr> 
+<tr> <td name='Debe' align='right'> 0 </td> <td> </td> <td colspan='7'> impuesto-unico-por-pagar#salarios-por-pagar </td> </tr> 
 <tr style='background-color: lightyellow'>  <td> </td> <td name='Debe' align='right'> 0</td> <td name='Haber' align='right'> 307520</td> <td colspan='2'> a[banco-estado] </td> </tr>
 <tr style='background-color: azure'>  <td> </td> <td align='right'> 307520 </td> <td align='right'> 0 </td> <td> </td><td> p[salarios-por-pagar] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 307520 </td> <td style='background-color: blanchedalmond'> 307520</td> </tr>
@@ -4229,17 +3252,12 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'>  </p>
 <br> 
-- [ ] rcv
-- [ ] libro-diario
-- [ ] ccm
-- [x] revisado
-![](../revisado.png)
 <table id='Partida-189'>
 <thead> <th style='background-color: lavender' colspan='6'>Partida 189</th></thead>
 <tbody>
 <tr><td name='Debe' align='right'>8395</td> <td colspan='7'>sodimac-insumos#insumos</td> </tr>
-<tr style='background-color: lightyellow'>  <td> </td> <td name='Debe' align='right'> 1595</td> <td name='Haber' align='right'> 0</td> <td colspan='2'> a[iva-credito] </td> </tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td name='Debe' align='right'> 8395</td> <td name='Haber' align='right'> 0</td> <td colspan='2'> a[insumos] </td> </tr>
+<tr style='background-color: lightyellow'>  <td> </td> <td name='Debe' align='right'> 1595</td> <td name='Haber' align='right'> 0</td> <td colspan='2'> a[iva-credito] </td> </tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td name='Debe' align='right'> 0</td> <td name='Haber' align='right'> 9990</td> <td colspan='2'> a[banco-estado] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 9990 </td> <td style='background-color: blanchedalmond'> 9990</td> </tr>
 </tbody><tbody>
@@ -4255,11 +3273,6 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'>  </p>
 <br> 
-- [ ] rcv
-- [ ] libro-diario
-- [ ] ccm
-- [x] revisado
-![](../revisado.png)
 <table id='Partida-195'>
 <thead> <th style='background-color: lavender' colspan='6'>Partida 195</th></thead>
 <tbody>
@@ -4281,11 +3294,6 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'>  </p>
 <br> 
-- [ ] rcv
-- [ ] libro-diario
-- [ ] ccm
-- [x] revisado
-![](../revisado.png)
 <table id='Partida-196'>
 <thead> <th style='background-color: lavender' colspan='6'>Partida 196</th></thead>
 <tbody>
@@ -4307,19 +3315,14 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'>  </p>
 <br> 
-- [ ] rcv
-- [ ] libro-diario
-- [ ] ccm
-- [x] revisado
-![](../revisado.png)
 <table id='Partida-197'>
 <thead> <th style='background-color: lavender' colspan='6'>Partida 197</th></thead>
 <tbody>
 <tr> <td name = 'Debe' align='right' >93137 </td> <td colspan='7'> ventas#ingresos-brutos </td></tr>
 <tr> <td name = 'Debe' align='right' >93137 </td> <td colspan='7'> ventas-con-factura-afecta#ventas </td></tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td name='Debe' align='right'> 110833</td> <td name='Haber' align='right'> 0</td> <td colspan='2'> a[banco-estado] </td> </tr>
-<tr style='background-color: azure'>  <td> </td> <td align='right'> 0 </td> <td align='right'> 17696 </td> <td> </td><td> p[iva-debito] </td> </tr>
 <tr style='background-color: gold'>  <td> </td> <td align='right'>0 </td> <td align='right'> 93137</td> <td> </td> <td> r[ingresos-brutos] </td> </tr>
+<tr style='background-color: azure'>  <td> </td> <td align='right'> 0 </td> <td align='right'> 17696 </td> <td> </td><td> p[iva-debito] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 110833 </td> <td style='background-color: blanchedalmond'> 110833</td> </tr>
 </tbody><tbody>
 <tr><td colspan='4'> necios SA</td> </tr> 
@@ -4334,19 +3337,14 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'>  </p>
 <br> 
-- [ ] rcv
-- [ ] libro-diario
-- [ ] ccm
-- [x] revisado
-![](../revisado.png)
 <table id='Partida-198'>
 <thead> <th style='background-color: lavender' colspan='6'>Partida 198</th></thead>
 <tbody>
 <tr> <td name = 'Debe' align='right' >93137 </td> <td colspan='7'> ventas#ingresos-brutos </td></tr>
 <tr> <td name = 'Debe' align='right' >93137 </td> <td colspan='7'> ventas-con-factura-afecta#ventas </td></tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td name='Debe' align='right'> 110833</td> <td name='Haber' align='right'> 0</td> <td colspan='2'> a[banco-estado] </td> </tr>
-<tr style='background-color: azure'>  <td> </td> <td align='right'> 0 </td> <td align='right'> 17696 </td> <td> </td><td> p[iva-debito] </td> </tr>
 <tr style='background-color: gold'>  <td> </td> <td align='right'>0 </td> <td align='right'> 93137</td> <td> </td> <td> r[ingresos-brutos] </td> </tr>
+<tr style='background-color: azure'>  <td> </td> <td align='right'> 0 </td> <td align='right'> 17696 </td> <td> </td><td> p[iva-debito] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 110833 </td> <td style='background-color: blanchedalmond'> 110833</td> </tr>
 </tbody><tbody>
 <tr><td colspan='4'> necios SA</td> </tr> 
@@ -4361,11 +3359,6 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'>  </p>
 <br> 
-- [ ] rcv
-- [ ] libro-diario
-- [ ] ccm
-- [x] revisado
-![](../revisado.png)
 <table id='Partida-199'>
 <thead> <th style='background-color: lavender' colspan='6'>Partida 199</th></thead>
 <tbody>
@@ -4387,15 +3380,6 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'> Reclamado en SII</p>
 <br> 
-- [x] no-incluir: Partida que estando en RCV SII se estimó no incluir en la contabilidad financiera
-- [x] tipo de asiento: 33
-- [x] folio: 44204963
-- [x] a corregir: Reclamado en SII
-- [ ] rcv
-- [ ] libro-diario
-- [ ] ccm
-- [x] revisado
-![](../revisado.png)
 <table id='Partida-200'>
 <thead> <th style='background-color: lavender' colspan='6'>Partida 200</th></thead>
 <tbody>
@@ -4413,13 +3397,6 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'>  </p>
 <br> 
-- [x] tipo de asiento: 33
-- [x] folio: 44123442
-- [ ] rcv
-- [ ] libro-diario
-- [ ] ccm
-- [x] revisado
-![](../revisado.png)
 <table id='Partida-201'>
 <thead> <th style='background-color: lavender' colspan='6'>Partida 201</th></thead>
 <tbody>
@@ -4441,14 +3418,6 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'> Lo reclamé por error en CCM de SII. No tiene efecto en mi contabilidad</p>
 <br> 
-- [x] no-incluir: Partida que estando en RCV SII se estimó no incluir en la contabilidad financiera
-- [x] tipo de asiento: 61
-- [x] a corregir: Lo reclamé por error en CCM de SII. No tiene efecto en mi contabilidad
-- [ ] rcv
-- [ ] libro-diario
-- [ ] ccm
-- [x] revisado
-![](../revisado.png)
 <table id='Partida-202'>
 <thead> <th style='background-color: lavender' colspan='6'>Partida 202</th></thead>
 <tbody>
@@ -4466,11 +3435,6 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'>  </p>
 <br> 
-- [ ] rcv
-- [ ] libro-diario
-- [ ] ccm
-- [x] revisado
-![](../revisado.png)
 <table id='Partida-203'>
 <thead> <th style='background-color: lavender' colspan='6'>Partida 203</th></thead>
 <tbody>
@@ -4486,11 +3450,6 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'>  </p>
 <br> 
-- [ ] rcv
-- [ ] libro-diario
-- [ ] ccm
-- [x] revisado
-![](../revisado.png)
 <table id='Partida-205'>
 <thead> <th style='background-color: lavender' colspan='6'>Partida 205</th></thead>
 <tbody>
@@ -4506,20 +3465,15 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'>  </p>
 <br> 
-- [ ] rcv
-- [ ] libro-diario
-- [ ] ccm
-- [x] revisado
-![](../revisado.png)
 <table id='Partida-206'>
 <thead> <th style='background-color: lavender' colspan='6'>Partida 206</th></thead>
 <tbody>
-<tr> <td name='Debe' align='right'> 0 </td> <td> </td> <td colspan='7'> impuesto-unico-por-pagar#salarios-por-pagar </td> </tr> 
-<tr> <td name='Debe' align='right'> 307520 </td> <td> </td> <td colspan='7'> remuneraciones-por-pagar#salarios-por-pagar </td> </tr> 
 <tr> <td name='Debe' align='right'> 92480 </td> <td> </td> <td colspan='7'> entidades-previsionales-por-pagar#salarios-por-pagar </td> </tr> 
+<tr> <td name='Debe' align='right'> 307520 </td> <td> </td> <td colspan='7'> remuneraciones-por-pagar#salarios-por-pagar </td> </tr> 
+<tr> <td name='Debe' align='right'> 0 </td> <td> </td> <td colspan='7'> impuesto-unico-por-pagar#salarios-por-pagar </td> </tr> 
+<tr style='color: white; background-color: black'>  <td> </td> <td align='right'>400000 </td> <td align='right'> 0</td> <td> </td> <td> r[salarios] </td> </tr>
 <tr style='background-color: azure'>  <td> </td> <td align='right'> 0 </td> <td align='right'> 92480 </td> <td> </td><td> p[salarios-por-pagar] </td> </tr>
 <tr style='background-color: azure'>  <td> </td> <td align='right'> 0 </td> <td align='right'> 307520 </td> <td> </td><td> p[salarios-por-pagar] </td> </tr>
-<tr style='color: white; background-color: black'>  <td> </td> <td align='right'>400000 </td> <td align='right'> 0</td> <td> </td> <td> r[salarios] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 400000 </td> <td style='background-color: blanchedalmond'> 400000</td> </tr>
 </tbody><tbody>
 <tr><td colspan='4'> necios SA</td> </tr> 
@@ -4533,11 +3487,6 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'>  </p>
 <br> 
-- [ ] rcv
-- [ ] libro-diario
-- [ ] ccm
-- [x] revisado
-![](../revisado.png)
 <table id='Partida-207'>
 <thead> <th style='background-color: lavender' colspan='6'>Partida 207</th></thead>
 <tbody>
@@ -4555,19 +3504,14 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'>  </p>
 <br> 
-- [ ] rcv
-- [ ] libro-diario
-- [ ] ccm
-- [x] revisado
-![](../revisado.png)
 <table id='Partida-208'>
 <thead> <th style='background-color: lavender' colspan='6'>Partida 208</th></thead>
 <tbody>
 <tr> <td name = 'Debe' align='right' >2417 </td> <td colspan='7'> amortizacion-intangibles#amortizacion </td></tr>
-<tr style='background-color: lightyellow'>  <td> </td> <td name='Debe' align='right'> 0</td> <td name='Haber' align='right'> 2417</td> <td colspan='2'> a[amortizacion-acumulada-intangibles] </td> </tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td name='Debe' align='right'> 0</td> <td name='Haber' align='right'> 9804</td> <td colspan='2'> a[depreciacion-acumulada-herramientas] </td> </tr>
-<tr style='color: white; background-color: black'>  <td> </td> <td align='right'>9804 </td> <td align='right'> 0</td> <td> </td> <td> r[depreciacion] </td> </tr>
+<tr style='background-color: lightyellow'>  <td> </td> <td name='Debe' align='right'> 0</td> <td name='Haber' align='right'> 2417</td> <td colspan='2'> a[amortizacion-acumulada-intangibles] </td> </tr>
 <tr style='color: white; background-color: black'>  <td> </td> <td align='right'>2417 </td> <td align='right'> 0</td> <td> </td> <td> r[amortizacion] </td> </tr>
+<tr style='color: white; background-color: black'>  <td> </td> <td align='right'>9804 </td> <td align='right'> 0</td> <td> </td> <td> r[depreciacion] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 12221 </td> <td style='background-color: blanchedalmond'> 12221</td> </tr>
 </tbody><tbody>
 <tr><td colspan='4'> necios SA</td> </tr> 
@@ -4580,16 +3524,11 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'>  </p>
 <br> 
-- [ ] rcv
-- [ ] libro-diario
-- [ ] ccm
-- [x] revisado
-![](../revisado.png)
 <table id='Partida-209'>
 <thead> <th style='background-color: lavender' colspan='6'>Partida 209</th></thead>
 <tbody>
-<tr style='background-color: lightyellow'>  <td> </td> <td name='Debe' align='right'> 0</td> <td name='Haber' align='right'> 35392</td> <td colspan='2'> a[iva-credito] </td> </tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td name='Debe' align='right'> 287</td> <td name='Haber' align='right'> 0</td> <td colspan='2'> a[ppm] </td> </tr>
+<tr style='background-color: lightyellow'>  <td> </td> <td name='Debe' align='right'> 0</td> <td name='Haber' align='right'> 35392</td> <td colspan='2'> a[iva-credito] </td> </tr>
 <tr style='background-color: lightyellow'>  <td> </td> <td name='Debe' align='right'> 0</td> <td name='Haber' align='right'> 287</td> <td colspan='2'> a[banco-estado] </td> </tr>
 <tr style='background-color: azure'>  <td> </td> <td align='right'> 35392 </td> <td align='right'> 0 </td> <td> </td><td> p[iva-debito] </td> </tr>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 35679 </td> <td style='background-color: blanchedalmond'> 35679</td> </tr>
@@ -4604,36 +3543,30 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <br> 
 <p style='color: white; background-color: red'>  </p>
-- [x] tipo de asiento: f29
-- [ ] rcv
-- [ ] libro-diario
-- [ ] ccm
-- [x] revisado
-![](../revisado.png)
 <p style='page-break-after: always;'>&nbsp;</p>
 <table id='Partida-1040' style='background-color:cornsilk'>
 <thead><th colspan='6'>Partida 1040</th></thead>
 <thead> <th> </th> <th> Código </th> <th>  Valor </th> <th> Descripción </th> </thead>
 <tbody>
- <tr> <td> </td> <td> 111 </td> <td align='right'>  5588 </td> <td> DEBITOS BOLETAS EMITIDAS  </td> </tr>
- <tr> <td> </td> <td> 538 </td> <td align='right'>  23464 </td> <td> TOTAL DEBITOS  </td> </tr>
  <tr> <td> </td> <td> 511 </td> <td align='right'>  41503 </td> <td> CRED.IVA POR DCTOS. ELECTRONICOS  </td> </tr>
- <tr> <td> </td> <td> 077 </td> <td align='right'>  28981 </td> <td> REMANENTE DE CREDITO FISC.  </td> </tr>
- <tr> <td> </td> <td> 504 </td> <td align='right'>  10942 </td> <td> REMANENTE CREDITO FISCAL MES ANTERIOR.  </td> </tr>
- <tr> <td> </td> <td> 077 </td> <td align='right'>  15410 </td> <td> REMANENTE DE CREDITO FISC.  </td> </tr>
- <tr> <td> </td> <td> 504 </td> <td align='right'>  15201 </td> <td> REMANENTE CREDITO FISCAL MES ANTERIOR.  </td> </tr>
- <tr> <td> </td> <td> 062 </td> <td align='right'>  199 </td> <td> PPM NETO DETERMINADO </td> </tr>
- <tr> <td> </td> <td> 527 </td> <td align='right'>  0 </td> <td> CANT.NOTAS DE CREDITO RECIBIDAS </td> </tr>
- <tr> <td> </td> <td> 510 </td> <td align='right'>  5588 </td> <td> DEBITO N.CREDITO EMITIDAS/Ref FACTURA | NOTA-CREDITO-RECIBIDA-RETENCION-PARCIAL-CAMBIO-SUJETO </td> </tr>
- <tr> <td> </td> <td> 524 </td> <td align='right'>  1 </td> <td> TOTAL FACTURA ACTIVO FIJO </td> </tr>
- <tr> <td> </td> <td> 525 </td> <td align='right'>  28738 </td> <td> CRÉD. RECUP. Y REINT. FACT. ACTIVO FIJO </td> </tr>
- <tr> <td> </td> <td> 110 </td> <td align='right'>  1 </td> <td> CANT.DE DCTOS.BOLETAS </td> </tr>
- <tr> <td> </td> <td> 758 </td> <td align='right'>  20 </td> <td> CANT. RECIBO DE PAGO MEDIOS ELECTRÓNICOS </td> </tr>
- <tr> <td> </td> <td> 759 </td> <td align='right'>  23464 </td> <td> DÉB. RECIBO DE PAGO MEDIOS ELECTRÓNICOS </td> </tr>
- <tr> <td> </td> <td> 520 </td> <td align='right'>  329 </td> <td> CREDITOS REC. REINT/FACT. DEL GIRO  </td> </tr>
- <tr> <td> </td> <td> 519 </td> <td align='right'>  2 </td> <td> CANT.DE DCTOS.FACT.RECIB.DEL GIRO </td> </tr>
- <tr> <td> </td> <td> 115 </td> <td align='right'>  0.13 </td> <td> TASA PPM 1ra Categoria </td> </tr>
+ <tr> <td> </td> <td> 538 </td> <td align='right'>  23464 </td> <td> TOTAL DEBITOS  </td> </tr>
+ <tr> <td> </td> <td> 111 </td> <td align='right'>  5588 </td> <td> DEBITOS BOLETAS EMITIDAS  </td> </tr>
  <tr> <td> </td> <td> 563 </td> <td align='right'>  152909 </td> <td> BASE IMPONIBLE </td> </tr>
+ <tr> <td> </td> <td> 115 </td> <td align='right'>  0.13 </td> <td> TASA PPM 1ra Categoria </td> </tr>
+ <tr> <td> </td> <td> 519 </td> <td align='right'>  2 </td> <td> CANT.DE DCTOS.FACT.RECIB.DEL GIRO </td> </tr>
+ <tr> <td> </td> <td> 520 </td> <td align='right'>  329 </td> <td> CREDITOS REC. REINT/FACT. DEL GIRO  </td> </tr>
+ <tr> <td> </td> <td> 759 </td> <td align='right'>  23464 </td> <td> DÉB. RECIBO DE PAGO MEDIOS ELECTRÓNICOS </td> </tr>
+ <tr> <td> </td> <td> 758 </td> <td align='right'>  20 </td> <td> CANT. RECIBO DE PAGO MEDIOS ELECTRÓNICOS </td> </tr>
+ <tr> <td> </td> <td> 110 </td> <td align='right'>  1 </td> <td> CANT.DE DCTOS.BOLETAS </td> </tr>
+ <tr> <td> </td> <td> 525 </td> <td align='right'>  28738 </td> <td> CRÉD. RECUP. Y REINT. FACT. ACTIVO FIJO </td> </tr>
+ <tr> <td> </td> <td> 524 </td> <td align='right'>  1 </td> <td> TOTAL FACTURA ACTIVO FIJO </td> </tr>
+ <tr> <td> </td> <td> 510 </td> <td align='right'>  5588 </td> <td> DEBITO N.CREDITO EMITIDAS/Ref FACTURA | NOTA-CREDITO-RECIBIDA-RETENCION-PARCIAL-CAMBIO-SUJETO </td> </tr>
+ <tr> <td> </td> <td> 527 </td> <td align='right'>  0 </td> <td> CANT.NOTAS DE CREDITO RECIBIDAS </td> </tr>
+ <tr> <td> </td> <td> 062 </td> <td align='right'>  199 </td> <td> PPM NETO DETERMINADO </td> </tr>
+ <tr> <td> </td> <td> 504 </td> <td align='right'>  15201 </td> <td> REMANENTE CREDITO FISCAL MES ANTERIOR.  </td> </tr>
+ <tr> <td> </td> <td> 077 </td> <td align='right'>  15410 </td> <td> REMANENTE DE CREDITO FISC.  </td> </tr>
+ <tr> <td> </td> <td> 504 </td> <td align='right'>  10942 </td> <td> REMANENTE CREDITO FISCAL MES ANTERIOR.  </td> </tr>
+ <tr> <td> </td> <td> 077 </td> <td align='right'>  28981 </td> <td> REMANENTE DE CREDITO FISC.  </td> </tr>
 </tbody></table><table>
 <tbody>
 <tr> <td> </td> <td> 12451 </td> <td> 0</td> </tr>
@@ -4647,33 +3580,26 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <br> 
 <p style='color: white; background-color: red'> 563 MONTO Imponible partida 191 en sii aparece como 84, debe ser cambiado a 4589 para incluir la nota de debito No1 que anula la nota de credito 12. Supongo que SII no considera la compensación entre documentos datados en diferentes meses: la nota de crédito que se anula es del mes anterior a la fecha en que se ha emitido la nota de débito</p>
-- [x] tipo de asiento: f29
-- [x] a corregir: 563 MONTO Imponible partida 191 en sii aparece como 84, debe ser cambiado a 4589 para incluir la nota de debito No1 que anula la nota de credito 12. Supongo que SII no considera la compensación entre documentos datados en diferentes meses: la nota de crédito que se anula es del mes anterior a la fecha en que se ha emitido la nota de débito
-- [ ] rcv
-- [ ] libro-diario
-- [ ] ccm
-- [x] revisado
-![](../revisado.png)
 <p style='page-break-after: always;'>&nbsp;</p>
 <table id='Partida-1041' style='background-color:cornsilk'>
 <thead><th colspan='6'>Partida 1041</th></thead>
 <thead> <th> </th> <th> Código </th> <th>  Valor </th> <th> Descripción </th> </thead>
 <tbody>
- <tr> <td> </td> <td> 111 </td> <td align='right'>  16 </td> <td> DEBITOS BOLETAS EMITIDAS  </td> </tr>
  <tr> <td> </td> <td> 511 </td> <td align='right'>  6344 </td> <td> CRED.IVA POR DCTOS. ELECTRONICOS  </td> </tr>
- <tr> <td> </td> <td> 077 </td> <td align='right'>  35872 </td> <td> REMANENTE DE CREDITO FISC.  </td> </tr>
- <tr> <td> </td> <td> 504 </td> <td align='right'>  29246 </td> <td> REMANENTE CREDITO FISCAL MES ANTERIOR.  </td> </tr>
- <tr> <td> </td> <td> 062 </td> <td align='right'>  0 </td> <td> PPM NETO DETERMINADO </td> </tr>
- <tr> <td> </td> <td> 527 </td> <td align='right'>  0 </td> <td> CANT.NOTAS DE CREDITO RECIBIDAS </td> </tr>
- <tr> <td> </td> <td> 510 </td> <td align='right'>  5588 </td> <td> DEBITO N.CREDITO EMITIDAS/Ref FACTURA | NOTA-CREDITO-RECIBIDA-RETENCION-PARCIAL-CAMBIO-SUJETO </td> </tr>
- <tr> <td> </td> <td> 513 </td> <td align='right'>  5588 </td> <td> DEBITO DE NOTAS DEBITO EMITIDAS DEL GIRO </td> </tr>
- <tr> <td> </td> <td> 110 </td> <td align='right'>  2 </td> <td> CANT.DE DCTOS.BOLETAS </td> </tr>
- <tr> <td> </td> <td> 115 </td> <td align='right'>  0.13 </td> <td> TASA PPM 1ra Categoria </td> </tr>
- <tr> <td> </td> <td> 563 </td> <td align='right'>  84 </td> <td> BASE IMPONIBLE </td> </tr>
- <tr> <td> </td> <td> 512 </td> <td align='right'>  2 </td> <td> NOTAS DE DEBITO EMITIDAS DEL GIRO </td> </tr>
- <tr> <td> </td> <td> 519 </td> <td align='right'>  3 </td> <td> CANT.DE DCTOS.FACT.RECIB.DEL GIRO </td> </tr>
- <tr> <td> </td> <td> 520 </td> <td align='right'>  5123 </td> <td> CREDITOS REC. REINT/FACT. DEL GIRO  </td> </tr>
+ <tr> <td> </td> <td> 111 </td> <td align='right'>  16 </td> <td> DEBITOS BOLETAS EMITIDAS  </td> </tr>
  <tr> <td> </td> <td> 528 </td> <td align='right'>  -5089 </td> <td> CREDITO RECUP.Y REINT/NOTAS DE CRED. </td> </tr>
+ <tr> <td> </td> <td> 520 </td> <td align='right'>  5123 </td> <td> CREDITOS REC. REINT/FACT. DEL GIRO  </td> </tr>
+ <tr> <td> </td> <td> 519 </td> <td align='right'>  3 </td> <td> CANT.DE DCTOS.FACT.RECIB.DEL GIRO </td> </tr>
+ <tr> <td> </td> <td> 512 </td> <td align='right'>  2 </td> <td> NOTAS DE DEBITO EMITIDAS DEL GIRO </td> </tr>
+ <tr> <td> </td> <td> 563 </td> <td align='right'>  84 </td> <td> BASE IMPONIBLE </td> </tr>
+ <tr> <td> </td> <td> 115 </td> <td align='right'>  0.13 </td> <td> TASA PPM 1ra Categoria </td> </tr>
+ <tr> <td> </td> <td> 110 </td> <td align='right'>  2 </td> <td> CANT.DE DCTOS.BOLETAS </td> </tr>
+ <tr> <td> </td> <td> 513 </td> <td align='right'>  5588 </td> <td> DEBITO DE NOTAS DEBITO EMITIDAS DEL GIRO </td> </tr>
+ <tr> <td> </td> <td> 510 </td> <td align='right'>  5588 </td> <td> DEBITO N.CREDITO EMITIDAS/Ref FACTURA | NOTA-CREDITO-RECIBIDA-RETENCION-PARCIAL-CAMBIO-SUJETO </td> </tr>
+ <tr> <td> </td> <td> 527 </td> <td align='right'>  0 </td> <td> CANT.NOTAS DE CREDITO RECIBIDAS </td> </tr>
+ <tr> <td> </td> <td> 062 </td> <td align='right'>  0 </td> <td> PPM NETO DETERMINADO </td> </tr>
+ <tr> <td> </td> <td> 504 </td> <td align='right'>  29246 </td> <td> REMANENTE CREDITO FISCAL MES ANTERIOR.  </td> </tr>
+ <tr> <td> </td> <td> 077 </td> <td align='right'>  35872 </td> <td> REMANENTE DE CREDITO FISC.  </td> </tr>
 </tbody></table><table>
 <tbody>
 <tr> <td> </td> <td> 6328 </td> <td> 0</td> </tr>
@@ -4687,28 +3613,22 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <br> 
 <p style='color: white; background-color: red'>  </p>
-- [x] tipo de asiento: f-29
-- [ ] rcv
-- [ ] libro-diario
-- [ ] ccm
-- [x] revisado
-![](../revisado.png)
 <p style='page-break-after: always;'>&nbsp;</p>
 <table id='Partida-1042' style='background-color:cornsilk'>
 <thead><th colspan='6'>Partida 1042</th></thead>
 <thead> <th> </th> <th> Código </th> <th>  Valor </th> <th> Descripción </th> </thead>
 <tbody>
- <tr> <td> </td> <td> 538 </td> <td align='right'>  5588 </td> <td> TOTAL DEBITOS  </td> </tr>
  <tr> <td> </td> <td> 511 </td> <td align='right'>  6217 </td> <td> CRED.IVA POR DCTOS. ELECTRONICOS  </td> </tr>
- <tr> <td> </td> <td> 077 </td> <td align='right'>  36871 </td> <td> REMANENTE DE CREDITO FISC.  </td> </tr>
- <tr> <td> </td> <td> 504 </td> <td align='right'>  35908 </td> <td> REMANENTE CREDITO FISCAL MES ANTERIOR.  </td> </tr>
- <tr> <td> </td> <td> 062 </td> <td align='right'>  38 </td> <td> PPM NETO DETERMINADO </td> </tr>
- <tr> <td> </td> <td> 758 </td> <td align='right'>  1 </td> <td> CANT. RECIBO DE PAGO MEDIOS ELECTRÓNICOS </td> </tr>
- <tr> <td> </td> <td> 759 </td> <td align='right'>  5588 </td> <td> DÉB. RECIBO DE PAGO MEDIOS ELECTRÓNICOS </td> </tr>
- <tr> <td> </td> <td> 115 </td> <td align='right'>  0.13 </td> <td> TASA PPM 1ra Categoria </td> </tr>
- <tr> <td> </td> <td> 563 </td> <td align='right'>  29412 </td> <td> BASE IMPONIBLE </td> </tr>
- <tr> <td> </td> <td> 519 </td> <td align='right'>  2 </td> <td> CANT.DE DCTOS.FACT.RECIB.DEL GIRO </td> </tr>
+ <tr> <td> </td> <td> 538 </td> <td align='right'>  5588 </td> <td> TOTAL DEBITOS  </td> </tr>
  <tr> <td> </td> <td> 520 </td> <td align='right'>  1351 </td> <td> CREDITOS REC. REINT/FACT. DEL GIRO  </td> </tr>
+ <tr> <td> </td> <td> 519 </td> <td align='right'>  2 </td> <td> CANT.DE DCTOS.FACT.RECIB.DEL GIRO </td> </tr>
+ <tr> <td> </td> <td> 563 </td> <td align='right'>  29412 </td> <td> BASE IMPONIBLE </td> </tr>
+ <tr> <td> </td> <td> 115 </td> <td align='right'>  0.13 </td> <td> TASA PPM 1ra Categoria </td> </tr>
+ <tr> <td> </td> <td> 759 </td> <td align='right'>  5588 </td> <td> DÉB. RECIBO DE PAGO MEDIOS ELECTRÓNICOS </td> </tr>
+ <tr> <td> </td> <td> 758 </td> <td align='right'>  1 </td> <td> CANT. RECIBO DE PAGO MEDIOS ELECTRÓNICOS </td> </tr>
+ <tr> <td> </td> <td> 062 </td> <td align='right'>  38 </td> <td> PPM NETO DETERMINADO </td> </tr>
+ <tr> <td> </td> <td> 504 </td> <td align='right'>  35908 </td> <td> REMANENTE CREDITO FISCAL MES ANTERIOR.  </td> </tr>
+ <tr> <td> </td> <td> 077 </td> <td align='right'>  36871 </td> <td> REMANENTE DE CREDITO FISC.  </td> </tr>
 </tbody></table><table>
 <tbody>
 <tr> <td> </td> <td> 629 </td> <td> 0</td> </tr>
@@ -4722,29 +3642,23 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <br> 
 <p style='color: white; background-color: red'>  </p>
-- [x] tipo de asiento: f-29
-- [ ] rcv
-- [ ] libro-diario
-- [ ] ccm
-- [x] revisado
-![](../revisado.png)
 <p style='page-break-after: always;'>&nbsp;</p>
 <table id='Partida-1043' style='background-color:cornsilk'>
 <thead><th colspan='6'>Partida 1043</th></thead>
 <thead> <th> </th> <th> Código </th> <th>  Valor </th> <th> Descripción </th> </thead>
 <tbody>
- <tr> <td> </td> <td> 538 </td> <td align='right'>  4790 </td> <td> TOTAL DEBITOS  </td> </tr>
  <tr> <td> </td> <td> 511 </td> <td align='right'>  1822 </td> <td> CRED.IVA POR DCTOS. ELECTRONICOS  </td> </tr>
- <tr> <td> </td> <td> 077 </td> <td align='right'>  34049 </td> <td> REMANENTE DE CREDITO FISC.  </td> </tr>
- <tr> <td> </td> <td> 504 </td> <td align='right'>  36777 </td> <td> REMANENTE CREDITO FISCAL MES ANTERIOR.  </td> </tr>
- <tr> <td> </td> <td> 062 </td> <td align='right'>  32 </td> <td> PPM NETO DETERMINADO </td> </tr>
- <tr> <td> </td> <td> 758 </td> <td align='right'>  1 </td> <td> CANT. RECIBO DE PAGO MEDIOS ELECTRÓNICOS </td> </tr>
- <tr> <td> </td> <td> 759 </td> <td align='right'>  4790 </td> <td> DÉB. RECIBO DE PAGO MEDIOS ELECTRÓNICOS </td> </tr>
- <tr> <td> </td> <td> 115 </td> <td align='right'>  0.125 </td> <td> TASA PPM 1ra Categoria </td> </tr>
- <tr> <td> </td> <td> 563 </td> <td align='right'>  25210 </td> <td> BASE IMPONIBLE </td> </tr>
- <tr> <td> </td> <td> 519 </td> <td align='right'>  2 </td> <td> CANT.DE DCTOS.FACT.RECIB.DEL GIRO </td> </tr>
- <tr> <td> </td> <td> 520 </td> <td align='right'>  1435 </td> <td> CREDITOS REC. REINT/FACT. DEL GIRO  </td> </tr>
+ <tr> <td> </td> <td> 538 </td> <td align='right'>  4790 </td> <td> TOTAL DEBITOS  </td> </tr>
  <tr> <td> </td> <td> 528 </td> <td align='right'>  -1416 </td> <td> CREDITO RECUP.Y REINT/NOTAS DE CRED. </td> </tr>
+ <tr> <td> </td> <td> 520 </td> <td align='right'>  1435 </td> <td> CREDITOS REC. REINT/FACT. DEL GIRO  </td> </tr>
+ <tr> <td> </td> <td> 519 </td> <td align='right'>  2 </td> <td> CANT.DE DCTOS.FACT.RECIB.DEL GIRO </td> </tr>
+ <tr> <td> </td> <td> 563 </td> <td align='right'>  25210 </td> <td> BASE IMPONIBLE </td> </tr>
+ <tr> <td> </td> <td> 115 </td> <td align='right'>  0.125 </td> <td> TASA PPM 1ra Categoria </td> </tr>
+ <tr> <td> </td> <td> 759 </td> <td align='right'>  4790 </td> <td> DÉB. RECIBO DE PAGO MEDIOS ELECTRÓNICOS </td> </tr>
+ <tr> <td> </td> <td> 758 </td> <td align='right'>  1 </td> <td> CANT. RECIBO DE PAGO MEDIOS ELECTRÓNICOS </td> </tr>
+ <tr> <td> </td> <td> 062 </td> <td align='right'>  32 </td> <td> PPM NETO DETERMINADO </td> </tr>
+ <tr> <td> </td> <td> 504 </td> <td align='right'>  36777 </td> <td> REMANENTE CREDITO FISCAL MES ANTERIOR.  </td> </tr>
+ <tr> <td> </td> <td> 077 </td> <td align='right'>  34049 </td> <td> REMANENTE DE CREDITO FISC.  </td> </tr>
 </tbody></table><table>
 <tbody>
 <tr> <td> </td> <td> -2968 </td> <td> 0</td> </tr>
@@ -4758,23 +3672,17 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <br> 
 <p style='color: white; background-color: red'>  </p>
-- [x] tipo de asiento: f-29
-- [ ] rcv
-- [ ] libro-diario
-- [ ] ccm
-- [x] revisado
-![](../revisado.png)
 <p style='page-break-after: always;'>&nbsp;</p>
 <table id='Partida-1044' style='background-color:cornsilk'>
 <thead><th colspan='6'>Partida 1044</th></thead>
 <thead> <th> </th> <th> Código </th> <th>  Valor </th> <th> Descripción </th> </thead>
 <tbody>
  <tr> <td> </td> <td> 511 </td> <td align='right'>  5313 </td> <td> CRED.IVA POR DCTOS. ELECTRONICOS  </td> </tr>
- <tr> <td> </td> <td> 077 </td> <td align='right'>  39630 </td> <td> REMANENTE DE CREDITO FISC.  </td> </tr>
- <tr> <td> </td> <td> 504 </td> <td align='right'>  34063 </td> <td> REMANENTE CREDITO FISCAL MES ANTERIOR.  </td> </tr>
- <tr> <td> </td> <td> 520 </td> <td align='right'>  5356 </td> <td> CREDITOS REC. REINT/FACT. DEL GIRO  </td> </tr>
- <tr> <td> </td> <td> 519 </td> <td align='right'>  3 </td> <td> CANT.DE DCTOS.FACT.RECIB.DEL GIRO </td> </tr>
  <tr> <td> </td> <td> 528 </td> <td align='right'>  -5313 </td> <td> CREDITO RECUP.Y REINT/NOTAS DE CRED. </td> </tr>
+ <tr> <td> </td> <td> 519 </td> <td align='right'>  3 </td> <td> CANT.DE DCTOS.FACT.RECIB.DEL GIRO </td> </tr>
+ <tr> <td> </td> <td> 520 </td> <td align='right'>  5356 </td> <td> CREDITOS REC. REINT/FACT. DEL GIRO  </td> </tr>
+ <tr> <td> </td> <td> 504 </td> <td align='right'>  34063 </td> <td> REMANENTE CREDITO FISCAL MES ANTERIOR.  </td> </tr>
+ <tr> <td> </td> <td> 077 </td> <td align='right'>  39630 </td> <td> REMANENTE DE CREDITO FISC.  </td> </tr>
 </tbody></table><table>
 <tbody>
 <tr> <td> </td> <td> 5313 </td> <td> 0</td> </tr>
@@ -4788,23 +3696,17 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <br> 
 <p style='color: white; background-color: red'>  </p>
-- [x] tipo de asiento: f-29
-- [ ] rcv
-- [ ] libro-diario
-- [ ] ccm
-- [x] revisado
-![](../revisado.png)
 <p style='page-break-after: always;'>&nbsp;</p>
 <table id='Partida-1045' style='background-color:cornsilk'>
 <thead><th colspan='6'>Partida 1045</th></thead>
 <thead> <th> </th> <th> Código </th> <th>  Valor </th> <th> Descripción </th> </thead>
 <tbody>
  <tr> <td> </td> <td> 511 </td> <td align='right'>  7966 </td> <td> CRED.IVA POR DCTOS. ELECTRONICOS  </td> </tr>
- <tr> <td> </td> <td> 077 </td> <td align='right'>  49283 </td> <td> REMANENTE DE CREDITO FISC.  </td> </tr>
- <tr> <td> </td> <td> 504 </td> <td align='right'>  39642 </td> <td> REMANENTE CREDITO FISCAL MES ANTERIOR.  </td> </tr>
- <tr> <td> </td> <td> 519 </td> <td align='right'>  3 </td> <td> CANT.DE DCTOS.FACT.RECIB.DEL GIRO </td> </tr>
- <tr> <td> </td> <td> 520 </td> <td align='right'>  7966 </td> <td> CREDITOS REC. REINT/FACT. DEL GIRO  </td> </tr>
  <tr> <td> </td> <td> 39 </td> <td align='right'>  -1409 </td> <td> IVA RETENIDO A TERCEROS POR CAMBIO DE SUJETO  </td> </tr>
+ <tr> <td> </td> <td> 520 </td> <td align='right'>  7966 </td> <td> CREDITOS REC. REINT/FACT. DEL GIRO  </td> </tr>
+ <tr> <td> </td> <td> 519 </td> <td align='right'>  3 </td> <td> CANT.DE DCTOS.FACT.RECIB.DEL GIRO </td> </tr>
+ <tr> <td> </td> <td> 504 </td> <td align='right'>  39642 </td> <td> REMANENTE CREDITO FISCAL MES ANTERIOR.  </td> </tr>
+ <tr> <td> </td> <td> 077 </td> <td align='right'>  49283 </td> <td> REMANENTE DE CREDITO FISC.  </td> </tr>
 </tbody></table><table>
 <tbody>
 <tr> <td> </td> <td> 7966 </td> <td> 0</td> </tr>
@@ -4818,41 +3720,35 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <br> 
 <p style='color: white; background-color: red'>  </p>
-- [x] tipo de asiento: f-29
-- [ ] rcv
-- [ ] libro-diario
-- [ ] ccm
-- [x] revisado
-![](../revisado.png)
 <p style='page-break-after: always;'>&nbsp;</p>
 <table id='Partida-1046' style='background-color:cornsilk'>
 <thead><th colspan='6'>Partida 1046</th></thead>
 <thead> <th> </th> <th> Código </th> <th>  Valor </th> <th> Descripción </th> </thead>
 <tbody>
- <tr> <td> </td> <td> 111 </td> <td align='right'>  0 </td> <td> DEBITOS BOLETAS EMITIDAS  </td> </tr>
- <tr> <td> </td> <td> 538 </td> <td align='right'>  28873 </td> <td> TOTAL DEBITOS  </td> </tr>
  <tr> <td> </td> <td> 511 </td> <td align='right'>  21718 </td> <td> CRED.IVA POR DCTOS. ELECTRONICOS  </td> </tr>
- <tr> <td> </td> <td> 077 </td> <td align='right'>  75670 </td> <td> REMANENTE DE CREDITO FISC.  </td> </tr>
- <tr> <td> </td> <td> 504 </td> <td align='right'>  49237 </td> <td> REMANENTE CREDITO FISCAL MES ANTERIOR.  </td> </tr>
- <tr> <td> </td> <td> 062 </td> <td align='right'>  1092 </td> <td> PPM NETO DETERMINADO </td> </tr>
- <tr> <td> </td> <td> 527 </td> <td align='right'>  0 </td> <td> CANT.NOTAS DE CREDITO RECIBIDAS </td> </tr>
- <tr> <td> </td> <td> 110 </td> <td align='right'>  0 </td> <td> CANT.DE DCTOS.BOLETAS </td> </tr>
- <tr> <td> </td> <td> 524 </td> <td align='right'>  1 </td> <td> TOTAL FACTURA ACTIVO FIJO </td> </tr>
- <tr> <td> </td> <td> 525 </td> <td align='right'>  12772 </td> <td> CRÉD. RECUP. Y REINT. FACT. ACTIVO FIJO </td> </tr>
- <tr> <td> </td> <td> 509 </td> <td align='right'>  1 </td> <td> QtyNOTAS CREDITO EMITIDAS/Ref FACTURA | NOTA-CREDITO-RECIBIDA-RETENCION-PARCIAL-CAMBIO-SUEJETO </td> </tr>
- <tr> <td> </td> <td> 510 </td> <td align='right'>  106176 </td> <td> DEBITO N.CREDITO EMITIDAS/Ref FACTURA | NOTA-CREDITO-RECIBIDA-RETENCION-PARCIAL-CAMBIO-SUJETO </td> </tr>
- <tr> <td> </td> <td> -510 </td> <td align='right'>  28873 </td> <td>  Rechazados  -510 </td> </tr>
- <tr> <td> </td> <td> 758 </td> <td align='right'>  3 </td> <td> CANT. RECIBO DE PAGO MEDIOS ELECTRÓNICOS </td> </tr>
- <tr> <td> </td> <td> 759 </td> <td align='right'>  28872 </td> <td> DÉB. RECIBO DE PAGO MEDIOS ELECTRÓNICOS </td> </tr>
- <tr> <td> </td> <td> 586 </td> <td align='right'>  2 </td> <td> Qty Ventas/Servicios Exentos </td> </tr>
- <tr> <td> </td> <td> 142 </td> <td align='right'>  70000 </td> <td> Neto Ventas/Servicios Exentos </td> </tr>
- <tr> <td> </td> <td> 503 </td> <td align='right'>  2 </td> <td> CANT. FACTURAS EMITIDAS </td> </tr>
- <tr> <td> </td> <td> 502 </td> <td align='right'>  123880 </td> <td> DÉB. FACTURAS EMITIDAS </td> </tr>
- <tr> <td> </td> <td> 39 </td> <td align='right'>  -21976 </td> <td> IVA RETENIDO A TERCEROS POR CAMBIO DE SUJETO  </td> </tr>
- <tr> <td> </td> <td> 115 </td> <td align='right'>  0.125 </td> <td> TASA PPM 1ra Categoria </td> </tr>
- <tr> <td> </td> <td> 563 </td> <td align='right'>  873962 </td> <td> BASE IMPONIBLE </td> </tr>
- <tr> <td> </td> <td> 520 </td> <td align='right'>  8946 </td> <td> CREDITOS REC. REINT/FACT. DEL GIRO  </td> </tr>
+ <tr> <td> </td> <td> 538 </td> <td align='right'>  28873 </td> <td> TOTAL DEBITOS  </td> </tr>
+ <tr> <td> </td> <td> 111 </td> <td align='right'>  0 </td> <td> DEBITOS BOLETAS EMITIDAS  </td> </tr>
  <tr> <td> </td> <td> 519 </td> <td align='right'>  7 </td> <td> CANT.DE DCTOS.FACT.RECIB.DEL GIRO </td> </tr>
+ <tr> <td> </td> <td> 520 </td> <td align='right'>  8946 </td> <td> CREDITOS REC. REINT/FACT. DEL GIRO  </td> </tr>
+ <tr> <td> </td> <td> 563 </td> <td align='right'>  873962 </td> <td> BASE IMPONIBLE </td> </tr>
+ <tr> <td> </td> <td> 115 </td> <td align='right'>  0.125 </td> <td> TASA PPM 1ra Categoria </td> </tr>
+ <tr> <td> </td> <td> 39 </td> <td align='right'>  -21976 </td> <td> IVA RETENIDO A TERCEROS POR CAMBIO DE SUJETO  </td> </tr>
+ <tr> <td> </td> <td> 502 </td> <td align='right'>  123880 </td> <td> DÉB. FACTURAS EMITIDAS </td> </tr>
+ <tr> <td> </td> <td> 503 </td> <td align='right'>  2 </td> <td> CANT. FACTURAS EMITIDAS </td> </tr>
+ <tr> <td> </td> <td> 142 </td> <td align='right'>  70000 </td> <td> Neto Ventas/Servicios Exentos </td> </tr>
+ <tr> <td> </td> <td> 586 </td> <td align='right'>  2 </td> <td> Qty Ventas/Servicios Exentos </td> </tr>
+ <tr> <td> </td> <td> 759 </td> <td align='right'>  28872 </td> <td> DÉB. RECIBO DE PAGO MEDIOS ELECTRÓNICOS </td> </tr>
+ <tr> <td> </td> <td> 758 </td> <td align='right'>  3 </td> <td> CANT. RECIBO DE PAGO MEDIOS ELECTRÓNICOS </td> </tr>
+ <tr> <td> </td> <td> -510 </td> <td align='right'>  28873 </td> <td>  Rechazados  -510 </td> </tr>
+ <tr> <td> </td> <td> 510 </td> <td align='right'>  106176 </td> <td> DEBITO N.CREDITO EMITIDAS/Ref FACTURA | NOTA-CREDITO-RECIBIDA-RETENCION-PARCIAL-CAMBIO-SUJETO </td> </tr>
+ <tr> <td> </td> <td> 509 </td> <td align='right'>  1 </td> <td> QtyNOTAS CREDITO EMITIDAS/Ref FACTURA | NOTA-CREDITO-RECIBIDA-RETENCION-PARCIAL-CAMBIO-SUEJETO </td> </tr>
+ <tr> <td> </td> <td> 525 </td> <td align='right'>  12772 </td> <td> CRÉD. RECUP. Y REINT. FACT. ACTIVO FIJO </td> </tr>
+ <tr> <td> </td> <td> 524 </td> <td align='right'>  1 </td> <td> TOTAL FACTURA ACTIVO FIJO </td> </tr>
+ <tr> <td> </td> <td> 110 </td> <td align='right'>  0 </td> <td> CANT.DE DCTOS.BOLETAS </td> </tr>
+ <tr> <td> </td> <td> 527 </td> <td align='right'>  0 </td> <td> CANT.NOTAS DE CREDITO RECIBIDAS </td> </tr>
+ <tr> <td> </td> <td> 062 </td> <td align='right'>  1092 </td> <td> PPM NETO DETERMINADO </td> </tr>
+ <tr> <td> </td> <td> 504 </td> <td align='right'>  49237 </td> <td> REMANENTE CREDITO FISCAL MES ANTERIOR.  </td> </tr>
+ <tr> <td> </td> <td> 077 </td> <td align='right'>  75670 </td> <td> REMANENTE DE CREDITO FISC.  </td> </tr>
 </tbody></table><table>
 <tbody>
 <tr> <td> </td> <td> -7155 </td> <td> 0</td> </tr>
@@ -4866,37 +3762,31 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <br> 
 <p style='color: white; background-color: red'>  </p>
-- [x] tipo de asiento: f-29
-- [ ] rcv
-- [ ] libro-diario
-- [ ] ccm
-- [x] revisado
-![](../revisado.png)
 <p style='page-break-after: always;'>&nbsp;</p>
 <table id='Partida-1047' style='background-color:cornsilk'>
 <thead><th colspan='6'>Partida 1047</th></thead>
 <thead> <th> </th> <th> Código </th> <th>  Valor </th> <th> Descripción </th> </thead>
 <tbody>
- <tr> <td> </td> <td> 538 </td> <td align='right'>  6387 </td> <td> TOTAL DEBITOS  </td> </tr>
  <tr> <td> </td> <td> 511 </td> <td align='right'>  55003 </td> <td> CRED.IVA POR DCTOS. ELECTRONICOS  </td> </tr>
- <tr> <td> </td> <td> 077 </td> <td align='right'>  79091 </td> <td> REMANENTE DE CREDITO FISC.  </td> </tr>
- <tr> <td> </td> <td> 504 </td> <td align='right'>  76104 </td> <td> REMANENTE CREDITO FISCAL MES ANTERIOR.  </td> </tr>
- <tr> <td> </td> <td> 062 </td> <td align='right'>  584 </td> <td> PPM NETO DETERMINADO </td> </tr>
- <tr> <td> </td> <td> 527 </td> <td align='right'>  0 </td> <td> CANT.NOTAS DE CREDITO RECIBIDAS </td> </tr>
- <tr> <td> </td> <td> 39 </td> <td align='right'>  0 </td> <td> IVA RETENIDO A TERCEROS POR CAMBIO DE SUJETO  </td> </tr>
- <tr> <td> </td> <td> 509 </td> <td align='right'>  1 </td> <td> QtyNOTAS CREDITO EMITIDAS/Ref FACTURA | NOTA-CREDITO-RECIBIDA-RETENCION-PARCIAL-CAMBIO-SUEJETO </td> </tr>
- <tr> <td> </td> <td> 758 </td> <td align='right'>  1 </td> <td> CANT. RECIBO DE PAGO MEDIOS ELECTRÓNICOS </td> </tr>
- <tr> <td> </td> <td> 759 </td> <td align='right'>  6386 </td> <td> DÉB. RECIBO DE PAGO MEDIOS ELECTRÓNICOS </td> </tr>
- <tr> <td> </td> <td> 510 </td> <td align='right'>  23589 </td> <td> DEBITO N.CREDITO EMITIDAS/Ref FACTURA | NOTA-CREDITO-RECIBIDA-RETENCION-PARCIAL-CAMBIO-SUJETO </td> </tr>
- <tr> <td> </td> <td> 519 </td> <td align='right'>  2 </td> <td> CANT.DE DCTOS.FACT.RECIB.DEL GIRO </td> </tr>
- <tr> <td> </td> <td> 520 </td> <td align='right'>  8921 </td> <td> CREDITOS REC. REINT/FACT. DEL GIRO  </td> </tr>
- <tr> <td> </td> <td> 586 </td> <td align='right'>  2 </td> <td> Qty Ventas/Servicios Exentos </td> </tr>
- <tr> <td> </td> <td> 142 </td> <td align='right'>  46666 </td> <td> Neto Ventas/Servicios Exentos </td> </tr>
- <tr> <td> </td> <td> 528 </td> <td align='right'>  -1272 </td> <td> CREDITO RECUP.Y REINT/NOTAS DE CRED. </td> </tr>
- <tr> <td> </td> <td> 503 </td> <td align='right'>  4 </td> <td> CANT. FACTURAS EMITIDAS </td> </tr>
- <tr> <td> </td> <td> 502 </td> <td align='right'>  73583 </td> <td> DÉB. FACTURAS EMITIDAS </td> </tr>
- <tr> <td> </td> <td> 115 </td> <td align='right'>  0.125 </td> <td> TASA PPM 1ra Categoria </td> </tr>
+ <tr> <td> </td> <td> 538 </td> <td align='right'>  6387 </td> <td> TOTAL DEBITOS  </td> </tr>
  <tr> <td> </td> <td> 563 </td> <td align='right'>  467556 </td> <td> BASE IMPONIBLE </td> </tr>
+ <tr> <td> </td> <td> 115 </td> <td align='right'>  0.125 </td> <td> TASA PPM 1ra Categoria </td> </tr>
+ <tr> <td> </td> <td> 502 </td> <td align='right'>  73583 </td> <td> DÉB. FACTURAS EMITIDAS </td> </tr>
+ <tr> <td> </td> <td> 503 </td> <td align='right'>  4 </td> <td> CANT. FACTURAS EMITIDAS </td> </tr>
+ <tr> <td> </td> <td> 528 </td> <td align='right'>  -1272 </td> <td> CREDITO RECUP.Y REINT/NOTAS DE CRED. </td> </tr>
+ <tr> <td> </td> <td> 142 </td> <td align='right'>  46666 </td> <td> Neto Ventas/Servicios Exentos </td> </tr>
+ <tr> <td> </td> <td> 586 </td> <td align='right'>  2 </td> <td> Qty Ventas/Servicios Exentos </td> </tr>
+ <tr> <td> </td> <td> 520 </td> <td align='right'>  8921 </td> <td> CREDITOS REC. REINT/FACT. DEL GIRO  </td> </tr>
+ <tr> <td> </td> <td> 519 </td> <td align='right'>  2 </td> <td> CANT.DE DCTOS.FACT.RECIB.DEL GIRO </td> </tr>
+ <tr> <td> </td> <td> 510 </td> <td align='right'>  23589 </td> <td> DEBITO N.CREDITO EMITIDAS/Ref FACTURA | NOTA-CREDITO-RECIBIDA-RETENCION-PARCIAL-CAMBIO-SUJETO </td> </tr>
+ <tr> <td> </td> <td> 759 </td> <td align='right'>  6386 </td> <td> DÉB. RECIBO DE PAGO MEDIOS ELECTRÓNICOS </td> </tr>
+ <tr> <td> </td> <td> 758 </td> <td align='right'>  1 </td> <td> CANT. RECIBO DE PAGO MEDIOS ELECTRÓNICOS </td> </tr>
+ <tr> <td> </td> <td> 509 </td> <td align='right'>  1 </td> <td> QtyNOTAS CREDITO EMITIDAS/Ref FACTURA | NOTA-CREDITO-RECIBIDA-RETENCION-PARCIAL-CAMBIO-SUEJETO </td> </tr>
+ <tr> <td> </td> <td> 39 </td> <td align='right'>  0 </td> <td> IVA RETENIDO A TERCEROS POR CAMBIO DE SUJETO  </td> </tr>
+ <tr> <td> </td> <td> 527 </td> <td align='right'>  0 </td> <td> CANT.NOTAS DE CREDITO RECIBIDAS </td> </tr>
+ <tr> <td> </td> <td> 062 </td> <td align='right'>  584 </td> <td> PPM NETO DETERMINADO </td> </tr>
+ <tr> <td> </td> <td> 504 </td> <td align='right'>  76104 </td> <td> REMANENTE CREDITO FISCAL MES ANTERIOR.  </td> </tr>
+ <tr> <td> </td> <td> 077 </td> <td align='right'>  79091 </td> <td> REMANENTE DE CREDITO FISC.  </td> </tr>
 </tbody></table><table>
 <tbody>
 <tr> <td> </td> <td> 48616 </td> <td> 0</td> </tr>
@@ -4910,34 +3800,28 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <br> 
 <p style='color: white; background-color: red'>  </p>
-- [x] tipo de asiento: f-29
-- [ ] rcv
-- [ ] libro-diario
-- [ ] ccm
-- [x] revisado
-![](../revisado.png)
 <p style='page-break-after: always;'>&nbsp;</p>
 <table id='Partida-1048' style='background-color:cornsilk'>
 <thead><th colspan='6'>Partida 1048</th></thead>
 <thead> <th> </th> <th> Código </th> <th>  Valor </th> <th> Descripción </th> </thead>
 <tbody>
- <tr> <td> </td> <td> 111 </td> <td align='right'>  4407 </td> <td> DEBITOS BOLETAS EMITIDAS  </td> </tr>
  <tr> <td> </td> <td> 511 </td> <td align='right'>  14958 </td> <td> CRED.IVA POR DCTOS. ELECTRONICOS  </td> </tr>
- <tr> <td> </td> <td> 077 </td> <td align='right'>  42729 </td> <td> REMANENTE DE CREDITO FISC.  </td> </tr>
- <tr> <td> </td> <td> 504 </td> <td align='right'>  79369 </td> <td> REMANENTE CREDITO FISCAL MES ANTERIOR.  </td> </tr>
- <tr> <td> </td> <td> 062 </td> <td align='right'>  890 </td> <td> PPM NETO DETERMINADO </td> </tr>
- <tr> <td> </td> <td> 527 </td> <td align='right'>  0 </td> <td> CANT.NOTAS DE CREDITO RECIBIDAS </td> </tr>
- <tr> <td> </td> <td> 39 </td> <td align='right'>  0 </td> <td> IVA RETENIDO A TERCEROS POR CAMBIO DE SUJETO  </td> </tr>
- <tr> <td> </td> <td> 510 </td> <td align='right'>  2013 </td> <td> DEBITO N.CREDITO EMITIDAS/Ref FACTURA | NOTA-CREDITO-RECIBIDA-RETENCION-PARCIAL-CAMBIO-SUJETO </td> </tr>
- <tr> <td> </td> <td> 110 </td> <td align='right'>  1 </td> <td> CANT.DE DCTOS.BOLETAS </td> </tr>
- <tr> <td> </td> <td> 586 </td> <td align='right'>  2 </td> <td> Qty Ventas/Servicios Exentos </td> </tr>
- <tr> <td> </td> <td> 142 </td> <td align='right'>  406666 </td> <td> Neto Ventas/Servicios Exentos </td> </tr>
- <tr> <td> </td> <td> 503 </td> <td align='right'>  3 </td> <td> CANT. FACTURAS EMITIDAS </td> </tr>
- <tr> <td> </td> <td> 502 </td> <td align='right'>  53621 </td> <td> DÉB. FACTURAS EMITIDAS </td> </tr>
- <tr> <td> </td> <td> 520 </td> <td align='right'>  4594 </td> <td> CREDITOS REC. REINT/FACT. DEL GIRO  </td> </tr>
- <tr> <td> </td> <td> 519 </td> <td align='right'>  4 </td> <td> CANT.DE DCTOS.FACT.RECIB.DEL GIRO </td> </tr>
- <tr> <td> </td> <td> 115 </td> <td align='right'>  0.125 </td> <td> TASA PPM 1ra Categoria </td> </tr>
+ <tr> <td> </td> <td> 111 </td> <td align='right'>  4407 </td> <td> DEBITOS BOLETAS EMITIDAS  </td> </tr>
  <tr> <td> </td> <td> 563 </td> <td align='right'>  712080 </td> <td> BASE IMPONIBLE </td> </tr>
+ <tr> <td> </td> <td> 115 </td> <td align='right'>  0.125 </td> <td> TASA PPM 1ra Categoria </td> </tr>
+ <tr> <td> </td> <td> 519 </td> <td align='right'>  4 </td> <td> CANT.DE DCTOS.FACT.RECIB.DEL GIRO </td> </tr>
+ <tr> <td> </td> <td> 520 </td> <td align='right'>  4594 </td> <td> CREDITOS REC. REINT/FACT. DEL GIRO  </td> </tr>
+ <tr> <td> </td> <td> 502 </td> <td align='right'>  53621 </td> <td> DÉB. FACTURAS EMITIDAS </td> </tr>
+ <tr> <td> </td> <td> 503 </td> <td align='right'>  3 </td> <td> CANT. FACTURAS EMITIDAS </td> </tr>
+ <tr> <td> </td> <td> 142 </td> <td align='right'>  406666 </td> <td> Neto Ventas/Servicios Exentos </td> </tr>
+ <tr> <td> </td> <td> 586 </td> <td align='right'>  2 </td> <td> Qty Ventas/Servicios Exentos </td> </tr>
+ <tr> <td> </td> <td> 110 </td> <td align='right'>  1 </td> <td> CANT.DE DCTOS.BOLETAS </td> </tr>
+ <tr> <td> </td> <td> 510 </td> <td align='right'>  2013 </td> <td> DEBITO N.CREDITO EMITIDAS/Ref FACTURA | NOTA-CREDITO-RECIBIDA-RETENCION-PARCIAL-CAMBIO-SUJETO </td> </tr>
+ <tr> <td> </td> <td> 39 </td> <td align='right'>  0 </td> <td> IVA RETENIDO A TERCEROS POR CAMBIO DE SUJETO  </td> </tr>
+ <tr> <td> </td> <td> 527 </td> <td align='right'>  0 </td> <td> CANT.NOTAS DE CREDITO RECIBIDAS </td> </tr>
+ <tr> <td> </td> <td> 062 </td> <td align='right'>  890 </td> <td> PPM NETO DETERMINADO </td> </tr>
+ <tr> <td> </td> <td> 504 </td> <td align='right'>  79369 </td> <td> REMANENTE CREDITO FISCAL MES ANTERIOR.  </td> </tr>
+ <tr> <td> </td> <td> 077 </td> <td align='right'>  42729 </td> <td> REMANENTE DE CREDITO FISC.  </td> </tr>
 </tbody></table><table>
 <tbody>
 <tr> <td> </td> <td> 10551 </td> <td> 0</td> </tr>
@@ -4951,35 +3835,29 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <br> 
 <p style='color: white; background-color: red'>  </p>
-- [x] tipo de asiento: f-29
-- [ ] rcv
-- [ ] libro-diario
-- [ ] ccm
-- [x] revisado
-![](../revisado.png)
 <p style='page-break-after: always;'>&nbsp;</p>
 <table id='Partida-1049' style='background-color:cornsilk'>
 <thead><th colspan='6'>Partida 1049</th></thead>
 <thead> <th> </th> <th> Código </th> <th>  Valor </th> <th> Descripción </th> </thead>
 <tbody>
- <tr> <td> </td> <td> 111 </td> <td align='right'>  3990 </td> <td> DEBITOS BOLETAS EMITIDAS  </td> </tr>
  <tr> <td> </td> <td> 511 </td> <td align='right'>  2257 </td> <td> CRED.IVA POR DCTOS. ELECTRONICOS  </td> </tr>
- <tr> <td> </td> <td> 062 </td> <td align='right'>  143 </td> <td> PPM NETO DETERMINADO </td> </tr>
- <tr> <td> </td> <td> 527 </td> <td align='right'>  0 </td> <td> CANT.NOTAS DE CREDITO RECIBIDAS </td> </tr>
- <tr> <td> </td> <td> 586 </td> <td align='right'>  0 </td> <td> Qty Ventas/Servicios Exentos </td> </tr>
- <tr> <td> </td> <td> 142 </td> <td align='right'>  0 </td> <td> Neto Ventas/Servicios Exentos </td> </tr>
- <tr> <td> </td> <td> -528 </td> <td align='right'>  717 </td> <td>  Rechazados  -528 </td> </tr>
- <tr> <td> </td> <td> -39 </td> <td align='right'>  -717 </td> <td>  Rechazados  -39 </td> </tr>
- <tr> <td> </td> <td> 519 </td> <td align='right'>  1 </td> <td> CANT.DE DCTOS.FACT.RECIB.DEL GIRO </td> </tr>
- <tr> <td> </td> <td> 520 </td> <td align='right'>  1316 </td> <td> CREDITOS REC. REINT/FACT. DEL GIRO  </td> </tr>
- <tr> <td> </td> <td> 39 </td> <td align='right'>  -223 </td> <td> IVA RETENIDO A TERCEROS POR CAMBIO DE SUJETO  </td> </tr>
- <tr> <td> </td> <td> -586 </td> <td align='right'>  -6666 </td> <td>  Rechazados  -586 </td> </tr>
- <tr> <td> </td> <td> -142 </td> <td align='right'>  -6666 </td> <td>  Rechazados  -142 </td> </tr>
- <tr> <td> </td> <td> 110 </td> <td align='right'>  1 </td> <td> CANT.DE DCTOS.BOLETAS </td> </tr>
- <tr> <td> </td> <td> 503 </td> <td align='right'>  1 </td> <td> CANT. FACTURAS EMITIDAS </td> </tr>
- <tr> <td> </td> <td> 502 </td> <td align='right'>  17696 </td> <td> DÉB. FACTURAS EMITIDAS </td> </tr>
- <tr> <td> </td> <td> 115 </td> <td align='right'>  0.125 </td> <td> TASA PPM 1ra Categoria </td> </tr>
+ <tr> <td> </td> <td> 111 </td> <td align='right'>  3990 </td> <td> DEBITOS BOLETAS EMITIDAS  </td> </tr>
  <tr> <td> </td> <td> 563 </td> <td align='right'>  114139 </td> <td> BASE IMPONIBLE </td> </tr>
+ <tr> <td> </td> <td> 115 </td> <td align='right'>  0.125 </td> <td> TASA PPM 1ra Categoria </td> </tr>
+ <tr> <td> </td> <td> 502 </td> <td align='right'>  17696 </td> <td> DÉB. FACTURAS EMITIDAS </td> </tr>
+ <tr> <td> </td> <td> 503 </td> <td align='right'>  1 </td> <td> CANT. FACTURAS EMITIDAS </td> </tr>
+ <tr> <td> </td> <td> 110 </td> <td align='right'>  1 </td> <td> CANT.DE DCTOS.BOLETAS </td> </tr>
+ <tr> <td> </td> <td> -142 </td> <td align='right'>  -6666 </td> <td>  Rechazados  -142 </td> </tr>
+ <tr> <td> </td> <td> -586 </td> <td align='right'>  -6666 </td> <td>  Rechazados  -586 </td> </tr>
+ <tr> <td> </td> <td> 39 </td> <td align='right'>  -223 </td> <td> IVA RETENIDO A TERCEROS POR CAMBIO DE SUJETO  </td> </tr>
+ <tr> <td> </td> <td> 520 </td> <td align='right'>  1316 </td> <td> CREDITOS REC. REINT/FACT. DEL GIRO  </td> </tr>
+ <tr> <td> </td> <td> 519 </td> <td align='right'>  1 </td> <td> CANT.DE DCTOS.FACT.RECIB.DEL GIRO </td> </tr>
+ <tr> <td> </td> <td> -39 </td> <td align='right'>  -717 </td> <td>  Rechazados  -39 </td> </tr>
+ <tr> <td> </td> <td> -528 </td> <td align='right'>  717 </td> <td>  Rechazados  -528 </td> </tr>
+ <tr> <td> </td> <td> 142 </td> <td align='right'>  0 </td> <td> Neto Ventas/Servicios Exentos </td> </tr>
+ <tr> <td> </td> <td> 586 </td> <td align='right'>  0 </td> <td> Qty Ventas/Servicios Exentos </td> </tr>
+ <tr> <td> </td> <td> 527 </td> <td align='right'>  0 </td> <td> CANT.NOTAS DE CREDITO RECIBIDAS </td> </tr>
+ <tr> <td> </td> <td> 062 </td> <td align='right'>  143 </td> <td> PPM NETO DETERMINADO </td> </tr>
 </tbody></table><table>
 <tbody>
 <tr> <td> </td> <td> -1733 </td> <td> 0</td> </tr>
@@ -4993,25 +3871,19 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <br> 
 <p style='color: white; background-color: red'>  </p>
-- [x] tipo de asiento: f-29
-- [ ] rcv
-- [ ] libro-diario
-- [ ] ccm
-- [x] revisado
-![](../revisado.png)
 <p style='page-break-after: always;'>&nbsp;</p>
 <table id='Partida-1050' style='background-color:cornsilk'>
 <thead><th colspan='6'>Partida 1050</th></thead>
 <thead> <th> </th> <th> Código </th> <th>  Valor </th> <th> Descripción </th> </thead>
 <tbody>
  <tr> <td> </td> <td> 511 </td> <td align='right'>  4169 </td> <td> CRED.IVA POR DCTOS. ELECTRONICOS  </td> </tr>
- <tr> <td> </td> <td> 062 </td> <td align='right'>  8 </td> <td> PPM NETO DETERMINADO </td> </tr>
- <tr> <td> </td> <td> 586 </td> <td align='right'>  1 </td> <td> Qty Ventas/Servicios Exentos </td> </tr>
- <tr> <td> </td> <td> 142 </td> <td align='right'>  6666 </td> <td> Neto Ventas/Servicios Exentos </td> </tr>
- <tr> <td> </td> <td> 115 </td> <td align='right'>  0.125 </td> <td> TASA PPM 1ra Categoria </td> </tr>
- <tr> <td> </td> <td> 563 </td> <td align='right'>  6666 </td> <td> BASE IMPONIBLE </td> </tr>
- <tr> <td> </td> <td> 519 </td> <td align='right'>  3 </td> <td> CANT.DE DCTOS.FACT.RECIB.DEL GIRO </td> </tr>
  <tr> <td> </td> <td> 520 </td> <td align='right'>  4169 </td> <td> CREDITOS REC. REINT/FACT. DEL GIRO  </td> </tr>
+ <tr> <td> </td> <td> 519 </td> <td align='right'>  3 </td> <td> CANT.DE DCTOS.FACT.RECIB.DEL GIRO </td> </tr>
+ <tr> <td> </td> <td> 563 </td> <td align='right'>  6666 </td> <td> BASE IMPONIBLE </td> </tr>
+ <tr> <td> </td> <td> 115 </td> <td align='right'>  0.125 </td> <td> TASA PPM 1ra Categoria </td> </tr>
+ <tr> <td> </td> <td> 142 </td> <td align='right'>  6666 </td> <td> Neto Ventas/Servicios Exentos </td> </tr>
+ <tr> <td> </td> <td> 586 </td> <td align='right'>  1 </td> <td> Qty Ventas/Servicios Exentos </td> </tr>
+ <tr> <td> </td> <td> 062 </td> <td align='right'>  8 </td> <td> PPM NETO DETERMINADO </td> </tr>
 </tbody></table><table>
 <tbody>
 <tr> <td> </td> <td> 4169 </td> <td> 0</td> </tr>
@@ -5025,27 +3897,21 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <br> 
 <p style='color: white; background-color: red'>  </p>
-- [x] tipo de asiento: f-29
-- [ ] rcv
-- [ ] libro-diario
-- [ ] ccm
-- [x] revisado
-![](../revisado.png)
 <p style='page-break-after: always;'>&nbsp;</p>
 <table id='Partida-1051' style='background-color:cornsilk'>
 <thead><th colspan='6'>Partida 1051</th></thead>
 <thead> <th> </th> <th> Código </th> <th>  Valor </th> <th> Descripción </th> </thead>
 <tbody>
  <tr> <td> </td> <td> 511 </td> <td align='right'>  2911 </td> <td> CRED.IVA POR DCTOS. ELECTRONICOS  </td> </tr>
- <tr> <td> </td> <td> 062 </td> <td align='right'>  287 </td> <td> PPM NETO DETERMINADO </td> </tr>
- <tr> <td> </td> <td> 519 </td> <td align='right'>  1 </td> <td> CANT.DE DCTOS.FACT.RECIB.DEL GIRO </td> </tr>
- <tr> <td> </td> <td> 520 </td> <td align='right'>  1316 </td> <td> CREDITOS REC. REINT/FACT. DEL GIRO  </td> </tr>
- <tr> <td> </td> <td> 503 </td> <td align='right'>  2 </td> <td> CANT. FACTURAS EMITIDAS </td> </tr>
- <tr> <td> </td> <td> 502 </td> <td align='right'>  35392 </td> <td> DÉB. FACTURAS EMITIDAS </td> </tr>
- <tr> <td> </td> <td> 586 </td> <td align='right'>  3 </td> <td> Qty Ventas/Servicios Exentos </td> </tr>
- <tr> <td> </td> <td> 142 </td> <td align='right'>  43332 </td> <td> Neto Ventas/Servicios Exentos </td> </tr>
- <tr> <td> </td> <td> 115 </td> <td align='right'>  0.125 </td> <td> TASA PPM 1ra Categoria </td> </tr>
  <tr> <td> </td> <td> 563 </td> <td align='right'>  229606 </td> <td> BASE IMPONIBLE </td> </tr>
+ <tr> <td> </td> <td> 115 </td> <td align='right'>  0.125 </td> <td> TASA PPM 1ra Categoria </td> </tr>
+ <tr> <td> </td> <td> 142 </td> <td align='right'>  43332 </td> <td> Neto Ventas/Servicios Exentos </td> </tr>
+ <tr> <td> </td> <td> 586 </td> <td align='right'>  3 </td> <td> Qty Ventas/Servicios Exentos </td> </tr>
+ <tr> <td> </td> <td> 502 </td> <td align='right'>  35392 </td> <td> DÉB. FACTURAS EMITIDAS </td> </tr>
+ <tr> <td> </td> <td> 503 </td> <td align='right'>  2 </td> <td> CANT. FACTURAS EMITIDAS </td> </tr>
+ <tr> <td> </td> <td> 520 </td> <td align='right'>  1316 </td> <td> CREDITOS REC. REINT/FACT. DEL GIRO  </td> </tr>
+ <tr> <td> </td> <td> 519 </td> <td align='right'>  1 </td> <td> CANT.DE DCTOS.FACT.RECIB.DEL GIRO </td> </tr>
+ <tr> <td> </td> <td> 062 </td> <td align='right'>  287 </td> <td> PPM NETO DETERMINADO </td> </tr>
 </tbody></table><table>
 <tbody>
 <tr> <td> </td> <td> 2911 </td> <td> 0</td> </tr>
@@ -5059,429 +3925,437 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'>  </p>
 <br> 
-- [x] tipo de asiento: f-29
-- [ ] rcv
-- [ ] libro-diario
-- [ ] ccm
-- [x] revisado
-![](../revisado.png)
 <table id='Partida-1052'>
 <thead> <th style='background-color: lavender' colspan='6'>Partida 1052</th></thead>
 <tbody>
- <tr> <td>    <a href= '/necios-2021/libro-diario#Partida-1049'>octubre</a>  </td> <td> -586 </td> <td align='right' >  -6666 </td> <td>  Rechazados  -586 </td> </tr>
  <tr height='50 px' style='font-weight:bold; background-color: lightgreen'> <td>  <a href= '/necios-2021/libro-diario#Partida-1052'>^</a> </td> <td> -586 </td> <td align='right' >  -6666 </td> <td> Total Anual </td> </tr>
+ <tr> <td>    <a href= '/necios-2021/libro-diario#Partida-1049'>octubre</a>  </td> <td> -586 </td> <td align='right' >  -6666 </td> <td>  Rechazados  -586 </td> </tr>
  <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> -586</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-159'> Ir a partida: 159</a> </td> <td colspan='3' align='left' > Por venta en registro de compra-ventas del SII folio: 6 de visita-huelen-pago-4-6 a gonzalo </td>  </tr>
- <tr> <td>    <a href= '/necios-2021/libro-diario#Partida-1049'>octubre</a>  </td> <td> -528 </td> <td align='right' >  717 </td> <td>  Rechazados  -528 </td> </tr>
  <tr height='50 px' style='font-weight:bold; background-color: lightgreen'> <td>  <a href= '/necios-2021/libro-diario#Partida-1052'>^</a> </td> <td> -528 </td> <td align='right' >  717 </td> <td> Total Anual </td> </tr>
+ <tr> <td>    <a href= '/necios-2021/libro-diario#Partida-1049'>octubre</a>  </td> <td> -528 </td> <td align='right' >  717 </td> <td>  Rechazados  -528 </td> </tr>
  <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> -528</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-163'> Ir a partida: 163</a> </td> <td colspan='3' align='left' > Por Gasto Administrativo: Pago Mensual de Workers Serverless. </td>  </tr>
- <tr> <td>    <a href= '/necios-2021/libro-diario#Partida-1046'>julio</a>  </td> <td> -510 </td> <td align='right' >  28873 </td> <td>  Rechazados  -510 </td> </tr>
  <tr height='50 px' style='font-weight:bold; background-color: lightgreen'> <td>  <a href= '/necios-2021/libro-diario#Partida-1052'>^</a> </td> <td> -510 </td> <td align='right' >  28873 </td> <td> Total Anual </td> </tr>
  <tr style='font-weight:bold; color:white; background-color: red'> <td colspan='4' > LINEA F22: 'Rechazados de Notas de Crédito emitidas por ventas y servicios'. </td> </tr>
+ <tr> <td>    <a href= '/necios-2021/libro-diario#Partida-1046'>julio</a>  </td> <td> -510 </td> <td align='right' >  28873 </td> <td>  Rechazados  -510 </td> </tr>
  <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> -510</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-87'> Ir a partida: 87</a> </td> <td colspan='3' align='left' > Devolución a subcuenta ventas-con-voucher-afecto por Anula Vouchers para Ser Reemplazados por Otros Docs. mes julio </td>  </tr>
- <tr> <td>    <a href= '/necios-2021/libro-diario#Partida-1049'>octubre</a>  </td> <td> -142 </td> <td align='right' >  -6666 </td> <td>  Rechazados  -142 </td> </tr>
  <tr height='50 px' style='font-weight:bold; background-color: lightgreen'> <td>  <a href= '/necios-2021/libro-diario#Partida-1052'>^</a> </td> <td> -142 </td> <td align='right' >  -6666 </td> <td> Total Anual </td> </tr>
  <tr style='font-weight:bold; color:white; background-color: red'> <td colspan='4' > LINEA F22: 'Rechazados de Ventas y/o Servicios prestados Exentos, o No Gravados'. </td> </tr>
+ <tr> <td>    <a href= '/necios-2021/libro-diario#Partida-1049'>octubre</a>  </td> <td> -142 </td> <td align='right' >  -6666 </td> <td>  Rechazados  -142 </td> </tr>
  <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> -142</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-159'> Ir a partida: 159</a> </td> <td colspan='3' align='left' > Por venta en registro de compra-ventas del SII folio: 6 de visita-huelen-pago-4-6 a gonzalo </td>  </tr>
- <tr> <td>    <a href= '/necios-2021/libro-diario#Partida-1049'>octubre</a>  </td> <td> -39 </td> <td align='right' >  -717 </td> <td>  Rechazados  -39 </td> </tr>
  <tr height='50 px' style='font-weight:bold; background-color: lightgreen'> <td>  <a href= '/necios-2021/libro-diario#Partida-1052'>^</a> </td> <td> -39 </td> <td align='right' >  -717 </td> <td> Total Anual </td> </tr>
+ <tr> <td>    <a href= '/necios-2021/libro-diario#Partida-1049'>octubre</a>  </td> <td> -39 </td> <td align='right' >  -717 </td> <td>  Rechazados  -39 </td> </tr>
  <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> -39</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-163'> Ir a partida: 163</a> </td> <td colspan='3' align='left' > Por Gasto Administrativo: Pago Mensual de Workers Serverless. </td>  </tr>
- <tr> <td>    <a href= '/necios-2021/libro-diario#Partida-1048'>septiembre</a>  </td> <td> 39 </td> <td align='right' >  0 </td> <td> IVA RETENIDO A TERCEROS POR CAMBIO DE SUJETO  </td> </tr>
- <tr> <td>    <a href= '/necios-2021/libro-diario#Partida-1047'>agosto</a>  </td> <td> 39 </td> <td align='right' >  0 </td> <td> IVA RETENIDO A TERCEROS POR CAMBIO DE SUJETO  </td> </tr>
- <tr> <td>    <a href= '/necios-2021/libro-diario#Partida-1049'>octubre</a>  </td> <td> 39 </td> <td align='right' >  -223 </td> <td> IVA RETENIDO A TERCEROS POR CAMBIO DE SUJETO  </td> </tr>
- <tr> <td>    <a href= '/necios-2021/libro-diario#Partida-1045'>junio</a>  </td> <td> 39 </td> <td align='right' >  -1409 </td> <td> IVA RETENIDO A TERCEROS POR CAMBIO DE SUJETO  </td> </tr>
- <tr> <td>    <a href= '/necios-2021/libro-diario#Partida-1046'>julio</a>  </td> <td> 39 </td> <td align='right' >  -21976 </td> <td> IVA RETENIDO A TERCEROS POR CAMBIO DE SUJETO  </td> </tr>
  <tr height='50 px' style='font-weight:bold; background-color: lightgreen'> <td>  <a href= '/necios-2021/libro-diario#Partida-1052'>^</a> </td> <td> 39 </td> <td align='right' >  -23608 </td> <td> Total Anual </td> </tr>
- <tr height='50 px' style= 'text-decoration-line: line-through; text-decoration-line-color: red; font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 39</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-163'> Ir a partida: 163</a> </td> <td colspan='3' align='left' > Por Gasto Administrativo: Pago Mensual de Workers Serverless. </td>  </tr>
- <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 39</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-160'> Ir a partida: 160</a> </td> <td colspan='3' align='left' > Por Gasto Administrativo: Pago Mensual de Arriendo de Correo y Almacenamiento en la nube. </td>  </tr>
- <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 39</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-48'> Ir a partida: 48</a> </td> <td colspan='3' align='left' > Por Gasto Administrativo: Pago Mensual de Workers Serverless. </td>  </tr>
- <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 39</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-41'> Ir a partida: 41</a> </td> <td colspan='3' align='left' > Por Gasto Administrativo: Pago Mensual de Arriendo de Correo y Almacenamiento en la nube. </td>  </tr>
- <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 39</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-47'> Ir a partida: 47</a> </td> <td colspan='3' align='left' > Por Gasto Promocional: Pago Mensual de 1TM Video Maker. </td>  </tr>
- <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 39</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-79'> Ir a partida: 79</a> </td> <td colspan='3' align='left' > Por Gasto Administrativo: Pago Mensual de Workers Serverless. </td>  </tr>
- <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 39</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-68'> Ir a partida: 68</a> </td> <td colspan='3' align='left' > Por Gasto Promocional: Pago Anual Boosted. </td>  </tr>
- <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 39</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-69'> Ir a partida: 69</a> </td> <td colspan='3' align='left' > Por Gasto Promocional: Pago Mensual Julio Google Ads. </td>  </tr>
+ <tr> <td>    <a href= '/necios-2021/libro-diario#Partida-1046'>julio</a>  </td> <td> 39 </td> <td align='right' >  -21976 </td> <td> IVA RETENIDO A TERCEROS POR CAMBIO DE SUJETO  </td> </tr>
  <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 39</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-78'> Ir a partida: 78</a> </td> <td colspan='3' align='left' > Por Gasto Promocional: Pago Anual de 1TM Video Maker. </td>  </tr>
- <tr> <td>    <a href= '/necios-2021/libro-diario#Partida-1046'>julio</a>  </td> <td> 110 </td> <td align='right' >  0 </td> <td> CANT.DE DCTOS.BOLETAS </td> </tr>
- <tr> <td>    <a href= '/necios-2021/libro-diario#Partida-1040'>enero</a>  </td> <td> 110 </td> <td align='right' >  1 </td> <td> CANT.DE DCTOS.BOLETAS </td> </tr>
- <tr> <td>    <a href= '/necios-2021/libro-diario#Partida-1041'>febrero</a>  </td> <td> 110 </td> <td align='right' >  2 </td> <td> CANT.DE DCTOS.BOLETAS </td> </tr>
- <tr> <td>    <a href= '/necios-2021/libro-diario#Partida-1048'>septiembre</a>  </td> <td> 110 </td> <td align='right' >  1 </td> <td> CANT.DE DCTOS.BOLETAS </td> </tr>
- <tr> <td>    <a href= '/necios-2021/libro-diario#Partida-1049'>octubre</a>  </td> <td> 110 </td> <td align='right' >  1 </td> <td> CANT.DE DCTOS.BOLETAS </td> </tr>
+ <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 39</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-69'> Ir a partida: 69</a> </td> <td colspan='3' align='left' > Por Gasto Promocional: Pago Mensual Julio Google Ads. </td>  </tr>
+ <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 39</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-68'> Ir a partida: 68</a> </td> <td colspan='3' align='left' > Por Gasto Promocional: Pago Anual Boosted. </td>  </tr>
+ <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 39</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-79'> Ir a partida: 79</a> </td> <td colspan='3' align='left' > Por Gasto Administrativo: Pago Mensual de Workers Serverless. </td>  </tr>
+ <tr> <td>    <a href= '/necios-2021/libro-diario#Partida-1045'>junio</a>  </td> <td> 39 </td> <td align='right' >  -1409 </td> <td> IVA RETENIDO A TERCEROS POR CAMBIO DE SUJETO  </td> </tr>
+ <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 39</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-47'> Ir a partida: 47</a> </td> <td colspan='3' align='left' > Por Gasto Promocional: Pago Mensual de 1TM Video Maker. </td>  </tr>
+ <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 39</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-41'> Ir a partida: 41</a> </td> <td colspan='3' align='left' > Por Gasto Administrativo: Pago Mensual de Arriendo de Correo y Almacenamiento en la nube. </td>  </tr>
+ <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 39</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-48'> Ir a partida: 48</a> </td> <td colspan='3' align='left' > Por Gasto Administrativo: Pago Mensual de Workers Serverless. </td>  </tr>
+ <tr> <td>    <a href= '/necios-2021/libro-diario#Partida-1049'>octubre</a>  </td> <td> 39 </td> <td align='right' >  -223 </td> <td> IVA RETENIDO A TERCEROS POR CAMBIO DE SUJETO  </td> </tr>
+ <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 39</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-160'> Ir a partida: 160</a> </td> <td colspan='3' align='left' > Por Gasto Administrativo: Pago Mensual de Arriendo de Correo y Almacenamiento en la nube. </td>  </tr>
+ <tr height='50 px' style= 'text-decoration-line: line-through; text-decoration-line-color: red; font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 39</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-163'> Ir a partida: 163</a> </td> <td colspan='3' align='left' > Por Gasto Administrativo: Pago Mensual de Workers Serverless. </td>  </tr>
+ <tr> <td>    <a href= '/necios-2021/libro-diario#Partida-1047'>agosto</a>  </td> <td> 39 </td> <td align='right' >  0 </td> <td> IVA RETENIDO A TERCEROS POR CAMBIO DE SUJETO  </td> </tr>
+ <tr> <td>    <a href= '/necios-2021/libro-diario#Partida-1048'>septiembre</a>  </td> <td> 39 </td> <td align='right' >  0 </td> <td> IVA RETENIDO A TERCEROS POR CAMBIO DE SUJETO  </td> </tr>
  <tr height='50 px' style='font-weight:bold; background-color: lightgreen'> <td>  <a href= '/necios-2021/libro-diario#Partida-1052'>^</a> </td> <td> 110 </td> <td align='right' >  5 </td> <td> Total Anual </td> </tr>
- <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 110</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-3'> Ir a partida: 3</a> </td> <td colspan='3' align='left' > Por rendición de e-boletas afectas de enero de 2021 </td>  </tr>
- <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 110</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-1911'> Ir a partida: 1911</a> </td> <td colspan='3' align='left' > Por rendición de e-boletas afectas de febrero de 2021 </td>  </tr>
- <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 110</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-135'> Ir a partida: 135</a> </td> <td colspan='3' align='left' > Por rendición de e-boletas afectas de septiembre de 2021 </td>  </tr>
+ <tr> <td>    <a href= '/necios-2021/libro-diario#Partida-1049'>octubre</a>  </td> <td> 110 </td> <td align='right' >  1 </td> <td> CANT.DE DCTOS.BOLETAS </td> </tr>
  <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 110</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-162'> Ir a partida: 162</a> </td> <td colspan='3' align='left' > Por rendición de e-boletas afectas de octubre de 2021 </td>  </tr>
- <tr> <td>    <a href= '/necios-2021/libro-diario#Partida-1046'>julio</a>  </td> <td> 111 </td> <td align='right' >  0 </td> <td> DEBITOS BOLETAS EMITIDAS  </td> </tr>
- <tr> <td>    <a href= '/necios-2021/libro-diario#Partida-1040'>enero</a>  </td> <td> 111 </td> <td align='right' >  5588 </td> <td> DEBITOS BOLETAS EMITIDAS  </td> </tr>
- <tr> <td>    <a href= '/necios-2021/libro-diario#Partida-1041'>febrero</a>  </td> <td> 111 </td> <td align='right' >  16 </td> <td> DEBITOS BOLETAS EMITIDAS  </td> </tr>
- <tr> <td>    <a href= '/necios-2021/libro-diario#Partida-1048'>septiembre</a>  </td> <td> 111 </td> <td align='right' >  4407 </td> <td> DEBITOS BOLETAS EMITIDAS  </td> </tr>
- <tr> <td>    <a href= '/necios-2021/libro-diario#Partida-1049'>octubre</a>  </td> <td> 111 </td> <td align='right' >  3990 </td> <td> DEBITOS BOLETAS EMITIDAS  </td> </tr>
+ <tr> <td>    <a href= '/necios-2021/libro-diario#Partida-1048'>septiembre</a>  </td> <td> 110 </td> <td align='right' >  1 </td> <td> CANT.DE DCTOS.BOLETAS </td> </tr>
+ <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 110</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-135'> Ir a partida: 135</a> </td> <td colspan='3' align='left' > Por rendición de e-boletas afectas de septiembre de 2021 </td>  </tr>
+ <tr> <td>    <a href= '/necios-2021/libro-diario#Partida-1041'>febrero</a>  </td> <td> 110 </td> <td align='right' >  2 </td> <td> CANT.DE DCTOS.BOLETAS </td> </tr>
+ <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 110</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-1911'> Ir a partida: 1911</a> </td> <td colspan='3' align='left' > Por rendición de e-boletas afectas de febrero de 2021 </td>  </tr>
+ <tr> <td>    <a href= '/necios-2021/libro-diario#Partida-1040'>enero</a>  </td> <td> 110 </td> <td align='right' >  1 </td> <td> CANT.DE DCTOS.BOLETAS </td> </tr>
+ <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 110</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-3'> Ir a partida: 3</a> </td> <td colspan='3' align='left' > Por rendición de e-boletas afectas de enero de 2021 </td>  </tr>
+ <tr> <td>    <a href= '/necios-2021/libro-diario#Partida-1046'>julio</a>  </td> <td> 110 </td> <td align='right' >  0 </td> <td> CANT.DE DCTOS.BOLETAS </td> </tr>
  <tr height='50 px' style='font-weight:bold; background-color: lightgreen'> <td>  <a href= '/necios-2021/libro-diario#Partida-1052'>^</a> </td> <td> 111 </td> <td align='right' >  14001 </td> <td> Total Anual </td> </tr>
  <tr style='font-weight:bold; color:white; background-color: red'> <td colspan='4' > LINEA F22: 'Boletas y Comprobante o recibo de pago de transacciones transbank'. </td> </tr>
- <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 111</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-3'> Ir a partida: 3</a> </td> <td colspan='3' align='left' > Por rendición de e-boletas afectas de enero de 2021 </td>  </tr>
- <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 111</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-1911'> Ir a partida: 1911</a> </td> <td colspan='3' align='left' > Por rendición de e-boletas afectas de febrero de 2021 </td>  </tr>
- <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 111</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-135'> Ir a partida: 135</a> </td> <td colspan='3' align='left' > Por rendición de e-boletas afectas de septiembre de 2021 </td>  </tr>
+ <tr> <td>    <a href= '/necios-2021/libro-diario#Partida-1049'>octubre</a>  </td> <td> 111 </td> <td align='right' >  3990 </td> <td> DEBITOS BOLETAS EMITIDAS  </td> </tr>
  <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 111</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-162'> Ir a partida: 162</a> </td> <td colspan='3' align='left' > Por rendición de e-boletas afectas de octubre de 2021 </td>  </tr>
- <tr> <td>    <a href= '/necios-2021/libro-diario#Partida-1041'>febrero</a>  </td> <td> 115 </td> <td align='right' >  0.13 </td> <td> TASA PPM 1ra Categoria </td> </tr>
- <tr> <td>    <a href= '/necios-2021/libro-diario#Partida-1042'>marzo</a>  </td> <td> 115 </td> <td align='right' >  0.13 </td> <td> TASA PPM 1ra Categoria </td> </tr>
- <tr> <td>    <a href= '/necios-2021/libro-diario#Partida-1043'>abril</a>  </td> <td> 115 </td> <td align='right' >  0.125 </td> <td> TASA PPM 1ra Categoria </td> </tr>
- <tr> <td>    <a href= '/necios-2021/libro-diario#Partida-1050'>noviembre</a>  </td> <td> 115 </td> <td align='right' >  0.125 </td> <td> TASA PPM 1ra Categoria </td> </tr>
- <tr> <td>    <a href= '/necios-2021/libro-diario#Partida-1040'>enero</a>  </td> <td> 115 </td> <td align='right' >  0.13 </td> <td> TASA PPM 1ra Categoria </td> </tr>
- <tr> <td>    <a href= '/necios-2021/libro-diario#Partida-1049'>octubre</a>  </td> <td> 115 </td> <td align='right' >  0.125 </td> <td> TASA PPM 1ra Categoria </td> </tr>
- <tr> <td>    <a href= '/necios-2021/libro-diario#Partida-1046'>julio</a>  </td> <td> 115 </td> <td align='right' >  0.125 </td> <td> TASA PPM 1ra Categoria </td> </tr>
- <tr> <td>    <a href= '/necios-2021/libro-diario#Partida-1051'>diciembre</a>  </td> <td> 115 </td> <td align='right' >  0.125 </td> <td> TASA PPM 1ra Categoria </td> </tr>
- <tr> <td>    <a href= '/necios-2021/libro-diario#Partida-1048'>septiembre</a>  </td> <td> 115 </td> <td align='right' >  0.125 </td> <td> TASA PPM 1ra Categoria </td> </tr>
- <tr> <td>    <a href= '/necios-2021/libro-diario#Partida-1047'>agosto</a>  </td> <td> 115 </td> <td align='right' >  0.125 </td> <td> TASA PPM 1ra Categoria </td> </tr>
+ <tr> <td>    <a href= '/necios-2021/libro-diario#Partida-1048'>septiembre</a>  </td> <td> 111 </td> <td align='right' >  4407 </td> <td> DEBITOS BOLETAS EMITIDAS  </td> </tr>
+ <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 111</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-135'> Ir a partida: 135</a> </td> <td colspan='3' align='left' > Por rendición de e-boletas afectas de septiembre de 2021 </td>  </tr>
+ <tr> <td>    <a href= '/necios-2021/libro-diario#Partida-1041'>febrero</a>  </td> <td> 111 </td> <td align='right' >  16 </td> <td> DEBITOS BOLETAS EMITIDAS  </td> </tr>
+ <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 111</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-1911'> Ir a partida: 1911</a> </td> <td colspan='3' align='left' > Por rendición de e-boletas afectas de febrero de 2021 </td>  </tr>
+ <tr> <td>    <a href= '/necios-2021/libro-diario#Partida-1040'>enero</a>  </td> <td> 111 </td> <td align='right' >  5588 </td> <td> DEBITOS BOLETAS EMITIDAS  </td> </tr>
+ <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 111</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-3'> Ir a partida: 3</a> </td> <td colspan='3' align='left' > Por rendición de e-boletas afectas de enero de 2021 </td>  </tr>
+ <tr> <td>    <a href= '/necios-2021/libro-diario#Partida-1046'>julio</a>  </td> <td> 111 </td> <td align='right' >  0 </td> <td> DEBITOS BOLETAS EMITIDAS  </td> </tr>
  <tr height='50 px' style='font-weight:bold; background-color: lightgreen'> <td>  <a href= '/necios-2021/libro-diario#Partida-1052'>^</a> </td> <td> 115 </td> <td align='right' >  1.265 </td> <td> Total Anual </td> </tr>
- <tr> <td>    <a href= '/necios-2021/libro-diario#Partida-1049'>octubre</a>  </td> <td> 142 </td> <td align='right' >  0 </td> <td> Neto Ventas/Servicios Exentos </td> </tr>
- <tr> <td>    <a href= '/necios-2021/libro-diario#Partida-1050'>noviembre</a>  </td> <td> 142 </td> <td align='right' >  6666 </td> <td> Neto Ventas/Servicios Exentos </td> </tr>
- <tr> <td>    <a href= '/necios-2021/libro-diario#Partida-1046'>julio</a>  </td> <td> 142 </td> <td align='right' >  70000 </td> <td> Neto Ventas/Servicios Exentos </td> </tr>
- <tr> <td>    <a href= '/necios-2021/libro-diario#Partida-1047'>agosto</a>  </td> <td> 142 </td> <td align='right' >  46666 </td> <td> Neto Ventas/Servicios Exentos </td> </tr>
- <tr> <td>    <a href= '/necios-2021/libro-diario#Partida-1048'>septiembre</a>  </td> <td> 142 </td> <td align='right' >  406666 </td> <td> Neto Ventas/Servicios Exentos </td> </tr>
- <tr> <td>    <a href= '/necios-2021/libro-diario#Partida-1051'>diciembre</a>  </td> <td> 142 </td> <td align='right' >  43332 </td> <td> Neto Ventas/Servicios Exentos </td> </tr>
+ <tr> <td>    <a href= '/necios-2021/libro-diario#Partida-1047'>agosto</a>  </td> <td> 115 </td> <td align='right' >  0.125 </td> <td> TASA PPM 1ra Categoria </td> </tr>
+ <tr> <td>    <a href= '/necios-2021/libro-diario#Partida-1048'>septiembre</a>  </td> <td> 115 </td> <td align='right' >  0.125 </td> <td> TASA PPM 1ra Categoria </td> </tr>
+ <tr> <td>    <a href= '/necios-2021/libro-diario#Partida-1051'>diciembre</a>  </td> <td> 115 </td> <td align='right' >  0.125 </td> <td> TASA PPM 1ra Categoria </td> </tr>
+ <tr> <td>    <a href= '/necios-2021/libro-diario#Partida-1046'>julio</a>  </td> <td> 115 </td> <td align='right' >  0.125 </td> <td> TASA PPM 1ra Categoria </td> </tr>
+ <tr> <td>    <a href= '/necios-2021/libro-diario#Partida-1049'>octubre</a>  </td> <td> 115 </td> <td align='right' >  0.125 </td> <td> TASA PPM 1ra Categoria </td> </tr>
+ <tr> <td>    <a href= '/necios-2021/libro-diario#Partida-1040'>enero</a>  </td> <td> 115 </td> <td align='right' >  0.13 </td> <td> TASA PPM 1ra Categoria </td> </tr>
+ <tr> <td>    <a href= '/necios-2021/libro-diario#Partida-1050'>noviembre</a>  </td> <td> 115 </td> <td align='right' >  0.125 </td> <td> TASA PPM 1ra Categoria </td> </tr>
+ <tr> <td>    <a href= '/necios-2021/libro-diario#Partida-1043'>abril</a>  </td> <td> 115 </td> <td align='right' >  0.125 </td> <td> TASA PPM 1ra Categoria </td> </tr>
+ <tr> <td>    <a href= '/necios-2021/libro-diario#Partida-1042'>marzo</a>  </td> <td> 115 </td> <td align='right' >  0.13 </td> <td> TASA PPM 1ra Categoria </td> </tr>
+ <tr> <td>    <a href= '/necios-2021/libro-diario#Partida-1041'>febrero</a>  </td> <td> 115 </td> <td align='right' >  0.13 </td> <td> TASA PPM 1ra Categoria </td> </tr>
  <tr height='50 px' style='font-weight:bold; background-color: lightgreen'> <td>  <a href= '/necios-2021/libro-diario#Partida-1052'>^</a> </td> <td> 142 </td> <td align='right' >  573330 </td> <td> Total Anual </td> </tr>
  <tr style='font-weight:bold; color:white; background-color: red'> <td colspan='4' > LINEA F22: 'Ventas y/o Servicios prestados Exentos, o No Gravados'. </td> </tr>
- <tr height='50 px' style= 'text-decoration-line: line-through; text-decoration-line-color: red; font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 142</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-159'> Ir a partida: 159</a> </td> <td colspan='3' align='left' > Por venta en registro de compra-ventas del SII folio: 6 de visita-huelen-pago-4-6 a gonzalo </td>  </tr>
- <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 142</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-170'> Ir a partida: 170</a> </td> <td colspan='3' align='left' > Por venta en registro de compra-ventas del SII folio: 7 de visita-huelen-pago-5-6 a gonzalo </td>  </tr>
- <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 142</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-75'> Ir a partida: 75</a> </td> <td colspan='3' align='left' > Por venta en registro de compra-ventas del SII folio: 1 de revision-electrica a gonzalo </td>  </tr>
- <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 142</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-81'> Ir a partida: 81</a> </td> <td colspan='3' align='left' > Por rendición de e-boletas exentas de julio de 2021 </td>  </tr>
- <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 142</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-93'> Ir a partida: 93</a> </td> <td colspan='3' align='left' > Por venta en registro de compra-ventas del SII folio: 2 de visita-a-huelen a gonzalo </td>  </tr>
- <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 142</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-117'> Ir a partida: 117</a> </td> <td colspan='3' align='left' > Por venta en registro de compra-ventas del SII folio: 3 de diseño-electrico-los-capitanes-fase-2 a gonzalo </td>  </tr>
- <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 142</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-128'> Ir a partida: 128</a> </td> <td colspan='3' align='left' > Por venta en registro de compra-ventas del SII folio: 4 de diseño-electrico-los-capitanes-fase-2 a gonzalo </td>  </tr>
- <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 142</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-133'> Ir a partida: 133</a> </td> <td colspan='3' align='left' > Por venta en registro de compra-ventas del SII folio: 5 de visita-huelen-pago-2-6-la-boleta-dice-pago-1-de-6 a gonzalo </td>  </tr>
- <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 142</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-195'> Ir a partida: 195</a> </td> <td colspan='3' align='left' > Por venta en registro de compra-ventas del SII folio: 8 de visita-huelen-pago-5-6 a gonzalo </td>  </tr>
- <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 142</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-199'> Ir a partida: 199</a> </td> <td colspan='3' align='left' > Por venta a gonzalo </td>  </tr>
+ <tr> <td>    <a href= '/necios-2021/libro-diario#Partida-1051'>diciembre</a>  </td> <td> 142 </td> <td align='right' >  43332 </td> <td> Neto Ventas/Servicios Exentos </td> </tr>
  <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 142</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-196'> Ir a partida: 196</a> </td> <td colspan='3' align='left' > Por venta en registro de compra-ventas del SII folio: 9 de visita-huelen-pago-6-6 a gonzalo </td>  </tr>
- <tr> <td>    <a href= '/necios-2021/libro-diario#Partida-1049'>octubre</a>  </td> <td> 502 </td> <td align='right' >  17696 </td> <td> DÉB. FACTURAS EMITIDAS </td> </tr>
- <tr> <td>    <a href= '/necios-2021/libro-diario#Partida-1046'>julio</a>  </td> <td> 502 </td> <td align='right' >  123880 </td> <td> DÉB. FACTURAS EMITIDAS </td> </tr>
- <tr> <td>    <a href= '/necios-2021/libro-diario#Partida-1051'>diciembre</a>  </td> <td> 502 </td> <td align='right' >  35392 </td> <td> DÉB. FACTURAS EMITIDAS </td> </tr>
- <tr> <td>    <a href= '/necios-2021/libro-diario#Partida-1048'>septiembre</a>  </td> <td> 502 </td> <td align='right' >  53621 </td> <td> DÉB. FACTURAS EMITIDAS </td> </tr>
- <tr> <td>    <a href= '/necios-2021/libro-diario#Partida-1047'>agosto</a>  </td> <td> 502 </td> <td align='right' >  73583 </td> <td> DÉB. FACTURAS EMITIDAS </td> </tr>
+ <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 142</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-199'> Ir a partida: 199</a> </td> <td colspan='3' align='left' > Por venta a gonzalo </td>  </tr>
+ <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 142</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-195'> Ir a partida: 195</a> </td> <td colspan='3' align='left' > Por venta en registro de compra-ventas del SII folio: 8 de visita-huelen-pago-5-6 a gonzalo </td>  </tr>
+ <tr> <td>    <a href= '/necios-2021/libro-diario#Partida-1048'>septiembre</a>  </td> <td> 142 </td> <td align='right' >  406666 </td> <td> Neto Ventas/Servicios Exentos </td> </tr>
+ <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 142</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-133'> Ir a partida: 133</a> </td> <td colspan='3' align='left' > Por venta en registro de compra-ventas del SII folio: 5 de visita-huelen-pago-2-6-la-boleta-dice-pago-1-de-6 a gonzalo </td>  </tr>
+ <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 142</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-128'> Ir a partida: 128</a> </td> <td colspan='3' align='left' > Por venta en registro de compra-ventas del SII folio: 4 de diseño-electrico-los-capitanes-fase-2 a gonzalo </td>  </tr>
+ <tr> <td>    <a href= '/necios-2021/libro-diario#Partida-1047'>agosto</a>  </td> <td> 142 </td> <td align='right' >  46666 </td> <td> Neto Ventas/Servicios Exentos </td> </tr>
+ <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 142</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-117'> Ir a partida: 117</a> </td> <td colspan='3' align='left' > Por venta en registro de compra-ventas del SII folio: 3 de diseño-electrico-los-capitanes-fase-2 a gonzalo </td>  </tr>
+ <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 142</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-93'> Ir a partida: 93</a> </td> <td colspan='3' align='left' > Por venta en registro de compra-ventas del SII folio: 2 de visita-a-huelen a gonzalo </td>  </tr>
+ <tr> <td>    <a href= '/necios-2021/libro-diario#Partida-1046'>julio</a>  </td> <td> 142 </td> <td align='right' >  70000 </td> <td> Neto Ventas/Servicios Exentos </td> </tr>
+ <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 142</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-81'> Ir a partida: 81</a> </td> <td colspan='3' align='left' > Por rendición de e-boletas exentas de julio de 2021 </td>  </tr>
+ <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 142</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-75'> Ir a partida: 75</a> </td> <td colspan='3' align='left' > Por venta en registro de compra-ventas del SII folio: 1 de revision-electrica a gonzalo </td>  </tr>
+ <tr> <td>    <a href= '/necios-2021/libro-diario#Partida-1050'>noviembre</a>  </td> <td> 142 </td> <td align='right' >  6666 </td> <td> Neto Ventas/Servicios Exentos </td> </tr>
+ <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 142</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-170'> Ir a partida: 170</a> </td> <td colspan='3' align='left' > Por venta en registro de compra-ventas del SII folio: 7 de visita-huelen-pago-5-6 a gonzalo </td>  </tr>
+ <tr> <td>    <a href= '/necios-2021/libro-diario#Partida-1049'>octubre</a>  </td> <td> 142 </td> <td align='right' >  0 </td> <td> Neto Ventas/Servicios Exentos </td> </tr>
+ <tr height='50 px' style= 'text-decoration-line: line-through; text-decoration-line-color: red; font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 142</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-159'> Ir a partida: 159</a> </td> <td colspan='3' align='left' > Por venta en registro de compra-ventas del SII folio: 6 de visita-huelen-pago-4-6 a gonzalo </td>  </tr>
  <tr height='50 px' style='font-weight:bold; background-color: lightgreen'> <td>  <a href= '/necios-2021/libro-diario#Partida-1052'>^</a> </td> <td> 502 </td> <td align='right' >  304172 </td> <td> Total Anual </td> </tr>
  <tr style='font-weight:bold; color:white; background-color: red'> <td colspan='4' > LINEA F22: 'Facturas por ventas y servicios gravados'. </td> </tr>
- <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 502</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-164'> Ir a partida: 164</a> </td> <td colspan='3' align='left' > Por venta en registro de compra-ventas del SII folio: 19 de los-capitanes-pago-4-de-6 a gonzalo </td>  </tr>
- <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 502</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-76'> Ir a partida: 76</a> </td> <td colspan='3' align='left' > Por venta en registro de compra-ventas del SII folio: 11 de recableado a gonzalo </td>  </tr>
- <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 502</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-83'> Ir a partida: 83</a> </td> <td colspan='3' align='left' > Por venta en registro de compra-ventas del SII folio: 12 de recableado a gonzalo </td>  </tr>
- <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 502</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-197'> Ir a partida: 197</a> </td> <td colspan='3' align='left' > Por venta en registro de compra-ventas del SII folio: 21 de los-capitanes-pago-5-de-6 a gonzalo </td>  </tr>
- <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 502</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-198'> Ir a partida: 198</a> </td> <td colspan='3' align='left' > Por venta en registro de compra-ventas del SII folio: 22 de los-capitanes-pago-6-de-6 a gonzalo </td>  </tr>
- <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 502</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-130'> Ir a partida: 130</a> </td> <td colspan='3' align='left' > Por venta en registro de compra-ventas del SII folio: 17 de ensacado-de-15-sacos-de-escombros a gonzalo </td>  </tr>
- <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 502</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-152'> Ir a partida: 152</a> </td> <td colspan='3' align='left' > Por venta en registro de compra-ventas del SII folio: 19 de los-capitanes-pago-3-de-6 a gonzalo </td>  </tr>
- <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 502</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-151'> Ir a partida: 151</a> </td> <td colspan='3' align='left' > Por venta en registro de compra-ventas del SII folio: 18 de instalacion-de-alimentador a gonzalo </td>  </tr>
- <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 502</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-99'> Ir a partida: 99</a> </td> <td colspan='3' align='left' > Por venta en registro de compra-ventas del SII folio: 13 de materiales-para-recableado a gonzalo </td>  </tr>
- <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 502</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-122'> Ir a partida: 122</a> </td> <td colspan='3' align='left' > Por venta en registro de compra-ventas del SII folio: 16 de tablero a gonzalo </td>  </tr>
- <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 502</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-115'> Ir a partida: 115</a> </td> <td colspan='3' align='left' > Por venta en registro de compra-ventas del SII folio: 15 de revision-electrica a gonzalo </td>  </tr>
+ <tr> <td>    <a href= '/necios-2021/libro-diario#Partida-1047'>agosto</a>  </td> <td> 502 </td> <td align='right' >  73583 </td> <td> DÉB. FACTURAS EMITIDAS </td> </tr>
  <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 502</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-113'> Ir a partida: 113</a> </td> <td colspan='3' align='left' > Por venta en registro de compra-ventas del SII folio: 14 de revision-electrica a gonzalo </td>  </tr>
- <tr> <td>    <a href= '/necios-2021/libro-diario#Partida-1049'>octubre</a>  </td> <td> 503 </td> <td align='right' >  1 </td> <td> CANT. FACTURAS EMITIDAS </td> </tr>
- <tr> <td>    <a href= '/necios-2021/libro-diario#Partida-1046'>julio</a>  </td> <td> 503 </td> <td align='right' >  2 </td> <td> CANT. FACTURAS EMITIDAS </td> </tr>
- <tr> <td>    <a href= '/necios-2021/libro-diario#Partida-1051'>diciembre</a>  </td> <td> 503 </td> <td align='right' >  2 </td> <td> CANT. FACTURAS EMITIDAS </td> </tr>
- <tr> <td>    <a href= '/necios-2021/libro-diario#Partida-1048'>septiembre</a>  </td> <td> 503 </td> <td align='right' >  3 </td> <td> CANT. FACTURAS EMITIDAS </td> </tr>
- <tr> <td>    <a href= '/necios-2021/libro-diario#Partida-1047'>agosto</a>  </td> <td> 503 </td> <td align='right' >  4 </td> <td> CANT. FACTURAS EMITIDAS </td> </tr>
+ <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 502</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-115'> Ir a partida: 115</a> </td> <td colspan='3' align='left' > Por venta en registro de compra-ventas del SII folio: 15 de revision-electrica a gonzalo </td>  </tr>
+ <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 502</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-122'> Ir a partida: 122</a> </td> <td colspan='3' align='left' > Por venta en registro de compra-ventas del SII folio: 16 de tablero a gonzalo </td>  </tr>
+ <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 502</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-99'> Ir a partida: 99</a> </td> <td colspan='3' align='left' > Por venta en registro de compra-ventas del SII folio: 13 de materiales-para-recableado a gonzalo </td>  </tr>
+ <tr> <td>    <a href= '/necios-2021/libro-diario#Partida-1048'>septiembre</a>  </td> <td> 502 </td> <td align='right' >  53621 </td> <td> DÉB. FACTURAS EMITIDAS </td> </tr>
+ <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 502</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-151'> Ir a partida: 151</a> </td> <td colspan='3' align='left' > Por venta en registro de compra-ventas del SII folio: 18 de instalacion-de-alimentador a gonzalo </td>  </tr>
+ <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 502</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-152'> Ir a partida: 152</a> </td> <td colspan='3' align='left' > Por venta en registro de compra-ventas del SII folio: 19 de los-capitanes-pago-3-de-6 a gonzalo </td>  </tr>
+ <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 502</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-130'> Ir a partida: 130</a> </td> <td colspan='3' align='left' > Por venta en registro de compra-ventas del SII folio: 17 de ensacado-de-15-sacos-de-escombros a gonzalo </td>  </tr>
+ <tr> <td>    <a href= '/necios-2021/libro-diario#Partida-1051'>diciembre</a>  </td> <td> 502 </td> <td align='right' >  35392 </td> <td> DÉB. FACTURAS EMITIDAS </td> </tr>
+ <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 502</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-198'> Ir a partida: 198</a> </td> <td colspan='3' align='left' > Por venta en registro de compra-ventas del SII folio: 22 de los-capitanes-pago-6-de-6 a gonzalo </td>  </tr>
+ <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 502</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-197'> Ir a partida: 197</a> </td> <td colspan='3' align='left' > Por venta en registro de compra-ventas del SII folio: 21 de los-capitanes-pago-5-de-6 a gonzalo </td>  </tr>
+ <tr> <td>    <a href= '/necios-2021/libro-diario#Partida-1046'>julio</a>  </td> <td> 502 </td> <td align='right' >  123880 </td> <td> DÉB. FACTURAS EMITIDAS </td> </tr>
+ <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 502</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-83'> Ir a partida: 83</a> </td> <td colspan='3' align='left' > Por venta en registro de compra-ventas del SII folio: 12 de recableado a gonzalo </td>  </tr>
+ <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 502</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-76'> Ir a partida: 76</a> </td> <td colspan='3' align='left' > Por venta en registro de compra-ventas del SII folio: 11 de recableado a gonzalo </td>  </tr>
+ <tr> <td>    <a href= '/necios-2021/libro-diario#Partida-1049'>octubre</a>  </td> <td> 502 </td> <td align='right' >  17696 </td> <td> DÉB. FACTURAS EMITIDAS </td> </tr>
+ <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 502</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-164'> Ir a partida: 164</a> </td> <td colspan='3' align='left' > Por venta en registro de compra-ventas del SII folio: 19 de los-capitanes-pago-4-de-6 a gonzalo </td>  </tr>
  <tr height='50 px' style='font-weight:bold; background-color: lightgreen'> <td>  <a href= '/necios-2021/libro-diario#Partida-1052'>^</a> </td> <td> 503 </td> <td align='right' >  12 </td> <td> Total Anual </td> </tr>
- <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 503</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-164'> Ir a partida: 164</a> </td> <td colspan='3' align='left' > Por venta en registro de compra-ventas del SII folio: 19 de los-capitanes-pago-4-de-6 a gonzalo </td>  </tr>
- <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 503</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-76'> Ir a partida: 76</a> </td> <td colspan='3' align='left' > Por venta en registro de compra-ventas del SII folio: 11 de recableado a gonzalo </td>  </tr>
- <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 503</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-83'> Ir a partida: 83</a> </td> <td colspan='3' align='left' > Por venta en registro de compra-ventas del SII folio: 12 de recableado a gonzalo </td>  </tr>
- <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 503</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-197'> Ir a partida: 197</a> </td> <td colspan='3' align='left' > Por venta en registro de compra-ventas del SII folio: 21 de los-capitanes-pago-5-de-6 a gonzalo </td>  </tr>
- <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 503</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-198'> Ir a partida: 198</a> </td> <td colspan='3' align='left' > Por venta en registro de compra-ventas del SII folio: 22 de los-capitanes-pago-6-de-6 a gonzalo </td>  </tr>
- <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 503</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-130'> Ir a partida: 130</a> </td> <td colspan='3' align='left' > Por venta en registro de compra-ventas del SII folio: 17 de ensacado-de-15-sacos-de-escombros a gonzalo </td>  </tr>
- <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 503</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-152'> Ir a partida: 152</a> </td> <td colspan='3' align='left' > Por venta en registro de compra-ventas del SII folio: 19 de los-capitanes-pago-3-de-6 a gonzalo </td>  </tr>
- <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 503</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-151'> Ir a partida: 151</a> </td> <td colspan='3' align='left' > Por venta en registro de compra-ventas del SII folio: 18 de instalacion-de-alimentador a gonzalo </td>  </tr>
- <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 503</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-99'> Ir a partida: 99</a> </td> <td colspan='3' align='left' > Por venta en registro de compra-ventas del SII folio: 13 de materiales-para-recableado a gonzalo </td>  </tr>
- <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 503</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-122'> Ir a partida: 122</a> </td> <td colspan='3' align='left' > Por venta en registro de compra-ventas del SII folio: 16 de tablero a gonzalo </td>  </tr>
- <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 503</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-115'> Ir a partida: 115</a> </td> <td colspan='3' align='left' > Por venta en registro de compra-ventas del SII folio: 15 de revision-electrica a gonzalo </td>  </tr>
+ <tr> <td>    <a href= '/necios-2021/libro-diario#Partida-1047'>agosto</a>  </td> <td> 503 </td> <td align='right' >  4 </td> <td> CANT. FACTURAS EMITIDAS </td> </tr>
  <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 503</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-113'> Ir a partida: 113</a> </td> <td colspan='3' align='left' > Por venta en registro de compra-ventas del SII folio: 14 de revision-electrica a gonzalo </td>  </tr>
- <tr> <td>    <a href= '/necios-2021/libro-diario#Partida-1046'>julio</a>  </td> <td> 509 </td> <td align='right' >  1 </td> <td> QtyNOTAS CREDITO EMITIDAS/Ref FACTURA | NOTA-CREDITO-RECIBIDA-RETENCION-PARCIAL-CAMBIO-SUEJETO </td> </tr>
- <tr> <td>    <a href= '/necios-2021/libro-diario#Partida-1047'>agosto</a>  </td> <td> 509 </td> <td align='right' >  1 </td> <td> QtyNOTAS CREDITO EMITIDAS/Ref FACTURA | NOTA-CREDITO-RECIBIDA-RETENCION-PARCIAL-CAMBIO-SUEJETO </td> </tr>
+ <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 503</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-115'> Ir a partida: 115</a> </td> <td colspan='3' align='left' > Por venta en registro de compra-ventas del SII folio: 15 de revision-electrica a gonzalo </td>  </tr>
+ <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 503</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-122'> Ir a partida: 122</a> </td> <td colspan='3' align='left' > Por venta en registro de compra-ventas del SII folio: 16 de tablero a gonzalo </td>  </tr>
+ <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 503</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-99'> Ir a partida: 99</a> </td> <td colspan='3' align='left' > Por venta en registro de compra-ventas del SII folio: 13 de materiales-para-recableado a gonzalo </td>  </tr>
+ <tr> <td>    <a href= '/necios-2021/libro-diario#Partida-1048'>septiembre</a>  </td> <td> 503 </td> <td align='right' >  3 </td> <td> CANT. FACTURAS EMITIDAS </td> </tr>
+ <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 503</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-151'> Ir a partida: 151</a> </td> <td colspan='3' align='left' > Por venta en registro de compra-ventas del SII folio: 18 de instalacion-de-alimentador a gonzalo </td>  </tr>
+ <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 503</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-152'> Ir a partida: 152</a> </td> <td colspan='3' align='left' > Por venta en registro de compra-ventas del SII folio: 19 de los-capitanes-pago-3-de-6 a gonzalo </td>  </tr>
+ <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 503</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-130'> Ir a partida: 130</a> </td> <td colspan='3' align='left' > Por venta en registro de compra-ventas del SII folio: 17 de ensacado-de-15-sacos-de-escombros a gonzalo </td>  </tr>
+ <tr> <td>    <a href= '/necios-2021/libro-diario#Partida-1051'>diciembre</a>  </td> <td> 503 </td> <td align='right' >  2 </td> <td> CANT. FACTURAS EMITIDAS </td> </tr>
+ <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 503</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-198'> Ir a partida: 198</a> </td> <td colspan='3' align='left' > Por venta en registro de compra-ventas del SII folio: 22 de los-capitanes-pago-6-de-6 a gonzalo </td>  </tr>
+ <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 503</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-197'> Ir a partida: 197</a> </td> <td colspan='3' align='left' > Por venta en registro de compra-ventas del SII folio: 21 de los-capitanes-pago-5-de-6 a gonzalo </td>  </tr>
+ <tr> <td>    <a href= '/necios-2021/libro-diario#Partida-1046'>julio</a>  </td> <td> 503 </td> <td align='right' >  2 </td> <td> CANT. FACTURAS EMITIDAS </td> </tr>
+ <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 503</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-83'> Ir a partida: 83</a> </td> <td colspan='3' align='left' > Por venta en registro de compra-ventas del SII folio: 12 de recableado a gonzalo </td>  </tr>
+ <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 503</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-76'> Ir a partida: 76</a> </td> <td colspan='3' align='left' > Por venta en registro de compra-ventas del SII folio: 11 de recableado a gonzalo </td>  </tr>
+ <tr> <td>    <a href= '/necios-2021/libro-diario#Partida-1049'>octubre</a>  </td> <td> 503 </td> <td align='right' >  1 </td> <td> CANT. FACTURAS EMITIDAS </td> </tr>
+ <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 503</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-164'> Ir a partida: 164</a> </td> <td colspan='3' align='left' > Por venta en registro de compra-ventas del SII folio: 19 de los-capitanes-pago-4-de-6 a gonzalo </td>  </tr>
  <tr height='50 px' style='font-weight:bold; background-color: lightgreen'> <td>  <a href= '/necios-2021/libro-diario#Partida-1052'>^</a> </td> <td> 509 </td> <td align='right' >  2 </td> <td> Total Anual </td> </tr>
- <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 509</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-82'> Ir a partida: 82</a> </td> <td colspan='3' align='left' > Nota de Crédito SII: 15 que anula Factura SII 11 de recableado a gonzalo </td>  </tr>
+ <tr> <td>    <a href= '/necios-2021/libro-diario#Partida-1047'>agosto</a>  </td> <td> 509 </td> <td align='right' >  1 </td> <td> QtyNOTAS CREDITO EMITIDAS/Ref FACTURA | NOTA-CREDITO-RECIBIDA-RETENCION-PARCIAL-CAMBIO-SUEJETO </td> </tr>
  <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 509</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-114'> Ir a partida: 114</a> </td> <td colspan='3' align='left' > Nota de Crédito SII: 17 que anula Factura SII 14 de revision-electrica a gonzalo </td>  </tr>
- <tr> <td>    <a href= '/necios-2021/libro-diario#Partida-1040'>enero</a>  </td> <td> 510 </td> <td align='right' >  5588 </td> <td> DEBITO N.CREDITO EMITIDAS/Ref FACTURA | NOTA-CREDITO-RECIBIDA-RETENCION-PARCIAL-CAMBIO-SUJETO </td> </tr>
- <tr> <td>    <a href= '/necios-2021/libro-diario#Partida-1041'>febrero</a>  </td> <td> 510 </td> <td align='right' >  5588 </td> <td> DEBITO N.CREDITO EMITIDAS/Ref FACTURA | NOTA-CREDITO-RECIBIDA-RETENCION-PARCIAL-CAMBIO-SUJETO </td> </tr>
- <tr> <td>    <a href= '/necios-2021/libro-diario#Partida-1046'>julio</a>  </td> <td> 510 </td> <td align='right' >  106176 </td> <td> DEBITO N.CREDITO EMITIDAS/Ref FACTURA | NOTA-CREDITO-RECIBIDA-RETENCION-PARCIAL-CAMBIO-SUJETO </td> </tr>
- <tr> <td>    <a href= '/necios-2021/libro-diario#Partida-1048'>septiembre</a>  </td> <td> 510 </td> <td align='right' >  2013 </td> <td> DEBITO N.CREDITO EMITIDAS/Ref FACTURA | NOTA-CREDITO-RECIBIDA-RETENCION-PARCIAL-CAMBIO-SUJETO </td> </tr>
- <tr> <td>    <a href= '/necios-2021/libro-diario#Partida-1047'>agosto</a>  </td> <td> 510 </td> <td align='right' >  23589 </td> <td> DEBITO N.CREDITO EMITIDAS/Ref FACTURA | NOTA-CREDITO-RECIBIDA-RETENCION-PARCIAL-CAMBIO-SUJETO </td> </tr>
+ <tr> <td>    <a href= '/necios-2021/libro-diario#Partida-1046'>julio</a>  </td> <td> 509 </td> <td align='right' >  1 </td> <td> QtyNOTAS CREDITO EMITIDAS/Ref FACTURA | NOTA-CREDITO-RECIBIDA-RETENCION-PARCIAL-CAMBIO-SUEJETO </td> </tr>
+ <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 509</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-82'> Ir a partida: 82</a> </td> <td colspan='3' align='left' > Nota de Crédito SII: 15 que anula Factura SII 11 de recableado a gonzalo </td>  </tr>
  <tr height='50 px' style='font-weight:bold; background-color: lightgreen'> <td>  <a href= '/necios-2021/libro-diario#Partida-1052'>^</a> </td> <td> 510 </td> <td align='right' >  142954 </td> <td> Total Anual </td> </tr>
  <tr style='font-weight:bold; color:white; background-color: red'> <td colspan='4' > LINEA F22: 'Notas de Crédito emitidas por ventas y servicios'. </td> </tr>
- <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 510</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-7'> Ir a partida: 7</a> </td> <td colspan='3' align='left' > Devolución a subcuenta ventas-con-eboleta-afecta por Por la anulacion del monto total de la boleta afecta con folio 7 del 13 de enero. Se refiere a una transaccion ya cubiertas por un voucher. mes enero </td>  </tr>
- <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 510</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-141'> Ir a partida: 141</a> </td> <td colspan='3' align='left' > Devolución a subcuenta ventas-con-eboleta-afecta por Por la anulacion del monto total de la boleta afecta con folio 7 del 13 de enero. Se refiere a una transaccion ya cubierta por un voucher. mes febrero </td>  </tr>
- <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 510</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-82'> Ir a partida: 82</a> </td> <td colspan='3' align='left' > Nota de Crédito SII: 15 que anula Factura SII 11 de recableado a gonzalo </td>  </tr>
- <tr height='50 px' style= 'text-decoration-line: line-through; text-decoration-line-color: red; font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 510</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-87'> Ir a partida: 87</a> </td> <td colspan='3' align='left' > Devolución a subcuenta ventas-con-voucher-afecto por Anula Vouchers para Ser Reemplazados por Otros Docs. mes julio </td>  </tr>
- <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 510</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-148'> Ir a partida: 148</a> </td> <td colspan='3' align='left' > Devolución a subcuenta ventas-con-eboleta-afecta por Por la anulacion del monto total de la boleta afecta con folio 11 del 24 de enero. Por error en el monto. mes septiembre </td>  </tr>
- <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 510</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-114'> Ir a partida: 114</a> </td> <td colspan='3' align='left' > Nota de Crédito SII: 17 que anula Factura SII 14 de revision-electrica a gonzalo </td>  </tr>
+ <tr> <td>    <a href= '/necios-2021/libro-diario#Partida-1047'>agosto</a>  </td> <td> 510 </td> <td align='right' >  23589 </td> <td> DEBITO N.CREDITO EMITIDAS/Ref FACTURA | NOTA-CREDITO-RECIBIDA-RETENCION-PARCIAL-CAMBIO-SUJETO </td> </tr>
  <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 510</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-123'> Ir a partida: 123</a> </td> <td colspan='3' align='left' > Devolución a subcuenta ventas-con-voucher-afecto por Por la anulacion del voucher pues cliente necesita factura afecta. mes agosto </td>  </tr>
- <tr> <td>    <a href= '/necios-2021/libro-diario#Partida-1049'>octubre</a>  </td> <td> 511 </td> <td align='right' >  2257 </td> <td> CRED.IVA POR DCTOS. ELECTRONICOS  </td> </tr>
- <tr> <td>    <a href= '/necios-2021/libro-diario#Partida-1051'>diciembre</a>  </td> <td> 511 </td> <td align='right' >  2911 </td> <td> CRED.IVA POR DCTOS. ELECTRONICOS  </td> </tr>
- <tr> <td>    <a href= '/necios-2021/libro-diario#Partida-1042'>marzo</a>  </td> <td> 511 </td> <td align='right' >  6217 </td> <td> CRED.IVA POR DCTOS. ELECTRONICOS  </td> </tr>
- <tr> <td>    <a href= '/necios-2021/libro-diario#Partida-1050'>noviembre</a>  </td> <td> 511 </td> <td align='right' >  4169 </td> <td> CRED.IVA POR DCTOS. ELECTRONICOS  </td> </tr>
- <tr> <td>    <a href= '/necios-2021/libro-diario#Partida-1045'>junio</a>  </td> <td> 511 </td> <td align='right' >  7966 </td> <td> CRED.IVA POR DCTOS. ELECTRONICOS  </td> </tr>
- <tr> <td>    <a href= '/necios-2021/libro-diario#Partida-1043'>abril</a>  </td> <td> 511 </td> <td align='right' >  1822 </td> <td> CRED.IVA POR DCTOS. ELECTRONICOS  </td> </tr>
- <tr> <td>    <a href= '/necios-2021/libro-diario#Partida-1044'>mayo</a>  </td> <td> 511 </td> <td align='right' >  5313 </td> <td> CRED.IVA POR DCTOS. ELECTRONICOS  </td> </tr>
- <tr> <td>    <a href= '/necios-2021/libro-diario#Partida-1040'>enero</a>  </td> <td> 511 </td> <td align='right' >  41503 </td> <td> CRED.IVA POR DCTOS. ELECTRONICOS  </td> </tr>
- <tr> <td>    <a href= '/necios-2021/libro-diario#Partida-1041'>febrero</a>  </td> <td> 511 </td> <td align='right' >  6344 </td> <td> CRED.IVA POR DCTOS. ELECTRONICOS  </td> </tr>
- <tr> <td>    <a href= '/necios-2021/libro-diario#Partida-1048'>septiembre</a>  </td> <td> 511 </td> <td align='right' >  14958 </td> <td> CRED.IVA POR DCTOS. ELECTRONICOS  </td> </tr>
- <tr> <td>    <a href= '/necios-2021/libro-diario#Partida-1046'>julio</a>  </td> <td> 511 </td> <td align='right' >  21718 </td> <td> CRED.IVA POR DCTOS. ELECTRONICOS  </td> </tr>
- <tr> <td>    <a href= '/necios-2021/libro-diario#Partida-1047'>agosto</a>  </td> <td> 511 </td> <td align='right' >  55003 </td> <td> CRED.IVA POR DCTOS. ELECTRONICOS  </td> </tr>
+ <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 510</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-114'> Ir a partida: 114</a> </td> <td colspan='3' align='left' > Nota de Crédito SII: 17 que anula Factura SII 14 de revision-electrica a gonzalo </td>  </tr>
+ <tr> <td>    <a href= '/necios-2021/libro-diario#Partida-1048'>septiembre</a>  </td> <td> 510 </td> <td align='right' >  2013 </td> <td> DEBITO N.CREDITO EMITIDAS/Ref FACTURA | NOTA-CREDITO-RECIBIDA-RETENCION-PARCIAL-CAMBIO-SUJETO </td> </tr>
+ <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 510</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-148'> Ir a partida: 148</a> </td> <td colspan='3' align='left' > Devolución a subcuenta ventas-con-eboleta-afecta por Por la anulacion del monto total de la boleta afecta con folio 11 del 24 de enero. Por error en el monto. mes septiembre </td>  </tr>
+ <tr> <td>    <a href= '/necios-2021/libro-diario#Partida-1046'>julio</a>  </td> <td> 510 </td> <td align='right' >  106176 </td> <td> DEBITO N.CREDITO EMITIDAS/Ref FACTURA | NOTA-CREDITO-RECIBIDA-RETENCION-PARCIAL-CAMBIO-SUJETO </td> </tr>
+ <tr height='50 px' style= 'text-decoration-line: line-through; text-decoration-line-color: red; font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 510</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-87'> Ir a partida: 87</a> </td> <td colspan='3' align='left' > Devolución a subcuenta ventas-con-voucher-afecto por Anula Vouchers para Ser Reemplazados por Otros Docs. mes julio </td>  </tr>
+ <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 510</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-82'> Ir a partida: 82</a> </td> <td colspan='3' align='left' > Nota de Crédito SII: 15 que anula Factura SII 11 de recableado a gonzalo </td>  </tr>
+ <tr> <td>    <a href= '/necios-2021/libro-diario#Partida-1041'>febrero</a>  </td> <td> 510 </td> <td align='right' >  5588 </td> <td> DEBITO N.CREDITO EMITIDAS/Ref FACTURA | NOTA-CREDITO-RECIBIDA-RETENCION-PARCIAL-CAMBIO-SUJETO </td> </tr>
+ <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 510</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-141'> Ir a partida: 141</a> </td> <td colspan='3' align='left' > Devolución a subcuenta ventas-con-eboleta-afecta por Por la anulacion del monto total de la boleta afecta con folio 7 del 13 de enero. Se refiere a una transaccion ya cubierta por un voucher. mes febrero </td>  </tr>
+ <tr> <td>    <a href= '/necios-2021/libro-diario#Partida-1040'>enero</a>  </td> <td> 510 </td> <td align='right' >  5588 </td> <td> DEBITO N.CREDITO EMITIDAS/Ref FACTURA | NOTA-CREDITO-RECIBIDA-RETENCION-PARCIAL-CAMBIO-SUJETO </td> </tr>
+ <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 510</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-7'> Ir a partida: 7</a> </td> <td colspan='3' align='left' > Devolución a subcuenta ventas-con-eboleta-afecta por Por la anulacion del monto total de la boleta afecta con folio 7 del 13 de enero. Se refiere a una transaccion ya cubiertas por un voucher. mes enero </td>  </tr>
  <tr height='50 px' style='font-weight:bold; background-color: lightgreen'> <td>  <a href= '/necios-2021/libro-diario#Partida-1052'>^</a> </td> <td> 511 </td> <td align='right' >  170181 </td> <td> Total Anual </td> </tr>
- <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 511</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-166'> Ir a partida: 166</a> </td> <td colspan='3' align='left' > Por compra de materiales eléctricos a Sodimac </td>  </tr>
- <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 511</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-161'> Ir a partida: 161</a> </td> <td colspan='3' align='left' > Por Gasto Administrativo: Servicio de Datos y Telefonía de septiembre. </td>  </tr>
- <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 511</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-189'> Ir a partida: 189</a> </td> <td colspan='3' align='left' > Por pack 3M de máscaras N95 </td>  </tr>
- <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 511</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-201'> Ir a partida: 201</a> </td> <td colspan='3' align='left' > Por Gasto Administrativo: Servicio de Datos y Telefonía de octubre. </td>  </tr>
- <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 511</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-21'> Ir a partida: 21</a> </td> <td colspan='3' align='left' > Por compra de 1 máscara cubrerrostro y bolsa filtros P100 </td>  </tr>
- <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 511</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-20'> Ir a partida: 20</a> </td> <td colspan='3' align='left' > Por Costo Directo de Ventas: Comisión Pasarela enero Transbank </td>  </tr>
- <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 511</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-22'> Ir a partida: 22</a> </td> <td colspan='3' align='left' > Por Gasto Administrativo: Servicio de Datos y Telefonía: consumo enero. </td>  </tr>
- <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 511</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-184'> Ir a partida: 184</a> </td> <td colspan='3' align='left' > Por Gasto Administrativo: WebCam. </td>  </tr>
- <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 511</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-171'> Ir a partida: 171</a> </td> <td colspan='3' align='left' > Por Gasto Administrativo: Servicio de Datos y Telefonía: pago julio. </td>  </tr>
- <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 511</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-183'> Ir a partida: 183</a> </td> <td colspan='3' align='left' > Por Gasto Administrativo: Mouse. </td>  </tr>
- <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 511</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-50'> Ir a partida: 50</a> </td> <td colspan='3' align='left' > Por Gasto Promocional: Pendón Promocional Norma 4. </td>  </tr>
- <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 511</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-39'> Ir a partida: 39</a> </td> <td colspan='3' align='left' > Por Gasto Promocional: Compra de Flyers para Visitas a Terreno. </td>  </tr>
- <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 511</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-49'> Ir a partida: 49</a> </td> <td colspan='3' align='left' > Por Gasto Administrativo: Servicio de Datos y Telefonía: pago junio. </td>  </tr>
- <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 511</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-281'> Ir a partida: 281</a> </td> <td colspan='3' align='left' > Por compra de 10 enchufes eléctricos $4404.4 promedio a DARTEL-Temuco </td>  </tr>
- <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 511</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-27'> Ir a partida: 27</a> </td> <td colspan='3' align='left' > Por Costo Directo de Ventas: Comisión Pasarela marzo Transbank. </td>  </tr>
- <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 511</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-28'> Ir a partida: 28</a> </td> <td colspan='3' align='left' > Por Gasto Administrativo: Servicio de Datos y Telefonía: consumo marzo. </td>  </tr>
- <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 511</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-301'> Ir a partida: 301</a> </td> <td colspan='3' align='left' > Devolución a subcuenta ventas-con-factura-afecta por Ajuste Mensual de Comisión Transbank mes abril </td>  </tr>
- <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 511</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-37'> Ir a partida: 37</a> </td> <td colspan='3' align='left' > Devolución a subcuenta ventas-con-factura-afecta por Ajuste Mensual de Comisión Transbank mes mayo </td>  </tr>
- <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 511</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-31'> Ir a partida: 31</a> </td> <td colspan='3' align='left' > Por Gasto Administrativo: Servicio de Datos y Telefonía: consumo marzo. </td>  </tr>
- <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 511</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-32'> Ir a partida: 32</a> </td> <td colspan='3' align='left' > Por Gasto Administrativo: Certificado Digital por 3 años. </td>  </tr>
- <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 511</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-33'> Ir a partida: 33</a> </td> <td colspan='3' align='left' > Por Costo Directo de Ventas: Comisión Pasarela abril Transbank. </td>  </tr>
- <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 511</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-10'> Ir a partida: 10</a> </td> <td colspan='3' align='left' > Por compra de 1 meson de cocina a easy </td>  </tr>
- <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 511</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-8'> Ir a partida: 8</a> </td> <td colspan='3' align='left' > Por Costo Directo de Ventas: Comisión diciembre por pagos en pasarela KHIPU </td>  </tr>
- <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 511</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-131'> Ir a partida: 131</a> </td> <td colspan='3' align='left' > Por amortizacion en enero de marca-alectrico-Por depreciacion en enero de taladro </td>  </tr>
- <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 511</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-9'> Ir a partida: 9</a> </td> <td colspan='3' align='left' > Por Costo Directo de Ventas: Comisión Pasarela diciembre Transbank </td>  </tr>
- <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 511</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-14'> Ir a partida: 14</a> </td> <td colspan='3' align='left' > Por compra 2 interruptores y 1 guantes a Easy </td>  </tr>
- <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 511</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-13'> Ir a partida: 13</a> </td> <td colspan='3' align='left' > Por compra de taladro inalámbrico DeWalt a Sodimac </td>  </tr>
- <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 511</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-12'> Ir a partida: 12</a> </td> <td colspan='3' align='left' > Por compra de materiales eléctricos a Sodimac </td>  </tr>
- <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 511</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-16'> Ir a partida: 16</a> </td> <td colspan='3' align='left' > Por compra a Dartel Santiago de 3 cajas de enchufes 506L </td>  </tr>
- <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 511</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-15'> Ir a partida: 15</a> </td> <td colspan='3' align='left' > Por Costo Directo de Ventas: Comisión Pasarela enero Transbank </td>  </tr>
- <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 511</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-17'> Ir a partida: 17</a> </td> <td colspan='3' align='left' > Por Gasto Administrativo: Servicio de Datos y Telefonía: pago inicial. </td>  </tr>
- <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 511</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-18'> Ir a partida: 18</a> </td> <td colspan='3' align='left' > Por Gasto Administrativo: Matriz de Bordado y Parche QR Bordado Corporativo alectrico ®. </td>  </tr>
- <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 511</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-19'> Ir a partida: 19</a> </td> <td colspan='3' align='left' > Devolución a subcuenta transbank por Ajuste Mensual de Comisión mes febrero </td>  </tr>
- <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 511</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-191'> Ir a partida: 191</a> </td> <td colspan='3' align='left' > Nota de Débito SII: 1 que anula a Nota de Crédito SII 12 </td>  </tr>
- <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 511</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-146'> Ir a partida: 146</a> </td> <td colspan='3' align='left' > Por compra de materiales para ampliación </td>  </tr>
- <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 511</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-139'> Ir a partida: 139</a> </td> <td colspan='3' align='left' > Por Gasto Administrativo: Servicio de Datos y Telefonía: consumo agosto. </td>  </tr>
- <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 511</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-145'> Ir a partida: 145</a> </td> <td colspan='3' align='left' > Renovación de Dominio Internet: alectrica.cl. </td>  </tr>
- <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 511</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-153'> Ir a partida: 153</a> </td> <td colspan='3' align='left' > Por Costo Directo de Ventas: Comisión Pasarela septiembre Transbank </td>  </tr>
- <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 511</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-149'> Ir a partida: 149</a> </td> <td colspan='3' align='left' > Por compra de materiales para ampliación </td>  </tr>
- <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 511</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-71'> Ir a partida: 71</a> </td> <td colspan='3' align='left' > Por compra de celular samsung </td>  </tr>
- <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 511</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-64'> Ir a partida: 64</a> </td> <td colspan='3' align='left' > Por Gasto Promocional: 400 tarjetas de Visita. </td>  </tr>
- <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 511</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-67'> Ir a partida: 67</a> </td> <td colspan='3' align='left' > Gasto Adm: Certificado Digital </td>  </tr>
- <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 511</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-73'> Ir a partida: 73</a> </td> <td colspan='3' align='left' > Por Compra de Etiquetas </td>  </tr>
- <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 511</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-74'> Ir a partida: 74</a> </td> <td colspan='3' align='left' > Por Gasto Administrativo: Etiquetas </td>  </tr>
- <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 511</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-84'> Ir a partida: 84</a> </td> <td colspan='3' align='left' > Adquisión de Dominio Internet: aelectrico.cl. </td>  </tr>
- <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 511</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-85'> Ir a partida: 85</a> </td> <td colspan='3' align='left' > Por Gasto Promocinal: Masking-Tape </td>  </tr>
- <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 511</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-86'> Ir a partida: 86</a> </td> <td colspan='3' align='left' > Por Costo Directo de Ventas: Comisión Pasarela julio Transbank </td>  </tr>
- <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 511</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-95'> Ir a partida: 95</a> </td> <td colspan='3' align='left' > Por Materiales para Puesta a Tierra de Protección </td>  </tr>
- <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 511</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-98'> Ir a partida: 98</a> </td> <td colspan='3' align='left' > Devolución a subcuenta entel por Por Gasto Administrativo: Servicio de Datos y Telefonía: pago julio. mes agosto </td>  </tr>
- <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 511</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-105'> Ir a partida: 105</a> </td> <td colspan='3' align='left' > Por Gasto Administrativo: Servicio de Datos y Telefonía: pago vuelto a cobrar, de julio. </td>  </tr>
- <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 511</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-107'> Ir a partida: 107</a> </td> <td colspan='3' align='left' > Por Gasto Administrativo: Servicio de Datos y Telefonía: agosto. </td>  </tr>
- <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 511</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-121'> Ir a partida: 121</a> </td> <td colspan='3' align='left' > Por Costo Directo de Ventas: Materiales para Ampliación </td>  </tr>
- <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 511</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-120'> Ir a partida: 120</a> </td> <td colspan='3' align='left' > Por compra de materiales para ampliación </td>  </tr>
- <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 511</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-108'> Ir a partida: 108</a> </td> <td colspan='3' align='left' > Devolución a subcuenta transbank por Ajuste Mensual de Comisión mes agosto </td>  </tr>
- <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 511</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-102'> Ir a partida: 102</a> </td> <td colspan='3' align='left' > Por compra de materiales para ampliación </td>  </tr>
- <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 511</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-101'> Ir a partida: 101</a> </td> <td colspan='3' align='left' > Por compra de materiales eléctricos a Sodimac </td>  </tr>
- <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 511</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-97'> Ir a partida: 97</a> </td> <td colspan='3' align='left' > Por compra a Dartel Santiago de artefactos para los capitanes </td>  </tr>
+ <tr> <td>    <a href= '/necios-2021/libro-diario#Partida-1047'>agosto</a>  </td> <td> 511 </td> <td align='right' >  55003 </td> <td> CRED.IVA POR DCTOS. ELECTRONICOS  </td> </tr>
  <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 511</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-96'> Ir a partida: 96</a> </td> <td colspan='3' align='left' > Por Materiales para Recableado </td>  </tr>
- <tr> <td>    <a href= '/necios-2021/libro-diario#Partida-1041'>febrero</a>  </td> <td> 512 </td> <td align='right' >  2 </td> <td> NOTAS DE DEBITO EMITIDAS DEL GIRO </td> </tr>
+ <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 511</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-97'> Ir a partida: 97</a> </td> <td colspan='3' align='left' > Por compra a Dartel Santiago de artefactos para los capitanes </td>  </tr>
+ <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 511</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-101'> Ir a partida: 101</a> </td> <td colspan='3' align='left' > Por compra de materiales eléctricos a Sodimac </td>  </tr>
+ <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 511</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-102'> Ir a partida: 102</a> </td> <td colspan='3' align='left' > Por compra de materiales para ampliación </td>  </tr>
+ <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 511</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-108'> Ir a partida: 108</a> </td> <td colspan='3' align='left' > Devolución a subcuenta transbank por Ajuste Mensual de Comisión mes agosto </td>  </tr>
+ <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 511</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-120'> Ir a partida: 120</a> </td> <td colspan='3' align='left' > Por compra de materiales para ampliación </td>  </tr>
+ <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 511</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-121'> Ir a partida: 121</a> </td> <td colspan='3' align='left' > Por Costo Directo de Ventas: Materiales para Ampliación </td>  </tr>
+ <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 511</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-107'> Ir a partida: 107</a> </td> <td colspan='3' align='left' > Por Gasto Administrativo: Servicio de Datos y Telefonía: agosto. </td>  </tr>
+ <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 511</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-105'> Ir a partida: 105</a> </td> <td colspan='3' align='left' > Por Gasto Administrativo: Servicio de Datos y Telefonía: pago vuelto a cobrar, de julio. </td>  </tr>
+ <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 511</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-98'> Ir a partida: 98</a> </td> <td colspan='3' align='left' > Devolución a subcuenta entel por Por Gasto Administrativo: Servicio de Datos y Telefonía: pago julio. mes agosto </td>  </tr>
+ <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 511</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-95'> Ir a partida: 95</a> </td> <td colspan='3' align='left' > Por Materiales para Puesta a Tierra de Protección </td>  </tr>
+ <tr> <td>    <a href= '/necios-2021/libro-diario#Partida-1046'>julio</a>  </td> <td> 511 </td> <td align='right' >  21718 </td> <td> CRED.IVA POR DCTOS. ELECTRONICOS  </td> </tr>
+ <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 511</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-86'> Ir a partida: 86</a> </td> <td colspan='3' align='left' > Por Costo Directo de Ventas: Comisión Pasarela julio Transbank </td>  </tr>
+ <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 511</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-85'> Ir a partida: 85</a> </td> <td colspan='3' align='left' > Por Gasto Promocinal: Masking-Tape </td>  </tr>
+ <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 511</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-84'> Ir a partida: 84</a> </td> <td colspan='3' align='left' > Adquisión de Dominio Internet: aelectrico.cl. </td>  </tr>
+ <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 511</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-74'> Ir a partida: 74</a> </td> <td colspan='3' align='left' > Por Gasto Administrativo: Etiquetas </td>  </tr>
+ <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 511</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-73'> Ir a partida: 73</a> </td> <td colspan='3' align='left' > Por Compra de Etiquetas </td>  </tr>
+ <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 511</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-67'> Ir a partida: 67</a> </td> <td colspan='3' align='left' > Gasto Adm: Certificado Digital </td>  </tr>
+ <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 511</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-64'> Ir a partida: 64</a> </td> <td colspan='3' align='left' > Por Gasto Promocional: 400 tarjetas de Visita. </td>  </tr>
+ <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 511</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-71'> Ir a partida: 71</a> </td> <td colspan='3' align='left' > Por compra de celular samsung </td>  </tr>
+ <tr> <td>    <a href= '/necios-2021/libro-diario#Partida-1048'>septiembre</a>  </td> <td> 511 </td> <td align='right' >  14958 </td> <td> CRED.IVA POR DCTOS. ELECTRONICOS  </td> </tr>
+ <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 511</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-149'> Ir a partida: 149</a> </td> <td colspan='3' align='left' > Por compra de materiales para ampliación </td>  </tr>
+ <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 511</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-153'> Ir a partida: 153</a> </td> <td colspan='3' align='left' > Por Costo Directo de Ventas: Comisión Pasarela septiembre Transbank </td>  </tr>
+ <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 511</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-145'> Ir a partida: 145</a> </td> <td colspan='3' align='left' > Renovación de Dominio Internet: alectrica.cl. </td>  </tr>
+ <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 511</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-139'> Ir a partida: 139</a> </td> <td colspan='3' align='left' > Por Gasto Administrativo: Servicio de Datos y Telefonía: consumo agosto. </td>  </tr>
+ <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 511</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-131'> Ir a partida: 131</a> </td> <td colspan='3' align='left' > Adquisión de Dominio Internet: necios.cl. </td>  </tr>
+ <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 511</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-146'> Ir a partida: 146</a> </td> <td colspan='3' align='left' > Por compra de materiales para ampliación </td>  </tr>
+ <tr> <td>    <a href= '/necios-2021/libro-diario#Partida-1041'>febrero</a>  </td> <td> 511 </td> <td align='right' >  6344 </td> <td> CRED.IVA POR DCTOS. ELECTRONICOS  </td> </tr>
+ <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 511</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-191'> Ir a partida: 191</a> </td> <td colspan='3' align='left' > Nota de Débito SII: 1 que anula a Nota de Crédito SII 12 </td>  </tr>
+ <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 511</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-19'> Ir a partida: 19</a> </td> <td colspan='3' align='left' > Devolución a subcuenta transbank por Ajuste Mensual de Comisión mes febrero </td>  </tr>
+ <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 511</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-18'> Ir a partida: 18</a> </td> <td colspan='3' align='left' > Por Gasto Administrativo: Matriz de Bordado y Parche QR Bordado Corporativo alectrico ®. </td>  </tr>
+ <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 511</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-17'> Ir a partida: 17</a> </td> <td colspan='3' align='left' > Por Gasto Administrativo: Servicio de Datos y Telefonía: pago inicial. </td>  </tr>
+ <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 511</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-15'> Ir a partida: 15</a> </td> <td colspan='3' align='left' > Por Costo Directo de Ventas: Comisión Pasarela enero Transbank </td>  </tr>
+ <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 511</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-16'> Ir a partida: 16</a> </td> <td colspan='3' align='left' > Por compra a Dartel Santiago de 3 cajas de enchufes 506L </td>  </tr>
+ <tr> <td>    <a href= '/necios-2021/libro-diario#Partida-1040'>enero</a>  </td> <td> 511 </td> <td align='right' >  41503 </td> <td> CRED.IVA POR DCTOS. ELECTRONICOS  </td> </tr>
+ <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 511</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-12'> Ir a partida: 12</a> </td> <td colspan='3' align='left' > Por compra de materiales eléctricos a Sodimac </td>  </tr>
+ <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 511</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-13'> Ir a partida: 13</a> </td> <td colspan='3' align='left' > Por compra de taladro inalámbrico DeWalt a Sodimac </td>  </tr>
+ <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 511</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-14'> Ir a partida: 14</a> </td> <td colspan='3' align='left' > Por compra 2 interruptores y 1 guantes a Easy </td>  </tr>
+ <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 511</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-9'> Ir a partida: 9</a> </td> <td colspan='3' align='left' > Por Costo Directo de Ventas: Comisión Pasarela diciembre Transbank </td>  </tr>
+ <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 511</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-8'> Ir a partida: 8</a> </td> <td colspan='3' align='left' > Por Costo Directo de Ventas: Comisión diciembre por pagos en pasarela KHIPU </td>  </tr>
+ <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 511</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-10'> Ir a partida: 10</a> </td> <td colspan='3' align='left' > Por compra de 1 meson de cocina a easy </td>  </tr>
+ <tr> <td>    <a href= '/necios-2021/libro-diario#Partida-1044'>mayo</a>  </td> <td> 511 </td> <td align='right' >  5313 </td> <td> CRED.IVA POR DCTOS. ELECTRONICOS  </td> </tr>
+ <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 511</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-33'> Ir a partida: 33</a> </td> <td colspan='3' align='left' > Por Costo Directo de Ventas: Comisión Pasarela abril Transbank. </td>  </tr>
+ <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 511</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-32'> Ir a partida: 32</a> </td> <td colspan='3' align='left' > Por Gasto Administrativo: Certificado Digital por 3 años. </td>  </tr>
+ <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 511</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-31'> Ir a partida: 31</a> </td> <td colspan='3' align='left' > Por Gasto Administrativo: Servicio de Datos y Telefonía: consumo marzo. </td>  </tr>
+ <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 511</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-37'> Ir a partida: 37</a> </td> <td colspan='3' align='left' > Devolución a subcuenta ventas-con-factura-afecta por Ajuste Mensual de Comisión Transbank mes mayo </td>  </tr>
+ <tr> <td>    <a href= '/necios-2021/libro-diario#Partida-1043'>abril</a>  </td> <td> 511 </td> <td align='right' >  1822 </td> <td> CRED.IVA POR DCTOS. ELECTRONICOS  </td> </tr>
+ <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 511</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-301'> Ir a partida: 301</a> </td> <td colspan='3' align='left' > Devolución a subcuenta ventas-con-factura-afecta por Ajuste Mensual de Comisión Transbank mes abril </td>  </tr>
+ <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 511</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-28'> Ir a partida: 28</a> </td> <td colspan='3' align='left' > Por Gasto Administrativo: Servicio de Datos y Telefonía: consumo marzo. </td>  </tr>
+ <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 511</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-27'> Ir a partida: 27</a> </td> <td colspan='3' align='left' > Por Costo Directo de Ventas: Comisión Pasarela marzo Transbank. </td>  </tr>
+ <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 511</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-281'> Ir a partida: 281</a> </td> <td colspan='3' align='left' > Por compra de 10 enchufes eléctricos $4404.4 promedio a DARTEL-Temuco </td>  </tr>
+ <tr> <td>    <a href= '/necios-2021/libro-diario#Partida-1045'>junio</a>  </td> <td> 511 </td> <td align='right' >  7966 </td> <td> CRED.IVA POR DCTOS. ELECTRONICOS  </td> </tr>
+ <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 511</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-49'> Ir a partida: 49</a> </td> <td colspan='3' align='left' > Por Gasto Administrativo: Servicio de Datos y Telefonía: pago junio. </td>  </tr>
+ <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 511</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-39'> Ir a partida: 39</a> </td> <td colspan='3' align='left' > Por Gasto Promocional: Compra de Flyers para Visitas a Terreno. </td>  </tr>
+ <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 511</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-50'> Ir a partida: 50</a> </td> <td colspan='3' align='left' > Por Gasto Promocional: Pendón Promocional Norma 4. </td>  </tr>
+ <tr> <td>    <a href= '/necios-2021/libro-diario#Partida-1050'>noviembre</a>  </td> <td> 511 </td> <td align='right' >  4169 </td> <td> CRED.IVA POR DCTOS. ELECTRONICOS  </td> </tr>
+ <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 511</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-183'> Ir a partida: 183</a> </td> <td colspan='3' align='left' > Por Gasto Administrativo: Mouse. </td>  </tr>
+ <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 511</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-171'> Ir a partida: 171</a> </td> <td colspan='3' align='left' > Por Gasto Administrativo: Servicio de Datos y Telefonía: pago julio. </td>  </tr>
+ <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 511</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-184'> Ir a partida: 184</a> </td> <td colspan='3' align='left' > Por Gasto Administrativo: WebCam. </td>  </tr>
+ <tr> <td>    <a href= '/necios-2021/libro-diario#Partida-1042'>marzo</a>  </td> <td> 511 </td> <td align='right' >  6217 </td> <td> CRED.IVA POR DCTOS. ELECTRONICOS  </td> </tr>
+ <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 511</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-22'> Ir a partida: 22</a> </td> <td colspan='3' align='left' > Por Gasto Administrativo: Servicio de Datos y Telefonía: consumo enero. </td>  </tr>
+ <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 511</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-20'> Ir a partida: 20</a> </td> <td colspan='3' align='left' > Por Costo Directo de Ventas: Comisión Pasarela enero Transbank </td>  </tr>
+ <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 511</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-21'> Ir a partida: 21</a> </td> <td colspan='3' align='left' > Por compra de 1 máscara cubrerrostro y bolsa filtros P100 </td>  </tr>
+ <tr> <td>    <a href= '/necios-2021/libro-diario#Partida-1051'>diciembre</a>  </td> <td> 511 </td> <td align='right' >  2911 </td> <td> CRED.IVA POR DCTOS. ELECTRONICOS  </td> </tr>
+ <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 511</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-201'> Ir a partida: 201</a> </td> <td colspan='3' align='left' > Por Gasto Administrativo: Servicio de Datos y Telefonía de octubre. </td>  </tr>
+ <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 511</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-189'> Ir a partida: 189</a> </td> <td colspan='3' align='left' > Por pack 3M de máscaras N95 </td>  </tr>
+ <tr> <td>    <a href= '/necios-2021/libro-diario#Partida-1049'>octubre</a>  </td> <td> 511 </td> <td align='right' >  2257 </td> <td> CRED.IVA POR DCTOS. ELECTRONICOS  </td> </tr>
+ <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 511</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-161'> Ir a partida: 161</a> </td> <td colspan='3' align='left' > Por Gasto Administrativo: Servicio de Datos y Telefonía de septiembre. </td>  </tr>
+ <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 511</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-166'> Ir a partida: 166</a> </td> <td colspan='3' align='left' > Por compra de materiales eléctricos a Sodimac </td>  </tr>
  <tr height='50 px' style='font-weight:bold; background-color: lightgreen'> <td>  <a href= '/necios-2021/libro-diario#Partida-1052'>^</a> </td> <td> 512 </td> <td align='right' >  2 </td> <td> Total Anual </td> </tr>
- <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 512</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-191'> Ir a partida: 191</a> </td> <td colspan='3' align='left' > Nota de Débito SII: 1 que anula a Nota de Crédito SII 12 </td>  </tr>
+ <tr> <td>    <a href= '/necios-2021/libro-diario#Partida-1041'>febrero</a>  </td> <td> 512 </td> <td align='right' >  2 </td> <td> NOTAS DE DEBITO EMITIDAS DEL GIRO </td> </tr>
  <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 512</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-192'> Ir a partida: 192</a> </td> <td colspan='3' align='left' > Nota de Débito Manual: 2 que anula a Nota de Crédito SII 11 </td>  </tr>
- <tr> <td>    <a href= '/necios-2021/libro-diario#Partida-1041'>febrero</a>  </td> <td> 513 </td> <td align='right' >  5588 </td> <td> DEBITO DE NOTAS DEBITO EMITIDAS DEL GIRO </td> </tr>
+ <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 512</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-191'> Ir a partida: 191</a> </td> <td colspan='3' align='left' > Nota de Débito SII: 1 que anula a Nota de Crédito SII 12 </td>  </tr>
  <tr height='50 px' style='font-weight:bold; background-color: lightgreen'> <td>  <a href= '/necios-2021/libro-diario#Partida-1052'>^</a> </td> <td> 513 </td> <td align='right' >  5588 </td> <td> Total Anual </td> </tr>
  <tr style='font-weight:bold; color:white; background-color: red'> <td colspan='4' > LINEA F22: 'Notas de débito emitidas -- (nota alectrico) con referencia a documentos c/iva --'. </td> </tr>
+ <tr> <td>    <a href= '/necios-2021/libro-diario#Partida-1041'>febrero</a>  </td> <td> 513 </td> <td align='right' >  5588 </td> <td> DEBITO DE NOTAS DEBITO EMITIDAS DEL GIRO </td> </tr>
  <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 513</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-192'> Ir a partida: 192</a> </td> <td colspan='3' align='left' > Nota de Débito Manual: 2 que anula a Nota de Crédito SII 11 </td>  </tr>
- <tr> <td>    <a href= '/necios-2021/libro-diario#Partida-1051'>diciembre</a>  </td> <td> 519 </td> <td align='right' >  1 </td> <td> CANT.DE DCTOS.FACT.RECIB.DEL GIRO </td> </tr>
- <tr> <td>    <a href= '/necios-2021/libro-diario#Partida-1049'>octubre</a>  </td> <td> 519 </td> <td align='right' >  1 </td> <td> CANT.DE DCTOS.FACT.RECIB.DEL GIRO </td> </tr>
- <tr> <td>    <a href= '/necios-2021/libro-diario#Partida-1047'>agosto</a>  </td> <td> 519 </td> <td align='right' >  2 </td> <td> CANT.DE DCTOS.FACT.RECIB.DEL GIRO </td> </tr>
- <tr> <td>    <a href= '/necios-2021/libro-diario#Partida-1043'>abril</a>  </td> <td> 519 </td> <td align='right' >  2 </td> <td> CANT.DE DCTOS.FACT.RECIB.DEL GIRO </td> </tr>
- <tr> <td>    <a href= '/necios-2021/libro-diario#Partida-1042'>marzo</a>  </td> <td> 519 </td> <td align='right' >  2 </td> <td> CANT.DE DCTOS.FACT.RECIB.DEL GIRO </td> </tr>
- <tr> <td>    <a href= '/necios-2021/libro-diario#Partida-1040'>enero</a>  </td> <td> 519 </td> <td align='right' >  2 </td> <td> CANT.DE DCTOS.FACT.RECIB.DEL GIRO </td> </tr>
- <tr> <td>    <a href= '/necios-2021/libro-diario#Partida-1050'>noviembre</a>  </td> <td> 519 </td> <td align='right' >  3 </td> <td> CANT.DE DCTOS.FACT.RECIB.DEL GIRO </td> </tr>
- <tr> <td>    <a href= '/necios-2021/libro-diario#Partida-1045'>junio</a>  </td> <td> 519 </td> <td align='right' >  3 </td> <td> CANT.DE DCTOS.FACT.RECIB.DEL GIRO </td> </tr>
- <tr> <td>    <a href= '/necios-2021/libro-diario#Partida-1044'>mayo</a>  </td> <td> 519 </td> <td align='right' >  3 </td> <td> CANT.DE DCTOS.FACT.RECIB.DEL GIRO </td> </tr>
- <tr> <td>    <a href= '/necios-2021/libro-diario#Partida-1041'>febrero</a>  </td> <td> 519 </td> <td align='right' >  3 </td> <td> CANT.DE DCTOS.FACT.RECIB.DEL GIRO </td> </tr>
- <tr> <td>    <a href= '/necios-2021/libro-diario#Partida-1048'>septiembre</a>  </td> <td> 519 </td> <td align='right' >  4 </td> <td> CANT.DE DCTOS.FACT.RECIB.DEL GIRO </td> </tr>
- <tr> <td>    <a href= '/necios-2021/libro-diario#Partida-1046'>julio</a>  </td> <td> 519 </td> <td align='right' >  7 </td> <td> CANT.DE DCTOS.FACT.RECIB.DEL GIRO </td> </tr>
  <tr height='50 px' style='font-weight:bold; background-color: lightgreen'> <td>  <a href= '/necios-2021/libro-diario#Partida-1052'>^</a> </td> <td> 519 </td> <td align='right' >  33 </td> <td> Total Anual </td> </tr>
- <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 519</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-201'> Ir a partida: 201</a> </td> <td colspan='3' align='left' > Por Gasto Administrativo: Servicio de Datos y Telefonía de octubre. </td>  </tr>
- <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 519</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-161'> Ir a partida: 161</a> </td> <td colspan='3' align='left' > Por Gasto Administrativo: Servicio de Datos y Telefonía de septiembre. </td>  </tr>
- <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 519</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-107'> Ir a partida: 107</a> </td> <td colspan='3' align='left' > Por Gasto Administrativo: Servicio de Datos y Telefonía: agosto. </td>  </tr>
- <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 519</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-105'> Ir a partida: 105</a> </td> <td colspan='3' align='left' > Por Gasto Administrativo: Servicio de Datos y Telefonía: pago vuelto a cobrar, de julio. </td>  </tr>
- <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 519</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-28'> Ir a partida: 28</a> </td> <td colspan='3' align='left' > Por Gasto Administrativo: Servicio de Datos y Telefonía: consumo marzo. </td>  </tr>
- <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 519</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-27'> Ir a partida: 27</a> </td> <td colspan='3' align='left' > Por Costo Directo de Ventas: Comisión Pasarela marzo Transbank. </td>  </tr>
- <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 519</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-22'> Ir a partida: 22</a> </td> <td colspan='3' align='left' > Por Gasto Administrativo: Servicio de Datos y Telefonía: consumo enero. </td>  </tr>
- <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 519</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-20'> Ir a partida: 20</a> </td> <td colspan='3' align='left' > Por Costo Directo de Ventas: Comisión Pasarela enero Transbank </td>  </tr>
- <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 519</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-9'> Ir a partida: 9</a> </td> <td colspan='3' align='left' > Por Costo Directo de Ventas: Comisión Pasarela diciembre Transbank </td>  </tr>
- <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 519</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-131'> Ir a partida: 131</a> </td> <td colspan='3' align='left' > Por amortizacion en enero de marca-alectrico-Por depreciacion en enero de taladro </td>  </tr>
- <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 519</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-8'> Ir a partida: 8</a> </td> <td colspan='3' align='left' > Por Costo Directo de Ventas: Comisión diciembre por pagos en pasarela KHIPU </td>  </tr>
- <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 519</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-184'> Ir a partida: 184</a> </td> <td colspan='3' align='left' > Por Gasto Administrativo: WebCam. </td>  </tr>
- <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 519</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-171'> Ir a partida: 171</a> </td> <td colspan='3' align='left' > Por Gasto Administrativo: Servicio de Datos y Telefonía: pago julio. </td>  </tr>
- <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 519</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-183'> Ir a partida: 183</a> </td> <td colspan='3' align='left' > Por Gasto Administrativo: Mouse. </td>  </tr>
- <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 519</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-50'> Ir a partida: 50</a> </td> <td colspan='3' align='left' > Por Gasto Promocional: Pendón Promocional Norma 4. </td>  </tr>
- <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 519</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-39'> Ir a partida: 39</a> </td> <td colspan='3' align='left' > Por Gasto Promocional: Compra de Flyers para Visitas a Terreno. </td>  </tr>
- <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 519</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-49'> Ir a partida: 49</a> </td> <td colspan='3' align='left' > Por Gasto Administrativo: Servicio de Datos y Telefonía: pago junio. </td>  </tr>
- <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 519</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-33'> Ir a partida: 33</a> </td> <td colspan='3' align='left' > Por Costo Directo de Ventas: Comisión Pasarela abril Transbank. </td>  </tr>
- <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 519</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-31'> Ir a partida: 31</a> </td> <td colspan='3' align='left' > Por Gasto Administrativo: Servicio de Datos y Telefonía: consumo marzo. </td>  </tr>
- <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 519</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-32'> Ir a partida: 32</a> </td> <td colspan='3' align='left' > Por Gasto Administrativo: Certificado Digital por 3 años. </td>  </tr>
- <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 519</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-18'> Ir a partida: 18</a> </td> <td colspan='3' align='left' > Por Gasto Administrativo: Matriz de Bordado y Parche QR Bordado Corporativo alectrico ®. </td>  </tr>
- <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 519</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-15'> Ir a partida: 15</a> </td> <td colspan='3' align='left' > Por Costo Directo de Ventas: Comisión Pasarela enero Transbank </td>  </tr>
- <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 519</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-17'> Ir a partida: 17</a> </td> <td colspan='3' align='left' > Por Gasto Administrativo: Servicio de Datos y Telefonía: pago inicial. </td>  </tr>
- <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 519</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-153'> Ir a partida: 153</a> </td> <td colspan='3' align='left' > Por Costo Directo de Ventas: Comisión Pasarela septiembre Transbank </td>  </tr>
- <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 519</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-139'> Ir a partida: 139</a> </td> <td colspan='3' align='left' > Por Gasto Administrativo: Servicio de Datos y Telefonía: consumo agosto. </td>  </tr>
- <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 519</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-145'> Ir a partida: 145</a> </td> <td colspan='3' align='left' > Renovación de Dominio Internet: alectrica.cl. </td>  </tr>
- <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 519</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-86'> Ir a partida: 86</a> </td> <td colspan='3' align='left' > Por Costo Directo de Ventas: Comisión Pasarela julio Transbank </td>  </tr>
- <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 519</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-64'> Ir a partida: 64</a> </td> <td colspan='3' align='left' > Por Gasto Promocional: 400 tarjetas de Visita. </td>  </tr>
- <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 519</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-67'> Ir a partida: 67</a> </td> <td colspan='3' align='left' > Gasto Adm: Certificado Digital </td>  </tr>
- <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 519</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-73'> Ir a partida: 73</a> </td> <td colspan='3' align='left' > Por Compra de Etiquetas </td>  </tr>
- <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 519</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-74'> Ir a partida: 74</a> </td> <td colspan='3' align='left' > Por Gasto Administrativo: Etiquetas </td>  </tr>
- <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 519</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-84'> Ir a partida: 84</a> </td> <td colspan='3' align='left' > Adquisión de Dominio Internet: aelectrico.cl. </td>  </tr>
+ <tr> <td>    <a href= '/necios-2021/libro-diario#Partida-1046'>julio</a>  </td> <td> 519 </td> <td align='right' >  7 </td> <td> CANT.DE DCTOS.FACT.RECIB.DEL GIRO </td> </tr>
  <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 519</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-85'> Ir a partida: 85</a> </td> <td colspan='3' align='left' > Por Gasto Promocinal: Masking-Tape </td>  </tr>
- <tr> <td>    <a href= '/necios-2021/libro-diario#Partida-1051'>diciembre</a>  </td> <td> 520 </td> <td align='right' >  1316 </td> <td> CREDITOS REC. REINT/FACT. DEL GIRO  </td> </tr>
- <tr> <td>    <a href= '/necios-2021/libro-diario#Partida-1049'>octubre</a>  </td> <td> 520 </td> <td align='right' >  1316 </td> <td> CREDITOS REC. REINT/FACT. DEL GIRO  </td> </tr>
- <tr> <td>    <a href= '/necios-2021/libro-diario#Partida-1047'>agosto</a>  </td> <td> 520 </td> <td align='right' >  8921 </td> <td> CREDITOS REC. REINT/FACT. DEL GIRO  </td> </tr>
- <tr> <td>    <a href= '/necios-2021/libro-diario#Partida-1043'>abril</a>  </td> <td> 520 </td> <td align='right' >  1435 </td> <td> CREDITOS REC. REINT/FACT. DEL GIRO  </td> </tr>
- <tr> <td>    <a href= '/necios-2021/libro-diario#Partida-1042'>marzo</a>  </td> <td> 520 </td> <td align='right' >  1351 </td> <td> CREDITOS REC. REINT/FACT. DEL GIRO  </td> </tr>
- <tr> <td>    <a href= '/necios-2021/libro-diario#Partida-1040'>enero</a>  </td> <td> 520 </td> <td align='right' >  329 </td> <td> CREDITOS REC. REINT/FACT. DEL GIRO  </td> </tr>
- <tr> <td>    <a href= '/necios-2021/libro-diario#Partida-1050'>noviembre</a>  </td> <td> 520 </td> <td align='right' >  4169 </td> <td> CREDITOS REC. REINT/FACT. DEL GIRO  </td> </tr>
- <tr> <td>    <a href= '/necios-2021/libro-diario#Partida-1045'>junio</a>  </td> <td> 520 </td> <td align='right' >  7966 </td> <td> CREDITOS REC. REINT/FACT. DEL GIRO  </td> </tr>
- <tr> <td>    <a href= '/necios-2021/libro-diario#Partida-1044'>mayo</a>  </td> <td> 520 </td> <td align='right' >  5356 </td> <td> CREDITOS REC. REINT/FACT. DEL GIRO  </td> </tr>
- <tr> <td>    <a href= '/necios-2021/libro-diario#Partida-1041'>febrero</a>  </td> <td> 520 </td> <td align='right' >  5123 </td> <td> CREDITOS REC. REINT/FACT. DEL GIRO  </td> </tr>
- <tr> <td>    <a href= '/necios-2021/libro-diario#Partida-1048'>septiembre</a>  </td> <td> 520 </td> <td align='right' >  4594 </td> <td> CREDITOS REC. REINT/FACT. DEL GIRO  </td> </tr>
- <tr> <td>    <a href= '/necios-2021/libro-diario#Partida-1046'>julio</a>  </td> <td> 520 </td> <td align='right' >  8946 </td> <td> CREDITOS REC. REINT/FACT. DEL GIRO  </td> </tr>
+ <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 519</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-84'> Ir a partida: 84</a> </td> <td colspan='3' align='left' > Adquisión de Dominio Internet: aelectrico.cl. </td>  </tr>
+ <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 519</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-74'> Ir a partida: 74</a> </td> <td colspan='3' align='left' > Por Gasto Administrativo: Etiquetas </td>  </tr>
+ <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 519</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-73'> Ir a partida: 73</a> </td> <td colspan='3' align='left' > Por Compra de Etiquetas </td>  </tr>
+ <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 519</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-67'> Ir a partida: 67</a> </td> <td colspan='3' align='left' > Gasto Adm: Certificado Digital </td>  </tr>
+ <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 519</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-64'> Ir a partida: 64</a> </td> <td colspan='3' align='left' > Por Gasto Promocional: 400 tarjetas de Visita. </td>  </tr>
+ <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 519</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-86'> Ir a partida: 86</a> </td> <td colspan='3' align='left' > Por Costo Directo de Ventas: Comisión Pasarela julio Transbank </td>  </tr>
+ <tr> <td>    <a href= '/necios-2021/libro-diario#Partida-1048'>septiembre</a>  </td> <td> 519 </td> <td align='right' >  4 </td> <td> CANT.DE DCTOS.FACT.RECIB.DEL GIRO </td> </tr>
+ <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 519</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-145'> Ir a partida: 145</a> </td> <td colspan='3' align='left' > Renovación de Dominio Internet: alectrica.cl. </td>  </tr>
+ <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 519</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-139'> Ir a partida: 139</a> </td> <td colspan='3' align='left' > Por Gasto Administrativo: Servicio de Datos y Telefonía: consumo agosto. </td>  </tr>
+ <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 519</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-131'> Ir a partida: 131</a> </td> <td colspan='3' align='left' > Adquisión de Dominio Internet: necios.cl. </td>  </tr>
+ <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 519</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-153'> Ir a partida: 153</a> </td> <td colspan='3' align='left' > Por Costo Directo de Ventas: Comisión Pasarela septiembre Transbank </td>  </tr>
+ <tr> <td>    <a href= '/necios-2021/libro-diario#Partida-1041'>febrero</a>  </td> <td> 519 </td> <td align='right' >  3 </td> <td> CANT.DE DCTOS.FACT.RECIB.DEL GIRO </td> </tr>
+ <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 519</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-17'> Ir a partida: 17</a> </td> <td colspan='3' align='left' > Por Gasto Administrativo: Servicio de Datos y Telefonía: pago inicial. </td>  </tr>
+ <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 519</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-15'> Ir a partida: 15</a> </td> <td colspan='3' align='left' > Por Costo Directo de Ventas: Comisión Pasarela enero Transbank </td>  </tr>
+ <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 519</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-18'> Ir a partida: 18</a> </td> <td colspan='3' align='left' > Por Gasto Administrativo: Matriz de Bordado y Parche QR Bordado Corporativo alectrico ®. </td>  </tr>
+ <tr> <td>    <a href= '/necios-2021/libro-diario#Partida-1044'>mayo</a>  </td> <td> 519 </td> <td align='right' >  3 </td> <td> CANT.DE DCTOS.FACT.RECIB.DEL GIRO </td> </tr>
+ <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 519</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-32'> Ir a partida: 32</a> </td> <td colspan='3' align='left' > Por Gasto Administrativo: Certificado Digital por 3 años. </td>  </tr>
+ <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 519</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-31'> Ir a partida: 31</a> </td> <td colspan='3' align='left' > Por Gasto Administrativo: Servicio de Datos y Telefonía: consumo marzo. </td>  </tr>
+ <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 519</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-33'> Ir a partida: 33</a> </td> <td colspan='3' align='left' > Por Costo Directo de Ventas: Comisión Pasarela abril Transbank. </td>  </tr>
+ <tr> <td>    <a href= '/necios-2021/libro-diario#Partida-1045'>junio</a>  </td> <td> 519 </td> <td align='right' >  3 </td> <td> CANT.DE DCTOS.FACT.RECIB.DEL GIRO </td> </tr>
+ <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 519</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-49'> Ir a partida: 49</a> </td> <td colspan='3' align='left' > Por Gasto Administrativo: Servicio de Datos y Telefonía: pago junio. </td>  </tr>
+ <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 519</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-39'> Ir a partida: 39</a> </td> <td colspan='3' align='left' > Por Gasto Promocional: Compra de Flyers para Visitas a Terreno. </td>  </tr>
+ <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 519</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-50'> Ir a partida: 50</a> </td> <td colspan='3' align='left' > Por Gasto Promocional: Pendón Promocional Norma 4. </td>  </tr>
+ <tr> <td>    <a href= '/necios-2021/libro-diario#Partida-1050'>noviembre</a>  </td> <td> 519 </td> <td align='right' >  3 </td> <td> CANT.DE DCTOS.FACT.RECIB.DEL GIRO </td> </tr>
+ <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 519</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-183'> Ir a partida: 183</a> </td> <td colspan='3' align='left' > Por Gasto Administrativo: Mouse. </td>  </tr>
+ <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 519</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-171'> Ir a partida: 171</a> </td> <td colspan='3' align='left' > Por Gasto Administrativo: Servicio de Datos y Telefonía: pago julio. </td>  </tr>
+ <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 519</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-184'> Ir a partida: 184</a> </td> <td colspan='3' align='left' > Por Gasto Administrativo: WebCam. </td>  </tr>
+ <tr> <td>    <a href= '/necios-2021/libro-diario#Partida-1040'>enero</a>  </td> <td> 519 </td> <td align='right' >  2 </td> <td> CANT.DE DCTOS.FACT.RECIB.DEL GIRO </td> </tr>
+ <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 519</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-8'> Ir a partida: 8</a> </td> <td colspan='3' align='left' > Por Costo Directo de Ventas: Comisión diciembre por pagos en pasarela KHIPU </td>  </tr>
+ <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 519</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-9'> Ir a partida: 9</a> </td> <td colspan='3' align='left' > Por Costo Directo de Ventas: Comisión Pasarela diciembre Transbank </td>  </tr>
+ <tr> <td>    <a href= '/necios-2021/libro-diario#Partida-1042'>marzo</a>  </td> <td> 519 </td> <td align='right' >  2 </td> <td> CANT.DE DCTOS.FACT.RECIB.DEL GIRO </td> </tr>
+ <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 519</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-20'> Ir a partida: 20</a> </td> <td colspan='3' align='left' > Por Costo Directo de Ventas: Comisión Pasarela enero Transbank </td>  </tr>
+ <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 519</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-22'> Ir a partida: 22</a> </td> <td colspan='3' align='left' > Por Gasto Administrativo: Servicio de Datos y Telefonía: consumo enero. </td>  </tr>
+ <tr> <td>    <a href= '/necios-2021/libro-diario#Partida-1043'>abril</a>  </td> <td> 519 </td> <td align='right' >  2 </td> <td> CANT.DE DCTOS.FACT.RECIB.DEL GIRO </td> </tr>
+ <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 519</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-27'> Ir a partida: 27</a> </td> <td colspan='3' align='left' > Por Costo Directo de Ventas: Comisión Pasarela marzo Transbank. </td>  </tr>
+ <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 519</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-28'> Ir a partida: 28</a> </td> <td colspan='3' align='left' > Por Gasto Administrativo: Servicio de Datos y Telefonía: consumo marzo. </td>  </tr>
+ <tr> <td>    <a href= '/necios-2021/libro-diario#Partida-1047'>agosto</a>  </td> <td> 519 </td> <td align='right' >  2 </td> <td> CANT.DE DCTOS.FACT.RECIB.DEL GIRO </td> </tr>
+ <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 519</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-105'> Ir a partida: 105</a> </td> <td colspan='3' align='left' > Por Gasto Administrativo: Servicio de Datos y Telefonía: pago vuelto a cobrar, de julio. </td>  </tr>
+ <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 519</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-107'> Ir a partida: 107</a> </td> <td colspan='3' align='left' > Por Gasto Administrativo: Servicio de Datos y Telefonía: agosto. </td>  </tr>
+ <tr> <td>    <a href= '/necios-2021/libro-diario#Partida-1049'>octubre</a>  </td> <td> 519 </td> <td align='right' >  1 </td> <td> CANT.DE DCTOS.FACT.RECIB.DEL GIRO </td> </tr>
+ <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 519</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-161'> Ir a partida: 161</a> </td> <td colspan='3' align='left' > Por Gasto Administrativo: Servicio de Datos y Telefonía de septiembre. </td>  </tr>
+ <tr> <td>    <a href= '/necios-2021/libro-diario#Partida-1051'>diciembre</a>  </td> <td> 519 </td> <td align='right' >  1 </td> <td> CANT.DE DCTOS.FACT.RECIB.DEL GIRO </td> </tr>
+ <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 519</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-201'> Ir a partida: 201</a> </td> <td colspan='3' align='left' > Por Gasto Administrativo: Servicio de Datos y Telefonía de octubre. </td>  </tr>
  <tr height='50 px' style='font-weight:bold; background-color: lightgreen'> <td>  <a href= '/necios-2021/libro-diario#Partida-1052'>^</a> </td> <td> 520 </td> <td align='right' >  50822 </td> <td> Total Anual </td> </tr>
- <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 520</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-201'> Ir a partida: 201</a> </td> <td colspan='3' align='left' > Por Gasto Administrativo: Servicio de Datos y Telefonía de octubre. </td>  </tr>
- <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 520</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-161'> Ir a partida: 161</a> </td> <td colspan='3' align='left' > Por Gasto Administrativo: Servicio de Datos y Telefonía de septiembre. </td>  </tr>
- <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 520</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-107'> Ir a partida: 107</a> </td> <td colspan='3' align='left' > Por Gasto Administrativo: Servicio de Datos y Telefonía: agosto. </td>  </tr>
- <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 520</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-105'> Ir a partida: 105</a> </td> <td colspan='3' align='left' > Por Gasto Administrativo: Servicio de Datos y Telefonía: pago vuelto a cobrar, de julio. </td>  </tr>
- <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 520</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-28'> Ir a partida: 28</a> </td> <td colspan='3' align='left' > Por Gasto Administrativo: Servicio de Datos y Telefonía: consumo marzo. </td>  </tr>
- <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 520</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-27'> Ir a partida: 27</a> </td> <td colspan='3' align='left' > Por Costo Directo de Ventas: Comisión Pasarela marzo Transbank. </td>  </tr>
- <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 520</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-22'> Ir a partida: 22</a> </td> <td colspan='3' align='left' > Por Gasto Administrativo: Servicio de Datos y Telefonía: consumo enero. </td>  </tr>
- <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 520</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-20'> Ir a partida: 20</a> </td> <td colspan='3' align='left' > Por Costo Directo de Ventas: Comisión Pasarela enero Transbank </td>  </tr>
- <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 520</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-9'> Ir a partida: 9</a> </td> <td colspan='3' align='left' > Por Costo Directo de Ventas: Comisión Pasarela diciembre Transbank </td>  </tr>
- <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 520</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-131'> Ir a partida: 131</a> </td> <td colspan='3' align='left' > Por amortizacion en enero de marca-alectrico-Por depreciacion en enero de taladro </td>  </tr>
- <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 520</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-8'> Ir a partida: 8</a> </td> <td colspan='3' align='left' > Por Costo Directo de Ventas: Comisión diciembre por pagos en pasarela KHIPU </td>  </tr>
- <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 520</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-184'> Ir a partida: 184</a> </td> <td colspan='3' align='left' > Por Gasto Administrativo: WebCam. </td>  </tr>
- <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 520</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-171'> Ir a partida: 171</a> </td> <td colspan='3' align='left' > Por Gasto Administrativo: Servicio de Datos y Telefonía: pago julio. </td>  </tr>
- <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 520</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-183'> Ir a partida: 183</a> </td> <td colspan='3' align='left' > Por Gasto Administrativo: Mouse. </td>  </tr>
- <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 520</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-50'> Ir a partida: 50</a> </td> <td colspan='3' align='left' > Por Gasto Promocional: Pendón Promocional Norma 4. </td>  </tr>
- <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 520</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-39'> Ir a partida: 39</a> </td> <td colspan='3' align='left' > Por Gasto Promocional: Compra de Flyers para Visitas a Terreno. </td>  </tr>
- <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 520</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-49'> Ir a partida: 49</a> </td> <td colspan='3' align='left' > Por Gasto Administrativo: Servicio de Datos y Telefonía: pago junio. </td>  </tr>
- <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 520</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-33'> Ir a partida: 33</a> </td> <td colspan='3' align='left' > Por Costo Directo de Ventas: Comisión Pasarela abril Transbank. </td>  </tr>
- <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 520</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-31'> Ir a partida: 31</a> </td> <td colspan='3' align='left' > Por Gasto Administrativo: Servicio de Datos y Telefonía: consumo marzo. </td>  </tr>
- <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 520</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-32'> Ir a partida: 32</a> </td> <td colspan='3' align='left' > Por Gasto Administrativo: Certificado Digital por 3 años. </td>  </tr>
- <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 520</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-18'> Ir a partida: 18</a> </td> <td colspan='3' align='left' > Por Gasto Administrativo: Matriz de Bordado y Parche QR Bordado Corporativo alectrico ®. </td>  </tr>
- <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 520</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-15'> Ir a partida: 15</a> </td> <td colspan='3' align='left' > Por Costo Directo de Ventas: Comisión Pasarela enero Transbank </td>  </tr>
- <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 520</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-17'> Ir a partida: 17</a> </td> <td colspan='3' align='left' > Por Gasto Administrativo: Servicio de Datos y Telefonía: pago inicial. </td>  </tr>
- <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 520</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-153'> Ir a partida: 153</a> </td> <td colspan='3' align='left' > Por Costo Directo de Ventas: Comisión Pasarela septiembre Transbank </td>  </tr>
- <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 520</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-139'> Ir a partida: 139</a> </td> <td colspan='3' align='left' > Por Gasto Administrativo: Servicio de Datos y Telefonía: consumo agosto. </td>  </tr>
- <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 520</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-145'> Ir a partida: 145</a> </td> <td colspan='3' align='left' > Renovación de Dominio Internet: alectrica.cl. </td>  </tr>
- <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 520</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-86'> Ir a partida: 86</a> </td> <td colspan='3' align='left' > Por Costo Directo de Ventas: Comisión Pasarela julio Transbank </td>  </tr>
- <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 520</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-64'> Ir a partida: 64</a> </td> <td colspan='3' align='left' > Por Gasto Promocional: 400 tarjetas de Visita. </td>  </tr>
- <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 520</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-67'> Ir a partida: 67</a> </td> <td colspan='3' align='left' > Gasto Adm: Certificado Digital </td>  </tr>
- <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 520</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-73'> Ir a partida: 73</a> </td> <td colspan='3' align='left' > Por Compra de Etiquetas </td>  </tr>
- <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 520</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-74'> Ir a partida: 74</a> </td> <td colspan='3' align='left' > Por Gasto Administrativo: Etiquetas </td>  </tr>
- <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 520</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-84'> Ir a partida: 84</a> </td> <td colspan='3' align='left' > Adquisión de Dominio Internet: aelectrico.cl. </td>  </tr>
+ <tr> <td>    <a href= '/necios-2021/libro-diario#Partida-1046'>julio</a>  </td> <td> 520 </td> <td align='right' >  8946 </td> <td> CREDITOS REC. REINT/FACT. DEL GIRO  </td> </tr>
  <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 520</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-85'> Ir a partida: 85</a> </td> <td colspan='3' align='left' > Por Gasto Promocinal: Masking-Tape </td>  </tr>
- <tr> <td>    <a href= '/necios-2021/libro-diario#Partida-1040'>enero</a>  </td> <td> 524 </td> <td align='right' >  1 </td> <td> TOTAL FACTURA ACTIVO FIJO </td> </tr>
- <tr> <td>    <a href= '/necios-2021/libro-diario#Partida-1046'>julio</a>  </td> <td> 524 </td> <td align='right' >  1 </td> <td> TOTAL FACTURA ACTIVO FIJO </td> </tr>
+ <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 520</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-84'> Ir a partida: 84</a> </td> <td colspan='3' align='left' > Adquisión de Dominio Internet: aelectrico.cl. </td>  </tr>
+ <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 520</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-74'> Ir a partida: 74</a> </td> <td colspan='3' align='left' > Por Gasto Administrativo: Etiquetas </td>  </tr>
+ <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 520</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-73'> Ir a partida: 73</a> </td> <td colspan='3' align='left' > Por Compra de Etiquetas </td>  </tr>
+ <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 520</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-67'> Ir a partida: 67</a> </td> <td colspan='3' align='left' > Gasto Adm: Certificado Digital </td>  </tr>
+ <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 520</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-64'> Ir a partida: 64</a> </td> <td colspan='3' align='left' > Por Gasto Promocional: 400 tarjetas de Visita. </td>  </tr>
+ <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 520</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-86'> Ir a partida: 86</a> </td> <td colspan='3' align='left' > Por Costo Directo de Ventas: Comisión Pasarela julio Transbank </td>  </tr>
+ <tr> <td>    <a href= '/necios-2021/libro-diario#Partida-1048'>septiembre</a>  </td> <td> 520 </td> <td align='right' >  4594 </td> <td> CREDITOS REC. REINT/FACT. DEL GIRO  </td> </tr>
+ <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 520</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-145'> Ir a partida: 145</a> </td> <td colspan='3' align='left' > Renovación de Dominio Internet: alectrica.cl. </td>  </tr>
+ <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 520</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-139'> Ir a partida: 139</a> </td> <td colspan='3' align='left' > Por Gasto Administrativo: Servicio de Datos y Telefonía: consumo agosto. </td>  </tr>
+ <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 520</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-131'> Ir a partida: 131</a> </td> <td colspan='3' align='left' > Adquisión de Dominio Internet: necios.cl. </td>  </tr>
+ <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 520</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-153'> Ir a partida: 153</a> </td> <td colspan='3' align='left' > Por Costo Directo de Ventas: Comisión Pasarela septiembre Transbank </td>  </tr>
+ <tr> <td>    <a href= '/necios-2021/libro-diario#Partida-1041'>febrero</a>  </td> <td> 520 </td> <td align='right' >  5123 </td> <td> CREDITOS REC. REINT/FACT. DEL GIRO  </td> </tr>
+ <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 520</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-17'> Ir a partida: 17</a> </td> <td colspan='3' align='left' > Por Gasto Administrativo: Servicio de Datos y Telefonía: pago inicial. </td>  </tr>
+ <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 520</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-15'> Ir a partida: 15</a> </td> <td colspan='3' align='left' > Por Costo Directo de Ventas: Comisión Pasarela enero Transbank </td>  </tr>
+ <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 520</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-18'> Ir a partida: 18</a> </td> <td colspan='3' align='left' > Por Gasto Administrativo: Matriz de Bordado y Parche QR Bordado Corporativo alectrico ®. </td>  </tr>
+ <tr> <td>    <a href= '/necios-2021/libro-diario#Partida-1044'>mayo</a>  </td> <td> 520 </td> <td align='right' >  5356 </td> <td> CREDITOS REC. REINT/FACT. DEL GIRO  </td> </tr>
+ <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 520</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-32'> Ir a partida: 32</a> </td> <td colspan='3' align='left' > Por Gasto Administrativo: Certificado Digital por 3 años. </td>  </tr>
+ <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 520</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-31'> Ir a partida: 31</a> </td> <td colspan='3' align='left' > Por Gasto Administrativo: Servicio de Datos y Telefonía: consumo marzo. </td>  </tr>
+ <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 520</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-33'> Ir a partida: 33</a> </td> <td colspan='3' align='left' > Por Costo Directo de Ventas: Comisión Pasarela abril Transbank. </td>  </tr>
+ <tr> <td>    <a href= '/necios-2021/libro-diario#Partida-1045'>junio</a>  </td> <td> 520 </td> <td align='right' >  7966 </td> <td> CREDITOS REC. REINT/FACT. DEL GIRO  </td> </tr>
+ <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 520</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-49'> Ir a partida: 49</a> </td> <td colspan='3' align='left' > Por Gasto Administrativo: Servicio de Datos y Telefonía: pago junio. </td>  </tr>
+ <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 520</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-39'> Ir a partida: 39</a> </td> <td colspan='3' align='left' > Por Gasto Promocional: Compra de Flyers para Visitas a Terreno. </td>  </tr>
+ <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 520</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-50'> Ir a partida: 50</a> </td> <td colspan='3' align='left' > Por Gasto Promocional: Pendón Promocional Norma 4. </td>  </tr>
+ <tr> <td>    <a href= '/necios-2021/libro-diario#Partida-1050'>noviembre</a>  </td> <td> 520 </td> <td align='right' >  4169 </td> <td> CREDITOS REC. REINT/FACT. DEL GIRO  </td> </tr>
+ <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 520</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-183'> Ir a partida: 183</a> </td> <td colspan='3' align='left' > Por Gasto Administrativo: Mouse. </td>  </tr>
+ <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 520</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-171'> Ir a partida: 171</a> </td> <td colspan='3' align='left' > Por Gasto Administrativo: Servicio de Datos y Telefonía: pago julio. </td>  </tr>
+ <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 520</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-184'> Ir a partida: 184</a> </td> <td colspan='3' align='left' > Por Gasto Administrativo: WebCam. </td>  </tr>
+ <tr> <td>    <a href= '/necios-2021/libro-diario#Partida-1040'>enero</a>  </td> <td> 520 </td> <td align='right' >  329 </td> <td> CREDITOS REC. REINT/FACT. DEL GIRO  </td> </tr>
+ <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 520</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-8'> Ir a partida: 8</a> </td> <td colspan='3' align='left' > Por Costo Directo de Ventas: Comisión diciembre por pagos en pasarela KHIPU </td>  </tr>
+ <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 520</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-9'> Ir a partida: 9</a> </td> <td colspan='3' align='left' > Por Costo Directo de Ventas: Comisión Pasarela diciembre Transbank </td>  </tr>
+ <tr> <td>    <a href= '/necios-2021/libro-diario#Partida-1042'>marzo</a>  </td> <td> 520 </td> <td align='right' >  1351 </td> <td> CREDITOS REC. REINT/FACT. DEL GIRO  </td> </tr>
+ <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 520</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-20'> Ir a partida: 20</a> </td> <td colspan='3' align='left' > Por Costo Directo de Ventas: Comisión Pasarela enero Transbank </td>  </tr>
+ <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 520</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-22'> Ir a partida: 22</a> </td> <td colspan='3' align='left' > Por Gasto Administrativo: Servicio de Datos y Telefonía: consumo enero. </td>  </tr>
+ <tr> <td>    <a href= '/necios-2021/libro-diario#Partida-1043'>abril</a>  </td> <td> 520 </td> <td align='right' >  1435 </td> <td> CREDITOS REC. REINT/FACT. DEL GIRO  </td> </tr>
+ <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 520</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-27'> Ir a partida: 27</a> </td> <td colspan='3' align='left' > Por Costo Directo de Ventas: Comisión Pasarela marzo Transbank. </td>  </tr>
+ <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 520</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-28'> Ir a partida: 28</a> </td> <td colspan='3' align='left' > Por Gasto Administrativo: Servicio de Datos y Telefonía: consumo marzo. </td>  </tr>
+ <tr> <td>    <a href= '/necios-2021/libro-diario#Partida-1047'>agosto</a>  </td> <td> 520 </td> <td align='right' >  8921 </td> <td> CREDITOS REC. REINT/FACT. DEL GIRO  </td> </tr>
+ <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 520</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-105'> Ir a partida: 105</a> </td> <td colspan='3' align='left' > Por Gasto Administrativo: Servicio de Datos y Telefonía: pago vuelto a cobrar, de julio. </td>  </tr>
+ <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 520</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-107'> Ir a partida: 107</a> </td> <td colspan='3' align='left' > Por Gasto Administrativo: Servicio de Datos y Telefonía: agosto. </td>  </tr>
+ <tr> <td>    <a href= '/necios-2021/libro-diario#Partida-1049'>octubre</a>  </td> <td> 520 </td> <td align='right' >  1316 </td> <td> CREDITOS REC. REINT/FACT. DEL GIRO  </td> </tr>
+ <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 520</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-161'> Ir a partida: 161</a> </td> <td colspan='3' align='left' > Por Gasto Administrativo: Servicio de Datos y Telefonía de septiembre. </td>  </tr>
+ <tr> <td>    <a href= '/necios-2021/libro-diario#Partida-1051'>diciembre</a>  </td> <td> 520 </td> <td align='right' >  1316 </td> <td> CREDITOS REC. REINT/FACT. DEL GIRO  </td> </tr>
+ <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 520</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-201'> Ir a partida: 201</a> </td> <td colspan='3' align='left' > Por Gasto Administrativo: Servicio de Datos y Telefonía de octubre. </td>  </tr>
  <tr height='50 px' style='font-weight:bold; background-color: lightgreen'> <td>  <a href= '/necios-2021/libro-diario#Partida-1052'>^</a> </td> <td> 524 </td> <td align='right' >  2 </td> <td> Total Anual </td> </tr>
- <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 524</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-13'> Ir a partida: 13</a> </td> <td colspan='3' align='left' > Por compra de taladro inalámbrico DeWalt a Sodimac </td>  </tr>
+ <tr> <td>    <a href= '/necios-2021/libro-diario#Partida-1046'>julio</a>  </td> <td> 524 </td> <td align='right' >  1 </td> <td> TOTAL FACTURA ACTIVO FIJO </td> </tr>
  <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 524</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-71'> Ir a partida: 71</a> </td> <td colspan='3' align='left' > Por compra de celular samsung </td>  </tr>
- <tr> <td>    <a href= '/necios-2021/libro-diario#Partida-1040'>enero</a>  </td> <td> 525 </td> <td align='right' >  28738 </td> <td> CRÉD. RECUP. Y REINT. FACT. ACTIVO FIJO </td> </tr>
- <tr> <td>    <a href= '/necios-2021/libro-diario#Partida-1046'>julio</a>  </td> <td> 525 </td> <td align='right' >  12772 </td> <td> CRÉD. RECUP. Y REINT. FACT. ACTIVO FIJO </td> </tr>
+ <tr> <td>    <a href= '/necios-2021/libro-diario#Partida-1040'>enero</a>  </td> <td> 524 </td> <td align='right' >  1 </td> <td> TOTAL FACTURA ACTIVO FIJO </td> </tr>
+ <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 524</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-13'> Ir a partida: 13</a> </td> <td colspan='3' align='left' > Por compra de taladro inalámbrico DeWalt a Sodimac </td>  </tr>
  <tr height='50 px' style='font-weight:bold; background-color: lightgreen'> <td>  <a href= '/necios-2021/libro-diario#Partida-1052'>^</a> </td> <td> 525 </td> <td align='right' >  41510 </td> <td> Total Anual </td> </tr>
- <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 525</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-13'> Ir a partida: 13</a> </td> <td colspan='3' align='left' > Por compra de taladro inalámbrico DeWalt a Sodimac </td>  </tr>
+ <tr> <td>    <a href= '/necios-2021/libro-diario#Partida-1046'>julio</a>  </td> <td> 525 </td> <td align='right' >  12772 </td> <td> CRÉD. RECUP. Y REINT. FACT. ACTIVO FIJO </td> </tr>
  <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 525</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-71'> Ir a partida: 71</a> </td> <td colspan='3' align='left' > Por compra de celular samsung </td>  </tr>
- <tr> <td>    <a href= '/necios-2021/libro-diario#Partida-1040'>enero</a>  </td> <td> 527 </td> <td align='right' >  0 </td> <td> CANT.NOTAS DE CREDITO RECIBIDAS </td> </tr>
- <tr> <td>    <a href= '/necios-2021/libro-diario#Partida-1041'>febrero</a>  </td> <td> 527 </td> <td align='right' >  0 </td> <td> CANT.NOTAS DE CREDITO RECIBIDAS </td> </tr>
- <tr> <td>    <a href= '/necios-2021/libro-diario#Partida-1046'>julio</a>  </td> <td> 527 </td> <td align='right' >  0 </td> <td> CANT.NOTAS DE CREDITO RECIBIDAS </td> </tr>
- <tr> <td>    <a href= '/necios-2021/libro-diario#Partida-1047'>agosto</a>  </td> <td> 527 </td> <td align='right' >  0 </td> <td> CANT.NOTAS DE CREDITO RECIBIDAS </td> </tr>
- <tr> <td>    <a href= '/necios-2021/libro-diario#Partida-1048'>septiembre</a>  </td> <td> 527 </td> <td align='right' >  0 </td> <td> CANT.NOTAS DE CREDITO RECIBIDAS </td> </tr>
- <tr> <td>    <a href= '/necios-2021/libro-diario#Partida-1049'>octubre</a>  </td> <td> 527 </td> <td align='right' >  0 </td> <td> CANT.NOTAS DE CREDITO RECIBIDAS </td> </tr>
+ <tr> <td>    <a href= '/necios-2021/libro-diario#Partida-1040'>enero</a>  </td> <td> 525 </td> <td align='right' >  28738 </td> <td> CRÉD. RECUP. Y REINT. FACT. ACTIVO FIJO </td> </tr>
+ <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 525</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-13'> Ir a partida: 13</a> </td> <td colspan='3' align='left' > Por compra de taladro inalámbrico DeWalt a Sodimac </td>  </tr>
  <tr height='50 px' style='font-weight:bold; background-color: lightgreen'> <td>  <a href= '/necios-2021/libro-diario#Partida-1052'>^</a> </td> <td> 527 </td> <td align='right' >  0 </td> <td> Total Anual </td> </tr>
- <tr> <td>    <a href= '/necios-2021/libro-diario#Partida-1043'>abril</a>  </td> <td> 528 </td> <td align='right' >  -1416 </td> <td> CREDITO RECUP.Y REINT/NOTAS DE CRED. </td> </tr>
- <tr> <td>    <a href= '/necios-2021/libro-diario#Partida-1041'>febrero</a>  </td> <td> 528 </td> <td align='right' >  -5089 </td> <td> CREDITO RECUP.Y REINT/NOTAS DE CRED. </td> </tr>
- <tr> <td>    <a href= '/necios-2021/libro-diario#Partida-1044'>mayo</a>  </td> <td> 528 </td> <td align='right' >  -5313 </td> <td> CREDITO RECUP.Y REINT/NOTAS DE CRED. </td> </tr>
- <tr> <td>    <a href= '/necios-2021/libro-diario#Partida-1047'>agosto</a>  </td> <td> 528 </td> <td align='right' >  -1272 </td> <td> CREDITO RECUP.Y REINT/NOTAS DE CRED. </td> </tr>
+ <tr> <td>    <a href= '/necios-2021/libro-diario#Partida-1049'>octubre</a>  </td> <td> 527 </td> <td align='right' >  0 </td> <td> CANT.NOTAS DE CREDITO RECIBIDAS </td> </tr>
+ <tr> <td>    <a href= '/necios-2021/libro-diario#Partida-1048'>septiembre</a>  </td> <td> 527 </td> <td align='right' >  0 </td> <td> CANT.NOTAS DE CREDITO RECIBIDAS </td> </tr>
+ <tr> <td>    <a href= '/necios-2021/libro-diario#Partida-1047'>agosto</a>  </td> <td> 527 </td> <td align='right' >  0 </td> <td> CANT.NOTAS DE CREDITO RECIBIDAS </td> </tr>
+ <tr> <td>    <a href= '/necios-2021/libro-diario#Partida-1046'>julio</a>  </td> <td> 527 </td> <td align='right' >  0 </td> <td> CANT.NOTAS DE CREDITO RECIBIDAS </td> </tr>
+ <tr> <td>    <a href= '/necios-2021/libro-diario#Partida-1041'>febrero</a>  </td> <td> 527 </td> <td align='right' >  0 </td> <td> CANT.NOTAS DE CREDITO RECIBIDAS </td> </tr>
+ <tr> <td>    <a href= '/necios-2021/libro-diario#Partida-1040'>enero</a>  </td> <td> 527 </td> <td align='right' >  0 </td> <td> CANT.NOTAS DE CREDITO RECIBIDAS </td> </tr>
  <tr height='50 px' style='font-weight:bold; background-color: lightgreen'> <td>  <a href= '/necios-2021/libro-diario#Partida-1052'>^</a> </td> <td> 528 </td> <td align='right' >  -13090 </td> <td> Total Anual </td> </tr>
- <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 528</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-301'> Ir a partida: 301</a> </td> <td colspan='3' align='left' > Devolución a subcuenta ventas-con-factura-afecta por Ajuste Mensual de Comisión Transbank mes abril </td>  </tr>
- <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 528</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-27'> Ir a partida: 27</a> </td> <td colspan='3' align='left' > Por Costo Directo de Ventas: Comisión Pasarela marzo Transbank. </td>  </tr>
- <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 528</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-28'> Ir a partida: 28</a> </td> <td colspan='3' align='left' > Por Gasto Administrativo: Servicio de Datos y Telefonía: consumo marzo. </td>  </tr>
- <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 528</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-19'> Ir a partida: 19</a> </td> <td colspan='3' align='left' > Devolución a subcuenta transbank por Ajuste Mensual de Comisión mes febrero </td>  </tr>
- <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 528</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-15'> Ir a partida: 15</a> </td> <td colspan='3' align='left' > Por Costo Directo de Ventas: Comisión Pasarela enero Transbank </td>  </tr>
- <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 528</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-17'> Ir a partida: 17</a> </td> <td colspan='3' align='left' > Por Gasto Administrativo: Servicio de Datos y Telefonía: pago inicial. </td>  </tr>
- <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 528</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-18'> Ir a partida: 18</a> </td> <td colspan='3' align='left' > Por Gasto Administrativo: Matriz de Bordado y Parche QR Bordado Corporativo alectrico ®. </td>  </tr>
- <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 528</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-37'> Ir a partida: 37</a> </td> <td colspan='3' align='left' > Devolución a subcuenta ventas-con-factura-afecta por Ajuste Mensual de Comisión Transbank mes mayo </td>  </tr>
- <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 528</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-31'> Ir a partida: 31</a> </td> <td colspan='3' align='left' > Por Gasto Administrativo: Servicio de Datos y Telefonía: consumo marzo. </td>  </tr>
- <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 528</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-32'> Ir a partida: 32</a> </td> <td colspan='3' align='left' > Por Gasto Administrativo: Certificado Digital por 3 años. </td>  </tr>
- <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 528</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-33'> Ir a partida: 33</a> </td> <td colspan='3' align='left' > Por Costo Directo de Ventas: Comisión Pasarela abril Transbank. </td>  </tr>
- <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 528</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-108'> Ir a partida: 108</a> </td> <td colspan='3' align='left' > Devolución a subcuenta transbank por Ajuste Mensual de Comisión mes agosto </td>  </tr>
- <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 528</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-98'> Ir a partida: 98</a> </td> <td colspan='3' align='left' > Devolución a subcuenta entel por Por Gasto Administrativo: Servicio de Datos y Telefonía: pago julio. mes agosto </td>  </tr>
- <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 528</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-105'> Ir a partida: 105</a> </td> <td colspan='3' align='left' > Por Gasto Administrativo: Servicio de Datos y Telefonía: pago vuelto a cobrar, de julio. </td>  </tr>
+ <tr> <td>    <a href= '/necios-2021/libro-diario#Partida-1047'>agosto</a>  </td> <td> 528 </td> <td align='right' >  -1272 </td> <td> CREDITO RECUP.Y REINT/NOTAS DE CRED. </td> </tr>
  <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 528</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-107'> Ir a partida: 107</a> </td> <td colspan='3' align='left' > Por Gasto Administrativo: Servicio de Datos y Telefonía: agosto. </td>  </tr>
- <tr> <td>    <a href= '/necios-2021/libro-diario#Partida-1040'>enero</a>  </td> <td> 538 </td> <td align='right' >  23464 </td> <td> TOTAL DEBITOS  </td> </tr>
- <tr> <td>    <a href= '/necios-2021/libro-diario#Partida-1042'>marzo</a>  </td> <td> 538 </td> <td align='right' >  5588 </td> <td> TOTAL DEBITOS  </td> </tr>
- <tr> <td>    <a href= '/necios-2021/libro-diario#Partida-1043'>abril</a>  </td> <td> 538 </td> <td align='right' >  4790 </td> <td> TOTAL DEBITOS  </td> </tr>
- <tr> <td>    <a href= '/necios-2021/libro-diario#Partida-1046'>julio</a>  </td> <td> 538 </td> <td align='right' >  28873 </td> <td> TOTAL DEBITOS  </td> </tr>
- <tr> <td>    <a href= '/necios-2021/libro-diario#Partida-1047'>agosto</a>  </td> <td> 538 </td> <td align='right' >  6387 </td> <td> TOTAL DEBITOS  </td> </tr>
+ <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 528</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-105'> Ir a partida: 105</a> </td> <td colspan='3' align='left' > Por Gasto Administrativo: Servicio de Datos y Telefonía: pago vuelto a cobrar, de julio. </td>  </tr>
+ <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 528</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-98'> Ir a partida: 98</a> </td> <td colspan='3' align='left' > Devolución a subcuenta entel por Por Gasto Administrativo: Servicio de Datos y Telefonía: pago julio. mes agosto </td>  </tr>
+ <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 528</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-108'> Ir a partida: 108</a> </td> <td colspan='3' align='left' > Devolución a subcuenta transbank por Ajuste Mensual de Comisión mes agosto </td>  </tr>
+ <tr> <td>    <a href= '/necios-2021/libro-diario#Partida-1044'>mayo</a>  </td> <td> 528 </td> <td align='right' >  -5313 </td> <td> CREDITO RECUP.Y REINT/NOTAS DE CRED. </td> </tr>
+ <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 528</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-33'> Ir a partida: 33</a> </td> <td colspan='3' align='left' > Por Costo Directo de Ventas: Comisión Pasarela abril Transbank. </td>  </tr>
+ <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 528</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-32'> Ir a partida: 32</a> </td> <td colspan='3' align='left' > Por Gasto Administrativo: Certificado Digital por 3 años. </td>  </tr>
+ <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 528</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-31'> Ir a partida: 31</a> </td> <td colspan='3' align='left' > Por Gasto Administrativo: Servicio de Datos y Telefonía: consumo marzo. </td>  </tr>
+ <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 528</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-37'> Ir a partida: 37</a> </td> <td colspan='3' align='left' > Devolución a subcuenta ventas-con-factura-afecta por Ajuste Mensual de Comisión Transbank mes mayo </td>  </tr>
+ <tr> <td>    <a href= '/necios-2021/libro-diario#Partida-1041'>febrero</a>  </td> <td> 528 </td> <td align='right' >  -5089 </td> <td> CREDITO RECUP.Y REINT/NOTAS DE CRED. </td> </tr>
+ <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 528</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-18'> Ir a partida: 18</a> </td> <td colspan='3' align='left' > Por Gasto Administrativo: Matriz de Bordado y Parche QR Bordado Corporativo alectrico ®. </td>  </tr>
+ <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 528</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-17'> Ir a partida: 17</a> </td> <td colspan='3' align='left' > Por Gasto Administrativo: Servicio de Datos y Telefonía: pago inicial. </td>  </tr>
+ <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 528</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-15'> Ir a partida: 15</a> </td> <td colspan='3' align='left' > Por Costo Directo de Ventas: Comisión Pasarela enero Transbank </td>  </tr>
+ <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 528</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-19'> Ir a partida: 19</a> </td> <td colspan='3' align='left' > Devolución a subcuenta transbank por Ajuste Mensual de Comisión mes febrero </td>  </tr>
+ <tr> <td>    <a href= '/necios-2021/libro-diario#Partida-1043'>abril</a>  </td> <td> 528 </td> <td align='right' >  -1416 </td> <td> CREDITO RECUP.Y REINT/NOTAS DE CRED. </td> </tr>
+ <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 528</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-28'> Ir a partida: 28</a> </td> <td colspan='3' align='left' > Por Gasto Administrativo: Servicio de Datos y Telefonía: consumo marzo. </td>  </tr>
+ <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 528</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-27'> Ir a partida: 27</a> </td> <td colspan='3' align='left' > Por Costo Directo de Ventas: Comisión Pasarela marzo Transbank. </td>  </tr>
+ <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 528</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-301'> Ir a partida: 301</a> </td> <td colspan='3' align='left' > Devolución a subcuenta ventas-con-factura-afecta por Ajuste Mensual de Comisión Transbank mes abril </td>  </tr>
  <tr height='50 px' style='font-weight:bold; background-color: lightgreen'> <td>  <a href= '/necios-2021/libro-diario#Partida-1052'>^</a> </td> <td> 538 </td> <td align='right' >  69102 </td> <td> Total Anual </td> </tr>
- <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 538</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-4'> Ir a partida: 4</a> </td> <td colspan='3' align='left' > Por rendición de vouchers de enero de 2021 </td>  </tr>
- <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 538</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-26'> Ir a partida: 26</a> </td> <td colspan='3' align='left' > Por rendición de vouchers de marzo de 2021 </td>  </tr>
- <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 538</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-30'> Ir a partida: 30</a> </td> <td colspan='3' align='left' > Por rendición de vouchers de abril de 2021 </td>  </tr>
- <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 538</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-77'> Ir a partida: 77</a> </td> <td colspan='3' align='left' > Por rendición de vouchers de julio de 2021 </td>  </tr>
+ <tr> <td>    <a href= '/necios-2021/libro-diario#Partida-1047'>agosto</a>  </td> <td> 538 </td> <td align='right' >  6387 </td> <td> TOTAL DEBITOS  </td> </tr>
  <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 538</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-92'> Ir a partida: 92</a> </td> <td colspan='3' align='left' > Por rendición de vouchers de agosto de 2021 </td>  </tr>
- <tr> <td>    <a href= '/necios-2021/libro-diario#Partida-1041'>febrero</a>  </td> <td> 563 </td> <td align='right' >  84 </td> <td> BASE IMPONIBLE </td> </tr>
- <tr> <td>    <a href= '/necios-2021/libro-diario#Partida-1042'>marzo</a>  </td> <td> 563 </td> <td align='right' >  29412 </td> <td> BASE IMPONIBLE </td> </tr>
- <tr> <td>    <a href= '/necios-2021/libro-diario#Partida-1043'>abril</a>  </td> <td> 563 </td> <td align='right' >  25210 </td> <td> BASE IMPONIBLE </td> </tr>
- <tr> <td>    <a href= '/necios-2021/libro-diario#Partida-1050'>noviembre</a>  </td> <td> 563 </td> <td align='right' >  6666 </td> <td> BASE IMPONIBLE </td> </tr>
- <tr> <td>    <a href= '/necios-2021/libro-diario#Partida-1040'>enero</a>  </td> <td> 563 </td> <td align='right' >  152909 </td> <td> BASE IMPONIBLE </td> </tr>
- <tr> <td>    <a href= '/necios-2021/libro-diario#Partida-1049'>octubre</a>  </td> <td> 563 </td> <td align='right' >  114139 </td> <td> BASE IMPONIBLE </td> </tr>
- <tr> <td>    <a href= '/necios-2021/libro-diario#Partida-1046'>julio</a>  </td> <td> 563 </td> <td align='right' >  873962 </td> <td> BASE IMPONIBLE </td> </tr>
- <tr> <td>    <a href= '/necios-2021/libro-diario#Partida-1051'>diciembre</a>  </td> <td> 563 </td> <td align='right' >  229606 </td> <td> BASE IMPONIBLE </td> </tr>
- <tr> <td>    <a href= '/necios-2021/libro-diario#Partida-1048'>septiembre</a>  </td> <td> 563 </td> <td align='right' >  712080 </td> <td> BASE IMPONIBLE </td> </tr>
- <tr> <td>    <a href= '/necios-2021/libro-diario#Partida-1047'>agosto</a>  </td> <td> 563 </td> <td align='right' >  467556 </td> <td> BASE IMPONIBLE </td> </tr>
+ <tr> <td>    <a href= '/necios-2021/libro-diario#Partida-1046'>julio</a>  </td> <td> 538 </td> <td align='right' >  28873 </td> <td> TOTAL DEBITOS  </td> </tr>
+ <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 538</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-77'> Ir a partida: 77</a> </td> <td colspan='3' align='left' > Por rendición de vouchers de julio de 2021 </td>  </tr>
+ <tr> <td>    <a href= '/necios-2021/libro-diario#Partida-1043'>abril</a>  </td> <td> 538 </td> <td align='right' >  4790 </td> <td> TOTAL DEBITOS  </td> </tr>
+ <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 538</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-30'> Ir a partida: 30</a> </td> <td colspan='3' align='left' > Por rendición de vouchers de abril de 2021 </td>  </tr>
+ <tr> <td>    <a href= '/necios-2021/libro-diario#Partida-1042'>marzo</a>  </td> <td> 538 </td> <td align='right' >  5588 </td> <td> TOTAL DEBITOS  </td> </tr>
+ <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 538</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-26'> Ir a partida: 26</a> </td> <td colspan='3' align='left' > Por rendición de vouchers de marzo de 2021 </td>  </tr>
+ <tr> <td>    <a href= '/necios-2021/libro-diario#Partida-1040'>enero</a>  </td> <td> 538 </td> <td align='right' >  23464 </td> <td> TOTAL DEBITOS  </td> </tr>
+ <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 538</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-4'> Ir a partida: 4</a> </td> <td colspan='3' align='left' > Por rendición de vouchers de enero de 2021 </td>  </tr>
  <tr height='50 px' style='font-weight:bold; background-color: lightgreen'> <td>  <a href= '/necios-2021/libro-diario#Partida-1052'>^</a> </td> <td> 563 </td> <td align='right' >  2611624 </td> <td> Total Anual </td> </tr>
- <tr> <td>    <a href= '/necios-2021/libro-diario#Partida-1049'>octubre</a>  </td> <td> 586 </td> <td align='right' >  0 </td> <td> Qty Ventas/Servicios Exentos </td> </tr>
- <tr> <td>    <a href= '/necios-2021/libro-diario#Partida-1050'>noviembre</a>  </td> <td> 586 </td> <td align='right' >  1 </td> <td> Qty Ventas/Servicios Exentos </td> </tr>
- <tr> <td>    <a href= '/necios-2021/libro-diario#Partida-1046'>julio</a>  </td> <td> 586 </td> <td align='right' >  2 </td> <td> Qty Ventas/Servicios Exentos </td> </tr>
- <tr> <td>    <a href= '/necios-2021/libro-diario#Partida-1047'>agosto</a>  </td> <td> 586 </td> <td align='right' >  2 </td> <td> Qty Ventas/Servicios Exentos </td> </tr>
- <tr> <td>    <a href= '/necios-2021/libro-diario#Partida-1048'>septiembre</a>  </td> <td> 586 </td> <td align='right' >  2 </td> <td> Qty Ventas/Servicios Exentos </td> </tr>
- <tr> <td>    <a href= '/necios-2021/libro-diario#Partida-1051'>diciembre</a>  </td> <td> 586 </td> <td align='right' >  3 </td> <td> Qty Ventas/Servicios Exentos </td> </tr>
+ <tr> <td>    <a href= '/necios-2021/libro-diario#Partida-1047'>agosto</a>  </td> <td> 563 </td> <td align='right' >  467556 </td> <td> BASE IMPONIBLE </td> </tr>
+ <tr> <td>    <a href= '/necios-2021/libro-diario#Partida-1048'>septiembre</a>  </td> <td> 563 </td> <td align='right' >  712080 </td> <td> BASE IMPONIBLE </td> </tr>
+ <tr> <td>    <a href= '/necios-2021/libro-diario#Partida-1051'>diciembre</a>  </td> <td> 563 </td> <td align='right' >  229606 </td> <td> BASE IMPONIBLE </td> </tr>
+ <tr> <td>    <a href= '/necios-2021/libro-diario#Partida-1046'>julio</a>  </td> <td> 563 </td> <td align='right' >  873962 </td> <td> BASE IMPONIBLE </td> </tr>
+ <tr> <td>    <a href= '/necios-2021/libro-diario#Partida-1049'>octubre</a>  </td> <td> 563 </td> <td align='right' >  114139 </td> <td> BASE IMPONIBLE </td> </tr>
+ <tr> <td>    <a href= '/necios-2021/libro-diario#Partida-1040'>enero</a>  </td> <td> 563 </td> <td align='right' >  152909 </td> <td> BASE IMPONIBLE </td> </tr>
+ <tr> <td>    <a href= '/necios-2021/libro-diario#Partida-1050'>noviembre</a>  </td> <td> 563 </td> <td align='right' >  6666 </td> <td> BASE IMPONIBLE </td> </tr>
+ <tr> <td>    <a href= '/necios-2021/libro-diario#Partida-1043'>abril</a>  </td> <td> 563 </td> <td align='right' >  25210 </td> <td> BASE IMPONIBLE </td> </tr>
+ <tr> <td>    <a href= '/necios-2021/libro-diario#Partida-1042'>marzo</a>  </td> <td> 563 </td> <td align='right' >  29412 </td> <td> BASE IMPONIBLE </td> </tr>
+ <tr> <td>    <a href= '/necios-2021/libro-diario#Partida-1041'>febrero</a>  </td> <td> 563 </td> <td align='right' >  84 </td> <td> BASE IMPONIBLE </td> </tr>
  <tr height='50 px' style='font-weight:bold; background-color: lightgreen'> <td>  <a href= '/necios-2021/libro-diario#Partida-1052'>^</a> </td> <td> 586 </td> <td align='right' >  10 </td> <td> Total Anual </td> </tr>
- <tr height='50 px' style= 'text-decoration-line: line-through; text-decoration-line-color: red; font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 586</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-159'> Ir a partida: 159</a> </td> <td colspan='3' align='left' > Por venta en registro de compra-ventas del SII folio: 6 de visita-huelen-pago-4-6 a gonzalo </td>  </tr>
- <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 586</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-170'> Ir a partida: 170</a> </td> <td colspan='3' align='left' > Por venta en registro de compra-ventas del SII folio: 7 de visita-huelen-pago-5-6 a gonzalo </td>  </tr>
- <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 586</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-75'> Ir a partida: 75</a> </td> <td colspan='3' align='left' > Por venta en registro de compra-ventas del SII folio: 1 de revision-electrica a gonzalo </td>  </tr>
- <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 586</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-81'> Ir a partida: 81</a> </td> <td colspan='3' align='left' > Por rendición de e-boletas exentas de julio de 2021 </td>  </tr>
- <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 586</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-93'> Ir a partida: 93</a> </td> <td colspan='3' align='left' > Por venta en registro de compra-ventas del SII folio: 2 de visita-a-huelen a gonzalo </td>  </tr>
- <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 586</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-117'> Ir a partida: 117</a> </td> <td colspan='3' align='left' > Por venta en registro de compra-ventas del SII folio: 3 de diseño-electrico-los-capitanes-fase-2 a gonzalo </td>  </tr>
- <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 586</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-128'> Ir a partida: 128</a> </td> <td colspan='3' align='left' > Por venta en registro de compra-ventas del SII folio: 4 de diseño-electrico-los-capitanes-fase-2 a gonzalo </td>  </tr>
- <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 586</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-133'> Ir a partida: 133</a> </td> <td colspan='3' align='left' > Por venta en registro de compra-ventas del SII folio: 5 de visita-huelen-pago-2-6-la-boleta-dice-pago-1-de-6 a gonzalo </td>  </tr>
- <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 586</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-195'> Ir a partida: 195</a> </td> <td colspan='3' align='left' > Por venta en registro de compra-ventas del SII folio: 8 de visita-huelen-pago-5-6 a gonzalo </td>  </tr>
- <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 586</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-199'> Ir a partida: 199</a> </td> <td colspan='3' align='left' > Por venta a gonzalo </td>  </tr>
+ <tr> <td>    <a href= '/necios-2021/libro-diario#Partida-1051'>diciembre</a>  </td> <td> 586 </td> <td align='right' >  3 </td> <td> Qty Ventas/Servicios Exentos </td> </tr>
  <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 586</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-196'> Ir a partida: 196</a> </td> <td colspan='3' align='left' > Por venta en registro de compra-ventas del SII folio: 9 de visita-huelen-pago-6-6 a gonzalo </td>  </tr>
- <tr> <td>    <a href= '/necios-2021/libro-diario#Partida-1040'>enero</a>  </td> <td> 758 </td> <td align='right' >  20 </td> <td> CANT. RECIBO DE PAGO MEDIOS ELECTRÓNICOS </td> </tr>
- <tr> <td>    <a href= '/necios-2021/libro-diario#Partida-1042'>marzo</a>  </td> <td> 758 </td> <td align='right' >  1 </td> <td> CANT. RECIBO DE PAGO MEDIOS ELECTRÓNICOS </td> </tr>
- <tr> <td>    <a href= '/necios-2021/libro-diario#Partida-1043'>abril</a>  </td> <td> 758 </td> <td align='right' >  1 </td> <td> CANT. RECIBO DE PAGO MEDIOS ELECTRÓNICOS </td> </tr>
- <tr> <td>    <a href= '/necios-2021/libro-diario#Partida-1046'>julio</a>  </td> <td> 758 </td> <td align='right' >  3 </td> <td> CANT. RECIBO DE PAGO MEDIOS ELECTRÓNICOS </td> </tr>
- <tr> <td>    <a href= '/necios-2021/libro-diario#Partida-1047'>agosto</a>  </td> <td> 758 </td> <td align='right' >  1 </td> <td> CANT. RECIBO DE PAGO MEDIOS ELECTRÓNICOS </td> </tr>
+ <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 586</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-199'> Ir a partida: 199</a> </td> <td colspan='3' align='left' > Por venta a gonzalo </td>  </tr>
+ <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 586</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-195'> Ir a partida: 195</a> </td> <td colspan='3' align='left' > Por venta en registro de compra-ventas del SII folio: 8 de visita-huelen-pago-5-6 a gonzalo </td>  </tr>
+ <tr> <td>    <a href= '/necios-2021/libro-diario#Partida-1048'>septiembre</a>  </td> <td> 586 </td> <td align='right' >  2 </td> <td> Qty Ventas/Servicios Exentos </td> </tr>
+ <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 586</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-133'> Ir a partida: 133</a> </td> <td colspan='3' align='left' > Por venta en registro de compra-ventas del SII folio: 5 de visita-huelen-pago-2-6-la-boleta-dice-pago-1-de-6 a gonzalo </td>  </tr>
+ <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 586</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-128'> Ir a partida: 128</a> </td> <td colspan='3' align='left' > Por venta en registro de compra-ventas del SII folio: 4 de diseño-electrico-los-capitanes-fase-2 a gonzalo </td>  </tr>
+ <tr> <td>    <a href= '/necios-2021/libro-diario#Partida-1047'>agosto</a>  </td> <td> 586 </td> <td align='right' >  2 </td> <td> Qty Ventas/Servicios Exentos </td> </tr>
+ <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 586</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-117'> Ir a partida: 117</a> </td> <td colspan='3' align='left' > Por venta en registro de compra-ventas del SII folio: 3 de diseño-electrico-los-capitanes-fase-2 a gonzalo </td>  </tr>
+ <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 586</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-93'> Ir a partida: 93</a> </td> <td colspan='3' align='left' > Por venta en registro de compra-ventas del SII folio: 2 de visita-a-huelen a gonzalo </td>  </tr>
+ <tr> <td>    <a href= '/necios-2021/libro-diario#Partida-1046'>julio</a>  </td> <td> 586 </td> <td align='right' >  2 </td> <td> Qty Ventas/Servicios Exentos </td> </tr>
+ <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 586</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-81'> Ir a partida: 81</a> </td> <td colspan='3' align='left' > Por rendición de e-boletas exentas de julio de 2021 </td>  </tr>
+ <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 586</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-75'> Ir a partida: 75</a> </td> <td colspan='3' align='left' > Por venta en registro de compra-ventas del SII folio: 1 de revision-electrica a gonzalo </td>  </tr>
+ <tr> <td>    <a href= '/necios-2021/libro-diario#Partida-1050'>noviembre</a>  </td> <td> 586 </td> <td align='right' >  1 </td> <td> Qty Ventas/Servicios Exentos </td> </tr>
+ <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 586</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-170'> Ir a partida: 170</a> </td> <td colspan='3' align='left' > Por venta en registro de compra-ventas del SII folio: 7 de visita-huelen-pago-5-6 a gonzalo </td>  </tr>
+ <tr> <td>    <a href= '/necios-2021/libro-diario#Partida-1049'>octubre</a>  </td> <td> 586 </td> <td align='right' >  0 </td> <td> Qty Ventas/Servicios Exentos </td> </tr>
+ <tr height='50 px' style= 'text-decoration-line: line-through; text-decoration-line-color: red; font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 586</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-159'> Ir a partida: 159</a> </td> <td colspan='3' align='left' > Por venta en registro de compra-ventas del SII folio: 6 de visita-huelen-pago-4-6 a gonzalo </td>  </tr>
  <tr height='50 px' style='font-weight:bold; background-color: lightgreen'> <td>  <a href= '/necios-2021/libro-diario#Partida-1052'>^</a> </td> <td> 758 </td> <td align='right' >  26 </td> <td> Total Anual </td> </tr>
- <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 758</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-4'> Ir a partida: 4</a> </td> <td colspan='3' align='left' > Por rendición de vouchers de enero de 2021 </td>  </tr>
- <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 758</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-26'> Ir a partida: 26</a> </td> <td colspan='3' align='left' > Por rendición de vouchers de marzo de 2021 </td>  </tr>
- <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 758</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-30'> Ir a partida: 30</a> </td> <td colspan='3' align='left' > Por rendición de vouchers de abril de 2021 </td>  </tr>
- <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 758</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-77'> Ir a partida: 77</a> </td> <td colspan='3' align='left' > Por rendición de vouchers de julio de 2021 </td>  </tr>
+ <tr> <td>    <a href= '/necios-2021/libro-diario#Partida-1047'>agosto</a>  </td> <td> 758 </td> <td align='right' >  1 </td> <td> CANT. RECIBO DE PAGO MEDIOS ELECTRÓNICOS </td> </tr>
  <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 758</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-92'> Ir a partida: 92</a> </td> <td colspan='3' align='left' > Por rendición de vouchers de agosto de 2021 </td>  </tr>
- <tr> <td>    <a href= '/necios-2021/libro-diario#Partida-1040'>enero</a>  </td> <td> 759 </td> <td align='right' >  23464 </td> <td> DÉB. RECIBO DE PAGO MEDIOS ELECTRÓNICOS </td> </tr>
- <tr> <td>    <a href= '/necios-2021/libro-diario#Partida-1042'>marzo</a>  </td> <td> 759 </td> <td align='right' >  5588 </td> <td> DÉB. RECIBO DE PAGO MEDIOS ELECTRÓNICOS </td> </tr>
- <tr> <td>    <a href= '/necios-2021/libro-diario#Partida-1043'>abril</a>  </td> <td> 759 </td> <td align='right' >  4790 </td> <td> DÉB. RECIBO DE PAGO MEDIOS ELECTRÓNICOS </td> </tr>
- <tr> <td>    <a href= '/necios-2021/libro-diario#Partida-1046'>julio</a>  </td> <td> 759 </td> <td align='right' >  28872 </td> <td> DÉB. RECIBO DE PAGO MEDIOS ELECTRÓNICOS </td> </tr>
- <tr> <td>    <a href= '/necios-2021/libro-diario#Partida-1047'>agosto</a>  </td> <td> 759 </td> <td align='right' >  6386 </td> <td> DÉB. RECIBO DE PAGO MEDIOS ELECTRÓNICOS </td> </tr>
+ <tr> <td>    <a href= '/necios-2021/libro-diario#Partida-1046'>julio</a>  </td> <td> 758 </td> <td align='right' >  3 </td> <td> CANT. RECIBO DE PAGO MEDIOS ELECTRÓNICOS </td> </tr>
+ <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 758</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-77'> Ir a partida: 77</a> </td> <td colspan='3' align='left' > Por rendición de vouchers de julio de 2021 </td>  </tr>
+ <tr> <td>    <a href= '/necios-2021/libro-diario#Partida-1043'>abril</a>  </td> <td> 758 </td> <td align='right' >  1 </td> <td> CANT. RECIBO DE PAGO MEDIOS ELECTRÓNICOS </td> </tr>
+ <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 758</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-30'> Ir a partida: 30</a> </td> <td colspan='3' align='left' > Por rendición de vouchers de abril de 2021 </td>  </tr>
+ <tr> <td>    <a href= '/necios-2021/libro-diario#Partida-1042'>marzo</a>  </td> <td> 758 </td> <td align='right' >  1 </td> <td> CANT. RECIBO DE PAGO MEDIOS ELECTRÓNICOS </td> </tr>
+ <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 758</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-26'> Ir a partida: 26</a> </td> <td colspan='3' align='left' > Por rendición de vouchers de marzo de 2021 </td>  </tr>
+ <tr> <td>    <a href= '/necios-2021/libro-diario#Partida-1040'>enero</a>  </td> <td> 758 </td> <td align='right' >  20 </td> <td> CANT. RECIBO DE PAGO MEDIOS ELECTRÓNICOS </td> </tr>
+ <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 758</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-4'> Ir a partida: 4</a> </td> <td colspan='3' align='left' > Por rendición de vouchers de enero de 2021 </td>  </tr>
  <tr height='50 px' style='font-weight:bold; background-color: lightgreen'> <td>  <a href= '/necios-2021/libro-diario#Partida-1052'>^</a> </td> <td> 759 </td> <td align='right' >  69100 </td> <td> Total Anual </td> </tr>
  <tr style='font-weight:bold; color:white; background-color: red'> <td colspan='4' > LINEA F22: 'Boletas y Comprobante o recibo de pago de transacciones transbank'. </td> </tr>
- <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 759</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-4'> Ir a partida: 4</a> </td> <td colspan='3' align='left' > Por rendición de vouchers de enero de 2021 </td>  </tr>
- <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 759</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-26'> Ir a partida: 26</a> </td> <td colspan='3' align='left' > Por rendición de vouchers de marzo de 2021 </td>  </tr>
- <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 759</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-30'> Ir a partida: 30</a> </td> <td colspan='3' align='left' > Por rendición de vouchers de abril de 2021 </td>  </tr>
- <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 759</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-77'> Ir a partida: 77</a> </td> <td colspan='3' align='left' > Por rendición de vouchers de julio de 2021 </td>  </tr>
+ <tr> <td>    <a href= '/necios-2021/libro-diario#Partida-1047'>agosto</a>  </td> <td> 759 </td> <td align='right' >  6386 </td> <td> DÉB. RECIBO DE PAGO MEDIOS ELECTRÓNICOS </td> </tr>
  <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 759</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-92'> Ir a partida: 92</a> </td> <td colspan='3' align='left' > Por rendición de vouchers de agosto de 2021 </td>  </tr>
+ <tr> <td>    <a href= '/necios-2021/libro-diario#Partida-1046'>julio</a>  </td> <td> 759 </td> <td align='right' >  28872 </td> <td> DÉB. RECIBO DE PAGO MEDIOS ELECTRÓNICOS </td> </tr>
+ <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 759</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-77'> Ir a partida: 77</a> </td> <td colspan='3' align='left' > Por rendición de vouchers de julio de 2021 </td>  </tr>
+ <tr> <td>    <a href= '/necios-2021/libro-diario#Partida-1043'>abril</a>  </td> <td> 759 </td> <td align='right' >  4790 </td> <td> DÉB. RECIBO DE PAGO MEDIOS ELECTRÓNICOS </td> </tr>
+ <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 759</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-30'> Ir a partida: 30</a> </td> <td colspan='3' align='left' > Por rendición de vouchers de abril de 2021 </td>  </tr>
+ <tr> <td>    <a href= '/necios-2021/libro-diario#Partida-1042'>marzo</a>  </td> <td> 759 </td> <td align='right' >  5588 </td> <td> DÉB. RECIBO DE PAGO MEDIOS ELECTRÓNICOS </td> </tr>
+ <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 759</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-26'> Ir a partida: 26</a> </td> <td colspan='3' align='left' > Por rendición de vouchers de marzo de 2021 </td>  </tr>
+ <tr> <td>    <a href= '/necios-2021/libro-diario#Partida-1040'>enero</a>  </td> <td> 759 </td> <td align='right' >  23464 </td> <td> DÉB. RECIBO DE PAGO MEDIOS ELECTRÓNICOS </td> </tr>
+ <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 759</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-4'> Ir a partida: 4</a> </td> <td colspan='3' align='left' > Por rendición de vouchers de enero de 2021 </td>  </tr>
+<table><table><tbody>
+<table><table><tbody>
+<table><table><tbody>
+<table><table><tbody>
+<table><table><tbody>
+<table><table><tbody>
+<table><table><tbody>
+<table><table><tbody>
+<table><table><tbody>
+<table><table><tbody>
+<table><table><tbody>
+<table><table><tbody>
+<table><table><tbody>
+<table><table><tbody>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 0 </td> <td style='background-color: blanchedalmond'> 0</td> </tr>
 </tbody><tbody>
 <tr><td colspan='4'> necios SA</td> </tr> 
-<tr><td colspan='4'> ( 31 de enero	2021	 ) </td> </tr>
+<tr><td colspan='4'> ( 31 de mayo	2021	 ) </td> </tr>
 <tr><td colspan='8'> Partida 1052: Formulario F22 2021 </td></tr>
 <tr><td colspan = '8'> codigos-f29</td> </tr>
 </tbody>
