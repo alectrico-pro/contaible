@@ -2,6 +2,7 @@
 permalink: /necios-2021/libro-diario
 layout: page
 --- 
+<chapter>
 <h2> Libro Mayor </h2>
 <table>
 <tr> <td>188</td> <td align='right'> <a href= '/necios-2021/libro-diario#Partida-14333'>14333</a> </td> <td align='right'>0</td> <td> | </td> <td align='right'> 33</td> <td>enero</td><td>false</td><td> 1.063</td><td> remanente-iva</td> </tr>
@@ -210,7 +211,6 @@ layout: page
 <tr> <td></td> <td>$</td> <td align='right'>529097 <small> 562430.111</small></td></tr>
 <tr> <td> Monto Corrección </td> <td>$</td> <td align='right'>33333 </td></tr>
 </table>
-<section>
 <h2> Libro Diario </h2>
 Contabilidad para Necios® usa el siguiente código de colores para este documento.
 <ul>
@@ -568,7 +568,6 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <table id='Partida-1052'>
 <thead> <th style='background-color: lavender' colspan='6'>Partida 1052</th></thead>
 <tbody>
-<section>
 <h2> Asistente F22 </h2> 
 <table><tbody> 
 </tbody></table><table><tbody> 
@@ -642,7 +641,6 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
  <tr style='font-weight:bold; color:white; background-color: red'> <td colspan='4' > LINEA F22: 'Boletas y Comprobante o recibo de pago de transacciones transbank'. </td> </tr>
  <tr> <td>    <a href= '/necios-2021/libro-diario#Partida-1040'>enero</a>  </td> <td> 759 </td> <td align='right' >  23464 </td> <td> DÉB. RECIBO DE PAGO MEDIOS ELECTRÓNICOS </td> </tr>
  <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> 759</td> <td align='right'>   <a href= '/necios-2021/libro-diario#Partida-4'> Ir a partida: 4</a> </td> <td colspan='3' align='left' > Por rendición de vouchers de enero de 2021 </td>  </tr>
-</section>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 0 </td> <td style='background-color: blanchedalmond'> 0</td> </tr>
 </tbody><tbody>
 <tr><td colspan='4'> necios SA</td> </tr> 

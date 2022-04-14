@@ -103,7 +103,7 @@
 ;   ( printout k "--- " crlf)
 ;   ( printout k "<script src='{{ base.url | prepend: site.url }}/assets/main.js'></script>" crlf)
    
-   ( printout k "<section>" crlf)
+;   ( printout k "</chapter><chapter>" crlf)
    ( printout k "<h2> Libro Diario </h2>" crlf)
    ( printout k "Contabilidad para Necios® usa el siguiente código de colores para este documento." crlf)
    ( printout k "<ul>" crlf)
@@ -866,7 +866,7 @@
 
 
 
-(defrule asistente-f22-inicio
+(defrule asistente-inicio-de-f22-fin-de-libro-diario
    ( declare (salience 95))
    ( fila ?numero )
    ( empresa (nombre ?empresa))
@@ -877,7 +877,10 @@
 ;   ( f29-f22 (codigo-f29 ?codigo) (linea-f22 ?linea-f22) )
 
   =>
-   ( printout k "<section>" crlf)
+;   ( printout k "<h2> Fin Libro Diario </h2> " crlf)
+;   ( printout k "</div></section> " crlf)
+;   ( printout k "</chapter> " crlf)
+;   ( printout k "<chapter>" crlf)
    ( printout k "<h2> Asistente F22 </h2> " crlf)
    ( printout k "<table><tbody> " crlf)
 
@@ -894,7 +897,7 @@
 
   =>
 ;  ( printout k "<h2> Fin Asistente F22 </h2> " crlf)
-   ( printout k "</section>" crlf)
+ ;  ( printout k "</chapter" crlf)
 )
 
 

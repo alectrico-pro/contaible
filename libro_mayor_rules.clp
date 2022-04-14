@@ -74,7 +74,9 @@
       ( printout k "layout: page" crlf)
       ( printout k "--- " crlf)
   )
+  ( printout k "<chapter>" crlf)
   ( printout k "<h2> Libro Mayor </h2>" crlf)
+  
 )
 
 
