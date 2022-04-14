@@ -1,4 +1,8 @@
-[20220414-10:34:37] [CORE ] main: app started pid 556(0x0000022c)
-[20220414-10:34:37] [INFO ] main: DISPLAY env var set to :14.0
-[20220414-10:34:37] [INFO ] main: using DISPLAY 14
-[20220414-10:34:37] [INFO ] channel_thread_loop: thread start
+[20220414-10:54:56] [CORE ] main: app started pid 557(0x0000022d)
+[20220414-10:54:56] [INFO ] main: DISPLAY env var set to :14.0
+[20220414-10:54:56] [INFO ] main: using DISPLAY 14
+[20220414-10:54:56] [INFO ] channel_thread_loop: thread start
+[20220414-10:54:57] [INFO ] term_signal_handler: got signal 15
+[20220414-10:54:57] [INFO ] channel_thread_loop: g_term_event set
+[20220414-10:54:57] [INFO ] channel_thread_loop: thread stop
+[20220414-10:54:57] [INFO ] main: app exiting pid 557(0x0000022d)

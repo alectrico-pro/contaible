@@ -3,13 +3,13 @@ ERB = erb
 KINDLEGEN = ./kindlegen
 
 
-#Debe generar una tabla de cotenidos
-mobi: as.html css/mobi.css as.ncx as.opf
-	$(RUBY) script/mobi_postprocess.rb $<.bak > $<
+mobi: iva.html libro-diario.html libro-mayor.html final.html tributario.html css/mobi.css mobi.ncx mobi.opf
+	#$(RUBY) script/mobi_postprocess.rb $<.bak > $<
 	cat css/mobi.css >> mobi.css
-	-$(KINDLEGEN) as.opf
+	$(KINDLEGEN) mobi.opf
 
-%.ncx: %.ncx.erb
+mobi.ncx: mobi.ncx.erb
 	$(ERB) $<  >  $@
 
-
+html: iva.html libro-diario.html libro-mayor.html final.html tributario.html
+	$(RUBY) script/mobi_postprocess.rb $^

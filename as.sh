@@ -8,7 +8,7 @@ c=$(docker ps -q) && [[ $c ]] && docker kill $c
 docker rm st
 docker rm calibre
 docker rm mobi
-docker build . -t as
+#ocker build . -t as
 
 docker build . -t jeky -f DockerfileAS 
 

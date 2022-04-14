@@ -85,14 +85,15 @@
 
   <manifest>
 	  <!-- HTML content files [mandatory] -->
-	  <item id="as" media-type="application/xhtml+xml" href="as.html"></item>
 	  <!--
+	  <item id="as" media-type="application/xhtml+xml" href="as.html"></item>
+	  -->
     <item id="libro-diario" media-type="application/xhtml+xml" href="libro-diario.html"></item>
     <item id="libro-mayor" media-type="application/xhtml+xml" href="libro-mayor.html"></item>
     <item id="final" media-type="application/xhtml+xml" href="final.html"></item>
     <item id="tributario" media-type="application/xhtml+xml" href="tributario.html"></item>
     <item id="iva"  media-type="application/xhtml+xml" href="iva.html"></item>
-  -->
+
     <!-- table of contents [mandatory] -->
     <item id="My_Table_of_Contents" media-type="application/x-dtbncx+xml" href="as.ncx"/>
     <!-- cover image [mandatory] -->
@@ -115,14 +116,14 @@
   
   <spine toc="My_Table_of_Contents">
 	  <!-- the spine defines the linear reading order of the book -->
-	  <itemref idref="as" />
-	  <!--
+	  <!--	  <itemref idref="as" /> -->
+	  
     <itemref idref="iva"/>
     <itemref idref="libro-diario" />
     <itemref idref="libro-mayor" />
     <itemref idref="final"  />
     <itemref idref="tributario" />
-    -->
+    
   </spine>
 
   <!--
