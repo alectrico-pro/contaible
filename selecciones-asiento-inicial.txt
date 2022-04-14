@@ -14,10 +14,13 @@
 ;en general las cuentas de ventas, las que son
 ;de naturaleza acreedora tendrán que ser de
 ;naturaleza mixta
+;(archivo-unico-markdown true)
+;(nombre-de-archivo-k "as" )
+
 ( selecciones
- (archivo-unico-markdown true)
- (nombre-de-archivo-k "libro-diario" )
  (abonar-deudoras false) 
+ (archivo-unico-markdown true)
+ (nombre-de-archivo-k "as" )
  (devolver-a-devolucion-sobre-ventas true)
  (ejercicio-anterior     necios-2021)
  (regimen                propyme)

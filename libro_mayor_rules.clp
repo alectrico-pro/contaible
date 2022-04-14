@@ -128,11 +128,12 @@
 
 
   ( printout k "<table>" crlf)
-  ( printout k "<thead><th colspan='6'> " ?nombre "</th><th colspan='3'>" ?nombre-sii "</th></thead>" crlf)
-  ( printout k "<thead><th colspan='9'> " ?descripcion "</th></thead>" crlf)
+; ( printout k "<thead><th colspan='6'> " ?nombre "</th><th colspan='3'>" ?nombre-sii "</th></thead>" crlf)
+; ( printout k "<thead><th colspan='9'> " ?descripcion "</th></thead>" crlf)
 
-  ( printout k "<thead><th> voucher </th><th> partida </th><th> debe </th> <th> | </th> <th> haber </th><th> mes </th> <th>recibida</th> <th>factor corrección monetaria</th> <th> tipo documento</th></thead>"crlf)
-  ( printout k "<tbody>" crlf)
+
+ ;( printout k "<thead><th> voucher </th><th> partida </th><th> debe </th> <th> | </th> <th> haber </th><th> mes </th> <th>recibida</th> <th>factor corrección monetaria</th> <th> tipo documento</th></thead>"crlf)
+; ( printout k "<tbody>" crlf)
 
 
   ( assert ( hacer ?nombre))
@@ -266,7 +267,7 @@
 ;   ( printout k "<tr> <td></td> <td></td> <td align='right' >" ?debe "</td> <td>|</td> <td align='right'>" ?haber "</td></tr>" crlf )
  ;  ( printout k "<tr> <td></td> <td>$</td> <td align='right'>"  ?diferencia "</td></tr>" crlf )
 
-   ( printout k "</tbody>" crlf)
+ ;  ( printout k "</tbody>" crlf)
    ( printout k "</table>" crlf)
 )
 
@@ -305,7 +306,7 @@
 ;   ( printout k "<tr> <td> </td><td></td> <td align='right'>" ?debe "</td> <td>|</td> <td align='right'>" ?haber "</td> </tr>" crlf )
  ;  ( printout k "<tr> <td> </td><td> </td> <td></td> <td>|</td> <td align='right'>"  ?diferencia "</td> <td>$</td> </tr>" crlf )
 
-   ( printout k "</tbody>" crlf)
+ ;  ( printout k "</tbody>" crlf)
    ( printout k "</table>" crlf)
 )
 

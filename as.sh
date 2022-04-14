@@ -10,13 +10,13 @@ docker rm calibre
 docker rm mobi
 docker build . -t as
 
-docker build . -t jeky -f DockerfileAS
+docker build . -t jeky -f DockerfileAS 
 
 docker run -p 4000:4000 --name st -v $(pwd)/docs:/doc jeky bash -c 'jekyll build . && cp * /doc -r && chown 1000:1000 /doc -R'
 
 #ocker run -p 4000:4000 --volumes-from st -v $(pwd)/docs:/doc jeky bash -c 'cd /doc && jekyll serve'
 
-docker run --name mobi  --volumes-from st -v $(pwd)/docs:/doc jeky bash -c 'jekyll build . &&  cp /doc/_site/necios-2021/*.html /doc/mobi/ && cp /doc/_site/assets/* /doc/mobi/assets && cd /doc/mobi && make mobi '
+docker run --name mobi  --volumes-from st -v $(pwd)/docs:/doc jeky bash -c 'jekyll build . && cp /doc/_site/necios-2021/*.html /doc/mobi && cp /doc/_site/assets/* /doc/mobi/assets && cd /doc/mobi && make mobi '
 
 
 docker run  \
@@ -32,7 +32,7 @@ docker run  \
   -v $(pwd)/docs/guacamole:/config \
   --restart unless-stopped \
   lscr.io/linuxserver/calibre \
-  bash -c 'cd /doc/mobi && ebook-convert libro-diario.mobi libro-diario.epub ' 
+  bash -c 'cd /doc/mobi && ebook-convert as.mobi as.epub --input-encoding=utf-8'
 
 
 docker run -p 4000:4000 --volumes-from st -v $(pwd)/docs:/doc jeky bash -c 'cd /doc && jekyll serve'

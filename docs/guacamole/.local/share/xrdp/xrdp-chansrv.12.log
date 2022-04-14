@@ -1,7 +1,4 @@
-[20220413-10:09:44] [CORE ] main: app started pid 526(0x0000020e)
-[20220413-10:09:44] [INFO ] main: DISPLAY env var set to :12.0
-[20220413-10:09:44] [INFO ] main: using DISPLAY 12
-[20220413-10:09:44] [INFO ] channel_thread_loop: thread start
-[20220413-10:09:44] [INFO ] Socket 12: AF_UNIX connection received
-[20220413-10:09:44] [INFO ] send_init_response_message:
-[20220413-10:09:56] [INFO ] channel_thread_loop: trans_check_wait_objs error resetting
+[20220414-10:45:21] [CORE ] main: app started pid 556(0x0000022c)
+[20220414-10:45:21] [INFO ] main: DISPLAY env var set to :12.0
+[20220414-10:45:21] [INFO ] main: using DISPLAY 12
+[20220414-10:45:21] [INFO ] channel_thread_loop: thread start

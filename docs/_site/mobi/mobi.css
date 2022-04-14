@@ -41146,3 +41146,72 @@ span { display: inline; }
 {
 display:none;
 }
+div.concepto {
+  background-color: #F0F0F0;
+  %idth: 50px;
+  height: 60px;
+  overflow:scroll;
+  display:block;
+  margin: 5%;
+  text-overflow:ellipsis;;
+   white-space: preline;
+    margin:5%;
+}
+
+.titulo {
+  color: #800;
+  background-color: green;
+  %padding: 1%; 
+}
+
+
+h2.chapter_name {
+   font-style: italic;
+}
+
+.caption {
+   background-color: grey;
+   font-size: small;
+}
+
+.elaboration_name, .sidebar_name {
+   font-style: italic;
+   font-weight: bold;
+}
+
+p .marginicon {
+    clear: both;
+    float: left;
+}
+
+div.fondo {
+   background-color: green;
+  display: block;
+  align: right;
+}
+
+div.sidebar img {
+  display: block;
+  width: 200px;
+   align: right;
+}
+img.marginicon {
+   width: 40px;
+   align: left;
+}
+
+span { display: inline; }
+
+
+/* Used to display and hide the the contents specific to device */
+
+
+/* Hide mobi specific content for other device */
+.mobicontent{
+  display: inline; 
+}
+
+.kf8content
+{
+display:none;
+}

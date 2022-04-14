@@ -17,6 +17,7 @@ FROM cupercupu/clipspy AS build
 RUN mkdir /templates
 RUN mkdir /doc
 RUN mkdir /doc/mobi
+RUN mkdir /doc/mobi/src
 RUN mkdir /doc/assets
 RUN mkdir /doc/mobi/script
 RUN mkdir /doc/necios-2021
@@ -31,6 +32,7 @@ COPY *.clp                    ./
 COPY necios-2021-facts.txt              ./
 COPY necios-2021-revisiones.txt         ./
 COPY necios-2021-revisiones-cuentas.txt ./
+
 
 
 COPY valor-activos.txt            ./
@@ -50,7 +52,8 @@ COPY afps.txt                     ./
 COPY tramos-de-impuesto-unico.txt ./
 COPY actividades.txt              ./
 COPY 404.html                     ./
-COPY asiento_inicial.py              ./
+COPY asiento_inicial.py           ./
+
 WORKDIR .
 
 
@@ -90,8 +93,9 @@ COPY --from=build ./doc/*.markdown      ./
 COPY ./_config.yml     ./
 COPY ./assets/         ./assets/
 COPY ./assets/         ./mobi/assets/
-COPY ./libro-diario.ncx.erb  ./mobi
-COPY ./libro-diario.opf ./mobi
+COPY ./css/            ./mobi/css/
+COPY ./as.ncx.erb      ./mobi
+COPY ./as.opf          ./mobi
 COPY ./mobi.css        ./mobi
 COPY ./kindlegen       ./mobi
 COPY ./cover.jpg       ./mobi

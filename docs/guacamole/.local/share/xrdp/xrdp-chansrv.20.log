@@ -1,0 +1,4 @@
+[20220414-08:07:26] [CORE ] main: app started pid 556(0x0000022c)
+[20220414-08:07:26] [INFO ] main: DISPLAY env var set to :20.0
+[20220414-08:07:26] [INFO ] main: using DISPLAY 20
+[20220414-08:07:26] [INFO ] channel_thread_loop: thread start

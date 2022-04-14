@@ -28,9 +28,11 @@
 !/Makefile
 !/script/
 !/*.ncx.erb
-!/libro-diario.opf
-!/libro-diario.makdown
+!/as.opf
+!/as.html
+!/as.makdown
+!/*.html
 !/cover.jpg
 !/mobi.css
 !/kindlegen
-!/doc/archivo-unico.markdown
+!/css/
