@@ -4,9 +4,6 @@ require 'rubygems'
 require 'nokogiri'
 
 #doc = Nokogiri::HTML::Document.parse(IO.read(ARGV[0]), nil, 'ISO-8859-1')
-
-#Esto require usar el convertir de calibre para procesar el achivo de salida
-#mobi y convertirlo epub con --input-encoding=utf-8
 doc = Nokogiri::HTML::Document.parse(IO.read(ARGV[0]), nil, 'utf-8')
 
 
@@ -60,18 +57,21 @@ doc.xpath("//div[@class='trigger']").each do |node|
 end
 
 # cambiar la referencia a css
-doc.xpath("//link[@rel='sylesheet']").each do |node|
- # node.remove	
+doc.xpath("//link[@rel='stylesheet']").each do |node|
+  node.remove	
 end
+
+
+#href="/assets/main.css">
 
 # eliminar la referencia al feed 
 doc.xpath("//link[@type='application/atom+xml']").each do |node|
- # node.remove
+  node.remove
 end
 
 #eliminar e markup 
 doc.xpath("//script[@type='application/ld+json']").each do |node|
- # node.remove
+  node.remove
 end
 
 # add line numbers to all inline code examples
@@ -87,12 +87,7 @@ doc.xpath("//pre[@class='code']").each do |node|
 end
 
 # generate html
-# ojo. Revisar esto
-# cundo se usa ebook-converter con calibre usar --input-encoding=utf-8
 html = doc.to_xhtml(:encoding => 'ISO-8859-1')
-
-#no funciona con utf-8; anteicón
-#html = doc.to_xhtml(:encoding => 'utf-8')
 
 # tex4ht outputs an apparently-random-length string of underscores to
 #  render \hrule in LaTeX, so if we see >8 of them, replace with <hr> tag
@@ -135,4 +130,6 @@ end
 html.gsub!(/<body>/, '<body><a id="start" name="Beginning"/>')
 html.gsub!(/<br \/>1/,'')
 #html.gsub!(/<body>/, '<body><a name="start">')
+#puts escribe en el archivo html. No muestra salida por pantalla.
+
 puts html
