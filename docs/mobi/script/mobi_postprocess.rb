@@ -53,14 +53,18 @@ doc.xpath("//h3/a").each { |node| node.remove }
 #Agregado por mí, elminina el menún principal pues contiene hreferencias que no he podido
 #satisfacer y que impiden el trabajo de kindlegen
 doc.xpath("//div[@class='trigger']").each do |node|
-#  node.remove
+  node.remove
 end
 
-# cambiar la referencia a css
-doc.xpath("//link[@rel='stylesheet']").each do |node|
-  node.remove	
-end
+# elimiinandno todas las rerefencias a css
+#doc.xpath("//link[@rel='stylesheet']").each do |node|
+#  node.remove	
+#end
 
+#
+doc.xpath("//link[@href='/assets/main.css']").each do |node|
+  node.remove
+end
 
 #href="/assets/main.css">
 
