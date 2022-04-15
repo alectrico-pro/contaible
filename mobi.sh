@@ -31,7 +31,7 @@ docker run -p 4000:4000 --name st -v $(pwd)/docs:/doc jeky bash -c 'jekyll build
 
 #ocker run -p 4000:4000 --volumes-from st -v $(pwd)/docs:/doc jeky bash -c 'cd /doc && jekyll serve'
 
-docker run --name mobi  --volumes-from st -v $(pwd)/docs:/doc jeky bash -c 'jekyll build . && cp /doc/_site/necios-2021/*.html /doc/mobi && cp /doc/_site/assets/* /doc/mobi/assets && cp /doc/_site/assets/main.css  mobi.css && cd /doc/mobi && make mobi && mv mobi.mobi book.mobi'
+docker run --name mobi  --volumes-from st -v $(pwd)/docs:/doc jeky bash -c 'jekyll build . && cp /doc/_site/necios-2021/*.html /doc/mobi && cp /doc/_site/assets/* /doc/mobi/assets && cp /doc/_site/assets/main.css /doc/mobi.css && cd /doc/mobi && make mobi && mv mobi.mobi book.mobi'
 
 docker run  \
   --volumes-from mobi \

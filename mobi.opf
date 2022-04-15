@@ -119,7 +119,7 @@
 	  <!-- the spine defines the linear reading order of the book -->
 	  <!--	  <itemref idref="as" /> -->
 	  
-   <itemref idref="libro-diario" />
+    <itemref idref="libro-diario" />
 	  <!--
     <itemref idref="iva"/>
 

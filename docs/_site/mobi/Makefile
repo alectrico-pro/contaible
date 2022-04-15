@@ -5,7 +5,7 @@ KINDLEGEN = ./kindlegen
 
 mobi: libro-diario.html mobi.ncx mobi.opf
 	-$(RUBY) script/mobi_postprocess.rb $<.bak > $<
-	cat assets/main.css >> mobi.css
+	cat assets/main.css >> libro-diario.css
 	-$(KINDLEGEN) mobi.opf
 
 mobi.ncx: mobi.ncx.erb

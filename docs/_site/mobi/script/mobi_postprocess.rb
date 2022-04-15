@@ -63,7 +63,9 @@ end
 
 
 doc.xpath("//link[@href='/assets/main.css']").each do |node|
-  node.set_attribute 'href', 'mobi.css'
+   node.set_attribute 'href', '../mobi.css'
+   node.set_attribute 'type', 'text/css'
+   node.set_attribute 'media', 'screen'
 #  node.remove
 end
 #href="/assets/main.css">
