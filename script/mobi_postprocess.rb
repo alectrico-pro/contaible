@@ -51,21 +51,21 @@ doc.xpath("//h3/a").each { |node| node.remove }
 
 
 #Agregado por mí, elminina el menún principal pues contiene hreferencias que no he podido
-#satisfacer y que impiden el trabajo de kindlegen
+#satisfacer 
 doc.xpath("//div[@class='trigger']").each do |node|
   node.remove
 end
 
-# elimiinandno todas las rerefencias a css
+# elimiinandno la PRIMERA de las rerefencias a css
 #doc.xpath("//link[@rel='stylesheet']").each do |node|
 #  node.remove	
 #end
 
-#
-doc.xpath("//link[@href='/assets/main.css']").each do |node|
-  node.remove
-end
 
+doc.xpath("//link[@href='/assets/main.css']").each do |node|
+  node.set_attribute 'href', 'mobi.css'
+#  node.remove
+end
 #href="/assets/main.css">
 
 # eliminar la referencia al feed 
