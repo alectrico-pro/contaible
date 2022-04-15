@@ -3,9 +3,8 @@ ERB = erb
 KINDLEGEN = ./kindlegen
 
 
-mobi: iva.html libro-diario.html libro-mayor.html final.html tributario.html css/mobi.css mobi.ncx mobi.opf
-	#$(RUBY) script/mobi_postprocess.rb $<.bak > $<
-	cat css/mobi.css >> mobi.css
+mobi: libro-diario.html mobi.ncx mobi.opf
+	$(RUBY) script/mobi_postprocess.rb $<.bak > $<
 	$(KINDLEGEN) mobi.opf
 
 mobi.ncx: mobi.ncx.erb
@@ -13,3 +12,7 @@ mobi.ncx: mobi.ncx.erb
 
 html: iva.html libro-diario.html libro-mayor.html final.html tributario.html
 	$(RUBY) script/mobi_postprocess.rb $^
+
+
+cp: book.mobi
+	rsync -avr book.mobi /run/user/1000/gvfs/smb-share:server=ubuntu,share=maker 

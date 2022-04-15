@@ -31,7 +31,7 @@ docker run -p 4000:4000 --name st -v $(pwd)/docs:/doc jeky bash -c 'jekyll build
 
 #ocker run -p 4000:4000 --volumes-from st -v $(pwd)/docs:/doc jeky bash -c 'cd /doc && jekyll serve'
 
-docker run --name mobi  --volumes-from st -v $(pwd)/docs:/doc jeky bash -c 'jekyll build . && cp /doc/_site/necios-2021/*.html /doc/mobi && cp /doc/_site/assets/* /doc/mobi/assets && cd /doc/mobi && make html && make mobi && mv mobi.mobi book.mobi'
+docker run --name mobi  --volumes-from st -v $(pwd)/docs:/doc jeky bash -c 'jekyll build . && cp /doc/_site/necios-2021/*.html /doc/mobi && cp /doc/_site/assets/* /doc/mobi/assets && cp /doc/_site/assets/main.css  mobi.css && cd /doc/mobi && make mobi && mv mobi.mobi book.mobi'
 
 docker run  \
   --volumes-from mobi \
@@ -46,8 +46,34 @@ docker run  \
   -v $(pwd)/docs/guacamole:/config \
   --restart unless-stopped \
   lscr.io/linuxserver/calibre \
-  bash -c 'cd /doc/mobi && ebook-convert book.mobi book.epub --input-encoding=utf-8'
+  bash -c 'cd /doc/mobi && ebook-convert book.mobi book.epub'
 
+
+# bash -c 'cd /doc/mobi && ebook-convert book.mobi book.epub --input-encoding=utf-8'
+
+
+rsync -rltgoDv docs/mobi/book.* /run/user/1000/gvfs/smb-share:server=ubuntu,share=maker/ --progress --outbuf=N -T=tmp
+
+
+#&& cp book.* acer '
+ 
+# ln -s /run/user/1000/gvfs/smb-share:server=ubuntu,share=maker acer'
+
+
+#docker run  \
+#  --volumes-from mobi \
+#  -t \
+#  -i \
+#  -e PUID=1000 \
+#  -e PGID=1000 \
+#  -e TZ=Europe/London \
+#  -e PASSWORD= `#optional` \
+#  -e CLI_ARGS= `#optional` \
+#  -p 8080:8080 \
+#  -p 8081:8081 \
+#  -v $(pwd)/docs/guacamole:/config \
+#  --restart unless-stopped \
+#  lscr.io/linuxserver/calibre 
 
 #docker run -p 4000:4000 --volumes-from st -v $(pwd)/docs:/doc jeky bash -c 'cd /doc && jekyll serve'
 
