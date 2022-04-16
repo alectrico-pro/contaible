@@ -56,10 +56,13 @@ doc.xpath("//div[@class='trigger']").each do |node|
   node.remove
 end
 
-# elimiinandno la PRIMERA de las rerefencias a css
-#doc.xpath("//link[@rel='stylesheet']").each do |node|
-#  node.remove	
-#end
+
+#href="/necios-2021/libro-diario#Partida-14333
+
+# elimiinandno las referencias a partidas
+#oc.xpath("//link[@href='/necios-2021/libro-diario#Partida-14333']").each do |node|
+ #node.remove	
+#nd
 
 
 doc.xpath("//link[@href='/assets/main.css']").each do |node|
@@ -74,6 +77,12 @@ end
 doc.xpath("//link[@type='application/atom+xml']").each do |node|
   node.remove
 end
+
+#Eliminando el link de Contaible ®
+doc.xpath("//div/a[@class='site-title']").each do |node|
+  node.set_attribute 'href' , '#'
+end
+
 
 #eliminar e markup 
 doc.xpath("//script[@type='application/ld+json']").each do |node|
@@ -133,9 +142,14 @@ bad_codepoints.each_pair do |k,v|
 end
 
 # insert <a name="start"> anchor at top of body
-html.gsub!(/<body>/, '<body><a id="start" name="Beginning"/>')
+html.gsub!(/<body>/, '<body><a id="start" name="Inicio"/>')
 html.gsub!(/<br \/>1/,'')
 #html.gsub!(/<body>/, '<body><a name="start">')
 #puts escribe en el archivo html. No muestra salida por pantalla.
+
+
+html.gsub!(/\/necios-2021\/libro-diario/, '')
+
+#href="/necios-2021/libro-diario#Partida-14333
 
 puts html

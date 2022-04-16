@@ -148,11 +148,11 @@
      contents can easily be discovered by the user by paging through the book. Both are useful.
      
     -->
-  <!--
   <guide>
+    <!--
     <reference type="toc" title="Table of Contents" href="libro-diario.html#TOC"></reference>
-    <reference type="text" title="Welcome" href="libro_diario#start"></reference>
+    -->
+    <reference type="text" title="Hola" href="libro_diario#start"></reference>
   </guide>
-  -->
 
 </package>
