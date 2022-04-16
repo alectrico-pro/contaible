@@ -4,6 +4,7 @@ KINDLEGEN = ./kindlegen
 
 
 mobi: libro-diario.html mobi.ncx mobi.opf
+	cp $< $<.bak
 	-$(RUBY) script/mobi_postprocess.rb $<.bak > $<
 	cat assets/main.css >> libro-diario.css
 	-$(KINDLEGEN) mobi.opf
@@ -11,8 +12,8 @@ mobi: libro-diario.html mobi.ncx mobi.opf
 mobi.ncx: mobi.ncx.erb
 	$(ERB) $<  >  $@
 
-%.html.bak: %.html
-	cp $^ $^.bak
+#%.html.bak: %.html
+#	cp $^ $^.bak
 
 #html: iva.html libro-diario.html libro-mayor.html final.html tributario.html
 #	$(RUBY) script/mobi_postprocess.rb $^

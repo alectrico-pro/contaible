@@ -14,7 +14,7 @@
 
 
 
-(balance (dia 31) (mes enero) (ano 2021))
+(balance (dia 31) (mes febrero) (ano 2021))
 
 ;dia 01/01/2021---------- asiento inicial  ----------------
 

@@ -39,6 +39,15 @@
 	    <content src="libro-diario.html#Partida-<%= num %>"/>
           </navPoint>    
         <%  end %>    
-    <% end %>
+      <% end %>
+
+          counter += 1
+          <navPoint class="section" id="<%= section %>" playOrder="<%= counter %>">
+            <navLabel>
+              <text>Libro Dario</text>
+            </navLabel>
+            <content src="libro-diario.html#Inicio"/>
+          </navPoint>
+
   </navMap>
 </ncx>

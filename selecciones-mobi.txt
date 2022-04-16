@@ -20,8 +20,6 @@
 
 ( selecciones
  (abonar-deudoras false) 
- (archivo-unico-markdown true)
- (nombre-de-archivo-k "mobi" )
  (devolver-a-devolucion-sobre-ventas true)
  (ejercicio-anterior     necios-2021)
  (regimen                propyme)

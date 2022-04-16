@@ -152,7 +152,7 @@
     <!--
     <reference type="toc" title="Table of Contents" href="libro-diario.html#TOC"></reference>
     -->
-    <reference type="text" title="Hola" href="libro_diario#start"></reference>
+    <reference type="text" title="Inicio" href="libro-diario.html#start"></reference>
   </guide>
 
 </package>
