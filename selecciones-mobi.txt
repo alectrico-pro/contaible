@@ -18,6 +18,10 @@
 ;(archivo-unico-markdown true)
 ;(nombre-de-archivo-k "as" )
 
+
+
+( balance (dia 31) (mes enero) (ano 2021))
+
 ( selecciones
  (abonar-deudoras false) 
  (devolver-a-devolucion-sobre-ventas true)

@@ -1,3 +1,20 @@
+
+(deftemplate version
+  (slot id)
+)
+
+(deftemplate volumen
+  (slot id)
+  (slot asin)
+  (slot precio)
+  (slot dimensiones)
+  (slot formato) 
+  (slot titulo)
+  (slot subtitulo)
+  (slot contenido)
+)
+
+
 (deftemplate inicio-de-los-dias
   (multislot partidas (default 0) (type NUMBER)) 
 )

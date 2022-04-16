@@ -36,7 +36,7 @@
 )
 
 
-(defrule MAIN::inicio-modulo-main
+(defrule MAIN::inicio-modulo-mobi
   (declare (salience 9000))
   (selecciones (empresa-seleccionada ?empresa))
 =>
@@ -52,6 +52,7 @@
 
 ;   ( bind ?empresa 1724 )
    ( printout t crlf crlf "------------- MOBI ----------------------" ?empresa crlf crlf crlf)
+
 
 
   ( bind ?archivo (str-cat ?empresa "-revisiones.txt"))
@@ -127,6 +128,7 @@
    ( load-facts "actividades.txt")
    ( load-facts "f29-f22.txt" )
 
+   ( load-facts "version.txt" )
 
    ( assert (actual (mes enero     )))
    ( assert (actual (mes febrero   )))
