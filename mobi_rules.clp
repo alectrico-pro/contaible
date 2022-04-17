@@ -33,6 +33,7 @@
   (declare (salience 10000))
  =>
   ( load-facts "selecciones-mobi.txt")
+  ( load-facts "version.txt")
 )
 
 
@@ -143,6 +144,30 @@
    ( assert (actual (mes noviembre )))
    ( assert (actual (mes diciembre )))
 
+   ( assert (ajustar-para-book))
+)
+
+
+(defrule hacer-ajutar-para-ebook-rule
+  ?ajustar <-  ( ajustar-para-book )
+  ( version (asin ?asin) (version ?version) (mes ?mes) )
+  ?balance <- (balance )
+
+ =>
+
+  (retract ?ajustar)
+  (modify ?balance (mes ?mes))
+  (assert (hacer-focos) )
+)
+
+
+(defrule hacer-focos-rule
+
+  ?hacer-focos <- ( hacer-focos)
+
+ =>
+  ( retract ?hacer-focos)
+
 ;  ( focus TICKET PEDIDO PRIMITIVA ACTIVIDAD PRIMITIVA MENSUAL PRIMITIVA IVA PAGAR VALOR_ACTIVOS PRIMITIVA ECUACION PARTIDA LIBRO-MAYOR TOTAL RESULTADO-SII COMPROBACION FINANCIERO RECUADRO AJUSTE INVENTARIO LIQUIDACION INVENTARIO_FINAL AJUSTE TA TRIBUTARIO AJUSTEC TOTALC FINAL SUBCUENTA CCM RCV REMUNERACIONES BI )
 
 
@@ -155,8 +180,6 @@
 
 ;   ( focus TICKET PRIMITIVA ACTIVIDAD PRIMITIVA PARTIDA BI )
 ;   ( focus TICKET PRIMITIVA ACTIVIDAD PRIMITIVA MENSUAL PRIMITIVA IVA PAGAR PRIMITIVA LIBRO-MAYOR TOTAL AJUSTE INVENTARIO PARTIDA LIQUIDACION  INVENTARIO_FINAL AJUSTE TA TRIBUTARIO AJUSTEC  BI )
-
-
 )
 
 

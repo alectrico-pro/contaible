@@ -1,0 +1,38 @@
+RUBY = ruby
+ERB = erb
+KINDLEGEN = ./kindlegen
+
+
+mobi: libro-diario.html mobi.ncx mobi.opf
+	cp $< $<.bak
+	-$(RUBY) script/mobi_postprocess.rb $<.bak > $<
+	cat assets/main.css >> libro-diario.css
+	-$(KINDLEGEN) mobi.opf
+
+mobi.ncx: mobi.ncx.erb
+	$(ERB) $<  >  $@
+
+
+
+#suministrar make build VERSION=1
+build:
+	docker system prune --volumes --force
+#	docker volume prune --force
+	docker build . -t jeky -f DockerfileJeky; echo $? 
+	docker run -d -p 4000:4000 --name st -v $(pwd)/docs:/doc jeky bash -c 'jekyll build . && cp * /doc -r && chown 1000:1000 /doc -R' --no-cache
+	docker run -d --name mobi  --volumes-from st -v $(pwd)/docs:/doc jeky bash -c 'jekyll build . && cp /doc/_site/necios-2021/*.html /doc/mobi && cp /doc/_site/assets/* /doc/mobi/assets && cp /doc/_site/assets/main.css /doc/mobi.css && cd /doc/mobi && make mobi && mv mobi.mobi book-${VERSION}.mobi'
+	if docker rm calibre; then echo calibre removido fi
+	docker run -d --volumes-from mobi --name=calibre -v $(pwd)/docs/guacamole:/config lscr.io/linuxserver/calibre bash -c 'cd /doc/mobi && ebook-convert book-${VERSION}.mobi book-${VERSION}.epub' 
+
+
+
+sync:
+	rsync -rltgoDv docs/mobi/book-${VERSION}.* /run/user/1000/gvfs/smb-share:server=ubuntu,share=maker/ --progress --outbuf=N -T=tmp
+
+
+#%.html.bak: %.html
+#	cp $^ $^.bak
+
+#html: iva.html libro-diario.html libro-mayor.html final.html tributario.html
+#	$(RUBY) script/mobi_postprocess.rb $^
+

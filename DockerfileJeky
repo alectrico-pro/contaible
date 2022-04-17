@@ -34,7 +34,7 @@ COPY necios-2021-revisiones.txt         ./
 COPY necios-2021-revisiones-cuentas.txt ./
 
 
-
+COPY version.txt                  ./
 COPY valor-activos.txt            ./
 COPY tasas.txt                    ./
 COPY contratos.txt                ./

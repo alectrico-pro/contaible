@@ -1,6 +1,9 @@
 
 (deftemplate version
   (slot id)
+  (slot version)
+  (slot asin)
+  (slot mes)
 )
 
 (deftemplate volumen
