@@ -33,7 +33,7 @@ COPY necios-2021-facts.txt              ./
 COPY necios-2021-revisiones.txt         ./
 COPY necios-2021-revisiones-cuentas.txt ./
 
-
+COPY volumenes.txt                ./
 COPY version.txt                  ./
 COPY valor-activos.txt            ./
 COPY tasas.txt                    ./
@@ -45,7 +45,7 @@ COPY trabajadores.txt             ./
 COPY f29-f22.txt                  ./
 COPY salud.txt                    ./
 COPY tipos_de_depreciaciones.txt  ./
-COPY selecciones-mobi.txt              ./
+COPY selecciones-mobi.txt         ./
 COPY accionistas.txt              ./
 COPY afc.txt                      ./
 COPY afps.txt                     ./

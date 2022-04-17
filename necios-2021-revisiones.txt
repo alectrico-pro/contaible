@@ -487,6 +487,9 @@
 (revision (revisado true) (partida 127))
 
 
+
+;esto se puede usar para seleccionar partidas para un ebook
+(revision-general (partidas ))
 ;(revision-general (partidas 172 188 204))
 ;203
 ; 88

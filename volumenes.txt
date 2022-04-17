@@ -1,0 +1,175 @@
+
+;Bundle de diciembre Asiento Inicial
+(volumen
+ (asin B09NRKYKN7)
+ (precio 5)
+ (id 1)
+ (formato kindle)
+ (titulo "Asiento Inicial")
+ (subtitulo "Contabilidad Necios 20201 Libro Diario F29 F22"
+ (contenido "Contiene la Contabilidad de Necios S.A. hasta diciembre de 2021. Solo Libro Diario Enriquecido F29 y F22." )
+)
+
+
+
+
+(volumen
+  (asin B09NRDMK9Z)
+  (id 2)
+  (precio 100)
+  (paginas 349)
+  (dimensiones  '7x 0.82 x 10 inches')
+  (isbn  979-8785713437)
+  (formato paperback)
+  (titulo "Asiento Inicial")
+  (subtitulo "Lo primero es el Asiento" )
+  (contenido "Contiene la Contabilidad de la empresa real alectrico ® del año 2021.")
+
+
+(volumen
+ (asin  B09NRFJJY7)
+ (id 3)
+ (precio 100)
+ (dimensiones '7x0.77x10 inches')
+ (paginas 230)
+ (isbn 979-8468051122)
+ (formato hardcopy)
+ (titulo "Asiento Inicial")
+ (subtitulo "Lo primero es el Asiento" )
+ (contenido "Contiene la Contabilidad de la empresa real alectrico ® del año 2021.")
+)
+
+
+;KINDLES de la serie Asiento Inicial
+(volumen
+ (asin B09DXLR7P9)
+ (precio 5)
+ (id 4)
+ (formato kindle)
+ (titulo "Asiento Inicial")
+ (subtitulo "Contabilidad Necios 2021 enero" )
+ (contenido "Contiene la Contabilidad de NECIOS S.A. 2021. Solo enero.")
+)
+
+
+(volumen
+ (asin B09Y47TJ92)
+ (precio 5)
+ (id 4)
+ (formato kindle)
+ (titulo "Asiento Inicial")
+ (subtitulo "Contabilidad Necios 2021 febrero" )
+ (contenido "Contiene la Contabilidad de NECIOS S.A. 2021. Solo febrero.")
+)
+
+
+(volumen
+ (asin B09Y46KDVS)
+ (precio 5)
+ (id 4)
+ (formato kindle)
+ (titulo "Asiento Inicial")
+ (subtitulo "Contabilidad Necios 2021 marzo" )
+ (contenido "Contiene la Contabilidad de NECIOS S.A. 2021. Solo marzo.")
+)
+
+
+(volumen
+ (asin B09Y46BP4D)
+ (precio 5)
+ (id 4)
+ (formato kindle)
+ (titulo "Asiento Inicial")
+ (subtitulo "Contabilidad Necios 2021 abril" )
+ (contenido "Contiene la Contabilidad de NECIOS S.A. 2021. Solo abril.")
+)
+
+
+(volumen
+ (asin B09Y47LV3S)
+ (precio 5)
+ (id 4)
+ (formato kindle)
+ (titulo "Asiento Inicial")
+ (subtitulo "Contabilidad Necios 2021 mayo" )
+ (contenido "Contiene la Contabilidad de NECIOS S.A. 2021. Solo mayo.")
+)
+
+
+(volumen
+ (asin B09Y47J2MV)
+ (precio 5)
+ (id 4)
+ (formato kindle)
+ (titulo "Asiento Inicial")
+ (subtitulo "Contabilidad Necios 2021 junio" )
+ (contenido "Contiene la Contabilidad de NECIOS S.A. 2021. Solo junio.")
+)
+
+(volumen
+ (asin B09Y48CP4P)
+ (precio 5)
+ (id 4)
+ (formato kindle)
+ (titulo "Asiento Inicial")
+ (subtitulo "Contabilidad Necios 2021 julio" )
+ (contenido "Contiene la Contabilidad de NECIOS S.A. 2021. Solo julio.")
+)
+
+
+(volumen
+ (asin B09Y474J4L)
+ (precio 5)
+ (id 4)
+ (formato kindle)
+ (titulo "Asiento Inicial")
+ (subtitulo "Contabilidad Necios 2021 agosto" )
+ (contenido "Contiene la Contabilidad de NECIOS S.A. 2021. Solo agosto.")
+)
+
+(volumen
+ (asin B09Y48ZNJY)
+ (precio 5)
+ (id 4)
+ (formato kindle)
+ (titulo "Asiento Inicial")
+ (subtitulo "Contabilidad Necios 2021 septiembre" )
+ (contenido "Contiene la Contabilidad de NECIOS S.A. 2021. Solo septiembre.")
+)
+
+(volumen
+ (asin B09Y48Y56F)
+ (precio 5)
+ (id 4)
+ (formato kindle)
+ (titulo "Asiento Inicial")
+ (subtitulo "Contabilidad Necios 2021 octubre" )
+ (contenido "Contiene la Contabilidad de NECIOS S.A. año 2021. Solo octubre.")
+)
+
+
+(volumen
+ (asin B09Y47WB9Y)
+ (precio 5)
+ (id 4)
+ (formato kindle)
+ (titulo "Asiento Inicial")
+ (subtitulo "Contabilidad Necios 2021 noviembre" )
+ (contenido "Contiene la Contabilidad de NECIOS S.A. año 2021. Solo noviembre.")
+)
+
+;el kindle de diciembre está en un bundle con la contabilidad completq
+;pues es más importante que se disponga de la contabilidad completa
+
+;----------------------------------------------------------
+;Kindles de la serie Contaible
+(volumen
+ (asin B09XQZ6B9P)
+ (precio 5)
+ (id 4)
+ (formato kindle)
+ (titulo "Contaible")
+ (subtitulo "Suscinto" )
+ (contenido "Introducción a Contabile.")
+)
+

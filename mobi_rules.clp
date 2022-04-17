@@ -128,7 +128,7 @@
 
    ( load-facts "actividades.txt")
    ( load-facts "f29-f22.txt" )
-
+   ( load-facts "volumenes.txt" )
    ( load-facts "version.txt" )
 
    ( assert (actual (mes enero     )))
@@ -152,11 +152,13 @@
   ?ajustar <-  ( ajustar-para-book )
   ( version (asin ?asin) (version ?version) (mes ?mes) )
   ?balance <- (balance )
-
+  ?revision-general <- (revision-general)
+  (volumen (asin ?asin) (partidas-no-incluidas ?partidas-no-incluidas))
  =>
 
   (retract ?ajustar)
   (modify ?balance (mes ?mes))
+  (modify ?revision-general (partidas ?partidas-no-incluidas ))
   (assert (hacer-focos) )
 )
 
