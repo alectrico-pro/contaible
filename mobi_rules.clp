@@ -153,12 +153,12 @@
   ( version (asin ?asin) (version ?version) (mes ?mes) )
   ?balance <- (balance )
   ?revision-general <- (revision-general)
-  (volumen (asin ?asin) (partidas-no-incluidas ?partidas-no-incluidas))
+  (volumen (asin ?asin) (partidas-no-incluidas $?partidas) )
  =>
 
   (retract ?ajustar)
   (modify ?balance (mes ?mes))
-  (modify ?revision-general (partidas ?partidas-no-incluidas ))
+  (modify ?revision-general (partidas $?partidas ))
   (assert (hacer-focos) )
 )
 

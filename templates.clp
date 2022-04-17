@@ -8,13 +8,16 @@
 
 (deftemplate volumen
   (slot id)
+  (slot isbn)
   (slot asin)
   (slot precio)
   (slot dimensiones)
   (slot formato) 
   (slot titulo)
+  (slot paginas)
   (slot subtitulo)
   (slot contenido)
+  (multislot partidas-no-incluidas)
 )
 
 

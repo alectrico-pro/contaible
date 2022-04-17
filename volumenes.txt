@@ -6,7 +6,7 @@
  (id 1)
  (formato kindle)
  (titulo "Asiento Inicial")
- (subtitulo "Contabilidad Necios 20201 Libro Diario F29 F22"
+ (subtitulo "Contabilidad Necios 20201 Libro Diario F29 F22")
  (contenido "Contiene la Contabilidad de Necios S.A. hasta diciembre de 2021. Solo Libro Diario Enriquecido F29 y F22." )
 )
 
@@ -18,21 +18,22 @@
   (id 2)
   (precio 100)
   (paginas 349)
-  (dimensiones  '7x 0.82 x 10 inches')
-  (isbn  979-8785713437)
+  (dimensiones  "7x 0.82 x 10 inches")
+  (isbn  "979-8785713437")
   (formato paperback)
   (titulo "Asiento Inicial")
   (subtitulo "Lo primero es el Asiento" )
   (contenido "Contiene la Contabilidad de la empresa real alectrico ® del año 2021.")
+)
 
 
 (volumen
  (asin  B09NRFJJY7)
  (id 3)
  (precio 100)
- (dimensiones '7x0.77x10 inches')
+ (dimensiones "7x0.77x10 inches")
  (paginas 230)
- (isbn 979-8468051122)
+ (isbn "979-8468051122")
  (formato hardcopy)
  (titulo "Asiento Inicial")
  (subtitulo "Lo primero es el Asiento" )
