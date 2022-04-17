@@ -14,10 +14,18 @@ mobi.ncx: mobi.ncx.erb
 
 
 all: 
-	echo '(version (id 1) (version 1.0) (asin B09NRKYkN7) (mes enero))' > version.txt
 	make build VERSION=1.0 ASIN=B09NRKYkN7 MES=enero
-	echo '(version (id 2) (version 1.0) (asin B09NRKYkN7) (mes febrero))' > version.txt
 	make build VERSION=1.0 ASIN=B09NRKYkN7 MES=febrero
+	make build VERSION=1.0 ASIN=B09NRKYkN7 MES=marzo
+	make build VERSION=1.0 ASIN=B09NRKYkN7 MES=abril
+	make build VERSION=1.0 ASIN=B09NRKYkN7 MES=mayo
+	make build VERSION=1.0 ASIN=B09NRKYkN7 MES=junio
+	make build VERSION=1.0 ASIN=B09NRKYkN7 MES=julio
+	make build VERSION=1.0 ASIN=B09NRKYkN7 MES=agosto
+	make build VERSION=1.0 ASIN=B09NRKYkN7 MES=septiembre
+	make build VERSION=1.0 ASIN=B09NRKYkN7 MES=octubre
+	make build VERSION=1.0 ASIN=B09NRKYkN7 MES=noviembre
+	make build VERSION=1.0 ASIN=B09NRKYkN7 MES=diciembre
 	make sync
 
 #suministrar make build VERSION=1 ASIN=b999 MES=enero
@@ -31,6 +39,8 @@ build:
 	-echo '==================================='
 	echo 
 	echo
+
+	echo '(version (id 2) (version $(VERSION)) (asin $(ASIN)) (mes $(MES)))' > version.txt
 
 	if docker rm st; then echo volumen docker st eliminado exitosamente st; fi 
 	if docker rm mobi; then echo volumen docker mobi eliminado exitosamente; fi
@@ -46,7 +56,12 @@ build:
 
 
 sync:
-	if rsync -rltgoDv /docs/mobi/book*.* /run/user/1000/gvfs/smb-share:server=ubuntu,share=maker/ --progress --outbuf=N -T=tmp; then echo "Los ebooks fueron transferidos al notebook para su revisión y envío a kdp.amazon."; else echo No funcionó async para transferir eboosk al notebook. Agregue el sitio de red en el organizador de archivos. Luego reintente.; fi
+	rsync -rltgoDv ~/contaible/docs/mobi/book*.* /run/user/1000/gvfs/smb-share:server=ubuntu,share=maker/ --progress --outbuf=N -T=tmp
+	
+	
+	
+	
+#; then echo "Los ebooks fueron transferidos al notebook para su revisión y envío a kdp.amazon."; else echo No funcionó async para transferir eboosk al notebook. Agregue el sitio de red en el organizador de archivos. Luego reintente.
 
 
 
