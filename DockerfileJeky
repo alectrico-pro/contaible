@@ -69,7 +69,6 @@ COPY ./empresa.markdown   ./
 COPY ./nota.markdown      ./
 COPY ./o.markdown         ./
 COPY ./assets/            ./assets/
-
 COPY ./Makefile           ./
 
 #estos resultan de asiento_inicial.py
@@ -94,8 +93,8 @@ COPY ./_config.yml     ./
 COPY ./assets/         ./assets/
 COPY ./assets/         ./mobi/assets/
 COPY ./css/            ./mobi/css/
-COPY ./mobi.ncx.erb    ./mobi
 COPY ./*.opf           ./mobi
+COPY ./*.ncx.erb       ./mobi
 COPY ./mobi.css        ./mobi
 COPY ./kindlegen       ./mobi
 COPY ./cover.jpg       ./mobi

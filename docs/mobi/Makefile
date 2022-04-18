@@ -3,14 +3,18 @@ ERB = erb
 KINDLEGEN = ./kindlegen
 
 #Llamar con VERSION, ASIN Y MES
-mobi: libro-diario.html mobi.ncx mobi.opf
+mobi: libro-diario.html mobi-${VERSION}.ncx book-${VERSION}-${ASIN}-${MES}.opf
 	cp $< $<.bak
 	-$(RUBY) script/mobi_postprocess.rb $<.bak > $<
 	cat assets/main.css >> libro-diario.css
 	-$(KINDLEGEN) book-${VERSION}-${ASIN}-${MES}.opf
 
-mobi.ncx: mobi.ncx.erb
+mobi-1.ncx: mobi-1.ncx.erb
 	$(ERB) $<  >  $@
+
+mobi-2.ncx: mobi-2.ncx.erb
+	$(ERB) $<  >  $@
+
 
 
 asiento: 
@@ -63,7 +67,7 @@ build:
 
 sync:
 	rsync -rltgoDv ~/contaible/docs/mobi/book*.epub /run/user/1000/gvfs/smb-share:server=ubuntu,share=maker/ --progress --outbuf=N -T=tmp
-	rsync -rltgoDv ~/contaible/docs/mobi/book*.mobi /run/user/1000/gvfs/smb-share:server=ubuntu,share=maker/ --progress --outbuf=N -T=tmp
+	rsync -rltgoDv ~/contaible/docs/mobi/mobi*.mobi /run/user/1000/gvfs/smb-share:server=ubuntu,share=maker/ --progress --outbuf=N -T=tmp
 	
 	
 	
