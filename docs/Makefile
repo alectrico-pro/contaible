@@ -7,7 +7,8 @@ mobi: libro-diario.html mobi-${VERSION}.ncx book-${VERSION}-${ASIN}-${MES}.opf
 	cp $< $<.bak
 	-$(RUBY) script/mobi_postprocess.rb $<.bak > $<
 	cat assets/main.css >> libro-diario.css
-	-$(KINDLEGEN) book-${VERSION}-${ASIN}-${MES}.opf
+	-$(KINDLEGEN) book-${VERSION}.opf
+	mv book-${VERSION}.mobi book-${VERSION}-${ASIN}-${MES}.mobi
 
 mobi-1.ncx: mobi-1.ncx.erb
 	$(ERB) $<  >  $@
@@ -33,7 +34,7 @@ asiento:
 	make sync
 
 
-contaible:
+contabile:
 	make build VERSION=2 ASIN=B09XQZ6B9P MES=enero
 	make sync
 
@@ -67,7 +68,7 @@ build:
 
 sync:
 	rsync -rltgoDv ~/contaible/docs/mobi/book*.epub /run/user/1000/gvfs/smb-share:server=ubuntu,share=maker/ --progress --outbuf=N -T=tmp
-	rsync -rltgoDv ~/contaible/docs/mobi/mobi*.mobi /run/user/1000/gvfs/smb-share:server=ubuntu,share=maker/ --progress --outbuf=N -T=tmp
+	rsync -rltgoDv ~/contaible/docs/mobi/book*.mobi /run/user/1000/gvfs/smb-share:server=ubuntu,share=maker/ --progress --outbuf=N -T=tmp
 	
 	
 	

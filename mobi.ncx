@@ -1207,19 +1207,10 @@
           counter += 1
           <navPoint class="section" id="0" playOrder="16">
             <navLabel>
-              <text>Libro Diario</text>
+              <text>Libro Dario</text>
             </navLabel>
             <content src="libro-diario.html#Inicio"/>
           </navPoint>
-
-          counter += 1
-          <navPoint class="section" id="0" playOrder="16">
-            <navLabel>
-              <text>Libro Mayor</text>
-            </navLabel>
-            <content src="libro-mayor.html#Inicio"/>
-          </navPoint>
-
 
   </navMap>
 </ncx>

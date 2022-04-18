@@ -1,8 +1,7 @@
 --- 
 layout: page
 --- 
-<chapter>
-<h2> Libro Mayor </h2>
+<h2 name='Inicio'> Libro Mayor </h2>
 <table>
 <tr> <td>188</td> <td align='right'> <a href= '/necios-2021/libro-diario#Partida-14333'>14333</a> </td> <td align='right'>0</td> <td> | </td> <td align='right'> 33</td> <td>enero</td><td>false</td><td> 1.063</td><td> remanente-iva</td> </tr>
 <tr> <td></td> <td></td> <td align='right'>0 <small> 0.0</small> </td> <td>|</td> <td align='right'>33<small> 35.079</small> </td></tr>
