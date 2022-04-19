@@ -148,6 +148,16 @@
 )
 
 
+(defrule warning-no-hay-asin
+  ( version (asin ?asin) )
+  (not (exists (volumen (asin ?asin) )))
+ =>
+  (printout t "No hay un volumen con asin: " ?asin " debe agregarlo en volumnes.txt" crlf)
+  (halt)
+)
+
+
+
 (defrule hacer-ajutar-para-ebook-rule
   ?ajustar <-  ( ajustar-para-book )
   ( version (asin ?asin) (version ?version) (mes ?mes) )

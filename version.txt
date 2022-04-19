@@ -1,1 +1,1 @@
-(version (id 2) (version 2) (asin B09XQZ6B9P) (mes enero))
+(version (id 2) (version mayor) (asin MAYOR) (mes enero))

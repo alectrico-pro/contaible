@@ -10,6 +10,12 @@ doc = Nokogiri::HTML::Document.parse(IO.read(ARGV[0]), nil, 'utf-8')
 # last row of actual text TABLES seems to contain a single TD with empty whitespace
 doc.xpath("//table[count(tr)>1]/tr[count(td)=1]/td[.='']").remove
 
+# last tablas de más de 2 líneas tendrás salto de página previo
+#doc.xpath("//table[count(tr)>10]").each do |node|
+#  attrs = node.get_atributes
+#  node.set_attribute 'style', ' page-break-before: always'
+#end
+
 # empty table rows cause some tables to not render at all
 doc.xpath("//tr[count(td)=0]").remove
 
@@ -72,6 +78,17 @@ doc.xpath("//link[@href='/assets/main.css']").each do |node|
 #  node.remove
 end
 #href="/assets/main.css">
+
+#probando
+#/libro-diario#Partida-" ?partida "
+doc.xpath("//link[@href='/libro-diario#Partida-']").each do |node|
+#   node.set_attribute 'href', '../mobi.css'
+ #  node.set_attribute 'type', 'text/css'
+ #  node.set_attribute 'media', 'screen'
+    node.remove
+end
+#href="/assets/mai
+
 
 # eliminar la referencia al feed 
 doc.xpath("//link[@type='application/atom+xml']").each do |node|
@@ -151,7 +168,11 @@ html.gsub!(/<br \/>1/,'')
 #puts escribe en el archivo html. No muestra salida por pantalla.
 
 
-html.gsub!(/\/necios-2021\/libro-diario/, '')
+html.gsub!(/\/necios-2021\/libro-diario/, './libro-diario.html')
+
+#html.gsub!(/libro-mayor/, '')
+
+
 
 #href="/necios-2021/libro-diario#Partida-14333
 

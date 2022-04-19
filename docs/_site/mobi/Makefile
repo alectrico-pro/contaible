@@ -21,7 +21,7 @@ mobi-%.ncx: mobi-%.ncx.erb
 
 
 mobi:  libro-diario.html.bak libro-mayor.html.bak iva.html.bak final.html.bak tributario.html.bak mobi-${VERSION}.ncx book-${VERSION}.opf
-	#cat assets/main.css >> libro-diario.css
+	cat assets/main.css >> mobi.css
 	-$(KINDLEGEN) book-${VERSION}.opf
 	mv book-${VERSION}.mobi book-${VERSION}-${ASIN}-${MES}.mobi
 
@@ -45,10 +45,20 @@ asiento:
 
 .PHONY: contaible
 contaible:
-	make build VERSION=2 ASIN=B09XQZ6B9P MES=enero
+	make build VERSION=2 ASIN=B09XQZ6B9P MES=diciembre
 	make sync
 
- 
+
+mayor:
+	make build VERSION=mayor ASIN=MAYOR MES=enero
+	make sync
+
+
+financiero:
+	make build VERSION=financiero ASIN=FINANCIERO MES=diciembre
+	make sync
+
+
 
 #suministrar make build VERSION=1 ASIN=b999 MES=enero
 build:

@@ -174,3 +174,30 @@
  (contenido "Introducción a Contabile.")
 )
 
+
+
+;--------- SERIE FINANCIERO -------------------------------------
+;Kindles de la serie Contaible
+(volumen
+ (asin FINANCIERO)
+ (precio 5)
+ (id 4)
+ (formato kindle)
+ (titulo "Contaible")
+ (subtitulo "Suscinto" )
+ (contenido "Introducción a Contabile.")
+)
+
+
+;--------- MEJORANDO LIBRO-MAYOR -------------------------------------
+;Kindles de la serie Contaible
+(volumen
+ (asin MAYOR)
+ (precio 5)
+ (id 4)
+ (formato kindle)
+ (titulo "Contaible")
+ (subtitulo "Suscinto" )
+ (contenido "Introducción a Contabile.")
+)
+ 
