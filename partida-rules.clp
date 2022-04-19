@@ -61,7 +61,10 @@
 (defrule fin
   ( declare (salience -100) )
  =>
-  ( close k )
+  ( if (neq nil k) then (close k))
+  ( if (neq nil h) then (close h))
+  ( if (neq nil l) then (close l))
+  ( if (neq nil d) then (close d))
 )
 
 ;esto genera un markdown para que jekyll lo publique en el blog necios
@@ -85,15 +88,22 @@
   ;    ( printout k "layout: page" crlf)
    ;   ( printout k "--- " crlf)
      else
-      ( bind ?archivo (str-cat "./doc/" ?empresa "/empresa.markdown"))
+      ( bind ?archivo (str-cat "./doc/" ?empresa "/partidas.markdown"))
       ( open ?archivo k "w")
    ( printout k "--- " crlf)
-;   ( printout k "title: Libro Diaro" crlf)
-   ( printout k "permalink: /" ?empresa "/libro-diario " crlf)
+   ( printout k "title: Partidas" crlf)
+
+   ( printout k "permalink: /" ?empresa "/partidas" crlf)
    ( printout k "layout: page" crlf)
    ( printout k "--- " crlf)
 
-
+   ( bind ?archivo (str-cat "./doc/" ?empresa "/libro-diario.markdown"))
+      ( open ?archivo d "w")
+   ( printout d "--- " crlf)
+   ( printout d "title: Libro Diaro" crlf)
+   ( printout d "permalink: /" ?empresa "/libro-diario " crlf)
+   ( printout d "layout: page" crlf)
+   ( printout d "--- " crlf)
    )
 
 ;   ( printout k "--- " crlf)
@@ -105,6 +115,7 @@
    
 ;   ( printout k "</chapter><chapter>" crlf)
    ( printout k "<h2> Libro Diario </h2>" crlf)
+
    ( printout k "Contabilidad para Necios® usa el siguiente código de colores para este documento." crlf)
    ( printout k "<ul>" crlf)
    ( printout k "<li><span style='background-color: red'>[    ]</span> mensaje de alerta. </li>" crlf)

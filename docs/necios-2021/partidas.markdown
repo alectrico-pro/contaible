@@ -1,5 +1,6 @@
 --- 
-permalink: /necios-2021/partida 
+title: Partidas
+permalink: /necios-2021/partidas
 layout: page
 --- 
 <h2> Libro Diario </h2>
