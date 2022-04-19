@@ -19,7 +19,7 @@
     
     <!-- ::EDITME:: Book title -->
     <dc:title>
-    Libro Diario
+    Contaible
     </dc:title>
     
     <!-- Language [mandatory]: the language of the publication. The language codes used are the same as in XML
@@ -43,11 +43,11 @@
          creator  elements should be named in contributor elements.
       -->
     <!-- ::EDITME:: authors, one per dc:creator tag -->
-    <dc:creator>Luca Paccioli</dc:creator>
+    <dc:creator>Alexander Espinosa ®</dc:creator>
     
    
     <!-- ::EDITME:: Publisher - entity responsible for resource -->
-    <dc:publisher>Alectrico</dc:publisher>
+    <dc:publisher>Alectrico®</dc:publisher>
     
     <!-- ::EDITME:: pick subject code according to
          http://www.bisg.org/what-we-do-20-73-bisac-subject-headings-2008-edition.php
@@ -58,11 +58,11 @@
          month can be omitted). 
          Standard to follow: http://www.w3.org/TR/NOTE-datetime
       -->
-    <dc:date>2014-01-01</dc:date>
+    <dc:date>2022-05-01</dc:date>
 
     <!-- ::EDIMTE:: A short description of the publication's content. -->
     <dc:description>
-      Curso Elemental de Contabilidad
+      Método Contaible de Contabilidad
     </dc:description>
     
   </metadata>
@@ -84,10 +84,16 @@
     -->
 
   <manifest>
-    <!-- HTML content files [mandatory] -->
-    <item id="item1" media-type="application/xhtml+xml" href="libro-diario.html"></item>
+	  <!-- HTML content files [mandatory] -->
+	  <!--
+	  <item id="as" media-type="application/xhtml+xml" href="as.html"></item>
+	  -->
+    <item id="libro-mayor" media-type="application/xhtml+xml" href="libro-mayor.html"></item>
+    <item id="libro-diario" media-type="application/xhtml+xml" href="libro-diario.html"></item>
+    <item id="f29"  media-type="application/xhtml+xml" href="f29.html"></item>
+
     <!-- table of contents [mandatory] -->
-    <item id="My_Table_of_Contents" media-type="application/x-dtbncx+xml" href="libro-diario.ncx"/>
+    <item id="My_Table_of_Contents" media-type="application/x-dtbncx+xml" href="mobi-mayor.ncx"/>
     <!-- cover image [mandatory] -->
     <item id="My_Cover" media-type="image/jpeg" href="cover.jpg"/>
   </manifest>
@@ -107,8 +113,13 @@
     -->
   
   <spine toc="My_Table_of_Contents">
-    <!-- the spine defines the linear reading order of the book -->
-    <itemref idref="item1"/>
+	  <!-- the spine defines the linear reading order of the book -->
+	  <!--	  <itemref idref="as" /> -->
+	  
+    <itemref idref="libro-diario"      
+    <itemref idref="libro-mayor" />
+    <itemref idref="f29" />
+
   </spine>
 
   <!--
@@ -130,11 +141,11 @@
      contents can easily be discovered by the user by paging through the book. Both are useful.
      
     -->
-  <!--
   <guide>
+    <!--
     <reference type="toc" title="Table of Contents" href="libro-diario.html#TOC"></reference>
-    <reference type="text" title="Welcome" href="libro_diario#start"></reference>
+    -->
+    <reference type="text" title="Inicio" href="libro-mayor.html#start"></reference>
   </guide>
-  -->
 
 </package>

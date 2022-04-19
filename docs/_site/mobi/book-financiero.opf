@@ -62,7 +62,7 @@
 
     <!-- ::EDIMTE:: A short description of the publication's content. -->
     <dc:description>
-      Método Contaible de Contabilidad
+     Financiero
     </dc:description>
     
   </metadata>
@@ -90,6 +90,7 @@
 	  -->
     <item id="libro-diario" media-type="application/xhtml+xml" href="libro-diario.html"></item>
     <item id="libro-mayor" media-type="application/xhtml+xml" href="libro-mayor.html"></item>
+    <item id="f29" media-type="application/xhtml+xml" href="f29.html"></item>
     <item id="final" media-type="application/xhtml+xml" href="final.html"></item>
     <item id="tributario" media-type="application/xhtml+xml" href="tributario.html"></item>
     <item id="iva"  media-type="application/xhtml+xml" href="iva.html"></item>
@@ -120,6 +121,7 @@
     <itemref idref="libro-diario" />
     <itemref idref="iva"/>
     <itemref idref="libro-mayor" />
+    <itemref idref="f29" /> 
     <itemref idref="final"  />
     <itemref idref="tributario" />
   </spine>
@@ -144,10 +146,9 @@
      
     -->
   <guide>
-    <!--
+	  <!--
     <reference type="toc" title="Table of Contents" href="libro-diario.html#TOC"></reference>
-    -->
-
+-->
     <reference type="text" title="Inicio" href="libro-diario.html#start"></reference>
     <reference type="text" title="Inicio" href="libro-mayor.html#start"></reference>
 

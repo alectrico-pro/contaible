@@ -62,7 +62,7 @@
 
     <!-- ::EDIMTE:: A short description of the publication's content. -->
     <dc:description>
-     Financiero
+      Método Contaible de Contabilidad
     </dc:description>
     
   </metadata>
@@ -88,14 +88,12 @@
 	  <!--
 	  <item id="as" media-type="application/xhtml+xml" href="as.html"></item>
 	  -->
-    <item id="libro-diario" media-type="application/xhtml+xml" href="libro-diario.html"></item>
     <item id="libro-mayor" media-type="application/xhtml+xml" href="libro-mayor.html"></item>
-    <item id="f29" media-type="application/xhtml+xml" href="f29.html"></item>
-    <item id="final" media-type="application/xhtml+xml" href="final.html"></item>
-    <item id="tributario" media-type="application/xhtml+xml" href="tributario.html"></item>
-    <item id="iva"  media-type="application/xhtml+xml" href="iva.html"></item>
+    <item id="libro-diario" media-type="application/xhtml+xml" href="libro-diario.html"></item>
+    <item id="f29"  media-type="application/xhtml+xml" href="f29.html"></item>
+
     <!-- table of contents [mandatory] -->
-    <item id="My_Table_of_Contents" media-type="application/x-dtbncx+xml" href="mobi-financiero.ncx"/>
+    <item id="My_Table_of_Contents" media-type="application/x-dtbncx+xml" href="mobi-mayor.ncx"/>
     <!-- cover image [mandatory] -->
     <item id="My_Cover" media-type="image/jpeg" href="cover.jpg"/>
   </manifest>
@@ -118,12 +116,10 @@
 	  <!-- the spine defines the linear reading order of the book -->
 	  <!--	  <itemref idref="as" /> -->
 	  
-    <itemref idref="libro-diario" />
-    <itemref idref="iva"/>
+    <itemref idref="libro-diario"      
     <itemref idref="libro-mayor" />
-    <itemref idref="f29" /> 
-    <itemref idref="final"  />
-    <itemref idref="tributario" />
+    <itemref idref="f29" />
+
   </spine>
 
   <!--
@@ -146,12 +142,10 @@
      
     -->
   <guide>
-	  <!--
+    <!--
     <reference type="toc" title="Table of Contents" href="libro-diario.html#TOC"></reference>
--->
-    <reference type="text" title="Inicio" href="libro-diario.html#start"></reference>
+    -->
     <reference type="text" title="Inicio" href="libro-mayor.html#start"></reference>
-
   </guide>
 
 </package>

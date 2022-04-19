@@ -20,7 +20,19 @@ mobi-%.ncx: mobi-%.ncx.erb
 	$(ERB) $<  >  $@
 
 
-mobi:  libro-diario.html.bak libro-mayor.html.bak iva.html.bak final.html.bak tributario.html.bak mobi-${VERSION}.ncx book-${VERSION}.opf
+#Requisitos es que se haya hecho un resguardo de los html
+#Pero eso se hace luego de aplicar mobi_postprocess que es lo que queremos
+#Pues no nos interesa el .html.bak sin el .html que quede procesado
+#Deben existir los archivos de configuración pertienentes a la VERSIÓN
+#La versión puede ser un número, pero ha derviado en una palabra
+#Ejemplo FINANCIERO
+#mobi debe recibir como parámentro el asin y el mes, de esa forma
+#se pueden generar archivos *.mobi y *.epub cuyos nombres indiquen
+#la calidad del contenido.
+#El asin se chequea con un registro de volumenes.txt en el ambiente clips
+#De esa forma llevamos una organización de qué ha sido publicado y donde
+#Entre otros datos que se puedan ir agregando al registro de volúmenes
+mobi:  libro-diario.html.bak libro-mayor.html.bak iva.html.bak final.html.bak tributario.html.bak f29.html.bak mobi-${VERSION}.ncx book-${VERSION}.opf
 	cat assets/main.css >> mobi.css
 	-$(KINDLEGEN) book-${VERSION}.opf
 	mv book-${VERSION}.mobi book-${VERSION}-${ASIN}-${MES}.mobi
@@ -55,7 +67,7 @@ mayor:
 
 
 financiero:
-	make build VERSION=financiero ASIN=FINANCIERO MES=diciembre
+	make build VERSION=financiero ASIN=FINANCIERO MES=enero
 	make sync
 
 

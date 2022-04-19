@@ -1,1 +1,1 @@
-(version (id 2) (version mayor) (asin MAYOR) (mes enero))
+(version (id 2) (version financiero) (asin FINANCIERO) (mes enero))

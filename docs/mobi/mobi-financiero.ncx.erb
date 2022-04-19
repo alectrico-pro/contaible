@@ -25,7 +25,7 @@
   Luca Paccioli
 </text></docAuthor>
   <navMap>
-    <!-- Esto crea navPoints NCX desde las marcas de tablas destinadas a Partidas en sus libro-diario.html   -->
+  <!-- Esto crea navPoints NCX desde las marcas de tablas destinadas a Partidas en sus libro-diario.html   -->
     <% root = 'libro-diario' %>  <!-- nombre sin extensión del archivo del que se va a extraer la información  -->
     <% counter = 0 %>   <% section = 0 %>
     <% File.open("#{root}.html", "r:ISO-8859-1:UTF-8" ).each do |line| %>
@@ -40,11 +40,10 @@
           </navPoint>    
         <%  end %>    
       <% end %>
-
           counter += 1
           <navPoint class="section" id="<%= section %>" playOrder="<%= counter %>">
             <navLabel>
-              <text>Libro Dario</text>
+              <text>Libro Diario</text>
             </navLabel>
             <content src="libro-diario.html#Inicio"/>
 	    </navPoint>
@@ -57,7 +56,14 @@
             <content src="libro-mayor.html#Inicio"/>
             </navPoint>
 
-
+          counter += 1
+          <navPoint class="section" id="<%= section %>" playOrder="<%= counter %>">
+            <navLabel>
+              <text>F29</text>
+            </navLabel>
+            <content src="f29.html#Inicio"/>
+            </navPoint>
+  
           counter += 1
           <navPoint class="section" id="<%= section %>" playOrder="<%= counter %>">
             <navLabel>
