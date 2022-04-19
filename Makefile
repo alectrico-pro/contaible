@@ -3,19 +3,27 @@ ERB = erb
 KINDLEGEN = ./kindlegen
 
 #Llamar con VERSION, ASIN Y MES
-mobi: libro-diario.html mobi-${VERSION}.ncx book-${VERSION}-${ASIN}-${MES}.opf
+#mobi: libro-diario.html mobi-${VERSION}.ncx book-${VERSION}-${ASIN}-${MES}.opf
+#obi: libro-diario.html mobi-${VERSION}.ncx book-${VERSION}.opf
+	#mobi
+	#cp $< $<.bak
+	#-$(RUBY) script/mobi_postprocess.rb $<.bak > $<
+	#cat assets/main.css >> libro-diario.css
+
+
+%.html.bak: %.html
 	cp $< $<.bak
 	-$(RUBY) script/mobi_postprocess.rb $<.bak > $<
-	cat assets/main.css >> libro-diario.css
+
+
+mobi-%.ncx: mobi-%.ncx.erb
+	$(ERB) $<  >  $@
+
+
+mobi:  libro-diario.html.bak libro-mayor.html.bak iva.html.bak final.html.bak tributario.html.bak mobi-${VERSION}.ncx book-${VERSION}.opf
+	#cat assets/main.css >> libro-diario.css
 	-$(KINDLEGEN) book-${VERSION}.opf
 	mv book-${VERSION}.mobi book-${VERSION}-${ASIN}-${MES}.mobi
-
-mobi-1.ncx: mobi-1.ncx.erb
-	$(ERB) $<  >  $@
-
-mobi-2.ncx: mobi-2.ncx.erb
-	$(ERB) $<  >  $@
-
 
 
 asiento: 
@@ -34,7 +42,9 @@ asiento:
 	make sync
 
 
-contabile:
+
+.PHONY: contaible
+contaible:
 	make build VERSION=2 ASIN=B09XQZ6B9P MES=enero
 	make sync
 

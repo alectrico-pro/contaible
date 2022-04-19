@@ -143,8 +143,6 @@
       
         
       
-        
-      
     
     
     
@@ -1207,10 +1205,10 @@
           counter += 1
           <navPoint class="section" id="0" playOrder="16">
             <navLabel>
-              <text>Libro Diario</text>
+              <text>Libro Dario</text>
             </navLabel>
             <content src="libro-diario.html#Inicio"/>
-          </navPoint>
+	    </navPoint>
 
           counter += 1
           <navPoint class="section" id="0" playOrder="16">
@@ -1218,7 +1216,32 @@
               <text>Libro Mayor</text>
             </navLabel>
             <content src="libro-mayor.html#Inicio"/>
-          </navPoint>
+            </navPoint>
+
+
+          counter += 1
+          <navPoint class="section" id="0" playOrder="16">
+            <navLabel>
+              <text>IVA</text>
+            </navLabel>
+            <content src="iva.html#Inicio"/>
+            </navPoint>
+
+          counter += 1
+          <navPoint class="section" id="0" playOrder="16">
+            <navLabel>
+              <text>FINAL</text>
+            </navLabel>
+            <content src="final.html#Inicio"/>
+            </navPoint>
+ 	    
+          counter += 1
+          <navPoint class="section" id="0" playOrder="16">
+            <navLabel>
+              <text>Tributario</text>
+            </navLabel>
+            <content src="tributario.html#Inicio"/>
+            </navPoint>
 
 
   </navMap>

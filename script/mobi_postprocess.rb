@@ -103,6 +103,9 @@ end
 
 # generate html
 html = doc.to_xhtml(:encoding => 'ISO-8859-1')
+#ncx.erb espera utf-8
+#html = doc.to_xhtml(:encoding => 'UTF-8')
+
 
 # tex4ht outputs an apparently-random-length string of underscores to
 #  render \hrule in LaTeX, so if we see >8 of them, replace with <hr> tag

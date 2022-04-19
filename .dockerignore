@@ -27,12 +27,10 @@
 !/necios-2021/
 !/Makefile
 !/script/
-!/mobi.ncx.erb
-!/mobi.opf
-!/mobi.html
-!/mobi.makdown
+!/*.ncx.erb
 !/*.html
 !/cover.jpg
 !/mobi.css
 !/kindlegen
 !/css/
+!/*.opf

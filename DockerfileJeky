@@ -93,8 +93,8 @@ COPY ./_config.yml     ./
 COPY ./assets/         ./assets/
 COPY ./assets/         ./mobi/assets/
 COPY ./css/            ./mobi/css/
-COPY ./*.opf           ./mobi
-COPY ./*.ncx.erb       ./mobi
+COPY ./*.opf           ./mobi/
+COPY ./*.ncx.erb       ./mobi/
 COPY ./mobi.css        ./mobi
 COPY ./kindlegen       ./mobi
 COPY ./cover.jpg       ./mobi
