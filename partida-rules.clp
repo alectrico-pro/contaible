@@ -100,7 +100,7 @@
    ( bind ?archivo (str-cat "./doc/" ?empresa "/libro-diario.markdown"))
       ( open ?archivo d "w")
    ( printout d "--- " crlf)
-   ( printout d "title: Libro Diaro" crlf)
+   ( printout d "title: Libro Diario" crlf)
    ( printout d "permalink: /" ?empresa "/libro-diario " crlf)
    ( printout d "layout: page" crlf)
    ( printout d "--- " crlf)
@@ -127,6 +127,21 @@
    ( printout k "<li><span style='color: white; background-color: black'>[    ]</span> pérdida </li>" crlf)
    ( printout k "<li><span style='background-color: blanchedalmond'>[    ]</span> subtotales de la transacción </li>" crlf)
    ( printout k "</ul>" crlf)
+
+   ( printout d "Contabilidad para Necios® usa el siguiente código de colores para este documento." crlf)
+   ( printout d "<ul>" crlf)
+   ( printout d "<li><span style='background-color: red'>[    ]</span> mensaje de alerta. </li>" crlf)
+   ( printout d "<li><span style='background-color: lavender'>[    ]</span> partida revisada y resultado bueno. </li>" crlf)
+   ( printout d "<li><span style='background-color: lightyellow'>[    ]</span> cuenta mayor del activo </li>" crlf)
+   ( printout d "<li><span style='background-color: azure'>[    ]</span> cuenta mayor del pasivo </li>" crlf)
+   ( printout d "<li><span style='color: white; background-color: cornflowerblue'>[    ]</span> cuenta de patrimonio </li>" crlf)
+   ( printout d "<li><span style='background-color: gold'>[    ]</span> ganancia </li>" crlf)
+   ( printout d "<li><span style='color: white; background-color: black'>[    ]</span> pérdida </li>" crlf)
+   ( printout d "<li><span style='background-color: blanchedalmond'>[    ]</span> subtotales de la transacción </li>" crlf)
+   ( printout d "</ul>" crlf)
+
+
+
 ;esta línea genera tablas html que se ven como partidas contables
 
 ;   ( printout k "
@@ -148,8 +163,8 @@
    ( open ?archivo h "w")
 
    ( printout h "--- " crlf)
-;   ( printout h "title: " ?empresa "-f29"  crlf)
-;   ( printout h "permalink: /" ?empresa "-f29/ " crlf)
+   ( printout h "title: F29"  crlf)
+   ( printout h "permalink: /" ?empresa "/f29" crlf)
    ( printout h "layout: page" crlf)
    ( printout h "--- " crlf)
 
@@ -162,8 +177,9 @@
  =>
   ( close k )
 ; ( printout l "{% endblock %}" crlf)
- ;( close l)
+  ( close l)
   ( close h)
+  ( close d)
 )
 
 
@@ -447,34 +463,102 @@
   ( printout k "<p style='color: white; background-color: red'> " ?a-corregir "</p>" crlf)
   ( printout k "<br>" ?legal crlf)
 
+  ( printout d "<p style='page-break-before: always;'>&nbsp;</p>" crlf)
+  ( printout d "<br>" ?descripcion crlf)
+  ( printout d "<p style='color: white; background-color: red'> " ?a-corregir "</p>" crlf)
+  ( printout d "<br>" ?legal crlf)
+
   ( if (eq ?imprimir-detalles true)
     then
 
     ( if (eq ?rechazado true)   then
-      ( printout k "- [x] rechazado: Partida rechazada por SII, significa que si la dejamos nos podría generar multas o que no tendría el efecto deseado. Así que solo podemos quitarla de SII, pero eso requiere rectificar el f29 y eso nos generaría multas. Por ejemplo, una nota de crédito que no descuente monto imponible, aunque esté en registro de compra-venta. El F22 al año siguiente no incluirá estos DTE. No es lo mismo que gasto rechazado. También podríamos declararla como no-incluir, pero eso no conveniente, pues todo debe estar en la contabilidad de la empresa, pera que sea fidedigna. Hay casos donde se declara un gasto para el que no hay boleta de respaldo, eso es muy crítico y sí será rechazado, y además la contabilidad financiera objetada. El caso de las facturas de compra 45 a proveedor extranjero es parecido, pero ahora sé como se hace. " crlf )  )
+    
+      ( printout k "- [x] rechazado: Partida rechazada por SII, significa que si la dejamos nos podría generar multas o que no tendría el efecto deseado. Así que solo podemos quitarla de SII, pero eso requiere rectificar el f29 y eso nos generaría multas. Por ejemplo, una nota de crédito que no descuente monto imponible, aunque esté en registro de compra-venta. El F22 al año siguiente no incluirá estos DTE. No es lo mismo que gasto rechazado. También podríamos declararla como no-incluir, pero eso no conveniente, pues todo debe estar en la contabilidad de la empresa, pera que sea fidedigna. Hay casos donde se declara un gasto para el que no hay boleta de respaldo, eso es muy crítico y sí será rechazado, y además la contabilidad financiera objetada. El caso de las facturas de compra 45 a proveedor extranjero es parecido, pero ahora sé como se hace. " crlf )  
+
+      ( printout d "- [x] rechazado: Partida rechazada por SII, significa que si la dejamos nos podría generar multas o que no tendría el efecto deseado. Así que solo podemos quitarla de SII, pero eso requiere rectificar el f29 y eso nos generaría multas. Por ejemplo, una nota de crédito que no descuente monto imponible, aunque esté en registro de compra-venta. El F22 al año siguiente no incluirá estos DTE. No es lo mismo que gasto rechazado. También podríamos declararla como no-incluir, pero eso no conveniente, pues todo debe estar en la contabilidad de la empresa, pera que sea fidedigna. Hay casos donde se declara un gasto para el que no hay boleta de respaldo, eso es muy crítico y sí será rechazado, y además la contabilidad financiera objetada. El caso de las facturas de compra 45 a proveedor extranjero es parecido, pero ahora sé como se hace. " crlf )  
+    )
 
     ( if (eq ?no-incluir true)   then
-      ( printout k "- [x] no-incluir: Partida que estando en RCV SII se estimó no incluir en la contabilidad financiera" crlf )  )
+      ( printout k "- [x] no-incluir: Partida que estando en RCV SII se estimó no incluir en la contabilidad financiera" crlf ) 
+      ( printout d "- [x] no-incluir: Partida que estando en RCV SII se estimó no incluir en la contabilidad financiera" crlf )
+    )
 
-    ( if (neq ?old " ") then ( printout k "- [x] antiguo número de partida: " ?old crlf ) )
-    ( if (neq ?voucher " ") then ( printout k "- [x] voucher en ccm: " ?voucher crlf ) )
-    ( if (neq ?tipo " ") then ( printout k "- [x] tipo de asiento: " ?tipo crlf ) )
-    ( if (neq ?folio " ") then ( printout k "- [x] folio: " ?folio crlf ) )
-    ( if (neq ?legal " ") then ( printout k "- [x] notas legales: " ?legal crlf ) )
-    ( if (neq ?descripcion " ") then ( printout k "- [x] descripción: " ?descripcion crlf ) )
-    ( if (neq ?a-corregir " ") then ( printout k "- [x] a corregir: " ?a-corregir crlf ) )
-    ( if (eq ?rcv true) then ( printout k "- [x] rcv" crlf ) else ( printout k "- [ ] rcv" crlf) )
-    ( if (eq ?libro-diario true) then ( printout k "- [x] libro-diario" crlf ) else ( printout k "- [ ] libro-diario" crlf) )
-    ( if (eq ?ccm true) then ( printout k "- [x] ccm" crlf ) else ( printout k "- [ ] ccm" crlf) )
+    ( if (neq ?old " ") then
+      ( printout k "- [x] antiguo número de partida: " ?old crlf )
+      ( printout d "- [x] antiguo número de partida: " ?old crlf )
+    )
 
-    ( if  ( neq nil ?referencia)
+    ( if (neq ?voucher " ") then
+      ( printout k "- [x] voucher en ccm: " ?voucher crlf )
+      ( printout d "- [x] voucher en ccm: " ?voucher crlf )
+    )
+
+    ( if (neq ?tipo " ") then
+      ( printout k "- [x] tipo de asiento: " ?tipo crlf )
+      ( printout d "- [x] tipo de asiento: " ?tipo crlf )
+    )
+
+    ( if (neq ?folio " ") then
+      ( printout k "- [x] folio: " ?folio crlf )
+      ( printout d "- [x] folio: " ?folio crlf )
+    )
+
+    ( if (neq ?legal " ") then
+      ( printout k "- [x] notas legales: " ?legal crlf )
+      ( printout d "- [x] notas legales: " ?legal crlf )
+    )
+
+    ( if (neq ?descripcion " ") then
+      ( printout k "- [x] descripción: " ?descripcion crlf )
+      ( printout d "- [x] descripción: " ?descripcion crlf )
+    )
+
+    ( if (neq ?a-corregir " ") then
+       ( printout k "- [x] a corregir: " ?a-corregir crlf )
+       ( printout d "- [x] a corregir: " ?a-corregir crlf ) 
+    )
+
+    ( if (eq ?rcv true)
+     then
+      ( printout k "- [x] rcv" crlf ) 
+      ( printout d "- [x] rcv" crlf ) 
+    else
+     ( printout k "- [ ] rcv" crlf)
+     ( printout d "- [ ] rcv" crlf)
+    )
+
+    ( if (eq ?libro-diario true)
+      then
+       ( printout k "- [x] libro-diario" crlf )
+       ( printout d "- [x] libro-diario" crlf )
+
+      else
+       ( printout k "- [ ] libro-diario" crlf)
+       ( printout d "- [ ] libro-diario" crlf)
+    )
+
+    ( if (eq ?ccm true)
+      then
+        ( printout k "- [x] ccm" crlf )
+        ( printout d "- [x] ccm" crlf )
+      else
+        ( printout k "- [ ] ccm" crlf)
+        ( printout d "- [ ] ccm" crlf)
+    )
+
+
+     ( if  ( neq nil ?referencia)
        then
          ( if (< ?referencia 0)
             then
              ( printout k  "- [x] Referencia: <a href= '/" ?ejercicio-anterior "/libro-diario#Partida-" ?referencia "'>" ?referencia " </a>" crlf) 
+
+             ( printout d  "- [x] Referencia: <a href= '/" ?ejercicio-anterior "/libro-diario#Partida-" ?referencia "'>" ?referencia " </a>" crlf)
             else
-             ( printout k  "- [x] Referencia: <a href= '#Partida-" ?referencia "'>" ?referencia " </a>" crlf))
-    )
+             ( printout k  "- [x] Referencia: <a href= '#Partida-" ?referencia "'>" ?referencia " </a>" crlf)
+             ( printout d  "- [x] Referencia: <a href= '#Partida-" ?referencia "'>" ?referencia " </a>" crlf)
+         )
+     )
 
 ; esto genera problemas en kindlegen     else
  ;           ( printout k  "- [x] Referencia: <a href= '/" ?empresa "/libro-diario#Partida-" ?referencia "'>" ?referencia " </a>" crlf))
@@ -484,27 +568,37 @@
      then  
        ( printout k "- [x] revisado" crlf ) 
        ( printout k "![](../revisado.png)" crlf)
+       ( printout d "- [x] revisado" crlf )
+       ( printout d "![](../revisado.png)" crlf)
      else 
         ( printout k "- [ ] revisado" crlf  )
+        ( printout d "- [ ] revisado" crlf  )
      )
   )
 
-  
+
+;comienzo de la tabla
   ( printout k "<table id='Partida-" ?numero "'>" crlf)
- 
+  ( printout d "<table id='Partida-" ?numero "'>" crlf)
 
   ( if (eq ?revisado true) then  
     ( printout k "<thead> <th style='background-color: lavender' colspan='6'>Partida " ?numero "</th></thead>"crlf)
+    ( printout d "<tr> <td style='background-color: lavender' colspan='6'>Partida " ?numero "</td></tr>"crlf)
   else
     ( printout k "<thead > <th colspan='6'>Partida " ?numero "</th></thead>"crlf)
+    ( printout d "<tr > <td colspan='6'>Partida " ?numero "</td></tr>"crlf)
   )
  
 
   ( if (eq ?rechazado true)
     then
       ( printout k "<tbody  style =' text-decoration: line-through; text-decoration-color: crimson'  > " crlf )
+      ( printout d "<tbody  style =' text-decoration: line-through; text-decoration-color: crimson'  > " crlf )
+
     else
-      ( printout k "<tbody>" crlf)
+     ( printout k "<tbody>" crlf)
+     ( printout d "<tbody>" crlf)
+
   )
  
   ( printout l crlf crlf )
@@ -569,6 +663,18 @@
 
     ( halt )
   )
+
+  ( printout d "<tr> <td> </td> <td style='background-color: blanchedalmond'> " ?debe " </td> <td style='background-color: blanchedalmond'> " ?haber "</td> </tr>" crlf)
+  ( if (neq ?haber ?debe)
+     then
+    ( printout d "<tr> <td> </td> <td colspan='2' style='color: white; background-color: red'> At: No se cumple la igualdad tributaria </td> </tr>" crlf)
+    ( printout d "<tr> <td> </td> <td colspan='2' style='background-color: blanchedalmond'> La compilación del kernel está ahora detenida. Corrija posibles errores en las reglas de actividad_rules.clp o corrija ingresos de abonos y cargos a este asiento contable. </td> </tr>" crlf)
+
+    ( halt )
+  )
+
+
+
 ;  ( printout k "</tbody></table><table style='background-color: cornsilk'><tbody>" crlf)
   ( printout k "</tbody><tbody>" crlf)
   ( printout k "<tr><td colspan='4'> " ?razon "</td> </tr> " crlf)
@@ -583,6 +689,23 @@
   )
   ( printout k "</tbody>" crlf)
   ( printout k "</table>" crlf)
+
+
+;  ( printout d "</tbody></table><table style='background-color: cornsilk'><tbody>" crlf)
+  ( printout d "</tbody><tbody>" crlf)
+  ( printout d "<tr><td colspan='4'> " ?razon "</td> </tr> " crlf)
+  ( printout d "<tr><td colspan='4'> ( " ?dia " de " ?mes tab ?ano tab " ) </td> </tr>" crlf)
+  ( printout d "<tr><td colspan='8'> Partida " ?numero ": " ?descripcion " </td></tr>" crlf)
+  ( if  (neq nil ?proveedor) then
+    (  printout d "<tr> <td colspan='7'>efectuado a " ?proveedor " </td> </tr>" crlf )
+  )
+  ( printout d "<tr><td colspan = '8'> " ?actividad "</td> </tr>" crlf)
+  ( if (and (eq true ?cargar-imagenes-de-dte) (neq nil ?archivo)) then
+   ( printout d "<tr style='background-color: aliceblue'> <td colspan = '8'> <img src='" ?archivo "'></td> </tr>" crlf)
+  )
+  ( printout d "</tbody>" crlf)
+  ( printout d "</table>" crlf)
+
 
 
   ( printout l "<tr> <td> </td> <td> " ?debe " </td> <td> " ?haber "</td> </tr>" crlf)
@@ -1012,7 +1135,7 @@
 )
 
 ;formato de partida normal
-;comienza aqui el libro diario
+;comienza aqui el libro diario -----------------------------------------------------------------
 (defrule muestra-libro-mayor-resultados-subcuentas
    ( declare (salience 65))
    ( fila ?numero )
@@ -1028,8 +1151,8 @@
    ( printout t tab ?saldo2 tab tab tab ?nombre2 # ?nombre crlf)
 
    ( printout k "<tr> <td name = 'Debe' align='right' >" ?saldo2 " </td> <td colspan='7'> " ?nombre2 # ?nombre " </td></tr>" crlf)
-
    ( printout l "<tr> <td name = 'Debe' align='right'>" ?saldo2 " </td> <td colspan='7'> " ?nombre2 # ?nombre " </td></tr>" crlf)
+   ( printout d "<tr> <td name = 'Debe' align='right'>" ?saldo2 " </td> <td colspan='7'> " ?nombre2 # ?nombre " </td></tr>" crlf)
 ) 
 
 (defrule muestra-libro-mayor-activos-subcuentas
@@ -1051,7 +1174,7 @@
 
    ( printout k "<tr><td name='Debe' align='right'>" ?saldo2 "</td> <td colspan='7'>" ?nombre2 # ?nombre "</td> </tr>" crlf)
    ( printout l "<tr><td name='Debe' align='right'>" ?saldo2 "</td> <td colspan='7'>" ?nombre2 # ?nombre "</td> </tr>" crlf)
-
+   ( printout d "<tr><td name='Debe' align='right'>" ?saldo2 "</td> <td colspan='7'>" ?nombre2 # ?nombre "</td> </tr>" crlf)
 
 )
 
@@ -1075,9 +1198,7 @@
    ( printout k "<tr> <td name='Debe' align='right'> " ?saldo2 " </td> <td> </td> <td colspan='7'> " ?nombre2 # ?nombre " </td> </tr> " crlf)
 
    ( printout l "<tr> <td name='Debe' align='right'> " ?saldo2 " </td> <td> </td> <td colspan='7'> " ?nombre2 # ?nombre " </td> </tr> " crlf)
-
-
-
+   ( printout d "<tr> <td name='Debe' align='right'> " ?saldo2 " </td> <td> </td> <td colspan='7'> " ?nombre2 # ?nombre " </td> </tr> " crlf)
 ) 
 
 (defrule muestra-libro-mayor-activos-mayores
@@ -1099,6 +1220,9 @@
 
    ( printout l "<tr>  <td> </td> <td name='Debe' align='right'> " ?debe1 "</td> <td name='Haber' align='right'> " ?haber1 "</td> <td colspan='2'> a[" ?nombre "] </td> </tr>" crlf)
 
+   ( printout d "<tr>  <td> </td> <td name='Debe' align='right'> " ?debe1 "</td> <td name='Haber' align='right'> " ?haber1 "</td> <td colspan='2'> a[" ?nombre "] </td> </tr>" crlf)
+
+
 )
 
 (defrule muestra-de-resultados-gold
@@ -1119,6 +1243,9 @@
    ( printout k "<tr style='background-color: gold'>  <td> </td> <td align='right'>" ?debe1 " </td> <td align='right'> " ?haber1 "</td> <td> </td> <td> r[" ?nombre "] </td> </tr>" crlf)
 
    ( printout l "<tr>  <td> </td> <td align='right'>" ?debe1 " </td> <td align='right'> " ?haber1 "</td> <td> </td> <td> r[" ?nombre "] </td> </tr>" crlf)
+
+   ( printout d "<tr>  <td> </td> <td align='right'>" ?debe1 " </td> <td align='right'> " ?haber1 "</td> <td> </td> <td> r[" ?nombre "] </td> </tr>" crlf)
+
 )  
 
 (defrule muestra-de-resultados-black
@@ -1139,6 +1266,10 @@
    ( printout k "<tr style='color: white; background-color: black'>  <td> </td> <td align='right'>" ?debe1 " </td> <td align='right'> " ?haber1 "</td> <td> </td> <td> r[" ?nombre "] </td> </tr>" crlf)
 
    ( printout l "<tr>  <td> </td> <td align='right'>" ?debe1 " </td> <td align='right'> " ?haber1 "</td> <td> </td> <td> r[" ?nombre "] </td> </tr>" crlf)
+
+   ( printout d "<tr>  <td> </td> <td align='right'>" ?debe1 " </td> <td align='right'> " ?haber1 "</td> <td> </td> <td> r[" ?nombre "] </td> </tr>" crlf)
+
+
 )  
 
 
@@ -1162,6 +1293,7 @@
 
    ( printout l "<tr>  <td>extra-contable </td> <td align='right'> " ?debe1 "</td> <td align='right'>" ?haber1 "</td> <td> </td> <td> t[" ?nombre "] </td></tr> " crlf)
 
+   ( printout d "<tr>  <td>extra-contable </td> <td align='right'> " ?debe1 "</td> <td align='right'>" ?haber1 "</td> <td> </td> <td> t[" ?nombre "] </td></tr> " crlf)
 
 )
 
@@ -1186,6 +1318,7 @@
 
    ( printout l "<tr>  <td> </td> <td align='right'> " ?debe1 " </td> <td align='right'> " ?haber1 " </td> <td> </td><td> p[" ?nombre "] </td> </tr>" crlf)
 
+   ( printout d "<tr>  <td> </td> <td align='right'> " ?debe1 " </td> <td align='right'> " ?haber1 " </td> <td> </td><td> p[" ?nombre "] </td> </tr>" crlf)
 
 )
 
@@ -1209,6 +1342,8 @@
    ( printout k " <tr style='color: white; background-color: cornflowerblue' > <td> </td> <td align='right'> " ?debe1 " </td> <td align='right'>  " ?haber1 " </td> <td> </td> <td> k[" ?nombre "]</td> </tr>" crlf)
 
    ( printout l " <tr> <td> </td> <td align='right'> " ?debe1 " </td> <td align='right'>  " ?haber1 " </td> <td> </td> <td> k[" ?nombre "]</td> </tr>" crlf)
+
+   ( printout d " <tr> <td> </td> <td align='right'> " ?debe1 " </td> <td align='right'>  " ?haber1 " </td> <td> </td> <td> k[" ?nombre "]</td> </tr>" crlf)
 
 )
 

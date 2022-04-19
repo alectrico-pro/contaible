@@ -1,4 +1,6 @@
 --- 
+title: F29
+permalink: /necios-2021/f29
 layout: page
 --- 
 
