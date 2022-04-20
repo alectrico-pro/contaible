@@ -32,7 +32,7 @@ mobi-%.ncx: mobi-%.ncx.erb
 #El asin se chequea con un registro de volumenes.txt en el ambiente clips
 #De esa forma llevamos una organización de qué ha sido publicado y donde
 #Entre otros datos que se puedan ir agregando al registro de volúmenes
-mobi:  libro-diario.html.bak libro-mayor.html.bak iva.html.bak final.html.bak tributario.html.bak f29.html.bak mobi-${VERSION}.ncx book-${VERSION}.opf
+mobi:  libro-diario.html.bak libro-mayor.html.bak iva.html.bak final.html.bak tributario.html.bak f29.html.bak f22.html.bak comprobacion.html.bak subcuentas.html.bak inventario.html.bak resultado-sii.html.bak liquidacion.html.bak remuneraciones.html.bak valor-activos.html.bak bi.html.bak mobi-${VERSION}.ncx book-${VERSION}.opf
 	cat assets/main.css >> mobi.css
 	-$(KINDLEGEN) book-${VERSION}.opf
 	mv book-${VERSION}.mobi book-${VERSION}-${ASIN}-${MES}.mobi
@@ -67,7 +67,28 @@ mayor:
 
 
 financiero:
-	make build VERSION=financiero ASIN=FINANCIERO MES=enero
+	make build VERSION=financiero ASIN=FINANCIERO MES=diciembre
+	make sync
+
+l:
+	make build VERSION=liquidaciones ASIN=L MES=diciembre
+	make sync
+
+
+r:
+	make build VERSION=remuneraciones ASIN=R MES=enero
+	make sync
+
+a:
+	make build VERSION=activos ASIN=A MES=diciembre
+	make sync
+
+t:  
+	make build VERSION=tributario ASIN=T MES=diciembre
+	make sync
+
+f:
+	make build VERSION=f22 ASIN=T MES=diciembre
 	make sync
 
 

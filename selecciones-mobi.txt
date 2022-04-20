@@ -26,7 +26,7 @@
  (regimen                propyme)
  (incentivo-al-ahorro    true)
  (empresa-seleccionada   necios-2021)
- (imprimir-detalles      false)
+ (imprimir-detalles      true)
  (liquidar               subcuentas) 
  (origen-de-subcuentas   nominativo)
  (inspect-f29-code       111) )

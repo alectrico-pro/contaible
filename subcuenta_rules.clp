@@ -57,6 +57,7 @@
 ;   ( printout k "permalink: /" ?empresa "/subcuentas " crlf)
    ( printout k "layout: page" crlf)
    ( printout k "--- " crlf)
+   ( printout k "<h1> Subcuentas </h1>" crlf)
 )
 
 (defrule fin-kindle-k
@@ -106,10 +107,10 @@
 
 
   ( printout k "<table>" crlf)
-  ( printout k "<thead><th colspan='6'> " ?nombre "</th><th colspan='3'>" ?nombre-sii "</th></thead>" crlf)
-  ( printout k "<thead><th colspan='9'> " ?descripcion "</th></thead>" crlf)
+  ( printout k "<tr><td colspan='6'> " ?nombre "</td><td colspan='3'>" ?nombre-sii "</td></tr>" crlf)
+  ( printout k "<tr><td colspan='9'> " ?descripcion "</td></tr>" crlf)
 
-  ( printout k "<thead><th> voucher </th><th> partida </th><th> debe </th> <th> | </th> <th> haber </th><th> mes </th> <th>recibida</th> <th>factor de corrección monetaria</th> <th> tipo documento</th></thead>"crlf)
+  ( printout k "<tr><td> voucher </td><td> partida </td><td> debe </td> <td> | </td> <td> haber </td><td> mes </td> <td>recibida</td> <td>factor de corrección monetaria</td> <td> tipo documento</td></tr>"crlf)
   ( printout k "<tbody>" crlf)
 
 

@@ -39,7 +39,8 @@
 	    <content src="libro-diario.html#Partida-<%= num %>"/>
           </navPoint>    
         <%  end %>    
-      <% end %>
+        <% end %>
+
           counter += 1
           <navPoint class="section" id="<%= section %>" playOrder="<%= counter %>">
             <navLabel>
@@ -59,27 +60,49 @@
           counter += 1
           <navPoint class="section" id="<%= section %>" playOrder="<%= counter %>">
             <navLabel>
-              <text>F29</text>
+              <text>Comprobacion</text>
             </navLabel>
-            <content src="f29.html#Inicio"/>
-            </navPoint>
-  
-          counter += 1
-          <navPoint class="section" id="<%= section %>" playOrder="<%= counter %>">
-            <navLabel>
-              <text>IVA</text>
-            </navLabel>
-            <content src="iva.html#Inicio"/>
-            </navPoint>
+            <content src="comprobacion.html#Inicio"/>
+            </navPoint
 
           counter += 1
           <navPoint class="section" id="<%= section %>" playOrder="<%= counter %>">
             <navLabel>
-              <text>FINAL</text>
+              <text>Subcuentas</text>
+            </navLabel>
+            <content src="subcuentas.html#Inicio"/>
+            </navPoint
+
+
+         counter += 1
+          <navPoint class="section" id="<%= section %>" playOrder="<%= counter %>">
+            <navLabel>
+              <text>Liquidacion</text>
+            </navLabel>
+            <content src="liquidacion.html#Inicio"/>
+            </navPoint>
+
+
+
+
+          counter += 1
+          <navPoint class="section" id="<%= section %>" playOrder="<%= counter %>">
+            <navLabel>
+              <text>Final</text>
             </navLabel>
             <content src="final.html#Inicio"/>
             </navPoint>
- 	    
+
+
+          counter += 1
+          <navPoint class="section" id="<%= section %>" playOrder="<%= counter %>">
+            <navLabel>
+              <text>Resultado SII</text>
+            </navLabel>
+            <content src="resultado-sii.html#Inicio"/>
+            </navPoint>
+
+
           counter += 1
           <navPoint class="section" id="<%= section %>" playOrder="<%= counter %>">
             <navLabel>
@@ -87,6 +110,23 @@
             </navLabel>
             <content src="tributario.html#Inicio"/>
             </navPoint>
+
+          counter += 1
+          <navPoint class="section" id="<%= section %>" playOrder="<%= counter %>">
+            <navLabel>
+              <text>Inventario</text>
+            </navLabel>
+            <content src="inventario.html#Inicio"/>
+	    </navPoint
+
+          counter += 1
+          <navPoint class="section" id="<%= section %>" playOrder="<%= counter %>">
+            <navLabel>
+              <text>Remuneraciones</text>
+            </navLabel>
+            <content src="remuneraciones.html#Inicio"/>
+            </navPoint
+
 
 
   </navMap>

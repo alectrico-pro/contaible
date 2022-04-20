@@ -71,6 +71,7 @@
 ;   ( printout k "permalink: /" ?empresa "valor-activos/ " crlf)
    ( printout k "layout: page" crlf)
    ( printout k "--- " crlf)
+   ( printout k "<h1> Activos </h1> " crlf)
 )
 
 

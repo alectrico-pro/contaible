@@ -55,6 +55,7 @@
  ;  ( printout k "permalink: /" ?empresa "/resultado sii" crlf)
    ( printout k "layout: page" crlf)
    ( printout k "--- " crlf)
+   ( printout k "<h1> Resultado SII </h1> " crlf)
 )
 
 (defrule fin-kindle-k
@@ -92,12 +93,12 @@
 
 
   ( printout k "<table rules='groups'>" crlf)
-  ( printout k "<style> tfoot {  border: 3px solid black;  } </style> " crlf)
-  ( printout k "<thead> <th></th><th colspan='4'> E S T A D O  DE R E S U L T A D O S </th> </thead>" crlf)
-  ( printout k "<thead> <th></th><th colspan='4'> " ?empresa "</th></thead>" crlf)
+;  ( printout k "<style> tfoot {  border: 3px solid black;  } </style> " crlf)
+  ( printout k "<tr> <td></td><td colspan='4'> E S T A D O  DE R E S U L T A D O S </td> </tr>" crlf)
+  ( printout k "<tr> <td></td><td colspan='4'> " ?empresa "</td></tr>" crlf)
 
-  ( printout k "<thead> <th></th><th> </th> <th align='center' colspan= '2'>SUMAS</th><th> Padre </th> </thead>" crlf)
-  ( printout k "<thead> <th></th><th></th>  <th>DEBER</th> <th>ACREEDOR</th> </thead>" crlf)
+  ( printout k "<tr> <td></td><td> </td> <td align='center' colspan= '2'>SUMAS</td><td> Padre </td> </tr>" crlf)
+  ( printout k "<tr> <td></td><td></td>  <td>DEBER</td> <td>ACREEDOR</td> </tr>" crlf)
 
   ( printout k "<tbody>" crlf)
 
@@ -222,7 +223,7 @@
 
 
  =>
-  ( printout k "<thead> <th></th><th colspan='4'> T O T A L    A C T I V O  </th> <th> " ?total "</th> </thead>" crlf)
+  ( printout k "<tr> <td></td><td colspan='4'> T O T A L    A C T I V O  </td> <td> " ?total "</td> </tr>" crlf)
 )
 
 
@@ -237,7 +238,7 @@
 
 
  =>
-  ( printout k "<thead> <th></th><th colspan='4'> A C T I V O    F I J O</th> <th> " ?total "</th> </thead>" crlf)
+  ( printout k "<tr> <td></td><td colspan='4'> A C T I V O    F I J O</td> <td> " ?total "</td> </tr>" crlf)
 )
 
 ;--------------------------------------------------------------------------------
@@ -248,7 +249,7 @@
 
 
  =>
-  ( printout k "<thead> <th></th><th colspan='4'> A C T I V O    C I R C U L A N T E</th> <th> " ?total "</th> </thead>" crlf)
+  ( printout k "<tr> <td></td><td colspan='4'> A C T I V O    C I R C U L A N T E</td> <td> " ?total "</td> </tr>" crlf)
 )
 
 (defrule titulo-activos-con-partida
@@ -264,7 +265,7 @@
    ( exists (cuenta (nombre ?nombre) (grupo activo) (padre false) (partida ?partida&:(neq nil ?partida))))
 
  =>
-  ( printout k "<thead> <th></th><th>" ?nombre "</th><th> " ?deber "</th> </thead>" crlf)
+  ( printout k "<tr> <td></td><td>" ?nombre "</td><td> " ?deber "</td> </tr>" crlf)
 )
 
 (defrule titulo-gastos-promocionales
@@ -278,7 +279,7 @@
 
 
  => 
-  ( printout k "<thead> <th></th><th colspan='4'> G A S T O S    P R O M O C I O N A L E S </th> <th> " ?deber "</th> </thead>" crlf)
+  ( printout k "<tr> <td></td><td colspan='4'> G A S T O S    P R O M O C I O N A L E S </td> <td> " ?deber "</td> </tr>" crlf)
 )
 
 
@@ -343,7 +344,7 @@
    ( acreedor ?acreedor) )
 
  =>
-  ( printout k "<thead> <th></th><th colspan='4'> G A S T O S     A D M I N I S T R A T I V O S </th> <th> " ?deber "</th></thead>" crlf)
+  ( printout k "<tr> <td></td><td colspan='4'> G A S T O S     A D M I N I S T R A T I V O S </td> <td> " ?deber "</td></tr>" crlf)
 )
 
 
@@ -407,7 +408,7 @@
    ( acreedor ?acreedor) )
 
  =>
-  ( printout k "<thead> <th></th><th colspan='4'> I N T A N G I B L E S </th> <th>" ?deber "</th> </thead>" crlf)
+  ( printout k "<tr> <td></td><td colspan='4'> I N T A N G I B L E S </td> <td>" ?deber "</td> </tr>" crlf)
 )
 
 
@@ -471,7 +472,7 @@
    ( acreedor ?acreedor) )
 
  =>
-  ( printout k "<thead> <th></th><th colspan='4'> C O R R E C C I O N    M O N E T A R I A</th><th> " ?acreedor "</th> </thead>" crlf)
+  ( printout k "<tr> <td></td><td colspan='4'> C O R R E C C I O N    M O N E T A R I A</td><td> " ?acreedor "</td> </tr>" crlf)
 )
 
 
@@ -535,7 +536,7 @@
    ( acreedor ?acreedor) )
 
  =>
-  ( printout k "<thead> <th></th><th colspan='4'> C O S T O S   D E    V E N T A S </th> <th> " ?deber "</th></thead>" crlf)
+  ( printout k "<tr> <td></td><td colspan='4'> C O S T O S   D E    V E N T A S </td> <td> " ?deber "</td></tr>" crlf)
 )
 
 
@@ -598,7 +599,7 @@
 
  =>
 
-  ( printout k "<thead> <th></th><th colspan='4'> I N S U M O S</th> <th>" ?deber "</th></thead>" crlf)
+  ( printout k "<tr> <td></td><td colspan='4'> I N S U M O S</td> <td>" ?deber "</td></tr>" crlf)
 )
 
 
@@ -667,7 +668,7 @@
 
   
  =>
-  ( printout k "<thead> <th></th><th colspan='4'> M A T E R I A L E S </th> <th> " ?deber "</th> </thead>" crlf)
+  ( printout k "<tr> <td></td><td colspan='4'> M A T E R I A L E S </td> <td> " ?deber "</td> </tr>" crlf)
 )
 
 
@@ -731,7 +732,7 @@
    ( acreedor ?acreedor) )
 
  =>
-  ( printout k "<thead> <th></th><th colspan='4'> V E N T A S </th><th> " ?acreedor "</th> </thead>" crlf)
+  ( printout k "<tr> <td></td><td colspan='4'> V E N T A S </td><td> " ?acreedor "</td> </tr>" crlf)
 )
 
 

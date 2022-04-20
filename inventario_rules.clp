@@ -57,7 +57,7 @@
   ; ( printout k "<li><span style='background-color: gold'>[    ]</span> ganancia </li>" crlf)
   ; ( printout k "<li><span style='color: white; background-color: black'>[    ]</span> pérdida </li>" crlf)
   ; ( printout k "<li><span style='background-color: blanchedalmond'>[    ]</span> subtotales de la transacción </li>" crlf)
-
+    ( printout k "<h1> Inventario </h1> " crlf)
 )
 
 

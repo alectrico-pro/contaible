@@ -54,23 +54,25 @@
 ;   ( printout k "permalink: /" ?empresa "/comprobacion " crlf)
    ( printout k "layout: page" crlf)
    ( printout k "--- " crlf)
-   ( printout k "<script>
+   ( printout k "<h1> Comprobación </h1>" crlf)
 
-$('* div').each(function () {   
-    var item = $(this).text();
-    var num = Number(item).toLocaleString('en');
+;   ( printout k "<script>
 
-    if (Number(item) < 0) {
-        num = num.replace('-', '');
-        $(this).addClass('negMoney');
-    } else {
-        $(this).addClass('enMoney');
-    }
+;$('* div').each(function () {   
+;    var item = $(this).text();
+;    var num = Number(item).toLocaleString('en');
 
-    $(this).text(num);
-});
-</script>
- " crlf)
+;    if (Number(item) < 0) {
+;        num = num.replace('-', '');
+;        $(this).addClass('negMoney');
+;    } else {
+;        $(this).addClass('enMoney');
+;    }
+
+ ;   $(this).text(num);
+;});
+;</script>
+; " crlf)
 
 )
 
@@ -102,12 +104,12 @@ $('* div').each(function () {
    ( printout k "NO se han practicado liquidaciones, por lo que SÍ se muestran cuentas nominales"  crlf)
 
   ( printout k "<table rules='groups'>" crlf)
-  ( printout k "<style> tfoot {  border: 3px solid black;  } </style> " crlf)
-  ( printout k "<thead><th colspan='7'> B A L A N C E  DE COMPROBACION DE SUMAS Y DE SALDOS </th> </thead>" crlf)
-  ( printout k "<thead> <th colspan='7'> " ?empresa "</th></thead>" crlf)
+ ;( printout k "<style> tfoot {  border: 3px solid black;  } </style> " crlf)
+  ( printout k "<tr><td colspan='8'> B A L A N C E  DE COMPROBACION DE SUMAS Y DE SALDOS </td> </tr>" crlf)
+  ( printout k "<tr> <td colspan='8'> " ?empresa "</td></tr>" crlf)
 
-  ( printout k "<thead> <th> </th> <th align='center' colspan= '2'>SUMAS</th> <th>|</th> <th align='center' colspan='2'>SALDOS</th> <th rowspan='2' > Errores </th> </thead>" crlf)
-  ( printout k "<thead> <th></th>  <th align='center'>DEBE</th> <th align='center'>HABER</th> <th>|</th> <th align='center'>DEBER</th> <th align='center'>ACREEDOR</th> <th>A Corregir </th> </thead>" crlf)
+  ( printout k "<tr> <td> </td> <td align='center' colspan= '2'>SUMAS</td> <td>|</td> <td align='center' colspan='2'>SALDOS</td> <td rowspan='2' > Errores </td> </tr>" crlf)
+  ( printout k "<tr> <td></td>  <td align='center'>DEBE</td> <td align='center'>HABER</td> <td>|</td> <td align='center'>DEBER</td> <td align='center'>ACREEDOR</td> <td>A Corregir </td> </tr>" crlf)
 
   ( printout k "<tbody>" crlf)
 
@@ -165,7 +167,7 @@ $('* div').each(function () {
     ( printout t tab ?debe tab ?haber tab "|" tab ?deber tab ?acreedor tab ?cuenta crlf)
 
     ( printout k "<tr>" crlf)
-    ( printout k "<td>" ?nombre-sii "<small>" ?cuenta "</small> </td> <td align='right'>" ?debe "</td> <td align='right'>" ?haber "</td> <td> | </td> <td align='right'> " ?deber  "</td> <td align='right'>" ?acreedor "</td> " crlf)
+    ( printout k "<td>" ?nombre-sii " <small>" ?cuenta "</small> </td> <td align='right'>" ?debe "</td> <td align='right'>" ?haber "</td> <td> | </td> <td align='right'> " ?deber  "</td> <td align='right'>" ?acreedor "</td> " crlf)
     ( printout k "<td colspan='2' style=' background: #faa; border: 1px solid red;'>" ?a-corregir " </td>" crlf)
     ( printout k "</tr>" crlf)
 
@@ -198,7 +200,7 @@ $('* div').each(function () {
     ( printout t tab ?debe tab ?haber tab "|" tab ?deber tab ?acreedor tab ?cuenta crlf)
 
     ( printout k "<tr>" crlf)
-    ( printout k "<td>" ?nombre-sii "<small>" ?cuenta "</small></td> <td align='right'>" ?debe "</td> <td align='right'>" ?haber "</td> <td> | </td> <td align='right'> " ?deber  "</td> <td align='right'>" ?acreedor "</td>" crlf)
+    ( printout k "<td>" ?nombre-sii " <small>" ?cuenta "</small></td> <td align='right'>" ?debe "</td> <td align='right'>" ?haber "</td> <td> | </td> <td align='right'> " ?deber  "</td> <td align='right'>" ?acreedor "</td>" crlf)
     ( printout k "</tr>" crlf)
 
   )

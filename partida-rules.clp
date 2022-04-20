@@ -65,6 +65,8 @@
   ( if (neq nil h) then (close h))
   ( if (neq nil l) then (close l))
   ( if (neq nil d) then (close d))
+  ( if (neq nil f) then (close f))
+
 )
 
 ;esto genera un markdown para que jekyll lo publique en el blog necios
@@ -90,21 +92,31 @@
      else
       ( bind ?archivo (str-cat "./doc/" ?empresa "/partidas.markdown"))
       ( open ?archivo k "w")
-   ( printout k "--- " crlf)
-   ( printout k "title: Partidas" crlf)
+      ( printout k "--- " crlf)
+   ;   ( printout k "title: Partidas" crlf)
+   ;   ( printout k "permalink: /" ?empresa "/partidas" crlf)
+      ( printout k "layout: page" crlf)
+      ( printout k "--- " crlf)
 
-   ( printout k "permalink: /" ?empresa "/partidas" crlf)
-   ( printout k "layout: page" crlf)
-   ( printout k "--- " crlf)
-
-   ( bind ?archivo (str-cat "./doc/" ?empresa "/libro-diario.markdown"))
+      ( bind ?archivo (str-cat "./doc/" ?empresa "/libro-diario.markdown"))
       ( open ?archivo d "w")
-   ( printout d "--- " crlf)
-   ( printout d "title: Libro Diario" crlf)
-   ( printout d "permalink: /" ?empresa "/libro-diario " crlf)
-   ( printout d "layout: page" crlf)
-   ( printout d "--- " crlf)
+      ( printout d "--- " crlf)
+   ;   ( printout d "title: Libro Diario" crlf)
+    ;  ( printout d "permalink: /" ?empresa "/libro-diario " crlf)
+      ( printout d "layout: page" crlf)
+      ( printout d "--- " crlf)
+
+      ( bind ?archivo (str-cat "./doc/" ?empresa "/f22.markdown"))
+      ( open ?archivo f "w")
+      ( printout f "--- " crlf)
+;      ( printout f "title: F22" crlf)
+ ;     ( printout f "permalink: /" ?empresa "/f22 " crlf)
+      ( printout f "layout: page" crlf)
+      ( printout f "--- " crlf)
+      ( printout f "<h1> F22 </h1>" crlf)
    )
+
+
 
 ;   ( printout k "--- " crlf)
 ;;   ( printout k "title: Libro Diaro" crlf)
@@ -114,7 +126,7 @@
 ;   ( printout k "<script src='{{ base.url | prepend: site.url }}/assets/main.js'></script>" crlf)
    
 ;   ( printout k "</chapter><chapter>" crlf)
-   ( printout k "<h2> Libro Diario </h2>" crlf)
+   ( printout k "<h1> Libro Diario </h1>" crlf)
 
    ( printout k "Contabilidad para Necios® usa el siguiente código de colores para este documento." crlf)
    ( printout k "<ul>" crlf)
@@ -128,6 +140,8 @@
    ( printout k "<li><span style='background-color: blanchedalmond'>[    ]</span> subtotales de la transacción </li>" crlf)
    ( printout k "</ul>" crlf)
 
+
+   ( printout d "<h1> Libro Diario </h1>" crlf)
    ( printout d "Contabilidad para Necios® usa el siguiente código de colores para este documento." crlf)
    ( printout d "<ul>" crlf)
    ( printout d "<li><span style='background-color: red'>[    ]</span> mensaje de alerta. </li>" crlf)
@@ -180,6 +194,7 @@
   ( close l)
   ( close h)
   ( close d)
+  ( close f)
 )
 
 
@@ -552,16 +567,12 @@
          ( if (< ?referencia 0)
             then
              ( printout k  "- [x] Referencia: <a href= '/" ?ejercicio-anterior "/libro-diario#Partida-" ?referencia "'>" ?referencia " </a>" crlf) 
-
              ( printout d  "- [x] Referencia: <a href= '/" ?ejercicio-anterior "/libro-diario#Partida-" ?referencia "'>" ?referencia " </a>" crlf)
             else
              ( printout k  "- [x] Referencia: <a href= '#Partida-" ?referencia "'>" ?referencia " </a>" crlf)
              ( printout d  "- [x] Referencia: <a href= '#Partida-" ?referencia "'>" ?referencia " </a>" crlf)
          )
      )
-
-; esto genera problemas en kindlegen     else
- ;           ( printout k  "- [x] Referencia: <a href= '/" ?empresa "/libro-diario#Partida-" ?referencia "'>" ?referencia " </a>" crlf))
 
 
     ( if (eq ?revisado true) 
@@ -669,9 +680,17 @@
      then
     ( printout d "<tr> <td> </td> <td colspan='2' style='color: white; background-color: red'> At: No se cumple la igualdad tributaria </td> </tr>" crlf)
     ( printout d "<tr> <td> </td> <td colspan='2' style='background-color: blanchedalmond'> La compilación del kernel está ahora detenida. Corrija posibles errores en las reglas de actividad_rules.clp o corrija ingresos de abonos y cargos a este asiento contable. </td> </tr>" crlf)
-
     ( halt )
   )
+
+
+;  ( printout f "<tr> <td> </td> <td style='background-color: blanchedalmond'> " ?debe " </td> <td style='background-color: blanchedalmond'> " ?haber "</td> </tr>" crlf)
+;  ( if (neq ?haber ?debe)
+ ;    then
+ ;   ( printout f "<tr> <td> </td> <td colspan='2' style='color: white; background-color: red'> At: No se cumple la igualdad tributaria </td> </tr>" crlf)
+ ;   ( printout f "<tr> <td> </td> <td colspan='2' style='background-color: blanchedalmond'> La compilación del kernel está ahora detenida. Corrija posibles errores en las reglas de actividad_rules.clp o corrija ingresos de abonos y cargos a este asiento contable. </td> </tr>" crlf)
+ ;   ( halt )
+ ; )
 
 
 
@@ -705,8 +724,6 @@
   )
   ( printout d "</tbody>" crlf)
   ( printout d "</table>" crlf)
-
-
 
   ( printout l "<tr> <td> </td> <td> " ?debe " </td> <td> " ?haber "</td> </tr>" crlf)
   ( printout l "<tr><td colspan='4'> " ?razon "</td> </tr> " crlf)
@@ -1018,6 +1035,9 @@
    ( printout k "<h2> Asistente F22 </h2> " crlf)
    ( printout k "<table><tbody> " crlf)
 
+   ( printout f "<h2> Asistente F22 </h2> " crlf)
+   ( printout f "<table><tbody> " crlf)
+
 )
 
 
@@ -1062,10 +1082,22 @@
       ( printout k " <tr height='50 px' style='font-weight:bold; background-color: lightgreen'> <td>  <a href= '/" ?empresa "/libro-diario#Partida-" ?numero "'>" ^ "</a> </td> <td> " ?codigo " </td> <td align='right' >  " ?valor " </td> <td> " ?descripcion " </td> </tr>" crlf)
       ( printout k " <tr style='font-weight:bold; color:white; background-color: red'> <td colspan='4' > LINEA F22: '" ?linea-f22 "'. </td> </tr>" crlf)
     ; ( printout k " <tr height='50 px'></tr>" crlf)
-
     else
       ( printout k " <tr> <td>    <a href= '/" ?empresa "/libro-diario#Partida-" ?partida-f29 "'>" ?mes "</a>  </td> <td> " ?codigo " </td> <td align='right' >  " ?valor " </td> <td> " ?descripcion " </td> </tr>" crlf)
    )
+
+
+
+   ( if (eq ?mes "")
+    then
+      ( printout f " <tr height='50 px' style='font-weight:bold; background-color: lightgreen'> <td>  <a href= '/" ?empresa "/libro-diario#Partida-" ?numero "'>" ^ "</a> </td> <td> " ?codigo " </td> <td align='right' >  " ?valor " </td> <td> " ?descripcion " </td> </tr>" crlf)
+      ( printout f " <tr style='font-weight:bold; color:white; background-color: red'> <td colspan='4' > LINEA F22: '" ?linea-f22 "'. </td> </tr>" crlf)
+    ; ( printout k " <tr height='50 px'></tr>" crlf)
+    else
+      ( printout f " <tr> <td>    <a href= '/" ?empresa "/libro-diario#Partida-" ?partida-f29 "'>" ?mes "</a>  </td> <td> " ?codigo " </td> <td align='right' >  " ?valor " </td> <td> " ?descripcion " </td> </tr>" crlf)
+   )
+
+
 
    ( printout l " <tr> <td> " ?mes " </td> <td> " ?codigo " </td> <td align='right'>  " ?valor " </td> <td> " ?descripcion " </td> </tr>" crlf)
 
@@ -1093,6 +1125,15 @@
     else
      ( printout k " <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> " ?codigo "</td> <td align='right'>   <a href= '/" ?empresa "/libro-diario#Partida-" ?partida "'> Ir a partida: "  ?partida "</a> </td> <td colspan='3' align='left' > " ?descripcion-partida " </td>  </tr>" crlf)
     )
+
+
+   ( if (eq true ?rechazado)
+    then
+     ( printout f " <tr height='50 px' style= 'text-decoration-line: line-through; text-decoration-line-color: red; font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> " ?codigo "</td> <td align='right'>   <a href= '/" ?empresa "/libro-diario#Partida-" ?partida "'> Ir a partida: "  ?partida "</a> </td> <td colspan='3' align='left' > " ?descripcion-partida " </td>  </tr>" crlf)
+    else
+     ( printout f " <tr height='50 px' style= 'font-size: 0.75rem; background-color: azure'> <td style='border-style:none; background-color: white'> </td> <td> " ?codigo "</td> <td align='right'>   <a href= '/" ?empresa "/libro-diario#Partida-" ?partida "'> Ir a partida: "  ?partida "</a> </td> <td colspan='3' align='left' > " ?descripcion-partida " </td>  </tr>" crlf)
+    )
+
 
 )
 
@@ -1129,6 +1170,20 @@
       ( printout k " <tr> <td>    <a href= '/" ?empresa "/libro-diario#Partida-" ?partida-f29 "'>" ?mes "</a>  </td> <td> " ?codigo " </td> <td align='right' >  " ?valor " </td> <td> " ?descripcion " </td> </tr>" crlf)
  ;     ( printout k "<table></table>" crlf)
    )
+
+
+   ( if (eq ?mes "")
+    then
+      ( printout f " <tr height='50 px' style='font-weight:bold; background-color: lightgreen'> <td>  <a href= '/" ?empresa "/libro-diario#Partida-" ?numero "'>" ^ "</a> </td> <td> " ?codigo " </td> <td align='right' >  " ?valor " </td> <td> " ?descripcion " </td> </tr>" crlf)
+;      ( printout f "<table></table>" crlf)
+;      ( printout f " <tr height='50 px'></tr>" crlf)
+
+    else
+      ( printout f " <tr> <td>    <a href= '/" ?empresa "/libro-diario#Partida-" ?partida-f29 "'>" ?mes "</a>  </td> <td> " ?codigo " </td> <td align='right' >  " ?valor " </td> <td> " ?descripcion " </td> </tr>" crlf)
+ ;     ( printout f "<table></table>" crlf)
+   )
+
+
 
    ( printout l " <tr> <td> " ?mes " </td> <td> " ?codigo " </td> <td align='right'>  " ?valor " </td> <td> " ?descripcion " </td> </tr>" crlf)
 

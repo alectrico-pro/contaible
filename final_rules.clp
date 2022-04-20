@@ -18,12 +18,13 @@
        ( open ?archivo k "w")
 
         ( printout k "--- " crlf)
-;  ( printout k "title: " ?empresa "-final" crlf)
-;   ( printout k "permalink: /" ?empresa "/final/ " crlf)
+ ;       ( printout k "title: Final" crlf)
+;        ( printout k "permalink: /" ?empresa "/final" crlf)
         ( printout k "layout: page" crlf)
         ( printout k "--- " crlf)
         ( printout k "" crlf)
   ) 
+  ( printout k "<h1> Final </h1>" crlf)
 )
 
 

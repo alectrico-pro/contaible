@@ -200,4 +200,78 @@
  (subtitulo "Suscinto" )
  (contenido "Introducción a Contabile.")
 )
+
+
+
+
+
+;--------- MEJORANDO LIQUIDACIONES -----------------------------------
+;Kindles de la serie Contaible
+(volumen
+ (asin L)
+ (precio 5)
+ (id 4)
+ (formato kindle)
+ (titulo "Contaible")
+ (subtitulo "" )
+ (contenido "Pruebas.")
+)
+
+
+;--------- MEJORANDO REMUNERACIONES-----------------------------------
+;Kindles de la serie Contaible
+(volumen
+ (asin R)
+ (precio 5)
+ (id 4)
+ (formato kindle)
+ (titulo "Contaible")
+ (subtitulo "" )
+ (contenido "Pruebas.")
+)
+
+
+;--------- MEJORANDO ACTIVOS-----------------------------------
+;Kindles de la serie Contaible
+(volumen
+ (asin A)
+ (precio 5)
+ (id 4)
+ (formato kindle)
+ (titulo "Contaible")
+ (subtitulo "" )
+ (contenido "Pruebas.")
+)
+
+
+;--------- MEJORANDO TRIBUTACIÓN-----------------------------------
+;Kindles de la serie Contaible
+(volumen
+ (asin T)
+ (precio 5)
+ (id 4)
+ (formato kindle)
+ (titulo "Contaible")
+ (subtitulo "" )
+ (contenido "Pruebas.")
+)
+
+;--------- MEJORANDO F22-----------------------------------
+;Kindles de la serie Contaible
+(volumen
+ (asin F)
+ (precio 5)
+ (id 4)
+ (formato kindle)
+ (titulo "Contaible")
+ (subtitulo "" )
+ (contenido "Pruebas.")
+)
+
+
+
+
+
+
+
  

@@ -93,12 +93,14 @@
    ( bind ?archivo (str-cat "./doc/" ?empresa "/iva.markdown"))
    ( open ?archivo k "w")
    ( printout k "--- " crlf)
-;   ( printout k "title: " ?empresa "-iva" crlf)
-;   ( printout k "permalink: /" ?empresa "iva/ " crlf)
+;   ( printout k "title: IVA" crlf)
+;   ( printout k "permalink: /" ?empresa "/iva " crlf)
    ( printout k "layout: page" crlf)
    ( printout k "--- " crlf)
    ( printout k "" crlf)
+   ( printout k "<h1> IVA </h1> " crlf)
 )
+
 
 (defrule fin-kindle-k
   ( declare (salience -10000))

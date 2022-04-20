@@ -52,17 +52,7 @@
    ( printout k "layout: page" crlf)
    ( printout k "--- " crlf)
    ( printout k "" crlf)
-   ( printout k "Contabilidad para Necios® usa el siguiente código de colores para este documento." crlf)
-   ( printout k "<ul>" crlf)
-   ( printout k "<li><span style='background-color: red'>[    ]</span> mensaje de alerta. </li>" crlf)
-   ( printout k "<li><span style='background-color: lavender'>[    ]</span> partida revisada y resultado bueno. </li>" crlf)
-   ( printout k "<li><span style='background-color: lightyellow'>[    ]</span> cuenta mayor del activo </li>" crlf)
-   ( printout k "<li><span style='background-color: azure'>[    ]</span> cuenta mayor del pasivo </li>" crlf)
-   ( printout k "<li><span style='color: white; background-color: cornflowerblue'>[    ]</span> cuenta de patrimonio </li>" crlf)
-   ( printout k "<li><span style='background-color: gold'>[    ]</span> ganancia </li>" crlf)
-   ( printout k "<li><span style='color: white; background-color: black'>[    ]</span> pérdida </li>" crlf)
-   ( printout k "<li><span style='background-color: blanchedalmond'>[    ]</span> subtotales de la transacción </li>" crlf)
-   ( printout k "</ul>" crlf)
+   ( printout k "<h1> Remuneraciones </h1>" crlf)
 
 
 )
