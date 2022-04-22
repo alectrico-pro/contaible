@@ -2,6 +2,7 @@
 layout: page
 --- 
 
+<h1> Inventario </h1> 
 <table><tbody>
 <tr> <th colspan='13'> INVENTARIO </th> </tr>
 <tr><td>Ptda</td> <td> material </td> <td>dia</td> <td>mes</td> <td>u</td> <td>cu</td> <td>ct</td> <td>u</td> <td>cu</td> <td>ct</td> <td>Oper.</td> <td> Ref </td></tr>

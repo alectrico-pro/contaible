@@ -21,6 +21,7 @@ RUN mkdir /doc/mobi/src
 RUN mkdir /doc/assets
 RUN mkdir /doc/mobi/script
 RUN mkdir /doc/necios-2021
+RUN mkdir /doc/alectrico-2021
 RUN mkdir /doc/_posts
 RUN mkdir /doc/_data
 
@@ -32,6 +33,12 @@ COPY *.clp                    ./
 COPY necios-2021-facts.txt              ./
 COPY necios-2021-revisiones.txt         ./
 COPY necios-2021-revisiones-cuentas.txt ./
+
+COPY alectrico-2021-facts.txt              ./
+COPY alectrico-2021-revisiones.txt         ./
+COPY alectrico-2021-revisiones-cuentas.txt ./
+
+
 
 COPY volumenes.txt                ./
 COPY version.txt                  ./
@@ -45,19 +52,25 @@ COPY trabajadores.txt             ./
 COPY f29-f22.txt                  ./
 COPY salud.txt                    ./
 COPY tipos_de_depreciaciones.txt  ./
-COPY selecciones-mobi.txt         ./
 COPY accionistas.txt              ./
 COPY afc.txt                      ./
 COPY afps.txt                     ./
 COPY tramos-de-impuesto-unico.txt ./
 COPY actividades.txt              ./
 COPY 404.html                     ./
-COPY mobi.py           ./
+
+COPY selecciones-mobi.txt         ./
+COPY selecciones.txt              ./
+
+COPY mobi.py                      ./
+COPY contabilidad.py              ./
 
 WORKDIR .
 
 
 RUN ./mobi.py
+RUN ./contabilidad.py
+
 
 FROM jekyll/jekyll 
 
@@ -73,6 +86,7 @@ COPY ./Makefile           ./
 
 #estos resultan de asiento_inicial.py
 COPY --from=build ./doc/necios-2021/ ./necios-2021/
+COPY --from=build ./doc/alectrico-2021/ ./alectrico-2021/
 
 
 
@@ -100,6 +114,7 @@ COPY ./kindlegen       ./mobi
 COPY ./cover.jpg       ./mobi
 COPY ./nota/           ./nota/
 COPY ./nota/           ./necios-2021/
+COPY ./nota/           ./alectrico-2021/
 COPY ./script/         ./mobi/script/
 COPY ./Makefile        ./mobi
 

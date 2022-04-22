@@ -1,6 +1,7 @@
 --- 
 layout: page
 --- 
+<h1> Activos </h1> 
 <table> <tbody>
 <tr><th>plataforma-alectrico</th></tr>
 <tr><td>amortizacion-lineal-en-diez-anos de: </td><td> plataforma-alectrico </td> </tr> 

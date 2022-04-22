@@ -31,7 +31,9 @@
 ;evitar que la compilación de Dockerfile sea abortada
 (defrule creacion-de-archivo-markdown
    ( declare (salience 10000))
-   ( selecciones (archivo-unico-markdown false))
+   ( selecciones (archivo-unico-markdown false)
+     ( nombre-de-archivo-k ?archvo-nombre)
+   )  
 
   =>
 
@@ -53,6 +55,7 @@
 
 (defrule creacion-de-archivo-unico-k-markdown
    ( declare (salience 10000))
+   ( empresa (nombre ?empresa))
    ( selecciones (archivo-unico-markdown true) (nombre-de-archivo-k ?archivo))
 
   =>

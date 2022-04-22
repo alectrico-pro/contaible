@@ -22,10 +22,10 @@
 ( selecciones
  (abonar-deudoras false) 
  (devolver-a-devolucion-sobre-ventas true)
- (ejercicio-anterior     necios-2021)
+ (ejercicio-anterior     alectrico-2021)
  (regimen                propyme)
  (incentivo-al-ahorro    true)
- (empresa-seleccionada   necios-2021)
+ (empresa-seleccionada   alectrico-2021)
  (imprimir-detalles      true)
  (liquidar               subcuentas) 
  (origen-de-subcuentas   nominativo)

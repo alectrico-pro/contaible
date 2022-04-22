@@ -3,16 +3,7 @@ permalink: /alectrico-2021/bi
 layout: page
 --- 
 
-<ul>
-<li><span style='background-color: red'>[    ]</span> mensaje de alerta. </li>
-<li><span style='background-color: lavender'>[    ]</span> partida revisada y resultado bueno. </li>
-<li><span style='background-color: lightyellow'>[    ]</span> cuenta mayor del activo </li>
-<li><span style='background-color: azure'>[    ]</span> cuenta mayor del pasivo </li>
-<li><span style='color: white; background-color: cornflowerblue'>[    ]</span> cuenta de patrimonio </li>
-<li><span style='background-color: gold'>[    ]</span> ganancia </li>
-<li><span style='color: white; background-color: black'>[    ]</span> pérdida </li>
-<li><span style='background-color: blanchedalmond'>[    ]</span> subtotales de la transacción </li>
-</ul>
+<h1> BI </h1>
 <table>
 <thead><tr> <th> Código</th><th> Valor</th><th> Saldo </th><th> IVA</th> <th> Resultado</th><th> Cuenta</th></tr> </thead>  
 <tr><td>-510</td><td>28873</td><td>904358</td><td>171828</td><td>('NO PASA')</td><td>devolucion-sobre-ventas-afectas</td></tr>

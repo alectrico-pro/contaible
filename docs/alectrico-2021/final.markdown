@@ -2,6 +2,7 @@
 layout: page
 --- 
 
+<h1> Final </h1>
 <section>
 <h2> PARTIDA GENERAL FINAL </h2>
 Solo se consideran las transacciones hasta el día 31	diciembre.
