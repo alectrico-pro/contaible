@@ -1,54 +1,52 @@
 ;------------------------------- enero ------------------------------
-(revision (revisado true) (partida 001) (old n-a) (tipo asiento-inicial) (rcv n-a) (ccm true) (voucher 132) )
-(revision (revisado true) (partida 1111) (old n-a) (tipo asiento-inicial) (rcv n-a) )
+(revision (revisado true) (partida 1) (old 1) (tipo asiento-inicial) (rcv n-a) (ccm true) (voucher 132) )
+(revision (revisado true) (partida 1111) (old 1111) (tipo asiento-inicial) (rcv n-a) )
 
 
-(revision (revisado true) (old 002111) (partida 002111) (tipo traspaso-de-utilidad-en-enero) (ccm true) (rcv n-a) (voucher 183) )
+(revision (revisado true) (old 2111) (partida 2111) (tipo traspaso-de-utilidad-en-enero) (ccm true) (rcv n-a) (voucher 183) )
 
-(revision (revisado true) (partida 002) (old 2) (tipo ajuste-de-remanente-de-IVA) (rcv n-a) (voucher 93 ))
+(revision (revisado true) (partida 2) (old 2) (tipo ajuste-de-remanente-de-IVA) (rcv n-a) (voucher 93 ))
 
-(revision (revisado true) (partida 002111) (old 2111) (tipo 39) (rcv n-a) )
+(revision (revisado true) (partida 2111) (old 2111) (tipo 39) (rcv n-a) )
 
-(revision (revisado true) (partida 002112) (voucher 184) (tipo traspaso) (rcv n-a) )
+(revision (revisado true) (partida 2112) (old 2112) (voucher 184) (tipo traspaso) (rcv n-a) )
 
-(revision (revisado true) (voucher 192) (partida 003) (old 3) (tipo resumen-rendicion-de-e-boletas) (libro-diario true) (rcv n-a) (ccm true) )
+(revision (revisado true) (voucher 192) (partida 3) (old 3) (tipo resumen-rendicion-de-e-boletas) (libro-diario true) (rcv n-a) (ccm true) )
 
-(revision (revisado true) (voucher 192) (partida 004) (old 4) (tipo resumen-rendicion-de-comprobantes-electronicos-vouchers) (rcv n-a) (ccm true) (libro-diario true) )
+(revision (revisado true) (voucher 192) (partida 4) (old 4) (tipo resumen-rendicion-de-comprobantes-electronicos-vouchers) (rcv n-a) (ccm true) (libro-diario true) )
 
-(revision (revisado true) (voucher 192) (partida 005)
- (rechazado false)
- (tipo 61) (rcv true) (ccm true) (libro-diario true ) (folio 12) )
+(revision (revisado true) (voucher 192) (partida 5) (old 5) (rechazado false) (tipo 61) (rcv true) (ccm true) (libro-diario true ) (folio 12) )
 
-(revision (revisado true) (voucher 192) (partida 006) (old 6) (tipo 61) (rcv true) (ccm true) (libro-diario true) (folio 13) )
-(revision (revisado true) (voucher 192) (partida 007) (old 7) (tipo 61) (rcv true) (ccm true) (libro-diario true) (folio 14) )
-(revision (revisado true) (partida 008) (old 8)   (tipo 61) (rcv true) (ccm true) (libro-diario true) (folio 29457    )  )
-(revision (revisado true) (partida 009) (old 9)   (tipo 33) (rcv true) (ccm true) (libro-diario true) (folio 35258718 )  )
-(revision (revisado true) (partida 010) (old 10)  (tipo 33) (rcv true) (ccm true) (libro-diario true) (folio 23667281 ) )
-(revision (revisado true) (partida 011)            (tipo 33) (rcv n-a) (ccm true) (libro-diario true) )
-(revision (revisado true) (partida 012) (old 12)  (tipo 33) (rcv true) (ccm true) (libro-diario true) (folio 109127578) )
-(revision (revisado true) (partida 013) (old 13)  (tipo 33) (rcv true) (ccm true) (libro-diario true) (folio 109127577) )
+(revision (revisado true) (voucher 192) (partida 6) (old 6) (tipo 61) (rcv true) (ccm true) (libro-diario true) (folio 13) )
+(revision (revisado true) (voucher 192) (partida 7) (old 7) (tipo 61) (rcv true) (ccm true) (libro-diario true) (folio 14) )
+(revision (revisado true) (partida 8)  (old 8)     (tipo 61) (rcv true) (ccm true) (libro-diario true) (folio 29457    )  )
+(revision (revisado true) (partida 9)  (old 9)     (tipo 33) (rcv true) (ccm true) (libro-diario true) (folio 35258718 )  )
+(revision (revisado true) (partida 10) (old 10)   (tipo 33) (rcv true) (ccm true) (libro-diario true) (folio 23667281 ) )
+(revision (revisado true) (partida 11) (old 11)   (tipo 33) (rcv n-a) (ccm true) (libro-diario true) )
+(revision (revisado true) (partida 12) (old 12)  (tipo 33) (rcv true) (ccm true) (libro-diario true) (folio 109127578) )
+(revision (revisado true) (partida 13) (old 13)  (tipo 33) (rcv true) (ccm true) (libro-diario true) (folio 109127577) )
 
-(revision (revisado true) (partida 0131) (old 0131) (voucher 186) (tipo depreciacion) (rcv n-a) (ccm true)  )
-;(revision (revisado true) (partida 0132) (old n-a)(tipo amortizacion) (rcv n-a) (ccm false) (a-corregir "Anotar en el ccm")  )
+(revision (revisado true) (partida 131) (old 131) (voucher 186) (tipo depreciacion) (rcv n-a) (ccm true)  )
+;(revision (revisado true) (partida 132) (old 132) (tipo amortizacion) (rcv n-a) (ccm false) (a-corregir "Anotar en el ccm")  )
 
 
-(revision (revisado true) (partida 014) (old 14) (tipo 33) (rcv true) (ccm true) (libro-diario true)) 
+(revision (revisado true) (partida 14) (old 14) (tipo 33) (rcv true) (ccm true) (libro-diario true)) 
 
-(revision (revisado true) (partida 014333) (old 014333) (voucher 188) (tipo ajuste-iva-enero) (rcv n-a) (ccm true)   )
+(revision (revisado true) (partida 14333) (old 14333) (voucher 188) (tipo ajuste-iva-enero) (rcv n-a) (ccm true)   )
 
-(revision (revisado true) (partida 0141) (tipo 33) (rcv n-a) )
+(revision (revisado true) (partida 141) (old 141) (tipo 33) (rcv n-a) )
 
 ;---- febrero ----
-(revision (revisado true) (partida 014111) (old 014111) (voucher 94) (tipo ajuste-remanente-iva-febrero) (rcv n-a) ) 
-(revision (revisado true) (partida 01421) (tipo amortizacion) (rcv n-a) )
+(revision (revisado true) (partida 14111) (old 14111) (voucher 94) (tipo ajuste-remanente-iva-febrero) (rcv n-a) ) 
+(revision (revisado true) (partida 1421) (old 1421) (tipo amortizacion) (rcv n-a) )
 
-(revision (revisado true) (partida 014222) (tipo 33) (rcv n-a) ) 
+(revision (revisado true) (partida 14222) (old 14222) (tipo 33) (rcv n-a) ) 
 
-(revision (revisado true) (partida 014444) (tipo ajuste-de-iva) (rcv n-a) )
+(revision (revisado true) (partida 14444) (old 14444) (tipo ajuste-de-iva) (rcv n-a) )
 
-(revision (revisado true) (partida 0142) (tipo 33) (rcv n-a) )
-(revision (revisado true) (partida 0143) (tipo 33) (rcv n-a) )
-(revision (revisado true) (partida 0144) (tipo ajustes-mensuales) (rcv n-a) )
+(revision (revisado true) (partida 142) (old 142) (tipo 33) (rcv n-a) )
+(revision (revisado true) (partida 143) (old 143) (tipo 33) (rcv n-a) )
+(revision (revisado true) (partida 144) (old 144) (tipo ajustes-mensuales) (rcv n-a) )
 
 
 (revision (revisado true) (partida 015) (tipo 33) (rcv n-a) )

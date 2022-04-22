@@ -17,7 +17,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'>  </p>
 <br> 
-- [x] antiguo número de partida: n-a
+- [x] antiguo número de partida: 1
 - [x] voucher en ccm: 132
 - [x] tipo de asiento: asiento-inicial
 - [ ] rcv
@@ -107,6 +107,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'>  </p>
 <br> 
+- [x] antiguo número de partida: 5
 - [x] voucher en ccm: 192
 - [x] tipo de asiento: 61
 - [x] folio: 12
@@ -433,6 +434,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'>  </p>
 <br> 
+- [x] antiguo número de partida: 141
 - [x] tipo de asiento: 33
 - [ ] rcv
 - [ ] libro-diario
@@ -461,6 +463,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'>  </p>
 <br> 
+- [x] antiguo número de partida: 142
 - [x] tipo de asiento: 33
 - [ ] rcv
 - [ ] libro-diario
@@ -487,6 +490,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'>  </p>
 <br> 
+- [x] antiguo número de partida: 14444
 - [x] tipo de asiento: ajuste-de-iva
 - [ ] rcv
 - [ ] libro-diario

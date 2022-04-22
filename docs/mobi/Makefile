@@ -67,33 +67,33 @@ mayor:
 
 
 financiero:
-	make build VERSION=financiero ASIN=FINANCIERO MES=diciembre
+	make build VERSION=financiero ASIN=FINANCIERO MES=diciembre EMPRESA=alectrico-2021
 	make sync
 
 l:
-	make build VERSION=liquidaciones ASIN=L MES=diciembre
+	make build VERSION=liquidaciones ASIN=L MES=diciembre EMPRESA=alectrico-2021
 	make sync
 
 
 r:
-	make build VERSION=remuneraciones ASIN=R MES=enero
+	make build VERSION=remuneraciones ASIN=R MES=enero EMPRESA=alectrico-2021
 	make sync
 
 a:
-	make build VERSION=activos ASIN=A MES=diciembre
+	make build VERSION=activos ASIN=A MES=diciembre EMPRESA=alectrico-2021
 	make sync
 
 t:  
-	make build VERSION=tributario ASIN=T MES=diciembre
+	make build VERSION=tributario ASIN=T MES=diciembre EMPRESA=alectrico-2021
 	make sync
 
 f:
-	make build VERSION=f22 ASIN=T MES=diciembre
+	make build VERSION=f22 ASIN=T MES=diciembre EMPRESA=alectrico-2021
 	make sync
 
 
 
-#suministrar make build VERSION=1 ASIN=b999 MES=enero
+#suministrar make build VERSION=1 ASIN=b999 MES=enero EMPRESA=alectrico-2021
 build:
 	echo
 	echo
@@ -112,7 +112,7 @@ build:
 	if docker stop calibre; docker rm calibre; then echo volumen docker mobi eliminado exitosamente; fi
 	docker build . -t jeky -f DockerfileJeky  
 	docker run -p 4000:4000 --name st -v $(shell pwd)/docs:/doc jeky bash -c 'jekyll build . && cp * /doc -r && chown 1000:1000 /doc -R' --no-cache
-	docker run --name mobi  --volumes-from st -v $(shell pwd)/docs:/doc jeky bash -c 'jekyll build . && cp /doc/_site/necios-2021/*.html /doc/mobi && cp /doc/_site/assets/* /doc/mobi/assets && cp /doc/_site/assets/main.css /doc/mobi.css && cd /doc/mobi && make mobi VERSION=${VERSION} ASIN=${ASIN} MES=${MES}'
+	docker run --name mobi  --volumes-from st -v $(shell pwd)/docs:/doc jeky bash -c 'jekyll build . && cp /doc/_site/${EMPRESA}/*.html /doc/mobi && cp /doc/_site/assets/* /doc/mobi/assets && cp /doc/_site/assets/main.css /doc/mobi.css && cd /doc/mobi && make mobi VERSION=${VERSION} ASIN=${ASIN} MES=${MES}'
 	docker run  --volumes-from mobi --name=calibre -e PUID=1000 -e PGID=1000 -e TZ=Europe/London -e PASSWORD= `#optional` -e CLI_ARGS= `#optional` -p 8080:8080 -p 8081:8081 -v $(shell pwd)/docs:/doc --restart unless-stopped lscr.io/linuxserver/calibre bash -c 'cd /doc/mobi && ebook-convert book-${VERSION}-${ASIN}-${MES}.mobi book-${VERSION}-${ASIN}-${MES}.epub'
 	# && cp mobi.mobi mobi-${VERSION}-${ASIN}-${MES}.mobi '
 	

@@ -168,7 +168,9 @@ html.gsub!(/<br \/>1/,'')
 #puts escribe en el archivo html. No muestra salida por pantalla.
 
 
-html.gsub!(/\/necios-2021\/libro-diario/, './libro-diario.html')
+html.gsub!(/\/\w*\W*\w*\/libro-diario/, './libro-diario.html')
+#html.gsub!(/\/alectrico-2021\/libro-diario/, './libro-diario.html')
+
 
 #html.gsub!(/libro-mayor/, '')
 
