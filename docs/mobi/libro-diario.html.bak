@@ -591,6 +591,7 @@
 <p style="color: white; background-color: red">  </p>
 <p><br /></p>
 <ul class="task-list">
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />antiguo número de partida: 15</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />tipo de asiento: 33</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />rcv</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />libro-diario</li>
@@ -620,6 +621,7 @@
 <p style="color: white; background-color: red">  </p>
 <p><br /></p>
 <ul class="task-list">
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />antiguo número de partida: 16</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />tipo de asiento: 33</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />rcv</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />libro-diario</li>
@@ -649,6 +651,7 @@
 <p style="color: white; background-color: red">  </p>
 <p><br /></p>
 <ul class="task-list">
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />antiguo número de partida: 17</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />tipo de asiento: 33</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />rcv</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />libro-diario</li>
@@ -678,6 +681,7 @@
 <p style="color: white; background-color: red">  </p>
 <p><br /></p>
 <ul class="task-list">
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />antiguo número de partida: 18</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />tipo de asiento: 33</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />rcv</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />libro-diario</li>
@@ -707,6 +711,7 @@
 <p style="color: white; background-color: red"> Tipo de Documento den Libro Tributario aparece como Nota de Crédito de Papel y en el asiento centralizado correspondiente aparece como 60, debe ser 61</p>
 <p><br /></p>
 <ul class="task-list">
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />antiguo número de partida: 19</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />tipo de asiento: 33</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />a corregir: Tipo de Documento den Libro Tributario aparece como Nota de Crédito de Papel y en el asiento centralizado correspondiente aparece como 60, debe ser 61</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />rcv</li>
@@ -736,6 +741,7 @@
 <p style="color: white; background-color: red">  </p>
 <p><br /></p>
 <ul class="task-list">
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />antiguo número de partida: 191</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />tipo de asiento: 56</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />rcv</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />libro-diario</li>
@@ -763,6 +769,7 @@
 <p style="color: white; background-color: red">  </p>
 <p><br /></p>
 <ul class="task-list">
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />antiguo número de partida: 1911</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />tipo de asiento: 33</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />rcv</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />libro-diario</li>
@@ -791,6 +798,7 @@
 <p style="color: white; background-color: red">  </p>
 <p><br /></p>
 <ul class="task-list">
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />antiguo número de partida: 192</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />tipo de asiento: 33</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />rcv</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />libro-diario</li>
@@ -819,6 +827,7 @@
 <p style="color: white; background-color: red">  </p>
 <p><br /></p>
 <ul class="task-list">
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />antiguo número de partida: 20</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />tipo de asiento: 33</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />rcv</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />libro-diario</li>
@@ -848,6 +857,7 @@
 <p style="color: white; background-color: red">  </p>
 <p><br /></p>
 <ul class="task-list">
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />antiguo número de partida: 21</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />tipo de asiento: 33</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />rcv</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />libro-diario</li>
@@ -878,6 +888,7 @@
 <p style="color: white; background-color: red">  </p>
 <p><br /></p>
 <ul class="task-list">
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />antiguo número de partida: 22</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />tipo de asiento: 33</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />rcv</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />libro-diario</li>
@@ -907,6 +918,7 @@
 <p style="color: white; background-color: red">  </p>
 <p><br /></p>
 <ul class="task-list">
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />antiguo número de partida: 26</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />tipo de asiento: 33</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />rcv</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />libro-diario</li>
@@ -935,6 +947,7 @@
 <p style="color: white; background-color: red">  </p>
 <p><br /></p>
 <ul class="task-list">
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />antiguo número de partida: 261</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />tipo de asiento: 33</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />rcv</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />libro-diario</li>
@@ -963,6 +976,7 @@
 <p style="color: white; background-color: red">  </p>
 <p><br /></p>
 <ul class="task-list">
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />antiguo número de partida: 262</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />tipo de asiento: ajuste-iva</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />rcv</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />libro-diario</li>
@@ -993,6 +1007,7 @@
 <p style="color: white; background-color: red">  </p>
 <p><br /></p>
 <ul class="task-list">
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />antiguo número de partida: 27</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />tipo de asiento: 33</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />rcv</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />libro-diario</li>
@@ -1022,6 +1037,7 @@
 <p style="color: white; background-color: red">  </p>
 <p><br /></p>
 <ul class="task-list">
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />antiguo número de partida: 28</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />tipo de asiento: 33</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />rcv</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />libro-diario</li>
@@ -1051,6 +1067,7 @@
 <p style="color: white; background-color: red">  </p>
 <p><br /></p>
 <ul class="task-list">
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />antiguo número de partida: 281</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />tipo de asiento: 33</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />rcv</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />libro-diario</li>
@@ -1080,6 +1097,7 @@
 <p style="color: white; background-color: red">  </p>
 <p><br /></p>
 <ul class="task-list">
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />antiguo número de partida: 30</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />tipo de asiento: 33</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />rcv</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />libro-diario</li>
@@ -1108,6 +1126,7 @@
 <p style="color: white; background-color: red">  </p>
 <p><br /></p>
 <ul class="task-list">
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />antiguo número de partida: 301</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />tipo de asiento: 33</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />rcv</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />libro-diario</li>
@@ -1136,6 +1155,7 @@
 <p style="color: white; background-color: red">  </p>
 <p><br /></p>
 <ul class="task-list">
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />antiguo número de partida: 302</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />tipo de asiento: 33</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />rcv</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />libro-diario</li>
@@ -1164,6 +1184,7 @@
 <p style="color: white; background-color: red">  </p>
 <p><br /></p>
 <ul class="task-list">
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />antiguo número de partida: 303</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />tipo de asiento: ajuste-iva</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />rcv</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />libro-diario</li>
@@ -1194,6 +1215,7 @@
 <p style="color: white; background-color: red">  </p>
 <p><br /></p>
 <ul class="task-list">
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />antiguo número de partida: 31</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />tipo de asiento: 33</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />rcv</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />libro-diario</li>
@@ -1223,6 +1245,7 @@
 <p style="color: white; background-color: red">  </p>
 <p><br /></p>
 <ul class="task-list">
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />antiguo número de partida: 32</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />tipo de asiento: 33</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />rcv</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />libro-diario</li>
@@ -1252,6 +1275,7 @@
 <p style="color: white; background-color: red">  </p>
 <p><br /></p>
 <ul class="task-list">
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />antiguo número de partida: 33</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />tipo de asiento: 33</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />rcv</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />libro-diario</li>
@@ -1282,6 +1306,7 @@
 <p><br /></p>
 <ul class="task-list">
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />no-incluir: Partida que estando en RCV SII se estimó no incluir en la contabilidad financiera</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />antiguo número de partida: 34</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />tipo de asiento: 33</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />a corregir: No aparece en asientos centralizado</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />rcv</li>
@@ -1309,6 +1334,7 @@
 <p><br /></p>
 <ul class="task-list">
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />no-incluir: Partida que estando en RCV SII se estimó no incluir en la contabilidad financiera</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />antiguo número de partida: 35</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />tipo de asiento: 33</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />a corregir: No aparece en sii, seguramente porque tuve que borrarlo porque es una compra a proveedor extranjero</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />rcv</li>
@@ -1336,6 +1362,7 @@
 <p><br /></p>
 <ul class="task-list">
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />no-incluir: Partida que estando en RCV SII se estimó no incluir en la contabilidad financiera</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />antiguo número de partida: 36</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />tipo de asiento: 33</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />a corregir: No aparece en sii, seguramente porque tuve que borrarlo porque es una compra a proveedor entranjero</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />rcv</li>
@@ -1362,6 +1389,7 @@
 <p style="color: white; background-color: red">  </p>
 <p><br /></p>
 <ul class="task-list">
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />antiguo número de partida: 37</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />tipo de asiento: 33</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />rcv</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />libro-diario</li>
@@ -1390,6 +1418,7 @@
 <p style="color: white; background-color: red">  </p>
 <p><br /></p>
 <ul class="task-list">
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />antiguo número de partida: 371</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />tipo de asiento: 33</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />rcv</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />libro-diario</li>
@@ -1418,6 +1447,7 @@
 <p style="color: white; background-color: red">  </p>
 <p><br /></p>
 <ul class="task-list">
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />antiguo número de partida: 372</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />tipo de asiento: ajuste-iva</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />rcv</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />libro-diario</li>
@@ -1445,6 +1475,7 @@
 <p style="color: white; background-color: red">  </p>
 <p><br /></p>
 <ul class="task-list">
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />antiguo número de partida:</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />tipo de asiento: 33</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />rcv</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />libro-diario</li>
@@ -1474,6 +1505,7 @@
 <p style="color: white; background-color: red">  </p>
 <p><br /></p>
 <ul class="task-list">
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />antiguo número de partida:</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />tipo de asiento: 33</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />rcv</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />libro-diario</li>
@@ -1504,6 +1536,7 @@
 <p style="color: white; background-color: red">  </p>
 <p><br /></p>
 <ul class="task-list">
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />antiguo número de partida:</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />tipo de asiento: 33</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />rcv</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />libro-diario</li>
@@ -1531,6 +1564,7 @@
 <p style="color: white; background-color: red">  </p>
 <p><br /></p>
 <ul class="task-list">
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />antiguo número de partida:</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />tipo de asiento: 33</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />rcv</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />libro-diario</li>
@@ -1559,6 +1593,7 @@
 <p style="color: white; background-color: red">  </p>
 <p><br /></p>
 <ul class="task-list">
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />antiguo número de partida:</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />tipo de asiento: 33</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />rcv</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />libro-diario</li>
@@ -1585,6 +1620,7 @@
 <p style="color: white; background-color: red">  </p>
 <p><br /></p>
 <ul class="task-list">
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />antiguo número de partida:</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />tipo de asiento: 33</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />rcv</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />libro-diario</li>
@@ -1613,6 +1649,7 @@
 <p style="color: white; background-color: red">  </p>
 <p><br /></p>
 <ul class="task-list">
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />antiguo número de partida:</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />tipo de asiento: 33</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />rcv</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />libro-diario</li>
@@ -1640,6 +1677,7 @@
 <p style="color: white; background-color: red">  </p>
 <p><br /></p>
 <ul class="task-list">
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />antiguo número de partida:</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />tipo de asiento: 33</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />rcv</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />libro-diario</li>
@@ -1670,6 +1708,7 @@
 <p style="color: white; background-color: red">  </p>
 <p><br /></p>
 <ul class="task-list">
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />antiguo número de partida:</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />tipo de asiento: 33</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />rcv</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />libro-diario</li>
@@ -1700,6 +1739,7 @@
 <p style="color: white; background-color: red">  </p>
 <p><br /></p>
 <ul class="task-list">
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />antiguo número de partida:</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />tipo de asiento: 33</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />rcv</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />libro-diario</li>
@@ -1729,6 +1769,7 @@
 <p style="color: white; background-color: red">  </p>
 <p><br /></p>
 <ul class="task-list">
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />antiguo número de partida:</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />tipo de asiento: 33</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />rcv</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />libro-diario</li>
@@ -1758,6 +1799,7 @@
 <p style="color: white; background-color: red"> Debe corregirse el f29 de este mes y colocar en el código 039 el valor de 1409</p>
 <p><br /></p>
 <ul class="task-list">
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />antiguo número de partida:</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />tipo de asiento: 33</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />a corregir: Debe corregirse el f29 de este mes y colocar en el código 039 el valor de 1409</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />rcv</li>
@@ -1784,6 +1826,7 @@
 <p style="color: white; background-color: red">  </p>
 <p><br /></p>
 <ul class="task-list">
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />antiguo número de partida:</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />tipo de asiento: 33</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />rcv</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />libro-diario</li>
@@ -1812,6 +1855,7 @@
 <p style="color: white; background-color: red">  </p>
 <p><br /></p>
 <ul class="task-list">
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />antiguo número de partida:</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />tipo de asiento: 33</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />rcv</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />libro-diario</li>
@@ -1840,6 +1884,7 @@
 <p><br /></p>
 <ul class="task-list">
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />rechazado: Partida rechazada por SII, significa que si la dejamos nos podría generar multas o que no tendría el efecto deseado. Así que solo podemos quitarla de SII, pero eso requiere rectificar el f29 y eso nos generaría multas. Por ejemplo, una nota de crédito que no descuente monto imponible, aunque esté en registro de compra-venta. El F22 al año siguiente no incluirá estos DTE. No es lo mismo que gasto rechazado. También podríamos declararla como no-incluir, pero eso no conveniente, pues todo debe estar en la contabilidad de la empresa, pera que sea fidedigna. Hay casos donde se declara un gasto para el que no hay boleta de respaldo, eso es muy crítico y sí será rechazado, y además la contabilidad financiera objetada. El caso de las facturas de compra 45 a proveedor extranjero es parecido, pero ahora sé como se hace.</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />antiguo número de partida:</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />tipo de asiento: 33</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />a corregir: Fuera de plazo</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />rcv</li>
@@ -1871,6 +1916,7 @@
 <p style="color: white; background-color: red">  </p>
 <p><br /></p>
 <ul class="task-list">
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />antiguo número de partida:</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />tipo de asiento: 33</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />rcv</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />libro-diario</li>
@@ -1901,6 +1947,7 @@
 <p><br /></p>
 <ul class="task-list">
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />no-incluir: Partida que estando en RCV SII se estimó no incluir en la contabilidad financiera</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />antiguo número de partida:</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />tipo de asiento: 33</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />a corregir: La reclamé (fue un error) en el LIBRO DE COMPRA-VENTA</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />rcv</li>
@@ -1927,6 +1974,7 @@
 <p style="color: white; background-color: red">  </p>
 <p><br /></p>
 <ul class="task-list">
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />antiguo número de partida:</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />tipo de asiento: 33</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />rcv</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />libro-diario</li>
@@ -1956,6 +2004,7 @@
 <p style="color: white; background-color: red">  </p>
 <p><br /></p>
 <ul class="task-list">
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />antiguo número de partida:</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />tipo de asiento: 33</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />rcv</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />libro-diario</li>
@@ -1986,6 +2035,7 @@
 <p style="color: white; background-color: red">  </p>
 <p><br /></p>
 <ul class="task-list">
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />antiguo número de partida:</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />tipo de asiento: 33</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />rcv</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />libro-diario</li>
@@ -2016,6 +2066,7 @@
 <p style="color: white; background-color: red"> No se permite en el registroempresas.cl ingresar un capital en otra forma que no sea efectivo</p>
 <p><br /></p>
 <ul class="task-list">
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />antiguo número de partida:</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />tipo de asiento: 33</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />a corregir: No se permite en el registroempresas.cl ingresar un capital en otra forma que no sea efectivo</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />rcv</li>
@@ -2042,6 +2093,7 @@
 <p style="color: white; background-color: red">  </p>
 <p><br /></p>
 <ul class="task-list">
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />antiguo número de partida:</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />tipo de asiento: 33</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />rcv</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />libro-diario</li>
@@ -2071,6 +2123,7 @@
 <p style="color: white; background-color: red">  </p>
 <p><br /></p>
 <ul class="task-list">
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />antiguo número de partida:</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />tipo de asiento: 33</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />rcv</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />libro-diario</li>
@@ -2100,6 +2153,7 @@
 <p style="color: white; background-color: red">  </p>
 <p><br /></p>
 <ul class="task-list">
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />antiguo número de partida:</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />tipo de asiento: 34</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />rcv</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />libro-diario</li>
@@ -2129,6 +2183,7 @@
 <p style="color: white; background-color: red">  </p>
 <p><br /></p>
 <ul class="task-list">
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />antiguo número de partida:</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />tipo de asiento: 33</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />rcv</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />libro-diario</li>
@@ -2158,6 +2213,7 @@
 <p style="color: white; background-color: red">  </p>
 <p><br /></p>
 <ul class="task-list">
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />antiguo número de partida:</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />tipo de asiento: 33</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />rcv</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />libro-diario</li>
@@ -2188,6 +2244,7 @@
 <p style="color: white; background-color: red">  </p>
 <p><br /></p>
 <ul class="task-list">
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />antiguo número de partida:</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />tipo de asiento: 33</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />rcv</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />libro-diario</li>
@@ -2216,6 +2273,7 @@
 <p style="color: white; background-color: red">  </p>
 <p><br /></p>
 <ul class="task-list">
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />antiguo número de partida:</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />tipo de asiento: 33</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />rcv</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />libro-diario</li>
@@ -2246,6 +2304,7 @@
 <p style="color: white; background-color: red">  </p>
 <p><br /></p>
 <ul class="task-list">
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />antiguo número de partida:</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />tipo de asiento: 33</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />rcv</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />libro-diario</li>
@@ -2276,6 +2335,7 @@
 <p style="color: white; background-color: red">  </p>
 <p><br /></p>
 <ul class="task-list">
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />antiguo número de partida:</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />tipo de asiento: 41</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />rcv</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />libro-diario</li>
@@ -2303,6 +2363,7 @@
 <p style="color: white; background-color: red">  </p>
 <p><br /></p>
 <ul class="task-list">
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />antiguo número de partida:</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />tipo de asiento: 61</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />rcv</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />libro-diario</li>
@@ -2333,6 +2394,7 @@
 <p style="color: white; background-color: red">  </p>
 <p><br /></p>
 <ul class="task-list">
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />antiguo número de partida:</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />tipo de asiento: 33</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />rcv</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />libro-diario</li>
@@ -2363,6 +2425,7 @@
 <p style="color: white; background-color: red">  </p>
 <p><br /></p>
 <ul class="task-list">
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />antiguo número de partida:</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />tipo de asiento: 33</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />rcv</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />libro-diario</li>
@@ -2392,6 +2455,7 @@
 <p style="color: white; background-color: red">  </p>
 <p><br /></p>
 <ul class="task-list">
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />antiguo número de partida:</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />tipo de asiento: 33</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />rcv</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />libro-diario</li>
@@ -2421,6 +2485,7 @@
 <p style="color: white; background-color: red">  </p>
 <p><br /></p>
 <ul class="task-list">
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />antiguo número de partida:</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />tipo de asiento: 33</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />rcv</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />libro-diario</li>
@@ -2451,6 +2516,7 @@
 <p><br /></p>
 <ul class="task-list">
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />rechazado: Partida rechazada por SII, significa que si la dejamos nos podría generar multas o que no tendría el efecto deseado. Así que solo podemos quitarla de SII, pero eso requiere rectificar el f29 y eso nos generaría multas. Por ejemplo, una nota de crédito que no descuente monto imponible, aunque esté en registro de compra-venta. El F22 al año siguiente no incluirá estos DTE. No es lo mismo que gasto rechazado. También podríamos declararla como no-incluir, pero eso no conveniente, pues todo debe estar en la contabilidad de la empresa, pera que sea fidedigna. Hay casos donde se declara un gasto para el que no hay boleta de respaldo, eso es muy crítico y sí será rechazado, y además la contabilidad financiera objetada. El caso de las facturas de compra 45 a proveedor extranjero es parecido, pero ahora sé como se hace.</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />antiguo número de partida:</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />tipo de asiento: nota-de-credito</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />a corregir: La emití a nombre de alectrico pero  no anulé la nota que se recibe en consecuencia</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />rcv</li>
@@ -2481,6 +2547,7 @@
 <p style="color: white; background-color: red">  </p>
 <p><br /></p>
 <ul class="task-list">
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />antiguo número de partida:</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />tipo de asiento: 33</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />rcv</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />libro-diario</li>
@@ -2511,6 +2578,7 @@
 <p style="color: white; background-color: red">  </p>
 <p><br /></p>
 <ul class="task-list">
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />antiguo número de partida:</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />tipo de asiento: 33</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />rcv</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />libro-diario</li>
@@ -2541,6 +2609,7 @@
 <p style="color: white; background-color: red"> Rectificar f29 de julio y colocar en código 039 el valor de 22199</p>
 <p><br /></p>
 <ul class="task-list">
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />antiguo número de partida:</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />tipo de asiento: ajuste-hecho-n</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />a corregir: Rectificar f29 de julio y colocar en código 039 el valor de 22199</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />rcv</li>
@@ -2567,6 +2636,7 @@
 <p style="color: white; background-color: red">  </p>
 <p><br /></p>
 <ul class="task-list">
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />antiguo número de partida:</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />tipo de asiento: 33</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />rcv</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />libro-diario</li>
@@ -2595,6 +2665,7 @@
 <p style="color: white; background-color: red">  </p>
 <p><br /></p>
 <ul class="task-list">
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />antiguo número de partida:</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />tipo de asiento: 33</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />rcv</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />libro-diario</li>
@@ -2623,6 +2694,7 @@
 <p style="color: white; background-color: red">  </p>
 <p><br /></p>
 <ul class="task-list">
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />antiguo número de partida:</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />tipo de asiento: 34</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />rcv</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />libro-diario</li>
@@ -2652,6 +2724,7 @@
 <p style="color: white; background-color: red">  </p>
 <p><br /></p>
 <ul class="task-list">
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />antiguo número de partida:</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />tipo de asiento: 33</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />rcv</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />libro-diario</li>
@@ -2681,6 +2754,7 @@
 <p style="color: white; background-color: red">  </p>
 <p><br /></p>
 <ul class="task-list">
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />antiguo número de partida:</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />tipo de asiento: 33</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />rcv</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />libro-diario</li>
@@ -2710,6 +2784,7 @@
 <p style="color: white; background-color: red">  </p>
 <p><br /></p>
 <ul class="task-list">
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />antiguo número de partida:</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />tipo de asiento: 33</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />rcv</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />libro-diario</li>
@@ -2739,6 +2814,7 @@
 <p style="color: white; background-color: red"> Cambiar la regla a otra que contemple la cuenta</p>
 <p><br /></p>
 <ul class="task-list">
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />antiguo número de partida:</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />tipo de asiento: 61</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />a corregir: Cambiar la regla a otra que contemple la cuenta</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />rcv</li>
@@ -2769,6 +2845,7 @@
 <p style="color: white; background-color: red">  </p>
 <p><br /></p>
 <ul class="task-list">
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />antiguo número de partida:</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />tipo de asiento: 33</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />rcv</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />libro-diario</li>
@@ -2799,6 +2876,7 @@
 <p style="color: white; background-color: red">  </p>
 <p><br /></p>
 <ul class="task-list">
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />antiguo número de partida:</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />tipo de asiento: 33</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />rcv</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />libro-diario</li>
@@ -2828,6 +2906,7 @@
 <p style="color: white; background-color: red">  </p>
 <p><br /></p>
 <ul class="task-list">
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />antiguo número de partida:</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />tipo de asiento: 33</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />rcv</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />libro-diario</li>
@@ -2858,6 +2937,7 @@
 <p><br /></p>
 <ul class="task-list">
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />rechazado: Partida rechazada por SII, significa que si la dejamos nos podría generar multas o que no tendría el efecto deseado. Así que solo podemos quitarla de SII, pero eso requiere rectificar el f29 y eso nos generaría multas. Por ejemplo, una nota de crédito que no descuente monto imponible, aunque esté en registro de compra-venta. El F22 al año siguiente no incluirá estos DTE. No es lo mismo que gasto rechazado. También podríamos declararla como no-incluir, pero eso no conveniente, pues todo debe estar en la contabilidad de la empresa, pera que sea fidedigna. Hay casos donde se declara un gasto para el que no hay boleta de respaldo, eso es muy crítico y sí será rechazado, y además la contabilidad financiera objetada. El caso de las facturas de compra 45 a proveedor extranjero es parecido, pero ahora sé como se hace.</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />antiguo número de partida:</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />tipo de asiento: 45</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />a corregir: No lo incluí a tiempo</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />rcv</li>
@@ -2887,6 +2967,7 @@
 <p style="color: white; background-color: red">  </p>
 <p><br /></p>
 <ul class="task-list">
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />antiguo número de partida:</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />tipo de asiento: 33</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />rcv</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />libro-diario</li>
@@ -2916,6 +2997,7 @@
 <p style="color: white; background-color: red">  </p>
 <p><br /></p>
 <ul class="task-list">
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />antiguo número de partida:</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />tipo de asiento: 33</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />rcv</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />libro-diario</li>
@@ -2945,6 +3027,7 @@
 <p style="color: white; background-color: red"> Esta representación digital no está disponible para bajar en SII, ya hice una solicitud para no me dijeron nada importante</p>
 <p><br /></p>
 <ul class="task-list">
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />antiguo número de partida:</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />tipo de asiento: 33</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />a corregir: Esta representación digital no está disponible para bajar en SII, ya hice una solicitud para no me dijeron nada importante</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />rcv</li>
@@ -2975,6 +3058,7 @@
 <p><br /></p>
 <ul class="task-list">
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />rechazado: Partida rechazada por SII, significa que si la dejamos nos podría generar multas o que no tendría el efecto deseado. Así que solo podemos quitarla de SII, pero eso requiere rectificar el f29 y eso nos generaría multas. Por ejemplo, una nota de crédito que no descuente monto imponible, aunque esté en registro de compra-venta. El F22 al año siguiente no incluirá estos DTE. No es lo mismo que gasto rechazado. También podríamos declararla como no-incluir, pero eso no conveniente, pues todo debe estar en la contabilidad de la empresa, pera que sea fidedigna. Hay casos donde se declara un gasto para el que no hay boleta de respaldo, eso es muy crítico y sí será rechazado, y además la contabilidad financiera objetada. El caso de las facturas de compra 45 a proveedor extranjero es parecido, pero ahora sé como se hace.</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />antiguo número de partida:</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />tipo de asiento: 33</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />a corregir: Adjuntar factura</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />rcv</li>
@@ -3006,6 +3090,7 @@
 <p style="color: white; background-color: red">  </p>
 <p><br /></p>
 <ul class="task-list">
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />antiguo número de partida:</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />tipo de asiento: 33</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />rcv</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />libro-diario</li>
@@ -3036,6 +3121,7 @@
 <p style="color: white; background-color: red">  </p>
 <p><br /></p>
 <ul class="task-list">
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />antiguo número de partida:</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />tipo de asiento: 61</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />rcv</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />libro-diario</li>
@@ -3066,6 +3152,7 @@
 <p style="color: white; background-color: red">  </p>
 <p><br /></p>
 <ul class="task-list">
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />antiguo número de partida:</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />tipo de asiento: 33</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />rcv</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />libro-diario</li>
@@ -3096,6 +3183,7 @@
 <p style="color: white; background-color: red">  </p>
 <p><br /></p>
 <ul class="task-list">
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />antiguo número de partida:</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />tipo de asiento: 61</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />rcv</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />libro-diario</li>
@@ -3124,6 +3212,7 @@
 <p style="color: white; background-color: red">  </p>
 <p><br /></p>
 <ul class="task-list">
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />antiguo número de partida:</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />tipo de asiento: 34</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />rcv</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />libro-diario</li>
@@ -3153,6 +3242,7 @@
 <p style="color: white; background-color: red">  </p>
 <p><br /></p>
 <ul class="task-list">
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />antiguo número de partida:</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />tipo de asiento: 33</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />rcv</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />libro-diario</li>
@@ -3184,6 +3274,7 @@
 <p style="color: white; background-color: red">  </p>
 <p><br /></p>
 <ul class="task-list">
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />antiguo número de partida:</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />tipo de asiento: 33</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />rcv</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />libro-diario</li>
@@ -3213,6 +3304,7 @@
 <p style="color: white; background-color: red">  </p>
 <p><br /></p>
 <ul class="task-list">
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />antiguo número de partida:</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />tipo de asiento: 33</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />rcv</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />libro-diario</li>
@@ -3236,6 +3328,7 @@
 <p style="color: white; background-color: red">  </p>
 <p><br /></p>
 <ul class="task-list">
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />antiguo número de partida:</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />tipo de asiento: 33</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />rcv</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />libro-diario</li>
@@ -3264,6 +3357,7 @@
 <p style="color: white; background-color: red">  </p>
 <p><br /></p>
 <ul class="task-list">
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />antiguo número de partida:</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />tipo de asiento: 34</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />rcv</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />libro-diario</li>
@@ -3294,6 +3388,7 @@
 <p style="color: white; background-color: red">  </p>
 <p><br /></p>
 <ul class="task-list">
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />antiguo número de partida:</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />tipo de asiento: 61</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />rcv</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />libro-diario</li>
@@ -3323,6 +3418,7 @@
 <p style="color: white; background-color: red">  </p>
 <p><br /></p>
 <ul class="task-list">
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />antiguo número de partida:</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />tipo de asiento: ajuste-iva</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />rcv</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />libro-diario</li>
@@ -3353,6 +3449,7 @@
 <p style="color: white; background-color: red">  </p>
 <p><br /></p>
 <ul class="task-list">
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />antiguo número de partida:</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />tipo de asiento: ajuste-remanente</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />rcv</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />libro-diario</li>
@@ -3381,6 +3478,7 @@
 <p style="color: white; background-color: red">  </p>
 <p><br /></p>
 <ul class="task-list">
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />antiguo número de partida:</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />tipo de asiento: amortizacion</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />rcv</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />libro-diario</li>
@@ -3411,6 +3509,7 @@
 <p style="color: white; background-color: red">  </p>
 <p><br /></p>
 <ul class="task-list">
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />antiguo número de partida:</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />rcv</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />libro-diario</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />ccm</li>
@@ -3440,6 +3539,7 @@
 <p style="color: white; background-color: red">  </p>
 <p><br /></p>
 <ul class="task-list">
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />antiguo número de partida:</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />tipo de asiento: 33</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />rcv</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />libro-diario</li>
@@ -3469,6 +3569,7 @@
 <p style="color: white; background-color: red">  </p>
 <p><br /></p>
 <ul class="task-list">
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />antiguo número de partida:</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />tipo de asiento: 33</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />rcv</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />libro-diario</li>
@@ -3500,6 +3601,7 @@
 <p style="color: white; background-color: red">  </p>
 <p><br /></p>
 <ul class="task-list">
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />antiguo número de partida:</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />tipo de asiento: 33</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />rcv</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />libro-diario</li>
@@ -3530,6 +3632,7 @@
 <p style="color: white; background-color: red">  </p>
 <p><br /></p>
 <ul class="task-list">
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />antiguo número de partida:</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />tipo de asiento: 34</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />rcv</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />libro-diario</li>
@@ -3559,6 +3662,7 @@
 <p><br /></p>
 <ul class="task-list">
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />no-incluir: Partida que estando en RCV SII se estimó no incluir en la contabilidad financiera</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />antiguo número de partida:</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />tipo de asiento: traspaso</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />a corregir: No corresponde incluir, pues se emitieron documentos de pago contado</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />rcv</li>
@@ -3584,6 +3688,7 @@
 <p style="color: white; background-color: red">  </p>
 <p><br /></p>
 <ul class="task-list">
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />antiguo número de partida:</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />tipo de asiento: amortizacion</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />rcv</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />libro-diario</li>
@@ -3611,6 +3716,7 @@
 <p style="color: white; background-color: red">  </p>
 <p><br /></p>
 <ul class="task-list">
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />antiguo número de partida:</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />tipo de asiento: control-activo</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />rcv</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />libro-diario</li>
@@ -3637,6 +3743,7 @@
 <p style="color: white; background-color: red">  </p>
 <p><br /></p>
 <ul class="task-list">
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />antiguo número de partida:</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />tipo de asiento: 33</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />rcv</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />libro-diario</li>
@@ -3666,6 +3773,7 @@
 <p><br /></p>
 <ul class="task-list">
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />no-incluir: Partida que estando en RCV SII se estimó no incluir en la contabilidad financiera</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />antiguo número de partida:</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />tipo de asiento: 33</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />a corregir: Está repetido en los facts.</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />rcv</li>
@@ -3692,6 +3800,7 @@
 <p style="color: white; background-color: red">  </p>
 <p><br /></p>
 <ul class="task-list">
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />antiguo número de partida:</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />tipo de asiento: 33</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />rcv</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />libro-diario</li>
@@ -3720,6 +3829,7 @@
 <p style="color: white; background-color: red">  </p>
 <p><br /></p>
 <ul class="task-list">
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />antiguo número de partida:</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />tipo de asiento: 33</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />rcv</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />libro-diario</li>
@@ -3749,6 +3859,7 @@
 <p><br /></p>
 <ul class="task-list">
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />rechazado: Partida rechazada por SII, significa que si la dejamos nos podría generar multas o que no tendría el efecto deseado. Así que solo podemos quitarla de SII, pero eso requiere rectificar el f29 y eso nos generaría multas. Por ejemplo, una nota de crédito que no descuente monto imponible, aunque esté en registro de compra-venta. El F22 al año siguiente no incluirá estos DTE. No es lo mismo que gasto rechazado. También podríamos declararla como no-incluir, pero eso no conveniente, pues todo debe estar en la contabilidad de la empresa, pera que sea fidedigna. Hay casos donde se declara un gasto para el que no hay boleta de respaldo, eso es muy crítico y sí será rechazado, y además la contabilidad financiera objetada. El caso de las facturas de compra 45 a proveedor extranjero es parecido, pero ahora sé como se hace.</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />antiguo número de partida:</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />tipo de asiento: 33</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />a corregir: No alcancé a incluirla en el registro de compra-venta</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />rcv</li>
@@ -3780,6 +3891,7 @@
 <p style="color: white; background-color: red">  </p>
 <p><br /></p>
 <ul class="task-list">
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />antiguo número de partida:</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />tipo de asiento: 33</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />rcv</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />libro-diario</li>
@@ -3808,6 +3920,7 @@
 <p style="color: white; background-color: red">  </p>
 <p><br /></p>
 <ul class="task-list">
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />antiguo número de partida:</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />tipo de asiento: 33</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />rcv</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />libro-diario</li>
@@ -3836,6 +3949,7 @@
 <p style="color: white; background-color: red">  </p>
 <p><br /></p>
 <ul class="task-list">
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />antiguo número de partida:</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />tipo de asiento: 33</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />rcv</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />libro-diario</li>
@@ -3865,6 +3979,7 @@
 <p style="color: white; background-color: red">  </p>
 <p><br /></p>
 <ul class="task-list">
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />antiguo número de partida:</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />tipo de asiento: 33</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />rcv</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />libro-diario</li>
@@ -3894,6 +4009,7 @@
 <p style="color: white; background-color: red">  </p>
 <p><br /></p>
 <ul class="task-list">
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />antiguo número de partida:</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />tipo de asiento: ajuste-iva</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />rcv</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />libro-diario</li>
@@ -3923,6 +4039,7 @@
 <p style="color: white; background-color: red">  </p>
 <p><br /></p>
 <ul class="task-list">
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />antiguo número de partida:</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />tipo de asiento: 33</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />rcv</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />libro-diario</li>
@@ -3953,6 +4070,7 @@
 <p style="color: white; background-color: red">  </p>
 <p><br /></p>
 <ul class="task-list">
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />antiguo número de partida:</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />tipo de asiento: 33</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />rcv</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />libro-diario</li>
@@ -3980,6 +4098,7 @@
 <p style="color: white; background-color: red">  </p>
 <p><br /></p>
 <ul class="task-list">
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />antiguo número de partida:</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />tipo de asiento: 33</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />rcv</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />libro-diario</li>
@@ -4009,6 +4128,7 @@
 <p style="color: white; background-color: red">  </p>
 <p><br /></p>
 <ul class="task-list">
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />antiguo número de partida:</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />tipo de asiento: 33</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />rcv</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />libro-diario</li>
@@ -4039,6 +4159,7 @@
 <p style="color: white; background-color: red">  </p>
 <p><br /></p>
 <ul class="task-list">
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />antiguo número de partida:</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />tipo de asiento: 33</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />rcv</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />libro-diario</li>
@@ -4067,6 +4188,7 @@
 <p><br /></p>
 <ul class="task-list">
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />rechazado: Partida rechazada por SII, significa que si la dejamos nos podría generar multas o que no tendría el efecto deseado. Así que solo podemos quitarla de SII, pero eso requiere rectificar el f29 y eso nos generaría multas. Por ejemplo, una nota de crédito que no descuente monto imponible, aunque esté en registro de compra-venta. El F22 al año siguiente no incluirá estos DTE. No es lo mismo que gasto rechazado. También podríamos declararla como no-incluir, pero eso no conveniente, pues todo debe estar en la contabilidad de la empresa, pera que sea fidedigna. Hay casos donde se declara un gasto para el que no hay boleta de respaldo, eso es muy crítico y sí será rechazado, y además la contabilidad financiera objetada. El caso de las facturas de compra 45 a proveedor extranjero es parecido, pero ahora sé como se hace.</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />antiguo número de partida:</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />tipo de asiento: 33</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />a corregir: No fue incluido en el f29 de octubre en el código 142</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />rcv</li>
@@ -4097,6 +4219,7 @@
 <p style="color: white; background-color: red">  </p>
 <p><br /></p>
 <ul class="task-list">
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />antiguo número de partida:</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />tipo de asiento: 33</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />rcv</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />libro-diario</li>
@@ -4126,6 +4249,7 @@
 <p style="color: white; background-color: red">  </p>
 <p><br /></p>
 <ul class="task-list">
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />antiguo número de partida:</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />tipo de asiento: 33</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />rcv</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />libro-diario</li>
@@ -4154,6 +4278,7 @@
 <p style="color: white; background-color: red">  </p>
 <p><br /></p>
 <ul class="task-list">
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />antiguo número de partida:</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />tipo de asiento: 33</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />rcv</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />libro-diario</li>
@@ -4183,6 +4308,7 @@
 <p><br /></p>
 <ul class="task-list">
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />rechazado: Partida rechazada por SII, significa que si la dejamos nos podría generar multas o que no tendría el efecto deseado. Así que solo podemos quitarla de SII, pero eso requiere rectificar el f29 y eso nos generaría multas. Por ejemplo, una nota de crédito que no descuente monto imponible, aunque esté en registro de compra-venta. El F22 al año siguiente no incluirá estos DTE. No es lo mismo que gasto rechazado. También podríamos declararla como no-incluir, pero eso no conveniente, pues todo debe estar en la contabilidad de la empresa, pera que sea fidedigna. Hay casos donde se declara un gasto para el que no hay boleta de respaldo, eso es muy crítico y sí será rechazado, y además la contabilidad financiera objetada. El caso de las facturas de compra 45 a proveedor extranjero es parecido, pero ahora sé como se hace.</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />antiguo número de partida:</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />tipo de asiento: 33</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />a corregir: Fuera de Plazo</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />rcv</li>
@@ -4213,6 +4339,7 @@
 <p style="color: white; background-color: red">  </p>
 <p><br /></p>
 <ul class="task-list">
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />antiguo número de partida:</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />tipo de asiento: 33</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />rcv</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />libro-diario</li>
@@ -4244,6 +4371,7 @@
 <p><br /></p>
 <ul class="task-list">
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />no-incluir: Partida que estando en RCV SII se estimó no incluir en la contabilidad financiera</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />antiguo número de partida:</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />tipo de asiento: 33</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />a corregir: No se puede tener cuentas por cobrar a menos que se haya vendido al contado</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />rcv</li>
@@ -4269,6 +4397,7 @@
 <p style="color: white; background-color: red">  </p>
 <p><br /></p>
 <ul class="task-list">
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />antiguo número de partida:</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />tipo de asiento: 33</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />rcv</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />libro-diario</li>
@@ -4297,6 +4426,7 @@
 <p style="color: white; background-color: red">  </p>
 <p><br /></p>
 <ul class="task-list">
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />antiguo número de partida:</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />tipo de asiento: 33</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />rcv</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />libro-diario</li>
@@ -4324,6 +4454,7 @@
 <p style="color: white; background-color: red">  </p>
 <p><br /></p>
 <ul class="task-list">
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />antiguo número de partida:</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />tipo de asiento: 33</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />rcv</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />libro-diario</li>
@@ -4354,6 +4485,7 @@
 <p style="color: white; background-color: red">  </p>
 <p><br /></p>
 <ul class="task-list">
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />antiguo número de partida:</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />tipo de asiento: 34</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />rcv</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />libro-diario</li>
@@ -4382,6 +4514,7 @@
 <p style="color: white; background-color: red">  </p>
 <p><br /></p>
 <ul class="task-list">
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />antiguo número de partida:</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />tipo de asiento: 34</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />rcv</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />libro-diario</li>
@@ -4411,6 +4544,7 @@
 <p style="color: white; background-color: red">  </p>
 <p><br /></p>
 <ul class="task-list">
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />antiguo número de partida:</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />rcv</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />libro-diario</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />ccm</li>
@@ -4439,6 +4573,7 @@
 <p style="color: white; background-color: red">  </p>
 <p><br /></p>
 <ul class="task-list">
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />antiguo número de partida:</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />rcv</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />libro-diario</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />ccm</li>
@@ -4468,6 +4603,7 @@
 <p style="color: white; background-color: red">  </p>
 <p><br /></p>
 <ul class="task-list">
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />antiguo número de partida:</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />rcv</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />libro-diario</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />ccm</li>
@@ -4496,6 +4632,7 @@
 <p style="color: white; background-color: red">  </p>
 <p><br /></p>
 <ul class="task-list">
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />antiguo número de partida:</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />rcv</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />libro-diario</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />ccm</li>
@@ -4524,6 +4661,7 @@
 <p style="color: white; background-color: red">  </p>
 <p><br /></p>
 <ul class="task-list">
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />antiguo número de partida:</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />rcv</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />libro-diario</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />ccm</li>
@@ -4551,6 +4689,7 @@
 <p style="color: white; background-color: red">  </p>
 <p><br /></p>
 <ul class="task-list">
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />antiguo número de partida:</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />rcv</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />libro-diario</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />ccm</li>
@@ -4575,6 +4714,7 @@
 <p style="color: white; background-color: red">  </p>
 <p><br /></p>
 <ul class="task-list">
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />antiguo número de partida:</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />rcv</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />libro-diario</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />ccm</li>
@@ -4602,6 +4742,7 @@
 <p style="color: white; background-color: red">  </p>
 <p><br /></p>
 <ul class="task-list">
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />antiguo número de partida:</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />rcv</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />libro-diario</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />ccm</li>
@@ -4630,6 +4771,7 @@
 <p style="color: white; background-color: red">  </p>
 <p><br /></p>
 <ul class="task-list">
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />antiguo número de partida:</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />rcv</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />libro-diario</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />ccm</li>
@@ -4658,6 +4800,7 @@
 <p style="color: white; background-color: red">  </p>
 <p><br /></p>
 <ul class="task-list">
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />antiguo número de partida:</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />rcv</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />libro-diario</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />ccm</li>
@@ -4686,6 +4829,7 @@
 <p style="color: white; background-color: red">  </p>
 <p><br /></p>
 <ul class="task-list">
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />antiguo número de partida:</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />rcv</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />libro-diario</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />ccm</li>
@@ -4715,6 +4859,7 @@
 <p style="color: white; background-color: red">  </p>
 <p><br /></p>
 <ul class="task-list">
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />antiguo número de partida:</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />rcv</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />libro-diario</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />ccm</li>
@@ -4744,6 +4889,7 @@
 <p style="color: white; background-color: red">  </p>
 <p><br /></p>
 <ul class="task-list">
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />antiguo número de partida:</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />rcv</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />libro-diario</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />ccm</li>
@@ -4773,6 +4919,7 @@
 <p><br /></p>
 <ul class="task-list">
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />no-incluir: Partida que estando en RCV SII se estimó no incluir en la contabilidad financiera</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />antiguo número de partida:</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />tipo de asiento: 33</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />folio: 44204963</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />a corregir: Reclamado en SII</li>
@@ -4800,6 +4947,7 @@
 <p style="color: white; background-color: red">  </p>
 <p><br /></p>
 <ul class="task-list">
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />antiguo número de partida:</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />tipo de asiento: 33</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />folio: 44123442</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />rcv</li>
@@ -4831,6 +4979,7 @@
 <p><br /></p>
 <ul class="task-list">
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />no-incluir: Partida que estando en RCV SII se estimó no incluir en la contabilidad financiera</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />antiguo número de partida:</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />tipo de asiento: 61</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />a corregir: Lo reclamé por error en CCM de SII. No tiene efecto en mi contabilidad</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />rcv</li>
@@ -4857,6 +5006,7 @@
 <p style="color: white; background-color: red">  </p>
 <p><br /></p>
 <ul class="task-list">
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />antiguo número de partida:</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />rcv</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />libro-diario</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />ccm</li>
@@ -4882,6 +5032,7 @@
 <p style="color: white; background-color: red">  </p>
 <p><br /></p>
 <ul class="task-list">
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />antiguo número de partida:</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />rcv</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />libro-diario</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />ccm</li>
@@ -4906,6 +5057,7 @@
 <p style="color: white; background-color: red">  </p>
 <p><br /></p>
 <ul class="task-list">
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />antiguo número de partida:</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />rcv</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />libro-diario</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />ccm</li>
@@ -4935,6 +5087,7 @@
 <p style="color: white; background-color: red">  </p>
 <p><br /></p>
 <ul class="task-list">
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />antiguo número de partida:</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />rcv</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />libro-diario</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />ccm</li>
@@ -4959,6 +5112,7 @@
 <p style="color: white; background-color: red">  </p>
 <p><br /></p>
 <ul class="task-list">
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />antiguo número de partida:</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />rcv</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />libro-diario</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />ccm</li>
@@ -4986,6 +5140,7 @@
 <p style="color: white; background-color: red">  </p>
 <p><br /></p>
 <ul class="task-list">
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />antiguo número de partida:</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />rcv</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />libro-diario</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />ccm</li>
@@ -5012,6 +5167,7 @@
 <p style="color: white; background-color: red">  </p>
 <p><br /></p>
 <ul class="task-list">
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />antiguo número de partida:</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />tipo de asiento: f-29</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />rcv</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />libro-diario</li>

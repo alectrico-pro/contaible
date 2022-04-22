@@ -49,94 +49,91 @@
 (revision (revisado true) (partida 144) (old 144) (tipo ajustes-mensuales) (rcv n-a) )
 
 
-(revision (revisado true) (partida 015) (tipo 33) (rcv n-a) )
-(revision (revisado true) (partida 016) (tipo 33) (rcv n-a) )
-(revision (revisado true) (partida 017) (tipo 33) (rcv n-a) )
-(revision (revisado true) (partida 018) (tipo 33) (rcv n-a) )
-(revision (revisado true) (partida 019) (tipo 33) (rcv n-a) (a-corregir "Tipo de Documento den Libro Tributario aparece como Nota de Crédito de Papel y en el asiento centralizado correspondiente aparece como 60, debe ser 61") )
-(revision (revisado true) (partida 0191) (tipo 56) (rcv n-a)
+(revision (revisado true) (partida 15) (old 15) (tipo 33) (rcv n-a) )
+(revision (revisado true) (partida 16) (old 16) (tipo 33) (rcv n-a) )
+(revision (revisado true) (partida 17) (old 17) (tipo 33) (rcv n-a) )
+(revision (revisado true) (partida 18) (old 18) (tipo 33) (rcv n-a) )
+(revision (revisado true) (partida 19) (old 19) (tipo 33) (rcv n-a) (a-corregir "Tipo de Documento den Libro Tributario aparece como Nota de Crédito de Papel y en el asiento centralizado correspondiente aparece como 60, debe ser 61") )
+(revision (revisado true) (partida 0191) (old 191) (tipo 56) (rcv n-a)
 
 )
-(revision (revisado true) (partida 01911) (tipo 33) (rcv n-a) )
+(revision (revisado true) (partida 1911) (old 1911) (tipo 33) (rcv n-a) )
 
-(revision (revisado true) (partida 0192) (tipo 33) (rcv n-a) )
-(revision (revisado true) (partida 0193) (tipo 33) (rcv n-a) )
-(revision (revisado true) (partida 0194) (tipo 33) (rcv n-a) )
-
-
-
-(revision (revisado true) (partida 020) (tipo 33) (rcv n-a) )
-
-(revision (revisado true) (partida 021) (tipo 33) (rcv n-a) )
-(revision (revisado true) (partida 022) (tipo 33) (rcv n-a) )
-(revision (revisado true) (partida 023) (tipo 33) (rcv n-a) )
-(revision (revisado true) (partida 024) (tipo 33) (rcv n-a) )
-(revision (revisado true) (partida 025) (tipo 33) (rcv n-a) )
-
-(revision (revisado true) (partida 026) (tipo 33) (rcv n-a) )
-
-(revision (revisado true) (partida 0261) (tipo 33) (rcv n-a) )
-
-(revision (revisado true) (partida 0262) (tipo ajuste-iva) (rcv n-a) )
-(revision (revisado true) (partida 02612) (tipo amortizacion) (rcv n-a) )
+(revision (revisado true) (partida 192) (old 192) (tipo 33) (rcv n-a) )
+(revision (revisado true) (partida 193) (old 193) (tipo 33) (rcv n-a) )
+(revision (revisado true) (partida 194) (old 194) (tipo 33) (rcv n-a) )
 
 
-(revision (revisado true) (partida 0263) (tipo 33) (rcv n-a)
+
+(revision (revisado true) (partida 20) (old 20) (tipo 33) (rcv n-a) )
+
+(revision (revisado true) (partida 21) (old 21) (tipo 33) (rcv n-a) )
+(revision (revisado true) (partida 22) (old 22) (tipo 33) (rcv n-a) )
+(revision (revisado true) (partida 23) (old 23) (tipo 33) (rcv n-a) )
+(revision (revisado true) (partida 24) (old 24) (tipo 33) (rcv n-a) )
+(revision (revisado true) (partida 25) (old 25) (tipo 33) (rcv n-a) )
+
+(revision (revisado true) (partida 26) (old 26) (tipo 33) (rcv n-a) )
+
+(revision (revisado true) (partida 261)  (old 261) (tipo 33) (rcv n-a) )
+
+(revision (revisado true) (partida 262) (old 262) (tipo ajuste-iva) (rcv n-a) )
+(revision (revisado true) (partida 2612) (old 2612) (tipo amortizacion) (rcv n-a) )
+
+
+(revision (revisado true) (partida 263) (old 263) (tipo 33) (rcv n-a)
 (a-corregir "Syncronizar con voucher ccm 106, que indica 247 de ajuste")
  )
 
 
-(revision (revisado true) (partida 027) (tipo 33) (rcv n-a) )
-(revision (revisado true) (partida 028) (tipo 33) (rcv n-a) )
-(revision (revisado true) (partida 0281) (tipo 33) (rcv n-a) )
+(revision (revisado true) (partida 27) (old 27) (tipo 33) (rcv n-a) )
+(revision (revisado true) (partida 28) (old 28) (tipo 33) (rcv n-a) )
+(revision (revisado true) (partida 281) (old 281) (tipo 33) (rcv n-a) )
 
-(revision (revisado true) (partida 029) (tipo 33) (rcv n-a) )
-(revision (revisado true) (partida 030) (tipo 33) (rcv n-a) )
-(revision (revisado true) (partida 0301) (tipo 33) (rcv n-a) )
+(revision (revisado true) (partida 29) (old 29) (tipo 33) (rcv n-a) )
+(revision (revisado true) (partida 30) (old 30) (tipo 33) (rcv n-a) )
+(revision (revisado true) (partida 301) (old 301) (tipo 33) (rcv n-a) )
 
-(revision (revisado true) (partida 0302) (tipo 33) (rcv n-a) )
+(revision (revisado true) (partida 302) (old 302) (tipo 33) (rcv n-a) )
 
-(revision (revisado true) (partida 0303) (tipo ajuste-iva) (rcv n-a) )
+(revision (revisado true) (partida 303) (old 303) (tipo ajuste-iva) (rcv n-a) )
 
-(revision (revisado true) (partida 0304) (tipo 33) (rcv n-a) )
-(revision (revisado true) (partida 0305) (tipo 33) (rcv n-a) )
+(revision (revisado true) (partida 304) (old 304) (tipo 33) (rcv n-a) )
+(revision (revisado true) (partida 305) (old 305) (tipo 33) (rcv n-a) )
 
 
-(revision (revisado true) (partida 031) (tipo 33) (rcv n-a) )
-(revision (revisado true) (partida 032) (tipo 33) (rcv n-a) )
-(revision (revisado true) (partida 033) (tipo 33) (rcv n-a) )
+(revision (revisado true) (partida 31) (old 31) (tipo 33) (rcv n-a) )
+(revision (revisado true) (partida 32) (old 32) (tipo 33) (rcv n-a) )
+(revision (revisado true) (partida 33) (old 33) (tipo 33) (rcv n-a) )
 
-(revision (revisado true) (rechazado false) (no-incluir true) (partida 034) (tipo 33) (rcv n-a) (a-corregir "No aparece en asientos centralizado")
+(revision (revisado true) (rechazado false) (no-incluir true) (partida 34) (old 34) (tipo 33) (rcv n-a) (a-corregir "No aparece en asientos centralizado")
 (dia 13)
 (mes mayo )
-(ano 2021 )
-)
+(ano 2021 ))
 
-(revision (revisado true) (rechazado false) (no-incluir true) (partida 035) (tipo 33) (rcv n-a) (a-corregir "No aparece en sii, seguramente porque tuve que borrarlo porque es una compra a proveedor extranjero")
-
+(revision (revisado true) (rechazado false) (no-incluir true) (partida 35) (old 35) (tipo 33) (rcv n-a) (a-corregir "No aparece en sii, seguramente porque tuve que borrarlo porque es una compra a proveedor extranjero")
 (dia 13 )
 (mes mayo )
 (ano 2021 )
 )
 
 
-(revision (revisado true) (rechazado false) (no-incluir true) (partida 036) (tipo 33) (rcv n-a) (a-corregir "No aparece en sii, seguramente porque tuve que borrarlo porque es una compra a proveedor entranjero" )
+(revision (revisado true) (rechazado false) (no-incluir true) (partida 36) (old 36) (tipo 33) (rcv n-a) (a-corregir "No aparece en sii, seguramente porque tuve que borrarlo porque es una compra a proveedor entranjero" )
 (dia 13 )
 (mes mayo )
-(ano 2021 )
-)
+(ano 2021 ))
 
 
-(revision (revisado true) (partida 037) (tipo 33) (rcv n-a) )
-(revision (revisado true) (partida 0371) (tipo 33) (rcv n-a) )
+(revision (revisado true) (partida 37) (old 37) (tipo 33) (rcv n-a) )
+(revision (revisado true) (partida 371) (old 371) (tipo 33) (rcv n-a) )
 
 
-(revision (revisado true) (partida 03712) (tipo 33) (rcv n-a) )
+(revision (revisado true) (partida 3712) (old 3712) (tipo 33) (rcv n-a) )
 
-(revision (revisado true) (partida 0372) (tipo ajuste-iva) (rcv n-a) )
+(revision (revisado true) (partida 372) (old 372) (tipo ajuste-iva) (rcv n-a) )
 
 
-(revision (revisado true) (partida 0373) (tipo 33) (rcv n-a)
+(revision (revisado true) (partida 373) (old 373) (tipo 33) (rcv n-a)
 (a-corregir "No se ha podido sincronizar con ccm" )
  )
 

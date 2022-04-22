@@ -498,10 +498,10 @@
       ( printout d "- [x] no-incluir: Partida que estando en RCV SII se estimó no incluir en la contabilidad financiera" crlf )
     )
 
-    ( if (neq ?old " ") then
+;    ( if (neq ?old " ") then
       ( printout k "- [x] antiguo número de partida: " ?old crlf )
       ( printout d "- [x] antiguo número de partida: " ?old crlf )
-    )
+ ;   )
 
     ( if (neq ?voucher " ") then
       ( printout k "- [x] voucher en ccm: " ?voucher crlf )

@@ -517,6 +517,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'>  </p>
 <br> 
+- [x] antiguo número de partida: 15
 - [x] tipo de asiento: 33
 - [ ] rcv
 - [ ] libro-diario
@@ -544,6 +545,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'>  </p>
 <br> 
+- [x] antiguo número de partida: 16
 - [x] tipo de asiento: 33
 - [ ] rcv
 - [ ] libro-diario
@@ -571,6 +573,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'>  </p>
 <br> 
+- [x] antiguo número de partida: 17
 - [x] tipo de asiento: 33
 - [ ] rcv
 - [ ] libro-diario
@@ -598,6 +601,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'>  </p>
 <br> 
+- [x] antiguo número de partida: 18
 - [x] tipo de asiento: 33
 - [ ] rcv
 - [ ] libro-diario
@@ -625,6 +629,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'> Tipo de Documento den Libro Tributario aparece como Nota de Crédito de Papel y en el asiento centralizado correspondiente aparece como 60, debe ser 61</p>
 <br> 
+- [x] antiguo número de partida: 19
 - [x] tipo de asiento: 33
 - [x] a corregir: Tipo de Documento den Libro Tributario aparece como Nota de Crédito de Papel y en el asiento centralizado correspondiente aparece como 60, debe ser 61
 - [ ] rcv
@@ -652,6 +657,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'>  </p>
 <br> 
+- [x] antiguo número de partida: 191
 - [x] tipo de asiento: 56
 - [ ] rcv
 - [ ] libro-diario
@@ -677,6 +683,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'>  </p>
 <br> 
+- [x] antiguo número de partida: 1911
 - [x] tipo de asiento: 33
 - [ ] rcv
 - [ ] libro-diario
@@ -703,6 +710,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'>  </p>
 <br> 
+- [x] antiguo número de partida: 192
 - [x] tipo de asiento: 33
 - [ ] rcv
 - [ ] libro-diario
@@ -729,6 +737,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'>  </p>
 <br> 
+- [x] antiguo número de partida: 20
 - [x] tipo de asiento: 33
 - [ ] rcv
 - [ ] libro-diario
@@ -756,6 +765,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'>  </p>
 <br> 
+- [x] antiguo número de partida: 21
 - [x] tipo de asiento: 33
 - [ ] rcv
 - [ ] libro-diario
@@ -784,6 +794,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'>  </p>
 <br> 
+- [x] antiguo número de partida: 22
 - [x] tipo de asiento: 33
 - [ ] rcv
 - [ ] libro-diario
@@ -811,6 +822,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'>  </p>
 <br> 
+- [x] antiguo número de partida: 26
 - [x] tipo de asiento: 33
 - [ ] rcv
 - [ ] libro-diario
@@ -837,6 +849,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'>  </p>
 <br> 
+- [x] antiguo número de partida: 261
 - [x] tipo de asiento: 33
 - [ ] rcv
 - [ ] libro-diario
@@ -863,6 +876,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'>  </p>
 <br> 
+- [x] antiguo número de partida: 262
 - [x] tipo de asiento: ajuste-iva
 - [ ] rcv
 - [ ] libro-diario
@@ -891,6 +905,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'>  </p>
 <br> 
+- [x] antiguo número de partida: 27
 - [x] tipo de asiento: 33
 - [ ] rcv
 - [ ] libro-diario
@@ -918,6 +933,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'>  </p>
 <br> 
+- [x] antiguo número de partida: 28
 - [x] tipo de asiento: 33
 - [ ] rcv
 - [ ] libro-diario
@@ -945,6 +961,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'>  </p>
 <br> 
+- [x] antiguo número de partida: 281
 - [x] tipo de asiento: 33
 - [ ] rcv
 - [ ] libro-diario
@@ -972,6 +989,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'>  </p>
 <br> 
+- [x] antiguo número de partida: 30
 - [x] tipo de asiento: 33
 - [ ] rcv
 - [ ] libro-diario
@@ -998,6 +1016,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'>  </p>
 <br> 
+- [x] antiguo número de partida: 301
 - [x] tipo de asiento: 33
 - [ ] rcv
 - [ ] libro-diario
@@ -1024,6 +1043,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'>  </p>
 <br> 
+- [x] antiguo número de partida: 302
 - [x] tipo de asiento: 33
 - [ ] rcv
 - [ ] libro-diario
@@ -1050,6 +1070,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'>  </p>
 <br> 
+- [x] antiguo número de partida: 303
 - [x] tipo de asiento: ajuste-iva
 - [ ] rcv
 - [ ] libro-diario
@@ -1078,6 +1099,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'>  </p>
 <br> 
+- [x] antiguo número de partida: 31
 - [x] tipo de asiento: 33
 - [ ] rcv
 - [ ] libro-diario
@@ -1105,6 +1127,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'>  </p>
 <br> 
+- [x] antiguo número de partida: 32
 - [x] tipo de asiento: 33
 - [ ] rcv
 - [ ] libro-diario
@@ -1132,6 +1155,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'>  </p>
 <br> 
+- [x] antiguo número de partida: 33
 - [x] tipo de asiento: 33
 - [ ] rcv
 - [ ] libro-diario
@@ -1160,6 +1184,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <p style='color: white; background-color: red'> No aparece en asientos centralizado</p>
 <br> 
 - [x] no-incluir: Partida que estando en RCV SII se estimó no incluir en la contabilidad financiera
+- [x] antiguo número de partida: 34
 - [x] tipo de asiento: 33
 - [x] a corregir: No aparece en asientos centralizado
 - [ ] rcv
@@ -1185,6 +1210,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <p style='color: white; background-color: red'> No aparece en sii, seguramente porque tuve que borrarlo porque es una compra a proveedor extranjero</p>
 <br> 
 - [x] no-incluir: Partida que estando en RCV SII se estimó no incluir en la contabilidad financiera
+- [x] antiguo número de partida: 35
 - [x] tipo de asiento: 33
 - [x] a corregir: No aparece en sii, seguramente porque tuve que borrarlo porque es una compra a proveedor extranjero
 - [ ] rcv
@@ -1210,6 +1236,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <p style='color: white; background-color: red'> No aparece en sii, seguramente porque tuve que borrarlo porque es una compra a proveedor entranjero</p>
 <br> 
 - [x] no-incluir: Partida que estando en RCV SII se estimó no incluir en la contabilidad financiera
+- [x] antiguo número de partida: 36
 - [x] tipo de asiento: 33
 - [x] a corregir: No aparece en sii, seguramente porque tuve que borrarlo porque es una compra a proveedor entranjero
 - [ ] rcv
@@ -1234,6 +1261,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'>  </p>
 <br> 
+- [x] antiguo número de partida: 37
 - [x] tipo de asiento: 33
 - [ ] rcv
 - [ ] libro-diario
@@ -1260,6 +1288,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'>  </p>
 <br> 
+- [x] antiguo número de partida: 371
 - [x] tipo de asiento: 33
 - [ ] rcv
 - [ ] libro-diario
@@ -1286,6 +1315,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'>  </p>
 <br> 
+- [x] antiguo número de partida: 372
 - [x] tipo de asiento: ajuste-iva
 - [ ] rcv
 - [ ] libro-diario
@@ -1311,6 +1341,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'>  </p>
 <br> 
+- [x] antiguo número de partida:  
 - [x] tipo de asiento: 33
 - [ ] rcv
 - [ ] libro-diario
@@ -1338,6 +1369,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'>  </p>
 <br> 
+- [x] antiguo número de partida:  
 - [x] tipo de asiento: 33
 - [ ] rcv
 - [ ] libro-diario
@@ -1366,6 +1398,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'>  </p>
 <br> 
+- [x] antiguo número de partida:  
 - [x] tipo de asiento: 33
 - [ ] rcv
 - [ ] libro-diario
@@ -1391,6 +1424,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'>  </p>
 <br> 
+- [x] antiguo número de partida:  
 - [x] tipo de asiento: 33
 - [ ] rcv
 - [ ] libro-diario
@@ -1417,6 +1451,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'>  </p>
 <br> 
+- [x] antiguo número de partida:  
 - [x] tipo de asiento: 33
 - [ ] rcv
 - [ ] libro-diario
@@ -1441,6 +1476,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'>  </p>
 <br> 
+- [x] antiguo número de partida:  
 - [x] tipo de asiento: 33
 - [ ] rcv
 - [ ] libro-diario
@@ -1467,6 +1503,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'>  </p>
 <br> 
+- [x] antiguo número de partida:  
 - [x] tipo de asiento: 33
 - [ ] rcv
 - [ ] libro-diario
@@ -1492,6 +1529,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'>  </p>
 <br> 
+- [x] antiguo número de partida:  
 - [x] tipo de asiento: 33
 - [ ] rcv
 - [ ] libro-diario
@@ -1520,6 +1558,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'>  </p>
 <br> 
+- [x] antiguo número de partida:  
 - [x] tipo de asiento: 33
 - [ ] rcv
 - [ ] libro-diario
@@ -1548,6 +1587,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'>  </p>
 <br> 
+- [x] antiguo número de partida:  
 - [x] tipo de asiento: 33
 - [ ] rcv
 - [ ] libro-diario
@@ -1575,6 +1615,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'>  </p>
 <br> 
+- [x] antiguo número de partida:  
 - [x] tipo de asiento: 33
 - [ ] rcv
 - [ ] libro-diario
@@ -1602,6 +1643,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'> Debe corregirse el f29 de este mes y colocar en el código 039 el valor de 1409</p>
 <br> 
+- [x] antiguo número de partida:  
 - [x] tipo de asiento: 33
 - [x] a corregir: Debe corregirse el f29 de este mes y colocar en el código 039 el valor de 1409
 - [ ] rcv
@@ -1626,6 +1668,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'>  </p>
 <br> 
+- [x] antiguo número de partida:  
 - [x] tipo de asiento: 33
 - [ ] rcv
 - [ ] libro-diario
@@ -1652,6 +1695,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'>  </p>
 <br> 
+- [x] antiguo número de partida:  
 - [x] tipo de asiento: 33
 - [ ] rcv
 - [ ] libro-diario
@@ -1678,6 +1722,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <p style='color: white; background-color: red'> Fuera de plazo</p>
 <br> 
 - [x] rechazado: Partida rechazada por SII, significa que si la dejamos nos podría generar multas o que no tendría el efecto deseado. Así que solo podemos quitarla de SII, pero eso requiere rectificar el f29 y eso nos generaría multas. Por ejemplo, una nota de crédito que no descuente monto imponible, aunque esté en registro de compra-venta. El F22 al año siguiente no incluirá estos DTE. No es lo mismo que gasto rechazado. También podríamos declararla como no-incluir, pero eso no conveniente, pues todo debe estar en la contabilidad de la empresa, pera que sea fidedigna. Hay casos donde se declara un gasto para el que no hay boleta de respaldo, eso es muy crítico y sí será rechazado, y además la contabilidad financiera objetada. El caso de las facturas de compra 45 a proveedor extranjero es parecido, pero ahora sé como se hace. 
+- [x] antiguo número de partida:  
 - [x] tipo de asiento: 33
 - [x] a corregir: Fuera de plazo
 - [ ] rcv
@@ -1707,6 +1752,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'>  </p>
 <br> 
+- [x] antiguo número de partida:  
 - [x] tipo de asiento: 33
 - [ ] rcv
 - [ ] libro-diario
@@ -1735,6 +1781,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <p style='color: white; background-color: red'> La reclamé (fue un error) en el LIBRO DE COMPRA-VENTA</p>
 <br> 
 - [x] no-incluir: Partida que estando en RCV SII se estimó no incluir en la contabilidad financiera
+- [x] antiguo número de partida:  
 - [x] tipo de asiento: 33
 - [x] a corregir: La reclamé (fue un error) en el LIBRO DE COMPRA-VENTA
 - [ ] rcv
@@ -1759,6 +1806,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'>  </p>
 <br> 
+- [x] antiguo número de partida:  
 - [x] tipo de asiento: 33
 - [ ] rcv
 - [ ] libro-diario
@@ -1786,6 +1834,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'>  </p>
 <br> 
+- [x] antiguo número de partida:  
 - [x] tipo de asiento: 33
 - [ ] rcv
 - [ ] libro-diario
@@ -1814,6 +1863,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'>  </p>
 <br> 
+- [x] antiguo número de partida:  
 - [x] tipo de asiento: 33
 - [ ] rcv
 - [ ] libro-diario
@@ -1842,6 +1892,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'> No se permite en el registroempresas.cl ingresar un capital en otra forma que no sea efectivo</p>
 <br> 
+- [x] antiguo número de partida:  
 - [x] tipo de asiento: 33
 - [x] a corregir: No se permite en el registroempresas.cl ingresar un capital en otra forma que no sea efectivo
 - [ ] rcv
@@ -1866,6 +1917,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'>  </p>
 <br> 
+- [x] antiguo número de partida:  
 - [x] tipo de asiento: 33
 - [ ] rcv
 - [ ] libro-diario
@@ -1893,6 +1945,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'>  </p>
 <br> 
+- [x] antiguo número de partida:  
 - [x] tipo de asiento: 33
 - [ ] rcv
 - [ ] libro-diario
@@ -1920,6 +1973,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'>  </p>
 <br> 
+- [x] antiguo número de partida:  
 - [x] tipo de asiento: 34
 - [ ] rcv
 - [ ] libro-diario
@@ -1947,6 +2001,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'>  </p>
 <br> 
+- [x] antiguo número de partida:  
 - [x] tipo de asiento: 33
 - [ ] rcv
 - [ ] libro-diario
@@ -1974,6 +2029,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'>  </p>
 <br> 
+- [x] antiguo número de partida:  
 - [x] tipo de asiento: 33
 - [ ] rcv
 - [ ] libro-diario
@@ -2002,6 +2058,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'>  </p>
 <br> 
+- [x] antiguo número de partida:  
 - [x] tipo de asiento: 33
 - [ ] rcv
 - [ ] libro-diario
@@ -2028,6 +2085,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'>  </p>
 <br> 
+- [x] antiguo número de partida:  
 - [x] tipo de asiento: 33
 - [ ] rcv
 - [ ] libro-diario
@@ -2056,6 +2114,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'>  </p>
 <br> 
+- [x] antiguo número de partida:  
 - [x] tipo de asiento: 33
 - [ ] rcv
 - [ ] libro-diario
@@ -2084,6 +2143,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'>  </p>
 <br> 
+- [x] antiguo número de partida:  
 - [x] tipo de asiento: 41
 - [ ] rcv
 - [ ] libro-diario
@@ -2109,6 +2169,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'>  </p>
 <br> 
+- [x] antiguo número de partida:  
 - [x] tipo de asiento: 61
 - [ ] rcv
 - [ ] libro-diario
@@ -2137,6 +2198,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'>  </p>
 <br> 
+- [x] antiguo número de partida:  
 - [x] tipo de asiento: 33
 - [ ] rcv
 - [ ] libro-diario
@@ -2165,6 +2227,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'>  </p>
 <br> 
+- [x] antiguo número de partida:  
 - [x] tipo de asiento: 33
 - [ ] rcv
 - [ ] libro-diario
@@ -2192,6 +2255,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'>  </p>
 <br> 
+- [x] antiguo número de partida:  
 - [x] tipo de asiento: 33
 - [ ] rcv
 - [ ] libro-diario
@@ -2219,6 +2283,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'>  </p>
 <br> 
+- [x] antiguo número de partida:  
 - [x] tipo de asiento: 33
 - [ ] rcv
 - [ ] libro-diario
@@ -2247,6 +2312,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <p style='color: white; background-color: red'> La emití a nombre de alectrico pero  no anulé la nota que se recibe en consecuencia</p>
 <br> 
 - [x] rechazado: Partida rechazada por SII, significa que si la dejamos nos podría generar multas o que no tendría el efecto deseado. Así que solo podemos quitarla de SII, pero eso requiere rectificar el f29 y eso nos generaría multas. Por ejemplo, una nota de crédito que no descuente monto imponible, aunque esté en registro de compra-venta. El F22 al año siguiente no incluirá estos DTE. No es lo mismo que gasto rechazado. También podríamos declararla como no-incluir, pero eso no conveniente, pues todo debe estar en la contabilidad de la empresa, pera que sea fidedigna. Hay casos donde se declara un gasto para el que no hay boleta de respaldo, eso es muy crítico y sí será rechazado, y además la contabilidad financiera objetada. El caso de las facturas de compra 45 a proveedor extranjero es parecido, pero ahora sé como se hace. 
+- [x] antiguo número de partida:  
 - [x] tipo de asiento: nota-de-credito
 - [x] a corregir: La emití a nombre de alectrico pero  no anulé la nota que se recibe en consecuencia
 - [x] rcv
@@ -2275,6 +2341,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'>  </p>
 <br> 
+- [x] antiguo número de partida:  
 - [x] tipo de asiento: 33
 - [ ] rcv
 - [ ] libro-diario
@@ -2303,6 +2370,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'>  </p>
 <br> 
+- [x] antiguo número de partida:  
 - [x] tipo de asiento: 33
 - [ ] rcv
 - [ ] libro-diario
@@ -2331,6 +2399,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'> Rectificar f29 de julio y colocar en código 039 el valor de 22199</p>
 <br> 
+- [x] antiguo número de partida:  
 - [x] tipo de asiento: ajuste-hecho-n
 - [x] a corregir: Rectificar f29 de julio y colocar en código 039 el valor de 22199
 - [ ] rcv
@@ -2355,6 +2424,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'>  </p>
 <br> 
+- [x] antiguo número de partida:  
 - [x] tipo de asiento: 33
 - [ ] rcv
 - [ ] libro-diario
@@ -2381,6 +2451,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'>  </p>
 <br> 
+- [x] antiguo número de partida:  
 - [x] tipo de asiento: 33
 - [ ] rcv
 - [ ] libro-diario
@@ -2407,6 +2478,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'>  </p>
 <br> 
+- [x] antiguo número de partida:  
 - [x] tipo de asiento: 34
 - [ ] rcv
 - [ ] libro-diario
@@ -2434,6 +2506,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'>  </p>
 <br> 
+- [x] antiguo número de partida:  
 - [x] tipo de asiento: 33
 - [ ] rcv
 - [ ] libro-diario
@@ -2461,6 +2534,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'>  </p>
 <br> 
+- [x] antiguo número de partida:  
 - [x] tipo de asiento: 33
 - [ ] rcv
 - [ ] libro-diario
@@ -2488,6 +2562,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'>  </p>
 <br> 
+- [x] antiguo número de partida:  
 - [x] tipo de asiento: 33
 - [ ] rcv
 - [ ] libro-diario
@@ -2515,6 +2590,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'> Cambiar la regla a otra que contemple la cuenta</p>
 <br> 
+- [x] antiguo número de partida:  
 - [x] tipo de asiento: 61
 - [x] a corregir: Cambiar la regla a otra que contemple la cuenta
 - [ ] rcv
@@ -2543,6 +2619,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'>  </p>
 <br> 
+- [x] antiguo número de partida:  
 - [x] tipo de asiento: 33
 - [ ] rcv
 - [ ] libro-diario
@@ -2571,6 +2648,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'>  </p>
 <br> 
+- [x] antiguo número de partida:  
 - [x] tipo de asiento: 33
 - [ ] rcv
 - [ ] libro-diario
@@ -2598,6 +2676,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'>  </p>
 <br> 
+- [x] antiguo número de partida:  
 - [x] tipo de asiento: 33
 - [ ] rcv
 - [ ] libro-diario
@@ -2626,6 +2705,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <p style='color: white; background-color: red'> No lo incluí a tiempo</p>
 <br> 
 - [x] rechazado: Partida rechazada por SII, significa que si la dejamos nos podría generar multas o que no tendría el efecto deseado. Así que solo podemos quitarla de SII, pero eso requiere rectificar el f29 y eso nos generaría multas. Por ejemplo, una nota de crédito que no descuente monto imponible, aunque esté en registro de compra-venta. El F22 al año siguiente no incluirá estos DTE. No es lo mismo que gasto rechazado. También podríamos declararla como no-incluir, pero eso no conveniente, pues todo debe estar en la contabilidad de la empresa, pera que sea fidedigna. Hay casos donde se declara un gasto para el que no hay boleta de respaldo, eso es muy crítico y sí será rechazado, y además la contabilidad financiera objetada. El caso de las facturas de compra 45 a proveedor extranjero es parecido, pero ahora sé como se hace. 
+- [x] antiguo número de partida:  
 - [x] tipo de asiento: 45
 - [x] a corregir: No lo incluí a tiempo
 - [ ] rcv
@@ -2653,6 +2733,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'>  </p>
 <br> 
+- [x] antiguo número de partida:  
 - [x] tipo de asiento: 33
 - [ ] rcv
 - [ ] libro-diario
@@ -2680,6 +2761,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'>  </p>
 <br> 
+- [x] antiguo número de partida:  
 - [x] tipo de asiento: 33
 - [ ] rcv
 - [ ] libro-diario
@@ -2707,6 +2789,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'> Esta representación digital no está disponible para bajar en SII, ya hice una solicitud para no me dijeron nada importante</p>
 <br> 
+- [x] antiguo número de partida:  
 - [x] tipo de asiento: 33
 - [x] a corregir: Esta representación digital no está disponible para bajar en SII, ya hice una solicitud para no me dijeron nada importante
 - [ ] rcv
@@ -2735,6 +2818,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <p style='color: white; background-color: red'> Adjuntar factura</p>
 <br> 
 - [x] rechazado: Partida rechazada por SII, significa que si la dejamos nos podría generar multas o que no tendría el efecto deseado. Así que solo podemos quitarla de SII, pero eso requiere rectificar el f29 y eso nos generaría multas. Por ejemplo, una nota de crédito que no descuente monto imponible, aunque esté en registro de compra-venta. El F22 al año siguiente no incluirá estos DTE. No es lo mismo que gasto rechazado. También podríamos declararla como no-incluir, pero eso no conveniente, pues todo debe estar en la contabilidad de la empresa, pera que sea fidedigna. Hay casos donde se declara un gasto para el que no hay boleta de respaldo, eso es muy crítico y sí será rechazado, y además la contabilidad financiera objetada. El caso de las facturas de compra 45 a proveedor extranjero es parecido, pero ahora sé como se hace. 
+- [x] antiguo número de partida:  
 - [x] tipo de asiento: 33
 - [x] a corregir: Adjuntar factura
 - [ ] rcv
@@ -2764,6 +2848,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'>  </p>
 <br> 
+- [x] antiguo número de partida:  
 - [x] tipo de asiento: 33
 - [ ] rcv
 - [ ] libro-diario
@@ -2792,6 +2877,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'>  </p>
 <br> 
+- [x] antiguo número de partida:  
 - [x] tipo de asiento: 61
 - [ ] rcv
 - [ ] libro-diario
@@ -2820,6 +2906,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'>  </p>
 <br> 
+- [x] antiguo número de partida:  
 - [x] tipo de asiento: 33
 - [ ] rcv
 - [ ] libro-diario
@@ -2848,6 +2935,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'>  </p>
 <br> 
+- [x] antiguo número de partida:  
 - [x] tipo de asiento: 61
 - [ ] rcv
 - [ ] libro-diario
@@ -2874,6 +2962,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'>  </p>
 <br> 
+- [x] antiguo número de partida:  
 - [x] tipo de asiento: 34
 - [ ] rcv
 - [ ] libro-diario
@@ -2901,6 +2990,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'>  </p>
 <br> 
+- [x] antiguo número de partida:  
 - [x] tipo de asiento: 33
 - [ ] rcv
 - [ ] libro-diario
@@ -2930,6 +3020,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'>  </p>
 <br> 
+- [x] antiguo número de partida:  
 - [x] tipo de asiento: 33
 - [ ] rcv
 - [ ] libro-diario
@@ -2957,6 +3048,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'>  </p>
 <br> 
+- [x] antiguo número de partida:  
 - [x] tipo de asiento: 33
 - [ ] rcv
 - [ ] libro-diario
@@ -2978,6 +3070,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'>  </p>
 <br> 
+- [x] antiguo número de partida:  
 - [x] tipo de asiento: 33
 - [ ] rcv
 - [ ] libro-diario
@@ -3004,6 +3097,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'>  </p>
 <br> 
+- [x] antiguo número de partida:  
 - [x] tipo de asiento: 34
 - [ ] rcv
 - [ ] libro-diario
@@ -3032,6 +3126,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'>  </p>
 <br> 
+- [x] antiguo número de partida:  
 - [x] tipo de asiento: 61
 - [ ] rcv
 - [ ] libro-diario
@@ -3059,6 +3154,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'>  </p>
 <br> 
+- [x] antiguo número de partida:  
 - [x] tipo de asiento: ajuste-iva
 - [ ] rcv
 - [ ] libro-diario
@@ -3087,6 +3183,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'>  </p>
 <br> 
+- [x] antiguo número de partida:  
 - [x] tipo de asiento: ajuste-remanente
 - [ ] rcv
 - [ ] libro-diario
@@ -3113,6 +3210,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'>  </p>
 <br> 
+- [x] antiguo número de partida:  
 - [x] tipo de asiento: amortizacion
 - [ ] rcv
 - [ ] libro-diario
@@ -3141,6 +3239,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'>  </p>
 <br> 
+- [x] antiguo número de partida:  
 - [ ] rcv
 - [ ] libro-diario
 - [ ] ccm
@@ -3168,6 +3267,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'>  </p>
 <br> 
+- [x] antiguo número de partida:  
 - [x] tipo de asiento: 33
 - [ ] rcv
 - [ ] libro-diario
@@ -3195,6 +3295,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'>  </p>
 <br> 
+- [x] antiguo número de partida:  
 - [x] tipo de asiento: 33
 - [ ] rcv
 - [ ] libro-diario
@@ -3224,6 +3325,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'>  </p>
 <br> 
+- [x] antiguo número de partida:  
 - [x] tipo de asiento: 33
 - [ ] rcv
 - [ ] libro-diario
@@ -3252,6 +3354,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'>  </p>
 <br> 
+- [x] antiguo número de partida:  
 - [x] tipo de asiento: 34
 - [ ] rcv
 - [ ] libro-diario
@@ -3279,6 +3382,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <p style='color: white; background-color: red'> No corresponde incluir, pues se emitieron documentos de pago contado</p>
 <br> 
 - [x] no-incluir: Partida que estando en RCV SII se estimó no incluir en la contabilidad financiera
+- [x] antiguo número de partida:  
 - [x] tipo de asiento: traspaso
 - [x] a corregir: No corresponde incluir, pues se emitieron documentos de pago contado
 - [ ] rcv
@@ -3302,6 +3406,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'>  </p>
 <br> 
+- [x] antiguo número de partida:  
 - [x] tipo de asiento: amortizacion
 - [ ] rcv
 - [ ] libro-diario
@@ -3327,6 +3432,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'>  </p>
 <br> 
+- [x] antiguo número de partida:  
 - [x] tipo de asiento: control-activo
 - [ ] rcv
 - [ ] libro-diario
@@ -3351,6 +3457,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'>  </p>
 <br> 
+- [x] antiguo número de partida:  
 - [x] tipo de asiento: 33
 - [ ] rcv
 - [ ] libro-diario
@@ -3378,6 +3485,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <p style='color: white; background-color: red'> Está repetido en los facts.</p>
 <br> 
 - [x] no-incluir: Partida que estando en RCV SII se estimó no incluir en la contabilidad financiera
+- [x] antiguo número de partida:  
 - [x] tipo de asiento: 33
 - [x] a corregir: Está repetido en los facts.
 - [ ] rcv
@@ -3402,6 +3510,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'>  </p>
 <br> 
+- [x] antiguo número de partida:  
 - [x] tipo de asiento: 33
 - [ ] rcv
 - [ ] libro-diario
@@ -3428,6 +3537,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'>  </p>
 <br> 
+- [x] antiguo número de partida:  
 - [x] tipo de asiento: 33
 - [ ] rcv
 - [ ] libro-diario
@@ -3455,6 +3565,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <p style='color: white; background-color: red'> No alcancé a incluirla en el registro de compra-venta</p>
 <br> 
 - [x] rechazado: Partida rechazada por SII, significa que si la dejamos nos podría generar multas o que no tendría el efecto deseado. Así que solo podemos quitarla de SII, pero eso requiere rectificar el f29 y eso nos generaría multas. Por ejemplo, una nota de crédito que no descuente monto imponible, aunque esté en registro de compra-venta. El F22 al año siguiente no incluirá estos DTE. No es lo mismo que gasto rechazado. También podríamos declararla como no-incluir, pero eso no conveniente, pues todo debe estar en la contabilidad de la empresa, pera que sea fidedigna. Hay casos donde se declara un gasto para el que no hay boleta de respaldo, eso es muy crítico y sí será rechazado, y además la contabilidad financiera objetada. El caso de las facturas de compra 45 a proveedor extranjero es parecido, pero ahora sé como se hace. 
+- [x] antiguo número de partida:  
 - [x] tipo de asiento: 33
 - [x] a corregir: No alcancé a incluirla en el registro de compra-venta
 - [ ] rcv
@@ -3484,6 +3595,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'>  </p>
 <br> 
+- [x] antiguo número de partida:  
 - [x] tipo de asiento: 33
 - [ ] rcv
 - [ ] libro-diario
@@ -3510,6 +3622,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'>  </p>
 <br> 
+- [x] antiguo número de partida:  
 - [x] tipo de asiento: 33
 - [ ] rcv
 - [ ] libro-diario
@@ -3536,6 +3649,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'>  </p>
 <br> 
+- [x] antiguo número de partida:  
 - [x] tipo de asiento: 33
 - [ ] rcv
 - [ ] libro-diario
@@ -3563,6 +3677,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'>  </p>
 <br> 
+- [x] antiguo número de partida:  
 - [x] tipo de asiento: 33
 - [ ] rcv
 - [ ] libro-diario
@@ -3590,6 +3705,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'>  </p>
 <br> 
+- [x] antiguo número de partida:  
 - [x] tipo de asiento: ajuste-iva
 - [ ] rcv
 - [ ] libro-diario
@@ -3617,6 +3733,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'>  </p>
 <br> 
+- [x] antiguo número de partida:  
 - [x] tipo de asiento: 33
 - [ ] rcv
 - [ ] libro-diario
@@ -3645,6 +3762,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'>  </p>
 <br> 
+- [x] antiguo número de partida:  
 - [x] tipo de asiento: 33
 - [ ] rcv
 - [ ] libro-diario
@@ -3670,6 +3788,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'>  </p>
 <br> 
+- [x] antiguo número de partida:  
 - [x] tipo de asiento: 33
 - [ ] rcv
 - [ ] libro-diario
@@ -3697,6 +3816,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'>  </p>
 <br> 
+- [x] antiguo número de partida:  
 - [x] tipo de asiento: 33
 - [ ] rcv
 - [ ] libro-diario
@@ -3725,6 +3845,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'>  </p>
 <br> 
+- [x] antiguo número de partida:  
 - [x] tipo de asiento: 33
 - [ ] rcv
 - [ ] libro-diario
@@ -3751,6 +3872,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <p style='color: white; background-color: red'> No fue incluido en el f29 de octubre en el código 142</p>
 <br> 
 - [x] rechazado: Partida rechazada por SII, significa que si la dejamos nos podría generar multas o que no tendría el efecto deseado. Así que solo podemos quitarla de SII, pero eso requiere rectificar el f29 y eso nos generaría multas. Por ejemplo, una nota de crédito que no descuente monto imponible, aunque esté en registro de compra-venta. El F22 al año siguiente no incluirá estos DTE. No es lo mismo que gasto rechazado. También podríamos declararla como no-incluir, pero eso no conveniente, pues todo debe estar en la contabilidad de la empresa, pera que sea fidedigna. Hay casos donde se declara un gasto para el que no hay boleta de respaldo, eso es muy crítico y sí será rechazado, y además la contabilidad financiera objetada. El caso de las facturas de compra 45 a proveedor extranjero es parecido, pero ahora sé como se hace. 
+- [x] antiguo número de partida:  
 - [x] tipo de asiento: 33
 - [x] a corregir: No fue incluido en el f29 de octubre en el código 142
 - [ ] rcv
@@ -3779,6 +3901,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'>  </p>
 <br> 
+- [x] antiguo número de partida:  
 - [x] tipo de asiento: 33
 - [ ] rcv
 - [ ] libro-diario
@@ -3806,6 +3929,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'>  </p>
 <br> 
+- [x] antiguo número de partida:  
 - [x] tipo de asiento: 33
 - [ ] rcv
 - [ ] libro-diario
@@ -3832,6 +3956,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'>  </p>
 <br> 
+- [x] antiguo número de partida:  
 - [x] tipo de asiento: 33
 - [ ] rcv
 - [ ] libro-diario
@@ -3859,6 +3984,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <p style='color: white; background-color: red'> Fuera de Plazo</p>
 <br> 
 - [x] rechazado: Partida rechazada por SII, significa que si la dejamos nos podría generar multas o que no tendría el efecto deseado. Así que solo podemos quitarla de SII, pero eso requiere rectificar el f29 y eso nos generaría multas. Por ejemplo, una nota de crédito que no descuente monto imponible, aunque esté en registro de compra-venta. El F22 al año siguiente no incluirá estos DTE. No es lo mismo que gasto rechazado. También podríamos declararla como no-incluir, pero eso no conveniente, pues todo debe estar en la contabilidad de la empresa, pera que sea fidedigna. Hay casos donde se declara un gasto para el que no hay boleta de respaldo, eso es muy crítico y sí será rechazado, y además la contabilidad financiera objetada. El caso de las facturas de compra 45 a proveedor extranjero es parecido, pero ahora sé como se hace. 
+- [x] antiguo número de partida:  
 - [x] tipo de asiento: 33
 - [x] a corregir: Fuera de Plazo
 - [ ] rcv
@@ -3887,6 +4013,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'>  </p>
 <br> 
+- [x] antiguo número de partida:  
 - [x] tipo de asiento: 33
 - [ ] rcv
 - [ ] libro-diario
@@ -3916,6 +4043,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <p style='color: white; background-color: red'> No se puede tener cuentas por cobrar a menos que se haya vendido al contado</p>
 <br> 
 - [x] no-incluir: Partida que estando en RCV SII se estimó no incluir en la contabilidad financiera
+- [x] antiguo número de partida:  
 - [x] tipo de asiento: 33
 - [x] a corregir: No se puede tener cuentas por cobrar a menos que se haya vendido al contado
 - [ ] rcv
@@ -3939,6 +4067,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'>  </p>
 <br> 
+- [x] antiguo número de partida:  
 - [x] tipo de asiento: 33
 - [ ] rcv
 - [ ] libro-diario
@@ -3965,6 +4094,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'>  </p>
 <br> 
+- [x] antiguo número de partida:  
 - [x] tipo de asiento: 33
 - [ ] rcv
 - [ ] libro-diario
@@ -3990,6 +4120,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'>  </p>
 <br> 
+- [x] antiguo número de partida:  
 - [x] tipo de asiento: 33
 - [ ] rcv
 - [ ] libro-diario
@@ -4018,6 +4149,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'>  </p>
 <br> 
+- [x] antiguo número de partida:  
 - [x] tipo de asiento: 34
 - [ ] rcv
 - [ ] libro-diario
@@ -4044,6 +4176,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'>  </p>
 <br> 
+- [x] antiguo número de partida:  
 - [x] tipo de asiento: 34
 - [ ] rcv
 - [ ] libro-diario
@@ -4071,6 +4204,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'>  </p>
 <br> 
+- [x] antiguo número de partida:  
 - [ ] rcv
 - [ ] libro-diario
 - [ ] ccm
@@ -4097,6 +4231,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'>  </p>
 <br> 
+- [x] antiguo número de partida:  
 - [ ] rcv
 - [ ] libro-diario
 - [ ] ccm
@@ -4124,6 +4259,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'>  </p>
 <br> 
+- [x] antiguo número de partida:  
 - [ ] rcv
 - [ ] libro-diario
 - [ ] ccm
@@ -4150,6 +4286,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'>  </p>
 <br> 
+- [x] antiguo número de partida:  
 - [ ] rcv
 - [ ] libro-diario
 - [ ] ccm
@@ -4176,6 +4313,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'>  </p>
 <br> 
+- [x] antiguo número de partida:  
 - [ ] rcv
 - [ ] libro-diario
 - [ ] ccm
@@ -4201,6 +4339,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'>  </p>
 <br> 
+- [x] antiguo número de partida:  
 - [ ] rcv
 - [ ] libro-diario
 - [ ] ccm
@@ -4223,6 +4362,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'>  </p>
 <br> 
+- [x] antiguo número de partida:  
 - [ ] rcv
 - [ ] libro-diario
 - [ ] ccm
@@ -4248,6 +4388,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'>  </p>
 <br> 
+- [x] antiguo número de partida:  
 - [ ] rcv
 - [ ] libro-diario
 - [ ] ccm
@@ -4274,6 +4415,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'>  </p>
 <br> 
+- [x] antiguo número de partida:  
 - [ ] rcv
 - [ ] libro-diario
 - [ ] ccm
@@ -4300,6 +4442,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'>  </p>
 <br> 
+- [x] antiguo número de partida:  
 - [ ] rcv
 - [ ] libro-diario
 - [ ] ccm
@@ -4326,6 +4469,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'>  </p>
 <br> 
+- [x] antiguo número de partida:  
 - [ ] rcv
 - [ ] libro-diario
 - [ ] ccm
@@ -4353,6 +4497,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'>  </p>
 <br> 
+- [x] antiguo número de partida:  
 - [ ] rcv
 - [ ] libro-diario
 - [ ] ccm
@@ -4380,6 +4525,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'>  </p>
 <br> 
+- [x] antiguo número de partida:  
 - [ ] rcv
 - [ ] libro-diario
 - [ ] ccm
@@ -4407,6 +4553,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <p style='color: white; background-color: red'> Reclamado en SII</p>
 <br> 
 - [x] no-incluir: Partida que estando en RCV SII se estimó no incluir en la contabilidad financiera
+- [x] antiguo número de partida:  
 - [x] tipo de asiento: 33
 - [x] folio: 44204963
 - [x] a corregir: Reclamado en SII
@@ -4432,6 +4579,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'>  </p>
 <br> 
+- [x] antiguo número de partida:  
 - [x] tipo de asiento: 33
 - [x] folio: 44123442
 - [ ] rcv
@@ -4461,6 +4609,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <p style='color: white; background-color: red'> Lo reclamé por error en CCM de SII. No tiene efecto en mi contabilidad</p>
 <br> 
 - [x] no-incluir: Partida que estando en RCV SII se estimó no incluir en la contabilidad financiera
+- [x] antiguo número de partida:  
 - [x] tipo de asiento: 61
 - [x] a corregir: Lo reclamé por error en CCM de SII. No tiene efecto en mi contabilidad
 - [ ] rcv
@@ -4485,6 +4634,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'>  </p>
 <br> 
+- [x] antiguo número de partida:  
 - [ ] rcv
 - [ ] libro-diario
 - [ ] ccm
@@ -4508,6 +4658,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'>  </p>
 <br> 
+- [x] antiguo número de partida:  
 - [ ] rcv
 - [ ] libro-diario
 - [ ] ccm
@@ -4530,6 +4681,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'>  </p>
 <br> 
+- [x] antiguo número de partida:  
 - [ ] rcv
 - [ ] libro-diario
 - [ ] ccm
@@ -4557,6 +4709,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'>  </p>
 <br> 
+- [x] antiguo número de partida:  
 - [ ] rcv
 - [ ] libro-diario
 - [ ] ccm
@@ -4579,6 +4732,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'>  </p>
 <br> 
+- [x] antiguo número de partida:  
 - [ ] rcv
 - [ ] libro-diario
 - [ ] ccm
@@ -4604,6 +4758,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'>  </p>
 <br> 
+- [x] antiguo número de partida:  
 - [ ] rcv
 - [ ] libro-diario
 - [ ] ccm
@@ -4628,6 +4783,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'>  </p>
 <br> 
+- [x] antiguo número de partida:  
 - [x] tipo de asiento: f-29
 - [ ] rcv
 - [ ] libro-diario
