@@ -187,6 +187,7 @@
 
 (defrule calculo-de-descuentos-legales
    ( empresa (nombre ?empresa))
+   ( selecciones (remuneraciones-aparte ?remuneraciones-aparte))
    ( exists ( salario (nombre ?nombre)))
    ( exists ( contrato (trabajador ?nombre)))
    ( remuneracion
@@ -238,16 +239,16 @@
   =>
 
 
-  ( if (neq nil k) then (close k))
-   ( bind ?archivo (str-cat "./doc/" ?empresa "/" ?ano "-" ?mes "-remuneraciones.markdown"))
-
-   ( open ?archivo k "w")
-
-   ( printout k "--- " crlf)
-  ;( printout k "title: Liquidación" crlf)
-   ( printout k "permalink: /" ?empresa "/" ?mes "-remuneraciones " crlf)
-   ( printout k "layout: page" crlf)
-   ( printout k "--- " crlf)
+  ( if (and  (neq nil k) (eq true ?remuneraciones-aparte) ) then
+     (close k)
+     ( bind ?archivo (str-cat "./doc/" ?empresa "/" ?ano "-" ?mes "-remuneraciones.markdown"))
+     ( open ?archivo k "w")
+     ( printout k "--- " crlf)
+    ;( printout k "title: Liquidación" crlf)
+     ( printout k "permalink: /" ?empresa "/" ?mes "-remuneraciones " crlf)
+     ( printout k "layout: page" crlf)
+     ( printout k "--- " crlf)
+   )
 
    ( printout k "<h3> Liquidación de Sueldo Mensual </h3> <small>" ?ano "-" ?mes "</small>" crlf)
 

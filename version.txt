@@ -1,1 +1,1 @@
-(version (id 2) (version f22) (asin T) (mes diciembre))
+(version (id 2) (version remuneraciones) (asin R) (mes enero))

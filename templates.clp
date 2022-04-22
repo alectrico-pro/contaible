@@ -124,6 +124,7 @@
 
 
 (deftemplate selecciones
+ (slot remuneraciones-aparte (default false))
  (slot nombre-de-archivo-k (default ""))
  (slot archivo-unico-markdown (default false))
  (slot abonar-deudoras (default false))
