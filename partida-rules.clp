@@ -802,20 +802,38 @@
 
 ;============================== Registro de Accionistas ================================
 (defrule encabezado-de-registro-de-accionistas
-  (exists ( registro-de-accionistas))
+  ( declare (salience 65))
+
+  ( fila ?numero )
+  ( partida (numero ?numero))
+  (exists  ( registro-de-accionistas (partida ?numero) (mostrado-en-partida false) ))
 
  =>
   ( printout t "==================================================================" crlf)
   ( printout t "Registro de Acccionistas")
   ( printout t ".................................................................." crlf)
   ( printout t crlf)
+  ( printout k " <tr> <td>  nombre </td> <td align='right'>  No. Acc.  </td> <td> total </td> </tr>" crlf)
+
+  ( printout d " <tr> <td>  nombre </td> <td align='right'>  No. Acc.  </td> <td> total </td> </tr>" crlf)
+
+  ( printout l " <tr> <td>  nombre </td> <td align='right'>  No. Acc.  </td> <td> total </td> </tr>" crlf)
+
+  ( printout h " <tr> <td>  nombre </td> <td align='right'>  No. Acc.  </td> <td> total </td> </tr>" crlf)
+
+
+
 )
 
 
 (defrule muestra-registro-de-accionistas
-   ?f <-  ( registro-de-accionistas (nombre ?nombre) (mostrado-en-partida false) )
+   ( declare (salience 64))
+   ( fila ?numero )
+   ?partida <-   ( partida (numero ?numero) (debe ?debe) (haber ?haber))
+   ?f <-  ( registro-de-accionistas (partida ?numero) (nombre ?nombre) (mostrado-en-partida false) )
    ( accionista (nombre ?nombre) (domicilio ?domicilio) (rut ?rut) (mes ?mes) (ano ?ano) (numero-de-acciones ?numero-de-acciones) (valor-nominal ?valor-nominal))
   =>
+   ( printout t ?numero crlf)
    ( printout t "Nombre:       " ?nombre crlf)
    ( printout t "RUT:          " ?rut crlf)
    ( printout t "Domicilio:    " ?domicilio crlf)
@@ -824,7 +842,15 @@
    ( printout t "Valor Nominal " ?valor-nominal crlf)
    ( printout t "--------------------------------" crlf)
    ( printout t crlf)
+
+
+   ( printout k " <tr> <td> " ?nombre " </td> <td align='right'>  " ?numero-de-acciones " </td> <td> " ?valor-nominal " </td> </tr>" crlf)
+   ( printout d " <tr> <td> " ?nombre " </td> <td align='right'>  " ?numero-de-acciones " </td> <td> " ?valor-nominal " </td> </tr>" crlf)
+  ( printout l " <tr>  <td> " ?nombre " </td> <td align='right'>  " ?numero-de-acciones " </td> <td> " ?valor-nominal " </td> </tr>" crlf)
+   ( printout h " <tr>  <td> " ?nombre " </td> <td align='right'>  " ?numero-de-acciones " </td> <td> " ?valor-nominal " </td> </tr>" crlf)
+
    ( modify ?f (mostrado-en-partida true))
+
 )
 
 

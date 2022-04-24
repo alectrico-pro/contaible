@@ -13,27 +13,32 @@
 
 
 
-(balance (dia 31) (mes diciembre) (ano 2021))
+
+(balance (dia 31) (mes enero) (ano 2021))
 
 ;dia 01/01/2021---------- asiento inicial  ----------------
 
-(registro-de-accionistas
-  (partida 001)
-  (nombre comu)
-)
+(partida
+ (numero 001)
+ (dia 1) (mes enero) (ano 2021)
+ (descripcion "Por Registro de Accionistas en 2021")
+ (actividad registro-de-accionistas))
 
-(registro-de-accionistas
-  (partida 001)
-  (nombre cangrejo)
-)
 
 (registro-de-accionistas
   (partida 001)
   (nombre alexander)
 )
 
+
+
+
+
+
+;asiento inicial -----------------------------------------------------
+
 (partida
- (numero 001)
+ (numero 002)
  (dia 1) (mes enero) (ano 2021)
  (descripcion "Por Inicio de Operaciones en 2021")
  (actividad ajuste))
@@ -45,7 +50,7 @@
  ( empresa alectrico-2021)
  ( cuenta caja)  
  ( monto  1050209)
- ( partida 001)
+ ( partida 002)
  ( dia 1)  ( mes enero)  ( ano 2021)
  ( glosa asiento-inicial))
 
@@ -55,7 +60,7 @@
  ( empresa alectrico-2021)
  ( cuenta banco-estado)                  
  ( monto  691827)
- ( partida 001)
+ ( partida 002)
  ( dia 1) ( mes enero) ( ano 2021)
  ( glosa asiento-inicial))
 
@@ -65,7 +70,7 @@
  ( empresa alectrico-2021)
  ( cuenta materiales)
  ( monto  44044)
- ( partida 001)
+ ( partida 002)
  ( dia 1) ( mes enero) ( ano 2021)
  ( glosa asiento-inicial))
 
@@ -75,7 +80,7 @@
  ( empresa alectrico-2021)
  ( cuenta iva-credito)
  ( monto  10909)  ;volver a colocar 10909
- ( partida 001)
+ ( partida 002)
  ( dia 1) ( mes enero) ( ano 2021)
  ( glosa asiento-inicial))
 
@@ -85,7 +90,7 @@
  ( empresa alectrico-2021)
  ( cuenta ppm)
  ( monto  721)
- ( partida 001)
+ ( partida 002)
  ( dia 1) ( mes enero) ( ano 2021)
  ( glosa asiento-inicial))
 
@@ -93,7 +98,7 @@
  ( electronico false)
  ( tipo-de-documento escritura-empresa)
  ( empresa alectrico-2021)
- ( partida 001)
+ ( partida 002)
  ( dia 1) (mes enero) (ano 2021)
  ( cuenta capital-social)
  ( monto  2000000)
@@ -103,7 +108,7 @@
  ( electronico false)
  ( tipo-de-documento escritura-empresa)
  ( empresa alectrico-2021)
- ( partida 001)
+ ( partida 002)
  ( dia 1) (mes enero) (ano 2021)
  ( cuenta utilidad-del-ejercicio-anterior)
  ( monto 85294); antiguamente 85235 
@@ -113,7 +118,7 @@
  ( electronico false)
  ( tipo-de-documento escritura-empresa)
  ( empresa alectrico-2021)
- ( partida 001)
+ ( partida 002)
  ( dia 1) (mes enero) (ano 2021)
  ( cuenta marca-alectrico)
  ( monto  290000)
@@ -123,7 +128,7 @@
  ( electronico false)
  ( tipo-de-documento escritura-empresa)
  ( empresa alectrico-2021)
- ( partida 001)
+ ( partida 002)
  ( dia 1) (mes enero) (ano 2021)
  ( cuenta amortizacion-acumulada-intangibles)
  ( monto  2416)
