@@ -997,6 +997,7 @@
    (slot hasta (default 1))
 )
 
+
 (deftemplate MAIN::partida
    (slot referencia)
    (slot hecho)

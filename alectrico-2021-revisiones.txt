@@ -481,6 +481,7 @@
 
 (revision (revisado true) (partida 127))
 
+(revision-general (partidas ))
 
 ;(revision-general (partidas 172 188 204))
 ;203

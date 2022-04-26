@@ -63,13 +63,13 @@ COPY selecciones-mobi.txt         ./
 COPY selecciones.txt              ./
 
 COPY mobi.py                      ./
-COPY contabilidad.py              ./
+#OPY contabilidad.py              ./
 
 WORKDIR .
 
 
 RUN ./mobi.py
-RUN ./contabilidad.py
+#UN ./contabilidad.py
 
 
 FROM jekyll/jekyll 

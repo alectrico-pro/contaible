@@ -168,7 +168,7 @@
 
   (retract ?ajustar)
   (modify ?balance (mes ?mes))
-  (modify ?revision-general (partidas $?partidas ))
+  (modify ?revision-general (partidas ?partidas ))
   (assert (hacer-focos) )
 )
 

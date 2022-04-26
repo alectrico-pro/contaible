@@ -83,7 +83,7 @@
       (traspaso                         (partida ?numero))
       (pedido                           (partida ?numero))
       (ajuste-anual                     (partida ?numero))
-)
+      (registro-de-accionistas          (partida ?numero))
   
 
 =>
