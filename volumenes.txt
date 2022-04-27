@@ -254,6 +254,7 @@
  (titulo "Contaible")
  (subtitulo "" )
  (contenido "Pruebas.")
+ (partidas-no-incluidas 2 216)
 )
 
 ;--------- MEJORANDO F22-----------------------------------

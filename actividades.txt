@@ -41,4 +41,6 @@
 (actividad (nombre pago-de-salarios     )          )
 (actividad (nombre traspaso             )          )
 (actividad (nombre pedido               )           )
-
+(actividad (nombre registro-de-accionistas )       )
+(actividad (nombre cargo                )          )
+(actividad (nombre abono                )          )

@@ -83,8 +83,8 @@
       (traspaso                         (partida ?numero))
       (pedido                           (partida ?numero))
       (ajuste-anual                     (partida ?numero))
+      (registro-de-accionistas          (partida ?numero))
 )
-  
 
 =>
   ( assert (ccm (partida ?numero)))
@@ -135,6 +135,7 @@
 
 
 (defrule revision-general
+(no)
   (revision-general
     (partidas $?partidas))
  =>
@@ -142,7 +143,7 @@
   (progn$  (?i ?partidas)
     (do-for-all-facts
         ((?f revision))     (eq ?i ?f:partida)
-        (modify ?f ( ignorar true  ))
+        (modify ?f ( no-incluir true  ))
         (printout t "Revisión " ?f:partida " ahora indica rechazo." crlf)) )
 )
 

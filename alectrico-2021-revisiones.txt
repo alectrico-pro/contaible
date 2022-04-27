@@ -22,7 +22,6 @@
 (revision (revisado true) (partida 8)  (old 8)     (tipo 61) (rcv true) (ccm true) (libro-diario true) (folio 29457    )  )
 (revision (revisado true) (partida 9)  (old 9)     (tipo 33) (rcv true) (ccm true) (libro-diario true) (folio 35258718 )  )
 (revision (revisado true) (partida 10) (old 10)   (tipo 33) (rcv true) (ccm true) (libro-diario true) (folio 23667281 ) )
-(revision (revisado true) (partida 11) (old 11)   (tipo 33) (rcv n-a) (ccm true) (libro-diario true) )
 (revision (revisado true) (partida 12) (old 12)  (tipo 33) (rcv true) (ccm true) (libro-diario true) (folio 109127578) )
 (revision (revisado true) (partida 13) (old 13)  (tipo 33) (rcv true) (ccm true) (libro-diario true) (folio 109127577) )
 
@@ -481,6 +480,7 @@
 
 (revision (revisado true) (partida 127))
 
+(revision-general (partidas ))
 
 ;(revision-general (partidas 172 188 204))
 ;203
