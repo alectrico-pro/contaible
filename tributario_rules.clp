@@ -91,8 +91,8 @@
 
   ( do-for-all-facts
     ((?f registro-de-depreciacion))
-    (>= (to_serial_date ?top ?mes_top ?ano_top) (to_serial_date 1 ?f:mes-de-adquisicion ?f:ano-de-adquisicion))
-    (printout t ?f:nombre-del-activo crlf)
+    (>= (to_serial_date ?top ?mes_top ?ano_top) (to_serial_date ?f:dia-de-adquisicion ?f:mes-de-adquisicion ?f:ano-de-adquisicion))
+    (printout t  activo tab ?f:nombre-del-activo tab dia-de-adquisicion tab ?f:dia-de-adquisicion tab mes-de-adquisicion tab ?f:mes-de-adquisicion tab año tab ?f:ano-de-adquisicion crlf)
     (bind ?suma-de-depreciacion (+ ?suma-de-depreciacion ?f:valor-de-adquisicion)))
 
   ( bind ?suma-de-amortizacion 0)
