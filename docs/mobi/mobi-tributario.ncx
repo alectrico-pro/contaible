@@ -163,6 +163,130 @@
         
         
         
+    
+    
+    
+          <navPoint class="section" id="1" playOrder="1">
+            <navLabel>
+              <text>Partida 1</text>
+            </navLabel>
+	    <content src="libro-diario.html#Partida-1"/>
+          </navPoint>    
+            
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+    
+    
+    
+          <navPoint class="section" id="2" playOrder="2">
+            <navLabel>
+              <text>Partida 2</text>
+            </navLabel>
+	    <content src="libro-diario.html#Partida-2"/>
+          </navPoint>    
+            
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
         
         
         
@@ -202,8 +326,19 @@
         
         
 
+
           counter += 1
-          <navPoint class="section" id="0" playOrder="0">
+          <navPoint class="section" id="0" playOrder="2">
+            <navLabel>
+              <text>Libro Mayor</text>
+            </navLabel>
+            <content src="libro-mayor.html#Inicio"/>
+            </navPoint>
+
+
+
+          counter += 1
+          <navPoint class="section" id="0" playOrder="2">
             <navLabel>
               <text>Libro Diario</text>
             </navLabel>
@@ -211,7 +346,7 @@
 	    </navPoint>
 
           counter += 1
-          <navPoint class="section" id="0" playOrder="0">
+          <navPoint class="section" id="0" playOrder="2">
             <navLabel>
               <text>Liquidacion</text>
             </navLabel>
@@ -220,7 +355,7 @@
 
 
           counter += 1
-          <navPoint class="section" id="0" playOrder="0">
+          <navPoint class="section" id="0" playOrder="2">
             <navLabel>
               <text>Balance</text>
             </navLabel>
@@ -228,7 +363,7 @@
             </navPoint>
 
           counter += 1
-          <navPoint class="section" id="0" playOrder="0">
+          <navPoint class="section" id="0" playOrder="2">
             <navLabel>
 	    <text> E-Resultados</text>
             </navLabel>
@@ -237,7 +372,7 @@
 
 
           counter += 1
-          <navPoint class="section" id="0" playOrder="0">
+          <navPoint class="section" id="0" playOrder="2">
             <navLabel>
               <text> ERes. SII</text>
             </navLabel>

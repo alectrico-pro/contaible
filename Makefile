@@ -84,7 +84,7 @@ a:
 	make sync
 
 t:  
-	make build VERSION=tributario ASIN=T MES=diciembre EMPRESA=alectrico-2021
+	make build VERSION=tributario ASIN=T MES=enero EMPRESA=alectrico-2021
 	make sync
 
 f:

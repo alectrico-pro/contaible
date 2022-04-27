@@ -79,7 +79,9 @@
      (haber ?ganancia-por-correccion-monetaria )) 
  
   ( tasas (idpc ?tasa-idpc) (mes diciembre) (ano ?ano))  
+
  =>
+
   (bind ?gastos-administrativos
     (- ?gastos-administrativos-debe
        ?gastos-administrativos-haber)
@@ -90,13 +92,10 @@
       ?utilidad-del-ejercicio-debe)
   )
   (bind ?ventas-netas           (- ?ventas ?devolucion-sobre-ventas))
-
   (bind ?compras-totales        (+ ?compras ?gastos-sobre-compras))
   (bind ?compras-netas          ?compras-totales)
-
   (bind ?existencias            (+ ?compras-netas ?inventario-inicial))
   ;mercaderia disponible para ventas
-
   (bind ?utilidad-bruta         (- ?ventas-netas ?costos-de-ventas))
 
 ; (bind ?gastos-de-operacion 
@@ -128,31 +127,23 @@
   (bind ?utilidad-antes-de-idpc (- ?utilidad-de-operacion ?reserva-legal))
 
   (printout t ?empresa crlf)
- (printout t "================================================================================" crlf)
+  (printout t "================================================================================" crlf)
   (printout t tab tab "ESTADO DE RESULTADOS" crlf)
   (printout t ?mes tag ?ano crlf)
   (printout t "================================================================================" crlf)
-
   (printout t "|" tab tab "|     " ?ingresos-brutos tab "Ingresos Brutos Percibidos A.29-LIR" crlf)
   (printout t "|" tab tab "|     " ?ventas tab "Ventas" crlf)
-
   (printout t "|" tab tab tab ?ventas-con-eboleta-afecta tab "Vtas eBoleta Afecta" crlf)
   (printout t "|" tab tab tab ?ventas-con-eboleta-exenta tab "Vtas eBoleta Exenta" crlf)
-
   (printout t "|" tab tab tab ?ventas-con-factura-afecta tab "Vtas Factura Afecta" crlf)
   (printout t "|" tab tab tab ?ventas-con-factura-exenta tab "Vtas Factura Exenta" crlf)
-
   (printout t "|" tab tab tab ?ventas-con-voucher-afecto tab "Vtas Voucher Afecto" crlf)
-
-
   (printout t "|" tab tab "| (-) -  " tab tab "Rebajas sobre ventas" crlf)
   (printout t "|" tab tab "| (-) " ?devolucion-sobre-ventas tab tab "Devoluciones sobre ventas" crlf)  
   (printout t "|" tab tab "| (-) -  " tab tab "Descuentos sobre ventas" crlf)
   (printout t "|" tab tab "| (=) " ?ventas-netas tab "Ventas Netas" crlf)
   (printout t crlf)
   (printout t "|" tab tab "| (-) " ?costos-de-ventas tab "Costos de Ventas A.30-LIR" crlf)
-
-
   (printout t crlf) 
   (printout t "|" ?compras tab tab tab tab "Compras" crlf)
   (printout t "| (+) " ?gastos-sobre-compras tab tab tab tab"Gastos sobre Compras" crlf)
@@ -168,7 +159,6 @@
   (printout t crlf)
   (printout t "|" tab tab "|     " ?utilidad-bruta tab "UTILIDAD BRUTA (Ventas Netas - Costo de Ventas)" crlf)
   (printout t "|" tab tab "| (-) " ?gastos-de-operacion tab tab "Gastos de Operación (Gastos Admon + Gastos Vtas + I+D + Promocion + Amortiza.Int A.31-LIR)" crlf)
-
   (printout t "|" ?gastos-administrativos tab tab tab tab  "Gastos del Dpto Administración" crlf)
   (printout t "|" ?gastos-ventas tab tab tab tab "Gastos del Dpto Ventas" crlf)
   (printout t "|" ?gastos-en-investigacion-y-desarrollo tab tab tab tab "Gastos en I+D" crlf)
@@ -176,9 +166,7 @@
   (printout t "|" ?amortizacion-intangibles tab tab tab tab "Amortizacion Intangibles" crlf)
   (printout t "|" ?depreciacion tab tab tab tab "Depreciacion" crlf)
   (printout t "|" ?salarios tab tab tab tab "Salarios" crlf)
-
   (printout t "|" tab tab "| (-) " ?pea tab tab "Pérdida Ejercicio Anterior PEA A.33-LIR)" crlf)
-
   (printout t "|" tab tab "|     " ?utilidad-de-operacion tab "UTILIDAD DE OPERACION (U.Bruta - G.Op. - PEA)" crlf)
   (printout t "|" tab tab "| (-) " tab tab tab "Otros Gastos" crlf)
   (printout t "|" tab tab "|     " ?utilidad-antes-de-reserva tab "UTILIDAD ANTES DE RESERVA (U.Op-Reserva Lega)" crlf)
@@ -189,14 +177,10 @@
   (printout t "|" ?perdida-por-correccion-monetaria tab tab tab tab "Pérdida por Corrección Monetaria" crlf)
   (printout t "|" ?ganancia-por-correccion-monetaria tab tab tab tab "Ganancia por Corrección Monetaria" crlf)
   (printout t "|" tab tab "|     " (- (+ ?utilidad-antes-de-idpc ?ganancia-por-correccion-monetaria) ?perdida-por-correccion-monetaria) tab "RESULTADO FUERA DE EXPLOTACION" crlf )
-
   ( if (> ?utilidad-antes-de-idpc ?utilidad-del-ejercicio ) then 
   (printout t "|" tab tab "| (-) " ?idpc tab "Impuesto Determinado, factor es " ?tasa-idpc " en " ?ano crlf))
-
   ( if (< ?utilidad-antes-de-idpc ?utilidad-del-ejercicio ) then 
   (printout t "|" tab tab "| (X) " ?idpc tab "Impuesto Que no se Aplica porque hubo pérdida tributaria" crlf))
-
-
   (printout t "|" tab tab "| (=) " ?utilidad-del-ejercicio tab "UTILIDAD DEL EJERCICIO (U.Antes.idpc - idpc)" crlf) 
 
  ;(printout t "|" tab tab "|     ------" crlf)

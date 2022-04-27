@@ -1,1 +1,1 @@
-(version (id 2) (version tributario) (asin T) (mes diciembre))
+(version (id 2) (version tributario) (asin T) (mes enero))

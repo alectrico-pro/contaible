@@ -13,7 +13,7 @@
 
 
 
-(balance (dia 31) (mes enero) (ano 2021))
+(balance (dia 1) (mes enero) (ano 2021))
 
 ;dia 01/01/2021---------- asiento inicial  ----------------
 
@@ -133,6 +133,8 @@
  ( monto  2416)
  ( glosa asiento-inicial))
 
+( inventario (dia 1) (mes enero) (u 1) (operacion asiento-inicial) (material materiales) (partida 2111) (ct 44044) (cu 44044))
+
 ;-------------------------- ajuste inicial de remanente
 
 
@@ -166,7 +168,6 @@
 ;el inventario es un registro de cada unidad y su costo
 ;pero la cuenta de inventario final es otra cosas
 ;( traspaso (partida 002112) (dia 1) (mes enero) (ano 2021) (cuenta-de-origen materiales) (cuenta-de-destino inventario-inicial))
-( inventario (dia 1) (mes enero) (u 1) (operacion asiento-inicial) (material materiales) (partida 1) (ct 44044) (cu 44044))
 
 
 
@@ -398,9 +399,9 @@
  ( finalidad "Materiales para reparaciones"))
 
 
-(ajuste-de-iva (partida 014333)  (mes enero) (ano 2021) )
+( ajuste-de-iva (partida 014333)  (mes enero) (ano 2021) )
 
-( ajustes-mensuales (mes enero) (ano 2021) (partida 131))
+;( ajustes-mensuales (mes enero) (ano 2021) (partida 131))
 
 ;--------------- febrero -- compras --------------
 
