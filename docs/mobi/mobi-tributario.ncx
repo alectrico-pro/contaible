@@ -26,8 +26,21 @@
 </text></docAuthor>
   <navMap>
   <!-- Esto crea navPoints NCX desde las marcas de tablas destinadas a Partidas en sus libro-diario.html   -->
-      <!-- nombre sin extensión del archivo del que se va a extraer la información  -->
+
+    <!-- nombre sin extensión del archivo del que se va a extraer la información  -->
+
        
+
+         counter += 1
+          <navPoint class="section" id="0" playOrder="0">
+            <navLabel>
+              <text>Indice</text>
+            </navLabel>
+            <content src="toc.html#Inicio"/>
+          </navPoint>
+
+
+
 
           counter += 1
           <navPoint class="section" id="0" playOrder="0">
@@ -35,7 +48,7 @@
               <text>Contaible</text>
             </navLabel>
             <content src="contaible.html#Inicio"/>
-            </navPoint>
+          </navPoint>
 
 
 
@@ -1282,25 +1295,34 @@
           counter += 1
           <navPoint class="section" id="0" playOrder="15">
             <navLabel>
+              <text>Libro Diario</text>
+            </navLabel>
+            <content src="libro-diario.html#Inicio"/>
+	    </navPoint>
+
+
+          counter += 1
+          <navPoint class="section" id="0" playOrder="15">
+            <navLabel>
               <text>Libro Mayor</text>
             </navLabel>
             <content src="libro-mayor.html#Inicio"/>
             </navPoint>
 
 
-
           counter += 1
           <navPoint class="section" id="0" playOrder="15">
             <navLabel>
-              <text>Libro Diario</text>
+              <text>Subcuentas</text>
             </navLabel>
-            <content src="libro-diario.html#Inicio"/>
-	    </navPoint>
+            <content src="subcuentas.html#Inicio"/>
+           </navPoint>
+
 
           counter += 1
           <navPoint class="section" id="0" playOrder="15">
             <navLabel>
-              <text>Liquidacion</text>
+              <text>Liquidaciones</text>
             </navLabel>
             <content src="liquidacion.html#Inicio"/>
 	    </navPoint>
@@ -1326,7 +1348,7 @@
           counter += 1
           <navPoint class="section" id="0" playOrder="15">
             <navLabel>
-              <text> ERes. SII</text>
+              <text> E-Resultados SII</text>
             </navLabel>
             <content src="resultado-sii.html#Inicio"/>
             </navPoint>

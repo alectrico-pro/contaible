@@ -1,7 +1,7 @@
 --- 
 layout: page
 --- 
-<h1> Resultado SII </h1> 
+<h1> Estado de Resultados para Impuestos Internos </h1> 
 
 
 Solo se consideran las transacciones hasta el día 31	enero.

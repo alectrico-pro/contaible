@@ -78,6 +78,7 @@ FROM jekyll/jekyll
 #los escribo directamente
 COPY ./*.markdown         ./
 COPY ./contaible.markdown ./
+COPY ./toc.markdown       ./
 COPY ./empresa.markdown   ./
 COPY ./nota.markdown      ./
 COPY ./o.markdown         ./

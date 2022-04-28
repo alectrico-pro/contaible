@@ -1,7 +1,7 @@
 --- 
 layout: page
 --- 
-<h1>Tributario</h1> 
+<h1>Estado de Resultados</h1> 
 <section>
 <h2> ESTADO DE RESULTADOS CON INDICACIONES TRIBUTARIAS </h2>
 <table><tbody>

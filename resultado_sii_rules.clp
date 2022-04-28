@@ -55,7 +55,7 @@
  ;  ( printout k "permalink: /" ?empresa "/resultado sii" crlf)
    ( printout k "layout: page" crlf)
    ( printout k "--- " crlf)
-   ( printout k "<h1> Resultado SII </h1> " crlf)
+   ( printout k "<h1> Estado de Resultados para Impuestos Internos </h1> " crlf)
 )
 
 (defrule fin-kindle-k

@@ -147,7 +147,7 @@
        ( printout k "layout: page" crlf)
       ( printout k "--- " crlf)
    )
-   ( printout k "<h1>Tributario</h1> " crlf)
+   ( printout k "<h1>Estado de Resultados</h1> " crlf)
 
 
 

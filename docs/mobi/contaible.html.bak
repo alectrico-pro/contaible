@@ -28,7 +28,7 @@
           </span>
         </label>
 
-        <div class="trigger"><a class="page-link" href="/contaible/">Contaible</a><a class="page-link" href="/alectrico/">alectrico®</a><a class="page-link" href="/alectrico-2021/f29">F29</a><a class="page-link" href="/necios/">necios®</a><a class="page-link" href="/nota/">Nota EEFF</a><a class="page-link" href="/o/">O</a><a class="page-link" href="/alectrico-2021/remuneraciones">Remuneraciones</a></div>
+        <div class="trigger"><a class="page-link" href="/contaible/">Contaible</a><a class="page-link" href="/alectrico/">alectrico®</a><a class="page-link" href="/alectrico-2021/f29">F29</a><a class="page-link" href="/necios/">necios®</a><a class="page-link" href="/nota/">Nota EEFF</a><a class="page-link" href="/o/">O</a><a class="page-link" href="/alectrico-2021/remuneraciones">Remuneraciones</a><a class="page-link" href="/toc/">Indice</a></div>
       </nav></div>
 </header>
 <main class="page-content" aria-label="Content">
@@ -72,7 +72,7 @@
 
 <h2 id="cómo-se-usa-contaible">Cómo se usa Cont<sup>ai</sup>ble</h2>
 
-<p>Para usar Cont<sup>ai</sup>ble se require un software denominado máquina de inferencia. El conocimiento extraído por un Ing. de Conocimiento de alectrico se deja en un texto que la máquina de inferencia entienda. En el momento que se quiera generar la contabilidad se debe tomar ese texto para hacerlo pasar a través de la máquina de inferencia. El texto está escrito de tal forma que haya reglas de conocimiento que la máquina pueda entenderlas y encadenarlas junto con hechos que las disparen.</p>
+<p>Para usar Cont<sup>ai</sup>ble se requiere un software denominado máquina de inferencia. El conocimiento extraído por un Ing. de Conocimiento de alectrico se deja en un texto que la máquina de inferencia entienda. En el momento que se quiera generar la contabilidad se debe tomar ese texto para hacerlo pasar a través de la máquina de inferencia. El texto está escrito de tal forma que haya reglas de conocimiento que la máquina pueda entenderlas y encadenarlas junto con hechos que las disparen.</p>
 
 <h2 id="contabilidad-para-negocios">Contabilidad para Ne<sup>go</sup>cios</h2>
 

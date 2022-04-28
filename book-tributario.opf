@@ -88,6 +88,7 @@
 	  <!--
 	  <item id="as" media-type="application/xhtml+xml" href="as.html"></item>
 	  -->
+    <item id="toc" media-type="application/xhtml+xml" href="toc.html"></item>
     <item id="contaible" media-type="application/xhtml+xml" href="contaible.html"></item>
     <item id="libro-diario" media-type="application/xhtml+xml" href="libro-diario.html"></item>
     <item id="libro-mayor" media-type="application/xhtml+xml" href="libro-mayor.html"></item>
@@ -117,9 +118,10 @@
      http://www.niso.org/workrooms/daisy/Z39-86-2005.html#NCX
     -->
   
-  <spine toc="My_Table_of_Contents">
+    <spine toc="My_Table_of_Contents">
 	  <!-- the spine defines the linear reading order of the book -->
 	  <!--	  <itemref idref="as" /> -->
+    <itemref idref="toc" />
     <itemref idref="contaible" />
     <itemref idref="libro-diario" />
     <itemref idref="libro-mayor" />
@@ -150,11 +152,9 @@
      
     -->
   <guide>
-	  <!--
-    <reference type="toc" title="Table of Contents" href="libro-diario.html#TOC"></reference>
-    <reference type="text" title="Inicio" href="libro-diario.html#start"></reference>
-    <reference type="text" title="Inicio" href="libro-mayor.html#start"></reference>
-  -->
+    <reference type="toc" title="Table of Contents" href="toc.html#Inicio"></reference>
+    <reference type="text" title="Diario" href="libro-diario.html#Inicio"></reference>
+    <reference type="text" title="Mayor" href="libro-mayor.html#Inicio"></reference>
   </guide>
 
 </package>

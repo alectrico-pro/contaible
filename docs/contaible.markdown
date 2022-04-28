@@ -36,7 +36,7 @@ Cont<sup>ai</sup>ble es un Expert System que contiene conocimiento en la forma d
 
 ## Cómo se usa Cont<sup>ai</sup>ble
 
-Para usar Cont<sup>ai</sup>ble se require un software denominado máquina de inferencia. El conocimiento extraído por un Ing. de Conocimiento de alectrico se deja en un texto que la máquina de inferencia entienda. En el momento que se quiera generar la contabilidad se debe tomar ese texto para hacerlo pasar a través de la máquina de inferencia. El texto está escrito de tal forma que haya reglas de conocimiento que la máquina pueda entenderlas y encadenarlas junto con hechos que las disparen.
+Para usar Cont<sup>ai</sup>ble se requiere un software denominado máquina de inferencia. El conocimiento extraído por un Ing. de Conocimiento de alectrico se deja en un texto que la máquina de inferencia entienda. En el momento que se quiera generar la contabilidad se debe tomar ese texto para hacerlo pasar a través de la máquina de inferencia. El texto está escrito de tal forma que haya reglas de conocimiento que la máquina pueda entenderlas y encadenarlas junto con hechos que las disparen.
 
 ## Contabilidad para Ne<sup>go</sup>cios
 
