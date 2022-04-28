@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Contaible
-permalink: //
+permalink: /contaible/
 ---
 
 #### Cont<sup style="color:white; background-color: cornflowerblue">ai</sup>ble<sup> 
@@ -48,6 +48,12 @@ Con Cont<sup>ai</sup>ble, Ud. prepara un texto indicando los hechos económicos 
 ## Facts
 
 Los hechos en un Expert System se conocen como facts, usaremos esa vocablo cuando hablemos de los hechos económicos introducidos en Cont<sup>ai</sup>ble, pero puede haber facts en contabilidad relacionados con la operación propia del sistema así que para evitar confusiones, los hechos económicos que puedan ser procesados por Cont<sup>ai</sup>ble los llamaremos kernels contables.
+
+Los archivos con extension txt son archivos que Ud. debe modificar para hacer la contabilidad de su empresa. En particular el archivo alectrico-2021-facts.txt contiene los kernels contables de la empresa alectrico-2021. Ud. puede crear otro archivo con el nombre de su empresa y a seguir llenarlo con estos kernels contables. Luego y en selecciones.txt, debe indicar que la empresa que se ha de procesar es la suya.
+
+Para disparar el sistema debe simplemente llamar a ./serve.sh. Esto se usa en linux para ejecutar comando en el shell del sistema operativo. En nuestro caso, se usará para generar todo las condiciones necesarias para construir un servidor que luego estará activo en la dirección 0.0.0.0:4000. Es todo. Si quiere ver su contabilidad solo tiene que hacer apuntar el browser hacia esta dirección.
+
+
 
 Estos son ejemplos de kernels contables existentes en Cont<sup>ai</sup>ble:
 
@@ -248,7 +254,14 @@ Por supuesto, puede hacer su negocio en forma estereotipada como siempre lo ha h
 Como Cont<sup>ai</sup>ble es un Expert System le queda a mano justificar sus decisiones. Así que Ud. podría confirmar si las reglas realmente superan una prueba con un experto independiente que le audite la contaibilidad. Esto puede ser algo sorprendente viniendo de algo inanimado como un software, pero Cont<sup>ai</sup>ble actúa como la voz autorizada en tema financiero de su empresa y no le fallará, pues si se preocupa de ingresar bien las reglas, los errores serán de los expertos que Ud. use para obtenerlas, no del sotware ni del código. Nunca habrá un error de programación en Cont<sup>ai</sup>le, fuera de que las tablas no le gusten o que falte o sobre algo en los informes, Ud. puede confiar en el mejor software de la NASA® para hacer funcionar la máquina de inferencia para las reglas de Cont<sup>ai</sup>ble.
 
 
-[blog](https://blog.necios.cl)|[cont<sup>ai</sup>ble](https://alectrico-pro.github.io/contaible/)
+
+
+Si este manual se le ha entregado a Ud. en formabo epub, podrá ver a continuación la contabilidad de alectrico Spa pertenenciente al ejercicio 2021. Si no es así, la podrá ver en el blog https:/www.contaible.cl en el menú alectrico-2021.
+
+Por favor, observe que algunas partidas no son secuenciales. Esto no está permitido en la contabilidad normal, sin embargo, en el caso de alectrico la unicidad de las partidas se obtuvo a partir de la unicidad de los voucher del sistema CCM de Impuestos Internos, con lo que el número de partida en este caso está liberado. Eso no lo obliga a Ud. a hacer lo mismo, esto solo fue una oportunidad que nos dió el Servicio de Impuesto Internos para llevar la contabilidad según el sistema gratuito llamado CCM.
+
+
+[blog](https://blog.necios.cl)|[cont<sup>ai</sup>ble](https://www.contaible.cl/)
 
 
 Ing. Alexander Espinosa MEng.

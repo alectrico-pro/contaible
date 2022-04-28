@@ -28,6 +28,17 @@
   <!-- Esto crea navPoints NCX desde las marcas de tablas destinadas a Partidas en sus libro-diario.html   -->
     <% root = 'libro-diario' %>  <!-- nombre sin extensión del archivo del que se va a extraer la información  -->
     <% counter = 0 %>   <% section = 0 %>
+
+          counter += 1
+          <navPoint class="section" id="<%= section %>" playOrder="<%= counter %>">
+            <navLabel>
+              <text>Contaible</text>
+            </navLabel>
+            <content src="contaible.html#Inicio"/>
+            </navPoint>
+
+
+
     <% File.open("#{root}.html", "r:ISO-8859-1:UTF-8" ).each do |line| %>
     <%   if (line =~ /<table id=\"Partida-(\d*)/ )  %>
     <%    num = $1  %>

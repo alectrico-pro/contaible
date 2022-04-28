@@ -24,7 +24,7 @@
         ( printout k "--- " crlf)
         ( printout k "" crlf)
   ) 
-  ( printout k "<h1> Final </h1>" crlf)
+  ( printout k "<h1> Balance </h1>" crlf)
 )
 
 

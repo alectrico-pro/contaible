@@ -6,7 +6,6 @@
 
 (defrule inicio-de-los-dias-ticket
   (declare (salience 10000))
-(no)
   (inicio-de-los-dias (partidas $?partidas))
 =>
   ( printout t "----------------- TICKET ------------------" crlf)
@@ -26,8 +25,9 @@
 
 
 
-( defrule kk
+( defrule enumerar-partidas
   ( declare (salience 9000))
+(no)
   ( inicio-de-los-dias (partidas $?partidas))
   =>
   ( bind ?a ?*actividades*)

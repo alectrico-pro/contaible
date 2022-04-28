@@ -249,12 +249,12 @@
 (volumen
  (asin T)
  (precio 5)
- (id 4)
+ (id T4)
  (formato kindle)
- (titulo "Contaible")
- (subtitulo "" )
- (contenido "Pruebas.")
- (partidas-no-incluidas 2 216)
+ (titulo "Contaible Día Zero ")
+ (subtitulo "Día Zero" )
+ (contenido "Ejemplos de Tributación día a día.")
+ (partidas-no-incluidas )
 )
 
 ;--------- MEJORANDO F22-----------------------------------

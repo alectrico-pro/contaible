@@ -4,8 +4,11 @@ require 'rubygems'
 require 'nokogiri'
 
 #doc = Nokogiri::HTML::Document.parse(IO.read(ARGV[0]), nil, 'ISO-8859-1')
-doc = Nokogiri::HTML::Document.parse(IO.read(ARGV[0]), nil, 'utf-8')
-
+begin
+ doc = Nokogiri::HTML::Document.parse(IO.read(ARGV[0]), nil, 'utf-8')
+rescue
+ doc = Nokogiri::HTML::Document.parse(IO.read(ARGV[0]), nil, 'ISO-8859-1')
+end
 
 # last row of actual text TABLES seems to contain a single TD with empty whitespace
 doc.xpath("//table[count(tr)>1]/tr[count(td)=1]/td[.='']").remove

@@ -523,6 +523,7 @@
     ?af <- ( registro-de-depreciacion
        ( nombre-del-activo    ?nombre-activo )
        ( valor-de-adquisicion ?valor) 
+       ( dia-de-adquisicion   ?dia-de-adquisicion)
        ( mes-de-adquisicion   ?mes-de-adquisicion)
        ( ano-de-adquisicion   ?ano)
        ( liquidado            false) )
@@ -534,7 +535,7 @@
 
     ( balance (dia ?top)       (mes ?mes_top)     (ano ?ano_top))
     ( test (>= (to_serial_date ?top   ?mes_top          ?ano_top)
-               (to_serial_date 1  ?mes-de-adquisicion  ?ano)))
+               (to_serial_date ?dia-de-adquisicion  ?mes-de-adquisicion  ?ano)))
 
  =>
 

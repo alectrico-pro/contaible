@@ -28,6 +28,17 @@
   <!-- Esto crea navPoints NCX desde las marcas de tablas destinadas a Partidas en sus libro-diario.html   -->
       <!-- nombre sin extensión del archivo del que se va a extraer la información  -->
        
+
+          counter += 1
+          <navPoint class="section" id="0" playOrder="0">
+            <navLabel>
+              <text>Contaible</text>
+            </navLabel>
+            <content src="contaible.html#Inicio"/>
+            </navPoint>
+
+
+
     
         
         
@@ -226,8 +237,6 @@
         
         
         
-        
-        
     
     
     
@@ -236,6 +245,949 @@
               <text>Partida 2</text>
             </navLabel>
 	    <content src="libro-diario.html#Partida-2"/>
+          </navPoint>    
+            
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+    
+    
+    
+          <navPoint class="section" id="3" playOrder="3">
+            <navLabel>
+              <text>Partida 3</text>
+            </navLabel>
+	    <content src="libro-diario.html#Partida-3"/>
+          </navPoint>    
+            
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+    
+    
+    
+          <navPoint class="section" id="4" playOrder="4">
+            <navLabel>
+              <text>Partida 4</text>
+            </navLabel>
+	    <content src="libro-diario.html#Partida-4"/>
+          </navPoint>    
+            
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+    
+    
+    
+          <navPoint class="section" id="5" playOrder="5">
+            <navLabel>
+              <text>Partida 5</text>
+            </navLabel>
+	    <content src="libro-diario.html#Partida-5"/>
+          </navPoint>    
+            
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+    
+    
+    
+          <navPoint class="section" id="6" playOrder="6">
+            <navLabel>
+              <text>Partida 6</text>
+            </navLabel>
+	    <content src="libro-diario.html#Partida-6"/>
+          </navPoint>    
+            
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+    
+    
+    
+          <navPoint class="section" id="7" playOrder="7">
+            <navLabel>
+              <text>Partida 7</text>
+            </navLabel>
+	    <content src="libro-diario.html#Partida-7"/>
+          </navPoint>    
+            
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+    
+    
+    
+          <navPoint class="section" id="8" playOrder="8">
+            <navLabel>
+              <text>Partida 8</text>
+            </navLabel>
+	    <content src="libro-diario.html#Partida-8"/>
+          </navPoint>    
+            
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+    
+    
+    
+          <navPoint class="section" id="9" playOrder="9">
+            <navLabel>
+              <text>Partida 9</text>
+            </navLabel>
+	    <content src="libro-diario.html#Partida-9"/>
+          </navPoint>    
+            
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+    
+    
+    
+          <navPoint class="section" id="10" playOrder="10">
+            <navLabel>
+              <text>Partida 10</text>
+            </navLabel>
+	    <content src="libro-diario.html#Partida-10"/>
+          </navPoint>    
+            
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+    
+    
+    
+          <navPoint class="section" id="11" playOrder="11">
+            <navLabel>
+              <text>Partida 12</text>
+            </navLabel>
+	    <content src="libro-diario.html#Partida-12"/>
+          </navPoint>    
+            
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+    
+    
+    
+          <navPoint class="section" id="12" playOrder="12">
+            <navLabel>
+              <text>Partida 13</text>
+            </navLabel>
+	    <content src="libro-diario.html#Partida-13"/>
+          </navPoint>    
+            
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+    
+    
+    
+          <navPoint class="section" id="13" playOrder="13">
+            <navLabel>
+              <text>Partida 14</text>
+            </navLabel>
+	    <content src="libro-diario.html#Partida-14"/>
+          </navPoint>    
+            
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+    
+    
+    
+          <navPoint class="section" id="14" playOrder="14">
+            <navLabel>
+              <text>Partida 14333</text>
+            </navLabel>
+	    <content src="libro-diario.html#Partida-14333"/>
+          </navPoint>    
+            
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+    
+    
+    
+          <navPoint class="section" id="15" playOrder="15">
+            <navLabel>
+              <text>Partida 1052</text>
+            </navLabel>
+	    <content src="libro-diario.html#Partida-1052"/>
           </navPoint>    
             
         
@@ -328,7 +1280,7 @@
 
 
           counter += 1
-          <navPoint class="section" id="0" playOrder="2">
+          <navPoint class="section" id="0" playOrder="15">
             <navLabel>
               <text>Libro Mayor</text>
             </navLabel>
@@ -338,7 +1290,7 @@
 
 
           counter += 1
-          <navPoint class="section" id="0" playOrder="2">
+          <navPoint class="section" id="0" playOrder="15">
             <navLabel>
               <text>Libro Diario</text>
             </navLabel>
@@ -346,7 +1298,7 @@
 	    </navPoint>
 
           counter += 1
-          <navPoint class="section" id="0" playOrder="2">
+          <navPoint class="section" id="0" playOrder="15">
             <navLabel>
               <text>Liquidacion</text>
             </navLabel>
@@ -355,7 +1307,7 @@
 
 
           counter += 1
-          <navPoint class="section" id="0" playOrder="2">
+          <navPoint class="section" id="0" playOrder="15">
             <navLabel>
               <text>Balance</text>
             </navLabel>
@@ -363,7 +1315,7 @@
             </navPoint>
 
           counter += 1
-          <navPoint class="section" id="0" playOrder="2">
+          <navPoint class="section" id="0" playOrder="15">
             <navLabel>
 	    <text> E-Resultados</text>
             </navLabel>
@@ -372,7 +1324,7 @@
 
 
           counter += 1
-          <navPoint class="section" id="0" playOrder="2">
+          <navPoint class="section" id="0" playOrder="15">
             <navLabel>
               <text> ERes. SII</text>
             </navLabel>

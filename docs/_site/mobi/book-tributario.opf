@@ -88,6 +88,7 @@
 	  <!--
 	  <item id="as" media-type="application/xhtml+xml" href="as.html"></item>
 	  -->
+    <item id="contaible" media-type="application/xhtml+xml" href="contaible.html"></item>
     <item id="libro-diario" media-type="application/xhtml+xml" href="libro-diario.html"></item>
     <item id="libro-mayor" media-type="application/xhtml+xml" href="libro-mayor.html"></item>
     <item id="subcuentas" media-type="application/xhtml+xml" href="subcuentas.html"></item>
@@ -119,7 +120,7 @@
   <spine toc="My_Table_of_Contents">
 	  <!-- the spine defines the linear reading order of the book -->
 	  <!--	  <itemref idref="as" /> -->
-	  
+    <itemref idref="contaible" />
     <itemref idref="libro-diario" />
     <itemref idref="libro-mayor" />
     <itemref idref="subcuentas" />
