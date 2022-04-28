@@ -2,7 +2,6 @@
 title: Libro Mayor
 layout: page
 --- 
-<table style='page-break-before: always' >
 <table>
 <tr><td colspan='6' > caja</td><td colspan='3' >Caja</td></tr>
 <tr><td colspan='9' > refleja-los-movimientos-de-los-activos</td></tr>
@@ -14,7 +13,6 @@ layout: page
 <tr> <td> Monto Corrección </td> <td>$</td> <td align='right'>66163 </td></tr>
 </tbody>
 </table>
-<table style='page-break-before: always' >
 <table>
 <tr><td colspan='6' > insumos</td><td colspan='3' >Insumos</td></tr>
 <tr><td colspan='9' > Costo de Insumos que se consumen en Servicios</td></tr>
@@ -26,7 +24,6 @@ layout: page
 <tr> <td> Monto Corrección </td> <td>$</td> <td align='right'>2775 </td></tr>
 </tbody>
 </table>
-<table style='page-break-before: always' >
 <table>
 <tr><td colspan='6' > ppm</td><td colspan='3' >PPM (Pago Provisional Mensual)</td></tr>
 <tr><td colspan='9' > Pago Anticipado de Impuestos Finales</td></tr>
@@ -38,7 +35,6 @@ layout: page
 <tr> <td> Monto Corrección </td> <td>$</td> <td align='right'>45 </td></tr>
 </tbody>
 </table>
-<table style='page-break-before: always' >
 <table>
 <tr><td colspan='6' > herramientas</td><td colspan='3' >Herramientas</td></tr>
 <tr><td colspan='9' > herramientas</td></tr>
@@ -50,7 +46,6 @@ layout: page
 <tr> <td> Monto Corrección </td> <td>$</td> <td align='right'>9529 </td></tr>
 </tbody>
 </table>
-<table style='page-break-before: always' >
 <table>
 <tr><td colspan='6' > marca-alectrico</td><td colspan='3' >marca-alectrico</td></tr>
 <tr><td colspan='9' > marca-alectrico</td></tr>
@@ -62,7 +57,6 @@ layout: page
 <tr> <td> Monto Corrección </td> <td>$</td> <td align='right'>18270 </td></tr>
 </tbody>
 </table>
-<table style='page-break-before: always' >
 <table>
 <tr><td colspan='6' > intangibles</td><td colspan='3' >Intangibles</td></tr>
 <tr><td colspan='9' > activos-intangibles-como-patentes-o-marcas</td></tr>
@@ -74,7 +68,6 @@ layout: page
 <tr> <td> Monto Corrección </td> <td>$</td> <td align='right'>18270 </td></tr>
 </tbody>
 </table>
-<table style='page-break-before: always' >
 <table>
 <tr><td colspan='6' > amortizacion-acumulada-intangibles</td><td colspan='3' >Amortización Acumulada</td></tr>
 <tr><td colspan='9' > activos-intangibles-como-patentes-o-marcas</td></tr>
@@ -86,7 +79,6 @@ layout: page
 <tr> <td colspan='2'> Monto Corrección</td><td></td><td>$</td> <td align='right'>152 </td></tr>
 </tbody>
 </table>
-<table style='page-break-before: always' >
 <table>
 <tr><td colspan='6' > capital-social</td><td colspan='3' >Capital pagado</td></tr>
 <tr><td colspan='9' > aportes-del-propietario</td></tr>
@@ -98,7 +90,6 @@ layout: page
 <tr> <td colspan='2'> Monto Corrección</td><td></td><td>$</td> <td align='right'>126000 </td></tr>
 </tbody>
 </table>
-<table style='page-break-before: always' >
 <table>
 <tr><td colspan='6' > utilidad-del-ejercicio-anterior</td><td colspan='3' ></td></tr>
 <tr><td colspan='9' > utilidad-del-ejercicio-anterior</td></tr>
@@ -110,7 +101,6 @@ layout: page
 <tr> <td colspan='2'> Monto Corrección</td><td></td><td>$</td> <td align='right'>5374 </td></tr>
 </tbody>
 </table>
-<table style='page-break-before: always' >
 <table>
 <tr><td colspan='6' > ventas-con-eboleta-afecta</td><td colspan='3' >Ventas con e-Boleta Afecta</td></tr>
 <tr><td colspan='9' > ventas-y-servicios-realizadas-a-clientes</td></tr>
@@ -122,7 +112,6 @@ layout: page
 <tr> <td colspan='2'> Monto Corrección</td><td></td><td>$</td> <td align='right'>1853 </td></tr>
 </tbody>
 </table>
-<table style='page-break-before: always' >
 <table>
 <tr><td colspan='6' > ventas-con-voucher-afecto</td><td colspan='3' >Ingreso por Ventas de Bienes y Servicios del Giro</td></tr>
 <tr><td colspan='9' > ventas-y-servicios-realizadas-a-clientes</td></tr>
@@ -134,7 +123,6 @@ layout: page
 <tr> <td colspan='2'> Monto Corrección</td><td></td><td>$</td> <td align='right'>7780 </td></tr>
 </tbody>
 </table>
-<table style='page-break-before: always' >
 <table>
 <tr><td colspan='6' > devolucion-sobre-ventas-afectas</td><td colspan='3' >devoluciones-sobre-ventas-afectas</td></tr>
 <tr><td colspan='9' > devoluciones-sobre-ventas-afectas</td></tr>
@@ -146,7 +134,6 @@ layout: page
 <tr> <td> Monto Corrección </td> <td>$</td> <td align='right'>1853 </td></tr>
 </tbody>
 </table>
-<table style='page-break-before: always' >
 <table>
 <tr><td colspan='6' > ingresos-brutos</td><td colspan='3' ></td></tr>
 <tr><td colspan='9' > ingresos-para-ppm</td></tr>
@@ -159,7 +146,6 @@ layout: page
 <tr> <td colspan='2'> Monto Corrección</td><td></td><td>$</td> <td align='right'>9633 </td></tr>
 </tbody>
 </table>
-<table style='page-break-before: always' >
 <table>
 <tr><td colspan='6' > costos-de-ventas</td><td colspan='3' ></td></tr>
 <tr><td colspan='9' > costos-en-que-se-incurre-al-vender</td></tr>
@@ -172,7 +158,6 @@ layout: page
 <tr> <td> Monto Corrección </td> <td>$</td> <td align='right'>109 </td></tr>
 </tbody>
 </table>
-<table style='page-break-before: always' >
 <table>
 <tr><td colspan='6' > ventas</td><td colspan='3' >Ingreso por Ventas de Bienes y Servicios del Giro</td></tr>
 <tr><td colspan='9' > ventas-y-servicios-realizadas-a-clientes</td></tr>
@@ -185,7 +170,6 @@ layout: page
 <tr> <td colspan='2'> Monto Corrección</td><td></td><td>$</td> <td align='right'>9633 </td></tr>
 </tbody>
 </table>
-<table style='page-break-before: always' >
 <table>
 <tr><td colspan='6' > devolucion-sobre-ventas</td><td colspan='3' >devoluciones-sobre-ventas</td></tr>
 <tr><td colspan='9' > devoluciones-sobre-ventas</td></tr>
@@ -199,7 +183,6 @@ layout: page
 <tr> <td> Monto Corrección </td> <td>$</td> <td align='right'>4975 </td></tr>
 </tbody>
 </table>
-<table style='page-break-before: always' >
 <table>
 <tr><td colspan='6' > devolucion-sobre-ventas-exentas</td><td colspan='3' >devoluciones-sobre-ventas-exentas</td></tr>
 <tr><td colspan='9' > devoluciones-sobre-ventas-exentas</td></tr>
@@ -212,7 +195,6 @@ layout: page
 <tr> <td> Monto Corrección </td> <td>$</td> <td align='right'>3122 </td></tr>
 </tbody>
 </table>
-<table style='page-break-before: always' >
 <table>
 <tr><td colspan='6' > iva-debito</td><td colspan='3' >IVA Débitos</td></tr>
 <tr><td colspan='9' > deuda-fiscal-por-iva-cobrada-durante-la-venta</td></tr>
@@ -228,7 +210,6 @@ layout: page
 <tr> <td colspan='2'> Monto Corrección</td><td></td><td>$</td> <td align='right'>1478 </td></tr>
 </tbody>
 </table>
-<table style='page-break-before: always' >
 <table>
 <tr><td colspan='6' > easy-materiales</td><td colspan='3' ></td></tr>
 <tr><td colspan='9' > compra-de-materiales</td></tr>
@@ -241,7 +222,6 @@ layout: page
 <tr> <td> Monto Corrección </td> <td>$</td> <td align='right'>2936 </td></tr>
 </tbody>
 </table>
-<table style='page-break-before: always' >
 <table>
 <tr><td colspan='6' > materiales</td><td colspan='3' >Materiales Eléctricos</td></tr>
 <tr><td colspan='9' > Costo de Materiales Eléctricos que se consumen en Servicios</td></tr>
@@ -255,7 +235,6 @@ layout: page
 <tr> <td> Monto Corrección </td> <td>$</td> <td align='right'>5711 </td></tr>
 </tbody>
 </table>
-<table style='page-break-before: always' >
 <table>
 <tr><td colspan='6' > banco-estado</td><td colspan='3' >Banco Estado</td></tr>
 <tr><td colspan='9' > Dinero en Banco Estado</td></tr>
@@ -277,7 +256,6 @@ layout: page
 <tr> <td> Monto Corrección </td> <td>$</td> <td align='right'>34759 </td></tr>
 </tbody>
 </table>
-<table style='page-break-before: always' >
 <table>
 <tr><td colspan='6' > iva-credito</td><td colspan='3' >IVA Créditos</td></tr>
 <tr><td colspan='9' > credito-fiscal-por-iva-pagado-durante-la-compra</td></tr>

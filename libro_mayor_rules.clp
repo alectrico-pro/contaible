@@ -127,7 +127,7 @@
 
 
 
- ( printout k "<table style='page-break-before: always' >" crlf)
+; ( printout k "<table style='page-break-before: always' >" crlf)
  ( printout k "<table>" crlf)
  ( printout k "<tr><td colspan='6' > " ?nombre "</td><td colspan='3' >" ?nombre-sii "</td></tr>" crlf)
  ( printout k "<tr><td colspan='9' > " ?descripcion "</td></tr>" crlf)
