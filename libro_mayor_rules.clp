@@ -69,12 +69,12 @@
       ( bind ?archivo (str-cat "./doc/" ?empresa "/libro-mayor.markdown"))
       ( open ?archivo k "w")
       ( printout k "--- " crlf)
-;      ( printout k "title: Libro Mayor" crlf)
+      ( printout k "title: Libro Mayor" crlf)
  ;     ( printout k "permalink: /" ?empresa "/libro-mayor " crlf)
       ( printout k "layout: page" crlf)
       ( printout k "--- " crlf)
   )
-  ( printout k "<h1> Libro Mayor </h1>" crlf)
+;  ( printout k "<h1> Libro Mayor </h1>" crlf)
   
 )
 

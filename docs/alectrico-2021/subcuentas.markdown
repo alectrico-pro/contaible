@@ -1,7 +1,7 @@
 --- 
+title: Subcuentas
 layout: page
 --- 
-<h1> Subcuentas </h1>
 <table>
 <tr><td colspan='6'> transbank</td><td colspan='3'></td></tr>
 <tr><td colspan='9'> gastos-a-este-departamento</td></tr>

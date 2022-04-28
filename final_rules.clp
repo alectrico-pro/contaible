@@ -18,13 +18,13 @@
        ( open ?archivo k "w")
 
         ( printout k "--- " crlf)
- ;       ( printout k "title: Final" crlf)
+        ( printout k "title: Balance Final" crlf)
 ;        ( printout k "permalink: /" ?empresa "/final" crlf)
         ( printout k "layout: page" crlf)
         ( printout k "--- " crlf)
         ( printout k "" crlf)
   ) 
-  ( printout k "<h1> Balance </h1>" crlf)
+;  ( printout k "<h1> Balance </h1>" crlf)
 )
 
 
@@ -243,8 +243,8 @@
    ( bind ?iva-por-pagar  (- ?iva-debito-acreedor ?iva-debito-deber))
    ( printout t "=========================================================================" crlf )
 
-   ( printout k "<section>" crlf )
-   ( printout k "<h2> PARTIDA GENERAL FINAL </h2>" crlf) 
+  ;( printout k "<section>" crlf )
+ ; ( printout k "<h2> PARTIDA GENERAL FINAL </h2>" crlf) 
    ( printout k "Solo se consideran las transacciones hasta el día " ?top tab ?mes_top "."  crlf)
    ( printout k "Cifras en pesos." crlf)
    ( printout k "<table>" crlf)
@@ -464,7 +464,7 @@
  ; ( printout k "==================================================================" crlf)
   ( printout k "</tbody>" crlf)
   ( printout k "</table>" crlf)
-  ( printout k "</section>" crlf )
+ ;( printout k "</section>" crlf )
 
 
 )

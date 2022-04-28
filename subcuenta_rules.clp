@@ -53,11 +53,11 @@
    ( open ?archivo k "w")
 
    ( printout k "--- " crlf)
-;   ( printout k "title: Subcuentas-" ?empresa crlf)
+   ( printout k "title: Subcuentas" crlf)
 ;   ( printout k "permalink: /" ?empresa "/subcuentas " crlf)
    ( printout k "layout: page" crlf)
    ( printout k "--- " crlf)
-   ( printout k "<h1> Subcuentas </h1>" crlf)
+;   ( printout k "<h1> Subcuentas </h1>" crlf)
 )
 
 (defrule fin-kindle-k

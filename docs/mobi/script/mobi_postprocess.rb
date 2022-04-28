@@ -44,8 +44,17 @@ end
 # then remove the spurious <a></a> inside the h2's
 doc.xpath("//h2/i/a").each { |node| node.remove }
 
-doc.xpath("//h2").each { |node| node.remove} #elimnando los heasders
+#oc.xpath("//h2").each { |node| node.remove} #elimnando los heasders
 
+doc.xpath("//input").each { |node| node.remove} 
+
+doc.xpath("//select").each { |node| node.remove} 
+
+doc.xpath("//meta").each { |node| node.remove}
+
+doc.xpath("//nav").each { |node| node.remove}
+
+doc.xpath("//header[@class='site-header']").each { |node| node.remove}
 
 
 # same thing for <h3> (section heads)

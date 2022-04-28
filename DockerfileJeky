@@ -60,7 +60,7 @@ COPY actividades.txt              ./
 COPY 404.html                     ./
 
 COPY selecciones-mobi.txt         ./
-COPY selecciones.txt              ./
+#COPY selecciones.txt              ./
 
 COPY mobi.py                      ./
 #COPY contabilidad.py              ./

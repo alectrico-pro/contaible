@@ -126,6 +126,7 @@
 
 
 (deftemplate selecciones
+ (slot renumerar (default false))
  (slot remuneraciones-aparte (default false))
  (slot nombre-de-archivo-k (default ""))
  (slot archivo-unico-markdown (default false))

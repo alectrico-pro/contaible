@@ -1,27 +1,25 @@
 --- 
+title: Balance Final
 layout: page
 --- 
 
-<h1> Balance </h1>
-<section>
-<h2> PARTIDA GENERAL FINAL </h2>
 Solo se consideran las transacciones hasta el día 31	enero.
 Cifras en pesos.
 <table>
 <tr> <td colspan='6'> PARTIDA GENERAL FINAL 2021 </td> </tr> 
-<tr> <td>  ACTIVO CIRCULANTE </td> <td align='right' > 1718705</td>
-<td > PASIVO CIRCULANTE </td> <td align='right' >0</td> </tr>
+<tr> <td>  ACTIVO CIRCULANTE </td> <td align='right' > 1742136</td>
+<td > PASIVO CIRCULANTE </td> <td align='right' >23464</td> </tr>
 <tbody>
 <tr> <td> Caja </td> <td align='right' >1050209</td> <td> Proveedores. </td> <td align='right' > 0</td> </tr>
-<tr> <td> Banco Estado </td> <td align='right'  >529097</td></tr>
-<tr> <td> Clientes </td> <td align='right' >0</td> <td >  IVA Débito </td> <td align='right'>0</td> </tr>
+<tr> <td> Banco Estado </td> <td align='right'  >551726</td></tr>
+<tr> <td> Clientes </td> <td align='right' >0</td> <td >  IVA Débito </td> <td align='right'>23464</td> </tr>
 <tr> <td> Cuentas por Cobrar </td> <td align='right' >0</td></tr>
 <tr> <td> Retenciones </td> <td align='right' style='font-weight:bold; color: white; background-color: crimson'>(  0)</td> </tr> 
 <tr> <td> Colaboradores </td> <td align='right' > 0</td> 
 <td> SalariosXPagar </td> <td align='right'> 0</td></tr> 
-<tr> <td> IVA Crédito </td><td align='right' >28981</td> 
+<tr> <td> IVA Crédito </td><td align='right' >48831</td> 
 <td> Ingresos Adelantados </td> </tr>
-<tr> <td> PPM </td> <td align='right' >920</td></tr> 
+<tr> <td> PPM </td> <td align='right' >721</td></tr> 
 <tr> <td> Insumos</td> <td align='right'>44044</td> </tr>
 <tr> <td> Inventario </td>
 <td align='right'>0</td> </tr>
@@ -40,15 +38,14 @@ Cifras en pesos.
 <tr><td> Autorización Uso de Inmueble </td> <td align='right'>0</td> <td colspan='2'> </td> </tr>
 <tr><td> Amortización Acumulada Intangibles </td> <td align='right' style='font-weight:bold; color: white; background-color: crimson'>(2416)</td> <td colspan='2'> </td> </tr>
 <tr><td> Depreciación Acumulada Herramientas </td> <td align='right' style='font-weight:bold; color: white; background-color: crimson'>(0)</td><td colspan='2'> </td> </tr>
-<tr> <td> </td> <td> </td> <td> TOTAL PASIVO </td> <td align='right'> 0</td></tr>
-<tr> <td> </td> <td> </td> <td> PATRIMONIO </td> <td align='right'>2157541</td> </tr><tr> <td colspan='2'></td> <td> Capital Social </td><td align='right'> 2000000</td> </tr>
+<tr> <td> </td> <td> </td> <td> TOTAL PASIVO </td> <td align='right'> 23464</td></tr>
+<tr> <td> </td> <td> </td> <td> PATRIMONIO </td> <td align='right'>2157508</td> </tr><tr> <td colspan='2'></td> <td> Capital Social </td><td align='right'> 2000000</td> </tr>
 <tr> <td colspan='2'></td> <td> Reserva Legal </td> <td align='right' >0</td> </tr>
 <tr> <td colspan='2'></td> <td> Utilidades Acumuladas </td> <td align='right' >0</td> </tr>
 <tr> <td colspan='2'></td> <td> Revalorización del Capital Propio </td> <td align='right' >0</td> </tr>
-<tr> <td colspan='2'></td> <td> Utilidad del Ejercicio </td><td align='right'>72247</td> </tr>
-<tr><td>TOTAL ACTIVOS</td><td style='background-color: lightgreen'>2157541</td><td>TOTAL PASIVO + PATRIMONIO</td><td style='background-color: lightgreen'>2157541</td></tr>
+<tr> <td colspan='2'></td> <td> Utilidad del Ejercicio </td><td align='right'>72214</td> </tr>
+<tr><td>TOTAL ACTIVOS</td><td style='background-color: lightgreen'>2180972</td><td>TOTAL PASIVO + PATRIMONIO</td><td style='background-color: lightgreen'>2180972</td></tr>
 <tr><td colspan='8'> alectrico® SpA </td> </tr>
 <tr><td colspan='8'> Partida General Final 2021 alectrico® SpA</td></tr>
 </tbody>
 </table>
-</section>

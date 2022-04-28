@@ -1,14 +1,12 @@
 --- 
+title: Estado de Resultados
 layout: page
 --- 
-<h1>Estado de Resultados</h1> 
-<section>
-<h2> ESTADO DE RESULTADOS CON INDICACIONES TRIBUTARIAS </h2>
 <table><tbody>
 <tr><th colspan='3'>alectrico-2021</th></tr>
 <tr><th colspan='8'> CALCULO DE LA BASE IMPONIBLE PROPYME </th></tr><tr><td colspan='8'>Solo se consideran las transacciones hasta el día 31 de enero	2021. Cifras en pesos. </td></tr>
 <tr style='font-weight:bold;background-color: azure'><td colspan='8' align='center'>INVENTARIO-FINAL-LIQUIDADO</td></tr>
-<tr><td></td><td></td><td></td><td></td><td align='right'>152942</td><td colspan='2'> Ingresos Brutos Percibidos A.29-LIR </td></tr>
+<tr><td></td><td></td><td></td><td></td><td align='right'>152909</td><td colspan='2'> Ingresos Brutos Percibidos A.29-LIR </td></tr>
 <tr><td></td><td></td><td></td><td></td><td align='right'>152909</td><td> Ventas </td></tr>
 <tr><td></td><td></td><td></td><td> (-) </td> <td align='right'>0 </td> <td>  Rebajas sobre ventas </td></tr>
 <tr><td></td><td></td><td></td><td> (-) </td><td align='right'>78967</td><td> Devoluciones sobre ventas </td></tr>
@@ -23,7 +21,7 @@ layout: page
 <tr><td> (-) </td><td align='right'>0</td><td></td><td></td><td></td><td> Descuentos Sobre Compras </td></tr>
 <tr><td>(=)</td><td align='right'>0</td><td></td><td></td><td></td><td>Compras Netas</td></tr> 
 <tr><td> (+) </td><td align='right'>0</td><td></td><td></td><td></td><td colspan='2'>Inventario Inicial</td></tr> 
-<tr><td> (-) </td> <td align='right'>-65454</td><td> </td><td></td><td></td><td colspan='2'>Inventario </td></tr>
+<tr><td> (-) </td> <td align='right'>-46605</td><td> </td><td></td><td></td><td colspan='2'>Inventario </td></tr>
 <tr><td> (-) </td> <td align='right'>0</td><td> </td><td></td><td></td><td colspan='2'>Inventario Final </td></tr>
 <tr><td> (=) </td> <td align='right'>0</td><td> </td><td></td><td></td><td colspan='2'>Costo de Mercancías </td></tr>
 <tr><td> (=) </td> <td align='right'>44044</td><td> </td><td></td><td></td><td colspan='2'>Insumos </td></tr>
@@ -45,23 +43,23 @@ layout: page
 <tr><td></td><td> </td><td> </td><td></td><td align='right'>72214</td><td> Utilidad Antes de Reserva </td></tr>
 <tr><td></td><td></td><td></td><td> (-) </td><td align='right'>0</td><td> Reserva Legal </td></tr>
 <tr style='font-weight:bold; background-color: azure'><td> <td></td></td><td> </td><td></td><td align='right'>72214</td><td> Resultado de Explotacion </td></tr>
-<tr><td></td><td></td><td></td><td> (+) </td><td align='right'>33</td><td> Ganancia Por Corrección Monetaria </td></tr>
+<tr><td></td><td></td><td></td><td> (+) </td><td align='right'>0</td><td> Ganancia Por Corrección Monetaria </td></tr>
 <tr><td></td><td></td><td></td><td> (-) </td><td align='right'>0</td><td> Impuestos No Recuperables </td></tr>
-<tr style='font-weight:bold; background-color: azure'><td> <td></td></td><td> </td><td></td><td align='right'>72247</td><td> Resultado Fuera de Explotacion </td></tr>
-<tr style='font-weight:bold; background-color: azure'><td> <td></td></td><td> </td><td></td><td align='right'>72247</td><td> Resultado Antes de Impuesto</td></tr>
-<tr style='color: white;background-color: lightgreen' ><td></td><td></td><td></td><td> (X) </td><td align='right'> 7225</td><td> Impuesto No Aplica porque hay pérdida tributaria </td></tr>
-<tr style='font-weight:bold;background-color: azure'><td> <td></td></td><td> </td><td></td><td align='right'>72247</td><td> Utilidad Después de Impuestos <small> Calculada </small></td></tr>
+<tr style='font-weight:bold; background-color: azure'><td> <td></td></td><td> </td><td></td><td align='right'>72214</td><td> Resultado Fuera de Explotacion </td></tr>
+<tr style='font-weight:bold; background-color: azure'><td> <td></td></td><td> </td><td></td><td align='right'>72214</td><td> Resultado Antes de Impuesto</td></tr>
+<tr style='color: white;background-color: lightgreen' ><td></td><td></td><td></td><td> (X) </td><td align='right'> 7221</td><td> Impuesto No Aplica porque hay pérdida tributaria </td></tr>
+<tr style='font-weight:bold;background-color: azure'><td> <td></td></td><td> </td><td></td><td align='right'>72214</td><td> Utilidad Después de Impuestos <small> Calculada </small></td></tr>
 </tbody></table>
 <table> 
 <tr><th> <td colspan=6> DETERMINACIÓN DE LA BASE IMPONIBLE </td></th></tr>
 <tr><th> <td colspan=6> Determina los impuestos del regimen propyme</td></th></tr>
 <tbody>
-<tr style='font-weight:bold;background-color: azure'><td> <td></td></td><td> </td><td></td><td align='right'>72247</td><td> Utilidad del Ejercicio Ant.Impuesto (m. liquidación)</td></tr>
+<tr style='font-weight:bold;background-color: azure'><td> <td></td></td><td> </td><td></td><td align='right'>72214</td><td> Utilidad del Ejercicio Ant.Impuesto (m. liquidación)</td></tr>
 <tr><td> (-) </td><td align='right'>151252</td><td></td><td></td><td></td><td> Depreciación Instantánea Activo Fijo Propyme </td></tr>
 <tr><td> (-) </td><td align='right'>0</td><td></td><td></td><td></td><td> Amortización Instantánea Intangibles </td></tr>
 <tr><td> (+) </td><td align='right'>0</td><td></td><td></td><td></td><td> Aportes al Capital </td></tr>
-<tr><td> <td></td></td><td> </td><td> (=) </td><td align='right' style = 'font-weight:bold; background-color: lightgreen'>-79005</td><td> RLI Calculada sin considerar partidas rechazadas </td></tr>
+<tr><td> <td></td></td><td> </td><td> (=) </td><td align='right' style = 'font-weight:bold; background-color: lightgreen'>-79038</td><td> RLI Calculada sin considerar partidas rechazadas </td></tr>
 <tr><td> <td></td></td><td> </td><td>  (-) </td><td align='right' >0</td><td> Rechazados </td></tr>
-<tr><td> <td></td></td><td> </td><td> (1) (=) </td><td align='right' style = 'font-weight:bold; background-color: lightgreen'>-79005</td><td> RLI Calculada </td></tr>
-<tr><td></td><td></td><td></td><td> </td><td align='right' style=' background-color: lightgreen'> <img src='../revisado.png'> -79005</td><td> RLI desp. Imptos ( m. liquidaciones) <small> propyme</small></td></tr>
-</tbody></table></section>
+<tr><td> <td></td></td><td> </td><td> (1) (=) </td><td align='right' style = 'font-weight:bold; background-color: lightgreen'>-79038</td><td> RLI Calculada </td></tr>
+<tr><td></td><td></td><td></td><td> </td><td align='right' style=' background-color: lightgreen'> <img src='../revisado.png'> -79038</td><td> RLI desp. Imptos ( m. liquidaciones) <small> propyme</small></td></tr>
+</tbody></table>
