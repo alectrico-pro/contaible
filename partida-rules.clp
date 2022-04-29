@@ -441,8 +441,9 @@
   ?c <- ( cabeza ?numero ) 
   ( empresa (nombre ?empresa))
 
-  ?partida <-  ( partida (numero ?numero) (dia ?dia) (mes ?mes) (ano ?ano) (referencia ?referencia) )
- ( revision (rechazado ?rechazado) (no-incluir ?no-incluir) (libro-diario ?libro-diario) (voucher ?voucher) (revisado ?revisado) (partida ?numero) (folio ?folio) (descripcion ?descripcion) (legal ?legal) (rcv ?rcv) (ccm ?ccm) (a-corregir ?a-corregir) (old ?old) (tipo ?tipo))
+  ?partida <- ( partida (numero ?numero) (dia ?dia) (mes ?mes) (ano ?ano) (referencia ?referencia) )
+
+  ( revision (rechazado ?rechazado) (no-incluir ?no-incluir) (libro-diario ?libro-diario) (voucher ?voucher) (revisado ?revisado) (partida ?numero) (folio ?folio) (descripcion ?descripcion) (legal ?legal) (rcv ?rcv) (ccm ?ccm) (a-corregir ?a-corregir) (old ?old) (tipo ?tipo))
 
   ( balance (dia ?top) (mes ?mes_top) (ano ?ano_top))
   ( test (>= (to_serial_date ?top ?mes_top ?ano_top) (to_serial_date ?dia ?mes ?ano)))

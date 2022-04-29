@@ -51,13 +51,21 @@ NO se han practicado liquidaciones, por lo que SÍ se muestran cuentas nominales
 <tr> <td> </td> <td align="center" colspan="2">SUMAS</td> <td>|</td> <td align="center" colspan="2">SALDOS</td> <td rowspan="2"> Errores </td> </tr>
 <tr> <td></td>  <td align="center">DEBE</td> <td align="center">HABER</td> <td>|</td> <td align="center">DEBER</td> <td align="center">ACREEDOR</td> <td>A Corregir </td> </tr>
 <tbody>
+<tr style=" background: #fff; border: 1px solid red;">
+<td><small>correccion-monetaria</small></td> <td align="right">0</td> <td align="right">33</td> <td> | </td> <td align="right"> 0</td> <td align="right">33</td> </tr>
+<tr>
+<td>Depreciación Acumulada <small>depreciacion-acumulada-herramientas</small></td> <td align="right">0</td> <td align="right">4202</td> <td> | </td> <td align="right"> 0</td> <td align="right">4202</td>
+</tr>
+<tr>
+<td> <small>depreciacion</small></td> <td align="right">4202</td> <td align="right">0</td> <td> | </td> <td align="right"> 4202</td> <td align="right">0</td>
+</tr>
 <tr>
 <td>Caja <small>caja</small></td> <td align="right">1050209</td> <td align="right">0</td> <td> | </td> <td align="right"> 1050209</td> <td align="right">0</td>
 </tr>
 <tr style=" background: #fff; border: 1px solid red;">
 <td>Insumos<small>insumos</small></td> <td align="right">44044</td> <td align="right">0</td> <td> | </td> <td align="right"> 44044</td> <td align="right">0</td> </tr>
 <tr>
-<td>PPM (Pago Provisional Mensual) <small>ppm</small></td> <td align="right">721</td> <td align="right">0</td> <td> | </td> <td align="right"> 721</td> <td align="right">0</td>
+<td>PPM (Pago Provisional Mensual) <small>ppm</small></td> <td align="right">920</td> <td align="right">0</td> <td> | </td> <td align="right"> 920</td> <td align="right">0</td>
 </tr>
 <tr>
 <td>Herramientas <small>herramientas</small></td> <td align="right">151252</td> <td align="right">0</td> <td> | </td> <td align="right"> 151252</td> <td align="right">0</td>
@@ -77,31 +85,31 @@ NO se han practicado liquidaciones, por lo que SÍ se muestran cuentas nominales
 <tr style=" background: #fff; border: 1px solid red;">
 <td><small>devolucion-sobre-ventas-afectas</small></td> <td align="right">29412</td> <td align="right">0</td> <td> | </td> <td align="right"> 29412</td> <td align="right">0</td> </tr>
 <tr>
-<td> <small>ingresos-brutos</small></td> <td align="right">0</td> <td align="right">152909</td> <td> | </td> <td align="right"> 0</td> <td align="right">152909</td>
-</tr>
-<tr>
-<td> <small>ventas</small></td> <td align="right">0</td> <td align="right">152909</td> <td> | </td> <td align="right"> 0</td> <td align="right">152909</td>
+<td> <small>ingresos-brutos</small></td> <td align="right">0</td> <td align="right">152942</td> <td> | </td> <td align="right"> 0</td> <td align="right">152942</td>
 </tr>
 <tr>
 <td> <small>devolucion-sobre-ventas</small></td> <td align="right">78967</td> <td align="right">0</td> <td> | </td> <td align="right"> 78967</td> <td align="right">0</td>
 </tr>
+<tr>
+<td> <small>ventas</small></td> <td align="right">0</td> <td align="right">152909</td> <td> | </td> <td align="right"> 0</td> <td align="right">152909</td>
+</tr>
 <tr style=" background: #fff; border: 1px solid red;">
 <td><small>devolucion-sobre-ventas-exentas</small></td> <td align="right">49555</td> <td align="right">0</td> <td> | </td> <td align="right"> 49555</td> <td align="right">0</td> </tr>
 <tr>
-<td>IVA Débitos <small>iva-debito</small></td> <td align="right">5588</td> <td align="right">29052</td> <td> | </td> <td align="right"> 0</td> <td align="right">23464</td>
+<td>IVA Débitos <small>iva-debito</small></td> <td align="right">29052</td> <td align="right">29052</td> <td> | </td> <td align="right"> 0</td> <td align="right">0</td>
 </tr>
 <tr>
-<td>Banco Estado <small>banco-estado</small></td> <td align="right">873788</td> <td align="right">322062</td> <td> | </td> <td align="right"> 551726</td> <td align="right">0</td>
+<td>IVA Créditos <small>iva-credito</small></td> <td align="right">48864</td> <td align="right">23464</td> <td> | </td> <td align="right"> 25400</td> <td align="right">0</td>
 </tr>
 <tr>
-<td>IVA Créditos <small>iva-credito</small></td> <td align="right">48831</td> <td align="right">0</td> <td> | </td> <td align="right"> 48831</td> <td align="right">0</td>
+<td>Banco Estado <small>banco-estado</small></td> <td align="right">873788</td> <td align="right">322261</td> <td> | </td> <td align="right"> 551527</td> <td align="right">0</td>
 </tr>
 <tr>
 <td> <small>costos-de-ventas</small></td> <td align="right">1728</td> <td align="right">0</td> <td> | </td> <td align="right"> 1728</td> <td align="right">0</td>
 </tr>
 </tbody>
 <tfoot>
-<tr> <td></td> <td align="right"> <div>3051349</div></td> <td align="right"> <div>2897551</div></td><td> | </td> <td align="right"> <div>2723699</div></td> <td align="right"> <div>2569901</div></td> </tr>
+<tr> <td></td> <td align="right"> <div>3079247</div></td> <td align="right"> <div>2925515</div></td><td> | </td> <td align="right"> <div>2704470</div></td> <td align="right"> <div>2550738</div></td> </tr>
 </tfoot>
 </table>
 

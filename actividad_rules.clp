@@ -68,6 +68,7 @@
       (rendicion-de-vouchers-sii        (partida ?numero))
       (ajuste-de-iva-contra-credito     (partida ?numero))
       (ajuste-de-iva-contra-debito      (partida ?numero))
+      (ajuste-de-iva                    (partida ?numero))
       (pago-de-iva                      (partida ?numero))
       (pago-de-retenciones-de-honorarios (partida ?numero))
       (gasto-investigacion-y-desarrollo (partida ?numero))

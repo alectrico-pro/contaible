@@ -1000,7 +1000,29 @@
    (slot hasta (default 1))
 )
 
-(deftemplate modificar
+(deftemplate modificar-revision
+   (slot partida-nueva)
+   (slot partida-antigua)
+)
+
+(deftemplate modificar-partida
+   (slot partida-nueva)
+   (slot partida-antigua)
+)
+
+
+(deftemplate modificar-cargo
+   (slot partida-nueva)
+   (slot partida-antigua)
+)
+
+(deftemplate modificar-abono
+   (slot partida-nueva)
+   (slot partida-antigua)
+)
+
+
+(deftemplate modificar-actividad
    (slot hecho)
    (slot partida-nueva)
    (slot partida-antigua)

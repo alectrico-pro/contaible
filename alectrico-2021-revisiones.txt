@@ -22,18 +22,19 @@
 (revision (revisado true) (partida 8)  (old 8)     (tipo 61) (rcv true) (ccm true) (libro-diario true) (folio 29457    )  )
 (revision (revisado true) (partida 9)  (old 9)     (tipo 33) (rcv true) (ccm true) (libro-diario true) (folio 35258718 )  )
 (revision (revisado true) (partida 10) (old 10)   (tipo 33) (rcv true) (ccm true) (libro-diario true) (folio 23667281 ) )
+
 (revision (revisado true) (partida 12) (old 12)  (tipo 33) (rcv true) (ccm true) (libro-diario true) (folio 109127578) )
 (revision (revisado true) (partida 13) (old 13)  (tipo 33) (rcv true) (ccm true) (libro-diario true) (folio 109127577) )
 
 (revision (revisado true) (partida 131) (old 131) (voucher 186) (tipo depreciacion) (rcv n-a) (ccm true)  )
-;(revision (revisado true) (partida 132) (old 132) (tipo amortizacion) (rcv n-a) (ccm false) (a-corregir "Anotar en el ccm")  )
+(revision (revisado true) (partida 132) (old 132) (tipo amortizacion) (rcv n-a) (ccm false) (a-corregir "Anotar en el ccm")  )
 
 
 (revision (revisado true) (partida 14) (old 14) (tipo 33) (rcv true) (ccm true) (libro-diario true)) 
 
 (revision (revisado true) (partida 14333) (old 14333) (voucher 188) (tipo ajuste-iva-enero) (rcv n-a) (ccm true)   )
 
-(revision (revisado true) (partida 141) (old 141) (tipo 33) (rcv n-a) )
+(revision (revisado true) (partida 14444) (old 14444) (tipo 33) (rcv n-a) )
 
 ;---- febrero ----
 (revision (revisado true) (partida 14111) (old 14111) (voucher 94) (tipo ajuste-remanente-iva-febrero) (rcv n-a) ) 
@@ -53,9 +54,9 @@
 (revision (revisado true) (partida 17) (old 17) (tipo 33) (rcv n-a) )
 (revision (revisado true) (partida 18) (old 18) (tipo 33) (rcv n-a) )
 (revision (revisado true) (partida 19) (old 19) (tipo 33) (rcv n-a) (a-corregir "Tipo de Documento den Libro Tributario aparece como Nota de Crédito de Papel y en el asiento centralizado correspondiente aparece como 60, debe ser 61") )
-(revision (revisado true) (partida 0191) (old 191) (tipo 56) (rcv n-a)
 
-)
+(revision (revisado true) (partida 191) (old 191) (tipo 56) (rcv n-a))
+
 (revision (revisado true) (partida 1911) (old 1911) (tipo 33) (rcv n-a) )
 
 (revision (revisado true) (partida 192) (old 192) (tipo 33) (rcv n-a) )

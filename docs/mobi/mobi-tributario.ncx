@@ -944,16 +944,20 @@
         
         
         
+        
+        
     
     
     
           <navPoint class="section" id="12" playOrder="12">
             <navLabel>
-              <text>Partida 15</text>
+              <text>Partida 13</text>
             </navLabel>
-	    <content src="libro-diario.html#Partida-15"/>
+	    <content src="libro-diario.html#Partida-13"/>
           </navPoint>    
             
+        
+        
         
         
         
@@ -1020,9 +1024,139 @@
     
           <navPoint class="section" id="13" playOrder="13">
             <navLabel>
-              <text>Partida 186</text>
+              <text>Partida 14</text>
             </navLabel>
-	    <content src="libro-diario.html#Partida-186"/>
+	    <content src="libro-diario.html#Partida-14"/>
+          </navPoint>    
+            
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+    
+    
+    
+          <navPoint class="section" id="14" playOrder="14">
+            <navLabel>
+              <text>Partida 15</text>
+            </navLabel>
+	    <content src="libro-diario.html#Partida-15"/>
+          </navPoint>    
+            
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+    
+    
+    
+          <navPoint class="section" id="15" playOrder="15">
+            <navLabel>
+              <text>Partida 195</text>
+            </navLabel>
+	    <content src="libro-diario.html#Partida-195"/>
           </navPoint>    
             
         
@@ -1115,7 +1249,7 @@
 
 
           counter += 1
-          <navPoint class="section" id="0" playOrder="13">
+          <navPoint class="section" id="0" playOrder="15">
             <navLabel>
               <text>Libro Diario</text>
             </navLabel>
@@ -1124,7 +1258,7 @@
 
 
           counter += 1
-          <navPoint class="section" id="0" playOrder="13">
+          <navPoint class="section" id="0" playOrder="15">
             <navLabel>
               <text>Libro Mayor</text>
             </navLabel>
@@ -1133,7 +1267,7 @@
 
 
           counter += 1
-          <navPoint class="section" id="0" playOrder="13">
+          <navPoint class="section" id="0" playOrder="15">
             <navLabel>
               <text>Subcuentas</text>
             </navLabel>
@@ -1142,7 +1276,7 @@
 
 
           counter += 1
-          <navPoint class="section" id="0" playOrder="13">
+          <navPoint class="section" id="0" playOrder="15">
             <navLabel>
               <text>Liquidaciones</text>
             </navLabel>
@@ -1151,7 +1285,7 @@
 
 
           counter += 1
-          <navPoint class="section" id="0" playOrder="13">
+          <navPoint class="section" id="0" playOrder="15">
             <navLabel>
               <text>Balance</text>
             </navLabel>
@@ -1159,7 +1293,7 @@
             </navPoint>
 
           counter += 1
-          <navPoint class="section" id="0" playOrder="13">
+          <navPoint class="section" id="0" playOrder="15">
             <navLabel>
 	    <text> E-Resultados</text>
             </navLabel>
@@ -1168,7 +1302,7 @@
 
 
           counter += 1
-          <navPoint class="section" id="0" playOrder="13">
+          <navPoint class="section" id="0" playOrder="15">
             <navLabel>
               <text> E-Resultados SII</text>
             </navLabel>
