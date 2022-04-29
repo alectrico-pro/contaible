@@ -880,9 +880,9 @@
     
           <navPoint class="section" id="11" playOrder="11">
             <navLabel>
-              <text>Partida 12</text>
+              <text>Partida 11</text>
             </navLabel>
-	    <content src="libro-diario.html#Partida-12"/>
+	    <content src="libro-diario.html#Partida-11"/>
           </navPoint>    
             
         
@@ -955,9 +955,9 @@
     
           <navPoint class="section" id="12" playOrder="12">
             <navLabel>
-              <text>Partida 13</text>
+              <text>Partida 12</text>
             </navLabel>
-	    <content src="libro-diario.html#Partida-13"/>
+	    <content src="libro-diario.html#Partida-12"/>
           </navPoint>    
             
         
@@ -1024,9 +1024,9 @@
     
           <navPoint class="section" id="13" playOrder="13">
             <navLabel>
-              <text>Partida 14</text>
+              <text>Partida 13</text>
             </navLabel>
-	    <content src="libro-diario.html#Partida-14"/>
+	    <content src="libro-diario.html#Partida-13"/>
           </navPoint>    
             
         
@@ -1099,9 +1099,9 @@
     
           <navPoint class="section" id="14" playOrder="14">
             <navLabel>
-              <text>Partida 14333</text>
+              <text>Partida 14</text>
             </navLabel>
-	    <content src="libro-diario.html#Partida-14333"/>
+	    <content src="libro-diario.html#Partida-14"/>
           </navPoint>    
             
         
@@ -1170,15 +1170,11 @@
     
           <navPoint class="section" id="15" playOrder="15">
             <navLabel>
-              <text>Partida 14334</text>
+              <text>Partida 15</text>
             </navLabel>
-	    <content src="libro-diario.html#Partida-14334"/>
+	    <content src="libro-diario.html#Partida-15"/>
           </navPoint>    
             
-        
-        
-        
-        
         
         
         
@@ -1231,9 +1227,9 @@
     
           <navPoint class="section" id="16" playOrder="16">
             <navLabel>
-              <text>Partida 1052</text>
+              <text>Partida 195</text>
             </navLabel>
-	    <content src="libro-diario.html#Partida-1052"/>
+	    <content src="libro-diario.html#Partida-195"/>
           </navPoint>    
             
         

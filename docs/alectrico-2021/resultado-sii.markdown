@@ -40,7 +40,7 @@ Se han practicado liquidaciones, por lo que NO se muestran cuentas nominales
 <td>nil</td><td><small> ganancia-por-correccion-monetaria </small> </td> <td align='right'> 0</td> <td align='right'>33</td> <td> correccion-monetaria</td>
 </tr>
 <tr style='background-color: lavender'>
-<td> enero</td><td> <a href= '/alectrico-2021/libro-diario#Partida-14333'>14333</a></td><td><small> ganancia-por-correccion-monetaria </small> </td> <td align='right'> 0</td> <td align='right'>33</td> <td> correccion-monetaria</td>
+<td> enero</td><td> <a href= '/alectrico-2021/libro-diario#Partida-14'>14</a></td><td><small> ganancia-por-correccion-monetaria </small> </td> <td align='right'> 0</td> <td align='right'>33</td> <td> correccion-monetaria</td>
 </tr>
 <tr> <td></td><td colspan='4'> C O S T O S   D E    V E N T A S </td> <td> 1728</td></tr>
 <tr style='background-color: lavender'>
@@ -65,13 +65,13 @@ Se han practicado liquidaciones, por lo que NO se muestran cuentas nominales
 <td> enero</td><td><a href= '/alectrico-2021/libro-diario#Partida-10'>10</a></td><td><small> easy-materiales </small> </td> <td align='right'> 39487</td> <td align='right'>0</td> <td> materiales</td>
 </tr>
 <tr style='background-color: lavender'>
-<td> enero</td><td><a href= '/alectrico-2021/libro-diario#Partida-14'>14</a></td><td><small> easy-materiales </small> </td> <td align='right'> 7118</td> <td align='right'>0</td> <td> materiales</td>
+<td> enero</td><td><a href= '/alectrico-2021/libro-diario#Partida-13'>13</a></td><td><small> easy-materiales </small> </td> <td align='right'> 7118</td> <td align='right'>0</td> <td> materiales</td>
 </tr>
 <tr  style='background-color: lightyellow'>
 <td> nil</td><td><small> sodimac-materiales </small> </td> <td align='right'> 18849</td> <td align='right'>0</td> <td> materiales</td>
 </tr>
 <tr style='background-color: lavender'>
-<td> enero</td><td><a href= '/alectrico-2021/libro-diario#Partida-12'>12</a></td><td><small> sodimac-materiales </small> </td> <td align='right'> 18849</td> <td align='right'>0</td> <td> materiales</td>
+<td> enero</td><td><a href= '/alectrico-2021/libro-diario#Partida-11'>11</a></td><td><small> sodimac-materiales </small> </td> <td align='right'> 18849</td> <td align='right'>0</td> <td> materiales</td>
 </tr>
 <tr> <td></td><td colspan='4'> V E N T A S </td><td> 152909</td> </tr>
 <tr  style='background-color: lightyellow'>

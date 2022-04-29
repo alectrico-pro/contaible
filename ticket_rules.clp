@@ -77,7 +77,7 @@
   (test  (neq ?nueva ?antigua))
  =>
   ( modify ?hecho (partida ?nueva))
-  ( assert (modificar-revision (partida-nueva ?nueva) (partida-antigua ?antigua)))
+  ( assert (modificar-revision (partida-nueva ?nueva) (partida-antigua ?antigua) ))
   ( retract ?m )
   ( printout t "Modificando el hecho " ?hecho " remplazando partida " ?antigua " con partida: " ?nueva crlf)
 )
@@ -93,11 +93,12 @@
 )
 
 
-(defrule modificar-revisiones
+(defrule modificar-revisiones-sin-referencia
   ( modificar-revisiones)
   ?m        <- ( modificar-revision (partida-nueva ?nueva) (partida-antigua ?antigua))
   ?revision <- ( revision (old ?antigua))
- =>
+  (not (exists ( partida (referencia ?antigua))))
+  =>
   ( modify ?revision ( partida ?nueva ))
   ( assert (ticket (numero ?nueva)))
   ( assert (nonce  (ticket ?nueva)))
@@ -106,29 +107,71 @@
 )
 
 
+(defrule modificar-revisiones-con-referencia
+  ( modificar-revisiones)
+  ?m        <- ( modificar-revision (partida-nueva ?nueva) (partida-antigua ?antigua))
+  ?revision <- ( revision (old ?antigua))
+  ?partida  <- ( partida (referencia ?antigua)) 
+  =>
+  ( modify ?partida  ( referencia ?nueva ))
+  ( modify ?revision ( partida ?nueva ))
+  ( assert (ticket (numero ?nueva)))
+  ( assert (nonce  (ticket ?nueva)))
+  ( retract ?m )
+  ( printout t "Modificando revisión con referencia " tab  ?antigua " se ha cambiado a " ?nueva crlf)
+)
+
+
+(defrule crear-revision-sin-referencia
+  ( modificar-revisiones)
+  ?m        <- ( modificar-revision (partida-nueva ?nueva) (partida-antigua ?antigua))
+  (not (exists ( revision (old ?antigua))))
+  (not (exists ( partida (referencia ?antigua))))
+  =>
+  ( assert (revision (partida ?nueva) (old ?antigua)))
+  ( assert (ticket (numero ?nueva)))
+  ( assert (nonce  (ticket ?nueva)))
+  ( retract ?m )
+  ( printout t "Creando revisión sin referencia " tab  ?antigua " se ha cambiado a " ?nueva crlf)
+)
+
+
+(defrule crear-revisiones-con-referencia
+  ( modificar-revisiones)
+  ?m        <- ( modificar-revision (partida-nueva ?nueva) (partida-antigua ?antigua))
+  (not (exists ( ( revision (old ?antigua)))))
+  ?partida  <- ( partida (referencia ?antigua))
+  =>
+  ( modify ?partida  ( referencia ?nueva ))
+    ( assert ?revision ( partida ?nueva ) (old ?antigua))
+  ( assert (ticket (numero ?nueva)))
+  ( assert (nonce  (ticket ?nueva)))
+  ( retract ?m )
+  ( printout t "Creando revisión con referencia " tab  ?antigua " se ha cambiado a " ?nueva crlf)
+)
+
+
 
 
 (defrule revisiones-sin-tickets
-(no)
   ( modificar-revisiones)
   ?m <- ( modificar-revision (partida-nueva ?nueva) (partida-antigua ?antigua))
   (exists ( revision (partida ?antigua)))
   (not (exists (ticket (numero ?antigua))))
  =>
   ( assert (ticket (numero ?antigua )))
-;  ( printout t "Ticket no existe " ?antigua " ahora ha sido creado " crlf)
+  ( printout t "Ticket no existe " ?antigua " ahora ha sido creado " crlf)
 )
 
 
 (defrule revisiones-sin-nonce
-(no)
   ( modificar-revisiones)
   ?m <- ( modificar-revision (partida-nueva ?nueva) (partida-antigua ?antigua))
   (exists ( revision (partida ?antigua)))
   (not (exists (nonce (ticket ?antigua))))
  =>
   ( assert (nonce (ticket ?antigua )))
-;  ( printout t "Nonce no existe " ?antigua " ahora ha sido creado " crlf)
+  ( printout t "Nonce no existe " ?antigua " ahora ha sido creado " crlf)
 )
 
 

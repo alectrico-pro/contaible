@@ -8,8 +8,8 @@ layout: page
 
 
 <br> <br> <br> <br> <br> <br> 
-<table id='Partida-1040'  class='table-bordered' >
-<thead><th colspan='6'>Partida 1040</th></thead>
+<table id='Partida-183'  class='table-bordered' >
+<thead><th colspan='6'>Partida 183</th></thead>
  <thead> <th> </th> <th> Código </th> <th>  Valor </th> <th> Descripción </th> </thead>
 <tbody>
  <tr> <td> </td> <td> 511 </td> <td align='right'>  41503 </td> <td> CRED.IVA POR DCTOS. ELECTRONICOS  </td> </tr>
@@ -32,7 +32,7 @@ layout: page
 <tr> <td> </td> <td> 12451 </td> <td> 0</td> </tr>
 <tr><td colspan='4'> alectrico® SpA</td> </tr> 
 <tr><td colspan='4'> ( 31 de enero	2021	 ) </td> </tr>
-<tr><td colspan='8'> Partida 1040: Formulario F29 enero </td></tr>
+<tr><td colspan='8'> Partida 183: Formulario F29 enero </td></tr>
 <tr><td colspan = '8'> codigos-f29</td> </tr>
 </tbody>
 </table>

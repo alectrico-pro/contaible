@@ -20,7 +20,7 @@
 
 
 ( selecciones
- (renumerar false)
+ (renumerar true)
  (abonar-deudoras false) 
  (devolver-a-devolucion-sobre-ventas true)
  (ejercicio-anterior     alectrico-2021)

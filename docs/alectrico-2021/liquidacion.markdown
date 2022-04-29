@@ -7,13 +7,13 @@ layout: page
 <tr><td colspan='3'> Cuenta de Inventario en enero de 2021</td></tr>
 <tr style='background-color: cornflowerblue'><td> Partida </td> <td> DEBE </td> <td> HABER </td> </tr>
 <tr> <td>10</td><td> 39487</td><td>0</td></tr>
-<tr> <td>12</td><td> 18849</td><td>0</td></tr>
-<tr> <td>14</td><td> 7118</td><td>0</td></tr>
+<tr> <td>11</td><td> 18849</td><td>0</td></tr>
+<tr> <td>13</td><td> 7118</td><td>0</td></tr>
 <tr> <td></td><td> 65454</td><td>0</td></tr>
 <tr><td colspan='2'> Fin de Cuenta de Inventario Final </td></tr>
 </tbody></table>
 <table style='background-color: lightyellow' ><tbody>
-<tr style='color: white; background-color: black'><td colspan='9'> Partida 210</td></tr>
+<tr style='color: white; background-color: black'><td colspan='9'> Partida 176</td></tr>
 <tr><th>DEBE</th><th> HABER </th> <th colspan='6'> Cuenta </th></tr>
 <tr><td>123497</td><td><small> aportes-deducible</small></td> <td colspan='2'>ventas</td></tr>
 <tr><td></td><td>123497</td><td></td><td> r(base-imponible) </td></tr>
@@ -38,7 +38,7 @@ layout: page
 <tr><td></td><td></td><td  style='background-color: blanchedalmond'>218396</td></tr>
 </table>
 <table style='background-color: lightyellow' ><tbody>
-<tr style='color: white; background-color: black'><td colspan='9'> Partida 211</td></tr>
+<tr style='color: white; background-color: black'><td colspan='9'> Partida 177</td></tr>
 <tr><th>DEBE</th><th> HABER </th> <th colspan='6'> Cuenta </th></tr>
 <tr><td></td><td>29412</td><td></td><td>devolucion-sobre-ventas</td></tr>
 <tr><td>29412</td><td><small> deducciones-deducible</small> </td><td colspan='2'> r(base-imponible)  </td></tr>
@@ -65,7 +65,7 @@ layout: page
 <tr><td></td><td style='background-color: blanchedalmond'>17753</td></tr>
 </table>
 <table style='background-color: lightyellow' ><tbody>
-<tr style='color: white; background-color: black'><td colspan='9'> Partida 213</td></tr>
+<tr style='color: white; background-color: black'><td colspan='9'> Partida 179</td></tr>
 <tr><th>DEBE</th><th> HABER </th> <th colspan='6'> Cuenta </th></tr>
 <tr><td>29412</td><td><small> ganadoras-deducible</small></td> <td colspan='2'>ventas</td></tr>
 <tr><td></td><td>29412</td><td></td><td> r(perdidas-y-ganancias) </td></tr>
@@ -90,7 +90,7 @@ layout: page
 <tr><td></td><td></td><td  style='background-color: blanchedalmond'>218396</td></tr>
 </table>
 <table style='background-color: lightyellow' ><tbody>
-<tr style='color: white; background-color: black'><td colspan='9'> Partida 214</td></tr>
+<tr style='color: white; background-color: black'><td colspan='9'> Partida 180</td></tr>
 <tr><th>DEBE</th><th> HABER </th> <th colspan='6'> Cuenta </th></tr>
 <tr><td> </td><td>4505</td><td> </td><td>devolucion-sobre-ventas</td></tr>
 <tr><td>4505</td><td><small> perdedoras-deducible</small> </td><td colspan='2'> r(perdidas-y-ganancias) </td></tr>
@@ -115,7 +115,7 @@ layout: page
 <tr><td></td><td></td><td  style='background-color: blanchedalmond'>133499</td></tr>
 </table>
 <table style='background-color: lightyellow' ><tbody>
-<tr style='color: white; background-color: black'><td colspan='9'> Partida 216</td></tr>
+<tr style='color: white; background-color: black'><td colspan='9'> Partida 182</td></tr>
 <tr><th>DEBE</th><th> HABER </th> <th colspan='6'> Cuenta </th></tr>
 <tr><td>7118</td><td><small> ganadoras-deducible</small></td> <td colspan='2'>inventario</td></tr>
 <tr><td></td><td>7118</td><td></td><td> r(inventario-final) </td></tr>
@@ -150,7 +150,7 @@ layout: page
 <tr><td></td><td></td><td  style='background-color: blanchedalmond'>68045</td></tr>
 </table>
 <table style='background-color: lightyellow' ><tbody>
-<tr style='color: white; background-color: black'><td colspan='9'> Partida 215</td></tr>
+<tr style='color: white; background-color: black'><td colspan='9'> Partida 181</td></tr>
 <tr><th>DEBE</th><th> HABER </th> <th colspan='6'> Cuenta </th></tr>
 <tr> <td colspan='7'> x-- Liquidando cuenta de resultados idpc en perdidas-y-ganancias</td></tr>
 <tr> <td colspan='7'> La cuenta de liquidacion tiene un debe de 	150351 y un haber de 	218396</td></tr>
