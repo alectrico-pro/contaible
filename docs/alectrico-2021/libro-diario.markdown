@@ -321,18 +321,20 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <table id='Partida-12'>
 <tr> <td style='background-color: lavender' colspan='6'>Partida 12</td></tr>
 <tbody>
-<tr>  <td> </td> <td name='Debe' align='right'> 28738</td> <td name='Haber' align='right'> 0</td> <td colspan='2'> a[iva-credito] </td> </tr>
-<tr>  <td> </td> <td name='Debe' align='right'> 0</td> <td name='Haber' align='right'> 179990</td> <td colspan='2'> a[banco-estado] </td> </tr>
-<tr>  <td> </td> <td name='Debe' align='right'> 151252</td> <td name='Haber' align='right'> 0</td> <td colspan='2'> a[herramientas] </td> </tr>
-<tr>  <td>extra-contable </td> <td align='right'> 151252</td> <td align='right'>0</td> <td> </td> <td> t[depreciacion-instantanea-de-activos-fijos-propyme] </td></tr> 
-<tr> <td> </td> <td style='background-color: blanchedalmond'> 179990 </td> <td style='background-color: blanchedalmond'> 179990</td> </tr>
+<tr><td name='Debe' align='right'>18849</td> <td colspan='7'>sodimac-materiales#materiales</td> </tr>
+<tr>  <td> </td> <td name='Debe' align='right'> 18849</td> <td name='Haber' align='right'> 0</td> <td colspan='2'> a[inventario] </td> </tr>
+<tr>  <td> </td> <td name='Debe' align='right'> 18849</td> <td name='Haber' align='right'> 0</td> <td colspan='2'> a[materiales] </td> </tr>
+<tr>  <td> </td> <td name='Debe' align='right'> 3581</td> <td name='Haber' align='right'> 0</td> <td colspan='2'> a[iva-credito] </td> </tr>
+<tr>  <td> </td> <td name='Debe' align='right'> 0</td> <td name='Haber' align='right'> 22430</td> <td colspan='2'> a[banco-estado] </td> </tr>
+<tr>  <td> </td> <td align='right'>0 </td> <td align='right'> 18849</td> <td> </td> <td> r[costos-de-mercancias] </td> </tr>
+<tr> <td> </td> <td style='background-color: blanchedalmond'> 41279 </td> <td style='background-color: blanchedalmond'> 41279</td> </tr>
 </tbody><tbody>
 <tr><td colspan='4'> alectrico® SpA</td> </tr> 
 <tr><td colspan='4'> ( 14 de enero	2021	 ) </td> </tr>
-<tr><td colspan='8'> Partida 12: Por compra de taladro inalámbrico DeWalt a Sodimac </td></tr>
+<tr><td colspan='8'> Partida 12: Por compra de materiales eléctricos a Sodimac </td></tr>
 <tr> <td colspan='7'>efectuado a sodimac </td> </tr>
-<tr><td colspan = '8'> comprar-activos-fijos-al-contado</td> </tr>
-<tr style='background-color: aliceblue'> <td colspan = '8'> <img src='../factura-afecta-sodimac-109127577.png'></td> </tr>
+<tr><td colspan = '8'> comprar-inventario</td> </tr>
+<tr style='background-color: aliceblue'> <td colspan = '8'> <img src='../factura-afecta-sodimac-109127578.png'></td> </tr>
 </tbody>
 </table>
 <p style='page-break-before: always;'>&nbsp;</p>
@@ -350,20 +352,18 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <table id='Partida-13'>
 <tr> <td style='background-color: lavender' colspan='6'>Partida 13</td></tr>
 <tbody>
-<tr><td name='Debe' align='right'>7118</td> <td colspan='7'>easy-materiales#materiales</td> </tr>
-<tr>  <td> </td> <td name='Debe' align='right'> 7118</td> <td name='Haber' align='right'> 0</td> <td colspan='2'> a[inventario] </td> </tr>
-<tr>  <td> </td> <td name='Debe' align='right'> 7118</td> <td name='Haber' align='right'> 0</td> <td colspan='2'> a[materiales] </td> </tr>
-<tr>  <td> </td> <td name='Debe' align='right'> 1352</td> <td name='Haber' align='right'> 0</td> <td colspan='2'> a[iva-credito] </td> </tr>
-<tr>  <td> </td> <td name='Debe' align='right'> 0</td> <td name='Haber' align='right'> 8470</td> <td colspan='2'> a[banco-estado] </td> </tr>
-<tr>  <td> </td> <td align='right'>0 </td> <td align='right'> 7118</td> <td> </td> <td> r[costos-de-mercancias] </td> </tr>
-<tr> <td> </td> <td style='background-color: blanchedalmond'> 15588 </td> <td style='background-color: blanchedalmond'> 15588</td> </tr>
+<tr>  <td> </td> <td name='Debe' align='right'> 28738</td> <td name='Haber' align='right'> 0</td> <td colspan='2'> a[iva-credito] </td> </tr>
+<tr>  <td> </td> <td name='Debe' align='right'> 0</td> <td name='Haber' align='right'> 179990</td> <td colspan='2'> a[banco-estado] </td> </tr>
+<tr>  <td> </td> <td name='Debe' align='right'> 151252</td> <td name='Haber' align='right'> 0</td> <td colspan='2'> a[herramientas] </td> </tr>
+<tr>  <td>extra-contable </td> <td align='right'> 151252</td> <td align='right'>0</td> <td> </td> <td> t[depreciacion-instantanea-de-activos-fijos-propyme] </td></tr> 
+<tr> <td> </td> <td style='background-color: blanchedalmond'> 179990 </td> <td style='background-color: blanchedalmond'> 179990</td> </tr>
 </tbody><tbody>
 <tr><td colspan='4'> alectrico® SpA</td> </tr> 
-<tr><td colspan='4'> ( 4 de enero	2021	 ) </td> </tr>
-<tr><td colspan='8'> Partida 13: Por compra 2 interruptores y 1 guantes a Easy </td></tr>
-<tr> <td colspan='7'>efectuado a easy </td> </tr>
-<tr><td colspan = '8'> comprar-inventario</td> </tr>
-<tr style='background-color: aliceblue'> <td colspan = '8'> <img src='../factura-afecta-easy-23342872.png'></td> </tr>
+<tr><td colspan='4'> ( 14 de enero	2021	 ) </td> </tr>
+<tr><td colspan='8'> Partida 13: Por compra de taladro inalámbrico DeWalt a Sodimac </td></tr>
+<tr> <td colspan='7'>efectuado a sodimac </td> </tr>
+<tr><td colspan = '8'> comprar-activos-fijos-al-contado</td> </tr>
+<tr style='background-color: aliceblue'> <td colspan = '8'> <img src='../factura-afecta-sodimac-109127577.png'></td> </tr>
 </tbody>
 </table>
 <p style='page-break-before: always;'>&nbsp;</p>
@@ -380,6 +380,37 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <table id='Partida-14'>
 <tr> <td style='background-color: lavender' colspan='6'>Partida 14</td></tr>
 <tbody>
+<tr><td name='Debe' align='right'>7118</td> <td colspan='7'>easy-materiales#materiales</td> </tr>
+<tr>  <td> </td> <td name='Debe' align='right'> 7118</td> <td name='Haber' align='right'> 0</td> <td colspan='2'> a[inventario] </td> </tr>
+<tr>  <td> </td> <td name='Debe' align='right'> 7118</td> <td name='Haber' align='right'> 0</td> <td colspan='2'> a[materiales] </td> </tr>
+<tr>  <td> </td> <td name='Debe' align='right'> 1352</td> <td name='Haber' align='right'> 0</td> <td colspan='2'> a[iva-credito] </td> </tr>
+<tr>  <td> </td> <td name='Debe' align='right'> 0</td> <td name='Haber' align='right'> 8470</td> <td colspan='2'> a[banco-estado] </td> </tr>
+<tr>  <td> </td> <td align='right'>0 </td> <td align='right'> 7118</td> <td> </td> <td> r[costos-de-mercancias] </td> </tr>
+<tr> <td> </td> <td style='background-color: blanchedalmond'> 15588 </td> <td style='background-color: blanchedalmond'> 15588</td> </tr>
+</tbody><tbody>
+<tr><td colspan='4'> alectrico® SpA</td> </tr> 
+<tr><td colspan='4'> ( 4 de enero	2021	 ) </td> </tr>
+<tr><td colspan='8'> Partida 14: Por compra 2 interruptores y 1 guantes a Easy </td></tr>
+<tr> <td colspan='7'>efectuado a easy </td> </tr>
+<tr><td colspan = '8'> comprar-inventario</td> </tr>
+<tr style='background-color: aliceblue'> <td colspan = '8'> <img src='../factura-afecta-easy-23342872.png'></td> </tr>
+</tbody>
+</table>
+<p style='page-break-before: always;'>&nbsp;</p>
+<br> 
+<p style='color: white; background-color: red'>  </p>
+<br> 
+- [x] antiguo número de partida: 14333
+- [x] voucher en ccm: 188
+- [x] tipo de asiento: ajuste-iva-enero
+- [ ] rcv
+- [ ] libro-diario
+- [x] ccm
+- [x] revisado
+![](../revisado.png)
+<table id='Partida-14333'>
+<tr> <td style='background-color: lavender' colspan='6'>Partida 14333</td></tr>
+<tbody>
 <tr> <td name = 'Debe' align='right'>33 </td> <td colspan='7'> ganancia-por-correccion-monetaria#correccion-monetaria </td></tr>
 <tr> <td name = 'Debe' align='right'>33 </td> <td colspan='7'> correccion-monetaria#ingresos-brutos </td></tr>
 <tr>  <td> </td> <td name='Debe' align='right'> 0</td> <td name='Haber' align='right'> 199</td> <td colspan='2'> a[banco-estado] </td> </tr>
@@ -391,7 +422,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 </tbody><tbody>
 <tr><td colspan='4'> alectrico® SpA</td> </tr> 
 <tr><td colspan='4'> ( 31 de enero	2021	 ) </td> </tr>
-<tr><td colspan='8'> Partida 14: Por ajuste del Debito Fiscal Contra el Credito Fiscal, mes de enero-Por pago del ppm, con factor de  0.0013 mes enero </td></tr>
+<tr><td colspan='8'> Partida 14333: Por ajuste del Debito Fiscal Contra el Credito Fiscal, mes de enero-Por pago del ppm, con factor de  0.0013 mes enero </td></tr>
 <tr><td colspan = '8'> ajustar-iva-contra-credito</td> </tr>
 </tbody>
 </table>
@@ -399,15 +430,15 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <br> 
 <p style='color: white; background-color: red'>  </p>
 <br> 
-- [x] antiguo número de partida: 15
+- [x] antiguo número de partida: 14334
 - [x] tipo de asiento: 33
 - [ ] rcv
 - [ ] libro-diario
 - [ ] ccm
 - [x] revisado
 ![](../revisado.png)
-<table id='Partida-15'>
-<tr> <td style='background-color: lavender' colspan='6'>Partida 15</td></tr>
+<table id='Partida-14334'>
+<tr> <td style='background-color: lavender' colspan='6'>Partida 14334</td></tr>
 <tbody>
 <tr>  <td> </td> <td name='Debe' align='right'> 0</td> <td name='Haber' align='right'> 4202</td> <td colspan='2'> a[depreciacion-acumulada-herramientas] </td> </tr>
 <tr>  <td> </td> <td align='right'>4202 </td> <td align='right'> 0</td> <td> </td> <td> r[depreciacion] </td> </tr>
@@ -415,7 +446,7 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 </tbody><tbody>
 <tr><td colspan='4'> alectrico® SpA</td> </tr> 
 <tr><td colspan='4'> ( 31 de enero	2021	 ) </td> </tr>
-<tr><td colspan='8'> Partida 15: Por depreciacion en enero de taladro </td></tr>
+<tr><td colspan='8'> Partida 14334: Por depreciacion en enero de taladro </td></tr>
 <tr><td colspan = '8'> depreciacion-herramienta</td> </tr>
 </tbody>
 </table>
@@ -424,19 +455,20 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <p style='color: white; background-color: red'>  </p>
 <br> 
 - [x] antiguo número de partida:  
+- [x] tipo de asiento: f-29
 - [ ] rcv
 - [ ] libro-diario
 - [ ] ccm
 - [x] revisado
 ![](../revisado.png)
-<table id='Partida-195'>
-<tr> <td style='background-color: lavender' colspan='6'>Partida 195</td></tr>
+<table id='Partida-1052'>
+<tr> <td style='background-color: lavender' colspan='6'>Partida 1052</td></tr>
 <tbody>
 <tr> <td> </td> <td style='background-color: blanchedalmond'> 0 </td> <td style='background-color: blanchedalmond'> 0</td> </tr>
 </tbody><tbody>
 <tr><td colspan='4'> alectrico® SpA</td> </tr> 
 <tr><td colspan='4'> ( 31 de enero	2021	 ) </td> </tr>
-<tr><td colspan='8'> Partida 195: Formulario F22 2021 </td></tr>
+<tr><td colspan='8'> Partida 1052: Formulario F22 2021 </td></tr>
 <tr><td colspan = '8'> codigos-f29</td> </tr>
 </tbody>
 </table>

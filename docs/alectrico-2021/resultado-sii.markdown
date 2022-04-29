@@ -22,9 +22,9 @@ Se han practicado liquidaciones, por lo que NO se muestran cuentas nominales
 <tr> <td></td><td>depreciacion-acumulada-herramientas</td><td> 0</td> </tr>
 <tr> <td></td><td>insumos</td><td> 44044</td> </tr>
 <tr> <td></td><td>caja</td><td> 1050209</td> </tr>
-<tr> <td></td><td>banco-estado</td><td> 551527</td> </tr>
-<tr> <td></td><td>iva-credito</td><td> 25400</td> </tr>
-<tr> <td></td><td>materiales</td><td> 90649</td> </tr>
+<tr> <td></td><td>banco-estado</td><td> 529097</td> </tr>
+<tr> <td></td><td>iva-credito</td><td> 28981</td> </tr>
+<tr> <td></td><td>materiales</td><td> 109498</td> </tr>
 <tr> <td></td><td>ppm</td><td> 920</td> </tr>
 <tr> <td></td><td colspan='4'> G A S T O S    P R O M O C I O N A L E S </td> <td> 0</td> </tr>
 <tr> <td></td><td colspan='4'> G A S T O S     A D M I N I S T R A T I V O S </td> <td> 0</td></tr>
@@ -40,7 +40,7 @@ Se han practicado liquidaciones, por lo que NO se muestran cuentas nominales
 <td>nil</td><td><small> ganancia-por-correccion-monetaria </small> </td> <td align='right'> 0</td> <td align='right'>33</td> <td> correccion-monetaria</td>
 </tr>
 <tr style='background-color: lavender'>
-<td> enero</td><td> <a href= '/alectrico-2021/libro-diario#Partida-14'>14</a></td><td><small> ganancia-por-correccion-monetaria </small> </td> <td align='right'> 0</td> <td align='right'>33</td> <td> correccion-monetaria</td>
+<td> enero</td><td> <a href= '/alectrico-2021/libro-diario#Partida-14333'>14333</a></td><td><small> ganancia-por-correccion-monetaria </small> </td> <td align='right'> 0</td> <td align='right'>33</td> <td> correccion-monetaria</td>
 </tr>
 <tr> <td></td><td colspan='4'> C O S T O S   D E    V E N T A S </td> <td> 1728</td></tr>
 <tr style='background-color: lavender'>
@@ -51,13 +51,13 @@ Se han practicado liquidaciones, por lo que NO se muestran cuentas nominales
 </tr>
 <tr> <td></td><td colspan='4'> I N S U M O S</td> <td>44044</td></tr>
 <tr  style='background-color: lightyellow'>
-<td> nil</td><td><small> materiales </small> </td> <td align='right'> 90649</td> <td align='right'>0</td> <td> insumos</td>
+<td> nil</td><td><small> materiales </small> </td> <td align='right'> 109498</td> <td align='right'>0</td> <td> insumos</td>
 </tr>
-<tr> <td></td><td>materiales</td><td> 90649</td> </tr>
+<tr> <td></td><td>materiales</td><td> 109498</td> </tr>
 <tr style='background-color: lavender'>
 <td> enero</td><td><a href= '/alectrico-2021/libro-diario#Partida-2'>2</a></td><td><small> materiales </small> </td> <td align='right'> 44044</td> <td align='right'>0</td> <td> insumos</td>
 </tr>
-<tr> <td></td><td colspan='4'> M A T E R I A L E S </td> <td> 90649</td> </tr>
+<tr> <td></td><td colspan='4'> M A T E R I A L E S </td> <td> 109498</td> </tr>
 <tr  style='background-color: lightyellow'>
 <td> nil</td><td><small> easy-materiales </small> </td> <td align='right'> 46605</td> <td align='right'>0</td> <td> materiales</td>
 </tr>
@@ -65,7 +65,13 @@ Se han practicado liquidaciones, por lo que NO se muestran cuentas nominales
 <td> enero</td><td><a href= '/alectrico-2021/libro-diario#Partida-10'>10</a></td><td><small> easy-materiales </small> </td> <td align='right'> 39487</td> <td align='right'>0</td> <td> materiales</td>
 </tr>
 <tr style='background-color: lavender'>
-<td> enero</td><td><a href= '/alectrico-2021/libro-diario#Partida-13'>13</a></td><td><small> easy-materiales </small> </td> <td align='right'> 7118</td> <td align='right'>0</td> <td> materiales</td>
+<td> enero</td><td><a href= '/alectrico-2021/libro-diario#Partida-14'>14</a></td><td><small> easy-materiales </small> </td> <td align='right'> 7118</td> <td align='right'>0</td> <td> materiales</td>
+</tr>
+<tr  style='background-color: lightyellow'>
+<td> nil</td><td><small> sodimac-materiales </small> </td> <td align='right'> 18849</td> <td align='right'>0</td> <td> materiales</td>
+</tr>
+<tr style='background-color: lavender'>
+<td> enero</td><td><a href= '/alectrico-2021/libro-diario#Partida-12'>12</a></td><td><small> sodimac-materiales </small> </td> <td align='right'> 18849</td> <td align='right'>0</td> <td> materiales</td>
 </tr>
 <tr> <td></td><td colspan='4'> V E N T A S </td><td> 152909</td> </tr>
 <tr  style='background-color: lightyellow'>

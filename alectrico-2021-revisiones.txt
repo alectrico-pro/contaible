@@ -34,7 +34,7 @@
 
 (revision (revisado true) (partida 14333) (old 14333) (voucher 188) (tipo ajuste-iva-enero) (rcv n-a) (ccm true)   )
 
-(revision (revisado true) (partida 14444) (old 14444) (tipo 33) (rcv n-a) )
+(revision (revisado true) (partida 14334) (old 14334) (tipo 33) (rcv n-a) )
 
 ;---- febrero ----
 (revision (revisado true) (partida 14111) (old 14111) (voucher 94) (tipo ajuste-remanente-iva-febrero) (rcv n-a) ) 

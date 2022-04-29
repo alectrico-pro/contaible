@@ -57,12 +57,12 @@
    ;la actividad debe ser modificada con efecto posterior, fuera de do-for-all-facts
    ( if (neq ?count ?partida-antigua)
      then
-      ( assert (modificar-actividad (hecho ?actividad)
-      ( partida-nueva ?count) (partida-antigua ?partida-antigua)))
+       ( assert (modificar-actividad (hecho ?actividad)
+       ( partida-nueva ?count) (partida-antigua ?partida-antigua)))
    )
-   ( assert (ticket (numero ?count)))
-   ( assert (nonce  (ticket ?count)))
 
+   ( assert (ticket (numero ?count)))
+   ( assert (nonce  (ticket ?count)))  
    ( bind ?i-anterior ?i)
    ( printout t partida-antes tab ?partida-antigua tab " | " tab partida-ahora tab ?count crlf )))
    
@@ -98,6 +98,7 @@
   ?m        <- ( modificar-revision (partida-nueva ?nueva) (partida-antigua ?antigua))
   ?revision <- ( revision (old ?antigua))
  =>
+  ( modify ?revision ( partida ?nueva ))
   ( assert (ticket (numero ?nueva)))
   ( assert (nonce  (ticket ?nueva)))
   ( retract ?m )
