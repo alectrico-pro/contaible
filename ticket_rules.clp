@@ -52,8 +52,8 @@
 
 
 ( defrule fechando-partidas
-
   ( declare (salience 9000))
+(no) 
   ( selecciones (renumerar true))
   ( inicio-de-los-dias (partidas $?partidas))
 
@@ -61,7 +61,7 @@
 
   ( printout t "----------------- TICKET: fechando partidas ------------------" crlf)
   ( progn$ (?i ?partidas)
-     (  do-for-all-facts ((?actividad f22 partida-inventario-final ajuste-anual-de-resultado-tributario ajuste-anual-de-resultado-financiero ajuste-anual ajustes-mensuales insumos salario registro-de-accionistas cargo abono pedido traspaso pago-de-salarios cobro-de-cuentas-por-cobrar nota-de-credito-de-factura-reclamada anulacion-de-vouchers compra-de-materiales compra-de-acciones constitucion-de-spa distribucion-de-utilidad f29 gasto-investigacion-y-desarrollo pago-de-retenciones-de-honorarios pago-de-iva ajuste-de-iva rendicion-de-vouchers-sii rendicion-de-eboletas-sii nota-de-debito-manual nota-de-debito-sii nota-de-credito-de-subcuenta-existente nota-de-credito nota-de-credito-sii venta-sii venta-anticipada pago despago gasto-sobre-compras depreciacion amortizacion gasto-afecto gasto-ventas devolucion salario honorario deposito costo-ventas compra venta gasto-promocional gasto-proveedor gasto-administrativo))
+     (  do-for-all-facts ((?actividad f22 partida-inventario-final ajuste-anual-de-resultado-tributario ajuste-anual-de-resultado-financiero ajuste-anual ajustes-mensuales insumos salario registro-de-accionistas cargo abono pedido traspaso pago-de-salarios cobro-de-cuentas-por-cobrar nota-de-credito-de-factura-reclamada anulacion-de-vouchers compra-de-materiales compra-de-acciones constitucion-de-spa distribucion-de-utilidad f29 gasto-investigacion-y-desarrollo pago-de-retenciones-de-honorarios pago-de-iva ajuste-de-iva rendicion-de-vouchers-sii rendicion-de-eboletas-sii nota-de-debito-manual nota-de-debito-sii nota-de-credito-de-subcuenta-existente nota-de-credito nota-de-credito-sii venta-sii venta-anticipada pago despago gasto-sobre-compras depreciacion amortizacion gasto-afecto gasto-ventas devolucion salario honorario deposito costo-ventas compra venta gasto-promocional gasto-proveedor gasto-administrativo  ))
      ( eq ?actividad:partida ?i )
  
  ;    ( bind ?fecha (to_serial_date ?actividad:dia ?actividad:mes ?actividad:ano))
@@ -72,6 +72,7 @@
      )
   )
   ( assert (ordenar-actividades))
+  ( assert (modificar-actividades))
 )
 
 
@@ -88,22 +89,53 @@
    (bind ?fecha1 (to_serial_date ?dia1 ?mes1 ?ano1))
    (bind ?fecha2 (to_serial_date ?dia2 ?mes2 ?ano2))
 
-   (< ?fecha1 ?fecha2)
+   (> ?fecha1 ?fecha2)
 )
 
-(defrule print
+(defrule ordenar-actividades
+   ( selecciones (renumerar true))
+
    =>
-   (bind ?facts (find-all-facts ((?f f22 partida-inventario-final ajuste-anual-de-resultado-tributario ajuste-anual-de-resultado-financiero ajuste-anual ajustes-mensuales insumos salario registro-de-accionistas cargo abono pedido traspaso pago-de-salarios cobro-de-cuentas-por-cobrar nota-de-credito-de-factura-reclamada anulacion-de-vouchers compra-de-materiales compra-de-acciones constitucion-de-spa distribucion-de-utilidad f29 gasto-investigacion-y-desarrollo pago-de-retenciones-de-honorarios pago-de-iva ajuste-de-iva rendicion-de-vouchers-sii rendicion-de-eboletas-sii nota-de-debito-manual nota-de-debito-sii nota-de-credito-de-subcuenta-existente nota-de-credito nota-de-credito-sii venta-sii venta-anticipada pago despago gasto-sobre-compras depreciacion amortizacion gasto-afecto gasto-ventas devolucion salario honorario deposito costo-ventas compra venta gasto-promocional gasto-proveedor gasto-administrativo )) TRUE))
-   (bind ?facts (sort fecha-sort ?facts))
-   (progn$ (?f ?facts)
-      (printout t (fact-slot-value ?f partida) " tiene fecha " (fact-slot-value ?f dia) "/"  (fact-slot-value ?f mes) "/" (fact-slot-value ?f ano)   "." crlf)
-   )
+   ( assert (modificar-actividades))
 
+   ;el orden interesa para las actividades que carecen de dia y mes especificaos en la entrada (Están a nil aquí)
+   (bind ?actividades (find-all-facts ((?f partida-inventario-final ajuste-anual-de-resultado-tributario ajuste-anual-de-resultado-financiero ajuste-anual ajustes-mensuales insumos salario registro-de-accionistas cargo abono pedido traspaso pago-de-salarios cobro-de-cuentas-por-cobrar nota-de-credito-de-factura-reclamada anulacion-de-vouchers compra-de-materiales compra-de-acciones constitucion-de-spa distribucion-de-utilidad gasto-investigacion-y-desarrollo pago-de-retenciones-de-honorarios pago-de-iva ajuste-de-iva rendicion-de-vouchers-sii rendicion-de-eboletas-sii nota-de-debito-manual nota-de-debito-sii nota-de-credito-de-subcuenta-existente nota-de-credito nota-de-credito-sii venta-sii venta-anticipada pago despago gasto-sobre-compras depreciacion amortizacion gasto-afecto gasto-ventas devolucion salario honorario deposito costo-ventas compra venta gasto-promocional gasto-proveedor gasto-administrativo f29 f22 )) TRUE))
+  (bind ?actividades (sort fecha-sort ?actividades))
+
+  ( bind ?count 0)
+  ( bind ?i-anterior 0)
+
+  ( progn$ (?actividad ?actividades)
+     ;obteniendo los slots
+     ( bind ?partida-antigua (fact-slot-value ?actividad partida))
+     ( bind ?dia (fact-slot-value ?actividad dia))
+     ( bind ?mes (fact-slot-value ?actividad mes))
+     ( bind ?ano (fact-slot-value ?actividad ano))
+
+     ;considerar que algunos kernels se definen a través de varias actividades
+     ;ejemplo partida, abono, cargo
+     ( if (neq ?partida-antigua ?i-anterior) then
+        ( bind ?count (+ 1 ?count)))
+
+     ;count es el valor que se incrementa con cada kernel
+     ;si la secuenci coincde con el número de partida existente
+     ;no será necesario modificar la actividad.
+     ( if (neq ?count ?partida-antigua) then
+        ( assert (modificar-actividad (hecho ?actividad) ( partida-nueva ?count) (partida-antigua ?partida-antigua)))
+        ( printout t ?partida-antigua " tiene fecha: " ?dia "/"  ?mes "/" ?ano  "." crlf)
+        ( printout t ?partida-antigua " -> " ?count crlf) 
+     )
+   
+     ( assert (ticket (numero ?count)))
+     ( assert (nonce  (ticket ?count)))
+     ( bind ?i-anterior ?partida-antigua)
+   )
 )
 
 
-( defrule ordenar-actividades
+( defrule ordenar-actividades-antiguo
   ( declare (salience 9000))
+(no)
   ( ordenar-actividades )
   ( selecciones (renumerar true))
   ( inicio-de-los-dias (partidas $?partidas))

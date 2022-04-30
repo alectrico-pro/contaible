@@ -443,6 +443,10 @@
         
         
         
+        
+        
+        
+        
     
     
     
@@ -524,6 +528,8 @@
 	    <content src="libro-diario.html#Partida-6"/>
           </navPoint>    
             
+        
+        
         
         
         
@@ -729,6 +735,8 @@
         
         
         
+        
+        
     
     
     
@@ -792,14 +800,6 @@
         
         
         
-        
-        
-        
-        
-        
-        
-        
-        
     
     
     
@@ -810,8 +810,6 @@
 	    <content src="libro-diario.html#Partida-10"/>
           </navPoint>    
             
-        
-        
         
         
         
@@ -944,12 +942,6 @@
         
         
         
-        
-        
-        
-        
-        
-        
     
     
     
@@ -1019,6 +1011,8 @@
         
         
         
+        
+        
     
     
     
@@ -1029,10 +1023,6 @@
 	    <content src="libro-diario.html#Partida-13"/>
           </navPoint>    
             
-        
-        
-        
-        
         
         
         
@@ -1165,6 +1155,8 @@
         
         
         
+        
+        
     
     
     
@@ -1222,14 +1214,22 @@
         
         
         
+        
+        
+        
+        
+        
+        
+        
+        
     
     
     
           <navPoint class="section" id="16" playOrder="16">
             <navLabel>
-              <text>Partida 195</text>
+              <text>Partida 198</text>
             </navLabel>
-	    <content src="libro-diario.html#Partida-195"/>
+	    <content src="libro-diario.html#Partida-198"/>
           </navPoint>    
             
         
