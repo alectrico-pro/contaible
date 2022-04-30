@@ -26,16 +26,22 @@
 )
 
 (deftemplate ajuste-anual-de-resultado-financiero
+  (slot dia)
+  (slot mes)
   (slot ano)
   (slot partida)
 )
 
 (deftemplate ajuste-anual-de-resultado-tributario
+  (slot dia)
+  (slot mes)
   (slot ano)
   (slot partida)
 )
 
 (deftemplate ajuste-anual
+   (slot dia)
+   (slot mes)
    (slot ano)
    (slot partida)
    (slot liquidacion)
@@ -62,6 +68,7 @@
     (slot ticket))
 
 (deftemplate ajustes-mensuales
+    (slot dia )
     (slot mes )
     (slot ano)
     (slot partida))
@@ -278,6 +285,7 @@
 (deftemplate registro-de-accionistas
   (slot partida)
   (slot nombre)
+  (slot dia)
   (slot mes)
   (slot ano)
   (slot mostrado-en-partida (default false) )
@@ -498,6 +506,8 @@
 
 (deftemplate f22
   (slot partida)
+  (slot dia)
+  (slot mes)
   (slot ano)
 )
 
@@ -506,6 +516,7 @@
 (deftemplate f29
   (slot anualizado (default true))
   (slot partida)
+  (slot dia)
   (slot mes)
   (slot ano)
 )
@@ -635,6 +646,7 @@
   (slot folio)
   (slot partida)
   (slot unidades)
+  (slot dia)
   (slot mes)
   (slot ano)
   (slot neto)
@@ -646,6 +658,7 @@
 (deftemplate rendicion-de-vouchers-sii
   (slot partida)
   (slot unidades)
+  (slot dia)
   (slot mes)
   (slot ano)
   (slot neto)
@@ -852,6 +865,7 @@
    (slot partida)
    (slot haber (default 0))
    (slot debe (default 0))
+   (slot dia )
    (slot mes )
    (slot ano)
    (slot hecho (default false) )
@@ -859,6 +873,9 @@
 
 
 (deftemplate partida-inventario-final
+   (slot dia)
+   (slot mes)
+   (slot ano)
    (slot partida)
    (slot hecho (default false))
    (slot saldo (default 0))

@@ -26,6 +26,9 @@
 
 
 (registro-de-accionistas
+  (dia 1)
+  (mes enero)
+  (ano 2021)
   (partida 001)
   (nombre alexander)
 )
@@ -3305,7 +3308,7 @@
 ;=========================== LIQUIDACION DE INVENTARIO FINAL ============================
 ;atención: Esto requiere un registro de revision para que se pueda
 ;liquidaar a tributacion
-(partida-inventario-final (partida 216)) 
+(partida-inventario-final (ano 2021) (partida 216)) 
 
 ( f29 (partida 1040) (mes enero) (ano 2021))
 ( f29 (partida 1041) (mes febrero) (ano 2021))

@@ -2,6 +2,31 @@
  (import MAIN deftemplate ?ALL) 
 )
 
+
+(deffunction mes_to_numero ( ?mes )
+  ( switch ?mes
+    ( case enero      then 1)
+    ( case febrero    then 2)
+    ( case marzo      then 3)
+    ( case abril      then 4)
+    ( case mayo       then 5)
+    ( case junio      then 6)
+    ( case julio      then 7)
+    ( case agosto     then 8)
+    ( case septiembre then 9)
+    ( case octubre    then 10)
+    ( case noviembre  then 11)
+    ( case diciembre  then 12)
+  )
+)
+
+(deffunction to_serial_date( ?dia ?mes ?ano)
+  (if (eq nil ?dia) then (bind ?dia 31))
+  (if (eq nil ?mes) then (bind ?mes diciembre))
+  (+ (* 10000 ?ano) (* 100 ( mes_to_numero ?mes)) ?dia)
+)
+
+
 (defglobal ?*actividades* = "")
 
 (defrule inicio-de-los-dias-ticket
@@ -26,9 +51,35 @@
 
 
 
-( defrule enumerar-partidas
+( defrule fechando-partidas
 
   ( declare (salience 9000))
+  ( selecciones (renumerar true))
+  ( inicio-de-los-dias (partidas $?partidas))
+
+  =>
+
+  ( printout t "----------------- TICKET: fechando partidas ------------------" crlf)
+  ( progn$ (?i ?partidas)
+     (  do-for-all-facts ((?actividad f22 partida-inventario-final ajuste-anual-de-resultado-tributario ajuste-anual-de-resultado-financiero ajuste-anual ajustes-mensuales insumos salario registro-de-accionistas cargo abono pedido traspaso pago-de-salarios cobro-de-cuentas-por-cobrar nota-de-credito-de-factura-reclamada anulacion-de-vouchers compra-de-materiales compra-de-acciones constitucion-de-spa distribucion-de-utilidad f29 gasto-investigacion-y-desarrollo pago-de-retenciones-de-honorarios pago-de-iva ajuste-de-iva rendicion-de-vouchers-sii rendicion-de-eboletas-sii nota-de-debito-manual nota-de-debito-sii nota-de-credito-de-subcuenta-existente nota-de-credito nota-de-credito-sii venta-sii venta-anticipada pago despago gasto-sobre-compras depreciacion amortizacion gasto-afecto gasto-ventas devolucion salario honorario deposito costo-ventas compra venta gasto-promocional gasto-proveedor gasto-administrativo))
+     ( eq ?actividad:partida ?i )
+ 
+ ;    ( bind ?fecha (to_serial_date ?actividad:dia ?actividad:mes ?actividad:ano))
+;     ( printout t "Fechando: " ?actividad tab fecha ?fecha crlf )
+  
+  ; ( modify ?actividad (fecha ?fecha))
+      (printout t partida ?actividad:partida tab ?actividad:dia "/" ?actividad:mes "/" ?actividad:ano tab (to_serial_date ?actividad:dia ?actividad:mes ?actividad:ano) crlf)
+     )
+  )
+  ( assert (ordenar-actividades))
+)
+
+
+
+
+( defrule ordenar-actividades
+  ( declare (salience 9000))
+  ( ordenar-actividades )
   ( selecciones (renumerar true))
   ( inicio-de-los-dias (partidas $?partidas))
 
@@ -40,7 +91,7 @@
 ;  (  do-for-all-facts ((?f ?*actividades*)) TRUE (printout t ?f:partida crlf ))
 ; y luego copiar desde el mensaje de error que arroje el sistema.
 
-  ( printout t "----------------- TICKET ------------------" crlf)
+  ( printout t "----------------- TICKET:ordenando actividades ------------------" crlf)
   ( bind ?count 0)
   ( bind ?i-anterior 0)
   ( progn$ (?i ?partidas)
@@ -139,11 +190,11 @@
 (defrule crear-revisiones-con-referencia
   ( modificar-revisiones)
   ?m        <- ( modificar-revision (partida-nueva ?nueva) (partida-antigua ?antigua))
-  (not (exists ( ( revision (old ?antigua)))))
+  (not (exists ( revision (old ?antigua))))
   ?partida  <- ( partida (referencia ?antigua))
   =>
   ( modify ?partida  ( referencia ?nueva ))
-    ( assert ?revision ( partida ?nueva ) (old ?antigua))
+  ( assert ( revision ( partida ?nueva ) (old ?antigua)))
   ( assert (ticket (numero ?nueva)))
   ( assert (nonce  (ticket ?nueva)))
   ( retract ?m )
