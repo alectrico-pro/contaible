@@ -67,14 +67,39 @@
  ;    ( bind ?fecha (to_serial_date ?actividad:dia ?actividad:mes ?actividad:ano))
 ;     ( printout t "Fechando: " ?actividad tab fecha ?fecha crlf )
   
-  ; ( modify ?actividad (fecha ?fecha))
-      (printout t partida ?actividad:partida tab ?actividad:dia "/" ?actividad:mes "/" ?actividad:ano tab (to_serial_date ?actividad:dia ?actividad:mes ?actividad:ano) crlf)
+      ;#( modify ?actividad (fecha ?fecha))
+      ( printout t partida ?actividad:partida tab ?actividad:dia "/" ?actividad:mes "/" ?actividad:ano tab (to_serial_date ?actividad:dia ?actividad:mes ?actividad:ano) crlf)
      )
   )
   ( assert (ordenar-actividades))
 )
 
 
+(deffunction fecha-sort (?f1 ?f2)
+
+   (bind ?dia1 (fact-slot-value ?f1 dia))
+   (bind ?mes1 (fact-slot-value ?f1 mes))
+   (bind ?ano1 (fact-slot-value ?f1 ano))
+
+   (bind ?dia2 (fact-slot-value ?f2 dia))
+   (bind ?mes2 (fact-slot-value ?f2 mes))
+   (bind ?ano2 (fact-slot-value ?f2 ano))
+   
+   (bind ?fecha1 (to_serial_date ?dia1 ?mes1 ?ano1))
+   (bind ?fecha2 (to_serial_date ?dia2 ?mes2 ?ano2))
+
+   (< ?fecha1 ?fecha2)
+)
+
+(defrule print
+   =>
+   (bind ?facts (find-all-facts ((?f f22 partida-inventario-final ajuste-anual-de-resultado-tributario ajuste-anual-de-resultado-financiero ajuste-anual ajustes-mensuales insumos salario registro-de-accionistas cargo abono pedido traspaso pago-de-salarios cobro-de-cuentas-por-cobrar nota-de-credito-de-factura-reclamada anulacion-de-vouchers compra-de-materiales compra-de-acciones constitucion-de-spa distribucion-de-utilidad f29 gasto-investigacion-y-desarrollo pago-de-retenciones-de-honorarios pago-de-iva ajuste-de-iva rendicion-de-vouchers-sii rendicion-de-eboletas-sii nota-de-debito-manual nota-de-debito-sii nota-de-credito-de-subcuenta-existente nota-de-credito nota-de-credito-sii venta-sii venta-anticipada pago despago gasto-sobre-compras depreciacion amortizacion gasto-afecto gasto-ventas devolucion salario honorario deposito costo-ventas compra venta gasto-promocional gasto-proveedor gasto-administrativo )) TRUE))
+   (bind ?facts (sort fecha-sort ?facts))
+   (progn$ (?f ?facts)
+      (printout t (fact-slot-value ?f partida) " tiene fecha " (fact-slot-value ?f dia) "/"  (fact-slot-value ?f mes) "/" (fact-slot-value ?f ano)   "." crlf)
+   )
+
+)
 
 
 ( defrule ordenar-actividades
