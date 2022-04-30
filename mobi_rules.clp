@@ -158,16 +158,16 @@
 
 
 
-(defrule hacer-ajutar-para-ebook-rule
+(defrule ajustar-para-ebook-rule
   ?ajustar <-  ( ajustar-para-book )
-  ( version (asin ?asin) (version ?version) (mes ?mes) )
+  ( version (asin ?asin) (version ?version) (mes ?mes) (dia ?dia))
   ?balance <- (balance )
   ?revision-general <- (revision-general)
   (volumen (asin ?asin) (partidas-no-incluidas $?partidas) )
  =>
 
   (retract ?ajustar)
-  (modify ?balance (mes ?mes))
+  (modify ?balance (mes ?mes) (dia ?dia))
   (modify ?revision-general (partidas ?partidas ))
   (assert (hacer-focos) )
 )

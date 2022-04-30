@@ -1,8 +1,10 @@
 
 (deftemplate version
+
   (slot id)
   (slot version)
   (slot asin)
+  (slot dia)
   (slot mes)
 )
 

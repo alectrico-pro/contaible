@@ -2,7 +2,7 @@ RUBY = ruby
 ERB = erb
 KINDLEGEN = ./kindlegen
 
-#Llamar con VERSION, ASIN Y MES
+#Llamar con VERSION, ASIN Y MES y DIA
 #mobi: libro-diario.html mobi-${VERSION}.ncx book-${VERSION}-${ASIN}-${MES}.opf
 #obi: libro-diario.html mobi-${VERSION}.ncx book-${VERSION}.opf
 	#mobi
@@ -35,60 +35,60 @@ mobi-%.ncx: mobi-%.ncx.erb
 mobi:  toc.html.bak libro-diario.html.bak libro-mayor.html.bak iva.html.bak final.html.bak tributario.html.bak f29.html.bak f22.html.bak comprobacion.html.bak subcuentas.html.bak inventario.html.bak resultado-sii.html.bak liquidacion.html.bak remuneraciones.html.bak valor-activos.html.bak bi.html.bak contaible.html.bak mobi-${VERSION}.ncx book-${VERSION}.opf
 	cat assets/main.css >> mobi.css
 	-$(KINDLEGEN) book-${VERSION}.opf
-	mv book-${VERSION}.mobi book-${VERSION}-${ASIN}-${MES}.mobi
+	mv book-${VERSION}.mobi book-${VERSION}-${ASIN}-${MES}-${DIA}.mobi
 
 
 asiento: 
-	make build VERSION=1 ASIN=B09DXLR7P9 MES=enero
-	make build VERSION=1 ASIN=B09Y47TJ92 MES=febrero
-	make build VERSION=1 ASIN=B09Y46KDVS MES=marzo
-	make build VERSION=1 ASIN=B09Y46BP4D MES=abril
-	make build VERSION=1 ASIN=B09Y47LV3S MES=mayo
-	make build VERSION=1 ASIN=B09Y47J2MV MES=junio
-	make build VERSION=1 ASIN=B09Y48CP4P MES=julio
-	make build VERSION=1 ASIN=B09Y474J4L MES=agosto
-	make build VERSION=1 ASIN=B09Y48ZNJY MES=septiembre
-	make build VERSION=1 ASIN=B09Y48Y56F MES=octubre
-	make build VERSION=1 ASIN=B09Y47WB9Y MES=noviembre
-	make build VERSION=1 ASIN=B09NRKYKN7 MES=diciembre
+	make build VERSION=1 ASIN=B09DXLR7P9 MES=enero DIA=31
+	make build VERSION=1 ASIN=B09Y47TJ92 MES=febrero DIA=31
+	make build VERSION=1 ASIN=B09Y46KDVS MES=marzo  DIA=31
+	make build VERSION=1 ASIN=B09Y46BP4D MES=abril  DIA=31
+	make build VERSION=1 ASIN=B09Y47LV3S MES=mayo   DIA=31
+	make build VERSION=1 ASIN=B09Y47J2MV MES=junio  DIA=31
+	make build VERSION=1 ASIN=B09Y48CP4P MES=julio  DIA=31
+	make build VERSION=1 ASIN=B09Y474J4L MES=agosto  DIA=31
+	make build VERSION=1 ASIN=B09Y48ZNJY MES=septiembre DIA=31
+	make build VERSION=1 ASIN=B09Y48Y56F MES=octubre    DIA=31
+	make build VERSION=1 ASIN=B09Y47WB9Y MES=noviembre  DIA=31
+	make build VERSION=1 ASIN=B09NRKYKN7 MES=diciembre  DIA=31
 	make sync
 
 
 
 .PHONY: contaible
 contaible:
-	make build VERSION=2 ASIN=B09XQZ6B9P MES=diciembre
+	make build VERSION=2 ASIN=B09XQZ6B9P MES=diciembre DIA=31
 	make sync
 
 
 mayor:
-	make build VERSION=mayor ASIN=MAYOR MES=enero
+	make build VERSION=mayor ASIN=MAYOR MES=enero DIA=31
 	make sync
 
 
 financiero:
-	make build VERSION=financiero ASIN=FINANCIERO MES=diciembre EMPRESA=alectrico-2021
+	make build VERSION=financiero ASIN=FINANCIERO MES=diciembre EMPRESA=alectrico-2021 DIA=31
 	make sync
 
 l:
-	make build VERSION=liquidaciones ASIN=L MES=diciembre EMPRESA=alectrico-2021
+	make build VERSION=liquidaciones ASIN=L MES=diciembre EMPRESA=alectrico-2021 DIA=31
 	make sync
 
 
 r:
-	make build VERSION=remuneraciones ASIN=R MES=enero EMPRESA=alectrico-2021
+	make build VERSION=remuneraciones ASIN=R MES=enero EMPRESA=alectrico-2021 DIA=31
 	make sync
 
 a:
-	make build VERSION=activos ASIN=A MES=diciembre EMPRESA=alectrico-2021
+	make build VERSION=activos ASIN=A MES=diciembre EMPRESA=alectrico-2021 DIA=31
 	make sync
 
 t:  
-	make build VERSION=tributario ASIN=T MES=enero EMPRESA=alectrico-2021
+	make build VERSION=tributario ASIN=T MES=enero EMPRESA=alectrico-2021 DIA=1
 	make sync
 
 f:
-	make build VERSION=f22 ASIN=T MES=diciembre EMPRESA=alectrico-2021
+	make build VERSION=f22 ASIN=T MES=diciembre EMPRESA=alectrico-2021 DIA=31
 	make sync
 
 
@@ -100,23 +100,21 @@ build:
 	echo
 	echo
 	-echo '==================================='
-	-echo 'ATENCION: Comenzando procesamiento en make build con VERSION ${VERSION}, ASIN ${ASIN}, MES ${MES} '	
+	-echo 'ATENCION: Comenzando procesamiento en make build con VERSION ${VERSION}, ASIN ${ASIN}, MES ${MES}, DIA ${DIA} '	
 	-echo '==================================='
 	echo 
 	echo
 
-	echo '(version (id 2) (version $(VERSION)) (asin $(ASIN)) (mes $(MES)))' > version.txt
+	echo '(version (id 2) (version $(VERSION)) (asin $(ASIN)) (mes $(MES)) (dia $(DIA)))' > version.txt
 
 	if docker rm st; then echo volumen docker st eliminado exitosamente st; fi 
 	if docker rm mobi; then echo volumen docker mobi eliminado exitosamente; fi
 	if docker stop calibre; docker rm calibre; then echo volumen docker mobi eliminado exitosamente; fi
 	docker build . -t jeky -f DockerfileJeky  
 	docker run -p 4000:4000 --name st -v $(shell pwd)/docs:/doc jeky bash -c 'jekyll build . && cp * /doc -r && chown 1000:1000 /doc -R' --no-cache
-	docker run --name mobi  --volumes-from st -v $(shell pwd)/docs:/doc jeky bash -c 'jekyll build . && cp /doc/_site/${EMPRESA}/*.html /doc/mobi && cp /doc/_site/contaible/index.html /doc/mobi/contaible.html && cp /doc/_site/toc/index.html /doc/mobi/toc.html && cp /doc/_site/assets/* /doc/mobi/assets && cp /doc/_site/assets/main.css /doc/mobi.css && cd /doc/mobi && make mobi VERSION=${VERSION} ASIN=${ASIN} MES=${MES}'
-	docker run  --volumes-from mobi --name=calibre -e PUID=1000 -e PGID=1000 -e TZ=Europe/London -e PASSWORD= `#optional` -e CLI_ARGS= `#optional` -p 8080:8080 -p 8081:8081 -v $(shell pwd)/docs:/doc --restart unless-stopped lscr.io/linuxserver/calibre bash -c 'cd /doc/mobi && ebook-convert book-${VERSION}-${ASIN}-${MES}.mobi book-${VERSION}-${ASIN}-${MES}.epub'
-	# && cp mobi.mobi mobi-${VERSION}-${ASIN}-${MES}.mobi '
+	docker run --name mobi  --volumes-from st -v $(shell pwd)/docs:/doc jeky bash -c 'jekyll build . && cp /doc/_site/${EMPRESA}/*.html /doc/mobi && cp /doc/_site/contaible/index.html /doc/mobi/contaible.html && cp /doc/_site/toc/index.html /doc/mobi/toc.html && cp /doc/_site/assets/* /doc/mobi/assets && cp /doc/_site/assets/main.css /doc/mobi.css && cd /doc/mobi && make mobi VERSION=${VERSION} ASIN=${ASIN} MES=${MES} DIA=${DIA}'
+	docker run  --volumes-from mobi --name=calibre -e PUID=1000 -e PGID=1000 -e TZ=Europe/London -e PASSWORD= `#optional` -e CLI_ARGS= `#optional` -p 8080:8080 -p 8081:8081 -v $(shell pwd)/docs:/doc --restart unless-stopped lscr.io/linuxserver/calibre bash -c 'cd /doc/mobi && ebook-convert book-${VERSION}-${ASIN}-${MES}-${DIA}.mobi book-${VERSION}-${ASIN}-${MES}-${DIA}.epub'
 	
-#La parte de red en docker todavía no la domino, así que intentaré usar sync desde fuera de ddocker
 
 
 sync:
