@@ -88,6 +88,7 @@
 	  <!--
 	  <item id="as" media-type="application/xhtml+xml" href="as.html"></item>
 	  -->
+   <item id="introduccion" media-type="application/xhtml+xml" href="introduccion.html"></item>
     <item id="volumen" media-type="application/xhtml+xml" href="volumen.html"></item>
     <item id="toc" media-type="application/xhtml+xml" href="toc.html"></item>
     <item id="contaible" media-type="application/xhtml+xml" href="contaible.html"></item>
@@ -118,6 +119,7 @@
      http://www.idpf.org/2007/opf/OPF_2.0_final_spec.html#Section2.4
      http://www.niso.org/workrooms/daisy/Z39-86-2005.html#NCX
     -->
+    <spine introduccion="introduccion">
     <spine toc="volumen">
 
     <spine toc="My_Table_of_Contents">

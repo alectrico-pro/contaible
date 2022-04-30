@@ -76,7 +76,8 @@ FROM jekyll/jekyll
 
 #Estos markdown no los genera clips, sino que
 #los escribo directamente
-COPY ./*.markdown         ./
+COPY ./*.markdown         ./alectrico-2021/
+COPY ./introduccion.markdown ./
 COPY ./contaible.markdown ./
 COPY ./toc.markdown       ./
 COPY ./empresa.markdown   ./
@@ -95,8 +96,8 @@ COPY --from=build ./doc/alectrico-2021/ ./alectrico-2021/
 #COPY ./*.markdown      ./alectrico-2021/
 #COPY ./*.markdown      ./necios-2021/
 
-#UN ls ./alectrico-2021/*.markdown
-
+RUN ls ./*.markdown
+RUN rm *.markdown
 
 #En algún momento jekyll convertíra los *.markdown
 #a html y los enlazará de acuerdo

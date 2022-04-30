@@ -359,7 +359,7 @@
     ; (printout t ?actividad:partida tab revisado tab ?revision:revisado  crlf))
  ;  (printout t "-------------------------------------------------" crlf)
 )
-
+)
 ; (eq ?actividad:partida ?revision:partida )
 
 
