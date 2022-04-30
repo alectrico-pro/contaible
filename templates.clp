@@ -9,6 +9,8 @@
 )
 
 (deftemplate volumen
+
+  (slot autor)
   (slot id)
   (slot isbn)
   (slot asin)
