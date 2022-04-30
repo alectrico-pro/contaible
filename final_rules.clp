@@ -227,6 +227,8 @@
 
    (subtotales (cuenta plataforma-ccm) (acreedor ?plataforma-ccm))
 
+   (cuenta (nombre utilidad-del-ejercicio-anterior) (haber ?utilidad-del-ejercicio-anterior))
+
   =>
 
    ( bind ?inventario-inicial (- ?inventario-inicial-deber ?inventario-inicial-acreedor))
@@ -333,6 +335,9 @@
    ( printout k "<tr> <td colspan='2'></td> <td> Reserva Legal </td> <td align='right' >" (- ?reserva-legal-acreedor ?reserva-legal-deber) "</td> </tr>" crlf) 
 
    ( printout k "<tr> <td colspan='2'></td> <td> Utilidades Acumuladas </td> <td align='right' >" ?utilidades-acumuladas "</td> </tr>" crlf)
+
+   ( printout k "<tr> <td colspan='2'></td> <td> Utilidad del Ejercicio Anterior </td> <td align='right' >" ?utilidad-del-ejercicio-anterior "</td> </tr>" crlf)
+
 
    ( printout k "<tr> <td colspan='2'></td> <td> Revalorización del Capital Propio </td> <td align='right' >" ?revalorizacion-del-capital-propio "</td> </tr>" crlf)
 
@@ -443,6 +448,8 @@
    ( printout t tab tab tab tab "|" PATRIMONIO tab tab ?patrimonio crlf)
    ( printout t tab tab tab tab "|" "Capital Social". ?capital-social crlf)
    ( printout t tab tab tab tab "|" "Reserva Legal".. (- ?reserva-legal-acreedor ?reserva-legal-deber) crlf)
+   ( printout t tab tab tab tab "|" "Utilidad Ejr.Anterior".. ?utilidad-del-ejercicio-anterior crlf)
+
    ( printout t tab tab tab tab "|" "Utilidades AC".. ?utilidades-acumuladas crlf)
    ( printout t tab tab tab tab "|" "Aportes".. ?aportes crlf)
    ( printout t tab tab tab tab "|" "Rev.Capital" ?revalorizacion-del-capital-propio crlf)
