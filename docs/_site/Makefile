@@ -32,7 +32,7 @@ mobi-%.ncx: mobi-%.ncx.erb
 #El asin se chequea con un registro de volumenes.txt en el ambiente clips
 #De esa forma llevamos una organización de qué ha sido publicado y donde
 #Entre otros datos que se puedan ir agregando al registro de volúmenes
-mobi:  toc.html.bak libro-diario.html.bak libro-mayor.html.bak iva.html.bak final.html.bak tributario.html.bak f29.html.bak f22.html.bak comprobacion.html.bak subcuentas.html.bak inventario.html.bak resultado-sii.html.bak liquidacion.html.bak remuneraciones.html.bak valor-activos.html.bak bi.html.bak contaible.html.bak mobi-${VERSION}.ncx book-${VERSION}.opf
+mobi:  volumen.html.bak toc.html.bak libro-diario.html.bak libro-mayor.html.bak iva.html.bak final.html.bak tributario.html.bak f29.html.bak f22.html.bak comprobacion.html.bak subcuentas.html.bak inventario.html.bak resultado-sii.html.bak liquidacion.html.bak remuneraciones.html.bak valor-activos.html.bak bi.html.bak contaible.html.bak mobi-${VERSION}.ncx book-${VERSION}.opf
 	cat assets/main.css >> mobi.css
 	-$(KINDLEGEN) book-${VERSION}.opf
 	mv book-${VERSION}.mobi book-${VERSION}-${ASIN}-${MES}-${DIA}.mobi
@@ -88,7 +88,8 @@ t:
 	make sync
 
 f:
-	make build VERSION=financiero ASIN=F MES=enero EMPRESA=alectrico-2021 DIA=1
+	make build VERSION=financiero ASIN=B09XQZ6B9P MES=enero EMPRESA=alectrico-2021 DIA=1
+	make build VERSION=financiero ASIN=B09Z7Y5HZF MES=enero EMPRESA=alectrico-2021 DIA=1
 	make sync
 
 

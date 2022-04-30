@@ -64,11 +64,7 @@
      (  do-for-all-facts ((?actividad f22 partida-inventario-final ajuste-anual-de-resultado-tributario ajuste-anual-de-resultado-financiero ajuste-anual ajustes-mensuales insumos salario registro-de-accionistas cargo abono pedido traspaso pago-de-salarios cobro-de-cuentas-por-cobrar nota-de-credito-de-factura-reclamada anulacion-de-vouchers compra-de-materiales compra-de-acciones constitucion-de-spa distribucion-de-utilidad f29 gasto-investigacion-y-desarrollo pago-de-retenciones-de-honorarios pago-de-iva ajuste-de-iva rendicion-de-vouchers-sii rendicion-de-eboletas-sii nota-de-debito-manual nota-de-debito-sii nota-de-credito-de-subcuenta-existente nota-de-credito nota-de-credito-sii venta-sii venta-anticipada pago despago gasto-sobre-compras depreciacion amortizacion gasto-afecto gasto-ventas devolucion salario honorario deposito costo-ventas compra venta gasto-promocional gasto-proveedor gasto-administrativo  ))
      ( eq ?actividad:partida ?i )
  
- ;    ( bind ?fecha (to_serial_date ?actividad:dia ?actividad:mes ?actividad:ano))
-;     ( printout t "Fechando: " ?actividad tab fecha ?fecha crlf )
-  
-      ;#( modify ?actividad (fecha ?fecha))
-      ( printout t partida ?actividad:partida tab ?actividad:dia "/" ?actividad:mes "/" ?actividad:ano tab (to_serial_date ?actividad:dia ?actividad:mes ?actividad:ano) crlf)
+     ; ( printout t partida ?actividad:partida tab ?actividad:dia "/" ?actividad:mes "/" ?actividad:ano tab (to_serial_date ?actividad:dia ?actividad:mes ?actividad:ano) crlf)
      )
   )
   ( assert (ordenar-actividades))
@@ -122,8 +118,8 @@
      ;no será necesario modificar la actividad.
      ( if (neq ?count ?partida-antigua) then
         ( assert (modificar-actividad (hecho ?actividad) ( partida-nueva ?count) (partida-antigua ?partida-antigua)))
-        ( printout t ?partida-antigua " tiene fecha: " ?dia "/"  ?mes "/" ?ano  "." crlf)
-        ( printout t ?partida-antigua " -> " ?count crlf) 
+       ; ( printout t ?partida-antigua " tiene fecha: " ?dia "/"  ?mes "/" ?ano  "." crlf)
+       ; ( printout t ?partida-antigua " -> " ?count crlf) 
      )
    
      ( assert (ticket (numero ?count)))
@@ -154,27 +150,28 @@
   ( progn$ (?i ?partidas)
      (  do-for-all-facts ((?actividad f22 partida-inventario-final ajuste-anual-de-resultado-tributario ajuste-anual-de-resultado-financiero ajuste-anual ajustes-mensuales insumos salario registro-de-accionistas cargo abono pedido traspaso pago-de-salarios cobro-de-cuentas-por-cobrar nota-de-credito-de-factura-reclamada anulacion-de-vouchers compra-de-materiales compra-de-acciones constitucion-de-spa distribucion-de-utilidad f29 gasto-investigacion-y-desarrollo pago-de-retenciones-de-honorarios pago-de-iva ajuste-de-iva rendicion-de-vouchers-sii rendicion-de-eboletas-sii nota-de-debito-manual nota-de-debito-sii nota-de-credito-de-subcuenta-existente nota-de-credito nota-de-credito-sii venta-sii venta-anticipada pago despago gasto-sobre-compras depreciacion amortizacion gasto-afecto gasto-ventas devolucion salario honorario deposito costo-ventas compra venta gasto-promocional gasto-proveedor gasto-administrativo))
 
-   ( eq ?actividad:partida ?i )
-   ;contar solo los cambios en ?i, porque algunas actividades como las de cargo y de abono se pueden referir a la misma partida
+	   ( eq ?actividad:partida ?i )
+	   ;contar solo los cambios en ?i, porque algunas actividades como las de cargo y de abono se pueden referir a la misma partida
 
-   ( if (neq ?i ?i-anterior) then
-     ( bind ?count (+ 1 ?count)) )
+	   ( if (neq ?i ?i-anterior) then
+	     ( bind ?count (+ 1 ?count)) )
 
-   ( bind ?partida-antigua ?actividad:partida)
+	   ( bind ?partida-antigua ?actividad:partida)
 
-   ;la actividad debe ser modificada con efecto posterior, fuera de do-for-all-facts
-   ( if (neq ?count ?partida-antigua)
-     then
-       ( assert (modificar-actividad (hecho ?actividad)
-       ( partida-nueva ?count) (partida-antigua ?partida-antigua)))
-   )
+	   ;la actividad debe ser modificada con efecto posterior, fuera de do-for-all-facts
+	   ( if (neq ?count ?partida-antigua)
+	     then
+	       ( assert (modificar-actividad (hecho ?actividad)
+	       ( partida-nueva ?count) (partida-antigua ?partida-antigua)))
+	   )
 
-   ( assert (ticket (numero ?count)))
-   ( assert (nonce  (ticket ?count)))  
-   ( bind ?i-anterior ?i)
-   ( printout t partida-antes tab ?partida-antigua tab " | " tab partida-ahora tab ?count crlf )))
-   
-   ( assert (modificar-actividades))
+	   ( assert (ticket (numero ?count)))
+	   ( assert (nonce  (ticket ?count)))  
+	   ( bind ?i-anterior ?i)
+	  ;( printout t partida-antes tab ?partida-antigua tab " | " tab partida-ahora tab ?count crlf ))
+     )
+     ( assert (modificar-actividades))
+  )
 )
 
 
@@ -187,7 +184,7 @@
   ( modify ?hecho (partida ?nueva))
   ( assert (modificar-revision (partida-nueva ?nueva) (partida-antigua ?antigua) ))
   ( retract ?m )
-  ( printout t "Modificando el hecho " ?hecho " remplazando partida " ?antigua " con partida: " ?nueva crlf)
+ ;  ( printout t "Modificando el hecho " ?hecho " remplazando partida " ?antigua " con partida: " ?nueva crlf)
 )
 
 
@@ -211,7 +208,7 @@
   ( assert (ticket (numero ?nueva)))
   ( assert (nonce  (ticket ?nueva)))
   ( retract ?m )
-  ( printout t "Modificando revisión " tab  ?antigua " se ha cambiado a " ?nueva crlf)
+ ; ( printout t "Modificando revisión " tab  ?antigua " se ha cambiado a " ?nueva crlf)
 )
 
 
@@ -240,7 +237,7 @@
   ( assert (ticket (numero ?nueva)))
   ( assert (nonce  (ticket ?nueva)))
   ( retract ?m )
-  ( printout t "Creando revisión sin referencia " tab  ?antigua " se ha cambiado a " ?nueva crlf)
+;  ( printout t "Creando revisión sin referencia " tab  ?antigua " se ha cambiado a " ?nueva crlf)
 )
 
 
@@ -356,11 +353,11 @@
   ( not (exists (modificar-revision)))
   =>
   ( printout t "Terminando de  modificar revisiones ............ " crlf)
-  ( printout t "Actividades son:" crlf)
+ ; ( printout t "Actividades son:" crlf)
     ( do-for-all-facts
       ( (?ticket ticket) (?actividad f22 partida-inventario-final ajuste-anual-de-resultado-tributario ajuste-anual-de-resultado-financiero ajuste-anual ajustes-mensuales insumos salario registro-de-accionistas cargo abono pedido traspaso pago-de-salarios cobro-de-cuentas-por-cobrar nota-de-credito-de-factura-reclamada anulacion-de-vouchers compra-de-materiales compra-de-acciones constitucion-de-spa distribucion-de-utilidad f29 gasto-investigacion-y-desarrollo pago-de-retenciones-de-honorarios pago-de-iva ajuste-de-iva rendicion-de-vouchers-sii rendicion-de-eboletas-sii nota-de-debito-manual nota-de-debito-sii nota-de-credito-de-subcuenta-existente nota-de-credito nota-de-credito-sii venta-sii venta-anticipada pago despago gasto-sobre-compras depreciacion amortizacion gasto-afecto gasto-ventas devolucion salario honorario deposito costo-ventas compra venta gasto-promocional gasto-proveedor gasto-administrativo) (?revision revision) ) (eq ?actividad:partida ?revision:partida ?ticket:numero)      
-      (printout t ?actividad:partida tab revisado tab ?revision:revisado  crlf))
-   (printout t "-------------------------------------------------" crlf)
+    ; (printout t ?actividad:partida tab revisado tab ?revision:revisado  crlf))
+ ;  (printout t "-------------------------------------------------" crlf)
 )
 
 ; (eq ?actividad:partida ?revision:partida )

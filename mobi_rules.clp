@@ -159,17 +159,43 @@
 
 
 (defrule ajustar-para-ebook-rule
+  ( empresa (nombre ?empresa))
   ?ajustar <-  ( ajustar-para-book )
   ( version (asin ?asin) (version ?version) (mes ?mes) (dia ?dia))
-  ?balance <- (balance )
+  ?balance <- (balance (ano ?ano))
   ?revision-general <- (revision-general)
-  (volumen (asin ?asin) (partidas-no-incluidas $?partidas) )
+  (volumen (formato ?formato) (titulo ?titulo) (subtitulo ?subtitulo) (contenido ?contenido) (asin ?asin) (partidas-no-incluidas $?partidas) )
  =>
 
   (retract ?ajustar)
   (modify ?balance (mes ?mes) (dia ?dia))
   (modify ?revision-general (partidas ?partidas ))
   (assert (hacer-focos) )
+
+
+  ( bind ?archivo (str-cat "./doc/" ?empresa "/volumen.markdown"))
+  ( open ?archivo k "w")
+  ( printout k "--- " crlf)
+  ( printout k "title: Volumen" crlf)
+;   ( printout f "permalink: /" ?empresa "/f22 " crlf)
+  ( printout k "layout: page" crlf)
+  ( printout k "--- " crlf)
+
+   ( printout k "<h1> Volumen " ?asin " </h1>" crlf)
+   ( printout k "alectrico ® ha realizado la publicación de este volumen con las siguientes características." crlf)
+   ( printout k "<ul>" crlf)
+   ( printout k "<li><span style='background-color: lavender'>[    ]</span> formato " ?formato ". </li>" crlf)
+   ( printout k "<li><span style='background-color: lavender'>[    ]</span> contenido " ?contenido ". </li>" crlf)
+   ( printout k "<li><span style='background-color: lavender'>[    ]</span> asin " ?asin ". </li>" crlf)
+   ( printout k "<li><span style='background-color: lightyellow'>[    ]</span> version " ?version " </li>" crlf)
+   ( printout k "<li><span style='background-color: azure'>[    ]</span> mes " ?mes " </li>" crlf)
+   ( printout k "<li><span style='color: white; background-color: cornflowerblue'>[    ]</span> año " ?ano " </li>" crlf)
+   ( printout k "<li><span style='background-color: gold'>[    ]</span> empresa " ?empresa " </li>" crlf)
+   ( printout k "<li><span style='color: white; background-color: black'>[    ]</span> titulo " ?titulo " </li>" crlf)
+   ( printout k "<li><span style='background-color: blanchedalmond'>[    ]</span> subtitulo " ?subtitulo " </li>" crlf)
+   ( printout k "</ul>" crlf)
+   ( close k)
+
 )
 
 

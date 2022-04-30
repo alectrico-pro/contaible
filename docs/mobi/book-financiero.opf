@@ -88,6 +88,7 @@
 	  <!--
 	  <item id="as" media-type="application/xhtml+xml" href="as.html"></item>
 	  -->
+    <item id="volumen" media-type="application/xhtml+xml" href="volumen.html"></item>
     <item id="toc" media-type="application/xhtml+xml" href="toc.html"></item>
     <item id="contaible" media-type="application/xhtml+xml" href="contaible.html"></item>
     <item id="libro-diario" media-type="application/xhtml+xml" href="libro-diario.html"></item>
@@ -117,7 +118,8 @@
      http://www.idpf.org/2007/opf/OPF_2.0_final_spec.html#Section2.4
      http://www.niso.org/workrooms/daisy/Z39-86-2005.html#NCX
     -->
-  
+    <spine toc="volumen">
+
     <spine toc="My_Table_of_Contents">
 	  <!-- the spine defines the linear reading order of the book -->
 	  <!--	  <itemref idref="as" /> -->
@@ -152,9 +154,9 @@
      
     -->
   <guide>
-	  <reference type="toc" title="Table of Contents" href="toc.html#Inicio"></reference>
- <!--
-    <reference type="text" title="Diario" href="libro-diario.html#Inicio"></reference>
+    <reference type="toc"  title="Table of Contents" href="toc.html#Inicio"></reference>
+    <reference type="text" title="Comienzo" href="libro-diario.html#Inicio"></reference>
+  <!--
     <reference type="text" title="Mayor" href="libro-mayor.html#Inicio"></reference>
    -->
   </guide>

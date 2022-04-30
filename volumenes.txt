@@ -166,17 +166,33 @@
 ;Kindles de la serie Contaible
 (volumen
  (asin B09XQZ6B9P)
- (precio 5)
+ (precio 49.39)
  (id 4)
  (formato kindle)
  (titulo "Contaible")
  (subtitulo "Suscinto" )
- (contenido "Introducción a Contabile.")
+ (contenido "Solo Partida 1 del Día 1. Introducción a Contaible.")
+ (partidas-no-incluidas 2)
 )
 
 
+;Kindles de la serie Contaible Financiero
+(volumen
+ (asin B09Z7Y5HZF)
+ (precio 4)
+ (id 4)
+ (formato kindle)
+ (titulo "Asiento Inicial")
+ (subtitulo "Serie: Contaible" )
+ (contenido "Solo día 1. Contiene un ejercicio solo financiero. Libro Diario, Libro Mayor, Subcuentas, Liquidaciones, Balance, Estado de Resultados, Estado de Resultados para Impuestos.")
+ (partidas-no-incluidas )
+)
 
-;--------- SERIE FINANCIERO -------------------------------------
+
+;-----------------------------------------------------------------------------
+
+
+
 ;Kindles de la serie Contaible
 (volumen
  (asin FINANCIERO)
@@ -255,18 +271,6 @@
  (subtitulo "Día Zero" )
  (contenido "Ejemplos de Tributación día a día.")
  (partidas-no-incluidas )
-)
-
-;--------- MEJORANDO Financiero-----------------------------------
-;Kindles de la serie Contaible Financiero
-(volumen
- (asin F)
- (precio 5)
- (id 4)
- (formato kindle)
- (titulo "Contaible")
- (subtitulo "Financiero" )
- (contenido "Contiene un ejercicio solo financiero. Libro Diario, Libro Mayor, Subcuentas, Liquidaciones, Balance, Estado de Resultados, Estado de Resultados para Impuestos.")
 )
 
 
