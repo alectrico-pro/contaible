@@ -88,7 +88,7 @@ t:
 	make sync
 
 f:
-	make build VERSION=f22 ASIN=T MES=diciembre EMPRESA=alectrico-2021 DIA=31
+	make build VERSION=financiero ASIN=F MES=enero EMPRESA=alectrico-2021 DIA=1
 	make sync
 
 

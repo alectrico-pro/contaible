@@ -257,16 +257,16 @@
  (partidas-no-incluidas )
 )
 
-;--------- MEJORANDO F22-----------------------------------
-;Kindles de la serie Contaible
+;--------- MEJORANDO Financiero-----------------------------------
+;Kindles de la serie Contaible Financiero
 (volumen
  (asin F)
  (precio 5)
  (id 4)
  (formato kindle)
  (titulo "Contaible")
- (subtitulo "" )
- (contenido "Pruebas.")
+ (subtitulo "Financiero" )
+ (contenido "Contiene un ejercicio solo financiero. Libro Diario, Libro Mayor, Subcuentas, Liquidaciones, Balance, Estado de Resultados, Estado de Resultados para Impuestos.")
 )
 
 

@@ -227,7 +227,7 @@
 
    (subtotales (cuenta plataforma-ccm) (acreedor ?plataforma-ccm))
 
-   (cuenta (nombre utilidad-del-ejercicio-anterior) (haber ?utilidad-del-ejercicio-anterior))
+   (subtotales (cuenta utilidad-del-ejercicio-anterior) (acreedor ?utilidad-del-ejercicio-anterior))
 
   =>
 

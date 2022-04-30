@@ -26,8 +26,32 @@
 </text></docAuthor>
   <navMap>
   <!-- Esto crea navPoints NCX desde las marcas de tablas destinadas a Partidas en sus libro-diario.html   -->
-    <% root = 'libro-diario' %>  <!-- nombre sin extensión del archivo del que se va a extraer la información  -->
+
+  <% root = 'libro-diario' %>  <!-- nombre sin extensión del archivo del que se va a extraer la información  -->
+
     <% counter = 0 %>   <% section = 0 %>
+
+         counter += 1
+          <navPoint class="section" id="<%= section %>" playOrder="<%= counter %>">
+            <navLabel>
+              <text>Indice</text>
+            </navLabel>
+            <content src="toc.html#Inicio"/>
+          </navPoint>
+
+
+
+
+          counter += 1
+          <navPoint class="section" id="<%= section %>" playOrder="<%= counter %>">
+            <navLabel>
+              <text>Contaible</text>
+            </navLabel>
+            <content src="contaible.html#Inicio"/>
+          </navPoint>
+
+
+
     <% File.open("#{root}.html", "r:ISO-8859-1:UTF-8" ).each do |line| %>
     <%   if (line =~ /<table id=\"Partida-(\d*)/ )  %>
     <%    num = $1  %>
@@ -41,6 +65,7 @@
         <%  end %>    
         <% end %>
 
+
           counter += 1
           <navPoint class="section" id="<%= section %>" playOrder="<%= counter %>">
             <navLabel>
@@ -48,6 +73,7 @@
             </navLabel>
             <content src="libro-diario.html#Inicio"/>
 	    </navPoint>
+
 
           counter += 1
           <navPoint class="section" id="<%= section %>" playOrder="<%= counter %>">
@@ -57,13 +83,6 @@
             <content src="libro-mayor.html#Inicio"/>
             </navPoint>
 
-          counter += 1
-          <navPoint class="section" id="<%= section %>" playOrder="<%= counter %>">
-            <navLabel>
-              <text>Comprobacion</text>
-            </navLabel>
-            <content src="comprobacion.html#Inicio"/>
-            </navPoint
 
           counter += 1
           <navPoint class="section" id="<%= section %>" playOrder="<%= counter %>">
@@ -71,61 +90,42 @@
               <text>Subcuentas</text>
             </navLabel>
             <content src="subcuentas.html#Inicio"/>
-            </navPoint
-
-
-         counter += 1
-          <navPoint class="section" id="<%= section %>" playOrder="<%= counter %>">
-            <navLabel>
-              <text>Liquidacion</text>
-            </navLabel>
-            <content src="liquidacion.html#Inicio"/>
-            </navPoint>
-
-
+           </navPoint>
 
 
           counter += 1
           <navPoint class="section" id="<%= section %>" playOrder="<%= counter %>">
             <navLabel>
-              <text>Final</text>
+              <text>Liquidaciones</text>
+            </navLabel>
+            <content src="liquidacion.html#Inicio"/>
+	    </navPoint>
+
+
+          counter += 1
+          <navPoint class="section" id="<%= section %>" playOrder="<%= counter %>">
+            <navLabel>
+              <text>Balance</text>
             </navLabel>
             <content src="final.html#Inicio"/>
             </navPoint>
 
-
           counter += 1
           <navPoint class="section" id="<%= section %>" playOrder="<%= counter %>">
             <navLabel>
-              <text>Resultado SII</text>
-            </navLabel>
-            <content src="resultado-sii.html#Inicio"/>
-            </navPoint>
-
-
-          counter += 1
-          <navPoint class="section" id="<%= section %>" playOrder="<%= counter %>">
-            <navLabel>
-              <text>Tributario</text>
+	    <text> E-Resultados</text>
             </navLabel>
             <content src="tributario.html#Inicio"/>
             </navPoint>
 
-          counter += 1
-          <navPoint class="section" id="<%= section %>" playOrder="<%= counter %>">
-            <navLabel>
-              <text>Inventario</text>
-            </navLabel>
-            <content src="inventario.html#Inicio"/>
-	    </navPoint
 
           counter += 1
           <navPoint class="section" id="<%= section %>" playOrder="<%= counter %>">
             <navLabel>
-              <text>Remuneraciones</text>
+              <text> E-Resultados SII</text>
             </navLabel>
-            <content src="remuneraciones.html#Inicio"/>
-            </navPoint
+            <content src="resultado-sii.html#Inicio"/>
+            </navPoint>
 
 
 
