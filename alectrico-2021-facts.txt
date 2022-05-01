@@ -16,32 +16,13 @@
 
 (balance (dia 31) (mes diciembre) (ano 2021))
 
-;dia 01/01/2021---------- asiento inicial  ----------------
-
-(partida
- (numero 001)
- (dia 1) (mes enero) (ano 2021)
- (descripcion "Por Registro de Accionistas en 2021")
- (actividad registro-de-accionistas))
-
-
-(registro-de-accionistas
-  (dia 1)
-  (mes enero)
-  (ano 2021)
-  (partida 001)
-  (nombre alexander)
-)
-
-
-
-
+;dia 01/01/2021---------- asiento de apertura  ----------------
 
 
 ;asiento inicial -----------------------------------------------------
 
 (partida
- (numero 002)
+ (numero 001)
  (dia 1) (mes enero) (ano 2021)
  (descripcion "Por Inicio de Operaciones en 2021")
  (actividad ajuste))
@@ -53,7 +34,7 @@
  ( empresa alectrico-2021)
  ( cuenta caja)  
  ( monto  1050209)
- ( partida 002)
+ ( partida 001)
  ( dia 1)  ( mes enero)  ( ano 2021)
  ( glosa asiento-inicial))
 
@@ -63,7 +44,7 @@
  ( empresa alectrico-2021)
  ( cuenta banco-estado)                  
  ( monto  691827)
- ( partida 002)
+ ( partida 001)
  ( dia 1) ( mes enero) ( ano 2021)
  ( glosa asiento-inicial))
 
@@ -73,7 +54,7 @@
  ( empresa alectrico-2021)
  ( cuenta materiales)
  ( monto  44044)
- ( partida 002)
+ ( partida 001)
  ( dia 1) ( mes enero) ( ano 2021)
  ( glosa asiento-inicial))
 
@@ -83,7 +64,7 @@
  ( empresa alectrico-2021)
  ( cuenta iva-credito)
  ( monto  10909)  ;volver a colocar 10909
- ( partida 002)
+ ( partida 001)
  ( dia 1) ( mes enero) ( ano 2021)
  ( glosa asiento-inicial))
 
@@ -94,7 +75,7 @@
  ( empresa alectrico-2021)
  ( cuenta ppm)
  ( monto  721)
- ( partida 002)
+ ( partida 001)
  ( dia 1) ( mes enero) ( ano 2021)
  ( glosa asiento-inicial))
 
@@ -103,17 +84,18 @@
  ( electronico false)
  ( tipo-de-documento escritura-empresa)
  ( empresa alectrico-2021)
- ( partida 002)
+ ( partida 001)
  ( dia 1) (mes enero) (ano 2021)
  ( cuenta capital-social)
  ( monto  2000000)
  ( glosa asiento-inicial))
 
+
 (abono
  ( electronico false)
  ( tipo-de-documento escritura-empresa)
  ( empresa alectrico-2021)
- ( partida 002)
+ ( partida 001)
  ( dia 1) (mes enero) (ano 2021)
  ( cuenta utilidad-del-ejercicio-anterior)
  ( monto 85294); antiguamente 85235 
@@ -123,7 +105,7 @@
  ( electronico false)
  ( tipo-de-documento escritura-empresa)
  ( empresa alectrico-2021)
- ( partida 002)
+ ( partida 001)
  ( dia 1) (mes enero) (ano 2021)
  ( cuenta marca-alectrico)
  ( monto  290000)
@@ -133,7 +115,7 @@
  ( electronico false)
  ( tipo-de-documento escritura-empresa)
  ( empresa alectrico-2021)
- ( partida 002)
+ ( partida 001)
  ( dia 1) (mes enero) (ano 2021)
  ( cuenta amortizacion-acumulada-intangibles)
  ( monto  2416)
@@ -142,9 +124,6 @@
 ( inventario (dia 1) (mes enero) (u 1) (operacion asiento-inicial) (material materiales) (partida 2111) (ct 44044) (cu 44044))
 
 ;-------------------------- ajuste inicial de remanente
-
-
-
 
 ;este comando de kernel es raro, no espera tener una partida
 ;no debe mostrarse en la contabilidad pues da cuenta de un
@@ -1150,6 +1129,20 @@
 ;  (dia 17) (mes julio) (ano 2021)
 ;)
 
+(partida
+ (numero 066)
+ (dia 16) (mes julio) (ano 2021)
+ (descripcion "Por Registro de Accionistas en 2021")
+ (actividad registro-de-accionistas))
+
+
+(registro-de-accionistas
+  (dia 16)
+  (mes julio)
+  (ano 2021)
+  (partida 066)
+  (nombre alexander)
+)
 
 
 (gasto-administrativo

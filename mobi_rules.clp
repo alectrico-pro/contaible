@@ -164,7 +164,7 @@
   ( version (asin ?asin) (version ?version) (mes ?mes) (dia ?dia))
   ?balance <- (balance (ano ?ano))
   ?revision-general <- (revision-general)
-  (volumen (autor ?autor) (formato ?formato) (titulo ?titulo) (subtitulo ?subtitulo) (contenido ?contenido) (asin ?asin) (partidas-no-incluidas $?partidas) )
+  (volumen (serie ?serie) (orden ?orden) (autor ?autor) (formato ?formato) (titulo ?titulo) (subtitulo ?subtitulo) (contenido ?contenido) (asin ?asin) (partidas-no-incluidas $?partidas) )
  =>
 
   (retract ?ajustar)
@@ -182,9 +182,12 @@
   ( printout k "--- " crlf)
   ( printout k "<h2> " ?titulo " </h2>" crlf)
   ( printout k "<h3> " ?subtitulo " </h3>" crlf)
+
   ( printout k "<h3> " ?autor  " </h3> " crlf)
   ( printout k "alectrico ® ha realizado la publicación de este volumen con las siguientes características." crlf)
   ( printout k "<ul>" crlf)
+  ( printout k "<li><span style='background-color: lavender'>[    ]</span> serie: " ?serie " </li>" crlf)
+  ( printout k "<li><span style='background-color: lavender'>[    ]</span> orden: " ?orden " </li>" crlf)
   ( printout k "<li><span style='background-color: lavender'>[    ]</span> formato: " ?formato " </li>" crlf)
   ( printout k "<li><span style='background-color: lavender'>[    ]</span> contenido: " ?contenido " </li>" crlf)
   ( printout k "<li><span style='background-color: lavender'>[    ]</span> asin: " ?asin ". </li>" crlf)

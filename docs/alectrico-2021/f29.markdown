@@ -3,5 +3,3 @@ title: F29
 permalink: /alectrico-2021/f29
 layout: page
 --- 
- <tr> <td>  nombre </td> <td align='right'>  No. Acc.  </td> <td> total </td> </tr>
- <tr>  <td> alexander </td> <td align='right'>  10 </td> <td> 200000 </td> </tr>

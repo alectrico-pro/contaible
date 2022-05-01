@@ -10,4 +10,6 @@ Contabilidad para Necios® usa el siguiente código de colores para este documen
 <li><span style='background-color: gold'>[    ]</span> ganancia </li>
 <li><span style='color: white; background-color: black'>[    ]</span> pérdida </li>
 <table><tbody>
+<tr><td> ganancias </td><td> </td><td>85294</td><td>utilidad-del-ejercicio-anterior</td></tr>
+<tr><td> ganancias </td><td> </td><td>2000000</td><td>capital-social</td></tr>
 <table><tbody>

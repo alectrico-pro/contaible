@@ -38,17 +38,37 @@
     
      
        
-       
-       <navPoint class="section" id= 1 playOrder="1">
-        <navLabel>
-          <text>
-            B09XQZ6B9P
-          </text>
-        </navLabel>
-        <content src="B09XQZ6B9P.html#Inicio"/>
-       </navPoint>
     
 
+          
+          <navPoint class="section" id="0" playOrder="1">
+            <navLabel>
+              <text>Introduccion</text>
+            </navLabel>
+            <content src="introduccion.html#Inicio"/>
+          </navPoint>
+	  
+          <navPoint class="section" id="0" playOrder="2">
+            <navLabel>
+              <text>Volumen</text>
+            </navLabel>
+            <content src="volumen.html#Inicio"/>
+          </navPoint>
+         
+          <navPoint class="section" id="0" playOrder="3">
+            <navLabel>
+              <text>Indice</text>
+            </navLabel>
+            <content src="toc.html#Inicio"/>
+          </navPoint>
+	  
+          <navPoint class="section" id="0" playOrder="4">
+            <navLabel>
+              <text>Contaible</text>
+            </navLabel>
+            <content src="contaible.html#Inicio"/>
+          </navPoint>
+	  
     
     
     
@@ -400,6 +420,41 @@
         
         
       
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+        
+        
+      
+    
+    
+    
+    
+    
+    
+    
+    
     
     
     
@@ -462,11 +517,11 @@
         
         
            
-             <navPoint class="section" id= 1 playOrder="2">
+             <navPoint class="section" id= 1 playOrder="6">
              <navLabel>
-               <text>ASIN B09XQZ6B9P  </text>
+               <text> Tema </text>
              </navLabel>
-             <content src="B09XQZ6B9P.html#Inicio"/>
+             <content src="B09Z7Y5HZF.html#Inicio"/>
            </navPoint>
          
       
@@ -498,33 +553,6 @@
     
     
     
-        
-        
-      
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
     
     
     
@@ -736,56 +764,12 @@
     
     
     
-
-
-
-
-
-
-         counter += 1
-          <navPoint class="section" id="0" playOrder="2">
-            <navLabel>
-              <text>Introduccion</text>
-            </navLabel>
-            <content src="introduccion.html#Inicio"/>
-          </navPoint>
-
-        counter += 1
-          <navPoint class="section" id="0" playOrder="2">
-            <navLabel>
-              <text>Volumen</text>
-            </navLabel>
-            <content src="volumen.html#Inicio"/>
-          </navPoint>
-
-
-         counter += 1
-          <navPoint class="section" id="0" playOrder="2">
-            <navLabel>
-              <text>Indice</text>
-            </navLabel>
-            <content src="toc.html#Inicio"/>
-          </navPoint>
-
-
-
-
-          counter += 1
-          <navPoint class="section" id="0" playOrder="2">
-            <navLabel>
-              <text>Contaible</text>
-            </navLabel>
-            <content src="contaible.html#Inicio"/>
-          </navPoint>
-
-          counter += 1
-          <navPoint class="section" id="0" playOrder="2">
+          <navPoint class="section" id="0" playOrder="6">
             <navLabel>
               <text>Libro Diario</text>
             </navLabel>
             <content src="libro-diario.html#Inicio"/>
-
-	    
+            
 	        
 	    
 	        
@@ -895,7 +879,7 @@
 	    
 	    
 	    
-		  <navPoint class="section" id= 1 playOrder="3">
+		  <navPoint class="section" id= 1 playOrder="7">
 		    <navLabel>
 		      <text>Partida 1</text>
 		    </navLabel>
@@ -957,15 +941,6 @@
 	    
 	        
 	    
-	    
-	    
-	    
-		  <navPoint class="section" id= 1 playOrder="4">
-		    <navLabel>
-		      <text>Partida 2</text>
-		    </navLabel>
-		    <content src="libro-diario.html#Partida-2"/>
-		  </navPoint>    
 	        
 	    
 	        
@@ -1020,97 +995,48 @@
 	    
 	        
 	    
-	        
-	    
-	        
-	    
-	        
-	    
-	        
-	    
-	        
-	    
-	        
-	    
-	        
-	    
-	        
-	    
-	        
-	    
-	        
-	    
-	        
-	    
-	        
-	    
-	        
-	    
-	        
-	    
-	        
-	    
-	        
-	    
-	        
-	    
-
           </navPoint>
-
-
-          counter += 1
-          <navPoint class="section" id="0" playOrder="4">
+          
+          <navPoint class="section" id="0" playOrder="8">
             <navLabel>
               <text>Libro Mayor</text>
             </navLabel>
             <content src="libro-mayor.html#Inicio"/>
-            </navPoint>
-
-
-          counter += 1
-          <navPoint class="section" id="0" playOrder="4">
+          </navPoint>
+          
+          <navPoint class="section" id="0" playOrder="9">
             <navLabel>
               <text>Subcuentas</text>
             </navLabel>
             <content src="subcuentas.html#Inicio"/>
            </navPoint>
-
-
-          counter += 1
-          <navPoint class="section" id="0" playOrder="4">
+          
+          <navPoint class="section" id="0" playOrder="10">
             <navLabel>
               <text>Liquidaciones</text>
             </navLabel>
             <content src="liquidacion.html#Inicio"/>
-	    </navPoint>
-
-
-          counter += 1
-          <navPoint class="section" id="0" playOrder="4">
+	  </navPoint>
+	  
+          <navPoint class="section" id="0" playOrder="11">
             <navLabel>
               <text>Balance</text>
             </navLabel>
             <content src="final.html#Inicio"/>
-            </navPoint>
-
-          counter += 1
-          <navPoint class="section" id="0" playOrder="4">
+          </navPoint>
+          
+          <navPoint class="section" id="0" playOrder="12">
             <navLabel>
 	    <text> E-Resultados</text>
             </navLabel>
             <content src="tributario.html#Inicio"/>
-            </navPoint>
-
-
-          counter += 1
-          <navPoint class="section" id="0" playOrder="4">
+          </navPoint>
+          
+          <navPoint class="section" id="0" playOrder="13">
             <navLabel>
               <text> E-Resultados SII</text>
             </navLabel>
             <content src="resultado-sii.html#Inicio"/>
-            </navPoint>
-
-
-
+          </navPoint>
   </navMap>
 </ncx>

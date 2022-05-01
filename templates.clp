@@ -10,6 +10,7 @@
 
 (deftemplate volumen
 
+
   (slot autor)
   (slot id)
   (slot isbn)
@@ -21,6 +22,8 @@
   (slot paginas)
   (slot subtitulo)
   (slot contenido)
+  (slot serie)
+  (slot orden)
   (multislot partidas-no-incluidas)
   (multislot capitulos)
 )
