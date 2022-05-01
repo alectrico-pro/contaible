@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Contaible
-permalink: /contaible/
+permalink: contaible
 ---
 
 #### Cont<sup style="color:white; background-color: cornflowerblue">ai</sup>ble<sup> 

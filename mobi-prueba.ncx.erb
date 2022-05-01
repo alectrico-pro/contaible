@@ -51,8 +51,9 @@
            <% counter += 1 %>
              <navPoint class="section" id= 1 playOrder="<%= counter %>">
              <navLabel>
-              <text>ASIN <%= num %>  </text>
-	     </navLabel>
+	       <text>ASIN <%= num %>  </text>
+             </navLabel>
+	     <content src="<%=num%>.html#Inicio"/>
            </navPoint>
 	 <% end %>
       <%  end %>

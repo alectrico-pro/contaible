@@ -19,6 +19,8 @@ KINDLEGEN = ./kindlegen
 mobi-%.ncx: mobi-%.ncx.erb
 	$(ERB) $<  >  $@
 
+book-%.opf: book-%.opf.erb
+	$(ERB) $<  >  $@
 
 
 #Requisitos es que se haya hecho un resguardo de los html
@@ -33,7 +35,11 @@ mobi-%.ncx: mobi-%.ncx.erb
 #El asin se chequea con un registro de volumenes.txt en el ambiente clips
 #De esa forma llevamos una organización de qué ha sido publicado y donde
 #Entre otros datos que se puedan ir agregando al registro de volúmenes
-mobi:  introduccion.html.bak volumen.html.bak toc.html.bak libro-diario.html.bak libro-mayor.html.bak iva.html.bak final.html.bak tributario.html.bak f29.html.bak f22.html.bak comprobacion.html.bak subcuentas.html.bak inventario.html.bak resultado-sii.html.bak liquidacion.html.bak remuneraciones.html.bak valor-activos.html.bak bi.html.bak contaible.html.bak mobi-${VERSION}.ncx book-${VERSION}.opf
+mobi_antiguo:  B09Z7Y5HZF.html.bak B09XQZ6B9P.html.bak introduccion.html.bak volumen.html.bak toc.html.bak libro-diario.html.bak libro-mayor.html.bak iva.html.bak final.html.bak tributario.html.bak f29.html.bak f22.html.bak comprobacion.html.bak subcuentas.html.bak inventario.html.bak resultado-sii.html.bak liquidacion.html.bak remuneraciones.html.bak valor-activos.html.bak bi.html.bak contaible.html.bak 
+	make mobi-${VERSION}.ncx book-${VERSION}.opf
+
+mobi:   *.html.bak
+	make mobi-${VERSION}.ncx book-${VERSION}.opf
 	cat assets/main.css >> mobi.css
 	-$(KINDLEGEN) book-${VERSION}.opf
 	mv book-${VERSION}.mobi book-${VERSION}-${ASIN}-${MES}-${DIA}.mobi
@@ -89,6 +95,9 @@ t:
 
 f:
 	make build VERSION=financiero ASIN=B09XQZ6B9P MES=enero EMPRESA=alectrico-2021 DIA=1
+	make sync
+
+f2:
 	make build VERSION=financiero ASIN=B09Z7Y5HZF MES=enero EMPRESA=alectrico-2021 DIA=1
 	make sync
 
@@ -112,7 +121,7 @@ build:
 	if docker stop calibre; docker rm calibre; then echo volumen docker mobi eliminado exitosamente; fi
 	docker build . -t contaible -f DockerfileContaible
 	docker run -p 4000:4000 --name st -v $(shell pwd)/docs:/doc contaible bash -c 'jekyll build . && cp * /doc -r && chown 1000:1000 /doc -R' --no-cache
-	docker run --name mobi  --volumes-from st -v $(shell pwd)/docs:/doc contaible bash -c 'jekyll build . && cp /doc/_site/${EMPRESA}/*.html /doc/mobi && cp /doc/_site/introduccion/index.html /doc/mobi/introduccion.html && cp /doc/_site/contaible/index.html /doc/mobi/contaible.html && cp /doc/_site/toc/index.html /doc/mobi/toc.html && cp /doc/_site/assets/* /doc/mobi/assets && cp /doc/_site/assets/main.css /doc/mobi.css && cd /doc/mobi && make mobi VERSION=${VERSION} ASIN=${ASIN} MES=${MES} DIA=${DIA}'
+	docker run --name mobi  --volumes-from st -v $(shell pwd)/docs:/doc contaible bash -c 'jekyll build . && cp /doc/_site/${EMPRESA}/*.html /doc/mobi && cp /doc/_site/*.html /doc/mobi && cp /doc/_site/assets/* /doc/mobi/assets && cp /doc/_site/assets/main.css /doc/mobi.css && cd /doc/mobi && make mobi VERSION=${VERSION} ASIN=${ASIN} MES=${MES} DIA=${DIA}'
 	docker run  --volumes-from mobi --name=calibre -e PUID=1000 -e PGID=1000 -e TZ=Europe/London -e PASSWORD= `#optional` -e CLI_ARGS= `#optional` -p 8080:8080 -p 8081:8081 -v $(shell pwd)/docs:/doc --restart unless-stopped lscr.io/linuxserver/calibre bash -c 'cd /doc/mobi && ebook-convert book-${VERSION}-${ASIN}-${MES}-${DIA}.mobi book-${VERSION}-${ASIN}-${MES}-${DIA}.epub'
 	
 

@@ -1,7 +1,7 @@
 ---
 title: Introducción
 layout: page
-permalink: /introduccion/
+permalink: introduccion
 ---
 
 # Introducción

@@ -67,6 +67,8 @@
     
   </metadata>
 
+
+
   <!--
      Manifest:
      The required manifest must provide a list of all the files that are part of the
@@ -88,7 +90,31 @@
 	  <!--
 	  <item id="as" media-type="application/xhtml+xml" href="as.html"></item>
 	  -->
-   <item id="introduccion" media-type="application/xhtml+xml" href="introduccion.html"></item>
+
+
+
+
+    <% volumen = 'volumenes.txt' %>   <!---datos sobre los volúmenes -->
+    <% version = 'version.txt' %>     <!---version que se está construyendo -->
+    <% counter = 0 %>   <% section = 0 %>
+    <% asin = '' %>
+    <% File.open("#{version}", "r:ISO-8859-1:UTF-8" ).each do |line| %>
+     <% if ( line =~  /asin\W(\w*)/ ) %>
+       <% asin    = $1 %>
+       <% counter += 1 %>
+    <%  end %><% end %>
+
+
+    <% File.open("#{volumen}", "r:ISO-8859-1:UTF-8" ).each do |line| %>
+    <% if (line =~ /asin\W(\w*)/ )  %>
+        <% num = $1  %>
+        <% if (num == asin) %>
+	   <item id="<%=asin%>" media-type="application/xhtml+xml" href="<%=asin%>.html"></item>
+         <% end %>
+      <%  end %>
+    <% end %>
+	  
+    <item id="introduccion" media-type="application/xhtml+xml" href="introduccion.html"></item>
     <item id="volumen" media-type="application/xhtml+xml" href="volumen.html"></item>
     <item id="toc" media-type="application/xhtml+xml" href="toc.html"></item>
     <item id="contaible" media-type="application/xhtml+xml" href="contaible.html"></item>
@@ -104,7 +130,12 @@
     <item id="My_Table_of_Contents" media-type="application/x-dtbncx+xml" href="mobi-financiero.ncx"/>
     <!-- cover image [mandatory] -->
     <item id="My_Cover" media-type="image/jpeg" href="cover.jpg"/>
+
+
+
   </manifest>
+
+
 
   <!--
      Spine:

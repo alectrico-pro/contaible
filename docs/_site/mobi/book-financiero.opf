@@ -67,6 +67,8 @@
     
   </metadata>
 
+
+
   <!--
      Manifest:
      The required manifest must provide a list of all the files that are part of the
@@ -88,7 +90,7 @@
 	  <!--
 	  <item id="as" media-type="application/xhtml+xml" href="as.html"></item>
 	  -->
-   <item id="introduccion" media-type="application/xhtml+xml" href="introduccion.html"></item>
+    <item id="introduccion" media-type="application/xhtml+xml" href="introduccion.html"></item>
     <item id="volumen" media-type="application/xhtml+xml" href="volumen.html"></item>
     <item id="toc" media-type="application/xhtml+xml" href="toc.html"></item>
     <item id="contaible" media-type="application/xhtml+xml" href="contaible.html"></item>
@@ -104,7 +106,12 @@
     <item id="My_Table_of_Contents" media-type="application/x-dtbncx+xml" href="mobi-financiero.ncx"/>
     <!-- cover image [mandatory] -->
     <item id="My_Cover" media-type="image/jpeg" href="cover.jpg"/>
+
+
+
   </manifest>
+
+
 
   <!--
      Spine:

@@ -31,6 +31,44 @@
 
     <% counter = 0 %>   <% section = 0 %>
 
+    <% volumen = 'volumenes.txt' %>   <!---datos sobre los volúmenes -->
+    <% version = 'version.txt' %>     <!---version que se está construyendo -->
+    <% counter = 0 %>   <% section = 0 %>
+    <% asin = '' %>
+    <% File.open("#{version}", "r:ISO-8859-1:UTF-8" ).each do |line| %>
+     <% if ( line =~  /asin\W(\w*)/ ) %>
+       <% asin    = $1 %>
+       <% counter += 1 %>
+       <navPoint class="section" id= 1 playOrder="<%= counter %>">
+        <navLabel>
+          <text>
+            <%= asin %>
+          </text>
+        </navLabel>
+        <content src="<%=asin%>.html#Inicio"/>
+       </navPoint>
+    <%  end %><% end %>
+
+    <% File.open("#{volumen}", "r:ISO-8859-1:UTF-8" ).each do |line| %>
+    <% if (line =~ /asin\W(\w*)/ )  %>
+        <% num = $1  %>
+        <% if (num == asin) %>
+           <% counter += 1 %>
+             <navPoint class="section" id= 1 playOrder="<%= counter %>">
+             <navLabel>
+               <text>ASIN <%= asin %>  </text>
+             </navLabel>
+             <content src="<%=asin%>.html#Inicio"/>
+           </navPoint>
+         <% end %>
+      <%  end %>
+    <% end %>
+
+
+
+
+
+
          counter += 1
           <navPoint class="section" id="<%= section %>" playOrder="<%= counter %>">
             <navLabel>

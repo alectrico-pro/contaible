@@ -87,6 +87,7 @@
  ( dia 1) ( mes enero) ( ano 2021)
  ( glosa asiento-inicial))
 
+
 (cargo
  ( electronico false)
  ( tipo-de-documento escritura-empresa)
@@ -96,6 +97,7 @@
  ( partida 002)
  ( dia 1) ( mes enero) ( ano 2021)
  ( glosa asiento-inicial))
+
 
 (abono
  ( electronico false)
