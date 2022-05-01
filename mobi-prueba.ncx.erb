@@ -26,20 +26,54 @@
 </text></docAuthor>
   <navMap>
   <!-- Esto crea navPoints NCX desde las marcas de tablas destinadas a Partidas en sus libro-diario.html   -->
-
-  <% root = 'libro-diario' %>  <!-- nombre sin extensión del archivo del que se va a extraer la información  -->
-
+    <% root    = 'libro-diario' %>    <!-- nombre sin extensión del archivo del que se va a extraer la información  -->
+    <% volumen = 'volumenes.txt' %>   <!---datos sobre los volúmenes -->
+    <% version = 'version.txt' %>     <!---version que se está construyendo -->
     <% counter = 0 %>   <% section = 0 %>
+    <% asin = '' %>
+    <% File.open("#{version}", "r:ISO-8859-1:UTF-8" ).each do |line| %>
+     <% if ( line =~  /asin\W(\w*)/ ) %>
+       <% asin    = $1 %>
+       <% counter += 1 %>
+       <navPoint class="section" id= 1 playOrder="<%= counter %>">
+        <navLabel>
+          <text>
+            <%= asin %>
+          </text>
+        </navLabel>
+       </navPoint>
+    <%  end %><% end %>
 
-         counter += 1
+    <% File.open("#{volumen}", "r:ISO-8859-1:UTF-8" ).each do |line| %>
+    <% if (line =~ /asin\W(\w*)/ )  %>
+        <% num = $1  %>
+	<% if (num == asin) %>
+           <% counter += 1 %>
+             <navPoint class="section" id= 1 playOrder="<%= counter %>">
+             <navLabel>
+              <text>ASIN <%= num %>  </text>
+	     </navLabel>
+           </navPoint>
+	 <% end %>
+      <%  end %>
+    <% end %>
+
+         <% counter += 1 %>
+          <navPoint class="section" id="<%= section %>" playOrder="<%= counter %>">
+            <navLabel>
+              <text>Hola</text>
+            </navLabel>
+          </navPoint>
+
+         <%  counter += 1 %>
           <navPoint class="section" id="<%= section %>" playOrder="<%= counter %>">
             <navLabel>
               <text>Introduccion</text>
             </navLabel>
             <content src="introduccion.html#Inicio"/>
           </navPoint>
-
-        counter += 1
+ 
+          <% counter += 1 %>
           <navPoint class="section" id="<%= section %>" playOrder="<%= counter %>">
             <navLabel>
               <text>Volumen</text>
@@ -47,8 +81,7 @@
             <content src="volumen.html#Inicio"/>
           </navPoint>
 
-
-         counter += 1
+	  <% counter += 1 %>
           <navPoint class="section" id="<%= section %>" playOrder="<%= counter %>">
             <navLabel>
               <text>Indice</text>
@@ -56,10 +89,7 @@
             <content src="toc.html#Inicio"/>
           </navPoint>
 
-
-
-
-          counter += 1
+	  <% counter += 1 %>
           <navPoint class="section" id="<%= section %>" playOrder="<%= counter %>">
             <navLabel>
               <text>Contaible</text>
@@ -67,82 +97,74 @@
             <content src="contaible.html#Inicio"/>
           </navPoint>
 
-          counter += 1
+	  <% counter += 1 %>
           <navPoint class="section" id="<%= section %>" playOrder="<%= counter %>">
             <navLabel>
               <text>Libro Diario</text>
             </navLabel>
-            <content src="libro-diario.html#Inicio"/>
+	    <content src="libro-diario.html#Inicio"/>
 
 	    <% File.open("#{root}.html", "r:ISO-8859-1:UTF-8" ).each do |line| %>
 	    <%   if (line =~ /<table id=\"Partida-(\d*)/ )  %>
 	    <%    num = $1  %>
 	    <%    counter += 1 %>
-		  <navPoint class="section" id= 1 playOrder="<%= counter %>">
+                  <navPoint class="section" id="<%= counter %>" playOrder="<%= counter %>">
 		    <navLabel>
 		      <text>Partida <%= num %></text>
 		    </navLabel>
 		    <content src="libro-diario.html#Partida-<%= num %>"/>
 		  </navPoint>    
-	    <%  end %>    
-	    <% end %>
+	    <%  end %><% end %>
 
-          </navPoint>
+	  </navPoint>
 
-
-          counter += 1
+	  <% counter += 1 %>
           <navPoint class="section" id="<%= section %>" playOrder="<%= counter %>">
             <navLabel>
               <text>Libro Mayor</text>
             </navLabel>
             <content src="libro-mayor.html#Inicio"/>
-            </navPoint>
+          </navPoint>
 
-
-          counter += 1
+	  <% counter += 1 %>
           <navPoint class="section" id="<%= section %>" playOrder="<%= counter %>">
             <navLabel>
               <text>Subcuentas</text>
             </navLabel>
             <content src="subcuentas.html#Inicio"/>
-           </navPoint>
+	  </navPoint>
 
-
-          counter += 1
+          <% counter += 1 %>
           <navPoint class="section" id="<%= section %>" playOrder="<%= counter %>">
             <navLabel>
               <text>Liquidaciones</text>
             </navLabel>
             <content src="liquidacion.html#Inicio"/>
-	    </navPoint>
+	  </navPoint>
 
-
-          counter += 1
+          <%  counter += 1 %>
           <navPoint class="section" id="<%= section %>" playOrder="<%= counter %>">
             <navLabel>
               <text>Balance</text>
             </navLabel>
             <content src="final.html#Inicio"/>
-            </navPoint>
+	  </navPoint>
 
-          counter += 1
+          <% counter += 1 %>
           <navPoint class="section" id="<%= section %>" playOrder="<%= counter %>">
             <navLabel>
 	    <text> E-Resultados</text>
             </navLabel>
             <content src="tributario.html#Inicio"/>
-            </navPoint>
+	  </navPoint>
 
-
-          counter += 1
+          <% counter += 1 %>
           <navPoint class="section" id="<%= section %>" playOrder="<%= counter %>">
             <navLabel>
               <text> E-Resultados SII</text>
             </navLabel>
             <content src="resultado-sii.html#Inicio"/>
-            </navPoint>
-
-
+	  </navPoint>
 
   </navMap>
 </ncx>

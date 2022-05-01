@@ -22,6 +22,7 @@
   (slot subtitulo)
   (slot contenido)
   (multislot partidas-no-incluidas)
+  (multislot capitulos)
 )
 
 

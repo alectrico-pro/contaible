@@ -20,6 +20,7 @@ mobi-%.ncx: mobi-%.ncx.erb
 	$(ERB) $<  >  $@
 
 
+
 #Requisitos es que se haya hecho un resguardo de los html
 #Pero eso se hace luego de aplicar mobi_postprocess que es lo que queremos
 #Pues no nos interesa el .html.bak sin el .html que quede procesado
@@ -60,7 +61,6 @@ contaible:
 	make build VERSION=2 ASIN=B09XQZ6B9P MES=diciembre DIA=31
 	make sync
 
-
 mayor:
 	make build VERSION=mayor ASIN=MAYOR MES=enero DIA=31
 	make sync
@@ -93,27 +93,26 @@ f:
 	make sync
 
 
+nx:     mobi-prueba.ncx	
+	pwd
+	cp  mobi-prueba.ncx ./doc
+	
+
+#suministrar make build VERSION=1 ASIN=b999 MES=enero EMPRESA=alectrico-2021
+prueba: 
+	docker build . -t j -f DockerfileJeky --no-cache
+	docker run -v $(shell pwd)/:/srv/jekyll j bash -c 'make nx '
+   
 
 #suministrar make build VERSION=1 ASIN=b999 MES=enero EMPRESA=alectrico-2021
 build:
-	echo
-	echo
-	echo
-	echo
-	-echo '==================================='
-	-echo 'ATENCION: Comenzando procesamiento en make build con VERSION ${VERSION}, ASIN ${ASIN}, MES ${MES}, DIA ${DIA} '	
-	-echo '==================================='
-	echo 
-	echo
-
 	echo '(version (id 2) (version $(VERSION)) (asin $(ASIN)) (mes $(MES)) (dia $(DIA)))' > version.txt
-
 	if docker rm st; then echo volumen docker st eliminado exitosamente st; fi 
 	if docker rm mobi; then echo volumen docker mobi eliminado exitosamente; fi
 	if docker stop calibre; docker rm calibre; then echo volumen docker mobi eliminado exitosamente; fi
-	docker build . -t jeky -f DockerfileJeky  
-	docker run -p 4000:4000 --name st -v $(shell pwd)/docs:/doc jeky bash -c 'jekyll build . && cp * /doc -r && chown 1000:1000 /doc -R' --no-cache
-	docker run --name mobi  --volumes-from st -v $(shell pwd)/docs:/doc jeky bash -c 'jekyll build . && cp /doc/_site/${EMPRESA}/*.html /doc/mobi && cp /doc/_site/introduccion/index.html /doc/mobi/introduccion.html && cp /doc/_site/contaible/index.html /doc/mobi/contaible.html && cp /doc/_site/toc/index.html /doc/mobi/toc.html && cp /doc/_site/assets/* /doc/mobi/assets && cp /doc/_site/assets/main.css /doc/mobi.css && cd /doc/mobi && make mobi VERSION=${VERSION} ASIN=${ASIN} MES=${MES} DIA=${DIA}'
+	docker build . -t contaible -f DockerfileContaible
+	docker run -p 4000:4000 --name st -v $(shell pwd)/docs:/doc contaible bash -c 'jekyll build . && cp * /doc -r && chown 1000:1000 /doc -R' --no-cache
+	docker run --name mobi  --volumes-from st -v $(shell pwd)/docs:/doc contaible bash -c 'jekyll build . && cp /doc/_site/${EMPRESA}/*.html /doc/mobi && cp /doc/_site/introduccion/index.html /doc/mobi/introduccion.html && cp /doc/_site/contaible/index.html /doc/mobi/contaible.html && cp /doc/_site/toc/index.html /doc/mobi/toc.html && cp /doc/_site/assets/* /doc/mobi/assets && cp /doc/_site/assets/main.css /doc/mobi.css && cd /doc/mobi && make mobi VERSION=${VERSION} ASIN=${ASIN} MES=${MES} DIA=${DIA}'
 	docker run  --volumes-from mobi --name=calibre -e PUID=1000 -e PGID=1000 -e TZ=Europe/London -e PASSWORD= `#optional` -e CLI_ARGS= `#optional` -p 8080:8080 -p 8081:8081 -v $(shell pwd)/docs:/doc --restart unless-stopped lscr.io/linuxserver/calibre bash -c 'cd /doc/mobi && ebook-convert book-${VERSION}-${ASIN}-${MES}-${DIA}.mobi book-${VERSION}-${ASIN}-${MES}-${DIA}.epub'
 	
 

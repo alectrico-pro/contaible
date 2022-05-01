@@ -203,6 +203,7 @@
  (subtitulo "Serie: Contaible" )
  (contenido "Solo día 1. Contiene un ejercicio solo financiero. Libro Diario, Libro Mayor, Subcuentas, Liquidaciones, Balance, Estado de Resultados, Estado de Resultados para Impuestos.")
  (partidas-no-incluidas )
+ (capitulos "Introducción" "Contaible" "Libro Diario" )
 )
 
 
