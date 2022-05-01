@@ -43,7 +43,7 @@ Para usar Cont<sup>ai</sup>ble se requiere un software denominado máquina de in
 El método que hemos diseñado en alectrico lo hemos llamado Contabilidad para Ne<sup>go</sup>cios. Cont<sup>ai</sup>ble es un desarrollo de de estas ideas,  mediante el cual Ud. no necesitará preparar los Libros de Mayor y cualquier otro libro ni tampoco sus equivalentes informáticos. Todo eso lo hará Cont<sup>ai</sup>ble.
 
 
-Con Cont<sup>ai</sup>ble, Ud. prepara un texto indicando los hechos económicos que ocurran en su empresa. Estos hechos pueden ser de cualquier tipo, basta que se haya creado la regla correspondiente en Contabie para que se puedan procesar.
+Con Cont<sup>ai</sup>ble, Ud. prepara un texto indicando los hechos económicos que ocurran en su empresa. Estos hechos pueden ser de cualquier tipo, basta que se haya creado la regla correspondiente en Cont<sup>ai</sup>ble para que se puedan procesar.
 
 ## Facts
 

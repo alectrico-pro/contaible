@@ -491,12 +491,12 @@
     
       ( printout k "- [x] rechazado: Partida rechazada por SII, significa que si la dejamos nos podría generar multas o que no tendría el efecto deseado. Así que solo podemos quitarla de SII, pero eso requiere rectificar el f29 y eso nos generaría multas. Por ejemplo, una nota de crédito que no descuente monto imponible, aunque esté en registro de compra-venta. El F22 al año siguiente no incluirá estos DTE. No es lo mismo que gasto rechazado. También podríamos declararla como no-incluir, pero eso no conveniente, pues todo debe estar en la contabilidad de la empresa, pera que sea fidedigna. Hay casos donde se declara un gasto para el que no hay boleta de respaldo, eso es muy crítico y sí será rechazado, y además la contabilidad financiera objetada. El caso de las facturas de compra 45 a proveedor extranjero es parecido, pero ahora sé como se hace. " crlf )  
 
-      ( printout d "- [x] rechazado: Partida rechazada por SII, significa que si la dejamos nos podría generar multas o que no tendría el efecto deseado. Así que solo podemos quitarla de SII, pero eso requiere rectificar el f29 y eso nos generaría multas. Por ejemplo, una nota de crédito que no descuente monto imponible, aunque esté en registro de compra-venta. El F22 al año siguiente no incluirá estos DTE. No es lo mismo que gasto rechazado. También podríamos declararla como no-incluir, pero eso no conveniente, pues todo debe estar en la contabilidad de la empresa, pera que sea fidedigna. Hay casos donde se declara un gasto para el que no hay boleta de respaldo, eso es muy crítico y sí será rechazado, y además la contabilidad financiera objetada. El caso de las facturas de compra 45 a proveedor extranjero es parecido, pero ahora sé como se hace. " crlf )  
+      ( printout d "- [x] rechazado: Partida rechazada o sin efecto tributario. En particular no podrá ser usada para descontar impuestos. " crlf )  
     )
 
     ( if (eq ?no-incluir true)   then
       ( printout k "- [x] no-incluir: Partida que estando en RCV SII se estimó no incluir en la contabilidad financiera" crlf ) 
-      ( printout d "- [x] no-incluir: Partida que estando en RCV SII se estimó no incluir en la contabilidad financiera" crlf )
+      ( printout d "- [x] no-incluir: Partida que será ignorada totalmente por cualquier tipo de contabilidad." crlf )
     )
 
 ;    ( if (neq ?old " ") then

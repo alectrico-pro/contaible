@@ -31,25 +31,20 @@
 
     <% counter = 0 %>   <% section = 0 %>
 
-
-
-
-
-         counter += 1
-          <navPoint class="section" id="<%= section %>" playOrder="<%= counter %>">
-            <navLabel>
-              <text>Volumen</text>
-            </navLabel>
-            <content src="volumen.html#Inicio"/>
-          </navPoint>
-
-
          counter += 1
           <navPoint class="section" id="<%= section %>" playOrder="<%= counter %>">
             <navLabel>
               <text>Introduccion</text>
             </navLabel>
             <content src="introduccion.html#Inicio"/>
+          </navPoint>
+
+        counter += 1
+          <navPoint class="section" id="<%= section %>" playOrder="<%= counter %>">
+            <navLabel>
+              <text>Volumen</text>
+            </navLabel>
+            <content src="volumen.html#Inicio"/>
           </navPoint>
 
 
@@ -72,29 +67,27 @@
             <content src="contaible.html#Inicio"/>
           </navPoint>
 
-
-
-    <% File.open("#{root}.html", "r:ISO-8859-1:UTF-8" ).each do |line| %>
-    <%   if (line =~ /<table id=\"Partida-(\d*)/ )  %>
-    <%    num = $1  %>
-    <%    counter += 1 %>
-          <navPoint class="section" id="<%= counter %>" playOrder="<%= counter %>">
-            <navLabel>
-              <text>Partida <%= num %></text>
-            </navLabel>
-	    <content src="libro-diario.html#Partida-<%= num %>"/>
-          </navPoint>    
-        <%  end %>    
-        <% end %>
-
-
           counter += 1
           <navPoint class="section" id="<%= section %>" playOrder="<%= counter %>">
             <navLabel>
               <text>Libro Diario</text>
             </navLabel>
             <content src="libro-diario.html#Inicio"/>
-	    </navPoint>
+
+	    <% File.open("#{root}.html", "r:ISO-8859-1:UTF-8" ).each do |line| %>
+	    <%   if (line =~ /<table id=\"Partida-(\d*)/ )  %>
+	    <%    num = $1  %>
+	    <%    counter += 1 %>
+		  <navPoint class="section" id= 1 playOrder="<%= counter %>">
+		    <navLabel>
+		      <text>Partida <%= num %></text>
+		    </navLabel>
+		    <content src="libro-diario.html#Partida-<%= num %>"/>
+		  </navPoint>    
+	    <%  end %>    
+	    <% end %>
+
+          </navPoint>
 
 
           counter += 1

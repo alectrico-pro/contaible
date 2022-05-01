@@ -119,13 +119,12 @@
      http://www.idpf.org/2007/opf/OPF_2.0_final_spec.html#Section2.4
      http://www.niso.org/workrooms/daisy/Z39-86-2005.html#NCX
     -->
-    <spine introduccion="introduccion">
-    <spine toc="volumen">
-
-    <spine toc="My_Table_of_Contents">
+    <spine toc="My_Table_of_Contents"/>
 	  <!-- the spine defines the linear reading order of the book -->
 	  <!--	  <itemref idref="as" /> -->
     <itemref idref="toc" />
+    <itemref introduccion="introduccion"/>
+    <itemref toc="volumen"/>
     <itemref idref="contaible" />
     <itemref idref="libro-diario" />
     <itemref idref="libro-mayor" />
