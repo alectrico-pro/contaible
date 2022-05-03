@@ -111,7 +111,8 @@ nx:     mobi-prueba.ncx
 	-$(RUBY) script/dte_process.rb $<.bak > $<.out
 
 
-boleta: dte5139951384.xml
+dte:  dte5139951384.xml
+	make reset
 	docker run -v $(shell pwd)/:/srv/jekyll jekyll/jekyll bash -c 'make dte5139951384.xml.bak && cat dte5139951384.xml.out '
 	
 
