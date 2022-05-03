@@ -1,0 +1,12 @@
+<Caratula version="1.0">
+	<RutEmisor>86598100-7</RutEmisor>
+	<RutEnvia>6628360-7</RutEnvia>
+	<RutReceptor>77157982-5</RutReceptor>
+	<FchResol>2014-08-22</FchResol>
+	<NroResol>80</NroResol>
+	<TmstFirmaEnv>2020-12-17T13:07:39</TmstFirmaEnv>
+	<SubTotDTE>
+		<TpoDTE>34</TpoDTE>
+		<NroDTE>1</NroDTE>
+	</SubTotDTE>
+</Caratula>

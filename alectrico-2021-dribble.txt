@@ -1,65 +1,103 @@
-archivo-tasas	alectrico-2021-tasas.txt
-archivo-valor-activos	alectrico-2021-valor-activos.txt
-archivo-proveedores	proveedores.txt
-archivo-trabajadores	trabajadores.txt
-archivo-remuneraciones	remuneraciones.txt
-archivo-afps	afps.txt
-archivo-afc	afc.txt
-archivo-salud	salud.txt
-archivo-impuestos	tramos-de-impuesto-unico.txt
-archivo-contratos	contratos.txt
-archivo-accionistas	accionistas.txt
-archivo-cuentas	cuentas.txt
+archivo-tasas	/doc/tasas.txt
+archivo-valor-activos	/doc/valor-activos.txt
+archivo-proveedores	/doc/proveedores.txt
+archivo-trabajadores	/doc/trabajadores.txt
+archivo-remuneraciones	/doc/remuneraciones.txt
+archivo-afps	/doc/afps.txt
+archivo-afc	/doc/afc.txt
+archivo-salud	/doc/salud.txt
+archivo-impuestos	/doc/tramos-de-impuesto-unico.txt
+archivo-contratos	/doc/contratos.txt
+archivo-accionistas	/doc/accionistas.txt
+archivo-cuentas	/doc/cuentas.txt
+Pedido 1724 encontrado
+Insumo de Pedido 1724 encontrado en partida 189
+Insumo de Pedido 1724 encontrado en partida 166
+Insumo de Pedido 1724 encontrado en partida 149
+Insumo de Pedido 1724 encontrado en partida 146
+Insumo de Pedido 1724 encontrado en partida 132
+Compra de Pedido 1724 encontrado en partida 121
+Materiales de Pedido 1724 encontrado en partida 21
+Compra de Pedido 1724 encontrado en partida 16
+Insumo de Pedido 1724 encontrado en partida 95
+Insumo de Pedido 1724 encontrado en partida 96
+Insumo de Pedido 1724 encontrado en partida 97
+Insumo de Pedido 1724 encontrado en partida 101
+Insumo de Pedido 1724 encontrado en partida 102
+Insumo de Pedido 1724 encontrado en partida 120
+Revision general hallada en el archivo <empresa>-revisiones.txt
+Revisión 1 ahora no se incluirá.
+Revisión 1 ahora no se incluirá.
+Cambiando a modificar revisiones ............ 
+Terminando de  modificar revisiones ............ 
 ----------------- PRIMITIVA ------------------
------------------ ACTIVIDAD ------------------
-Partida 65 Rechazada
-Gasto Administrativo 104 Rechazado
+n-->	marca-alectrico	1 de enero	asiento-inicial	deducible	false
+n-->	ppm	1 de enero	asiento-inicial	deducible	false
+n-->	iva-credito	1 de enero	asiento-inicial	deducible	false
+n-->	materiales	1 de enero	asiento-inicial	deducible	false
+n-->	banco-estado	1 de enero	asiento-inicial	deducible	false
+n-->	caja	1 de enero	asiento-inicial	deducible	false
 Se abrió el pedido 1724
-Traspaso de 44044 de: materiales a: inventario-inicial
--->rv Rendición Mensual de e-Boletas Electrónicas Afectas Emitidas en SII $35000
--->rv Rendición Mensual de Vouchers Afectos Válidos como Boleta Electrónica SII $146961
--->nct Nota de Crédito Emitida ventas-con-eboleta-exenta por 4505
--->nct Nota de Crédito Emitida ventas-con-eboleta-exenta por 45050
--->nct Nota de Crédito Emitida ventas-con-eboleta-afecta por 35000
--->cd costo directo de ventas, por comision-mensual por un valor total de 60
-       pagado a khipu
--->cd costo directo de ventas, por comision-mensual por un valor total de 1997
-       pagado a transbank
--->cc comprando al contado meson-cocina-negro por un valor total de 46990
-      pagado a easy
--->cc comprando al contado materiales-electricos por un valor total de 22430
-      pagado a sodimac
--->cafc comprando activo-fijo al contado taladro-inalambrico por un valor total de 179990
-       pagado a sodimac
--->cc comprando al contado interruptores-guantes por un valor total de 8470
-      pagado a easy
+Partida 104 Rechazada
 Distribución Utilidad del Ejercicio Anterior 85294
+-->rv Rendición Mensual de Vouchers Afectos Válidos como Boleta Electrónica SII $146961
+-->rv Rendición Mensual de e-Boletas Electrónicas Afectas Emitidas en SII $35000
 ================================================================
+--------------------- MENSUAL ------------------
+[ROUTER1] Logical name k was not recognized by any routers
+[ROUTER1] Logical name k was not recognized by any routers
+-------Resumen----------- MENSUAL ------------------
+--módulo----------------------- IVA ----------------------
+IVA-filas: enero	0	0	marca-alectrico
+IVA-filas: enero	0	0	iva-credito
+IVA-filas: enero	0	0	ppm
+IVA-filas: enero	0	0	materiales
+IVA-filas: enero	0	0	banco-estado
+IVA-filas: enero	0	0	caja
+febrero
+En determinar mes de ajuste de remanente de iva febrero	2021
+antes-en-utm214100
+El valor ajustado del remanente de iva  es: 10942
+El acarreo es de: 	0
+El acarreo fue actualizado a: 	10942
+--módulo----resumen------------ IVA ----------------------
+NOTA: El IVA-DEBITO no se acumula de un mes al siguiente.
+El haber del iva-debito se compensa con el saldo del iva-credito
+y si sobra algo, se paga por medio del f29.
+El IVA-CREDITO se acumula de un mes al siguiente
+y al compensarse con el haber del IVA-DEBITO, disminiurá.
+Cada mes puede aumentar si hubo compras.
+
+Resumen: enero
+Solo hay debito
+--módulo----fin ------------ IVA ----------------------
+--------------------- PAGAR ------------------
+--------------------- fin de PAGAR ------------------
 --módulo----------------------- VALOR-ACTIVOS ---------------------
 
 Ajuste de la última cuota
 --------------------------------------------------------
-licencia-contaible
-Valor de compra: $900000
-Tiempo de Vida Util: 10 meses 
-Devaluación Mensual que se usa: $90000
-cálculo de devaluacion mensual: $90000.0
-Se debe restar: 0 de la última devaluación.
-La última devaluacion mensual debe ser por $90000
+plataforma-alectrico
+Valor de compra: $2644543
+Tiempo de Vida Util: 120 meses 
+Devaluación Mensual que se usa: $1000000
+cálculo de devaluacion mensual: $22037.8583333333
+Se debe restar: -117355457 de la última devaluación.
+La última devaluacion mensual debe ser por $-116355457
 --------------------------------------------------------
 
 =========================================
-licencia-contaible
+plataforma-alectrico
 =========================================
-amortizacion-lineal-en-diez-anos de: licencia-contaible
+amortizacion-lineal-en-diez-anos de: plataforma-alectrico
 Metodo tributario es: amortizacion-instantanea-de-intangible
 Cuentas son: 
-Activo: licencia-contaible
+Activo: plataforma-alectrico
 Pasivo: amortizacion-intangibles
 Acumuladora: amortizacion-acumulada-intangibles
-Fue adquirido en: enero de 2022 por $ 900000
-Perderá todo su valor en: 10 meses 
-Mensualmente hay que amortizarlo en: $ 90000
+Fue adquirido en: enero de 2022 por $ 2644543
+Perderá todo su valor en: 120 meses 
+Mensualmente hay que amortizarlo en: $ 1000000
 =========================================
 
 Ajuste de la última cuota
@@ -72,7 +110,6 @@ cálculo de devaluacion mensual: $2416.66666666667
 Se debe restar: -40 de la última devaluación.
 La última devaluacion mensual debe ser por $2377
 --------------------------------------------------------
--->am.auto-intangible 	2417	enero
 
 =========================================
 marca-alectrico
@@ -83,7 +120,7 @@ Cuentas son:
 Activo: marca-alectrico
 Pasivo: amortizacion-intangibles
 Acumuladora: amortizacion-acumulada-intangibles
-Fue adquirido en: diciembre de 2020 por $ 290000
+Fue adquirido en: septiembre de 2021 por $ 290000
 Perderá todo su valor en: 120 meses 
 Mensualmente hay que amortizarlo en: $ 2417
 =========================================
@@ -139,585 +176,84 @@ Perderá todo su valor en: 36 meses
 Mensualmente hay que depreciarlo en: $4202
 =========================================
 --módulo----fin ------------ VALOR-ACTIVOS ----------------------
-
-
-°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°
-Warning: Hay partidas con el mismo número
-°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°
---- PARTIDA 1 ------
-Por amortizacion en enero de marca-alectrico	numero 131
---- PARTIDA 2 ------
-Por depreciacion en enero de taladro	numero 131
-°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°
-Ambas partidas serán fusionadas en una sola, con una descripción compuesta por mezcla de las descripciones originales. 
+--------------------- ECUACION ------------------
 --módulo----------------------- T ----------------------
-
-
-
-inventario-inicial
----------------------------- recibida activo-fijo tipo-de-documento
-2112	44044	|	0	enero	false	false	traspaso
-----------------------------
-	44044	|	0
-	--------------------
-$	44044
-
-
-
-ingresos-brutos
----------------------------- recibida activo-fijo tipo-de-documento
-3	0	|	29412	enero	false	false	39
-4	0	|	123497	enero	false	false	48
-5	4505	|	0	enero	false	false	61
-6	45050	|	0	enero	false	false	61
-7	29412	|	0	enero	false	false	61
-----------------------------
-	78967	|	152909
-	---------------------
-		|	73942	$
-
-
-
-ventas-con-voucher-afecto
----------------------------- recibida activo-fijo tipo-de-documento
-4	0	|	123497	enero	false	false	48
-----------------------------
-	0	|	123497
-	---------------------
-		|	123497	$
-
-
-
-ventas
----------------------------- recibida activo-fijo tipo-de-documento
-3	0	|	29412	enero	false	false	39
-4	0	|	123497	enero	false	false	48
-5	4505	|	0	enero	false	false	61
-6	45050	|	0	enero	false	false	61
-7	29412	|	0	enero	false	false	61
-----------------------------
-	78967	|	152909
-	---------------------
-		|	73942	$
-
-
-
-khipu
----------------------------- recibida activo-fijo tipo-de-documento
-8	50	|	0	enero	true	false	33
-----------------------------
-	50	|	0
-	--------------------
-$	50
-
-
-
-costos-de-ventas
----------------------------- recibida activo-fijo tipo-de-documento
-9	1678	|	0	enero	false	false	33
-8	50	|	0	enero	false	false	33
-----------------------------
-	1728	|	0
-	--------------------
-$	1728
-
-
-
-transbank
----------------------------- recibida activo-fijo tipo-de-documento
-9	1678	|	0	enero	true	false	33
-----------------------------
-	1678	|	0
-	--------------------
-$	1678
-
-
-
-sodimac-materiales
----------------------------- recibida activo-fijo tipo-de-documento
-12	18849	|	0	enero	false	false	33
-----------------------------
-	18849	|	0
-	--------------------
-$	18849
-
-
-
-amortizacion
----------------------------- recibida activo-fijo tipo-de-documento
-131	2417	|	0	enero	false	false	amortizacion
-----------------------------
-	2417	|	0
-	--------------------
-$	2417
-
-
-
-amortizacion-intangibles
----------------------------- recibida activo-fijo tipo-de-documento
-131	2417	|	0	enero	false	false	amortizacion
-----------------------------
-	2417	|	0
-	--------------------
-$	2417
-
-
-
-depreciacion-acumulada-herramientas
----------------------------- recibida activo-fijo tipo-de-documento
-131	0	|	4202	enero	false	false	depreciacion-de-herramienta
-----------------------------
-	0	|	4202
-	---------------------
-		|	4202	$
-
-
-
-depreciacion
----------------------------- recibida activo-fijo tipo-de-documento
-131	4202	|	0	enero	false	false	depreciacion
-----------------------------
-	4202	|	0
-	--------------------
-$	4202
-
-
-
-herramientas
----------------------------- recibida activo-fijo tipo-de-documento
-13	151252	|	0	enero	true	true	33
-----------------------------
-	151252	|	0
-	--------------------
-$	151252
-
-
-
-ventas-con-eboleta-exenta
----------------------------- recibida activo-fijo tipo-de-documento
-6	45050	|	0	enero	false	false	61
-5	4505	|	0	enero	false	false	61
-----------------------------
-	49555	|	0
-	--------------------
-$	49555
-
-
-
-ventas-con-eboleta-afecta
----------------------------- recibida activo-fijo tipo-de-documento
-7	29412	|	0	enero	false	false	61
-3	0	|	29412	enero	false	false	39
-
-
-
-iva-debito
----------------------------- recibida activo-fijo tipo-de-documento
-6	0	|	0	enero	false	false	61
-5	0	|	0	enero	false	false	61
-3	0	|	5588	enero	false	false	39
-4	0	|	23464	enero	false	false	48
-7	5588	|	0	enero	false	false	61
-----------------------------
-	5588	|	29052
-	---------------------
-		|	23464	$
-
-
-
-easy-materiales
----------------------------- recibida activo-fijo tipo-de-documento
-14	7118	|	0	enero	false	false	33
-10	39487	|	0	enero	false	false	33
-----------------------------
-	46605	|	0
-	--------------------
-$	46605
-
-
-
-insumos
----------------------------- recibida activo-fijo tipo-de-documento
-1	44044	|	0	enero	false	false	escritura-empresa
-2112	44044	|	44044	enero	false	false	traspaso
-----------------------------
-	88088	|	44044
-	--------------------
-$	44044
-
-
-
-materiales
----------------------------- recibida activo-fijo tipo-de-documento
-1	44044	|	0	enero	false	false	escritura-empresa
-14	7118	|	0	enero	false	false	33
-12	18849	|	0	enero	false	false	33
-10	39487	|	0	enero	false	false	33
-2112	0	|	44044	enero	false	false	traspaso
-----------------------------
-	109498	|	44044
-	--------------------
-$	65454
-
-
-
-intangibles
----------------------------- recibida activo-fijo tipo-de-documento
-1	290000	|	0	enero	false	false	escritura-empresa
-----------------------------
-	290000	|	0
-	--------------------
-$	290000
-
-
-
-marca-alectrico
----------------------------- recibida activo-fijo tipo-de-documento
-1	290000	|	0	enero	false	false	escritura-empresa
-----------------------------
-	290000	|	0
-	--------------------
-$	290000
-
-
-
-utilidad-del-ejercicio-anterior
----------------------------- recibida activo-fijo tipo-de-documento
-1	0	|	85294	enero	false	false	escritura-empresa
-----------------------------
-	0	|	85294
-	---------------------
-		|	85294	$
-
-
-
-capital-social
----------------------------- recibida activo-fijo tipo-de-documento
-1	0	|	2000000	enero	false	false	escritura-empresa
-----------------------------
-	0	|	2000000
-	---------------------
-		|	2000000	$
-
-
-
-amortizacion-acumulada-intangibles
----------------------------- recibida activo-fijo tipo-de-documento
-1	0	|	2416	enero	false	false	escritura-empresa
-131	0	|	2417	enero	false	false	amortizacion-de-intangible
-----------------------------
-	0	|	4833
-	---------------------
-		|	4833	$
-
-
-
-iva-credito
----------------------------- recibida activo-fijo tipo-de-documento
-1	10909	|	0	enero	false	false	escritura-empresa
-8	10	|	0	enero	true	false	33
-9	319	|	0	enero	true	false	33
-10	7503	|	0	enero	false	false	33
-12	3581	|	0	enero	false	false	33
-13	28738	|	0	enero	true	true	33
-14	1352	|	0	enero	false	false	33
-----------------------------
-	52412	|	0
-	--------------------
-$	52412
-
-
-
-ppm
----------------------------- recibida activo-fijo tipo-de-documento
-1	721	|	0	enero	false	false	escritura-empresa
-----------------------------
-	721	|	0
-	--------------------
-$	721
-
-
-
-banco-estado
----------------------------- recibida activo-fijo tipo-de-documento
-1	691827	|	0	enero	false	false	escritura-empresa
-3	35000	|	0	enero	false	false	39
-4	146961	|	0	enero	false	false	48
-5	0	|	4505	enero	false	false	61
-6	0	|	45050	enero	false	false	61
-7	0	|	35000	enero	false	false	61
-8	0	|	60	enero	true	false	33
-9	0	|	1997	enero	true	false	33
-10	0	|	46990	enero	false	false	33
-12	0	|	22430	enero	false	false	33
-13	0	|	179990	enero	true	true	33
-14	0	|	8470	enero	false	false	33
-----------------------------
-	873788	|	344492
-	--------------------
-$	529296
 
 
 
 caja
 ---------------------------- recibida activo-fijo tipo-de-documento
-1	1050209	|	0	enero	false	false	escritura-empresa
-----------------------------
-	1050209	|	0
-	--------------------
-$	1050209
+1	0	|	0	enero	false	false	escritura-empresa
+
+
+
+banco-estado
+---------------------------- recibida activo-fijo tipo-de-documento
+1	0	|	0	enero	false	false	escritura-empresa
+
+
+
+materiales
+---------------------------- recibida activo-fijo tipo-de-documento
+1	0	|	0	enero	false	false	escritura-empresa
+
+
+
+ppm
+---------------------------- recibida activo-fijo tipo-de-documento
+1	0	|	0	enero	false	false	escritura-empresa
+
+
+
+iva-credito
+---------------------------- recibida activo-fijo tipo-de-documento
+1	0	|	0	enero	false	false	escritura-empresa
+
+
+
+marca-alectrico
+---------------------------- recibida activo-fijo tipo-de-documento
+1	0	|	0	enero	false	false	escritura-empresa
 --módulo----resumen------------ T ----------------------
------------------------ AJUSTE ----------------------
-----fin------------------- AJUSTE ----------------------
----------------------- LIQUIDACION --------------------
+--modulo--------------- RESULTADO SII------------------
 
 
-
-==================================================================
-FECHA	Parcial	Debe	Haber	Descripcion
-==================================================================
-Partida 212
-..................................................................
-		   |-- 	29412	ventas
-		   |----> 29412		r<base-imponible>
-
-		   |-- 	123497	ventas
-		   |----> 123497		r<base-imponible>
-
-------------------------------------------------------------------
-		152909	152909	( 31 de enero	2021	 )
-==================================================================
-alectrico® SpA
-Ajuste Anual Año: Liquidacion Tributaria aportes 2021
+Solo se consideran las transacciones hasta el día 1	enero.
+Cifras en pesos.
+Se han practicado liquidaciones, por lo que NO se muestran cuentas nominales, ni subcuentas reales
 
 
-
------------------------------------------------------
-		base-imponible	saldo-acreedor
------------------------------------------------------
-nil	0	|	152909
-		|	152909
+           RESULTADO SII año: 2021
+		SUMAS		|	SALDOS
+		DEBE	HABER	|	DEBER	ACREEDOR
+---------------------------------------------------------------------
 
 
-
-
-==================================================================
-FECHA	Parcial	Debe	Haber	Descripcion
-==================================================================
-Partida 213
-..................................................................
-	4202	    --|		depreciacion
-	4202	 <----|	r<base-imponible>
-
-	2417	    --|		amortizacion
-	2417	 <----|	r<base-imponible>
-
-	1678	    --|		costos-de-ventas
-	1678	 <----|	r<base-imponible>
-
-	50	    --|		costos-de-ventas
-	50	 <----|	r<base-imponible>
-
-	4505	    --|		ventas
-	4505	 <----|	r<base-imponible>
-
-	45050	    --|		ventas
-	45050	 <----|	r<base-imponible>
-
-	29412	    --|		ventas
-	29412	 <----|	r<base-imponible>
-
-------------------------------------------------------------------
-		87314	87314	( 31 de diciembre	2021	 )
-==================================================================
-alectrico® SpA
-Ajuste Anual Año: Liquidacion Tributaria deducciones correccion-monetariatab2021
-
-
-
------------------------------------------------------
-		base-imponible	saldo-acreedor
------------------------------------------------------
-nil	87314	|	152909
-		|	65595
-
-
-
-
-==================================================================
-FECHA	Parcial	Debe	Haber	Descripcion
-==================================================================
-Partida 214
-..................................................................
-x-- Liquidando cuenta de resultados, cuando hay ganancia en utilidad-tributaria hacia base-imponible
-La cuenta de nil	base-imponible	87314 y un haber de 	152909
-		65595	--|			utilidad-tributaria
-			  |->	65595		r<base-imponible>
-
-obtencion-utilidad-tributaria-positiva
-------------------------------------------------------------------
-		65595	65595	( 31 de diciembre	2021	 )
-==================================================================
-alectrico® SpA
-v/Para determinar el valor del resultado del tributario período
-
-
-
------------------------------------------------------
-		base-imponible	saldo-acreedor
------------------------------------------------------
-nil	87314	|	152909
-		|	65595
-
---módulo----------------------- TA ----------------------
-----------------------------
-	78967	|	152909
-	---------------------
-		|	73942	$
-----------------------------
-	1728	|	0
-	--------------------
-$	1728
-----------------------------
-	2417	|	0
-	--------------------
-$	2417
-----------------------------
-	4202	|	0
-	--------------------
-$	4202
-----------------------------
-	44044	|	0
-	--------------------
-$	44044
-----------------------------
-	78967	|	152909
-	---------------------
-		|	73942	$
-----------------------------
-	0	|	123497
-	---------------------
-		|	123497	$
-----------------------------
-	50	|	0
-	--------------------
-$	50
-----------------------------
-	1678	|	0
-	--------------------
-$	1678
-----------------------------
-	18849	|	0
-	--------------------
-$	18849
-----------------------------
-	2417	|	0
-	--------------------
-$	2417
-----------------------------
-	49555	|	0
-	--------------------
-$	49555
-----------------------------
-	46605	|	0
-	--------------------
-$	46605
-----------------------------
-	109498	|	44044
-	--------------------
-$	65454
-----------------------------
-	290000	|	0
-	--------------------
-$	290000
-----------------------------
-	1050209	|	0
-	--------------------
-$	1050209
-----------------------------
-	88088	|	44044
-	--------------------
-$	44044
-----------------------------
-	52412	|	0
-	--------------------
-$	52412
-----------------------------
-	721	|	0
-	--------------------
-$	721
-----------------------------
-	873788	|	344492
-	--------------------
-$	529296
-----------------------------
-	0	|	4202
-	---------------------
-		|	4202	$
-----------------------------
-	151252	|	0
-	--------------------
-$	151252
-----------------------------
-	290000	|	0
-	--------------------
-$	290000
-----------------------------
-	0	|	4833
-	---------------------
-		|	4833	$
-----------------------------
-	5588	|	29052
-	---------------------
-		|	23464	$
-----------------------------
-	0	|	85294
-	---------------------
-		|	85294	$
-----------------------------
-	0	|	2000000
-	---------------------
-		|	2000000	$
-
-
-
-utilidad
-------- creando subtotales para inventario --------------------- 
-
-
-
-utilidad-tributaria
-------- creando subtotales para utilidad-tributaria --------------------- 
-214	0	|	65595	tributario	false	real
-----------------------------
-	0	|	65595
-	---------------------
-		|	65595	$
-
-
-
-utilidad
-------- creando subtotales para utilidad --------------------- 
-
-
-
-idpc
-------- creando subtotales para idpc --------------------- 
---fin----------------------- TA ----------------------
---modulo-----------CALCULO DE BASE TRIBUTARIA-----------------
-En inicio-tributario-rulesSolo se consideran las transacciones hasta el día 31 febrero. Cifras en pesos.
+           B A L A N C E  DE COMPROBACION DE SUMAS Y SALDOS 
+		SUMAS		|	SALDOS
+		DEBE	HABER	|	DEBER	ACREEDOR
+-----------------------------------------------------------------------------------
+	.......................................................
+	0	0	|	0	0	activos=0
+-----------------------------------------------------------------------------------
+============================================================
+------------------------------- FINANCIERO -----------------
+============================================================
+============================================================
+-------- FIN ------------------ FINANCIERO -----------------
+============================================================
+--modulo-------------- RECUADRO------------------
 alectrico-2021
 ================================================================================
-CALCULO DE LA BASE IMPONIBLE PROPYME
+ESTADO DE RESULTADOS
 ================================================================================
-|		|     73942	Ingresos Brutos Percibidos A.29-LIR
-|		|     73942	Ventas
+|		|     0	Ventas
 |		| (-) -  		Rebajas sobre ventas
 |		| (-) 0		Devoluciones sobre ventas
 |		| (-) -  		Descuentos sobre ventas
-|		| (=) 73942	Ventas Netas
+|		| (=) 0	Ventas Netas
 
-|		| (-) 1728	Costos de Ventas A.30-LIR
+|		| (-) 0	Costos de Ventas
 
 |0				Compras
 | (+) 0				Gastos sobre Compras
@@ -727,48 +263,403 @@ CALCULO DE LA BASE IMPONIBLE PROPYME
 | (-) - 				Descuentos sobre Compras
 |0				Compras Netas
 
-| (+) 44044	|		Inventario Inicial
-| (=) 44044	|		Mercadería Disponible para la Venta 
-|     0  |		Costos de Mercancías Vendidas
+| (+) 0	|		Inventario Inicial
+| (=) 0	|		Mercadería Disponible para la Venta 
+| (-) 0	|		Inventario Final 
+
+|		|     0	UTILIDAD BRUTA (Ventas Netas - Costo de Ventas)
+|		| (-) 0		Gastos de Operación (Gastos Admon + Gastos Vtas)
+|0				Gastos del Dpto Administración
+|0				Gastos del Dpto Ventas
+|		|     0	UTILIDAD DE OPERACION (U.Bruta - G.Op.)
+|		| (-) 			Otros Gastos
+|		|     0	UTILIDAD ANTES DE RESERVA (U.Op-Reserva Lega)
+|		| (-) 0	0.0 Reserva Legal (7% de Utilidad de Operacion)
+|		|     0	UTILIDAD ANTES DE IMPUESTO A LA RENTA (U.Antes.Reserva - idpc)
+|		| (-) 0	0.0 Impuesto a la Renta (25% de U.Antes.impuesto) (idpc 10% en 2020)
+|		|     0	0 UTILIDAD DEL EJERCICIO (U.Antes.idpc - idpc)
+================================================================================
+----------------------- AJUSTE ----------------------
+----fin------------------- AJUSTE ----------------------
+-------------------- INVENTARIO -----------------------------------------------------------
+  material             dia    u       cu      ct        u      cu      ct            descripcion
+...........................................................................................
+                             ..........entrada.........|...........salida.........
+------------------- PARTIDA --------------------
+------------------- inicio-kindle-l ------------
+------------------- fin-kindle-l ------------
+
+
+
+voucher-sii	132
+1--------------  R -revisado- Folio:  	tipo asiento-inicial
+ Legal.  
+RCV. n-a	CCM: true
+ Descripcion:  
+ A corregir:  
+==================================================================
+FECHA	Parcial	Debe	Haber	Descripcion
+==================================================================
+Partida 1
+..................................................................
+[ROUTER1] Logical name l was not recognized by any routers
+[ROUTER1] Logical name l was not recognized by any routers
+[ROUTER1] Logical name l was not recognized by any routers
+[ROUTER1] Logical name l was not recognized by any routers
+[ROUTER1] Logical name l was not recognized by any routers
+[ROUTER1] Logical name l was not recognized by any routers
+[ROUTER1] Logical name l was not recognized by any routers
+[ROUTER1] Logical name l was not recognized by any routers
+[ROUTER1] Logical name l was not recognized by any routers
+[ROUTER1] Logical name l was not recognized by any routers
+[ROUTER1] Logical name l was not recognized by any routers
+[ROUTER1] Logical name l was not recognized by any routers
+[ROUTER1] Logical name l was not recognized by any routers
+[ROUTER1] Logical name l was not recognized by any routers
+[ROUTER1] Logical name l was not recognized by any routers
+[ROUTER1] Logical name l was not recognized by any routers
+------------------------------------------------------------------
+		0	0	( 1 de enero	2021	 )
+==================================================================
+alectrico® SpA
+Partida 001: Por Inicio de Operaciones en 2021
+ajuste
+
+
+[ROUTER1] Logical name l was not recognized by any routers
+[ROUTER1] Logical name l was not recognized by any routers
+[ROUTER1] Logical name l was not recognized by any routers
+[ROUTER1] Logical name l was not recognized by any routers
+[ROUTER1] Logical name l was not recognized by any routers
+[ROUTER1] Logical name l was not recognized by any routers
+[ROUTER1] Logical name l was not recognized by any routers
+---------------------- LIQUIDACION --------------------
+ Inicio de Cuenta de Inventario Final ----------------------------
+Nombre	DEBE	HABER	partida
+		0	0
+ Fin de Cuenta de Inventario Final ----------------------------
+
+
+
+==================================================================
+FECHA	Parcial	Debe	Haber	Descripcion
+==================================================================
+Partida 187
+..................................................................
+
+
+
+==================================================================
+FECHA	Parcial	Debe	Haber	Descripcion
+==================================================================
+Partida 186
+..................................................................
+
+
+
+==================================================================
+FECHA	Parcial	Debe	Haber	Descripcion
+==================================================================
+Partida 185
+..................................................................
+
+
+
+==================================================================
+FECHA	Parcial	Debe	Haber	Descripcion
+==================================================================
+Partida 188
+..................................................................
+
+
+
+==================================================================
+FECHA	Parcial	Debe	Haber	Descripcion
+==================================================================
+Partida 182
+..................................................................
+
+
+
+==================================================================
+FECHA	Parcial	Debe	Haber	Descripcion
+==================================================================
+Partida 184
+..................................................................
+------------------------
+liquidaciones-realizadas
+---------------------------
+liquidaciones-no-realizadas
+182	inventario	false
+182	inventario-final	false
+188	desarrollo	false
+188	trabajos-realizados-para-el-inamovilizado-intangible	false
+188	gastos-en-investigacion-y-desarrollo	false
+188	reintegro-de-devolucion-sobre-ventas	false
+188	devolucion-sobre-gastos	false
+188	devolucion-sobre-ventas	false
+188	compras	false
+188	impuestos-no-recuperables	false
+188	gastos-promocionales	false
+188	gastos-administrativos	false
+188	gastos-ventas	false
+188	otros-ingresos	false
+188	otros-ingresos-financieros	false
+188	ingresos-concursos-publicos	false
+188	utilidad-por-venta-de-activos-fijos	false
+188	descuento-sobre-compra	false
+188	descuento-sobre-venta	false
+188	intereses-ganados-sobre-venta	false
+188	gastos-sobre-compras	false
+188	salarios	false
+188	amortizacion	false
+188	depreciacion	false
+188	costos-de-mercancias	false
+188	acciones	false
+188	costos-de-ventas	false
+188	impuesto-retenido	false
+188	correccion-monetaria	false
+188	ventas	false
+188	inventario-final	false
+187	desarrollo	false
+187	trabajos-realizados-para-el-inamovilizado-intangible	false
+187	gastos-en-investigacion-y-desarrollo	false
+187	reintegro-de-devolucion-sobre-ventas	false
+187	devolucion-sobre-gastos	false
+187	devolucion-sobre-ventas	false
+187	compras	false
+187	impuestos-no-recuperables	false
+187	gastos-promocionales	false
+187	gastos-administrativos	false
+187	gastos-ventas	false
+187	otros-ingresos	false
+187	otros-ingresos-financieros	false
+187	ingresos-concursos-publicos	false
+187	utilidad-por-venta-de-activos-fijos	false
+187	descuento-sobre-compra	false
+187	descuento-sobre-venta	false
+187	intereses-ganados-sobre-venta	false
+187	gastos-sobre-compras	false
+187	salarios	false
+187	amortizacion	false
+187	depreciacion	false
+187	costos-de-mercancias	false
+187	acciones	false
+187	costos-de-ventas	false
+187	impuesto-retenido	false
+187	correccion-monetaria	false
+187	ventas	false
+184	idpc	false
+184	reserva-legal	false
+184	utilidad	false
+---------------------------
+tributaciones-realizadas
+---------------------------
+tributaciones-no-realizadas
+182	inventario-final	false
+185	desarrollo	false
+185	trabajos-realizados-para-el-inamovilizado-intangible	false
+185	gastos-en-investigacion-y-desarrollo	false
+185	reintegro-de-devolucion-sobre-ventas	false
+185	devolucion-sobre-gastos	false
+185	devolucion-sobre-ventas	false
+185	compras	false
+185	impuestos-no-recuperables	false
+185	gastos-promocionales	false
+185	gastos-administrativos	false
+185	gastos-ventas	false
+185	otros-ingresos	false
+185	otros-ingresos-financieros	false
+185	ingresos-concursos-publicos	false
+185	utilidad-por-venta-de-activos-fijos	false
+185	descuento-sobre-compra	false
+185	descuento-sobre-venta	false
+185	intereses-ganados-sobre-venta	false
+185	gastos-sobre-compras	false
+185	salarios	false
+185	amortizacion	false
+185	depreciacion	false
+185	costos-de-mercancias	false
+185	acciones	false
+185	costos-de-ventas	false
+185	impuesto-retenido	false
+185	correccion-monetaria	false
+185	ventas	false
+186	desarrollo	false
+186	no-importa	false
+186	trabajos-realizados-para-el-inamovilizado-intangible	false
+186	gastos-en-investigacion-y-desarrollo	false
+186	reintegro-de-devolucion-sobre-ventas	false
+186	devolucion-sobre-gastos	false
+186	devolucion-sobre-ventas	false
+186	compras	false
+186	impuestos-no-recuperables	false
+186	gastos-promocionales	false
+186	gastos-administrativos	false
+186	gastos-ventas	false
+186	otros-ingresos	false
+186	otros-ingresos-financieros	false
+186	ingresos-concursos-publicos	false
+186	utilidad-por-venta-de-activos-fijos	false
+186	descuento-sobre-compra	false
+186	descuento-sobre-venta	false
+186	intereses-ganados-sobre-venta	false
+186	gastos-sobre-compras	false
+186	salarios	false
+186	amortizacion	false
+186	depreciacion	false
+186	costos-de-mercancias	false
+186	acciones	false
+186	costos-de-ventas	false
+186	impuesto-retenido	false
+186	correccion-monetaria	false
+186	ventas	false
+----------------- INVENTARIO FINAL ------------------
+--módulo----------------------- TA ----------------------
+
+
+
+reserva-legal
+------- creando subtotales para reserva-legal --------------------- 
+nil	0	|	0	patrimonio	false	real
+
+
+
+utilidad
+------- creando subtotales para utilidad --------------------- 
+nil	0	|	0	patrimonio	false	real
+
+
+
+utilidad-tributaria
+------- creando subtotales para utilidad-tributaria --------------------- 
+nil	0	|	0	tributario	false	nominativo
+
+
+
+utilidad
+------- creando subtotales para inventario --------------------- 
+nil	0	|	0	activo	true	real
+
+
+
+base-imponible
+------- creando subtotales para base-imponible --------------------- 
+182	0	|	0	liquidadora	false	nominativo
+nil	0	|	0	liquidadora	false	nominativo
+
+
+
+aumentos-de-capital-aportes
+------- creando subtotales para aumentos-de-capital-aportes --------------------- 
+nil	0	|	0	patrimonio	false	real
+
+
+
+perdidas-ejercicios-anteriores
+------- creando subtotales para perdidas-ejercicios-anteriores --------------------- 
+nil	0	|	0	patrimonio	false	real
+
+
+
+utilidad-del-ejercicio-anterior
+------- creando subtotales para utilidad-del-ejercicio-anterior --------------------- 
+nil	0	|	0	patrimonio	false	real
+
+
+
+utilidades-acumuladas
+------- creando subtotales para utilidades-acumuladas --------------------- 
+nil	0	|	0	patrimonio	false	real
+
+
+
+revalorizacion-del-capital-propio
+------- creando subtotales para revalorizacion-del-capital-propio --------------------- 
+nil	0	|	0	patrimonio	false	real
+
+
+
+capital-social
+------- creando subtotales para capital-social --------------------- 
+nil	0	|	0	patrimonio	false	real
+
+
+
+idpc
+------- creando subtotales para idpc --------------------- 
+nil	0	|	0	ganancias	true	real
+--fin----------------------- TA ----------------------
+ Suma de amortizacion: 0
+ Suma de depreciacion: 0
+alectrico-2021
+================================================================================
+CALCULO DE LA BASE IMPONIBLE PROPYME
+ Solo se consideran las transacciones hasta el día 1 de enero de 2021o. Cifras en pesos.
+================================================================================
+|		|     0	Ingresos Brutos Percibidos A.29-LIR
+|		|     0	Ventas
+|		| (-) -  		Rebajas sobre ventas
+|		| (-) 0		Devoluciones sobre ventas
+|		| (+) 0		Reintegros de Devoluciones sobre ventas
+|		| (-) -  		Descuentos sobre ventas
+|		| (=) 0	Ventas Netas
+
+|		| (-) 0	Costos de Ventas A.30-LIR
+
+|0				Compras
+| (+) 0				Gastos sobre Compras
+|0				Compras Totales
+| (-) - 				Rebajas sobre Compras
+| (-) - 				Devoluciones sobre Compras
+| (-) - 				Descuentos sobre Compras
+|0				Compras Netas
+
+| (+) 0	|		Inventario Inicial
+| (-) 0	|		Inventario 
 | (-) 0	|		Inventario Final 
 | (=) 0	|		Costos de Mercancías 
-| (-) 44044	|		Insumos 
+| (-) 0	|		Insumos 
 
-|		|     72214	UTILIDAD BRUTA (Ventas Netas - Costo de Ventas)
-|		| (-) 6619	Gastos Operacionales (Gastos Admon + Gastos Vtas + I+D + Promocion + Amortiza + Depreciacion)
+|		|     0	UTILIDAD BRUTA (Ventas Netas - Costo de Ventas - Costos de Mercancías)
+|		| (-) 0	Gastos Operacionales (Gastos Admon + Gastos Vtas + I+D + Promocion + Amortiza + Depreciacion)
 |0				Gastos del Dpto Administración
 |0				Gastos del Dpto Ventas
 |0				Gastos en I+D
 |0				Gastos en Promocion
 |0				Salarios
 |0				Pérdida por Corrección Monetaria
-|2417				 (-) Amortizacion Contable Intangibles
-|4202				 (-) Depreciacion
+|0				 (-) Amortizacion Contable Intangibles
+|0				 (-) Depreciacion
 |		| (-) 0		Pérdida Ejercicio Anterior PEA A.33-LIR)
-|		|     65595	UTILIDAD DE OPERACION (U.Bruta - G.Ded. - PEA)
+|		|     0	UTILIDAD DE OPERACION (U.Bruta - G.Ded. - PEA)
 |		| (-) 	Otros Gastos
-|		|     65595	UTILIDAD ANTES DE RESERVA (U.Op-Reserva Lega)
+|		|     0	UTILIDAD ANTES DE RESERVA (U.Op-Reserva Lega)
 |		| (-) 	0	 Reserva Legal
-|		| (=) 65595	Resultado de Explotación 
+|		| (=) 0	Resultado de Explotación 
 |		| (+) 0	Ganancia Por Corrección Monetaria
 |		| (-) 0	Impuestos No Recuperables
-|		| (=) 65595	Resultado Fuera de Explotación 
-|		|     65595	Resultado Antes de Impuesto
-|		| (-) 0	Impuesto Determinado: 10 en 2021
-|		|     65595	Utilidad Después de Impuestos
+|		| (=) 0	Resultado Fuera de Explotación 
+|		|     0	Resultado Antes de Impuesto
+|		| (-) 0	Impuesto Determinado, factor es 0.1 en 2021
+|		|     0	Utilidad Calc. Desp.Imp.
 ---------------------------------------------------------------------------
 ----------- DETERMINACIÓN DE LA BASE IMPONIBLE -----------------------------
  Determina los impuestos del régimen propyme
-|		|     0	Utilidad Financiera (módulo liquidación)
-| (-) 	151252				Depreciación Instantanea Propyme
+|		|     0	Utilidad (módulo liquidación)
+|		|     0	Margen fuera de Explotacion
+| (-) 	0				Depreciación Instantanea Propyme
 | (-) 	0				Amortizacion Instántanea Intangibles (no-contable) 
 |0				(+) Aportes Cap.
-|		| (=) -85657	RLI Calculada
-|		| (-) 0	Impuesto Determinado
-|		| (=) 65595	Utilidad Tributaria desp.Imptos (m. liquidaciones)
-  INCENTIVO AL AHORRO SOLICITADO EN selecciones.txt 
-		-85657	 RLI Calculada 
-		-42829		Rebaja Art.14 Letra E propyme
-		-8566	IDPC A PAGAR	10%
+|		| (=) 0	RLI Calculada sin considerar partidas rechazadas
+|		| (-) 0	Rechazados
+|		| (=) 0	RLI Calculada
+|		| (=) 0	RLI desp.Imptos (2) (m. liquidaciones)
+(1) debe ser igual que (2) 
 ================================================================================
-CLIPS> (exit)
+----------------------- AJUSTEC----------------------
+----fin------------------- AJUSTEC----------------------
+--------módulo----------- TOTALC -----------------------
+-módulo-------------------------- FINAL -- SIN utilidad tributaria ------
+--módulo----------------------- SUBCUENTAS ---------------------
+-------------------- CCM -----------------------------------------------------------

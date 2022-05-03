@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Indice
-permalink: toc
+title: Menú Contable
+permalink: index
 ---
 
 [Libro Diario](libro-diario.html#Inicio)|[Libro Mayor](libro-mayor.html#Inicio)

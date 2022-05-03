@@ -106,11 +106,30 @@ nx:     mobi-prueba.ncx
 	pwd
 	cp  mobi-prueba.ncx ./doc
 	
+%.xml.bak: %.xml
+	cp $< $<.bak
+	-$(RUBY) script/dte_process.rb $<.bak > $<.out
+
+
+dte:    *.xml.bak
+	make reset
+	docker run -v $(shell pwd)/:/doc cupercupu/clipspy /doc/dte.py
+	docker run -v $(shell pwd)/:/srv/jekyll jekyll/jekyll bash -c 'make reset && make dte5139951384.xml.bak && cat dte_process.log'
+	if docker stop dte-server; then docker rm dte-server; fi
+	docker run --name dte-server -p 4001:4000 -v $(shell pwd)/:/srv/jekyll jekyll/jekyll bash -c 'jekyll serve -s ./alectrico-2021 -d dte/server'
+
+
+
+pandoc:
+	docker run --rm --volume "`pwd`:/data" --user `id -u`:`id -g` pandoc/latex --pdf-engine=xelatex introduccion.markdown -o introduccion.pdf
+
+reset:  *.xml.bak
+	mv *.xml.bak *.xml
 
 #suministrar make build VERSION=1 ASIN=b999 MES=enero EMPRESA=alectrico-2021
 prueba: 
 	docker build . -t j -f DockerfileJeky --no-cache
-	docker run -v $(shell pwd)/:/srv/jekyll j bash -c 'make nx '
+	docker run -v $(shell pwd)/:/srv/jekyll j bash -c 'make nx'
    
 
 #suministrar make build VERSION=1 ASIN=b999 MES=enero EMPRESA=alectrico-2021

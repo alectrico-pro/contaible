@@ -1,0 +1,36 @@
+I"Î<table>
+  <tbody>
+    <tr>
+      <td><a href="libro-diario.html#Inicio">Libro Diario</a></td>
+      <td><a href="libro-mayor.html#Inicio">Libro Mayor</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <tbody>
+    <tr>
+      <td><a href="subcuentas.html#Inicio">Subcuentas</a></td>
+      <td><a href="liquidacion.html#Inicio">Liquidaciones</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <tbody>
+    <tr>
+      <td><a href="final.html#Inicio">Estado Clasificado Final (Balance)</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <tbody>
+    <tr>
+      <td><a href="tributario.html#Inicio">Estado de Resultados</a></td>
+      <td><a href="resultado-sii.html#Inicio">Resultado SII</a></td>
+    </tr>
+  </tbody>
+</table>
+
+:ET

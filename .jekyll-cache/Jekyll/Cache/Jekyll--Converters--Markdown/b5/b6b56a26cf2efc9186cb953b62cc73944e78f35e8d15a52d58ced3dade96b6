@@ -1,0 +1,93 @@
+I"�	<ul>
+  <li>
+    <p>clips_core_source_640.tar.gz</p>
+
+    <p>Core CLIPS 6.40 source code and makefiles in gzipped tar format.</p>
+  </li>
+  <li>
+    <p>clips_core_source_640.zip</p>
+
+    <p>Core CLIPS 6.40 source code and makefiles in zip format.</p>
+  </li>
+  <li>
+    <p>clips_documentation_640.tar.gz</p>
+
+    <p>CLIPS 6.40 documentation including the User’s Guide, Basic Programming<br />
+Guide, Advanced Programming Guide, Interfaces Guide, Third CLIPS<br />
+Conference Proceedings, and CLIPS Version 5.1 Architecture Manual.</p>
+  </li>
+  <li>
+    <p>clips_documentation_640.zip</p>
+
+    <p>CLIPS 6.40 documentation including the User’s Guide, Basic Programming<br />
+Guide, Advanced Programming Guide, Interfaces Guide, Third CLIPS<br />
+Conference Proceedings, and CLIPS Version 5.1 Architecture Manual.</p>
+  </li>
+  <li>
+    <p>clips_examples_640.tar.gz</p>
+
+    <p>CLIPS 6.40 example programs in gzipped tar format.</p>
+  </li>
+  <li>
+    <p>clips_examples_640.zip</p>
+
+    <p>CLIPS 6.40 example programs in zip format.</p>
+  </li>
+  <li>
+    <p>clips_feature_tests_640.tar.gz</p>
+
+    <p>CLIPS 6.40 test suite in gzipped tar format.</p>
+  </li>
+  <li>
+    <p>clips_feature_tests_640.zip</p>
+
+    <p>CLIPS 6.40 test suite in zip format.</p>
+  </li>
+  <li>
+    <p>clips_jni_640.tar.gz</p>
+
+    <p>CLIPS JNI (Java Native Interface) 6.40 source and example files.</p>
+  </li>
+  <li>
+    <p>clips_jni_640.zip</p>
+
+    <p>CLIPS JNI (Java Native Interface) 6.40 source and example files.</p>
+  </li>
+  <li>
+    <p>clips_macos_executable_640.dmg</p>
+
+    <p>MacOS CLIPS 6.40 IDE application.</p>
+  </li>
+  <li>
+    <p>clips_macos_project_640.dmg</p>
+
+    <p>Project files for building the macOS CLIPS 6.40 IDE\Console<br />
+applications including the macOS specific source code and<br />
+the core CLIPS source code.</p>
+  </li>
+  <li>
+    <p>clips_windows_32_bit_installer_640.msi</p>
+
+    <p>Windows installer for the 32 bit versions of the CLIPS<br />
+6.40 IDE\DOS applications.</p>
+  </li>
+  <li>
+    <p>clips_windows_64_bit_installer_640.msi</p>
+
+    <p>Windows installer for the 64 bit versions of the CLIPS<br />
+6.40 IDE\DOS applications.</p>
+  </li>
+  <li>
+    <p>clips_windows_projects_640.zip</p>
+
+    <p>Project files for building the Windows CLIPS 6.40 IDE\DOS applications,<br />
+libraries, and CLIPS .NET examples including the Windows specific source 
+code and the core CLIPS source code.</p>
+  </li>
+  <li>
+    <p>clips_ios_640.dmg</p>
+
+    <p>CLIPS iOS 6.40 source and example files.</p>
+  </li>
+</ul>
+:ET

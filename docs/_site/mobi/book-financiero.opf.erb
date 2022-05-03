@@ -107,7 +107,6 @@
     <item id="introduccion" media-type="application/xhtml+xml" href="introduccion.html"></item>
     <item id="volumen" media-type="application/xhtml+xml" href="volumen.html"></item>
     <item id="toc" media-type="application/xhtml+xml" href="toc.html"></item>
-    <item id="contaible" media-type="application/xhtml+xml" href="contaible.html"></item>
 
     <% File.open("#{volumen}", "r:ISO-8859-1:UTF-8" ).each do |line| %>
     <% if (line =~ /asin\W(\w*)/ )  %>
@@ -156,7 +155,6 @@
     <itemref idref="toc" />
     <itemref introduccion="introduccion"/>
     <itemref toc="volumen"/>
-    <itemref idref="contaible" />
     <itemref idref="<%=asin%>"/>
     <itemref idref="libro-diario" />
     <itemref idref="libro-mayor" />

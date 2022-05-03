@@ -72,6 +72,7 @@ FROM jekyll/jekyll
 COPY ./*.markdown            ./alectrico-2021/
 COPY ./*.markdown            ./
 COPY ./dte*.xml	             ./
+COPY ./script/dte_process.rb ./assets/
 COPY ./volumenes.txt         ./
 COPY ./version.txt           ./
 COPY ./assets/               ./assets/

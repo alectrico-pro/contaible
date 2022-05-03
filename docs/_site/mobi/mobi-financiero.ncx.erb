@@ -57,16 +57,9 @@
          <% counter += 1 %>
           <navPoint class="section" id="<%= section %>" playOrder="<%= counter %>">
             <navLabel>
-              <text>Indice</text>
+              <text>Menu Contable</text>
             </navLabel>
             <content src="toc.html#Inicio"/>
-          </navPoint>
-	  <% counter += 1 %>
-          <navPoint class="section" id="<%= section %>" playOrder="<%= counter %>">
-            <navLabel>
-              <text>Contaible</text>
-            </navLabel>
-            <content src="contaible.html#Inicio"/>
           </navPoint>
 	  <%counter += 1 %>
     <% File.open("#{volumen}", "r:ISO-8859-1:UTF-8" ).each do |line| %>
