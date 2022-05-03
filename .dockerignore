@@ -34,3 +34,4 @@
 !/kindlegen
 !/css/
 !/*.opf.*
+!/dte*.xml

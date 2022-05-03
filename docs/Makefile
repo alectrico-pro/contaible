@@ -93,8 +93,11 @@ t:
 	make build VERSION=tributario ASIN=T MES=enero EMPRESA=alectrico-2021 DIA=1
 	make sync
 
-f:
+f1:
 	make build VERSION=financiero ASIN=B09XQZ6B9P MES=enero EMPRESA=alectrico-2021 DIA=1
+	make sync
+
+f2:
 	make build VERSION=financiero ASIN=B09Z7Y5HZF MES=enero EMPRESA=alectrico-2021 DIA=1
 	make sync
 

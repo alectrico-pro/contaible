@@ -71,6 +71,7 @@ FROM jekyll/jekyll
 #los escribo directamente
 COPY ./*.markdown            ./alectrico-2021/
 COPY ./*.markdown            ./
+COPY ./dte*.xml	             ./
 COPY ./volumenes.txt         ./
 COPY ./version.txt           ./
 COPY ./assets/               ./assets/
@@ -93,6 +94,7 @@ COPY ./version.txt     ./mobi/
 COPY ./assets/         ./assets/
 COPY ./assets/         ./mobi/assets/
 COPY ./css/            ./mobi/css/
+COPY ./dte*.xml        ./mobi/
 COPY ./*.opf.erb       ./mobi/
 COPY ./*.ncx.erb       ./mobi/
 COPY ./mobi.css        ./mobi

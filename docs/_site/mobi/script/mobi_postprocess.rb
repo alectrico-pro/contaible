@@ -41,7 +41,7 @@ doc.xpath("//h2/i/a").each do |node|
   h2 = node.parent.parent
   h2.swap("<a name=\"#{anchor_name}\">#{h2}</a>")
 end
-# then remove the spurious <a></a> inside the h2's
+
 doc.xpath("//h2/i/a").each { |node| node.remove }
 
 #oc.xpath("//h2").each { |node| node.remove} #elimnando los heasders
@@ -82,7 +82,8 @@ end
  #node.remove	
 #nd
 
-
+#La media screen debe aparecer en el epub
+#Es una herencia de formatos mobi para diferentes devices del ambiente kindle
 doc.xpath("//link[@href='/assets/main.css']").each do |node|
    node.set_attribute 'href', '../mobi.css'
    node.set_attribute 'type', 'text/css'
@@ -132,8 +133,6 @@ end
 
 # generate html
 html = doc.to_xhtml(:encoding => 'ISO-8859-1')
-#ncx.erb espera utf-8
-#html = doc.to_xhtml(:encoding => 'UTF-8')
 
 
 # tex4ht outputs an apparently-random-length string of underscores to

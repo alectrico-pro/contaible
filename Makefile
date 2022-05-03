@@ -93,8 +93,11 @@ t:
 	make build VERSION=tributario ASIN=T MES=enero EMPRESA=alectrico-2021 DIA=1
 	make sync
 
-f:
+f1:
 	make build VERSION=financiero ASIN=B09XQZ6B9P MES=enero EMPRESA=alectrico-2021 DIA=1
+	make sync
+
+f2:
 	make build VERSION=financiero ASIN=B09Z7Y5HZF MES=enero EMPRESA=alectrico-2021 DIA=1
 	make sync
 
@@ -103,11 +106,18 @@ nx:     mobi-prueba.ncx
 	pwd
 	cp  mobi-prueba.ncx ./doc
 	
+dte%.xml.bak: dte%.xml
+	cp $< $<.bak
+	-$(RUBY) script/dte_process.rb $<.bak > $<
+
+
+boleta: dte*.xml.bak
+	docker run -v $(shell pwd)/:/srv/jekyll jekyll/jekyll bash -c 'ls *.xml.bak'
 
 #suministrar make build VERSION=1 ASIN=b999 MES=enero EMPRESA=alectrico-2021
 prueba: 
 	docker build . -t j -f DockerfileJeky --no-cache
-	docker run -v $(shell pwd)/:/srv/jekyll j bash -c 'make nx '
+	docker run -v $(shell pwd)/:/srv/jekyll j bash -c 'make nx'
    
 
 #suministrar make build VERSION=1 ASIN=b999 MES=enero EMPRESA=alectrico-2021

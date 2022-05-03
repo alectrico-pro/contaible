@@ -521,6 +521,8 @@
     
         
         
+           <item id="B09XQZ6B9P" media-type="application/xhtml+xml" href="B09XQZ6B9P.html"></item>
+         
       
     
     
@@ -556,8 +558,6 @@
     
         
         
-           <item id="B09Z7Y5HZF" media-type="application/xhtml+xml" href="B09Z7Y5HZF.html"></item>
-         
       
     
     
@@ -838,7 +838,7 @@
     <itemref introduccion="introduccion"/>
     <itemref toc="volumen"/>
     <itemref idref="contaible" />
-    <itemref idref="B09Z7Y5HZF"/>
+    <itemref idref="B09XQZ6B9P"/>
     <itemref idref="libro-diario" />
     <itemref idref="libro-mayor" />
     <itemref idref="subcuentas" />
@@ -869,7 +869,7 @@
     -->
   <guide>
     <reference type="toc"  title="Table of Contents" href="toc.html#Inicio"></reference>
-    <reference type="text" title="B09Z7Y5HZF" href="B09Z7Y5HZF.html#Inicio"></reference>
+    <reference type="text" title="B09XQZ6B9P" href="B09XQZ6B9P.html#Inicio"></reference>
   <!--
     <reference type="text" title="Mayor" href="libro-mayor.html#Inicio"></reference>
    -->
