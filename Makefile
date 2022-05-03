@@ -106,13 +106,17 @@ nx:     mobi-prueba.ncx
 	pwd
 	cp  mobi-prueba.ncx ./doc
 	
-dte%.xml.bak: dte%.xml
+%.xml.bak: %.xml
 	cp $< $<.bak
-	-$(RUBY) script/dte_process.rb $<.bak > $<
+	-$(RUBY) script/dte_process.rb $<.bak > $<.out
 
 
-boleta: dte*.xml.bak
-	docker run -v $(shell pwd)/:/srv/jekyll jekyll/jekyll bash -c 'ls *.xml.bak'
+boleta: dte5139951384.xml
+	docker run -v $(shell pwd)/:/srv/jekyll jekyll/jekyll bash -c 'make dte5139951384.xml.bak && cat dte5139951384.xml.out '
+	
+
+reset:  *.bak
+	mv *.xml.bak *.xml
 
 #suministrar make build VERSION=1 ASIN=b999 MES=enero EMPRESA=alectrico-2021
 prueba: 
