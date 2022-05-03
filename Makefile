@@ -113,7 +113,7 @@ nx:     mobi-prueba.ncx
 
 dte:  dte5139951384.xml
 	make reset
-	docker run -v $(shell pwd)/:/srv/jekyll jekyll/jekyll bash -c 'make dte5139951384.xml.bak && cat dte5139951384.xml.out '
+	docker run -v $(shell pwd)/:/srv/jekyll jekyll/jekyll bash -c 'make dte5139951384.xml.bak && cat dte_process.log'
 	
 
 reset:  *.bak
