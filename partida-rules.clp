@@ -126,7 +126,7 @@
 ;   ( printout k "<script src='{{ base.url | prepend: site.url }}/assets/main.js'></script>" crlf)
    
 ;   ( printout k "</chapter><chapter>" crlf)
-   ( printout k "<h1> Libro Diario </h1>" crlf)
+;   ( printout k "<h1> Libro Diario </h1>" crlf)
 
    ( printout k "Contabilidad para Necios® usa el siguiente código de colores para este documento." crlf)
    ( printout k "<ul>" crlf)

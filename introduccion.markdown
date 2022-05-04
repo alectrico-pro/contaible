@@ -8,7 +8,7 @@ Hola, me presento, soy Alexander Espinosa, administrador. fundador y principal a
 Comenzaré por decir que el año 2021 fue crítico para los emprendedores del planeta debido a la Pandemia COVID19, cuyos efectos hicieron desaparecer de repente cualquier esperanza de obtención de ganancias por parte de las Pequeñas Empresas. No fui la excepción con mi empresa alectrico®. Mis clientes dejaron de llamarme y los colaboradores dejaron de colaborarme. Entonces fue la ocasión de verme en una revancha con la Contabilidad. Lo que cuento aquí es mi camino hacia el conocimiento práctico de la contabilidad usando el ejemplo real de mi empresa.
 
 
-No le gustaría ser un empresario con números azules a fin de cada año. O por lo menos, anticiparse a los números rojos para tener tiempo de salvar a su empresa? Esa es una idea que me seduce de la Contabilidad. En este ebook, veremos la forma que adopta el método para llevar libros de contabilidad en el año 2021 usando Inteligencia Artificial. Con un sistema creado por mi, en mi calidad de Ingeniro de Conocimiento y al servicio de mi rol de CEO.  
+No le gustaría ser un empresario con números azules a fin de cada año. O por lo menos, anticiparse a los números rojos para tener tiempo de salvar a su empresa? Esa es una idea que me seduce de la Contabilidad. En este ebook, veremos la forma que adopta el método para llevar libros de contabilidad en el año 2021 usando Inteligencia Artificial. Con un sistema creado por mi, en mi calidad de Ingeniero de Conocimiento y al servicio de mi rol de CEO.  
 
 
 #### Cómo usar el libro
