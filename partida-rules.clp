@@ -128,7 +128,7 @@
 ;   ( printout k "</chapter><chapter>" crlf)
 ;   ( printout k "<h1> Libro Diario </h1>" crlf)
 
-   ( printout k "Contabilidad para Necios® usa el siguiente código de colores para este documento." crlf)
+   ( printout k "Cont<sup>ai</sup>ble ® usa el siguiente código de colores para este documento." crlf)
    ( printout k "<ul>" crlf)
    ( printout k "<li><span style='background-color: red'>[    ]</span> mensaje de alerta. </li>" crlf)
    ( printout k "<li><span style='background-color: lavender'>[    ]</span> partida revisada y resultado bueno. </li>" crlf)
@@ -142,7 +142,7 @@
 
 
    ( printout d "<h1> Libro Diario </h1>" crlf)
-   ( printout d "Contabilidad para Necios® usa el siguiente código de colores para este documento." crlf)
+   ( printout d "Cont<sup>ai</sup>ble ® usa el siguiente código de colores para este documento." crlf)
    ( printout d "<ul>" crlf)
    ( printout d "<li><span style='background-color: red'>[    ]</span> mensaje de alerta. </li>" crlf)
    ( printout d "<li><span style='background-color: lavender'>[    ]</span> partida revisada y resultado bueno. </li>" crlf)

@@ -119,11 +119,12 @@ build-dte:  *.xml.bak
 	docker run -e PUID=1000 -e PGID=10 -v $(shell pwd)/:/doc cupercupu/clipspy /doc/dte.py
 	if docker stop dte-server; then docker rm dte-server; fi
 	if docker stop epub; then docker rm epub; fi
+	if docker stop 4000; then docker rm 4000; fi
 	docker run --name dte-server  -e PUID=1000 -e PGID=1000 -p 4001:4000 -v $(shell pwd)/:/srv/jekyll jekyll/jekyll bash -c 'jekyll build -s ./${EMPRESA} -d dte/server && mv dte/server/*.png dte && mv dte/server/*.pdf dte && cp assets/main.css dte/mobi.css && cd dte/server && cp ../../version.txt . && cp ../../Makefile . && cp ../../*.erb . &&  cp ../../script/mobi_postprocess.rb ./script && make mobi VERSION=${VERSION} ASIN=${ASIN} MES=${MES} DIA=${DIA}'
 	docker run --name epub -e PUID=1000 -e PGID=1000 -e TZ=Europe/London -e PASSWORD= `optional` -e CLI_ARGS= `optional` -p 8080:8080 -p 8081:8081 -v $(shell pwd)/:/doc --restart unless-stopped lscr.io/linuxserver/calibre bash -c 'cd /doc/dte/server && ebook-convert book-${VERSION}-${ASIN}-${MES}-${DIA}.mobi book-${VERSION}-${ASIN}-${MES}-${DIA}.epub && rm *.bak'
 	rsync -rltgoDv ~/contaible/dte/server/book*.epub /run/user/1000/gvfs/smb-share:server=ubuntu,share=maker/ --progress --outbuf=N -T=tmp
 	rsync -rltgoDv ~/contaible/dte/server/book*.mobi /run/user/1000/gvfs/smb-share:server=ubuntu,share=maker/ --progress --outbuf=N -T=tmp
-	docker run -p 4000:4000 -v $(shell pwd)/:/srv/jekyll jekyll/jekyll bash -c 'jekyll serve -s ./${EMPRESA} -d dte/server'
+	docker run --rm --name 4000 -p 4000:4000 -v $(shell pwd)/:/srv/jekyll jekyll/jekyll bash -c 'jekyll serve -s ./${EMPRESA} -d dte/server'
 
 #docker exec dte-server bash -c 'make reset && make dte5139951384.xml.bak && cat dte_process.log'
 
