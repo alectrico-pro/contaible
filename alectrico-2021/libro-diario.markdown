@@ -4,7 +4,7 @@ permalink: libro-diario
 layout: page
 --- 
 <h1> Libro Diario </h1>
-Contabilidad para Necios® usa el siguiente código de colores para este documento.
+Cont<sup>ai</sup>ble ® usa el siguiente código de colores para este documento.
 <ul>
 <li><span style='background-color: red'>[    ]</span> mensaje de alerta. </li>
 <li><span style='background-color: lavender'>[    ]</span> partida revisada y resultado bueno. </li>
