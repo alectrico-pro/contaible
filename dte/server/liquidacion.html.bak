@@ -3,17 +3,17 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.7.1 -->
-<title>Remuneraciones | Contaible © 2022 por alectrico ® Spa</title>
+<title>Contaible © 2022 por alectrico ® Spa</title>
 <meta name="generator" content="Jekyll v4.2.0" />
-<meta property="og:title" content="Remuneraciones" />
+<meta property="og:title" content="Contaible © 2022 por alectrico ® Spa" />
 <meta property="og:locale" content="en_US" />
-<link rel="canonical" href="www.contaible.cl/alectrico-2021/remuneraciones" />
-<meta property="og:url" content="www.contaible.cl/alectrico-2021/remuneraciones" />
+<link rel="canonical" href="www.contaible.cl/liquidacion.html" />
+<meta property="og:url" content="www.contaible.cl/liquidacion.html" />
 <meta property="og:site_name" content="Contaible © 2022 por alectrico ® Spa" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="Remuneraciones" />
+<meta property="twitter:title" content="Contaible © 2022 por alectrico ® Spa" />
 <script type="application/ld+json">
-{"@type":"WebPage","headline":"Remuneraciones","url":"www.contaible.cl/alectrico-2021/remuneraciones","@context":"https://schema.org"}</script>
+{"@type":"WebPage","headline":"Contaible © 2022 por alectrico ® Spa","url":"www.contaible.cl/liquidacion.html","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="www.contaible.cl/feed.xml" title="Contaible © 2022 por alectrico ® Spa" /></head>
 <body><header class="site-header" role="banner">
@@ -36,45 +36,36 @@
         <article class="post">
 
   <header class="post-header">
-    <h1 class="post-title">Remuneraciones</h1>
+    <h1 class="post-title"></h1>
   </header>
 
   <div class="post-content">
-    <h1> Remuneraciones </h1>
-<h3> Liquidación de Sueldo Mensual </h3>
-<p><small>2021-julio</small></p>
-<p style="page-break-after: always;">&nbsp;</p>
-<table style="background-color:cornsilk">
-<thead><th colspan="6">  DATOS DEL TRABAJADOR </th></thead>
-<tbody><tr><td> RUT     </td> <td> 14579554-0 </td></tr><tr><td> Nombre  </td> <td> Alexander Espinosa Hernández </td></tr><tr><td> Mes     </td> <td> julio </td></tr><tr><td> Año     </td> <td> 2021 </td></tr></tbody></table>
-<p style="page-break-after: always;">&nbsp;</p>
-<table style="background-color:cornsilk">
-<thead><th colspan="6">DETALLE DE REMUNERACIÓN </th></thead>
-<tbody>
-<tr><td> AFP </td><td>Habitat</td></tr>
-<tr><td colspan="2">Cotización. Obligatoria </td><td></td><td align="right"> $ 	33810</td></tr>
-<tr><td colspan="2">Seguro Invalidez y Sobrevivencia (SIS) </td><td>    (+) </td><td align="right"> $	6630</td></tr>
-<tr><td colspan="2"> SubTotal a Pagar Fondo de Pensiones (AFP) </td><td> (+) </td><td align="right"> $ 	40440</td></tr>
-<tr><td colspan="2"> Comisión AFP  	1.27%</td><td>  (+) </td><td align="right"> $ 3810</td></tr>
-<tr><td></td><td></td><td>  (=) </td><td align="right"> $ 	40440</td></tr>
-<tr><td colspan="2"> Resumen Cotizaciones Fondo de Cesantía (AFC) </td> </tr>
-<tr><td colspan="2">  Cotización Afiliado 	 6.0 % $ 	1800</td></tr>
-<tr><td colspan="2">  Cotización Empleado 	 2.4 % $ 	7200</td></tr>
-<tr><td colspan="2">Total a Pagar al Fondo de Cesantía 	3.0% </td> <td> (+) </td><td align="right"> $ 	9000</td></tr>
-<tr></tr>
-<tr><td colspan="2">             T O T A L   A  F  P   </td><td>  (=) </td><td align="right"> $ 	49440</td></tr>
-<tr height="100 px"> </tr>
-<tr><td> Fonasa	comision	7% </td></tr>
-<tr><td></td><td></td><td> (+) </td><td align="right"> $ 	21000</td></tr>
-<tr><td colspan="2">             TOTAL </td><td> (=) </td><td align="right"> $ 	70440</td></tr>
-<tr><td> </td><td></td><td> </td><td align="right">======== </td> </tr>
-<tr><td colspan="2"> -------REMUNERACION LIQUIDA-------------- </td><td></td><td align="right"> $ 	229560</td></tr>
+    <h1> Liquidaciones  </h1>
+<table><tbody> 
+<tr><td colspan="3"> Cuenta de Inventario en enero de 2021</td></tr>
+<tr style="background-color: cornflowerblue"><td> Partida </td> <td> DEBE </td> <td> HABER </td> </tr>
+<tr> <td></td><td> 0</td><td>0</td></tr>
+<tr><td colspan="2"> Fin de Cuenta de Inventario Final </td></tr>
 </tbody></table>
-<table>
-<tbody>
-<tr> <td colspan="12"> Certifico que he recibido de mi Empleador ALECTRICO SPA mi total y entera satisfacción el saldo líquido indicado en la presente liquidación, sin tener cargo ni cobro posterior alguno que hacer, por los conceptos de esta liquidación. </td></tr><tr> <th> Fecha </th><td colspan="10"></td> </tr><tr height="100 px"><td></td></tr>
-<tr> <td colspan="10" align="center"> Firma Trabajador </td></tr></tbody>
-</table>
+<table style="background-color: lightyellow"><tbody>
+<tr style="color: white; background-color: black"><td colspan="9"> Partida 187</td></tr>
+<tr><th>DEBE</th><th> HABER </th> <th colspan="6"> Cuenta </th></tr>
+<table style="background-color: lightyellow"><tbody>
+<tr style="color: white; background-color: black"><td colspan="9"> Partida 186</td></tr>
+<tr><th>DEBE</th><th> HABER </th> <th colspan="6"> Cuenta </th></tr>
+<table style="background-color: lightyellow"><tbody>
+<tr style="color: white; background-color: black"><td colspan="9"> Partida 185</td></tr>
+<tr><th>DEBE</th><th> HABER </th> <th colspan="6"> Cuenta </th></tr>
+<table style="background-color: lightyellow"><tbody>
+<tr style="color: white; background-color: black"><td colspan="9"> Partida 188</td></tr>
+<tr><th>DEBE</th><th> HABER </th> <th colspan="6"> Cuenta </th></tr>
+<table style="background-color: lightyellow"><tbody>
+<tr style="color: white; background-color: black"><td colspan="9"> Partida 182</td></tr>
+<tr><th>DEBE</th><th> HABER </th> <th colspan="6"> Cuenta </th></tr>
+<table style="background-color: lightyellow"><tbody>
+<tr style="color: white; background-color: black"><td colspan="9"> Partida 184</td></tr>
+<tr><th>DEBE</th><th> HABER </th> <th colspan="6"> Cuenta </th></tr>
+</tbody></table></tbody></table></tbody></table></tbody></table></tbody></table></tbody></table>
 
   </div>
 

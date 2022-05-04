@@ -102,7 +102,7 @@
       ( open ?archivo d "w")
       ( printout d "--- " crlf)
       ( printout d "title: Libro Diario" crlf)
-      ( printout d "permalink: /" ?empresa "/libro-diario " crlf)
+      ( printout d "permalink: libro-diario " crlf)
       ( printout d "layout: page" crlf)
       ( printout d "--- " crlf)
 

@@ -1,6 +1,6 @@
 --- 
 title: Libro Diario
-permalink: /alectrico-2021/libro-diario 
+permalink: libro-diario 
 layout: page
 --- 
 <h1> Libro Diario </h1>
