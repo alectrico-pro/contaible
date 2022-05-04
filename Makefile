@@ -112,7 +112,7 @@ nx:     mobi-prueba.ncx
 
 
 
-#Inicialmente era para probar dtes, pero terminó sindo una alterntavia rapida a make mobi
+#Inicialmente era para probar dtes, pero terminó sindo una alternativa rápida a make mobi
 build-dte:  *.xml.bak
 	make reset
 	if rm dte/server/*.html; then echo .; fi
@@ -123,7 +123,7 @@ build-dte:  *.xml.bak
 	docker run --name epub -e PUID=1000 -e PGID=1000 -e TZ=Europe/London -e PASSWORD= `optional` -e CLI_ARGS= `optional` -p 8080:8080 -p 8081:8081 -v $(shell pwd)/:/doc --restart unless-stopped lscr.io/linuxserver/calibre bash -c 'cd /doc/dte/server && ebook-convert book-${VERSION}-${ASIN}-${MES}-${DIA}.mobi book-${VERSION}-${ASIN}-${MES}-${DIA}.epub && rm *.bak'
 	rsync -rltgoDv ~/contaible/dte/server/book*.epub /run/user/1000/gvfs/smb-share:server=ubuntu,share=maker/ --progress --outbuf=N -T=tmp
 	rsync -rltgoDv ~/contaible/dte/server/book*.mobi /run/user/1000/gvfs/smb-share:server=ubuntu,share=maker/ --progress --outbuf=N -T=tmp
-
+	docker run -p 4000:4000 -v $(shell pwd)/:/srv/jekyll jekyll/jekyll bash -c 'jekyll serve -s ./${EMPRESA} -d dte/server'
 
 #docker exec dte-server bash -c 'make reset && make dte5139951384.xml.bak && cat dte_process.log'
 
