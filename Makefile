@@ -202,58 +202,43 @@ cover%.jpg: cover%.png
         orden=main_switch.png ; \
 	warning=4441.png ; \
         carrito=carrito.png ; \
+	descargado=consumo_de_creditos.png ; \
+	numeracion=0 ; \
         for y in 3004 3104 3204 3304 ; do \
-            x=1; \
-            composite -geometry "+100+100" "$$orden" $^ "$^.$$y.$$x.cargado" ; \
-            composite -geometry "+2130+83" "$$warning" "$^.$$y.$$x.cargado" "$^.$$y.$$x.cargado" ; \
-            composite -geometry "+1100+1650" "$$carrito" "$^.$$y.$$x.cargado" "$^.$$y.$$x.cargado" ; \
-            convert -background '#0008' -fill white -gravity center -size 2810x120 \
-            caption:"  Contiene ejercicio contable año 2021 de alectrico ®  " \
-            "$^.$$y.$$x.cargado" +swap -gravity south -composite "$^.$$y.$$x.cargado"; \
-            convert -background '#0008' -fill white -gravity West -size 2810x750 \
-            caption:" Contabilidad de Necios" \
-            "$^.$$y.$$x.cargado" +swap -gravity south -composite "$^.$$y.$$x.cargado"; \
-            convert -background '#0008' -fill white -gravity  center -size 310x110 \
-            caption:" 209 " \
-            "$^.$$y.$$x.cargado" +swap -gravity NorthEast -composite "$^.$$y.$$x.cargado"; \
-	  for separacion in 450 550 ; do \
+          x=1; \
+          composite -geometry "+100+100" "$$orden" $^ "$^.$$y.$$x.cargado" ; \
+          composite -geometry "+2130+83" "$$warning" "$^.$$y.$$x.cargado" "$^.$$y.$$x.cargado" ; \
+          composite -geometry "+1100+1650" "$$carrito" "$^.$$y.$$x.cargado" "$^.$$y.$$x.cargado" ; \
+          convert -background '#0008' -fill white -gravity center -size 2810x120 \
+          caption:"  Contiene ejercicio contable año 2021 de alectrico ®  " \
+          "$^.$$y.$$x.cargado" +swap -gravity south -composite "$^.$$y.$$x.cargado"; \
+          convert -background '#0008' -fill white -gravity West -size 2810x750 \
+          caption:" Contabilidad de Necios" \
+          "$^.$$y.$$x.cargado" +swap -gravity south -composite "$^.$$y.$$x.cargado"; \
+	  for separacion in 450 500 ; do \
             x=1 ; \
 	    bateria=compra_de_creditos.png ; \
             composite -geometry "+$$x+$$y" "$$bateria" "$^.$$y.$$x.cargado" "$^.$$y.$$x.cargado"  ; \
             while [ $$x -le 2001 ] ; do \
-   	      echo "Posicionado en x=$$x y=$$y bateria= $$bateria" ; \
               a=$$x ; \
 	      x=$$(( $$x + $$separacion ))  ; \
+              numeracion=$$(( $$numeracion + 1 )) ; \
+              echo "Posicionado en $$numeracion x=$$x y=$$y bateria= $$bateria" ; \
 	      composite -geometry "+$$x+$$y" "$$bateria" "$^.$$y.$$a.cargado" "$^.$$y.$$x.cargado" ; \
+              convert -background '#0008' -fill white -gravity  center -size 310x110 \
+              caption:" $$numeracion " \
+             "$^.$$y.$$x.cargado" +swap -gravity NorthEast -composite "$^.$$y.$$x.cargado"; \
+              if [ $$separacion -eq 450 ] ; then  \
+                numeracion=$$(( $$numeracion + 1 )) ; \
+                echo "Posicionado en $$numeracion x=$$x y=$$y bateria= $$descargado" ; \
+                composite -geometry "+$$x+$$y" "$$descargado" "$^.$$y.$$a.cargado" "$^.$$y.$$x.descargado" ; \
+                convert -background '#0008' -fill white -gravity  center -size 310x110 \
+                caption:" $$numeracion " \
+                "$^.$$y.$$x.descargado" +swap -gravity NorthEast -composite "$^.$$y.$$x.descargado"; \
+              fi; \
 	    done; \
-	 done; \
-	 for y in 3004 3104 3204 3304 ; do \
-            x=1; \
-            composite -geometry "+100+100" "$$orden" $^ "$^.$$y.$$x.descargado" ; \
-            composite -geometry "+2130+83" "$$warning" "$^.$$y.$$x.descargado" "$^.$$y.$$x.descargado" ; \
-            composite -geometry "+1100+1650" "$$carrito" "$^.$$y.$$x.descargado" "$^.$$y.$$x.descargado" ; \
-            convert -background '#0008' -fill white -gravity center -size 2810x120 \
-            caption:"  Contiene ejercicio contable año 2021 de alectrico ®  " \
-            "$^.$$y.$$x.descargado" +swap -gravity south -composite "$^.$$y.$$x.descargado"; \
-            convert -background '#0008' -fill white -gravity West -size 2810x750 \
-            caption:" Contabilidad de Necios" \
-            "$^.$$y.$$x.descargado" +swap -gravity south -composite "$^.$$y.$$x.descargado"; \
-            convert -background '#0008' -fill white -gravity  center -size 310x110 \
-            caption:" 209 " \
-            "$^.$$y.$$x.descargado" +swap -gravity NorthEast -composite "$^.$$y.$$x.descargado"; \
-            for separacion in 450 ; do \
-	      x=1 ; \
-              bateria=consumo_de_creditos.png ; \
-              composite -geometry "+$$x+$$y" "$$bateria" "$^.$$y.1.descargado" "$^.$$y.1.descargado" ; \
-              while [ $$x -le 2001 ] ; do \
-                echo "Posicionado en x=$$x y=$$y bateria= $$bateria" ; \
-                a=$$x ; \
-                x=$$(( $$x + $$separacion ))  ; \
-                composite -geometry "+$$x+$$y" "$$bateria" "$^.$$y.$$a.descargado" "$^.$$y.$$x.descargado" ; \
-	       done ; \
-            done; \
-	  done ; \
-	done ; \
+	  done; \
+	done; \
 
 
 #ocupa dte_rules.clp
