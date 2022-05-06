@@ -177,11 +177,11 @@
   ( open ?archivo k "w")
   ( printout k "--- " crlf)
   ( printout k "title: Volumen" crlf)
-;   ( printout f "permalink: /" ?empresa "/f22 " crlf)
   ( printout k "layout: page" crlf)
   ( printout k "--- " crlf)
   ( printout k "<h2> " ?titulo " </h2>" crlf)
-  ( printout k "<h3> " ?subtitulo " </h3>" crlf)
+  ( printout k "<h2> " ?subtitulo " </h2>" crlf)
+  ( printout k "![](../revisado.png)" crlf)
 
   ( printout k "<h3> " ?autor  " </h3> " crlf)
   ( printout k "alectrico ® ha realizado la publicación de este volumen con las siguientes características." crlf)

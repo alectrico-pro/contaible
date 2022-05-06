@@ -180,6 +180,9 @@ html.gsub!(/<br \/>1/,'')
 
 
 html.gsub!(/\/\w*\W*\w*\/libro-diario/, './libro-diario.html')
+
+html.gsub!(/alectrico-2021/, '')
+
 #html.gsub!(/\/alectrico-2021\/libro-diario/, './libro-diario.html')
 
 

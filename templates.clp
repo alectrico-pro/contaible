@@ -10,7 +10,7 @@
 
 (deftemplate volumen
 
-
+  (slot cubierta) 
   (slot autor)
   (slot id)
   (slot isbn)

@@ -1,0 +1,21 @@
+(contrato
+ 
+  ( funcion electricista)
+  ( trabajador alexander)
+  ( jornada ordinaria)
+  ( dedicacion completa)
+  ( diaria 50000)
+  ( duracion definida)
+  ( tipo-de-duracion a-plazo-fijo)
+)
+
+(contrato
+  ( funcion programador)
+  ( trabajador alexander)
+  ( jornada ordinaria)
+  ( dedicacion completa)
+  ( diaria 50000)
+  ( duracion indefinida)
+  ( tipo-de-duracion a-plazo-fijo)
+)
+

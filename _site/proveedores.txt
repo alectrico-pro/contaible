@@ -1,0 +1,200 @@
+;social. maximo 50 char
+( proveedor
+ (nombre google)
+ (rut 55555555-5)
+ (social "Google")
+ (padre gastos-admnistrativos))
+
+( proveedor
+ (nombre heroku)
+ (rut 55555555-5)
+ (social "Heroku Inc.")
+ (padre gastos-admnistrativos))
+
+
+( proveedor 
+ (nombre google-one) 
+ (rut 55555555-5)
+ (social "Google")
+ (padre gastos-administrativos))
+
+( proveedor 
+ (nombre test-animation-video-maker)
+ (rut 55555555-5)
+ (social "Google Play")
+ (padre gastos-promocionales))
+
+( proveedor
+ (nombre cloudflare)
+ (rut 55555555-5)
+ (social "Cloudflare, Inc.")
+ (padre gastos-administrativos))
+
+( proveedor
+ (nombre macprint)
+ (rut 76631913-0)
+ (social "Macprint Spa.")
+ (padre gastos-promocionales))
+
+( proveedor
+ (nombre maria-jose)
+ (rut 77044084-K)
+ (social "COMERCIALIZADORA MARIA JOSE E.I.R.L.")
+ (padre gastos-promocionales))
+
+( proveedor
+ (nombre entel)
+ (rut 96806980-2)
+ (social "Entel PCS Telecomunicaciones S.A.")
+ (padre gastos-administrativos))
+
+( proveedor
+ (nombre tgr)
+ (rut 60805000-0)
+ (social "Tesorería General de la República")
+ (padre gastos-administrativos))
+
+( proveedor
+ (nombre transbank)
+ (rut 96689310-9)
+ (social "TRANSBANK S.A.")
+ (padre costos-ventas))
+
+
+( proveedor
+ (nombre sodimac-insumos)
+ (rut "96792430-K")
+ (social "SODIMAC S.A.")
+ (padre insumos))
+
+
+( proveedor
+ (nombre sodimac-materiales)
+ (rut "96792430-K")
+ (social "SODIMAC S.A.")
+ (padre materiales))
+
+
+
+( proveedor
+ (nombre electrocom-insumos)
+ (rut "96355000-6")
+ (social "ELECTROCOM S.A.")
+ (padre insumos))
+
+
+( proveedor
+ (nombre electrocom-materiales)
+ (rut "96355000-6")
+ (social "ELECTROCOM S.A.")
+ (padre materiales))
+
+
+
+( proveedor
+ (nombre u-chile)
+ (rut 60910000-1)
+ (social "Universidad de Chile")
+ (padre gastos-administrativos))
+
+( proveedor
+ (nombre trust)
+ (rut 76467322-0)
+ (social "TRUST SERVICE PROVIDER SPA")
+ (padre gastos-administrativos))
+
+( proveedor 
+  (nombre langlois)
+  (rut 86598100-7)
+  (social "JOHANSSON Y LANGLOIS LIMITADA")
+ (padre gastos-intangibles))
+
+( proveedor
+ (nombre khipu)
+ (rut 76187287-7)
+ (social "KHIPU SPA") 
+ (padre costos-ventas))
+
+( proveedor
+ (nombre embros)
+ (rut 76746937-3)
+ (social "EMBROS SPA")
+ (padre gastos-promocionales))
+
+
+( proveedor
+ (nombre easy-insumos)
+ (rut 76568660-1)
+ (social "ESASY RETAIL SPA")
+ (padre insumos))
+
+
+
+( proveedor
+ (nombre easy-materiales)
+ (rut 76568660-1)
+ (social "ESASY RETAIL SPA")
+ (padre materiales))
+
+( proveedor
+ (nombre dartel-materiales)
+ (rut 96806110-0)
+ (social "Dartel S.A.")
+ (padre materiales))    
+
+
+( proveedor
+ (nombre dartel-insumos)
+ (rut 96806110-0)
+ (social "Dartel S.A.")
+ (padre insumos))
+
+
+( proveedor
+ (nombre sii) 
+ (rut 15108866-K)
+ (social "SII")
+ (padre gastos-administrativos))
+
+( proveedor
+  (nombre metro)
+  (rut 61219000-3)
+  (social "EMPRESA DE TRANSPORTE DE PASAJEROS METRO S.A.")
+  (padre gastos-administrativos))
+
+( proveedor
+  (rut 9229947-3)
+  (nombre eugenio)
+  (social "EUGENIO NELSON ESPINOZA VERA")
+  (padre  gastos-administrativos))
+
+(proveedor
+  (rut 80478200-1)
+  (nombre ilop)
+  (social "ILOP S.A.")
+  (padre gastos-administrativos))
+
+(proveedor
+  (rut 77189001-6)
+  (nombre scrap)
+  (social "PAPERS SCRAP SPA")
+  (padre gastos-administrativos))
+
+(proveedor
+  (rut 78968610-6)
+  (nombre lider)
+  (social "Lider Domicilio Ventas y Dist. LTDA")
+  (padre gastos-administrativos))
+
+(proveedor
+  (rut 77201295-0)
+  (nombre gonzalo)
+  (social "TRANSFORMACIÓN E INNOVACIÓN EN EDUC. Y TEC. SPA")
+  (padre ventas-con-factura-afecta))
+
+(proveedor
+  (rut 77094278-0)
+  (nombre ie)
+  (social "IE TECNOLOGIA SPA")
+  (padre gastos-administrativos))
+

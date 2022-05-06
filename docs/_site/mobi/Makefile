@@ -38,10 +38,16 @@ book-%.opf: book-%.opf.erb
 mobi_antiguo:  B09Z7Y5HZF.html.bak B09XQZ6B9P.html.bak introduccion.html.bak volumen.html.bak toc.html.bak libro-diario.html.bak libro-mayor.html.bak iva.html.bak final.html.bak tributario.html.bak f29.html.bak f22.html.bak comprobacion.html.bak subcuentas.html.bak inventario.html.bak resultado-sii.html.bak liquidacion.html.bak remuneraciones.html.bak valor-activos.html.bak bi.html.bak contaible.html.bak 
 	make mobi-${VERSION}.ncx book-${VERSION}.opf
 
-mobi:   *.html.bak
+mobi:   B09Z7Y5HZF.html.bak B09XQZ6B9P.html.bak introduccion.html.bak volumen.html.bak toc.html.bak libro-diario.html.bak libro-mayor.html.bak iva.html.bak final.html.bak tributario.html.bak f22.html.bak comprobacion.html.bak subcuentas.html.bak inventario.html.bak resultado-sii.html.bak liquidacion.html.bak valor-activos.html.bak contaible.html.bak
 	make mobi-${VERSION}.ncx book-${VERSION}.opf
 	cat assets/main.css >> mobi.css
 	-$(KINDLEGEN) book-${VERSION}.opf
+	mv book-${VERSION}.mobi book-${VERSION}-${ASIN}-${MES}-${DIA}.mobi
+
+mobi-dte:   B09Z7Y5HZF.html.bak B09XQZ6B9P.html.bak introduccion.html.bak volumen.html.bak toc.html.bak libro-diario.html.bak libro-mayor.html.bak iva.html.bak final.html.bak tributario.html.bak f22.html.bak comprobacion.html.bak subcuentas.html.bak inventario.html.bak resultado-sii.html.bak liquidacion.html.bak valor-activos.html.bak contaible.html.bak
+	make mobi-${VERSION}.ncx book-${VERSION}.opf
+	cat assets/main.css >> mobi.css
+	../../kindlegen book-${VERSION}.opf
 	mv book-${VERSION}.mobi book-${VERSION}-${ASIN}-${MES}-${DIA}.mobi
 
 
@@ -111,14 +117,28 @@ nx:     mobi-prueba.ncx
 	-$(RUBY) script/dte_process.rb $<.bak > $<.out
 
 
-dte:    *.xml.bak
+
+#Inicialmente era para probar dtes, pero terminó sindo una alternativa rápida a make mobi
+build-dte:  *.xml.bak
 	make reset
-	docker run -v $(shell pwd)/:/doc cupercupu/clipspy /doc/dte.py
-	docker run -v $(shell pwd)/:/srv/jekyll jekyll/jekyll bash -c 'make reset && make dte5139951384.xml.bak && cat dte_process.log'
-	if docker stop dte-server; then docker rm dte-server; fi
-	docker run --name dte-server -p 4001:4000 -v $(shell pwd)/:/srv/jekyll jekyll/jekyll bash -c 'jekyll serve -s ./alectrico-2021 -d dte/server'
+	if rm dte/server/*.html; then echo .; fi
+	if docker rm clips-dte -fv; then echo 'clips-dte'; fi
+	docker run --name clips-dte -e PUID=1000 -e PGID=10 -v $(shell pwd)/:/doc cupercupu/clipspy /doc/dte.py
+	if docker rm jekyll-dte -fv; then  echo .; fi
+	docker run --name jekyll-dte  -e PUID=1000 -e PGID=1000 -p 4001:4000 -v $(shell pwd)/:/srv/jekyll jekyll/jekyll bash -c 'jekyll build -s ./${EMPRESA} -d dte/server && mv dte/server/*.png dte && mv dte/server/*.pdf dte && cp assets/main.css dte/mobi.css && cd dte/server && cp ../../version.txt . && cp ../../Makefile . && cp ../../*.erb . &&  cp ../../script/mobi_postprocess.rb ./script && make mobi-dte VERSION=${VERSION} ASIN=${ASIN} MES=${MES} DIA=${DIA}'
+	if docker rm epub-dte -fv; then echo .; fi
+	docker run --rm --name epub-dte -e PUID=1000 -e PGID=1000 -e TZ=Europe/London -e PASSWORD= `optional` -e CLI_ARGS= `optional` -p 8080:8080 -p 8081:8081 -v $(shell pwd)/:/doc lscr.io/linuxserver/calibre bash -c 'cd /doc/dte/server && ebook-convert book-${VERSION}-${ASIN}-${MES}-${DIA}.mobi book-${VERSION}-${ASIN}-${MES}-${DIA}.epub && rm *.bak'
+	rsync -rltgoDv ~/contaible/dte/server/book*.epub /run/user/1000/gvfs/smb-share:server=ubuntu,share=maker/ --progress --outbuf=N -T=tmp
+	rsync -rltgoDv ~/contaible/dte/server/book*.mobi /run/user/1000/gvfs/smb-share:server=ubuntu,share=maker/ --progress --outbuf=N -T=tmp
+	if docker rm dte-server -fv; then echo .; fi
+	docker run --rm --name dte-server -p 4000:4000 -v $(shell pwd)/:/srv/jekyll jekyll/jekyll bash -c 'jekyll serve -s ./${EMPRESA} -d dte/server'
+
+#docker exec dte-server bash -c 'make reset && make dte5139951384.xml.bak && cat dte_process.log'
 
 
+
+dte:    *.xml.bak
+	make build-dte VERSION=financiero ASIN=B09XQZ6B9P MES=enero EMPRESA=alectrico-2021 DIA=1
 
 pandoc:
 	docker run --rm --volume "`pwd`:/data" --user `id -u`:`id -g` pandoc/latex --pdf-engine=xelatex introduccion.markdown -o introduccion.pdf
@@ -135,14 +155,15 @@ prueba:
 #suministrar make build VERSION=1 ASIN=b999 MES=enero EMPRESA=alectrico-2021
 build:
 	echo '(version (id 2) (version $(VERSION)) (asin $(ASIN)) (mes $(MES)) (dia $(DIA)))' > version.txt
-	if docker rm st; then echo volumen docker st eliminado exitosamente st; fi 
-	if docker rm mobi; then echo volumen docker mobi eliminado exitosamente; fi
-	if docker stop calibre; docker rm calibre; then echo volumen docker mobi eliminado exitosamente; fi
+	if docker rm st -fv; then echo volumen docker st eliminado exitosamente st; fi 
+	if docker rm mobi -fv; then echo volumen docker mobi eliminado exitosamente; fi
+	if docker stop calibre -fv; docker rm calibre; then echo volumen docker mobi eliminado exitosamente; fi
+	if docker stop dte-server -fv; then docker rm dte-server; fi
 	docker build . -t contaible -f DockerfileContaible
-	docker run -p 4000:4000 --name st -v $(shell pwd)/docs:/doc contaible bash -c 'jekyll build . && cp * /doc -r && chown 1000:1000 /doc -R' --no-cache
-	docker run --name mobi  --volumes-from st -v $(shell pwd)/docs:/doc contaible bash -c 'jekyll build . && cp /doc/_site/${EMPRESA}/*.html /doc/mobi && cp /doc/_site/*.html /doc/mobi && cp /doc/_site/assets/* /doc/mobi/assets && cp /doc/_site/assets/main.css /doc/mobi.css && cd /doc/mobi && make mobi VERSION=${VERSION} ASIN=${ASIN} MES=${MES} DIA=${DIA}'
-	docker run  --volumes-from mobi --name=calibre -e PUID=1000 -e PGID=1000 -e TZ=Europe/London -e PASSWORD= `#optional` -e CLI_ARGS= `#optional` -p 8080:8080 -p 8081:8081 -v $(shell pwd)/docs:/doc --restart unless-stopped lscr.io/linuxserver/calibre bash -c 'cd /doc/mobi && ebook-convert book-${VERSION}-${ASIN}-${MES}-${DIA}.mobi book-${VERSION}-${ASIN}-${MES}-${DIA}.epub'
-	
+	docker run --name st -v $(shell pwd)/docs:/doc contaible bash -c 'jekyll build . && cp * /doc -r && chown 1000:1000 /doc -R' --no-cache
+	docker run --name mobi --volumes-from st -v $(shell pwd)/docs:/doc contaible bash -c 'jekyll build . && cp /doc/_site/${EMPRESA}/*.html /doc/mobi && cp /doc/_site/*.html /doc/mobi && cp /doc/_site/assets/* /doc/mobi/assets && cp /doc/_site/assets/main.css /doc/mobi.css && cd /doc/mobi && make mobi VERSION=${VERSION} ASIN=${ASIN} MES=${MES} DIA=${DIA}'
+	docker run --rm --volumes-from mobi --name=calibre -e PUID=1000 -e PGID=1000 -e TZ=Europe/London -e PASSWORD= `optional` -e CLI_ARGS= `optional` -p 8080:8080 -p 8081:8081 -v $(shell pwd)/docs:/doc lscr.io/linuxserver/calibre bash -c 'cd /doc/mobi && ebook-convert book-${VERSION}-${ASIN}-${MES}-${DIA}.mobi book-${VERSION}-${ASIN}-${MES}-${DIA}.epub'
+
 
 
 sync:

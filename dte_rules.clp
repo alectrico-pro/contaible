@@ -164,7 +164,7 @@
   ( version (asin ?asin) (version ?version) (mes ?mes) (dia ?dia))
   ?balance <- (balance (ano ?ano))
   ?revision-general <- (revision-general)
-  (volumen (serie ?serie) (orden ?orden) (autor ?autor) (formato ?formato) (titulo ?titulo) (subtitulo ?subtitulo) (contenido ?contenido) (asin ?asin) (partidas-no-incluidas $?partidas) )
+  (volumen (cubierta ?cubierta) (serie ?serie) (orden ?orden) (autor ?autor) (formato ?formato) (titulo ?titulo) (subtitulo ?subtitulo) (contenido ?contenido) (asin ?asin) (partidas-no-incluidas $?partidas) )
  =>
 
   (retract ?ajustar)
@@ -181,7 +181,9 @@
   ( printout k "layout: page" crlf)
   ( printout k "--- " crlf)
   ( printout k "<h2> " ?titulo " </h2>" crlf)
-  ( printout k "<h3> " ?subtitulo " </h3>" crlf)
+  ( printout k "<h2> " ?subtitulo " </h2>" crlf)
+  ( printout k "![](../revisado.png)" crlf)
+  ( printout k "![](./" (str-cat ?cubierta ".jpg") ")" crlf)
 
   ( printout k "<h3> " ?autor  " </h3> " crlf)
   ( printout k "alectrico ® ha realizado la publicación de este volumen con las siguientes características." crlf)
@@ -197,6 +199,9 @@
   ( printout k "<li><span style='background-color: gold'>[    ]</span> empresa: " ?empresa " </li>" crlf)
   ( printout k "<li><span style='color: white; background-color: black'>[    ]</span> titulo: " ?titulo " </li>" crlf)
   ( printout k "<li><span style='background-color: blanchedalmond'>[    ]</span> subtitulo: " ?subtitulo " </li>" crlf)
+  ( printout k "<li><span style='background-color: blanchedalmond'>[    ]</span> subtitulo: " ?cubierta " </li>" crlf)
+
+
   ( printout k "</ul>" crlf)
   ( close k)
 )

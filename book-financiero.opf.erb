@@ -104,8 +104,8 @@
        <% counter += 1 %>
     <%  end %><% end %>
 
-    <item id="introduccion" media-type="application/xhtml+xml" href="introduccion.html"></item>
     <item id="volumen" media-type="application/xhtml+xml" href="volumen.html"></item>
+    <item id="introduccion" media-type="application/xhtml+xml" href="introduccion.html"></item>
     <item id="toc" media-type="application/xhtml+xml" href="toc.html"></item>
 
     <% File.open("#{volumen}", "r:ISO-8859-1:UTF-8" ).each do |line| %>
@@ -113,7 +113,10 @@
         <% num = $1  %>
         <% if (num == asin) %>
            <item id="<%=asin%>" media-type="application/xhtml+xml" href="<%=asin%>.html"></item>
-         <% end %>
+	   <% if (line =~ /cubierta (.*)\)/ )  %>
+              <item id="My_Cover" media-type="image/jpg" href="<%=$1%>.jpg"/>
+           <% end %>
+        <% end %>
       <%  end %>
     <% end %>
 
@@ -127,8 +130,9 @@
 
     <!-- table of contents [mandatory] -->
     <item id="My_Table_of_Contents" media-type="application/x-dtbncx+xml" href="mobi-financiero.ncx"/>
-    <!-- cover image [mandatory] -->
-    <item id="My_Cover" media-type="image/jpeg" href="cover.jpg"/>
+    <!-- cover image [mandatory] 
+     ejemplo <item id="My_Cover" media-type="image/png" href="cover-1-back-to-business.jpg"/>
+    -->
 
 
 
@@ -152,9 +156,9 @@
     <spine toc="My_Table_of_Contents"/>
 	  <!-- the spine defines the linear reading order of the book -->
 	  <!--	  <itemref idref="as" /> -->
+    <itemref toc="volumen"/>
     <itemref idref="toc" />
     <itemref introduccion="introduccion"/>
-    <itemref toc="volumen"/>
     <itemref idref="<%=asin%>"/>
     <itemref idref="libro-diario" />
     <itemref idref="libro-mayor" />

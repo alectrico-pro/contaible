@@ -1,0 +1,88 @@
+(remuneracion
+  (servicio electricista)
+  (trabajador alexander)
+  (mes julio)
+  (ano 2021)
+  (dias-trabajados 5)
+  (semana-corrida 1)
+  (declarada true)
+  (pagada true)
+  (impuesta true))
+
+(remuneracion
+  (servicio electricista)
+  (trabajador alexander)
+  (mes agosto)
+  (ano 2021)
+  (dias-trabajados 5)
+  (semana-corrida 1)
+  (pagada true)
+  (declarada true)
+  (impuesta true))
+
+(remuneracion
+  (servicio electricista)
+  (trabajador alexander)
+  (mes septiembre)
+  (ano 2021)
+  (dias-trabajados 6)
+  (semana-corrida 1)
+  (pagada true)
+  (declarada true)
+  (impuesta true))
+
+(remuneracion
+  ( servicio electricista)
+  (trabajador alexander)
+  (mes octubre)
+  (ano 2021)
+  (dias-trabajados 7)
+  (semana-corrida 1)
+  (pagada false)
+  (declarada false)
+  (impuesta false))
+
+(remuneracion
+  (servicio alectricista)
+  (trabajador alexander)
+  (mes noviembre)
+  (ano 2021)
+  (dias-trabajados 7)
+  (semana-corrida 1)
+  (pagada false)
+  (declarada false)
+  (impuesta false))
+
+(remuneracion
+  (servicio alectricista)
+  (trabajador alexander)
+  (mes diciembre)
+  (ano 2021)
+  (dias-trabajados 7)
+  (semana-corrida 1)
+  (pagada true)
+  (declarada false)
+  (impuesta false))
+
+(remuneracion
+  (servicio alectricista)
+  (trabajador alexander)
+  (mes enero)
+  (ano 2022)
+  (dias-trabajados 7)
+  (semana-corrida 1)
+  (pagada true)
+  (declarada true)
+  (impuesta false))
+
+(remuneracion
+  (servicio alectricista)
+  (trabajador alexander)
+  (mes febrero)
+  (ano 2022)
+  (dias-trabajados 8)
+  (semana-corrida 1)
+  (pagada true)
+  (declarada true)
+  (impuesta false))
+

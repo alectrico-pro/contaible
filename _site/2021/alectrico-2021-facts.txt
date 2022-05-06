@@ -1,0 +1,3243 @@
+;IMPORTANTE: El vocher 267 en CCM de SII que pertenece al período de febrero, fue emitido el 3 de marzo y fue reversado desde el período de marzo. Los totales pueden resultar descuadrados en febrero por esa razón
+
+;Hay algo parecido para junio. Se debe ir hasta julio para que se corrija
+;La solucioń es fijarse bien cando se mande a hacer el asiento centralizado, hay que asegurarse de que la fecha del asiento esté en el período.
+;En el libro de remuneraciones los datos hacen referencia a un contrato mensual.Eso es lo que me parece. Entonces los contratos diarios, digamos de 5 días generan impuesto único, pues esos 5 dias co el monto contradado, digamos de 300.000 butos. Equivaldŕian a un contrado mensual de más de 1.800.0000.
+(             empresa
+ (nombre alectrico-2021)   
+ (razon "alectrico® SpA"))
+
+
+ ( inicio-de-los-dias
+ (partidas 001 01222 001111 00111 002 002111 002112 002113 003 004 005 006 007 008 009 010 011 012 013 0131 0132 014 014333 0141 01421 014111 014222 0142 0143 014444 144 015 016 017 018 019 0191 01911 0192 0193 0194 020 021 021 022 023 024 025 0251 026 0261 02612 0262 0263 027 028 0281 029 030 0301 0302 03021 0303 0304 0305 031 032 033 034 035 036 037 0371 03712 0372 0373 038 039 040 04011 04012 041 042 043 044 045 046 047 048 049 050 051 052 053 054 055 056 057 058 059 060 0601 061 062 063 064 065 066 067 068 069 070 071 072 073 074 075 076 077 078 079 080 081 082 083 084 085 086 0862 0861 0867 0868 087 088 089 090 091 092 093 094 095 096 097 098 099 100 101 102 103 104 105 106 107 108 109 110 113 114 115 116 117 118 119 120 1201 121 122 123 124 125 126 127 128 129 130 131 132 133 134 135 136 137 138 139 140 141 145 146 147 148 149 150 151 152 153 154 155 156 157 158 159 160 161 162 163 164 165 166 167 168 169 170 171 172 173 174 175 176 177 178 179 180 181 182 183 184 185 186 187 188 189 190 195 196 197 198 199 200 201 202 203 204 205 206 207 208 209 210 211 212 213 214 215 216 217 218 219 2001 2002 2003 2004 2005 2006 2007 2008 2009 2010 2011 2012 2013 2014 2015 2016 2017 2018 2019 2020 2021 2022  2023 2024 2025 1040 1041 1042 1043 1044 1045 1046 1047 1048 1049 1050 1051 1052 1053 1054 90000 90001 90002 90003 90004) )
+
+
+
+
+
+(balance (dia 31) (mes diciembre) (ano 2021))
+
+
+;dia 01/01/2021---------- asiento inicial  ----------------
+
+(registro-de-accionistas
+  (partida 001)
+  (nombre comu)
+)
+
+(registro-de-accionistas
+  (partida 001)
+  (nombre cangrejo)
+)
+
+(registro-de-accionistas
+  (partida 001)
+  (nombre alexander)
+)
+
+(partida
+ (numero 001)
+ (dia 1) (mes enero) (ano 2021)
+ (descripcion "Por Inicio de Operaciones en 2021")
+ (actividad ajuste))
+
+
+(cargo
+ ( electronico false)
+ ( tipo-de-documento escritura-empresa)
+ ( empresa alectrico-2021)
+ ( cuenta caja)  
+ ( monto  1050209)
+ ( partida 001)
+ ( dia 1)  ( mes enero)  ( ano 2021)
+ ( glosa asiento-inicial))
+
+(cargo
+ ( electronico false)
+ ( tipo-de-documento escritura-empresa)
+ ( empresa alectrico-2021)
+ ( cuenta banco-estado)                  
+ ( monto  691827)
+ ( partida 001)
+ ( dia 1) ( mes enero) ( ano 2021)
+ ( glosa asiento-inicial))
+
+(cargo
+ ( electronico false)
+ ( tipo-de-documento escritura-empresa)
+ ( empresa alectrico-2021)
+ ( cuenta materiales)
+ ( monto  44044)
+ ( partida 001)
+ ( dia 1) ( mes enero) ( ano 2021)
+ ( glosa asiento-inicial))
+
+(cargo
+ ( electronico false)
+ ( tipo-de-documento escritura-empresa)
+ ( empresa alectrico-2021)
+ ( cuenta iva-credito)
+ ( monto  10909)  ;volver a colocar 10909
+ ( partida 001)
+ ( dia 1) ( mes enero) ( ano 2021)
+ ( glosa asiento-inicial))
+
+(cargo
+ ( electronico false)
+ ( tipo-de-documento escritura-empresa)
+ ( empresa alectrico-2021)
+ ( cuenta ppm)
+ ( monto  721)
+ ( partida 001)
+ ( dia 1) ( mes enero) ( ano 2021)
+ ( glosa asiento-inicial))
+
+(abono
+ ( electronico false)
+ ( tipo-de-documento escritura-empresa)
+ ( empresa alectrico-2021)
+ ( partida 001)
+ ( dia 1) (mes enero) (ano 2021)
+ ( cuenta capital-social)
+ ( monto  2000000)
+ ( glosa asiento-inicial))
+
+(abono
+ ( electronico false)
+ ( tipo-de-documento escritura-empresa)
+ ( empresa alectrico-2021)
+ ( partida 001)
+ ( dia 1) (mes enero) (ano 2021)
+ ( cuenta utilidad-del-ejercicio-anterior)
+ ( monto 85294); antiguamente 85235 
+ ( glosa asiento-inicial))
+
+(cargo
+ ( electronico false)
+ ( tipo-de-documento escritura-empresa)
+ ( empresa alectrico-2021)
+ ( partida 001)
+ ( dia 1) (mes enero) (ano 2021)
+ ( cuenta marca-alectrico)
+ ( monto  290000)
+ ( glosa asiento-inicial))
+ 
+(abono 
+ ( electronico false)
+ ( tipo-de-documento escritura-empresa)
+ ( empresa alectrico-2021)
+ ( partida 001)
+ ( dia 1) (mes enero) (ano 2021)
+ ( cuenta amortizacion-acumulada-intangibles)
+ ( monto  2416)
+ ( glosa asiento-inicial))
+
+;-------------------------- ajuste inicial de remanente
+
+
+;este comando de kernel es raro, no espera tener una partida
+;no debe mostrarse en la contabilidad pues da cuenta de un
+;ajuste originado en el ejercio contable anterior.
+;de todas formas, el efecto es un abono que se recoge
+;en la próxima declaración de iva
+;los ajustes de remanente los estoy haciendo en conjunto 
+;con los traspasos de iva
+( acarreo-de-iva )
+( remanente-de-iva
+    ( emitido false )
+    ( determinado false)
+    ( ajustado false)
+    ( valor 10909)
+    ( mes diciembre)
+    ( ano 2020)
+    ( utm 51.029))
+
+
+
+;-----------------------------  enero ventas -------
+
+;( pea ( partida 002111))  ;Solo cuando haya perdidas
+
+;( distribucion-de-utilidad (dia 1) (mes enero) (ano 2021) (monto 85294) (partida 002111) (cuenta-de-destino capital-social))
+
+;el inventario es un registro de cada unidad y su costo
+;pero la cuenta de inventario final es otra cosas
+( traspaso (partida 002112) (dia 1) (mes enero) (ano 2021) (cuenta-de-origen materiales) (cuenta-de-destino inventario-inicial))
+( inventario (dia 1) (mes enero) (u 1) (operacion asiento-inicial) (material materiales) (partida 1) (ct 44044) (cu 44044))
+
+
+
+;-----------------------------  enero ventas -------
+
+;considera las pérdidas del año anterior en un registro especial que se puede liquiedar en diciembre o cuando se quiera hacer. Buscar al final de este texto el liquidacion de cuentas acreedoras
+
+;el iva del mes anterior se ha cargado en la partida 1 como parte del asiento inicial que se hereda desde un ejercicio anterior
+
+( rendicion-de-eboletas-sii
+ ( partida 003)
+ ( unidades 1)
+ ( neto  29412)
+ ( iva    5588 )
+ ( total 35000)
+ ( mes enero)
+ ( ano 2021))
+
+( rendicion-de-vouchers-sii
+ ( partida 004)
+ ( unidades 20)
+ ( neto  123497) 
+ ( iva    23464)
+ ( total 146961)
+ ( mes enero)
+ ( ano 2021))
+
+( nota-de-credito-de-subcuenta-existente
+ ( dia 31)
+ ( emitida true)
+ ( folio-nota 12)
+ ( mes enero)
+ ( ano 2021)
+ ( partida 005)
+ ( subcuenta ventas-con-eboleta-exenta)
+ ( glosa "Por la anulacion del monto total de boletas exentas del mes de enero debido a que se refieren a transacciones ya cubiertas por vouchers.")
+ ( total 4505)
+ ( iva     0)
+ ( neto  4505)
+ ( archivo "../nota-de-credito-propia-12.png")
+)
+
+( nota-de-credito-de-subcuenta-existente
+ ( dia 31)
+ ( emitida true)
+ ( folio-nota 13)
+ ( mes enero)
+ ( ano 2021)
+ ( partida 006)
+ ( subcuenta ventas-con-eboleta-exenta)
+ ( glosa "Por la anulacion del monto total de boletas exentas del mes de enero debido a que se refieren a transacciones ya cubiertas por vouchers.")
+ ( total 45050)
+ ( iva     0)
+ ( neto  45050)
+ ( archivo "../nota-de-credito-propia-13.png")
+)
+
+( nota-de-credito-de-subcuenta-existente
+ ( dia 31)
+ ( emitida true)
+ ( folio-nota 14)
+ ( mes enero)
+ ( ano 2021)
+ ( partida 007)
+ ( subcuenta ventas-con-eboleta-afecta)
+ ( glosa "Por la anulacion del monto total de la boleta afecta con folio 7 del 13 de enero. Se refiere a una transaccion ya cubiertas por un voucher.")
+ ( total 35000)
+ ( iva    5588)
+ ( neto  29412)
+ ( archivo "../nota-de-credito-propia-14.png")
+)
+
+
+;--------------------enero--- compras -------------------
+( costo-ventas
+ ( tipo-de-documento 33)
+ ( folio 29457 )
+ ( rut 76187287-7)
+ ( partida 008)
+ ( dia 6) (mes enero) (ano 2021)
+ ( monto 60)
+ ( neto  50)
+ ( iva   10)
+ ( total 60)
+ ( material comision-mensual)
+ ( proveedor khipu)
+ ( glosa "Por Costo Directo de Ventas: Comisión diciembre por pagos en pasarela KHIPU")
+ ( archivo "../factura-afecta-khipu-29457.png")
+ ( finalidad "División Informática"))
+
+( costo-ventas
+ ( tipo-de-documento 33)
+ ( folio 35258718)
+ ( rut 96689310-9)
+ ( partida 009)
+ ( dia 3) (mes enero) (ano 2021)
+ ( monto 1678)
+ ( neto  1678)
+ ( iva    319)
+ ( total 1997)
+ ( material comision-mensual)
+ ( proveedor transbank)
+ ( glosa "Por Costo Directo de Ventas: Comisión Pasarela diciembre Transbank")
+ ( archivo "../factura-afecta-transbank-35258718.png")
+ ( finalidad "División Eléctrica"))
+
+;si desea menos detalle del movimiento del inventario use la regla compra.
+;la regla compra solo anota los materiales como insumo
+( compra
+ ( rut 76568660-1)
+ ( tipo-de-documento 33)
+ ( unidades 1)
+ ( costo_unitario 39487)
+ ( partida 010)
+ ( dia 28) (mes enero) (ano 2021)
+ ( material meson-cocina-negro)
+ ( proveedor easy )
+ ( afecto true)
+ ( credito 0)
+ ( neto  39487)
+ ( iva    7503)
+ ( total 46990)
+ ( archivo "../factura-afecta-easy-23667281.png")
+ ( glosa "Por compra de 1 meson de cocina a easy")
+ ( finalidad "Materiales para reparaciones"))
+
+;puede ser compra
+;puede ser compra-de-materiales si desea llevar inventario
+( compra
+ ( tipo-de-documento 33)
+ ( unidades 1)
+ ( costo_unitario 18849)
+ ( partida 012)
+ ( dia 14) (mes enero) (ano 2021)
+ ( material materiales-electricos)
+ ( proveedor sodimac)
+ ( afecto true)
+ ( credito 0)
+ ( neto  18849)
+ ( iva    3581)
+ ( total 22430)
+ ( archivo "../factura-afecta-sodimac-109127578.png")
+ ( glosa "Por compra de materiales eléctricos a Sodimac")
+ ( finalidad "Materiales para reparaciones"))
+ 
+;qué pasa con el valor de 1 peso por el activo fijo
+( compra
+ ( rut 96792430-K)
+ ( activo-fijo true)
+ ( tipo-de-documento 33)
+ ( unidades 1)
+ ( costo_unitario 18849)
+ ( partida 013)
+ ( dia 14) (mes enero) (ano 2021)
+ ( material taladro-inalambrico)
+ ( proveedor sodimac)
+ ( afecto true)
+ ( credito 0)
+ ( neto  151252)
+ ( iva    28738)
+ ( total 179990)
+ ( archivo "../factura-afecta-sodimac-109127577.png")
+ ( glosa "Por compra de taladro inalámbrico DeWalt a Sodimac")
+ ( finalidad "Herramientas de Activo Fijo"))
+
+
+; nubox: sobre depreciación instantánea
+
+;    Inversión en bienes nuevos o usados.
+;    Considera para dichos fines un año de vida útil.
+;    Se podrá deducir como gasto del ejercicio en Renta Líquida Imponible (RLI).
+;    Se afecta al Impuesto de Primera Categoría en una cuota anual de depreciación.
+;   Opcional para las micro, pequeñas y medianas empresas.
+;https://www.sii.cl/pagina/valores/bienes/tabla_vida_enero.htm
+;19) Herramientas livianas.  	3años depreación normal 1 años acelerada
+
+;https://www.circuloverde.cl/instrucciones-del-sii-sobre-la-aplicacion-de-depreciacion-instantanea/
+;En nuestra opinión, hay una confusión ya que lo que se permite es llevar a gasto en el momento del pago de la compra de un bien del activo inmovilizado depreciable. Por ello, ambos sistemas Pymes, de la letra D), consideran como gasto el valor de la compra en el momento del pago de ésta, sin importar el concepto de «depreciación» que sigue estando asociada al momento de inicio de la utilización del bien.
+;c) La Pyme depreciará sus activos físicos del activo inmovilizado de manera instantánea e íntegra en el mismo ejercicio comercial en que sean adquiridos o fabricados.
+
+;Para efectos de lo anterior, los activos físicos del activo inmovilizado deben encontrarse pagados, por cuanto, en el régimen Pro Pyme la determinación de la base imponible se basa en flujos de caja, de acuerdo a la letra (f) del N° 3 y el N° (iv) de la letra (a) del N° 8, ambos de la letra D) del artículo 14.»
+;parece que tendré que hacer un nuevo método para la determinación de la base imponible
+;eso parece estar relacionado con la determinación de la renta líquida imponible ?
+
+
+;Pr ello, para nosotros es un contrasentido hablar de depreciación y menos instantánea, ya que al asociar el requisito al pago de la compra, cambia absolutamente ese concepto y se debe asociar al «gasto aceptado», dado que no tiene ninguna relación con el uso del bien en la empresa, es decir, basta la compra (factura), para dar aceptación al gasto a partir del momento del pago, considerando que es un activo fijo depreciable y sólo por esas condiciones se acepta el valor como gasto (para control se dejará dicho activo a valor de $1, en el registro tributario).
+
+; Artículo vigésimo segundo transitorio bis.- Los contribuyentes que declaren el impuesto de primera categoría sobre renta efectiva determinada según contabilidad completa, conforme a la Ley sobre Impuesto a la Renta, contenida en el artículo 1° del decreto ley N° 824, de 1974, que adquieran bienes físicos del activo inmovilizado nuevos o importados en el periodo comprendido entre el 1 de junio de 2020 y el 31 de diciembre de 2022, podrán depreciar dichos bienes de manera instantánea e íntegra, en el mismo ejercicio comercial en que sean adquiridos, los que quedarán valorados en un peso.
+;En todo caso, cuando se aplique el régimen de depreciación indicado en este artículo, para los efectos de lo dispuesto en la letra A) del artículo 14 de la Ley sobre Impuesto a la Renta, sólo se considerará la depreciación normal que corresponde al total de los años de vida útil del bien. La diferencia que resulte en el ejercicio respectivo entre la depreciación que regula este artículo y la depreciación normal sólo podrá deducirse como gasto para los efectos del impuesto de primera categoría, debiendo anotarse dicha diferencia en el registro DDAN que contempla el artículo 14 de la Ley sobre Impuesto a la Renta.”
+
+
+;Usaré la deprecación en 3 años, porque debo usar la depreciación normal, con lo que el activo seguirá existiendo contablemente por varios períodos, pero para efectos de tribuación, se habrá extinguido convertido en gasto desde el momento de la compra y representado por un valor de 1$ desde ahí en adelante. Debe estar en el registro DDAN, la diferencia entre la depreciación normal y la instantánea.
+;cuota mensual es de 179990/(3*12) = 4999
+
+
+;Al aplicar la depreciación instantánea de dichos activos fijos se generará una diferencia temporal, que se afectará la determinación del impuesto diferido, en los años de vida útil normal que corresponda al activo fijo.
+;Vi un ejercicios donde se colocan dos series de depreciaciones y se ve como el activo tiene un cambio de valor no lineal.
+;( depreciacion
+ ; ( herramienta taladro)
+ ; ( mes enero)
+;  ( ano 2021)
+;  ( partida 0131)
+;  ( monto 4999)
+;)
+
+;Hablando de plantaciones
+;Su activo fijo, para efectos contables, seguirá como siempre. Se activará y se traspasará a activo fijo cuando termine la plantación, por ejemplo, y depreciará desde que comience la producción. No corregirá, ya que en el sistema contable no hay reconocimiento de la variación de la inflación. Pero insistimos, esto es en el ámbito contable.
+
+;puede ser compra-de-materiales
+( compra
+ ( rut 76568660-1)
+ ( tipo-de-documento 33)
+ ( unidades 1)
+ ( costo_unitario 7118) 
+ ( partida 014) 
+ ( dia 4) (mes enero) (ano 2021)
+ ( material interruptores-guantes)
+ ( proveedor easy )
+ ( afecto true)
+ ( credito 0)
+ ( neto  7118)
+ ( iva   1352)
+ ( total 8470)
+ ( archivo "../factura-afecta-easy-23342872.png")
+ ( glosa "Por compra 2 interruptores y 1 guantes a Easy")
+ ( finalidad "Materiales para reparaciones"))
+
+
+(ajuste-de-iva (partida 014333)  (mes enero) (ano 2021) )
+
+( ajustes-mensuales (mes enero) (ano 2021) (partida 131))
+
+;--------------- febrero -- compras --------------
+
+
+
+( costo-ventas
+ ( archivo "/factura-afecta-transbank-35546672.png")
+ ( tipo-de-documento 33)
+ ( folio 35546672)
+ ( rut 96689310-9)
+ ( partida 015)
+ ( dia 2) (mes febrero) (ano 2021)
+ ( monto 2848)
+ ( neto  2848)
+ ( iva    541)
+ ( total 3389)
+ ( material comision-mensual)
+ ( proveedor transbank)
+ ( glosa "Por Costo Directo de Ventas: Comisión Pasarela enero Transbank")
+ ( finalidad "División Eléctrica"))
+
+
+( compra
+ ( pedido 1724)
+ ( archivo "/factura-afecta-dartel-2927540.png")
+ ( rut 96806110-0)
+ ( tipo-de-documento 33)
+ ( unidades 3)
+ ( costo_unitario 7862) 
+ ( partida 016) 
+ ( dia 4) (mes febrero) (ano 2021)
+ ( material caja-enchufe-506L)
+ ( proveedor dartel)
+ ( afecto true)
+ ( credito 0)
+ ( descuento 2831)
+ ( neto  6607)
+ ( iva   1255)
+ ( total 7862)
+ ( glosa "Por compra a Dartel Santiago de 3 cajas de enchufes 506L")
+ ( finalidad "Materiales para reparaciones"))
+
+ 
+( gasto-administrativo
+ ( archivo "/factura-afecta-entel-42492571.png")
+ ( tipo-de-documento 33)
+ ( folio 42492571)
+ ( rut 96806980-2 )
+ ( partida 017)
+ ( dia 10) (mes febrero) (ano 2021)
+ ( credito 0)
+ ( neto  3128)
+ ( iva   594)
+ ( total 3722)
+ ( material servicio-telefonia)
+ ( proveedor entel)
+ ( glosa "Por Gasto Administrativo: Servicio de Datos y Telefonía: pago inicial.")
+ (finalidad "No subordinada a ningún departamento"))
+
+
+( gasto-promocional
+ ( archivo "/factura-afecta-embros-1535.png")
+ ( tipo-de-documento 33)
+ ( folio 1535)
+ ( rut 76746937-3 )
+ ( partida 018)
+ ( dia 18) (mes febrero) (ano 2021)
+ ( credito 0)
+ ( neto  20992)
+ ( iva   3988)
+ ( total 24980)
+ ( material parche-corporativo)
+ ( proveedor embros)
+ ( glosa "Por Gasto Administrativo: Matriz de Bordado y Parche QR Bordado Corporativo alectrico ®.")
+ ( finalidad "Departamento de Marketing"))
+
+; subcuenta ventas-con-factura-afecta)
+( nota-de-credito-de-subcuenta-existente
+ ( dia 24)
+ ( proveedor transbank )
+ ( folio-nota 2322028 )
+ ( recibida true)
+ ( mes febrero)
+ ( ano 2021)
+ ( partida 019)
+ ( subcuenta transbank)
+ ( glosa "Ajuste Mensual de Comisión")
+ ( neto  178)
+ ( iva    34)
+ ( total 212)
+)
+
+;------------------------------- ventas febrero ---------------
+
+( rendicion-de-eboletas-sii
+ ( partida 01911)
+ ( unidades 2)
+ ( neto     84)
+ ( iva      16 )
+ ( total   100)
+ ( mes febrero)
+ ( ano 2021))
+
+;esta nota de credito parece que no afecta que no afectan el imponible del f29 de febrero
+;probablemente se deba a que anula una nota de credito emitida el 31 de enero
+(nota-de-debito-sii
+ ( partida 0191)
+ ( folio-debito 1)
+ ( folio-credito 12)
+ ( dia 27)
+ ( mes febrero)
+ ( archivo "/nota-de-debito-propia-1.png")
+ ( ano 2021)
+)
+
+( nota-de-debito-manual
+  ( archivo "/nota-de-debito-propia-2.png")
+  ( subcuenta ventas-con-eboleta-afecta)
+  ( neto 29412)
+  ( iva 5588)
+  ( total 35000)
+  ( partida 0192)
+  ( folio-debito 2)
+  ( folio-credito 11)
+  ( dia 28)
+  ( mes febrero)
+  ( ano 2021)
+)
+
+( nota-de-credito-de-subcuenta-existente
+  ( archivo "/nota-de-credito-propia-11.png")
+  ( dia 13)
+  ( emitida true)
+  ( folio-nota 11)
+  ( mes febrero)
+  ( ano 2021)
+  ( partida 0141)
+  ( subcuenta ventas-con-eboleta-afecta)
+  ( glosa "Por la anulacion del monto total de la boleta afecta con folio 7 del 13 de enero. Se refiere a una transaccion ya cubierta por un voucher.")
+  ( total 35000)
+  ( iva    5588)
+  ( neto  29412)
+)
+
+
+( ajustes-mensuales (mes febrero) (ano 2021) (partida 142))
+
+( ajuste-de-iva (partida 014444) (mes febrero) (ano 2021) )
+
+
+;------------------------- marzo -------------------------------
+( costo-ventas
+ ( archivo "/factura-afecta-transbank-35546672.png")
+ ( tipo-de-documento 33)
+ ( folio 35546672)
+ ( rut 96689310-9)
+ ( partida 020)
+ ( dia 1) (mes marzo) (ano 2021)
+ ( neto   185)
+ ( iva     35)
+ ( total  220)
+ ( material comision-mensual)
+ ( proveedor transbank)
+ ( glosa "Por Costo Directo de Ventas: Comisión Pasarela enero Transbank")
+ ( finalidad "División Eléctrica"))
+
+( compra-de-materiales
+ ( pedido 1724)
+ ( archivo "/factura-afecta-sodimac-109613818.png")
+ ( rut 96792430-K)
+ ( tipo-de-documento 33)
+ ( unidades 1)
+ ( costo_unitario 25613)
+ ( partida 021) 
+ ( dia 12) (mes marzo) (ano 2021)
+ ( material mascara-6200-filtro)
+ ( proveedor sodimac )
+ ( afecto true)
+ ( credito 0)
+ ( neto  25613)
+ ( iva    4866)
+ ( total 30479)
+ ( glosa "Por compra de 1 máscara cubrerrostro y bolsa filtros P100")
+ ( finalidad "Elementos de Protección Personal"))
+
+( gasto-administrativo
+ ( archivo "/factura-afecta-entel-42652683.png")
+ ( tipo-de-documento 33)
+ ( folio 42652683)
+ ( rut 96806980-2 )
+ ( partida 022)
+ ( dia 17) (mes marzo) (ano 2021)
+ ( credito 0)
+ ( neto  6926)
+ ( iva   1316)
+ ( total 8242)
+ ( material servicio-telefonia-enero)
+ ( proveedor entel)
+ ( glosa "Por Gasto Administrativo: Servicio de Datos y Telefonía: consumo enero.")
+ ( finalidad "No subordinada a ningún departamento"))
+
+( rendicion-de-vouchers-sii
+  ( partida 026)
+  ( unidades 1)
+  ( neto  29412)
+  ( iva    5588)
+  ( total 35000)
+  ( mes marzo)
+  ( ano 2021))
+
+
+( ajustes-mensuales (mes marzo) (ano 2021) (partida 261))
+( ajuste-de-iva (partida 0262) (mes marzo ) (ano 2021))
+
+;------------------------ abril --------------------
+
+( costo-ventas
+ ( tipo-de-documento 33)
+ ( folio 36573193)
+ ( rut 96689310-9)
+ ( partida 027)
+ ( dia 7) (mes abril) (ano 2021)
+ ( neto   627)
+ ( iva    119)
+ ( total  746)
+ ( material comision-mensual)
+ ( proveedor transbank)
+ ( glosa "Por Costo Directo de Ventas: Comisión Pasarela marzo Transbank.")
+ ( archivo "../factura-afecta-transbank-36573193.png")
+ ( finalidad "División Eléctrica"))
+
+( gasto-administrativo 
+ ( tipo-de-documento 33)
+ ( folio 42492571)
+ ( rut 96806980-2 )
+ ( partida 028) 
+ ( dia 19) (mes abril) (ano 2021)
+ ( credito 0)
+ ( neto  6926)
+ ( iva   1316)
+ ( total 8242)
+ ( material servicio-telefonia)
+ ( proveedor entel)
+ ( archivo "../factura-afecta-entel-42492571.png")
+ ( glosa "Por Gasto Administrativo: Servicio de Datos y Telefonía: consumo marzo.")
+ ( finalidad "No subordinada a ningún departamento"))
+
+(insumos
+ (rut 76.104.425-7)
+ (folio 24158779)
+ (tipo-de-documento 33)
+ (unidades 1)
+ (costo_unitario 4404.4)
+ (partida 281)
+ (dia 26) (mes abril)  (ano 2021)
+ (material materiales-electricos)
+ (proveedor easy )
+ (afecto true)
+ (credito 0)
+ (neto  2134)
+ (total 2540)
+ (iva    406)
+ (glosa "Por compra de 10 enchufes eléctricos $4404.4 promedio a DARTEL-Temuco")
+ (finalidad "Materiales para reparaciones futuras"))
+
+;( costo-ventas
+; ( tipo-de-documento 33)
+;( folio 24158779)
+; ( rut 76598660-1 )
+; ( partida 0281)
+; ( dia 26) (mes abril) (ano 2021)
+; ( credito 0)
+; ( neto  2134)
+; ( iva    406)
+; ( total 2540)
+; ( material materiales-electricos)
+; ( proveedor easy)
+; ( glosa "Por Costo Directo de Ventas: Materiales Eléctricos.")
+; ( archivo "../factura-afecta-easy-24158779.png")
+; ( finalidad "No subordinada a ningún departamento"))
+
+( rendicion-de-vouchers-sii
+  ( partida 030)
+  ( unidades 1)
+  ( neto  25210)
+  ( iva    4790)
+  ( total 30000)
+  ( mes abril)
+  ( ano 2021))
+
+( nota-de-credito-de-subcuenta-existente
+ ( dia 28)
+ ( proveedor transbank)
+ ( folio-nota 2669587 )
+ ( recibida true)
+ ( mes abril)
+ ( ano 2021)
+ ( partida 0301)
+; (subcuenta "Transbank S.A.")
+ ( subcuenta ventas-con-factura-afecta)
+ ( glosa "Ajuste Mensual de Comisión Transbank")
+ ( neto   102)
+ ( iva     19)
+ ( total  121)
+)
+
+( ajuste-de-iva (partida 0303) (mes abril) (ano 2021)) ;está ok
+( ajustes-mensuales (mes abril) (ano 2021) (partida 302))
+
+;--------------------------------- mayo --------------------------
+( gasto-administrativo
+ ( tipo-de-documento 33)
+ ( folio 43051648)
+ ( rut 96806980-2 )
+ ( partida 031)
+ ( dia 18) (mes mayo) (ano 2021)
+ ( credito 0)
+ ( neto  6926)
+ ( iva   1316)
+ ( total 8242)
+ ( material servicio-telefonia)
+ ( proveedor entel)
+ ( glosa "Por Gasto Administrativo: Servicio de Datos y Telefonía: consumo marzo.")
+ ( archivo "../factura-afecta-entel-43051648.png")
+ ( finalidad "No subordinada a ningún departamento"))
+
+
+;(compra
+; (rut 76467322-0)
+; (intangible true)
+; (tipo-de-documento 33)
+; (partida 032)
+; (dia 13) (mes mayo) (ano 2021)
+; (neto  19990)
+; (iva    3798)
+; (total 23788)
+; (material certificado-digital-sii)
+; (proveedor trust)
+; (glosa "Activo Fijo: Certificado Digital por 3 años (Deprecia 555xmes).")
+; (finalidad "Departamento de Administración"))
+
+( gasto-administrativo
+ ( tipo-de-documento 33)
+ ( folio 4564)
+ ( rut 76467322-0)
+ ( partida 032)
+ ( dia 13) (mes mayo) (ano 2021)
+ ( credito 0)
+ ( neto  19990)
+ ( iva    3798)
+ ( total 23788)
+ ( material certificado-digital-sii)
+ ( proveedor trust)
+ ( glosa "Por Gasto Administrativo: Certificado Digital por 3 años.")
+ ( archivo "../factura-afecta-trust-provider-4564.png")
+ ( finalidad "Departamento de Administración"))
+
+( costo-ventas
+ ( tipo-de-documento 33)
+ ( folio 36597345)
+ ( rut 96689310-9)
+ ( partida 033)
+ ( dia 1) (mes mayo) (ano 2021)
+ ( neto   1273)
+ ( iva     242)
+ ( total  1515)
+ ( material comision-mensual)
+ ( proveedor transbank)
+ ( glosa "Por Costo Directo de Ventas: Comisión Pasarela abril Transbank.")
+ ( archivo "../factura-afecta-transbank-36597345.png")
+ ( finalidad "División Eléctrica"))
+
+
+( gasto-administrativo
+ ( tipo-de-documento 45)
+ ( folio 3198930)
+ ( rut 55555555-5)
+ ( partida 034)
+ ( dia 13) (mes mayo) (ano 2021)
+ ( credito 0)
+ ( neto  3775)
+ ( iva    717)
+ ( iva-retenido 717)
+ ( total 3775)
+ ( material pago-mensual-workers)
+ ( proveedor cloudflare)
+ ( glosa "Por Gasto Administrativo: Pago Mensual de Workers Serverless.")
+ ( archivo "../invoice-cloudflare-3198930.png")
+ ( finalidad "Departamento de Administración"))
+
+;Tomo la fecha como folio y la coloco invertida
+( gasto-promocional
+ ( tipo-de-documento 45)
+ ( folio 20210621)
+ ( rut 55555555-5)
+ ( partida 035) 
+ ( dia 13) (mes mayo) (ano 2021)
+ ( credito 0)
+ ( neto  2941)
+ ( iva    559)
+ ( iva-retenido 559)
+ ( total 2941)
+ ( material pago-mensual-video-maker)
+ ( proveedor test-animation-video-maker)
+ ( glosa "Por Gasto Promocional: Pago Mensual de 1TM Video Maker.")
+ ( archivo "../video-maker-mensualidad-mayo.png")
+ ( finalidad "Departamento de Administración"))
+
+( gasto-administrativo
+ ( tipo-de-documento 45)
+ ( folio 438463385)
+ ( rut 55555555-5)
+ ( partida 036)
+ ( dia 13) (mes mayo) (ano 2021)
+ ( credito 0)
+ ( neto  1176)
+ ( iva    224)
+ ( iva-retenido 224)
+ ( total 1176)
+ ( material pago-mensual-google-one)
+ ( proveedor google-one)
+ ( glosa "Por Gasto Administrativo: Pago Mensual de Arriendo de Correo y Almacenamiento en la nube.")
+ ( archivo "../google-one-mensualidad-mayo.png")
+ ( finalidad "Departamento de Administración"))
+
+( nota-de-credito-de-subcuenta-existente
+ ( dia 31)
+ ( recibida true)
+ ( folio-nota 2697395)
+ ( proveedor transbank)
+ ( mes mayo)
+ ( ano 2021)
+ ( partida 037)
+ ( subcuenta ventas-con-factura-afecta)
+ ( glosa "Ajuste Mensual de Comisión Transbank")
+ ( total 268)
+ ( iva    43)
+ ( neto  225)
+)
+
+
+( ajustes-mensuales (mes mayo) (ano 2021) (partida 371))
+
+;al principio no tenía ajuste de iva, con la nueva regla, da 0, lo que es bacán.
+(ajuste-de-iva (partida 372) (mes mayo) (ano 2021))
+
+
+;------------------ junio - compras --------------------------------------
+( gasto-promocional
+ ( folio 31)
+ ( tipo-de-documento 33)
+ ( rut 77044084-K)
+ ( partida 039)
+ ( dia 8) (mes junio) (ano 2021)
+ ( credito 0)
+ ( neto  15000)
+ ( iva     2850)
+ ( total  17850)
+ ( material volantes)
+ ( proveedor maria-jose)
+ ( glosa "Por Gasto Promocional: Compra de Flyers para Visitas a Terreno.")
+ ( archivo "../factura-afecta-maria-jose-paz-31.png")
+ ( finalidad "Departamento de Ventas"))
+
+( gasto-administrativo
+ ( tipo-de-documento 45)
+ ( folio 4274563479)
+ ( rut 55555555-5)
+ ( partida 041)
+ ( dia 13) (mes junio) (ano 2021)
+ ( credito 0)
+ ( neto  1177)
+ ( iva    223)
+ ( iva-retenido 223)
+ ( total 1177)
+ ( material pago-mensual-google-one)
+ ( proveedor google-one)
+ ( glosa "Por Gasto Administrativo: Pago Mensual de Arriendo de Correo y Almacenamiento en la nube.")
+ ( archivo "../factura-afecta-google-one-563479.png")
+ ( finalidad "Departamento de Administración"))
+
+
+
+( gasto-proveedor
+ ( tipo-de-documento comprobante-pago)
+ ( folio 7203864566)
+ ( rut 15108866-K)
+ ( partida 42)
+ ( dia 2) (mes junio) (ano 2021)
+ ( credito 0)
+ ( monto  1701)
+ ( material multas)
+ ( proveedor tgr)
+ ( glosa "Por Gasto Administrativo: Multas por Rectificatoria mayo 2020.")
+ ( finalidad "Departamento de Administración"))
+
+
+( gasto-proveedor
+ ( tipo-de-documento comprobante-giro-tgr)
+ ( folio 6379917)
+ ( rut  60805000-0 )
+ ( partida 043)
+ ( dia 2) (mes junio) (ano 2021)
+ ( credito 0)
+ ( monto 31203)
+ ( material multas)
+ ( proveedor tgr)
+ ( glosa "Por Gasto Administrativo: RF21 Giro 6379917 por Declaración de Renta AT 2021 Fuera de Plazo.")
+ ( archivo "../giros-de-renta-2.png")
+ ( finalidad "Departamento de Contabilidad"))
+
+
+
+;-------------------
+(partida (numero 044) (dia 15) (mes junio) (ano 2021)
+ (empresa alectrico-2021)
+ (descripcion "v/Por Reconocimiento de Cuentas por Cobrar Por Descargo de Giro SII 6379917. Resolución 14020002501.")
+ (archivo "../descarga-de-giro-6379917.png")
+ (actividad reconocer-cuentas-por-cobrar))
+
+(cargo
+ ( electronico false)
+ ( tipo-de-documento descargo-de-giro)
+ ( empresa alectrico-2021)
+ ( cuenta cuentas-por-cobrar)
+ ( monto  31203)
+ ( partida 044)
+ ( dia 15) ( mes junio) ( ano 2021)
+ ( glosa descargo-de-giro)
+)
+
+(abono
+ ( electronico false)
+ ( tipo-de-documento descargo-de-giro)
+ ( empresa alectrico-2021)
+ ( cuenta gastos-administrativos)
+ ( monto  31203)
+ ( partida 044)
+ ( dia 15) ( mes junio) ( ano 2021)
+ ( glosa descargo-de-giro)
+)
+;----------------
+
+
+
+
+( gasto-proveedor
+ ( tipo-de-documento comprobante-giro-tgr)
+ ( folio 7203864566)
+ ( rut  60805000-0  )
+ ( partida 045)
+ ( dia 18) (mes junio) (ano 2021)
+ ( credito 0)
+ ( monto 3307)
+ ( material multas)
+ ( proveedor tgr)
+ ( glosa "Por Gasto Administrativo: RF21 Giro por Pago de IVA (3.307) retrasado de Rectificatoria 05/2020.")
+ ( archivo "../multa-f21-junio-por-aumento-f29-mayo-at-2021.png")
+ ( finalidad "Departamento de Contabilidad"))
+
+( gasto-proveedor
+ ( tipo-de-documento f29-202102)
+ ( folio 7213023176)
+ ( rut  60805000-0  )
+ ( partida 046)
+ ( dia 16) (mes junio) (ano 2021)
+ ( credito 0)
+ ( monto 62406)
+ ( material multas)
+ ( proveedor tgr)
+ ( glosa "Por Gasto Administrativo: Multa por Rectificatoria de febrero de 2021.")
+ ( finalidad "Departamento de Contabilidad"))
+
+
+( gasto-promocional
+ ( folio 3985096 )
+ ( tipo-de-documento 45)
+ ( rut 55555555-5)
+ ( partida 047) 
+ ( dia 21) (mes junio) (ano 2021)
+ ( credito 0)
+ ( neto  2941)
+ ( iva    559) 
+ ( iva-retenido 559)
+ ( total 2941)
+ ( material pago-mensual-vide-maker)
+ ( proveedor test-animation-video-maker)
+ ( glosa "Por Gasto Promocional: Pago Mensual de 1TM Video Maker.")
+ ( archivo "../pago-video-maker-junio.png")
+ ( finalidad "Departamento de Administración")) 
+
+( gasto-administrativo
+ ( tipo-de-documento 45)
+ ( folio 8460226)
+ ( rut 55555555-5)
+ ( partida 048)
+ ( dia 22) (mes junio) (ano 2021)
+ ( credito 0)
+ ( neto  3302)
+ ( iva    627)
+ ( iva-retenido 627)
+ ( total 3302)
+ ( material pago-mensual-workers)
+ ( proveedor cloudflare)
+ ( glosa "Por Gasto Administrativo: Pago Mensual de Workers Serverless.")
+ ( archivo "../invoice-cloudflare-8460226.png")
+ ( finalidad "Departamento de Administración"))
+
+( gasto-proveedor
+ ( tipo-de-documento 33)
+ ( folio 43170116)
+ ( rut 96806980-2 )
+ ( partida 049)
+ ( dia 17) (mes junio) (ano 2021)
+ ( credito 0)
+ ( neto  6926)
+ ( iva   1316)
+ ( total 8242)
+ ( material servicio-telefonia)
+ ( proveedor entel)
+ ( archivo "../factura-afecta-entel-43170116.png")
+ ( glosa "Por Gasto Administrativo: Servicio de Datos y Telefonía: pago junio.") (finalidad "No subordinada a ningún departamento"))
+
+( gasto-promocional
+ ( tipo-de-documento 33)
+ ( folio 25592)
+ ( rut  76631913-0 )
+ ( partida 050)
+ ( dia 24) (mes junio) (ano 2021)
+ ( credito 0)
+ ( neto  20000)
+ ( iva    3800)
+ ( total 23800)
+ ( material pendon-corporativo)
+ ( proveedor macprint)
+ ( glosa "Por Gasto Promocional: Pendón Promocional Norma 4.")
+ ( archivo "../factura-afecta-macprint-25592.png")
+ ( finalidad "Departamento Marketing"))
+
+
+(partida
+ (numero 051)
+ (dia 30) (mes junio) (ano 2021)
+ (descripcion "Ajuste de retencion de iva contra iva-credito")
+ (actividad ajuste))
+
+(cargo
+ ( electronico false)
+ ( tipo-de-documento ajuste)
+ ( empresa alectrico-2021)
+ ( cuenta retencion-de-iva-articulo-11)
+ ( monto   1409)
+ ( partida 051)
+ ( dia 30) ( mes junio) ( ano 2021)
+ ( glosa perdida-hecho-n))
+
+(abono
+ ( electronico false)
+ ( tipo-de-documento ajuste)
+ ( empresa alectrico-2021)
+ ( cuenta iva-credito)
+ ( monto   1409)
+ ( partida 051)
+ ( dia 30) ( mes junio) ( ano 2021)
+ ( glosa perdida-hecho-n))
+
+
+( ajustes-mensuales (mes junio) (ano 2021) (partida 52))
+
+( ajuste-de-iva (partida 62) (mes junio) (ano 2021))
+;------------------------------------------ julio -------------------------
+
+( gasto-administrativo
+ ( tipo-de-documento 45)
+ ( folio 6248846001)
+ ( rut 55555555-5)
+ ( partida 063) 
+ ( dia 13) (mes julio) (ano 2021)
+ ( credito 0)
+ ( neto  1177)
+ ( iva    223)
+ ( iva-retenido 223)
+ ( total 1177)
+ ( material pago-mensual-google-one)
+ ( proveedor google-one)
+ ( glosa "Por Gasto Administrativo: Pago Mensual de Arriendo de Correo y Almacenamiento en la nube.")
+ ( archivo "../google-one-pago-julio.png")
+ ( finalidad "Departamento de Administración"))
+
+
+( gasto-promocional
+ ( tipo-de-documento 33)
+ ( folio 25625)
+ ( rut  76631913-0 )
+ ( partida 064)
+ ( dia 1) (mes julio) (ano 2021)
+ ( credito 0)
+ ( neto  26857)
+ ( iva    5103)
+ ( total 31960)
+ ( material tarjetas-de-visita)
+ ( proveedor macprint)
+ ( glosa "Por Gasto Promocional: 400 tarjetas de Visita.")
+ ( archivo "../factura-afecta-macprint-25625.png")
+ ( finalidad "Departamento Marketing"))
+
+;Este pago de entel lo pagué per antes lo había reclamdo
+;Entel debe emitir una nota de crédito y emitir factura contado
+;y lo ha hecho 
+( gasto-proveedor
+ ( tipo-de-documento 33)
+ ( folio 43342312 )
+ ( rut 96806980-2 )
+ ( partida 065)
+ ( dia 21) (mes julio) (ano 2021)
+ ( credito 0)
+ ( neto  40027)
+ ( iva    7605)
+ ( total 47632)
+ ( material servicio-telefonia)
+ ( proveedor entel)
+ ( glosa "Por Gasto Administrativo: Servicio de Datos y Telefonía: pago julio.")
+ ( archivo "../factura-afecta-entel-43342312.png")
+ (finalidad "No subordinada a ningún departamento"))
+
+
+ 
+;(compra-de-acciones
+;  (partida 066)
+;  (comprador cangrejo)
+;  (cedente alexander)
+;  (numero-de-acciones 2)
+;  (valor-nominal 200000)
+;  (dia 17) (mes julio) (ano 2021)
+;)
+
+
+
+(gasto-administrativo
+ (tipo-de-documento 33)
+ (folio 112259)
+ (rut 77094278-0)
+ (partida 067)
+ (dia 16) (mes julio) (ano 2021)
+ (credito 0)
+ (total 1990)
+ (neto  1672)
+ (iva    318)
+ (material Certificado-Digital)
+ (proveedor ie)
+ (glosa "Gasto Adm: Certificado Digital")
+ (archivo "../factura-afecta-ie-112259.png")
+ (finalidad "No subordinada a ningún departamento"))
+
+
+
+( gasto-promocional
+ ( folio 6918742472)
+ ( tipo-de-documento 45)
+ ( rut 55555555-5)
+ ( partida 068)
+ ( dia 17) (mes julio) (ano 2021)
+ ( credito 0)
+ ( neto        40588)
+ ( iva          7712)
+ ( iva-retenido 7712)
+ ( total       40588)
+ ( material pago-anual-boosted)
+ ( proveedor boosted)
+ ( glosa "Por Gasto Promocional: Pago Anual Boosted.")
+ ( archivo "../boosted-suscripcion-2021.png")
+ ( finalidad "Elaborar videos promocionales para publicar en Google Business"))
+
+
+
+( gasto-promocional
+ ( folio 2275133852)
+ ( tipo-de-documento 45)
+ ( rut 55555555-5)
+ ( partida 069) 
+ ( dia 17) (mes julio) (ano 2021)
+ ( credito 0)
+ ( neto         50000)
+ ( iva          9500)
+ ( iva-retenido 9500)
+ ( total        50000)
+ ( material pago-adelantado-julio-publicidad-de-auncios)
+ ( proveedor google)
+ ( glosa "Por Gasto Promocional: Pago Mensual Julio Google Ads.")
+ ( archivo "../google-ads-pago-julio.png")
+ ( finalidad "Conseguir clicks y llamados de clientes."))
+
+
+( distribucion-de-utilidad
+ (dia 17)
+ (mes julio)
+ (ano 2021)
+ (monto 85294)
+ (partida 070)
+ (cuenta-de-destino capital-social)
+)
+
+
+
+
+
+;qué pasa con el valor de 1 peso por el activo fijo
+( compra
+ ( folio 1609303)
+ ( rut 78968610-6 )
+ ( activo-fijo true)
+ ( tipo-de-documento 33)
+ ( unidades 1)
+ ( costo_unitario 67218)
+ ( partida 071)
+ ( dia 21) (mes julio) (ano 2021)
+ ( material celular)
+ ( proveedor lider)
+ ( afecto true)
+ ( credito 0)
+ ( neto   67218)
+ ( iva    12772)
+ ( total  79990)
+ ( glosa "Por compra de celular samsung")
+ ( archivo "../factura-afecta-lider-cl-1609303.png")
+ ( finalidad "Herramientas de Activo Fijo"))
+
+;( depreciacion
+;  ( herramienta celular)
+;  ( mes julio)
+;  ( ano 2021) 
+;  ( partida 072)
+;  ( monto 4999)
+;)
+
+
+( gasto-promocional
+ ( tipo-de-documento 33)
+ ( folio 67 )
+ ( rut 77189001-6)
+ ( partida 073)
+ ( dia 21) (mes julio) (ano 2021)
+ ( credito 0)
+ ( neto  1008)
+ ( iva    192)
+ ( total 1200)
+ ( material etiquetas)
+ ( proveedor scrap)
+ ( glosa "Por Compra de Etiquetas")
+ ( archivo "../factura-afecta-papers-scrap-67.png")
+ ( finalidad "Departamento de Administración"))
+
+
+
+( gasto-promocional
+ ( tipo-de-documento 33)
+ ( folio 2132286 )
+ ( rut 80478200-1)
+ ( partida 074)
+ ( dia 21) (mes julio) (ano 2021)
+ ( credito 0)
+ ( neto  3185)
+ ( iva    605)
+ ( total  3790)
+ ( material etiquetas)
+ ( proveedor ilop)
+ ( glosa "Por Gasto Administrativo: Etiquetas")
+ ( archivo "../factura-afecta-ilop-2132286.png")
+ ( finalidad "Departamento de Administración"))
+
+
+
+(venta-sii
+ (folio 1)
+ (rut 77201295-0)
+ (partida 075)
+ (dia 21) (mes julio) (ano 2021)
+ (unidades 1)
+ (costo_unitario 35000)
+ (material revision-electrica)
+ (neto 35000)
+ (iva 0)
+ (total 0)
+ (colaborador gonzalo )
+ (archivo "../factura-propia-exenta-1.png")
+ (finalidad ""))
+
+
+
+(venta-sii
+ (folio 11)
+ (rut 77201295-0)
+ (partida 076)
+ (dia 21) (mes julio) (ano 2021)
+ (unidades 1)
+ (costo_unitario 558823)
+ (material recableado)
+ (neto 558823)
+ (iva  106176)
+ (total 664999)
+ (colaborador gonzalo )
+ (archivo "../factura-propia-afecta-11.png")
+ (finalidad ""))
+
+;110833 + 35000 + 35000
+;180833
+;neto 151960
+
+;Tuve que hacerlo como venta sii
+;porque para hacer una venta a crédito
+;asumiría el pago del iva completo desde
+;el primer día,no sé como 
+;se refleja en el monto imponible
+;venta con pago a credito
+;( venta
+; (folio 11)
+; (rut 77201295-0)
+; (tipo-de-documento 33)
+; (partida 076)
+; (unidades 1)
+; (costo_unitario 558823)
+; (dia 21)
+; (mes julio)
+; (ano 2021)
+; (credito 554166)
+; (cliente gonzalo)
+; (material recableado)
+; (total 664999)
+; (neto      558823) ;monto neto del efectivo
+; (iva       106176)  ;iva del efectivo
+; (archivo "../factura-propia-afecta-11.png")
+; (glosa "Por Compra al contado y crédito de Recableado Presupuesto 1724")
+; (efectivo 110833))
+
+
+( rendicion-de-vouchers-sii
+ ( partida 077)
+ ( unidades 3)
+ ( neto  151960)
+ ( iva    28873)
+ ( total 180833)
+ ( mes julio)
+ ( ano 2021))
+
+
+( gasto-promocional
+ ( folio  4029357733)
+ ( tipo-de-documento 45)
+ ( rut 55555555-5)
+ ( partida 078)
+ ( dia 24) (mes julio) (ano 2021)
+ ( credito 0)
+ ( neto  21300)
+ ( iva  4047)
+ ( iva-retenido 4047)
+ ( total 21300)
+ ( material pago-anual-video-maker)
+ ( proveedor test-animation-video-maker)
+ ( glosa "Por Gasto Promocional: Pago Anual de 1TM Video Maker.")
+ ( archivo "../renovacion-video-maker-anual-2021.png")
+ ( finalidad "Departamento de Ventas"))
+
+
+( gasto-administrativo
+ ( tipo-de-documento 45)
+ ( folio 2958132)
+ ( rut 55555555-5)
+ ( partida 079)
+ ( dia 22) (mes julio) (ano 2021)
+ ( credito 0)
+ ( neto  3775)
+ ( iva    717)
+ ( iva-retenido 717)
+ ( total 3775)
+ ( material pago-mensual-workers)
+ ( proveedor cloudflare)
+ ( glosa "Por Gasto Administrativo: Pago Mensual de Workers Serverless.")
+ ( archivo "../invoice-cloudflare-2958132.png")
+ ( finalidad "Departamento de Administración"))
+
+;no alcancé a rendirla en julio
+;( nota-de-credito-de-subcuenta-existente
+;( dia 31) 
+;( emitida true)
+;( folio-nota 13)
+;( mes enero)
+;( ano 2021)
+;( partida 080)
+;( subcuenta ventas-con-voucher-afecto)
+;( glosa "Por la anulacion del monto total de vouchers del mes de julio debido a que se refieren a transacciones ya cubiertas por e-boletas y e-facturas.")
+;( total 180835)
+;( iva    28873)
+;( neto  151962)
+;)
+
+(rendicion-de-eboletas-sii
+  (partida 081)
+  (unidades 1)
+  (neto 0)
+  (iva 0)
+  (total 35000)
+  (mes julio)
+  (ano 2021))
+
+
+
+( nota-de-credito-sii
+ ( folio-nota 15)
+ ( folio 11)
+ ( partida 082)
+ ( archivo "../nota-de-credito-propia-15.png")
+ ( dia 27) (mes julio) (ano 2021))
+
+;se prefiere esta regla en vez e nota-de-credito-sii
+;porque hace reversa de las ventas y nota-de-creidto-sii
+;anota en una cuenta de devolución de ventas lo que
+;provoca un aumento del monto imponible innecesario
+;( nota-de-credito-de-subcuenta-existente
+; ( dia 27)
+; ( emitida true)
+; ( folio-nota 15)
+; ( mes julio)
+; ( ano 2021)
+; ( partida 082)
+; ( subcuenta ventas-con-factura-afecta)
+; ( glosa "Por error de digitación.")
+; ( total 664999)
+; ( iva   106176)
+; ( neto  558823)
+; ( archivo "../nota-de-credito-propia-15.png"))
+
+
+
+(venta-sii
+ (folio 12)
+ (rut 77201295-0)
+ (partida 083)
+ (dia 28) (mes julio) (ano 2021)
+ (unidades 1)
+ (costo_unitario 110833)
+ (material recableado)
+ (neto  93179)
+ (iva   17704)
+ (total 110883)
+ (colaborador gonzalo )
+ (archivo "../factura-propia-afecta-12.png")
+ (finalidad ""))
+
+
+
+;( venta
+; (folio 12)
+; (rut 77201295-0)
+; (tipo-de-documento 33)
+; (partida 083)
+; (unidades 1)
+; (costo_unitario 558823)
+; (dia 28)
+; (mes julio)
+; (ano 2021)
+; (credito 554166)
+; (cliente gonzalo)
+; (material recableado)
+; (total 664999)
+; (neto      93137) ;monto neto del efectivo
+; (iva       17696)  ;iva del efectivo
+; (efectivo 110833))
+
+
+
+
+(gasto-administrativo
+ (tipo-de-documento 33)
+ (folio 2737126)
+ (rut 60910000-1 )
+ (partida 084)
+ (dia 28) (mes julio) (ano 2021)
+ (credito 0)
+ (total 9950)
+ (neto  8361)
+ (iva   1589)
+ (material Dominio-Internet)
+ (proveedor u-chile)
+ (glosa "Adquisión de Dominio Internet: aelectrico.cl.")
+ (archivo "../factura-afecta-u-chile-2737126.png")
+ (finalidad "Desarrollo del Servicio alectrico Repair"))
+
+
+( gasto-promocional
+ ( tipo-de-documento 33)
+ ( folio 69612 )
+ ( rut 9229947-3)
+ ( partida 085)
+ ( dia 20) (mes julio) (ano 2021)
+ ( credito 0)
+ ( neto  1764)
+ ( iva    335)
+ ( total 2099)
+ ( material marcador-masking-tape)
+ ( proveedor eugenio)
+ ( glosa "Por Gasto Promocinal: Masking-Tape")
+ ( archivo "../factura-afecta-eugenio-69612.png")
+ ( finalidad "Departamento de Administración"))
+
+
+( costo-ventas
+ ( tipo-de-documento 33)
+ ( folio 37825276)
+ ( rut 96689310-9)
+ ( partida 086)
+ ( dia 28) (mes julio) (ano 2021)
+ ( monto 4231)
+ ( neto  4231)
+ ( iva    804)
+ ( total 5035)
+ ( material comision-mensual)
+ ( proveedor transbank)
+ ( glosa "Por Costo Directo de Ventas: Comisión Pasarela julio Transbank")
+ ( archivo "../factura-afecta-transbank-37825276.png")
+ ( finalidad "División Eléctrica"))
+
+
+( nota-de-credito-de-subcuenta-existente
+ ( dia 31)
+ ( emitida true)
+ ( folio-nota 16)
+ ( mes julio)
+ ( ano 2021)
+ ( partida 087)
+ ( subcuenta ventas-con-voucher-afecto)
+ ( glosa "Anula Vouchers para Ser Reemplazados por Otros Docs.")
+ ( total 180835)
+ ( iva   28873)
+ ( neto  151962)
+ ( archivo "../nota-de-credito-propia-16.png"))
+
+;reconocimiento de salarios de julio
+;(impuesto 4488)
+(salario
+ (partida 088)
+ (departamento electrico)
+ (nombre alexander)
+ (servicio electricista)
+ (efectivo 300000 )
+ (dia 20)
+ (mes julio)
+ (ano 2021)
+ (glosa salario-electricista))
+
+
+( ajuste-de-iva (partida 089) (mes julio) (ano 2021))
+
+
+(partida
+ (numero 090)
+ (dia 30) (mes julio) (ano 2021)
+ (descripcion "Ajuste de retencion de iva contra iva-credito")
+ (actividad ajuste))
+
+(cargo
+ ( electronico false)
+ ( tipo-de-documento ajuste)
+ ( empresa alectrico-2021)
+ ( cuenta retencion-de-iva-articulo-11)
+ ( monto   22199)
+ ( partida 090)
+ ( dia 30) ( mes julio) ( ano 2021)
+ ( glosa perdida-hecho-n))
+
+(abono
+ ( electronico false)
+ ( tipo-de-documento ajuste)
+ ( empresa alectrico-2021)
+ ( cuenta iva-credito)
+ ( monto   22199)
+ ( partida 090)
+ ( dia 30) ( mes julio) ( ano 2021)
+ ( glosa perdida-hecho-n))
+
+
+
+
+( ajustes-mensuales (mes julio) (ano 2021) (partida 091))
+;------------------------------------------- agosto -----------------------------------
+
+(venta-sii
+ (folio 2)
+ (rut 77201295-0)
+ (partida 093)
+ (dia 3) (mes agosto) (ano 2021)
+ (unidades 1)
+ (costo_unitario 141596)
+ (material visita-a-huelen)
+ (neto  6666)
+ (iva   0)
+ (total 0)
+ (colaborador gonzalo )
+ (archivo "../factura-propia-exenta-2.png")
+ (finalidad ""))
+
+
+
+
+;(gasto-administrativo
+; (folio 53530656)
+; (rut 55.555.555-5)
+; (partida 094)
+; (dia 7) (mes agosto) (ano 2021)
+; (monto 1.82 dolares)
+; (material worker-heroku-alectrico)
+; (proveedor "HEROKU S.A.")
+; (glosa "Gasto Adm: Hospedaje en Servidor USA mes julio")
+; (archivo "")
+; (finalidad "División Informática"))
+
+
+
+;puede ser compra-de-materiales si desea llevar inventario
+( insumos
+ ( pedido 1724)
+ ( tipo-de-documento 33)
+ ( folio 112794399)
+ ( unidades 1)
+ ( costo_unitario 13127)
+ ( partida 095)
+ ( dia 6) (mes agosto) (ano 2021)
+ ( material barras-conectores-tester-puestas-a-tierra)
+ ( proveedor sodimac)
+ ( afecto true)
+ ( credito 0)
+ ( neto  12630)
+ ( iva    2400)
+ ( total 15030)
+ ( glosa "Por Materiales para Puesta a Tierra de Protección")
+ ( finalidad "Materiales para reparaciones"))
+
+;( costo-ventas
+; ( tipo-de-documento 33)
+; ( folio 112794399)
+; ( rut 96792430-K)
+; ( partida 095)
+; ( dia 6) (mes agosto) (ano 2021)
+; ( monto 12630)
+; ( neto  12630)
+; ( iva    2400)
+; ( total 15030)
+; ( material barras-conectores-tester-puestas-a-tierra)
+; ( proveedor sodimac)
+; ( glosa "Por Costo Directo de Ventas: Materiales para Puesta a Tierra de Protección")
+; ( finalidad "División Eléctrica"))
+
+
+; costo-ventas
+;( tipo-de-documento 33)
+;( folio 112778212)
+;( rut 96792430-K)
+;( partida 096)
+;( dia 6) (mes agosto) (ano 2021)
+;( monto 34134)
+;( neto  34134)
+;( iva    6485)
+;( total 40619)
+;( material 2xthhn#17-R100)
+;( proveedor sodimac)
+;( glosa "Por Costo Directo de Ventas: Materiales para Recableado")
+;( finalidad "División Eléctrica"))
+
+
+( insumos
+ ( pedido 1724)
+ ( rut 96806110-0)
+ ( folio 112778212)
+ ( tipo-de-documento 33)
+ ( unidades 1)
+ ( costo_unitario 34134)
+ ( partida 096)
+ ( dia 6) (mes agosto) (ano 2021)
+ ( material  2xthhn#17-R100)
+ ( proveedor sodimac)
+ ( afecto true)
+ ( credito 0)
+ ( neto  34134)
+ ( iva    6485)
+ ( total 40619)
+ ( glosa "Por Materiales para Recableado")
+ ( finalidad "Materiales para reparaciones"))
+
+
+
+( insumos
+ ( pedido 1724)
+ ( rut 96806110-0)
+ ( folio 3018198)
+ ( tipo-de-documento 33)
+ ( unidades 1)
+ ( costo_unitario 7862)
+ ( partida 097)
+ ( dia 6) (mes agosto) (ano 2021)
+ ( material artefactos)
+ ( proveedor dartel)
+ ( afecto true)
+ ( credito 0)
+ ( neto  158011)
+ ( iva    30022)
+ ( total 188033)
+ ( glosa "Por compra a Dartel Santiago de artefactos para los capitanes")
+ ( archivo "../factura-afecta-dartel-3018198.png")
+ ( finalidad "Materiales para reparaciones"))
+
+
+( nota-de-credito-de-factura-reclamada
+ ( folio-factura 43342312)
+ ( cuenta-de-pago caja)
+ ( folio-nota 6970986)
+ ( dia 6 )
+ ( mes agosto)
+ ( ano 2021)
+ ( partida 098)
+ ( glosa "Anulación de factura 43342312")
+)
+
+ 
+(venta-sii
+ (folio 13)
+ (rut 77201295-0)
+ (partida 099)
+ (dia 11) (mes agosto) (ano 2021)
+ (unidades 1)
+ (costo_unitario 141596)
+ (material materiales-para-recableado)
+ (neto  141596)
+ (iva    26903)
+ (total 168499)
+ (colaborador gonzalo ) 
+ (finalidad ""))
+
+
+
+;puede ser compra
+;puede ser compra-de-materiales si desea llevar inventario
+( insumos
+ ( pedido 1724)
+ ( tipo-de-documento 33)
+ ( folio 112778271)
+ ( unidades 1)
+ ( costo_unitario 13127)
+ ( partida 101)
+ ( dia 9) (mes agosto) (ano 2021)
+ ( material sikalist-canalizacion-corrugada)
+ ( proveedor sodimac)
+ ( afecto true)
+ ( credito 0)
+ ( neto  13127)
+ ( iva    2494)
+ ( total 15621)
+ ( glosa "Por compra de materiales eléctricos a Sodimac")
+ ( finalidad "Materiales para reparaciones"))
+
+
+
+;( costo-ventas
+; ( tipo-de-documento 33)
+; ( folio 112778271)
+; ( rut 96792430-K)
+; ( partida 101)
+; ( dia 9) (mes agosto) (ano 2021)
+; ( monto 13127)
+; ( neto  13127)
+; ( iva    2494)
+; ( total 15621)
+; ( material sikalist-canalizacion-corrugada)
+; ( proveedor sodimac)
+; ( glosa "Por Costo Directo de Ventas: Materiales para Ampliación")
+; ( archivo "")
+; ( finalidad "División Eléctrica"))
+
+
+;puede ser compra
+;puede ser compra-de-materiales si desea llevar inventario
+( insumos
+ ( pedido 1724)
+ ( tipo-de-documento 33)
+ ( folio 111195012)
+ ( unidades 1)
+ ( costo_unitario 13706)
+ ( partida 102)
+ ( dia 12) (mes agosto) (ano 2021)
+ ( material 503L-salidas-caja-otros)
+ ( proveedor sodimac)
+ ( afecto true)
+ ( credito 0)
+ ( neto  13706)
+ ( iva    2604)
+ ( total 16310)
+ ( glosa "Por compra de materiales para ampliación")
+ ( finalidad "Materiales para reparaciones"))
+
+
+
+;( costo-ventas
+; ( tipo-de-documento 33)
+; ( folio 111195012)
+; ( rut 96792430-K)
+; ( partida 102)
+; ( dia 12) (mes agosto) (ano 2021)
+; ( monto 13706)
+; ( neto  13706)
+; ( iva    2604)
+; ( total 16310)
+; ( material 503L-salidas-caja-otros)
+; ( proveedor sodimac)
+; ( glosa "Por Costo Directo de Ventas: Materiales para Ampliación")
+; ( archivo "")
+; ( finalidad "División Eléctrica"))
+
+
+( gasto-administrativo
+ ( tipo-de-documento 45)
+ ( folio 6248846001)
+ ( rut 55555555-5)
+ ( partida 104)
+ ( dia 13) (mes agosto) (ano 2021)
+ ( credito 0)
+ ( neto  1177)
+ ( iva    223)
+ ( iva-retenido 223)
+ ( total 1177)
+ ( material pago-mensual-google-one)
+ ( proveedor google-one)
+ ( glosa "Por Gasto Administrativo: Pago Mensual de Arriendo de Correo y Almacenamiento en la nube.")
+ ( finalidad "Departamento de Administración"))
+
+
+( gasto-administrativo
+ ( tipo-de-documento 33)
+ ( folio  43570704)
+ ( rut 96806980-2 )
+ ( partida 105)
+ ( dia 6) (mes agosto) (ano 2021)
+ ( credito 0)
+ ( neto  40027)
+ ( iva    7605)
+ ( total 47632)
+ ( material servicio-telefonia)
+ ( proveedor entel)
+ ( glosa "Por Gasto Administrativo: Servicio de Datos y Telefonía: pago vuelto a cobrar, de julio.")
+ (finalidad "No subordinada a ningún departamento"))
+
+
+( gasto-administrativo
+ ( tipo-de-documento 33)
+ ( folio  43508181)
+ ( rut 96806980-2 )
+ ( partida 107)
+ ( dia 19) (mes agosto) (ano 2021)
+ ( credito 0)
+ ( neto  6926)
+ ( iva   1316)
+ ( total 8242)
+ ( material servicio-telefonia)
+ ( proveedor entel)
+ ( glosa "Por Gasto Administrativo: Servicio de Datos y Telefonía: agosto.")
+ (finalidad "No subordinada a ningún departamento"))
+
+
+( nota-de-credito-de-subcuenta-existente
+ ( proveedor transbank)
+ ( dia 22)
+ ( recibida true)
+ ( folio-nota 3216526 )
+ ( mes agosto)
+ ( ano 2021)
+ ( partida 108)
+; (subcuenta "Transbank S.A.")
+; ( subcuenta ventas-con-factura-afecta)
+ ( subcuenta transbank )
+ ( glosa "Ajuste Mensual de Comisión")
+ ( neto  231)
+ ( iva    44)
+ ( total 275)
+)
+
+
+( gasto-administrativo
+ ( tipo-de-documento 45)
+ ( folio 3097773)
+ ( rut 55555555-5)
+ ( partida 109)
+ ( dia 22) (mes agosto) (ano 2021)
+ ( credito 0)
+ ( neto         4149)
+ ( iva          3487)
+ ( iva-retenido 3487)
+ ( total        4149)
+ ( material pago-mensual-workers)
+ ( proveedor cloudflare)
+ ( glosa "Por Gasto Administrativo: Pago Mensual de Workers Serverless.")
+ ( finalidad "Departamento de Administración"))
+
+
+;Esto fue anulado porque me equivoqué en el monto
+(venta-sii
+ (folio 14)
+ (rut 77201295-0)
+ (partida 113)
+ (dia 26) (mes agosto) (ano 2021)
+ (unidades 1)
+ (costo_unitario 90544)
+ (material revision-electrica)
+ (neto   90544)
+ (iva    17203)
+ (total 107747)
+ (colaborador gonzalo )
+ (finalidad ""))
+
+
+( nota-de-credito-sii
+ ( folio-nota 17)
+ ( folio 14)
+ ( partida 114)
+ ( dia 27) (mes agosto) (ano 2021))
+
+
+(venta-sii
+ (folio 15)
+ (rut 77201295-0)
+ (partida 115)
+ (dia 27) (mes agosto) (ano 2021)
+ (unidades 1)
+ (costo_unitario 93137)
+ (material revision-electrica)
+ (neto   93137)
+ (iva    17696)
+ (total 110833)
+ (colaborador gonzalo )
+ (finalidad "cuota 2 de 6 presupuesto 1724"))
+
+
+( nota-de-credito-de-subcuenta-existente
+ ( dia 27)
+ ( emitida true)
+ ( folio-nota 18)
+ ( mes agosto)
+ ( ano 2021)
+ ( partida 116)
+ ( subcuenta ventas-con-eboleta-exenta)
+ ( glosa "Por la anulacion de la boleta 17 emitida por error, pues corresponde factura exenta.")
+ ( total 40000)
+ ( iva     0)
+ ( neto  40000))
+
+
+(venta-sii
+ (folio 3)
+ (rut 77201295-0)
+ (partida 117)
+ (dia 27) (mes agosto) (ano 2021)
+ (unidades 1)
+ (costo_unitario 40000)
+ (material diseño-electrico-los-capitanes-fase-2)
+ (neto 40000)
+ (iva 0)
+ (total 0)
+ (colaborador gonzalo )
+ (archivo "../factura-propia-exenta-3.png")
+ (finalidad ""))
+
+
+;pago de remuneraciones de julio
+ ;multa=interes afp 437 + interes salud 227 + interes afc 78
+(pago-de-salarios
+ (referencia 88)
+ (remuneraciones true)
+ (imposiciones true)
+ (partida 119)
+ (trabajador alexander)
+ (afp 40440)
+ (afc 9000)
+ (salud 21000)
+ (multa 742) 
+ (folio-prevision 2002202107271079)
+ (folio-salud 2017210700804955)
+ (remuneracion 229560)
+ (dia 8)
+ (mes agosto)
+ (ano 2021))
+
+
+;puede ser compra
+;puede ser compra-de-materiales si desea llevar inventario
+( insumos
+ ( pedido 1724)
+ ( tipo-de-documento 33)
+ ( folio 4543151)
+ ( unidades 1)
+ ( costo_unitario 25220)
+ ( partida 120)
+ ( dia 27) (mes agosto) (ano 2021)
+ ( material conduit-curvable-20MM)
+ ( proveedor electrocom)
+ ( afecto true)
+ ( credito 0)
+ ( neto  25220)
+ ( iva    4792)
+ ( total 30012)
+ ( glosa "Por compra de materiales para ampliación")
+ ( finalidad "Materiales para reparaciones"))
+
+
+;puede ser compra
+;puede ser compra-de-materiales si desea llevar inventario
+;( insumos
+; ( tipo-de-documento 33)
+; ( folio 4543140)
+; ( unidades 1)
+; ( costo_unitario 25971)
+; ( partida 121)
+; ( dia 27) (mes agosto) (ano 2021)
+; ( material tablero-saime-6071-DM)
+; ( proveedor electrocom)
+; ( afecto true)
+; ( credito 0)
+; ( neto  25971)
+; ( iva    4934)
+; ( total 30905)
+; ( glosa "Por compra de materiales para ampliación")
+; ( finalidad "Materiales para reparaciones"))
+
+(pedido (partida 1201) (id 1724) (dia 27) (mes agosto) (ano 2021))
+
+( compra
+( pedido 1724)
+( tipo-de-documento 33)
+( folio 4543140)
+( rut 96355000-6)
+( partida 121)
+( dia 27) (mes agosto) (ano 2021)
+( unidades 1)
+( costo_unitario 25971)
+( afecto true)
+( credito 0)
+( neto  25971)
+( iva    4934)
+( total 30905)
+( material tablero-saime-6071-DM)
+( proveedor electrocom)
+( glosa "Por Costo Directo de Ventas: Materiales para Ampliación")
+( finalidad "División Eléctrica" ))
+
+; costo-ventas
+;( tipo-de-documento 33)
+;( folio 4543140)
+;( rut 96355000-6)
+;( partida 121)
+;( dia 27) (mes agosto) (ano 2021)
+;( monto 30905)
+;( neto  25971)
+;( iva    4934)
+;( total 30905)
+;( material tablero-saime-6071-DM)
+;( proveedor electrocom)
+;( glosa "Por Costo Directo de Ventas: Materiales para Ampliación")
+;( archivo "")
+;( finalidad "División Eléctrica"))
+
+
+
+(venta-sii
+ (folio 16)
+ (rut 77201295-0)
+ (partida 122)
+ (dia 27) (mes agosto) (ano 2021)
+ (unidades 1)
+ (costo_unitario 62000)
+ (neto   62000)
+ (iva    11780)
+ (total  73780)
+ (material tablero)
+ (colaborador gonzalo )
+ (finalidad "Fase II. Los Capitanes 1254"))
+
+
+;(gasto-administrativo
+; (folio 53530656)
+; (rut 55.555.555-5)
+; (partida 106)
+; (dia 13) (mes agosto) (ano 2021)
+; (monto 1.12 dolares)
+; (material worker-heroku-alectrico)
+; (proveedor "HEROKU S.A.")
+; (glosa "Gasto Adm: Hospedaje en Servidor USA mes agosto")
+; (archivo "")
+; (finalidad "División Informática"))
+
+
+( nota-de-credito-de-subcuenta-existente
+ ( dia 28)
+ ( emitida true)
+ ( folio-nota 19)
+ ( mes agosto)
+ ( ano 2021)
+ ( partida 123)
+ ( subcuenta ventas-con-voucher-afecto)
+ ( glosa "Por la anulacion del voucher pues cliente necesita factura afecta.")
+ ( total 39999)
+ ( iva    6386)
+ ( neto  33613)
+ ( archivo "../nota-de-credito-propia-19.png")
+)
+
+;reconocimiento de salario de agosto
+(salario
+ (partida 124)
+ (departamento electrico)
+ (nombre alexander)
+ (servicio electricista)
+ (efectivo 300000 )
+ (dia 20)
+ (mes agosto)
+ (ano 2021)
+ (glosa salario-electricista))
+
+
+
+
+;( ajuste-de-iva-contra-credito  (partida 124) ( mes agosto) (ano 2021) (monto 102948 ))
+
+( ajustes-mensuales (mes agosto) (ano 2021) (partida 125))
+
+( ajuste-de-iva (partida 126) (mes agosto) (ano 2021))
+;Ajustando iva contra credito:55003, dió diferente
+;Ahora está dando 56379, sin ajuste de remanentes
+
+;( ajuste-de-remanente-de-iva
+;( partida 125)
+;( mes-que-se-declara-en-el-f29 agosto)
+;( mes-en-que-se-presenta-el-f29 septiembre)
+;( ano-anterior 2021)
+;( mes-anterior julio)
+;( ano 2021)
+;( mes agosto )
+;( antes 29186 )
+;( mostrar-en agosto)
+;( mes-de-pago septiembre)
+;( ano-de-pago 2021))
+
+
+
+
+
+;-------------- septiembre ---------------------------------------------
+
+;reconocimiento de salario de septiembre
+(salario
+ (partida 127)
+ (departamento electrico)
+ (nombre alexander)
+ (servicio electricista)
+ (efectivo 350000)
+ (dia 5)
+ (mes septiembre)
+ (ano 2021)
+ (glosa salario-electricista))
+
+
+(venta-sii
+ (folio 4)
+ (rut 77201295-0)
+ (partida 128)
+ (dia 2) (mes septiembre) (ano 2021)
+ (unidades 1)
+ (costo_unitario 400000)
+ (material diseño-electrico-los-capitanes-fase-2)
+ (neto 400000)
+ (iva 0)
+ (total 0)
+ (colaborador gonzalo )
+ (archivo "../factura-propia-exenta-4.png")
+ (finalidad ""))
+
+;pagando los salarios del mes anterior: agosto
+ ;multa=interes afp 635 + interes salud 330 + interes afc 114
+(pago-de-salarios
+ (referencia 124)
+ (remuneraciones true)
+ (imposiciones true)
+ (partida 129)
+ (trabajador alexander)
+ (afp 40440)
+ (afc 9000)
+ (salud 21000)
+ (multa 1079)
+ (folio-prevision 2002202108021887)
+ (folio-salud 2017210800082474)
+ (remuneracion 229560)
+ (dia 8)
+ (mes septiembre)
+ (ano 2021))
+
+
+(venta-sii
+ (folio 17)
+ (rut 77201295-0)
+ (partida 130)
+ (dia 6) (mes septiembre) (ano 2021)
+ (unidades 15)
+ (costo_unitario 4202)
+ (material ensacado-de-15-sacos-de-escombros)
+ (neto  63030)
+ (iva   11976)
+ (total 75006)
+ (colaborador gonzalo )
+ (finalidad ""))
+
+
+(gasto-administrativo
+ (tipo-de-documento 33)
+ (folio 2761647)
+ (rut 60910000-1 )
+ (partida 131)
+ (dia 06) (mes septiembre) (ano 2021)
+ (credito 0)
+ (total 9950)
+ (neto  8361)
+ (iva   1589)
+ (material Dominio-Internet)
+ (proveedor u-chile)
+ (glosa "Adquisión de Dominio Internet: necios.cl.")
+ (finalidad "Desarrollo del Servicio Contabilidad para Necios"))
+
+
+
+;puede ser compra
+;puede ser compra-de-materiales si desea llevar inventario
+( insumos
+ ( pedido 1724)
+ ( tipo-de-documento 33)
+ ( folio 113557696)
+ ( unidades 1)
+ ( costo_unitario 25971)
+ ( partida 132)
+ ( dia 03) (mes septiembre) (ano 2021)
+ ( material THHN-25m-Rojo-2-pares-guantes-visor-pantalla)
+ ( proveedor sodimac)
+ ( afecto true)
+ ( credito 0)
+ ( neto  13009)
+ ( iva    2472)
+ ( total 15481)
+ ( glosa "Por compra de materiales para ampliación")
+ ( finalidad "Materiales para reparaciones"))
+
+
+;( costo-ventas
+; ( tipo-de-documento 33)
+; ( folio 113557696)
+; ( rut 96792430-K)
+; ( partida 133)
+; ( dia 03) (mes septiembre) (ano 2021)
+; ( monto 13009)
+; ( neto  13009)
+; ( iva    2472)
+; ( total 15481)
+; ( material THHN-25m-Rojo-2-pares-guantes-visor-pantalla)
+; ( proveedor sodimac)
+; ( glosa "Por Costo Directo de Ventas: Materiales para Ampliación")
+; ( archivo "../factura-afecta-sodimac-113557696.png")
+; ( finalidad "División Eléctrica"))
+
+
+
+(venta-sii
+ (folio 5)
+ (rut 77201295-0)
+ (partida 133)
+ (tipo-de-documento 34)
+ (dia 1) (mes septiembre) (ano 2021)
+ (unidades 1)
+ (costo_unitario 6666)
+ (material visita-huelen-pago-2-6-la-boleta-dice-pago-1-de-6)
+ (neto 6666)
+ (iva 0)
+ (total 0)
+ (colaborador gonzalo )
+ (finalidad ""))
+
+
+;Corresponde a la amortización del pago de huelen
+(cobro-de-cuentas-por-cobrar
+  (partida 134)
+  (monto 666)
+  (dia 1)
+  (mes septiembre)
+  (ano 2021))
+
+
+(partida (numero 138) (dia 12) (mes septiembre ) (ano 2021)
+(descripcion "Por adquisión del control legal de la marca alectrico")
+(archivo "../comprobante-de-pago-inapi-marca-alectrico.png")
+(actividad ajuste)
+)
+
+(cargo
+ ( electronico false)
+ ( tipo-de-documento comprobante-de-pago-de-transferencia-total)
+ ( empresa alectrico-2021)
+ ( partida 138)
+ ( dia 12) (mes septiembre) (ano 2021)
+ ( cuenta banco-estado)
+ ( monto  52631)
+ ( glosa control-intangible-marca-alectrico))
+
+(abono
+ ( electronico false)
+ ( tipo-de-documento comprobante-de-pago-de-transferencia-total)
+ ( empresa alectrico-2021)
+ ( partida 138)
+ ( dia 12) (mes septiembre) (ano 2021)
+ ( cuenta marca-alectrico)
+ ( monto  52631)
+ ( glosa control-intangible-marca-alectrico))
+
+
+( gasto-administrativo
+ ( tipo-de-documento 33)
+ ( folio 43683315)
+ ( rut 96806980-2 )
+ ( partida 139)
+ ( dia 10) (mes septiembre) (ano 2021)
+ ( credito 0)
+ ( neto  6926)
+ ( iva   1316)
+ ( total 8242)
+ ( material servicio-telefonia-agosto)
+ ( proveedor entel)
+ ( glosa "Por Gasto Administrativo: Servicio de Datos y Telefonía: consumo agosto.")
+ ( finalidad "No subordinada a ningún departamento"))
+
+
+(gasto-administrativo
+ (tipo-de-documento 33)
+ (folio 2761647)
+ (rut 60910000-1 )
+ (partida 140)
+ (dia 06) (mes septiembre) (ano 2021)
+ (credito 0)
+ (total 9950)
+ (neto  8361)
+ (iva   1589)
+ (material Dominio-Internet)
+ (proveedor u-chile)
+ (archivo "../factura-afecta-u-chile-2761647.png")
+ (glosa "Adquisión de Dominio Internet: necios.cl.")
+ (finalidad "Desarrollo del Servicio alectrico Repair"))
+
+
+(gasto-administrativo
+ (tipo-de-documento 33)
+ (folio 2737126)
+ (rut 60910000-1 )
+ (partida 145)
+ (dia 13) (mes septiembre) (ano 2021)
+ (credito 0)
+ (total 9950)
+ (neto  8361)
+ (iva   1589)
+ (material Dominio-Internet)
+ (proveedor u-chile)
+ (glosa "Renovación de Dominio Internet: alectrica.cl.")
+ (archivo "../factura-afecta-u-chile-2766477.png")
+ (finalidad "Continuidad de alectrico"))
+
+
+( insumos
+ ( pedido 1724)
+ ( tipo-de-documento 33)
+ ( unidades 1)
+ ( folio  113557696)
+ ( costo_unitario 48404)
+ ( partida 146)
+ ( dia 08) (mes septiembre) (ano 2021)
+ ( material Extintor-NYA-1.5-25m-huincha-broca22x200)
+ ( proveedor sodimac)
+ ( afecto true)
+ ( credito 0)
+ ( neto  48404)
+ ( iva    9197)
+ ( total 57601)
+ ( glosa "Por compra de materiales para ampliación")
+ ( finalidad "Reparación"))
+
+
+;( costo-ventas
+; ( tipo-de-documento 33)
+; ( folio 113557696)
+; ( rut 96792430-K)
+; ( partida 146)
+; ( dia 08) (mes septiembre) (ano 2021)
+; ( monto 48404)
+; ( neto  48404)
+; ( iva    9197)
+; ( total 57601)
+; ( material Extintor-NYA-1.5-25m-huincha-broca22x200)
+; ( proveedor sodimac)
+; ( glosa "Por Costo Directo de Ventas: Materiales para Ampliación")
+; ( archivo "../factura-afecta-sodimac-113532222.png")
+; ( finalidad "División Eléctrica"))
+
+( gasto-administrativo
+ ( tipo-de-documento 45)
+ ( folio 3239893)
+ ( rut 55555555-5)
+ ( partida 147)
+ ( dia 22) (mes septiembre) (ano 2021)
+ ( credito 0)
+ ( neto         4149)
+ ( iva          3487)
+ ( iva-retenido 3487)
+ ( total        4149)
+ ( material pago-mensual-workers)
+ ( proveedor cloudflare)
+ ( glosa "Por Gasto Administrativo: Pago Mensual de Workers Serverless.")
+ ( archivo "../factura-extranjera-cloudflare-2329893.png")
+ ( finalidad "Departamento de Administración"))
+
+
+( nota-de-credito-de-subcuenta-existente
+ ( dia 24)
+ ( emitida true)
+ ( folio-nota 20)
+ ( mes septiembre)
+ ( ano 2021)
+ ( partida 148)
+ ( subcuenta ventas-con-eboleta-afecta)
+ ( glosa "Por la anulacion del monto total de la boleta afecta con folio 11 del 24 de enero. Por error en el monto.")
+ ( total 12605 )
+ ( iva    2013 )
+ ( neto  10592)
+ ( archivo "../nota-de-credito-20.png")
+)
+
+
+
+;puede ser compra
+;puede ser compra-de-materiales si desea llevar inventario
+( insumos
+ ( pedido 1724)
+ ( tipo-de-documento 33)
+ ( folio 113921610)
+ ( unidades 1)
+ ( costo_unitario 25971)
+ ( partida 149)
+ ( dia 24) (mes septiembre) (ano 2021)
+ ( material THHN-25m-Rojo-1-pares-protectores-auditivos)
+ ( proveedor sodimac)
+ ( afecto true)
+ ( credito 0)
+ ( neto  6143)
+ ( iva    1167)
+ ( total 7310)
+ ( glosa "Por compra de materiales para ampliación")
+ ( finalidad "Materiales para reparaciones"))
+
+
+
+
+;( costo-ventas
+; ( tipo-de-documento 33)
+; ( folio 1133921610)
+; ( rut 96792430-K)
+; ( partida 149)
+; ( dia 24) (mes septiembre) (ano 2021)
+; ( monto 6143)
+; ( neto  6143)
+; ( iva   1167)
+; ( total 7310)
+; ( material THHN-25m-Rojo-1-pares-protectores-auditivos)
+; ( proveedor sodimac)
+; ( glosa "Por Costo Directo de Ventas: Materiales para Ampliación")
+; ( archivo "../factura-afecta-sodimac-113921610.png")
+; ( finalidad "División Eléctrica"))
+
+
+
+
+(venta-sii
+ (folio 18)
+ (rut 77201295-0)
+ (partida 151)
+ (dia 24) (mes septiembre) (ano 2021)
+ (unidades 1)
+ (costo_unitario 126050)
+ (material instalacion-de-alimentador)
+ (neto 126050)
+ (iva  23950)
+ (total 150000)
+ (colaborador gonzalo )
+ (archivo "../factura-propia-afecta-18.png")
+ (finalidad ""))
+
+
+
+(venta-sii
+ (folio 19)
+ (rut 77201295-0)
+ (partida 152)
+ (tipo-de-documento 34)
+ (dia 29) (mes septiembre) (ano 2021)
+ (unidades 1)
+ (costo_unitario 6666)
+ (material los-capitanes-pago-3-de-6)
+ (neto 93137)
+ (iva 17696)
+ (total 110833)
+ (archivo "../factura-propia-afecta-19.png")
+ (colaborador gonzalo )
+ (finalidad ""))
+
+
+( costo-ventas
+ ( tipo-de-documento 33)
+ ( folio 39198233)
+ ( rut 96689310-9)
+ ( partida 153)
+ ( dia 29) (mes septiembre) (ano 2021)
+ ( monto 525)
+ ( neto  525)
+ ( iva   100)
+ ( total 625)
+ ( material comision-mensual)
+ ( proveedor transbank)
+ ( glosa "Por Costo Directo de Ventas: Comisión Pasarela septiembre Transbank")
+ ( archivo "../factura-afecta-transbank-39198233.png")
+ ( finalidad "División Eléctrica"))
+
+
+
+
+(ajuste-de-iva (partida 154) (mes septiembre) (ano 2021))
+; el resutlado es de 3159
+( ajustes-mensuales (mes septiembre) (ano 2021) (partida 155))
+
+
+;------------------------ octubre -----------------------------------
+
+
+;pago de remuneraciones de septiembre
+(pago-de-salarios
+ (referencia 127)
+ (remuneraciones true)
+ (imposiciones false)
+ (partida 156)
+ (trabajador alexander)
+ (remuneracion 267820)
+ (dia 5)
+ (mes octubre)
+ (ano 2021))
+
+
+
+;reconocimiento de salario de octubre
+(salario
+ (partida 157)
+ (departamento portales-web)
+ (nombre alexander)
+ (servicio desarrollo)
+ (efectivo 400000)
+ (dia 5)
+ (mes octubre)
+ (ano 2021)
+ (glosa salario-programador))
+
+
+( nota-de-credito-de-subcuenta-existente
+ ( dia 2)
+ ( emitida true)
+ ( folio-nota 21)
+ ( mes octubre)
+ ( ano 2021)
+ ( partida 158)
+ ( subcuenta ventas-con-eboleta-exenta)
+ ( glosa "Por anulación de proyecto 1724.")
+ ( total 400000)
+ ( iva     0)
+ ( neto  400000)
+ ( archivo "../nota-de-credito-propia-21.png"))
+
+
+(venta-sii
+ (folio 6)
+ (rut 77201295-0)
+ (partida 159)
+ (tipo-de-documento 34)
+ (dia 5) (mes octubre) (ano 2021)
+ (unidades 1)
+ (costo_unitario 6666)
+ (material visita-huelen-pago-4-6)
+ (neto 6666)
+ (iva 0)
+ (total 0)
+ (colaborador gonzalo )
+ (archivo "./factura-propia-exenta-6.png")
+ (finalidad ""))
+
+( gasto-administrativo
+ ( tipo-de-documento 45)
+ ( folio 466338)
+ ( rut 55555555-5)
+ ( partida 160)
+ ( dia 13) (mes octubre) (ano 2021)
+ ( credito 0)
+ ( neto  1177)
+ ( iva    223)
+ ( iva-retenido 223)
+ ( total 1177)
+ ( material pago-mensual-google-one)
+ ( proveedor google-one)
+ ( archivo "../google-one-septiembre-2021.png")
+ ( glosa "Por Gasto Administrativo: Pago Mensual de Arriendo de Correo y Almacenamiento en la nube.")
+ ( finalidad "Departamento de Administración"))
+
+( gasto-administrativo
+ ( archivo "/factura-afecta-entel-43893417.png")
+ ( tipo-de-documento 33)
+ ( folio 43893417)
+ ( rut 96806980-2 )
+ ( partida 161)
+ ( dia 24) (mes octubre) (ano 2021)
+ ( credito 0)
+ ( neto  6926)
+ ( iva   1316)
+ ( total 8242)
+ ( material servicio-telefonia)
+ ( proveedor entel)
+ ( glosa "Por Gasto Administrativo: Servicio de Datos y Telefonía de septiembre.")
+ (finalidad "No subordinada a ningún departamento"))
+
+
+( rendicion-de-eboletas-sii
+ ( partida 162)
+ ( unidades 1)
+ ( neto  21002)
+ ( iva    3998)
+ ( total 25000)
+ ( mes octubre)
+ ( ano 2021))
+
+
+( gasto-administrativo
+ ( tipo-de-documento 45)
+ ( folio 3198930)
+ ( rut 55555555-5)
+ ( partida 163)
+ ( dia 13) (mes octubre) (ano 2021)
+ ( credito 0)
+ ( neto  3775)
+ ( iva    717)
+ ( iva-retenido 717)
+ ( total 3775)
+ ( material pago-mensual-workers)
+ ( proveedor cloudflare)
+ ( glosa "Por Gasto Administrativo: Pago Mensual de Workers Serverless.")
+ ( finalidad "Departamento de Administración"))
+
+
+;( costo-ventas
+; ( tipo-de-documento 33)
+; ( folio 38766699)
+; ( rut 96689310-9)
+; ( partida 162)
+; ( dia 10) (mes octubre) (ano 2021)
+; ( monto 2858)
+; ( neto  2858)
+; ( iva    543)
+; ( total 3401)
+; ( material comision-mensual)
+; ( proveedor transbank)
+; ( glosa "Por Costo Directo de Ventas: Comisión Pasarela septiembre Transbank")
+; ( finalidad "División Eléctrica"))
+
+
+(venta-sii
+ (folio 19)
+ (rut 77201295-0)
+ (partida 164)
+ (tipo-de-documento 34)
+ (dia 29) (mes octubre) (ano 2021)
+ (unidades 1)
+ (costo_unitario 93137)
+ (material los-capitanes-pago-4-de-6)
+ (neto 93137)
+ (iva 17696)
+ (total 110833)
+ (archivo "../factura-propia-afecta-20.png")
+ (colaborador gonzalo )
+ (finalidad ""))
+
+(cobro-de-cuentas-por-cobrar
+  (partida 165)
+  (monto 110833)
+  (dia 29)
+  (mes octubre)
+  (ano 2021))
+
+
+( insumos
+ ( pedido 1724)
+ ( tipo-de-documento 33)
+ ( unidades 1)
+ ( folio 114609804 )
+ ( costo_unitario 4950)
+ ( partida 166)
+ ( dia 26) (mes octubre) (ano 2021)
+ ( material materiales-electricos)
+ ( proveedor sodimac)
+ ( afecto true)
+ ( credito 0)
+ ( neto  4950)
+ ( iva    941)
+ ( total 5891)
+ ( glosa "Por compra de materiales eléctricos a Sodimac")
+ ( finalidad "EPD: Pack de dos máscaras N95 3M"))
+
+
+( ajustes-mensuales (mes octubre) (ano 2021) (partida 167))
+;:( ajuste-de-iva (partida 168) (mes octubre) (ano 2021))
+
+
+;El f29 no maneja monto imponible negativo que resulta
+;de anular una venta de un mes al siguiente
+;Así que tengo que hacer el ajuste mensual manualmente
+;Sin considerar el cálculo del monto imponible
+
+(partida
+ (numero 168)
+ (dia 31) (mes octubre) (ano 2021)
+ (descripcion "Partida 168: Por ajuste del Debito Fiscal Contra el Credito Fiscal, mes de octubre-Por pago del ppm, con factor de 0.00125 mes octubre")
+ (actividad ajuste)
+)
+
+(abono
+ ( electronico false)
+ ( tipo-de-documento ajuste-mensual-manual)
+ ( empresa alectrico-2021)
+ ( cuenta ganancia-por-correccion-monetaria)
+ ( monto  780)
+ ( partida 168)
+ ( dia 31) ( mes octubre) ( ano 2021))
+
+
+(cargo
+ ( electronico false)
+ ( tipo-de-documento ajuste-mensual-manual)
+ ( empresa alectrico-2021)
+ ( cuenta iva-credito)
+ ( monto  780)
+ ( partida 168)
+ ( dia 31) ( mes octubre) ( ano 2021))
+
+
+(abono
+ ( electronico false)
+ ( tipo-de-documento ajuste-mensual-manual)
+ ( empresa alectrico-2021)
+ ( cuenta iva-credito)
+ ( monto  21694)
+ ( partida 168)
+ ( dia 31) ( mes octubre) ( ano 2021))
+
+
+(cargo
+ ( electronico false)
+ ( tipo-de-documento ajuste-mensual-manual)
+ ( empresa alectrico-2021)
+ ( cuenta iva-debito)
+ ( monto  21694)
+ ( partida 168)
+ ( dia 31) ( mes octubre) ( ano 2021))
+
+
+
+(abono
+ ( electronico false)
+ ( tipo-de-documento ajuste-mensual-manual)
+ ( empresa alectrico-2021)
+ ( cuenta banco-estado)
+ ( monto  151)
+ ( partida 168)
+ ( dia 31) ( mes octubre) ( ano 2021))
+
+
+(cargo
+ ( electronico false)
+ ( tipo-de-documento ajuste-mensual-manual)
+ ( empresa alectrico-2021)
+ ( cuenta ppm)
+ ( monto  151)
+ ( partida 168)
+ ( dia 31) ( mes octubre) ( ano 2021))
+
+
+;------------------------------- noviembre -----------------------------
+
+;pago de remuneraciones de octubre
+(pago-de-salarios
+ (remuneraciones true)
+ (imposiciones false)
+ (partida 169)
+ (trabajador alexander)
+ (remuneracion 307520)
+ (dia 5)
+ (mes noviembre)
+ (ano 2021))
+
+
+
+;( costo-ventas
+; ( tipo-de-documento 33)
+; ( folio 39533607)
+; ( rut 96689310-9)
+; ( partida 163)
+; ( dia 3) (mes noviembre) (ano 2021)
+; ( monto 2749)
+; ( neto  2749)
+; ( iva    522)
+; ( total 3271)
+; ( material comision-mensual)
+; ( proveedor transbank)
+; ( glosa "Por Costo Directo de Ventas: Comisión Pasarela octubre Transbank")
+; ( finalidad "División Eléctrica"))
+
+
+(venta-sii
+ (folio 7)
+ (rut 77201295-0)
+ (partida 170)
+ (dia 8) (mes noviembre) (ano 2021)
+ (unidades 1)
+ (costo_unitario 6666)
+ (material visita-huelen-pago-5-6)
+ (neto 6666)
+ (iva 0)
+ (total 0)
+ (colaborador gonzalo )
+ (archivo "./factura-propia-exenta-7.png")
+ (finalidad ""))
+
+
+
+;Este pago de entel lo pagué per antes lo había reclamdo
+;Entel debe emitir una nota de crédito y emitir factura contado
+;y lo ha hecho
+( gasto-proveedor
+ ( tipo-de-documento 33)
+ ( folio  44036470)
+ ( rut 96806980-2 )
+ ( partida 171)
+ ( dia 11) (mes noviembre) (ano 2021)
+ ( credito 0)
+ ( neto  6926)
+ ( iva   1316)
+ ( total 8242)
+ ( material servicio-telefonia)
+ ( proveedor entel)
+ ( glosa "Por Gasto Administrativo: Servicio de Datos y Telefonía: pago julio.")
+ (finalidad "No subordinada a ningún departamento"))
+
+
+;reconocimiento de salarios de noviembre
+(salario
+ (partida 172)
+ (departamento electrico)
+ (nombre alexander)
+ (servicio electricista)
+ (efectivo 400000 )
+ (dia 20)
+ (mes noviembre)
+ (ano 2021)
+ (glosa salario-electricista))
+
+
+
+( gasto-administrativo
+ ( tipo-de-documento 33)
+ ( folio 1648)
+ ( rut 76999251-0)
+ ( partida 183)
+ ( dia 08) (mes noviembre) (ano 2021)
+ ( credito 0)
+ ( neto  4193)
+ ( iva    797)
+ ( total 4990)
+ ( material mouse)
+ ( proveedor smart)
+ ( glosa "Por Gasto Administrativo: Mouse.")
+ (finalidad "No subordinada a ningún departamento"))
+
+
+( gasto-administrativo
+ ( tipo-de-documento 33)
+ ( folio 101172)
+ ( rut 76212492-0 )
+ ( partida 184)
+ ( dia 09) (mes noviembre) (ano 2021)
+ ( credito 0)
+ ( neto  10824)
+ ( iva    2056)
+ ( total 12880)
+ ( material mouse)
+ ( proveedor bazaya)
+ ( glosa "Por Gasto Administrativo: WebCam.")
+ (finalidad "No subordinada a ningún departamento"))
+
+
+
+( ajustes-mensuales (mes noviembre) (ano 2021) (partida 186))
+( ajuste-de-iva (partida 187) (mes noviembre) (ano 2021))
+
+
+
+;------------------------------ diciembre -----------------------------------
+;heroku 
+
+
+;pago de remuneraciones de noviembre
+(pago-de-salarios
+ (remuneraciones true)
+ (imposiciones false)
+ (partida 188)
+ (trabajador alexander)
+ (remuneracion 307520)
+ (dia 8)
+ (mes diciembre)
+ (ano 2021))
+
+
+
+(insumos
+ (pedido 1724)
+ (rut 96792460-K)
+ (tipo-de-documento 33)
+ (folio 115116314)
+ (unidades 1)
+ (costo_unitario 8395)
+ (partida 189)
+ (dia 1) (mes diciembre)  (ano 2021)
+ (material epp)
+ (proveedor sodimac )
+ (afecto true)
+ (credito 0)
+ (neto  8395)
+ (total 9990)
+ (iva   1595)
+ (glosa "Por pack 3M de máscaras N95")
+ (finalidad "Elementos de Protección Personal"))
+
+
+
+(venta-sii
+ (folio 8)
+ (rut 77201295-0)
+ (partida 195)
+ (tipo-de-documento 34)
+ (dia 9) (mes diciembre) (ano 2021)
+ (unidades 1)
+ (costo_unitario 6666)
+ (material visita-huelen-pago-5-6)
+ (neto 6666)
+ (iva 0)
+ (total 0)
+ (colaborador gonzalo )
+ (archivo "./factura-propia-exenta-8.png")
+ (finalidad ""))
+
+(venta-sii
+ (folio 9)
+ (rut 77201295-0)
+ (partida 196)
+ (tipo-de-documento 34)
+ (dia 28) (mes diciembre) (ano 2021)
+ (unidades 1)
+ (costo_unitario 6666)
+ (material visita-huelen-pago-6-6)
+ (neto 6666)
+ (iva 0)
+ (total 0)
+ (colaborador gonzalo )
+ (archivo "./factura-propia-exenta-9.png")
+ (finalidad ""))
+
+
+(venta-sii
+ (folio 21)
+ (rut 77201295-0)
+ (partida 197)
+ (tipo-de-documento 33)
+ (dia 9) (mes diciembre) (ano 2021)
+ (unidades 1)
+ (costo_unitario 93137)
+ (material los-capitanes-pago-5-de-6)
+ (neto   93137)
+ (iva    17696)
+ (total 110833)
+ (archivo "../factura-propia-afecta-21.png")
+ (colaborador gonzalo )
+ (finalidad ""))
+
+(venta-sii
+ (folio 22)
+ (rut 77201295-0)
+ (partida 198)
+ (tipo-de-documento 33)
+ (dia 26) (mes diciembre) (ano 2021)
+ (unidades 1)
+ (costo_unitario 93137)
+ (material los-capitanes-pago-6-de-6)
+ (neto   93137)
+ (iva    17696)
+ (total 110833)
+ (archivo "../factura-propia-afecta-22.png")
+ (colaborador gonzalo )
+ (finalidad ""))
+
+(venta
+ (folio 10)
+ (rut 77201295-0)
+ (partida 199)
+ (tipo-de-documento 34)
+ (dia 31) (mes diciembre) (ano 2021)
+ (unidades 1)
+ (costo_unitario 30000)
+ (material parecer-tecnico-thhn)
+ (credito  20000)
+ (efectivo 10000)
+ (neto     30000)
+ (iva       0)
+ (exento   30000)
+ (total    30000)
+ (cliente gonzalo )
+ (archivo "./factura-propia-exenta-10.png")
+ (finalidad ""))
+
+
+
+( gasto-administrativo
+ ( tipo-de-documento 33)
+ ( folio 44204963)
+ ( rut 96806980-2 )
+ ( partida 200)
+ ( dia 10) (mes diciembre) (ano 2021)
+ ( credito 0)
+ ( neto  6926)
+ ( iva   1316)
+ ( total 8242)
+ ( material servicio-telefonia)
+ ( proveedor entel)
+ ( glosa "Por Gasto Administrativo: Servicio de Datos y Telefonía de octubre.")
+ (finalidad "No subordinada a ningún departamento"))
+
+( gasto-administrativo
+ ( tipo-de-documento 33)
+ ( folio 44123442 )
+ ( rut 96806980-2 )
+ ( partida 201)
+ ( dia 13) (mes diciembre) (ano 2021)
+ ( credito 0)
+ ( neto  6926)
+ ( iva   1316)
+ ( total 8242)
+ ( material servicio-telefonia)
+ ( proveedor entel)
+ ( glosa "Por Gasto Administrativo: Servicio de Datos y Telefonía de octubre.")
+ (finalidad "No subordinada a ningún departamento"))
+
+
+
+( nota-de-credito-de-factura-reclamada
+ ( folio-factura 44036470 )
+ ( cuenta-de-pago caja)
+ ( folio-nota 6744009)
+ ( dia 7 )
+ ( mes diciembre)
+ ( ano 2021)
+ ( partida 202)
+ ( glosa "Anulación de factura 4036470")
+)
+
+
+;----------------------------------------------------
+(partida
+ (numero 203)
+ (dia 31) (mes diciembre) (ano 2021)
+ (descripcion "Por Activación de Gastos Diferidos por la Construcción de la plataforma alectrico.")
+ (actividad aporte-plataforma-alectrico®))
+
+
+(cargo
+ ( electronico false)
+ ( tipo-de-documento ajuste)
+ ( empresa alectrico-2021)
+ ( cuenta plataforma-alectrico)
+ ( monto 2150000)
+ ( partida 203)
+ ( dia 31)  ( mes diciembre)  ( ano 2021)
+ ( glosa activacion-plataforma-alectrico))
+
+(abono
+ ( electronico false)
+ ( tipo-de-documento ajuste)
+ ( empresa alectrico-2021)
+ ( cuenta salarios)
+ ( monto  2150000)
+ ( partida 203)
+ ( dia 31)  ( mes diciembre)  ( ano 2021)
+ ( glosa activacion-plataforma-alectrico))
+
+
+
+(cargo
+ ( electronico false)
+ ( tipo-de-documento ajuste)
+ ( empresa alectrico-2021)
+ ( cuenta plataforma-alectrico)
+ ( monto 370898)
+ ( partida 203)
+ ( dia 31)  ( mes diciembre)  ( ano 2021)
+ ( glosa activacion-plataforma-alectrico))
+
+
+
+(abono
+ ( electronico false)
+ ( tipo-de-documento ajuste)
+ ( empresa alectrico-2021)
+ ( cuenta insumos)
+ ( monto  370898)
+ ( partida 203)
+ ( dia 31)  ( mes diciembre)  ( ano 2021)
+ ( glosa activacion-plataforma-alectrico))
+
+
+(cargo
+ ( electronico false)
+ ( tipo-de-documento ajuste)
+ ( empresa alectrico-2021)
+ ( cuenta plataforma-alectrico)
+ ( monto 123645)
+ ( partida 203)
+ ( dia 31)  ( mes diciembre)  ( ano 2021)
+ ( glosa activacion-plataforma-alectrico))
+
+
+
+(abono
+ ( electronico false)
+ ( tipo-de-documento ajuste)
+ ( empresa alectrico-2021)
+ ( cuenta materiales)
+ ( monto  123645)
+ ( partida 203)
+ ( dia 31)  ( mes diciembre)  ( ano 2021)
+ ( glosa activacion-plataforma-alectrico))
+
+
+
+
+
+;------------------------------------------
+
+;reconocimiento de salarios de noviembre
+(salario
+ (partida 204)
+ (departamento electrico)
+ (nombre alexander)
+ (servicio electricista)
+ (efectivo 400000 )
+ (dia 20)
+ (mes diciembre)
+ (ano 2021)
+ (glosa salario-electricista))
+
+
+;-----------------------------------------------
+
+
+(deposito (partida 206) (banco banco-estado) (monto 800000 ) (dia 31) (mes diciembre) (ano 2021) )
+
+
+
+( ajustes-mensuales (mes diciembre) (ano 2021) (partida 207))
+( ajuste-de-iva     (mes diciembre) (ano 2021) (partida 208))
+
+
+;tributario
+( ajuste-anual
+   (ano 2021) (partida 210)
+   (liquidacion tributaria)
+   (efecto aporte))
+
+( ajuste-anual
+   (ano 2021) (partida 211)
+   (liquidacion tributaria)
+   (efecto deduccion))
+
+
+( ajuste-anual-de-resultado-tributario
+   (ano 2021) (partida 212))
+
+
+;financiero
+
+( ajuste-anual
+   (ano 2021) (partida 213)
+   (liquidacion financiera)
+   (efecto ganador))
+
+( ajuste-anual
+   (ano 2021) (partida 214)
+   (liquidacion financiera)
+   (efecto perdedor))
+
+
+
+( ajuste-anual-de-resultado-financiero
+   (ano 2021) (partida 215))
+
+
+
+
+;=========================== LIQUIDACION DE INVENTARIO FINAL ============================
+(partida-inventario-final (partida 216))
+
+( f29 (partida 1040) (mes enero) (ano 2021))
+( f29 (partida 1041) (mes febrero) (ano 2021))
+( f29 (partida 1042) (mes marzo) (ano 2021))
+( f29 (partida 1043) (mes abril) (ano 2021))
+( f29 (partida 1044) (mes mayo) (ano 2021))
+( f29 (partida 1045) (mes junio) (ano 2021))
+( f29 (partida 1046) (mes julio) (ano 2021))
+( f29 (partida 1047) (mes agosto) (ano 2021))
+( f29 (partida 1048) (mes septiembre) (ano 2021))
+( f29 (partida 1049) (mes octubre) (ano 2021))
+( f29 (partida 1050) (mes noviembre) (ano 2021))
+( f29 (partida 1051) (mes diciembre) (ano 2021))
+
+

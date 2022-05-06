@@ -1,0 +1,4 @@
+(tramo-impuesto-unico
+  (exento-en-utm 13.5)
+  (tasa 0.04)
+)

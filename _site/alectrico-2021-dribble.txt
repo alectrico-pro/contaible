@@ -1,0 +1,665 @@
+archivo-tasas	/doc/tasas.txt
+archivo-valor-activos	/doc/valor-activos.txt
+archivo-proveedores	/doc/proveedores.txt
+archivo-trabajadores	/doc/trabajadores.txt
+archivo-remuneraciones	/doc/remuneraciones.txt
+archivo-afps	/doc/afps.txt
+archivo-afc	/doc/afc.txt
+archivo-salud	/doc/salud.txt
+archivo-impuestos	/doc/tramos-de-impuesto-unico.txt
+archivo-contratos	/doc/contratos.txt
+archivo-accionistas	/doc/accionistas.txt
+archivo-cuentas	/doc/cuentas.txt
+Pedido 1724 encontrado
+Insumo de Pedido 1724 encontrado en partida 189
+Insumo de Pedido 1724 encontrado en partida 166
+Insumo de Pedido 1724 encontrado en partida 149
+Insumo de Pedido 1724 encontrado en partida 146
+Insumo de Pedido 1724 encontrado en partida 132
+Compra de Pedido 1724 encontrado en partida 121
+Materiales de Pedido 1724 encontrado en partida 21
+Compra de Pedido 1724 encontrado en partida 16
+Insumo de Pedido 1724 encontrado en partida 95
+Insumo de Pedido 1724 encontrado en partida 96
+Insumo de Pedido 1724 encontrado en partida 97
+Insumo de Pedido 1724 encontrado en partida 101
+Insumo de Pedido 1724 encontrado en partida 102
+Insumo de Pedido 1724 encontrado en partida 120
+Revision general hallada en el archivo <empresa>-revisiones.txt
+Revisión 1 ahora no se incluirá.
+Revisión 1 ahora no se incluirá.
+Cambiando a modificar revisiones ............ 
+Terminando de  modificar revisiones ............ 
+----------------- PRIMITIVA ------------------
+n-->	marca-alectrico	1 de enero	asiento-inicial	deducible	false
+n-->	ppm	1 de enero	asiento-inicial	deducible	false
+n-->	iva-credito	1 de enero	asiento-inicial	deducible	false
+n-->	materiales	1 de enero	asiento-inicial	deducible	false
+n-->	banco-estado	1 de enero	asiento-inicial	deducible	false
+n-->	caja	1 de enero	asiento-inicial	deducible	false
+Se abrió el pedido 1724
+Partida 104 Rechazada
+Distribución Utilidad del Ejercicio Anterior 85294
+-->rv Rendición Mensual de Vouchers Afectos Válidos como Boleta Electrónica SII $146961
+-->rv Rendición Mensual de e-Boletas Electrónicas Afectas Emitidas en SII $35000
+================================================================
+--------------------- MENSUAL ------------------
+[ROUTER1] Logical name k was not recognized by any routers
+[ROUTER1] Logical name k was not recognized by any routers
+-------Resumen----------- MENSUAL ------------------
+--módulo----------------------- IVA ----------------------
+IVA-filas: enero	0	0	marca-alectrico
+IVA-filas: enero	0	0	iva-credito
+IVA-filas: enero	0	0	ppm
+IVA-filas: enero	0	0	materiales
+IVA-filas: enero	0	0	banco-estado
+IVA-filas: enero	0	0	caja
+febrero
+En determinar mes de ajuste de remanente de iva febrero	2021
+antes-en-utm214100
+El valor ajustado del remanente de iva  es: 10942
+El acarreo es de: 	0
+El acarreo fue actualizado a: 	10942
+--módulo----resumen------------ IVA ----------------------
+NOTA: El IVA-DEBITO no se acumula de un mes al siguiente.
+El haber del iva-debito se compensa con el saldo del iva-credito
+y si sobra algo, se paga por medio del f29.
+El IVA-CREDITO se acumula de un mes al siguiente
+y al compensarse con el haber del IVA-DEBITO, disminiurá.
+Cada mes puede aumentar si hubo compras.
+
+Resumen: enero
+Solo hay debito
+--módulo----fin ------------ IVA ----------------------
+--------------------- PAGAR ------------------
+--------------------- fin de PAGAR ------------------
+--módulo----------------------- VALOR-ACTIVOS ---------------------
+
+Ajuste de la última cuota
+--------------------------------------------------------
+plataforma-alectrico
+Valor de compra: $2644543
+Tiempo de Vida Util: 120 meses 
+Devaluación Mensual que se usa: $1000000
+cálculo de devaluacion mensual: $22037.8583333333
+Se debe restar: -117355457 de la última devaluación.
+La última devaluacion mensual debe ser por $-116355457
+--------------------------------------------------------
+
+=========================================
+plataforma-alectrico
+=========================================
+amortizacion-lineal-en-diez-anos de: plataforma-alectrico
+Metodo tributario es: amortizacion-instantanea-de-intangible
+Cuentas son: 
+Activo: plataforma-alectrico
+Pasivo: amortizacion-intangibles
+Acumuladora: amortizacion-acumulada-intangibles
+Fue adquirido en: enero de 2022 por $ 2644543
+Perderá todo su valor en: 120 meses 
+Mensualmente hay que amortizarlo en: $ 1000000
+=========================================
+
+Ajuste de la última cuota
+--------------------------------------------------------
+marca-alectrico
+Valor de compra: $290000
+Tiempo de Vida Util: 120 meses 
+Devaluación Mensual que se usa: $2417
+cálculo de devaluacion mensual: $2416.66666666667
+Se debe restar: -40 de la última devaluación.
+La última devaluacion mensual debe ser por $2377
+--------------------------------------------------------
+
+=========================================
+marca-alectrico
+=========================================
+amortizacion-lineal-en-diez-anos de: marca-alectrico
+Metodo tributario es: amortizacion-instantanea-de-intangible
+Cuentas son: 
+Activo: marca-alectrico
+Pasivo: amortizacion-intangibles
+Acumuladora: amortizacion-acumulada-intangibles
+Fue adquirido en: septiembre de 2021 por $ 290000
+Perderá todo su valor en: 120 meses 
+Mensualmente hay que amortizarlo en: $ 2417
+=========================================
+
+Ajuste de la última cuota
+--------------------------------------------------------
+celular
+Valor de compra: $67218
+Tiempo de Vida Util: 12 meses 
+Devaluación Mensual que se usa: $5602
+cálculo de devaluacion mensual: $5601.5
+Se debe restar: -6 de la última devaluación.
+La última devaluacion mensual debe ser por $5596
+--------------------------------------------------------
+
+=========================================
+celular
+=========================================
+depreciacion-lineal-en-un-año de: celular
+Metodo tributario es: depreciacion-instantanea-de-activo-fijo-con-1peso-DDAN
+Cuentas son: 
+Activo: herramientas
+Pasivo: depreciacion
+Acumuladora: depreciacion-acumulada-herramientas
+Fue adquirido en: julio de 2021 por $67218
+Perderá todo su valor en: 12 meses 
+Mensualmente hay que depreciarlo en: $5602
+=========================================
+
+Ajuste de la última cuota
+--------------------------------------------------------
+taladro
+Valor de compra: $151252
+Tiempo de Vida Util: 36 meses 
+Devaluación Mensual que se usa: $4202
+cálculo de devaluacion mensual: $4201.44444444444
+Se debe restar: -20 de la última devaluación.
+La última devaluacion mensual debe ser por $4182
+--------------------------------------------------------
+-->depreciacion-auto.-activo-fijo 	4202	enero
+
+=========================================
+taladro
+=========================================
+depreciacion-lineal-en-tres-años de: taladro
+Metodo tributario es: depreciacion-instantanea-de-activo-fijo-con-1peso-DDAN
+Cuentas son: 
+Activo: herramientas
+Pasivo: depreciacion
+Acumuladora: depreciacion-acumulada-herramientas
+Fue adquirido en: enero de 2021 por $151252
+Perderá todo su valor en: 36 meses 
+Mensualmente hay que depreciarlo en: $4202
+=========================================
+--módulo----fin ------------ VALOR-ACTIVOS ----------------------
+--------------------- ECUACION ------------------
+--módulo----------------------- T ----------------------
+
+
+
+caja
+---------------------------- recibida activo-fijo tipo-de-documento
+1	0	|	0	enero	false	false	escritura-empresa
+
+
+
+banco-estado
+---------------------------- recibida activo-fijo tipo-de-documento
+1	0	|	0	enero	false	false	escritura-empresa
+
+
+
+materiales
+---------------------------- recibida activo-fijo tipo-de-documento
+1	0	|	0	enero	false	false	escritura-empresa
+
+
+
+ppm
+---------------------------- recibida activo-fijo tipo-de-documento
+1	0	|	0	enero	false	false	escritura-empresa
+
+
+
+iva-credito
+---------------------------- recibida activo-fijo tipo-de-documento
+1	0	|	0	enero	false	false	escritura-empresa
+
+
+
+marca-alectrico
+---------------------------- recibida activo-fijo tipo-de-documento
+1	0	|	0	enero	false	false	escritura-empresa
+--módulo----resumen------------ T ----------------------
+--modulo--------------- RESULTADO SII------------------
+
+
+Solo se consideran las transacciones hasta el día 1	enero.
+Cifras en pesos.
+Se han practicado liquidaciones, por lo que NO se muestran cuentas nominales, ni subcuentas reales
+
+
+           RESULTADO SII año: 2021
+		SUMAS		|	SALDOS
+		DEBE	HABER	|	DEBER	ACREEDOR
+---------------------------------------------------------------------
+
+
+           B A L A N C E  DE COMPROBACION DE SUMAS Y SALDOS 
+		SUMAS		|	SALDOS
+		DEBE	HABER	|	DEBER	ACREEDOR
+-----------------------------------------------------------------------------------
+	.......................................................
+	0	0	|	0	0	activos=0
+-----------------------------------------------------------------------------------
+============================================================
+------------------------------- FINANCIERO -----------------
+============================================================
+============================================================
+-------- FIN ------------------ FINANCIERO -----------------
+============================================================
+--modulo-------------- RECUADRO------------------
+alectrico-2021
+================================================================================
+ESTADO DE RESULTADOS
+================================================================================
+|		|     0	Ventas
+|		| (-) -  		Rebajas sobre ventas
+|		| (-) 0		Devoluciones sobre ventas
+|		| (-) -  		Descuentos sobre ventas
+|		| (=) 0	Ventas Netas
+
+|		| (-) 0	Costos de Ventas
+
+|0				Compras
+| (+) 0				Gastos sobre Compras
+|0				Compras Totales
+| (-) - 				Rebajas sobre Compras
+| (-) - 				Devoluciones sobre Compras
+| (-) - 				Descuentos sobre Compras
+|0				Compras Netas
+
+| (+) 0	|		Inventario Inicial
+| (=) 0	|		Mercadería Disponible para la Venta 
+| (-) 0	|		Inventario Final 
+
+|		|     0	UTILIDAD BRUTA (Ventas Netas - Costo de Ventas)
+|		| (-) 0		Gastos de Operación (Gastos Admon + Gastos Vtas)
+|0				Gastos del Dpto Administración
+|0				Gastos del Dpto Ventas
+|		|     0	UTILIDAD DE OPERACION (U.Bruta - G.Op.)
+|		| (-) 			Otros Gastos
+|		|     0	UTILIDAD ANTES DE RESERVA (U.Op-Reserva Lega)
+|		| (-) 0	0.0 Reserva Legal (7% de Utilidad de Operacion)
+|		|     0	UTILIDAD ANTES DE IMPUESTO A LA RENTA (U.Antes.Reserva - idpc)
+|		| (-) 0	0.0 Impuesto a la Renta (25% de U.Antes.impuesto) (idpc 10% en 2020)
+|		|     0	0 UTILIDAD DEL EJERCICIO (U.Antes.idpc - idpc)
+================================================================================
+----------------------- AJUSTE ----------------------
+----fin------------------- AJUSTE ----------------------
+-------------------- INVENTARIO -----------------------------------------------------------
+  material             dia    u       cu      ct        u      cu      ct            descripcion
+...........................................................................................
+                             ..........entrada.........|...........salida.........
+------------------- PARTIDA --------------------
+------------------- inicio-kindle-l ------------
+------------------- fin-kindle-l ------------
+
+
+
+voucher-sii	132
+1--------------  R -revisado- Folio:  	tipo asiento-inicial
+ Legal.  
+RCV. n-a	CCM: true
+ Descripcion:  
+ A corregir:  
+==================================================================
+FECHA	Parcial	Debe	Haber	Descripcion
+==================================================================
+Partida 1
+..................................................................
+[ROUTER1] Logical name l was not recognized by any routers
+[ROUTER1] Logical name l was not recognized by any routers
+[ROUTER1] Logical name l was not recognized by any routers
+[ROUTER1] Logical name l was not recognized by any routers
+[ROUTER1] Logical name l was not recognized by any routers
+[ROUTER1] Logical name l was not recognized by any routers
+[ROUTER1] Logical name l was not recognized by any routers
+[ROUTER1] Logical name l was not recognized by any routers
+[ROUTER1] Logical name l was not recognized by any routers
+[ROUTER1] Logical name l was not recognized by any routers
+[ROUTER1] Logical name l was not recognized by any routers
+[ROUTER1] Logical name l was not recognized by any routers
+[ROUTER1] Logical name l was not recognized by any routers
+[ROUTER1] Logical name l was not recognized by any routers
+[ROUTER1] Logical name l was not recognized by any routers
+[ROUTER1] Logical name l was not recognized by any routers
+------------------------------------------------------------------
+		0	0	( 1 de enero	2021	 )
+==================================================================
+alectrico® SpA
+Partida 001: Por Inicio de Operaciones en 2021
+ajuste
+
+
+[ROUTER1] Logical name l was not recognized by any routers
+[ROUTER1] Logical name l was not recognized by any routers
+[ROUTER1] Logical name l was not recognized by any routers
+[ROUTER1] Logical name l was not recognized by any routers
+[ROUTER1] Logical name l was not recognized by any routers
+[ROUTER1] Logical name l was not recognized by any routers
+[ROUTER1] Logical name l was not recognized by any routers
+---------------------- LIQUIDACION --------------------
+ Inicio de Cuenta de Inventario Final ----------------------------
+Nombre	DEBE	HABER	partida
+		0	0
+ Fin de Cuenta de Inventario Final ----------------------------
+
+
+
+==================================================================
+FECHA	Parcial	Debe	Haber	Descripcion
+==================================================================
+Partida 187
+..................................................................
+
+
+
+==================================================================
+FECHA	Parcial	Debe	Haber	Descripcion
+==================================================================
+Partida 186
+..................................................................
+
+
+
+==================================================================
+FECHA	Parcial	Debe	Haber	Descripcion
+==================================================================
+Partida 185
+..................................................................
+
+
+
+==================================================================
+FECHA	Parcial	Debe	Haber	Descripcion
+==================================================================
+Partida 188
+..................................................................
+
+
+
+==================================================================
+FECHA	Parcial	Debe	Haber	Descripcion
+==================================================================
+Partida 182
+..................................................................
+
+
+
+==================================================================
+FECHA	Parcial	Debe	Haber	Descripcion
+==================================================================
+Partida 184
+..................................................................
+------------------------
+liquidaciones-realizadas
+---------------------------
+liquidaciones-no-realizadas
+182	inventario	false
+182	inventario-final	false
+188	desarrollo	false
+188	trabajos-realizados-para-el-inamovilizado-intangible	false
+188	gastos-en-investigacion-y-desarrollo	false
+188	reintegro-de-devolucion-sobre-ventas	false
+188	devolucion-sobre-gastos	false
+188	devolucion-sobre-ventas	false
+188	compras	false
+188	impuestos-no-recuperables	false
+188	gastos-promocionales	false
+188	gastos-administrativos	false
+188	gastos-ventas	false
+188	otros-ingresos	false
+188	otros-ingresos-financieros	false
+188	ingresos-concursos-publicos	false
+188	utilidad-por-venta-de-activos-fijos	false
+188	descuento-sobre-compra	false
+188	descuento-sobre-venta	false
+188	intereses-ganados-sobre-venta	false
+188	gastos-sobre-compras	false
+188	salarios	false
+188	amortizacion	false
+188	depreciacion	false
+188	costos-de-mercancias	false
+188	acciones	false
+188	costos-de-ventas	false
+188	impuesto-retenido	false
+188	correccion-monetaria	false
+188	ventas	false
+188	inventario-final	false
+187	desarrollo	false
+187	trabajos-realizados-para-el-inamovilizado-intangible	false
+187	gastos-en-investigacion-y-desarrollo	false
+187	reintegro-de-devolucion-sobre-ventas	false
+187	devolucion-sobre-gastos	false
+187	devolucion-sobre-ventas	false
+187	compras	false
+187	impuestos-no-recuperables	false
+187	gastos-promocionales	false
+187	gastos-administrativos	false
+187	gastos-ventas	false
+187	otros-ingresos	false
+187	otros-ingresos-financieros	false
+187	ingresos-concursos-publicos	false
+187	utilidad-por-venta-de-activos-fijos	false
+187	descuento-sobre-compra	false
+187	descuento-sobre-venta	false
+187	intereses-ganados-sobre-venta	false
+187	gastos-sobre-compras	false
+187	salarios	false
+187	amortizacion	false
+187	depreciacion	false
+187	costos-de-mercancias	false
+187	acciones	false
+187	costos-de-ventas	false
+187	impuesto-retenido	false
+187	correccion-monetaria	false
+187	ventas	false
+184	idpc	false
+184	reserva-legal	false
+184	utilidad	false
+---------------------------
+tributaciones-realizadas
+---------------------------
+tributaciones-no-realizadas
+182	inventario-final	false
+185	desarrollo	false
+185	trabajos-realizados-para-el-inamovilizado-intangible	false
+185	gastos-en-investigacion-y-desarrollo	false
+185	reintegro-de-devolucion-sobre-ventas	false
+185	devolucion-sobre-gastos	false
+185	devolucion-sobre-ventas	false
+185	compras	false
+185	impuestos-no-recuperables	false
+185	gastos-promocionales	false
+185	gastos-administrativos	false
+185	gastos-ventas	false
+185	otros-ingresos	false
+185	otros-ingresos-financieros	false
+185	ingresos-concursos-publicos	false
+185	utilidad-por-venta-de-activos-fijos	false
+185	descuento-sobre-compra	false
+185	descuento-sobre-venta	false
+185	intereses-ganados-sobre-venta	false
+185	gastos-sobre-compras	false
+185	salarios	false
+185	amortizacion	false
+185	depreciacion	false
+185	costos-de-mercancias	false
+185	acciones	false
+185	costos-de-ventas	false
+185	impuesto-retenido	false
+185	correccion-monetaria	false
+185	ventas	false
+186	desarrollo	false
+186	no-importa	false
+186	trabajos-realizados-para-el-inamovilizado-intangible	false
+186	gastos-en-investigacion-y-desarrollo	false
+186	reintegro-de-devolucion-sobre-ventas	false
+186	devolucion-sobre-gastos	false
+186	devolucion-sobre-ventas	false
+186	compras	false
+186	impuestos-no-recuperables	false
+186	gastos-promocionales	false
+186	gastos-administrativos	false
+186	gastos-ventas	false
+186	otros-ingresos	false
+186	otros-ingresos-financieros	false
+186	ingresos-concursos-publicos	false
+186	utilidad-por-venta-de-activos-fijos	false
+186	descuento-sobre-compra	false
+186	descuento-sobre-venta	false
+186	intereses-ganados-sobre-venta	false
+186	gastos-sobre-compras	false
+186	salarios	false
+186	amortizacion	false
+186	depreciacion	false
+186	costos-de-mercancias	false
+186	acciones	false
+186	costos-de-ventas	false
+186	impuesto-retenido	false
+186	correccion-monetaria	false
+186	ventas	false
+----------------- INVENTARIO FINAL ------------------
+--módulo----------------------- TA ----------------------
+
+
+
+reserva-legal
+------- creando subtotales para reserva-legal --------------------- 
+nil	0	|	0	patrimonio	false	real
+
+
+
+utilidad
+------- creando subtotales para utilidad --------------------- 
+nil	0	|	0	patrimonio	false	real
+
+
+
+utilidad-tributaria
+------- creando subtotales para utilidad-tributaria --------------------- 
+nil	0	|	0	tributario	false	nominativo
+
+
+
+utilidad
+------- creando subtotales para inventario --------------------- 
+nil	0	|	0	activo	true	real
+
+
+
+base-imponible
+------- creando subtotales para base-imponible --------------------- 
+182	0	|	0	liquidadora	false	nominativo
+nil	0	|	0	liquidadora	false	nominativo
+
+
+
+aumentos-de-capital-aportes
+------- creando subtotales para aumentos-de-capital-aportes --------------------- 
+nil	0	|	0	patrimonio	false	real
+
+
+
+perdidas-ejercicios-anteriores
+------- creando subtotales para perdidas-ejercicios-anteriores --------------------- 
+nil	0	|	0	patrimonio	false	real
+
+
+
+utilidad-del-ejercicio-anterior
+------- creando subtotales para utilidad-del-ejercicio-anterior --------------------- 
+nil	0	|	0	patrimonio	false	real
+
+
+
+utilidades-acumuladas
+------- creando subtotales para utilidades-acumuladas --------------------- 
+nil	0	|	0	patrimonio	false	real
+
+
+
+revalorizacion-del-capital-propio
+------- creando subtotales para revalorizacion-del-capital-propio --------------------- 
+nil	0	|	0	patrimonio	false	real
+
+
+
+capital-social
+------- creando subtotales para capital-social --------------------- 
+nil	0	|	0	patrimonio	false	real
+
+
+
+idpc
+------- creando subtotales para idpc --------------------- 
+nil	0	|	0	ganancias	true	real
+--fin----------------------- TA ----------------------
+ Suma de amortizacion: 0
+ Suma de depreciacion: 0
+alectrico-2021
+================================================================================
+CALCULO DE LA BASE IMPONIBLE PROPYME
+ Solo se consideran las transacciones hasta el día 1 de enero de 2021o. Cifras en pesos.
+================================================================================
+|		|     0	Ingresos Brutos Percibidos A.29-LIR
+|		|     0	Ventas
+|		| (-) -  		Rebajas sobre ventas
+|		| (-) 0		Devoluciones sobre ventas
+|		| (+) 0		Reintegros de Devoluciones sobre ventas
+|		| (-) -  		Descuentos sobre ventas
+|		| (=) 0	Ventas Netas
+
+|		| (-) 0	Costos de Ventas A.30-LIR
+
+|0				Compras
+| (+) 0				Gastos sobre Compras
+|0				Compras Totales
+| (-) - 				Rebajas sobre Compras
+| (-) - 				Devoluciones sobre Compras
+| (-) - 				Descuentos sobre Compras
+|0				Compras Netas
+
+| (+) 0	|		Inventario Inicial
+| (-) 0	|		Inventario 
+| (-) 0	|		Inventario Final 
+| (=) 0	|		Costos de Mercancías 
+| (-) 0	|		Insumos 
+
+|		|     0	UTILIDAD BRUTA (Ventas Netas - Costo de Ventas - Costos de Mercancías)
+|		| (-) 0	Gastos Operacionales (Gastos Admon + Gastos Vtas + I+D + Promocion + Amortiza + Depreciacion)
+|0				Gastos del Dpto Administración
+|0				Gastos del Dpto Ventas
+|0				Gastos en I+D
+|0				Gastos en Promocion
+|0				Salarios
+|0				Pérdida por Corrección Monetaria
+|0				 (-) Amortizacion Contable Intangibles
+|0				 (-) Depreciacion
+|		| (-) 0		Pérdida Ejercicio Anterior PEA A.33-LIR)
+|		|     0	UTILIDAD DE OPERACION (U.Bruta - G.Ded. - PEA)
+|		| (-) 	Otros Gastos
+|		|     0	UTILIDAD ANTES DE RESERVA (U.Op-Reserva Lega)
+|		| (-) 	0	 Reserva Legal
+|		| (=) 0	Resultado de Explotación 
+|		| (+) 0	Ganancia Por Corrección Monetaria
+|		| (-) 0	Impuestos No Recuperables
+|		| (=) 0	Resultado Fuera de Explotación 
+|		|     0	Resultado Antes de Impuesto
+|		| (-) 0	Impuesto Determinado, factor es 0.1 en 2021
+|		|     0	Utilidad Calc. Desp.Imp.
+---------------------------------------------------------------------------
+----------- DETERMINACIÓN DE LA BASE IMPONIBLE -----------------------------
+ Determina los impuestos del régimen propyme
+|		|     0	Utilidad (módulo liquidación)
+|		|     0	Margen fuera de Explotacion
+| (-) 	0				Depreciación Instantanea Propyme
+| (-) 	0				Amortizacion Instántanea Intangibles (no-contable) 
+|0				(+) Aportes Cap.
+|		| (=) 0	RLI Calculada sin considerar partidas rechazadas
+|		| (-) 0	Rechazados
+|		| (=) 0	RLI Calculada
+|		| (=) 0	RLI desp.Imptos (2) (m. liquidaciones)
+(1) debe ser igual que (2) 
+================================================================================
+----------------------- AJUSTEC----------------------
+----fin------------------- AJUSTEC----------------------
+--------módulo----------- TOTALC -----------------------
+-módulo-------------------------- FINAL -- SIN utilidad tributaria ------
+--módulo----------------------- SUBCUENTAS ---------------------
+-------------------- CCM -----------------------------------------------------------

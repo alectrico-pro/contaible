@@ -1,0 +1,14 @@
+
+(afc
+  (duracion indefinida)
+  (aporte-empleador 0.024 )
+  (aporte-trabajador 0.006 )
+  (comision 0.024)
+)
+
+(afc
+  (duracion definida)
+  (aporte-empleador 0.03)
+  (aporte-trabajador 0)
+  (comision 0.03 )
+)

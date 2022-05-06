@@ -1,0 +1,8 @@
+FROM jekyll/jekyll 
+COPY ./Makefile            ./
+COPY ./volumenes.txt       ./
+COPY ./libro-diario.html   ./
+COPY ./mobi-prueba.ncx.erb ./
+COPY ./dte*.xml            ./
+WORKDIR                    ./
+VOLUME /doc

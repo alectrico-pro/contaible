@@ -1,0 +1,115 @@
+#Esto genera un proyecto de Asiento Inicial, que consiste en una serie
+#de publicaciones en kindle relacionadas con un sistema en necios.cl
+#Primero se toman el código en clips
+#Se ejecuta con una imagen Docker clppspy
+#Este paso genera archivos markdown
+#Los cuales son llevados a html por jekyll
+#Usando la imagen jekyll
+#Se realiza una postprocesmiento con ruby
+#Que es muy parecido al postprocesamiento
+#que use para generar los libros 
+#de instrumentación industrial
+
+# syntax=docker/dockerfile:1
+FROM cupercupu/clipspy AS build
+
+#oputput from mobi.py
+RUN mkdir /templates
+RUN mkdir /doc
+RUN mkdir /doc/mobi
+RUN mkdir /doc/mobi/src
+RUN mkdir /doc/assets
+RUN mkdir /doc/mobi/script
+RUN mkdir /doc/necios-2021
+RUN mkdir /doc/alectrico-2021
+RUN mkdir /doc/_posts
+RUN mkdir /doc/_data
+
+
+#input to asiento_inicial.py
+COPY *.bat                    ./
+COPY *.clp                    ./
+
+COPY necios-2021-facts.txt              ./
+COPY necios-2021-revisiones.txt         ./
+COPY necios-2021-revisiones-cuentas.txt ./
+
+COPY alectrico-2021-facts.txt              ./
+COPY alectrico-2021-revisiones.txt         ./
+COPY alectrico-2021-revisiones-cuentas.txt ./
+
+
+
+COPY volumenes.txt                ./
+COPY version.txt                  ./
+COPY valor-activos.txt            ./
+COPY tasas.txt                    ./
+COPY contratos.txt                ./
+copy cuentas.txt                  ./
+copy proveedores.txt              ./
+COPY remuneraciones.txt           ./
+COPY trabajadores.txt             ./
+COPY f29-f22.txt                  ./
+COPY salud.txt                    ./
+COPY tipos_de_depreciaciones.txt  ./
+COPY accionistas.txt              ./
+COPY afc.txt                      ./
+COPY afps.txt                     ./
+COPY tramos-de-impuesto-unico.txt ./
+COPY actividades.txt              ./
+COPY 404.html                     ./
+COPY selecciones-mobi.txt         ./
+COPY mobi.py                      ./
+
+WORKDIR .
+
+RUN ./mobi.py
+
+FROM jekyll/jekyll 
+
+#Estos markdown no los genera clips, sino que
+#los escribo directamente
+COPY ./*.markdown            ./alectrico-2021/
+COPY ./*.markdown            ./
+COPY ./dte*.xml	             ./
+COPY ./script/dte_process.rb ./assets/
+COPY ./volumenes.txt         ./
+COPY ./version.txt           ./
+COPY ./assets/               ./assets/
+COPY ./Makefile              ./
+
+#estos resultan de asiento_inicial.py
+COPY --from=build ./doc/necios-2021/    ./necios-2021/
+COPY --from=build ./doc/alectrico-2021/ ./alectrico-2021/
+
+
+#En algún momento jekyll convertíra los *.markdown
+#a html y los enlazará de acuerdo
+#a los lugares donde espera encontrar los archivos
+#Ambiente del servidor
+#En necios-2021 se guardan los archivos que son referidos 
+#desde las paginas del servidor que pone en funcionamiento jekyll
+COPY ./_config.yml     ./
+COPY ./volumenes.txt   ./mobi/
+COPY ./version.txt     ./mobi/
+COPY ./assets/         ./assets/
+COPY ./assets/         ./mobi/assets/
+COPY ./css/            ./mobi/css/
+COPY ./dte*.xml        ./mobi/
+COPY ./*.opf.erb       ./mobi/
+COPY ./*.ncx.erb       ./mobi/
+COPY ./mobi.css        ./mobi
+COPY ./kindlegen       ./mobi
+COPY ./cover.jpg       ./mobi
+COPY ./nota/           ./nota/
+COPY ./nota/           ./necios-2021/
+COPY ./nota/           ./alectrico-2021/
+COPY ./script/         ./mobi/script/
+COPY ./Makefile        ./mobi
+
+
+WORKDIR ./
+
+
+#Recordar que doc es mapeado en as.sh al directorio real docs
+VOLUME /doc

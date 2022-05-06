@@ -1,0 +1,149 @@
+
+; nubox: sobre depreciación instantánea
+
+;    Inversión en bienes nuevos o usados.
+;    Considera para dichos fines un año de vida útil.
+;    Se podrá deducir como gasto del ejercicio en Renta Líquida Imponible (RLI).
+;    Se afecta al Impuesto de Primera Categoría en una cuota anual de depreciación.
+;   Opcional para las micro, pequeñas y medianas empresas.
+;https://www.sii.cl/pagina/valores/bienes/tabla_vida_enero.htm
+;19) Herramientas livianas.     3años depreación normal 1 años acelerada
+
+;https://www.circuloverde.cl/instrucciones-del-sii-sobre-la-aplicacion-de-depreciacion-instantanea/
+;En nuestra opinión, hay una confusión ya que lo que se permite es llevar a gasto en el momento del pago de la compra de un bien del activo inmovilizado depreciable. Por ello, ambos sistemas Pymes, de la letra D), consideran como gasto el valor de la compra en el momento del pago de ésta, sin importar el concepto de «depreciación» que sigue estando asociada al momento de inicio de la utilización del bien.
+;c) La Pyme depreciará sus activos físicos del activo inmovilizado de manera instantánea e íntegra en el mismo ejercicio comercial en que sean adquiridos o fabricados.
+
+;Para efectos de lo anterior, los activos físicos del activo inmovilizado deben encontrarse pagados, por cuanto, en el régimen Pro Pyme la determinación de la base imponible se basa en flujos de caja, de acuerdo a la letra (f) del N° 3 y el N° (iv) de la letra (a) del N° 8, ambos de la letra D) del artículo 14.»
+;parece que tendré que hacer un nuevo método para la determinación de la base imponible
+;eso parece estar relacionado con la determinación de la renta líquida imponible ?
+
+
+;Pr ello, para nosotros es un contrasentido hablar de depreciación y menos instantánea, ya que al asociar el requisito al pago de la compra, cambia absolutamente ese concepto y se debe asociar al «gasto aceptado», dado que no tiene ninguna relación con el uso del bien en la empresa, es decir, basta la compra (factura), para dar aceptación al gasto a partir del momento del pago, considerando que es un activo fijo depreciable y sólo por esas condiciones se acepta el valor como gasto (para control se dejará dicho activo a valor de $1, en el registro tributario).
+
+; Artículo vigésimo segundo transitorio bis.- Los contribuyentes que declaren el impuesto de primera categoría sobre renta efectiva determinada según contabilidad completa, conforme a la Ley sobre Impuesto a la Renta, contenida en el artículo 1° del decreto ley N° 824, de 1974, que adquieran bienes físicos del activo inmovilizado nuevos o importados en el periodo comprendido entre el 1 de junio de 2020 y el 31 de diciembre de 2022, podrán depreciar dichos bienes de manera instantánea e íntegra, en el mismo ejercicio comercial en que sean adquiridos, los que quedarán valorados en un peso.
+;En todo caso, cuando se aplique el régimen de depreciación indicado en este artículo, para los efectos de lo dispuesto en la letra A) del artículo 14 de la Ley sobre Impuesto a la Renta, sólo se considerará la depreciación normal que corresponde al total de los años de vida útil del bien. La diferencia que resulte en el ejercicio respectivo entre la depreciación que regula este artículo y la depreciación normal sólo podrá deducirse como gasto para los efectos del impuesto de primera categoría, debiendo anotarse dicha diferencia en el registro DDAN que contempla el artículo 14 de la Ley sobre Impuesto a la Renta.”
+
+
+;Usaré la deprecación en 3 años, porque debo usar la depreciación normal, con lo que el activo seguirá existiendo contablemente por varios períodos, pero para efectos de tribuación, se habrá extinguido convertido en gasto desde el momento de la compra y representado por un valor de 1$ desde ahí en adelante. Debe estar en el registro DDAN, la diferencia entre la depreciación normal y la instantánea. Pero propyme no lo usa, pues se deprecia instantáneamente.
+;cuota mensual es de 179990/(3*12) = 4999
+
+
+
+( registro-de-depreciacion
+  (metodo-tributario    depreciacion-instantanea-de-activo-fijo-con-1peso-DDAN)
+  (metodo               depreciacion-lineal-en-tres-años )
+  (nombre-del-activo    taladro       )
+  (cuenta-acumuladora   depreciacion-acumulada-herramientas)
+  (cuenta-del-pasivo    depreciacion  )
+  (cuenta-del-activo    herramientas  )
+  (dia-de-adquisicion   14            )
+  (mes-de-adquisicion   enero         )
+  (ano-de-adquisicion   2021          )
+  (meses-de-vida-util   36            )
+  (mes-final            enero         )
+  (ano-final            2023          )
+  (valor-de-adquisicion 151252        )
+  (depreciacion-mensual 4202          ) ;aproximar por exceso pera que la ultima cuota sea menor
+)
+
+;a un peso luego de la depreciación al año.
+( registro-de-depreciacion
+  (metodo-tributario    depreciacion-instantanea-de-activo-fijo-con-1peso-DDAN)
+  (metodo               depreciacion-lineal-en-un-año )
+  (nombre-del-activo    celular      )
+  (cuenta-acumuladora   depreciacion-acumulada-herramientas)
+  (cuenta-del-pasivo    depreciacion )
+  (cuenta-del-activo    herramientas )
+  (dia-de-adquisicion   21           )
+  (mes-de-adquisicion   julio        )
+  (ano-de-adquisicion   2021         )
+  (mes-final            julio        )
+  (ano-final            2022         )
+  (meses-de-vida-util   12           )
+  (valor-de-adquisicion 67218        )
+  (depreciacion-mensual 5602         ) ; aproximar por exceso para que la última cuota sea menor
+)
+
+;marca alectrico se amortiza en diez años
+;evaluada por su costo
+( registro-de-amortizacion
+  ( metodo-tributario    amortizacion-instantanea-de-intangible)
+  ( metodo               amortizacion-lineal-en-diez-anos)
+  ( nombre-del-activo    marca-alectrico)
+  ( cuenta-del-activo    marca-alectrico)
+  ( cuenta-acumuladora   amortizacion-acumulada-intangibles)
+  ( cuenta-del-pasivo    amortizacion-intangibles)
+  ( dia-de-adquisicion   12       )
+  ( mes-de-adquisicion   septiembre )
+  ( ano-de-adquisicion   2021     )
+  ( mes-final            diciembre)
+  ( ano-final            2031     )
+  ( valor-de-adquisicion 290000   )
+  ( meses-de-vida-util   120      )
+  ( amortizacion-mensual 2417     )  ;aproximar por exceso para que la última cuota sea menor
+)
+
+;plataforma alectrico no se amortiza, a menos que se venda una licencia
+;requiere evaluacioń de deterioro
+;
+( registro-de-amortizacion
+  ( metodo-tributario    amortizacion-instantanea-de-intangible)
+  ( metodo               amortizacion-lineal-en-diez-anos)
+  ( nombre-del-activo    plataforma-alectrico)
+  ( cuenta-del-activo    plataforma-alectrico)
+  ( cuenta-acumuladora   amortizacion-acumulada-intangibles)
+  ( cuenta-del-pasivo    amortizacion-intangibles)
+  ( dia-de-adquisicion   1        )
+  ( mes-de-adquisicion   enero    )
+  ( ano-de-adquisicion   2022     )
+  ( mes-final            enero    )
+  ( ano-final            2032     )
+  ( valor-de-adquisicion 2644543  )
+  ( meses-de-vida-util   120      )
+  ( amortizacion-mensual 1000000  )  ;aproximar por exceso para que la última cuota sea menor
+)
+
+;compra por 1000000 de una licencia contaible
+;se amoriza en diez años
+;se compra para elaborar un portal para servicios contables
+;
+;( registro-de-amortizacion
+;  ( metodo-tributario    amortizacion-instantanea-de-intangible)
+;  ( metodo               amortizacion-lineal-en-diez-anos)
+;  ( nombre-del-activo    licencia-contaible)
+;  ( cuenta-del-activo    licencia-contaible)
+;  ( cuenta-acumuladora   amortizacion-acumulada-intangibles)
+;  ( cuenta-del-pasivo    amortizacion-intangibles)
+;  ( mes-de-adquisicion   enero)
+;  ( ano-de-adquisicion   2022     )
+;  ( mes-final            diciembre)
+;  ( ano-final            2022     )
+;  ( valor-de-adquisicion 900000)
+;  ( meses-de-vida-util   10      )
+;  ( amortizacion-mensual 90000  )  ;aproximar por exceso para que la última cuota sea menor
+;) 
+
+
+;la plataforma alectrico es un gasto diferido que no es amortizable y no es un activo intangible, pues no puede estar separado
+
+;
+;( registro-de-amortizacion
+;  ( metodo-tributario    amortizacion-instantanea-de-intangible)
+;  ( metodo               amortizacion-lineal-en-diez-anos)
+;  ( nombre-del-activo    derecho-de-goce-de-inmueble-comercial)
+;  ( cuenta-del-activo    oficina)
+;  ( cuenta-acumuladora   amortizacion-acumulada-intangibles)
+;  ( cuenta-del-pasivo    amortizacion-intangibles)
+;  ( mes-de-adquisicion   enero)
+;  ( ano-de-adquisicion   2022     )
+;  ( mes-final            diciembre)
+;  ( ano-final            2022     )
+;  ( valor-de-adquisicion 900000)
+;  ( meses-de-vida-util   10      )
+;  ( amortizacion-mensual 90000  )  ;aproximar por exceso para que la última cuota sea menor
+;)
+
+
+
+
+

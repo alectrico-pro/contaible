@@ -39,20 +39,19 @@
      <% if ( line =~  /asin\W(\w*)/ ) %>
        <% asin    = $1 %>
     <%  end %><% end %>
-
+          <% counter += 1 %>
+          <navPoint class="section" id="<%= section %>" playOrder="<%= counter %>">
+            <navLabel>
+              <text>Volumen</text>
+            </navLabel>
+            <content src="volumen.html#Inicio"/>
+          </navPoint>
           <% counter += 1 %>
           <navPoint class="section" id="<%= section %>" playOrder="<%= counter %>">
             <navLabel>
               <text>Introduccion</text>
             </navLabel>
             <content src="introduccion.html#Inicio"/>
-          </navPoint>
-	  <% counter += 1 %>
-          <navPoint class="section" id="<%= section %>" playOrder="<%= counter %>">
-            <navLabel>
-              <text>Volumen</text>
-            </navLabel>
-            <content src="volumen.html#Inicio"/>
           </navPoint>
          <% counter += 1 %>
           <navPoint class="section" id="<%= section %>" playOrder="<%= counter %>">

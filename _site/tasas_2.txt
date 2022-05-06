@@ -1,0 +1,51 @@
+;El ipc los dos primeros años fue de 0.1 por oferta a propyme
+;En el 2022 suponemos que sea 16%
+; confirmar en https://www.sii.cl/valores_y_fechas/reajuste_declaracion_renta.html
+
+( tasas (utm 50.221 ) (ppm 0.01) (idpc 0.10) (ano 2020)    (honorarios 0.1075) (mes abril))
+( tasas (utm 50.372 ) (ppm 0.01) (idpc 0.10) (ano 2020)    (honorarios 0.1075) (mes mayo))
+( tasas (utm 50.372 ) (ppm 0.01) (idpc 0.10) (ano 2020)    (honorarios 0.1075) (mes junio))
+( tasas (utm 50.322 ) (ppm 0.0025) (idpc 0.10) (ano 2020)  (honorarios 0.1075) (mes julio))
+( tasas (utm 50.272 ) (ppm 0.0025) (idpc 0.10) (ano 2020)  (honorarios 0.1075) (mes agosto))
+( tasas (utm 50.322 ) (ppm 0.0025) (idpc 0.10) (ano 2020)  (honorarios 0.10751) (mes septiembre))
+( tasas (utm 50.372 ) (ppm 0.0025) (idpc 0.10) (ano 2020)  (honorarios 0.1075) (mes octubre))
+( tasas (utm 50.674 ) (ppm 0.0025) (idpc 0.10) (ano 2020)  (honorarios 0.1075) (mes noviembre))
+( tasas (utm 51.029 ) (ppm 0.0025) (idpc 0.10) (ano 2020)  (honorarios 0.1075) (mes diciembre))
+
+( tasas (utm 50.978 ) (ppm 0.0013) (idpc 0.10) (ano 2021)  (honorarios 0.1150) (mes enero))
+( tasas (utm 51.131 ) (ppm 0.0013) (idpc 0.10) (ano 2021)  (honorarios 0.1150) (mes febrero))
+
+( tasas (utm 51.489 ) (ppm 0.0013) (idpc 0.10) (ano 2021)  (honorarios 0.1150) (mes marzo))
+
+( tasas (utm 51.592 ) (ppm 0.00125) (idpc 0.10) (ano 2021) (honorarios 0.1150) (mes abril))
+( tasas (utm 51.798 ) (ppm 0.0013) (idpc 0.10) (ano 2021)  (honorarios 0.1150) (mes mayo))
+( tasas (utm 52.005 ) (ppm 0.0013) (idpc 0.10) (ano 2021)  (honorarios 0.1150) (mes junio))
+( tasas (utm 52.161 ) (ppm 0.00125) (idpc 0.10) (ano 2021)  (honorarios 0.1150) (mes julio))
+( tasas (utm 52.213 ) (ppm 0.00125) (idpc 0.10) (ano 2021)  (honorarios 0.1150) (mes agosto))
+( tasas (utm 52.631 ) (ppm 0.00125) (idpc 0.10) (ano 2021)  (honorarios 0.1150) (mes septiembre))
+( tasas (utm 52.842 ) (ppm 0.00125) (idpc 0.10) (ano 2021)  (honorarios 0.1150) (mes octubre))
+( tasas (utm 53.476 ) (ppm 0.00125) (idpc 0.10) (ano 2021)  (honorarios 0.1150) (mes noviembre))
+( tasas (utm 54.171 ) (ppm 0.00125) (idpc 0.10) (ano 2021)  (honorarios 0.1150) (mes diciembre))
+( tasas (utm 54.442 ) (ppm 0.00125) (idpc 0.10) (ano 2022)  (honorarios 0.1150) (mes enero))
+( tasas (utm 54.878 ) (ppm 0.00125) (idpc 0.10) (ano 2022)  (honorarios 0.1225) (mes febrero))
+;..........  hacia abajo son suposiciones para pruebas ----------
+
+( correccion-monetaria-anual ( mes enero )     (ano 2021) (factor 1.063  ))
+( correccion-monetaria-anual ( mes febrero )   (ano 2021) (factor 1.056  ))
+( correccion-monetaria-anual ( mes marzo )     (ano 2021) (factor 1.054  ))
+( correccion-monetaria-anual ( mes abril )     (ano 2021) (factor 1.050  ))
+( correccion-monetaria-anual ( mes mayo )      (ano 2021) (factor 1.046  ))
+( correccion-monetaria-anual ( mes junio )     (ano 2021) (factor 1.043  ))
+( correccion-monetaria-anual ( mes julio )     (ano 2021) (factor 1.043  ))
+( correccion-monetaria-anual ( mes agosto )    (ano 2021) (factor 1.034  ))
+( correccion-monetaria-anual ( mes septiembre) (ano 2021) (factor 1.031  ))
+( correccion-monetaria-anual ( mes octubre )   (ano 2021) (factor 1.018  ))
+( correccion-monetaria-anual ( mes noviembre ) (ano 2021) (factor 1.005  ))
+( correccion-monetaria-anual ( mes diciembre ) (ano 2021) (factor 1.000  ))
+
+;tope imponible afce es 122,6 UF durante el 2022
+( tasas (utm 54.878 ) (ppm 0.00125) (idpc 0.10) (ano 2022)  (honorarios 0.1225) (mes marzo))
+( tasas (utm 54.878 ) (ppm 0.00125) (idpc 0.10) (ano 2022)  (honorarios 0.1225) (mes abril))
+
+
+
