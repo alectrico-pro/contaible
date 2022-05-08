@@ -1,6 +1,5 @@
 
 (deftemplate version
-  (slot titulo)
   (slot id)
   (slot version)
   (slot asin)
@@ -9,7 +8,6 @@
 )
 
 (deftemplate volumen
-
   (slot cubierta) 
   (slot autor)
   (slot id)

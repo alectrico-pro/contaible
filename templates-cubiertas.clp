@@ -1,0 +1,20 @@
+(deftemplate volumen
+  (slot cubierta)
+  (slot autor)
+  (slot id)
+  (slot isbn)
+  (slot asin)
+  (slot precio)
+  (slot dimensiones)
+  (slot formato)
+  (slot titulo)
+  (slot paginas)
+  (slot subtitulo)
+  (slot contenido)
+  (slot serie)
+  (slot orden)
+  (multislot partidas-no-incluidas)
+  (multislot capitulos)
+)
+
+

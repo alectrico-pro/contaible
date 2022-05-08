@@ -190,9 +190,14 @@ cover%.jpg: cover%.png-while
 	x=$$(( $$x + 10 ))  ; \
         done
 
+#titula todas las cubiertas que estén en volumenes.txt
+titular-cubiertas: 
+	docker run -e PUID=1000 -e PGID=10 -v $(shell pwd)/:/doc cupercupu/clipspy /doc/titular-cubiertas.py
+
+
 #pone título TITULO a la imagen en ARCHIVO
 tit:  
-	convert -background '#0008' -fill white -gravity West -size 2610x500 \
+	onvert -background '#0008' -fill white -gravity  center -size 2510x510 \
         caption:" ${TITULO} " \
         ${ARCHIVO}.png +swap -gravity south -composite ${ARCHIVO}.jpg ; \
 
