@@ -1,0 +1,19 @@
+FROM cupercupu/clipspy AS build
+
+COPY titular-cubiertas.bat              ./
+COPY titular-cubiertas.py               ./
+COPY titular_cubiertas_rules.clp        ./
+COPY templates-cubiertas.clp            ./
+COPY volumenes.txt                      ./
+
+WORKDIR .
+
+RUN ./titular-cubiertas.py
+
+RUN chown 1000:1000 ./make-titular-cubiertas.sh
+RUN chmod +x ./make-titular-cubiertas.sh
+RUN cp *.sh /home
+
+VOLUME ./home
+
+

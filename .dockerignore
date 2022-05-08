@@ -37,3 +37,7 @@
 !/dte*.xml
 !/script/
 !/volumenes.txt
+!/templates-cubiertas.clp
+!/titular-cubiertas.*
+!/titular_cubiertas_rules.clp
+!/make-titular-cubiertas.sh

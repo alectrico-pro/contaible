@@ -6,7 +6,7 @@
 
 (defrule inicio-titular-cubiertas
  =>
-  ( load-facts "/doc/volumenes.txt")
+  ( load-facts "volumenes.txt")
 )
 
 (defrule titular-cubiertas
@@ -14,6 +14,9 @@
   (test (neq nil ?cubierta))
  =>
   (printout t " Procesando " ?cubierta " con título " ?titulo crlf)
-  (system (str-cat " make tit  ARCHIVO=" ?cubierta ".jpg"  " TITULO=" ?titulo ) )
+  ( bind ?archivo (str-cat "make-titular-cubiertas.sh"))
+  ( open ?archivo k "w")
+  ( printout k (str-cat " make tit  ARCHIVO=" ?cubierta  " TITULO=" ?titulo ) crlf )
+  ( close k)
 )
 

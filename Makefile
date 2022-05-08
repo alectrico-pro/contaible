@@ -190,19 +190,29 @@ cover%.jpg: cover%.png-while
 	x=$$(( $$x + 10 ))  ; \
         done
 
+
+cubiertas:
+	make b2b
+	make bo
+	cd alectrico-2021
+	make titular-cubiertas
+	
 #titula todas las cubiertas que estén en volumenes.txt
 titular-cubiertas: 
-	docker run -e PUID=1000 -e PGID=10 -v $(shell pwd)/:/doc cupercupu/clipspy /doc/titular-cubiertas.py
+	docker build . -t titulacion -f DockerfileTitularCubiertas
+	docker run -e PUID=1000 -e PGID=1000 -v $(shell pwd)/:/home titulacion cp make-titular-cubiertas.sh /home
+	./make-titular-cubiertas.sh
+	cp cover*.jpg alectrico-2021
 
 
 #pone título TITULO a la imagen en ARCHIVO
 tit:  
-	onvert -background '#0008' -fill white -gravity  center -size 2510x510 \
+	convert -background '#0008' -fill white -gravity  center -size 2510x510 \
         caption:" ${TITULO} " \
-        ${ARCHIVO}.png +swap -gravity south -composite ${ARCHIVO}.jpg ; \
+        ${ARCHIVO}.jpg +swap -gravity south -composite ${ARCHIVO}.jpg ; \
 
 
-b2b:    
+b2b:    cover-back-to-business.png
 	make cover-back-to-business.jpg
 
 
@@ -210,17 +220,52 @@ bo:
 	rm cover-b2b*.jpg ; \
 	numeracion=1 ; \
 	for archivo in cover-back-to-business.png.*.*.* ;  do \
-          echo "Elaborando cubierta $$numeracion" para archivo $$archivo ; \
-          convert "$$archivo" "cover-b2b-$$numeracion.jpg" ; \
+          echo "Ordenando cubierta $$numeracion para archivo $$archivo" ; \
+	  mv "$$archivo" cover.png ; \
+	  convert cover.png "cover-b2b-$$numeracion.jpg" ; \
           convert -background '#0008' -fill white -gravity  center -size 2310x510 \
           caption:" $$numeracion " \
-          "cover-b2b-$$numeracion.jpg.tmp" +swap -gravity center -composite "cover-b2b-$$numeracion.png" ; \
+          "cover-b2b-$$numeracion.jpg" +swap -gravity center -composite "cover-b2b-$$numeracion.png" ; \
           numeracion=$$(( $$numeracion + 1 )) ; \
 	done; \
-	rm cover-back-to-business.png.*.*.* \
+	#rm cover-back-to-business.png.*.*.* \
 	
 
-#agregando baterias-apiladas-a-serie-de-cubiertas
+#Genera todas las cubiertas a partir de un patrón inicial
+#Dado en un archivo de nombre
+#cover*.png
+#No entender que se generará un archivo cover*.jpg
+#Si que se generarán muchos archivos con diferntes filas y columas
+#De baterías y números indicando el orden que podría llegar a tener
+#un ebook que tuviese una de estas cubertas generadas así.
+#Los nombre que tendrán los archivos generados siempre serán
+#cover-bap-#.png.x.y.bateria. Donde x es la posicion horizontal
+#y la verticasl y batería indica el estado de la batería.
+# make cover-back-to-business.jpg
+#generar entonces cover-back-to-business.png.1.1030.cargado
+#y  todas las variantes que se consideren en los ciclos for
+#y 3004 3104 3204 3304 
+#x  1 a 2000 ] pero está afectada por una sepración de 450 y de 500
+#puede llamar a b2b colocando una cubierta de nombre cover-back-to-busines.png
+#luego de usar este item, pueden llamar a mke bo para obtner una orden
+#aquí se perderán las imagnes cover-back-to-business.png.x.y.bateria y
+#y las nuevas cubiertas serán denominadas por un número de orden
+#cover cover-b2b-?.jpg, esto se puede genarilzar más adelante
+#para que el nombre base sea el mismo en make bo:
+#El resultado de la ejecución de esos dos programas
+#Es la creación de una base de cubiertas listas e indexadas por un entero
+#que debiese corresponder a un ebook cuyo número de orden en la seria kindle
+#corresponda a ese entero
+#durante las llamadas a make mobi para hacer un solo ebook
+#se puede tomar una de las cubiertas y solo una para agregarle el título
+#del ebook
+#para genera el título se usa make tit
+#pero debe ser llamado desde titular cubiertas
+#el que genera los make para cada cubierta que se debe titular
+#de acuerdo a la lista de ebooks en volumenes.txt
+#make titular-cubiertas intenta usar las cubiertas inscritas
+#en volumenest.txt. Así que el bando de cubiertas debe tenerlas
+#llamar a make cubiertas para que haga todo 
 cover%.jpg: cover%.png
 	if \
 	rm cover*.png.*.*.* ; \
@@ -233,7 +278,7 @@ cover%.jpg: cover%.png
         carrito=carrito.png ; \
 	descargado=consumo_de_creditos.png ; \
 	numeracion=0 ; \
-        for y in 3004 3104 3204 3304 ; do \
+        for y in 3004  ; do \
           x=1; \
 	  xlabel=10001 ; \
           composite -geometry "+100+100" "$$orden" $^ "$^.$$y.$$xlabel.cargado" ; \
@@ -247,7 +292,7 @@ cover%.jpg: cover%.png
 	    x=50 ; \
 	    bateria=compra_de_creditos.png ; \
             composite -geometry "+$$x+$$y" "$$bateria" "$^.$$y.$$xlabel.cargado" "$^.$$y.$$xlabel.cargado"  ; \
-            while [ $$x -le 2000 ] ; do \
+            while [ $$x -le 1000 ] ; do \
               a=$$xlabel ; \
 	      x=$$(( $$x + $$separacion ))  ; \
 	      xlabel=$$(( 10000 + $$x )) ; \
@@ -266,7 +311,7 @@ cover%.jpg: cover%.png
 #ocupa dte_rules.clp
 dte:    *.xml.bak cover-b2b-*.jpg
 	cp cover-b2b*.jpg alectrico-2021
-	make build-dte TITULO='MIERDA' VERSION=financiero ASIN=B09XQZ6B9P MES=enero EMPRESA=alectrico-2021 DIA=1
+	make build-dte VERSION=financiero ASIN=B09XQZ6B9P MES=enero EMPRESA=alectrico-2021 DIA=1
 
 pandoc:
 	docker run --rm --volume "`pwd`:/data" --user `id -u`:`id -g` pandoc/latex --pdf-engine=xelatex introduccion.markdown -o introduccion.pdf

@@ -195,7 +195,7 @@
 
 (volumen
  (autor "Alexander Espinosa")
- (asin B09Z7Y5HZF) (cubierta "cover-1-Back-to-Business.jpg")
+ (asin B09Z7Y5HZF) (cubierta "cover-b2b-1.jpg")
  (precio 4)
  (id 2)
  (orden 2)
