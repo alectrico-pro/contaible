@@ -5,7 +5,7 @@ layout: page
 <h2> Contaible </h2>
 <h2> Back to Business </h2>
 ![](../revisado.png)
-![](./cover-back-to-business.jpg)
+![](./cover-b2b-1.jpg)
 <h3> Luca Paccioli </h3> 
 alectrico ® ha realizado la publicación de este volumen con las siguientes características.
 <ul>
@@ -20,5 +20,5 @@ alectrico ® ha realizado la publicación de este volumen con las siguientes car
 <li><span style='background-color: gold'>[    ]</span> empresa: alectrico-2021 </li>
 <li><span style='color: white; background-color: black'>[    ]</span> titulo: Contaible </li>
 <li><span style='background-color: blanchedalmond'>[    ]</span> subtitulo: Back to Business </li>
-<li><span style='background-color: blanchedalmond'>[    ]</span> subtitulo: cover-back-to-business </li>
+<li><span style='background-color: blanchedalmond'>[    ]</span> subtitulo: cover-b2b-1 </li>
 </ul>

@@ -181,18 +181,13 @@
 ;Kindles de la serie Contaible
 (volumen
  (autor "Luca Paccioli")
-;el campo cubierta debe ir a continuaicon del campo asin
-;el nombre de la cubierta no debe tener separadores ni extension jpg
-;todo eso es para facilitar la composicion de
-;book*.opf.erb el que usa =~ en cada linea del archivo 
-;con ruby de lenguaje invocado
- (asin B09XQZ6B9P)  (cubierta cover-back-to-business)
+ (asin B09XQZ6B9P)  (cubierta cover-b2b-1)
+ (titulo "Contaible")
  (precio 49.39)
  (id 1)
  (orden 1)
  (serie Contaible)
  (formato kindle)
- (titulo "Contaible")
  (subtitulo "Back to Business" )
  (contenido "Solo Día 1. Sin partida. Introducción a Contaible.")
  (partidas-no-incluidas 1)

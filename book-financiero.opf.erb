@@ -99,10 +99,11 @@
     <% counter = 0 %>   <% section = 0 %>
     <% asin = '' %>
     <% File.open("#{version}", "r:ISO-8859-1:UTF-8" ).each do |line| %>
-     <% if ( line =~  /asin\W(\w*)/ ) %>
-       <% asin    = $1 %>
-       <% counter += 1 %>
-    <%  end %><% end %>
+
+      <% if ( line =~  /asin\W(\w*)/ ) %>
+         <% asin = $1 %>
+      <%  end %>
+   <% end %>
 
     <item id="volumen" media-type="application/xhtml+xml" href="volumen.html"></item>
     <item id="introduccion" media-type="application/xhtml+xml" href="introduccion.html"></item>
@@ -114,7 +115,7 @@
         <% if (num == asin) %>
            <item id="<%=asin%>" media-type="application/xhtml+xml" href="<%=asin%>.html"></item>
 	   <% if (line =~ /cubierta (.*)\)/ )  %>
-              <item id="My_Cover" media-type="image/jpg" href="<%=$1%>.jpg"/>
+               <item id="My_Cover" media-type="image/jpg" href="<%=$1%>.jpg"/>
            <% end %>
         <% end %>
       <%  end %>

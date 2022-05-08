@@ -119,8 +119,9 @@ nx:     mobi-prueba.ncx
 
 
 #Inicialmente era para probar dtes, pero terminó sindo una alternativa rápida a make mobi
-build-dte:  *.xml.bak
+build-dte:  *.xml.bak 
 	make reset
+	echo '(version (id 2) (version $(VERSION)) (asin $(ASIN)) (mes $(MES)) (dia $(DIA)))' > version.txt
 	if rm dte/server/*.html; then echo .; fi
 	docker run -e PUID=1000 -e PGID=10 -v $(shell pwd)/:/doc cupercupu/clipspy /doc/dte.py
 	if docker rm dte-server -fv; then echo .; fi
@@ -189,8 +190,16 @@ cover%.jpg: cover%.png-while
 	x=$$(( $$x + 10 ))  ; \
         done
 
+#pone título TITULO a la imagen en ARCHIVO
+tit:  
+	convert -background '#0008' -fill white -gravity West -size 2610x500 \
+        caption:" ${TITULO} " \
+        ${ARCHIVO}.png +swap -gravity south -composite ${ARCHIVO}.jpg ; \
+
+
 b2b:    
 	make cover-back-to-business.jpg
+
 
 bo:     
 	rm cover-b2b*.jpg ; \
@@ -199,15 +208,14 @@ bo:
           echo "Elaborando cubierta $$numeracion" para archivo $$archivo ; \
           convert "$$archivo" "cover-b2b-$$numeracion.jpg" ; \
           convert -background '#0008' -fill white -gravity  center -size 2310x510 \
-          caption:" $$numeracion $$archivo " \
-          "cover-b2b-$$numeracion.jpg" +swap -gravity NorthEast -composite "cover-b2b-$$numeracion.jpg" ; \
+          caption:" $$numeracion " \
+          "cover-b2b-$$numeracion.jpg.tmp" +swap -gravity center -composite "cover-b2b-$$numeracion.png" ; \
           numeracion=$$(( $$numeracion + 1 )) ; \
 	done; \
-	cover-back-to-business.png.*.*.* \
-	  
+	rm cover-back-to-business.png.*.*.* \
+	
 
-#agregando baterias-con-while-apiladas
-#for y in 3004 3104 3204 3304 ; do 
+#agregando baterias-apiladas-a-serie-de-cubiertas
 cover%.jpg: cover%.png
 	if \
 	rm cover*.png.*.*.* ; \
@@ -229,15 +237,12 @@ cover%.jpg: cover%.png
           convert -background '#0008' -fill white -gravity center -size 2810x120 \
           caption:"  Contiene ejercicio contable año 2021 de alectrico ®  " \
           "$^.$$y.$$xlabel.cargado" +swap -gravity south -composite "$^.$$y.$$xlabel.cargado"; \
-          convert -background '#0008' -fill white -gravity West -size 2810x750 \
-          caption:" Contabilidad de Necios" \
-          "$^.$$y.$$xlabel.cargado" +swap -gravity south -composite "$^.$$y.$$xlabel.cargado"; \
 	  for separacion in 450 500 ; do \
             xlabel=10001 ; \
-	    x=1 ; \
+	    x=50 ; \
 	    bateria=compra_de_creditos.png ; \
             composite -geometry "+$$x+$$y" "$$bateria" "$^.$$y.$$xlabel.cargado" "$^.$$y.$$xlabel.cargado"  ; \
-            while [ $$x -le 2001 ] ; do \
+            while [ $$x -le 2000 ] ; do \
               a=$$xlabel ; \
 	      x=$$(( $$x + $$separacion ))  ; \
 	      xlabel=$$(( 10000 + $$x )) ; \
@@ -252,16 +257,11 @@ cover%.jpg: cover%.png
 	    done; \
 	  done; \
 	done; \
-	make bo ; \
 
 #ocupa dte_rules.clp
-dte:    *.xml.bak cover-back-to-business.jpg
-	cp cover*.jpg alectrico-2021
-	make build-dte VERSION=financiero ASIN=B09XQZ6B9P MES=enero EMPRESA=alectrico-2021 DIA=1
-
-
-
-
+dte:    *.xml.bak cover-b2b-*.jpg
+	cp cover-b2b*.jpg alectrico-2021
+	make build-dte TITULO='MIERDA' VERSION=financiero ASIN=B09XQZ6B9P MES=enero EMPRESA=alectrico-2021 DIA=1
 
 pandoc:
 	docker run --rm --volume "`pwd`:/data" --user `id -u`:`id -g` pandoc/latex --pdf-engine=xelatex introduccion.markdown -o introduccion.pdf

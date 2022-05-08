@@ -1,6 +1,6 @@
 
 (deftemplate version
-
+  (slot titulo)
   (slot id)
   (slot version)
   (slot asin)
