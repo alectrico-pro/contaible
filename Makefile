@@ -189,10 +189,26 @@ cover%.jpg: cover%.png-while
 	x=$$(( $$x + 10 ))  ; \
         done
 
+b2b:    
+	make cover-back-to-business.jpg
+
+bo:     
+	rm cover-b2b*.jpg ; \
+	numeracion=1 ; \
+	for archivo in cover-back-to-business.png.*.*.* ;  do \
+          echo "Elaborando cubierta $$numeracion" para archivo $$archivo ; \
+          convert "$$archivo" "cover-b2b-$$numeracion.jpg" ; \
+          convert -background '#0008' -fill white -gravity  center -size 2310x510 \
+          caption:" $$numeracion $$archivo " \
+          "cover-b2b-$$numeracion.jpg" +swap -gravity NorthEast -composite "cover-b2b-$$numeracion.jpg" ; \
+          numeracion=$$(( $$numeracion + 1 )) ; \
+	done; \
+	cover-back-to-business.png.*.*.* \
+	  
 
 #agregando baterias-con-while-apiladas
+#for y in 3004 3104 3204 3304 ; do 
 cover%.jpg: cover%.png
-	#Salen 115 etapas aproximadamente
 	if \
 	rm cover*.png.*.*.* ; \
 	rm cover*.png.*.* ; \
@@ -206,40 +222,37 @@ cover%.jpg: cover%.png
 	numeracion=0 ; \
         for y in 3004 3104 3204 3304 ; do \
           x=1; \
-          composite -geometry "+100+100" "$$orden" $^ "$^.$$y.$$x.cargado" ; \
-          composite -geometry "+2130+83" "$$warning" "$^.$$y.$$x.cargado" "$^.$$y.$$x.cargado" ; \
-          composite -geometry "+1100+1650" "$$carrito" "$^.$$y.$$x.cargado" "$^.$$y.$$x.cargado" ; \
+	  xlabel=10001 ; \
+          composite -geometry "+100+100" "$$orden" $^ "$^.$$y.$$xlabel.cargado" ; \
+          composite -geometry "+2130+83" "$$warning" "$^.$$y.$$xlabel.cargado" "$^.$$y.$$xlabel.cargado" ; \
+          composite -geometry "+1100+1650" "$$carrito" "$^.$$y.$$xlabel.cargado" "$^.$$y.$$xlabel.cargado" ; \
           convert -background '#0008' -fill white -gravity center -size 2810x120 \
           caption:"  Contiene ejercicio contable año 2021 de alectrico ®  " \
-          "$^.$$y.$$x.cargado" +swap -gravity south -composite "$^.$$y.$$x.cargado"; \
+          "$^.$$y.$$xlabel.cargado" +swap -gravity south -composite "$^.$$y.$$xlabel.cargado"; \
           convert -background '#0008' -fill white -gravity West -size 2810x750 \
           caption:" Contabilidad de Necios" \
-          "$^.$$y.$$x.cargado" +swap -gravity south -composite "$^.$$y.$$x.cargado"; \
+          "$^.$$y.$$xlabel.cargado" +swap -gravity south -composite "$^.$$y.$$xlabel.cargado"; \
 	  for separacion in 450 500 ; do \
-            x=1 ; \
+            xlabel=10001 ; \
+	    x=1 ; \
 	    bateria=compra_de_creditos.png ; \
-            composite -geometry "+$$x+$$y" "$$bateria" "$^.$$y.$$x.cargado" "$^.$$y.$$x.cargado"  ; \
+            composite -geometry "+$$x+$$y" "$$bateria" "$^.$$y.$$xlabel.cargado" "$^.$$y.$$xlabel.cargado"  ; \
             while [ $$x -le 2001 ] ; do \
-              a=$$x ; \
+              a=$$xlabel ; \
 	      x=$$(( $$x + $$separacion ))  ; \
+	      xlabel=$$(( 10000 + $$x )) ; \
               numeracion=$$(( $$numeracion + 1 )) ; \
-              echo "Posicionado en $$numeracion x=$$x y=$$y bateria= $$bateria" ; \
-	      composite -geometry "+$$x+$$y" "$$bateria" "$^.$$y.$$a.cargado" "$^.$$y.$$x.cargado" ; \
-              convert -background '#0008' -fill white -gravity  center -size 310x110 \
-              caption:" $$numeracion " \
-             "$^.$$y.$$x.cargado" +swap -gravity NorthEast -composite "$^.$$y.$$x.cargado"; \
+              echo "Posicionado en $$numeracion xlabel=$$xlabel x=$$x y=$$y bateria= $$bateria" ; \
+	      composite -geometry "+$$x+$$y" "$$bateria" "$^.$$y.$$a.cargado" "$^.$$y.$$xlabel.cargado" ; \
               if [ $$separacion -eq 450 ] ; then  \
                 numeracion=$$(( $$numeracion + 1 )) ; \
-                echo "Posicionado en $$numeracion x=$$x y=$$y bateria= $$descargado" ; \
-                composite -geometry "+$$x+$$y" "$$descargado" "$^.$$y.$$a.cargado" "$^.$$y.$$x.descargado" ; \
-                convert -background '#0008' -fill white -gravity  center -size 310x110 \
-                caption:" $$numeracion " \
-                "$^.$$y.$$x.descargado" +swap -gravity NorthEast -composite "$^.$$y.$$x.descargado"; \
+                echo "Posicionado en $$numeracion xlabel=$$xlabel x=$$x y=$$y bateria= $$descargado" ; \
+                composite -geometry "+$$x+$$y" "$$descargado" "$^.$$y.$$a.cargado" "$^.$$y.$$xlabel.descargado" ; \
               fi; \
 	    done; \
 	  done; \
 	done; \
-
+	make bo ; \
 
 #ocupa dte_rules.clp
 dte:    *.xml.bak cover-back-to-business.jpg
