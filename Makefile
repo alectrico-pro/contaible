@@ -121,6 +121,7 @@ nx:     mobi-prueba.ncx
 #Inicialmente era para probar dtes, pero terminó sindo una alternativa rápida a make mobi
 build-dte:  *.xml.bak 
 	make reset
+	cp cover*.jpg ./${EMPRESA}
 	echo '(version (id 2) (version $(VERSION)) (asin $(ASIN)) (mes $(MES)) (dia $(DIA)))' > version.txt
 	if rm dte/server/*.html; then echo .; fi
 	docker run -e PUID=1000 -e PGID=10 -v $(shell pwd)/:/doc cupercupu/clipspy /doc/dte.py
@@ -128,7 +129,7 @@ build-dte:  *.xml.bak
 	if docker rm epub -fv; then echo .; fi
 	if docker rm 4000 -fv; then echo .; fi
 	docker run --name dte-server  -e PUID=1000 -e PGID=1000 -p 4001:4000 -v $(shell pwd)/:/srv/jekyll jekyll/jekyll bash -c 'jekyll build -s ./${EMPRESA} -d dte/server && mv dte/server/*.png dte && mv dte/server/*.pdf dte && cp assets/main.css dte/mobi.css && cd dte/server && cp ../../version.txt . && cp ../../Makefile . && cp ../../*.erb . &&  cp ../../script/mobi_postprocess.rb ./script && make mobi VERSION=${VERSION} ASIN=${ASIN} MES=${MES} DIA=${DIA}'
-	docker run --name epub -e PUID=1000 -e PGID=1000 -e TZ=Europe/London -e PASSWORD= `optional` -e CLI_ARGS= `optional` -p 8080:8080 -p 8081:8081 -v $(shell pwd)/:/doc --restart unless-stopped lscr.io/linuxserver/calibre bash -c 'cd /doc/dte/server && ebook-convert book-${VERSION}-${ASIN}-${MES}-${DIA}.mobi book-${VERSION}-${ASIN}-${MES}-${DIA}.epub && rm *.bak'
+	docker run --name epub -e PUID=1000 -e PGID=1000 -e TZ=Europe/London -e PASSWORD= `optional` -e CLI_ARGS= `optional` -p 8080:8080 -p 8081:8081 -v $(shell pwd)/:/doc --restart unless-stopped lscr.io/linuxserver/calibre bash -c 'cd /doc/dte/server && cp cover-b2b-*.jpg alectrico-2021 && ebook-convert book-${VERSION}-${ASIN}-${MES}-${DIA}.mobi book-${VERSION}-${ASIN}-${MES}-${DIA}.epub && rm *.bak' 
 	rsync -rltgoDv ~/contaible/dte/server/book*.epub /run/user/1000/gvfs/smb-share:server=ubuntu,share=maker/ --progress --outbuf=N -T=tmp
 	rsync -rltgoDv ~/contaible/dte/server/book*.mobi /run/user/1000/gvfs/smb-share:server=ubuntu,share=maker/ --progress --outbuf=N -T=tmp
 	docker run --rm --name 4000 -p 4000:4000 -v $(shell pwd)/:/srv/jekyll jekyll/jekyll bash -c 'jekyll serve -s ./${EMPRESA} -d dte/server'
@@ -191,6 +192,10 @@ cover%.jpg: cover%.png-while
         done
 
 
+gif:    
+	convert -resize 768x576 -delay 20 -loop 0 cover-b2b-*.jpg b2b.gif
+	#onvert -resize 20% -delay 20 -loop 0 *.jpg myimage.gif
+
 cubiertas:
 	make b2b
 	make bo
@@ -212,7 +217,7 @@ tit:
         ${ARCHIVO}.jpg +swap -gravity south -composite ${ARCHIVO}.jpg ; \
 
 
-b2b:    cover-back-to-business.png
+generar-todas-las-cubiertas-sin-titulo:    cover-back-to-business.png
 	make cover-back-to-business.jpg
 
 
@@ -225,11 +230,9 @@ bo:
 	  convert cover.png "cover-b2b-$$numeracion.jpg" ; \
           convert -background '#0008' -fill white -gravity  center -size 2310x510 \
           caption:" $$numeracion " \
-          "cover-b2b-$$numeracion.jpg" +swap -gravity center -composite "cover-b2b-$$numeracion.png" ; \
+          "cover-b2b-$$numeracion.jpg" +swap -gravity center -composite "cover-b2b-$$numeracion.jpg" ; \
           numeracion=$$(( $$numeracion + 1 )) ; \
 	done; \
-	#rm cover-back-to-business.png.*.*.* \
-	
 
 #Genera todas las cubiertas a partir de un patrón inicial
 #Dado en un archivo de nombre
@@ -292,7 +295,7 @@ cover%.jpg: cover%.png
 	    x=50 ; \
 	    bateria=compra_de_creditos.png ; \
             composite -geometry "+$$x+$$y" "$$bateria" "$^.$$y.$$xlabel.cargado" "$^.$$y.$$xlabel.cargado"  ; \
-            while [ $$x -le 1000 ] ; do \
+            while [ $$x -le 2001 ] ; do \
               a=$$xlabel ; \
 	      x=$$(( $$x + $$separacion ))  ; \
 	      xlabel=$$(( 10000 + $$x )) ; \
