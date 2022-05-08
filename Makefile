@@ -278,7 +278,7 @@ cover%.jpg: cover%.png
         carrito=carrito.png ; \
 	descargado=consumo_de_creditos.png ; \
 	numeracion=0 ; \
-        for y in 3004  ; do \
+        for y in 3004 3104 3204 3304 ; do \
           x=1; \
 	  xlabel=10001 ; \
           composite -geometry "+100+100" "$$orden" $^ "$^.$$y.$$xlabel.cargado" ; \
@@ -309,9 +309,12 @@ cover%.jpg: cover%.png
 	done; \
 
 #ocupa dte_rules.clp
-dte:    *.xml.bak cover-b2b-*.jpg
-	cp cover-b2b*.jpg alectrico-2021
+dte1:    *.xml.bak 
 	make build-dte VERSION=financiero ASIN=B09XQZ6B9P MES=enero EMPRESA=alectrico-2021 DIA=1
+
+dte2:   *.xml.bak
+	make build-dte VERSION=financiero ASIN=B09Z7Y5HZF MES=enero EMPRESA=alectrico-2021 DIA=1
+
 
 pandoc:
 	docker run --rm --volume "`pwd`:/data" --user `id -u`:`id -g` pandoc/latex --pdf-engine=xelatex introduccion.markdown -o introduccion.pdf

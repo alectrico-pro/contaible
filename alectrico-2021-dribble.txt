@@ -26,17 +26,42 @@ Insumo de Pedido 1724 encontrado en partida 101
 Insumo de Pedido 1724 encontrado en partida 102
 Insumo de Pedido 1724 encontrado en partida 120
 Revision general hallada en el archivo <empresa>-revisiones.txt
-Revisión 1 ahora no se incluirá.
-Revisión 1 ahora no se incluirá.
 Cambiando a modificar revisiones ............ 
 Terminando de  modificar revisiones ............ 
 ----------------- PRIMITIVA ------------------
+n<--	amortizacion-acumulada-intangibles	1 de enero	asiento-inicial	deducible	false
+a<--	0	|	2416	amortizacion-acumulada-intangibles	1 de enero	asiento-inicial	deducible	false
+n<--	utilidad-del-ejercicio-anterior	1 de enero	asiento-inicial	deducible	true
+a<--	0	|	85294	utilidad-del-ejercicio-anterior	1 de enero	asiento-inicial	deducible	true
+n<--	capital-social	1 de enero	asiento-inicial	deducible	false
+a<--	0	|	2000000	capital-social	1 de enero	asiento-inicial	deducible	false
 n-->	marca-alectrico	1 de enero	asiento-inicial	deducible	false
+c-->	290000	|	0	marca-alectrico	1 de enero	asiento-inicial
 n-->	ppm	1 de enero	asiento-inicial	deducible	false
+c-->	721	|	0	ppm	1 de enero	asiento-inicial
 n-->	iva-credito	1 de enero	asiento-inicial	deducible	false
+c-->	10909	|	0	iva-credito	1 de enero	asiento-inicial
 n-->	materiales	1 de enero	asiento-inicial	deducible	false
+c-->	44044	|	0	materiales	1 de enero	asiento-inicial
 n-->	banco-estado	1 de enero	asiento-inicial	deducible	false
+c-->	691827	|	0	banco-estado	1 de enero	asiento-inicial
 n-->	caja	1 de enero	asiento-inicial	deducible	false
+c-->	1050209	|	0	caja	1 de enero	asiento-inicial
+t-->	1050209	|	caja
+t-->	691827	|	banco-estado
+t-->	44044	|	materiales
+t-->	10909	|	iva-credito
+t-->	721	|	ppm
+t-->	290000	|	marca-alectrico
+t<--	2000000	|	capital-social
+t<--	85294	|	utilidad-del-ejercicio-anterior
+t<--	2416	|	amortizacion-acumulada-intangibles
+p--> Creado padre intangibles grupo activo tipo deudor para un hijo marca-alectrico tipo deudor	deducible	false
+h--> Desde marca-alectrico debe 290000 haber 0  a su padre intangibles.  >---	deducible	false
+t-->	290000	|	intangibles
+p--> Creado padre insumos grupo activo tipo deudor para un hijo materiales tipo deudor	deducible	false
+h--> Desde materiales debe 44044 haber 0  a su padre insumos.  >---	deducible	false
+t-->	44044	|	insumos
 Se abrió el pedido 1724
 Partida 104 Rechazada
 Distribución Utilidad del Ejercicio Anterior 85294
@@ -44,16 +69,65 @@ Distribución Utilidad del Ejercicio Anterior 85294
 -->rv Rendición Mensual de e-Boletas Electrónicas Afectas Emitidas en SII $35000
 ================================================================
 --------------------- MENSUAL ------------------
+Sumando 1050209------------	0tipo-de-documento	escritura-empresa
+Cuenta acumulador mensual 	caja	enero
+Sumando 691827------------	0tipo-de-documento	escritura-empresa
+Cuenta acumulador mensual 	banco-estado	enero
+Sumando 10909------------	0tipo-de-documento	escritura-empresa
+Cuenta acumulador mensual 	iva-credito	enero
+Sumando 721------------	0tipo-de-documento	escritura-empresa
+Cuenta acumulador mensual 	ppm	enero
+Sumando 0------------	2000000tipo-de-documento	escritura-empresa
+Cuenta acumulador mensual 	capital-social	enero
+Sumando 0------------	85294tipo-de-documento	escritura-empresa
+Cuenta acumulador mensual 	utilidad-del-ejercicio-anterior	enero
+Sumando 0------------	2416tipo-de-documento	escritura-empresa
+Cuenta acumulador mensual 	amortizacion-acumulada-intangibles	enero
+Sumando 290000------------	0tipo-de-documento	escritura-empresa
+Cuenta acumulador mensual 	marca-alectrico	enero
+Sumando 290000------------	0tipo-de-documento	escritura-empresa
+Cuenta acumulador mensual 	intangibles	enero
+Sumando 44044------------	0tipo-de-documento	escritura-empresa
+Cuenta acumulador mensual 	materiales	enero
+Sumando 44044------------	0tipo-de-documento	escritura-empresa
+Cuenta acumulador mensual 	insumos	enero
+SUmado caja partida 1	1	1050209--------0	escritura-empresa
+SUmado banco-estado partida 1	1	691827--------0	escritura-empresa
+SUmado iva-credito partida 1	1	10909--------0	escritura-empresa
+SUmado ppm partida 1	1	721--------0	escritura-empresa
+SUmado capital-social partida 1	1	0--------2000000	escritura-empresa
+SUmado utilidad-del-ejercicio-anterior partida 1	1	0--------85294	escritura-empresa
+SUmado amortizacion-acumulada-intangibles partida 1	1	0--------2416	escritura-empresa
+SUmado marca-alectrico partida 1	1	290000--------0	escritura-empresa
+SUmado intangibles partida 1	0	290000--------0	escritura-empresa
+SUmado materiales partida 1	1	44044--------0	escritura-empresa
+SUmado insumos partida 1	0	44044--------0	escritura-empresa
 [ROUTER1] Logical name k was not recognized by any routers
 [ROUTER1] Logical name k was not recognized by any routers
 -------Resumen----------- MENSUAL ------------------
+1	1050209	0	2021	enero	caja
+1	691827	0	2021	enero	banco-estado
+1	10909	0	2021	enero	iva-credito
+1	721	0	2021	enero	ppm
+1	0	2000000	2021	enero	capital-social
+1	0	85294	2021	enero	utilidad-del-ejercicio-anterior
+1	0	2416	2021	enero	amortizacion-acumulada-intangibles
+1	290000	0	2021	enero	marca-alectrico
+0	290000	0	2021	enero	intangibles
+1	44044	0	2021	enero	materiales
+0	44044	0	2021	enero	insumos
 --módulo----------------------- IVA ----------------------
-IVA-filas: enero	0	0	marca-alectrico
-IVA-filas: enero	0	0	iva-credito
-IVA-filas: enero	0	0	ppm
-IVA-filas: enero	0	0	materiales
-IVA-filas: enero	0	0	banco-estado
-IVA-filas: enero	0	0	caja
+IVA-filas: enero	0	85294	utilidad-del-ejercicio-anterior
+IVA-filas: enero	0	2000000	capital-social
+IVA-filas: enero	0	2416	amortizacion-acumulada-intangibles
+IVA-filas: enero	290000	0	intangibles
+IVA-filas: enero	290000	0	marca-alectrico
+IVA-filas: enero	10909	0	iva-credito
+IVA-filas: enero	721	0	ppm
+IVA-filas: enero	44044	0	insumos
+IVA-filas: enero	44044	0	materiales
+IVA-filas: enero	691827	0	banco-estado
+IVA-filas: enero	1050209	0	caja
 febrero
 En determinar mes de ajuste de remanente de iva febrero	2021
 antes-en-utm214100
@@ -72,6 +146,17 @@ Resumen: enero
 Solo hay debito
 --módulo----fin ------------ IVA ----------------------
 --------------------- PAGAR ------------------
+Acumuladores Mensuales caja
+Acumuladores Mensuales banco-estado
+Acumuladores Mensuales iva-credito
+Acumuladores Mensuales ppm
+Acumuladores Mensuales capital-social
+Acumuladores Mensuales utilidad-del-ejercicio-anterior
+Acumuladores Mensuales amortizacion-acumulada-intangibles
+Acumuladores Mensuales marca-alectrico
+Acumuladores Mensuales intangibles
+Acumuladores Mensuales materiales
+Acumuladores Mensuales insumos
 --------------------- fin de PAGAR ------------------
 --módulo----------------------- VALOR-ACTIVOS ---------------------
 
@@ -183,37 +268,177 @@ Mensualmente hay que depreciarlo en: $4202
 
 caja
 ---------------------------- recibida activo-fijo tipo-de-documento
-1	0	|	0	enero	false	false	escritura-empresa
+1	1050209	|	0	enero	false	false	escritura-empresa
+----------------------------
+	1050209	|	0
+	--------------------
+$	1050209
+---------- CORRECCION MONETARIA ANUAL -----------
+----------------------------
+	1116372.167	|	0.0
+	--------------------
+$	1116372.167
+monto-de-correccion$	66163
 
 
 
 banco-estado
 ---------------------------- recibida activo-fijo tipo-de-documento
-1	0	|	0	enero	false	false	escritura-empresa
+1	691827	|	0	enero	false	false	escritura-empresa
+----------------------------
+	691827	|	0
+	--------------------
+$	691827
+---------- CORRECCION MONETARIA ANUAL -----------
+----------------------------
+	735412.101	|	0.0
+	--------------------
+$	735412.101
+monto-de-correccion$	43585
 
 
 
 materiales
 ---------------------------- recibida activo-fijo tipo-de-documento
-1	0	|	0	enero	false	false	escritura-empresa
+1	44044	|	0	enero	false	false	escritura-empresa
+----------------------------
+	44044	|	0
+	--------------------
+$	44044
+---------- CORRECCION MONETARIA ANUAL -----------
+----------------------------
+	46818.772	|	0.0
+	--------------------
+$	46818.772
+monto-de-correccion$	2775
+
+
+
+insumos
+---------------------------- recibida activo-fijo tipo-de-documento
+1	44044	|	0	enero	false	false	escritura-empresa
+----------------------------
+	44044	|	0
+	--------------------
+$	44044
+---------- CORRECCION MONETARIA ANUAL -----------
+----------------------------
+	46818.772	|	0.0
+	--------------------
+$	46818.772
+monto-de-correccion$	2775
 
 
 
 ppm
 ---------------------------- recibida activo-fijo tipo-de-documento
-1	0	|	0	enero	false	false	escritura-empresa
+1	721	|	0	enero	false	false	escritura-empresa
+----------------------------
+	721	|	0
+	--------------------
+$	721
+---------- CORRECCION MONETARIA ANUAL -----------
+----------------------------
+	766.423	|	0.0
+	--------------------
+$	766.423
+monto-de-correccion$	45
 
 
 
 iva-credito
 ---------------------------- recibida activo-fijo tipo-de-documento
-1	0	|	0	enero	false	false	escritura-empresa
+1	10909	|	0	enero	false	false	escritura-empresa
+----------------------------
+	10909	|	0
+	--------------------
+$	10909
+---------- CORRECCION MONETARIA ANUAL -----------
+----------------------------
+	11596.267	|	0.0
+	--------------------
+$	11596.267
+monto-de-correccion$	687
 
 
 
 marca-alectrico
 ---------------------------- recibida activo-fijo tipo-de-documento
-1	0	|	0	enero	false	false	escritura-empresa
+1	290000	|	0	enero	false	false	escritura-empresa
+----------------------------
+	290000	|	0
+	--------------------
+$	290000
+---------- CORRECCION MONETARIA ANUAL -----------
+----------------------------
+	308270.0	|	0.0
+	--------------------
+$	308270.0
+monto-de-correccion$	18270
+
+
+
+intangibles
+---------------------------- recibida activo-fijo tipo-de-documento
+1	290000	|	0	enero	false	false	escritura-empresa
+----------------------------
+	290000	|	0
+	--------------------
+$	290000
+---------- CORRECCION MONETARIA ANUAL -----------
+----------------------------
+	308270.0	|	0.0
+	--------------------
+$	308270.0
+monto-de-correccion$	18270
+
+
+
+amortizacion-acumulada-intangibles
+---------------------------- recibida activo-fijo tipo-de-documento
+1	0	|	2416	enero	false	false	escritura-empresa
+----------------------------
+	0	|	2416
+	---------------------
+		|	2416	$
+---------- CORRECCION MONETARIA ANUAL -----------
+----------------------------
+	0.0	|	2568.208
+	--------------------
+		 | $	2568.208
+monto-de-correccion$	152
+
+
+
+capital-social
+---------------------------- recibida activo-fijo tipo-de-documento
+1	0	|	2000000	enero	false	false	escritura-empresa
+----------------------------
+	0	|	2000000
+	---------------------
+		|	2000000	$
+---------- CORRECCION MONETARIA ANUAL -----------
+----------------------------
+	0.0	|	2126000.0
+	--------------------
+		 | $	2126000.0
+monto-de-correccion$	126000
+
+
+
+utilidad-del-ejercicio-anterior
+---------------------------- recibida activo-fijo tipo-de-documento
+1	0	|	85294	enero	false	false	escritura-empresa
+----------------------------
+	0	|	85294
+	---------------------
+		|	85294	$
+---------- CORRECCION MONETARIA ANUAL -----------
+----------------------------
+	0.0	|	90667.522
+	--------------------
+		 | $	90667.522
+monto-de-correccion$	5374
 --módulo----resumen------------ T ----------------------
 --modulo--------------- RESULTADO SII------------------
 
@@ -227,18 +452,33 @@ Se han practicado liquidaciones, por lo que NO se muestran cuentas nominales, ni
 		SUMAS		|	SALDOS
 		DEBE	HABER	|	DEBER	ACREEDOR
 ---------------------------------------------------------------------
+		290000	0	|	290000	0	marca-alectrico
+	1	290000	0	|	------	-----	marca-alectrico
+		44044	0	|	44044	0	materiales
+	1	44044	0	|	------	-----	materiales
 
 
            B A L A N C E  DE COMPROBACION DE SUMAS Y SALDOS 
 		SUMAS		|	SALDOS
 		DEBE	HABER	|	DEBER	ACREEDOR
 -----------------------------------------------------------------------------------
+	1050209	0	|	1050209	0	caja
+	691827	0	|	691827	0	banco-estado
+	44044	0	|	44044	0	insumos
+	721	0	|	721	0	ppm
+	10909	0	|	10909	0	iva-credito
+	290000	0	|	290000	0	intangibles
+	0	2416	|	0	2416	amortizacion-acumulada-intangibles
+	0	2000000	|	0	2000000	capital-social
+	0	85294	|	0	85294	utilidad-del-ejercicio-anterior
 	.......................................................
-	0	0	|	0	0	activos=0
+	2421754	2087710	|	2421754	2087710	activos=2085294
 -----------------------------------------------------------------------------------
 ============================================================
 ------------------------------- FINANCIERO -----------------
 ============================================================
+|		ganancias	85294		utilidad-del-ejercicio-anterior
+|		ganancias	2000000		capital-social
 ============================================================
 -------- FIN ------------------ FINANCIERO -----------------
 ============================================================
@@ -318,8 +558,30 @@ Partida 1
 [ROUTER1] Logical name l was not recognized by any routers
 [ROUTER1] Logical name l was not recognized by any routers
 [ROUTER1] Logical name l was not recognized by any routers
+	44044			materiales#insumos
+[ROUTER1] Logical name l was not recognized by any routers
+	290000			marca-alectrico#intangibles
+[ROUTER1] Logical name l was not recognized by any routers
+		0	2416	a<amortizacion-acumulada-intangibles>
+[ROUTER1] Logical name l was not recognized by any routers
+		1050209	0	a<caja>
+[ROUTER1] Logical name l was not recognized by any routers
+		691827	0	a<banco-estado>
+[ROUTER1] Logical name l was not recognized by any routers
+		44044	0	a<insumos>
+[ROUTER1] Logical name l was not recognized by any routers
+		721	0	a<ppm>
+[ROUTER1] Logical name l was not recognized by any routers
+		10909	0	a<iva-credito>
+[ROUTER1] Logical name l was not recognized by any routers
+		290000	0	a<intangibles>
+[ROUTER1] Logical name l was not recognized by any routers
+		0	2000000		k<capital-social>
+[ROUTER1] Logical name l was not recognized by any routers
+		0	85294		k<utilidad-del-ejercicio-anterior>
+[ROUTER1] Logical name l was not recognized by any routers
 ------------------------------------------------------------------
-		0	0	( 1 de enero	2021	 )
+		2087710	2087710	( 1 de enero	2021	 )
 ==================================================================
 alectrico® SpA
 Partida 001: Por Inicio de Operaciones en 2021
@@ -562,12 +824,6 @@ nil	0	|	0	patrimonio	false	real
 
 
 
-utilidad-del-ejercicio-anterior
-------- creando subtotales para utilidad-del-ejercicio-anterior --------------------- 
-nil	0	|	0	patrimonio	false	real
-
-
-
 utilidades-acumuladas
 ------- creando subtotales para utilidades-acumuladas --------------------- 
 nil	0	|	0	patrimonio	false	real
@@ -576,12 +832,6 @@ nil	0	|	0	patrimonio	false	real
 
 revalorizacion-del-capital-propio
 ------- creando subtotales para revalorizacion-del-capital-propio --------------------- 
-nil	0	|	0	patrimonio	false	real
-
-
-
-capital-social
-------- creando subtotales para capital-social --------------------- 
 nil	0	|	0	patrimonio	false	real
 
 
@@ -619,7 +869,7 @@ CALCULO DE LA BASE IMPONIBLE PROPYME
 | (-) 0	|		Inventario 
 | (-) 0	|		Inventario Final 
 | (=) 0	|		Costos de Mercancías 
-| (-) 0	|		Insumos 
+| (-) 44044	|		Insumos 
 
 |		|     0	UTILIDAD BRUTA (Ventas Netas - Costo de Ventas - Costos de Mercancías)
 |		| (-) 0	Gastos Operacionales (Gastos Admon + Gastos Vtas + I+D + Promocion + Amortiza + Depreciacion)
@@ -660,6 +910,71 @@ CALCULO DE LA BASE IMPONIBLE PROPYME
 ----------------------- AJUSTEC----------------------
 ----fin------------------- AJUSTEC----------------------
 --------módulo----------- TOTALC -----------------------
+--+a f i j o  = -2416	-2416 de amortizacion-acumulada-intangibles
+--+acirculante= 10909	10909 de iva-credito
+--+acirculante= 11630	721 de ppm
+--+acirculante= 55674	44044 de insumos
+--+acirculante= 747501	691827 de banco-estado
+--+acirculante= 1797710	1050209 de caja
+--+a f i j o  = 287584	290000 de intangibles
+--+patrimonio = 85294	85294 de utilidad-del-ejercicio-anterior
+--+patrimonio = 2085294	2000000 de capital-social
 -módulo-------------------------- FINAL -- SIN utilidad tributaria ------
+=========================================================================
+alectrico® SpA
+Empresa	alectrico-2021
+Solo se consideran las transacciones hasta el día 1	enero
+               - PARTIDA GENERAL FINAL 	2021 -
+                         CIFRAS EN PESOS                   
+------------------------------------------------------------------------
+ACTIVO				|PASIVO
+CIRCULANTE		1797710	|CIRCULANTE		0
+------------------------------------------------------------------------
+Efectivo y			|
+Caja.......	1050209		|Proveedores.	0
+BancoEstado.	691827		|
+Clientes.....	0		|IVA Débito	0
+CuentasXCobrar	0		|
+Colaboradores	0		|SalariosXPagar	0	0
+IVA Crédito...	10909		|Ing.Adelant.	0
+Retención IVA..	0
+PPM.........	721		|
+Insumos.....	44044		|
+Inventario	0
+------------------------------------------------------------------------
+ACTIVO				|PASIVO
+FIJO			287584	|FIJO			0
+------------------------------------------------------------------------
+Terreno.....	0		|Prestamos
+Edificio....	0		|Bancarios..	0
+Maquinaria..	0		|
+Herramientas	0		|---------------------------------------
+Mobiliario			|TOTAL
+y.Equipo....	0		|PASIVO			0
+m.alectrico®.	290000		|=======================================
+p.alectrico®.	0		|
+alectrico®.	0		|
+alectrico®.	0		|
+alectrico®.	0		|
+AutInmueble	0		|
+Amortizacion		2416	|
+Dep.Acc.Herr.		0	|
+				|		PATRIMONIO
+				|PATRIMONIO		2085294
+				|Capital Social.2000000
+				|Reserva Legal..0
+				|Utilidad Ejr.Anterior..85294
+				|Utilidades AC..0
+				|Aportes..0
+				|Rev.Capital0
+				|Utilidad del 
+				|Ejercicio...... 0
+------------------------------------------------------------------------
+				|TOTAL
+TOTAL				|PASIVOS +
+ACTIVOS			2085294	|PATRIMONIO		2085294
+=========================================================================
+
+
 --módulo----------------------- SUBCUENTAS ---------------------
 -------------------- CCM -----------------------------------------------------------

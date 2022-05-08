@@ -1,0 +1,305 @@
+
+;Bundle de diciembre Asiento Inicial
+(volumen
+ (autor "Luca Paccioli")
+ (asin B09NRKYKN7)
+ (precio 5)
+ (id 1)
+ (formato kindle)
+ (titulo "Asiento Inicial")
+ (subtitulo "Contabilidad Necios 20201 Libro Diario F29 F22")
+ (contenido "Contiene la Contabilidad de Necios S.A. hasta diciembre de 2021. Solo Libro Diario Enriquecido F29 y F22." )
+)
+
+
+
+
+(volumen
+  (autor "Luca Paccioli")
+
+  (asin B09NRDMK9Z)
+  (id 2)
+  (precio 100)
+  (paginas 349)
+  (dimensiones  "7x 0.82 x 10 inches")
+  (isbn  "979-8785713437")
+  (formato paperback)
+  (titulo "Asiento Inicial")
+  (subtitulo "Lo primero es el Asiento" )
+  (contenido "Contiene la Contabilidad de la empresa real alectrico ® del año 2021.")
+)
+
+
+(volumen
+ (autor "Luca Paccioli")
+ (asin  B09NRFJJY7)
+ (id 3)
+ (precio 100)
+ (dimensiones "7x0.77x10 inches")
+ (paginas 230)
+ (isbn "979-8468051122")
+ (formato hardcopy)
+ (titulo "Asiento Inicial")
+ (subtitulo "Lo primero es el Asiento" )
+ (contenido "Contiene la Contabilidad de la empresa real alectrico ® del año 2021.")
+)
+
+
+;KINDLES de la serie Asiento Inicial
+(volumen
+ (autor "Luca Paccioli")
+ (asin B09DXLR7P9)
+ (precio 5)
+ (id 4)
+ (formato kindle)
+ (titulo "Asiento Inicial")
+ (subtitulo "Contabilidad Necios 2021 enero" )
+ (contenido "Contiene la Contabilidad de NECIOS S.A. 2021. Solo enero.")
+)
+
+
+(volumen
+ (autor "Luca Paccioli")
+ (asin B09Y47TJ92)
+ (precio 5)
+ (id 4)
+ (formato kindle)
+ (titulo "Asiento Inicial")
+ (subtitulo "Contabilidad Necios 2021 febrero" )
+ (contenido "Contiene la Contabilidad de NECIOS S.A. 2021. Solo febrero.")
+)
+
+
+(volumen
+ (autor "Luca Paccioli")
+ (asin B09Y46KDVS)
+ (precio 5)
+ (id 4)
+ (formato kindle)
+ (titulo "Asiento Inicial")
+ (subtitulo "Contabilidad Necios 2021 marzo" )
+ (contenido "Contiene la Contabilidad de NECIOS S.A. 2021. Solo marzo.")
+)
+
+
+(volumen
+ (autor "Luca Paccioli")
+ (asin B09Y46BP4D)
+ (precio 5)
+ (id 4)
+ (formato kindle)
+ (titulo "Asiento Inicial")
+ (subtitulo "Contabilidad Necios 2021 abril" )
+ (contenido "Contiene la Contabilidad de NECIOS S.A. 2021. Solo abril.")
+)
+
+
+(volumen
+ (autor "Luca Paccioli")
+ (asin B09Y47LV3S)
+ (precio 5)
+ (id 4)
+ (formato kindle)
+ (titulo "Asiento Inicial")
+ (subtitulo "Contabilidad Necios 2021 mayo" )
+ (contenido "Contiene la Contabilidad de NECIOS S.A. 2021. Solo mayo.")
+)
+
+
+(volumen
+ (autor "Luca Paccioli")
+ (asin B09Y47J2MV)
+ (precio 5)
+ (id 4)
+ (formato kindle)
+ (titulo "Asiento Inicial")
+ (subtitulo "Contabilidad Necios 2021 junio" )
+ (contenido "Contiene la Contabilidad de NECIOS S.A. 2021. Solo junio.")
+)
+
+(volumen
+ (autor "Luca Paccioli")
+ (asin B09Y48CP4P)
+ (precio 5)
+ (id 4)
+ (formato kindle)
+ (titulo "Asiento Inicial")
+ (subtitulo "Contabilidad Necios 2021 julio" )
+ (contenido "Contiene la Contabilidad de NECIOS S.A. 2021. Solo julio.")
+)
+
+
+(volumen
+ (autor "Luca Paccioli")
+ (asin B09Y474J4L)
+ (precio 5)
+ (id 4)
+ (formato kindle)
+ (titulo "Asiento Inicial")
+ (subtitulo "Contabilidad Necios 2021 agosto" )
+ (contenido "Contiene la Contabilidad de NECIOS S.A. 2021. Solo agosto.")
+)
+
+(volumen
+ (autor "Luca Paccioli")
+ (asin B09Y48ZNJY)
+ (precio 5)
+ (id 4)
+ (formato kindle)
+ (titulo "Asiento Inicial")
+ (subtitulo "Contabilidad Necios 2021 septiembre" )
+ (contenido "Contiene la Contabilidad de NECIOS S.A. 2021. Solo septiembre.")
+)
+
+(volumen
+ ( autor "Luca Paccioli")
+ (asin B09Y48Y56F)
+ (precio 5)
+ (id 4)
+ (formato kindle)
+ (titulo "Asiento Inicial")
+ (subtitulo "Contabilidad Necios 2021 octubre" )
+ (contenido "Contiene la Contabilidad de NECIOS S.A. año 2021. Solo octubre.")
+)
+
+
+(volumen
+ (autor "Luca Paccioli")
+ (asin B09Y47WB9Y)
+ (precio 5)
+ (id 4)
+ (formato kindle)
+ (titulo "Asiento Inicial")
+ (subtitulo "Contabilidad Necios 2021 noviembre" )
+ (contenido "Contiene la Contabilidad de NECIOS S.A. año 2021. Solo noviembre.")
+)
+
+;el kindle de diciembre está en un bundle con la contabilidad completq
+;pues es más importante que se disponga de la contabilidad completa
+
+;------------- SERIE CONTAIBLE-----------------------------
+;Kindles de la serie Contaible
+(volumen
+ (autor "Luca Paccioli")
+ (asin B09XQZ6B9P)  (cubierta cover-b2b-1)
+ (titulo "Contaible")
+ (precio 49.39)
+ (id 1)
+ (orden 1)
+ (serie Contaible)
+ (formato kindle)
+ (subtitulo "Back to Business" )
+ (contenido "Solo Día 1. Sin partida. Introducción a Contaible.")
+ (partidas-no-incluidas 1)
+)
+
+(volumen
+ (autor "Alexander Espinosa")
+ (asin B09Z7Y5HZF) (cubierta "cover-b2b-1.jpg")
+ (precio 4)
+ (id 2)
+ (orden 2)
+ (serie Contaible)
+ (formato kindle)
+ (titulo "Asiento Inicial")
+ (subtitulo "Partida 1: Apertura" )
+ (contenido "Solo día 1. Contiene un ejercicio solo financiero. Libro Diario, Libro Mayor, Subcuentas, Liquidaciones, Balance, Estado de Resultados, Estado de Resultados para Impuestos.")
+ (partidas-no-incluidas )
+ (capitulos "Introducción" "Contaible" "Libro Diario" )
+)
+
+
+;-----------------------------------------------------------------------------
+;Kindles de la serie Contaible
+(volumen
+ (autor "Luca Paccioli")
+ (asin FINANCIERO)
+ (precio 5)
+ (id 4)
+ (formato kindle)
+ (titulo "Contaible")
+ (subtitulo "Suscinto" )
+ (contenido "Introducción a Contabile.")
+)
+
+
+;--------- MEJORANDO LIBRO-MAYOR -------------------------------------
+;Kindles de la serie Contaible
+(volumen
+ (autor "Luca Paccioli")
+ (asin MAYOR)
+ (precio 5)
+ (id 4)
+ (formato kindle)
+ (titulo "Contaible")
+ (subtitulo "Suscinto" )
+ (contenido "Introducción a Contabile.")
+)
+
+
+
+
+
+;--------- MEJORANDO LIQUIDACIONES -----------------------------------
+;Kindles de la serie Contaible
+(volumen
+ (autor "Luca Paccioli")
+ (asin L)
+ (precio 5)
+ (id 4)
+ (formato kindle)
+ (titulo "Contaible")
+ (subtitulo "" )
+ (contenido "Pruebas.")
+)
+
+
+;--------- MEJORANDO REMUNERACIONES-----------------------------------
+;Kindles de la serie Contaible
+(volumen
+ (autor "Luca Paccioli")
+ (asin R)
+ (precio 5)
+ (id 4)
+ (formato kindle)
+ (titulo "Contaible")
+ (subtitulo "" )
+ (contenido "Pruebas.")
+)
+
+
+;--------- MEJORANDO ACTIVOS-----------------------------------
+;Kindles de la serie Contaible
+(volumen
+ ( autor "Luca Paccioli")
+ (asin A)
+ (precio 5)
+ (id 4)
+ (formato kindle)
+ (titulo "Contaible")
+ (subtitulo "" )
+ (contenido "Pruebas.")
+)
+
+
+;--------- MEJORANDO TRIBUTACIÓN-----------------------------------
+;Kindles de la serie Contaible
+(volumen
+ (autor "Luca Paccioli")
+ (asin T)
+ (precio 5)
+ (id T4)
+ (formato kindle)
+ (titulo "Contaible Día Zero ")
+ (subtitulo "Día Zero" )
+ (contenido "Ejemplos de Tributación día a día.")
+ (partidas-no-incluidas )
+)
+
+
+
+
+
+
+
+ 

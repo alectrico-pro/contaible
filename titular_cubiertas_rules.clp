@@ -7,16 +7,21 @@
 (defrule inicio-titular-cubiertas
  =>
   ( load-facts "volumenes.txt")
+  ( bind ?archivo (str-cat "make-titular-cubiertas.sh"))
+  ( open ?archivo k "w")
+)
+
+(defrule final
+  (declare (salience -100) )
+ =>
+  (close k)
 )
 
 (defrule titular-cubiertas
   (volumen (cubierta ?cubierta) (titulo ?titulo) )
   (test (neq nil ?cubierta))
  =>
-  (printout t " Procesando " ?cubierta " con título " ?titulo crlf)
-  ( bind ?archivo (str-cat "make-titular-cubiertas.sh"))
-  ( open ?archivo k "w")
+  ( printout t " Generando orden make para " ?cubierta " con título " ?titulo crlf)
   ( printout k (str-cat " make tit  ARCHIVO=" ?cubierta  " TITULO=" ?titulo ) crlf )
-  ( close k)
 )
 
