@@ -2,7 +2,7 @@
 title: Volumen
 layout: page
 --- 
-<h2> Asiento Inicial </h2>
+<h2> Asiento </h2>
 <h2> Partida 1: Apertura </h2>
 ![](../revisado.png)
 ![](./cover-b2b-2.jpg)
@@ -18,7 +18,7 @@ alectrico ® ha realizado la publicación de este volumen con las siguientes car
 <li><span style='background-color: azure'>[    ]</span> mes: enero </li>
 <li><span style='color: white; background-color: cornflowerblue'>[    ]</span> año: 2021 </li>
 <li><span style='background-color: gold'>[    ]</span> empresa: alectrico-2021 </li>
-<li><span style='color: white; background-color: black'>[    ]</span> titulo: Asiento Inicial </li>
+<li><span style='color: white; background-color: black'>[    ]</span> titulo: Asiento </li>
 <li><span style='background-color: blanchedalmond'>[    ]</span> subtitulo: Partida 1: Apertura </li>
 <li><span style='background-color: blanchedalmond'>[    ]</span> subtitulo: cover-b2b-2 </li>
 </ul>

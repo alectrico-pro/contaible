@@ -195,13 +195,13 @@
 
 (volumen
  (autor "Alexander Espinosa")
- (asin B09Z7Y5HZF) (cubierta "cover-b2b-2")
+ (asin B09Z7Y5HZF) (cubierta cover-b2b-2)
  (precio 4)
  (id 2)
  (orden 2)
  (serie Contaible)
  (formato kindle)
- (titulo "Asiento Inicial")
+ (titulo "Asiento")
  (subtitulo "Partida 1: Apertura" )
  (contenido "Solo día 1. Contiene un ejercicio solo financiero. Libro Diario, Libro Mayor, Subcuentas, Liquidaciones, Balance, Estado de Resultados, Estado de Resultados para Impuestos.")
  (partidas-no-incluidas )
