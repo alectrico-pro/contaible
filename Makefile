@@ -170,6 +170,8 @@ cover%.jpg: cover%.png-abajo
 cover%.jpg: cover%.png-bolsa
 	for i in 100 200 ; do echo "Posicionando en x= $$i "; composite -geometry "+$$i+3304" ticket_man_pagado_image.png $^ "$@.$$i" ; done
 
+
+
 #agregando baterias-con for
 cover%.jpg: cover%.png-for
 	for i in 100 200 300 400 500 600 700 800 900 1000 1100 1200 1300 1400 1500 1600 ; do echo "Posicionando en x= $$i "; composite -geometry "+$$i+3304" consumo_de_creditos.png $^ "$@.$$i" ; done
@@ -212,20 +214,19 @@ titular-cubiertas:
 
 
 #agregar copyright
-cpr:
-	cd png-partidas ; \
-	for archivo in *.png ;  do \
+%.png.tmp:  %.png
+	for archivo in $^ ;  do \
           cp "$$archivo" "$$archivo".tmp ; \
           echo "Notificando Copyright en $$archivo" ; \
-          convert -background '#0008' -fill white -gravity  center -size 110x10 \
-          caption:" contaible © alectrico ® 2021 " \
+          convert -background '#0008' -fill white -gravity  center -size 310x100 \
+          caption:" contaible © alectrico ® 2022 " \
           "$$archivo".tmp +swap -gravity south -composite "$$archivo".tmp ; \
-	  cp "$$archivo".tmp "../alectrico-2021/$$archivo" ; \
-	done; \
+	  cp png-partidas/*.png.tmp alectrico-2021 ; \
+	done; 
 
 clean-cpr:
 	cd png-partidas ; \
-	rm *.png.tmp ; \
+	rm *.png.tmp ; 
 
 
 
@@ -251,7 +252,7 @@ bo:
           caption:" $$numeracion " \
           "cover-b2b-$$numeracion.jpg" +swap -gravity center -composite "cover-b2b-$$numeracion.jpg" ; \
           numeracion=$$(( $$numeracion + 1 )) ; \
-	done; \
+	done; 
 
 #Genera todas las cubiertas a partir de un patrón inicial
 #Dado en un archivo de nombre
@@ -328,7 +329,7 @@ cover%.jpg: cover%.png
               fi; \
 	    done; \
 	  done; \
-	done; \
+	done; 
 
 #ocupa dte_rules.clp
 dte1:    *.xml.bak 

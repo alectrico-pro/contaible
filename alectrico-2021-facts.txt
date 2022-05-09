@@ -24,7 +24,7 @@
 (partida
  (numero 001)
  (dia 1) (mes enero) (ano 2021)
- (descripcion "Por Inicio de Operaciones en 2021")
+ (descripcion "Por Re-Apertura de Operaciones en 2021")
  (actividad ajuste))
 
 
