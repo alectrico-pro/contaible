@@ -210,6 +210,20 @@ titular-cubiertas:
 	cp cover*.jpg alectrico-2021
 
 
+
+#agregar copyright
+cpr:
+	for archivo in png-partidas/*.png ;  do \
+          cp "$$archivo" alectrico-2021 ; \
+          echo "Notificando Copyright en $$archivo" ; \
+          convert -background '#0008' -fill white -gravity  center -size 110x10 \
+          caption:" contaible © alectrico ® 2021 " \
+          "$$archivo" +swap -gravity south -composite "$$archivo" ; \
+        done; \
+
+
+
+
 #pone título TITULO a la imagen en ARCHIVO
 tit:  
 	convert -background '#0008' -fill white -gravity  center -size 2510x510 \
