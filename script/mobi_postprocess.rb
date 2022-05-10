@@ -74,6 +74,14 @@ doc.xpath("//div[@class='trigger']").each do |node|
   node.remove
 end
 
+#Elimina el footer pues agrega espacio antes y después
+doc.xpath("//footer").each do |node|
+  node.remove
+end
+
+
+
+
 
 #href="/necios-2021/libro-diario#Partida-14333
 

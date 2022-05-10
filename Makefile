@@ -199,7 +199,7 @@ gif:
 	#onvert -resize 20% -delay 20 -loop 0 *.jpg myimage.gif
 
 cubiertas:
-	make b2b
+	make generar-todas-las-cubiertas-sin-titulo
 	make bo
 	cd alectrico-2021
 	make titular-cubiertas
@@ -214,7 +214,7 @@ titular-cubiertas:
 
 
 #agregar copyright
-%.png.tmp:  %.png
+%.png.tmp-no:  %.png
 	for archivo in $^ ;  do \
           cp "$$archivo" "$$archivo".tmp ; \
           echo "Notificando Copyright en $$archivo" ; \
@@ -223,6 +223,24 @@ titular-cubiertas:
           "$$archivo".tmp +swap -gravity south -composite "$$archivo".tmp ; \
 	  cp png-partidas/*.png.tmp alectrico-2021 ; \
 	done; 
+
+
+cpr:
+	cd png-partidas ; \
+        if rm *.png.tmp; then echo .; fi ; \
+	make *.png.tmp -f ../Makefile ; \
+        cd .. 
+#no llamar directamente
+#solo a través de make cpr
+%.png.tmp:  %.png
+	for archivo in $^ ;  do \
+          cp "$$archivo" "$$archivo".tmp ; \
+          echo "Notificando Copyright en $$archivo" ; \
+          convert -background '#0008' -fill white -gravity  center -size 310x25 \
+          caption:" contaible © alectrico ® 2022 " \
+          "$$archivo".tmp +swap -gravity south -composite "$$archivo".tmp ; \
+          cp "$$archivo".tmp ../alectrico-2021/"$$archivo" ; \
+        done ;
 
 clean-cpr:
 	cd png-partidas ; \

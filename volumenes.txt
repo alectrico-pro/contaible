@@ -182,7 +182,7 @@
 (volumen
  (autor "Luca Paccioli")
  (asin B09XQZ6B9P)  (cubierta cover-b2b-1)
- (titulo "Contaible")
+ (titulo "HoraCero")
  (precio 49.39)
  (id 1)
  (orden 1)

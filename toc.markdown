@@ -3,6 +3,7 @@ layout: page
 title: Menú Contable
 permalink: toc
 ---
+Use este menú para moverse hacia las estructuras contables.
 
 [Libro Diario](libro-diario.html#Inicio)|[Libro Mayor](libro-mayor.html#Inicio)
 

@@ -1,9 +1,8 @@
 --- 
-title: Libro Diario
 permalink: libro-diario 
 layout: page
 --- 
-<h1> Libro Diario </h1>
+<h3> Libro Diario </h3>
 Cont<sup>ai</sup>ble ® usa el siguiente código de colores para este documento.
 <ul>
 <li><span style='background-color: red'>[    ]</span> mensaje de alerta. </li>

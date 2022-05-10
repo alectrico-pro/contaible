@@ -180,11 +180,8 @@
 ;   ( printout f "permalink: /" ?empresa "/f22 " crlf)
   ( printout k "layout: page" crlf)
   ( printout k "--- " crlf)
-  ( printout k "<h2> " ?titulo " </h2>" crlf)
-  ( printout k "<h2> " ?subtitulo " </h2>" crlf)
-  ( printout k "![](../revisado.png)" crlf)
-  ( printout k "![](./" (str-cat ?cubierta ".jpg") ")" crlf)
-
+  ( printout k "<h3> " ?titulo " </h3>" crlf)
+  ( printout k "<h3> " ?subtitulo " </h3>" crlf)
   ( printout k "<h3> " ?autor  " </h3> " crlf)
   ( printout k "alectrico ® ha realizado la publicación de este volumen con las siguientes características." crlf)
   ( printout k "<ul>" crlf)
@@ -200,9 +197,10 @@
   ( printout k "<li><span style='color: white; background-color: black'>[    ]</span> titulo: " ?titulo " </li>" crlf)
   ( printout k "<li><span style='background-color: blanchedalmond'>[    ]</span> subtitulo: " ?subtitulo " </li>" crlf)
   ( printout k "<li><span style='background-color: blanchedalmond'>[    ]</span> subtitulo: " ?cubierta " </li>" crlf)
-
-
   ( printout k "</ul>" crlf)
+  ( printout k "[Ver en amazon](https://www.amazon.com./dp/" ?asin ")" crlf)
+  ( printout k "![](./" (str-cat ?cubierta ".jpg") ")" crlf)
+
   ( close k)
 )
 

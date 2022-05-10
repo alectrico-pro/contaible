@@ -101,7 +101,7 @@
       ( bind ?archivo (str-cat "./doc/" ?empresa "/libro-diario.markdown"))
       ( open ?archivo d "w")
       ( printout d "--- " crlf)
-      ( printout d "title: Libro Diario" crlf)
+;     ( printout d "title: Libro Diario" crlf)
       ( printout d "permalink: libro-diario " crlf)
       ( printout d "layout: page" crlf)
       ( printout d "--- " crlf)
@@ -126,7 +126,7 @@
 ;   ( printout k "<script src='{{ base.url | prepend: site.url }}/assets/main.js'></script>" crlf)
    
 ;   ( printout k "</chapter><chapter>" crlf)
-;   ( printout k "<h1> Libro Diario </h1>" crlf)
+   ( printout k "<h3> Libro Diario </h3>" crlf)
 
    ( printout k "Cont<sup>ai</sup>ble ® usa el siguiente código de colores para este documento." crlf)
    ( printout k "<ul>" crlf)
@@ -141,7 +141,7 @@
    ( printout k "</ul>" crlf)
 
 
-   ( printout d "<h1> Libro Diario </h1>" crlf)
+   ( printout d "<h3> Libro Diario </h3>" crlf)
    ( printout d "Cont<sup>ai</sup>ble ® usa el siguiente código de colores para este documento." crlf)
    ( printout d "<ul>" crlf)
    ( printout d "<li><span style='background-color: red'>[    ]</span> mensaje de alerta. </li>" crlf)
