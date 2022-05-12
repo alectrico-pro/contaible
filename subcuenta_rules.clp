@@ -60,22 +60,16 @@
 ;   ( printout k "<h1> Subcuentas </h1>" crlf)
 )
 
-(defrule fin-kindle-k
-  ( declare (salience -100) )
- =>
-  ( close k )
-)
-
 
 ( defrule encabezado
 
 ?cuenta <- ( cuenta
     ( partida ?Numero & nil )
-    ( nombre ?nombre)
+   ( nombre ?nombre)
     ( padre ?padre )
     ( nombre-sii ?nombre-sii)
     ( descripcion ?descripcion)
-    ( origen nominativo  )
+    ( origen ?origen  )
  )
 
   (exists
@@ -112,9 +106,6 @@
 
   ( printout k "<tr><td> voucher </td><td> partida </td><td> debe </td> <td> | </td> <td> haber </td><td> mes </td> <td>recibida</td> <td>factor de corrección monetaria</td> <td> tipo documento</td></tr>"crlf)
   ( printout k "<tbody>" crlf)
-
-
-
 )
 
 ( defrule t-filas-de-resultados
@@ -141,7 +132,7 @@
      ( tipo-de-documento ?tipo-de-documento)
      ( de-resultado true)
      ( mostrado-en-t false)
-     ( origen  nominativo ) )
+     ( origen  ?origen ) )
 
   ?subtotales <- ( subtotales
     ( mostrado   false)

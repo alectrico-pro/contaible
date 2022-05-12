@@ -302,7 +302,7 @@
 
    )
    ( printout k "<tr><td> ACTIVO FIJO </td> <td align='right'>" ?activo-fijo "</td></tr> " crlf )
-   ( printout k "<tr><td> PASIVO FIJO </td> <td align='right'>" ?pasivo-fijo "</td></tr> " crlf)
+   ( printout k "<tr><td></td><td></td><td>PASIVO FIJO </td> <td align='right'>" ?pasivo-fijo "</td></tr> " crlf)
 
    ( printout k "<tr> <td> Terreno </td> <td align='right'>"  ?terreno "</td> " crlf)
    ( printout k "<td> Préstamo Bancarios </td> <td align='right'>" ?prestamo-bancario "</td> </tr>" crlf)
