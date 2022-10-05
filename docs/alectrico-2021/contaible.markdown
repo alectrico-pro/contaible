@@ -6,15 +6,14 @@ permalink: contaible
 
 #### Cont<sup style="color:white; background-color: cornflowerblue">ai</sup>ble<sup> 
 
-# Qué es Cont<sup>ai</sup>ble
 
 Cont<sup>ai</sup>ble by alectrico® es un sistema informático adhoc que implementa un nuevo paradigma para entender y usar la contabilidad usando herramientas de AI: Artificial Intelligence. Cont<sup>ai</sup>ble ha resuelto el problema de llevar la contabilidad exitosamente en los años 2020 y 2021 de la empresa chilena alectrico® spa.
 
-## Qué es lo que se intenta mejorar usando Cont<sup>ai</sup>ble
+### Qué es lo que se intenta mejorar usando Cont<sup>ai</sup>ble
 
 La contabilidad es un método matemático para organizar el funcionamiento financiero y tributario de un negocio o empresa. Se puede llevar en cuadernos de papel como en el siglo XX, pero la constumbre viene de muchos años antes y se remontan a su inventor Luca Paccioli. El sistema de Paccioli llega a Chile siendo conocida como contabilidad americana y en 2022 se conoce como Contabilida Completa. A Cont<sup>ai</sup>ble le gustaría ser el Tesla de la Contabilidad: un tipo de contabilidad sofisticada con muchas oportunidades para usar conocimiento experto.
 
-## El rol del papel en la Contabilidad
+### El rol del papel en la Contabilidad
 
 Es fácil reconocer que lo que significa llevar la contabilidad es anotar hechos económicos diariamente en un libro para que luego un contador haga las magias que necesitamos para vivir un mes más como emprendedores, "Llevar el Libro Diario"  es el proceso de anotar todas las transacciones financieras lo más cercano al momento en que ocurran, en un cuaderno de papel, día tras día. 
 
@@ -26,26 +25,26 @@ En el Libro de Mayor, las anotaciones del libro diario se dejan en forma simple 
 
 Una cuenta es la unidad indivisible del conocimiento necesario para este sistema. Una cuenta puede ser vista hoy en día como un punto de datos de cualquier sistema de información. Sin embargo, en la práctica se habla de anotaciones en el DEBE o el HABER de una cuenta. En este texto respetaremos la forma clásica de hablar de las cuentas.
 
-## BreakPoint!
+### BreakPoint!
 
 Hemos llegado al temas que nos interesa explicarle a Ud. El nuevo paradigma de Cont<sup>ai</sup>ble parte por reemplazar la anotación en el libro diario por una unidad indivisible que sea capaz de disparar una regla en un Expert System.
 
-## Eso es ... Cont<sup>ai</sup>ble es un Expert Sytem Contable
+### Eso es ... Cont<sup>ai</sup>ble es un Expert Sytem Contable
 
 Cont<sup>ai</sup>ble es un Expert System que contiene conocimiento en la forma de reglas contables, financieras y tributarias suficientemente efectivas como para permitirle la generación de las partidas contables y de los Estados Financieros  en el momento en que Ud. lo requiera. Y que además permite el uso de todo conocimiento existente que quiera agregarle posteriormente.
 
-## Cómo se usa Cont<sup>ai</sup>ble
+### Cómo se usa Cont<sup>ai</sup>ble
 
 Para usar Cont<sup>ai</sup>ble se requiere un software denominado máquina de inferencia. El conocimiento extraído por un Ing. de Conocimiento de alectrico se deja en un texto que la máquina de inferencia entienda. En el momento que se quiera generar la contabilidad se debe tomar ese texto para hacerlo pasar a través de la máquina de inferencia. El texto está escrito de tal forma que haya reglas de conocimiento que la máquina pueda entenderlas y encadenarlas junto con hechos que las disparen.
 
-## Contabilidad para Ne<sup>go</sup>cios
+### Contabilidad para Ne<sup>go</sup>cios
 
 El método que hemos diseñado en alectrico lo hemos llamado Contabilidad para Ne<sup>go</sup>cios. Cont<sup>ai</sup>ble es un desarrollo de de estas ideas,  mediante el cual Ud. no necesitará preparar los Libros de Mayor y cualquier otro libro ni tampoco sus equivalentes informáticos. Todo eso lo hará Cont<sup>ai</sup>ble.
 
 
 Con Cont<sup>ai</sup>ble, Ud. prepara un texto indicando los hechos económicos que ocurran en su empresa. Estos hechos pueden ser de cualquier tipo, basta que se haya creado la regla correspondiente en Cont<sup>ai</sup>ble para que se puedan procesar.
 
-## Facts
+### Facts
 
 Los hechos en un Expert System se conocen como facts, usaremos esa vocablo cuando hablemos de los hechos económicos introducidos en Cont<sup>ai</sup>ble, pero puede haber facts en contabilidad relacionados con la operación propia del sistema así que para evitar confusiones, los hechos económicos que puedan ser procesados por Cont<sup>ai</sup>ble los llamaremos kernels contables.
 
@@ -194,7 +193,7 @@ Estos son ejemplos de kernels contables existentes en Cont<sup>ai</sup>ble:
 	  ```
 
 
-## Ilustrando los hechos
+### Ilustrando los hechos
 
 Usaremos una frase para englobar el funcionamiento de Cont<sup>ai</sup>ble en un esfuerzo por explicar algo muy novedosos y anormal pues no es un sistema que muchas persona sepan como funciona, aún los más inteligentes e informados podrían sentirse inclinados a decir que ellos si saben lo que es la inteligencia artificial, pero Cont<sup>ai</sup>ble sí es inteligencia artificial y se manda solo. Digamos que:
 

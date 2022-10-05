@@ -177,33 +177,31 @@
 ;el kindle de diciembre está en un bundle con la contabilidad completq
 ;pues es más importante que se disponga de la contabilidad completa
 
-;----------------------------------------------------------
+;------------- SERIE CONTAIBLE-----------------------------
 ;Kindles de la serie Contaible
 (volumen
  (autor "Luca Paccioli")
- (asin B09XQZ6B9P)
+ (asin B09XQZ6B9P)  (cubierta cover-b2b-1)
+ (titulo "HoraCero")
  (precio 49.39)
  (id 1)
  (orden 1)
  (serie Contaible)
  (formato kindle)
- (titulo "Contaible")
  (subtitulo "Back to Business" )
  (contenido "Solo Día 1. Sin partida. Introducción a Contaible.")
  (partidas-no-incluidas 1)
 )
 
-
-;Kindles de la serie Contaible Financiero
 (volumen
  (autor "Alexander Espinosa")
- (asin B09Z7Y5HZF)
+ (asin B09Z7Y5HZF) (cubierta cover-b2b-2)
  (precio 4)
  (id 2)
  (orden 2)
  (serie Contaible)
  (formato kindle)
- (titulo "Asiento Inicial")
+ (titulo "Asiento")
  (subtitulo "Partida 1: Apertura" )
  (contenido "Solo día 1. Contiene un ejercicio solo financiero. Libro Diario, Libro Mayor, Subcuentas, Liquidaciones, Balance, Estado de Resultados, Estado de Resultados para Impuestos.")
  (partidas-no-incluidas )
@@ -212,9 +210,6 @@
 
 
 ;-----------------------------------------------------------------------------
-
-
-
 ;Kindles de la serie Contaible
 (volumen
  (autor "Luca Paccioli")

@@ -100,8 +100,8 @@ COPY ./*.opf.erb       ./mobi/
 COPY ./*.ncx.erb       ./mobi/
 COPY ./mobi.css        ./mobi
 COPY ./kindlegen       ./mobi
-COPY ./cover*.jpg       ./mobi
-COPY ./cover*.jpg      ./alectrico-2021/
+COPY ./cover*          ./mobi/
+COPY ./cover*          ./alectrico-2021/
 COPY ./nota/           ./nota/
 COPY ./nota/           ./necios-2021/
 COPY ./nota/           ./alectrico-2021/

@@ -3,35 +3,26 @@ title: Introducción
 layout: page
 permalink: introduccion
 ---
-Hola, me presento, soy Alexander Espinosa, administrador. fundador y principal accionista de alectrico® Spa. Tengo una breve historia que contar y lo haré en diferentes ebooks de la serie Cont<sup>ai</sup>ble. 
+Este ebook es parte de una serie en amazon que trata de explicar en cámara lenta la contabilidad básica de una pequeña empresa. Esto se hace en conjunto con los registros reales de esa empresa que corresponden al año 2021.
 
-Comenzaré por decir que el año 2021 fue crítico para los emprendedores del planeta debido a la Pandemia COVID19, cuyos efectos hicieron desaparecer de repente cualquier esperanza de obtención de ganancias por parte de las Pequeñas Empresas. No fui la excepción con mi empresa alectrico®. Mis clientes dejaron de llamarme y los colaboradores dejaron de colaborarme. Entonces fue la ocasión de verme en una revancha con la Contabilidad. Lo que cuento aquí es mi camino hacia el conocimiento práctico de la contabilidad usando el ejemplo real de mi empresa.
+Los temas van creciendo en complejidad en la medida que se avanza en la serie. Comience desde el [primer ebook serie Contaible](https://www.amazon.com/dp/B09XQZ6B9P) si no sabe de contabilidad, o lea lo que le interese si ya está iniciado en el tema.
 
+Si sabe bien de contabilidad puede leer el ebook [asiento inicial](https://www.amazon.com/dp/B09NRKYKN7 ) de la serie *Contabilidad para Necios*, el cual contiene toda la contabilidad de esta empresa generado por un expert system contable llamado Cont<sup>ai</sup>ble.
 
-No le gustaría ser un empresario con números azules a fin de cada año. O por lo menos, anticiparse a los números rojos para tener tiempo de salvar a su empresa? Esa es una idea que me seduce de la Contabilidad. En este ebook, veremos la forma que adopta el método para llevar libros de contabilidad en el año 2021 usando Inteligencia Artificial. Con un sistema creado por mi, en mi calidad de Ingeniero de Conocimiento y al servicio de mi rol de CEO.  
+Cada ebook tiene una estructura que se va llenando paulatinamente con datos de movimientos financieros. La primera estructura se llama **Libro Diario** y en ella se anota cada dato considerando el momento en qué ocurrió. No se necesita una precisión de minutos ni horas, basta con que se deje anotada la fecha en que se observó el movimiento.
 
+La evolución en el tiempo de un año se conoce como *ejercicio contable*. El año se considera dividido en doce partes que se hacen coincidir con meses. Cada mes se debe tomar la información del **Libro Diario** para elaborar resúmenes que permitan saber si la empresa tiene recursos para pagar salarios y otras obligaciones que se ven mes a mes. La estructura para mostrar los datos financieros en resúmenes se denomina **Libro Mayor**.
 
-#### Cómo usar el libro
+Al finalizar el ejercicio contable, el que normalmente se hace coincidir con el último día de cada año, se deben usar estructuras más complicadas como las de **Liquidación**. Las liquidaciones permiten ignorar aquellos detalles que hayan dejado de importar a fin de año. 
 
-Tengo algunas recomendaciones para que aproveche mejor la experiencia de leer este libro.
+En el mismo momento de cierre de año también se debe usar la estructura **Estado de Resultados** que sirve para demostrar cómo fue que la empresa obtuvo sus utilidades 
 
-1. Use el menú para saltar al tema que le interese y también para memorizar las partes de la Contabilidad. Hay un menú incorporado en el lector de ebook y otro más corto en la sección menú contable. 
-2. Marque las palabras que no conozca y obtenga su significado en el diccionario del dispositivo lector.
-3. Disminuya la altura de la letra en el menú de configuración del lector de ebook si las tablas se viesen con texto salíendo de las celdas. Eso ocurre porque las tablas son reales y aparecen con la misma altura de texto que el resto del ebook.
-4. Las tablas que he usado puede que tengan incorporada una imagen la cual se puede ampliar. Para ello puede usar dos dedos haciendo un gesto de separación, o puede clicar en el botón que aparezca en una de las esquinas de la imagen. 
-5. Use su computador y su teléfono al mismo tiempo para enriquecer su aprendizado. Así, en el computador podría tener abierto otro ebook en diferentes capítulos. 
-6. Eche un vistazo rápido al ebook, mirando solo las tablas y las imágenes.
-7. Lea el capítulo **Tema** y ahora repita el proceso hoja por hoja tratando de no detenerse en ninguna, mientras busca algo que tenga que ver con el contenido que haya visto en **Tema**.
-8. Sea consciente de que la Contabilidad es un proceso parecido al Big Bang:
+Igualmente existe un resumen llamado **Balance Final** cuya estructura permite apreciar en qué medida la empresa está preparada para enfrentar sus obligaciones financieras con sus recursos.
 
-    a. Comienza generando polvo de estrellas (muchas cuentas irrelevantes),
-
-    b. luego aparecen las estrellas y planetas (asuntos críticos que hay que aprender).
-
-    c. finalmente se vuelve un agujero negro hipercondensado (Estados Financieros, Impuestos y Demás espantos).
-
-En cada ebook de la serie Cont<sup>ai</sup>ble existe un capítulo llamado **Tema** que contiene lo que se debe aprender. El contenido está distribuido entre varios ebooks, así que encontará los mismos temas en diferentes ebooks, pero tratados con diferentes profundidad o intención. Considere que al lector contemporáneo le puede resultar menos agobiante fijarse metas de apendizado menos exigentes en cada ebook. 
+Estos dos informes son conocidos como **Estados Financieros** y deben acompañarse de un documento explicando todo aquello. Ese documento se denomina **Notas a los Estados Financieros**.
 
 
-Alexander Espinosa
-CREO en alectrico®
+El sistema Cont<sup>ai</sup>ble inserta links en los registros de la estructura del **Libro Mayor** para que se pueda ubicar la partida correspondiente en el **Libro Diario**.
+
+😀
+

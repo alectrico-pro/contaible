@@ -1,6 +1,6 @@
 RUBY = ruby
 ERB = erb
-KINDLEGEN = ./kindlegen
+KINDLEGEN = ../../kindlegen
 
 #Llamar con VERSION, ASIN Y MES y DIA
 #mobi: libro-diario.html mobi-${VERSION}.ncx book-${VERSION}-${ASIN}-${MES}.opf
@@ -16,8 +16,11 @@ KINDLEGEN = ./kindlegen
 	-$(RUBY) script/mobi_postprocess.rb $<.bak > $<
 
 
+
 mobi-%.ncx: mobi-%.ncx.erb
 	$(ERB) $<  >  $@
+
+
 
 book-%.opf: book-%.opf.erb
 	$(ERB) $<  >  $@
@@ -38,16 +41,12 @@ book-%.opf: book-%.opf.erb
 mobi_antiguo:  B09Z7Y5HZF.html.bak B09XQZ6B9P.html.bak introduccion.html.bak volumen.html.bak toc.html.bak libro-diario.html.bak libro-mayor.html.bak iva.html.bak final.html.bak tributario.html.bak f29.html.bak f22.html.bak comprobacion.html.bak subcuentas.html.bak inventario.html.bak resultado-sii.html.bak liquidacion.html.bak remuneraciones.html.bak valor-activos.html.bak bi.html.bak contaible.html.bak 
 	make mobi-${VERSION}.ncx book-${VERSION}.opf
 
+
+
 mobi:   B09Z7Y5HZF.html.bak B09XQZ6B9P.html.bak introduccion.html.bak volumen.html.bak toc.html.bak libro-diario.html.bak libro-mayor.html.bak iva.html.bak final.html.bak tributario.html.bak f22.html.bak comprobacion.html.bak subcuentas.html.bak inventario.html.bak resultado-sii.html.bak liquidacion.html.bak valor-activos.html.bak contaible.html.bak
 	make mobi-${VERSION}.ncx book-${VERSION}.opf
 	cat assets/main.css >> mobi.css
 	-$(KINDLEGEN) book-${VERSION}.opf
-	mv book-${VERSION}.mobi book-${VERSION}-${ASIN}-${MES}-${DIA}.mobi
-
-mobi-dte:   B09Z7Y5HZF.html.bak B09XQZ6B9P.html.bak introduccion.html.bak volumen.html.bak toc.html.bak libro-diario.html.bak libro-mayor.html.bak iva.html.bak final.html.bak tributario.html.bak f22.html.bak comprobacion.html.bak subcuentas.html.bak inventario.html.bak resultado-sii.html.bak liquidacion.html.bak valor-activos.html.bak contaible.html.bak
-	make mobi-${VERSION}.ncx book-${VERSION}.opf
-	cat assets/main.css >> mobi.css
-	../../kindlegen book-${VERSION}.opf
 	mv book-${VERSION}.mobi book-${VERSION}-${ASIN}-${MES}-${DIA}.mobi
 
 
@@ -111,7 +110,8 @@ f2:
 nx:     mobi-prueba.ncx	
 	pwd
 	cp  mobi-prueba.ncx ./doc
-	
+
+
 %.xml.bak: %.xml
 	cp $< $<.bak
 	-$(RUBY) script/dte_process.rb $<.bak > $<.out
@@ -119,32 +119,253 @@ nx:     mobi-prueba.ncx
 
 
 #Inicialmente era para probar dtes, pero terminó sindo una alternativa rápida a make mobi
-build-dte:  *.xml.bak
+build-dte:  *.xml.bak 
 	make reset
+	cp cover*.jpg ./${EMPRESA}
+	echo '(version (id 2) (version $(VERSION)) (asin $(ASIN)) (mes $(MES)) (dia $(DIA)))' > version.txt
 	if rm dte/server/*.html; then echo .; fi
-	if docker rm clips-dte -fv; then echo 'clips-dte'; fi
-	docker run --name clips-dte -e PUID=1000 -e PGID=10 -v $(shell pwd)/:/doc cupercupu/clipspy /doc/dte.py
-	if docker rm jekyll-dte -fv; then  echo .; fi
-	docker run --name jekyll-dte  -e PUID=1000 -e PGID=1000 -p 4001:4000 -v $(shell pwd)/:/srv/jekyll jekyll/jekyll bash -c 'jekyll build -s ./${EMPRESA} -d dte/server && mv dte/server/*.png dte && mv dte/server/*.pdf dte && cp assets/main.css dte/mobi.css && cd dte/server && cp ../../version.txt . && cp ../../Makefile . && cp ../../*.erb . &&  cp ../../script/mobi_postprocess.rb ./script && make mobi-dte VERSION=${VERSION} ASIN=${ASIN} MES=${MES} DIA=${DIA}'
-	if docker rm epub-dte -fv; then echo .; fi
-	docker run --rm --name epub-dte -e PUID=1000 -e PGID=1000 -e TZ=Europe/London -e PASSWORD= `optional` -e CLI_ARGS= `optional` -p 8080:8080 -p 8081:8081 -v $(shell pwd)/:/doc lscr.io/linuxserver/calibre bash -c 'cd /doc/dte/server && ebook-convert book-${VERSION}-${ASIN}-${MES}-${DIA}.mobi book-${VERSION}-${ASIN}-${MES}-${DIA}.epub && rm *.bak'
+	docker run -e PUID=1000 -e PGID=10 -v $(shell pwd)/:/doc cupercupu/clipspy /doc/dte.py
+	if docker rm dte-server -fv; then echo .; fi
+	if docker rm epub -fv; then echo .; fi
+	if docker rm 4000 -fv; then echo .; fi
+	docker run --name dte-server  -e PUID=1000 -e PGID=1000 -p 4001:4000 -v $(shell pwd)/:/srv/jekyll jekyll/jekyll bash -c 'jekyll build -s ./${EMPRESA} -d dte/server && mv dte/server/*.png dte && mv dte/server/*.pdf dte && cp assets/main.css dte/mobi.css && cd dte/server && cp ../../version.txt . && cp ../../Makefile . && cp ../../*.erb . &&  cp ../../script/mobi_postprocess.rb ./script && make mobi VERSION=${VERSION} ASIN=${ASIN} MES=${MES} DIA=${DIA}'
+	docker run --name epub -e PUID=1000 -e PGID=1000 -e TZ=Europe/London -e PASSWORD= `optional` -e CLI_ARGS= `optional` -p 8080:8080 -p 8081:8081 -v $(shell pwd)/:/doc --restart unless-stopped lscr.io/linuxserver/calibre bash -c 'cd /doc/dte/server && cp cover-b2b-*.jpg alectrico-2021 && ebook-convert book-${VERSION}-${ASIN}-${MES}-${DIA}.mobi book-${VERSION}-${ASIN}-${MES}-${DIA}.epub && rm *.bak' 
 	rsync -rltgoDv ~/contaible/dte/server/book*.epub /run/user/1000/gvfs/smb-share:server=ubuntu,share=maker/ --progress --outbuf=N -T=tmp
 	rsync -rltgoDv ~/contaible/dte/server/book*.mobi /run/user/1000/gvfs/smb-share:server=ubuntu,share=maker/ --progress --outbuf=N -T=tmp
-	if docker rm dte-server -fv; then echo .; fi
-	docker run --rm --name dte-server -p 4000:4000 -v $(shell pwd)/:/srv/jekyll jekyll/jekyll bash -c 'jekyll serve -s ./${EMPRESA} -d dte/server'
+	docker run --rm --name 4000 -p 4000:4000 -v $(shell pwd)/:/srv/jekyll jekyll/jekyll bash -c 'jekyll serve -s ./${EMPRESA} -d dte/server'
 
 #docker exec dte-server bash -c 'make reset && make dte5139951384.xml.bak && cat dte_process.log'
 
+#.jpg: %.png
+#convert -quality 90 -frame 20 -border 100 -density 300x300 -resize 800x  $^ $@  2>/dev/null
+
+#%.jpg: %.png
+#	convert -annotate 0,140,140,140 "alectrico ®" -stroke '#ffffff' -strokewidth 2  -style normal -undercolor '#0000ff' -bordercolor '#00ff00'  -background '#0fffff' -fill '#19FFFF' -matte  -mattecolor '#ffff00' -opaque '#00ffff' -transparent '#000000' $^ $@  2>/dev/null
 
 
-dte:    *.xml.bak
+clean: 
+	rm cover*.png.*
+	rm cover*.png.*.*
+
+
+#agrega una franja arriba
+cover%.jpg: cover%.png-arriba
+	convert -background '#0008' -fill white -gravity center -size 2810x120\
+        caption:"  Contiene ejercicio contable año 2021 de alectrico ®  " \
+        $^ +swap -gravity North -composite  $@
+
+
+#agrega una franja abajo
+cover%.jpg: cover%.png-abajo
+	convert -background '#0008' -fill white -gravity center -size 2810x120\
+        caption:"  Contiene ejercicio contable año 2021 de alectrico ®  " \
+        $^ +swap -gravity south -composite  $@
+
+cover%.jpg: cover%.png-abajo
+	convert -background '#0008' -fill white -gravity center -size 2810x120\
+        caption:"  Contiene ejercicio contable año 2021 de alectrico ®  " \
+        $^ +swap -gravity south -composite  $@
+
+#posicionando man con bolsa
+cover%.jpg: cover%.png-bolsa
+	for i in 100 200 ; do echo "Posicionando en x= $$i "; composite -geometry "+$$i+3304" ticket_man_pagado_image.png $^ "$@.$$i" ; done
+
+
+
+#agregando baterias-con for
+cover%.jpg: cover%.png-for
+	for i in 100 200 300 400 500 600 700 800 900 1000 1100 1200 1300 1400 1500 1600 ; do echo "Posicionando en x= $$i "; composite -geometry "+$$i+3304" consumo_de_creditos.png $^ "$@.$$i" ; done
+
+#proband while baterias
+cover%.jpg: cover%.png-while
+	x=1 ;  \
+	while [ $$x -le 5 ] ; do \
+	  echo "Posicionado en $$x" ;  \
+	  x=$$(( $$x + 1 ))  ; \
+	done
+
+#agregando baterias-con-while
+cover%.jpg: cover%.png-while
+	x=1 ;  \
+        while [ $$x -le 2050 ] ; do \
+          echo "Posicionado en $$x" ;  \
+          composite -geometry "+$$x+3304" consumo_de_creditos.png $^ "$@.$$x" ; \
+	x=$$(( $$x + 10 ))  ; \
+        done
+
+
+gif:    
+	convert -resize 768x576 -delay 20 -loop 0 cover-b2b-*.jpg b2b.gif
+	#onvert -resize 20% -delay 20 -loop 0 *.jpg myimage.gif
+
+cubiertas:
+	make generar-todas-las-cubiertas-sin-titulo
+	make bo
+	cd alectrico-2021
+	make titular-cubiertas
+	
+#titula todas las cubiertas que estén en volumenes.txt
+titular-cubiertas: 
+	docker build . -t titulacion -f DockerfileTitularCubiertas
+	docker run -e PUID=1000 -e PGID=1000 -v $(shell pwd)/:/home titulacion cp make-titular-cubiertas.sh /home
+	./make-titular-cubiertas.sh
+	cp cover*.jpg alectrico-2021
+
+
+
+#agregar copyright
+%.png.tmp-no:  %.png
+	for archivo in $^ ;  do \
+          cp "$$archivo" "$$archivo".tmp ; \
+          echo "Notificando Copyright en $$archivo" ; \
+          convert -background '#0008' -fill white -gravity  center -size 310x100 \
+          caption:" contaible © alectrico ® 2022 " \
+          "$$archivo".tmp +swap -gravity south -composite "$$archivo".tmp ; \
+	  cp png-partidas/*.png.tmp alectrico-2021 ; \
+	done; 
+
+
+cpr:
+	cd png-partidas ; \
+        if rm *.png.tmp; then echo .; fi ; \
+	make *.png.tmp -f ../Makefile ; \
+        cd .. 
+#no llamar directamente
+#solo a través de make cpr
+%.png.tmp:  %.png
+	for archivo in $^ ;  do \
+          cp "$$archivo" "$$archivo".tmp ; \
+          echo "Notificando Copyright en $$archivo" ; \
+          convert -background '#0008' -fill white -gravity  center -size 310x25 \
+          caption:" contaible © alectrico ® 2022 " \
+          "$$archivo".tmp +swap -gravity south -composite "$$archivo".tmp ; \
+          cp "$$archivo".tmp ../alectrico-2021/"$$archivo" ; \
+        done ;
+
+clean-cpr:
+	cd png-partidas ; \
+	rm *.png.tmp ; 
+
+
+
+#pone título TITULO a la imagen en ARCHIVO
+tit:  
+	convert -background '#0008' -fill white -gravity  center -size 2510x510 \
+        caption:" ${TITULO} " \
+        ${ARCHIVO}.jpg +swap -gravity south -composite ${ARCHIVO}.jpg ; \
+
+
+generar-todas-las-cubiertas-sin-titulo:    cover-back-to-business.png
+	make cover-back-to-business.jpg
+
+
+bo:     
+	rm cover-b2b*.jpg ; \
+	numeracion=1 ; \
+	for archivo in cover-back-to-business.png.*.*.* ;  do \
+          echo "Ordenando cubierta $$numeracion para archivo $$archivo" ; \
+	  mv "$$archivo" cover.png ; \
+	  convert cover.png "cover-b2b-$$numeracion.jpg" ; \
+          convert -background '#0008' -fill white -gravity  center -size 2310x510 \
+          caption:" $$numeracion " \
+          "cover-b2b-$$numeracion.jpg" +swap -gravity center -composite "cover-b2b-$$numeracion.jpg" ; \
+          numeracion=$$(( $$numeracion + 1 )) ; \
+	done; 
+
+#Genera todas las cubiertas a partir de un patrón inicial
+#Dado en un archivo de nombre
+#cover*.png
+#No entender que se generará un archivo cover*.jpg
+#Si que se generarán muchos archivos con diferntes filas y columas
+#De baterías y números indicando el orden que podría llegar a tener
+#un ebook que tuviese una de estas cubertas generadas así.
+#Los nombre que tendrán los archivos generados siempre serán
+#cover-bap-#.png.x.y.bateria. Donde x es la posicion horizontal
+#y la verticasl y batería indica el estado de la batería.
+# make cover-back-to-business.jpg
+#generar entonces cover-back-to-business.png.1.1030.cargado
+#y  todas las variantes que se consideren en los ciclos for
+#y 3004 3104 3204 3304 
+#x  1 a 2000 ] pero está afectada por una sepración de 450 y de 500
+#puede llamar a b2b colocando una cubierta de nombre cover-back-to-busines.png
+#luego de usar este item, pueden llamar a mke bo para obtner una orden
+#aquí se perderán las imagnes cover-back-to-business.png.x.y.bateria y
+#y las nuevas cubiertas serán denominadas por un número de orden
+#cover cover-b2b-?.jpg, esto se puede genarilzar más adelante
+#para que el nombre base sea el mismo en make bo:
+#El resultado de la ejecución de esos dos programas
+#Es la creación de una base de cubiertas listas e indexadas por un entero
+#que debiese corresponder a un ebook cuyo número de orden en la seria kindle
+#corresponda a ese entero
+#durante las llamadas a make mobi para hacer un solo ebook
+#se puede tomar una de las cubiertas y solo una para agregarle el título
+#del ebook
+#para genera el título se usa make tit
+#pero debe ser llamado desde titular cubiertas
+#el que genera los make para cada cubierta que se debe titular
+#de acuerdo a la lista de ebooks en volumenes.txt
+#make titular-cubiertas intenta usar las cubiertas inscritas
+#en volumenest.txt. Así que el bando de cubiertas debe tenerlas
+#llamar a make cubiertas para que haga todo 
+cover%.jpg: cover%.png
+	if \
+	rm cover*.png.*.*.* ; \
+	rm cover*.png.*.* ; \
+	rm conver*.png.* ; \
+	then 	 echo . ; \
+	fi ; \
+        orden=main_switch.png ; \
+	warning=4441.png ; \
+        carrito=carrito.png ; \
+	descargado=consumo_de_creditos.png ; \
+	numeracion=0 ; \
+        for y in 3004 3104 3204 3304 ; do \
+          x=1; \
+	  xlabel=10001 ; \
+          composite -geometry "+100+100" "$$orden" $^ "$^.$$y.$$xlabel.cargado" ; \
+          composite -geometry "+2130+83" "$$warning" "$^.$$y.$$xlabel.cargado" "$^.$$y.$$xlabel.cargado" ; \
+          composite -geometry "+1100+1650" "$$carrito" "$^.$$y.$$xlabel.cargado" "$^.$$y.$$xlabel.cargado" ; \
+          convert -background '#0008' -fill white -gravity center -size 2810x120 \
+          caption:"  Contiene ejercicio contable año 2021 de alectrico ®  " \
+          "$^.$$y.$$xlabel.cargado" +swap -gravity south -composite "$^.$$y.$$xlabel.cargado"; \
+	  for separacion in 450 500 ; do \
+            xlabel=10001 ; \
+	    x=50 ; \
+	    bateria=compra_de_creditos.png ; \
+            composite -geometry "+$$x+$$y" "$$bateria" "$^.$$y.$$xlabel.cargado" "$^.$$y.$$xlabel.cargado"  ; \
+            while [ $$x -le 2001 ] ; do \
+              a=$$xlabel ; \
+	      x=$$(( $$x + $$separacion ))  ; \
+	      xlabel=$$(( 10000 + $$x )) ; \
+              numeracion=$$(( $$numeracion + 1 )) ; \
+              echo "Posicionado en $$numeracion xlabel=$$xlabel x=$$x y=$$y bateria= $$bateria" ; \
+	      composite -geometry "+$$x+$$y" "$$bateria" "$^.$$y.$$a.cargado" "$^.$$y.$$xlabel.cargado" ; \
+              if [ $$separacion -eq 450 ] ; then  \
+                numeracion=$$(( $$numeracion + 1 )) ; \
+                echo "Posicionado en $$numeracion xlabel=$$xlabel x=$$x y=$$y bateria= $$descargado" ; \
+                composite -geometry "+$$x+$$y" "$$descargado" "$^.$$y.$$a.cargado" "$^.$$y.$$xlabel.descargado" ; \
+              fi; \
+	    done; \
+	  done; \
+	done; 
+
+#ocupa dte_rules.clp
+dte1:    *.xml.bak 
 	make build-dte VERSION=financiero ASIN=B09XQZ6B9P MES=enero EMPRESA=alectrico-2021 DIA=1
+
+dte2:   *.xml.bak
+	make build-dte VERSION=financiero ASIN=B09Z7Y5HZF MES=enero EMPRESA=alectrico-2021 DIA=1
+
 
 pandoc:
 	docker run --rm --volume "`pwd`:/data" --user `id -u`:`id -g` pandoc/latex --pdf-engine=xelatex introduccion.markdown -o introduccion.pdf
 
+
+
 reset:  *.xml.bak
 	mv *.xml.bak *.xml
+
+
 
 #suministrar make build VERSION=1 ASIN=b999 MES=enero EMPRESA=alectrico-2021
 prueba: 
@@ -157,13 +378,12 @@ build:
 	echo '(version (id 2) (version $(VERSION)) (asin $(ASIN)) (mes $(MES)) (dia $(DIA)))' > version.txt
 	if docker rm st -fv; then echo volumen docker st eliminado exitosamente st; fi 
 	if docker rm mobi -fv; then echo volumen docker mobi eliminado exitosamente; fi
-	if docker stop calibre -fv; docker rm calibre; then echo volumen docker mobi eliminado exitosamente; fi
-	if docker stop dte-server -fv; then docker rm dte-server; fi
+	if docker rm calibre -fv; then echo volumen docker mobi eliminado exitosamente; fi
+	f docker rm epub -fv; then echo volumen docker epub eliminado exitosamente; fi
 	docker build . -t contaible -f DockerfileContaible
-	docker run --name st -v $(shell pwd)/docs:/doc contaible bash -c 'jekyll build . && cp * /doc -r && chown 1000:1000 /doc -R' --no-cache
+	docker run -p 4000:4000 --name st -v $(shell pwd)/docs:/doc contaible bash -c 'jekyll build . && cp * /doc -r && chown 1000:1000 /doc -R' --no-cache
 	docker run --name mobi --volumes-from st -v $(shell pwd)/docs:/doc contaible bash -c 'jekyll build . && cp /doc/_site/${EMPRESA}/*.html /doc/mobi && cp /doc/_site/*.html /doc/mobi && cp /doc/_site/assets/* /doc/mobi/assets && cp /doc/_site/assets/main.css /doc/mobi.css && cd /doc/mobi && make mobi VERSION=${VERSION} ASIN=${ASIN} MES=${MES} DIA=${DIA}'
-	docker run --rm --volumes-from mobi --name=calibre -e PUID=1000 -e PGID=1000 -e TZ=Europe/London -e PASSWORD= `optional` -e CLI_ARGS= `optional` -p 8080:8080 -p 8081:8081 -v $(shell pwd)/docs:/doc lscr.io/linuxserver/calibre bash -c 'cd /doc/mobi && ebook-convert book-${VERSION}-${ASIN}-${MES}-${DIA}.mobi book-${VERSION}-${ASIN}-${MES}-${DIA}.epub'
-
+	docker run  --volumes-from mobi --name=calibre -e PUID=1000 -e PGID=1000 -e TZ=Europe/London -e PASSWORD= `optional` -e CLI_ARGS= `optional` -p 8080:8080 -p 8081:8081 -v $(shell pwd)/docs:/doc --restart unless-stopped lscr.io/linuxserver/calibre bash -c 'cd /doc/mobi && ebook-convert book-${VERSION}-${ASIN}-${MES}-${DIA}.mobi book-${VERSION}-${ASIN}-${MES}-${DIA}.epub'
 
 
 sync:
