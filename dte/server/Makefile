@@ -1,6 +1,7 @@
 RUBY = ruby
 ERB = erb
-KINDLEGEN = ../../kindlegen
+KINDLEGEN = ./kindlegen
+KINDLEGEN_DTE = ../../kindlegen
 
 #Llamar con VERSION, ASIN Y MES y DIA
 #mobi: libro-diario.html mobi-${VERSION}.ncx book-${VERSION}-${ASIN}-${MES}.opf
@@ -46,7 +47,7 @@ mobi_antiguo:  B09Z7Y5HZF.html.bak B09XQZ6B9P.html.bak introduccion.html.bak vol
 mobi:   B09Z7Y5HZF.html.bak B09XQZ6B9P.html.bak introduccion.html.bak volumen.html.bak toc.html.bak libro-diario.html.bak libro-mayor.html.bak iva.html.bak final.html.bak tributario.html.bak f22.html.bak comprobacion.html.bak subcuentas.html.bak inventario.html.bak resultado-sii.html.bak liquidacion.html.bak valor-activos.html.bak contaible.html.bak
 	make mobi-${VERSION}.ncx book-${VERSION}.opf
 	cat assets/main.css >> mobi.css
-	-$(KINDLEGEN) book-${VERSION}.opf
+	-$(KINDLEGEN_DTE) book-${VERSION}.opf
 	mv book-${VERSION}.mobi book-${VERSION}-${ASIN}-${MES}-${DIA}.mobi
 
 
@@ -107,12 +108,6 @@ f2:
 	make sync
 
 
-
-n2:
-	make build VERSION=financiero ASIN=B09Z7Y5HZF MES=enero EMPRESA=necios-2021 DIA=1
-
-
-
 nx:     mobi-prueba.ncx	
 	pwd
 	cp  mobi-prueba.ncx ./doc
@@ -135,7 +130,7 @@ build-dte:  *.xml.bak
 	if docker rm epub -fv; then echo .; fi
 	if docker rm 4000 -fv; then echo .; fi
 	docker run --name dte-server  -e PUID=1000 -e PGID=1000 -p 4001:4000 -v $(shell pwd)/:/srv/jekyll jekyll/jekyll bash -c 'jekyll build -s ./${EMPRESA} -d dte/server && mv dte/server/*.png dte && mv dte/server/*.pdf dte && cp assets/main.css dte/mobi.css && cd dte/server && cp ../../version.txt . && cp ../../Makefile . && cp ../../*.erb . &&  cp ../../script/mobi_postprocess.rb ./script && make mobi VERSION=${VERSION} ASIN=${ASIN} MES=${MES} DIA=${DIA}'
-	docker run --name epub -e PUID=1000 -e PGID=1000 -e TZ=Europe/London -e PASSWORD= `optional` -e CLI_ARGS= `optional` -p 8080:8080 -p 8081:8081 -v $(shell pwd)/:/doc lscr.io/linuxserver/calibre bash -c 'cd /doc/dte/server && cp cover-b2b-*.jpg alectrico-2021 && ebook-convert book-${VERSION}-${ASIN}-${MES}-${DIA}.mobi book-${VERSION}-${ASIN}-${MES}-${DIA}.epub && rm *.bak' 
+	docker run --name epub -e PUID=1000 -e PGID=1000 -e TZ=Europe/London -e PASSWORD= `optional` -e CLI_ARGS= `optional` -p 8080:8080 -p 8081:8081 -v $(shell pwd)/:/doc --restart unless-stopped lscr.io/linuxserver/calibre bash -c 'cd /doc/dte/server && cp cover-b2b-*.jpg alectrico-2021 && ebook-convert book-${VERSION}-${ASIN}-${MES}-${DIA}.mobi book-${VERSION}-${ASIN}-${MES}-${DIA}.epub && rm *.bak' 
 	rsync -rltgoDv ~/contaible/dte/server/book*.epub /run/user/1000/gvfs/smb-share:server=ubuntu,share=maker/ --progress --outbuf=N -T=tmp
 	rsync -rltgoDv ~/contaible/dte/server/book*.mobi /run/user/1000/gvfs/smb-share:server=ubuntu,share=maker/ --progress --outbuf=N -T=tmp
 	docker run --rm --name 4000 -p 4000:4000 -v $(shell pwd)/:/srv/jekyll jekyll/jekyll bash -c 'jekyll serve -s ./${EMPRESA} -d dte/server'

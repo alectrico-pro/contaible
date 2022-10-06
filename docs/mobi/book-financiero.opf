@@ -99,13 +99,13 @@
        
     
     
-     
-       
-       
-    
+
+      
+         
+      
+   
 
     <item id="introduccion" media-type="application/xhtml+xml" href="introduccion.html"></item>
-    <item id="volumen" media-type="application/xhtml+xml" href="volumen.html"></item>
     <item id="toc" media-type="application/xhtml+xml" href="toc.html"></item>
 
     
@@ -520,8 +520,37 @@
     
         
         
-           <item id="B09XQZ6B9P" media-type="application/xhtml+xml" href="B09XQZ6B9P.html"></item>
-         
+      
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+        
+        
       
     
     
@@ -555,52 +584,14 @@
     
     
     
-        
-        
-      
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
     
     
     
     
         
+        
+           <item id="FINANCIERO" media-type="application/xhtml+xml" href="FINANCIERO.html"></item>
+	   
         
       
     
@@ -805,11 +796,16 @@
     <item id="final" media-type="application/xhtml+xml" href="final.html"></item>
     <item id="tributario" media-type="application/xhtml+xml" href="tributario.html"></item>
     <item id="resultado-sii" media-type="application/xhtml+xml" href="resultado-sii.html"></item>
+    <item id="volumen" media-type="application/xhtml+xml" href="volumen.html"></item>
+    <!--
+     <item id="contaible" media-type="application/xhtml+xml" href="contaible.html"></item>
+    -->
 
     <!-- table of contents [mandatory] -->
     <item id="My_Table_of_Contents" media-type="application/x-dtbncx+xml" href="mobi-financiero.ncx"/>
-    <!-- cover image [mandatory] -->
-    <item id="My_Cover" media-type="image/jpeg" href="cover.jpg"/>
+    <!-- cover image [mandatory] 
+     ejemplo <item id="My_Cover" media-type="image/png" href="cover-1-back-to-business.jpg"/>
+    -->
 
 
 
@@ -833,10 +829,10 @@
     <spine toc="My_Table_of_Contents"/>
 	  <!-- the spine defines the linear reading order of the book -->
 	  <!--	  <itemref idref="as" /> -->
+    <itemref toc="volumen"/>
     <itemref idref="toc" />
     <itemref introduccion="introduccion"/>
-    <itemref toc="volumen"/>
-    <itemref idref="B09XQZ6B9P"/>
+    <itemref idref="FINANCIERO"/>
     <itemref idref="libro-diario" />
     <itemref idref="libro-mayor" />
     <itemref idref="subcuentas" />
@@ -844,6 +840,9 @@
     <itemref idref="final"  />
     <itemref idref="tributario" />
     <itemref idref="resultado-sii" />
+    <!--
+     <itemref idref="contaible" />
+    -->
   </spine>
 
   <!--
@@ -867,7 +866,7 @@
     -->
   <guide>
     <reference type="toc"  title="Table of Contents" href="toc.html#Inicio"></reference>
-    <reference type="text" title="B09XQZ6B9P" href="B09XQZ6B9P.html#Inicio"></reference>
+    <reference type="text" title="FINANCIERO" href="FINANCIERO.html#Inicio"></reference>
   <!--
     <reference type="text" title="Mayor" href="libro-mayor.html#Inicio"></reference>
    -->

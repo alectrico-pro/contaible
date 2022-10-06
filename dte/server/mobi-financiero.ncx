@@ -466,6 +466,14 @@
     
         
         
+           
+             <navPoint class="section" id= 1 playOrder="4">
+             <navLabel>
+               <text> Tema </text>
+             </navLabel>
+             <content src="B09XQZ6B9P.html#Inicio"/>
+           </navPoint>
+         
       
     
     
@@ -497,14 +505,6 @@
     
         
         
-           
-             <navPoint class="section" id= 1 playOrder="4">
-             <navLabel>
-               <text> Tema </text>
-             </navLabel>
-             <content src="B09Z7Y5HZF.html#Inicio"/>
-           </navPoint>
-         
       
     
     
@@ -853,6 +853,8 @@
 	    
 	        
 	    
+	        
+	    
 	    
 	    
 	    
@@ -862,28 +864,6 @@
 		    </navLabel>
 		    <content src="libro-diario.html#Partida-1"/>
 		  </navPoint>    
-	        
-	    
-	        
-	    
-	        
-	    
-	        
-	    
-	        
-	    
-	        
-	    
-	        
-	    
-	        
-	    
-	        
-	    
-	        
-	    
-	        
-	    
 	        
 	    
 	        

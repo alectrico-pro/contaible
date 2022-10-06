@@ -1,1 +1,1 @@
-(version (id 2) (version 1) (asin B09DXLR7P9) (mes enero) (dia 31))
+(version (id 2) (version financiero) (asin FINANCIERO) (mes diciembre) (dia 31))

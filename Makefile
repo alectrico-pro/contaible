@@ -1,7 +1,13 @@
 RUBY = ruby
 ERB = erb
-KINDLEGEN = ../../kindlegen
+KINDLEGEN = ./kindlegen
+KINDLEGEN_DTE = ../../kindlegen
 
+#usar make dte1 y dte2
+#El resteo es obsoleto
+#de1 y dte2 hacen los libros
+#pero las cubiertas se generan
+#con make cubiertas
 #Llamar con VERSION, ASIN Y MES y DIA
 #mobi: libro-diario.html mobi-${VERSION}.ncx book-${VERSION}-${ASIN}-${MES}.opf
 #obi: libro-diario.html mobi-${VERSION}.ncx book-${VERSION}.opf
@@ -46,7 +52,7 @@ mobi_antiguo:  B09Z7Y5HZF.html.bak B09XQZ6B9P.html.bak introduccion.html.bak vol
 mobi:   B09Z7Y5HZF.html.bak B09XQZ6B9P.html.bak introduccion.html.bak volumen.html.bak toc.html.bak libro-diario.html.bak libro-mayor.html.bak iva.html.bak final.html.bak tributario.html.bak f22.html.bak comprobacion.html.bak subcuentas.html.bak inventario.html.bak resultado-sii.html.bak liquidacion.html.bak valor-activos.html.bak contaible.html.bak
 	make mobi-${VERSION}.ncx book-${VERSION}.opf
 	cat assets/main.css >> mobi.css
-	-$(KINDLEGEN) book-${VERSION}.opf
+	-$(KINDLEGEN_DTE) book-${VERSION}.opf
 	mv book-${VERSION}.mobi book-${VERSION}-${ASIN}-${MES}-${DIA}.mobi
 
 

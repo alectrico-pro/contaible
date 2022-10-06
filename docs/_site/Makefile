@@ -1,6 +1,6 @@
 RUBY = ruby
 ERB = erb
-KINDLEGEN = ../../kindlegen
+KINDLEGEN = ./kindlegen
 
 #Llamar con VERSION, ASIN Y MES y DIA
 #mobi: libro-diario.html mobi-${VERSION}.ncx book-${VERSION}-${ASIN}-${MES}.opf
